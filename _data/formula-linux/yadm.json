@@ -13,13 +13,13 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://yadm.io/",
   "versions": {
-    "stable": "3.1.0",
+    "stable": "3.1.1",
     "head": null,
-    "bottle": false
+    "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/TheLocehiliosan/yadm/archive/3.1.0.tar.gz",
+      "url": "https://github.com/TheLocehiliosan/yadm/archive/3.1.1.tar.gz",
       "tag": null,
       "revision": null
     }
@@ -27,6 +27,17 @@
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
+    "stable": {
+      "rebuild": 0,
+      "root_url": "https://ghcr.io/v2/linuxbrew/core",
+      "files": {
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/linuxbrew/core/yadm/blobs/sha256:71127b1a24c8590c29be1982b5577362ce9ccd8e3dbbb57f033a0769d1890264",
+          "sha256": "71127b1a24c8590c29be1982b5577362ce9ccd8e3dbbb57f033a0769d1890264"
+        }
+      }
+    }
   },
   "keg_only": false,
   "bottle_disabled": false,
