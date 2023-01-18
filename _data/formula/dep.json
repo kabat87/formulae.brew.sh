@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/golang/dep.git",
       "tag": "v0.5.4",
-      "revision": "1f7c19e5f52f49ffb9f956f64c010be14683468b"
+      "revision": "1f7c19e5f52f49ffb9f956f64c010be14683468b",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dep/blobs/sha256:625766cd64e40b0c73e21e76a2d1a99954d2d4085553c2f065e6ea08d71537a1",
+          "sha256": "625766cd64e40b0c73e21e76a2d1a99954d2d4085553c2f065e6ea08d71537a1"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dep/blobs/sha256:a99c5d8b805b93143f1d00559188d270d96578b8a39d66ba21ba01abd7f2b7b5",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dep/blobs/sha256:bd66e578cf33fafc42cecb83d80638b320a9b6a050cb769402532b7ec5d3f8ad",
           "sha256": "bd66e578cf33fafc42cecb83d80638b320a9b6a050cb769402532b7ec5d3f8ad"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dep/blobs/sha256:743bdd7e87026de3badfb02f1600a3ba5bec6f2d174b444ea69a9acbfb0e17e4",
+          "sha256": "743bdd7e87026de3badfb02f1600a3ba5bec6f2d174b444ea69a9acbfb0e17e4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "go"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,10 +116,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2020-11-25",
-  "deprecation_reason": "repo_archived",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-12-20",
+  "disable_reason": "repo_archived",
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.dgate.org/ratfor/tars/ratfor-1.05.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "826278c5cec11f8956984f146e982137e90b0722af5dde9e8c5bf1fef614853c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ratfor/blobs/sha256:02426cb3f91d13a212cfdd581c550ce0c02a769ffc472b7497b5110426268760",
+          "sha256": "02426cb3f91d13a212cfdd581c550ce0c02a769ffc472b7497b5110426268760"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ratfor/blobs/sha256:7b7dd12c9a6ec7c9b817cc0f6179dd4b23a517b99a9645818b6dfdf297336ea6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ratfor/blobs/sha256:86d1de3e075edcc1e493b46fc7186bd21906644ba69a7032f3bc827487eb9449",
           "sha256": "86d1de3e075edcc1e493b46fc7186bd21906644ba69a7032f3bc827487eb9449"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ratfor/blobs/sha256:c2ad80a40dc2def3eb4601d88532af4500903e11bcd4582ec71ded200331ed21",
+          "sha256": "c2ad80a40dc2def3eb4601d88532af4500903e11bcd4582ec71ded200331ed21"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "gcc"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

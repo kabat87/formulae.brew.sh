@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.26.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b26dbde79ea72c8c84fb7f9d870ffd857381d049a86d25e0038c4cef4c747309"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/desktop-file-utils/blobs/sha256:4fcc2cc0cc160cbb92f46896b76264bd5311d436575afd108d61fcee1043d80a",
+          "sha256": "4fcc2cc0cc160cbb92f46896b76264bd5311d436575afd108d61fcee1043d80a"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/desktop-file-utils/blobs/sha256:39d2de6b778872be7de0e8f76d609eccc9c5f99546e48777ca0b24fe94bdf3cb",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/desktop-file-utils/blobs/sha256:c1bdcafb26625cd695365e41b4d3bb225d42c6075aa799c86b98e367a7d8ce9f",
           "sha256": "c1bdcafb26625cd695365e41b4d3bb225d42c6075aa799c86b98e367a7d8ce9f"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/desktop-file-utils/blobs/sha256:34a9f62522c3a59a8f06d9d54fd8269df1fd6fd8b6caaebf90d345ac1254f440",
+          "sha256": "34a9f62522c3a59a8f06d9d54fd8269df1fd6fd8b6caaebf90d345ac1254f440"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
   ],
   "dependencies": [
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

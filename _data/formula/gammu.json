@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dl.cihar.com/gammu/releases/gammu-1.42.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d8f152314d7e4d3d643610d742845e0a016ce97c234ad4b1151574e1b09651ee"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gammu/blobs/sha256:d8aa4848b10f257303dc4e0e88e76fed841dfe127d4b560f8d3fff2b005ff7a0",
+          "sha256": "d8aa4848b10f257303dc4e0e88e76fed841dfe127d4b560f8d3fff2b005ff7a0"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gammu/blobs/sha256:ec67090543b705c81803d19c3616cfa49db6bfb1d501df72ec754568a8b94a54",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gammu/blobs/sha256:d7a1bc97b049d30cd224c480d610f184e69672504b9159b591177723d5569f0a",
           "sha256": "d7a1bc97b049d30cd224c480d610f184e69672504b9159b591177723d5569f0a"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gammu/blobs/sha256:1844ae56290bf6ead655e43042e58d1358f12066e17827f5e7b6fe99f9008a2b",
+          "sha256": "1844ae56290bf6ead655e43042e58d1358f12066e17827f5e7b6fe99f9008a2b"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
   "dependencies": [
     "glib",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

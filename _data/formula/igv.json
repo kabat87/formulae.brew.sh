@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://www.broadinstitute.org/software/igv",
   "versions": {
-    "stable": "2.11.9",
+    "stable": "2.15.4",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://data.broadinstitute.org/igv/projects/downloads/2.11/IGV_2.11.9.zip",
+      "url": "https://data.broadinstitute.org/igv/projects/downloads/2.15/IGV_2.15.4.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ea6defe0f273629a0530f10d7307454f8d120025f33e0fdda1753f90fc7b70a3"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/igv/blobs/sha256:67ee38b905241a67b155fb81424a51a4466a8f088d05f7ca9731a748f64b9bfe",
-          "sha256": "67ee38b905241a67b155fb81424a51a4466a8f088d05f7ca9731a748f64b9bfe"
+          "url": "https://ghcr.io/v2/homebrew/core/igv/blobs/sha256:34bf00032ec9156f11e3d7e08a2b674bd42b3a3313951aee662221bb49ae93d4",
+          "sha256": "34bf00032ec9156f11e3d7e08a2b674bd42b3a3313951aee662221bb49ae93d4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

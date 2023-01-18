@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/clab/dynet/archive/2.1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "014505dc3da2001db54f4b8f3a7a6e7a1bb9f33a18b6081b2a4044e082dab9c8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dynet/blobs/sha256:326d11401b0db3d2294c46c7f3835cf497954f61fd14f8b6508461ef7ec6d8cf",
+          "sha256": "326d11401b0db3d2294c46c7f3835cf497954f61fd14f8b6508461ef7ec6d8cf"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dynet/blobs/sha256:5344a9cc883ddbea6def01dc950bed7aca9fe06ba67d52d10349ef46af17879b",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dynet/blobs/sha256:812e42a82c70b8c049582c897d8d6d645c7892cb29fe742bc4c857f6d915cb44",
           "sha256": "812e42a82c70b8c049582c897d8d6d645c7892cb29fe742bc4c857f6d915cb44"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dynet/blobs/sha256:88af1a5787e4b2d6919b16a94c72041009f72f2e0c58b03e11410206aa7b3eab",
+          "sha256": "88af1a5787e4b2d6919b16a94c72041009f72f2e0c58b03e11410206aa7b3eab"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "eigen"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

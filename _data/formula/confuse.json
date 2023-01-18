@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libconfuse/libconfuse/releases/download/v3.3/confuse-3.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1dd50a0320e135a55025b23fcdbb3f0a81913b6d0b0a9df8cc2fdf3b3dc67010"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/confuse/blobs/sha256:1c7aa3d075082f2742747ac5034f60c90b448c694ccc5b3330b71f1afdd81f81",
+          "sha256": "1c7aa3d075082f2742747ac5034f60c90b448c694ccc5b3330b71f1afdd81f81"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/confuse/blobs/sha256:633330ab55c7992ac1a9dcb3d990029d1445aab0d3e5c3a8c5759af2554b33d4",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/confuse/blobs/sha256:1eeec2cb7b54cf11c1e13448f191ed97d4f2477c215130b6402256678019f36e",
           "sha256": "1eeec2cb7b54cf11c1e13448f191ed97d4f2477c215130b6402256678019f36e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/confuse/blobs/sha256:5a520e7ca6ac3a7260b385c7e47cb144f888df00125a9300647b29abe4a732e9",
+          "sha256": "5a520e7ca6ac3a7260b385c7e47cb144f888df00125a9300647b29abe4a732e9"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

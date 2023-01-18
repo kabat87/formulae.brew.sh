@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.tablix.org/~avian/z80dasm/z80dasm-1.1.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "76d3967bb028f380a0c4db704a894c2aa939951faa5c5630b3355c327c0bd360"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/z80dasm/blobs/sha256:dab82764d4e4e0129f4b06e42c2482a319f4c4611c6ce2863d1ba9d98f958647",
+          "sha256": "dab82764d4e4e0129f4b06e42c2482a319f4c4611c6ce2863d1ba9d98f958647"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/z80dasm/blobs/sha256:3c9fc06c9472c51edb63417a1a810c7a2a640b3d1382e3d22e2eb54e37ae7ef0",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/z80dasm/blobs/sha256:3ff2f756e6717012ce138b0ec39d30a71080443aa34858f2e96cb86df773d82a",
           "sha256": "3ff2f756e6717012ce138b0ec39d30a71080443aa34858f2e96cb86df773d82a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/z80dasm/blobs/sha256:3b6769cacc57e6de09e2ab213c1166ef8609f6ed0f4247b6b6b42db34ce04d07",
+          "sha256": "3b6769cacc57e6de09e2ab213c1166ef8609f6ed0f4247b6b6b42db34ce04d07"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

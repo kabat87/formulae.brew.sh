@@ -13,65 +13,70 @@
   "license": "Apache-2.0",
   "homepage": "https://saltproject.io/",
   "versions": {
-    "stable": "3004",
+    "stable": "3005",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/0f/35/e4e1f092eb1a22e807f9bcc5712701bf4d55f9ab41eb2cca55680817ef05/salt-3004.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/c1/8b/f21efb024adbb6929cba84040882bf9fd6427fd786dd0596e7e23a9cf717/salt-3005.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1d200c45b88046178ea56fb5a75726dc620cc5e51411076a04df80ff52f79cd4"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:de5632a0d7015906cd66bf68464e111ca04eeecff996f612decbd68b211032f8",
+          "sha256": "de5632a0d7015906cd66bf68464e111ca04eeecff996f612decbd68b211032f8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:f3b9197394edfe8fb34ee9347dfa6956322c4b3ff06906e9338bcae49b2c7c6a",
-          "sha256": "f3b9197394edfe8fb34ee9347dfa6956322c4b3ff06906e9338bcae49b2c7c6a"
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:22ef48638590f598cb5e36170d734628fdc857b9c4643e43b5c40205051b27da",
+          "sha256": "22ef48638590f598cb5e36170d734628fdc857b9c4643e43b5c40205051b27da"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:8305b4d8a25285d3790accc72bf32533d87be0078e8b94d7d6985bbc288b4eac",
-          "sha256": "8305b4d8a25285d3790accc72bf32533d87be0078e8b94d7d6985bbc288b4eac"
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:85fb71da5cb85e826a96eaca6407bd7b61ba894e5a37d400185ff0c62993318b",
+          "sha256": "85fb71da5cb85e826a96eaca6407bd7b61ba894e5a37d400185ff0c62993318b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:de9c71cc4e4df6bc9fe4341213a177725ff1dd6cf6121ab359ea37d0576389e9",
+          "sha256": "de9c71cc4e4df6bc9fe4341213a177725ff1dd6cf6121ab359ea37d0576389e9"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:90119f731b01f13b72b29b7183d8116e1f556ef7ff07dd00ce30aef3c4035f4a",
-          "sha256": "90119f731b01f13b72b29b7183d8116e1f556ef7ff07dd00ce30aef3c4035f4a"
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:1931d3fd72880afc48f6d7b0f061b5ff4a0b9cec8ceea1a220a6cc4357bcec77",
+          "sha256": "1931d3fd72880afc48f6d7b0f061b5ff4a0b9cec8ceea1a220a6cc4357bcec77"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:fb43c3220747e15c2765cd2547dfb1e58fa1ce42bf75d3a41f7d843783414277",
-          "sha256": "fb43c3220747e15c2765cd2547dfb1e58fa1ce42bf75d3a41f7d843783414277"
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:607355368f7d24304972c9ef7586abdb17d295c73647a93c7d7d3d41533afddf",
+          "sha256": "607355368f7d24304972c9ef7586abdb17d295c73647a93c7d7d3d41533afddf"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:0b7b479e06d49678e091dc8db52cee0c0029a1443183980353cf1d35e471b326",
-          "sha256": "0b7b479e06d49678e091dc8db52cee0c0029a1443183980353cf1d35e471b326"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:0ef6d36c15f1b9ee2845e01a45be1e68860ea5d9e9a32e0b63e280ce1a5fe03e",
-          "sha256": "0ef6d36c15f1b9ee2845e01a45be1e68860ea5d9e9a32e0b63e280ce1a5fe03e"
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:50a30853d58429d88aec3b6e28903ed506820d99ecda61ec3520be6884ad4ec7",
+          "sha256": "50a30853d58429d88aec3b6e28903ed506820d99ecda61ec3520be6884ad4ec7"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:a92261447bce65f316635fb213653073e5b2246a0aca79e56d1ad9fd3f36f8dc",
-          "sha256": "a92261447bce65f316635fb213653073e5b2246a0aca79e56d1ad9fd3f36f8dc"
+          "url": "https://ghcr.io/v2/homebrew/core/salt/blobs/sha256:571660eef0587e9347f72453ae4204ba064120d27e70a8df15929d8e5b15493f",
+          "sha256": "571660eef0587e9347f72453ae4204ba064120d27e70a8df15929d8e5b15493f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +90,9 @@
     "python@3.10",
     "six",
     "zeromq"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,17 +109,36 @@
   "conflicts_with": [
 
   ],
-  "caveats": "Sample configuration files have been placed in $(brew --prefix)/etc/saltstack.\nSaltstack will not use these by default.\n\nHomebrew's installation does not include PyObjC.\n",
+  "caveats": "Sample configuration files have been placed in $(brew --prefix)/etc/saltstack.\nSaltstack will not use these by default.\n",
   "installed": [
 
   ],
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-08-31",
+  "deprecation_reason": "next version will require a vendored python",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "swig",
+        "pkg-config"
+      ],
+      "dependencies": [
+        "libgit2",
+        "libyaml",
+        "openssl@1.1",
+        "python@3.10",
+        "six",
+        "zeromq",
+        "libffi",
+        "gmp",
+        "pcre"
+      ]
+    }
+  }
 }

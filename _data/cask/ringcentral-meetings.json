@@ -3,7 +3,7 @@
   "full_token": "ringcentral-meetings",
   "tap": "homebrew/cask",
   "name": [
-    "RingCentral Meetings for Mac"
+    "RingCentral Meetings"
   ],
   "desc": "Video conferencing, screen sharing, and team messaging platform",
   "homepage": "https://www.ringcentral.com/online-meetings/overview.html",
@@ -17,27 +17,38 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "delete": "/Applications/RingCentral Meetings.app",
-      "pkgutil": "us.zoom.pkg.ringcentral",
-      "quit": "us.zoom.RingCentralOpener",
-      "signal": {
-        "KILL": "us.zoom.ringcentral"
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/RingCentral Meetings.app",
+          "pkgutil": "us.zoom.pkg.ringcentral",
+          "quit": "us.zoom.RingCentralOpener",
+          "signal": [
+            "KILL",
+            "us.zoom.ringcentral"
+          ]
+        }
+      ]
     },
-    "RCMeetingsClientSetup.pkg (Pkg)",
     {
-      "trash": [
-        "~/Desktop/RingCentral Meetings",
-        "~/Library/Application Support/RingCentral Meetings",
-        "~/Library/Caches/us.zoom.ringcentral",
-        "~/Library/Internet Plug-Ins/RingCentralMeetings.plugin",
-        "~/Library/Logs/RingCentralMeetings",
-        "~/Library/Logs/rcmeetingsinstall.log",
-        "~/Library/Preferences/us.zoom.ringcentral.plist",
-        "~/Library/Saved Application State/us.zoom.ringcentral.savedState"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "RCMeetingsClientSetup.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Desktop/RingCentral Meetings",
+            "~/Library/Application Support/RingCentral Meetings",
+            "~/Library/Caches/us.zoom.ringcentral",
+            "~/Library/Internet Plug-Ins/RingCentralMeetings.plugin",
+            "~/Library/Logs/rcmeetingsinstall.log",
+            "~/Library/Logs/RingCentralMeetings",
+            "~/Library/Preferences/us.zoom.ringcentral.plist",
+            "~/Library/Saved Application State/us.zoom.ringcentral.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +56,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

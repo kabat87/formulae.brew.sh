@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Pulse-Eight/libcec/archive/libcec-6.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "090696d7a4fb772d7acebbb06f91ab92e025531c7c91824046b9e4e71ecb3377"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcec/blobs/sha256:8f1be1bc0bd2e1d6612b6b080d2ce33c2c9658f6af25bca73ca8eafc73c65a25",
+          "sha256": "8f1be1bc0bd2e1d6612b6b080d2ce33c2c9658f6af25bca73ca8eafc73c65a25"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcec/blobs/sha256:e4f3ba0cb7eef028a29ce8b6473873925e7f1fde5c0363262a1c61873cf27eb6",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcec/blobs/sha256:56ba06a96084c73cc8bd5bec4be5aff675702cadeb91b9aba710de25aeb20e2e",
           "sha256": "56ba06a96084c73cc8bd5bec4be5aff675702cadeb91b9aba710de25aeb20e2e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcec/blobs/sha256:153faa4104189cefaead9bdec8d3ea390c4f19a174ef54849ef4aa9ae777d2a7",
+          "sha256": "153faa4104189cefaead9bdec8d3ea390c4f19a174ef54849ef4aa9ae777d2a7"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

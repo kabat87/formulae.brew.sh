@@ -7,25 +7,29 @@
   ],
   "desc": "3D polygonal modeler and UV mapper",
   "homepage": "https://nevercenter.com/silo/",
-  "url": "https://nevercenter.com/silo/download/filearchive/Install_Silo_2021_40_mac.dmg",
+  "url": "https://nevercenter.com/silo/download/filearchive/Install_Silo_2023_00_mac.dmg",
   "appcast": null,
-  "version": "2021.4.0",
+  "version": "2023.0.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "5600da9ab3e5b166e01f63525b1ad64651c307212563891cc73448cd0d646184",
+  "sha256": "a46416e77d56c0ed0cf922d96a992310bda26a70bc803b9110ead828e062452f",
   "artifacts": [
-    [
-      "Silo.app"
-    ],
     {
-      "trash": [
-        "/Library/Caches/com.nevercenter.silo",
-        "~/Library/Application Support/com.nevercenter.silo"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Silo.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/Caches/com.nevercenter.silo",
+            "~/Library/Application Support/com.nevercenter.silo"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

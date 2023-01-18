@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/specious/osxutils/archive/v1.9.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9c11d989358ed5895d9af7644b9295a17128b37f41619453026f67e99cb7ecab"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/osxutils/blobs/sha256:6b0ede5abb14b36d57990316d9f77a47af1ba28bf3b11b908d0da7a5d2672e5c",
+          "sha256": "6b0ede5abb14b36d57990316d9f77a47af1ba28bf3b11b908d0da7a5d2672e5c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/osxutils/blobs/sha256:ba6b55b6d292736fcc636f2afdc9f36e357ff2c4634936a1c357ab292b7e7817",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/osxutils/blobs/sha256:c5d4050cda7e5ede43231c7195ffa1eb06bf5e3b5a1efa6acf8243a0e8ee424a",
           "sha256": "c5d4050cda7e5ede43231c7195ffa1eb06bf5e3b5a1efa6acf8243a0e8ee424a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/osxutils/blobs/sha256:1a2be836a80538dedfc42b2c0143a284c7ecc2c6b635815b52bb9f9f91dd8a59",
+          "sha256": "1a2be836a80538dedfc42b2c0143a284c7ecc2c6b635815b52bb9f9f91dd8a59"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -126,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

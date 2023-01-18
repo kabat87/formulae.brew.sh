@@ -1,8 +1,11 @@
 cask "burp-suite" do
-  version "2021.12.1"
-  sha256 "bec817afc59faa60b20ba4761af471b0b09925dac128c30326438d13e746d2e6"
+  arch arm: "MacOsArm64", intel: "MacOsx"
 
-  url "https://portswigger.net/burp/releases/download?product=community&version=#{version}&type=MacOsx"
+  version "2022.12.6"
+  sha256 arm:   "d87a7a2e74e70bd891b90bd61663bc7bbdf0acb8edb40a6b0e8256ee8802ad57",
+         intel: "6513c9588fb1c672f5a98d28a5f2278ae8ee988894234907d4013374d3205d5c"
+
+  url "https://portswigger.net/burp/releases/download?product=community&version=#{version}&type=#{arch}"
   name "Burp Suite Community Edition"
   desc "Web security testing toolkit"
   homepage "https://portswigger.net/burp/"
@@ -18,7 +21,7 @@ cask "burp-suite" do
               item["releaseChannels"].include?("Stable") &&
               item["categories"].include?("Community") &&
               item["builds"].any? do |build|
-                build["ProductPlatform"] == "MacOsx"
+                build["ProductPlatform"] == arch.to_s
               end
       end.compact
     end

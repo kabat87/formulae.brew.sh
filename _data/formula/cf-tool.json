@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/xalanq/cf-tool/archive/v1.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6671392df969e7decf9bf6b89a43a93c2bde978e005e99ddb7fd84b0c513df9f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cf-tool/blobs/sha256:db68eca93a5d2e78dbb5079441492024be252667a7227da623a2a4f06c72f6a4",
+          "sha256": "db68eca93a5d2e78dbb5079441492024be252667a7227da623a2a4f06c72f6a4"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cf-tool/blobs/sha256:39975453217f3c04031a9ac02b0e94fe620e9d870be16adfc8c71ec02032b7bd",
@@ -66,14 +72,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -86,7 +94,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -98,10 +114,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-03-16",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

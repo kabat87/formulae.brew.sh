@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/fifengine/fifechan/archive/0.1.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "29be5ff4b379e2fc4f88ef7d8bc172342130dd3e77a3061f64c8a75efe4eba73"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fifechan/blobs/sha256:a8deaa164106ac1b37cc156fc4707b8517b07194cf87adc348094600dfbd40b6",
+          "sha256": "a8deaa164106ac1b37cc156fc4707b8517b07194cf87adc348094600dfbd40b6"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fifechan/blobs/sha256:462d21b6d9e655b260847f1aace8c011f07145d335aaaf1984c09fbfc2712699",
+          "sha256": "462d21b6d9e655b260847f1aace8c011f07145d335aaaf1984c09fbfc2712699"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fifechan/blobs/sha256:73f4cff07f6b17373b6c3c94734aa26de09a5cf6c9ec25e92b35d66c605ba728",
           "sha256": "73f4cff07f6b17373b6c3c94734aa26de09a5cf6c9ec25e92b35d66c605ba728"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fifechan/blobs/sha256:f10339a3a2211ec705b3d57306dcd884b13a921d96806c2b47fed05cb68efe41",
+          "sha256": "f10339a3a2211ec705b3d57306dcd884b13a921d96806c2b47fed05cb68efe41"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fifechan/blobs/sha256:d1bbc100bb520395b6298b89ac2b71b48cdfc7df30e526177340b0fec4b58500",
+          "sha256": "d1bbc100bb520395b6298b89ac2b71b48cdfc7df30e526177340b0fec4b58500"
         },
         "big_sur": {
           "cellar": ":any",
@@ -55,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fifechan/blobs/sha256:725c25c62dd609dd58d19c25b484398e9e68f19a9cb7aa3c1d1877b53ed9615a",
           "sha256": "725c25c62dd609dd58d19c25b484398e9e68f19a9cb7aa3c1d1877b53ed9615a"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/fifechan/blobs/sha256:74a7a968d5242dfdcf05c0c35bd360770f87afe32adc6dbacb2850ff117f6d5a",
+          "sha256": "74a7a968d5242dfdcf05c0c35bd360770f87afe32adc6dbacb2850ff117f6d5a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -73,6 +98,9 @@
     "sdl2",
     "sdl2_image",
     "sdl2_ttf"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

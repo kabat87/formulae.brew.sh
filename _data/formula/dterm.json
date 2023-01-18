@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.knossos.net.nz/downloads/dterm-0.5.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "94533be79f1eec965e59886d5f00a35cb675c5db1d89419f253bb72f140abddb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dterm/blobs/sha256:a3ed01df00b32efe7a637e827ae2aec70a6d10063cef2128b7246a58f4f1e7a0",
+          "sha256": "a3ed01df00b32efe7a637e827ae2aec70a6d10063cef2128b7246a58f4f1e7a0"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dterm/blobs/sha256:f26bc52d3523b70ac1265b8b04fd739a91988cf3841b49d837efa0561a278045",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dterm/blobs/sha256:c7da6c39a5a9edb1ed37346d39e2ebc40f64733f1607ae6290c4c3ab063e3b00",
           "sha256": "c7da6c39a5a9edb1ed37346d39e2ebc40f64733f1607ae6290c4c3ab063e3b00"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dterm/blobs/sha256:cd3012cae88862d3935972cfa4c93b64ceb5937f4869656450f81ef7797009b1",
+          "sha256": "cd3012cae88862d3935972cfa4c93b64ceb5937f4869656450f81ef7797009b1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/dterm/blobs/sha256:6e18a2f46faa55e99fe070c7fd5e95940d66a5295f694605c9e90b416b577d37",
           "sha256": "6e18a2f46faa55e99fe070c7fd5e95940d66a5295f694605c9e90b416b577d37"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dterm/blobs/sha256:353231f24cda3e48779652002067ac2650b0182f4e7f69fc86b059139daf4511",
-          "sha256": "353231f24cda3e48779652002067ac2650b0182f4e7f69fc86b059139daf4511"
+          "url": "https://ghcr.io/v2/homebrew/core/dterm/blobs/sha256:e32e1bc798fb4622c7fc33cd62f36fad897329075a8f738708fc319c08e82505",
+          "sha256": "e32e1bc798fb4622c7fc33cd62f36fad897329075a8f738708fc319c08e82505"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "readline"
+      ]
+    }
+  }
 }

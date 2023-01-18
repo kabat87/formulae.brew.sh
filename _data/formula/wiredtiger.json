@@ -13,15 +13,16 @@
   "license": "GPL-2.0-only or GPL-3.0-only",
   "homepage": "https://source.wiredtiger.com/",
   "versions": {
-    "stable": "10.0.0",
+    "stable": "11.1.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/wiredtiger/wiredtiger/releases/download/10.0.0/wiredtiger-10.0.0.tar.bz2",
+      "url": "https://github.com/wiredtiger/wiredtiger/archive/refs/tags/11.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0d988a8256219b614d855a2504d252975240171a633b882f19149c4a2ce0ec3d"
     }
   },
   "revision": 0,
@@ -31,55 +32,61 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:e702595127c63e553e171080dfcece136fba68f49033ae7b31025469033b00f3",
+          "sha256": "e702595127c63e553e171080dfcece136fba68f49033ae7b31025469033b00f3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:4b72a7ac0c4f99e3fa6cdd8395f03bf0c819ccbcd90e9e4ce373de6e016180f4",
-          "sha256": "4b72a7ac0c4f99e3fa6cdd8395f03bf0c819ccbcd90e9e4ce373de6e016180f4"
+          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:a5c31bedec633c773be322ab3b7aa8e74fd947b27158647ad04cf55be79fe07a",
+          "sha256": "a5c31bedec633c773be322ab3b7aa8e74fd947b27158647ad04cf55be79fe07a"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:2e2b170afa925805d7f94e127dc6c66f7ae5d042a37860e736e9c6cbf1696acb",
-          "sha256": "2e2b170afa925805d7f94e127dc6c66f7ae5d042a37860e736e9c6cbf1696acb"
+          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:ffd74182dc67713a3752aa15c0cd7bc2811486b059f3211c43f1d879de6153ff",
+          "sha256": "ffd74182dc67713a3752aa15c0cd7bc2811486b059f3211c43f1d879de6153ff"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:27db1920028d44d7a4f538212b16864c5992740a21b72f3abf9e3a2f9805b3b5",
+          "sha256": "27db1920028d44d7a4f538212b16864c5992740a21b72f3abf9e3a2f9805b3b5"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:2d693bed27b7602f8645f861bd063f98ef9e9653294e238550a57c4fbb762924",
-          "sha256": "2d693bed27b7602f8645f861bd063f98ef9e9653294e238550a57c4fbb762924"
+          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:c0ec5fb4fc6e989cfd2d204297fabc4992f59faa8a08720d348445cb978be0f5",
+          "sha256": "c0ec5fb4fc6e989cfd2d204297fabc4992f59faa8a08720d348445cb978be0f5"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:73dec56cf3779376bb1e111c6d96900bfd73e5df072dfce752defaf06d98b167",
-          "sha256": "73dec56cf3779376bb1e111c6d96900bfd73e5df072dfce752defaf06d98b167"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:16d0323167834b745163edf87b88693a7b49ace3f901042c0d78fbfbe5afa8a8",
-          "sha256": "16d0323167834b745163edf87b88693a7b49ace3f901042c0d78fbfbe5afa8a8"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:0c2bbb142e29427648f66455b69028d1650b3d420700d31e952a70e58cc361f8",
-          "sha256": "0c2bbb142e29427648f66455b69028d1650b3d420700d31e952a70e58cc361f8"
+          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:a4352f0a56362dad537c4c2ed02ac3a080e009b9bcf231b918aed064fdb10258",
+          "sha256": "a4352f0a56362dad537c4c2ed02ac3a080e009b9bcf231b918aed064fdb10258"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:2e89496c6a6af975b83b16006c84ef7c69d7df3b0e127e2f58a3b2ff6cfc860f",
-          "sha256": "2e89496c6a6af975b83b16006c84ef7c69d7df3b0e127e2f58a3b2ff6cfc860f"
+          "url": "https://ghcr.io/v2/homebrew/core/wiredtiger/blobs/sha256:5718df46cf1737703d1977762a8c4632cb6207ea6a98fa5a7a3450acabf4ffa8",
+          "sha256": "5718df46cf1737703d1977762a8c4632cb6207ea6a98fa5a7a3450acabf4ffa8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "ccache",
+    "cmake",
+    "swig"
   ],
   "dependencies": [
-    "snappy"
+    "lz4",
+    "snappy",
+    "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +115,21 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "ccache",
+        "cmake",
+        "swig",
+        "python@3.11"
+      ],
+      "dependencies": [
+        "lz4",
+        "snappy",
+        "zstd",
+        "zlib"
+      ]
+    }
+  }
 }

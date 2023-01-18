@@ -1,5 +1,5 @@
 cask "ltspice" do
-  version "17.0.40"
+  version "17.0.42"
   sha256 :no_check
 
   url "https://ltspice.analog.com/software/LTspice.pkg"
@@ -17,9 +17,9 @@ cask "ltspice" do
   uninstall pkgutil: "com.analog.LTspice.App"
 
   zap trash: [
-    "~/Documents/LTspice/examples",
-    "~/Library/Application Support/LTspice",
-    "~/Library/Preferences/com.analog.LTspice.App.plist",
-  ],
+        "~/Documents/LTspice/examples",
+        "~/Library/Application Support/LTspice",
+        "~/Library/Preferences/com.analog.LTspice.App.plist",
+      ],
       rmdir: "~/Documents/LTspice"
 end

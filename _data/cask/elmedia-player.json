@@ -6,34 +6,45 @@
     "Elmedia Player"
   ],
   "desc": "Video and audio player",
-  "homepage": "https://mac.eltima.com/media-player.html",
-  "url": "https://cdn.eltima.com/download/elmediaplayer.dmg",
+  "homepage": "https://www.electronic.us/products/elmedia/",
+  "url": "https://cdn.electronic.us/products/elmedia/mac/download/elmediaplayer.dmg",
   "appcast": null,
-  "version": "8.2,2985",
+  "version": "8.12,3287",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Elmedia Player.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.Eltima.ElmediaPlayer",
-        "~/Library/Preferences/com.Eltima.ElmediaPlayer.LSSharedFileList.plist",
-        "~/Library/Preferences/com.Eltima.ElmediaPlayer.plist",
-        "~/Library/Preferences/com.eltima.activator.xml"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Elmedia Player.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.Eltima.ElmediaPlayer",
+            "~/Library/Preferences/com.Eltima.ElmediaPlayer.LSSharedFileList.plist",
+            "~/Library/Preferences/com.Eltima.ElmediaPlayer.plist",
+            "~/Library/Preferences/com.eltima.activator.xml"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.12"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

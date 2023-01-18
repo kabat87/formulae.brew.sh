@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/txthinking/zoro/archive/v20211230.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5e78704f4d955cc4fd6dcc3395392e52516f00296cb65454f6959d4b7b54e319"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zoro/blobs/sha256:1494b28b437b7a43938455261dd3ec5f118d9f45ef85124893da72b948f57413",
+          "sha256": "1494b28b437b7a43938455261dd3ec5f118d9f45ef85124893da72b948f57413"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zoro/blobs/sha256:8a527ad3a8feeb3f659d75f0146843339e4377a63a72cd14e987c77bbebd3647",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zoro/blobs/sha256:62e51e52666b734d3ab5bf05d39f2af1fa5bc657cc96c5c34e25fcddc2e0689c",
           "sha256": "62e51e52666b734d3ab5bf05d39f2af1fa5bc657cc96c5c34e25fcddc2e0689c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zoro/blobs/sha256:8f4b199fb8f35aaac204ae34d44c0df3d596b982d2adc50d2b3799b418bad6ef",
+          "sha256": "8f4b199fb8f35aaac204ae34d44c0df3d596b982d2adc50d2b3799b418bad6ef"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

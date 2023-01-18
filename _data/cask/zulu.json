@@ -7,31 +7,51 @@
   ],
   "desc": "OpenJDK distribution from Azul",
   "homepage": "https://www.azul.com/downloads/",
-  "url": "https://cdn.azul.com/zulu/bin/zulu17.30.15-ca-jdk17.0.1-macosx_x64.dmg",
+  "url": "https://cdn.azul.com/zulu/bin/zulu19.30.11-ca-jdk19.0.1-macosx_x64.dmg",
   "appcast": null,
-  "version": "17.0.1,17.30.15-ca",
+  "version": "19.0.1,19.30.11-ca",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "34311143c9da6f4993d073979f64c1a4272990261a429dcb9e4a231c6236bccf",
+  "sha256": "cd3669020312b1ff584ddb96a6d270f84f8ec2523d514b26ed188a41c7f280d6",
   "artifacts": [
     {
-      "pkgutil": "com.azulsystems.zulu.17",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.azulsystems.zulu.19"
+        }
+      ]
     },
-    "Double-Click to Install Azul Zulu JDK 17.pkg (Pkg)"
+    {
+      "pkg": [
+        "Double-Click to Install Azul Zulu JDK 19.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://cdn.azul.com/zulu/bin/zulu19.30.11-ca-jdk19.0.1-macosx_aarch64.dmg",
+      "sha256": "b90964ba680a64f793c9bd464193f0f37dc81509ffcd52b96526df75fb901ae6"
+    },
+    "arm64_monterey": {
+      "url": "https://cdn.azul.com/zulu/bin/zulu19.30.11-ca-jdk19.0.1-macosx_aarch64.dmg",
+      "sha256": "b90964ba680a64f793c9bd464193f0f37dc81509ffcd52b96526df75fb901ae6"
+    },
+    "arm64_big_sur": {
+      "url": "https://cdn.azul.com/zulu/bin/zulu19.30.11-ca-jdk19.0.1-macosx_aarch64.dmg",
+      "sha256": "b90964ba680a64f793c9bd464193f0f37dc81509ffcd52b96526df75fb901ae6"
+    }
+  }
 }

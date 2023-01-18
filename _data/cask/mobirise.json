@@ -9,25 +9,29 @@
   "homepage": "https://mobirise.com/",
   "url": "https://download.mobirise.com/MobiriseSetup.dmg",
   "appcast": null,
-  "version": "5.4.0",
+  "version": "5.7.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Mobirise.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Mobirise",
-        "~/Library/Application Support/Mobirise.com",
-        "~/Library/Preferences/com.mobirise.Mobirise.plist",
-        "~/Library/Saved Application State/com.mobirise.Mobirise.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Mobirise.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Mobirise",
+            "~/Library/Application Support/Mobirise.com",
+            "~/Library/Preferences/com.mobirise.Mobirise.plist",
+            "~/Library/Saved Application State/com.mobirise.Mobirise.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

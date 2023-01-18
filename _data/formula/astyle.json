@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/astyle/astyle/astyle%203.1/astyle_3.1_linux.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cbcc4cf996294534bb56f025d6f199ebfde81aa4c271ccbd5ee1c1a3192745d7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/astyle/blobs/sha256:67a6f2d21a759aad0aa0ebf2fb74e3d2c4cd5404bab85793eb7334b5a73c40ae",
+          "sha256": "67a6f2d21a759aad0aa0ebf2fb74e3d2c4cd5404bab85793eb7334b5a73c40ae"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/astyle/blobs/sha256:7db1ad4d3520edb8177939efd807958cb7687a147d29eb7fdd0edbd93f785ed6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/astyle/blobs/sha256:f1cc43739c9ff8b7e21f03935eacbc29a0656d42d4b52e662ed0079751efe84f",
           "sha256": "f1cc43739c9ff8b7e21f03935eacbc29a0656d42d4b52e662ed0079751efe84f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/astyle/blobs/sha256:2efb6f1f92612273151b27b9513b36b9f28365ab546eeb83153e07cc4a4cca3d",
+          "sha256": "2efb6f1f92612273151b27b9513b36b9f28365ab546eeb83153e07cc4a4cca3d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

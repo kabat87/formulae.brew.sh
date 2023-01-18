@@ -7,27 +7,31 @@
   ],
   "desc": "Collaborative wiki and knowledgebase",
   "homepage": "https://www.nuclino.com/",
-  "url": "https://s3.eu-central-1.amazonaws.com/repository.nuclino.com/mac/Nuclino-1.5.0.dmg",
+  "url": "https://s3.eu-central-1.amazonaws.com/repository.nuclino.com/mac/Nuclino-1.6.4-x64.dmg",
   "appcast": null,
-  "version": "1.5.0",
+  "version": "1.6.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3558cdd638c3bf3a2cf5130267f092960389050ea5336e133d8e66154a4ba1c3",
+  "sha256": "74c351a3e3b4e3c37e1fa9ef0cd9a8af13a36ea3e75daf3f397002bd52d68f60",
   "artifacts": [
-    [
-      "Nuclino.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Nuclino",
-        "~/Library/Caches/nuclino-desktop-updater",
-        "~/Library/Logs/Nuclino",
-        "~/Library/Preferences/com.nuclino.desktop.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Nuclino.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Nuclino",
+            "~/Library/Caches/nuclino-desktop-updater",
+            "~/Library/Logs/Nuclino",
+            "~/Library/Preferences/com.nuclino.desktop.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

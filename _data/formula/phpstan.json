@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/phpstan/phpstan",
   "versions": {
-    "stable": "1.4.0",
+    "stable": "1.9.12",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/phpstan/phpstan/releases/download/1.4.0/phpstan.phar",
+      "url": "https://github.com/phpstan/phpstan/releases/download/1.9.12/phpstan.phar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b6930d845118e09b72db758426005cf0d27901947ed91eaa45689f4ec9de54de"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f",
+          "sha256": "b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:ece0664ae72b29c0bf7119f76bb575079be47b855cfd2b4251cef7417c32ae96",
-          "sha256": "ece0664ae72b29c0bf7119f76bb575079be47b855cfd2b4251cef7417c32ae96"
+          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f",
+          "sha256": "b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:ece0664ae72b29c0bf7119f76bb575079be47b855cfd2b4251cef7417c32ae96",
-          "sha256": "ece0664ae72b29c0bf7119f76bb575079be47b855cfd2b4251cef7417c32ae96"
+          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f",
+          "sha256": "b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:f7561909f867716868f3fcbb8116b8169483019f18def68aeee51b11b5457804",
+          "sha256": "f7561909f867716868f3fcbb8116b8169483019f18def68aeee51b11b5457804"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:a4041035bbd0ddb5b50b7c7dd83597aa5f3731edddfd45c23156ecd6147d14ca",
-          "sha256": "a4041035bbd0ddb5b50b7c7dd83597aa5f3731edddfd45c23156ecd6147d14ca"
+          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:f7561909f867716868f3fcbb8116b8169483019f18def68aeee51b11b5457804",
+          "sha256": "f7561909f867716868f3fcbb8116b8169483019f18def68aeee51b11b5457804"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:a4041035bbd0ddb5b50b7c7dd83597aa5f3731edddfd45c23156ecd6147d14ca",
-          "sha256": "a4041035bbd0ddb5b50b7c7dd83597aa5f3731edddfd45c23156ecd6147d14ca"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:a4041035bbd0ddb5b50b7c7dd83597aa5f3731edddfd45c23156ecd6147d14ca",
-          "sha256": "a4041035bbd0ddb5b50b7c7dd83597aa5f3731edddfd45c23156ecd6147d14ca"
+          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:f7561909f867716868f3fcbb8116b8169483019f18def68aeee51b11b5457804",
+          "sha256": "f7561909f867716868f3fcbb8116b8169483019f18def68aeee51b11b5457804"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:ece0664ae72b29c0bf7119f76bb575079be47b855cfd2b4251cef7417c32ae96",
-          "sha256": "ece0664ae72b29c0bf7119f76bb575079be47b855cfd2b4251cef7417c32ae96"
+          "url": "https://ghcr.io/v2/homebrew/core/phpstan/blobs/sha256:b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f",
+          "sha256": "b3137448c1d4ce9fd9515e4c7fe055ea98a74b0e0da60b1f7eafd05db5d8174f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
     "php"
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

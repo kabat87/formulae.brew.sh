@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tatsuhiro-t/wslay/releases/download/release-1.1.1/wslay-1.1.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "166cfa9e3971f868470057ed924ae1b53f428db061b361b9a17c0508719d2cb5"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wslay/blobs/sha256:696c0681644905529efaaa30ab237023dc12c9a726af0bd7c700302308401a2a",
+          "sha256": "696c0681644905529efaaa30ab237023dc12c9a726af0bd7c700302308401a2a"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wslay/blobs/sha256:f09d67afcce3498de58ebcb20cf0c5478ff9cd909fa3841a9545e526c31f9b34",
+          "sha256": "f09d67afcce3498de58ebcb20cf0c5478ff9cd909fa3841a9545e526c31f9b34"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/wslay/blobs/sha256:3921e0d42b7388dd8229d2019d67319330b7c53e862c120612b72565a7eff37f",
           "sha256": "3921e0d42b7388dd8229d2019d67319330b7c53e862c120612b72565a7eff37f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wslay/blobs/sha256:643367160b3009f918296e97316bb9e353cca450e0e10e79db7053ba5e563afb",
+          "sha256": "643367160b3009f918296e97316bb9e353cca450e0e10e79db7053ba5e563afb"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wslay/blobs/sha256:9d44bad51a861ee84b5cbdf755d7f786b4b54b49441cc5e424b1921983de0d7d",
+          "sha256": "9d44bad51a861ee84b5cbdf755d7f786b4b54b49441cc5e424b1921983de0d7d"
         },
         "big_sur": {
           "cellar": ":any",
@@ -66,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +96,9 @@
     "sphinx-doc"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -105,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

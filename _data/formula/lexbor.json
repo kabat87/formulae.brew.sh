@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/lexbor/lexbor/archive/refs/tags/v2.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f3aeeb0c47d9d34b7b32411ce6a8fe833b825fa21730a593c32f53c9834a3f0d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lexbor/blobs/sha256:4c774414ad87eed57d9cfc6acdf3fbdefd1f79e2aa32606ba8647986403d857d",
+          "sha256": "4c774414ad87eed57d9cfc6acdf3fbdefd1f79e2aa32606ba8647986403d857d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lexbor/blobs/sha256:049e9dcce3ab4f13d659346cd8e437df6fa1436835148cd77b9a692c892247a5",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lexbor/blobs/sha256:7ff7b35d9f6c4eb4ed63a7dde659430d17ca5c48564d6702dc9b4e1ea955592c",
           "sha256": "7ff7b35d9f6c4eb4ed63a7dde659430d17ca5c48564d6702dc9b4e1ea955592c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lexbor/blobs/sha256:b07d98d4d1af57d0306f87201a7732e4dc2e134b496ea9d61f433fbb09d2d0a4",
+          "sha256": "b07d98d4d1af57d0306f87201a7732e4dc2e134b496ea9d61f433fbb09d2d0a4"
         },
         "monterey": {
           "cellar": ":any",
@@ -60,13 +71,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lexbor/blobs/sha256:d6ad60202c6e4b55b3a88fedd550a87c644592ff42d391f322d177ca7bbbf829",
           "sha256": "d6ad60202c6e4b55b3a88fedd550a87c644592ff42d391f322d177ca7bbbf829"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lexbor/blobs/sha256:352ac6adcbff469c1f691015b623f41f864ab4425225a0606a333a47e66d137c",
+          "sha256": "352ac6adcbff469c1f691015b623f41f864ab4425225a0606a333a47e66d137c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

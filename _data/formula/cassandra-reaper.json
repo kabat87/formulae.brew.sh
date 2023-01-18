@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://cassandra-reaper.io/",
   "versions": {
-    "stable": "3.1.0",
+    "stable": "3.2.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/thelastpickle/cassandra-reaper/releases/download/3.1.0/cassandra-reaper-3.1.0-release.tar.gz",
+      "url": "https://github.com/thelastpickle/cassandra-reaper/releases/download/3.2.1/cassandra-reaper-3.2.1-release.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "df5a67a141f4ead686dad4accf4720579d5c41e54d63e8beb22a7baaa51a7646"
     }
   },
   "revision": 0,
@@ -31,27 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "big_sur": {
+        "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra-reaper/blobs/sha256:033a478cada5d4122b9d901933c04dff244766217b4011c54e903e698c8f30ed",
-          "sha256": "033a478cada5d4122b9d901933c04dff244766217b4011c54e903e698c8f30ed"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra-reaper/blobs/sha256:033a478cada5d4122b9d901933c04dff244766217b4011c54e903e698c8f30ed",
-          "sha256": "033a478cada5d4122b9d901933c04dff244766217b4011c54e903e698c8f30ed"
-        },
-        "x86_64_linux": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra-reaper/blobs/sha256:1332882726428c2293357e513c45fa9be9572dfefdebccaac29323b099e6f870",
-          "sha256": "1332882726428c2293357e513c45fa9be9572dfefdebccaac29323b099e6f870"
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra-reaper/blobs/sha256:f0ab0493764430990c28cfe5c42a82032d9aa995bd0bfe3dd161815e44bdebc9",
+          "sha256": "f0ab0493764430990c28cfe5c42a82032d9aa995bd0bfe3dd161815e44bdebc9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -59,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@8"
+    "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -88,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

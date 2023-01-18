@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://www.x.org/",
   "versions": {
-    "stable": "1.0.10",
+    "stable": "1.1.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.x.org/archive/individual/lib/libICE-1.0.10.tar.bz2",
+      "url": "https://www.x.org/archive/individual/lib/libICE-1.1.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "03e77afaf72942c7ac02ccebb19034e6e20f456dcf8dddadfeb572aa5ad3e451"
     }
   },
   "revision": 0,
@@ -31,52 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:4b76f982119e65321f62bbb740a549d08f280ab7055496210ac78acf6505a6c4",
+          "sha256": "4b76f982119e65321f62bbb740a549d08f280ab7055496210ac78acf6505a6c4"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:da66282c46cd687e0e827a69e4027220a93185c8b7d37e2816cace43b856e92f",
-          "sha256": "da66282c46cd687e0e827a69e4027220a93185c8b7d37e2816cace43b856e92f"
+          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:2b30372decf9b63bb1c02d6dabe2eb8216eefd7abbb71e902863ceac1633dcaa",
+          "sha256": "2b30372decf9b63bb1c02d6dabe2eb8216eefd7abbb71e902863ceac1633dcaa"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:647f1d1e042e0ae014789da539e03f426f15d44ad66c707e74eb9b5b1290529a",
-          "sha256": "647f1d1e042e0ae014789da539e03f426f15d44ad66c707e74eb9b5b1290529a"
+          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:34577a485f10e25e38e27606158bd082e460a36874532bbc0e720bd71f5b9db8",
+          "sha256": "34577a485f10e25e38e27606158bd082e460a36874532bbc0e720bd71f5b9db8"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:be08a5e12f40f1f2e5fc780ca8735969a41b5f2f5d5994788721de92120828bd",
+          "sha256": "be08a5e12f40f1f2e5fc780ca8735969a41b5f2f5d5994788721de92120828bd"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:aabfa457aa9b2ffb1340a67b40cfb95f83ac0324e052032898db9023fa5cb847",
-          "sha256": "aabfa457aa9b2ffb1340a67b40cfb95f83ac0324e052032898db9023fa5cb847"
+          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:a6c573ba977c781d5d6c8a5a361ed109b7bdb94f8ba0907a0ff4fc69cd425baa",
+          "sha256": "a6c573ba977c781d5d6c8a5a361ed109b7bdb94f8ba0907a0ff4fc69cd425baa"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:19b9ff02ad9cd6cb6de1a0e1a69ab34add27f153b97487cac708b88cc1c3219a",
-          "sha256": "19b9ff02ad9cd6cb6de1a0e1a69ab34add27f153b97487cac708b88cc1c3219a"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:4c5c97814304360fdaeec959107e79e9fdb62ba151159ca55342944efec4bd82",
-          "sha256": "4c5c97814304360fdaeec959107e79e9fdb62ba151159ca55342944efec4bd82"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:d7249247483e6ee2787e66c7f887a7df52aedd5abd2558ae377b5d16e3b6275e",
-          "sha256": "d7249247483e6ee2787e66c7f887a7df52aedd5abd2558ae377b5d16e3b6275e"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:b5f1f14bc4fd8d18fd19b2552ddc898f53f573015de0706289de54c177b16eb4",
-          "sha256": "b5f1f14bc4fd8d18fd19b2552ddc898f53f573015de0706289de54c177b16eb4"
+          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:041d92a0fbdd7f581ac42bf05d63ff8156c52d5ce6218b92aa0929d221ece18c",
+          "sha256": "041d92a0fbdd7f581ac42bf05d63ff8156c52d5ce6218b92aa0929d221ece18c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:6a4f7025e876d05b0fef0d624f81336648dba225eb94754d42222bca47fa1452",
-          "sha256": "6a4f7025e876d05b0fef0d624f81336648dba225eb94754d42222bca47fa1452"
+          "url": "https://ghcr.io/v2/homebrew/core/libice/blobs/sha256:aed9bb2a55522c29d05b499b235181e2474d34e242991238e8322b3d8222ecb7",
+          "sha256": "aed9bb2a55522c29d05b499b235181e2474d34e242991238e8322b3d8222ecb7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,8 +80,10 @@
     "xtrans"
   ],
   "dependencies": [
-    "libx11",
     "xorgproto"
+  ],
+  "test_dependencies": [
+    "libx11"
   ],
   "recommended_dependencies": [
 
@@ -115,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

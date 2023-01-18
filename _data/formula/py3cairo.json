@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-only or MPL-1.1",
   "homepage": "https://cairographics.org/pycairo/",
   "versions": {
-    "stable": "1.20.1",
+    "stable": "1.23.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/pygobject/pycairo/releases/download/v1.20.1/pycairo-1.20.1.tar.gz",
+      "url": "https://github.com/pygobject/pycairo/releases/download/v1.23.0/pycairo-1.23.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9b61ac818723adc04367301317eb2e814a83522f07bbd1f409af0dada463c44c"
     }
   },
   "revision": 0,
@@ -31,56 +32,65 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:c3fb62311b4289c1ae34eb9a798f827009fdb0c6edad049cd6d6f58bca3a921d",
+          "sha256": "c3fb62311b4289c1ae34eb9a798f827009fdb0c6edad049cd6d6f58bca3a921d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:0231b0caa5204cff4c9665a1dcfd5b88dcccc7b88ccb3d06d9d0558dc98e774d",
-          "sha256": "0231b0caa5204cff4c9665a1dcfd5b88dcccc7b88ccb3d06d9d0558dc98e774d"
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:2e3c30b7fcdfbabee0e1d086e5ae44396a90bfd49cbb45e5ad268a23fb2329b5",
+          "sha256": "2e3c30b7fcdfbabee0e1d086e5ae44396a90bfd49cbb45e5ad268a23fb2329b5"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:a4b8c6a9079f79e22396249ffbdf9f62f895fa8b7af83e038313f96f0dec2c2d",
-          "sha256": "a4b8c6a9079f79e22396249ffbdf9f62f895fa8b7af83e038313f96f0dec2c2d"
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:fd3bd19e4c9d0a3ab792099835e3d8ff624b3958b0064b906df3d6cd01effebc",
+          "sha256": "fd3bd19e4c9d0a3ab792099835e3d8ff624b3958b0064b906df3d6cd01effebc"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:6696dd1a0827c972c9eec4164e44804e264538e595e5719d12afc8f6d76ffdcb",
+          "sha256": "6696dd1a0827c972c9eec4164e44804e264538e595e5719d12afc8f6d76ffdcb"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:0eecefe309601a2bf8652415ed2f92d8f6701612a408328d990be55d7693a0e1",
-          "sha256": "0eecefe309601a2bf8652415ed2f92d8f6701612a408328d990be55d7693a0e1"
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:5435a3f3a2642dc80e08293507b3370a22dee7db9abb18180a18d513e1be7676",
+          "sha256": "5435a3f3a2642dc80e08293507b3370a22dee7db9abb18180a18d513e1be7676"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:ea6e1887539c142f3b24890521e9181fac8738d5fa2344c9e4c0734ea5b2b9a8",
-          "sha256": "ea6e1887539c142f3b24890521e9181fac8738d5fa2344c9e4c0734ea5b2b9a8"
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:7e2754f9e40733b62707a0fa4167d438728b1241981df62a5f57ee42575de15a",
+          "sha256": "7e2754f9e40733b62707a0fa4167d438728b1241981df62a5f57ee42575de15a"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:a14c31fed107d6d3b3bf5ef8b067de63c020106be3e71f17285a0f3d028cec78",
-          "sha256": "a14c31fed107d6d3b3bf5ef8b067de63c020106be3e71f17285a0f3d028cec78"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:1751fed8776a62fb799b5d025babe2692cb49647ff061e0527d8f010bab06a36",
-          "sha256": "1751fed8776a62fb799b5d025babe2692cb49647ff061e0527d8f010bab06a36"
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:8ca6b71d03d4af1933749b800785062dd01ae3422dae51a4b46c967f2a430291",
+          "sha256": "8ca6b71d03d4af1933749b800785062dd01ae3422dae51a4b46c967f2a430291"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:e6b4152ae7579767ca0e49526a309686712628a0526098ab24af93603bc60edd",
-          "sha256": "e6b4152ae7579767ca0e49526a309686712628a0526098ab24af93603bc60edd"
+          "url": "https://ghcr.io/v2/homebrew/core/py3cairo/blobs/sha256:b30bdcc53e02f9c4ee0a03b8abbee005eaf788ebd3b0d65b2c6e1506e281995b",
+          "sha256": "b30bdcc53e02f9c4ee0a03b8abbee005eaf788ebd3b0d65b2c6e1506e281995b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "pkg-config"
+    "pkg-config",
+    "python@3.10",
+    "python@3.11"
   ],
   "dependencies": [
-    "cairo",
-    "python@3.9"
+    "cairo"
+  ],
+  "test_dependencies": [
+    "python@3.10",
+    "python@3.11"
   ],
   "recommended_dependencies": [
 
@@ -109,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

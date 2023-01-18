@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Rolinh/dfc/releases/download/v3.1.1/dfc-3.1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "962466e77407dd5be715a41ffc50a54fce758a78831546f03a6bb282e8692e54"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/dfc/blobs/sha256:3a7c3a4bb6e644fb06bc3b28dcce2f2a61a2be235cb65e4a188bf55a63657c43",
+          "sha256": "3a7c3a4bb6e644fb06bc3b28dcce2f2a61a2be235cb65e4a188bf55a63657c43"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/dfc/blobs/sha256:6aa0c0d2ad81bf179b61fced051ea22e5cb85376eafbb8e1d7376d8f3fc9cec7",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/dfc/blobs/sha256:6f2d7350e0c7e1c905718b6dcf282367bc846bbd51538a9a525f681dda03be61",
           "sha256": "6f2d7350e0c7e1c905718b6dcf282367bc846bbd51538a9a525f681dda03be61"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/dfc/blobs/sha256:fefbde9ea38d983a69c406f0ed63ceecdea1460fa34d97ca64a158b86da1f2f2",
+          "sha256": "fefbde9ea38d983a69c406f0ed63ceecdea1460fa34d97ca64a158b86da1f2f2"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "gettext"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

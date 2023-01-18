@@ -13,75 +13,82 @@
   "license": "Apache-2.0",
   "homepage": "https://www.openshift.com/",
   "versions": {
-    "stable": "4.6.0",
+    "stable": "4.12.0-202208031327",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/openshift/oc.git",
-      "tag": "openshift-clients-4.6.0-202006250705.p0",
-      "revision": "51011e4849252c723b520643d27d3fa164d28c61"
+      "tag": "openshift-clients-4.12.0-202208031327",
+      "revision": "3c85519af6c4979c02ebb1886f45b366bbccbf55",
+      "checksum": null
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 2,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:ba1ac3cb97607da7dca52fe1056b68801f37d69ce49a9f6087ef25a2060725c6",
+          "sha256": "ba1ac3cb97607da7dca52fe1056b68801f37d69ce49a9f6087ef25a2060725c6"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:b1dd03d660dd23ec473ec2277e29f1d373220630544de94dae14eb70f69a350b",
-          "sha256": "b1dd03d660dd23ec473ec2277e29f1d373220630544de94dae14eb70f69a350b"
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:f71b7163b12605d316693a1a1659475fdf4d267db5c4242bbf9cfd5601c898ed",
+          "sha256": "f71b7163b12605d316693a1a1659475fdf4d267db5c4242bbf9cfd5601c898ed"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:2782211e3255bb03ccf0b26f59d7ff859ca0324d45fb76b264cf44a16f3077ad",
-          "sha256": "2782211e3255bb03ccf0b26f59d7ff859ca0324d45fb76b264cf44a16f3077ad"
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:96f681bea44c8e059e016df6ceedcbaeea5643d3a9b6a1c03898a28ee2f3f585",
+          "sha256": "96f681bea44c8e059e016df6ceedcbaeea5643d3a9b6a1c03898a28ee2f3f585"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:978b46d713dc8f49e9b5e44de94decfb9cf27f6bde217d24de31494a80e90102",
+          "sha256": "978b46d713dc8f49e9b5e44de94decfb9cf27f6bde217d24de31494a80e90102"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:40e611652049dd41c3146947bd6f16185074b727fd969caa1e5494a0b9440f23",
-          "sha256": "40e611652049dd41c3146947bd6f16185074b727fd969caa1e5494a0b9440f23"
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:12f220767a0aa3c37413c81ac447b3fa7cbe739125b065b7a87fd75cb62872bd",
+          "sha256": "12f220767a0aa3c37413c81ac447b3fa7cbe739125b065b7a87fd75cb62872bd"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:870e98712efe5ea045356be3f36525c39e7cdef6239f68ec8c5957d750ae7022",
-          "sha256": "870e98712efe5ea045356be3f36525c39e7cdef6239f68ec8c5957d750ae7022"
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:5102fc4a9bd788b0ebfc4df3fa2f4f68568be929db6bc933bd4418fe72ae80c0",
+          "sha256": "5102fc4a9bd788b0ebfc4df3fa2f4f68568be929db6bc933bd4418fe72ae80c0"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:f7a8fafdad3e268d2f8579c0c1500e4b1f45d247159986e0d3eed88f14672ea5",
-          "sha256": "f7a8fafdad3e268d2f8579c0c1500e4b1f45d247159986e0d3eed88f14672ea5"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:59b89010cda9ee308ff728704dccd919be1a12f3a1ea3454cf3f31e9c900d273",
-          "sha256": "59b89010cda9ee308ff728704dccd919be1a12f3a1ea3454cf3f31e9c900d273"
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:d29f854a807e9b77c658ffdea377fcedb0ace532eae1c99c09a8e43787712e49",
+          "sha256": "d29f854a807e9b77c658ffdea377fcedb0ace532eae1c99c09a8e43787712e49"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:9aa2fe20e8fb4212f2ee01ea32ff1cfa255e1c5135f50ce27658b699de97ea49",
-          "sha256": "9aa2fe20e8fb4212f2ee01ea32ff1cfa255e1c5135f50ce27658b699de97ea49"
+          "url": "https://ghcr.io/v2/homebrew/core/openshift-cli/blobs/sha256:55eb4b18cc17eead8458ec3492dc7c4e788f6346f786220ea0aa48f47b194cae",
+          "sha256": "55eb4b18cc17eead8458ec3492dc7c4e788f6346f786220ea0aa48f47b194cae"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "coreutils",
-    "go",
-    "heimdal"
+    "go"
   ],
   "dependencies": [
     "socat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

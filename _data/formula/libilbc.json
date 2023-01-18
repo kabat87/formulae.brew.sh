@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/TimothyGu/libilbc/releases/download/v3.0.4/libilbc-3.0.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6820081a5fc58f86c119890f62cac53f957adb40d580761947a0871cea5e728f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libilbc/blobs/sha256:36774c3a7db279a6932326411a82cd1ffe92e66ee0fead069d985e0e17231309",
+          "sha256": "36774c3a7db279a6932326411a82cd1ffe92e66ee0fead069d985e0e17231309"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libilbc/blobs/sha256:62792538776c6c61167769ce53ed0998c849b89ca9cc5ade0261be739bd8bf60",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libilbc/blobs/sha256:7b07dbf92042eb0f0692aec0381561eaa0a9c649347fd321ebf74cd22994813d",
           "sha256": "7b07dbf92042eb0f0692aec0381561eaa0a9c649347fd321ebf74cd22994813d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libilbc/blobs/sha256:d6cb8d5175be0fbd28cfd5a123685b17fdc5da1aca7720b15bc6d0e9bc28ae47",
+          "sha256": "d6cb8d5175be0fbd28cfd5a123685b17fdc5da1aca7720b15bc6d0e9bc28ae47"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

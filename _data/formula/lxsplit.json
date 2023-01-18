@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/lxsplit/lxsplit/0.2.4/lxsplit-0.2.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "858fa939803b2eba97ccc5ec57011c4f4b613ff299abbdc51e2f921016845056"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lxsplit/blobs/sha256:4428d45c02da1ebb867b6319a97c9f6be29ee09cca1ad88f17c744427d864919",
+          "sha256": "4428d45c02da1ebb867b6319a97c9f6be29ee09cca1ad88f17c744427d864919"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lxsplit/blobs/sha256:ab46abecb79808403233fab3047c75f0ca630b4925d8c704a7bf087ef9ddc671",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lxsplit/blobs/sha256:7a37c06c81b1160f5fee4c742537310afe07cccac1251384739f4340189ec4a2",
           "sha256": "7a37c06c81b1160f5fee4c742537310afe07cccac1251384739f4340189ec4a2"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lxsplit/blobs/sha256:cc04acafa5e324481217f2ca6356f87e29418a169ba28042173be4650b8ee3af",
+          "sha256": "cc04acafa5e324481217f2ca6356f87e29418a169ba28042173be4650b8ee3af"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/lxsplit/blobs/sha256:25699d54183a01f446015fb02521a50b3967ef2d250e56bb1fe3fd0a5aaec2e1",
           "sha256": "25699d54183a01f446015fb02521a50b3967ef2d250e56bb1fe3fd0a5aaec2e1"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lxsplit/blobs/sha256:d7d8d9eb204599056a4e109c63114c90e3be797d2be700e114cc3675d8eba0bb",
-          "sha256": "d7d8d9eb204599056a4e109c63114c90e3be797d2be700e114cc3675d8eba0bb"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lxsplit/blobs/sha256:5be1da254e8200601318c6258e63e4052dea5d43446d10872f8aab55e83abd4b",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

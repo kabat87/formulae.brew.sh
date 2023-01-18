@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.jedsoft.org/releases/jed/jed-0.99-19.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5eed5fede7a95f18b33b7b32cb71be9d509c6babc1483dd5c58b1a169f2bdf52"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/jed/blobs/sha256:bea3094bb9b2ba88a2b58c29c3b230674187d3b9ac0dbaf86b38495da3b69b2c",
+          "sha256": "bea3094bb9b2ba88a2b58c29c3b230674187d3b9ac0dbaf86b38495da3b69b2c"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/jed/blobs/sha256:1ffc68641f689cad733309255377425ffc6acf28d2bafa65dd6cd725489d52e2",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/jed/blobs/sha256:0705ef662941dc6f4ebd34eae2fc7c02f640d34ac7edbd53eb1d51384cb7c204",
           "sha256": "0705ef662941dc6f4ebd34eae2fc7c02f640d34ac7edbd53eb1d51384cb7c204"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/jed/blobs/sha256:cf04039833c1a2f231bf358772e699682547a0193098afd88d32c9a270cd5ffa",
+          "sha256": "cf04039833c1a2f231bf358772e699682547a0193098afd88d32c9a270cd5ffa"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
   ],
   "dependencies": [
     "s-lang"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

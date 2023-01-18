@@ -7,26 +7,30 @@
   ],
   "desc": "Extract files and folders from package files, disk images, and archives",
   "homepage": "https://www.charlessoft.com/",
-  "url": "https://www.charlessoft.com/pacifist_download/Pacifist_4.0.2.dmg",
+  "url": "https://www.charlessoft.com/pacifist_download/Pacifist_4.0.5.dmg",
   "appcast": null,
-  "version": "4.0.2,65727",
+  "version": "4.0.5,66569",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8c1c1c71d0452f8c0a3276224f6755d5c48fcfdf5d12bac12d4b418698052b0f",
+  "sha256": "d1fa1218fecea844419238303d67f834477c9897f93801fe092b54eae4644872",
   "artifacts": [
-    [
-      "Pacifist.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.charlessoft.pacifist.sfl2",
-        "~/Library/Preferences/com.charlessoft.pacifist.plist",
-        "~/Library/Saved Application State/com.charlessoft.pacifist.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Pacifist.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.charlessoft.pacifist.sfl2",
+            "~/Library/Preferences/com.charlessoft.pacifist.plist",
+            "~/Library/Saved Application State/com.charlessoft.pacifist.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

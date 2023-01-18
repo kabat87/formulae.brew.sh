@@ -1,6 +1,6 @@
 cask "letter-opener" do
-  version "14.0.2"
-  sha256 "e962368bdb8ea5b88c216710c8f88b0c8f79dd351995db2338484d1d9854576c"
+  version "15.0.0"
+  sha256 "3a69675611faad721c254ea0d72dcd9b6e5b4a370c64cdbb538c3477551e63a2"
 
   url "https://s3.amazonaws.com/LetterOpener/dmg/Letter-Opener-#{version}.zip",
       verified: "s3.amazonaws.com/LetterOpener/dmg/"
@@ -18,9 +18,9 @@ cask "letter-opener" do
   pkg "Install Letter Opener.pkg"
 
   uninstall pkgutil:   [
-    "pkg.app.letteropener.*",
-    "com.restoroot.Letter-Opener",
-  ],
+              "pkg.app.letteropener.*",
+              "com.restoroot.Letter-Opener",
+            ],
             launchctl: [
               "app.letteropener.agent",
               "app.letteropener.softwareupdate.agent",

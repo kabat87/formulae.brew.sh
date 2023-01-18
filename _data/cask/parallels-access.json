@@ -5,53 +5,64 @@
   "name": [
     "Parallels Access"
   ],
-  "desc": null,
+  "desc": "Simplest remote access to your computer from anywhere",
   "homepage": "https://www.parallels.com/products/access/",
-  "url": "https://download.parallels.com/pmobile/v5/5.5.0-36378/ParallelsAccess-5.5.0-36378-mac.dmg",
+  "url": "https://download.parallels.com/pmobile/v7/7.0.5-40851/ParallelsAccess-7.0.5-40851-mac.dmg",
   "appcast": null,
-  "version": "5.5.0-36378",
+  "version": "7.0.5-40851",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8a7e85adae4b9402fb413557c9e6f0913d8cf02f81ac286d0bc846ac17ad1e07",
+  "sha256": "663ee5e79e1cace49baf217b2fba61cdbd0746a920dca589520accf545afdce9",
   "artifacts": [
-    "preflight (Preflight Block)",
     {
-      "launchctl": [
-        "com.parallels.mobile.startgui.launchagent",
-        "com.parallels.mobile.dispatcher.launchdaemon",
-        "com.parallels.mobile.kextloader.launchdaemon",
-        "com.parallels.mobile.prl_deskctl_agent.launchagent"
-      ],
-      "quit": [
-        "com.parallels.inputmethod.ParallelsIM"
-      ],
-      "signal": {
-        "TERM": "com.parallels.mobile.prl_deskctl_agent"
-      },
-      "kext": [
-        "com.parallels.virtualhid",
-        "com.parallels.virtualsound"
-      ],
-      "delete": "/Applications/Parallels Access.app"
+      "preflight": "  preflight do\n    system_command \"/usr/bin/hdiutil\",\n                   args: [\"attach\", \"-nobrowse\", \"#{staged_path}/ParallelsAccess-#{version}-mac.dmg\"]\n    system_command \"/Volumes/Parallels Access/Parallels Access.app/Contents/MacOS/pm_ctl\",\n                   args: [\"instance_install\"],\n                   sudo: true\n    system_command \"/usr/bin/hdiutil\",\n                   args: [\"detach\", \"/Volumes/Parallels Access\"]\n  end\n"
     },
     {
-      "trash": [
-        "~/Library/Cookies/com.parallels.mobile.prl_deskctl_agent.binarycookies",
-        "~/Library/Group Containers/4C6364ACXT.com.parallels.Access",
-        "~/Library/Preferences/com.parallels.Parallels Access.plist",
-        "~/Library/Preferences/com.parallels.Parallels Access.plist.sdb",
-        "~/Library/Preferences/com.parallels.mobile.plist"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": [
+            "com.parallels.mobile.audioloader",
+            "com.parallels.mobile.dispatcher.launchdaemon",
+            "com.parallels.mobile.kextloader.launchdaemon",
+            "com.parallels.mobile.prl_deskctl_agent.launchagent",
+            "com.parallels.mobile.startgui.launchagent"
+          ],
+          "quit": "com.parallels.inputmethod.ParallelsIM",
+          "signal": {
+            "TERM": "com.parallels.mobile.prl_deskctl_agent"
+          },
+          "kext": [
+            "com.parallels.virtualhid",
+            "com.parallels.virtualsound"
+          ],
+          "delete": "/Applications/Parallels Access.app"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Cookies/com.parallels.mobile.prl_deskctl_agent.binarycookies",
+            "~/Library/Group Containers/4C6364ACXT.com.parallels.Access",
+            "~/Library/Preferences/com.parallels.mobile.plist",
+            "~/Library/Preferences/com.parallels.Parallels Access.plist.sdb",
+            "~/Library/Preferences/com.parallels.Parallels Access.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "parallels-access requires a kernel extension to work.\nIf the installation fails, retry after you enable it in:\n  System Preferences → Security & Privacy → General\n\nFor more information, refer to vendor documentation or this Apple Technical Note:\n  https://developer.apple.com/library/content/technotes/tn2459/_index.html\n",
   "depends_on": {
   },
   "conflicts_with": null,
-  "container": "{:type=>:naked}",
-  "auto_updates": null
+  "container": {
+    "type": "naked"
+  },
+  "auto_updates": null,
+  "variations": {
+  }
 }

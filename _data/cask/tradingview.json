@@ -7,26 +7,30 @@
   ],
   "desc": "Charting and social-networking for investment traders",
   "homepage": "https://www.tradingview.com/desktop/",
-  "url": "https://tvd-packages.tradingview.com/stable/1.0.1/darwin/TradingView.dmg",
+  "url": "https://tvd-packages.tradingview.com/stable/2.0.2/darwin/TradingView.dmg",
   "appcast": null,
-  "version": "1.0.1",
+  "version": "2.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "75c9ffebd8eadb54cd688d36455d36d30f8a0d853573dc7e2f879b352eccd581",
+  "sha256": "3c1178e626b227f8f17edc53855eae62bde1950dbe4aba54455b701f475175ce",
   "artifacts": [
-    [
-      "TradingView.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/TradingView",
-        "~/Library/Preferences/com.tradingview.tradingviewapp.desktop.plist",
-        "~/Library/Saved Application State/com.tradingview.tradingviewapp.desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "TradingView.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/TradingView",
+            "~/Library/Preferences/com.tradingview.tradingviewapp.desktop.plist",
+            "~/Library/Saved Application State/com.tradingview.tradingviewapp.desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

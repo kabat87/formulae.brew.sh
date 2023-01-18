@@ -13,70 +13,70 @@
   "license": "MIT",
   "homepage": "https://freeglut.sourceforge.io/",
   "versions": {
-    "stable": "3.2.1",
+    "stable": "3.4.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.sourceforge.net/project/freeglut/freeglut/3.2.1/freeglut-3.2.1.tar.gz",
+      "url": "https://github.com/FreeGLUTProject/freeglut/releases/download/v3.4.0/freeglut-3.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3c0bcb915d9b180a97edaebd011b7a1de54583a838644dcd42bb0ea0c6f3eaec"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:ee111ddfa7bdc0a6b3e6857e900d387388264bc5b0c6334d8c5e103b762fec8b",
+          "sha256": "ee111ddfa7bdc0a6b3e6857e900d387388264bc5b0c6334d8c5e103b762fec8b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:b2ba809784fa9d9aa7364b8a9bfa7604f03db29ee33b8f471327cf676e26a6a9",
-          "sha256": "b2ba809784fa9d9aa7364b8a9bfa7604f03db29ee33b8f471327cf676e26a6a9"
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:149209f3f7f7f2d849bfd938ca7da2abe9e1302f41fa1bb107985087c97aa9cc",
+          "sha256": "149209f3f7f7f2d849bfd938ca7da2abe9e1302f41fa1bb107985087c97aa9cc"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:203bade82803af2a0b0fae9e3049ed61d9a4e1f4f6efd42fc6160c7296a54f2e",
-          "sha256": "203bade82803af2a0b0fae9e3049ed61d9a4e1f4f6efd42fc6160c7296a54f2e"
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:232cbfd50de1285bbc009e713da698c25d9928b42de042f001a74ef5f83e990f",
+          "sha256": "232cbfd50de1285bbc009e713da698c25d9928b42de042f001a74ef5f83e990f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:7c7e7fe57e38c1f1bdcd52a4ec9e81a217699131bb88ce35f8865963179d288a",
+          "sha256": "7c7e7fe57e38c1f1bdcd52a4ec9e81a217699131bb88ce35f8865963179d288a"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:3e7c1021010984328014280c1e734e69fbcd7b41882c9c8e3697d827be972b90",
-          "sha256": "3e7c1021010984328014280c1e734e69fbcd7b41882c9c8e3697d827be972b90"
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:dcebb4520aba3f89fb3662e5d896ac1eef92fd57259e94402d53b2d12ad66a19",
+          "sha256": "dcebb4520aba3f89fb3662e5d896ac1eef92fd57259e94402d53b2d12ad66a19"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:078bc333780fea9d4dd745529c91326a3ea4bcd393c18a0d817fd7870d90b7a2",
-          "sha256": "078bc333780fea9d4dd745529c91326a3ea4bcd393c18a0d817fd7870d90b7a2"
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:16825f785a572f580450f63be3c51fd737303ee664b4c774eaea7b7dcf434db3",
+          "sha256": "16825f785a572f580450f63be3c51fd737303ee664b4c774eaea7b7dcf434db3"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:21e92d3aa8a1615937c6776292dd823912220d272a4a437f66917d1e6dd0b655",
-          "sha256": "21e92d3aa8a1615937c6776292dd823912220d272a4a437f66917d1e6dd0b655"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:8d71afe59334afe060d513d68e8c76b3fc0927cf05d61b146dd1444c66d5db35",
-          "sha256": "8d71afe59334afe060d513d68e8c76b3fc0927cf05d61b146dd1444c66d5db35"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:0a30955c90e594481f1ebf4dd218065768386704e2fdcdc0aae45055171dfd2d",
-          "sha256": "0a30955c90e594481f1ebf4dd218065768386704e2fdcdc0aae45055171dfd2d"
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:ebd335220912ca9e72e40d98358f6e8d6f0d27c4c72024ac1d6a59004301cba6",
+          "sha256": "ebd335220912ca9e72e40d98358f6e8d6f0d27c4c72024ac1d6a59004301cba6"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:3b6950bd59195ef3256e524f3b78fcc01f0a79c8f43f83346b285154b773d4b9",
-          "sha256": "3b6950bd59195ef3256e524f3b78fcc01f0a79c8f43f83346b285154b773d4b9"
+          "url": "https://ghcr.io/v2/homebrew/core/freeglut/blobs/sha256:d7751750942757f330249bf3d6a84c7a6b69fe4a29cbb502832c338ccd1927d7",
+          "sha256": "d7751750942757f330249bf3d6a84c7a6b69fe4a29cbb502832c338ccd1927d7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,12 +84,14 @@
     "cmake"
   ],
   "dependencies": [
-    "pkg-config",
     "libx11",
     "libxi",
     "libxrandr",
     "libxxf86vm",
     "mesa"
+  ],
+  "test_dependencies": [
+    "pkg-config"
   ],
   "recommended_dependencies": [
 
@@ -118,5 +120,18 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "libx11",
+        "libxi",
+        "libxrandr",
+        "libxxf86vm",
+        "mesa",
+        "mesa-glu",
+        "xinput"
+      ]
+    }
+  }
 }

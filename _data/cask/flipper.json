@@ -7,23 +7,38 @@
   ],
   "desc": "Desktop debugging platform for mobile developers",
   "homepage": "https://fbflipper.com/",
-  "url": "https://github.com/facebook/flipper/releases/download/v0.128.4/Flipper-mac.dmg",
+  "url": "https://github.com/facebook/flipper/releases/download/v0.176.1/Flipper-mac.dmg",
   "appcast": null,
-  "version": "0.128.4",
+  "version": "0.176.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b3a47f90f6a0a29902c38a6c7ca7c566d1f25e89c76c5cc364bd5317ad44bdd7",
+  "sha256": "2c6a8ce242e7f87a15e2fc7f43d0098a3b7fc69611c1a1cbdb3c1bfcc86ca3b2",
   "artifacts": [
-    [
-      "Flipper.app"
-    ]
+    {
+      "app": [
+        "Flipper.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.flipper",
+            "~/Library/Application Support/Flipper",
+            "~/Library/Preferences/rs.flipper-launcher"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

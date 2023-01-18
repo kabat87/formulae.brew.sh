@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.17.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "317484352271d18cbbcfac3868eab798d67fff1b8402e740baa6ff41d588a9d8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:fca72dd306b23edae0d4d66b0bd485e66f53f175ba1ca87a6167309d73533bc8",
+          "sha256": "fca72dd306b23edae0d4d66b0bd485e66f53f175ba1ca87a6167309d73533bc8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:1153e436e03439c74a2eae87b6b5fbb6c8192607420dd5b01d0295a8ef29d2e5",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:16e984b4dc9809fb223592f9b2c8a45cc49e796bd3b03f0b9507e80953167292",
           "sha256": "16e984b4dc9809fb223592f9b2c8a45cc49e796bd3b03f0b9507e80953167292"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:fca72dd306b23edae0d4d66b0bd485e66f53f175ba1ca87a6167309d73533bc8",
+          "sha256": "fca72dd306b23edae0d4d66b0bd485e66f53f175ba1ca87a6167309d73533bc8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:cd8699f3944eb87b76fc89e4ca69f19df5d66aa8a4c89d636660d299e807f5b0",
           "sha256": "cd8699f3944eb87b76fc89e4ca69f19df5d66aa8a4c89d636660d299e807f5b0"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:cd8699f3944eb87b76fc89e4ca69f19df5d66aa8a4c89d636660d299e807f5b0",
-          "sha256": "cd8699f3944eb87b76fc89e4ca69f19df5d66aa8a4c89d636660d299e807f5b0"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:1153e436e03439c74a2eae87b6b5fbb6c8192607420dd5b01d0295a8ef29d2e5",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

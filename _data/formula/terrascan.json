@@ -11,17 +11,18 @@
   ],
   "desc": "Detect compliance and security violations across Infrastructure as Code",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/accurics/terrascan",
+  "homepage": "https://github.com/tenable/terrascan",
   "versions": {
-    "stable": "1.13.0",
+    "stable": "1.17.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/accurics/terrascan/archive/v1.13.0.tar.gz",
+      "url": "https://github.com/tenable/terrascan/archive/v1.17.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6201cc094e89d13c4b1142a279bdb42ac994832d5fc9193a447e154e942da459"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:f2d9d265203fa425b26cb96da0c6e59bf7f1cb3adb55316d843200f5f096e1f3",
+          "sha256": "f2d9d265203fa425b26cb96da0c6e59bf7f1cb3adb55316d843200f5f096e1f3"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:3ea062b0f2155e618d9e98bd416914286a58cac6d9b333951423c65a722f2da6",
-          "sha256": "3ea062b0f2155e618d9e98bd416914286a58cac6d9b333951423c65a722f2da6"
+          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:764f47838c65dbb72f13350bf18cec5e1be0a9e03ab090b3e92050373c3f0e5c",
+          "sha256": "764f47838c65dbb72f13350bf18cec5e1be0a9e03ab090b3e92050373c3f0e5c"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:6c18ba2801e9d4b95edf10d7cfb2901cb590c846a72517a9eceef6a781b2723f",
-          "sha256": "6c18ba2801e9d4b95edf10d7cfb2901cb590c846a72517a9eceef6a781b2723f"
+          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:161975deb3ea6d7d9969cd479adc251f043859c192e55d2543400f1f71a4cd33",
+          "sha256": "161975deb3ea6d7d9969cd479adc251f043859c192e55d2543400f1f71a4cd33"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:4a6e30c205280ea3b608691dceb551767f736d0ca7f550fc71773cb524197f7e",
+          "sha256": "4a6e30c205280ea3b608691dceb551767f736d0ca7f550fc71773cb524197f7e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:8e8049a0640daefacd1da2a29002361cd5f78276c382df89ce4cfbf49c8c6e32",
-          "sha256": "8e8049a0640daefacd1da2a29002361cd5f78276c382df89ce4cfbf49c8c6e32"
+          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:373ab485512274294574c51ab8f4e49cd94a0fa3dc39aebf5fc2be98ab8e33df",
+          "sha256": "373ab485512274294574c51ab8f4e49cd94a0fa3dc39aebf5fc2be98ab8e33df"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:b6c19018c4a2bc9ff53f4ae0a88440643151666b527820d60d8083b117f0a4c3",
-          "sha256": "b6c19018c4a2bc9ff53f4ae0a88440643151666b527820d60d8083b117f0a4c3"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:be566ccc3d2be24bf9def0ae7c0af7c0b2b6dbbc3de25d7954ebd62f8d93351f",
-          "sha256": "be566ccc3d2be24bf9def0ae7c0af7c0b2b6dbbc3de25d7954ebd62f8d93351f"
+          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:f6f1bf46e70c6ee86b351dc49cf5192c84749d87bd2c3b30956e1389540daa43",
+          "sha256": "f6f1bf46e70c6ee86b351dc49cf5192c84749d87bd2c3b30956e1389540daa43"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:78b5ba32c8b39a56c7ee33526fc3615d0ac0c153176d877cf28f1dd64d25af97",
-          "sha256": "78b5ba32c8b39a56c7ee33526fc3615d0ac0c153176d877cf28f1dd64d25af97"
+          "url": "https://ghcr.io/v2/homebrew/core/terrascan/blobs/sha256:75e0a51531784c157e90310c05515f4ca248e2bb47c56386fe78d83670927d64",
+          "sha256": "75e0a51531784c157e90310c05515f4ca248e2bb47c56386fe78d83670927d64"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

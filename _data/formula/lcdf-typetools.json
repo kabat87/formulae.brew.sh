@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.lcdf.org/type/lcdf-typetools-2.108.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fb09bf45d98fa9ab104687e58d6e8a6727c53937e451603662338a490cbbcb26"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lcdf-typetools/blobs/sha256:4a3eed405c90e63d9b545828b1be31f3058090a13df8c6bdc7b20b4df385234f",
+          "sha256": "4a3eed405c90e63d9b545828b1be31f3058090a13df8c6bdc7b20b4df385234f"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/lcdf-typetools/blobs/sha256:a0d7a6e2b9be3e584f4dcacb653e751ffaf57480b599c485700df330e53763fe",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/lcdf-typetools/blobs/sha256:bea41132d0d057aef10d64fe53b52bb198c3ce49b8548c72d5430f1411f68afe",
           "sha256": "bea41132d0d057aef10d64fe53b52bb198c3ce49b8548c72d5430f1411f68afe"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lcdf-typetools/blobs/sha256:628ab26912469dbe132996144e44c19774f6eaf2618e6bea9dd4a4c375a37f34",
+          "sha256": "628ab26912469dbe132996144e44c19774f6eaf2618e6bea9dd4a4c375a37f34"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,7 +117,7 @@
 
   ],
   "conflicts_with": [
-
+    "texlive"
   ],
   "caveats": null,
   "installed": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

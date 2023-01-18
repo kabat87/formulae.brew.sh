@@ -10,18 +10,19 @@
 
   ],
   "desc": "Utility to optimize JPEG files",
-  "license": "GPL-2.0",
+  "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/tjko/jpegoptim",
   "versions": {
-    "stable": "1.4.6",
+    "stable": "1.5.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/tjko/jpegoptim/archive/RELEASE.1.4.6.tar.gz",
+      "url": "https://github.com/tjko/jpegoptim/archive/v1.5.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "07c71dc83802f84227b2dc2cb50fbd154b0a8a270538342163cd1a9b27def22c"
     }
   },
   "revision": 0,
@@ -31,62 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:68268b0ca97d6b60edd12be19901f2ba1bac264f20a1b4277621e4c4444d9986",
+          "sha256": "68268b0ca97d6b60edd12be19901f2ba1bac264f20a1b4277621e4c4444d9986"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:35c8849ace2b6b5e3ecab77e67ca84ff8e929a6ffb8782562b8c8d2cee70ce6b",
-          "sha256": "35c8849ace2b6b5e3ecab77e67ca84ff8e929a6ffb8782562b8c8d2cee70ce6b"
+          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:b1b3681cfd782679d5e36877463fe321280580c886fcc6c316390a759692e346",
+          "sha256": "b1b3681cfd782679d5e36877463fe321280580c886fcc6c316390a759692e346"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:38149f489f36745c9be64ccaff694c53a07c6a8d4c98335703e7c1ba6206c5e0",
-          "sha256": "38149f489f36745c9be64ccaff694c53a07c6a8d4c98335703e7c1ba6206c5e0"
+          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:23927fe759f3ccfe86eae9c5b4c0cf20795879f0474c671ec3461caedc981a7b",
+          "sha256": "23927fe759f3ccfe86eae9c5b4c0cf20795879f0474c671ec3461caedc981a7b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:7aa020f78f5ff164bf113973a3013a9305be90e0a203bdae456fc9ba7b05e1d7",
+          "sha256": "7aa020f78f5ff164bf113973a3013a9305be90e0a203bdae456fc9ba7b05e1d7"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:1cf486d47809250bc5c67819ee9f82e5eba1fb4b6b8910229316f366d034ef23",
-          "sha256": "1cf486d47809250bc5c67819ee9f82e5eba1fb4b6b8910229316f366d034ef23"
+          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:e74c7a9c3f3beef103636d913f4886138e3337989aa74c245623275a32c12ee6",
+          "sha256": "e74c7a9c3f3beef103636d913f4886138e3337989aa74c245623275a32c12ee6"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:ca4714cf1b1ecbc166a78b8143648fa639b70495f54dc75bcd1a71b9a2c4e604",
-          "sha256": "ca4714cf1b1ecbc166a78b8143648fa639b70495f54dc75bcd1a71b9a2c4e604"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:f6acdfbe5b3ff49f922bfccb936c39609bb1a0f9dbebd1289d1679bf7fe5b2a4",
-          "sha256": "f6acdfbe5b3ff49f922bfccb936c39609bb1a0f9dbebd1289d1679bf7fe5b2a4"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:c60d59cfe20db5ad448c4da58d7c43ca072f15a31502b989a51b9020da445880",
-          "sha256": "c60d59cfe20db5ad448c4da58d7c43ca072f15a31502b989a51b9020da445880"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:9588bffa63f2041939e480ff8dbce25a004ef2414fc7ea9d5b5177a38bfb8eaf",
-          "sha256": "9588bffa63f2041939e480ff8dbce25a004ef2414fc7ea9d5b5177a38bfb8eaf"
-        },
-        "sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:89b7f8465e95066c6bf19515affed14037841ea5d0a86b8c3d6cf026f507e938",
-          "sha256": "89b7f8465e95066c6bf19515affed14037841ea5d0a86b8c3d6cf026f507e938"
-        },
-        "el_capitan": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:cc6c60a27cba7bb5f0e1b4a7c8ae3567db4eeaf1e1384488b818da7a1409f837",
-          "sha256": "cc6c60a27cba7bb5f0e1b4a7c8ae3567db4eeaf1e1384488b818da7a1409f837"
+          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:46c3addaa8cf81fb19e1ff0b699e1f0293a41ba3a46fc4f50bd44f0b03bddd51",
+          "sha256": "46c3addaa8cf81fb19e1ff0b699e1f0293a41ba3a46fc4f50bd44f0b03bddd51"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:9519adbc40ad2a3bdc57c0aef19e8e7accf1eaa3f862de4433569dbc293a0bfa",
-          "sha256": "9519adbc40ad2a3bdc57c0aef19e8e7accf1eaa3f862de4433569dbc293a0bfa"
+          "url": "https://ghcr.io/v2/homebrew/core/jpegoptim/blobs/sha256:6fe16caf2dd96bbd851cf5b746533da6932998bda6cf505a1ae3014d8eba01cf",
+          "sha256": "6fe16caf2dd96bbd851cf5b746533da6932998bda6cf505a1ae3014d8eba01cf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,7 +79,10 @@
 
   ],
   "dependencies": [
-    "jpeg"
+    "jpeg-turbo"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

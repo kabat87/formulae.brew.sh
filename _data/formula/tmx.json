@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/baylej/tmx/archive/tmx_1.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5ab52e72976141260edd1b15ea34e1626c0f4ba9b8d2afe7f4d68b51fc9fedf7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tmx/blobs/sha256:5714907b97ede6353e5f461db191396197605b67df3bd5d79a53e01c9edc5fa5",
+          "sha256": "5714907b97ede6353e5f461db191396197605b67df3bd5d79a53e01c9edc5fa5"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tmx/blobs/sha256:1741909448819ba29272e002c9d25fdb8cc315e0ea70991799e2bbfa4bcdb88f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tmx/blobs/sha256:770cdb601ea6b496a29832960cb5fd79626a99f55f01c635985aa921f3e5f31d",
           "sha256": "770cdb601ea6b496a29832960cb5fd79626a99f55f01c635985aa921f3e5f31d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tmx/blobs/sha256:25da4b79d7d3f89fb78a74c5cffba62085adda61a932f01d3dd3d70b858ed0fd",
+          "sha256": "25da4b79d7d3f89fb78a74c5cffba62085adda61a932f01d3dd3d70b858ed0fd"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

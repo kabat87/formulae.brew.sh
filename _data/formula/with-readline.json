@@ -10,7 +10,7 @@
 
   ],
   "desc": "Allow GNU Readline to be used with arbitrary programs",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://www.greenend.org.uk/rjk/sw/withreadline.html",
   "versions": {
     "stable": "0.1.1",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.greenend.org.uk/rjk/sw/with-readline-0.1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d12c71eb57ef1dbe35e7bd7a1cc470a4cb309c63644116dbd9c88762eb31b55d"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/with-readline/blobs/sha256:b3277d7237d984e25ce8eea7a479b7ac6c68c929fbcfcee627d68e2748eb955d",
+          "sha256": "b3277d7237d984e25ce8eea7a479b7ac6c68c929fbcfcee627d68e2748eb955d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/with-readline/blobs/sha256:d0fbb8e109734765f470ff267c0c45f3ae958615bc162f3e541b9e4f219d7ec9",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/with-readline/blobs/sha256:7a8f7ff1d33453d059ac6ac6b23883fa3f86d720cb25415e590e81ca2e6255dd",
           "sha256": "7a8f7ff1d33453d059ac6ac6b23883fa3f86d720cb25415e590e81ca2e6255dd"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/with-readline/blobs/sha256:e4a501c322f47879d36712e61bb9dc2885b2b3ec66e5e44b8f44c3fbdbb53b25",
+          "sha256": "e4a501c322f47879d36712e61bb9dc2885b2b3ec66e5e44b8f44c3fbdbb53b25"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/with-readline/blobs/sha256:808a3a96b1d247f16c0a3e21eb18ed287f7df474b36c4685725768a05c3c1c61",
           "sha256": "808a3a96b1d247f16c0a3e21eb18ed287f7df474b36c4685725768a05c3c1c61"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/with-readline/blobs/sha256:fa9469fdae3e63ea2e6bba4850d405878c6a782b703f978ee04e28a49285e39b",
+          "sha256": "fa9469fdae3e63ea2e6bba4850d405878c6a782b703f978ee04e28a49285e39b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +101,9 @@
   "dependencies": [
     "readline"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -93,7 +111,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "expect": "test"
+    }
   ],
   "requirements": [
 
@@ -113,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

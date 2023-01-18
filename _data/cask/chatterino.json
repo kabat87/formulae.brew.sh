@@ -7,22 +7,26 @@
   ],
   "desc": "Chat client for https://twitch.tv",
   "homepage": "https://chatterino.com/",
-  "url": "https://chatterino.fra1.digitaloceanspaces.com/bin/2.3.4/Chatterino.dmg",
+  "url": "https://chatterino.fra1.digitaloceanspaces.com/bin/2.4.0/Chatterino.dmg",
   "appcast": null,
-  "version": "2.3.4",
+  "version": "2.4.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0cf254afa7bcb36ce0f854735cc3efc4404d00103bb98e4048f8fe565a1353a1",
+  "sha256": "801e06828cae0995e72f8ee849c2be4a9f9bb17c1cae8d2cb90b4fccf80fd7ea",
   "artifacts": [
-    [
-      "chatterino.app"
-    ],
     {
-      "trash": "~/Library/Application Support/chatterino",
-      "signal": {
-      }
+      "app": [
+        "chatterino.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/chatterino"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

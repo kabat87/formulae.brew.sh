@@ -1,18 +1,14 @@
 cask "betterdummy" do
-  version "1.0.13"
-  sha256 "23a46ea3607045a74f9d1ebae5b8034964bb2d217a56d2f0dd8a298e03c4a7ed"
+  version "1.1.24"
+  sha256 "5d02657f3aa77017f5a94af16d042cef011094b58f19b4d0f4a79e090311cfb3"
 
-  url "https://github.com/waydabber/BetterDummy/releases/download/v#{version}/BetterDummy-v#{version}.zip"
+  url "https://github.com/waydabber/BetterDummy/releases/download/v#{version}/BetterDummy-v#{version}.dmg"
   name "betterdummy"
   desc "Dummy Display for Apple Silicon Macs to achieve custom resolutions"
   homepage "https://github.com/waydabber/BetterDummy"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   app "BetterDummy.app"
 
@@ -23,4 +19,15 @@ cask "betterdummy" do
     "~/Library/Containers/me.waydabber.BetterDummy",
     "~/Library/Preferences/me.waydabber.BetterDummy.plist",
   ]
+
+  caveats do
+    discontinued
+
+    <<~EOS
+      #{token} has been renamed 'betterdisplay',
+      install betterdisplay to continue receiving updates;
+
+        brew install --cask betterdisplay
+    EOS
+  end
 end

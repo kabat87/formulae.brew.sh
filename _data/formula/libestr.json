@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://libestr.adiscon.com/files/download/libestr-0.1.11.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "46632b2785ff4a231dcf241eeb0dcb5fc0c7d4da8ee49cf5687722cdbe8b2024"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libestr/blobs/sha256:5acb64697d9ef2237c384b6b2f265e2c74770f218259707485fcdf99dfdca7d5",
+          "sha256": "5acb64697d9ef2237c384b6b2f265e2c74770f218259707485fcdf99dfdca7d5"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libestr/blobs/sha256:b186e7aa04c176161a97f6955e2d4cc5dff415be78213f0f842c03acd0614c4e",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libestr/blobs/sha256:20863614b37a81431737f276b1273bf542e374a323b9a1e486af7775e659d688",
           "sha256": "20863614b37a81431737f276b1273bf542e374a323b9a1e486af7775e659d688"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libestr/blobs/sha256:47ab08fd7c8294b4e47eae018b76a6ce91837ec1705b071099cf7d5c65410f15",
+          "sha256": "47ab08fd7c8294b4e47eae018b76a6ce91837ec1705b071099cf7d5c65410f15"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

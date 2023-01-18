@@ -6,26 +6,31 @@
     "CrystalMaker"
   ],
   "desc": "Visualize crystal and molecular structures",
-  "homepage": "http://crystalmaker.com/index.html",
-  "url": "http://crystalmaker.com/downloads/crystalmaker_mac.zip",
+  "homepage": "https://crystalmaker.com/index.html",
+  "url": "https://crystalmaker.com/downloads/crystalmaker_mac.zip",
   "appcast": null,
-  "version": "10.7.0",
+  "version": "10.8.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "CrystalMaker.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.crystalmaker.crystalmaker.v10",
-        "~/Library/Containers/com.crystalmaker.crystalmaker.v10"
-      ],
-      "signal": {
-      }
+      "app": [
+        "CrystalMaker.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.crystalmaker.crystalmaker.v10",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.crystalmaker.crystalmaker.v10.sfl2",
+            "~/Library/Containers/com.crystalmaker.crystalmaker.v10"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

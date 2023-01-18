@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/bittwist/Mac%20OS%20X/Bit-Twist%202.0/bittwist-macosx-2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8954462ac9e21376d9d24538018d1225ef19ddcddf9d27e0e37fe7597e408eaa"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bittwist/blobs/sha256:44ef66f48c921f63ebb338f004360d50a256de44da0f13806fd15faccc37c5bf",
+          "sha256": "44ef66f48c921f63ebb338f004360d50a256de44da0f13806fd15faccc37c5bf"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bittwist/blobs/sha256:b5cb0c91dbb06031ec0ed2f8ed21b7325423020f4aa949bcaebcc42d1c28a6f4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bittwist/blobs/sha256:32f0ed29ff9caa578d26286aec740330e6218cfe4c9ea2aa35df9587e90b9699",
           "sha256": "32f0ed29ff9caa578d26286aec740330e6218cfe4c9ea2aa35df9587e90b9699"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bittwist/blobs/sha256:42ea2ae7460bf28b776942800df4b45770f886b86df7ac3e0f06595243d43553",
+          "sha256": "42ea2ae7460bf28b776942800df4b45770f886b86df7ac3e0f06595243d43553"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/bittwist/blobs/sha256:215b6353dcedd6ad0908e725c68204f2aa8413bf32ae3eb0a3afa96eb6c17d60",
           "sha256": "215b6353dcedd6ad0908e725c68204f2aa8413bf32ae3eb0a3afa96eb6c17d60"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bittwist/blobs/sha256:279cade886758dfabfbaa319c6afb302c7e254db0377f0eed1f1155afb800175",
-          "sha256": "279cade886758dfabfbaa319c6afb302c7e254db0377f0eed1f1155afb800175"
+          "url": "https://ghcr.io/v2/homebrew/core/bittwist/blobs/sha256:902f1bc2ee8dcf4eae6b9e4395dd72ec589d5f5267566073c7daf418b589baf4",
+          "sha256": "902f1bc2ee8dcf4eae6b9e4395dd72ec589d5f5267566073c7daf418b589baf4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

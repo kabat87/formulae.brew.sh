@@ -16,11 +16,13 @@
   "outdated": false,
   "sha256": "ff96050e21abef5e11bba60a3c6e6a98a303239a0c36637c8ceb8fa539c7f93a",
   "artifacts": [
-    [
-      "Seaglass.app"
-    ]
+    {
+      "app": [
+        "Seaglass.app"
+      ]
+    }
   ],
-  "caveats": null,
+  "caveats": "seaglass has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
     "macos": {
       ">=": [
@@ -30,5 +32,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

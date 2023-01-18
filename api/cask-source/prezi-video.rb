@@ -1,13 +1,21 @@
 cask "prezi-video" do
-  version "1.13.0"
-  sha256 "477a3d199b1f108e3e1e394a93787fde89f499dea273937c0c1f5fd410b66410"
+  version "2.15.1"
+  sha256 "0ba6639e1a62bef58cdb11e9197da122281421f5163136d0ec91ad693ff6e24a"
 
-  url "https://desktopassets.prezi.com/mac/prezi-video/releases/Prezi_Video_#{version}.dmg"
+  url "https://desktopassets.prezi.com/mac/prezi-video/releases/Prezi_Video_#{version}.zip"
   name "Prezi Video"
   desc "Lets you interact with your content live as you stream or record"
   homepage "https://prezi.com/video/"
 
-  pkg "Install Prezi Video.pkg"
+  livecheck do
+    url "https://s3.amazonaws.com/prezidesktop/assets/mac/prezi-video/updates/prezi-video.xml"
+    strategy :sparkle, &:short_version
+  end
+
+  auto_updates true
+  depends_on macos: ">= :catalina"
+
+  pkg "Prezi_Video.pkg"
 
   uninstall quit:      "com.prezi.PreziCast",
             launchctl: "com.prezi.prezivideo.vcam.assistant",

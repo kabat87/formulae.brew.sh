@@ -7,42 +7,45 @@
   ],
   "desc": "Reconfigures keyboard to type in another language",
   "homepage": "https://keyman.com/",
-  "url": "https://downloads.keyman.com/mac/stable/14.0.284/keyman-14.0.284.dmg",
+  "url": "https://downloads.keyman.com/mac/stable/15.0.274/keyman-15.0.274.dmg",
   "appcast": null,
-  "version": "14.0.284",
+  "version": "15.0.274",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c527d667a5c2d2308e67681d0861a06cf8770d0ff88f60906de301797bf7fbff",
+  "sha256": "06f9176e5c3c506c6c7f7c2d18cd31b373d7526d57f034e3ac3e6e123ce705f0",
   "artifacts": [
     {
-      "quit": "keyman.inputmethod.Keyman",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "keyman.inputmethod.Keyman"
+        }
+      ]
     },
-    [
-      "Install Keyman.app/Contents/MacOS/Keyman.app"
-    ],
     {
-      "trash": [
-        "~/Documents/Keyman-Keyboards",
-        "~/Library/Caches/keyman.inputmethod.Keyman",
-        "~/Library/Preferences/keyman.inputmethod.Keyman.plist"
-      ],
-      "signal": {
-      }
+      "input_method": [
+        "Install Keyman.app/Contents/MacOS/Keyman.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Documents/Keyman-Keyboards",
+            "~/Library/Caches/keyman.inputmethod.Keyman",
+            "~/Library/Preferences/keyman.inputmethod.Keyman.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "You must manually install the keyboard layout under:\n\n   Preferences → Keyboard → Input Sources\n\nBefore uninstalling Keyman, it is also suggested to manually remove the input method.\n\nSee https://help.keyman.com/products/mac/current-version/start/install-keyman.\nand https://help.keyman.com/products/mac/current-version/troubleshooting/uninstall-keyman.\n",
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

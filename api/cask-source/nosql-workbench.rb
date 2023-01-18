@@ -1,6 +1,6 @@
 cask "nosql-workbench" do
-  version "3.2.1"
-  sha256 "9ba882155b04822d380bb454fbd0c6b00a6dc9a4e96e8e6c518d121601015d07"
+  version "3.4.0"
+  sha256 "f3ef6b40a7cdefaf3ad789341fabe2c1b0d247f872b054e8a76ce412837de36a"
 
   url "https://s3.amazonaws.com/nosql-workbench/NoSQL%20Workbench-mac-#{version}.dmg",
       verified: "s3.amazonaws.com/nosql-workbench/"
@@ -12,6 +12,8 @@ cask "nosql-workbench" do
     url "https://nosql-workbench.s3.amazonaws.com/latest-mac.yml"
     strategy :electron_builder
   end
+
+  auto_updates true
 
   app "NoSQL Workbench.app"
 end

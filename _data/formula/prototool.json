@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/uber/prototool/archive/v1.10.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5b516418f41f7283a405bf4a8feb2c7034d9f3d8c292b2caaebcd218581d2de4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prototool/blobs/sha256:7b6b999fefb3390dce4469fa0ec49de2f431b59b621f44bc8c1d9e716ecc349f",
+          "sha256": "7b6b999fefb3390dce4469fa0ec49de2f431b59b621f44bc8c1d9e716ecc349f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prototool/blobs/sha256:b0a778ccfbbeaef3a52afc1cb3bbec4d48c3b7c618b88cef6a52d90c4422f88d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prototool/blobs/sha256:ce505a3c8ebc53f48ffee3f5a174073364f462538f4c94458b54dc3e15669106",
           "sha256": "ce505a3c8ebc53f48ffee3f5a174073364f462538f4c94458b54dc3e15669106"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prototool/blobs/sha256:061c9488b0d17ea3596308e9dc568ec6e22d0cb1019d0b5a8af227cb11886356",
+          "sha256": "061c9488b0d17ea3596308e9dc568ec6e22d0cb1019d0b5a8af227cb11886356"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,10 +121,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-06-26",
+  "deprecation_reason": "repo_archived",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://wiki.debian.org/Apt",
   "versions": {
-    "stable": "2.3.14",
+    "stable": "2.5.5",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://deb.debian.org/debian/pool/main/a/apt/apt_2.3.14.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/a/apt/apt_2.5.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "711d22c529efca3e9943dad989e9715ebf097e630928daeedd2fbe587e0efd85"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/apt/blobs/sha256:3a079d9994f0d3489508c32ce87caf2a84e090d6263f00e7fcd72db3e25948fb",
-          "sha256": "3a079d9994f0d3489508c32ce87caf2a84e090d6263f00e7fcd72db3e25948fb"
+          "url": "https://ghcr.io/v2/homebrew/core/apt/blobs/sha256:80bada3748a79b2fd5a3796150f3d9a1bb2faf0dee251b1cb13e89d8bba0fbc9",
+          "sha256": "80bada3748a79b2fd5a3796150f3d9a1bb2faf0dee251b1cb13e89d8bba0fbc9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -59,7 +59,6 @@
     "berkeley-db",
     "bzip2",
     "dpkg",
-    "gcc",
     "gettext",
     "gnupg",
     "gnutls",
@@ -67,6 +66,9 @@
     "perl",
     "xxhash",
     "zlib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +105,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "keg_only": true,
+      "keg_only_reason": {
+        "reason": "not linked to prevent conflicts with system apt",
+        "explanation": ""
+      }
+    }
+  }
 }

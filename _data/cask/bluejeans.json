@@ -7,34 +7,42 @@
   ],
   "desc": "Video conferencing for the digital workplace",
   "homepage": "https://www.bluejeans.com/",
-  "url": "https://swdl.bluejeans.com/desktop-app/mac/2.33.0/2.33.0.309/BlueJeansInstaller.pkg",
+  "url": "https://swdl.bluejeans.com/desktop-app/mac/2.40.1/2.40.1.16/BlueJeansInstaller.pkg",
   "appcast": null,
-  "version": "2.33.0.309",
+  "version": "2.40.1.16",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "918930dabfd7d93b67981fe2c1aae3c896486286152d7665c6a3a4a3657ae9b4",
+  "sha256": "9852e2381fef0715ee0c80830d9be55924673a66e5acb0edfc5153edad9c34a7",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.bluejeansnet.blue.pkg",
-        "com.tatvikmohit.BlueJeans-Audio"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.bluejeansnet.blue.pkg",
+            "com.tatvikmohit.BlueJeans-Audio"
+          ]
+        }
+      ]
     },
-    "BlueJeansInstaller.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/com.bluejeansnet.Blue",
-        "~/Library/Caches/com.bluejeansnet.Blue",
-        "~/Library/LaunchAgents/com.bluejeansnet.BlueJeansHelper.plist",
-        "~/Library/Logs/BlueJeans",
-        "~/Library/Preferences/com.bluejeansnet.Blue.plist"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "BlueJeansInstaller.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.bluejeansnet.Blue",
+            "~/Library/Caches/com.bluejeansnet.Blue",
+            "~/Library/LaunchAgents/com.bluejeansnet.BlueJeansHelper.plist",
+            "~/Library/Logs/BlueJeans",
+            "~/Library/Preferences/com.bluejeansnet.Blue.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/mecab-ko-dic-2.1.1-20180720.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fd62d3d6d8fa85145528065fabad4d7cb20f6b2201e71be4081a4e9701a5b330"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mecab-ko-dic/blobs/sha256:e9149e5ec1b85940657df3ed931d6ddbc83ea1a1e68767b9d27138c5d4ba451c",
+          "sha256": "e9149e5ec1b85940657df3ed931d6ddbc83ea1a1e68767b9d27138c5d4ba451c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mecab-ko-dic/blobs/sha256:e9149e5ec1b85940657df3ed931d6ddbc83ea1a1e68767b9d27138c5d4ba451c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mecab-ko-dic/blobs/sha256:6e39a270ea5fbb5424d0ca358acafc2f08b9232d878eded2789f990f4065aba7",
           "sha256": "6e39a270ea5fbb5424d0ca358acafc2f08b9232d878eded2789f990f4065aba7"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mecab-ko-dic/blobs/sha256:e9149e5ec1b85940657df3ed931d6ddbc83ea1a1e68767b9d27138c5d4ba451c",
+          "sha256": "e9149e5ec1b85940657df3ed931d6ddbc83ea1a1e68767b9d27138c5d4ba451c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   ],
   "dependencies": [
     "mecab-ko"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

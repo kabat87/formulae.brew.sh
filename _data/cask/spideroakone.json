@@ -17,22 +17,49 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "signal": {
-        "TERM": "com.spideroak.orange.client"
-      },
-      "pkgutil": "org.python.python"
+      "uninstall": [
+        {
+          "signal": [
+            "TERM",
+            "com.spideroak.orange.client"
+          ],
+          "pkgutil": "org.python.python"
+        }
+      ]
     },
-    "SpiderOakONE.pkg (Pkg)",
     {
-      "trash": "~/Library/Application Support/SpiderOakONE",
-      "signal": {
-      }
+      "pkg": [
+        "SpiderOakONE.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/SpiderOakONE"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.13"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "high_sierra": {
+      "url": "https://spideroak.com/release/spideroak/osx_hs"
+    },
+    "sierra": {
+      "url": "https://spideroak.com/release/spideroak/osx_hs"
+    },
+    "el_capitan": {
+      "url": "https://spideroak.com/release/spideroak/osx_hs"
+    }
+  }
 }

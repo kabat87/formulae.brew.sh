@@ -9,72 +9,80 @@
   "versioned_formulae": [
 
   ],
-  "desc": "Interact with monome devices via C, Python, or FFI",
+  "desc": "Library for easy interaction with monome devices",
   "license": "ISC",
   "homepage": "https://monome.org/",
   "versions": {
-    "stable": "1.4.4",
+    "stable": "1.4.6",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/monome/libmonome/archive/v1.4.4.tar.gz",
+      "url": "https://github.com/monome/libmonome/archive/v1.4.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dbb886eacb465ea893465beb7b5ed8340ae77c25b24098ab36abcb69976ef748"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:e2deec1fde2416c71c2791e9831aa2b3cf3423bb6c63f600b1276b9c6954db71",
+          "sha256": "e2deec1fde2416c71c2791e9831aa2b3cf3423bb6c63f600b1276b9c6954db71"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:415d02f115ed624be7e04e5f71dc56b57b313b8c0b35090fc8f73da367f8f5f9",
-          "sha256": "415d02f115ed624be7e04e5f71dc56b57b313b8c0b35090fc8f73da367f8f5f9"
+          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:5525c4c775e115f9921620fbc6887a1660a70683d3d7cde9791e1e689f65b7c7",
+          "sha256": "5525c4c775e115f9921620fbc6887a1660a70683d3d7cde9791e1e689f65b7c7"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:745e10cf5a29c44c9837fa7b822407eca0993ea00c414d99b7ad2a98fe7f059c",
-          "sha256": "745e10cf5a29c44c9837fa7b822407eca0993ea00c414d99b7ad2a98fe7f059c"
+          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:9f7ec039cd4a2f3374ad095eb4ee37d951beea4480c586a2b8f3ecdcff31e235",
+          "sha256": "9f7ec039cd4a2f3374ad095eb4ee37d951beea4480c586a2b8f3ecdcff31e235"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:9179a403cca09e0701923f329d26b526e240e89ac487615f0adfcd41721fce41",
+          "sha256": "9179a403cca09e0701923f329d26b526e240e89ac487615f0adfcd41721fce41"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:9ee2066771e830a82840baea3bbeb7001195592a1d98c5dac3878e9674d200d5",
-          "sha256": "9ee2066771e830a82840baea3bbeb7001195592a1d98c5dac3878e9674d200d5"
+          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:7184b921c76cbb2c0e2d0984e30273627bd4f55a970de06c39f3bdd56d617a1d",
+          "sha256": "7184b921c76cbb2c0e2d0984e30273627bd4f55a970de06c39f3bdd56d617a1d"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:ba70b11a69fab981f80172fcdf8cd78cb88b64386f0d86cfcdf0089d54916dbe",
-          "sha256": "ba70b11a69fab981f80172fcdf8cd78cb88b64386f0d86cfcdf0089d54916dbe"
+          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:98c2de88e32527214e0c16874553043b9ad7d31e2d83f14f4700ff96f271fd11",
+          "sha256": "98c2de88e32527214e0c16874553043b9ad7d31e2d83f14f4700ff96f271fd11"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:7aacc1a7d070958460b380f182ccdb7cc073ccef592eb018a69d61d30c07e0f6",
-          "sha256": "7aacc1a7d070958460b380f182ccdb7cc073ccef592eb018a69d61d30c07e0f6"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:a75784a9297378f3c477ee251f9e729f3e98230113908af03078a92cd4c7d076",
-          "sha256": "a75784a9297378f3c477ee251f9e729f3e98230113908af03078a92cd4c7d076"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libmonome/blobs/sha256:21757bb4952cf37ac4ae45ae62dcefc5ca22d9cd04474a6d51f9b67dbca1a392",
+          "sha256": "21757bb4952cf37ac4ae45ae62dcefc5ca22d9cd04474a6d51f9b67dbca1a392"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "python@3.11"
   ],
   "dependencies": [
     "liblo"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://chasen.org/~taku/software/yamcha/src/yamcha-0.33.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "413d4fc0a4c13895f5eb1468e15c9d2828151882f27aea4daf2399c876be27d5"
     }
   },
   "revision": 0,
@@ -31,6 +32,31 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:2302fc8b966f2d6cd48fdffdf765d577844e571a7f7de14aa1fe4091f960e329",
+          "sha256": "2302fc8b966f2d6cd48fdffdf765d577844e571a7f7de14aa1fe4091f960e329"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:f3b51abc7335c21295ed08c9142d9c8fe2b48a74d8d632b5bc7812079938ba80",
+          "sha256": "f3b51abc7335c21295ed08c9142d9c8fe2b48a74d8d632b5bc7812079938ba80"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:69a10b712ef5d0d47b50623eba38fe14207b046e6b55156cfc5f5595d0983161",
+          "sha256": "69a10b712ef5d0d47b50623eba38fe14207b046e6b55156cfc5f5595d0983161"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:f8db88401507cec60953241a6ea12bc3945dcb68db85366bc597f466664badb7",
+          "sha256": "f8db88401507cec60953241a6ea12bc3945dcb68db85366bc597f466664badb7"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:31ace70fbbf4e2da60850ccc2cea0bd4131e6acc98560cb3230d38c334ec2d2d",
+          "sha256": "31ace70fbbf4e2da60850ccc2cea0bd4131e6acc98560cb3230d38c334ec2d2d"
+        },
         "big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:18f032ddd520debefef3e67422089660c9222e1a8098d4c9b5128cb7a517e87a",
@@ -61,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:b65fade9c6ddcced1d3c3fc6700f18ed2ddd16b62437fc71f9a85a3568851520",
           "sha256": "b65fade9c6ddcced1d3c3fc6700f18ed2ddd16b62437fc71f9a85a3568851520"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:b038ddce247b7f56041c4325fd01c0ab0b32399d1ca602df37b65739a09b74e0",
-          "sha256": "b038ddce247b7f56041c4325fd01c0ab0b32399d1ca602df37b65739a09b74e0"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/yamcha/blobs/sha256:0ce0b05c30bff796b1ed14c7732670d3fd9b96a20f3b48e1f4953b3e8c9d745c",
+          "sha256": "0ce0b05c30bff796b1ed14c7732670d3fd9b96a20f3b48e1f4953b3e8c9d745c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +105,9 @@
   ],
   "dependencies": [
     "tinysvm"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +136,22 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "automake"
+      ]
+    },
+    "arm64_monterey": {
+      "build_dependencies": [
+        "automake"
+      ]
+    },
+    "arm64_big_sur": {
+      "build_dependencies": [
+        "automake"
+      ]
+    }
+  }
 }

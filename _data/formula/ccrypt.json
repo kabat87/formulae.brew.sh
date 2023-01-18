@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/ccrypt/1.11/ccrypt-1.11.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b19c47500a96ee5fbd820f704c912f6efcc42b638c0a6aa7a4e3dc0a6b51a44f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ccrypt/blobs/sha256:8670e0da25badd930fe04316614c22caceec629bba9ae2fd4b1576f25d1c724f",
+          "sha256": "8670e0da25badd930fe04316614c22caceec629bba9ae2fd4b1576f25d1c724f"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ccrypt/blobs/sha256:6df2f69dee386a1f37820245fdcf2f2f6e52389e1617b8bcd72dfae25d829207",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ccrypt/blobs/sha256:df71b344abdb49c98de85ee062d3e505afdcdb203cde01d165e326b52e7bb891",
           "sha256": "df71b344abdb49c98de85ee062d3e505afdcdb203cde01d165e326b52e7bb891"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ccrypt/blobs/sha256:d4f607f5cf6620bf41ff3bb79f0343f0e6a01960e419d5fe254ecf0e007440ca",
+          "sha256": "d4f607f5cf6620bf41ff3bb79f0343f0e6a01960e419d5fe254ecf0e007440ca"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

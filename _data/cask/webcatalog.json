@@ -6,29 +6,33 @@
     "WebCatalog"
   ],
   "desc": "Tool to run web apps like desktop apps",
-  "homepage": "https://webcatalog.app/",
-  "url": "https://github.com/webcatalog/webcatalog-app/releases/download/v40.3.0/WebCatalog-40.3.0-universal.dmg",
+  "homepage": "https://webcatalog.io/",
+  "url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-44.6.1-universal.dmg",
   "appcast": null,
-  "version": "40.3.0",
+  "version": "44.6.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8303ed50e93d33d4b9b4d8f4debb06529a1d943056db9a512dd4d21738b3bcd8",
+  "sha256": "56dc1b1f5e537afef4f3b7f2bef7fb1a9b28753a0606d284b121c56c0476fb59",
   "artifacts": [
-    [
-      "WebCatalog.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/WebCatalog",
-        "~/Library/Caches/com.webcatalog.jordan",
-        "~/Library/Caches/com.webcatalog.jordan.ShipIt",
-        "~/Library/Preferences/com.webcatalog.jordan.plist",
-        "~/Library/Saved Application State/com.webcatalog.jordan.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "WebCatalog.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/WebCatalog",
+            "~/Library/Caches/com.webcatalog.jordan",
+            "~/Library/Caches/com.webcatalog.jordan.ShipIt",
+            "~/Library/Preferences/com.webcatalog.jordan.plist",
+            "~/Library/Saved Application State/com.webcatalog.jordan.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

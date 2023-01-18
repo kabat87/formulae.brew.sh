@@ -7,27 +7,31 @@
   ],
   "desc": "Turns any device with a web browser into a secondary screen",
   "homepage": "https://deskreen.com/",
-  "url": "https://github.com/pavlobu/deskreen/releases/download/v1.0.11/Deskreen-1.0.11.dmg",
+  "url": "https://github.com/pavlobu/deskreen/releases/download/v2.0.4/Deskreen-2.0.4.dmg",
   "appcast": null,
-  "version": "1.0.11",
+  "version": "2.0.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "48904100e19c86a06e533facec525516a6a90ae6733946deb14753ef38a777f1",
+  "sha256": "43b9a49d0ff70211a88cfd23bf660dac9f3609063dde3ccf6d07f5307050e443",
   "artifacts": [
-    [
-      "Deskreen.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Deskreen",
-        "~/Library/Logs/Deskreen",
-        "~/Library/Preferences/com.pavlobu.Deskreen.plist",
-        "~/Library/Saved Application State/com.pavlobu.Deskreen.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Deskreen.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Deskreen",
+            "~/Library/Logs/Deskreen",
+            "~/Library/Preferences/com.pavlobu.Deskreen.plist",
+            "~/Library/Saved Application State/com.pavlobu.Deskreen.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

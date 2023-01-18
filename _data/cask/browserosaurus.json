@@ -7,25 +7,36 @@
   ],
   "desc": "Open-source browser prompter",
   "homepage": "https://github.com/will-stone/browserosaurus",
-  "url": "https://github.com/will-stone/browserosaurus/releases/download/v17.0.0/Browserosaurus-darwin-x64-17.0.0.zip",
+  "url": "https://github.com/will-stone/browserosaurus/releases/download/v20.0.2/Browserosaurus-darwin-x64-20.0.2.zip",
   "appcast": null,
-  "version": "17.0.0",
+  "version": "20.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "24e0cb9ad2eae76277e0908746ddae87633d0ea0aaa56ea426e55a257f1bc6a4",
+  "sha256": "56ec3510f7ef48d1b21f8766d59bebb4291d5d427ec2c8ce5ce9e43231beac8f",
   "artifacts": [
-    [
-      "Browserosaurus.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Browserosaurus",
-        "~/Library/Preferences/com.browserosaurus.plist"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.browserosaurus"
+        }
+      ]
+    },
+    {
+      "app": [
+        "Browserosaurus.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Browserosaurus",
+            "~/Library/Preferences/com.browserosaurus.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +44,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/will-stone/browserosaurus/releases/download/v20.0.2/Browserosaurus-darwin-arm64-20.0.2.zip",
+      "sha256": "d3af96f45bfa039b9b376ba36a4cd72c214908010b6616a57aded43cf682bce3"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/will-stone/browserosaurus/releases/download/v20.0.2/Browserosaurus-darwin-arm64-20.0.2.zip",
+      "sha256": "d3af96f45bfa039b9b376ba36a4cd72c214908010b6616a57aded43cf682bce3"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/will-stone/browserosaurus/releases/download/v20.0.2/Browserosaurus-darwin-arm64-20.0.2.zip",
+      "sha256": "d3af96f45bfa039b9b376ba36a4cd72c214908010b6616a57aded43cf682bce3"
+    }
+  }
 }

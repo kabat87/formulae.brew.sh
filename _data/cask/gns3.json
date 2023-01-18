@@ -8,25 +8,29 @@
   ],
   "desc": "GUI for the Dynamips Cisco router emulator",
   "homepage": "https://www.gns3.com/",
-  "url": "https://github.com/GNS3/gns3-gui/releases/download/v2.2.29/GNS3-2.2.29.dmg",
+  "url": "https://github.com/GNS3/gns3-gui/releases/download/v2.2.36/GNS3-2.2.36.dmg",
   "appcast": null,
-  "version": "2.2.29",
+  "version": "2.2.36",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e9374ec80145f5f8835941abd8ad77b0be5a1e3b43022341d17d3eb70f4a1a22",
+  "sha256": "6c4f659ca5f05ce45c904babc154ed3cfad4c6d44324f7634ded1ed87680e319",
   "artifacts": [
-    [
-      "GNS3.app"
-    ],
     {
-      "trash": [
-        "~/Library/Saved Application State/net.gns3.savedState",
-        "~/GNS3"
-      ],
-      "signal": {
-      }
+      "app": [
+        "GNS3.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/GNS3",
+            "~/Library/Saved Application State/net.gns3.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

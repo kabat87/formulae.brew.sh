@@ -13,60 +13,65 @@
   "license": "BSD-2-Clause",
   "homepage": "https://developers.yubico.com/yubikey-manager/",
   "versions": {
-    "stable": "4.0.7",
+    "stable": "5.0.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/53/6a/a3ff56677f0ebb14d56c43bce4b6cc9b494920e470b45c385285ebfca3fe/yubikey-manager-4.0.7.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/04/3d/f94043b6cbc0e44d0824b466840097bd3599eb46a8bd7716f6a93ddc172f/yubikey_manager-5.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "89e9b99211b474e38ce6687ba1fd37fa470eefeb8c1f9d47c8189c9c5bbb036f"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:c6a3e121cdba5f024b645f341e14aaec753b454cd3a003839de177d78c26de40",
+          "sha256": "c6a3e121cdba5f024b645f341e14aaec753b454cd3a003839de177d78c26de40"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:79abda55160cd30a6287c24a2e9146eb3352ef0041c7e3e84f20b166dc469105",
-          "sha256": "79abda55160cd30a6287c24a2e9146eb3352ef0041c7e3e84f20b166dc469105"
+          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:7f8c9a093fc951b99114d332ceb25385298fbd1248a34ed96b63013026031682",
+          "sha256": "7f8c9a093fc951b99114d332ceb25385298fbd1248a34ed96b63013026031682"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:fd85250ee051dd400d046ff2d950cc08fa13e62e4ed510561130f109e67a381f",
-          "sha256": "fd85250ee051dd400d046ff2d950cc08fa13e62e4ed510561130f109e67a381f"
+          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:ed416b97ceeeb04521e5c6d365c3eec35933c472f3301598d433778661b41d42",
+          "sha256": "ed416b97ceeeb04521e5c6d365c3eec35933c472f3301598d433778661b41d42"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:b020ce89d8dc4f0e1c5e07e7ad72fe900f2329afca1cc445bbe750b626bea746",
+          "sha256": "b020ce89d8dc4f0e1c5e07e7ad72fe900f2329afca1cc445bbe750b626bea746"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:561453d58cee66db7a264bc20a952607beab864dda09608ea0d25c7d88a18553",
-          "sha256": "561453d58cee66db7a264bc20a952607beab864dda09608ea0d25c7d88a18553"
+          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:917a5521e62d81b2d0380b282d0505634f03fa7da74329f67ddaf897fc98630d",
+          "sha256": "917a5521e62d81b2d0380b282d0505634f03fa7da74329f67ddaf897fc98630d"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:b9ae9a5530e4ae78cfd3ed7312f0328b3f3e9e37373e410160612fa41bffca07",
-          "sha256": "b9ae9a5530e4ae78cfd3ed7312f0328b3f3e9e37373e410160612fa41bffca07"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:8ca23d5defacb45cddc59075950aa75f7e25127d69e297001e6fe6c3e0411609",
-          "sha256": "8ca23d5defacb45cddc59075950aa75f7e25127d69e297001e6fe6c3e0411609"
+          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:a6942371ce9f176a298ea68f8c56da8b24a1380ff2d3d0c63e804515d66f52e8",
+          "sha256": "a6942371ce9f176a298ea68f8c56da8b24a1380ff2d3d0c63e804515d66f52e8"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:9bc3d373b749caa00e6f79f141f0b87cd335b8190579b6736ca811d2dda6b744",
-          "sha256": "9bc3d373b749caa00e6f79f141f0b87cd335b8190579b6736ca811d2dda6b744"
+          "url": "https://ghcr.io/v2/homebrew/core/ykman/blobs/sha256:cdfd2e70e761faf8cecde3e80b67009432239c007d42a671a2238c9722fde113",
+          "sha256": "cdfd2e70e761faf8cecde3e80b67009432239c007d42a671a2238c9722fde113"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,7 +81,10 @@
   ],
   "dependencies": [
     "openssl@1.1",
-    "python@3.9"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +113,20 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "rust",
+        "swig",
+        "pkg-config"
+      ],
+      "dependencies": [
+        "openssl@1.1",
+        "python@3.11",
+        "libffi",
+        "pcsc-lite"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/gmarcais/Jellyfish/releases/download/v2.3.0/jellyfish-2.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e195b7cf7ba42a90e5e112c0ed27894cd7ac864476dc5fb45ab169f5b930ea5a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jellyfish/blobs/sha256:9e0526e92d9b87bb9c26732174f0aa7b700db587e965941bd79d1bfc761a8b3e",
+          "sha256": "9e0526e92d9b87bb9c26732174f0aa7b700db587e965941bd79d1bfc761a8b3e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jellyfish/blobs/sha256:3368a53a61d961a9169a4156a60d8023aee069084c108d67e8b81d12c01e5106",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jellyfish/blobs/sha256:15ceae21239d0a1f851e878d20889ef5539b121222153829b3b1e2dcb6cc2548",
           "sha256": "15ceae21239d0a1f851e878d20889ef5539b121222153829b3b1e2dcb6cc2548"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jellyfish/blobs/sha256:d1331785c605eee45bfa7053ad06da959b624d2af91c5a032da5350b0c1820f2",
+          "sha256": "d1331785c605eee45bfa7053ad06da959b624d2af91c5a032da5350b0c1820f2"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
   ],
   "dependencies": [
     "htslib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -112,5 +125,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

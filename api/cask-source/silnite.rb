@@ -1,6 +1,6 @@
 cask "silnite" do
-  version "6,2021.12"
-  sha256 "932117c39f351e6933f295a52b222cde4bf18d3a069dadc9bd5cffc4caab965a"
+  version "9,2022.10"
+  sha256 "2622c7f4b382bf830f8dc884d4cb2a6cb676212b9b212c6c0dd87324e753f7c0"
 
   url "https://eclecticlightdotcom.files.wordpress.com/#{version.csv.second.major}/#{version.csv.second.minor}/silnite#{version.csv.first}.zip",
       verified: "eclecticlightdotcom.files.wordpress.com/"
@@ -10,7 +10,7 @@ cask "silnite" do
 
   livecheck do
     url :homepage
-    regex(%r{href=.*?/(\d+)/(\d+)/silnite[._-]?v?(\d+(?:\.\d+)*)\.zip}i)
+    regex(%r{href=.*?/(\d+)/(\d+)/silnite[._-]?v?(\d+(?:\.\d+)*\w?)\.zip}i)
     strategy :page_match do |page, regex|
       page.scan(regex).map do |match|
         "#{match[2]},#{match[0]}.#{match[1]}"

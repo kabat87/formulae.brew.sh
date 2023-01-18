@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/aften/aften/0.0.8/aften-0.0.8.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "87cc847233bb92fbd5bed49e2cdd6932bb58504aeaefbfd20ecfbeb9532f0c0a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:b210014aa83271ec35261c51fc2d32914b33090deb3fda59993e30aba4b324de",
+          "sha256": "b210014aa83271ec35261c51fc2d32914b33090deb3fda59993e30aba4b324de"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:a1a669de1fd73431993f57c52603cb68d5794590bb175084de3ffac408d50c13",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:6f4cfa96fbcc6616017d696852e0738796471c24b2bcbd4ee38ce9cd2c01575c",
           "sha256": "6f4cfa96fbcc6616017d696852e0738796471c24b2bcbd4ee38ce9cd2c01575c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:0ac6b5c31292bc1fea37415cf9f76010633c6c4a2bf3cc8770c4f9cd3b79cbbb",
+          "sha256": "0ac6b5c31292bc1fea37415cf9f76010633c6c4a2bf3cc8770c4f9cd3b79cbbb"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:68b4983cc843e2d57854a263038a965a2dd6c473c98111f482ec1c69d09ace83",
           "sha256": "68b4983cc843e2d57854a263038a965a2dd6c473c98111f482ec1c69d09ace83"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:4f785f04a3bbde677452f2c5d1c04f77605e156b4020294c5799c85d0b8586d3",
-          "sha256": "4f785f04a3bbde677452f2c5d1c04f77605e156b4020294c5799c85d0b8586d3"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aften/blobs/sha256:f9e42d32fbd1c37b67e5beb729fba09eed1378d0f44c89b0b313231d478320d7",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

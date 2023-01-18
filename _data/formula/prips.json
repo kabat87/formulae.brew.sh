@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://devel.ringlet.net/files/sys/prips/prips-1.2.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "de28d8a5a619a30d0b3c8a76f9c09c3529d197f3e74b04c8aa994096ab8349d4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prips/blobs/sha256:5c4217811128ab612a4433b630d1a3d2c9e4805e1c163bfa22eeec7d03e095b9",
+          "sha256": "5c4217811128ab612a4433b630d1a3d2c9e4805e1c163bfa22eeec7d03e095b9"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prips/blobs/sha256:50a8faf4130d6ad1b281078e788aa0bdd8a34b32fda4f9dbde6247f0dcdbcfdf",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prips/blobs/sha256:255619fe70f19aa2f4ce8616a48bcc96892678ddba5c2b40ba0191bee5dfe28d",
           "sha256": "255619fe70f19aa2f4ce8616a48bcc96892678ddba5c2b40ba0191bee5dfe28d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prips/blobs/sha256:ab6328571f6d30d60848ab91a95fbc3c2f4da337dc8f80ba91a7e43feb80512f",
+          "sha256": "ab6328571f6d30d60848ab91a95fbc3c2f4da337dc8f80ba91a7e43feb80512f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

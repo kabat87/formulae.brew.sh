@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "http://getmoto.org/",
   "versions": {
-    "stable": "2.3.1",
+    "stable": "4.1.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/8a/74/8f30d77db2ac9e103fdb931d84a53677830c146eedbc1f44d4a32f407bce/moto-2.3.1.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/5d/3a/5adcdb131ba68c9e36123a2888b665fdad33352d153180486a702fd66be1/moto-4.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e65a692df57abb631b06c8f3f7827c9deceae3416887527e266c775ad722a2fa"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:aa82706e75a61b81916b807047c63ad18ee92959a577b582d8293c7f22d8dd4e",
+          "sha256": "aa82706e75a61b81916b807047c63ad18ee92959a577b582d8293c7f22d8dd4e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:7c11b4a006fba36fc85f535d710dd69d40f0b27fdd51cc1f016c1ef71fd50e1f",
-          "sha256": "7c11b4a006fba36fc85f535d710dd69d40f0b27fdd51cc1f016c1ef71fd50e1f"
+          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:39bc791b62122eb958b3df69c05f9b700cfc66f3fb4bbd7585fcab032507ab2e",
+          "sha256": "39bc791b62122eb958b3df69c05f9b700cfc66f3fb4bbd7585fcab032507ab2e"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:76151fc9ecef9b57f8b0f39bb6516f5181e542ef070e9db515696afaf433f439",
-          "sha256": "76151fc9ecef9b57f8b0f39bb6516f5181e542ef070e9db515696afaf433f439"
+          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:38527471b83b5ca5b9394ca580272a7c1575fc531b2dcbac7510e9f2a80cc1a1",
+          "sha256": "38527471b83b5ca5b9394ca580272a7c1575fc531b2dcbac7510e9f2a80cc1a1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:c3b8f8bc572d3f21ec99b507442809731eec184a7c2f57b4d4a8af1b0bbeb6ff",
+          "sha256": "c3b8f8bc572d3f21ec99b507442809731eec184a7c2f57b4d4a8af1b0bbeb6ff"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:29f17eb8bc38aa6bfaa98d10ebca9e53a0a90a9b8ba7fcb8d3697c13716b1693",
-          "sha256": "29f17eb8bc38aa6bfaa98d10ebca9e53a0a90a9b8ba7fcb8d3697c13716b1693"
+          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:2d7ad5d1d9a2d5d384e9710052208ab63083196065b34da13c15f24611fe0430",
+          "sha256": "2d7ad5d1d9a2d5d384e9710052208ab63083196065b34da13c15f24611fe0430"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:c7f4430969d1fb17340e1b9c534b5205163531e775e917256736cb070c3dc12f",
-          "sha256": "c7f4430969d1fb17340e1b9c534b5205163531e775e917256736cb070c3dc12f"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:21c187aa9e5bdfb3d0aac76f72c1f230b95d8511775a91211f0e5c0da9fba858",
-          "sha256": "21c187aa9e5bdfb3d0aac76f72c1f230b95d8511775a91211f0e5c0da9fba858"
+          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:e4c69bf073b90c0eceb5c95a8fe3d317418cf2147539042b3d7cb0468b0e60df",
+          "sha256": "e4c69bf073b90c0eceb5c95a8fe3d317418cf2147539042b3d7cb0468b0e60df"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:81665026c5a084995da2ca52cd5ee826a97b1838149e7e2fda82179e7db3b47d",
-          "sha256": "81665026c5a084995da2ca52cd5ee826a97b1838149e7e2fda82179e7db3b47d"
+          "url": "https://ghcr.io/v2/homebrew/core/moto/blobs/sha256:2cc20772d63e21025922fff9e9a5ed4e9a958096649f7f90ee55230c58e31193",
+          "sha256": "2cc20772d63e21025922fff9e9a5ed4e9a958096649f7f90ee55230c58e31193"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,8 +79,12 @@
     "rust"
   ],
   "dependencies": [
-    "python@3.10",
+    "python@3.11",
+    "pyyaml",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

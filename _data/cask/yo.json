@@ -17,21 +17,29 @@
   "sha256": "115218ea1bf39e5aa301740d00a2b0e17a5f31c2bc2f4bff5becd2da77d791f7",
   "artifacts": [
     {
-      "delete": "$(brew --prefix)/bin/yo_scheduler",
-      "launchctl": [
-        "com.sheagcraig.yo.login_once",
-        "com.sheagcraig.yo.on_demand"
-      ],
-      "pkgutil": "com.sheagcraig.yo",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "$(brew --prefix)/bin/yo_scheduler",
+          "launchctl": [
+            "com.sheagcraig.yo.login_once",
+            "com.sheagcraig.yo.on_demand"
+          ],
+          "pkgutil": "com.sheagcraig.yo"
+        }
+      ]
     },
-    "yo-2.0.1.pkg (Pkg)"
+    {
+      "pkg": [
+        "yo-2.0.1.pkg"
+      ]
+    }
   ],
-  "caveats": null,
+  "caveats": "yo has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

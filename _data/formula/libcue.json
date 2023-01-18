@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/lipnitsk/libcue/archive/v2.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f27bc3ebb2e892cd9d32a7bee6d84576a60f955f29f748b9b487b173712f1200"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcue/blobs/sha256:5a49053c126f385cb08b5e647bfcf7485a5a1a914bdea13d550d5b2cb94e84e3",
+          "sha256": "5a49053c126f385cb08b5e647bfcf7485a5a1a914bdea13d550d5b2cb94e84e3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcue/blobs/sha256:f00d5a51c441a9698b375d1c2fca99a09e95dcc4a3931e2695aee332f46bd433",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcue/blobs/sha256:7619618f7bce8398ec7fe8ffd777012876cec3511a4bb595833770e9e631fed2",
           "sha256": "7619618f7bce8398ec7fe8ffd777012876cec3511a4bb595833770e9e631fed2"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcue/blobs/sha256:959f85f6095b4a938a0d76b06817ebc59893c1915420e3b30418a1ba5293fdea",
+          "sha256": "959f85f6095b4a938a0d76b06817ebc59893c1915420e3b30418a1ba5293fdea"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +141,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

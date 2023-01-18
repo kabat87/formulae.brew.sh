@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://www.groovy-lang.org/",
   "versions": {
-    "stable": "3.0.9",
+    "stable": "4.0.7",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-sdk-3.0.9.zip",
+      "url": "https://groovy.jfrog.io/artifactory/dist-release-local/groovy-zips/apache-groovy-sdk-4.0.7.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9e17a5e3da1418543740d98501bf17a2df05477369edf80c510e332f68db89e0"
     }
   },
   "revision": 0,
@@ -31,47 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457",
+          "sha256": "7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:a3103793592e4d8c6392f5bf218e91698ffd2ad53a99002963ca4b8dd3c03fa7",
-          "sha256": "a3103793592e4d8c6392f5bf218e91698ffd2ad53a99002963ca4b8dd3c03fa7"
+          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457",
+          "sha256": "7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:a3103793592e4d8c6392f5bf218e91698ffd2ad53a99002963ca4b8dd3c03fa7",
-          "sha256": "a3103793592e4d8c6392f5bf218e91698ffd2ad53a99002963ca4b8dd3c03fa7"
+          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457",
+          "sha256": "7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:f75cd8efecf78d4dd451685b032b5b808d7a12eb4fd735b107718771dff45fa9",
+          "sha256": "f75cd8efecf78d4dd451685b032b5b808d7a12eb4fd735b107718771dff45fa9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71",
-          "sha256": "a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71"
+          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:f75cd8efecf78d4dd451685b032b5b808d7a12eb4fd735b107718771dff45fa9",
+          "sha256": "f75cd8efecf78d4dd451685b032b5b808d7a12eb4fd735b107718771dff45fa9"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71",
-          "sha256": "a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71",
-          "sha256": "a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71",
-          "sha256": "a0d0761356557724fede393dc0168097b07340a626875936dfca34dacc5a9f71"
+          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:f75cd8efecf78d4dd451685b032b5b808d7a12eb4fd735b107718771dff45fa9",
+          "sha256": "f75cd8efecf78d4dd451685b032b5b808d7a12eb4fd735b107718771dff45fa9"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:a3103793592e4d8c6392f5bf218e91698ffd2ad53a99002963ca4b8dd3c03fa7",
-          "sha256": "a3103793592e4d8c6392f5bf218e91698ffd2ad53a99002963ca4b8dd3c03fa7"
+          "url": "https://ghcr.io/v2/homebrew/core/groovysdk/blobs/sha256:7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457",
+          "sha256": "7bbdd9241ccd74b51979a574d60fb8b43e45eb100201bd6cc10378a883e53457"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +80,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

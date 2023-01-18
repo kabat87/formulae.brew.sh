@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://mirrorservice.org/sites/distfiles.macports.org/splint/splint-3.1.2.src.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c78db643df663313e3fa9d565118391825dd937617819c6efc7966cdf444fb0a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/splint/blobs/sha256:6aae55c464e14dde1a9aa9f49da8e30d8184fcf12fbe06a9e913e1fc313455fa",
+          "sha256": "6aae55c464e14dde1a9aa9f49da8e30d8184fcf12fbe06a9e913e1fc313455fa"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/splint/blobs/sha256:f47715d1e6f0f201c2486f0d788fd138e89b86cd0c11477b3e5576fa49cffc83",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/splint/blobs/sha256:229d18ade0e3dfc1c9ed796732a57bb385de5dfd8c15d3b265c4ef42cfd5f765",
           "sha256": "229d18ade0e3dfc1c9ed796732a57bb385de5dfd8c15d3b265c4ef42cfd5f765"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/splint/blobs/sha256:2b3eaa69bb97239d281a12e678c4a5314413d3cc6543742fd67a6ec1e7d987a6",
+          "sha256": "2b3eaa69bb97239d281a12e678c4a5314413d3cc6543742fd67a6ec1e7d987a6"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

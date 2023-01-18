@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://savannah.nongnu.org/download/aldo/aldo-0.7.7.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f1b8849d09267fff3c1f5122097d90fec261291f51b1e075f37fad8f1b7d9f92"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/aldo/blobs/sha256:0d999e5927c28aec07c5e74d61f3338129c4040bd34c35e12a3da993b0de90c0",
+          "sha256": "0d999e5927c28aec07c5e74d61f3338129c4040bd34c35e12a3da993b0de90c0"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/aldo/blobs/sha256:434e524f42b70dd31c05c80d41808af6b68d13875376d38ef86dba496b86b609",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/aldo/blobs/sha256:a0944cbf0df1cccd63c1d18cf758826e8b7621c188b60603153b717ba9d2edbf",
           "sha256": "a0944cbf0df1cccd63c1d18cf758826e8b7621c188b60603153b717ba9d2edbf"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/aldo/blobs/sha256:e81b0d99b63abac08c7768f017eae3c9d059012fa8867f0ff8d3d5bf76e81b7b",
+          "sha256": "e81b0d99b63abac08c7768f017eae3c9d059012fa8867f0ff8d3d5bf76e81b7b"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/aldo/blobs/sha256:0691c4b9b7ae5b6f104c5b5205f731d4348563b8a9a8c3631395f619ce00aabf",
           "sha256": "0691c4b9b7ae5b6f104c5b5205f731d4348563b8a9a8c3631395f619ce00aabf"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/aldo/blobs/sha256:f5d55cefcfc65033f50bf2aedb30298db1540a8dd5f5c028feb3b4b1c7e5610b",
-          "sha256": "f5d55cefcfc65033f50bf2aedb30298db1540a8dd5f5c028feb3b4b1c7e5610b"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aldo/blobs/sha256:660548eb8c93e2c78a50b925143a9b24400ee578790b62e7acde1d1aed360a98",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libao"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

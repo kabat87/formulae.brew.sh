@@ -8,37 +8,43 @@
   ],
   "desc": "Automatic time and productivity tracking app",
   "homepage": "https://timingapp.com/",
-  "url": "https://updates.timingapp.com/download/Timing-2021.6.2.dmg",
+  "url": "https://updates.timingapp.com/download/Timing-2022.5.dmg",
   "appcast": null,
-  "version": "2021.6.2,313",
+  "version": "2022.5,345",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "bbdcfc4f1b0bc8c9cbd89f29ad345133ba676708df45f71a75319d398b502c6d",
+  "sha256": "0dc0a7eabcf20757757ec24ae174825aee3657a30c483e002cec35a51dd50644",
   "artifacts": [
     {
-      "login_item": "TimingHelper",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "login_item": "TimingHelper"
+        }
+      ]
     },
-    [
-      "Timing.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/info.eurocomp.TimingHelper.InfoExtractorService",
-        "~/Library/Application Support/info.eurocomp.Timing2/",
-        "~/Library/Application Support/info.eurocomp.TimingHelper/",
-        "~/Library/Caches/info.eurocomp.TimingHelper.InfoExtractorService",
-        "~/Library/Caches/info.eurocomp.Timing2/",
-        "~/Library/Caches/info.eurocomp.TimingHelper/",
-        "~/Library/Preferences/info.eurocomp.TimingHelper.InfoExtractorService.plist",
-        "~/Library/Preferences/info.eurocomp.Timing2.plist",
-        "~/Library/Preferences/info.eurocomp.TimingHelper.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Timing.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/info.eurocomp.TimingHelper.InfoExtractorService",
+            "~/Library/Application Support/info.eurocomp.Timing2/",
+            "~/Library/Application Support/info.eurocomp.TimingHelper/",
+            "~/Library/Caches/info.eurocomp.TimingHelper.InfoExtractorService",
+            "~/Library/Caches/info.eurocomp.Timing2/",
+            "~/Library/Caches/info.eurocomp.TimingHelper/",
+            "~/Library/Preferences/info.eurocomp.TimingHelper.InfoExtractorService.plist",
+            "~/Library/Preferences/info.eurocomp.Timing2.plist",
+            "~/Library/Preferences/info.eurocomp.TimingHelper.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -51,5 +57,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

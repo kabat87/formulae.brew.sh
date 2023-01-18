@@ -16,16 +16,24 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "CLIX/CLIX.app"
-    ],
-    "postflight (Postflight Block)"
+    {
+      "preflight": "  preflight do\n    set_permissions \"#{staged_path}/CLIX/CLIX.app\", \"0755\"\n  end\n"
+    },
+    {
+      "app": [
+        "CLIX/CLIX.app"
+      ]
+    },
+    {
+      "postflight": "  postflight do\n    set_permissions \"#{appdir}/CLIX/CLIX.app\", \"0700\"\n  end\n"
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

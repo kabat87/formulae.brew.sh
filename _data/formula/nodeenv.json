@@ -13,18 +13,19 @@
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/ekalinin/nodeenv",
   "versions": {
-    "stable": "1.6.0",
+    "stable": "1.7.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/ekalinin/nodeenv/archive/1.6.0.tar.gz",
+      "url": "https://github.com/ekalinin/nodeenv/archive/1.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a9e9e36e1be6439e877c53e7f27ce068f75b82cc08201f2c68471687199cfd7b"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/nodeenv/blobs/sha256:1e5b23648954dc4570499e605ed8ea5d3eb6124b1cc776b98ee9b4601872aec7",
-          "sha256": "1e5b23648954dc4570499e605ed8ea5d3eb6124b1cc776b98ee9b4601872aec7"
+          "url": "https://ghcr.io/v2/homebrew/core/nodeenv/blobs/sha256:dfbd40ce1e67ad9d87f4f4fbcee25019bf49957456d5fa6b41e2e9493a6c43a0",
+          "sha256": "dfbd40ce1e67ad9d87f4f4fbcee25019bf49957456d5fa6b41e2e9493a6c43a0"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,6 +51,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -58,7 +61,7 @@
 
   ],
   "uses_from_macos": [
-
+    "python"
   ],
   "requirements": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

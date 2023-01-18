@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://cdecl.org/files/cdecl-blocks-2.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9ee6402be7e4f5bb5e6ee60c6b9ea3862935bf070e6cecd0ab0842305406f3ac"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cdecl/blobs/sha256:36acc58f38ee551b35a2c531d9bdfb8113aee61cbb4bdb9d43646ddcfeba9053",
+          "sha256": "36acc58f38ee551b35a2c531d9bdfb8113aee61cbb4bdb9d43646ddcfeba9053"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cdecl/blobs/sha256:8dcff021c0d0078666c5a4781d738e8958fc52222bb2062b447f581d1b398971",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cdecl/blobs/sha256:6ffb24daa6ca1e12ddfbc0cf77ef3461dfdc7eec3ba8149e0f5dbacabeefce2b",
           "sha256": "6ffb24daa6ca1e12ddfbc0cf77ef3461dfdc7eec3ba8149e0f5dbacabeefce2b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cdecl/blobs/sha256:172450bfee9de34b028b40568fbd21662fb6fbf5149343eee624b0cd03766f02",
+          "sha256": "172450bfee9de34b028b40568fbd21662fb6fbf5149343eee624b0cd03766f02"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/cdecl/blobs/sha256:4f0e990d88823aa9f3d1dcea71ffa442c13640ce82cc9da41f90a1be5ef457dc",
           "sha256": "4f0e990d88823aa9f3d1dcea71ffa442c13640ce82cc9da41f90a1be5ef457dc"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cdecl/blobs/sha256:e8f53a0e5b3649f0c691c60380b9c77af573387240f3479a41550583fcc4e22c",
-          "sha256": "e8f53a0e5b3649f0c691c60380b9c77af573387240f3479a41550583fcc4e22c"
+          "url": "https://ghcr.io/v2/homebrew/core/cdecl/blobs/sha256:1ce7e2b34d87649b10f5cd29b4df13c565f518936b42f029b7d1b592984d237e",
+          "sha256": "1ce7e2b34d87649b10f5cd29b4df13c565f518936b42f029b7d1b592984d237e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,12 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "bison": "build"
+    },
+    {
+      "flex": "build"
+    }
   ],
   "requirements": [
 
@@ -123,5 +141,16 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "bison",
+        "flex"
+      ],
+      "dependencies": [
+        "readline"
+      ]
+    }
+  }
 }

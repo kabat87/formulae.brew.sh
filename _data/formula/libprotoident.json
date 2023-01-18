@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://research.wand.net.nz/software/libprotoident/libprotoident-2.0.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8ca7ccd95b3f23457c3f9eff480364565b553bbcab9b39969f964910738e5672"
     }
   },
   "revision": 2,
@@ -60,13 +61,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libprotoident/blobs/sha256:06f18aa299bc9b53991ac448d20d318625a3f1d55fe6bb093c45045b4accbb5c",
           "sha256": "06f18aa299bc9b53991ac448d20d318625a3f1d55fe6bb093c45045b4accbb5c"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libprotoident/blobs/sha256:24938f68759726bc0549a5388e71184d56795bfbaff25f9d341b5cd0f79bc9a0",
+          "sha256": "24938f68759726bc0549a5388e71184d56795bfbaff25f9d341b5cd0f79bc9a0"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
   "dependencies": [
     "libflowmanager",
     "libtrace"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

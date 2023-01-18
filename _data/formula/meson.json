@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://mesonbuild.com/",
   "versions": {
-    "stable": "0.61.0",
+    "stable": "1.0.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/mesonbuild/meson/releases/download/0.61.0/meson-0.61.0.tar.gz",
+      "url": "https://github.com/mesonbuild/meson/releases/download/1.0.0/meson-1.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "aa50a4ba4557c25e7d48446abfde857957dcdf58385fffbe670ba0e8efacce05"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/meson/blobs/sha256:c72de1b8f455e244e628d6d3bddcc51e529f517b2546e15dfdc74b46ef99a92c",
-          "sha256": "c72de1b8f455e244e628d6d3bddcc51e529f517b2546e15dfdc74b46ef99a92c"
+          "url": "https://ghcr.io/v2/homebrew/core/meson/blobs/sha256:17d37236c5897dce15263e14c94dbb779525a19db7ba86d2a4ca7d80147ed8e5",
+          "sha256": "17d37236c5897dce15263e14c94dbb779525a19db7ba86d2a4ca7d80147ed8e5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,7 +50,10 @@
   ],
   "dependencies": [
     "ninja",
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -79,5 +82,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

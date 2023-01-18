@@ -13,15 +13,16 @@
   "license": "BSD-2-Clause",
   "homepage": "http://www.catb.org/esr/reposurgeon/",
   "versions": {
-    "stable": "4.29",
+    "stable": "4.33",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://gitlab.com/esr/reposurgeon.git",
-      "tag": "4.29",
-      "revision": "1b708dceed752d16dbe6ea095a4928a7231e5bbc"
+      "url": "https://gitlab.com/esr/reposurgeon/-/archive/4.33/reposurgeon-4.33.tar.gz",
+      "tag": null,
+      "revision": null,
+      "checksum": "b8a103150d2d9986ca699cfc79aa7ed1e09c644fdadebd1b19351647de3cb5f5"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:0c2ee4b1e506992a52cd2f906e6533cd4dd9b5c8c38692f75101779e870d3b9c",
+          "sha256": "0c2ee4b1e506992a52cd2f906e6533cd4dd9b5c8c38692f75101779e870d3b9c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:3b98cc8b69dc7952fc935fe26d7dbbbd2dad705207181a86b3423e108fc317de",
-          "sha256": "3b98cc8b69dc7952fc935fe26d7dbbbd2dad705207181a86b3423e108fc317de"
+          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:5d2b3ea48e7faf96f9bcf08a3d0cc8760e3b5a6ed63995482f82bae9f29df7ba",
+          "sha256": "5d2b3ea48e7faf96f9bcf08a3d0cc8760e3b5a6ed63995482f82bae9f29df7ba"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:c7f30cf4589429feb7bd480ebe7f57c627e2ac9e16c5946ad3939e739c5e4ae8",
-          "sha256": "c7f30cf4589429feb7bd480ebe7f57c627e2ac9e16c5946ad3939e739c5e4ae8"
+          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:d825b97e4c3a253a49f62ffb3c08b3e8d6a471ecd180f7f1048732da26a1f3bd",
+          "sha256": "d825b97e4c3a253a49f62ffb3c08b3e8d6a471ecd180f7f1048732da26a1f3bd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:624473a08bc14b16050edb1596d00d64158049e20192afcb236c07ef593c6bd2",
+          "sha256": "624473a08bc14b16050edb1596d00d64158049e20192afcb236c07ef593c6bd2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:bda19f7c15e15ef6766e80a7e9e2dc580dbe822796a183e5376d4bff98720f71",
-          "sha256": "bda19f7c15e15ef6766e80a7e9e2dc580dbe822796a183e5376d4bff98720f71"
+          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:79f989ef74acbd5000ca95948df3a0cf911053e9fa011d5eb61ea7bb95d4e84f",
+          "sha256": "79f989ef74acbd5000ca95948df3a0cf911053e9fa011d5eb61ea7bb95d4e84f"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:60748bd31b737f5da19048f67d8db22113a912b937fc013272af329155f86b8e",
-          "sha256": "60748bd31b737f5da19048f67d8db22113a912b937fc013272af329155f86b8e"
+          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:533416ab9826b6fe24b60b629997b46b09e65e1d6b3ce70ac05fa6517199f45f",
+          "sha256": "533416ab9826b6fe24b60b629997b46b09e65e1d6b3ce70ac05fa6517199f45f"
         },
-        "catalina": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:45bee33e5c8e35fe15257333aef0ac31fbfff7c868b0fcaf97232155ab087822",
-          "sha256": "45bee33e5c8e35fe15257333aef0ac31fbfff7c868b0fcaf97232155ab087822"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:85988d5f6ffd08dcedeb706a566d8123869840ab61f0eb0d7fe8ce1ae0207b41",
-          "sha256": "85988d5f6ffd08dcedeb706a566d8123869840ab61f0eb0d7fe8ce1ae0207b41"
+          "url": "https://ghcr.io/v2/homebrew/core/reposurgeon/blobs/sha256:3e8bf8f1bbcf6bdf88bfb1cd1103619c5ec1f731dbccc06bc30d87950e3f0627",
+          "sha256": "3e8bf8f1bbcf6bdf88bfb1cd1103619c5ec1f731dbccc06bc30d87950e3f0627"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +82,9 @@
   "dependencies": [
     "git"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -84,7 +92,7 @@
 
   ],
   "uses_from_macos": [
-
+    "ruby"
   ],
   "requirements": [
 
@@ -104,5 +112,53 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "catalina": {
+      "build_dependencies": [
+        "asciidoctor",
+        "go",
+        "gawk"
+      ]
+    },
+    "mojave": {
+      "build_dependencies": [
+        "asciidoctor",
+        "go",
+        "gawk"
+      ]
+    },
+    "high_sierra": {
+      "build_dependencies": [
+        "asciidoctor",
+        "go",
+        "gawk"
+      ]
+    },
+    "sierra": {
+      "build_dependencies": [
+        "asciidoctor",
+        "go",
+        "gawk"
+      ]
+    },
+    "el_capitan": {
+      "build_dependencies": [
+        "asciidoctor",
+        "go",
+        "gawk"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "asciidoctor",
+        "go",
+        "gawk"
+      ],
+      "dependencies": [
+        "git",
+        "ruby"
+      ]
+    }
+  }
 }

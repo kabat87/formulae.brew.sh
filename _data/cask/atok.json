@@ -7,43 +7,51 @@
   ],
   "desc": "Japanese input method editor (IME) produced by JustSystems",
   "homepage": "https://www.justsystems.com/jp/products/atokmac/",
-  "url": "https://gate.justsystems.com/download/atok/ut/mac/at32try3.dmg",
+  "url": "https://gate.justsystems.com/download/atok/ut/mac/at32_5.dmg",
   "appcast": null,
-  "version": "2021,32.1.0,try3",
+  "version": "32.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6ca2775c73489a88c3190bacccfc8531023682ef355dc4b7b5f7f1bb82383814",
+  "sha256": "0b30a38812406623ea2ce5371b59f4dc897358a2210079c2512c597e768ad421",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.justsystems.atok32.doc.pkg",
-        "com.justsystems.atok32.pkg",
-        "com.justsystems.atok32.quicklook.pkg",
-        "com.justsystems.atok32.sync.pkg",
-        "com.justsystems.JustOnlineUpdate.pkg",
-        "com.justsystems.pkg.lma"
-      ],
-      "launchctl": [
-        "com.justsystems.atok32.enabler",
-        "com.justsystems.inputmethod.atok32",
-        "com.justsystems.launchd.Atok32.AlBg",
-        "com.justsystems.launchd.jslmad",
-        "com.justsystems.launchd.jslmaUI",
-        "com.justsystems.launchd.UpdateChecker",
-        "com.justsystems.OnlineUpdate"
-      ],
-      "quit": "com.justsystems.UpdateChecker",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.justsystems.atok32.doc.pkg",
+            "com.justsystems.atok32.pkg",
+            "com.justsystems.atok32.quicklook.pkg",
+            "com.justsystems.atok32.sync.pkg",
+            "com.justsystems.JustOnlineUpdate.pkg",
+            "com.justsystems.pkg.lma"
+          ],
+          "launchctl": [
+            "com.justsystems.atok32.enabler",
+            "com.justsystems.inputmethod.atok32",
+            "com.justsystems.launchd.Atok32.AlBg",
+            "com.justsystems.launchd.jslmad",
+            "com.justsystems.launchd.jslmaUI",
+            "com.justsystems.launchd.UpdateChecker",
+            "com.justsystems.OnlineUpdate"
+          ],
+          "quit": "com.justsystems.UpdateChecker"
+        }
+      ]
     },
-    "ATOK インストーラ.pkg (Pkg)"
+    {
+      "pkg": [
+        "ATOK インストーラ.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

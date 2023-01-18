@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dlbeer/mspdebug/archive/v0.25.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "347b5ae5d0ab0cddb54363b72abe482f9f5d6aedb8f230048de0ded28b7d1503"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mspdebug/blobs/sha256:56080d64e000643c6725ed8051485e0b85e8e5e386f7a57398a3ec06d59a699a",
+          "sha256": "56080d64e000643c6725ed8051485e0b85e8e5e386f7a57398a3ec06d59a699a"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mspdebug/blobs/sha256:42af25df066a3e948b0644670299949b54582bdede0ab53e41dcb346c0c2c92e",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mspdebug/blobs/sha256:2c4c83e755286f97432ced3adb0e81a15e2241715e82135a6cc758999d621cfd",
           "sha256": "2c4c83e755286f97432ced3adb0e81a15e2241715e82135a6cc758999d621cfd"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mspdebug/blobs/sha256:bdff1006fe15553254c8cdafce3c56689d2d59f7d6943b8cdac964e1b5d0f0b8",
+          "sha256": "bdff1006fe15553254c8cdafce3c56689d2d59f7d6943b8cdac964e1b5d0f0b8"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/mspdebug/blobs/sha256:22fc92bc5a594451eb0d0b943bce812619302c795fdad0ca4305c059ccf10a88",
           "sha256": "22fc92bc5a594451eb0d0b943bce812619302c795fdad0ca4305c059ccf10a88"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/mspdebug/blobs/sha256:8b23c23287fc9ab143921257a1859f8ac0dbb9e093261dfe931ec7d6a3548d97",
-          "sha256": "8b23c23287fc9ab143921257a1859f8ac0dbb9e093261dfe931ec7d6a3548d97"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mspdebug/blobs/sha256:591e9d4d6bf5cedceda3db088a416b6c597acdcd65d40856c8f5fd69c49b8c7c",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +106,9 @@
   "dependencies": [
     "hidapi",
     "libusb-compat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

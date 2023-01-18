@@ -9,29 +9,42 @@
   "homepage": "https://twocanoes.com/products/mac/winclone",
   "url": "https://twocanoes-software-updates.s3.amazonaws.com/Winclone10.dmg",
   "appcast": null,
-  "version": "10.0,50054",
+  "version": "10.2,50072",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "615adf440025982f22a242383a8fe1f995595b80b4fb7df9874e2d889655f502",
+  "sha256": "e7f5f5d5370d9a4bbfaffb034a8c3b38823d98621126adbcfbd76a29cffeb53b",
   "artifacts": [
-    "uninstall_preflight (Preflight Block)",
     {
-      "signal": {
-        "TERM": "com.twocanoes.Winclone10"
-      },
-      "pkgutil": "com.twocanoes.pkg.Winclone*"
+      "uninstall_preflight": "  uninstall_preflight do\n    system_command \"/usr/sbin/installer\",\n                   args: [\n                     \"-pkg\", \"#{staged_path}/Uninstaller/Uninstall Winclone.pkg\",\n                     \"-target\", \"/\"\n                   ],\n                   sudo: true\n  end\n"
     },
-    "Winclone.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/Winclone",
-        "~/Library/Caches/com.twocanoes.Winclone10",
-        "~/Library/Logs/Winclone"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "signal": [
+            "TERM",
+            "com.twocanoes.Winclone10"
+          ],
+          "pkgutil": "com.twocanoes.pkg.Winclone*"
+        }
+      ]
+    },
+    {
+      "pkg": [
+        "Winclone.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Winclone",
+            "~/Library/Caches/com.twocanoes.Winclone10",
+            "~/Library/Logs/Winclone"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +57,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/mptre/pick/releases/download/v4.0.0/pick-4.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "de768fd566fd4c7f7b630144c8120b779a61a8cd35898f0db42ba8af5131edca"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pick/blobs/sha256:baf0de992329c39e5c0ed64680c7fc8438e460ccb4a261e15a987e8afac5859e",
+          "sha256": "baf0de992329c39e5c0ed64680c7fc8438e460ccb4a261e15a987e8afac5859e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pick/blobs/sha256:3978f455a6bf9cba97b215e8a71a4f314eb48bfd0a920ef307e46c5c3bf3e186",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pick/blobs/sha256:032d06aa754000e281f773bb857266efc79e1762e8f689617778a19e17505688",
           "sha256": "032d06aa754000e281f773bb857266efc79e1762e8f689617778a19e17505688"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pick/blobs/sha256:7d8ae03b4a23f8bbfba46552fac1bac70eb1d2bc80177660ce21ef4974438954",
+          "sha256": "7d8ae03b4a23f8bbfba46552fac1bac70eb1d2bc80177660ce21ef4974438954"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -65,13 +76,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pick/blobs/sha256:0fc521881c760d4f9e4f8625795716e0e1c0e1ed1522ccb5efd055313b2729bc",
           "sha256": "0fc521881c760d4f9e4f8625795716e0e1c0e1ed1522ccb5efd055313b2729bc"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pick/blobs/sha256:e5c80628af5eda75fa3d34827529f3f482c0dc058c1016f5a6033deca9d22566",
+          "sha256": "e5c80628af5eda75fa3d34827529f3f482c0dc058c1016f5a6033deca9d22566"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

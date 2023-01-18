@@ -1,13 +1,9 @@
 cask "miniconda" do
-  arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
+  arch arm: "arm64", intel: "x86_64"
 
-  if Hardware::CPU.intel?
-    version "py39_4.10.3"
-    sha256 "786de9721f43e2c7d2803144c635f5f6e4823483536dc141ccd82dbb927cd508"
-  else
-    version "py38_4.10.1"
-    sha256 "4ce4047065f32e991edddbb63b3c7108e7f4534cfc1efafc332454a414deab58"
-  end
+  version "py310_22.11.1-1"
+  sha256 arm:   "22eec9b7d3add25ac3f9b60621d8f3d8df3e63d4aa0ae5eb846b558d7ba68333",
+         intel: "7406579393427eaf9bc0e094dcd3c66d1e1b93ee9db4e7686d0a72ea5d7c0ce5"
 
   url "https://repo.anaconda.com/miniconda/Miniconda3-#{version}-MacOSX-#{arch}.sh",
       verified: "repo.anaconda.com/miniconda/"
@@ -15,15 +11,11 @@ cask "miniconda" do
   desc "Minimal installer for conda"
   homepage "https://conda.io/miniconda.html"
 
-  # This regex restricts matching to a specific Python version. This will need
-  # to be updated when the prefix changes in the latest version at the top of:
-  # https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-#{arch}.sh
   livecheck do
     url "https://repo.anaconda.com/miniconda/"
-    if Hardware::CPU.intel?
-      regex(/>\s*Miniconda3-(py39[._-]\d+(?:\.\d+)+)-MacOSX-#{arch}\.sh\s*</i)
-    else
-      regex(/>\s*Miniconda3-(py38[._-]\d+(?:\.\d+)+)-MacOSX-#{arch}\.sh\s*</i)
+    strategy do |content|
+      sha256 = content.scan(/>Miniconda3-latest-MacOSX-#{arch}\.sh<.{,99}>(\w{64})</im).first.first
+      content.scan(/>Miniconda3-(py\d+_[\d.-]+)-MacOSX-#{arch}\.sh<.{,99}>#{sha256}</im).first.first
     end
   end
 
@@ -40,8 +32,8 @@ cask "miniconda" do
   uninstall delete: "#{caskroom_path}/base"
 
   zap trash: [
-    "~/.condarc",
     "~/.conda",
+    "~/.condarc",
     "~/.continuum",
   ]
 

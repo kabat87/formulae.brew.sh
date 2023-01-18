@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/JakeWharton/mkvdts2ac3/archive/1.6.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f9f070c00648c1ea062ac772b160c61d1b222ad2b7d30574145bf230e9288982"
     }
   },
   "revision": 3,
@@ -66,11 +67,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/mkvdts2ac3/blobs/sha256:d3eaf28d8c9718a73c2309eb8d9fc7c0a8db2ea6517324a80092ca02ac7842d4",
           "sha256": "d3eaf28d8c9718a73c2309eb8d9fc7c0a8db2ea6517324a80092ca02ac7842d4"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mkvdts2ac3/blobs/sha256:4b4c9bf979e7ecd9efa254a9e5fdfe13a5549a209958f86e1233b8cc87a38e4b",
-          "sha256": "4b4c9bf979e7ecd9efa254a9e5fdfe13a5549a209958f86e1233b8cc87a38e4b"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mkvdts2ac3/blobs/sha256:471db2824e25cbbdc46fb1e42b2d8fc1c24ba4e92df73cd509b8036f1f559746",
@@ -86,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +91,9 @@
   "dependencies": [
     "ffmpeg",
     "mkvtoolnix"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -124,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

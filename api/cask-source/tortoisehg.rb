@@ -1,6 +1,6 @@
 cask "tortoisehg" do
-  version "6.0"
-  sha256 "eeb33f994219dd12f8af9d5ba499b7f500abec76738c0b0975d9c2a99d3b66f5"
+  version "6.3.2"
+  sha256 "3faf12ec67e79c1a68c558c4450e17c8b9a0a8ff02023cfde0cf60917be845d7"
 
   url "https://www.mercurial-scm.org/release/tortoisehg/macos/TortoiseHg-#{version}-mac-x64-qt5.dmg",
       verified: "mercurial-scm.org/release/tortoisehg/"
@@ -10,7 +10,6 @@ cask "tortoisehg" do
 
   livecheck do
     url "https://www.mercurial-scm.org/release/tortoisehg/macos/"
-    strategy :page_match
     regex(/TortoiseHg-(\d+(?:\.\d+)*)-mac-x64-qt5\.dmg/i)
   end
 

@@ -10,7 +10,7 @@
 
   ],
   "desc": "Quick and Dirty Apricot Emulator",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://www.seasip.info/Unix/QDAE/",
   "versions": {
     "stable": "0.0.10",
@@ -21,52 +21,62 @@
     "stable": {
       "url": "https://www.seasip.info/Unix/QDAE/qdae-0.0.10.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "780752c37c9ec68dd0cd08bd6fe288a1028277e10f74ef405ca200770edb5227"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:8a65baa3a3b7a91e50b9b6887e944b365e3fb8675aedae3e5496bdd9dec8a8c9",
+          "sha256": "8a65baa3a3b7a91e50b9b6887e944b365e3fb8675aedae3e5496bdd9dec8a8c9"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:e8bb72388f0c79baa7bc75a5820a3a77a6f61c2466c0b6d0ca0cf06073d4eb71",
+          "sha256": "e8bb72388f0c79baa7bc75a5820a3a77a6f61c2466c0b6d0ca0cf06073d4eb71"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:9551d2289bd90b76851cebd6d1f11e2e3b1c9ca856d8eb4f88312ec941efb097",
-          "sha256": "9551d2289bd90b76851cebd6d1f11e2e3b1c9ca856d8eb4f88312ec941efb097"
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:4f51ec56064ae77144a38e80e7bf98cf19399101448f0c5278df2bb292bae59b",
+          "sha256": "4f51ec56064ae77144a38e80e7bf98cf19399101448f0c5278df2bb292bae59b"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:c77cebe85e83aa1ee97945035a55c81aef2210653981cc4688a23cbb6ef71bdd",
+          "sha256": "c77cebe85e83aa1ee97945035a55c81aef2210653981cc4688a23cbb6ef71bdd"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:6dc2007e7f4cd389c81fcfccdbaec02b12956133e6250614edf374c8ca5c6ebf",
+          "sha256": "6dc2007e7f4cd389c81fcfccdbaec02b12956133e6250614edf374c8ca5c6ebf"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:1e6b4a1ae9c0f6c69623f72e6d84429f57986b6560939cfa7ea02b36a2f39830",
-          "sha256": "1e6b4a1ae9c0f6c69623f72e6d84429f57986b6560939cfa7ea02b36a2f39830"
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:b2a572238e037b46c2765c32bf92180e1370bd1ba4fae123966d715f2b07f796",
+          "sha256": "b2a572238e037b46c2765c32bf92180e1370bd1ba4fae123966d715f2b07f796"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:d951231205b4f4faf3e4f829665d25c82d236f3f52339dd5664fb8adb46e68eb",
-          "sha256": "d951231205b4f4faf3e4f829665d25c82d236f3f52339dd5664fb8adb46e68eb"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:290d931e61684c53227e0a16d808427eb7218fbec76c57eb250c03dbf15bb6b8",
-          "sha256": "290d931e61684c53227e0a16d808427eb7218fbec76c57eb250c03dbf15bb6b8"
-        },
-        "high_sierra": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:945b28c4354053f3ebd81bb868ef6a14d8fef1c32d6cebd73455bd17f17332ae",
-          "sha256": "945b28c4354053f3ebd81bb868ef6a14d8fef1c32d6cebd73455bd17f17332ae"
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:9b52e69dfcbeed51cacae5189cd2833da3bafda73ebb155b7d6a3c57eb8152fd",
+          "sha256": "9b52e69dfcbeed51cacae5189cd2833da3bafda73ebb155b7d6a3c57eb8152fd"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:663f3822c76388f597539c10e9296fb58289d364902b86497f037843cce25d85",
-          "sha256": "663f3822c76388f597539c10e9296fb58289d364902b86497f037843cce25d85"
+          "url": "https://ghcr.io/v2/homebrew/core/qdae/blobs/sha256:db3a6068e466987b92397d842c2b3ecde2bded442094c3f913333f128758d0c6",
+          "sha256": "db3a6068e466987b92397d842c2b3ecde2bded442094c3f913333f128758d0c6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,8 +84,10 @@
 
   ],
   "dependencies": [
-    "libxml2",
-    "sdl"
+    "sdl12-compat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -84,7 +96,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libxml2"
   ],
   "requirements": [
 
@@ -92,17 +104,19 @@
   "conflicts_with": [
 
   ],
-  "caveats": "Data files are located in the following directory:\n  $(brew --prefix)/Cellar/qdae/0.0.10/share/QDAE\n",
+  "caveats": "Data files are located in the following directory:\n  $(brew --prefix)/Cellar/qdae/0.0.10_2/share/QDAE\n",
   "installed": [
 
   ],
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-09-23",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,13 +1,9 @@
 cask "blockbench" do
-  arch = Hardware::CPU.intel? ? "x64" : "arm64"
+  arch arm: "arm64", intel: "x64"
 
-  version "4.1.1"
-
-  if Hardware::CPU.intel?
-    sha256 "200920e19d7b1fa1fb6c9a9661908406563924ce6d5ff0606281e6b2eb2a07d3"
-  else
-    sha256 "8e2aa17f00ba49d3d73f5054fcb2f48e4bfdb927a08b2b4b6c389e76dbe6c8b8"
-  end
+  version "4.5.2"
+  sha256 arm:   "93d76408fe896895a94c8f9ee03c619f026a448f5079da05d9e951cd1905e5ff",
+         intel: "67e297a176bfd8b90d83e8819b539b4b7288635680a89255913e7092e0eb3054"
 
   url "https://github.com/JannisX11/blockbench/releases/download/v#{version}/Blockbench_#{arch}_#{version}.dmg",
       verified: "github.com/JannisX11/blockbench/"
@@ -22,5 +18,9 @@ cask "blockbench" do
 
   app "Blockbench.app"
 
-  zap trash: "~/Library/Application Support/Blockbench"
+  zap trash: [
+    "~/Library/Application Support/Blockbench",
+    "~/Library/Preferences/blockbench.plist",
+    "~/Library/Saved Application State/blockbench.savedState",
+  ]
 end

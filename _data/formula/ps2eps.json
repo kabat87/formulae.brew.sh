@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.tm.uka.de/~bless/ps2eps-1.70.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3a6681c3177af9ae326459c57e84fe90829d529d247fc32ae7f66e8839e81b11"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ps2eps/blobs/sha256:0993f1da048518572c4388a4eab1e7c37151c97859eec0802b639ef803d71eca",
+          "sha256": "0993f1da048518572c4388a4eab1e7c37151c97859eec0802b639ef803d71eca"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ps2eps/blobs/sha256:bdadaaab653031dd42695d12d97e7b831e15d6e823f00abc74a5a2f89a7e4954",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ps2eps/blobs/sha256:cb048bafbe5b44a17151bc81c5743045f3f4963d6f3cf2adf38685bba82c8c67",
           "sha256": "cb048bafbe5b44a17151bc81c5743045f3f4963d6f3cf2adf38685bba82c8c67"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ps2eps/blobs/sha256:1942c75b041b2ffd5b15664549297c06a558564f487f49b16bad3abb329c5fe9",
+          "sha256": "1942c75b041b2ffd5b15664549297c06a558564f487f49b16bad3abb329c5fe9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ps2eps/blobs/sha256:170231b1c48914442e5c4eac304652b1aab7603c46d407f26b1383b932e3c2d9",
           "sha256": "170231b1c48914442e5c4eac304652b1aab7603c46d407f26b1383b932e3c2d9"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ps2eps/blobs/sha256:e392648b006b21de93a33d1fbb1b5505c1de5353d0168368a71f15efd9a39df6",
+          "sha256": "e392648b006b21de93a33d1fbb1b5505c1de5353d0168368a71f15efd9a39df6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +90,9 @@
   ],
   "dependencies": [
     "ghostscript"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "GPL-2.0-only",
   "homepage": "http://www.edge-security.com/theharvester.php",
   "versions": {
-    "stable": "4.0.3",
+    "stable": "4.2.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/laramies/theHarvester/archive/4.0.3.tar.gz",
+      "url": "https://github.com/laramies/theHarvester/archive/4.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e84be8ba75b429364fa59d560d98072bdc9c176c637af2bf7481cf153dfadbf2"
     }
   },
   "revision": 0,
@@ -31,53 +32,60 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:57d6bff50f538bd546d1dbfd57829f9d9b1275aa0b59a3437780234ab2812a11",
+          "sha256": "57d6bff50f538bd546d1dbfd57829f9d9b1275aa0b59a3437780234ab2812a11"
+        },
         "arm64_monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:8caf08c3e0a4d1ea578adb1e82489cd3c99bf3fe2028cd953269e88ca6dbef64",
-          "sha256": "8caf08c3e0a4d1ea578adb1e82489cd3c99bf3fe2028cd953269e88ca6dbef64"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:7a91db4a0477a4d3aac674af0167812b3dd23f192cfdcecb14b836c91a9bd66f",
+          "sha256": "7a91db4a0477a4d3aac674af0167812b3dd23f192cfdcecb14b836c91a9bd66f"
         },
         "arm64_big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:c91a5d597068af5d040ed119186f5c1b15e6569c5a388cf87561d33b460746a5",
-          "sha256": "c91a5d597068af5d040ed119186f5c1b15e6569c5a388cf87561d33b460746a5"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:02f4a76b9e85610734023e0495a8160bc0a757c00df52564a5a3dd08ce2e2561",
+          "sha256": "02f4a76b9e85610734023e0495a8160bc0a757c00df52564a5a3dd08ce2e2561"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:01dea252adb87cbf2c9af3252ec2347772495301cacb9f28e0785581d5b556f3",
+          "sha256": "01dea252adb87cbf2c9af3252ec2347772495301cacb9f28e0785581d5b556f3"
         },
         "monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:e5f6ed97e167ab5cbb6ca7c3fcb66a799d93b83a7f61987131e0a5f7fc40d00d",
-          "sha256": "e5f6ed97e167ab5cbb6ca7c3fcb66a799d93b83a7f61987131e0a5f7fc40d00d"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:b4a3c009e5183549db2a5b449478347160e88f73a929fcc785969b742eb4797f",
+          "sha256": "b4a3c009e5183549db2a5b449478347160e88f73a929fcc785969b742eb4797f"
         },
         "big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:86f5d146002a46ca751d37eaa2a2d8654d4edb1819a6be187dde2fcc7f35f9e8",
-          "sha256": "86f5d146002a46ca751d37eaa2a2d8654d4edb1819a6be187dde2fcc7f35f9e8"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:6ca40741ca0e391265c6971dbd7b40882e7afeb18a4c0f969e4fdbacaa06cc22",
-          "sha256": "6ca40741ca0e391265c6971dbd7b40882e7afeb18a4c0f969e4fdbacaa06cc22"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:eb93f073498572a4486fdd30fdd6f93b621c88432017badd2a0ae458fdbbe56b",
+          "sha256": "eb93f073498572a4486fdd30fdd6f93b621c88432017badd2a0ae458fdbbe56b"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:588869292284a3a7df49faba5f5554a4fe501797b1b378ca339392094a936bb0",
-          "sha256": "588869292284a3a7df49faba5f5554a4fe501797b1b378ca339392094a936bb0"
+          "url": "https://ghcr.io/v2/homebrew/core/theharvester/blobs/sha256:3385bbe5ef27952aee1aaf312d83fd5b0795da775979b74ae9fe6e9294f5f5b1",
+          "sha256": "3385bbe5ef27952aee1aaf312d83fd5b0795da775979b74ae9fe6e9294f5f5b1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "maturin",
-    "rust"
+
   ],
   "dependencies": [
-    "libyaml",
-    "python@3.9",
+    "python-typing-extensions",
+    "python@3.11",
+    "pyyaml",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,5 +115,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

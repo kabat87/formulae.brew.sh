@@ -10,18 +10,19 @@
 
   ],
   "desc": "Hadoop database: a distributed, scalable, big data store",
-  "license": "Apache-2.0",
+  "license": "Apache-2.0 and GPL-3.0-or-later",
   "homepage": "https://hbase.apache.org",
   "versions": {
-    "stable": "2.4.6",
+    "stable": "2.5.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/closer.lua?path=hbase/2.4.6/hbase-2.4.6-bin.tar.gz",
+      "url": "https://www.apache.org/dyn/closer.lua?path=hbase/2.5.2/hbase-2.5.2-bin.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9f32b066387f850d4d6d0680f4e77835c3a8c4316da0b5634467b9e0dcc860a8"
     }
   },
   "revision": 0,
@@ -31,32 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:6e40a58acfbc4ef14b96728e4ac1785ef41c3a7eb48ba214e2dd800a14301c42",
+          "sha256": "6e40a58acfbc4ef14b96728e4ac1785ef41c3a7eb48ba214e2dd800a14301c42"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:2454df4d5e5f55fdee780aaa4de3ac6f1379a23a5cb2d253fd3b190dcca5ffb3",
+          "sha256": "2454df4d5e5f55fdee780aaa4de3ac6f1379a23a5cb2d253fd3b190dcca5ffb3"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:cd254857676c86bba7937f4eb8fa6832b917a5ecd60a1d3bfc22b6c8d3ff99c8",
-          "sha256": "cd254857676c86bba7937f4eb8fa6832b917a5ecd60a1d3bfc22b6c8d3ff99c8"
+          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:155543e59c966827e83a924a588818b68c7fd1400cdd2f16f0abaaa59b11c23c",
+          "sha256": "155543e59c966827e83a924a588818b68c7fd1400cdd2f16f0abaaa59b11c23c"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:4b38ba0cadf3101dfec691cd58be94d30ad1206a67672a121a2d5f0492a37cb2",
+          "sha256": "4b38ba0cadf3101dfec691cd58be94d30ad1206a67672a121a2d5f0492a37cb2"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:3cfe153f68194bc4b829bd7c5a9fad488c157db7075918903d142275b498a32c",
+          "sha256": "3cfe153f68194bc4b829bd7c5a9fad488c157db7075918903d142275b498a32c"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:3b6bb361f07fda40372b7de6b6e794aab6a62a247d94141bfb3e7a808f337ae3",
-          "sha256": "3b6bb361f07fda40372b7de6b6e794aab6a62a247d94141bfb3e7a808f337ae3"
+          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:a85407545e9b43c2fd7dec7b00c29db895e563e621315e2969903db697d77534",
+          "sha256": "a85407545e9b43c2fd7dec7b00c29db895e563e621315e2969903db697d77534"
         },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:792f97ac1dbc3c9ef96dde2ff505cefd01f406789898f0f43204395c046640db",
-          "sha256": "792f97ac1dbc3c9ef96dde2ff505cefd01f406789898f0f43204395c046640db"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:999d2da18e6b9e27272e69ffded83cf0cb6a6a279bb7b775e1be58aeb66566a2",
-          "sha256": "999d2da18e6b9e27272e69ffded83cf0cb6a6a279bb7b775e1be58aeb66566a2"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hbase/blobs/sha256:92549de3fe32094a3eacd03d3b81797d1d445134135662da1f8e0c7f70cbb2b3",
+          "sha256": "92549de3fe32094a3eacd03d3b81797d1d445134135662da1f8e0c7f70cbb2b3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -67,6 +82,9 @@
     "lzo",
     "openjdk@11"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -74,7 +92,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "netcat": "test"
+    }
   ],
   "requirements": [
 
@@ -94,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

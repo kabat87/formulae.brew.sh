@@ -7,6 +7,7 @@
 
   ],
   "versioned_formulae": [
+    "redis@6.2",
     "redis@3.2"
   ],
   "desc": "Persistent key-value database, with built-in net interface",
@@ -19,9 +20,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/antirez/redis/archive/4.0.14.tar.gz",
+      "url": "https://github.com/redis/redis/archive/4.0.14.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3b8c6ea4c9db944fe6ec427c1b11d912ca6c5c5e17ee4cfaea98bbda90724752"
     }
   },
   "revision": 1,
@@ -64,7 +66,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -72,6 +73,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -96,10 +100,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2020-04-30",
-  "deprecation_reason": "versioned_formula",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "versioned_formula",
+  "variations": {
+  }
 }

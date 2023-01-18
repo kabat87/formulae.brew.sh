@@ -7,26 +7,30 @@
   ],
   "desc": "Displays all your GitLab activities in one place",
   "homepage": "https://gitlab.com/mvanremmerden/gitdock",
-  "url": "https://gitlab.com/mvanremmerden/gitdock/-/releases/v0.1.19/downloads/GitDock-0.1.19.dmg",
+  "url": "https://gitlab.com/mvanremmerden/gitdock/-/releases/v0.1.28/downloads/GitDock-0.1.28.dmg",
   "appcast": null,
-  "version": "0.1.19",
+  "version": "0.1.28",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2dced5ec0848a92513732f9b0e4c6857107685467a4dbf985b5d3f801e91e4d1",
+  "sha256": "61db6153159ab9a1f0e6303e71e1e50acd4f7d4cdb77c58218ffab4884bb017f",
   "artifacts": [
-    [
-      "GitDock.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/GitDock",
-        "~/Library/Preferences/com.electron.gitdock.plist",
-        "~/Library/Saved Application State/com.electron.gitdock.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "GitDock.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/GitDock",
+            "~/Library/Preferences/com.electron.gitdock.plist",
+            "~/Library/Saved Application State/com.electron.gitdock.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

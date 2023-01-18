@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.osgeo.org/postgis/source/postgis-2.5.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "146d59351cf830e2a2a72fa14e700cd5eab6c18ad3e7c644f57c4cee7ed98bbe"
     }
   },
   "revision": 1,
@@ -74,7 +75,6 @@
     "reason": "conflicts with PostGIS, which also installs liblwgeom.dylib",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +89,9 @@
     "geos",
     "json-c",
     "proj@7"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -112,10 +115,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2020-11-23",
-  "deprecation_reason": "liblwgeom headers are not installed anymore, use librttopo instead",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "liblwgeom headers are not installed anymore, use librttopo instead",
+  "variations": {
+  }
 }

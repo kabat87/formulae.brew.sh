@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://ftp.parrot.org/releases/supported/8.1.0/parrot-8.1.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "caf356acab64f4ea50595a846808e81d0be8ada8267afbbeb66ddb3c93cb81d3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/parrot/blobs/sha256:8d4542d74d3269cd5f1f8a096a8a6efb53b2300a22c1e0604c379da3499216b2",
+          "sha256": "8d4542d74d3269cd5f1f8a096a8a6efb53b2300a22c1e0604c379da3499216b2"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/parrot/blobs/sha256:91f7d2f17e362ea66be0f7706414a1241d5af6f8bce0c7054c1e0ef1ba39bad5",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/parrot/blobs/sha256:d8a39b997791e6fc739322075c52ae288072b787d5f3f401b1040a6548649f63",
           "sha256": "d8a39b997791e6fc739322075c52ae288072b787d5f3f401b1040a6548649f63"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/parrot/blobs/sha256:e944d6d98ab02b17d2f563c434c85bdb72a9a2e831608c3f128ee155ebc15398",
+          "sha256": "e944d6d98ab02b17d2f563c434c85bdb72a9a2e831608c3f128ee155ebc15398"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/parrot/blobs/sha256:3b78be029276ca642cb2bc705888ed0cd7745c0398cf90bf67031190191c76a8",
           "sha256": "3b78be029276ca642cb2bc705888ed0cd7745c0398cf90bf67031190191c76a8"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/parrot/blobs/sha256:37a9ad2396bcf355d6d7ae2d432489e316d3290528947a6f1a30e753fed59902",
-          "sha256": "37a9ad2396bcf355d6d7ae2d432489e316d3290528947a6f1a30e753fed59902"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/parrot/blobs/sha256:26b301714008aa6c10ecd25b10d01bf361ed4772b90af0a9d50936d2108f9013",
+          "sha256": "26b301714008aa6c10ecd25b10d01bf361ed4772b90af0a9d50936d2108f9013"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

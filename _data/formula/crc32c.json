@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/google/crc32c/archive/1.1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ac07840513072b7fcebda6e821068aa04889018f24e10e46181068fb214d7e56"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/crc32c/blobs/sha256:3ada0a95e5f4b33f6a5caf7e56d9bfe608b44f01c7fd1be0db8f30d4102a473d",
+          "sha256": "3ada0a95e5f4b33f6a5caf7e56d9bfe608b44f01c7fd1be0db8f30d4102a473d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/crc32c/blobs/sha256:f36a8347a3c402b0f13b407fe0c99e1a2b067722cebf22f62a2f9916be2118fe",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/crc32c/blobs/sha256:1e4ac6f8e18ad96c1d7b5e899902b6ce75d56953582066570de4ecc2329409a9",
           "sha256": "1e4ac6f8e18ad96c1d7b5e899902b6ce75d56953582066570de4ecc2329409a9"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/crc32c/blobs/sha256:838b9ec85a464004ec90f99348eaca5a2432de5ea2cd671d8bf454f5b4106612",
+          "sha256": "838b9ec85a464004ec90f99348eaca5a2432de5ea2cd671d8bf454f5b4106612"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

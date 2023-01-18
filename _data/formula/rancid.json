@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.shrubbery.net/pub/rancid/rancid-3.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7241d2972b1f6f76a28bdaa0e7942b1257e08b404a15d121c9dee568178f8bf5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rancid/blobs/sha256:ad23b3238d8cdef43a40e060103a58416ffb5043abd8fb94747d467357b8cdd2",
+          "sha256": "ad23b3238d8cdef43a40e060103a58416ffb5043abd8fb94747d467357b8cdd2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rancid/blobs/sha256:d22337b82b06224e0c44739c33fbc91b938168533acccde6d6c4293e6fd1e4a1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rancid/blobs/sha256:b815068fba2453ad568c0406b1f8bd1b1dfe6c69891ac1301a57b01934141132",
           "sha256": "b815068fba2453ad568c0406b1f8bd1b1dfe6c69891ac1301a57b01934141132"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rancid/blobs/sha256:1699bebe63224a888ff084d1099654edb6dd9b8af6f278784bcb82a6cf201588",
+          "sha256": "1699bebe63224a888ff084d1099654edb6dd9b8af6f278784bcb82a6cf201588"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

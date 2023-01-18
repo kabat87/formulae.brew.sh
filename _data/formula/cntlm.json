@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/cntlm/cntlm/cntlm%200.92.3/cntlm-0.92.3.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7b603d6200ab0b26034e9e200fab949cc0a8e5fdd4df2c80b8fc5b1c37e7b930"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cntlm/blobs/sha256:f4674d812c8b17f3e78bea4dfd0bccf3149de7c0be14f9027d2f07724f3eaf32",
+          "sha256": "f4674d812c8b17f3e78bea4dfd0bccf3149de7c0be14f9027d2f07724f3eaf32"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cntlm/blobs/sha256:ec776bb3b8bd91670fdf97e67fefc1ae8c2a4f2901cbb2b007622d22b8e697d7",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cntlm/blobs/sha256:edfcd9088709ea81afc22ec95e7fc9e3c2707dfbcf25582955af0d6288dc4d11",
           "sha256": "edfcd9088709ea81afc22ec95e7fc9e3c2707dfbcf25582955af0d6288dc4d11"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cntlm/blobs/sha256:3bb0d9bd593c362c6303a22d404efc85a9ffcc648110808b3271654574326284",
+          "sha256": "3bb0d9bd593c362c6303a22d404efc85a9ffcc648110808b3271654574326284"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

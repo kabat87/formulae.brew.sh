@@ -7,25 +7,29 @@
   ],
   "desc": "Budgeting tool",
   "homepage": "https://www.budgetwithbuckets.com/",
-  "url": "https://github.com/buckets/application/releases/download/v0.63.2/Buckets-0.63.2.dmg",
+  "url": "https://github.com/buckets/application/releases/download/v0.68.0/Buckets-0.68.0.dmg",
   "appcast": null,
-  "version": "0.63.2",
+  "version": "0.68.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "dbcdd6ec2aa3499ed74885f5aba54690e2bd8fff2449cc04ebdaa38357310f29",
+  "sha256": "54d86f8a8661ae7b1bbeb077af89643f39f2764710401fd60bd9857455237feb",
   "artifacts": [
-    [
-      "Buckets.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Buckets",
-        "~/Library/Preferences/com.github.buckets.application.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Buckets.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Buckets",
+            "~/Library/Preferences/com.github.buckets.application.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

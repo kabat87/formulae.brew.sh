@@ -5,28 +5,32 @@
   "name": [
     "Shadow"
   ],
-  "desc": "Your gaming PC powered by Cloud technology",
+  "desc": "Online virtualized computer",
   "homepage": "https://shadow.tech/",
-  "url": "https://update.shadow.tech/launcher/prod/mac/x64/Shadow.dmg",
+  "url": "https://update.shadow.tech/launcher/prod/mac/x64/Shadow-8.0.10046.dmg",
   "appcast": null,
-  "version": "5.0.1020.7936",
+  "version": "8.0.10046",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "no_check",
+  "sha256": "a039cee238aca5c58e2a8339c193ed4bd616de78994f72efc2ccd3069181fcda",
   "artifacts": [
-    [
-      "Shadow.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Shadow",
-        "~/Library/Preferences/com.electron.shadow.helper.plist",
-        "~/Library/Preferences/com.electron.shadow.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Shadow.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Shadow",
+            "~/Library/Preferences/com.electron.shadow.helper.plist",
+            "~/Library/Preferences/com.electron.shadow.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://update.shadow.tech/launcher/prod/mac/arm64/Shadow-8.0.10046.dmg",
+      "sha256": "2365ecb0bb066ffb9bca0a31dfcb6d93f69c76eb62d90134f58d9df72b021f79"
+    },
+    "arm64_monterey": {
+      "url": "https://update.shadow.tech/launcher/prod/mac/arm64/Shadow-8.0.10046.dmg",
+      "sha256": "2365ecb0bb066ffb9bca0a31dfcb6d93f69c76eb62d90134f58d9df72b021f79"
+    },
+    "arm64_big_sur": {
+      "url": "https://update.shadow.tech/launcher/prod/mac/arm64/Shadow-8.0.10046.dmg",
+      "sha256": "2365ecb0bb066ffb9bca0a31dfcb6d93f69c76eb62d90134f58d9df72b021f79"
+    }
+  }
 }

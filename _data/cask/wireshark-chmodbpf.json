@@ -7,22 +7,30 @@
   ],
   "desc": "Network protocol analyzer",
   "homepage": "https://www.wireshark.org/",
-  "url": "https://www.wireshark.org/download/osx/Wireshark%203.6.1%20Intel%2064.dmg",
+  "url": "https://www.wireshark.org/download/osx/Wireshark%204.0.2%20Intel%2064.dmg",
   "appcast": null,
-  "version": "3.6.1",
+  "version": "4.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f348d9fc1f67f4bf75aef3c45aca864dfc9b43cac488b86af8a7b85c671eb46e",
+  "sha256": "9cc8ca2f48858285d3511f3e5e9167aedcfaebc5c06da8369766a4d2d69aa37e",
   "artifacts": [
-    "uninstall_preflight (Preflight Block)",
     {
-      "pkgutil": "org.wireshark.ChmodBPF.pkg",
-      "signal": {
-      }
+      "uninstall_preflight": "  uninstall_preflight do\n    system_command \"/usr/sbin/installer\",\n                   args: [\n                     \"-pkg\", \"#{staged_path}/Uninstall ChmodBPF.pkg\",\n                     \"-target\", \"/\"\n                   ],\n                   sudo: true\n  end\n"
     },
-    "Install ChmodBPF.pkg (Pkg)"
+    {
+      "uninstall": [
+        {
+          "pkgutil": "org.wireshark.ChmodBPF.pkg"
+        }
+      ]
+    },
+    {
+      "pkg": [
+        "Install ChmodBPF.pkg"
+      ]
+    }
   ],
   "caveats": "This cask will install only the ChmodBPF package from the current Wireshark\nstable install package.\nAn access_bpf group will be created and its members allowed access to BPF\ndevices at boot to allow unprivileged packet captures.\nThis cask is not required if installing the Wireshark cask. It is meant to\nsupport Wireshark installed from Homebrew or other cases where unprivileged\naccess to macOS packet capture devices is desired without installing the binary\ndistribution of Wireshark.\nThe user account used to install this cask will be added to the access_bpf\ngroup automatically.\n\nYou must reboot for the installation of wireshark-chmodbpf to take effect.\n",
   "depends_on": {
@@ -38,5 +46,7 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

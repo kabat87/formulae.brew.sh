@@ -7,28 +7,43 @@
   ],
   "desc": "Batch file renamer application",
   "homepage": "https://renamer.com/",
-  "url": "https://storage.googleapis.com/incrediblebee/apps/Renamer-6/Renamer-6.0.6.zip",
+  "url": "https://storage.googleapis.com/incrediblebee/apps/Renamer-6/Renamer-6.1.1.zip",
   "appcast": null,
-  "version": "6.0.6,60600",
+  "version": "6.1.1,61006",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "66024e88c714080854a5208d2888eda9ab3f9cccc80c81be83698f570b93b05c",
+  "sha256": "e64a05c9d857e6745f53e55e99587b875c821540e1d5be95e0db0fa9f354cf94",
   "artifacts": [
-    [
-      "Renamer.app"
-    ]
+    {
+      "app": [
+        "Renamer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Renamer",
+            "~/Library/Logs/Renamer.log",
+            "~/Library/Preferences/com.incrediblebee.Renamer6.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

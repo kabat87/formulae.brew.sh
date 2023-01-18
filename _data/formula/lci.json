@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/chatziko/lci/releases/download/v1.0/lci-1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1bcf40d738ce2af7ca5116f02dfb0f4ed21d7e467e3618e071c8199a1285331e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lci/blobs/sha256:21afc33909d59c974988a19f1189c56451430b0ff1bd687d421fbcb227e3c215",
+          "sha256": "21afc33909d59c974988a19f1189c56451430b0ff1bd687d421fbcb227e3c215"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/lci/blobs/sha256:7fb1ab319d3340b759042f184cd043f50f3897bf8f0650885fe8b679b630c52c",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/lci/blobs/sha256:6540439b0f6ea5653aab7ac697f708bf3effa3135f2b8a8d2d98a08e137fab15",
           "sha256": "6540439b0f6ea5653aab7ac697f708bf3effa3135f2b8a8d2d98a08e137fab15"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lci/blobs/sha256:4dd1911200ea6dda6223506317afea28ef0d54271b61922f6d18b87211b0e68a",
+          "sha256": "4dd1911200ea6dda6223506317afea28ef0d54271b61922f6d18b87211b0e68a"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

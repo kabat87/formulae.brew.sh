@@ -7,28 +7,32 @@
   ],
   "desc": "Free and open-source media player",
   "homepage": "https://kodi.tv/",
-  "url": "https://mirrors.kodi.tv/releases/osx/x86_64/kodi-19.3-Matrix-x86_64.dmg",
+  "url": "https://mirrors.kodi.tv/releases/osx/x86_64/kodi-20.0-Nexus-x86_64.dmg",
   "appcast": null,
-  "version": "19.3-Matrix",
+  "version": "20.0-Nexus",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "9ab424283d76bc14bcbd9940e933473b44e049741c3bc7491f472b76a5804543",
+  "sha256": "544ea624109fc6f0e8a61263d70068ded35b04c0a843234c60d980a3c5f2c27e",
   "artifacts": [
-    [
-      "Kodi.app"
-    ],
     {
-      "trash": [
-        "~/.kodi",
-        "~/Library/Application Support/Kodi",
-        "~/Library/Logs/kodi.log",
-        "~/Library/Logs/kodi.old.log",
-        "~/Library/Saved Application State/org.xbmc.kodi.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Kodi.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.kodi",
+            "~/Library/Application Support/Kodi",
+            "~/Library/Logs/kodi.log",
+            "~/Library/Logs/kodi.old.log",
+            "~/Library/Saved Application State/org.xbmc.kodi.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

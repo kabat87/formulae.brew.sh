@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/cc65/cc65/archive/V2.19.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "157b8051aed7f534e5093471e734e7a95e509c577324099c3c81324ed9d0de77"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cc65/blobs/sha256:753141cb314e207064134c09d9f31ce82f9d2ca720925f321cb81100ef3ee347",
+          "sha256": "753141cb314e207064134c09d9f31ce82f9d2ca720925f321cb81100ef3ee347"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cc65/blobs/sha256:9353c4052546b46967c63aabc48e64633164669129e6406f8afc2dcaac17fb89",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cc65/blobs/sha256:47405e34cd591b17d9ed65842f25ac7c6d9f61e98f21b9c403596257d7e23dae",
           "sha256": "47405e34cd591b17d9ed65842f25ac7c6d9f61e98f21b9c403596257d7e23dae"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cc65/blobs/sha256:18dc69ba26b9bee5ef93a34ec4e38111c7cf6c8fe0d4fdee174ed9980718e66e",
+          "sha256": "18dc69ba26b9bee5ef93a34ec4e38111c7cf6c8fe0d4fdee174ed9980718e66e"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

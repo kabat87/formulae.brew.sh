@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/create-dmg/create-dmg",
   "versions": {
-    "stable": "1.0.9",
+    "stable": "1.1.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/create-dmg/create-dmg/archive/v1.0.9.tar.gz",
+      "url": "https://github.com/create-dmg/create-dmg/archive/v1.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d50e14a00b73a3f040732b4cfa11361f5786521719059ce2dfcccd9088d3bf32"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/create-dmg/blobs/sha256:fbbb2e726579852cfa16abe27bc34bf78a2df0c991a9d9d6994c2ffbd5c2773d",
-          "sha256": "fbbb2e726579852cfa16abe27bc34bf78a2df0c991a9d9d6994c2ffbd5c2773d"
+          "url": "https://ghcr.io/v2/homebrew/core/create-dmg/blobs/sha256:d5e0bef6c032eb5a47e84887ac1f04e48441f9056144169a2bfdf32e94adf4a3",
+          "sha256": "d5e0bef6c032eb5a47e84887ac1f04e48441f9056144169a2bfdf32e94adf4a3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -61,7 +64,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -78,5 +89,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

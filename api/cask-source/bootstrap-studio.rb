@@ -1,6 +1,6 @@
 cask "bootstrap-studio" do
-  version "5.8.6"
-  sha256 "4bc1a4649093215c14f5064815868ca5b6783412d1f86641d4465178a3e56831"
+  version "6.2.1"
+  sha256 "2f504663e5ca5288acc92ee38f27b4c7ee1fb9551655c0a34707ee8207b07132"
 
   url "https://bootstrapstudio.io/releases/desktop/#{version}/Bootstrap%20Studio.dmg"
   name "Bootstrap Studio"
@@ -13,7 +13,6 @@ cask "bootstrap-studio" do
   end
 
   auto_updates true
-  depends_on macos: ">= :yosemite"
 
   app "Bootstrap Studio.app"
 

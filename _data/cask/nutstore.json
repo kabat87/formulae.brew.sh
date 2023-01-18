@@ -5,11 +5,11 @@
   "name": [
     "Nutstore"
   ],
-  "desc": null,
+  "desc": "Cloud storage service platform",
   "homepage": "https://www.jianguoyun.com/",
   "url": "https://www.jianguoyun.com/static/exe/installer/NutstoreOSXInstaller.dmg",
   "appcast": null,
-  "version": "latest",
+  "version": "6.2.1",
   "versions": {
   },
   "installed": null,
@@ -17,34 +17,54 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "launchctl": "net.nutstore.agent",
-      "quit": [
-        "net.nutstore.NutstoreJavaBE",
-        "net.nutstore.osxapp",
-        "net.nutstore.osxapp.FinderSyncExtension"
-      ],
-      "login_item": "Nutstore",
-      "delete": "/Applications/Nutstore.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "net.nutstore.agent",
+          "quit": [
+            "net.nutstore.NutstoreJavaBE",
+            "net.nutstore.osxapp",
+            "net.nutstore.osxapp.FinderSyncExtension"
+          ],
+          "login_item": "Nutstore",
+          "delete": "/Applications/Nutstore.app"
+        }
+      ]
     },
     {
-      "path": "Nutstore Installer.app"
+      "installer": [
+        {
+          "script": {
+            "executable": "坚果云安装程序.app/Contents/MacOS/NutstoreOnlineInstaller",
+            "args": [
+              "-q"
+            ]
+          }
+        }
+      ]
     },
     {
-      "trash": [
-        "~/Library/Saved Application State/net.nutstore.osxapp.nutstoreInstaller.savedState",
-        "~/Library/Preferences/net.nutstore.osxapp.plist",
-        "~/Library/Preferences/net.nutstore.NutstoreJavaBE.plist"
-      ],
-      "signal": {
-      }
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/net.nutstore.NutstoreJavaBE.plist",
+            "~/Library/Preferences/net.nutstore.osxapp.plist",
+            "~/Library/Saved Application State/net.nutstore.osxapp.nutstoreInstaller.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.11"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

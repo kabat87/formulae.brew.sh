@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/halffullheart/mdr/archive/v1.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "103d52c47133a43cc7a6cb8a21bfabe2d6e35e222d5b675bc0c868699a127c67"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mdr/blobs/sha256:21a1b0582d50638ebb7badf6eeb528b6521fe6689754e9768243e899a3f24b03",
+          "sha256": "21a1b0582d50638ebb7badf6eeb528b6521fe6689754e9768243e899a3f24b03"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mdr/blobs/sha256:c42ad80e535b77f569ab48ece2fc3a648e71f67cd9dca68659985b7478a6f876",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mdr/blobs/sha256:4faacaab5dd0acefaee74a73abaa093d69bd6caefb764375d0565f20605b81c6",
           "sha256": "4faacaab5dd0acefaee74a73abaa093d69bd6caefb764375d0565f20605b81c6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mdr/blobs/sha256:c02cceeea31428922fbaa6f9be935fd65a3e2528673438fb41559c8721902611",
+          "sha256": "c02cceeea31428922fbaa6f9be935fd65a3e2528673438fb41559c8721902611"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -75,18 +86,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mdr/blobs/sha256:0b522120151f1116ae7e681ff2fb129ecd26486202ca753d6b1de902f6f29334",
           "sha256": "0b522120151f1116ae7e681ff2fb129ecd26486202ca753d6b1de902f6f29334"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mdr/blobs/sha256:7048e71ef8f9a1d5c1712dce6cb33df08029038d771789021a1b8bc1e5f4ad10",
-          "sha256": "7048e71ef8f9a1d5c1712dce6cb33df08029038d771789021a1b8bc1e5f4ad10"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,10 +126,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-05-14",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

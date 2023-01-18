@@ -7,34 +7,42 @@
   ],
   "desc": "Free and open-source web browser",
   "homepage": "https://www.chromium.org/Home",
-  "url": "https://commondatastorage.googleapis.com/chromium-browser-snapshots/Mac/959064/chrome-mac.zip",
+  "url": "https://download-chromium.appspot.com/dl/Mac?type=snapshots",
   "appcast": null,
-  "version": "959064",
+  "version": "latest",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "02f7042911a728a189e23b5a4485dd67907c9db0fc14bff21702cf03fb24bc37",
+  "sha256": "no_check",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "chrome-mac/Chromium.app"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/chromium/959064/chromium.wrapper.sh",
-      {
-        "target": "chromium"
-      }
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Chromium",
-        "~/Library/Caches/Chromium",
-        "~/Library/Preferences/org.chromium.Chromium.plist",
-        "~/Library/Saved Application State/org.chromium.Chromium.savedState"
-      ],
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      exec '#{appdir}/Chromium.app/Contents/MacOS/Chromium' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "app": [
+        "chrome-mac/Chromium.app"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/chromium/latest/chromium.wrapper.sh",
+        {
+          "target": "chromium"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Chromium",
+            "~/Library/Caches/Chromium",
+            "~/Library/Preferences/org.chromium.Chromium.plist",
+            "~/Library/Saved Application State/org.chromium.Chromium.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -47,5 +55,16 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download-chromium.appspot.com/dl/Mac_Arm?type=snapshots"
+    },
+    "arm64_monterey": {
+      "url": "https://download-chromium.appspot.com/dl/Mac_Arm?type=snapshots"
+    },
+    "arm64_big_sur": {
+      "url": "https://download-chromium.appspot.com/dl/Mac_Arm?type=snapshots"
+    }
+  }
 }

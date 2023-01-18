@@ -7,32 +7,36 @@
   ],
   "desc": "Automation software",
   "homepage": "https://www.keyboardmaestro.com/main/",
-  "url": "https://files.stairways.com/keyboardmaestro-1002.zip",
+  "url": "https://files.stairways.com/keyboardmaestro-1020.zip",
   "appcast": null,
-  "version": "10.0.2,1002",
+  "version": "10.2,1020",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a9618a7bdfd3151e8738eaf6e2e3cc09fba1c733c517a6cf378b7913857b8fc8",
+  "sha256": "3f782b9b241851d025392375187a02342293fe24401823d38e65badd7bbc0d8f",
   "artifacts": [
-    [
-      "Keyboard Maestro.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.stairways.keyboardmaestro.editor.sfl*",
-        "~/Library/Application Support/Keyboard Maestro",
-        "~/Library/Caches/com.stairways.keyboardmaestro.editor",
-        "~/Library/Caches/com.stairways.keyboardmaestro.engine",
-        "~/Library/Logs/Keyboard Maestro",
-        "~/Library/Preferences/com.stairways.keyboardmaestro.editor.plist",
-        "~/Library/Preferences/com.stairways.keyboardmaestro.engine.plist",
-        "~/Library/Preferences/com.stairways.keyboardmaestro.plist",
-        "~/Library/Saved Application State/com.stairways.keyboardmaestro.editor.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Keyboard Maestro.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.stairways.keyboardmaestro.editor.sfl*",
+            "~/Library/Application Support/Keyboard Maestro",
+            "~/Library/Caches/com.stairways.keyboardmaestro.editor",
+            "~/Library/Caches/com.stairways.keyboardmaestro.engine",
+            "~/Library/Logs/Keyboard Maestro",
+            "~/Library/Preferences/com.stairways.keyboardmaestro.editor.plist",
+            "~/Library/Preferences/com.stairways.keyboardmaestro.engine.plist",
+            "~/Library/Preferences/com.stairways.keyboardmaestro.plist",
+            "~/Library/Saved Application State/com.stairways.keyboardmaestro.editor.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +49,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

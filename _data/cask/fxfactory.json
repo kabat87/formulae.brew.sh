@@ -7,34 +7,42 @@
   ],
   "desc": "Browse, install and purchase effects and plugins from a huge catalog",
   "homepage": "https://fxfactory.com/",
-  "url": "https://fxfactory.s3.amazonaws.com/noiseindustries/fxfactory/FxFactory_727_6974.zip",
+  "url": "https://fxfactory.s3.amazonaws.com/noiseindustries/fxfactory/FxFactory-8.0.4-7291.zip",
   "appcast": null,
-  "version": "7.2.7,6974",
+  "version": "8.0.4,7291",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "98d5c6c11952373bf86581d841f7183e93ef27ef9be445057081b32056448d3f",
+  "sha256": "9bb05ad3697234789c84fc295c61503c8ca7045f94a5e65e39aa3aaf22c9d5b7",
   "artifacts": [
     {
-      "pkgutil": "com.fxfactory.pkg",
-      "launchctl": "com.fxfactory.FxFactory.helper",
-      "delete": [
-        "/Library/Application Support/FxFactory",
-        "/Library/LaunchDaemons/com.fxfactory.FxFactory.helper.plist",
-        "/Library/PrivilegedHelperTools/com.fxfactory.FxFactory.helper"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.fxfactory.pkg",
+          "launchctl": "com.fxfactory.FxFactory.helper",
+          "delete": [
+            "/Library/Application Support/FxFactory",
+            "/Library/LaunchDaemons/com.fxfactory.FxFactory.helper.plist",
+            "/Library/PrivilegedHelperTools/com.fxfactory.FxFactory.helper"
+          ]
+        }
+      ]
     },
-    "Install FxFactory 7.2.7.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Scripts/com.fxfactory.FxFactoryService.pluginkit",
-        "~/Movies/Motion Templates.localized"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Install FxFactory 8.0.4.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.fxfactory.FxFactoryService.pluginkit",
+            "~/Movies/Motion Templates.localized"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "BSD-2-Clause",
   "homepage": "https://gitlab.com/yawning/obfs4",
   "versions": {
-    "stable": "0.0.12",
+    "stable": "0.0.14",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://gitlab.com/yawning/obfs4/-/archive/obfs4proxy-0.0.12/obfs4-obfs4proxy-0.0.12.tar.gz",
+      "url": "https://gitlab.com/yawning/obfs4/-/archive/obfs4proxy-0.0.14/obfs4-obfs4proxy-0.0.14.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a4b7520e732b0f168832f6f2fdf1be57f3e2cce0612e743d3f6b51341a740903"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:4794482e9011498f424c15acb994d2f2b50ec6278e41167c6541efe69badb3f9",
+          "sha256": "4794482e9011498f424c15acb994d2f2b50ec6278e41167c6541efe69badb3f9"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:93d62e389d2a95d99dbba3121c32c45fb9ddb495d45b23c6394f5eb4f9668439",
-          "sha256": "93d62e389d2a95d99dbba3121c32c45fb9ddb495d45b23c6394f5eb4f9668439"
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:95285e769376c5e715cafbb68aacffc785765a638212d9d4bbfef593d65b42cd",
+          "sha256": "95285e769376c5e715cafbb68aacffc785765a638212d9d4bbfef593d65b42cd"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:83afbaf10cebcf3ae178522b5736b999486cfc0f1fa5b8b6524fb37e19e4fed1",
-          "sha256": "83afbaf10cebcf3ae178522b5736b999486cfc0f1fa5b8b6524fb37e19e4fed1"
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:ac853ab274e5754ee091c84217be2618d4381200ecef0f3b1a0c0a3845dcc31d",
+          "sha256": "ac853ab274e5754ee091c84217be2618d4381200ecef0f3b1a0c0a3845dcc31d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:7a774c124868d26ec703c2d78d815073e51d398c7286da2147e7951ab89cc7cb",
+          "sha256": "7a774c124868d26ec703c2d78d815073e51d398c7286da2147e7951ab89cc7cb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:9d810f57725c7f3cca6dcc4cde5096c19394df798bd3bc3b34f3010b070f85ce",
-          "sha256": "9d810f57725c7f3cca6dcc4cde5096c19394df798bd3bc3b34f3010b070f85ce"
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:54d52bb6d65f47e8076c15a38f07e5b3e0f9545944ea627960ce2037913723b1",
+          "sha256": "54d52bb6d65f47e8076c15a38f07e5b3e0f9545944ea627960ce2037913723b1"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:1785e03069eee6c6f1444d19c5324744b634d57a92cf4ad58903f758302488b5",
-          "sha256": "1785e03069eee6c6f1444d19c5324744b634d57a92cf4ad58903f758302488b5"
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:b2015fe28393b6794fc18d8090732ce733d14c9b331fd0f8f123eeb87760bbc8",
+          "sha256": "b2015fe28393b6794fc18d8090732ce733d14c9b331fd0f8f123eeb87760bbc8"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:f00212d4731738a98dd08a38f938d4c19ebb3e4fbdaa904ff14157d874ed25cf",
-          "sha256": "f00212d4731738a98dd08a38f938d4c19ebb3e4fbdaa904ff14157d874ed25cf"
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:dcafd8b0d2cbcd4f22ccea0761a532220d40af53c95164173d7ce3c25331ecd4",
+          "sha256": "dcafd8b0d2cbcd4f22ccea0761a532220d40af53c95164173d7ce3c25331ecd4"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:9ccc315eaa5ed2e9eb9e4e094a9c04616dd3316d35cd7901a214843b7520cd75",
-          "sha256": "9ccc315eaa5ed2e9eb9e4e094a9c04616dd3316d35cd7901a214843b7520cd75"
+          "url": "https://ghcr.io/v2/homebrew/core/obfs4proxy/blobs/sha256:ae4f95197e4ffd99a2a8e43f674eea3087cd43bbbe4a5ea38a396c32e3a97bb1",
+          "sha256": "ae4f95197e4ffd99a2a8e43f674eea3087cd43bbbe4a5ea38a396c32e3a97bb1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

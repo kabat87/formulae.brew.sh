@@ -10,48 +10,38 @@
 
   ],
   "desc": "Virtual file system that facilitates looking inside archives",
-  "license": null,
+  "license": "GPL-2.0-only and LGPL-2.0-only and GPL-2.0-or-later and Zlib",
   "homepage": "https://avf.sourceforge.io/",
   "versions": {
-    "stable": "1.1.3",
+    "stable": "1.1.4",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.sourceforge.net/project/avf/avfs/1.1.3/avfs-1.1.3.tar.bz2",
+      "url": "https://downloads.sourceforge.net/project/avf/avfs/1.1.4/avfs-1.1.4.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3a7981af8557f864ae10d4b204c29969588fdb526e117456e8efd54bf8faa12b"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/avfs/blobs/sha256:6f496a30b6bd1c8eba1005e4bc0da26b53353effab3f447cf8d43a669ad7a6b5",
-          "sha256": "6f496a30b6bd1c8eba1005e4bc0da26b53353effab3f447cf8d43a669ad7a6b5"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/avfs/blobs/sha256:1e75ce4753a0d9a9af12e4a718537a9e2398fd535413b72505dd126a33610fe6",
-          "sha256": "1e75ce4753a0d9a9af12e4a718537a9e2398fd535413b72505dd126a33610fe6"
-        },
-        "high_sierra": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/avfs/blobs/sha256:690fbe0161f0c5ce4ec737e67624b54bfcd7825efa8b554e1773691365dcd6ed",
-          "sha256": "690fbe0161f0c5ce4ec737e67624b54bfcd7825efa8b554e1773691365dcd6ed"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/avfs/blobs/sha256:32fa53bd6af3f41059f363e42069fee2455442dec722834ac4b47299cce5ec7d",
+          "sha256": "32fa53bd6af3f41059f363e42069fee2455442dec722834ac4b47299cce5ec7d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -59,8 +49,13 @@
     "pkg-config"
   ],
   "dependencies": [
-    "openssl@1.1",
-    "xz"
+    "bzip2",
+    "libfuse@2",
+    "xz",
+    "zlib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -73,10 +68,10 @@
   ],
   "requirements": [
     {
-      "name": "macos",
+      "name": "linux",
       "cask": null,
       "download": null,
-      "version": "10.12",
+      "version": null,
       "contexts": [
 
       ]
@@ -85,7 +80,7 @@
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -95,7 +90,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

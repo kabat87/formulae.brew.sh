@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dbmx.net/kyotocabinet/pkg/kyotocabinet-1.2.79.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "67fb1da4ae2a86f15bb9305f26caa1a7c0c27d525464c71fd732660a95ae3e1d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/kyoto-cabinet/blobs/sha256:3f3bda6747d743ddd1300f8df99662734395466240c46ac835648c3e38fc5526",
+          "sha256": "3f3bda6747d743ddd1300f8df99662734395466240c46ac835648c3e38fc5526"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/kyoto-cabinet/blobs/sha256:56224898ed5bf4ceecccd79901b90191180b89d4bf48e7cc218dbeff28fecc9d",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/kyoto-cabinet/blobs/sha256:fa9322ae66dc8295d2f60365999a371c6602bcfd98f050e0897992e745c53d93",
           "sha256": "fa9322ae66dc8295d2f60365999a371c6602bcfd98f050e0897992e745c53d93"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/kyoto-cabinet/blobs/sha256:cbf9dd9b70f76c786714ab690d6a381fd9cd73d187b1bcae3f805331768cb43f",
+          "sha256": "cbf9dd9b70f76c786714ab690d6a381fd9cd73d187b1bcae3f805331768cb43f"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

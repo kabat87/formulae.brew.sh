@@ -1,6 +1,6 @@
 cask "meta" do
-  version "2.1,3396"
-  sha256 "ffc08f74a1b165f73c455b65856fba4d30ffba24f1d43b0fece6f336ab787770"
+  version "2.1.6,3517"
+  sha256 "182dcaf09e272ead64bce2c391338f013826129e91560cf8a9a1634ae8b8815e"
 
   url "https://www.nightbirdsevolve.com/meta/updates/bin/Meta%20#{version.csv.first}.zip"
   name "Meta"
@@ -11,8 +11,6 @@ cask "meta" do
     url "https://www.nightbirdsevolve.com/meta/updates/"
     strategy :sparkle
   end
-
-  depends_on macos: ">= :yosemite"
 
   app "Meta.app"
 end

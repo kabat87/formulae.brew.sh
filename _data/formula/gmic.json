@@ -13,15 +13,16 @@
   "license": "CECILL-2.1",
   "homepage": "https://gmic.eu/",
   "versions": {
-    "stable": "3.0.1",
+    "stable": "3.2.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://gmic.eu/files/source/gmic_3.0.1.tar.gz",
+      "url": "https://gmic.eu/files/source/gmic_3.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8db3ba8ae003c4946a26d643b8173f7aa49e9c84f2ee1f74140165d3f20d3116"
     }
   },
   "revision": 0,
@@ -31,53 +32,62 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:98d5024c9f6dd436b1dc66dcf871d298217d01fb1de84cc858c81e1793391b4f",
+          "sha256": "98d5024c9f6dd436b1dc66dcf871d298217d01fb1de84cc858c81e1793391b4f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:c4695a687fe50770a04247de2b403f5baecb1ab1ce71646bdcf90483046377d8",
-          "sha256": "c4695a687fe50770a04247de2b403f5baecb1ab1ce71646bdcf90483046377d8"
+          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:ea3fb8d3eae5e6656f4f032c5ebbc5c4d9dbcb4f114ac3e613adf221af30dbce",
+          "sha256": "ea3fb8d3eae5e6656f4f032c5ebbc5c4d9dbcb4f114ac3e613adf221af30dbce"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:eae7c4b071fd61a508978708ded5ab272d43634122b7480566b369bee918e84b",
-          "sha256": "eae7c4b071fd61a508978708ded5ab272d43634122b7480566b369bee918e84b"
+          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:9975284fcb7a6dbf25937e3f1c880353b4baa1b5f929f6e8d300aca9eb279bad",
+          "sha256": "9975284fcb7a6dbf25937e3f1c880353b4baa1b5f929f6e8d300aca9eb279bad"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:a389a7f6b91fc7988fb1a60930e80a7baa7aaa58bb6564ac535317d764a07811",
+          "sha256": "a389a7f6b91fc7988fb1a60930e80a7baa7aaa58bb6564ac535317d764a07811"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:e0360d49276b222dca348523b08f72406d57ae92085c8ad7240a905230bc60fd",
-          "sha256": "e0360d49276b222dca348523b08f72406d57ae92085c8ad7240a905230bc60fd"
+          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:3170630cddf1b4d5f326292df69a555880644cb1ea2ca5a644f9cdfa87875bc4",
+          "sha256": "3170630cddf1b4d5f326292df69a555880644cb1ea2ca5a644f9cdfa87875bc4"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:efe20f281b18e825d282c0672f9b4bd525cac7d6e2dd971213ab95c1db555ee5",
-          "sha256": "efe20f281b18e825d282c0672f9b4bd525cac7d6e2dd971213ab95c1db555ee5"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:864e83816816e75e1f39a7f448d5e1cc204073956806cdfcbc289a78f52ba220",
-          "sha256": "864e83816816e75e1f39a7f448d5e1cc204073956806cdfcbc289a78f52ba220"
+          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:b4f5ebd2ef5bf286de5fd81475d35dc9dd8976f658d5fa9810214fd417ba4f05",
+          "sha256": "b4f5ebd2ef5bf286de5fd81475d35dc9dd8976f658d5fa9810214fd417ba4f05"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:4e61637e97caf2fdd854f10c685ef304731a607a8a4e0161d49b0dcfeeac08ef",
-          "sha256": "4e61637e97caf2fdd854f10c685ef304731a607a8a4e0161d49b0dcfeeac08ef"
+          "url": "https://ghcr.io/v2/homebrew/core/gmic/blobs/sha256:f1c7d07dc41b9f68189f717f5f2f7e06ae8b7312cbe9bb52cc18609e1a6ec579",
+          "sha256": "f1c7d07dc41b9f68189f717f5f2f7e06ae8b7312cbe9bb52cc18609e1a6ec579"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "cmake"
+    "pkg-config"
   ],
   "dependencies": [
     "fftw",
-    "jpeg",
+    "jpeg-turbo",
     "libpng",
-    "libtiff"
+    "libtiff",
+    "openexr",
+    "bash-completion"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -86,7 +96,8 @@
 
   ],
   "uses_from_macos": [
-
+    "curl",
+    "zlib"
   ],
   "requirements": [
 
@@ -106,5 +117,18 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "fftw",
+        "jpeg-turbo",
+        "libpng",
+        "libtiff",
+        "openexr",
+        "curl",
+        "zlib"
+      ]
+    }
+  }
 }

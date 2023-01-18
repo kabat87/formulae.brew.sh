@@ -7,28 +7,32 @@
   ],
   "desc": "Electron Windows 95",
   "homepage": "https://github.com/felixrieseberg/windows95",
-  "url": "https://github.com/felixrieseberg/windows95/releases/download/v2.3.0/windows95-darwin-x64-2.3.0.zip",
+  "url": "https://github.com/felixrieseberg/windows95/releases/download/v3.1.1/windows95-darwin-x64-3.1.1.zip",
   "appcast": null,
-  "version": "2.3.0",
+  "version": "3.1.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "dc89096e83b8e494390715e502701f3f35d4b19c45635e8eab9ac8036169b904",
+  "sha256": "574198aa286094be84a1dab896d1a5d23a7f4173ec212bddcad3c9830a36fe31",
   "artifacts": [
-    [
-      "windows95.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/windows95",
-        "~/Library/Caches/com.felixrieseberg.windows95",
-        "~/Library/Caches/com.felixrieseberg.windows95.ShipIt",
-        "~/Library/Preferences/com.felixrieseberg.windows95.plist",
-        "~/Library/Saved Application State/com.felixrieseberg.windows95.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "windows95.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/windows95",
+            "~/Library/Caches/com.felixrieseberg.windows95",
+            "~/Library/Caches/com.felixrieseberg.windows95.ShipIt",
+            "~/Library/Preferences/com.felixrieseberg.windows95.plist",
+            "~/Library/Saved Application State/com.felixrieseberg.windows95.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +40,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/felixrieseberg/windows95/releases/download/v3.1.1/windows95-darwin-arm64-3.1.1.zip",
+      "sha256": "f269b76a0f8454a163053caae3d306ca7dc38d8eedd2bc343c9f363a1a88f02f"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/felixrieseberg/windows95/releases/download/v3.1.1/windows95-darwin-arm64-3.1.1.zip",
+      "sha256": "f269b76a0f8454a163053caae3d306ca7dc38d8eedd2bc343c9f363a1a88f02f"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/felixrieseberg/windows95/releases/download/v3.1.1/windows95-darwin-arm64-3.1.1.zip",
+      "sha256": "f269b76a0f8454a163053caae3d306ca7dc38d8eedd2bc343c9f363a1a88f02f"
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/chaos/pdsh/releases/download/pdsh-2.34/pdsh-2.34.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b47b3e4662736ef44b6fe86e3d380f95e591863e69163aa0592e9f9f618521e9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/pdsh/blobs/sha256:90fc0bacf6810f69bbb1370768ddc0175a28aec274f2ce3fae28799e9a4c8854",
+          "sha256": "90fc0bacf6810f69bbb1370768ddc0175a28aec274f2ce3fae28799e9a4c8854"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/pdsh/blobs/sha256:4f4123b72684e34e5e78b67269da1aae6e29e0ae60d1f144754d521289230d5a",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/pdsh/blobs/sha256:08092fc19817b2eb4fbbb1ffe7849246f7a8c0cfc1b3493d631f41b77ab68de6",
           "sha256": "08092fc19817b2eb4fbbb1ffe7849246f7a8c0cfc1b3493d631f41b77ab68de6"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/pdsh/blobs/sha256:8ffea11eaf9081562800cccb058238eae31212b95c6d1e533714d55ef1e2cdb1",
+          "sha256": "8ffea11eaf9081562800cccb058238eae31212b95c6d1e533714d55ef1e2cdb1"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

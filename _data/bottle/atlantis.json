@@ -1,50 +1,56 @@
 {
   "name": "atlantis",
-  "pkg_version": "0.18.1",
+  "pkg_version": "0.22.2",
   "rebuild": 0,
   "bottles": {
+    "arm64_ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:62dc2f7d37b7cd22ae6f9b73f4361024877ab7502d7919e638ad543a52578e33"
+    },
     "arm64_monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:1d93a6b1fdfe03aca6e3896003c512c828871e5bcb9ad4393426cee18eefa075"
+      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:9bb4f1abd1e1c9f459bae9d41e02b51c86a71aefce746c547a799b834b4df3c2"
     },
     "arm64_big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:fd94e96c0673675ea478f2011877df922c4b38409b4e639e3ca04e682d9afc5d"
+      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:4140a906116dcfed0f2e2794dd240fb81c644ec71e15545d6bb8edfdea86dfac"
+    },
+    "ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:46073b13ce4450ae3703fc6b7d6c016c8e61b438f3b9e8469d2e1a2c4a8d102e"
     },
     "monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:d2b0febb43f0822ea0c6aa465be50fc7aa18ba47da4f3212cd423d13d23915ff"
+      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:6e0bfbc44592dfc23ff4ee4e614c368c79f31b9f5f1e53da24403141655a7434"
     },
     "big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:f60ebfc43beb28a8f05074ef883161944c0988574fd78cf33e5aaee36a329f81"
-    },
-    "catalina": {
-      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:3ee48a7e588d109b00603267d4171853b4a5a7dc4604bcd09922fcd0015350e0"
+      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:2e88676087ce86b96c148b3c23c707349775cec08e006572f1ccb9e4d37b70ed"
     },
     "x86_64_linux": {
-      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:44ae246306a5c51967553eeec5fc63b3c13436bcef75c93bb1dab55fa8923233"
+      "url": "https://ghcr.io/v2/homebrew/core/atlantis/blobs/sha256:e23beac53c1bda1ee8a86f5b9896be85d9f8de0940c1a1183fe64bdaf46c63ef"
     }
   },
   "dependencies": [
     {
       "name": "terraform",
-      "pkg_version": "1.1.3",
+      "pkg_version": "1.3.7",
       "rebuild": 0,
       "bottles": {
+        "arm64_ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:c13c765453b199ccf32e327a7e70c84056fa23fe2da942e8ef649c9539f2a0e5"
+        },
         "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:1fd9bc5651b795890d69fd54ef11de20de4cafbd764b5d9672598108ad479b46"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:38a323dd41bb355bfd3b05eef3bec9137d4492f874060b928f2ce48bc1f99cec"
         },
         "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:15f1573261c8502b2be5882aa0b2bacd2cac27ea06c622e406466044018c3377"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:3dd7b757e332116c79edabb070c6f51fa9a2dc642021124f2040964b90ef17de"
+        },
+        "ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:7f9bcc5e9a3a927f78ea4960394d1e72916e7eb3fd8af0c9c6d47e0f401986b0"
         },
         "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:da0a4ce60489f2d58edbab97443a8ef594d9781a13bb08da6d22c6cb7832a5a5"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:46a9eb69dad8d93f1343fb2d83ff1a091f330c018da72b0583359b9377f93d04"
         },
         "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:13cf6394ce6b88aab533cb9e0a28ee261fc849761e07f81accd9f8217cd1f2ad"
-        },
-        "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:c4f34b37cc128d936b9d08c1a8a217bc372ec07736ffa817f1e9fc02e4650b12"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:027c6946d196c54569bbf75f692e922f0b92df8baf1e34e000537b3602164d77"
         },
         "x86_64_linux": {
-          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:6dc578410c3c229cabb61003db1f5e0f0473f74461f482d8498c52597af9925c"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform/blobs/sha256:77b89c32e2da1c90b7d5f7e783815bb18dffaec98d51ba2f37bcd571f77515a5"
         }
       }
     }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://noping.cc/files/liboping-1.10.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "eb38aa93f93e8ab282d97e2582fbaea88b3f889a08cbc9dbf20059c3779d5cd8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/liboping/blobs/sha256:4f96385d085c835f78741e71350fba8666a9692673abab3681722f7dc22fef1f",
+          "sha256": "4f96385d085c835f78741e71350fba8666a9692673abab3681722f7dc22fef1f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/liboping/blobs/sha256:88e26997cd417b2be6c8323451267524135044c033e6c34772cf9dc7812d9d4f",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/liboping/blobs/sha256:a8ea63333bfc0a7ec880d0c5727316ff622ff2f4854efc93bd9bc082080f9365",
           "sha256": "a8ea63333bfc0a7ec880d0c5727316ff622ff2f4854efc93bd9bc082080f9365"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/liboping/blobs/sha256:8866dff120426703941ef3eff9e6253c9ed14fde9181dc4a65207599926d973a",
+          "sha256": "8866dff120426703941ef3eff9e6253c9ed14fde9181dc4a65207599926d973a"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/liboping/blobs/sha256:de0bb72a0752469b262db3a24a41c84746930858462cd08993c057caadd46264",
           "sha256": "de0bb72a0752469b262db3a24a41c84746930858462cd08993c057caadd46264"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/liboping/blobs/sha256:c4f46d01bdace450a49e2c4fc4ba4056070bf1b869ed07f1b0a1d6a4f7646bc9",
-          "sha256": "c4f46d01bdace450a49e2c4fc4ba4056070bf1b869ed07f1b0a1d6a4f7646bc9"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/liboping/blobs/sha256:8f3979a8a214b2384b5c18cb7ad0d1ed49d27896b7972a2ce93dce2e0d76ad82",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

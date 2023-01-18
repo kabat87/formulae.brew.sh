@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.x.org/archive/individual/lib/libXaw-1.0.14.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "76aef98ea3df92615faec28004b5ce4e5c6855e716fa16de40c32030722a6f8e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libxaw/blobs/sha256:40d7d5b525718007f166603a9bd8e166c405a50e888c0014eb3ebb0982f42372",
+          "sha256": "40d7d5b525718007f166603a9bd8e166c405a50e888c0014eb3ebb0982f42372"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libxaw/blobs/sha256:7f72cb216e6754e6f72bfd0e0f03f19d4599e69b4562980f274a3797068194c2",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libxaw/blobs/sha256:6f9bd6bef10340da3fc23f24d0c4a4e3358dcbada118a8b74c4e05d901ac0dd6",
           "sha256": "6f9bd6bef10340da3fc23f24d0c4a4e3358dcbada118a8b74c4e05d901ac0dd6"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libxaw/blobs/sha256:72e46b226ca150f64dd4d6c6faf1602b94693d917ff500757c446afd352f8495",
+          "sha256": "72e46b226ca150f64dd4d6c6faf1602b94693d917ff500757c446afd352f8495"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "libxmu",
     "libxpm",
     "libxt"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -112,5 +125,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

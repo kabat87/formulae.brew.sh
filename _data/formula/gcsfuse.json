@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/googlecloudplatform/gcsfuse",
   "versions": {
-    "stable": "0.35.1",
+    "stable": "0.41.11",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/GoogleCloudPlatform/gcsfuse/archive/v0.35.1.tar.gz",
+      "url": "https://github.com/GoogleCloudPlatform/gcsfuse/archive/v0.41.11.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "58daf7ac3658bd0a6857bd0a8a2b73672b791662973e2a7bfbfcbc1b6f18102e"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gcsfuse/blobs/sha256:a6e7417b5a11ea8587f09dc31fb9eebb9b5e770ec07aec630bac1c9184d19feb",
-          "sha256": "a6e7417b5a11ea8587f09dc31fb9eebb9b5e770ec07aec630bac1c9184d19feb"
+          "url": "https://ghcr.io/v2/homebrew/core/gcsfuse/blobs/sha256:42a3b3391cbd21b89e4cdde7eae639549453a6d60c3244708e51b33ce5323956",
+          "sha256": "42a3b3391cbd21b89e4cdde7eae639549453a6d60c3244708e51b33ce5323956"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
     "go"
   ],
   "dependencies": [
+    "libfuse"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -61,12 +64,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -76,7 +87,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

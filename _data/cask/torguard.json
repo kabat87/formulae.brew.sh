@@ -7,29 +7,37 @@
   ],
   "desc": "VPN client",
   "homepage": "https://torguard.net/",
-  "url": "https://updates.torguard.biz/Software/MacOSX/TorGuard-v4.8.4.dmg",
+  "url": "https://updates.torguard.biz/Software/MacOSX/TorGuard-v4.8.15.dmg",
   "appcast": null,
-  "version": "4.8.4",
+  "version": "4.8.15",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2dd22d8ab8507e49d06ab9e52edd6fccc0c45db9455125f4fc472f7003ab7128",
+  "sha256": "a78d94003d6b5da9ef60c5f425cb0ca2d57ff03650d585411ed279aa8d30dce7",
   "artifacts": [
     {
-      "pkgutil": "net.torguard.TorGuardDesktopQt",
-      "delete": "/Applications/TorGuard.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "net.torguard.TorGuardDesktopQt",
+          "delete": "/Applications/TorGuard.app"
+        }
+      ]
     },
-    "Install TorGuard.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Preferences/net.torguard.TorGuard*.plist",
-        "~/Library/Saved Application State/net.torguard.TorGuardDesktopQt.savedState"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Install TorGuard.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/net.torguard.TorGuard*.plist",
+            "~/Library/Saved Application State/net.torguard.TorGuardDesktopQt.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

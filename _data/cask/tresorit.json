@@ -5,11 +5,11 @@
   "name": [
     "Tresorit"
   ],
-  "desc": null,
+  "desc": "Client for the Tresorit cloud storage service",
   "homepage": "https://tresorit.com/",
   "url": "https://installerstorage.blob.core.windows.net/public/install/Tresorit.dmg",
   "appcast": null,
-  "version": "3.5.1967.1350,1967",
+  "version": "3.5.2536.3420",
   "versions": {
   },
   "installed": null,
@@ -17,20 +17,26 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "login_item": "Tresorit",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "login_item": "Tresorit"
+        }
+      ]
     },
-    [
-      "Tresorit.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Tresorit",
-        "~/Library/Preferences/com.tresorit.mac.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Tresorit.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Tresorit",
+            "~/Library/Preferences/com.tresorit.mac.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

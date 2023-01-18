@@ -7,26 +7,30 @@
   ],
   "desc": "Colour picker for colours onscreen",
   "homepage": "https://superhighfives.com/pika",
-  "url": "https://github.com/superhighfives/pika/releases/download/0.0.12/Pika-0.0.12.dmg",
+  "url": "https://github.com/superhighfives/pika/releases/download/0.0.14/Pika-0.0.14.dmg",
   "appcast": null,
-  "version": "0.0.12",
+  "version": "0.0.14",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "85c3f66c44c4c7d4505b8dc8f67bdd44f8bd95b5b0296ea6851c791fa4718633",
+  "sha256": "bbeea5371d213fd089e7bd77965f16b00f5892ba60d66930989c17f8b679f7a7",
   "artifacts": [
-    [
-      "Pika.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.superhighfives.Pika-LaunchAtLoginHelper",
-        "~/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper",
-        "~/Library/Preferences/com.superhighfives.Pika.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Pika.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.superhighfives.Pika-LaunchAtLoginHelper",
+            "~/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper",
+            "~/Library/Preferences/com.superhighfives.Pika.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

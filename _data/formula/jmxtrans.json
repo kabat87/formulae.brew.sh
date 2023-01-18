@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jmxtrans/jmxtrans/archive/jmxtrans-parent-272.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "73691dc634be8ff504ed33867807266545d9ff9402e365c09fcf0272720cc160"
     }
   },
   "revision": 0,
@@ -31,6 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jmxtrans/blobs/sha256:bfb7084ad1740683f32109d720b9b0e19b0c33ce75c67cb41b4e943f9a2c6454",
+          "sha256": "bfb7084ad1740683f32109d720b9b0e19b0c33ce75c67cb41b4e943f9a2c6454"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jmxtrans/blobs/sha256:2014fcd1c2a53a9f3a396c039f3ad1b530548dabf8e55f8648819b8581c1e0a2",
+          "sha256": "2014fcd1c2a53a9f3a396c039f3ad1b530548dabf8e55f8648819b8581c1e0a2"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jmxtrans/blobs/sha256:f83bb65c93c0149c4af9b3277d2ec1eee6fd0e94f2a27af0de47c18d3932e9fb",
@@ -56,7 +67,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -65,6 +75,9 @@
   ],
   "dependencies": [
     "openjdk@8"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

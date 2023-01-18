@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libtom/libtomcrypt/archive/v1.18.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d870fad1e31cb787c85161a8894abb9d7283c2a654a9d3d4c6d45a1eba59952c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libtomcrypt/blobs/sha256:7331eaecb64d5e144871fa398c93a8666a5d57a9080488910ecc033ee62e9db7",
+          "sha256": "7331eaecb64d5e144871fa398c93a8666a5d57a9080488910ecc033ee62e9db7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libtomcrypt/blobs/sha256:159d50a2adf84043773b8377768218e25fc823902d95fc86f0756c4648096a13",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libtomcrypt/blobs/sha256:95cc1395317bb6d7a70cf54c951c0a1d023fc4dbd9e8d2962dd70493811c2f08",
           "sha256": "95cc1395317bb6d7a70cf54c951c0a1d023fc4dbd9e8d2962dd70493811c2f08"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libtomcrypt/blobs/sha256:cbbcb985ebf523c66330776eeddc9259ce0ddac8de58331f4c05da18b5eb89cd",
+          "sha256": "cbbcb985ebf523c66330776eeddc9259ce0ddac8de58331f4c05da18b5eb89cd"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

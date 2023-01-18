@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dshearer/jobber/archive/v1.4.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fd88a217a413c5218316664fab5510ace941f4fdb68dcb5428385ff09c68dcc2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/jobber/blobs/sha256:bf6c94807680d1fefa82b1a1bda602454ccd86a6981ef3d4042cac8beaf209c0",
+          "sha256": "bf6c94807680d1fefa82b1a1bda602454ccd86a6981ef3d4042cac8beaf209c0"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/jobber/blobs/sha256:14087e07df78fd1e53fa44cc873df0db56eee9b0c89154161ee1a4c617c8ae9d",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/jobber/blobs/sha256:c751dfdc4e8a2336eb4441dde62d3fc83d8ca869fe95e4804cecb99112551361",
           "sha256": "c751dfdc4e8a2336eb4441dde62d3fc83d8ca869fe95e4804cecb99112551361"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/jobber/blobs/sha256:52cb55ed06ba90923ec1fc7c022b653bd48138c233f35d0d7fd2efa7b86b152e",
+          "sha256": "52cb55ed06ba90923ec1fc7c022b653bd48138c233f35d0d7fd2efa7b86b152e"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

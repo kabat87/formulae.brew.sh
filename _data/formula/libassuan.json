@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://gnupg.org/ftp/gcrypt/libassuan/libassuan-2.5.5.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8e8c2fcc982f9ca67dcbb1d95e2dc746b1739a4668bc20b3a3c5be632edb34e4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libassuan/blobs/sha256:1b7a27083bdcc1b645c9533ca828fcfda39bcf50c25b0e7f2b2835984a19b03b",
+          "sha256": "1b7a27083bdcc1b645c9533ca828fcfda39bcf50c25b0e7f2b2835984a19b03b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libassuan/blobs/sha256:27d666e26e2017829f33e9b367286dededcaea0b818135cd606c45efd5d5821c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libassuan/blobs/sha256:3120a9c83de1631e86002b899ce823abccfd8bcaf90a6f54cbc7cd9ae1fd1fa4",
           "sha256": "3120a9c83de1631e86002b899ce823abccfd8bcaf90a6f54cbc7cd9ae1fd1fa4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libassuan/blobs/sha256:b435b3335a7fc8dd25192799515750686a9d3b18b68eeb27c5313c4b5e6afb78",
+          "sha256": "b435b3335a7fc8dd25192799515750686a9d3b18b68eeb27c5313c4b5e6afb78"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "libgpg-error"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,10 +118,11 @@
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154790,
       "runtime_dependencies": [
         {
           "full_name": "libgpg-error",
-          "version": "1.43",
+          "version": "1.46",
           "declared_directly": true
         }
       ],
@@ -124,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

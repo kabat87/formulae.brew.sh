@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/liblo/liblo/0.31/liblo-0.31.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2b4f446e1220dcd624ecd8405248b08b7601e9a0d87a0b94730c2907dbccc750"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:96268ad44e715ae9d4fb77b08b1f38740cf9d88f4045d196b2e9a3863be9f82f",
+          "sha256": "96268ad44e715ae9d4fb77b08b1f38740cf9d88f4045d196b2e9a3863be9f82f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:ec5eeaedb57fa7e93e3f5ff00fc5092427ca254fcbaab1306350fed40329c832",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:95b358e3f04623998f6c2d734599ec7e63b3c389f9d6e0cc9fc6311850929f55",
           "sha256": "95b358e3f04623998f6c2d734599ec7e63b3c389f9d6e0cc9fc6311850929f55"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/liblo/blobs/sha256:ea21449e020059bb394046886f430289e4628b8d3fb0f3c9dcc1ff4671d790a4",
+          "sha256": "ea21449e020059bb394046886f430289e4628b8d3fb0f3c9dcc1ff4671d790a4"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

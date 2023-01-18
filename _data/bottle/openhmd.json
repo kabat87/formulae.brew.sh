@@ -3,11 +3,17 @@
   "pkg_version": "0.3.0",
   "rebuild": 0,
   "bottles": {
+    "arm64_ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:6b2e1d6170301fe50af6c5b9bee467a9c18f346cf2ff630338fd410bfbf992ff"
+    },
     "arm64_monterey": {
       "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:536ae72b1f5e8dea9417cd010b787e4dfa94ece6c8fa3da651186f6e2ceb2d8c"
     },
     "arm64_big_sur": {
       "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:19e9b946bbefe306dc41aa803e5cb48aec3ab62bf334b8975e660f4a3644c0c7"
+    },
+    "ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:3f960a5ab5e3466341ac6fcf533c317e37183338d770ca5b63f8aec92f48cd1b"
     },
     "monterey": {
       "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:5e04fd446926530d2a5349d07d0354c4943c75b73220319ec38d27db42bb281e"
@@ -34,26 +40,29 @@
   "dependencies": [
     {
       "name": "hidapi",
-      "pkg_version": "0.11.2",
+      "pkg_version": "0.13.1",
       "rebuild": 0,
       "bottles": {
+        "arm64_ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:5aea99e710bcf73d1fac8accd3e9a09b89371e01a4af2a82a24805a49dfb0a2b"
+        },
         "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:4cd8bf68cf8c54942370bb114b3928e441e30da526463f119bffc987a736511e"
+          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:bec6eb58d49ead05696b6161b5a6983d3db8ce3bee11f8ff84015553f7f67e79"
         },
         "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:636354e15d0e76384481a9b693ea08a6343316a7e1d74900cfa5add652aac2e5"
+          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:8cfe0a3418efdc673f600642ff6f3a2e00da8b1a0dfd8ae69522d498313d3899"
+        },
+        "ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:c7e6be14f96decf0f3347679f8039ee6681159bee08b47b30d192d5bd201a1af"
         },
         "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:087066a1847dcf7a1b226db08e38905f130ff497b91db3ea59c10b4eeada56c4"
+          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:78132127798d995319ef6d20380d380627af1510d5c4a0f42bca00a0f744c550"
         },
         "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:9791b3c4132542c1f847b152c4cc3766842db3514df87ee1d30dc03e190e98b5"
-        },
-        "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:7c6ed494c8c276acdea0198a5ae608144d4e12ce25c90af75bd96c31c2abc1fd"
+          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:ac26c708492a75aeb308e29efc2631c0545aba947fef08fe51ebd16c416c5d8f"
         },
         "x86_64_linux": {
-          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:b78d9953e9d63014391c67f20a2ef48e7d2d7b054cd660b8bef6bf014c0d80a0"
+          "url": "https://ghcr.io/v2/homebrew/core/hidapi/blobs/sha256:1b93d511f9c55afb290edc18e5c2c70662068940718c6990dada78bda990309a"
         }
       }
     }

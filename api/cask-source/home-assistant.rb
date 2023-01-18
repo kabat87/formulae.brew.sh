@@ -1,6 +1,6 @@
 cask "home-assistant" do
-  version "2021.12,2021.322"
-  sha256 "1db877a0b269442c479dc6cf4be737f9ee064612e6bdec9197bb1006f45cd5b5"
+  version "2022.10.1,2022.424"
+  sha256 "01a483733f72cb3b86d26e01c6c205efd48813b3444c75cc3783455ace3b28e9"
 
   url "https://github.com/home-assistant/iOS/releases/download/release%2F#{version.csv.first}%2F#{version.csv.second}/home-assistant-mac.zip",
       verified: "github.com/home-assistant/iOS/"
@@ -27,7 +27,7 @@ cask "home-assistant" do
 
   zap trash: [
     "~/Library/Application Scripts/io.robbie.HomeAssistant",
-    "~/Library/Group Containers/group.io.robbie.homeassistant",
     "~/Library/Containers/io.robbie.HomeAssistant",
+    "~/Library/Group Containers/group.io.robbie.homeassistant",
   ]
 end

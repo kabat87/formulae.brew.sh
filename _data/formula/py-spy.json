@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/benfred/py-spy",
   "versions": {
-    "stable": "0.3.11",
+    "stable": "0.3.14",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/benfred/py-spy/archive/refs/tags/v0.3.11.tar.gz",
+      "url": "https://github.com/benfred/py-spy/archive/refs/tags/v0.3.14.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c01da8b74be0daba79781cfc125ffcd3df3a0d090157fe0081c71da2f6057905"
     }
   },
   "revision": 0,
@@ -31,37 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:6640d4124619c0e3d007cb0284f2fb33d393c279baee741432d586c28e48f612",
+          "sha256": "6640d4124619c0e3d007cb0284f2fb33d393c279baee741432d586c28e48f612"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:117cc4ae799abeda0ec934378e287d78196c66da8219843266336519f5252174",
-          "sha256": "117cc4ae799abeda0ec934378e287d78196c66da8219843266336519f5252174"
+          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:4c9528218834611e0d11368cd892d576887fa0c614cda521203b9c665b000785",
+          "sha256": "4c9528218834611e0d11368cd892d576887fa0c614cda521203b9c665b000785"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:1951839640b1aa3d4deb01f27fd0130e5c9e49227a3997cad3b0e622c79b8cf3",
-          "sha256": "1951839640b1aa3d4deb01f27fd0130e5c9e49227a3997cad3b0e622c79b8cf3"
+          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:0cbeb6a465786ff60f02816f708b1184612fbb27a3142cdf9731cc70f6b5ec59",
+          "sha256": "0cbeb6a465786ff60f02816f708b1184612fbb27a3142cdf9731cc70f6b5ec59"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:633076498c9549f079573bf14bd52590fa001929e36136047f99369e2cf86f84",
+          "sha256": "633076498c9549f079573bf14bd52590fa001929e36136047f99369e2cf86f84"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:05f6c44c4453d888b149f3fa2009c1c3b31d3073c2980632ebaf7e1f2289832e",
-          "sha256": "05f6c44c4453d888b149f3fa2009c1c3b31d3073c2980632ebaf7e1f2289832e"
+          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:e4e51038926d8e3e375f02c0e1511c7eb8274a40dfb4509f8d0d36e5a4ee1ff0",
+          "sha256": "e4e51038926d8e3e375f02c0e1511c7eb8274a40dfb4509f8d0d36e5a4ee1ff0"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:651aeae6101063deed04c2219abc9068444f24eb7640c3db9d22d7edab8b3e79",
-          "sha256": "651aeae6101063deed04c2219abc9068444f24eb7640c3db9d22d7edab8b3e79"
+          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:411fd9ea3515958e15d197598cfe7e39cc9087cb86c2fd13db6e5af8dbb78864",
+          "sha256": "411fd9ea3515958e15d197598cfe7e39cc9087cb86c2fd13db6e5af8dbb78864"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:1792e2f649b4d6d8fe9fc1151e1d70815b43775b3ebf96323e704c1769449121",
-          "sha256": "1792e2f649b4d6d8fe9fc1151e1d70815b43775b3ebf96323e704c1769449121"
+          "url": "https://ghcr.io/v2/homebrew/core/py-spy/blobs/sha256:9e03831868de123c9a3b9b42c6d954cedfe1241bf8c4dc5c234adca1a9ffa871",
+          "sha256": "9e03831868de123c9a3b9b42c6d954cedfe1241bf8c4dc5c234adca1a9ffa871"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,7 +79,10 @@
     "rust"
   ],
   "dependencies": [
-    "python@3.9"
+
+  ],
+  "test_dependencies": [
+    "python@3.11"
   ],
   "recommended_dependencies": [
 
@@ -98,5 +111,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "libunwind"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/gotoh/ssh-connect/archive/1.105.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "96c50fefe7ecf015cf64ba6cec9e421ffd3b18fef809f59961ef9229df528f3e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/connect/blobs/sha256:25da554388b8d7ccd2dd52576434f92ab8628120d6ba7389959b5e71e9483b97",
+          "sha256": "25da554388b8d7ccd2dd52576434f92ab8628120d6ba7389959b5e71e9483b97"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/connect/blobs/sha256:e45ad845a768453d0d0dc278dc9fb39f3a7601f33b79d8c1b5d8e404f1dc3377",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/connect/blobs/sha256:33e6c06bbe902eea4790679f99c9aef340cce1e647238a13c151300afa46ee1a",
           "sha256": "33e6c06bbe902eea4790679f99c9aef340cce1e647238a13c151300afa46ee1a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/connect/blobs/sha256:768f3960aaffa61d2b6ff11169d90eed94e3a189c6d5c69fb6d176b7d97c8d4d",
+          "sha256": "768f3960aaffa61d2b6ff11169d90eed94e3a189c6d5c69fb6d176b7d97c8d4d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

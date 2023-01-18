@@ -1,6 +1,6 @@
 cask "wifi-explorer" do
-  version "3.3.2,47"
-  sha256 "0ea3e3c45e2cc730e13e3ffa7733c4480062f09795f7a1045d0274b87f31b033"
+  version "3.4,53"
+  sha256 "0615def60f8c915dff5d350e202511faf5967f3665da3240e2df866c29cdb0ce"
 
   url "https://www.intuitibits.com/downloads/WiFiExplorer_#{version.csv.first}.dmg"
   name "WiFi Explorer"
@@ -12,7 +12,7 @@ cask "wifi-explorer" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: ">= :mojave"
 
   app "WiFi Explorer.app"
 

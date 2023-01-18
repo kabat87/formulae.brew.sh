@@ -9,7 +9,7 @@
   "homepage": "https://manytricks.com/menuwhere/",
   "url": "https://manytricks.com/download/menuwhere",
   "appcast": null,
-  "version": "2.1.1,22",
+  "version": "2.2.1,31",
   "versions": {
   },
   "installed": null,
@@ -17,20 +17,26 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": "com.manytricks.Menuwhere",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.manytricks.Menuwhere"
+        }
+      ]
     },
-    [
-      "Menuwhere.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.manytricks.Menuwhere",
-        "~/Library/Preferences/com.manytricks.Menuwhere.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Menuwhere.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.manytricks.Menuwhere",
+            "~/Library/Preferences/com.manytricks.Menuwhere.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

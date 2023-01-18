@@ -7,22 +7,26 @@
   ],
   "desc": "Missing menulet for Homebrew",
   "homepage": "https://github.com/zkokaja/Brewlet",
-  "url": "https://github.com/zkokaja/Brewlet/releases/download/v1.5-universal/Brewlet.zip",
+  "url": "https://github.com/zkokaja/Brewlet/releases/download/v1.7/Brewlet.zip",
   "appcast": null,
-  "version": "1.5-universal",
+  "version": "1.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f9786a7f31502b2cc7dac8013822e96da5ecbee38a0518a4ed8eee9081bb8cf9",
+  "sha256": "dad90df09f58d4089e0b7591dc2b721ef6108540664dad016a5775f118a574f5",
   "artifacts": [
-    [
-      "Brewlet.app"
-    ],
     {
-      "trash": "~/Library/Preferences/zzada.Brewlet.plist",
-      "signal": {
-      }
+      "app": [
+        "Brewlet.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/zzada.Brewlet.plist"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

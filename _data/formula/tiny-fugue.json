@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/tinyfugue/tinyfugue/5.0%20beta%208/tf-50b8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3750a114cf947b1e3d71cecbe258cb830c39f3186c369e368d4662de9c50d989"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/tiny-fugue/blobs/sha256:f1018454baaa50f76a0fcf885e400d42ab6eb5352f1436a34676b2090bc6c65b",
+          "sha256": "f1018454baaa50f76a0fcf885e400d42ab6eb5352f1436a34676b2090bc6c65b"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/tiny-fugue/blobs/sha256:efbd40e8291c53ca89d75dc25c15b18e3cbbba58e1da3b99b200a8458128609e",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/tiny-fugue/blobs/sha256:de2a1d16b807c1cede3b8f574a1dbaa5a8bda47b4c65307b33b975b9eec665f7",
           "sha256": "de2a1d16b807c1cede3b8f574a1dbaa5a8bda47b4c65307b33b975b9eec665f7"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/tiny-fugue/blobs/sha256:819d0189551a3ae5bd9d75e483308de4f058c1561529a09f1c5c3c6a556619f1",
+          "sha256": "819d0189551a3ae5bd9d75e483308de4f058c1561529a09f1c5c3c6a556619f1"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
     "libnet",
     "openssl@1.1",
     "pcre"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,10 +123,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-10-25",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

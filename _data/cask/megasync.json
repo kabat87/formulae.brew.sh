@@ -9,7 +9,7 @@
   "homepage": "https://mega.nz/sync",
   "url": "https://mega.nz/MEGAsyncSetup.dmg",
   "appcast": null,
-  "version": "4.6.2",
+  "version": "4.8.5",
   "versions": {
   },
   "installed": null,
@@ -17,24 +17,30 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "launchctl": "mega.mac.megaupdater",
-      "login_item": "MEGAsync",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "mega.mac.megaupdater",
+          "login_item": "MEGAsync"
+        }
+      ]
     },
-    [
-      "MEGAsync.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/mega.mac.MEGAShellExtFinder",
-        "~/Library/Caches/mega.mac",
-        "~/Library/Containers/mega.mac.MEGAShellExtFinder",
-        "~/Library/LaunchAgents/mega.mac.megaupdater.plist",
-        "~/Library/Preferences/mega.mac.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "MEGAsync.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/mega.mac.MEGAShellExtFinder",
+            "~/Library/Caches/mega.mac",
+            "~/Library/Containers/mega.mac.MEGAShellExtFinder",
+            "~/Library/LaunchAgents/mega.mac.megaupdater.plist",
+            "~/Library/Preferences/mega.mac.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -47,5 +53,16 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://mega.nz/MEGAsyncSetupArm64.dmg"
+    },
+    "arm64_monterey": {
+      "url": "https://mega.nz/MEGAsyncSetupArm64.dmg"
+    },
+    "arm64_big_sur": {
+      "url": "https://mega.nz/MEGAsyncSetupArm64.dmg"
+    }
+  }
 }

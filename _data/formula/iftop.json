@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.ex-parrot.com/pdw/iftop/download/iftop-1.0pre4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f733eeea371a7577f8fe353d86dd88d16f5b2a2e702bd96f5ffb2c197d9b4f97"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/iftop/blobs/sha256:7b385697e4cd0da7d4c88d0e9b1425653086fca957782db41c2b2ed93dbe0f9e",
+          "sha256": "7b385697e4cd0da7d4c88d0e9b1425653086fca957782db41c2b2ed93dbe0f9e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/iftop/blobs/sha256:4656226f9f98a40b6b4dee8c6af89d09f6d34b506663e7cbd985935d74285529",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/iftop/blobs/sha256:8f97b05b386f2d60baf56d271e6ced20679c9bc38b147479d65bb78baa84d19d",
           "sha256": "8f97b05b386f2d60baf56d271e6ced20679c9bc38b147479d65bb78baa84d19d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/iftop/blobs/sha256:fc562e7e272bf086b60ecc29385410ddd173d3814f500c6d880a6c4c0afa8a56",
+          "sha256": "fc562e7e272bf086b60ecc29385410ddd173d3814f500c6d880a6c4c0afa8a56"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/iftop/blobs/sha256:e7b9ed6bef435d7de8e986cedfc76779f2655bfac7ed780afb33a42e92b8d01d",
           "sha256": "e7b9ed6bef435d7de8e986cedfc76779f2655bfac7ed780afb33a42e92b8d01d"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iftop/blobs/sha256:5ac910598f86716e0dc676f0fd44af51da141ad84dfbaf5535a31f11ab91ffd7",
-          "sha256": "5ac910598f86716e0dc676f0fd44af51da141ad84dfbaf5535a31f11ab91ffd7"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/iftop/blobs/sha256:eef5cd5b14c8b7b2e7964b39a3833a2cbe3253d93905157f92632c78555a8190",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

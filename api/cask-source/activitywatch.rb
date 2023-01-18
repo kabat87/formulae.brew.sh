@@ -1,6 +1,6 @@
 cask "activitywatch" do
-  version "0.11.0"
-  sha256 "91deabd5844968467b5b6b3423e12654d4e339ba309f333c25d991a2e689fd96"
+  version "0.12.1"
+  sha256 "293ce27ea5f8bb5d0fb2c3114bb06d94c114dfbff05fa57f6f320dcbce731ace"
 
   url "https://github.com/ActivityWatch/activitywatch/releases/download/v#{version}/activitywatch-v#{version}-macos-x86_64.dmg",
       verified: "github.com/ActivityWatch/activitywatch/"
@@ -8,7 +8,16 @@ cask "activitywatch" do
   desc "Time tracker"
   homepage "https://activitywatch.net/"
 
+  livecheck do
+    url "https://activitywatch.net/downloads/"
+    regex(/href=.*?activitywatch[._-]v?(\d+(?:\.\d+)+)-macos-x86_64\.dmg/i)
+  end
+
   app "ActivityWatch.app"
 
-  zap trash: "~/Library/Application Support/activitywatch"
+  zap trash: [
+    "~/Library/Application Support/activitywatch",
+    "~/Library/Caches/activitywatch",
+    "~/Library/Logs/activitywatch",
+  ]
 end

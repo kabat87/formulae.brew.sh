@@ -10,7 +10,7 @@
 
   ],
   "desc": "Text-mode videogame inspired by Namco's Pac-Man",
-  "license": null,
+  "license": "MIT",
   "homepage": "https://myman.sourceforge.io/",
   "versions": {
     "stable": "2009-10-30",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/myman/myman-cvs/myman-cvs-2009-10-30/myman-wip-2009-10-30.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bf69607eabe4c373862c81bf56756f2a96eecb8eaa8c911bb2abda78b40c6d73"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/myman/blobs/sha256:4a37b7df0fde91a64eeec5ae4032d2c460b6524310c51819624c16c8904e7020",
+          "sha256": "4a37b7df0fde91a64eeec5ae4032d2c460b6524310c51819624c16c8904e7020"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/myman/blobs/sha256:7572bde41926ba4a33b300b0e43b890648fb8d19e47e4a50b43608e99c9b8e9a",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/myman/blobs/sha256:a38be300e040956aa8f9d997a715c91152868d5aeaadc6406330729523036828",
           "sha256": "a38be300e040956aa8f9d997a715c91152868d5aeaadc6406330729523036828"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/myman/blobs/sha256:ddbf3e40844f79bb2c6401a01db921f954980a7784f23838d3876447eb66c0ff",
+          "sha256": "ddbf3e40844f79bb2c6401a01db921f954980a7784f23838d3876447eb66c0ff"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/myman/blobs/sha256:d3b66de7eae03edecb2573524d94239bd013ffd57eeb1980411da12f6d2b2b98",
           "sha256": "d3b66de7eae03edecb2573524d94239bd013ffd57eeb1980411da12f6d2b2b98"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/myman/blobs/sha256:b318e0b227a3ad281afe95edc5a0cc7ab0b1d5e46b1699e6221eb201de869b48",
-          "sha256": "b318e0b227a3ad281afe95edc5a0cc7ab0b1d5e46b1699e6221eb201de869b48"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/myman/blobs/sha256:28f96eb2fba35b8c50f166eecd9b48dc8336229e97425f290209d15e9526eeeb",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +106,9 @@
     "gnu-sed"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -130,5 +138,16 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "groff",
+        "util-linux"
+      ],
+      "dependencies": [
+        "ncurses"
+      ]
+    }
+  }
 }

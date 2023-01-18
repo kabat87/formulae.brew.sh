@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://naif.jpl.nasa.gov/pub/naif/toolkit/C/MacIntel_OSX_AppleC_64bit/packages/cspice.tar.Z",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6f4980445fee4d363dbce6f571819f4a248358d2c1bebca47e0743eedfe9935e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cspice/blobs/sha256:75fb24feb4462f0b49be4c6b1f473f2854b3b34a25bc9ec6e3fd4c2e91664250",
+          "sha256": "75fb24feb4462f0b49be4c6b1f473f2854b3b34a25bc9ec6e3fd4c2e91664250"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cspice/blobs/sha256:4a3e9574c472567a3814aed8f11bcc0874d6dc4ce2e1e867351e5668366d60a6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cspice/blobs/sha256:27847bdbb741a1195069b815bef8bcbdbcbc183ab3b7034a83eb7854348d7f04",
           "sha256": "27847bdbb741a1195069b815bef8bcbdbcbc183ab3b7034a83eb7854348d7f04"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cspice/blobs/sha256:08f343b41a74f34b570617df5af195429f90a0d1feb1303a8edcf49f77476080",
+          "sha256": "08f343b41a74f34b570617df5af195429f90a0d1feb1303a8edcf49f77476080"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -55,13 +66,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cspice/blobs/sha256:900cfe839cf53dc03c1e227332d24849e55209a606dba515412ae74a955144f9",
           "sha256": "900cfe839cf53dc03c1e227332d24849e55209a606dba515412ae74a955144f9"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cspice/blobs/sha256:5c49763f72469907d773eef66b54ae8dce74c3df9f2f5dee29468de3ea9f0953",
+          "sha256": "5c49763f72469907d773eef66b54ae8dce74c3df9f2f5dee29468de3ea9f0953"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -100,5 +118,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "tcsh"
+      ]
+    }
+  }
 }

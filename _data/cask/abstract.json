@@ -7,29 +7,33 @@
   ],
   "desc": "Collaborative design tool with support for Sketch files",
   "homepage": "https://www.goabstract.com/",
-  "url": "https://downloads.goabstract.com/mac/Abstract-98.1.3.zip",
+  "url": "https://downloads.goabstract.com/mac/Abstract-98.2.6.zip",
   "appcast": null,
-  "version": "98.1.3",
+  "version": "98.2.6",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c63b56cc5bd231d12a7b90e4773fa841e4a3291152a03cba00a451442f2298ab",
+  "sha256": "bdab03daf8d0e3e866914fe075af40b4c99592137cf715923f60b61c451d1d0a",
   "artifacts": [
-    [
-      "Abstract.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Abstract",
-        "~/Library/Caches/com.elasticprojects.abstract-desktop",
-        "~/Library/Caches/com.elasticprojects.abstract-desktop.ShipIt",
-        "~/Library/Preferences/com.elasticprojects.abstract-desktop.helper.plist",
-        "~/Library/Preferences/com.elasticprojects.abstract-desktop.plist",
-        "~/Library/Saved Application State/com.elasticprojects.abstract-desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Abstract.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Abstract",
+            "~/Library/Caches/com.elasticprojects.abstract-desktop",
+            "~/Library/Caches/com.elasticprojects.abstract-desktop.ShipIt",
+            "~/Library/Preferences/com.elasticprojects.abstract-desktop.helper.plist",
+            "~/Library/Preferences/com.elasticprojects.abstract-desktop.plist",
+            "~/Library/Saved Application State/com.elasticprojects.abstract-desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +41,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

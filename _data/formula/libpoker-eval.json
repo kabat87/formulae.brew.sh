@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/p/poker-eval/poker-eval_138.0.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "92659e4a90f6856ebd768bad942e9894bd70122dab56f3b23dd2c4c61bdbcf68"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libpoker-eval/blobs/sha256:a4cebe2f59bd06f50608c0df206de3cfa2d3512a54933ed3ae161a09dd499a84",
+          "sha256": "a4cebe2f59bd06f50608c0df206de3cfa2d3512a54933ed3ae161a09dd499a84"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libpoker-eval/blobs/sha256:a92ca2dd4b28f4280177846140b0d1db97dc12b855e481eaf3bef1211ee0de24",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libpoker-eval/blobs/sha256:3b2910848df5a62c48ff9ecca9797de0c6c82c73e5392c0bc63202fd7a51815a",
           "sha256": "3b2910848df5a62c48ff9ecca9797de0c6c82c73e5392c0bc63202fd7a51815a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libpoker-eval/blobs/sha256:47680460b617535c739e9185e07262ee04a63c449e0fed0decc319df46456f69",
+          "sha256": "47680460b617535c739e9185e07262ee04a63c449e0fed0decc319df46456f69"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libpoker-eval/blobs/sha256:67b105600a8e29ed2d38421bc27340ff6e9092806f6458f0ddd6a27de0bcfb9c",
           "sha256": "67b105600a8e29ed2d38421bc27340ff6e9092806f6458f0ddd6a27de0bcfb9c"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libpoker-eval/blobs/sha256:b15086546ac1ac0310e3113231bfcc2c9de0d23474be8a1a1b4663e6bc8f713f",
-          "sha256": "b15086546ac1ac0310e3113231bfcc2c9de0d23474be8a1a1b4663e6bc8f713f"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libpoker-eval/blobs/sha256:723cc1e71146dbe997acaacd71fd71f46266de3977b0ee24f3cf54fae280d208",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

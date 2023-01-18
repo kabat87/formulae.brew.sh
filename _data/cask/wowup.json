@@ -7,32 +7,38 @@
   ],
   "desc": "World of Warcraft addon manager",
   "homepage": "https://wowup.io/",
-  "url": "https://github.com/WowUp/WowUp/releases/download/v2.5.2/WowUp-2.5.2.dmg",
+  "url": "https://github.com/WowUp/WowUp/releases/download/v2.9.1/WowUp-2.9.1.dmg",
   "appcast": null,
-  "version": "2.5.2",
+  "version": "2.9.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "19c176d518af7b58a459958c5dcdf20d574655769339f0609a9da42669b40585",
+  "sha256": "6d02eab120457451dac424026a61df5e58846f3411ea8b94b6fd0ebc8af8f85c",
   "artifacts": [
     {
-      "quit": "io.wowup.jliddev",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "io.wowup.jliddev"
+        }
+      ]
     },
-    [
-      "WowUp.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/WowUp",
-        "~/Library/Logs/WowUp",
-        "~/Library/Preferences/io.wowup.jliddev.plist",
-        "~/Library/Saved Application State/io.wowup.jliddev.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "WowUp.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/WowUp",
+            "~/Library/Logs/WowUp",
+            "~/Library/Preferences/io.wowup.jliddev.plist",
+            "~/Library/Saved Application State/io.wowup.jliddev.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +46,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/WowUp/WowUp/releases/download/v2.9.1/WowUp-2.9.1-arm64.dmg",
+      "sha256": "13485858eec10f197f0351afef5b10e40e7010c05f93a2f229a4724b2d12038f"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/WowUp/WowUp/releases/download/v2.9.1/WowUp-2.9.1-arm64.dmg",
+      "sha256": "13485858eec10f197f0351afef5b10e40e7010c05f93a2f229a4724b2d12038f"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/WowUp/WowUp/releases/download/v2.9.1/WowUp-2.9.1-arm64.dmg",
+      "sha256": "13485858eec10f197f0351afef5b10e40e7010c05f93a2f229a4724b2d12038f"
+    }
+  }
 }

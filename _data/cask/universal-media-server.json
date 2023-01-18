@@ -7,22 +7,26 @@
   ],
   "desc": "Media server supporting DLNA, UPnP and HTTP(S)",
   "homepage": "https://www.universalmediaserver.com/",
-  "url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/10.15.0/UMS-10.15.0.dmg",
+  "url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/13.0.1/UMS-13.0.1.dmg",
   "appcast": null,
-  "version": "10.15.0",
+  "version": "13.0.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "7103529b0d2e091baac34a29400e3a218f544a9b0bb398dc6ddc289d1deaa59c",
+  "sha256": "dae721f7ede2e4c62efa4d5b548f5b0720d029e385f716636d6a3408ab894ad1",
   "artifacts": [
-    [
-      "Universal Media Server.app"
-    ],
     {
-      "trash": "~/Library/Application Support/UMS",
-      "signal": {
-      }
+      "app": [
+        "Universal Media Server.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/UMS"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/13.0.1/UMS-13.0.1-arm.dmg",
+      "sha256": "f848f356ee84568d9613d764dc6cf495cbd04e89e7689935e4d98fab24c78c91"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/13.0.1/UMS-13.0.1-arm.dmg",
+      "sha256": "f848f356ee84568d9613d764dc6cf495cbd04e89e7689935e4d98fab24c78c91"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/13.0.1/UMS-13.0.1-arm.dmg",
+      "sha256": "f848f356ee84568d9613d764dc6cf495cbd04e89e7689935e4d98fab24c78c91"
+    }
+  }
 }

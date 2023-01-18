@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/lpabon/cmockery2/archive/v1.3.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c38054768712351102024afdff037143b4392e1e313bdabb9380cab554f9dbf2"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:9eefe7b0693c469ebd0406452350e1af83f0b343de3d114f0cceadd976e1b549",
+          "sha256": "9eefe7b0693c469ebd0406452350e1af83f0b343de3d114f0cceadd976e1b549"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:05efcc1ad197d369912094e402f2ba56c68df59c578c8583b274407e9d35a35d",
+          "sha256": "05efcc1ad197d369912094e402f2ba56c68df59c578c8583b274407e9d35a35d"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:68744e2b1c76021e1ab34568873fcac417629d253cd0213e0040c674aab4928e",
           "sha256": "68744e2b1c76021e1ab34568873fcac417629d253cd0213e0040c674aab4928e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:02bafd61618754d288f9acad0b9aeadbaf30c38aa807e7cc1f1362737284c7c8",
+          "sha256": "02bafd61618754d288f9acad0b9aeadbaf30c38aa807e7cc1f1362737284c7c8"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:2f28862d0c9e7a03b64b3222ebdccc3dbf2eae2914dfafcb8862156df0701c30",
+          "sha256": "2f28862d0c9e7a03b64b3222ebdccc3dbf2eae2914dfafcb8862156df0701c30"
         },
         "big_sur": {
           "cellar": ":any",
@@ -66,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:61b64aeaf89d205742bbb254148502cd2df83bcf05d20377bdce8637f275bee5",
           "sha256": "61b64aeaf89d205742bbb254148502cd2df83bcf05d20377bdce8637f275bee5"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:ea94ba8420bd5bc01412b52ce9c03b392b933f279d1bce7a8ff8f7502bc83f88",
-          "sha256": "ea94ba8420bd5bc01412b52ce9c03b392b933f279d1bce7a8ff8f7502bc83f88"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cmockery2/blobs/sha256:3277107c3831686b1fbd803f8d5613f1c29800293c144b982b018f61b63b1870",
@@ -81,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -92,6 +107,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -121,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,26 +7,30 @@
   ],
   "desc": "Application for electronic signing and validation of signatures",
   "homepage": "https://www.podpisuj.sk/",
-  "url": "https://www.podpisuj.sk/staticweb/install/podpisuj-5.5.39.dmg",
+  "url": "https://www.podpisuj.sk/staticweb/install/podpisuj-5.6.53.dmg",
   "appcast": null,
-  "version": "5.5.39",
+  "version": "5.6.53",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "06141b49385d58ddfce030c8aae7a89e4db3390cc832263c58d5ebec8103b0a2",
+  "sha256": "540238bbe2ca1c2dac8889ab5412ae63069d0487f4ca24f63b9dffa61e712d20",
   "artifacts": [
-    [
-      "Podpisuj.app"
-    ],
     {
-      "trash": [
-        "~/.archimetes/signer",
-        "~/Library/Preferences/com.archimetes.podpisuj.desktopapp.Podpisuj.plist",
-        "~/Library/Saved Application State/com.archimetes.podpisuj.desktopapp.Podpisuj.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Podpisuj.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.archimetes/signer",
+            "~/Library/Preferences/com.archimetes.podpisuj.desktopapp.Podpisuj.plist",
+            "~/Library/Saved Application State/com.archimetes.podpisuj.desktopapp.Podpisuj.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "Installing podpisuj means you have AGREED to the license at:\n  https://www.podpisuj.sk/privacy\n",
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

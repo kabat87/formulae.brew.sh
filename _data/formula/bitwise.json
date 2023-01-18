@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/mellowcandle/bitwise/releases/download/v0.43/bitwise-v0.43.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f524f794188a10defc4df673d8cf0b3739f93e58e93aff0cdb8a99fbdcca2ffb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bitwise/blobs/sha256:65415084e611bb674c85a509a489f3efb62f8cbb13fc729c2375d30b4f4e9625",
+          "sha256": "65415084e611bb674c85a509a489f3efb62f8cbb13fc729c2375d30b4f4e9625"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bitwise/blobs/sha256:37d182e71950518aa30bda7d31e838b064bf3fdca49bb19946529b848deae93f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bitwise/blobs/sha256:b9e69835e64543d6f75709169ea716772f14d5122ceb197228afb40162400769",
           "sha256": "b9e69835e64543d6f75709169ea716772f14d5122ceb197228afb40162400769"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bitwise/blobs/sha256:541cbdb46f824065566281d18a3269aa5e2498cf1f5a3e0973d4e3e22824fdae",
+          "sha256": "541cbdb46f824065566281d18a3269aa5e2498cf1f5a3e0973d4e3e22824fdae"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +86,9 @@
   ],
   "dependencies": [
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

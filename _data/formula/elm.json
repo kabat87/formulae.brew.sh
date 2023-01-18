@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/elm/compiler/archive/0.19.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "aa161caca775cef1bbb04bcdeb4471d3aabcf87b6d9d9d5b0d62d3052e8250b1"
     }
   },
   "revision": 0,
@@ -40,6 +41,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/elm/blobs/sha256:7efd5b1f3446827c5c06502a65c4bf80cabde7ecf11156e206a373d0c568af35",
           "sha256": "7efd5b1f3446827c5c06502a65c4bf80cabde7ecf11156e206a373d0c568af35"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/elm/blobs/sha256:958032075f348d62564a86ced5fc4b188a7e2ad934910cefee945b12be051b87",
+          "sha256": "958032075f348d62564a86ced5fc4b188a7e2ad934910cefee945b12be051b87"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,15 +77,17 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "cabal-install",
-    "ghc"
+    "ghc@8.10"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -110,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

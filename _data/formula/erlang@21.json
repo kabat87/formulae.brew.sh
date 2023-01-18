@@ -7,6 +7,7 @@
 
   ],
   "versioned_formulae": [
+    "erlang@24",
     "erlang@23",
     "erlang@22"
   ],
@@ -22,7 +23,8 @@
     "stable": {
       "url": "https://github.com/erlang/otp/releases/download/OTP-21.3.8.24/otp_src_21.3.8.24.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a82de871d7ba40fd256558b23a3b4c1539e6c7ece7507d6eb2b00330c6135012"
     }
   },
   "revision": 2,
@@ -32,6 +34,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/21/blobs/sha256:9a63e37bcd7aa3fb9f20454aece99b5010e8e1f37c9317c1fb862a8bd295028c",
+          "sha256": "9a63e37bcd7aa3fb9f20454aece99b5010e8e1f37c9317c1fb862a8bd295028c"
+        },
         "monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/erlang/21/blobs/sha256:9effd9cdb8786f80257db78e9d1c587e4065313628f6c04c1ffe588afe0d9953",
@@ -65,7 +72,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +83,9 @@
   "dependencies": [
     "openssl@1.1",
     "wxwidgets"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,10 +117,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-03-01",
+  "deprecation_reason": "unsupported",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

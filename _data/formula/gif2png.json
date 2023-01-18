@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.catb.org/~esr/gif2png/gif2png-2.5.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "997275b20338e6cfe3bd4adb084f82627c34c856bc1d67c915c397cf55146924"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gif2png/blobs/sha256:f0feffa02d1d8db0cf5e4f13a209c173fa870557faae6fe0d37a5d96614c9cc5",
+          "sha256": "f0feffa02d1d8db0cf5e4f13a209c173fa870557faae6fe0d37a5d96614c9cc5"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gif2png/blobs/sha256:7376913b012f5b2fe0972244be5bbbefc665ed0f13c9d3a8ac2b0fe6d23dd375",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gif2png/blobs/sha256:a8b1dd6b1f3b029b7ca53f99f18caea098810634aea1a745630028e66ecc4203",
           "sha256": "a8b1dd6b1f3b029b7ca53f99f18caea098810634aea1a745630028e66ecc4203"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gif2png/blobs/sha256:4e5fbf6fd1a25c14963a42660ef29c0463d4cf9f7966690d3ac8ec3d2abd4552",
+          "sha256": "4e5fbf6fd1a25c14963a42660ef29c0463d4cf9f7966690d3ac8ec3d2abd4552"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
   ],
   "dependencies": [
     "libpng"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

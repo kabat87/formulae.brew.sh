@@ -21,57 +21,62 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/mcj/xfig-3.2.8b.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b2cc8181cfb356f6b75cc28771970447f69aba1d728a2dac0e0bcf1aea7acd3a"
     }
   },
-  "revision": 1,
+  "revision": 4,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:8574d41d8a47a3627db72b121b9243901b3e36c78f5e24d1a061b6b3e54c55d7",
+          "sha256": "8574d41d8a47a3627db72b121b9243901b3e36c78f5e24d1a061b6b3e54c55d7"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:895af35392b744f5bb1e836834ce28456f923c2b69f4850967c001d3f999f602",
-          "sha256": "895af35392b744f5bb1e836834ce28456f923c2b69f4850967c001d3f999f602"
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:19e623d10ad5afe8b0dc2aeba0e4f034f04f0419f54aeadef69e0af4a17a4200",
+          "sha256": "19e623d10ad5afe8b0dc2aeba0e4f034f04f0419f54aeadef69e0af4a17a4200"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:8c3325a340d627863effb670513f067e9249e5d6a3f9f30744fd2e1034305c47",
-          "sha256": "8c3325a340d627863effb670513f067e9249e5d6a3f9f30744fd2e1034305c47"
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:caaf9d6a60be127104f5ea789913c07b25ce44505e17136c2b3882a688da7416",
+          "sha256": "caaf9d6a60be127104f5ea789913c07b25ce44505e17136c2b3882a688da7416"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:032f71865561c6e8a68bf9e99c13153fb68461419b67a104b905d04ae73b6ccd",
+          "sha256": "032f71865561c6e8a68bf9e99c13153fb68461419b67a104b905d04ae73b6ccd"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:9409bd9f70bcbbe48509267a31462a64b5c97ccbd305892fccc57efd81585456",
-          "sha256": "9409bd9f70bcbbe48509267a31462a64b5c97ccbd305892fccc57efd81585456"
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:7ad534b38ffc6cfade2018b4e8f85b9d938ade756f048634b8b8dc28d4d3d491",
+          "sha256": "7ad534b38ffc6cfade2018b4e8f85b9d938ade756f048634b8b8dc28d4d3d491"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:88947e162b3798d1e715a87d3867250b94ab6372e3139b4cca3055ea901631fa",
-          "sha256": "88947e162b3798d1e715a87d3867250b94ab6372e3139b4cca3055ea901631fa"
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:023e9468783cfca2a0d534e082e40b394e7f04e4b375cba94223262bb2a1ae5f",
+          "sha256": "023e9468783cfca2a0d534e082e40b394e7f04e4b375cba94223262bb2a1ae5f"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:6517059167e6ce939bf2a99699cc519070cbda539074eec680d741e277a54697",
-          "sha256": "6517059167e6ce939bf2a99699cc519070cbda539074eec680d741e277a54697"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:3a27245c030faa4ed3648fb44b06d095eb88a4e6d38bf2bf4a50bc2d90f22ad3",
-          "sha256": "3a27245c030faa4ed3648fb44b06d095eb88a4e6d38bf2bf4a50bc2d90f22ad3"
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:35cf4130db30aa7204f7246e1eaf95f1e311bb605179099ad865dee6e1ccdedb",
+          "sha256": "35cf4130db30aa7204f7246e1eaf95f1e311bb605179099ad865dee6e1ccdedb"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:2131fe0421c31080c784ab17d4e770ab69b1e840ba44a05f11b8f827d6539887",
-          "sha256": "2131fe0421c31080c784ab17d4e770ab69b1e840ba44a05f11b8f827d6539887"
+          "url": "https://ghcr.io/v2/homebrew/core/xfig/blobs/sha256:498a522412d4e00411d7f978e881956f9f990a79af2436b045b3900a7b35eec9",
+          "sha256": "498a522412d4e00411d7f978e881956f9f990a79af2436b045b3900a7b35eec9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,7 +86,7 @@
   "dependencies": [
     "fig2dev",
     "ghostscript",
-    "jpeg",
+    "jpeg-turbo",
     "libpng",
     "libtiff",
     "libx11",
@@ -89,6 +94,9 @@
     "libxi",
     "libxpm",
     "libxt"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -117,5 +125,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

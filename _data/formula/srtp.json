@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/cisco/libsrtp/archive/v2.4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3b1bcb14ebda572b04b9bdf07574a449c84cb924905414e4d94e62837d22b628"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/srtp/blobs/sha256:b5ade7441eae1369b1e85b68f5a518de4792dbeeb0ed3bc3723574a4b5f4611f",
+          "sha256": "b5ade7441eae1369b1e85b68f5a518de4792dbeeb0ed3bc3723574a4b5f4611f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/srtp/blobs/sha256:4e8db729f069ebd07a19f506d28a3f491328e6d6521d81f3176617fcdfcba2b9",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/srtp/blobs/sha256:da78f2f142b179a51309a70d2a823960198086609fc6f38dfc45559b2e581e13",
           "sha256": "da78f2f142b179a51309a70d2a823960198086609fc6f38dfc45559b2e581e13"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/srtp/blobs/sha256:a093c30485390d8dbfbd0ca957a58d836853540dc86de5df6929216a582673dd",
+          "sha256": "a093c30485390d8dbfbd0ca957a58d836853540dc86de5df6929216a582673dd"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

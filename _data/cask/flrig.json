@@ -7,23 +7,29 @@
   ],
   "desc": "Ham radio rig control",
   "homepage": "https://sourceforge.net/projects/fldigi/files/flrig/",
-  "url": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-1.4.4_BS.dmg",
+  "url": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-1.4.7_BS.dmg",
   "appcast": null,
-  "version": "1.4.4",
+  "version": "1.4.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c19d9eb62c899fd6e1eefe6db8bacdae70762e284afb567348e4d4fc311233b6",
+  "sha256": "e83e95e004778b66ea9079d608cda009c1996a0ac975a4258fcd68ae0d23479b",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "flrig.app"
-    ],
     {
-      "trash": "~/.flrig",
-      "signal": {
-      }
+      "preflight": "  preflight do\n    staged_path.glob(\"flrig-*.app\").first.rename(staged_path/\"flrig.app\")\n  end\n"
+    },
+    {
+      "app": [
+        "flrig.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.flrig"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -31,5 +37,27 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "catalina": {
+      "url": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-1.4.7_HS.dmg",
+      "sha256": "aacbef604d070d16493f0b22d9a02772314fe25fd8131b19604ae5621a1d9211"
+    },
+    "mojave": {
+      "url": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-1.4.7_HS.dmg",
+      "sha256": "aacbef604d070d16493f0b22d9a02772314fe25fd8131b19604ae5621a1d9211"
+    },
+    "high_sierra": {
+      "url": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-1.4.7_HS.dmg",
+      "sha256": "aacbef604d070d16493f0b22d9a02772314fe25fd8131b19604ae5621a1d9211"
+    },
+    "sierra": {
+      "url": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-1.4.7_HS.dmg",
+      "sha256": "aacbef604d070d16493f0b22d9a02772314fe25fd8131b19604ae5621a1d9211"
+    },
+    "el_capitan": {
+      "url": "https://downloads.sourceforge.net/fldigi/fldigi/flrig-1.4.7_HS.dmg",
+      "sha256": "aacbef604d070d16493f0b22d9a02772314fe25fd8131b19604ae5621a1d9211"
+    }
+  }
 }

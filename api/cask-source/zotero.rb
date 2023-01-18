@@ -1,6 +1,6 @@
 cask "zotero" do
-  version "5.0.96.3"
-  sha256 "72ca698334ce4f453271c9fa7fd01ed5592eadcf69095044bea7f9539ef5edb6"
+  version "6.0.20"
+  sha256 "f42ae48a84e6f3570c87ecd9cdc685b9c64853bb6ed92d3ccab73fdb61c81738"
 
   url "https://download.zotero.org/client/release/#{version}/Zotero-#{version}.dmg"
   name "Zotero"
@@ -9,7 +9,6 @@ cask "zotero" do
 
   livecheck do
     url "https://www.zotero.org/download/"
-    strategy :page_match
     regex(/standaloneVersions.*?"mac"\s*:\s*"(\d+(?:\.\d+)*)"/i)
   end
 

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/truecrack/truecrack_v35.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "25bf270fa3bc3591c3d795e5a4b0842f6581f76c0b5d17c0aef260246fe726b3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/truecrack/blobs/sha256:dec2443fbc84baf2fddd59c65666390b490b3156354fe092eaa4440e3732c078",
+          "sha256": "dec2443fbc84baf2fddd59c65666390b490b3156354fe092eaa4440e3732c078"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/truecrack/blobs/sha256:255979daec38fcb5b7af34d55a34bf54f71c9ad5935117eb5b5dc2685022aa71",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/truecrack/blobs/sha256:d16243315d1cff0bc8f1341cfdc31d9385d0c411fba462cdfa00b81326245b79",
           "sha256": "d16243315d1cff0bc8f1341cfdc31d9385d0c411fba462cdfa00b81326245b79"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/truecrack/blobs/sha256:7ec74e37f62c3e23612137ed389121530914e6b3d5ac38d62738e3dcbfa0ac09",
+          "sha256": "7ec74e37f62c3e23612137ed389121530914e6b3d5ac38d62738e3dcbfa0ac09"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/truecrack/blobs/sha256:2905997955799043b8f07c7cb28854d0a0acd3a84131b92b6c49780570dd198f",
           "sha256": "2905997955799043b8f07c7cb28854d0a0acd3a84131b92b6c49780570dd198f"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/truecrack/blobs/sha256:d7d6879b7132093ebcc716ffe115dc20974c68e7e629f7f7cc3bce5030d153d3",
-          "sha256": "d7d6879b7132093ebcc716ffe115dc20974c68e7e629f7f7cc3bce5030d153d3"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/truecrack/blobs/sha256:13ed8fdfc8e7a6289dd469d0dbc4bac91f00d8917d3609e5b2ac44d1d641fb86",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

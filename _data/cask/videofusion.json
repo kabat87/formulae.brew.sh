@@ -8,26 +8,29 @@
   ],
   "desc": "Video editor",
   "homepage": "https://lv.ulikecam.com/",
-  "url": "https://lf3-faceucdn-tos.pstatp.com/obj/faceu-packages/Jianying_2_5_6_4824_0.dmg",
+  "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_3_7_2_8138_jianyingpro_0.dmg",
   "appcast": null,
-  "version": "2.5.6.4824.0",
+  "version": "3.7.2.8138",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "51942fdc36da4917d508fc2608e7871c2c0710f3683d41ae3ac205f9e0e46d88",
+  "sha256": "78a91c0bfcfd5efd5d2140d4fa50578f2aab5ba985415d81697910cd5271fe76",
   "artifacts": [
-    [
-      "VideoFusion-macOS.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.lemon.ee.lv",
-        "~/Library/Preferences/com.lemon.ee.lv.plist",
-        "~/Library/Saved Application State/com.lemon.ee.lv.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "VideoFusion-macOS.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.lemon.lvpro",
+            "~/Library/Containers/com.lemon.lvpro"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

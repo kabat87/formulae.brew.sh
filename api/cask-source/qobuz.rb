@@ -1,8 +1,11 @@
 cask "qobuz" do
-  version "6.0.4,017"
-  sha256 "5038d4c2581ce4921b2ca64371108a5027547a176ed3aa1f5de249acee530262"
+  arch arm: "arm64/bigsur", intel: "x64/elCapitan_sierra"
 
-  url "https://desktop.qobuz.com/releases/darwin/x64/elCapitan_sierra/#{version.csv.first}-b#{version.csv.second}/Qobuz.dmg"
+  version "6.1.4,008"
+  sha256 arm:   "972d48c461eed229723ec64a0fbe4e88597a4ba83c6557477bfa27f523d580fe",
+         intel: "2038cbb6efc7b20399ced51f35486c209e475d4860232d788a0f8518a77a6d10"
+
+  url "https://desktop.qobuz.com/releases/darwin/#{arch}/#{version.csv.first}-b#{version.csv.second}/Qobuz.dmg"
   name "Qobuz"
   desc "Catalogue of hi-res music for streaming and download"
   homepage "https://www.qobuz.com/applications"

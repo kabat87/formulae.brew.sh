@@ -10,7 +10,7 @@
 
   ],
   "desc": "CLI tool that runs a command and highlights STDERR output",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://sourceforge.net/projects/hilite/",
   "versions": {
     "stable": "1.5",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/hilite/hilite/1.5/hilite.c",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e15bdff2605e8d23832d6828a62194ca26dedab691c9d75df2877468c2f6aaeb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hilite/blobs/sha256:8d2fa393a2cd13f75d3793c7d543ae3fd5a053cdfdd82ac722015912618fa596",
+          "sha256": "8d2fa393a2cd13f75d3793c7d543ae3fd5a053cdfdd82ac722015912618fa596"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hilite/blobs/sha256:4f3e960b26ed8e81acab99dd342d1e2946b1ec8003fb99dd65b91add5af31c93",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hilite/blobs/sha256:b4095517387a97c332c1acb88969995248ee95d2c29483e56ed7e47bbb8ca721",
           "sha256": "b4095517387a97c332c1acb88969995248ee95d2c29483e56ed7e47bbb8ca721"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hilite/blobs/sha256:5316dcf6b7f26ecf9a6149a3db6026a9b1c467f35af63e2dcd499f0262c3db52",
+          "sha256": "5316dcf6b7f26ecf9a6149a3db6026a9b1c467f35af63e2dcd499f0262c3db52"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/hilite/blobs/sha256:2c407d12952089ade6602be85acda46eceb3127e32ba2068c0034df8a486e989",
           "sha256": "2c407d12952089ade6602be85acda46eceb3127e32ba2068c0034df8a486e989"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hilite/blobs/sha256:1eea4240f83568d245aa55801949cd9deb4663fc26df75569e029cc1c4c14112",
-          "sha256": "1eea4240f83568d245aa55801949cd9deb4663fc26df75569e029cc1c4c14112"
+          "url": "https://ghcr.io/v2/homebrew/core/hilite/blobs/sha256:45f0c131886b8932ee87061c612877ff71fa38650e81340eab5694de95e6cb40",
+          "sha256": "45f0c131886b8932ee87061c612877ff71fa38650e81340eab5694de95e6cb40"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

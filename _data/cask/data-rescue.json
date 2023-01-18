@@ -7,34 +7,40 @@
   ],
   "desc": "Data recovery software",
   "homepage": "https://www.prosofteng.com/data-rescue-recovery-software/",
-  "url": "https://downloads.prosofteng.com/dr/Data_Rescue_6.0.6.dmg",
+  "url": "https://downloads.prosofteng.com/dr/Data_Rescue_6.0.7.dmg",
   "appcast": null,
-  "version": "6.0.6,6213.62.03",
+  "version": "6.0.7,6221.53.11",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2e4186325d13a8442fe7ef4b3f9c3d75578d2cbcf911537f85ca07e898970884",
+  "sha256": "45ba579f20251bbe4c7d8cd52a31da210abbb15428c4d42d6c617ac40ce3fd69",
   "artifacts": [
     {
-      "quit": "com.prosofteng.DataRescue",
-      "delete": "/Library/Application Support/Data Rescue",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.prosofteng.DataRescue",
+          "delete": "/Library/Application Support/Data Rescue"
+        }
+      ]
     },
-    [
-      "Data Rescue.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Data Rescue",
-        "~/Library/HTTPStorages/com.prosofteng.DataRescue",
-        "~/Library/Preferences/com.prosofteng.Data Rescue.plist",
-        "~/Library/Preferences/com.prosofteng.DataRescue.plist",
-        "~/Library/Saved Application State/com.prosofteng.DataRescue.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Data Rescue.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Data Rescue",
+            "~/Library/HTTPStorages/com.prosofteng.DataRescue",
+            "~/Library/Preferences/com.prosofteng.Data Rescue.plist",
+            "~/Library/Preferences/com.prosofteng.DataRescue.plist",
+            "~/Library/Saved Application State/com.prosofteng.DataRescue.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

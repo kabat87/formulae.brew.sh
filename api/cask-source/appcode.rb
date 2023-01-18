@@ -1,13 +1,9 @@
 cask "appcode" do
-  arch = Hardware::CPU.intel? ? "" : "-aarch64"
+  arch arm: "-aarch64"
 
-  version "2021.3.1,213.6461.84"
-
-  if Hardware::CPU.intel?
-    sha256 "f6aa9496091d4258280889d580e9878a8e6f483a053a01abed7cd36eab501026"
-  else
-    sha256 "04681bda4c615d352e8998058009a3a3fd32a843f8557980a275b3ef82c9703e"
-  end
+  version "2022.3.1,223.8214.66"
+  sha256 arm:   "8027ecc71214fc06e447a6f01679b30b2c3377bce2140b968189ef4e0386871d",
+         intel: "9ae5fd60f8f28b4081edf49379dd03d10bcd37cb0dc0032b5b029fedaa3b32af"
 
   url "https://download.jetbrains.com/objc/AppCode-#{version.csv.first}#{arch}.dmg"
   name "AppCode"
@@ -30,7 +26,7 @@ cask "appcode" do
 
   uninstall_postflight do
     ENV["PATH"].split(File::PATH_SEPARATOR).map { |path| File.join(path, "appcode") }.each do |path|
-      if File.exist?(path) &&
+      if File.readable?(path) &&
          File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?
         File.delete(path)
       end
@@ -43,4 +39,8 @@ cask "appcode" do
     "~/Library/Logs/AppCode#{version.major_minor}",
     "~/Library/Preferences/AppCode#{version.major_minor}",
   ]
+
+  caveats do
+    discontinued
+  end
 end

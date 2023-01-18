@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://www.wireshark.org",
   "versions": {
-    "stable": "3.6.1",
+    "stable": "4.0.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.wireshark.org/download/src/all-versions/wireshark-3.6.1.tar.xz",
+      "url": "https://www.wireshark.org/download/src/all-versions/wireshark-4.0.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f35915699f2f9b28ddb211202d40ec8984e5834d3c911483144a4984ba44411d"
     }
   },
   "revision": 0,
@@ -31,32 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:b77227776d9c22545b9293eea171a7bcba9a8f9571b6fff318bfc314270ad88a",
+          "sha256": "b77227776d9c22545b9293eea171a7bcba9a8f9571b6fff318bfc314270ad88a"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:8b7bc467337aa944d70363cfdcfcb0bb8d9adb015e4635857ae7a942dd60372d",
+          "sha256": "8b7bc467337aa944d70363cfdcfcb0bb8d9adb015e4635857ae7a942dd60372d"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:32103c0332c83ca9bf7f08dee7b1e3b6f968e4115f558e97d885a2ade82ad436",
-          "sha256": "32103c0332c83ca9bf7f08dee7b1e3b6f968e4115f558e97d885a2ade82ad436"
+          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:ea51202bd8dff8f258e23e0da456c7caf81988c00051472bfb64b9d587a4f848",
+          "sha256": "ea51202bd8dff8f258e23e0da456c7caf81988c00051472bfb64b9d587a4f848"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:a667c6328fc2c3a84d259abd6a0d973f509c136872f59e438ebb9e218df774bf",
+          "sha256": "a667c6328fc2c3a84d259abd6a0d973f509c136872f59e438ebb9e218df774bf"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:e3d5cec2a0e7beda097a7e9bb4524f4e530f197e73bdc6fa43be130126f3f63b",
+          "sha256": "e3d5cec2a0e7beda097a7e9bb4524f4e530f197e73bdc6fa43be130126f3f63b"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:6abcef3a580024ecc00c17e48dff034edaac4adc9268bea3499ae16fda8e2f8d",
-          "sha256": "6abcef3a580024ecc00c17e48dff034edaac4adc9268bea3499ae16fda8e2f8d"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:16b85299e672698026ab83ae955b16614b2c0112fbbe1b2677eab21d27e83f48",
-          "sha256": "16b85299e672698026ab83ae955b16614b2c0112fbbe1b2677eab21d27e83f48"
+          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:42800280364ae61010b17327ba6303fa1e766fb9553514819ef8cc2004ce6cd9",
+          "sha256": "42800280364ae61010b17327ba6303fa1e766fb9553514819ef8cc2004ce6cd9"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:148d3d263686946eb19df6dbae4085b5a110d6282662ced9556ac6d9d8636c8c",
-          "sha256": "148d3d263686946eb19df6dbae4085b5a110d6282662ced9556ac6d9d8636c8c"
+          "url": "https://ghcr.io/v2/homebrew/core/wireshark/blobs/sha256:ae706550761a4977b6ecaee52523d2aac4c51ef11d2a61fd6ef5e0af79eeda69",
+          "sha256": "ae706550761a4977b6ecaee52523d2aac4c51ef11d2a61fd6ef5e0af79eeda69"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
     "libssh",
     "lua"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -86,7 +104,12 @@
     },
     {
       "flex": "build"
-    }
+    },
+    {
+      "python": "build"
+    },
+    "libpcap",
+    "libxml2"
   ],
   "requirements": [
 
@@ -106,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

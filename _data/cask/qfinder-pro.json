@@ -7,33 +7,41 @@
   ],
   "desc": "NAS management application",
   "homepage": "https://www.qnap.com/en/utilities#utliity_5",
-  "url": "https://download.qnap.com/Storage/Utility/QNAPQfinderProMac-7.6.0.0913.dmg",
+  "url": "https://download.qnap.com/Storage/Utility/QNAPQfinderProMac-7.8.2.0928.dmg",
   "appcast": null,
-  "version": "7.6.0.0913",
+  "version": "7.8.2.0928",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "04389b47b7c6a5be6819237b92a9649e60cbf26e296c0933b63de16e0416e4c5",
+  "sha256": "92fe9b25f08e22e20588e1defd8c41906148454f19769ccf3d9f39715cca302d",
   "artifacts": [
     {
-      "pkgutil": "qnap.com.Qfinder",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "qnap.com.Qfinder"
+        }
+      ]
     },
-    "Qfinder Pro.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/QNAP/QfinderPro",
-        "~/Library/Preferences/QNAP/Qfinder.plist",
-        "~/Library/Saved Application State/qnap.com.qfinder.savedState"
-      ],
-      "rmdir": [
-        "~/Library/Application Support/QNAP",
-        "~/Library/Preferences/QNAP"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Qfinder Pro.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/QNAP/QfinderPro",
+            "~/Library/Preferences/QNAP/Qfinder.plist",
+            "~/Library/Saved Application State/qnap.com.qfinder.savedState"
+          ],
+          "rmdir": [
+            "~/Library/Application Support/QNAP",
+            "~/Library/Preferences/QNAP"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +49,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,22 +7,28 @@
   ],
   "desc": "Input method for Bopomofo (Phonetic Symbols of Mandarin Chinese)",
   "homepage": "https://mcbopomofo.openvanilla.org/",
-  "url": "https://github.com/openvanilla/McBopomofo/releases/download/1.1/McBopomofo-Installer-1.1.zip",
+  "url": "https://github.com/openvanilla/McBopomofo/releases/download/2.4.2/McBopomofo-Installer-2.4.2.zip",
   "appcast": null,
-  "version": "1.1",
+  "version": "2.4.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d100b3a020e0ce88f898501ee6f3d359310bfdc0c5c2f97237099aaaa8a2474f",
+  "sha256": "2130ec3af669361186f61113d84fda86c4ed5e38987d3be6a9f08b801f73fb56",
   "artifacts": [
     {
-      "delete": "~/Library/Input Methods/McBopomofo.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "~/Library/Input Methods/McBopomofo.app"
+        }
+      ]
     },
     {
-      "path": "McBopomofoInstaller.app"
+      "installer": [
+        {
+          "manual": "McBopomofoInstaller.app"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +36,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

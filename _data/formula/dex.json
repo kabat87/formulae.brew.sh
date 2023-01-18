@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tihirvon/dex/archive/v1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4468b53debe8da6391186dccb78288a8a77798cb4c0a00fab9a7cdc711cd2123"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/dex/blobs/sha256:54736c90fa2e3b234dfbbbecb1cc573bfe0a810933638297cb0efea717ca3c3d",
+          "sha256": "54736c90fa2e3b234dfbbbecb1cc573bfe0a810933638297cb0efea717ca3c3d"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/dex/blobs/sha256:b0862918ef89cb4018a08662ec18ca36fab573fdf1e44696fd32813b9f40957c",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/dex/blobs/sha256:f8ffe6f83659dbdf5f60ee7367291371a1b5cb502ce288ba76d7d392ad943c85",
           "sha256": "f8ffe6f83659dbdf5f60ee7367291371a1b5cb502ce288ba76d7d392ad943c85"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/dex/blobs/sha256:c6b949a5254e17100be03b643f2c6a48322e52d841c17c3c8755d5c0895edf82",
+          "sha256": "c6b949a5254e17100be03b643f2c6a48322e52d841c17c3c8755d5c0895edf82"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/dex/blobs/sha256:70c249809920acc2d10405c0487427d154ee55cf201507d910d8178693c7fd61",
           "sha256": "70c249809920acc2d10405c0487427d154ee55cf201507d910d8178693c7fd61"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/dex/blobs/sha256:a4cffc5c0b61be9452988d4435ccff1d1c72d2b9cdec595e55ea5f37ca2541a6",
-          "sha256": "a4cffc5c0b61be9452988d4435ccff1d1c72d2b9cdec595e55ea5f37ca2541a6"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/dex/blobs/sha256:53f45193c090faaeefd2c6ca8a492f51af29d6b72f7a13eacb9650b6fffd46c5",
+          "sha256": "53f45193c090faaeefd2c6ca8a492f51af29d6b72f7a13eacb9650b6fffd46c5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

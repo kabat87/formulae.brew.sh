@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/samhocevar/zzuf/releases/download/v0.15/zzuf-0.15.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "04353d94c68391b3945199f100ab47fc5ff7815db1e92581a600d4175e3a6872"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/zzuf/blobs/sha256:16fc98439ca072e8cf19c129649eff99e63e0cece1c1455e97f04ce7cb4dfd73",
+          "sha256": "16fc98439ca072e8cf19c129649eff99e63e0cece1c1455e97f04ce7cb4dfd73"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/zzuf/blobs/sha256:8cf189e969a94737e6729be772df9f64759b7c33580cee51d571b31365dbddf2",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/zzuf/blobs/sha256:7ff801dd276cdd8f830d07d01c97a83207ed8ac77c6023ff21b29a2ec536637b",
           "sha256": "7ff801dd276cdd8f830d07d01c97a83207ed8ac77c6023ff21b29a2ec536637b"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/zzuf/blobs/sha256:397eb044876f87b27787679b9a8f965da0aca9251386aa2a6dbbd1b5ef8cd3c9",
+          "sha256": "397eb044876f87b27787679b9a8f965da0aca9251386aa2a6dbbd1b5ef8cd3c9"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/zzuf/blobs/sha256:5f0c55658fba6bbf225b6001b5be75c38f7a375322bd4b23944f3c7239dae0c7",
           "sha256": "5f0c55658fba6bbf225b6001b5be75c38f7a375322bd4b23944f3c7239dae0c7"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/zzuf/blobs/sha256:7f260ec41af74aa8b99df4a89f202382c72067e34b4bb3ac0a0e3fb0be6f8ed0",
-          "sha256": "7f260ec41af74aa8b99df4a89f202382c72067e34b4bb3ac0a0e3fb0be6f8ed0"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zzuf/blobs/sha256:7164c38ad977edfad3d137b9071e22f185effde9165996e847facd20f4df0e65",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

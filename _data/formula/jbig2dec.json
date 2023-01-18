@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9531/jbig2dec-0.19.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "279476695b38f04939aa59d041be56f6bade3422003a406a85e9792c27118a37"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:fd976897a71bad7195c7a248a9d12183dfb93c5e42f2a82cce542987cf3c4fec",
+          "sha256": "fd976897a71bad7195c7a248a9d12183dfb93c5e42f2a82cce542987cf3c4fec"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:e15376f42a9d9372fffaaf07d739458a0af5870b2ddb2f5ce91e4d88b865daf2",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:696d6862655e2919c4a6b1455923c2c26b3b9da7968aa2a6f6c0b544d10556f0",
           "sha256": "696d6862655e2919c4a6b1455923c2c26b3b9da7968aa2a6f6c0b544d10556f0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jbig2dec/blobs/sha256:bd449679c84d98abb9925714c102337b64ef17634c2276c639921f09ee8f432a",
+          "sha256": "bd449679c84d98abb9925714c102337b64ef17634c2276c639921f09ee8f432a"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -105,9 +118,22 @@
   ],
   "caveats": null,
   "installed": [
+    {
+      "version": "0.19",
+      "used_options": [
 
+      ],
+      "built_as_bottle": true,
+      "poured_from_bottle": true,
+      "time": 1671155040,
+      "runtime_dependencies": [
+
+      ],
+      "installed_as_dependency": true,
+      "installed_on_request": false
+    }
   ],
-  "linked_keg": null,
+  "linked_keg": "0.19",
   "pinned": false,
   "outdated": false,
   "deprecated": false,
@@ -115,5 +141,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

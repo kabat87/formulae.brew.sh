@@ -7,25 +7,29 @@
   ],
   "desc": "Search and play songs from a variety of online sources",
   "homepage": "https://listen1.github.io/listen1/",
-  "url": "https://github.com/listen1/listen1_desktop/releases/download/v2.21.6/Listen1_2.21.6_mac_x64.dmg",
+  "url": "https://github.com/listen1/listen1_desktop/releases/download/v2.27.0/Listen1_2.27.0_mac_x64.dmg",
   "appcast": null,
-  "version": "2.21.6",
+  "version": "2.27.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "fd32f611ebbad961ecebfeaa53b1873d0fb74f2dbd25a48c67e410019f94267f",
+  "sha256": "5619912eac96dad409228bc924acb73d320a0ca16c761c7d3cfff6f00dcd12b7",
   "artifacts": [
-    [
-      "Listen1.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/listen1",
-        "~/Library/Preferences/com.listen1.listen1.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Listen1.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/listen1",
+            "~/Library/Preferences/com.listen1.listen1.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/listen1/listen1_desktop/releases/download/v2.27.0/Listen1_2.27.0_mac_arm64.dmg",
+      "sha256": "85d0a0d48508e0bfbd8b10ae87094b525f7561f84d8f814ac09281f1961fa059"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/listen1/listen1_desktop/releases/download/v2.27.0/Listen1_2.27.0_mac_arm64.dmg",
+      "sha256": "85d0a0d48508e0bfbd8b10ae87094b525f7561f84d8f814ac09281f1961fa059"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/listen1/listen1_desktop/releases/download/v2.27.0/Listen1_2.27.0_mac_arm64.dmg",
+      "sha256": "85d0a0d48508e0bfbd8b10ae87094b525f7561f84d8f814ac09281f1961fa059"
+    }
+  }
 }

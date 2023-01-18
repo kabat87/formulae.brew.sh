@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/base91/basE91/0.6.0/base91-0.6.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "02cfae7322c1f865ca6ce8f2e0bb8d38c8513e76aed67bf1c94eab1343c6c651"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/base91/blobs/sha256:67a2d373e37965d8f4af56c50d704340f2a85efd2563a1801e8b61eeaa1d8755",
+          "sha256": "67a2d373e37965d8f4af56c50d704340f2a85efd2563a1801e8b61eeaa1d8755"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/base91/blobs/sha256:cd1312d937857681b5c54a9d135b0e7b37b934fe8c3ef4be414222a876904dce",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/base91/blobs/sha256:f97be9aed077e34c2aaf8aac0157fae476dedf2cf02eae3b23de8a74541e8135",
           "sha256": "f97be9aed077e34c2aaf8aac0157fae476dedf2cf02eae3b23de8a74541e8135"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/base91/blobs/sha256:17bcc913dc97e5e52dbdd67aae0e622eea1593adbe692adc584c888c754577e7",
+          "sha256": "17bcc913dc97e5e52dbdd67aae0e622eea1593adbe692adc584c888c754577e7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tsenart/vegeta/archive/v12.8.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "418249d07f04da0a587df45abe34705166de9e54a836e27e387c719ebab3e357"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vegeta/blobs/sha256:00e8187e3ba614834ad0cddebe1a50402f49da9f387dea44bb08a944df8b5749",
+          "sha256": "00e8187e3ba614834ad0cddebe1a50402f49da9f387dea44bb08a944df8b5749"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vegeta/blobs/sha256:81e5234d266674684d94f92e09fc70504a7c35ab70e89afe744fb93c6c334fda",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vegeta/blobs/sha256:7d95ea4ba41b01adc23e73959805a728a4d279cac33448685cced10e268e2965",
           "sha256": "7d95ea4ba41b01adc23e73959805a728a4d279cac33448685cced10e268e2965"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vegeta/blobs/sha256:c46e7214f55b814c8c6889e7c1bb906211fb8827ebfb50f06ff4a6ac5bddc243",
+          "sha256": "c46e7214f55b814c8c6889e7c1bb906211fb8827ebfb50f06ff4a6ac5bddc243"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

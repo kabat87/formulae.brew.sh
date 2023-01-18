@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/gtypist/gtypist-2.9.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c13af40b12479f8219ffa6c66020618c0ce305ad305590fde02d2c20eb9cf977"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gnu-typist/blobs/sha256:1680a0da992d03808e31f28c258317c5fdeec3b69c0d0347da09b53bc911c220",
+          "sha256": "1680a0da992d03808e31f28c258317c5fdeec3b69c0d0347da09b53bc911c220"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gnu-typist/blobs/sha256:11053d3574c7c569cd3bdddd8e48e0609af0abdc0638346f810168570411f16d",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gnu-typist/blobs/sha256:b241409e921daccc7d82bfd1641ba1b6fd43966d19458fc580d4245641306fe2",
           "sha256": "b241409e921daccc7d82bfd1641ba1b6fd43966d19458fc580d4245641306fe2"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gnu-typist/blobs/sha256:c9d69f252c6f74fb9d82c7ba6c79f37b9e4180a8348c2ad7b518eabb6dbaa153",
+          "sha256": "c9d69f252c6f74fb9d82c7ba6c79f37b9e4180a8348c2ad7b518eabb6dbaa153"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
   ],
   "dependencies": [
     "gettext"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

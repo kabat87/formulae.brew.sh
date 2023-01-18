@@ -7,25 +7,29 @@
   ],
   "desc": "Game Boy Advance emulator",
   "homepage": "https://mgba.io/",
-  "url": "https://github.com/mgba-emu/mgba/releases/download/0.9.3/mGBA-0.9.3-osx.dmg",
+  "url": "https://github.com/mgba-emu/mgba/releases/download/0.10.1/mGBA-0.10.1-macos.dmg",
   "appcast": null,
-  "version": "0.9.3",
+  "version": "0.10.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "38d91f4861d9e05a4e26fea0667061399b488e8783c9d60ea35fbf801b1cfde8",
+  "sha256": "0762ced759bfdb8617adf2585a87323730d14e1df53ed016c28f711c0b6e4e25",
   "artifacts": [
-    [
-      "mGBA.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.endrift.mgba-qt.plist",
-        "~/Library/Saved Application State/com.endrift.mgba-qt.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "mGBA.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.endrift.mgba-qt.plist",
+            "~/Library/Saved Application State/com.endrift.mgba-qt.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

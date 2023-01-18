@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/netheril96/securefs",
   "versions": {
-    "stable": "0.11.1",
+    "stable": "0.13.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/netheril96/securefs.git",
-      "tag": "0.11.1",
-      "revision": "dfeebf8406871d020848edde668234715356158c"
+      "tag": "0.13.1",
+      "revision": "bb7088e3fe43cd5978ec6b09b4cd9615a4ab654c",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,27 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/securefs/blobs/sha256:8a8c7dd74f9b3082b2b128cc058714a27206d910273e4148959a25b7d30c51b5",
-          "sha256": "8a8c7dd74f9b3082b2b128cc058714a27206d910273e4148959a25b7d30c51b5"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/securefs/blobs/sha256:9bee23af87518f68df56b862ad0ef88f842ebe65f8feff02e90bf5ab8e91522e",
-          "sha256": "9bee23af87518f68df56b862ad0ef88f842ebe65f8feff02e90bf5ab8e91522e"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/securefs/blobs/sha256:632496d8e9ed9fe91d18e9a2c9fef49c920dc091e10108246f8ab2056f75ea38",
-          "sha256": "632496d8e9ed9fe91d18e9a2c9fef49c920dc091e10108246f8ab2056f75ea38"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/securefs/blobs/sha256:4ee41830ddaa8bae8ad280a3826e28895d6ee21e487fc7fa6cbf8f8d5835c8e6",
+          "sha256": "4ee41830ddaa8bae8ad280a3826e28895d6ee21e487fc7fa6cbf8f8d5835c8e6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -59,6 +49,9 @@
     "cmake"
   ],
   "dependencies": [
+    "libfuse@2"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -71,12 +64,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -86,7 +87,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

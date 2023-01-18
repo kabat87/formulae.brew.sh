@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.20.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0ec84d0ea862f45a7d85a1a3afe5e60b8da42df211bb7d27a50f486e31a79b93"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ykpers/blobs/sha256:ad5b67da47a110797570919026e4c78ec2220f858f804cca466ced27382170ca",
+          "sha256": "ad5b67da47a110797570919026e4c78ec2220f858f804cca466ced27382170ca"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ykpers/blobs/sha256:a244acc561a3c5e5d5b67ccc25b9b24ea16b037e10acd8e01510a4a34f96ec15",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ykpers/blobs/sha256:512484b795857fd09d61e2fb5c186ff771295c90b809bdcc82fdcf76835b71a0",
           "sha256": "512484b795857fd09d61e2fb5c186ff771295c90b809bdcc82fdcf76835b71a0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ykpers/blobs/sha256:0f4e3087830e58adda6999b618bc2ab80e90906f6d29dbbb5349adbbabcb9785",
+          "sha256": "0f4e3087830e58adda6999b618bc2ab80e90906f6d29dbbb5349adbbabcb9785"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
   "dependencies": [
     "json-c",
     "libyubikey"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +127,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "json-c",
+        "libyubikey",
+        "libusb"
+      ]
+    }
+  }
 }

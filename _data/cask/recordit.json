@@ -16,17 +16,21 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "RecordIt.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Recordit",
-        "~/Library/Caches/us.freshout.RecordIt",
-        "~/Library/Preferences/us.freshout.RecordIt.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "RecordIt.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Recordit",
+            "~/Library/Caches/us.freshout.RecordIt",
+            "~/Library/Preferences/us.freshout.RecordIt.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

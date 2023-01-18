@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://pkg.freebsd.org/ports-distfiles/libhid-0.2.16.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f6809ab3b9c907cbb05ceba9ee6ca23a705f85fd71588518e14b3a7d9f2550e5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libhid/blobs/sha256:7438d29931c8f30d894d323b710a5149bb320aa2945aeb9967fd7b46d7edb194",
+          "sha256": "7438d29931c8f30d894d323b710a5149bb320aa2945aeb9967fd7b46d7edb194"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libhid/blobs/sha256:b69b1ff4ecd6f24b292da9085e8aa30694f24081c5183bdcb6c95d7f535c55dc",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libhid/blobs/sha256:01170cf4863c640d89c02c1c8d10759aa9ab7b16a0ab88bccdefdf10c5174620",
           "sha256": "01170cf4863c640d89c02c1c8d10759aa9ab7b16a0ab88bccdefdf10c5174620"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libhid/blobs/sha256:7542b6e26adf1e5cd79c9392712c6772f8b0e256f33f1379fd9f3742e6d774bd",
+          "sha256": "7542b6e26adf1e5cd79c9392712c6772f8b0e256f33f1379fd9f3742e6d774bd"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libhid/blobs/sha256:a22388fc2ac89d99ed04449c590b035308a81c8f1a2e80ee68ca64a7e10ced7e",
           "sha256": "a22388fc2ac89d99ed04449c590b035308a81c8f1a2e80ee68ca64a7e10ced7e"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libhid/blobs/sha256:4920ff4278cbc288fc8c84ef9b3137d99010ba047d6f072b9a6eccf07588721a",
-          "sha256": "4920ff4278cbc288fc8c84ef9b3137d99010ba047d6f072b9a6eccf07588721a"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libhid/blobs/sha256:fb334329832a5847225997b9b7bb0f54a0e26c69636f34cd3b1af77475eef922",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -103,6 +108,9 @@
   "dependencies": [
     "libusb",
     "libusb-compat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -126,10 +134,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-06-22",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

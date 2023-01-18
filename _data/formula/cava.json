@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/karlstav/cava",
   "versions": {
-    "stable": "0.7.4",
+    "stable": "0.8.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/karlstav/cava/archive/0.7.4.tar.gz",
+      "url": "https://github.com/karlstav/cava/archive/0.8.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ce7378ababada5a20fa8250c6b3fe6412bc1a7dd31301a52b8b4a71d362875b9"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:d9dfab68c25b0611aefcc14a14536f854a0794d4ca8f11208dfed9ab6c26f570",
+          "sha256": "d9dfab68c25b0611aefcc14a14536f854a0794d4ca8f11208dfed9ab6c26f570"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:a9bcaeba0b6e4a72d01e93909b89f5492c629447e059e19bc076315185e7be10",
-          "sha256": "a9bcaeba0b6e4a72d01e93909b89f5492c629447e059e19bc076315185e7be10"
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:2f5e951e4c9c6fbd64ddd4403c33b48c7367e03c8f0d8f1acb4cb27fc7b72dfd",
+          "sha256": "2f5e951e4c9c6fbd64ddd4403c33b48c7367e03c8f0d8f1acb4cb27fc7b72dfd"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:eba8aee3d32a5903073a503200b4e4a28d3ea531263085e16ff4591a7b93454e",
-          "sha256": "eba8aee3d32a5903073a503200b4e4a28d3ea531263085e16ff4591a7b93454e"
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:458780bb7131958baa5b9abe176cb52c3082a403fb5bbc91fffdae6570b8c9d1",
+          "sha256": "458780bb7131958baa5b9abe176cb52c3082a403fb5bbc91fffdae6570b8c9d1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:f67fbbd62edc1b8e6ed8a2d24c0d43bf0a9e7f6e2a57d94df495abb9bde36645",
+          "sha256": "f67fbbd62edc1b8e6ed8a2d24c0d43bf0a9e7f6e2a57d94df495abb9bde36645"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:0ea0d7a31c270df64bc423de9623e8e3a32bea2f09ac4e700dc3c204b0b5ed7f",
-          "sha256": "0ea0d7a31c270df64bc423de9623e8e3a32bea2f09ac4e700dc3c204b0b5ed7f"
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:c19ebbd4247a0a705ff515fbd69da8606b5803cfca8e9e1b55424f6cbbb444e5",
+          "sha256": "c19ebbd4247a0a705ff515fbd69da8606b5803cfca8e9e1b55424f6cbbb444e5"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:8cfbe0a65351827ec14c810390951c577f48ab9cc21a05b84929d9dc9d4056d6",
-          "sha256": "8cfbe0a65351827ec14c810390951c577f48ab9cc21a05b84929d9dc9d4056d6"
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:ac96c19d44f043541d965ab4b44196c598c64b404dbbc9463bd40489b6859c94",
+          "sha256": "ac96c19d44f043541d965ab4b44196c598c64b404dbbc9463bd40489b6859c94"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:83320de97b0893a387b0e44778e55698ae5e2a6a167947de5b8d7cc6c21765e4",
-          "sha256": "83320de97b0893a387b0e44778e55698ae5e2a6a167947de5b8d7cc6c21765e4"
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:195e10dc98dc6070ef4a876618b66f73217cd85da70089e5d9202ff7dd996991",
+          "sha256": "195e10dc98dc6070ef4a876618b66f73217cd85da70089e5d9202ff7dd996991"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:9a61fb2396cad4d2a4132bb2027f9aee52d1daff2949187a6ece75c86452e058",
-          "sha256": "9a61fb2396cad4d2a4132bb2027f9aee52d1daff2949187a6ece75c86452e058"
+          "url": "https://ghcr.io/v2/homebrew/core/cava/blobs/sha256:7281c3eb4ae6ec6535148729c725978c88bc45655b357e4b9d983b24f8556e0d",
+          "sha256": "7281c3eb4ae6ec6535148729c725978c88bc45655b357e4b9d983b24f8556e0d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "iniparser",
     "portaudio"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -87,6 +100,9 @@
 
   ],
   "uses_from_macos": [
+    {
+      "vim": "build"
+    },
     "ncurses"
   ],
   "requirements": [
@@ -107,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,8 +1,11 @@
 cask "universal-media-server" do
-  version "10.15.0"
-  sha256 "7103529b0d2e091baac34a29400e3a218f544a9b0bb398dc6ddc289d1deaa59c"
+  arch arm: "-arm"
 
-  url "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/#{version}/UMS-#{version}.dmg",
+  version "13.0.1"
+  sha256 arm:   "f848f356ee84568d9613d764dc6cf495cbd04e89e7689935e4d98fab24c78c91",
+         intel: "dae721f7ede2e4c62efa4d5b548f5b0720d029e385f716636d6a3408ab894ad1"
+
+  url "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/download/#{version}/UMS-#{version}#{arch}.dmg",
       verified: "github.com/UniversalMediaServer/UniversalMediaServer/"
   name "Universal Media Server"
   desc "Media server supporting DLNA, UPnP and HTTP(S)"

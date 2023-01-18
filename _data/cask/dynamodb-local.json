@@ -16,18 +16,24 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "$(brew --prefix)/Caskroom/dynamodb-local/latest/dynamodb-local.wrapper.sh",
-      {
-        "target": "dynamodb-local"
-      }
-    ]
+    {
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      cd \"$(dirname \"$(readlink -n \"${0}\")\")\" && \\\n        java -Djava.library.path='./DynamoDBLocal_lib' -jar 'DynamoDBLocal.jar' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/dynamodb-local/latest/dynamodb-local.wrapper.sh",
+        {
+          "target": "dynamodb-local"
+        }
+      ]
+    }
   ],
   "caveats": "dynamodb-local requires Java 6+. You can install the latest version with:\n  brew install --cask temurin\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

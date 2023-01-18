@@ -1,16 +1,18 @@
 cask "scenebuilder" do
-  version "17.0.0"
-  sha256 "d62a2fd5e692c79229c2de37daa732a78e51df4db98eda8d0ca1144159d5df19"
+  arch arm: "aarch64", intel: "amd64"
 
-  url "https://download2.gluonhq.com/scenebuilder/#{version}/install/mac/SceneBuilder-#{version}.dmg"
+  version "19.0.0"
+  sha256 arm:   "1a87e932bd93811968225653f69a7c89ee11efef02c3e3a45dfc819c99b44b37",
+         intel: "6f2c9af8ae2473632ffeeaca576e1bf75ccfd8ab725ab2c905399d25f898aac7"
+
+  url "https://download2.gluonhq.com/scenebuilder/#{version}/install/mac/SceneBuilder-#{version}-#{arch}.dmg"
   name "Scene Builder"
   desc "Drag & drop GUI designer for JavaFX"
   homepage "https://gluonhq.com/products/scene-builder/"
 
   livecheck do
     url :homepage
-    strategy :page_match
-    regex(%r{href=.*?/SceneBuilder-(\d+(?:\.\d+)*)\.dmg}i)
+    regex(%r{href=.*?/SceneBuilder-(\d+(?:\.\d+)+)[._-]#{arch}\.dmg}i)
   end
 
   depends_on macos: ">= :high_sierra"

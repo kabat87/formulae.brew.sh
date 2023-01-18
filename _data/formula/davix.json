@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-or-later",
   "homepage": "https://github.com/cern-fts/davix",
   "versions": {
-    "stable": "0.8.0",
+    "stable": "0.8.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/cern-fts/davix/releases/download/R_0_8_0/davix-0.8.0.tar.gz",
+      "url": "https://github.com/cern-fts/davix/releases/download/R_0_8_3/davix-0.8.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7e30b5541e08d32dbf5ae03c6bcabeaec063aec10a6647787822227b4541ae3e"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:6c59ee85fc7cb668ecbf170a3bac4a258e8be44ec3bf889d052b994bd28d3fac",
+          "sha256": "6c59ee85fc7cb668ecbf170a3bac4a258e8be44ec3bf889d052b994bd28d3fac"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:be805f236e6bda40acfbccc744bf856ffdb10bdcf51dc77c4113dc02e8d58de9",
-          "sha256": "be805f236e6bda40acfbccc744bf856ffdb10bdcf51dc77c4113dc02e8d58de9"
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:aa25fb42dcca1ac2ad69f5ee1a7d0ab84c5df70a2c4036907c33bf3739b8eaf3",
+          "sha256": "aa25fb42dcca1ac2ad69f5ee1a7d0ab84c5df70a2c4036907c33bf3739b8eaf3"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:c48fc0895374ecf6c509f59fe07306b717fc34b2e5c4ce0773740ce7a5bf392f",
-          "sha256": "c48fc0895374ecf6c509f59fe07306b717fc34b2e5c4ce0773740ce7a5bf392f"
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:95d327e7cfb9dfaa8dc0e5785f58010ba3dfcd8bba0904d9fdc3e19ea5dba38c",
+          "sha256": "95d327e7cfb9dfaa8dc0e5785f58010ba3dfcd8bba0904d9fdc3e19ea5dba38c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:3dc5cd658130748d7182fb6f54b79280104595ce5eb55bfdc659ce6e40f2af14",
+          "sha256": "3dc5cd658130748d7182fb6f54b79280104595ce5eb55bfdc659ce6e40f2af14"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:0fe6613982086ecfd30f9d52de7f3262a48ffd57348bd3c7f9d1f9db54ad5e0f",
-          "sha256": "0fe6613982086ecfd30f9d52de7f3262a48ffd57348bd3c7f9d1f9db54ad5e0f"
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:3ee908b44c9f4ecb035f409890a07ef4cc7f41365275c0bf62285cbb0784c0a7",
+          "sha256": "3ee908b44c9f4ecb035f409890a07ef4cc7f41365275c0bf62285cbb0784c0a7"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:4181ed1f39699aace812fdff70a09344abc920c6f4aad9fb61bfb97f3fecbd17",
-          "sha256": "4181ed1f39699aace812fdff70a09344abc920c6f4aad9fb61bfb97f3fecbd17"
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:554bfac4c2a799861a26fcd84bfee238856d0a06864c072ca9fd49522b53855d",
+          "sha256": "554bfac4c2a799861a26fcd84bfee238856d0a06864c072ca9fd49522b53855d"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:f5c6cbfd4ed205e39a5401cc890ac0a5c0768e36e9e7a515519278144b0ec95a",
-          "sha256": "f5c6cbfd4ed205e39a5401cc890ac0a5c0768e36e9e7a515519278144b0ec95a"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:847ba0b1e3227c85215c5eb54a10da5fc9aa231b98059e3e01080f02b5bc9f55",
-          "sha256": "847ba0b1e3227c85215c5eb54a10da5fc9aa231b98059e3e01080f02b5bc9f55"
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:cc2d389eb2106de7c749c992097b5165cbcb07c96d97cd9946225c169b4c02d9",
+          "sha256": "cc2d389eb2106de7c749c992097b5165cbcb07c96d97cd9946225c169b4c02d9"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:2e6cb42036948a4128c8b0c6cc04ec459375113ab93b81d20d6708dd8baf6a3b",
-          "sha256": "2e6cb42036948a4128c8b0c6cc04ec459375113ab93b81d20d6708dd8baf6a3b"
+          "url": "https://ghcr.io/v2/homebrew/core/davix/blobs/sha256:00ec4568fca3c977e10e1aedc631db16fc2ccb33d9a401a561aa250922e9fbf4",
+          "sha256": "00ec4568fca3c977e10e1aedc631db16fc2ccb33d9a401a561aa250922e9fbf4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +87,9 @@
   "dependencies": [
     "openssl@1.1"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -89,6 +97,10 @@
 
   ],
   "uses_from_macos": [
+    {
+      "python": "build"
+    },
+    "curl",
     "libxml2"
   ],
   "requirements": [
@@ -109,5 +121,62 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_big_sur": {
+      "dependencies": [
+        "openssl@1.1",
+        "curl"
+      ]
+    },
+    "big_sur": {
+      "dependencies": [
+        "openssl@1.1",
+        "curl"
+      ]
+    },
+    "catalina": {
+      "dependencies": [
+        "openssl@1.1",
+        "curl"
+      ]
+    },
+    "mojave": {
+      "dependencies": [
+        "openssl@1.1",
+        "curl"
+      ]
+    },
+    "high_sierra": {
+      "dependencies": [
+        "openssl@1.1",
+        "curl"
+      ]
+    },
+    "sierra": {
+      "dependencies": [
+        "openssl@1.1",
+        "curl"
+      ]
+    },
+    "el_capitan": {
+      "dependencies": [
+        "openssl@1.1",
+        "curl"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "cmake",
+        "doxygen",
+        "python"
+      ],
+      "dependencies": [
+        "openssl@1.1",
+        "curl",
+        "libxml2",
+        "util-linux"
+      ]
+    }
+  }
 }

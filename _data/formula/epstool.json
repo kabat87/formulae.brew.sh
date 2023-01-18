@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/e/epstool/epstool_3.09.orig.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1e85249d1a44f9418b1f95a3aebd8b0784dab8e49deb6417ac9b996ca08f6011"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/epstool/blobs/sha256:d6ebd99646c7f6f83b21a714cb9253c3777623618b60de83e371413e64f38abe",
+          "sha256": "d6ebd99646c7f6f83b21a714cb9253c3777623618b60de83e371413e64f38abe"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/epstool/blobs/sha256:0c02048b19a57ec12e0cda38782ba8d062cd929730e92852c19785eec5e7fb52",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/epstool/blobs/sha256:4e5bf8b004fc2583bedd3fd7f28b49033b55be2a53e73a2b600a6f0c795d7db8",
           "sha256": "4e5bf8b004fc2583bedd3fd7f28b49033b55be2a53e73a2b600a6f0c795d7db8"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/epstool/blobs/sha256:38188fa0418ab531bad39ffa157bdbc542385cf02ef3f5bfa75771e12b43e3ea",
+          "sha256": "38188fa0418ab531bad39ffa157bdbc542385cf02ef3f5bfa75771e12b43e3ea"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "ghostscript"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

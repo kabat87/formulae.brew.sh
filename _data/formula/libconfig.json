@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/hyperrealm/libconfig/archive/v1.7.3.tar.gz",
+      "url": "https://github.com/hyperrealm/libconfig/releases/download/v1.7.3/libconfig-1.7.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "545166d6cac037744381d1e9cc5a5405094e7bfad16a411699bcff40bbb31ee7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libconfig/blobs/sha256:2bf05c92de1c235a0ba6f4ff4fb37d2451bf50057b5af52ecabb1a03ea3892fd",
+          "sha256": "2bf05c92de1c235a0ba6f4ff4fb37d2451bf50057b5af52ecabb1a03ea3892fd"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libconfig/blobs/sha256:8074ac817099b848dfda57a98dcb10eac98781d1aeb85425d6e1713650da8c09",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libconfig/blobs/sha256:e675d6e4c47ca13fe8a8faaf02364c5e09c43f7212b33040aa49c06a808c077c",
           "sha256": "e675d6e4c47ca13fe8a8faaf02364c5e09c43f7212b33040aa49c06a808c077c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libconfig/blobs/sha256:b5b55ab30a17d2c5c66dd3ea18b6368452683b2ffdeec4892af58f5e65220470",
+          "sha256": "b5b55ab30a17d2c5c66dd3ea18b6368452683b2ffdeec4892af58f5e65220470"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,16 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "autoconf",
-    "automake",
-    "libtool"
+
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -90,12 +101,7 @@
 
   ],
   "uses_from_macos": [
-    {
-      "flex": "build"
-    },
-    {
-      "texinfo": "build"
-    }
+
   ],
   "requirements": [
 
@@ -115,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

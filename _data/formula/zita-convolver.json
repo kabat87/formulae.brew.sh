@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://kokkinizita.linuxaudio.org/linuxaudio/downloads/zita-convolver-4.0.3.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9aa11484fb30b4e6ef00c8a3281eebcfad9221e3937b1beb5fe21b748d89325f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zita-convolver/blobs/sha256:b080f0a633296bb349fb9c06858f0327c789113fd3b84c6b31a5ce213a67a0f9",
+          "sha256": "b080f0a633296bb349fb9c06858f0327c789113fd3b84c6b31a5ce213a67a0f9"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zita-convolver/blobs/sha256:0db7b44d8a6d714e4cdbc04121ab1df685469175bf30b42355122b87b8fa16bb",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zita-convolver/blobs/sha256:dd52351558f1a7d5860d8227ee71fb2fa28abf751adb4193dc63c8cb72f076ae",
           "sha256": "dd52351558f1a7d5860d8227ee71fb2fa28abf751adb4193dc63c8cb72f076ae"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zita-convolver/blobs/sha256:f6d2fece841444ec39fa17717fc732f75feaf3e05b24fcfa1203abfdc89ec391",
+          "sha256": "f6d2fece841444ec39fa17717fc732f75feaf3e05b24fcfa1203abfdc89ec391"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "fftw"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

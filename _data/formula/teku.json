@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://docs.teku.consensys.net/",
   "versions": {
-    "stable": "22.1.0",
+    "stable": "22.12.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/ConsenSys/teku.git",
-      "tag": "22.1.0",
-      "revision": "5b85ef197f5468c32b4aeb869ebe74201b9875bf"
+      "tag": "22.12.0",
+      "revision": "1a249bc53c52f8d7305224d80d55915aa949ce52",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,42 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "arm64_monterey": {
+        "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/teku/blobs/sha256:97c4812694ee813a13e31c262f0a96a81a487e23d86065b6aea8096b2868f346",
-          "sha256": "97c4812694ee813a13e31c262f0a96a81a487e23d86065b6aea8096b2868f346"
-        },
-        "arm64_big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/teku/blobs/sha256:17b9b1daaf04d9b9eb5a58af1a6491370604d85d2be8775e80d61622699b6166",
-          "sha256": "17b9b1daaf04d9b9eb5a58af1a6491370604d85d2be8775e80d61622699b6166"
-        },
-        "monterey": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/teku/blobs/sha256:6642ee3a33ee28091e5383a12ccd61f7ae99126ec79bf9c452ede5c7ae79c4ce",
-          "sha256": "6642ee3a33ee28091e5383a12ccd61f7ae99126ec79bf9c452ede5c7ae79c4ce"
-        },
-        "big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/teku/blobs/sha256:5df91c28062d0f89de22e1c83fa667c9b9b936cefe74e17df28da1fac7f60753",
-          "sha256": "5df91c28062d0f89de22e1c83fa667c9b9b936cefe74e17df28da1fac7f60753"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/teku/blobs/sha256:84f38e89404ec53d5219e4c96138a3c93448a842f6fce5c7a8fd50a6fe766ee0",
-          "sha256": "84f38e89404ec53d5219e4c96138a3c93448a842f6fce5c7a8fd50a6fe766ee0"
-        },
-        "x86_64_linux": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/teku/blobs/sha256:71a63323115c7087dab604abb812ca1a58e9948a68c22f5319778adf7726ed38",
-          "sha256": "71a63323115c7087dab604abb812ca1a58e9948a68c22f5319778adf7726ed38"
+          "url": "https://ghcr.io/v2/homebrew/core/teku/blobs/sha256:629516a9c6ce06f1a68eabfbb7b6e71746fe91a6ed5e2017e6710a183e1995a8",
+          "sha256": "629516a9c6ce06f1a68eabfbb7b6e71746fe91a6ed5e2017e6710a183e1995a8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

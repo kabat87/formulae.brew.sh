@@ -9,26 +9,32 @@
   "homepage": "https://blocsapp.com/",
   "url": "https://blocsapp.com/download/Blocs.zip",
   "appcast": null,
-  "version": "4.4.2,442",
+  "version": "5.0.4,505",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Blocs.app"
-    ]
+    {
+      "app": [
+        "Blocs.app"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
-  "container": "{:nested=>\"Blocs/Blocs-4.dmg\"}",
-  "auto_updates": true
+  "container": {
+    "nested": "Blocs/Blocs-5.dmg"
+  },
+  "auto_updates": true,
+  "variations": {
+  }
 }

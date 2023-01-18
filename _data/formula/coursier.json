@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://get-coursier.io/",
   "versions": {
-    "stable": "2.1.0",
+    "stable": "2.1.0-M7",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/coursier/coursier/releases/download/v2.1.0-M2/coursier.jar",
+      "url": "https://github.com/coursier/coursier/releases/download/v2.1.0-M7/coursier.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "37e4b11139a1c547d1a564d1d169c9caf781260bc6563599e7aaf8d9a7ad934d"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/coursier/blobs/sha256:5096cf898c56949605292c2054a673746622ff424cd6baaac4b52c52791d93bd",
-          "sha256": "5096cf898c56949605292c2054a673746622ff424cd6baaac4b52c52791d93bd"
+          "url": "https://ghcr.io/v2/homebrew/core/coursier/blobs/sha256:2aca39b62377b742222567574028ab0bab3658832bfa667bc4328b097b39bdf5",
+          "sha256": "2aca39b62377b742222567574028ab0bab3658832bfa667bc4328b097b39bdf5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

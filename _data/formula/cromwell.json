@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/broadinstitute/cromwell",
   "versions": {
-    "stable": "74",
+    "stable": "84",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/broadinstitute/cromwell/releases/download/74/cromwell-74.jar",
+      "url": "https://github.com/broadinstitute/cromwell/releases/download/84/cromwell-84.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "faf6e7996e1c2e9e4e71f2256f984e3a7782df9377fd2ccd32546f622d05cb2b"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cromwell/blobs/sha256:4eed417b3a15e2fda6c3d59b5d7d59753a7e54d3cafb669c2d6e9ff58539c51c",
-          "sha256": "4eed417b3a15e2fda6c3d59b5d7d59753a7e54d3cafb669c2d6e9ff58539c51c"
+          "url": "https://ghcr.io/v2/homebrew/core/cromwell/blobs/sha256:2aacb5acac2682c8437112b65935980ead16dfe5344ad0a02395ed9fe7484ce7",
+          "sha256": "2aacb5acac2682c8437112b65935980ead16dfe5344ad0a02395ed9fe7484ce7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

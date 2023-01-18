@@ -6,19 +6,34 @@
     "iCab"
   ],
   "desc": "Alternative web browser",
-  "homepage": "http://www.icab.de/",
-  "url": "https://icab.clauss-net.de/icab/iCab_6.0.9.zip",
-  "appcast": "http://www.icab.de/download.html",
-  "version": "6.0.9",
+  "homepage": "https://www.icab.de/",
+  "url": "https://icab.clauss-net.de/icab/iCab_6.1.5.zip",
+  "appcast": null,
+  "version": "6.1.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "78747b9a08ab5ba6bf231e26828f7c9087797a382b76e31b6965cf86d7241f30",
+  "sha256": "c35d3ecd0b8b4868d3a8e895294e287fa0ba628334778df178bf6255418f7cab",
   "artifacts": [
-    [
-      "iCab 6.0.9/iCab.app"
-    ]
+    {
+      "app": [
+        "iCab 6.1.5/iCab.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/iCab",
+            "~/Library/Caches/com.apple.helpd/Generated/iCab.help*6.1.5",
+            "~/Library/Caches/de.icab.iCab",
+            "~/Library/Preferences/de.icab.iCab.plist",
+            "~/Library/Preferences/iCab"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -30,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

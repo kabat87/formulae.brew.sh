@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/adplug/libbinio/releases/download/libbinio-1.5/libbinio-1.5.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "398b2468e7838d2274d1f62dbc112e7e043433812f7ae63ef29f5cb31dc6defd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libbinio/blobs/sha256:d47d5255715fc0638111c50a4ec1fe4eea4fd90409389331874df8ef76f61c08",
+          "sha256": "d47d5255715fc0638111c50a4ec1fe4eea4fd90409389331874df8ef76f61c08"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libbinio/blobs/sha256:3b66d91c0bc97b7ade4576bb7d54403ebbf4e22a46c1ad7a1eb165a5cec24368",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libbinio/blobs/sha256:6490acae30e6e1047e5770b4aab37e4c043488c5c2e8a8919962208c1da2cdd4",
           "sha256": "6490acae30e6e1047e5770b4aab37e4c043488c5c2e8a8919962208c1da2cdd4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libbinio/blobs/sha256:79dab1370400b3395c8370da7895c60ab281d3410820852787e8e16851bd22ee",
+          "sha256": "79dab1370400b3395c8370da7895c60ab281d3410820852787e8e16851bd22ee"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

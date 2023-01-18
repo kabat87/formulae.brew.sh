@@ -1,14 +1,10 @@
 cask "ray" do
-  arch = Hardware::CPU.intel? ? "" : "-arm64"
-  folder = Hardware::CPU.intel? ? "" : "arm64/"
+  arch arm: "-arm64"
+  folder = on_arch_conditional arm: "arm64/"
 
-  version "1.19.0"
-
-  if Hardware::CPU.intel?
-    sha256 "288ae514a68993d163da568f84a32cf4575353b18d3d51297c8d5391e38e53a6"
-  else
-    sha256 "589cc8496024d3aa8dedae8a7584be07dd286899e9a02d8336df61ad76d197c6"
-  end
+  version "2.2.2"
+  sha256 arm:   "f4e22de50ef633aa33708b9847d7fdb8e0eae45c1a5ff90f44d6bd33567c9e4c",
+         intel: "e10f1b168a01b75b07797e291babce45b7d7f5ea313b5ab821d0d3c872c834fc"
 
   url "https://ray-app.s3.eu-west-1.amazonaws.com/#{folder}Ray-#{version}#{arch}.dmg",
       verified: "ray-app.s3.eu-west-1.amazonaws.com/"

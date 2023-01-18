@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6c492d0c7b4a40e7674d088191d3aa11f373bb1da60762e098b8ee2dda96ef22"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wordnet/blobs/sha256:57a8ed88c01550f3fc44dd887ddd4ae3c9bbad47ea82c2793bfe167506aacfb6",
+          "sha256": "57a8ed88c01550f3fc44dd887ddd4ae3c9bbad47ea82c2793bfe167506aacfb6"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/wordnet/blobs/sha256:6a7414051cb0af96f5b507dd61cd79fa9e63bede15c658bd20569171900e57d3",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/wordnet/blobs/sha256:48c70e44e65ff918d9a7c59999af788a00a29ed67419a411c789ae8e2f29684d",
           "sha256": "48c70e44e65ff918d9a7c59999af788a00a29ed67419a411c789ae8e2f29684d"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wordnet/blobs/sha256:897d064747be59d81b16da0b4dd1e34ac187c1d14d3c55399e66c04b3afc503e",
+          "sha256": "897d064747be59d81b16da0b4dd1e34ac187c1d14d3c55399e66c04b3afc503e"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "tcl-tk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

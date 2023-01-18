@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.mirbsd.org/MirOS/dist/mir/mksh/mksh-R59c.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "77ae1665a337f1c48c61d6b961db3e52119b38e58884d1c89684af31f87bc506"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mksh/blobs/sha256:7f8fa2427f871cd4e4e7143244f5862988cb72e0a264c0b947c4f2f72d3655d8",
+          "sha256": "7f8fa2427f871cd4e4e7143244f5862988cb72e0a264c0b947c4f2f72d3655d8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mksh/blobs/sha256:c9467abce8ddfd5d5dbdfda62ab8b36d020c92ae4c06805ecafd9973e20f4307",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mksh/blobs/sha256:4e5b153d2643f455c5be25fa8f751eed863393b454abc3df8bb9b145799152e0",
           "sha256": "4e5b153d2643f455c5be25fa8f751eed863393b454abc3df8bb9b145799152e0"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mksh/blobs/sha256:410441bef1f6b4cbe36c35ec7fad198fcdbeae06a37e65c4a95471dcaa52bf26",
+          "sha256": "410441bef1f6b4cbe36c35ec7fad198fcdbeae06a37e65c4a95471dcaa52bf26"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

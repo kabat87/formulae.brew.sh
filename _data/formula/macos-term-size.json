@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sindresorhus/macos-term-size/archive/v1.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5ec39d49a461e4495f20660609276b0630ef245bf8eb80c8447c090a5fefda3c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/macos-term-size/blobs/sha256:6bc40ca23b802dbca1e7895f476a61f62cabbd2ee4b149028cf7e9a57b1ee1cd",
+          "sha256": "6bc40ca23b802dbca1e7895f476a61f62cabbd2ee4b149028cf7e9a57b1ee1cd"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/macos-term-size/blobs/sha256:f44cab0d2907e1fe48658f15eb8719e2df21e904df6b00ccd69b3dda4be38752",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/macos-term-size/blobs/sha256:0d921643767d4c489f435e467e0f5bd9d50a1f8a93ccf2be116eb6987af36d86",
           "sha256": "0d921643767d4c489f435e467e0f5bd9d50a1f8a93ccf2be116eb6987af36d86"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/macos-term-size/blobs/sha256:34b5f31903d75d3524c533e43a4edcdd5501d0fb93ea7c09e0ea3e7b4dc27f13",
+          "sha256": "34b5f31903d75d3524c533e43a4edcdd5501d0fb93ea7c09e0ea3e7b4dc27f13"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -101,21 +114,9 @@
   ],
   "caveats": null,
   "installed": [
-    {
-      "version": "1.0.0",
-      "used_options": [
 
-      ],
-      "built_as_bottle": true,
-      "poured_from_bottle": true,
-      "runtime_dependencies": [
-
-      ],
-      "installed_as_dependency": true,
-      "installed_on_request": false
-    }
   ],
-  "linked_keg": "1.0.0",
+  "linked_keg": null,
   "pinned": false,
   "outdated": false,
   "deprecated": false,
@@ -123,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

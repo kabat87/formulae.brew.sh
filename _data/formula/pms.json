@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/pms/pms/0.42/pms-0.42.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "96bf942b08cba10ee891a63eeccad307fd082ef3bd20be879f189e1959e775a6"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pms/blobs/sha256:b5b477e377dcf2b781a503e8eb00673d7218e43d788fa56b70b960fad91c26f9",
+          "sha256": "b5b477e377dcf2b781a503e8eb00673d7218e43d788fa56b70b960fad91c26f9"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/pms/blobs/sha256:5928678a604a80ee70d57b581b408890b4137d3c16f6123e3e455b636c36c14d",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/pms/blobs/sha256:c119951216c45f24ff265bb5046631b6cbd5730300b8f4d441e7ac2be1363fcd",
           "sha256": "c119951216c45f24ff265bb5046631b6cbd5730300b8f4d441e7ac2be1363fcd"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pms/blobs/sha256:c1bad14da37f77e32560f8369ec9978d7bdf9f23027a9e6e3be067e37ab8eded",
+          "sha256": "c1bad14da37f77e32560f8369ec9978d7bdf9f23027a9e6e3be067e37ab8eded"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +101,9 @@
   "dependencies": [
     "gettext",
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -119,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

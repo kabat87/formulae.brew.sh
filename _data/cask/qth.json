@@ -7,27 +7,31 @@
   ],
   "desc": "APRS client application",
   "homepage": "https://www.w8wjb.com/wp/qth/",
-  "url": "https://www.w8wjb.com/qth/QTH-0.7.2.dmg",
+  "url": "https://www.w8wjb.com/qth/QTH-0.8.7.dmg",
   "appcast": null,
-  "version": "0.7.2",
+  "version": "0.8.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "83f888926ec27a4b980cf91b2bc46b5b666ec8b71a8359cead2e2f1736ce5c5b",
+  "sha256": "08fcb26d4628e249bdefbba43535b985e4ca8a3e90ecad0f09f9b04087ef61fe",
   "artifacts": [
-    [
-      "QTH.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.w8wjb.QTH",
-        "~/Library/Caches/com.apple.helpd/Generated/com.w8wjb.QTH.help*",
-        "~/Library/Logs/com.w8wjb.QTH",
-        "~/Library/Preferences/com.w8wjb.QTH.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "QTH.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.w8wjb.QTH",
+            "~/Library/Caches/com.apple.helpd/Generated/com.w8wjb.QTH.help*",
+            "~/Library/Logs/com.w8wjb.QTH",
+            "~/Library/Preferences/com.w8wjb.QTH.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

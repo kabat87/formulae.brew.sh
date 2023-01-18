@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.rutschle.net/tech/sslh/sslh-v1.22c.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8e3742d14edf4119350cfdc7bb96b89134d9218eb6d2a6e1f70891ca18a649b1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sslh/blobs/sha256:58a1a9db2ca55d914fe6591146532dbb249ae1ca0228d972830aa69e12861b81",
+          "sha256": "58a1a9db2ca55d914fe6591146532dbb249ae1ca0228d972830aa69e12861b81"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sslh/blobs/sha256:6a857e6ca21121c84c83092cf997ddafb565827318fc6e810dee157fde76854f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sslh/blobs/sha256:2baa52312b06845b59164cefec82633805e3a25ce30b1838de8588c13a73c37f",
           "sha256": "2baa52312b06845b59164cefec82633805e3a25ce30b1838de8588c13a73c37f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sslh/blobs/sha256:f80f05fc341a8d956642d3a392e9d577c2695642fa2feaa8ef4dfc9feb543623",
+          "sha256": "f80f05fc341a8d956642d3a392e9d577c2695642fa2feaa8ef4dfc9feb543623"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   "dependencies": [
     "libconfig",
     "pcre2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

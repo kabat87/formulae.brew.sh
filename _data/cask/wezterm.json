@@ -7,38 +7,50 @@
   ],
   "desc": "GPU-accelerated cross-platform terminal emulator and multiplexer",
   "homepage": "https://wezfurlong.org/wezterm/",
-  "url": "https://github.com/wez/wezterm/releases/download/20220101-133340-7edc5b5a/WezTerm-macos-20220101-133340-7edc5b5a.zip",
+  "url": "https://github.com/wez/wezterm/releases/download/20221119-145034-49b9839f/WezTerm-macos-20221119-145034-49b9839f.zip",
   "appcast": null,
-  "version": "20220101-133340,7edc5b5a",
+  "version": "20221119-145034,49b9839f",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "841a91bcbeacfe9b83c491a2077d910693f7b507e07068a720ebcb3ef62d3a1b",
+  "sha256": "6b7fd6abe5ccf129584bb2f0887a83c07c3ae4aba82fbb820a7d8e092a9835d4",
   "artifacts": [
-    [
-      "WezTerm-macos-20220101-133340-7edc5b5a/WezTerm.app"
-    ],
-    [
-      "/Applications/WezTerm.app/Contents/MacOS/wezterm"
-    ],
-    [
-      "/Applications/WezTerm.app/Contents/MacOS/wezterm-gui"
-    ],
-    [
-      "/Applications/WezTerm.app/Contents/MacOS/wezterm-mux-server"
-    ],
-    [
-      "/Applications/WezTerm.app/Contents/MacOS/strip-ansi-escapes"
-    ],
     {
-      "trash": [
-        "~/.config/wezterm/",
-        "~/.wezterm.lua",
-        "~/Library/Saved Application State/com.github.wez.wezterm.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "WezTerm-macos-20221119-145034-49b9839f/WezTerm.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/WezTerm.app/Contents/MacOS/wezterm"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/WezTerm.app/Contents/MacOS/wezterm-gui"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/WezTerm.app/Contents/MacOS/wezterm-mux-server"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/WezTerm.app/Contents/MacOS/strip-ansi-escapes"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.config/wezterm/",
+            "~/.wezterm.lua",
+            "~/Library/Saved Application State/com.github.wez.wezterm.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +58,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

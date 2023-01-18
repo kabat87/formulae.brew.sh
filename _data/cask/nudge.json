@@ -7,32 +7,44 @@
   ],
   "desc": "Application for enforcing OS updates",
   "homepage": "https://github.com/macadmins/nudge",
-  "url": "https://github.com/macadmins/nudge/releases/download/v1.1.3.11292021162608/Nudge-1.1.3.11292021162608.pkg",
+  "url": "https://github.com/macadmins/nudge/releases/download/v1.1.10.81462/Nudge-1.1.10.81462.pkg",
   "appcast": null,
-  "version": "1.1.3.11292021162608",
+  "version": "1.1.10.81462",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d0ece3ccffd8dbfa0b6c065bd7ce91305f9ca2347b30091ee53a483484f19144",
+  "sha256": "57a7afd6d1926b9e9c73611a1b303ab831fdee1a78fe9a9f8b4e2521ac5d074b",
   "artifacts": [
-    "preflight (Preflight Block)",
     {
-      "pkgutil": "com.github.macadmins.Nudge",
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      exec '/Applications/Utilities/Nudge.app/Contents/MacOS/Nudge' \"$@\"\n    EOS\n  end\n"
     },
-    "Nudge-1.1.3.11292021162608.pkg (Pkg)",
-    [
-      "$(brew --prefix)/Caskroom/nudge/1.1.3.11292021162608/nudge.wrapper.sh",
-      {
-        "target": "nudge"
-      }
-    ],
     {
-      "trash": "~/Library/Preferences/com.github.macadmins.Nudge.plist",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.github.macadmins.Nudge"
+        }
+      ]
+    },
+    {
+      "pkg": [
+        "Nudge-1.1.10.81462.pkg"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/nudge/1.1.10.81462/nudge.wrapper.sh",
+        {
+          "target": "nudge"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/com.github.macadmins.Nudge.plist"
+        }
+      ]
     }
   ],
   "caveats": "Launchctl integration must be installed separately. For the download, see\n\n  https://github.com/macadmins/nudge/releases/latest\n",
@@ -45,5 +57,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

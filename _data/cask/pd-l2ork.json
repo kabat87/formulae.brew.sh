@@ -17,18 +17,26 @@
   "outdated": false,
   "sha256": "c890f169663d9cdf947baaa2ce9cf0d48fcd07cb71368b7eab29547b237dab39",
   "artifacts": [
-    "uninstall_preflight (Preflight Block)",
-    [
-      "Pd-l2ork.app"
-    ],
-    [
-      "/Applications/Pd-l2ork.app/Contents/Resources/app.nw/pd-l2ork"
-    ]
+    {
+      "uninstall_preflight": "  uninstall_preflight do\n    set_permissions \"#{appdir}/Pd-l2ork.app\", \"0777\"\n  end\n"
+    },
+    {
+      "app": [
+        "Pd-l2ork.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Pd-l2ork.app/Contents/Resources/app.nw/pd-l2ork"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

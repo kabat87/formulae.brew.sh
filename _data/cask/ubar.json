@@ -7,27 +7,33 @@
   ],
   "desc": "Window manager and productivity tool",
   "homepage": "https://brawersoftware.com/products/ubar",
-  "url": "https://www.brawersoftware.com/downloads/ubar/ubar420.zip",
+  "url": "https://www.brawersoftware.com/downloads/ubar/ubar421.zip",
   "appcast": null,
-  "version": "4.2.0,420",
+  "version": "4.2.1,421",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "23ffd2b1df89d0df1a795923a2a3df8f1025c2bf1329e9c54a4372db51039077",
+  "sha256": "a9c64011f86de3975f3a5c9f616ea93ca84adae836b61ff4cdbb7f86546ed4c5",
   "artifacts": [
-    [
-      "uBar.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ca.brawer.ubar.sfl*",
-        "~/Library/Application Support/uBar",
-        "~/Library/Caches/ca.brawer.uBar",
-        "~/Library/Preferences/ca.brawer.uBar.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "uBar.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ca.brawer.ubar.sfl*",
+            "~/Library/Application Support/uBar",
+            "~/Library/Caches/ca.brawer.uBar",
+            "~/Library/HTTPStorages/ca.brawer.uBar",
+            "~/Library/Preferences/ca.brawer.uBar.plist",
+            "~/Library/WebKit/ca.brawer.uBar"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +41,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "GPL-2.0-only",
   "homepage": "https://ser2net.sourceforge.io",
   "versions": {
-    "stable": "4.3.4",
+    "stable": "4.3.11",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.sourceforge.net/project/ser2net/ser2net/ser2net-4.3.4.tar.gz",
+      "url": "https://downloads.sourceforge.net/project/ser2net/ser2net/ser2net-4.3.11.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8f831f11b67538280aa0e8787cb0785ff705cf90749aa175d32c337f29412ae3"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:3e67b749975af9c7ea2781e0f8e82c181807ba20d7f2423a838102402373da0f",
+          "sha256": "3e67b749975af9c7ea2781e0f8e82c181807ba20d7f2423a838102402373da0f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:0b47f117e2307438dfd293fcdb119afc19265f88727f71c3edec749e69e50e66",
-          "sha256": "0b47f117e2307438dfd293fcdb119afc19265f88727f71c3edec749e69e50e66"
+          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:73ec3f6da5a019142ce8dc53647bdcb937c37d65f9b78d9cb084e5e0313dbfd4",
+          "sha256": "73ec3f6da5a019142ce8dc53647bdcb937c37d65f9b78d9cb084e5e0313dbfd4"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:1ed19ca1d6bb03df612a6c4c08dc5bfa7774fd40907b9531b2d161c555b4e44b",
-          "sha256": "1ed19ca1d6bb03df612a6c4c08dc5bfa7774fd40907b9531b2d161c555b4e44b"
+          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:81e7ae0d99307388fb6641e173cc629ca7b8bda0b4912545477c3dc830d04fa6",
+          "sha256": "81e7ae0d99307388fb6641e173cc629ca7b8bda0b4912545477c3dc830d04fa6"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:f7ea421ff7406c33245f9582384107ba9e4a62e83c023421abab95a7d9f742ab",
+          "sha256": "f7ea421ff7406c33245f9582384107ba9e4a62e83c023421abab95a7d9f742ab"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:9a608a3f76ca8529eccc91994f337610eb5bfd1afe615d445d5dea958b8b462e",
-          "sha256": "9a608a3f76ca8529eccc91994f337610eb5bfd1afe615d445d5dea958b8b462e"
+          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:55b1c30ba4dc0009740c62110ca725910b311b12d5b0e7008c78249fe49994b1",
+          "sha256": "55b1c30ba4dc0009740c62110ca725910b311b12d5b0e7008c78249fe49994b1"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:3fc4d4c18aff806463d20e9bbf04cbaa22b648c24d6297ea80cf85ba7b13246d",
-          "sha256": "3fc4d4c18aff806463d20e9bbf04cbaa22b648c24d6297ea80cf85ba7b13246d"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:042e2c7a57911e1e5510aac5338de9d8f398406104af3ca0c4dfd53e851a7e92",
-          "sha256": "042e2c7a57911e1e5510aac5338de9d8f398406104af3ca0c4dfd53e851a7e92"
+          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:efc1fd194c98afc33b2ab52e24e828f1e67840f15519f9a52a63ff8273e2493c",
+          "sha256": "efc1fd194c98afc33b2ab52e24e828f1e67840f15519f9a52a63ff8273e2493c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:6cc83b8c9ca812a654d5f6e06464c9593322761ac7066ccb79d39fe354d634c9",
-          "sha256": "6cc83b8c9ca812a654d5f6e06464c9593322761ac7066ccb79d39fe354d634c9"
+          "url": "https://ghcr.io/v2/homebrew/core/ser2net/blobs/sha256:19f8fe5bab56c3b9c63167266500869d26c3f6047aaa53afc277173c56fce63f",
+          "sha256": "19f8fe5bab56c3b9c63167266500869d26c3f6047aaa53afc277173c56fce63f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "libyaml"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

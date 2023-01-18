@@ -1,7 +1,7 @@
 cask "webex" do
-  arch = Hardware::CPU.intel? ? "TeamsDesktop-MACOS" : "Desktop-MACOS-Apple-Silicon"
+  arch arm: "Desktop-MACOS-Apple-Silicon", intel: "TeamsDesktop-MACOS"
 
-  version "42.1.0.21190"
+  version "43.1.0.24716"
   sha256 :no_check
 
   url "https://binaries.webex.com/Webex#{arch}-Gold/Webex.dmg"
@@ -13,6 +13,8 @@ cask "webex" do
     url :url
     strategy :extract_plist
   end
+
+  auto_updates true
 
   app "Webex.app"
 

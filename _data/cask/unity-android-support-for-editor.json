@@ -7,21 +7,27 @@
   ],
   "desc": "Android target support for Unity",
   "homepage": "https://unity.com/products",
-  "url": "https://download.unity3d.com/download_unity/d0e5f0a7b06a/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2021.2.8f1.pkg",
+  "url": "https://download.unity3d.com/download_unity/9636b062134a/MacEditorTargetInstaller/UnitySetup-Android-Support-for-Editor-2022.1.23f1.pkg",
   "appcast": null,
-  "version": "2021.2.8f1,d0e5f0a7b06a",
+  "version": "2022.1.23f1,9636b062134a",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8e54434350656faf3646e63b8c870cde34ab561b099e4aea04f9bc96fad0cd16",
+  "sha256": "aa3b936b149ae8f62fe4b904a23d4c8c888112d88f67ee37be10b2e02eedaff0",
   "artifacts": [
     {
-      "pkgutil": "com.unity3d.AndroidPlayer",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.unity3d.AndroidPlayer"
+        }
+      ]
     },
-    "UnitySetup-Android-Support-for-Editor-2021.2.8f1.pkg (Pkg)"
+    {
+      "pkg": [
+        "UnitySetup-Android-Support-for-Editor-2022.1.23f1.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -31,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

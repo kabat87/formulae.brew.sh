@@ -10,7 +10,7 @@
 
   ],
   "desc": "Very small, very fast data compression library",
-  "license": null,
+  "license": "BSD-2-Clause and (BSD-2-Clause or GPL-2.0-or-later)",
   "homepage": "http://oldhome.schmorp.de/marc/liblzf.html",
   "versions": {
     "stable": "3.6",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://dist.schmorp.de/liblzf/liblzf-3.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9c5de01f7b9ccae40c3f619d26a7abec9986c06c36d260c179cedd04b89fb46a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/liblzf/blobs/sha256:adadf4ce163424818b3b0ff1d983494d271f1b7124f5310a8f7b51cc32cb4dcf",
+          "sha256": "adadf4ce163424818b3b0ff1d983494d271f1b7124f5310a8f7b51cc32cb4dcf"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/liblzf/blobs/sha256:a929d667239b01aae65391c9bdb50b8979cf00746728274801dfcb69e7dba54b",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/liblzf/blobs/sha256:e321946e647108f4f478e84270ef6a49463e18d412fc94a4bc260c5009bd2dba",
           "sha256": "e321946e647108f4f478e84270ef6a49463e18d412fc94a4bc260c5009bd2dba"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/liblzf/blobs/sha256:0dbb4a635931edee6c07fb09133f60a9a6fda37130a066d0e9ca25cf69e91e64",
+          "sha256": "0dbb4a635931edee6c07fb09133f60a9a6fda37130a066d0e9ca25cf69e91e64"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

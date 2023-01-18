@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dev-www.libreoffice.org/src/libwpg-0.3.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "99b3f7f8832385748582ab8130fbb9e5607bd5179bebf9751ac1d51a53099d1c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libwpg/blobs/sha256:c3af8552a541c1a4469c0ef1a0bf146f2edafd3ffad7ad1ac85ac4316681ef72",
+          "sha256": "c3af8552a541c1a4469c0ef1a0bf146f2edafd3ffad7ad1ac85ac4316681ef72"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libwpg/blobs/sha256:8971569270bc1f9c9c66466218f9731cd8d97cbf871e5e56ce056409a578e230",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libwpg/blobs/sha256:ca515f644385d91d4edc74382409d82c802b13c098ef1b353aa44440eca1a8ad",
           "sha256": "ca515f644385d91d4edc74382409d82c802b13c098ef1b353aa44440eca1a8ad"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libwpg/blobs/sha256:714c3f40bf6035b8ce29533b2f06becf3e008dd49fdaadfdf3939eed5149f4d0",
+          "sha256": "714c3f40bf6035b8ce29533b2f06becf3e008dd49fdaadfdf3939eed5149f4d0"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libwpg/blobs/sha256:cf9ab0d990b3fccb101312999f6d0ea5980990edd279ae994cf3c7f9c33a7d55",
           "sha256": "cf9ab0d990b3fccb101312999f6d0ea5980990edd279ae994cf3c7f9c33a7d55"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libwpg/blobs/sha256:345a763b72ab642cacae4e4ad5baf4d8f428b066b0dcc34c88da249d8d3426c7",
+          "sha256": "345a763b72ab642cacae4e4ad5baf4d8f428b066b0dcc34c88da249d8d3426c7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +101,9 @@
   "dependencies": [
     "librevenge",
     "libwpd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

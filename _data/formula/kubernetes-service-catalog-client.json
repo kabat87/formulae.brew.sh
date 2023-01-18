@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/kubernetes-sigs/service-catalog/archive/v0.3.1.tar.gz",
+      "url": "https://github.com/kubernetes-retired/service-catalog/archive/v0.3.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5b463be2102b32bd5a5fed5d433ef53da4d1f70bf007b5a4b78eee7024ca52e3"
     }
   },
   "revision": 0,
@@ -76,14 +77,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,10 +111,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-05-08",
+  "deprecation_reason": "repo_archived",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

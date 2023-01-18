@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/FastCGI-Archives/fcgi2/archive/2.4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1fe83501edfc3a7ec96bb1e69db3fd5ea1730135bd73ab152186fd0b437013bc"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fcgi/blobs/sha256:687f04ecaf81ae2c95d0e9cfa6a2502f848e596de4f6e2ebb83e8f507aa7717f",
+          "sha256": "687f04ecaf81ae2c95d0e9cfa6a2502f848e596de4f6e2ebb83e8f507aa7717f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fcgi/blobs/sha256:5434ce533ae7898eaabbf035d9a03b6b232913d66f5fb687981954d618fc15f4",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fcgi/blobs/sha256:f690a0cd985561930532baa0676c10f954f5c4d3500a8ec40733a28debfd0656",
           "sha256": "f690a0cd985561930532baa0676c10f954f5c4d3500a8ec40733a28debfd0656"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fcgi/blobs/sha256:84aac5009dfb2d2c434cddca973f6e7c8d89f5791d121a173e92ebb745342e50",
+          "sha256": "84aac5009dfb2d2c434cddca973f6e7c8d89f5791d121a173e92ebb745342e50"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

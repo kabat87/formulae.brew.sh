@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/w/w3m/w3m_0.5.3.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e994d263f2fd2c22febfbe45103526e00145a7674a0fda79c822b97c2770a9e3"
     }
   },
   "revision": 7,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/w3m/blobs/sha256:f851decc9866c5d1b0f36e10238e5e6902df0ebf6e782973156b73c178de100d",
+          "sha256": "f851decc9866c5d1b0f36e10238e5e6902df0ebf6e782973156b73c178de100d"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/w3m/blobs/sha256:471292d0ec7637d96304cbb61301909681057dfdf78172ca13f94c2a6f6fc173",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/w3m/blobs/sha256:ca603325cc6d0904d5d709f6e9407b26fd22e3eeb3984d38e11c21d8f45e7b3a",
           "sha256": "ca603325cc6d0904d5d709f6e9407b26fd22e3eeb3984d38e11c21d8f45e7b3a"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/w3m/blobs/sha256:10c3e54ffe89466494165ebaba21b691778cd14e10e40a49550034dde9de7b57",
+          "sha256": "10c3e54ffe89466494165ebaba21b691778cd14e10e40a49550034dde9de7b57"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   "dependencies": [
     "bdw-gc",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,17 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "bdw-gc",
+        "openssl@1.1",
+        "ncurses",
+        "zlib",
+        "gettext",
+        "libbsd"
+      ]
+    }
+  }
 }

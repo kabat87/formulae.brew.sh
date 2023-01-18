@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://repo.or.cz/fast-export.git",
   "versions": {
-    "stable": "210917",
+    "stable": "221024",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/frej/fast-export/archive/v210917.tar.gz",
+      "url": "https://github.com/frej/fast-export/archive/v221024.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0dfecc3a2fd0833434d7ef57eb34c16432a8b2930df22a56ccf1a2bbb4626ba7"
     }
   },
   "revision": 1,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hg-fast-export/blobs/sha256:1c3c08a5e4f6fbb7790d42d5721db3d8b4927a5595056fbc27b90d6171b9c8b4",
-          "sha256": "1c3c08a5e4f6fbb7790d42d5721db3d8b4927a5595056fbc27b90d6171b9c8b4"
+          "url": "https://ghcr.io/v2/homebrew/core/hg-fast-export/blobs/sha256:e34f2ca7004b96237a3ccb2c6f611e5a5062c843dc632da74c5b8ac0aa3852df",
+          "sha256": "e34f2ca7004b96237a3ccb2c6f611e5a5062c843dc632da74c5b8ac0aa3852df"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,7 +50,10 @@
   ],
   "dependencies": [
     "mercurial",
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -79,5 +82,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

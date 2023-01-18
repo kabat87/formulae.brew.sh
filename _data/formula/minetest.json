@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-or-later",
   "homepage": "https://www.minetest.net/",
   "versions": {
-    "stable": "5.4.1",
+    "stable": "5.6.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/minetest/minetest/archive/5.4.1.tar.gz",
+      "url": "https://github.com/minetest/minetest/archive/5.6.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1440603e19dca70e2691e86a74c822ee2c4a36fceee32b2d85ae74772149e9a3"
     }
   },
   "revision": 0,
@@ -31,46 +32,71 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:9e2ac2626be9b51ccc399acf6015e5fe5c1145ed39b3f87054c3aa3b8ed30c3c",
+          "sha256": "9e2ac2626be9b51ccc399acf6015e5fe5c1145ed39b3f87054c3aa3b8ed30c3c"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:44204d306faf6661f5cca1b9fa31ab19bb6dbe95843acdaad989029cfd3a0a11",
+          "sha256": "44204d306faf6661f5cca1b9fa31ab19bb6dbe95843acdaad989029cfd3a0a11"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:7f9985b9a6437dd26301c72b8a0315309e7be24eef7a55378cf4d118d4471b45",
+          "sha256": "7f9985b9a6437dd26301c72b8a0315309e7be24eef7a55378cf4d118d4471b45"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:a9ba0a5ec4d8a0a2f3fded68567ed3987034991e55292b5dabb6937b5009554c",
+          "sha256": "a9ba0a5ec4d8a0a2f3fded68567ed3987034991e55292b5dabb6937b5009554c"
+        },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:2c83905a5ce12b80226247f7eb8888ff4ef80c5050998161f510f61667af98d2",
-          "sha256": "2c83905a5ce12b80226247f7eb8888ff4ef80c5050998161f510f61667af98d2"
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:2797dece689806632a0c7015e336a21155bb367555afa77c5b5890b61ae7110d",
+          "sha256": "2797dece689806632a0c7015e336a21155bb367555afa77c5b5890b61ae7110d"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:d391ffa3ef29483219449315ddf30ecd7d20e947bb5780081418dbb383ba938a",
-          "sha256": "d391ffa3ef29483219449315ddf30ecd7d20e947bb5780081418dbb383ba938a"
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:7a85c4ffc2d2a3460c6e4f2ce000cafe69b75530c24741bf77f16474e7ba0d96",
+          "sha256": "7a85c4ffc2d2a3460c6e4f2ce000cafe69b75530c24741bf77f16474e7ba0d96"
         },
         "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:8c773aabb5faa6617c09f69915a9e3caa49734d2f2117d05ce455597c8803695",
-          "sha256": "8c773aabb5faa6617c09f69915a9e3caa49734d2f2117d05ce455597c8803695"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:6778f81afea196d5c31727cee99a5498d012ba6c3dfb54f1b658cd4e1ddce543",
+          "sha256": "6778f81afea196d5c31727cee99a5498d012ba6c3dfb54f1b658cd4e1ddce543"
         },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:e03ebb1d5ac5598e6c9273a89b98b30b95f9640bbb74d0b679e9b56621a06aca",
-          "sha256": "e03ebb1d5ac5598e6c9273a89b98b30b95f9640bbb74d0b679e9b56621a06aca"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/minetest/blobs/sha256:fb6eb17f2af2e32de0c32588d93336cba026324ed12890c444411faf0b34c75f",
+          "sha256": "fb6eb17f2af2e32de0c32588d93336cba026324ed12890c444411faf0b34c75f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "cmake"
+    "cmake",
+    "gettext"
   ],
   "dependencies": [
     "freetype",
-    "gettext",
-    "irrlicht",
-    "jpeg",
+    "gmp",
+    "jpeg-turbo",
+    "jsoncpp",
     "libogg",
+    "libpng",
     "libvorbis",
-    "luajit"
+    "luajit",
+    "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -79,7 +105,10 @@
 
   ],
   "uses_from_macos": [
-
+    "curl",
+    "ncurses",
+    "sqlite",
+    "zlib"
   ],
   "requirements": [
 
@@ -87,7 +116,7 @@
   "conflicts_with": [
 
   ],
-  "caveats": "Put additional subgames and mods into \"games\" and \"mods\" folders under\n\"~/Library/Application Support/minetest/\", respectively (you may have\nto create those folders first).\n\nIf you would like to start the Minetest server from a terminal, run\n\"$(brew --prefix)/Cellar/minetest/5.4.1/minetest.app/Contents/MacOS/minetest --server\".\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -99,5 +128,29 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "freetype",
+        "gmp",
+        "jpeg-turbo",
+        "jsoncpp",
+        "libogg",
+        "libpng",
+        "libvorbis",
+        "luajit",
+        "zstd",
+        "curl",
+        "ncurses",
+        "sqlite",
+        "zlib",
+        "libx11",
+        "libxxf86vm",
+        "mesa",
+        "openal-soft",
+        "xinput"
+      ]
+    }
+  }
 }

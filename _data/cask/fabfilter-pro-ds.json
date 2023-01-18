@@ -7,31 +7,39 @@
   ],
   "desc": "De-esser plug-in",
   "homepage": "https://www.fabfilter.com/products/pro-ds-de-esser-plug-in",
-  "url": "https://download.fabfilter.com/ffprods118.dmg",
+  "url": "https://download.fabfilter.com/ffprods119.dmg",
   "appcast": null,
-  "version": "1.18",
+  "version": "1.19",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f34f7aa6559ac48300b6609cb95f3fbfae9d16fedb4ad226ccbdbd9075ecede7",
+  "sha256": "1a0f98ab4def71bfc6826a732083080213ca6c8a6635f20cf261a69c6060d75c",
   "artifacts": [
     {
-      "pkgutil": "com.fabfilter.Pro-DS.1",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.fabfilter.Pro-DS.1"
+        }
+      ]
     },
-    "FabFilter Pro-DS 1.18 Installer.pkg (Pkg)"
+    {
+      "pkg": [
+        "FabFilter Pro-DS 1.19 Installer.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.12"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sstrickl/rolldice/archive/v1.16.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8bc82b26c418453ef0fe79b43a094641e7a76dae406032423a2f0fb270930775"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rolldice/blobs/sha256:adeb468985368ac97a5e5e16a8276ca39a7c87f9615dbab892298e74d3d0f018",
+          "sha256": "adeb468985368ac97a5e5e16a8276ca39a7c87f9615dbab892298e74d3d0f018"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rolldice/blobs/sha256:2fa79795244358b512e08fddb6cc86a27029ce8f14038130ab7fc33b84724f43",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rolldice/blobs/sha256:1feb7522fecad653acb8a6d91152475486f1fa0f19107df1086c7674074a6870",
           "sha256": "1feb7522fecad653acb8a6d91152475486f1fa0f19107df1086c7674074a6870"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rolldice/blobs/sha256:3f3fa0150cb26cb71c0df08c79226e1258e738eb6c3f965a491d3e649dbf2b4f",
+          "sha256": "3f3fa0150cb26cb71c0df08c79226e1258e738eb6c3f965a491d3e649dbf2b4f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/rolldice/blobs/sha256:3ee6afe89723d119075feffe735f4b4d4552d51bab5d79df6b8e100f90d21109",
           "sha256": "3ee6afe89723d119075feffe735f4b4d4552d51bab5d79df6b8e100f90d21109"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rolldice/blobs/sha256:9525132a3c9a1b1ac679102a2a2f39e51dcd1f2ae299a1038701bdf4f945bd4c",
-          "sha256": "9525132a3c9a1b1ac679102a2a2f39e51dcd1f2ae299a1038701bdf4f945bd4c"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rolldice/blobs/sha256:c528a9c75ae75ef5bf9c28db1b40cd8e30fee54029580bbd05c7b5cbc8449936",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "readline"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.x.org/archive/individual/util/util-macros-1.19.3.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0f812e6e9d2786ba8f54b960ee563c0663ddbe2434bf24ff193f5feab1f31971"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:6e19bc76fc467de84316114ac9cd5456777ec2d26ca5545895e2a25528bd1c3e",
+          "sha256": "6e19bc76fc467de84316114ac9cd5456777ec2d26ca5545895e2a25528bd1c3e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:6e19bc76fc467de84316114ac9cd5456777ec2d26ca5545895e2a25528bd1c3e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:c264994ad25a15c84c92929eaf5dd8ca14c10938f58be3161f58ffcebbb3eb07",
           "sha256": "c264994ad25a15c84c92929eaf5dd8ca14c10938f58be3161f58ffcebbb3eb07"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/util-macros/blobs/sha256:37755208d3543eba393850f25bbc8d57bb8bfe66dedcc6e1ad0168eb750f0821",
+          "sha256": "37755208d3543eba393850f25bbc8d57bb8bfe66dedcc6e1ad0168eb750f0821"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
     "pkg-config"
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

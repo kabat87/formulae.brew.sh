@@ -4,7 +4,7 @@
   "tap": "homebrew/core",
   "oldname": null,
   "aliases": [
-    "cassandra@4.0"
+    "cassandra@4.1"
   ],
   "versioned_formulae": [
     "cassandra@3",
@@ -15,15 +15,16 @@
   "license": "Apache-2.0",
   "homepage": "https://cassandra.apache.org",
   "versions": {
-    "stable": "4.0.1",
+    "stable": "4.1.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/closer.lua?path=cassandra/4.0.1/apache-cassandra-4.0.1-bin.tar.gz",
+      "url": "https://www.apache.org/dyn/closer.lua?path=cassandra/4.1.0/apache-cassandra-4.1.0-bin.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e4fd6ef4a9e32eb297886c4bf04b42a8c740864e1fe8cc93deb240d576d607ae"
     }
   },
   "revision": 0,
@@ -33,47 +34,59 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:dda2455a952b5c13eff5f8ed7d6e3fd12f8b473d0acf969eef529c01e7262159",
+          "sha256": "dda2455a952b5c13eff5f8ed7d6e3fd12f8b473d0acf969eef529c01e7262159"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:26497667e88a297847fc70df9df523ca3dcf2e6bb52b3c8b48bb9f221bfa8446",
+          "sha256": "26497667e88a297847fc70df9df523ca3dcf2e6bb52b3c8b48bb9f221bfa8446"
+        },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:58016fa3757cd4ec2ecaacde5a82e91848fee5c39a66e5170c97e0404169e9b8",
-          "sha256": "58016fa3757cd4ec2ecaacde5a82e91848fee5c39a66e5170c97e0404169e9b8"
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:1c670a228ea5298163efb99a3215476424802305e1ce0942901f11f08b9830fb",
+          "sha256": "1c670a228ea5298163efb99a3215476424802305e1ce0942901f11f08b9830fb"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:4f0f7ff4b12546d0a3bc19cde3bcf1373506be98dc1ce5f8c6ebd2e130de7953",
+          "sha256": "4f0f7ff4b12546d0a3bc19cde3bcf1373506be98dc1ce5f8c6ebd2e130de7953"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:a0d96a62ef5a3dfac4f3eda755519b35f83cc57db727ac102b4d92cba2ac4549",
+          "sha256": "a0d96a62ef5a3dfac4f3eda755519b35f83cc57db727ac102b4d92cba2ac4549"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:531d95b615b56206345341760667a9beb997c861b046b8a526e04d384f36844b",
-          "sha256": "531d95b615b56206345341760667a9beb997c861b046b8a526e04d384f36844b"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:95e753b05138dca61b229e455e5058342a9f16b038ea008c303567d909ef7313",
-          "sha256": "95e753b05138dca61b229e455e5058342a9f16b038ea008c303567d909ef7313"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:ff726d5f9303879270d740d89e7195d8145a9e6416fdb50507faa4d6c236dce8",
-          "sha256": "ff726d5f9303879270d740d89e7195d8145a9e6416fdb50507faa4d6c236dce8"
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:e8575ba10cca5156a8ae1c83c0d10f3708567141b16b6363fa7fa693726afcaa",
+          "sha256": "e8575ba10cca5156a8ae1c83c0d10f3708567141b16b6363fa7fa693726afcaa"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:d6ff4ee073bfa42e4cb632e86d024e0b12528d8c7655d0c4ff207e1221063fb7",
-          "sha256": "d6ff4ee073bfa42e4cb632e86d024e0b12528d8c7655d0c4ff207e1221063fb7"
+          "url": "https://ghcr.io/v2/homebrew/core/cassandra/blobs/sha256:ee0b557fcbe7fa1cc0a66c21abae6e8ba12e1593a006553cf024b1ca9dbcdaff",
+          "sha256": "ee0b557fcbe7fa1cc0a66c21abae6e8ba12e1593a006553cf024b1ca9dbcdaff"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "cython"
+    "libcython"
   ],
   "dependencies": [
     "openjdk@11",
-    "python@3.9",
+    "python@3.10",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -102,5 +115,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

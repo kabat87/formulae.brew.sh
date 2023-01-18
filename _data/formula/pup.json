@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ericchiang/pup/archive/v0.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0d546ab78588e07e1601007772d83795495aa329b19bd1c3cde589ddb1c538b0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pup/blobs/sha256:8023f82224007c85960698b96baa60a1749de8ecc9aeb24e56cda2fc2208433a",
+          "sha256": "8023f82224007c85960698b96baa60a1749de8ecc9aeb24e56cda2fc2208433a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pup/blobs/sha256:b6854a47afc836d12ed5447f9d285484e200f0d4350411f5aac7bf5e30f33a07",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pup/blobs/sha256:8933d95f5318154ec8f9e7d2080c24c3657d2c850935f9c165e485ad98ad6bff",
           "sha256": "8933d95f5318154ec8f9e7d2080c24c3657d2c850935f9c165e485ad98ad6bff"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pup/blobs/sha256:19411ce020f2503f340ad55bc8662a738d404ba40c8119d65e6daa38a468e999",
+          "sha256": "19411ce020f2503f340ad55bc8662a738d404ba40c8119d65e6daa38a468e999"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "gox"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,13 +7,11 @@
 
   ],
   "versioned_formulae": [
+    "go@1.18",
+    "go@1.17",
     "go@1.16",
     "go@1.14",
-    "go@1.13",
-    "go@1.12",
-    "go@1.11",
-    "go@1.10",
-    "go@1.9"
+    "go@1.13"
   ],
   "desc": "Go programming environment (1.15)",
   "license": "BSD-3-Clause",
@@ -27,7 +25,8 @@
     "stable": {
       "url": "https://golang.org/dl/go1.15.15.src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0662ae3813330280d5f1a97a2ee23bbdbe3a5a7cfa6001b24a9873a19a0dc7ec"
     }
   },
   "revision": 0,
@@ -65,7 +64,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -73,6 +71,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -100,27 +101,17 @@
   ],
   "caveats": null,
   "installed": [
-    {
-      "version": "1.15.15",
-      "used_options": [
 
-      ],
-      "built_as_bottle": true,
-      "poured_from_bottle": true,
-      "runtime_dependencies": [
-
-      ],
-      "installed_as_dependency": false,
-      "installed_on_request": true
-    }
   ],
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-08-16",
-  "deprecation_reason": "unsupported",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-10-19",
+  "disable_reason": "unsupported",
+  "variations": {
+  }
 }

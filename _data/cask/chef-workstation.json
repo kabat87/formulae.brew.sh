@@ -7,42 +7,157 @@
   ],
   "desc": "All-in-one installer for the tools you need to manage your Chef infrastructure",
   "homepage": "https://docs.chef.io/workstation/",
-  "url": "https://packages.chef.io/files/stable/chef-workstation/22.1.745/mac_os_x/10.15/chef-workstation-22.1.745-1.x86_64.dmg",
+  "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/10.15/chef-workstation-22.12.1024-1.x86_64.dmg",
   "appcast": null,
-  "version": "22.1.745",
+  "version": "22.12.1024",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f6beaa7b00ecb062d541648e6562c9dba3c5380176c2cef612518b114cee712a",
+  "sha256": "30800ba3971f056211f3bbca3864eaceb6bdd1a5adc4331eadf0d6c4ecc32cc2",
   "artifacts": [
     {
-      "quit": "sh.chef.chef-workstation",
-      "pkgutil": "com.getchef.pkg.chef-workstation",
-      "launchctl": "io.chef.chef-workstation.app",
-      "script": {
-        "executable": "/opt/chef-workstation/bin/uninstall_chef_workstation",
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "sh.chef.chef-workstation",
+          "pkgutil": "com.getchef.pkg.chef-workstation",
+          "launchctl": [
+            "io.chef.chef-workstation",
+            "io.chef.chef-workstation.app"
+          ],
+          "script": {
+            "executable": "/opt/chef-workstation/bin/uninstall_chef_workstation",
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    "chef-workstation-22.1.745-1.x86_64.pkg (Pkg)",
     {
-      "trash": "~/.chef-workstation/",
-      "signal": {
-      }
+      "pkg": [
+        "chef-workstation-22.12.1024-1.x86_64.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.chef-workstation/"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "10.15"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/11/chef-workstation-22.12.1024-1.arm64.dmg",
+      "sha256": "57785b204ed5d6089a05de175a87643824eec4fba80fdb88425fd0471e51a987",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "quit": "sh.chef.chef-workstation",
+              "pkgutil": "com.getchef.pkg.chef-workstation",
+              "launchctl": [
+                "io.chef.chef-workstation",
+                "io.chef.chef-workstation.app"
+              ],
+              "script": {
+                "executable": "/opt/chef-workstation/bin/uninstall_chef_workstation",
+                "sudo": "true"
+              }
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "chef-workstation-22.12.1024-1.arm64.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": "~/.chef-workstation/"
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_monterey": {
+      "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/11/chef-workstation-22.12.1024-1.arm64.dmg",
+      "sha256": "57785b204ed5d6089a05de175a87643824eec4fba80fdb88425fd0471e51a987",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "quit": "sh.chef.chef-workstation",
+              "pkgutil": "com.getchef.pkg.chef-workstation",
+              "launchctl": [
+                "io.chef.chef-workstation",
+                "io.chef.chef-workstation.app"
+              ],
+              "script": {
+                "executable": "/opt/chef-workstation/bin/uninstall_chef_workstation",
+                "sudo": "true"
+              }
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "chef-workstation-22.12.1024-1.arm64.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": "~/.chef-workstation/"
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_big_sur": {
+      "url": "https://packages.chef.io/files/stable/chef-workstation/22.12.1024/mac_os_x/11/chef-workstation-22.12.1024-1.arm64.dmg",
+      "sha256": "57785b204ed5d6089a05de175a87643824eec4fba80fdb88425fd0471e51a987",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "quit": "sh.chef.chef-workstation",
+              "pkgutil": "com.getchef.pkg.chef-workstation",
+              "launchctl": [
+                "io.chef.chef-workstation",
+                "io.chef.chef-workstation.app"
+              ],
+              "script": {
+                "executable": "/opt/chef-workstation/bin/uninstall_chef_workstation",
+                "sudo": "true"
+              }
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "chef-workstation-22.12.1024-1.arm64.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": "~/.chef-workstation/"
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

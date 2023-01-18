@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.videolan.org/pub/videolan/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c191a7475947d323ff7680cf92c0fb1be8237701885f37656c64d04e98d18d48"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdvdnav/blobs/sha256:77a874039ce80696ea655e95514dc26776a34f1c9675f583ebc0b9ae083be84c",
+          "sha256": "77a874039ce80696ea655e95514dc26776a34f1c9675f583ebc0b9ae083be84c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdvdnav/blobs/sha256:efafd019d3a0cff8710e286c2fd7817865b1be5ff539c39639c71de9f61d9c50",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdvdnav/blobs/sha256:e3ea0ddda7b96b799c2a67fd6687c25679001e2dc3893f200c70d4a599bc3996",
           "sha256": "e3ea0ddda7b96b799c2a67fd6687c25679001e2dc3893f200c70d4a599bc3996"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdvdnav/blobs/sha256:53d1dde0566dc12fe4e804d379d7b7cdfdc411dae8b290e866517c6f1023b796",
+          "sha256": "53d1dde0566dc12fe4e804d379d7b7cdfdc411dae8b290e866517c6f1023b796"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "libdvdread"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

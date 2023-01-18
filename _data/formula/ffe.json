@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/ff-extractor/0.3.9a/0.3.9a.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3f3433c6e8714f9756826279e249bcf7f7ab8c45b5686003764e44f63eb225e7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ffe/blobs/sha256:6439a12e9180af68d7dbdcfe34542acac6ae00b68b1dd76af01caca53b6fea70",
+          "sha256": "6439a12e9180af68d7dbdcfe34542acac6ae00b68b1dd76af01caca53b6fea70"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ffe/blobs/sha256:5d3e8b3f5351665de15fb7ea4904b873cd7c3c04cefde6f6b0534a16dc7dbef0",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ffe/blobs/sha256:0fc8ca59fce53552b827be4e9bfdc9c263c8087961245704277be10915fb6d20",
           "sha256": "0fc8ca59fce53552b827be4e9bfdc9c263c8087961245704277be10915fb6d20"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ffe/blobs/sha256:33ad5a55c582f1010abc77265a3ded3217a771b87a749809868184d74a115c8e",
+          "sha256": "33ad5a55c582f1010abc77265a3ded3217a771b87a749809868184d74a115c8e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ffe/blobs/sha256:50a6933b42632612de08af50fead023d23c04593ecb323749f950b05df9f034e",
           "sha256": "50a6933b42632612de08af50fead023d23c04593ecb323749f950b05df9f034e"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ffe/blobs/sha256:583204b3a7ac459ad0ab5d76d7cea314103dc499d271ddfd2309f053e795c41f",
+          "sha256": "583204b3a7ac459ad0ab5d76d7cea314103dc499d271ddfd2309f053e795c41f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

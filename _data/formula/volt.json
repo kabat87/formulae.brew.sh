@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vim-volt/volt.git",
       "tag": "v0.3.7",
-      "revision": "e604467d8b440c89793b2e113cd241915e431bf9"
+      "revision": "e604467d8b440c89793b2e113cd241915e431bf9",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/volt/blobs/sha256:59485100787529576ed3a8c6b89aaa86fe1efb46854d39e5b5952769c96d258d",
+          "sha256": "59485100787529576ed3a8c6b89aaa86fe1efb46854d39e5b5952769c96d258d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/volt/blobs/sha256:87cfdbc43edeb2cedc60ddda401062cad644f0fa6d799d7ef112800984a10da7",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/volt/blobs/sha256:836f10188a9b461531bac4b6eb803e4f86057342e443df99c0c466e224af18b6",
           "sha256": "836f10188a9b461531bac4b6eb803e4f86057342e443df99c0c466e224af18b6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/volt/blobs/sha256:c5244e0342f754911a266ba1fa595c9ef9eb14b19e9191f325ff484551be9297",
+          "sha256": "c5244e0342f754911a266ba1fa595c9ef9eb14b19e9191f325ff484551be9297"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -120,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

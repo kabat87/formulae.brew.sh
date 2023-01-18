@@ -1,63 +1,72 @@
 {
   "name": "openfortivpn",
-  "pkg_version": "1.17.1",
+  "pkg_version": "1.19.0",
   "rebuild": 0,
   "bottles": {
+    "arm64_ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:cf3085228d1c1d791e69d60fc848b4758ff224359f3dedd46d7aa8d149fa1936"
+    },
     "arm64_monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:ec8d7033e8e96e347ed56b4fc81ee11805ba23a0f343b1519eb496533f1c5bca"
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:2f65a3ce47bfa55079ece31bf270b4111ddd9ac81ac742a8243afe1c6600e932"
     },
     "arm64_big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:c4748e81cb20fb01c9d414e0ed293fc368e564301a5bd30a12331c874110386f"
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:7e130cbe9a544dbd3d447d455399ef8cef88d31b0e81e8a8e0713b2a469f67a2"
+    },
+    "ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:c06e9f31eda964a6622822a8a1b0178c73c9eb38ceae9dbefdf6994558a1c454"
     },
     "monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:b26201d5191b156c69840c7116e0ba57afb2e32290884d7da3a1826c2aa9f6b2"
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:ff5c82ec39545a45ca3676cca127c699e438e0eb2d0972cf98bddab8994a9c6e"
     },
     "big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:bd22ebd6c3c8303346885799b63c8fc75c324d5d5a3b467960852bbc3be0bb7a"
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:36df758b6d887467cd0e90f704d0b603f5486ac6f5375d845bb391cdbb9afdfb"
     },
     "catalina": {
-      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:4a6d61358a7c7d950cc10c59089eed15fb8b8dfc3bcf345c83a87b08c1308028"
-    },
-    "mojave": {
-      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:07ed32d58eeee4cd3fc6ee3635cd70ad5ecdb67fd0e44265da4784c81b3442fa"
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:4a09b2f6e762b7eac8e5e8ce0ca2997e1764439c3af6e5b54aa019c532c45e2b"
     },
     "x86_64_linux": {
-      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:a6e1156d037a572b3f9dcb511bb9d708e6775a7a68027399f5451f690c097cd6"
+      "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:66bd0b3ebcaea501bda4aca5664ec71503b6930c24fdc2300f0ab96094438f7b"
     }
   },
   "dependencies": [
     {
       "name": "ca-certificates",
-      "pkg_version": "2021-10-26",
+      "pkg_version": "2023-01-10",
       "rebuild": 0,
       "bottles": {
         "all": {
-          "url": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:1bbd45c16a0b9912174c553a6d7ae1b67b11abbeb3155eaf03109bb62d8e5381"
+          "url": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:11fe9d0a98a2ac454fa1db95762a697c3340f46560ff27e5e9db8fdeb003f17e"
         }
       }
     },
     {
-      "name": "openssl@1.1",
-      "pkg_version": "1.1.1m",
+      "name": "openssl@3",
+      "pkg_version": "3.0.7",
       "rebuild": 0,
       "bottles": {
+        "arm64_ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:5b3d605f5c1fcadfea094c5670091e4bec2b2de7c121874be166bc737ef64ccf"
+        },
         "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:b3a02096abab03b1571f37d8d1f7ff89675a96be649495f434d8817047c3765e"
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:aaa47bcc0e7727e655af43748c77f580b1379403010177aab47978b737180295"
         },
         "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:5f0389e86a16447bfecf9f1d2ef195d230b2abde95e7a26e78a3ebced7352803"
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:c84729c8726b7934f0a63d75fd2dce795c948f9b7ec29f9681f667de90b73f16"
+        },
+        "ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:3fe02c4f33f395b1ff0af0e05fdac80ab09fc13e85236f33a2aecb105a83d996"
         },
         "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:bac056f55bf254752ed522eccf37cf2c7cfdc38d46b2c469a777f5feb41cbbc4"
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:8501aeeab59c63a75dd14c1b836269a6effb08058ec7afb35313f954b40d78c3"
         },
         "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:ad0413d8ee77b50b0a74855e9f0b9ad63dc2736c6a4dc9f7d5e9ecb30f6d4d89"
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:a8231d898ef9e61de88fc916ed316e58862ef04f1f17563b2f6247fcc894247f"
         },
         "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:c533c1904ce0191856c4ae6b349267706b81e56b417be08368b3d068dfc11091"
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:11f2d168758de4ac078c5799f2ce0fcc93e4f0c3d8b59e6f53eea700dfa02e83"
         },
         "x86_64_linux": {
-          "url": "https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:b34cfd21863fcb600c0193b5509776e676f5144eeda0fad641710ab81f7cf4dd"
+          "url": "https://ghcr.io/v2/homebrew/core/openssl/3/blobs/sha256:1c2ee30c067e2a81dfa1d4f539c91fa278816a45c5d59ff798ec437a5de82f9c"
         }
       }
     }

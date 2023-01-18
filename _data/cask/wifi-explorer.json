@@ -7,40 +7,46 @@
   ],
   "desc": "Scan, monitor, and troubleshoot wireless networks",
   "homepage": "https://www.intuitibits.com/products/wifi-explorer/",
-  "url": "https://www.intuitibits.com/downloads/WiFiExplorer_3.3.2.dmg",
+  "url": "https://www.intuitibits.com/downloads/WiFiExplorer_3.4.dmg",
   "appcast": null,
-  "version": "3.3.2,47",
+  "version": "3.4,53",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0ea3e3c45e2cc730e13e3ffa7733c4480062f09795f7a1045d0274b87f31b033",
+  "sha256": "0615def60f8c915dff5d350e202511faf5967f3665da3240e2df866c29cdb0ce",
   "artifacts": [
-    [
-      "WiFi Explorer.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/wifiexplorer",
-        "~/Library/Cookies/wifiexplorer.binarycookies",
-        "~/Library/Group Containers/2B9R362QNU.com.adriangranados.wifiexplorer",
-        "~/Library/Preferences/com.adriangranados.wifiexplorer*",
-        "~/Library/Preferences/wifiexplorer.plist",
-        "~/Library/Saved Application State/wifiexplorer.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "WiFi Explorer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/wifiexplorer",
+            "~/Library/Cookies/wifiexplorer.binarycookies",
+            "~/Library/Group Containers/2B9R362QNU.com.adriangranados.wifiexplorer",
+            "~/Library/Preferences/com.adriangranados.wifiexplorer*",
+            "~/Library/Preferences/wifiexplorer.plist",
+            "~/Library/Saved Application State/wifiexplorer.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.13"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

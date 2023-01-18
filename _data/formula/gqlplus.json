@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/gqlplus/gqlplus/1.16/gqlplus-1.16.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9e0071d6f8bc24b0b3623c69d9205f7d3a19c2cb32b5ac9cff133dc75814acdd"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gqlplus/blobs/sha256:a0306aa2fa07da51f02dec57525850ec4fe73e37d044fc34cb0b722cb83d1310",
+          "sha256": "a0306aa2fa07da51f02dec57525850ec4fe73e37d044fc34cb0b722cb83d1310"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gqlplus/blobs/sha256:ced72667294e921a6625eff47bdb23df67595692f8f5b4d1ed253eefc4b708ac",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gqlplus/blobs/sha256:e93b52a5967e87f0ccc282ad897c4d64b42e0bcf4e41f7ece17186f1fd36bcd6",
           "sha256": "e93b52a5967e87f0ccc282ad897c4d64b42e0bcf4e41f7ece17186f1fd36bcd6"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gqlplus/blobs/sha256:7d53a459847266fa2e56d0c5a2ccaa5101106988b5d95448a987b4e8cff6ecc3",
+          "sha256": "7d53a459847266fa2e56d0c5a2ccaa5101106988b5d95448a987b4e8cff6ecc3"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
   ],
   "dependencies": [
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

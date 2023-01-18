@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://www.x.org/",
   "versions": {
-    "stable": "2.3.4",
+    "stable": "2.3.7",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.x.org/archive/individual/lib/libXft-2.3.4.tar.bz2",
+      "url": "https://www.x.org/archive/individual/lib/libXft-2.3.7.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "79f0b37c45007381c371a790c2754644ad955166dbf2a48e3625032e9bdd4f71"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:8175c1f034681b3ad8f88c049e592a75dd7ed74da468e4b4abd7b0c6b92fa6b0",
+          "sha256": "8175c1f034681b3ad8f88c049e592a75dd7ed74da468e4b4abd7b0c6b92fa6b0"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:df14d3422f930c8339a90745ea96ac4ed19dbd320e79bfea4870dae1d2b9bf2a",
-          "sha256": "df14d3422f930c8339a90745ea96ac4ed19dbd320e79bfea4870dae1d2b9bf2a"
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:f564c302672356b6c5ff8748310527503b8586c4c62214f5ea6bfd37d072eb9a",
+          "sha256": "f564c302672356b6c5ff8748310527503b8586c4c62214f5ea6bfd37d072eb9a"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:78a5e3d5795d9a95a012e1b9cbdc431373d1a2b9215dd4cc467ed8fe8833c8fd",
-          "sha256": "78a5e3d5795d9a95a012e1b9cbdc431373d1a2b9215dd4cc467ed8fe8833c8fd"
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:2d3b436bec612143dd68c2d76e70f8193c4400ca0df95cbf4d29f19b1e6162dc",
+          "sha256": "2d3b436bec612143dd68c2d76e70f8193c4400ca0df95cbf4d29f19b1e6162dc"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:d78514cadc16473ef16d6c2a3cf654f7435782b08720f965cb03c56f45f57f6c",
+          "sha256": "d78514cadc16473ef16d6c2a3cf654f7435782b08720f965cb03c56f45f57f6c"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:e5e3c477b818f83abb22998e773b850a63ac57011549c2d7cb7e3fd36099dfe6",
-          "sha256": "e5e3c477b818f83abb22998e773b850a63ac57011549c2d7cb7e3fd36099dfe6"
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:f0cc586372a1a2b67afb81965d741ab50453ba4d6dba97d73d701289a3d71e4f",
+          "sha256": "f0cc586372a1a2b67afb81965d741ab50453ba4d6dba97d73d701289a3d71e4f"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:1409b0b789f87502f146806ca110c91de010d4815a02d2a2b01a1fca8a9b34e1",
-          "sha256": "1409b0b789f87502f146806ca110c91de010d4815a02d2a2b01a1fca8a9b34e1"
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:2f40db6e5dc23843e700fa8b0ee995c7dfaa6ad1b2a2478fe5f834eaa796058d",
+          "sha256": "2f40db6e5dc23843e700fa8b0ee995c7dfaa6ad1b2a2478fe5f834eaa796058d"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:59ee89bf143385cf4d64b79b2b324874cbe8b5a1ecdaef2a9739fe6104bf240e",
-          "sha256": "59ee89bf143385cf4d64b79b2b324874cbe8b5a1ecdaef2a9739fe6104bf240e"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:b192514f22f8e6fe250afc95e471512622942dd02d3e58b7fbb0b085a281c667",
-          "sha256": "b192514f22f8e6fe250afc95e471512622942dd02d3e58b7fbb0b085a281c667"
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:5724a911f3d4f07de517aee6da949f5705e8ecb8ad77e2bf2d64587cc8c7ca5c",
+          "sha256": "5724a911f3d4f07de517aee6da949f5705e8ecb8ad77e2bf2d64587cc8c7ca5c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:32e3761cd7474d9f427959ce47db1b7449a1d210e51ad08d664a2f6b2092e229",
-          "sha256": "32e3761cd7474d9f427959ce47db1b7449a1d210e51ad08d664a2f6b2092e229"
+          "url": "https://ghcr.io/v2/homebrew/core/libxft/blobs/sha256:c64c26f48726bcf50db5be2e2b89d3a387f7ed08d840f48fd84e30210ed77386",
+          "sha256": "c64c26f48726bcf50db5be2e2b89d3a387f7ed08d840f48fd84e30210ed77386"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +86,9 @@
   "dependencies": [
     "fontconfig",
     "libxrender"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,26 +109,27 @@
   "caveats": null,
   "installed": [
     {
-      "version": "2.3.4",
+      "version": "2.3.7",
       "used_options": [
 
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154931,
       "runtime_dependencies": [
         {
           "full_name": "libpng",
-          "version": "1.6.37",
+          "version": "1.6.39",
           "declared_directly": false
         },
         {
           "full_name": "freetype",
-          "version": "2.11.1",
+          "version": "2.12.1",
           "declared_directly": false
         },
         {
           "full_name": "fontconfig",
-          "version": "2.13.1",
+          "version": "2.14.1",
           "declared_directly": true
         },
         {
@@ -135,27 +144,27 @@
         },
         {
           "full_name": "xorgproto",
-          "version": "2021.5",
+          "version": "2022.2",
           "declared_directly": false
         },
         {
           "full_name": "libxau",
-          "version": "1.0.9",
+          "version": "1.0.11",
           "declared_directly": false
         },
         {
           "full_name": "libxdmcp",
-          "version": "1.1.3",
+          "version": "1.1.4",
           "declared_directly": false
         },
         {
           "full_name": "libxcb",
-          "version": "1.14",
+          "version": "1.15",
           "declared_directly": false
         },
         {
           "full_name": "libx11",
-          "version": "1.7.3.1",
+          "version": "1.8.2",
           "declared_directly": false
         },
         {
@@ -168,7 +177,7 @@
       "installed_on_request": true
     }
   ],
-  "linked_keg": "2.3.4",
+  "linked_keg": "2.3.7",
   "pinned": false,
   "outdated": false,
   "deprecated": false,
@@ -176,5 +185,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

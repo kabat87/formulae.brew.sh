@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://support.crowdin.com/cli-tool/",
   "versions": {
-    "stable": "3.7.7",
+    "stable": "3.9.3",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/crowdin/crowdin-cli/releases/download/3.7.7/crowdin-cli.zip",
+      "url": "https://github.com/crowdin/crowdin-cli/releases/download/3.9.3/crowdin-cli.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a7c69b2200805e8fcb5bf0193767ac498564568820436be3e50900b1e1f05c9a"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/crowdin/blobs/sha256:dc08ebf34f5db3d2015d111047eaceacbccbf5648f4d251a3ee15dcfdd7a29a1",
-          "sha256": "dc08ebf34f5db3d2015d111047eaceacbccbf5648f4d251a3ee15dcfdd7a29a1"
+          "url": "https://ghcr.io/v2/homebrew/core/crowdin/blobs/sha256:306f07d0a704f26db4655b7fb346bf9281a3eab9f66b5d4d07f2feb9100f7a1e",
+          "sha256": "306f07d0a704f26db4655b7fb346bf9281a3eab9f66b5d4d07f2feb9100f7a1e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

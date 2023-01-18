@@ -7,43 +7,50 @@
   ],
   "desc": "Minimal installer for conda with preinstalled support for Mamba",
   "homepage": "https://github.com/conda-forge/miniforge",
-  "url": "https://github.com/conda-forge/miniforge/releases/download/4.11.0-0/Mambaforge-4.11.0-0-MacOSX-x86_64.sh",
+  "url": "https://github.com/conda-forge/miniforge/releases/download/22.9.0-3/Mambaforge-22.9.0-3-MacOSX-x86_64.sh",
   "appcast": null,
-  "version": "4.11.0-0",
+  "version": "22.9.0-3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2039f744e272d47878f0bc2ae372f03c7f07881f39a93d693d5445744f36f19d",
+  "sha256": "a3ccaf7b93b6f99bc2018f2a6f3cd95489940731f11fb9bf6adf1a44a7ba4e17",
   "artifacts": [
     {
-      "delete": "$(brew --prefix)/Caskroom/mambaforge/base",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "$(brew --prefix)/Caskroom/mambaforge/base"
+        }
+      ]
     },
     {
-      "path": "Mambaforge-4.11.0-0-MacOSX-x86_64.sh",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "false",
-        "args": [
-          "-b",
-          "-p",
-          "$(brew --prefix)/Caskroom/mambaforge/base"
-        ],
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "Mambaforge-22.9.0-3-MacOSX-x86_64.sh",
+            "args": [
+              "-b",
+              "-p",
+              "$(brew --prefix)/Caskroom/mambaforge/base"
+            ]
+          }
+        }
+      ]
     },
-    [
-      "$(brew --prefix)/Caskroom/mambaforge/base/condabin/conda"
-    ],
     {
-      "trash": [
-        "~/.condarc",
-        "~/.conda"
-      ],
-      "signal": {
-      }
+      "binary": [
+        "$(brew --prefix)/Caskroom/mambaforge/base/condabin/conda"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.condarc",
+            "~/.conda"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "Please run the following to setup your shell:\n  conda init \"$(basename \"${SHELL}\")\"\n",
@@ -55,6 +62,136 @@
       "miniforge"
     ]
   },
-  "container": "{:type=>:naked}",
-  "auto_updates": true
+  "container": {
+    "type": "naked"
+  },
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/conda-forge/miniforge/releases/download/22.9.0-3/Mambaforge-22.9.0-3-MacOSX-arm64.sh",
+      "sha256": "eebe06970fec4cb1445bba106e65f57084b753d39766bf213edf4e02b14e27c1",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "delete": "$(brew --prefix)/Caskroom/mambaforge/base"
+            }
+          ]
+        },
+        {
+          "installer": [
+            {
+              "script": {
+                "executable": "Mambaforge-22.9.0-3-MacOSX-arm64.sh",
+                "args": [
+                  "-b",
+                  "-p",
+                  "$(brew --prefix)/Caskroom/mambaforge/base"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "binary": [
+            "$(brew --prefix)/Caskroom/mambaforge/base/condabin/conda"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": [
+                "~/.condarc",
+                "~/.conda"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/conda-forge/miniforge/releases/download/22.9.0-3/Mambaforge-22.9.0-3-MacOSX-arm64.sh",
+      "sha256": "eebe06970fec4cb1445bba106e65f57084b753d39766bf213edf4e02b14e27c1",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "delete": "$(brew --prefix)/Caskroom/mambaforge/base"
+            }
+          ]
+        },
+        {
+          "installer": [
+            {
+              "script": {
+                "executable": "Mambaforge-22.9.0-3-MacOSX-arm64.sh",
+                "args": [
+                  "-b",
+                  "-p",
+                  "$(brew --prefix)/Caskroom/mambaforge/base"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "binary": [
+            "$(brew --prefix)/Caskroom/mambaforge/base/condabin/conda"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": [
+                "~/.condarc",
+                "~/.conda"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/conda-forge/miniforge/releases/download/22.9.0-3/Mambaforge-22.9.0-3-MacOSX-arm64.sh",
+      "sha256": "eebe06970fec4cb1445bba106e65f57084b753d39766bf213edf4e02b14e27c1",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "delete": "$(brew --prefix)/Caskroom/mambaforge/base"
+            }
+          ]
+        },
+        {
+          "installer": [
+            {
+              "script": {
+                "executable": "Mambaforge-22.9.0-3-MacOSX-arm64.sh",
+                "args": [
+                  "-b",
+                  "-p",
+                  "$(brew --prefix)/Caskroom/mambaforge/base"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "binary": [
+            "$(brew --prefix)/Caskroom/mambaforge/base/condabin/conda"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": [
+                "~/.condarc",
+                "~/.conda"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

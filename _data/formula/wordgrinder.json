@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/davidgiven/wordgrinder/archive/0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "856cbed2b4ccd5127f61c4997a30e642d414247970f69932f25b4b5a81b18d3f"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wordgrinder/blobs/sha256:b89498bd5c54678e5460ccf146084abdde90853f465f17775657298fe1ba5c91",
+          "sha256": "b89498bd5c54678e5460ccf146084abdde90853f465f17775657298fe1ba5c91"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/wordgrinder/blobs/sha256:3eb4bf8cff526d9a6e6c9e285ba2a63879eb157a6ba091dff6be7ad49da749b3",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/wordgrinder/blobs/sha256:370093b3705f72a5d6b87bacd2e64e229f3d6ac82e52e92fe147c037d65f210b",
           "sha256": "370093b3705f72a5d6b87bacd2e64e229f3d6ac82e52e92fe147c037d65f210b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wordgrinder/blobs/sha256:1a575a0eff9cd74e4a48a4ede1694349892f5a07c089d9e5bd1be74560eaf5ac",
+          "sha256": "1a575a0eff9cd74e4a48a4ede1694349892f5a07c089d9e5bd1be74560eaf5ac"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
   ],
   "dependencies": [
     "ncurses"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

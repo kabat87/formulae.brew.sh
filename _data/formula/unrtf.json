@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/unrtf/unrtf-0.21.10.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b49f20211fa69fff97d42d6e782a62d7e2da670b064951f14bbff968c93734ae"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/unrtf/blobs/sha256:fbc5a59efc2a686ed6968150a3101f3e5121194eb8d505672bcf457b924085a1",
+          "sha256": "fbc5a59efc2a686ed6968150a3101f3e5121194eb8d505672bcf457b924085a1"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/unrtf/blobs/sha256:90ccbe686fedc51d5c3ef8f7088577a625e0ad3c3199632fcdc12d6e4e379f52",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/unrtf/blobs/sha256:7a091ab8d8e5a67f2821d1436300d6c41c9f15ead01a83ade9d38fc9cc2494b6",
           "sha256": "7a091ab8d8e5a67f2821d1436300d6c41c9f15ead01a83ade9d38fc9cc2494b6"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/unrtf/blobs/sha256:9371bbf23b01669c95f9742f469f0762e83c7f86c29234d9975f81936f8cdcb0",
+          "sha256": "9371bbf23b01669c95f9742f469f0762e83c7f86c29234d9975f81936f8cdcb0"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -119,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

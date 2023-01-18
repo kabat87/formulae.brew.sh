@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/jpdfbookmarks/JPdfBookmarks-2.5.2/jpdfbookmarks-2.5.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8ab51c20414591632e48ad3817e6c97e9c029db8aaeff23d74c219718cfe19f9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jpdfbookmarks/blobs/sha256:13bd17ff83235a1e154915b59a521ffe910ecb2ca4ae837203441813b32eb176",
+          "sha256": "13bd17ff83235a1e154915b59a521ffe910ecb2ca4ae837203441813b32eb176"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jpdfbookmarks/blobs/sha256:13bd17ff83235a1e154915b59a521ffe910ecb2ca4ae837203441813b32eb176",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jpdfbookmarks/blobs/sha256:91470e2dbd04216a27d182e0645399b3460744315b564f2a6ae5b86d76da2b14",
           "sha256": "91470e2dbd04216a27d182e0645399b3460744315b564f2a6ae5b86d76da2b14"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jpdfbookmarks/blobs/sha256:f059129d0e91d4b1791c25c19bf52e20ba971b34167af63993e3f4ae9667ae50",
+          "sha256": "f059129d0e91d4b1791c25c19bf52e20ba971b34167af63993e3f4ae9667ae50"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

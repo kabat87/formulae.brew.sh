@@ -13,15 +13,16 @@
   "license": "EPL-1.0",
   "homepage": "https://clojure.org",
   "versions": {
-    "stable": "1.10.3.1058",
+    "stable": "1.11.1.1208",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.clojure.org/install/clojure-tools-1.10.3.1058.tar.gz",
+      "url": "https://download.clojure.org/install/clojure-tools-1.11.1.1208.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6e7f6e34ce3aa18734c31249f073066c4f3fda69d8c66fe9f52e8c8587e17103"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clojure/blobs/sha256:de2e9c7e812604d628d8f262105d539a917c902e618fbd91640cf2958bea1817",
-          "sha256": "de2e9c7e812604d628d8f262105d539a917c902e618fbd91640cf2958bea1817"
+          "url": "https://ghcr.io/v2/homebrew/core/clojure/blobs/sha256:ab7309d3cd4c38346e70e789e962608145f33983ee23f6ef3245d253d0e6397b",
+          "sha256": "ab7309d3cd4c38346e70e789e962608145f33983ee23f6ef3245d253d0e6397b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,6 +51,9 @@
   "dependencies": [
     "openjdk",
     "rlwrap"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -81,5 +84,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

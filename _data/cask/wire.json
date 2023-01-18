@@ -7,26 +7,36 @@
   ],
   "desc": "Collaboration platform focusing on security",
   "homepage": "https://wire.com/",
-  "url": "https://github.com/wireapp/wire-desktop/releases/download/macos%2F3.26.4145/Wire.pkg",
+  "url": "https://github.com/wireapp/wire-desktop/releases/download/macos%2F3.30.4506/Wire.pkg",
   "appcast": null,
-  "version": "3.26.4145",
+  "version": "3.30.4506",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c259fc7c81cf6286cab54e06b7c00e4e4509f13a64549c25ad3c57f1932267b2",
+  "sha256": "fa1b4378d22eb9c078ab3341358a12507d436df828b994b4f06e61c4fb48bb36",
   "artifacts": [
     {
-      "pkgutil": "com.wearezeta.zclient.mac",
-      "signal": {
-        "TERM": "com.wearezeta.zclient.mac"
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.wearezeta.zclient.mac",
+          "signal": {
+            "TERM": "com.wearezeta.zclient.mac"
+          }
+        }
+      ]
     },
-    "Wire.pkg (Pkg)",
     {
-      "trash": "~/Library/Containers/com.wearezeta.zclient.mac",
-      "signal": {
-      }
+      "pkg": [
+        "Wire.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Containers/com.wearezeta.zclient.mac"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

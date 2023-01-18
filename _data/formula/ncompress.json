@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vapier/ncompress/archive/v5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "96ec931d06ab827fccad377839bfb91955274568392ddecf809e443443aead46"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ncompress/blobs/sha256:f5a549a65439192ba3656d246d95c57979228f95d5c9ccfe26be0fd9744dae1d",
+          "sha256": "f5a549a65439192ba3656d246d95c57979228f95d5c9ccfe26be0fd9744dae1d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ncompress/blobs/sha256:9dbd83bf79e6dc3934b84e104305dc7772100aafe85a724275a821d3a4c68762",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ncompress/blobs/sha256:1ed0a835e287915e90e45a75971aefd707578cf96ddcbe631fd8bab34000af98",
           "sha256": "1ed0a835e287915e90e45a75971aefd707578cf96ddcbe631fd8bab34000af98"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ncompress/blobs/sha256:c7bf47ebe6376a3b3a84b4441e8dff37c639cad3c00906a3aec98d6f2fdbe879",
+          "sha256": "c7bf47ebe6376a3b3a84b4441e8dff37c639cad3c00906a3aec98d6f2fdbe879"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -74,7 +85,6 @@
     "reason": ":provided_by_macos",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

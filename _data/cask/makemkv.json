@@ -7,28 +7,51 @@
   ],
   "desc": "Video format converter (transcoder)",
   "homepage": "https://www.makemkv.com/",
-  "url": "https://www.makemkv.com/download/makemkv_v1.16.5_osx.dmg",
+  "url": "https://www.makemkv.com/download/makemkv_v1.17.2_osx.dmg",
   "appcast": null,
-  "version": "1.16.5",
+  "version": "1.17.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f069248703fd05d6d2350048edffd61b7fa3bda491922b52d074742291c18638",
+  "sha256": "e4c5b1564b0ae36f91bc3895e94ed38fc084257dd528c9b79304dcc89b06fbfe",
   "artifacts": [
-    [
-      "MakeMKV.app"
-    ],
-    [
-      "/Applications/MakeMKV.app/Contents/MacOS/makemkvcon"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.makemkv.MakeMKV.plist",
-        "~/Library/Saved Application State/com.makemkv.MakeMKV.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "MakeMKV.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/MakeMKV.app/Contents/MacOS/makemkvcon"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/MakeMKV.app/Contents/MacOS/mmccextr"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/MakeMKV.app/Contents/MacOS/mmgplsrv"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/MakeMKV.app/Contents/MacOS/sdftool"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/MakeMKV",
+            "~/Library/Preferences/com.makemkv.MakeMKV.plist",
+            "~/Library/Saved Application State/com.makemkv.MakeMKV.savedState",
+            "~/Movies/.MakeMKV"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +59,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ipinfo/cli/archive/grepip-1.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e1c838ecac436e744b7808bf3a123be8ce6b72cc436dead64a0a13f409804ea8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/grepip/blobs/sha256:65a0fd31909860569cb2b9a1b020aeb04ba22aafdb8959c3af862e6ebcb21e76",
+          "sha256": "65a0fd31909860569cb2b9a1b020aeb04ba22aafdb8959c3af862e6ebcb21e76"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/grepip/blobs/sha256:8108736f9a3c6f0dbe0e8008960f0a964d8440e7801684165605c66aa36a29c3",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/grepip/blobs/sha256:1a55b8ad8fe7f08362c67d4b20ff629dc5f01fc611eae577f585a112fcece154",
           "sha256": "1a55b8ad8fe7f08362c67d4b20ff629dc5f01fc611eae577f585a112fcece154"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/grepip/blobs/sha256:05b3ea376ae3efc98375e42bd85b2e28fbc02fbb32730c166df0931b5c3bbef1",
+          "sha256": "05b3ea376ae3efc98375e42bd85b2e28fbc02fbb32730c166df0931b5c3bbef1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

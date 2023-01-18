@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/hexagonal-sun/bic/releases/download/v1.0.0/bic-v1.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "553324e39d87df59930d093a264c14176d5e3aaa24cd8bff276531fb94775100"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bic/blobs/sha256:b2949645cf730b7d5b1a9286c5134775190c8353a9e8dbc28af7414b97f63253",
+          "sha256": "b2949645cf730b7d5b1a9286c5134775190c8353a9e8dbc28af7414b97f63253"
+        },
         "monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bic/blobs/sha256:cfa83a9ccd1d192b77af48d3198acf0f082d9f929a6256bb978f293543210940",
@@ -66,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "gmp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -86,7 +94,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -103,5 +119,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "gmp",
+        "readline"
+      ]
+    }
+  }
 }

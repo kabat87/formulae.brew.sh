@@ -5,11 +5,11 @@
   "name": [
     "Avast Security"
   ],
-  "desc": null,
+  "desc": "Antivirus software",
   "homepage": "https://www.avast.com/",
-  "url": "http://download.ff.avast.com/mac/avast_security_online.dmg",
+  "url": "https://bits.avcdn.net/productfamily_ANTIVIRUS/insttype_FREE/platform_MAC/installertype_ONLINE/build_RELEASE",
   "appcast": null,
-  "version": "4.0,2.0",
+  "version": "15.0",
   "versions": {
   },
   "installed": null,
@@ -17,31 +17,39 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "script": {
-        "executable": "/Applications/Avast.app/Contents/Backend/hub/uninstall.sh",
-        "must_succeed": "false",
-        "sudo": "true"
-      },
-      "launchctl": [
-        "com.avast.hub",
-        "com.avast.hub.schedule",
-        "com.avast.hub.xpc"
-      ],
-      "pkgutil": [
-        "com.avast.AAFM",
-        "com.avast.pkg.hub"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "/Applications/Avast.app/Contents/Backend/hub/uninstall.sh",
+            "must_succeed": "false",
+            "sudo": "true"
+          },
+          "launchctl": [
+            "com.avast.hub.schedule",
+            "com.avast.hub.xpc",
+            "com.avast.hub"
+          ],
+          "pkgutil": [
+            "com.avast.AAFM",
+            "com.avast.pkg.hub"
+          ]
+        }
+      ]
     },
-    "Avast Security.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Preferences/com.avast.avast!.plist",
-        "~/Library/Cookies/com.avast.AAFM.binarycookies"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Install Avast Security.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Cookies/com.avast.AAFM.binarycookies",
+            "~/Library/Preferences/com.avast.avast!.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -49,5 +57,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

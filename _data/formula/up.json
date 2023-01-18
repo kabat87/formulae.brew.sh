@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/akavel/up/archive/v0.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3ea2161ce77e68d7e34873cc80324f372a3b3f63bed9f1ad1aefd7969dd0c1d1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/up/blobs/sha256:3f5a6065d0135d29db9a246ef73a18d6336ad72813783425cb6e109a93ea0a99",
+          "sha256": "3f5a6065d0135d29db9a246ef73a18d6336ad72813783425cb6e109a93ea0a99"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/up/blobs/sha256:d956b1e6e6d9d1e76beadfdff52cce9bc0b7440813cd046cc96aa18324bc787a",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/up/blobs/sha256:f3452e5a6d248a93e947fb5500bd7c5aad22fe77ad791b07c9fc7fe645b47170",
           "sha256": "f3452e5a6d248a93e947fb5500bd7c5aad22fe77ad791b07c9fc7fe645b47170"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/up/blobs/sha256:518b6745aef4837bb14288c365f26b448d0dbd76d47a996a9a9792330cad05c7",
+          "sha256": "518b6745aef4837bb14288c365f26b448d0dbd76d47a996a9a9792330cad05c7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

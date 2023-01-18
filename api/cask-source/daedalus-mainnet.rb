@@ -1,8 +1,8 @@
 cask "daedalus-mainnet" do
-  version "4.6.0,20052"
-  sha256 "4978236ec97f07e83500a57adac574f0d3addc6f950f2a3017cf6c4aef2d0449"
+  version "5.1.1,22358"
+  sha256 "2f2ade6cb1f944751e1637782e38888cee13fb67ef76b134dcb453aa1cfb8a0d"
 
-  url "https://update-cardano-mainnet.iohk.io/daedalus-#{version.csv.first}-mainnet-#{version.csv.second}.pkg",
+  url "https://update-cardano-mainnet.iohk.io/daedalus-#{version.csv.first}-mainnet-#{version.csv.second}-x86_64-darwin.pkg",
       verified: "update-cardano-mainnet.iohk.io/"
   name "Daedalus Mainnet"
   desc "Cryptocurrency wallet for ada on the Cardano blockchain"
@@ -11,7 +11,7 @@ cask "daedalus-mainnet" do
   livecheck do
     url "https://update-cardano-mainnet.iohk.io/daedalus-latest-version.json"
     strategy :page_match do |page|
-      match = page.match(%r{/daedalus[._-](\d+(?:\.\d+)+)[._-]mainnet[._-](\d+)\.pkg}i)
+      match = page.match(%r{/daedalus[._-](\d+(?:\.\d+)+)[._-]mainnet[._-](\d+)[._-]x86_64[._-]darwin\.pkg}i)
       next if match.blank?
 
       "#{match[1]},#{match[2]}"
@@ -21,7 +21,7 @@ cask "daedalus-mainnet" do
   auto_updates true
   depends_on macos: ">= :high_sierra"
 
-  pkg "daedalus-#{version.csv.first}-mainnet-#{version.csv.second}.pkg"
+  pkg "daedalus-#{version.csv.first}-mainnet-#{version.csv.second}-x86_64-darwin.pkg"
 
   uninstall pkgutil: "org.Daedalusmainnet.pkg"
 

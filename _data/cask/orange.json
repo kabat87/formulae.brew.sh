@@ -6,28 +6,32 @@
     "Orange"
   ],
   "desc": "Component-based data mining software",
-  "homepage": "https://orange.biolab.si/",
-  "url": "https://download.biolab.si/download/files/Orange3-3.31.1-Python3.8.8.dmg",
+  "homepage": "https://orangedatamining.com/",
+  "url": "https://download.biolab.si/download/files/Orange3-3.34.0-Python3.9.12.dmg",
   "appcast": null,
-  "version": "3.31.1",
+  "version": "3.34.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "be92fdeeeb3336456d56829bd473538e4abae70269285b7990f8cbc72a91951c",
+  "sha256": "d27bf04355c1791625e89b1960497d85923c04b3445d92a68e946b1755fa8259",
   "artifacts": [
-    [
-      "Orange3.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Orange",
-        "~/Library/Caches/Orange",
-        "~/Library/Logs/Orange",
-        "~/Library/Saved Application State/si.biolab.orange.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Orange3.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Orange",
+            "~/Library/Caches/Orange",
+            "~/Library/Logs/Orange",
+            "~/Library/Saved Application State/si.biolab.orange.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

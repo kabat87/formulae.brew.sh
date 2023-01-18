@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://plasmasturm.org/code/gtk-chtheme/gtk-chtheme-0.3.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "26f4b6dd60c220d20d612ca840b6beb18b59d139078be72c7b1efefc447df844"
     }
   },
   "revision": 3,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gtk-chtheme/blobs/sha256:5b0a66205d00b377659f777db9aa0196af0ba64519bcd759ba7bc9da55afb37e",
+          "sha256": "5b0a66205d00b377659f777db9aa0196af0ba64519bcd759ba7bc9da55afb37e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtk-chtheme/blobs/sha256:a6b9e2b55273be2bbfe8b54a82757e22c4a19e45a1f63780500499e73393d408",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtk-chtheme/blobs/sha256:8db79039412079abddb969b631131eb3a85f4e90edbcda84bffe4505e55f44b7",
           "sha256": "8db79039412079abddb969b631131eb3a85f4e90edbcda84bffe4505e55f44b7"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gtk-chtheme/blobs/sha256:98eeaded4eeae18b8aab5b9a91a8063facaa044a62cdfa7ad0afeaa15cad6259",
+          "sha256": "98eeaded4eeae18b8aab5b9a91a8063facaa044a62cdfa7ad0afeaa15cad6259"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtk-chtheme/blobs/sha256:5af49da12ab0e1799377eb160cff68283b7a24e0149135603d35810e6c0d7e55",
           "sha256": "5af49da12ab0e1799377eb160cff68283b7a24e0149135603d35810e6c0d7e55"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gtk-chtheme/blobs/sha256:8b7b31e4dee87e90caa847fadfb056eb44f063a6903528eeb3238ab6a78b8ca9",
+          "sha256": "8b7b31e4dee87e90caa847fadfb056eb44f063a6903528eeb3238ab6a78b8ca9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +101,9 @@
   "dependencies": [
     "gettext",
     "gtk+"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/bibutils/bibutils_7.2_src.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6e028aef1e8a6b3e5acef098584a7bb68708f35cfe74011b341c11fea5e4b5c3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bibutils/blobs/sha256:8a42ed6f44138819d700f274b2543a42e47e6f398039b23318d57a878a02cd07",
+          "sha256": "8a42ed6f44138819d700f274b2543a42e47e6f398039b23318d57a878a02cd07"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bibutils/blobs/sha256:085548415c78f47a9185a323cc633d3005de95d1422e882f18393d7f7cf665cb",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bibutils/blobs/sha256:fe66061892ae39db121b9393cbce117888d4ba59aaa251269710f88d6b38b0eb",
           "sha256": "fe66061892ae39db121b9393cbce117888d4ba59aaa251269710f88d6b38b0eb"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bibutils/blobs/sha256:31939f0ba7545b32ed0c2ad75c3efdad4bd08a6d81680a29bac20e3389fe51c6",
+          "sha256": "31939f0ba7545b32ed0c2ad75c3efdad4bd08a6d81680a29bac20e3389fe51c6"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

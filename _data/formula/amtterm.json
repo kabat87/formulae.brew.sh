@@ -10,7 +10,7 @@
 
   ],
   "desc": "Serial-over-LAN (sol) client for Intel AMT",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://www.kraxel.org/blog/linux/amtterm/",
   "versions": {
     "stable": "1.6",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.kraxel.org/releases/amtterm/amtterm-1.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1242cea467827aa1e2e91b41846229ca0a5b3f3e09260b0df9d78dc875075590"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/amtterm/blobs/sha256:48558be96b4a9b8e93d2df1bf55c3b525692ae0a6cec72f22bb222c5debf5073",
+          "sha256": "48558be96b4a9b8e93d2df1bf55c3b525692ae0a6cec72f22bb222c5debf5073"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/amtterm/blobs/sha256:3a59e80adf7dd88384f4020c67177de6876f431769b7bd3274759b29bda7204b",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/amtterm/blobs/sha256:7130d5cc879edc7425791e096234f76891e742ebcfcc5c9a7043ebad0fbf8afd",
           "sha256": "7130d5cc879edc7425791e096234f76891e742ebcfcc5c9a7043ebad0fbf8afd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/amtterm/blobs/sha256:ef2e287abf3b6674d877ea82dd465c47e536e0f0d6ae7c0c69d991647da8290a",
+          "sha256": "ef2e287abf3b6674d877ea82dd465c47e536e0f0d6ae7c0c69d991647da8290a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -65,13 +76,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/amtterm/blobs/sha256:29180333af292e440f077a00a958ceb6f0035bcee9945233bc33177d0b3549f2",
           "sha256": "29180333af292e440f077a00a958ceb6f0035bcee9945233bc33177d0b3549f2"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/amtterm/blobs/sha256:8508f3178996f322def37aa3bdce2573379e73682c5393fb6e952f18fdfbc22c",
+          "sha256": "8508f3178996f322def37aa3bdce2573379e73682c5393fb6e952f18fdfbc22c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +126,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "gtk+3",
+        "vte3"
+      ]
+    }
+  }
 }

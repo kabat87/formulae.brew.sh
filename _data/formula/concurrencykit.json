@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/concurrencykit/ck/archive/0.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e730cb448fb0ecf9d19bf4c7efe9efc3c04dd9127311d87d8f91484742b0da24"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/concurrencykit/blobs/sha256:e5dd4b47a7200e0179e740bfa48f34fa0194263e038020b97303e9b2f7cc93d7",
+          "sha256": "e5dd4b47a7200e0179e740bfa48f34fa0194263e038020b97303e9b2f7cc93d7"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/concurrencykit/blobs/sha256:b2d070df1dd5cad29f20b6a5192c2683086af490bd768a3b698e0fddb657cc2a",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/concurrencykit/blobs/sha256:fad8ab6678349a6ae3a81ba7a8264591868f8c180c867f06ad98cb422d9627bf",
           "sha256": "fad8ab6678349a6ae3a81ba7a8264591868f8c180c867f06ad98cb422d9627bf"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/concurrencykit/blobs/sha256:5543bda088a7d54b530aed705e22028a9c6a6bc75da68bad81c0afbf4b4d4b12",
+          "sha256": "5543bda088a7d54b530aed705e22028a9c6a6bc75da68bad81c0afbf4b4d4b12"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

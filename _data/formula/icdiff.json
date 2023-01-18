@@ -13,18 +13,19 @@
   "license": "PSF-2.0",
   "homepage": "https://github.com/jeffkaufman/icdiff",
   "versions": {
-    "stable": "2.0.4",
+    "stable": "2.0.6",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/jeffkaufman/icdiff/archive/release-2.0.4.tar.gz",
+      "url": "https://github.com/jeffkaufman/icdiff/archive/release-2.0.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8f79b82032696d2eea2a3acf722cd34cf45215d4b09b52139880626a2b0d360e"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/icdiff/blobs/sha256:fc5be5fa45223aa9fd58fa6230a7e15c65a1878b94add36c62328f5295438b8e",
-          "sha256": "fc5be5fa45223aa9fd58fa6230a7e15c65a1878b94add36c62328f5295438b8e"
+          "url": "https://ghcr.io/v2/homebrew/core/icdiff/blobs/sha256:761b406100bafad194eaf0fd5f699be0c7676b34aaa2d6f07665e03cdeede2f5",
+          "sha256": "761b406100bafad194eaf0fd5f699be0c7676b34aaa2d6f07665e03cdeede2f5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

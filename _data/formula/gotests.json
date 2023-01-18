@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/cweill/gotests/archive/refs/tags/v1.6.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f0236dbebd8a3fd19ec4260f490cb164240e1d518d3971b42872978f7a50c040"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gotests/blobs/sha256:cb95a89300241d532d54e78bf10b6190a2172c6e83a8e32e00805624dfa9cd69",
+          "sha256": "cb95a89300241d532d54e78bf10b6190a2172c6e83a8e32e00805624dfa9cd69"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gotests/blobs/sha256:a2daf6aeff322ba4de342bb2d21b485732ae4851575387860ff91462e14e8d31",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gotests/blobs/sha256:ca761cc187d08b5d211562b383610d614c67a4533de9c552f6e2b57a07b7ed5b",
           "sha256": "ca761cc187d08b5d211562b383610d614c67a4533de9c552f6e2b57a07b7ed5b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gotests/blobs/sha256:14616cbad502d944d8462efa61b0da7a0f74cd4f1fd01fb1b3e68dcd391d1ddb",
+          "sha256": "14616cbad502d944d8462efa61b0da7a0f74cd4f1fd01fb1b3e68dcd391d1ddb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

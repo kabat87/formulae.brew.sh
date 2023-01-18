@@ -13,75 +13,82 @@
   "license": "libtiff",
   "homepage": "https://libtiff.gitlab.io/libtiff/",
   "versions": {
-    "stable": "4.3.0",
+    "stable": "4.4.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.osgeo.org/libtiff/tiff-4.3.0.tar.gz",
+      "url": "https://download.osgeo.org/libtiff/tiff-4.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "917223b37538959aca3b790d2d73aa6e626b688e02dcda272aec24c2f498abed"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:4f8764b4cf388d7fdf727b2c61d1b48efb43ba4d337949bf34a932c08361681a",
+          "sha256": "4f8764b4cf388d7fdf727b2c61d1b48efb43ba4d337949bf34a932c08361681a"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:112b3bb5e0654331812403b0a6e62b4d1ddbcb1634894898072633d24fe8adee",
-          "sha256": "112b3bb5e0654331812403b0a6e62b4d1ddbcb1634894898072633d24fe8adee"
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:b48b8b5166bc548be184e03892adf5259dad564bee1cb62ddb84c1bdf21caaeb",
+          "sha256": "b48b8b5166bc548be184e03892adf5259dad564bee1cb62ddb84c1bdf21caaeb"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:bd25355f2efb850a0e70c9ae208f0cd16caa0bfcaba8931d9ea9d374c5cf050a",
-          "sha256": "bd25355f2efb850a0e70c9ae208f0cd16caa0bfcaba8931d9ea9d374c5cf050a"
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:b887dbf7a606f138ef8ec2c328110ead07dea77452e71a1e89a50e25326215dd",
+          "sha256": "b887dbf7a606f138ef8ec2c328110ead07dea77452e71a1e89a50e25326215dd"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:d93fb1487305afa278c639a94b4fde2090d02f45239a0fe4b2ca574bf9fbc684",
+          "sha256": "d93fb1487305afa278c639a94b4fde2090d02f45239a0fe4b2ca574bf9fbc684"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:c4c73629e4bc92019e02fb19aced2a5d35cd1b9c4e20452d490efb97b7045a18",
-          "sha256": "c4c73629e4bc92019e02fb19aced2a5d35cd1b9c4e20452d490efb97b7045a18"
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:f110c775f85a880a30ff43f738df534ee76f5dc55cc62b902870515adf03f15e",
+          "sha256": "f110c775f85a880a30ff43f738df534ee76f5dc55cc62b902870515adf03f15e"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:09f08e1168780c12c8f1526038eb4f4692624c85a9e78099b8ae2c58e39f5289",
-          "sha256": "09f08e1168780c12c8f1526038eb4f4692624c85a9e78099b8ae2c58e39f5289"
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:ac18fea512fc702586831b2907910abd31573bc210231fd124945c05d7312921",
+          "sha256": "ac18fea512fc702586831b2907910abd31573bc210231fd124945c05d7312921"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:e413c1170e33242eb941683d14ae51de594a013b8c6e5151f53b3352358b26fe",
-          "sha256": "e413c1170e33242eb941683d14ae51de594a013b8c6e5151f53b3352358b26fe"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:06248bbf04ff5180541a90d60bae68246b5f1665d42909be471fdc9a6781a718",
-          "sha256": "06248bbf04ff5180541a90d60bae68246b5f1665d42909be471fdc9a6781a718"
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:c9a4d1faa66a576710c10ef26cd970175a8ab20f8c80cd0e9265eb0dd1a2adec",
+          "sha256": "c9a4d1faa66a576710c10ef26cd970175a8ab20f8c80cd0e9265eb0dd1a2adec"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:e63441d702b567a622495e391564b7bc1f2352501fe982709469c6f609a6abb0",
-          "sha256": "e63441d702b567a622495e391564b7bc1f2352501fe982709469c6f609a6abb0"
+          "url": "https://ghcr.io/v2/homebrew/core/libtiff/blobs/sha256:c18c93cb64098dd7415e87fc3acd9a8db9a475c15202244cc9947b24ae66dd80",
+          "sha256": "c18c93cb64098dd7415e87fc3acd9a8db9a475c15202244cc9947b24ae66dd80"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "autoconf@2.69",
-    "automake",
-    "libtool"
+
   ],
   "dependencies": [
-    "jpeg"
+    "jpeg-turbo",
+    "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,16 +108,32 @@
   "caveats": null,
   "installed": [
     {
-      "version": "4.3.0",
+      "version": "4.4.0_1",
       "used_options": [
 
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154589,
       "runtime_dependencies": [
         {
-          "full_name": "jpeg",
-          "version": "9d",
+          "full_name": "jpeg-turbo",
+          "version": "2.1.4",
+          "declared_directly": true
+        },
+        {
+          "full_name": "lz4",
+          "version": "1.9.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "xz",
+          "version": "5.2.9",
+          "declared_directly": false
+        },
+        {
+          "full_name": "zstd",
+          "version": "1.5.2",
           "declared_directly": true
         }
       ],
@@ -118,7 +141,7 @@
       "installed_on_request": false
     }
   ],
-  "linked_keg": "4.3.0",
+  "linked_keg": "4.4.0_1",
   "pinned": false,
   "outdated": false,
   "deprecated": false,
@@ -126,5 +149,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

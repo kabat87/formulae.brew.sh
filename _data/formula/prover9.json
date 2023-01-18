@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.cs.unm.edu/~mccune/prover9/download/LADR-2009-11A.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c32bed5807000c0b7161c276e50d9ca0af0cb248df2c1affb2f6fc02471b51d0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prover9/blobs/sha256:e4ab7e6152098318be4a839b1fa2c6e50dc6868ef6b08c8d34d2175aac1736fe",
+          "sha256": "e4ab7e6152098318be4a839b1fa2c6e50dc6868ef6b08c8d34d2175aac1736fe"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prover9/blobs/sha256:4f864bc7f43cde5bf0e7f5b69e26879833b53e5d1c3a8b9404c16062cbe7ca14",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prover9/blobs/sha256:3d5bf0492b97661c22bc8077463c7f577971e1a6f2db5a70f0bb86337c8de02f",
           "sha256": "3d5bf0492b97661c22bc8077463c7f577971e1a6f2db5a70f0bb86337c8de02f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prover9/blobs/sha256:605c09fc8888af3a28e2b8de5b41fdb41ca19a8eb2d4f2f7f7e47187eae6ac4c",
+          "sha256": "605c09fc8888af3a28e2b8de5b41fdb41ca19a8eb2d4f2f7f7e47187eae6ac4c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -9,7 +9,7 @@
   "homepage": "https://www.econtechnologies.com/",
   "url": "https://downloads.econtechnologies.com/CA_Mac_Download.dmg",
   "appcast": null,
-  "version": "1.9.9",
+  "version": "2.2.2",
   "versions": {
   },
   "installed": null,
@@ -17,18 +17,26 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.econtechnologies.pkg.ChronoAgent",
-      "launchctl": "com.econtechnologies.ChronoAgentRemote",
-      "quit": "com.econtechnologies.backgrounder.CAMonitorBackgrounder",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.econtechnologies.pkg.ChronoAgent",
+          "launchctl": "com.econtechnologies.ChronoAgentRemote",
+          "quit": "com.econtechnologies.backgrounder.CAMonitorBackgrounder"
+        }
+      ]
     },
-    "Install.pkg (Pkg)"
+    {
+      "pkg": [
+        "Install.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

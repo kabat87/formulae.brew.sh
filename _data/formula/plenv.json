@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tokuhirom/plenv/archive/2.3.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "12004cfed7ed083911dbda3228a9fb9ce6e40e259b34e791d970c4f335935fa3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/plenv/blobs/sha256:9b7e0d4973dfe5c197b36672d2d07f355d90b831b36189208c021770bfa1465d",
+          "sha256": "9b7e0d4973dfe5c197b36672d2d07f355d90b831b36189208c021770bfa1465d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/plenv/blobs/sha256:9b7e0d4973dfe5c197b36672d2d07f355d90b831b36189208c021770bfa1465d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/plenv/blobs/sha256:8003aaa1404beacb1ef33010bbf1ed82abb2436e9a3764a6d5f2cac83aa085ba",
           "sha256": "8003aaa1404beacb1ef33010bbf1ed82abb2436e9a3764a6d5f2cac83aa085ba"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/plenv/blobs/sha256:3cb9ef92ada0b01f97c1ccd746cd976673b8b21b0672995dbdf5fc0205aa0795",
+          "sha256": "3cb9ef92ada0b01f97c1ccd746cd976673b8b21b0672995dbdf5fc0205aa0795"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "perl-build"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

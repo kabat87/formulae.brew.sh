@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://bitbucket.org/mhulden/foma/downloads/foma-0.9.18.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cb380f43e86fc7b3d4e43186db3e7cff8f2417e18ea69cc991e466a3907d8cbd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/foma/blobs/sha256:c5378bb8f0183650512e47377197a74d7603a8f05c6d6e27cc1c67cbc478b524",
+          "sha256": "c5378bb8f0183650512e47377197a74d7603a8f05c6d6e27cc1c67cbc478b524"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/foma/blobs/sha256:bad60b2c29b968a05b7c9f7cc7a7d3350bb0dfd831e9f788d2eb1a102dd6403b",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/foma/blobs/sha256:8cac09b69356887a31f4d2314b9eb7a193ad21858b0cc43ade7d48a485e4b55d",
           "sha256": "8cac09b69356887a31f4d2314b9eb7a193ad21858b0cc43ade7d48a485e4b55d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/foma/blobs/sha256:dda2e7f7f7aedfd6bb1dccff1a489c0787b8e2b2680969e57525db9c3ba04b8f",
+          "sha256": "dda2e7f7f7aedfd6bb1dccff1a489c0787b8e2b2680969e57525db9c3ba04b8f"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "zlib",
+        "readline"
+      ]
+    }
+  }
 }

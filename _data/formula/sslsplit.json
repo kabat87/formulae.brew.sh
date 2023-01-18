@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/droe/sslsplit/archive/0.5.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3a6b9caa3552c9139ea5c9841d4bf24d47764f14b1b04b7aae7fa2697641080b"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sslsplit/blobs/sha256:74357200610d41f36a3f2704cf7c877a3ad874ab9d1f032d711f7045f73f4fe8",
+          "sha256": "74357200610d41f36a3f2704cf7c877a3ad874ab9d1f032d711f7045f73f4fe8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sslsplit/blobs/sha256:8d28aedb6e1d3750430f1016b5f3ec4a4181afbc2186174c06bae99a186b6de8",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sslsplit/blobs/sha256:ccfd4cc54565e58d41ce627ab1ee785de30c96fa29ca3637c3ee6e84320499dc",
           "sha256": "ccfd4cc54565e58d41ce627ab1ee785de30c96fa29ca3637c3ee6e84320499dc"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sslsplit/blobs/sha256:ed9f42f9154b927c949d4e3c0d00c12a6869ef734de00a2c59effc46dc646be4",
+          "sha256": "ed9f42f9154b927c949d4e3c0d00c12a6869ef734de00a2c59effc46dc646be4"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "libnet",
     "libpcap",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -117,5 +130,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/RGF-team/rgf/archive/3.12.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c197977b8709c41aa61d342a01497d26f1ad704191a2a6b699074fe7ee57dc86"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rgf/blobs/sha256:b4c1f942c801c42fb03224c8b844b9a93c2c4b10c03f2473b0b8023336bcabdd",
+          "sha256": "b4c1f942c801c42fb03224c8b844b9a93c2c4b10c03f2473b0b8023336bcabdd"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rgf/blobs/sha256:b0af19017e4f72fab3f3d8d0d76b8b3071bc2b2788c4db4dea67d2e8f5b1abe1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rgf/blobs/sha256:1cf3bea65341e90b931287b0171dcb3cf56368ee38d290fc8e42c58527bea22a",
           "sha256": "1cf3bea65341e90b931287b0171dcb3cf56368ee38d290fc8e42c58527bea22a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rgf/blobs/sha256:3bdd9e308cab9ee5cf6f32082cad81c72de1dbdbca272650e9792b04996fb832",
+          "sha256": "3bdd9e308cab9ee5cf6f32082cad81c72de1dbdbca272650e9792b04996fb832"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -55,13 +66,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rgf/blobs/sha256:e7865fed340b07b2bdf21c3e70fe2ec82019a58e5758e66314d0a48ba7982d4a",
           "sha256": "e7865fed340b07b2bdf21c3e70fe2ec82019a58e5758e66314d0a48ba7982d4a"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rgf/blobs/sha256:4cd5ac79b7dd6fb913e3ca16bdb1ca96e596f3aecd293a6059d70b1ea7d5abdd",
+          "sha256": "4cd5ac79b7dd6fb913e3ca16bdb1ca96e596f3aecd293a6059d70b1ea7d5abdd"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,6 +84,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -98,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

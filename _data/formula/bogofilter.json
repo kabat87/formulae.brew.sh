@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/bogofilter/bogofilter-stable/bogofilter-1.2.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3248a1373bff552c500834adbea4b6caee04224516ae581fb25a4c6a6dee89ea"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bogofilter/blobs/sha256:3beb85ddc53ce9d24e4e3b413ef5d1f054f5aa79608351d6c2f73d230c26f37f",
+          "sha256": "3beb85ddc53ce9d24e4e3b413ef5d1f054f5aa79608351d6c2f73d230c26f37f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bogofilter/blobs/sha256:25e3974a7aa8d9dcc2c3e95b85e7a4e9abba388adf54470dcfd705d29ba3c6d1",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bogofilter/blobs/sha256:2206ad532a38d489deb48bb9cafec00c9b98a09f621f7f208f95cc36387dafb4",
           "sha256": "2206ad532a38d489deb48bb9cafec00c9b98a09f621f7f208f95cc36387dafb4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bogofilter/blobs/sha256:565a7ff34275e08445e326d292e53d1a24483c62e95e7f81c9ba1374c5a1f46e",
+          "sha256": "565a7ff34275e08445e326d292e53d1a24483c62e95e7f81c9ba1374c5a1f46e"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "berkeley-db"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

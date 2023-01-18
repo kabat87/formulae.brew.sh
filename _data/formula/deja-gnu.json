@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "87daefacd7958b4a69f88c6856dbd1634261963c414079d0c371f589cd66a2e3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/deja-gnu/blobs/sha256:aae2cc17f126ef380eadd7d9a4909320f38d3b62c5722a2f9a777090cfe61720",
+          "sha256": "aae2cc17f126ef380eadd7d9a4909320f38d3b62c5722a2f9a777090cfe61720"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/deja-gnu/blobs/sha256:aae2cc17f126ef380eadd7d9a4909320f38d3b62c5722a2f9a777090cfe61720",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/deja-gnu/blobs/sha256:aae2cc17f126ef380eadd7d9a4909320f38d3b62c5722a2f9a777090cfe61720",
           "sha256": "aae2cc17f126ef380eadd7d9a4909320f38d3b62c5722a2f9a777090cfe61720"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/deja-gnu/blobs/sha256:0369e312459148a10582a3d6f100167b44a80cfec0f03223099ecdaab7097551",
+          "sha256": "0369e312459148a10582a3d6f100167b44a80cfec0f03223099ecdaab7097551"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/lh3/bioawk/archive/v1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5cbef3f39b085daba45510ff450afcf943cfdfdd483a546c8a509d3075ff51b5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bioawk/blobs/sha256:a80d9d6887393ec604646dd2e79090bda1034f5947488995c383d29b8fbb2f47",
+          "sha256": "a80d9d6887393ec604646dd2e79090bda1034f5947488995c383d29b8fbb2f47"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bioawk/blobs/sha256:a568547e0fb85d1d0678d157c93aee71710f58d3bc4591186365ae28e4502b24",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bioawk/blobs/sha256:de4d41adcf20cf87de3d2310d98c1dbfbff95eb3432e6d0888be964889f024c6",
           "sha256": "de4d41adcf20cf87de3d2310d98c1dbfbff95eb3432e6d0888be964889f024c6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bioawk/blobs/sha256:d10e6430821b1876cf8ad863dce1978f7aa4564bc3508e48f7cfa9d8e4d89306",
+          "sha256": "d10e6430821b1876cf8ad863dce1978f7aa4564bc3508e48f7cfa9d8e4d89306"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -126,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

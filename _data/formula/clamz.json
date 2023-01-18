@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/clamz/clamz-0.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5a63f23f15dfa6c2af00ff9531ae9bfcca0facfe5b1aa82790964f050a09832b"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/clamz/blobs/sha256:b862bbcf8083563c7cd92b4325eabe6d69c8b7b178dd999181c2f0daa000e400",
+          "sha256": "b862bbcf8083563c7cd92b4325eabe6d69c8b7b178dd999181c2f0daa000e400"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/clamz/blobs/sha256:33fb7758d8552198b057d9ee8b7bf3e5c1e3b4ba580deb9a00f44edc468feda6",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/clamz/blobs/sha256:865348260858f74e779a47308f521ad54168b7a5d521313993a5f7f28fa53f44",
           "sha256": "865348260858f74e779a47308f521ad54168b7a5d521313993a5f7f28fa53f44"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/clamz/blobs/sha256:b86ee0daaee591232ce488b2a0a6e5d13266b59d715bba72e9e1158b2c6376fc",
+          "sha256": "b86ee0daaee591232ce488b2a0a6e5d13266b59d715bba72e9e1158b2c6376fc"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/clamz/blobs/sha256:b960106e00e01e4dd8ff259feab6e0a1e399d373aa79d2b5d622f2ccf6f1e41b",
           "sha256": "b960106e00e01e4dd8ff259feab6e0a1e399d373aa79d2b5d622f2ccf6f1e41b"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/clamz/blobs/sha256:e0ba09e61f28b4d224f20b0922277b849bff48ce8c7738e8d22fe1a514d56fe2",
-          "sha256": "e0ba09e61f28b4d224f20b0922277b849bff48ce8c7738e8d22fe1a514d56fe2"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clamz/blobs/sha256:bedccbcf92f7884cf99615ea347345f035a6693e953b6ebf90e51695e4351c95",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +106,9 @@
   "dependencies": [
     "libgcrypt",
     "libgpg-error"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -130,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

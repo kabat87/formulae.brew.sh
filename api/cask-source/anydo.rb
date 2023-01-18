@@ -1,8 +1,8 @@
 cask "anydo" do
-  version "4.2.158"
-  sha256 "727326c39fabe01c8b0ff26346f729bad3c1a135881358ad96d52d6c2778b929"
+  version "5.0.18"
+  sha256 "41dde3f73e41942ab1f551406dbb29af6068ec6895882abdce61aa21e8ef2b48"
 
-  url "https://electron-app.any.do/Any.do-#{version}.dmg"
+  url "https://electron-app.any.do/Anydo-#{version}.dmg"
   name "Any.do"
   desc "Reminder, planner & calendar"
   homepage "https://www.any.do/"
@@ -14,7 +14,7 @@ cask "anydo" do
 
   depends_on macos: ">= :catalina"
 
-  app "Any.do.app"
+  app "Anydo.app"
 
   zap trash: [
     "~/Library/Application Support/@anydo",

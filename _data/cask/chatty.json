@@ -7,23 +7,29 @@
   ],
   "desc": "Twitch chat client",
   "homepage": "https://chatty.github.io/",
-  "url": "https://github.com/chatty/chatty/releases/download/v0.16/Chatty_0.16.zip",
+  "url": "https://github.com/chatty/chatty/releases/download/v0.21/Chatty_0.21.zip",
   "appcast": null,
-  "version": "0.16",
+  "version": "0.21",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "bc31b4889fe2292c7a7620233244da80fe4c703f5126d0994ece5accee03fe0d",
+  "sha256": "d0907aaea49ae60d217a78d96a3d911267e31e0763c6f71810e163f49181398f",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "Chatty"
-    ],
     {
-      "trash": "~/.chatty",
-      "signal": {
-      }
+      "preflight": "  preflight do\n    # There is no sub-folder in the ZIP; the root *is* the folder\n    FileUtils.mv(staged_path.children, staged_path.join(\"Chatty\").tap(&:mkpath))\n  end\n"
+    },
+    {
+      "suite": [
+        "Chatty"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.chatty"
+        }
+      ]
     }
   ],
   "caveats": "chatty requires Java 7+. You can install the latest version with:\n  brew install --cask temurin\n",
@@ -31,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

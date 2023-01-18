@@ -3,26 +3,37 @@
   "full_token": "assinador-serpro",
   "tap": "homebrew/cask",
   "name": [
-    "assinador-serpro"
+    "Assinador Serpro"
   ],
   "desc": "Validate and sign documents using digital certificates",
   "homepage": "https://www.serpro.gov.br/links-fixos-superiores/assinador-digital/assinador-serpro",
-  "url": "https://www.serpro.gov.br/links-fixos-superiores/assinador-digital/assinador-serpro/arquivos/assinador-serpro-3-0-0-instalador.dmg",
+  "url": "https://www.serpro.gov.br/links-fixos-superiores/assinador-digital/assinador-serpro/arquivos/AssinadorSerpro4.0.2.mpkg.zip",
   "appcast": null,
-  "version": "3.0.0",
+  "version": "4.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a981db5b5a6a250c24565f031aa58a9fb2723ac4cbfcd3db74dbb7cdd53ca6df",
+  "sha256": "4ed47e37da89b5fe80568d14222407de9711f87d8e6c8a9505b590cd8d69af8a",
   "artifacts": [
-    [
-      "Assinador Serpro.app"
-    ],
     {
-      "trash": "~/Library/Preferences/org.demoiselle.signer.serpro.desktop.Main.plist",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "br.gov.serpro.desktop.assinador"
+        }
+      ]
+    },
+    {
+      "pkg": [
+        "AssinadorSerpro-4.0.2.mpkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/org.demoiselle.signer.serpro.desktop.Main.plist"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

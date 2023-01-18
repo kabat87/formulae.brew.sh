@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/knik0/faac/archive/refs/tags/1_30.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "adc387ce588cca16d98c03b6ec1e58f0ffd9fc6eadb00e254157d6b16203b2d2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/faac/blobs/sha256:1af7b3a977137c5e1a3a3e8466fcbeddfb77f7656b07e790530ed90c3f85b819",
+          "sha256": "1af7b3a977137c5e1a3a3e8466fcbeddfb77f7656b07e790530ed90c3f85b819"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/faac/blobs/sha256:413a14d54cc48a4fd7ae0363438f8ef75c0f0e076a889d3484cb93afa4b464aa",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/faac/blobs/sha256:0e3e4e7ac9a55ca918a495b7ae577fb89e7d575e8ae52d8a8f2fd989b56f38f1",
           "sha256": "0e3e4e7ac9a55ca918a495b7ae577fb89e7d575e8ae52d8a8f2fd989b56f38f1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/faac/blobs/sha256:0cc0b9e690f4d687b4c531359f036e6f7bdd63fb20c19aab22ffb972917f8958",
+          "sha256": "0cc0b9e690f4d687b4c531359f036e6f7bdd63fb20c19aab22ffb972917f8958"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +86,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -105,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

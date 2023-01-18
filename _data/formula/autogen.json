@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/autogen/rel5.18.16/autogen-5.18.16.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f8a13466b48faa3ba99fe17a069e71c9ab006d9b1cfabe699f8c60a47d5bb49a"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/autogen/blobs/sha256:3158365c07858e79995b689eb2e3d91c3e666db591d7b932d73c895aefc9ad0e",
+          "sha256": "3158365c07858e79995b689eb2e3d91c3e666db591d7b932d73c895aefc9ad0e"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/autogen/blobs/sha256:002ff8cce7e99ea4013348ada75389cb74804dcf3fa810488aeed5812f160b81",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/autogen/blobs/sha256:96cccae43990d233afe756eef8b9d700c7fc6ab316b3d119a809df04e04289dc",
           "sha256": "96cccae43990d233afe756eef8b9d700c7fc6ab316b3d119a809df04e04289dc"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/autogen/blobs/sha256:914ff2b610598f432b4bd816bf7149c1a05a828b797260b74c53f9811f950d2d",
+          "sha256": "914ff2b610598f432b4bd816bf7149c1a05a828b797260b74c53f9811f950d2d"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +86,9 @@
   ],
   "dependencies": [
     "guile"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

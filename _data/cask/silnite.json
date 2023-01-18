@@ -7,21 +7,27 @@
   ],
   "desc": "Checks EFI firmware and security data file updates",
   "homepage": "https://eclecticlight.co/lockrattler-systhist/",
-  "url": "https://eclecticlightdotcom.files.wordpress.com/2021/12/silnite6.zip",
+  "url": "https://eclecticlightdotcom.files.wordpress.com/2022/10/silnite9.zip",
   "appcast": null,
-  "version": "6,2021.12",
+  "version": "9,2022.10",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "932117c39f351e6933f295a52b222cde4bf18d3a069dadc9bd5cffc4caab965a",
+  "sha256": "2622c7f4b382bf830f8dc884d4cb2a6cb676212b9b212c6c0dd87324e753f7c0",
   "artifacts": [
     {
-      "pkgutil": "co.eclecticlight.pkg.silniteInstaller",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "co.eclecticlight.pkg.silniteInstaller"
+        }
+      ]
     },
-    "silnite6/silniteInstaller.pkg (Pkg)"
+    {
+      "pkg": [
+        "silnite9/silniteInstaller.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -33,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

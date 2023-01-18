@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/cdrdao/cdrdao-1.2.4.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "358d9cb83370ceaecdc60564cbf14c2ea2636eac60a966e2461c011ba09853b4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cdrdao/blobs/sha256:be033aee75694dcc9feb66deac2b9e0058041f18979bf9b5228c1e9a0f9cd572",
+          "sha256": "be033aee75694dcc9feb66deac2b9e0058041f18979bf9b5228c1e9a0f9cd572"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cdrdao/blobs/sha256:e5c979c90b6e103d80dcb19129cd5f1506ee3c72278641038c3c05c290646ad8",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cdrdao/blobs/sha256:29b520f278e11f6742704d93aa391c44dc5cb386f04610fefb07a787fbcf0595",
           "sha256": "29b520f278e11f6742704d93aa391c44dc5cb386f04610fefb07a787fbcf0595"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cdrdao/blobs/sha256:9637d2ce7278309b853b12efad41de7aaa98617aa917db3b4b935c4aad8bf2d3",
+          "sha256": "9637d2ce7278309b853b12efad41de7aaa98617aa917db3b4b935c4aad8bf2d3"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -98,6 +108,9 @@
     "libao",
     "libvorbis",
     "mad"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -126,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

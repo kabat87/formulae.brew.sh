@@ -10,18 +10,19 @@
 
   ],
   "desc": "Library for Linux that makes using posix capabilities easy",
-  "license": "LGPL-2.1-or-later",
+  "license": "LGPL-2.1-or-later and GPL-2.0-or-later",
   "homepage": "https://people.redhat.com/sgrubb/libcap-ng",
   "versions": {
-    "stable": "0.8.2",
-    "head": null,
+    "stable": "0.8.3",
+    "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/stevegrubb/libcap-ng/archive/v0.8.2.tar.gz",
+      "url": "https://people.redhat.com/sgrubb/libcap-ng/libcap-ng-0.8.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bed6f6848e22bb2f83b5f764b2aef0ed393054e803a8e3a8711cb2a39e6b492d"
     }
   },
   "revision": 0,
@@ -33,27 +34,26 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libcap-ng/blobs/sha256:d1ebadf56af8023e0f2476d8d74827ba4a821c9d9e8319458ba360a185e51ec5",
-          "sha256": "d1ebadf56af8023e0f2476d8d74827ba4a821c9d9e8319458ba360a185e51ec5"
+          "url": "https://ghcr.io/v2/homebrew/core/libcap-ng/blobs/sha256:176901077020fcb6da35d20c9e52d9787d09d18965491176bd4f4879587a34a0",
+          "sha256": "176901077020fcb6da35d20c9e52d9787d09d18965491176bd4f4879587a34a0"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "autoconf",
-    "automake",
-    "libtool",
-    "python@3.10",
+    "python@3.11",
     "swig"
   ],
   "dependencies": [
 
+  ],
+  "test_dependencies": [
+    "python@3.11"
   ],
   "recommended_dependencies": [
 
@@ -62,9 +62,7 @@
 
   ],
   "uses_from_macos": [
-    {
-      "m4": "build"
-    }
+
   ],
   "requirements": [
     {
@@ -92,5 +90,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

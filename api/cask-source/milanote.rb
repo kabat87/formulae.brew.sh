@@ -1,6 +1,6 @@
 cask "milanote" do
-  version "3.0.15"
-  sha256 "6529dffd061e072f334a35e6a7e336d4c6812026478f5e08cb4a26080ad27c8a"
+  version "3.3.28"
+  sha256 "d83edabbd03fb6b8d666ea4304c291289f985f20ff002d52a687e3e0fdc6a981"
 
   url "https://milanote-app-releases.s3.amazonaws.com/Milanote-#{version}.dmg",
       verified: "milanote-app-releases.s3.amazonaws.com/"
@@ -9,8 +9,8 @@ cask "milanote" do
   homepage "https://www.milanote.com/"
 
   livecheck do
-    url "https://www.milanote.com/download-mac-app"
-    regex(/href=.*?Milanote[._-]?v?(\d+(?:\.\d+)+)\.dmg/i)
+    url "https://milanote-app-releases.s3.amazonaws.com/latest-mac.yml"
+    strategy :electron_builder
   end
 
   app "Milanote.app"

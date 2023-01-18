@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/nfc-tools/libfreefare/releases/download/libfreefare-0.4.0/libfreefare-0.4.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bfa31d14a99a1247f5ed49195d6373de512e3eb75bf1627658b40cf7f876bc64"
     }
   },
   "revision": 3,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libfreefare/blobs/sha256:ea57dd54087cbe7d6f7ecc2d0904313d36b363cd97394bf435c987974e3b7b33",
+          "sha256": "ea57dd54087cbe7d6f7ecc2d0904313d36b363cd97394bf435c987974e3b7b33"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libfreefare/blobs/sha256:98d9ca4fb60da8d0a45f4119f7a7fc9dba952ccaa9b931e535ae2a520da4d982",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libfreefare/blobs/sha256:c66fe7ad412745ebd9c10784f9ef7de563a5c1ef7582a72915ad7b50324a65c5",
           "sha256": "c66fe7ad412745ebd9c10784f9ef7de563a5c1ef7582a72915ad7b50324a65c5"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libfreefare/blobs/sha256:c1cec9a4091a7fe7a160dba236177a9a233570daf8683e384b2fafe8ec90a44e",
+          "sha256": "c1cec9a4091a7fe7a160dba236177a9a233570daf8683e384b2fafe8ec90a44e"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
   "dependencies": [
     "libnfc",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

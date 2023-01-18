@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/bestouff/genext2fs/archive/refs/tags/v1.5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d3861e4fe89131bd21fbd25cf0b683b727b5c030c4c336fadcd738ada830aab0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/genext2fs/blobs/sha256:566e773ad73882df019f3b1963a37837e22db06d6b1f622da0187fbf0b86244d",
+          "sha256": "566e773ad73882df019f3b1963a37837e22db06d6b1f622da0187fbf0b86244d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/genext2fs/blobs/sha256:0800a81e18bda856d6aa1ab72aaa8587d43ea589fbfa41ecc14c6eba40bb8356",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/genext2fs/blobs/sha256:c0956842c6c717a7dd0b96d16a569700005d5863da8a78ce0eb281562fb5a664",
           "sha256": "c0956842c6c717a7dd0b96d16a569700005d5863da8a78ce0eb281562fb5a664"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/genext2fs/blobs/sha256:90be8a8a95389ad22ee818490ead1f0373dc66a1e540123fd69a1a5bcc03bad4",
+          "sha256": "90be8a8a95389ad22ee818490ead1f0373dc66a1e540123fd69a1a5bcc03bad4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/genext2fs/blobs/sha256:2523dcf597e5caa415a2be9a0a4b2ab472b573326bfbb894ce5983427a0419d0",
           "sha256": "2523dcf597e5caa415a2be9a0a4b2ab472b573326bfbb894ce5983427a0419d0"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/genext2fs/blobs/sha256:5f5a8f86d48986b97ac6d364d0c2963d2447b9d767f9c3f229080b481e41ce11",
+          "sha256": "5f5a8f86d48986b97ac6d364d0c2963d2447b9d767f9c3f229080b481e41ce11"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +90,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

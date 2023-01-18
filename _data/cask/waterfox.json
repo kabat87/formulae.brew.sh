@@ -7,38 +7,44 @@
   ],
   "desc": "Web browser",
   "homepage": "https://www.waterfox.net/",
-  "url": "https://cdn.waterfox.net/releases/osx64/installer/Waterfox%20G3.2.6%20Setup.dmg",
+  "url": "https://cdn1.waterfox.net/waterfox/releases/G5.1.1/Darwin_x86_64-aarch64/Waterfox%20G5.1.1.dmg",
   "appcast": null,
-  "version": "3.2.6",
+  "version": "5.1.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1aa0442868c503a2b214c023364d6b86e7a3cb6eda94c80d73e19d627996ee3d",
+  "sha256": "6e7f0b2d77417649884830d10cb9a5e2c90d634d5eb0cb53a09c9e3a7c3cc1f9",
   "artifacts": [
-    [
-      "Waterfox.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.waterfox.sfl*",
-        "~/Library/Application Support/Waterfox",
-        "~/Library/Caches/Waterfox",
-        "~/Library/Preferences/org.waterfoxproject.waterfox.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Waterfox.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.waterfox.sfl*",
+            "~/Library/Application Support/Waterfox",
+            "~/Library/Caches/Waterfox",
+            "~/Library/Preferences/org.waterfoxproject.waterfox.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.12"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

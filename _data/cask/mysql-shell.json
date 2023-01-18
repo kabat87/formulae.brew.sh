@@ -7,25 +7,33 @@
   ],
   "desc": "Interactive JavaScript, Python or SQL interface",
   "homepage": "https://dev.mysql.com/downloads/shell/",
-  "url": "https://dev.mysql.com/get/Downloads/MySQL-Shell/mysql-shell-8.0.27-macos11-x86-64bit.dmg",
+  "url": "https://cdn.mysql.com//Downloads/MySQL-Shell/mysql-shell-8.0.31-macos12-x86-64bit.dmg",
   "appcast": null,
-  "version": "8.0.27",
+  "version": "8.0.31",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3214e9d35b4950cd326b0bef3b9c582cf01957fbf64cebce4b7bb85b7e38add9",
+  "sha256": "bf5eda38156c2e0500d957115191eb81d7ab6ec06d21c890fb17a959793026b1",
   "artifacts": [
     {
-      "pkgutil": "com.mysql.shell",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.mysql.shell"
+        }
+      ]
     },
-    "mysql-shell-8.0.27-macos11-x86-64bit.pkg (Pkg)",
     {
-      "trash": "~/.mysqlsh",
-      "signal": {
-      }
+      "pkg": [
+        "mysql-shell-8.0.31-macos12-x86-64bit.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.mysqlsh"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

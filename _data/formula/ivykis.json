@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/buytenh/ivykis/archive/v0.42.4-trunk.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b724516d6734f4d5c5f86ad80bde8fc7213c5a70ce2d46b9a2d86e8d150402b5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ivykis/blobs/sha256:81c383eb047987000be061f4beaa4f0621900fdf299405a32bd0d875f4cb6bc8",
+          "sha256": "81c383eb047987000be061f4beaa4f0621900fdf299405a32bd0d875f4cb6bc8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ivykis/blobs/sha256:117efe3df301c5489c623091a19c5b81957343e0fbc93da8165034772caae24a",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ivykis/blobs/sha256:cd87cff2d6552030ba5b277853bf4f386bc28411ca0c9283e1ed90981f0ba6aa",
           "sha256": "cd87cff2d6552030ba5b277853bf4f386bc28411ca0c9283e1ed90981f0ba6aa"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ivykis/blobs/sha256:70a2f7977517abd77a4c446196340c9a2cc41d5929df8ba79cec43265d23f7b1",
+          "sha256": "70a2f7977517abd77a4c446196340c9a2cc41d5929df8ba79cec43265d23f7b1"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

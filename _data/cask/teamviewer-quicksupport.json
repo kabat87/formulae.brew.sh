@@ -6,7 +6,7 @@
     "TeamViewer QuickSupport",
     "TeamViewer QS"
   ],
-  "desc": null,
+  "desc": "Remote support for computers and mobile devices",
   "homepage": "https://www.teamviewer.com/",
   "url": "https://dl.teamviewer.com/download/version_15x/TeamViewerQS.dmg",
   "appcast": null,
@@ -17,17 +17,21 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "TeamViewerQS.app",
-      {
-        "target": "TeamViewer QuickSupport.app"
-      }
-    ]
+    {
+      "app": [
+        "TeamViewerQS.app",
+        {
+          "target": "TeamViewer QuickSupport.app"
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

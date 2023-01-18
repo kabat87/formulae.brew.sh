@@ -1,6 +1,6 @@
 cask "kdocs" do
-  version "3.0.4,1001"
-  sha256 "c25b4f7edeed4099d0551748c14512a65a47be75904db432f8b249a4b5c322ee"
+  version "3.7.9,1001"
+  sha256 "463c23da48754e7cdfdb7fe10a4d7dcfdc080f2196e7c3c89ff7f278ce396531"
 
   url "https://qn.cache.wpscdn.cn/kdocs/apk/kdesktopmac/KDocs_#{version.csv.second}_v#{version.csv.first}.dmg",
       verified: "qn.cache.wpscdn.cn/kdocs/apk/kdesktopmac/"

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/oschulz/blitzwave/archive/v0.8.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "edb0b708a0587e77b8e0aa3387b44f4e838855c17e896a8277bb80fbe79b9a63"
     }
   },
   "revision": 0,
@@ -31,6 +32,26 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:76ae73757551645b65f9215711c26a43d6dc9ef8226d9812abbf032ee4092921",
+          "sha256": "76ae73757551645b65f9215711c26a43d6dc9ef8226d9812abbf032ee4092921"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:d63c1a6c2d85a04ee6bd22f26895abac9fe84a818220437c80d56dd022826b45",
+          "sha256": "d63c1a6c2d85a04ee6bd22f26895abac9fe84a818220437c80d56dd022826b45"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:44d4e4c784f0ef1a896eebac068467b780e90e8e7e8ba38aa6caede688eb5bf5",
+          "sha256": "44d4e4c784f0ef1a896eebac068467b780e90e8e7e8ba38aa6caede688eb5bf5"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:dcbb61c393f804b7edba2e42caaf7688df8b9693ce4f4956814089f407651c09",
+          "sha256": "dcbb61c393f804b7edba2e42caaf7688df8b9693ce4f4956814089f407651c09"
+        },
         "big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:1e65e0e917a0454346801ea361b5186676150edc50f296abcb5f682456375589",
@@ -61,11 +82,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:be9ba4deb07a468b23f430fe2f0896206b120f70e07f94d48267448c0524d3bc",
           "sha256": "be9ba4deb07a468b23f430fe2f0896206b120f70e07f94d48267448c0524d3bc"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:609c85eec329a8aa988a2b026522642f41b392039936661ce428d13887dfa84d",
-          "sha256": "609c85eec329a8aa988a2b026522642f41b392039936661ce428d13887dfa84d"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/blitzwave/blobs/sha256:353fd7cf26dc62a4441d2a7498a7d947c163dd0994a9bc2d1da6ef8677525b39",
@@ -76,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +102,9 @@
   ],
   "dependencies": [
     "blitz"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

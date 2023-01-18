@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/lawmurray/LibBi/archive/1.4.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "af2b6d30e1502f99a3950d63ceaf7d7275a236f4d81eff337121c24fbb802fbe"
     }
   },
   "revision": 4,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libbi/blobs/sha256:44bf6f88c1eba7e0d73d9865c2bc3d01750183c4a4c28e8376947adf1576ddcd",
+          "sha256": "44bf6f88c1eba7e0d73d9865c2bc3d01750183c4a4c28e8376947adf1576ddcd"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libbi/blobs/sha256:ae593b0f46cfb4176070508a9ecf1379ab1ce5c6d6946f067455854751545ee9",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libbi/blobs/sha256:95b9bd0f690a89f42ec6a1e670248a5464ba14fc7e80589a6bc4b28788a30f1d",
           "sha256": "95b9bd0f690a89f42ec6a1e670248a5464ba14fc7e80589a6bc4b28788a30f1d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libbi/blobs/sha256:dd70fd096c61c3df6ac7ae162bdca03aca0b4208350e39b050bfb2e3cef8ae9d",
+          "sha256": "dd70fd096c61c3df6ac7ae162bdca03aca0b4208350e39b050bfb2e3cef8ae9d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "gsl",
     "netcdf",
     "qrupdate"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,26 +7,30 @@
   ],
   "desc": "Minecraft launcher",
   "homepage": "https://www.badlion.net/",
-  "url": "https://client-updates.badlion.net/Badlion%20Client-3.6.3.dmg",
+  "url": "https://client-updates.badlion.net/Badlion%20Client-3.12.2.dmg",
   "appcast": null,
-  "version": "3.6.3",
+  "version": "3.12.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2ff12c2ee98599b1a17313c5f524a2ed4ffdc07dc0fe9a1501091c83bdb93f90",
+  "sha256": "2e8cb4fb78ec1f72e192600c354ad9bc3be2e2a98f86b0389289f7752c695f79",
   "artifacts": [
-    [
-      "Badlion Client.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Badlion Client",
-        "~/Library/Caches/net.badlion.client",
-        "~/Library/Caches/net.badlion.client.ShipIt"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Badlion Client.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Badlion Client",
+            "~/Library/Caches/net.badlion.client",
+            "~/Library/Caches/net.badlion.client.ShipIt"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

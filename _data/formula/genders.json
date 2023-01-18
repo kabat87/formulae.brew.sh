@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/chaos/genders/archive/genders-1-27-3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c176045a7dd125313d44abcb7968ded61826028fe906028a2967442426229894"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/genders/blobs/sha256:6ebb2e4ef5220af8459fca62e9181e9c0dea1392476dd99ab76c63e281dc6de4",
+          "sha256": "6ebb2e4ef5220af8459fca62e9181e9c0dea1392476dd99ab76c63e281dc6de4"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/genders/blobs/sha256:8979f90c79fcf64e0edb58eb16afeadae1a525a7ae7116ed5ad191d3be93c83f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/genders/blobs/sha256:36d036a70a6833bdfd9dd86289c5c97c90ac54e10fdf7fdddb9438410ae556e4",
           "sha256": "36d036a70a6833bdfd9dd86289c5c97c90ac54e10fdf7fdddb9438410ae556e4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/genders/blobs/sha256:d9a533d3e77e4108ff79c4c23dfe6af9d434629318c4ffa9ef0018538f82f74e",
+          "sha256": "d9a533d3e77e4108ff79c4c23dfe6af9d434629318c4ffa9ef0018538f82f74e"
         },
         "monterey": {
           "cellar": ":any",
@@ -65,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/genders/blobs/sha256:31a726904f22c156b763a8bc95bd3db6e85b8bc0cf7d8a82d584bb8684241f6c",
           "sha256": "31a726904f22c156b763a8bc95bd3db6e85b8bc0cf7d8a82d584bb8684241f6c"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/genders/blobs/sha256:839398584f1b2b194e905587e8b40cc59d14e42ae11516335cb693f99d14a4a3",
+          "sha256": "839398584f1b2b194e905587e8b40cc59d14e42ae11516335cb693f99d14a4a3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +96,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -88,7 +106,18 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "bison": "build"
+    },
+    {
+      "flex": "build"
+    },
+    {
+      "perl": "build"
+    },
+    {
+      "python": "build"
+    }
   ],
   "requirements": [
 
@@ -108,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/fishi0x01/vsh/archive/v0.12.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bba0012dda672d1c23e414f6a5da30a241dc8a0a212ff49236f880fcdf68e446"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vsh/blobs/sha256:07ea4baf0973e766def1143da13a9aa5e4470c7d0138bd13229e4cadbbdc1c61",
+          "sha256": "07ea4baf0973e766def1143da13a9aa5e4470c7d0138bd13229e4cadbbdc1c61"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vsh/blobs/sha256:26eab160879dd577cf97db36ff408bdec104c6c539ec2327dca68a63747ec7f6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vsh/blobs/sha256:be7c3c523c6569de739931d58efa026a27d0c11eac9f346ba7faf868cf44bef7",
           "sha256": "be7c3c523c6569de739931d58efa026a27d0c11eac9f346ba7faf868cf44bef7"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vsh/blobs/sha256:3d69c69cb00af2c04526fc3997b324962cb9197fa8503503abeb0588966b9b6f",
+          "sha256": "3d69c69cb00af2c04526fc3997b324962cb9197fa8503503abeb0588966b9b6f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,27 +21,47 @@
     "stable": {
       "url": "https://github.com/ajermakovics/jvm-mon/releases/download/0.3/jvm-mon-0.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9b5dd3d280cb52b6e2a9a491451da2ee41c65c770002adadb61b02aa6690c940"
     }
   },
-  "revision": 2,
+  "revision": 3,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "all": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jvm-mon/blobs/sha256:054e482f025dfb8f3487dadd1a6c4faea207c16b8fe56ecfbdbe293745ddb8b9",
-          "sha256": "054e482f025dfb8f3487dadd1a6c4faea207c16b8fe56ecfbdbe293745ddb8b9"
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jvm-mon/blobs/sha256:c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880",
+          "sha256": "c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jvm-mon/blobs/sha256:c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880",
+          "sha256": "c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880"
+        },
+        "big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jvm-mon/blobs/sha256:c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880",
+          "sha256": "c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880"
+        },
+        "catalina": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jvm-mon/blobs/sha256:c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880",
+          "sha256": "c20d541a04a08a0282c90ed1968fbc03d5be5012f9a73e22b52d2ded67c9a880"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jvm-mon/blobs/sha256:0c83187b28705971793ac3f89c385a07edd958d20d3d30e0c133b77bc5fc0ac0",
+          "sha256": "0c83187b28705971793ac3f89c385a07edd958d20d3d30e0c133b77bc5fc0ac0"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +70,9 @@
   ],
   "dependencies": [
     "openjdk@8"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +101,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://savannah.nongnu.org/download/dvdrtools/dvdrtools-0.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "053d0f277f69b183f9c8e8c8b09b94d5bb4a1de6d9b122c0e6c00cc6593dfb46"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dvdrtools/blobs/sha256:d41b802f7e601c727aab83ab6fa63b70303c717fa4709059c4b653b599b5f248",
+          "sha256": "d41b802f7e601c727aab83ab6fa63b70303c717fa4709059c4b653b599b5f248"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dvdrtools/blobs/sha256:587872ae7f087b62cf2b227faeb303bffdc9365794bf60daf8f071c2039869f1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dvdrtools/blobs/sha256:7b93d029d54fa99b94010b18776bdf36c889e81e8f169f8745f319b7b7b6f9f0",
           "sha256": "7b93d029d54fa99b94010b18776bdf36c889e81e8f169f8745f319b7b7b6f9f0"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dvdrtools/blobs/sha256:bcc5fd8f00fad05c8027a1f151a39da5cf3e3a57ed84c8753834202ffd903797",
+          "sha256": "bcc5fd8f00fad05c8027a1f151a39da5cf3e3a57ed84c8753834202ffd903797"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/dvdrtools/blobs/sha256:8d29698226d26f42559f4913a13920632b85cafc389122697fa2c5c4d0cd2d8b",
           "sha256": "8d29698226d26f42559f4913a13920632b85cafc389122697fa2c5c4d0cd2d8b"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dvdrtools/blobs/sha256:4feb2b0e87b7402706c5a382c8e35b66279aa1b73c37c7ded7a6cc14de3a8a62",
-          "sha256": "4feb2b0e87b7402706c5a382c8e35b66279aa1b73c37c7ded7a6cc14de3a8a62"
+          "url": "https://ghcr.io/v2/homebrew/core/dvdrtools/blobs/sha256:b0ded8f875ea08da1c4ac07675a925b475414f03e03071b6e4445ec690494d88",
+          "sha256": "b0ded8f875ea08da1c4ac07675a925b475414f03e03071b6e4445ec690494d88"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

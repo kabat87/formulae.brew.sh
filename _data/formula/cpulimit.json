@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/opsengine/cpulimit/archive/v0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "64312f9ac569ddcadb615593cd002c94b76e93a0d4625d3ce1abb49e08e2c2da"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cpulimit/blobs/sha256:e94ecdb44d2b8f104510da469aaa27a879cbf41518c88315f346116203b9c944",
+          "sha256": "e94ecdb44d2b8f104510da469aaa27a879cbf41518c88315f346116203b9c944"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cpulimit/blobs/sha256:993f9fe777c7feb2f2da49486e0b7febf6a6d822e64ff4f40f578ddc0f21d7f4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cpulimit/blobs/sha256:f09919436a14d7b1598720ca832435b2500aebe0839f5055a253f52c59642a5d",
           "sha256": "f09919436a14d7b1598720ca832435b2500aebe0839f5055a253f52c59642a5d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cpulimit/blobs/sha256:e26ef5c56d8a24d533ebbe33a65dda99defac0f32504edff34358992b39fa1cb",
+          "sha256": "e26ef5c56d8a24d533ebbe33a65dda99defac0f32504edff34358992b39fa1cb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/cpulimit/blobs/sha256:9d7320465152a12ba75ce924beada5a3ce365b14becaa75e08ee8334c2cb2f6a",
           "sha256": "9d7320465152a12ba75ce924beada5a3ce365b14becaa75e08ee8334c2cb2f6a"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cpulimit/blobs/sha256:7ff9d929c5a1178b250b756cefcbecc4b202c72f03073e9eb43f4a47420930a8",
-          "sha256": "7ff9d929c5a1178b250b756cefcbecc4b202c72f03073e9eb43f4a47420930a8"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cpulimit/blobs/sha256:1e7b26fdf597d68a1f482095c11f606dc5fc6f88a27e88bf14a3e976cec0998a",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

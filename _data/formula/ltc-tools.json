@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/x42/ltc-tools/archive/v0.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5b7a2ab7f98bef6c99bafbbc5605a3364e01c9c19fe81411ddea0e1a01cd6287"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ltc-tools/blobs/sha256:bb595fe27ddac376f1ea097a824c17712c34dde20e01cb310388897b52f3f57d",
+          "sha256": "bb595fe27ddac376f1ea097a824c17712c34dde20e01cb310388897b52f3f57d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ltc-tools/blobs/sha256:d8d6d714abdb13a7c1a42503b1f367af936975d51454967bb445acb631b58259",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ltc-tools/blobs/sha256:2131abaab3877ab6a2425fe8b635612c5d7235026d6098a3eea78d266038378a",
           "sha256": "2131abaab3877ab6a2425fe8b635612c5d7235026d6098a3eea78d266038378a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ltc-tools/blobs/sha256:c118c95af01d6294a78e22dcbc2ea901ce5c7bf52a62912895c2ed3c344df105",
+          "sha256": "c118c95af01d6294a78e22dcbc2ea901ce5c7bf52a62912895c2ed3c344df105"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ltc-tools/blobs/sha256:51df0ba95565d43955bbdf0cfbc216696b4002f8cc95c80d8f6b387eece034d1",
           "sha256": "51df0ba95565d43955bbdf0cfbc216696b4002f8cc95c80d8f6b387eece034d1"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ltc-tools/blobs/sha256:f067afb9aec069b45d0c8025574d673d701140d4262ba2530337a868c016bd81",
+          "sha256": "f067afb9aec069b45d0c8025574d673d701140d4262ba2530337a868c016bd81"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -88,6 +103,9 @@
     "jack",
     "libltc",
     "libsndfile"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -116,5 +134,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,28 +7,34 @@
   ],
   "desc": "Display winmail.dat files directly in Mail.app",
   "homepage": "https://winmail.help/",
-  "url": "https://s3.amazonaws.com/LetterOpener/dmg/Letter-Opener-14.0.2.zip",
+  "url": "https://s3.amazonaws.com/LetterOpener/dmg/Letter-Opener-15.0.0.zip",
   "appcast": null,
-  "version": "14.0.2",
+  "version": "15.0.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e962368bdb8ea5b88c216710c8f88b0c8f79dd351995db2338484d1d9854576c",
+  "sha256": "3a69675611faad721c254ea0d72dcd9b6e5b4a370c64cdbb538c3477551e63a2",
   "artifacts": [
     {
-      "pkgutil": [
-        "pkg.app.letteropener.*",
-        "com.restoroot.Letter-Opener"
-      ],
-      "launchctl": [
-        "app.letteropener.agent",
-        "app.letteropener.softwareupdate.agent"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "pkg.app.letteropener.*",
+            "com.restoroot.Letter-Opener"
+          ],
+          "launchctl": [
+            "app.letteropener.agent",
+            "app.letteropener.softwareupdate.agent"
+          ]
+        }
+      ]
     },
-    "Install Letter Opener.pkg (Pkg)"
+    {
+      "pkg": [
+        "Install Letter Opener.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -40,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

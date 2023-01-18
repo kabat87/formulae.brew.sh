@@ -1,9 +1,10 @@
 cask "compositor" do
-  version "1.17.0"
-  sha256 "c9792d631e796e5bf8ddcd35ba90fe64ec42e9ce051c520a4b7516a5754cdda8"
+  version "1.23.0"
+  sha256 "4b8884a8249bed7cafc5de44dadbf112f525a5ccb95046ab4ca74980f73f29f8"
 
   url "https://compositorapp.com/updates/Compositor_#{version}.zip"
   name "Compositor"
+  desc "WYSIWYG LaTeX editor"
   homepage "https://compositorapp.com/"
 
   livecheck do

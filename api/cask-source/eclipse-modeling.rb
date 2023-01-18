@@ -1,8 +1,11 @@
 cask "eclipse-modeling" do
-  version "4.22.0,2021-12"
-  sha256 "5a5a847d4c9bfb6df462baee4e0cc78f56e06562f5de79252071486dd589cd01"
+  arch arm: "aarch64", intel: "x86_64"
 
-  url "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/#{version.csv.second}/R/eclipse-modeling-#{version.csv.second}-R-macosx-cocoa-x86_64.dmg&r=1"
+  version "4.26.0,2022-12"
+  sha256 arm:   "44dce5e6a6919cc78fdf279e008bc1a0fa9ba4eecb66751055fe9615e353cd72",
+         intel: "45e707082723e5fccecfc227f2326f0d1207437b35868947cd65988f0c6a61e8"
+
+  url "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/#{version.csv.second}/R/eclipse-modeling-#{version.csv.second}-R-macosx-cocoa-#{arch}.dmg&r=1"
   name "Eclipse Modeling Tools"
   desc "Tools and runtimes for building model-based applications"
   homepage "https://eclipse.org/"

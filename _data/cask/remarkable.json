@@ -7,28 +7,32 @@
   ],
   "desc": "View, Screen Share, organize, import, and download files to a reMarkable device",
   "homepage": "https://remarkable.com/",
-  "url": "https://downloads.remarkable.com/desktop/production/mac/reMarkable-2.11.0.182.dmg",
+  "url": "https://updates-download.cloud.remarkable.engineering/sparkle/reMarkableMacOs/Staging_9fb83f4b-c3d3-4d4d-83ca-8970001ea9a3/44236800/reMarkable-3.0.4.675.dmg",
   "appcast": null,
-  "version": "2.11.0.182",
+  "version": "3.0.4.675,44236800,Staging_9fb83f4b-c3d3-4d4d-83ca-8970001ea9a3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "da4a152ce845d4e8319a1e6f46058b392fa10d9d2b09108ed6d86acd70e1751f",
+  "sha256": "e7a2eb66d9bcc5c1ef11c84a98446b735caf918978f1d15c9f8d68224f09d1b4",
   "artifacts": [
-    [
-      "reMarkable.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/remarkable",
-        "~/Library/Caches/com.remarkable.desktop",
-        "~/Library/Caches/remarkable",
-        "~/Library/Preferences/com.remarkable.desktop.plist",
-        "~/Library/Saved Application State/com.remarkable.desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "reMarkable.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/remarkable",
+            "~/Library/Caches/com.remarkable.desktop",
+            "~/Library/Caches/remarkable",
+            "~/Library/Preferences/com.remarkable.desktop.plist",
+            "~/Library/Saved Application State/com.remarkable.desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

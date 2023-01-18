@@ -21,37 +21,57 @@
     "stable": {
       "url": "https://github.com/pgRouting/osm2pgrouting/archive/v2.3.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e3a58bcacf0c8811e0dcf3cf3791a4a7cc5ea2a901276133eacf227b30fd8355"
     }
   },
-  "revision": 2,
+  "revision": 6,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:56af11c330b18bf6db24e5259c328646de32653baab8ebace0ee873e4116ce73",
+          "sha256": "56af11c330b18bf6db24e5259c328646de32653baab8ebace0ee873e4116ce73"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:b54bd968d45831d73895bb13ef329f7aca352a3b803a18e179f90e2d9fd1be07",
+          "sha256": "b54bd968d45831d73895bb13ef329f7aca352a3b803a18e179f90e2d9fd1be07"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:eae9b9f7b4fc4229bc85a8e484c3c85b6fdf10bb4eadf334efd3bc9d5a46cde4",
-          "sha256": "eae9b9f7b4fc4229bc85a8e484c3c85b6fdf10bb4eadf334efd3bc9d5a46cde4"
+          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:21270596b8ae2a1f01a192f01ef635660c0fdbd7e82855cdd2f5d230f48639e9",
+          "sha256": "21270596b8ae2a1f01a192f01ef635660c0fdbd7e82855cdd2f5d230f48639e9"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:4ae6f5a6d1e8114b5aed18c8567284263e618d8aaab59de9d17db4ed91d423f2",
+          "sha256": "4ae6f5a6d1e8114b5aed18c8567284263e618d8aaab59de9d17db4ed91d423f2"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:6d593e26efa5ca93d3bbe3d44d64aaca090cfac6ff5d7ce5b13aebe8ffd4d709",
+          "sha256": "6d593e26efa5ca93d3bbe3d44d64aaca090cfac6ff5d7ce5b13aebe8ffd4d709"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:e9c0bcc9363b8291d5e3e729b0ac32c14036dfcf7c4eb4920e46b5c8bec924e8",
-          "sha256": "e9c0bcc9363b8291d5e3e729b0ac32c14036dfcf7c4eb4920e46b5c8bec924e8"
+          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:10121e0aaef9ac87c590a2b975cc968fd21132c1ae81274dad5f0425e5383dd7",
+          "sha256": "10121e0aaef9ac87c590a2b975cc968fd21132c1ae81274dad5f0425e5383dd7"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:fca50921c8c7058ee70868858e3581cbd90606db8617a057a6af6f9b95393c3e",
-          "sha256": "fca50921c8c7058ee70868858e3581cbd90606db8617a057a6af6f9b95393c3e"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/osm2pgrouting/blobs/sha256:a82a9cf69024aa3c8ce857275d2b5258d74397bdad115f567f267205a0e094cf",
+          "sha256": "a82a9cf69024aa3c8ce857275d2b5258d74397bdad115f567f267205a0e094cf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -61,10 +81,13 @@
   "dependencies": [
     "boost",
     "expat",
+    "libpq",
     "libpqxx",
     "pgrouting",
-    "postgis",
-    "postgresql"
+    "postgis"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -93,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

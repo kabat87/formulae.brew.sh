@@ -7,27 +7,33 @@
   ],
   "desc": "Menu bar app that allows playing Ace Stream video streams in the VLC player",
   "homepage": "https://github.com/blaise-io/acelink",
-  "url": "https://github.com/blaise-io/acelink/releases/download/2.0.0/Ace.Link.2.0.0.dmg",
+  "url": "https://github.com/blaise-io/acelink/releases/download/2.0.2/Ace.Link.2.0.2.dmg",
   "appcast": null,
-  "version": "2.0.0",
+  "version": "2.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "634551980420f789ced71c74cc69c441a5c65745f8fc998dd72fece530b4f8cc",
+  "sha256": "5c8130d7e29480dbd1949bea631ae5c7d5250d0abbdbb96cdf9dcf024e8b9bd6",
   "artifacts": [
     {
-      "quit": "blaise.io.acelink",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "blaise.io.acelink"
+        }
+      ]
     },
-    [
-      "Ace Link.app"
-    ],
     {
-      "trash": "~/Library/Application Support/Ace Link",
-      "signal": {
-      }
+      "app": [
+        "Ace Link.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/Ace Link"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/lsdvd/lsdvd/lsdvd-0.17.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7d2c5bd964acd266b99a61d9054ea64e01204e8e3e1a107abe41b1274969e488"
     }
   },
   "revision": 4,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lsdvd/blobs/sha256:ba757936a28fde65072032578477812044621f4f8f73d9b9919c547ea902b402",
+          "sha256": "ba757936a28fde65072032578477812044621f4f8f73d9b9919c547ea902b402"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lsdvd/blobs/sha256:0d71d460c8eaa5c01899c164df92f07d04648ca2807511be675cd08b161dbba5",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lsdvd/blobs/sha256:d581725cf2628d8c123d3f6f54d1baf06cb33362d9f6dc7d033a4f7768729474",
           "sha256": "d581725cf2628d8c123d3f6f54d1baf06cb33362d9f6dc7d033a4f7768729474"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lsdvd/blobs/sha256:c1cad4dfbf96e83e2112dfabc98bff8b7482e3dfd79bd9a93286dc27436ac790",
+          "sha256": "c1cad4dfbf96e83e2112dfabc98bff8b7482e3dfd79bd9a93286dc27436ac790"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   "dependencies": [
     "libdvdcss",
     "libdvdread"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://web.archive.org/web/20150510210401/craz.net/programs/itunes/files/alac_decoder-0.2.0.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7f8f978a5619e6dfa03dc140994fd7255008d788af848ba6acf9cfbaa3e4122f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/alac/blobs/sha256:71a71cbbe491b65fd89198aab4168b7ec3d2436896c913a43858c806469a56ea",
+          "sha256": "71a71cbbe491b65fd89198aab4168b7ec3d2436896c913a43858c806469a56ea"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/alac/blobs/sha256:71cd043cec976255c6ae78ad79021dd5ba499b5678e5163e6353f571cae2eb6d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/alac/blobs/sha256:3d12d2c7b28c99fba529faea181dc91a04ea469e68607f9e3263c082dcb5cde4",
           "sha256": "3d12d2c7b28c99fba529faea181dc91a04ea469e68607f9e3263c082dcb5cde4"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/alac/blobs/sha256:5385e4fecc817b09a2be15e6eed1184cd2c4bb1014c6c89d9611a151adb49555",
+          "sha256": "5385e4fecc817b09a2be15e6eed1184cd2c4bb1014c6c89d9611a151adb49555"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/alac/blobs/sha256:4cb85c125553c6c2a49576790c5be5e0b89096569131df3b8576f3499e65ef5a",
           "sha256": "4cb85c125553c6c2a49576790c5be5e0b89096569131df3b8576f3499e65ef5a"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/alac/blobs/sha256:a3a54a254a147f3a1173870bdd2e9399043b3e506d8c04383f99cf3ce67a4fca",
-          "sha256": "a3a54a254a147f3a1173870bdd2e9399043b3e506d8c04383f99cf3ce67a4fca"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/alac/blobs/sha256:01ddb3fb230954f624b068100ddcffa8c288481489f6cd62143beac4cd1e3c45",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

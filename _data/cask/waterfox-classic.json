@@ -6,28 +6,32 @@
     "Waterfox Classic"
   ],
   "desc": "Web browser",
-  "homepage": "https://www.waterfox.net/",
-  "url": "https://cdn.waterfox.net/releases/osx64/installer/Waterfox%20Classic%202021.10%20Setup.dmg",
+  "homepage": "https://classic.waterfox.net/",
+  "url": "https://github.com/WaterfoxCo/Waterfox-Classic/releases/download/2022.11-classic/Waterfox.Classic.2022.11.Setup.dmg",
   "appcast": null,
-  "version": "2021.10",
+  "version": "2022.11",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "00356a042c9cdeeb11eefe269db50a4ade888c733ce5a0c9c06347e6ef920b2a",
+  "sha256": "507151508846e9ea09e695322b9d70ca48dc23d120ab9ac75b899596c1863ff2",
   "artifacts": [
-    [
-      "Waterfox Classic.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.waterfox.sfl*",
-        "~/Library/Application Support/Waterfox",
-        "~/Library/Caches/Waterfox",
-        "~/Library/Preferences/org.waterfoxproject.waterfox.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Waterfox Classic.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.mozilla.waterfox.sfl*",
+            "~/Library/Application Support/Waterfox",
+            "~/Library/Caches/Waterfox",
+            "~/Library/Preferences/org.waterfoxproject.waterfox.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

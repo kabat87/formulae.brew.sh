@@ -5,29 +5,33 @@
   "name": [
     "Mockoon"
   ],
-  "desc": "Create mock APIs locally",
+  "desc": "Create mock APIs in seconds",
   "homepage": "https://mockoon.com/",
-  "url": "https://github.com/mockoon/mockoon/releases/download/v1.17.0/mockoon.setup.1.17.0.universal.dmg",
+  "url": "https://github.com/mockoon/mockoon/releases/download/v1.22.0/mockoon.setup.1.22.0.universal.dmg",
   "appcast": null,
-  "version": "1.17.0",
+  "version": "1.22.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4805ed66883ba0565f589e63b99c1e3c149308484cb30a369e4e879d1d974885",
+  "sha256": "763a298457ddbd2d27b03385adc14d19133e27f8fb4cd1781138b87d8fa3aef6",
   "artifacts": [
-    [
-      "Mockoon.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/mockoon",
-        "~/Library/Logs/Mockoon",
-        "~/Library/Preferences/com.mockoon.app.plist",
-        "~/Library/Saved Application State/com.mockoon.app.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Mockoon.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/mockoon",
+            "~/Library/Logs/Mockoon",
+            "~/Library/Preferences/com.mockoon.app.plist",
+            "~/Library/Saved Application State/com.mockoon.app.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

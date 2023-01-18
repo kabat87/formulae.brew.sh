@@ -7,29 +7,45 @@
   ],
   "desc": "Doing phonetics by computer",
   "homepage": "https://www.fon.hum.uva.nl/praat/",
-  "url": "https://github.com/praat/praat/releases/download/v6.2.05/praat6205_mac.dmg",
+  "url": "https://github.com/praat/praat/releases/download/v6.3.03/praat6303_mac.dmg",
   "appcast": null,
-  "version": "6.2.05",
+  "version": "6.3.03,6303",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "eea28b531329ed4d857d44c8e9a1860db48c10c02472bc74f4ffbb893186043d",
+  "sha256": "5bc7daa9266e8a0e3cbfbc0122763b85bafd611b476deb98e63b5c0268106bda",
   "artifacts": [
-    [
-      "Praat.app"
-    ],
-    [
-      "/Applications/Praat.app/Contents/MacOS/Praat",
-      {
-        "target": "praat"
-      }
-    ]
+    {
+      "app": [
+        "Praat.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Praat.app/Contents/MacOS/Praat",
+        {
+          "target": "praat"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/Praat Prefs",
+            "~/Library/Saved Application State/org.praat.Praat.savedState"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

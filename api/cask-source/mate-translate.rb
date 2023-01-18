@@ -1,8 +1,8 @@
 cask "mate-translate" do
-  version "8.1.2,3038"
+  version "8.1.8,3055"
   sha256 :no_check
 
-  url "https://gikken.co/mate/MateTranslate.zip",
+  url "https://gikken.co/mate/MateTranslate.dmg",
       verified: "gikken.co/mate/"
   name "Mate Translate"
   desc "Select text in any app and translate it"
@@ -13,7 +13,7 @@ cask "mate-translate" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :mojave"
+  depends_on macos: ">= :high_sierra"
 
   app "Mate Translate.app"
 

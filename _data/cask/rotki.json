@@ -7,26 +7,30 @@
   ],
   "desc": "Portfolio tracking and accounting tool",
   "homepage": "https://rotki.com/",
-  "url": "https://github.com/rotki/rotki/releases/download/v1.23.0/rotki-darwin_x64-v1.23.0.dmg",
+  "url": "https://github.com/rotki/rotki/releases/download/v1.26.3/rotki-darwin_x64-v1.26.3.dmg",
   "appcast": null,
-  "version": "1.23.0",
+  "version": "1.26.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ae2dd080a3ea85991dbf9a6efc2efe98ed6dae4774df4d3ca42f781c092d70d2",
+  "sha256": "a41c6de935b62b04658e29bc8843ba1b2b8a5ef0d0a1ca246dfe05469691b9bd",
   "artifacts": [
-    [
-      "rotki.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/rotki",
-        "~/Library/Preferences/com.rotki.app.plist",
-        "~/Library/Saved Application State/com.rotki.app.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "rotki.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/rotki",
+            "~/Library/Preferences/com.rotki.app.plist",
+            "~/Library/Saved Application State/com.rotki.app.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

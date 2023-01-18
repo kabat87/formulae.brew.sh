@@ -1,6 +1,6 @@
 cask "permute" do
-  version "3.8.2,2559"
-  sha256 "77e0afd1b7389c05634075d4d13298c18818d7373531de0991ce7e4fc73a82bc"
+  version "3.9.15,2651"
+  sha256 "780d36e4be0c1c4ad6b68fc47538346249d95960cf7966539e01aeb86eff6dea"
 
   url "https://software.charliemonroe.net/trial/permute/v#{version.major}/Permute_#{version.major}_#{version.csv.second}.dmg"
   name "Permute"
@@ -13,7 +13,7 @@ cask "permute" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :high_sierra"
 
   app "Permute #{version.major}.app"
 

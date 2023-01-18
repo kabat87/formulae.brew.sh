@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Netflix/dynomite/archive/v0.6.22.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9c3c60d95b39939f3ce596776febe8aa00ae8614ba85aa767e74d41e302e704a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dynomite/blobs/sha256:757afdc3438ad136afef540fee6a07e42a51b3c1bbde3a25fb13bd19e5807d33",
+          "sha256": "757afdc3438ad136afef540fee6a07e42a51b3c1bbde3a25fb13bd19e5807d33"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dynomite/blobs/sha256:682e0e5ec05ccfdd2fe8142083153dc6a0c14d3b1d7cc8c0dc1cd425aded9e41",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dynomite/blobs/sha256:edd9fad6b17b83dbf2d2699c3873463ea169a996fed83e861652bb5f92de4d7a",
           "sha256": "edd9fad6b17b83dbf2d2699c3873463ea169a996fed83e861652bb5f92de4d7a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dynomite/blobs/sha256:98d4209a06b832e81859388bd4da429cdbd87f9103d31656b2d094375221e1fa",
+          "sha256": "98d4209a06b832e81859388bd4da429cdbd87f9103d31656b2d094375221e1fa"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +87,9 @@
   ],
   "dependencies": [
     "openssl@3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

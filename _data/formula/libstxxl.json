@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/stxxl/stxxl/1.4.1/stxxl-1.4.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "92789d60cd6eca5c37536235eefae06ad3714781ab5e7eec7794b1c10ace67ac"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libstxxl/blobs/sha256:c553b5d40fc2b5c081634ce666570017b82f4c74c0f5915173bd9024d959de1c",
+          "sha256": "c553b5d40fc2b5c081634ce666570017b82f4c74c0f5915173bd9024d959de1c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libstxxl/blobs/sha256:e487af039d6286b34dc4aeac3c0eaba10668054b33a368e54f9cb8647834ed55",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libstxxl/blobs/sha256:8454123ffed231405d684ed18c2ef1a0ab1bd118d74614748a5b5df23d8bb5fe",
           "sha256": "8454123ffed231405d684ed18c2ef1a0ab1bd118d74614748a5b5df23d8bb5fe"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libstxxl/blobs/sha256:2da4cce955e2b91e309712edd7e0271ff7671e3b472536972d802102547ba5a3",
+          "sha256": "2da4cce955e2b91e309712edd7e0271ff7671e3b472536972d802102547ba5a3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

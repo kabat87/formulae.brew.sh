@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Jeffail/leaps/archive/v0.9.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8335e2a939ac5928a05f71df4014529b5b0f2097152017d691a0fb6d5ae27be4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/leaps/blobs/sha256:cadf303cd8afe3342acaa332833315822118c46e5a7bd0e2ac7f03d839c9b529",
+          "sha256": "cadf303cd8afe3342acaa332833315822118c46e5a7bd0e2ac7f03d839c9b529"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/leaps/blobs/sha256:a50cb3d2e58261495fc33607825dade069b92d7f6fdb70cae7f1052182895d34",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/leaps/blobs/sha256:2602cc2c500cc446b5ceb72ffbb6dab1d339ffda72b5be20c73e33a432378e3e",
           "sha256": "2602cc2c500cc446b5ceb72ffbb6dab1d339ffda72b5be20c73e33a432378e3e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/leaps/blobs/sha256:de49d3372e65ed4129bbf915d3220cd88a4e5bfe0ee468702d05cdacc85174cf",
+          "sha256": "de49d3372e65ed4129bbf915d3220cd88a4e5bfe0ee468702d05cdacc85174cf"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

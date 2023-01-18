@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dropbox/lepton/archive/1.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c4612dbbc88527be2e27fddf53aadf1bfc117e744db67e373ef8940449cdec97"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lepton/blobs/sha256:cb17a68671e9858d6641f10ebb9ea40ae6351d9794254c71f9c394ea14ef232c",
+          "sha256": "cb17a68671e9858d6641f10ebb9ea40ae6351d9794254c71f9c394ea14ef232c"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lepton/blobs/sha256:76ad15c6eea9edaf46a6dd3cad91d20c74c234001c1af3a46a9f7bbf4f44ff95",
@@ -66,11 +72,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/lepton/blobs/sha256:a6a1a47dd2f80fe66d5dfbde97b91ba93d054f6934ba2a950ede603e405e6eed",
           "sha256": "a6a1a47dd2f80fe66d5dfbde97b91ba93d054f6934ba2a950ede603e405e6eed"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lepton/blobs/sha256:700264c93fab4bba78cf62ac3a77ea60099cd38399f00d6972f8093b89dd8404",
-          "sha256": "700264c93fab4bba78cf62ac3a77ea60099cd38399f00d6972f8093b89dd8404"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lepton/blobs/sha256:0fdd05b0bfb892d9f768134cc9c929ae9544137b8ac75a875f06d6f83d15607d",
@@ -81,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -101,7 +104,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -118,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

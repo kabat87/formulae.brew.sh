@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/kulp/tenyr/archive/v0.9.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "29010e3df8449e9210faf96ca5518d573af4ada4939fe1e7cfbc169fe9179224"
     }
   },
   "revision": 0,
@@ -60,13 +61,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tenyr/blobs/sha256:725a4444c154dcbe5c2c835a82c246e044ab71d1769c240a0fc376af0c36a71c",
           "sha256": "725a4444c154dcbe5c2c835a82c246e044ab71d1769c240a0fc376af0c36a71c"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tenyr/blobs/sha256:386367651c0bfc95ebe005843ccd093350a508b0c6e8a0f848c5c9e79dea68cf",
+          "sha256": "386367651c0bfc95ebe005843ccd093350a508b0c6e8a0f848c5c9e79dea68cf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
   "dependencies": [
     "sdl2_image"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -83,7 +91,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "flex": "build"
+    }
   ],
   "requirements": [
 
@@ -103,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

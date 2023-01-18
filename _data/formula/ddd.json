@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/ddd/ddd-3.3.12.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3ad6cd67d7f4b1d6b2d38537261564a0d26aaed077bf25c51efc1474d0e8b65c"
     }
   },
   "revision": 1,
@@ -31,6 +32,16 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ddd/blobs/sha256:1125f5ef41d7edc523a57c7d5682d6aa8570db7bc99925627b4d7a55c54d64aa",
+          "sha256": "1125f5ef41d7edc523a57c7d5682d6aa8570db7bc99925627b4d7a55c54d64aa"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ddd/blobs/sha256:93fa51898f3e60c09d6baf1696799a89fac8fed798a4c6dac0321b1b8518dd6b",
+          "sha256": "93fa51898f3e60c09d6baf1696799a89fac8fed798a4c6dac0321b1b8518dd6b"
+        },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ddd/blobs/sha256:498ceb2dc933d2c85e7407f077d187c6cd799ba2f539694087134d038bb211d9",
@@ -61,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,7 +79,6 @@
 
   ],
   "dependencies": [
-    "gdb",
     "libice",
     "libsm",
     "libx11",
@@ -81,6 +90,9 @@
     "libxt",
     "openmotif"
   ],
+  "test_dependencies": [
+    "gdb"
+  ],
   "recommended_dependencies": [
 
   ],
@@ -91,7 +103,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -108,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

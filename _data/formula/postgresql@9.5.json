@@ -7,11 +7,12 @@
 
   ],
   "versioned_formulae": [
+    "postgresql@15",
+    "postgresql@14",
     "postgresql@13",
     "postgresql@12",
     "postgresql@11",
     "postgresql@10",
-    "postgresql@9.6",
     "postgresql@9.4"
   ],
   "desc": "Object-relational database system",
@@ -26,7 +27,8 @@
     "stable": {
       "url": "https://ftp.postgresql.org/pub/source/v9.5.25/postgresql-9.5.25.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7628c55eb23768a2c799c018988d8f2ab48ee3d80f5e11259938f7a935f0d603"
     }
   },
   "revision": 0,
@@ -79,7 +81,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +90,9 @@
   "dependencies": [
     "openssl@1.1",
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,10 +119,27 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-02-11",
-  "deprecation_reason": "unsupported",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "unsupported",
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "autoconf@2.69"
+      ],
+      "dependencies": [
+        "openssl@1.1",
+        "readline",
+        "krb5",
+        "libxslt",
+        "openldap",
+        "perl",
+        "linux-pam",
+        "util-linux"
+      ]
+    }
+  }
 }

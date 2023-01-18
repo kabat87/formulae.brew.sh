@@ -1,12 +1,13 @@
 cask "dotnet" do
-  arch = Hardware::CPU.intel? ? "x64" : "arm64"
+  arch arm: "arm64", intel: "x64"
 
-  if Hardware::CPU.intel?
-    version "6.0.1,6824b342-4659-40a1-ab73-25dd43e5e225,e57b1bfa437cf152f2d7064246bfb653"
-    sha256 "0be7228ce53c4766d19b48afad0769d1b420c5c4f38a81e5cae37aa3ed72cdbc"
-  else
-    version "6.0.1,51646583-741c-481e-b598-f13dc719cdf4,3adaa0faa24326fd7cc2265e957339bf"
-    sha256 "5c8ac515cf93cd8ac11f4c2baff2c23a1c10fed359e4979db60233f6a0c79133"
+  on_intel do
+    version "7.0.2,c5c4b5b4-490d-48d3-8645-ed77cb7134ce,e5aea24b7b2a548b2666fa5785e51587"
+    sha256 "08f62b2fd6d6878d534b52f55296d1f9e9a90bebe4f0c4a18dc076194878e042"
+  end
+  on_arm do
+    version "7.0.2,90889739-38b2-4a49-8c97-ee1884d703ae,9f3f6c2de5d357f1905fde9910300072"
+    sha256 "07df1177dbf864e8ecfeecc3b46f87d088497a5f767e233d62b5599fa178713c"
   end
 
   url "https://download.visualstudio.microsoft.com/download/pr/#{version.csv.second}/#{version.csv.third}/dotnet-runtime-#{version.csv.first}-osx-#{arch}.pkg"

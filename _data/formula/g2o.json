@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/RainerKuemmerle/g2o/archive/refs/tags/20201223_git.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "20af80edf8fd237e29bd21859b8fc734e615680e8838824e8b3f120c5f4c1672"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/g2o/blobs/sha256:eea750922b8eca237db78923657fc7cb2475ec6afc0b881cb6914ec026f7b7c8",
+          "sha256": "eea750922b8eca237db78923657fc7cb2475ec6afc0b881cb6914ec026f7b7c8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/g2o/blobs/sha256:c492d099917d4f2a22b8b11095580fbd14de561942d048727e4069316832dfbb",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/g2o/blobs/sha256:161de612759ffe32652d1eac931b72f8f3c7d1a9807acd9e7215459430df3eec",
           "sha256": "161de612759ffe32652d1eac931b72f8f3c7d1a9807acd9e7215459430df3eec"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/g2o/blobs/sha256:31d381a031fcc91cd406eb2357e67055fb8c8038aec681a68fb84cf2220167e5",
+          "sha256": "31d381a031fcc91cd406eb2357e67055fb8c8038aec681a68fb84cf2220167e5"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "eigen"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

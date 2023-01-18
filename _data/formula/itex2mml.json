@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://golem.ph.utexas.edu/~distler/blog/files/itexToMML-1.6.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3ef2572aa3421cf4d12321905c9c3f6b68911c3c9283483b7a554007010be55f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/itex2mml/blobs/sha256:21fbfa1382c97a13c162899ec72451dccf4d9a4c368c3c0a3fc5e70db4173497",
+          "sha256": "21fbfa1382c97a13c162899ec72451dccf4d9a4c368c3c0a3fc5e70db4173497"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/itex2mml/blobs/sha256:f08478f4813d052ae7d98339582ca05b95674d7b08a254305bf8e4e6575b3327",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/itex2mml/blobs/sha256:2a13992add208a7ab179fab850b3aba9a18a672dd803247ccde9c225103edf01",
           "sha256": "2a13992add208a7ab179fab850b3aba9a18a672dd803247ccde9c225103edf01"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/itex2mml/blobs/sha256:e54abed4dd08fd6edf1b19812617d7ec4c3d94a4619c36172579b3a32f04351a",
+          "sha256": "e54abed4dd08fd6edf1b19812617d7ec4c3d94a4619c36172579b3a32f04351a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/itex2mml/blobs/sha256:ca96d27550adc14145a18df3a31ed79dfd12d082f7e4dbccce73e8eabe4ae69e",
           "sha256": "ca96d27550adc14145a18df3a31ed79dfd12d082f7e4dbccce73e8eabe4ae69e"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/itex2mml/blobs/sha256:809bf39b25611efdd6f0c297918b0376788c1a4f380a69489b1e4495bd19821e",
+          "sha256": "809bf39b25611efdd6f0c297918b0376788c1a4f380a69489b1e4495bd19821e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +91,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -83,7 +101,12 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "bison": "build"
+    },
+    {
+      "flex": "build"
+    }
   ],
   "requirements": [
 
@@ -103,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

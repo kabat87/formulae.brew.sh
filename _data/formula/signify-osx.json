@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jpouellet/signify-osx/archive/1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5aa954fe6c54f2fc939771779e5bb64298e46d0a4ae3d08637df44c7ed8d2897"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/signify-osx/blobs/sha256:61d6a3ff6667bb16d42a052ed831e635048647d2d6bb0b0828d03a8c0b8da1cf",
+          "sha256": "61d6a3ff6667bb16d42a052ed831e635048647d2d6bb0b0828d03a8c0b8da1cf"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/signify-osx/blobs/sha256:b524debbee38eb3d651123e84189121d4249051dec29bf21c02d8e094916cdd6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/signify-osx/blobs/sha256:04f7c99002246fb5765666759b9a5a1f7e461a6d2d0c77e360af77951ee5de97",
           "sha256": "04f7c99002246fb5765666759b9a5a1f7e461a6d2d0c77e360af77951ee5de97"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/signify-osx/blobs/sha256:b3118edf392c51017526fab8898c14855b9e3531fdebe3a0d98b65faf279e341",
+          "sha256": "b3118edf392c51017526fab8898c14855b9e3531fdebe3a0d98b65faf279e341"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -96,7 +109,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -113,5 +134,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://memcached.org/",
   "versions": {
-    "stable": "1.6.13",
+    "stable": "1.6.18",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.memcached.org/files/memcached-1.6.13.tar.gz",
+      "url": "https://www.memcached.org/files/memcached-1.6.18.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cbdd6ab8810649ac5d92fcd0fcb0ca931d8a9dbd0ad8cc575b47222eedd64158"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:f3050ac0b7bdc618daab73f1adf302b60a6dab5d8cffa7dad540826a4c42a6cd",
+          "sha256": "f3050ac0b7bdc618daab73f1adf302b60a6dab5d8cffa7dad540826a4c42a6cd"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:1dcaa5b54129dcc309c8e9aa5eeb5d033c801a813934a5e089cbd414b82ad8b0",
-          "sha256": "1dcaa5b54129dcc309c8e9aa5eeb5d033c801a813934a5e089cbd414b82ad8b0"
+          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:5b4d33c79448eb7c94443546ce56546bba4c60eaca84173f40f3b120216754b2",
+          "sha256": "5b4d33c79448eb7c94443546ce56546bba4c60eaca84173f40f3b120216754b2"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:bd23e157ce3a123eef0c202dd56de402c2ffbb4f4f951942b079f15d25048d96",
-          "sha256": "bd23e157ce3a123eef0c202dd56de402c2ffbb4f4f951942b079f15d25048d96"
+          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:e0d65f204e332aa122525c4deadf606d45eb90a509769f9bdbab6668857584bd",
+          "sha256": "e0d65f204e332aa122525c4deadf606d45eb90a509769f9bdbab6668857584bd"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:f62f4d2d51ca6a943354accf79763eb382be172f2b8e4d947d6393b14edb6264",
+          "sha256": "f62f4d2d51ca6a943354accf79763eb382be172f2b8e4d947d6393b14edb6264"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:b8aab839c44f491b0086fac8f6b14507db205dacbc2a848a5ee018f886dba475",
-          "sha256": "b8aab839c44f491b0086fac8f6b14507db205dacbc2a848a5ee018f886dba475"
+          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:ad5cdfc80d43c5be1fad844ffdb9ec7672ea2394f9fbc517b6b81ee94d9a6748",
+          "sha256": "ad5cdfc80d43c5be1fad844ffdb9ec7672ea2394f9fbc517b6b81ee94d9a6748"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:9d17fddea277e6c462a8c3cb8c744f2d8a5ec9cb4deb6bf3bc84ab5ece7b4df6",
-          "sha256": "9d17fddea277e6c462a8c3cb8c744f2d8a5ec9cb4deb6bf3bc84ab5ece7b4df6"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:a414edcafce0460cfa6b266bd1caca47adf78fbb8866c13aae078e394ef5a576",
-          "sha256": "a414edcafce0460cfa6b266bd1caca47adf78fbb8866c13aae078e394ef5a576"
+          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:471971cee0f8f6912eb7eb566f29d7f6615f1e3e274568889988129fb0e20df4",
+          "sha256": "471971cee0f8f6912eb7eb566f29d7f6615f1e3e274568889988129fb0e20df4"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:f2321eb8f43aed5e6374f2f1a1b1b4709df49bcfbe04d22233abfa08f3e8f008",
-          "sha256": "f2321eb8f43aed5e6374f2f1a1b1b4709df49bcfbe04d22233abfa08f3e8f008"
+          "url": "https://ghcr.io/v2/homebrew/core/memcached/blobs/sha256:26334c29676f2ef450d0e3504158c92ac81099c72b5f3a8d9aca77110a9a8e80",
+          "sha256": "26334c29676f2ef450d0e3504158c92ac81099c72b5f3a8d9aca77110a9a8e80"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "libevent"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

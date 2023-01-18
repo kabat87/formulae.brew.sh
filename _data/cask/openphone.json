@@ -7,26 +7,30 @@
   ],
   "desc": "Business phone for professionals, teams, and companies",
   "homepage": "https://www.openphone.co/",
-  "url": "https://download.openphone.co/OpenPhone-3.3.6.dmg",
+  "url": "https://download.openphone.co/OpenPhone-3.7.1-universal.dmg",
   "appcast": null,
-  "version": "3.3.6",
+  "version": "3.7.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "03be43e92cbf067a406260b5626b1acf6f2c0b0949b06432f822b72afebf8808",
+  "sha256": "dd7d820f5b42464283dc1a14ee93f54a86868b562b6863ebffc1b43a42061484",
   "artifacts": [
-    [
-      "OpenPhone.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/OpenPhone",
-        "~/Library/Preferences/ca.illusive.openphone.plist",
-        "~/Library/Saved Application State/ca.illusive.openphone.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "OpenPhone.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/OpenPhone",
+            "~/Library/Preferences/ca.illusive.openphone.plist",
+            "~/Library/Saved Application State/ca.illusive.openphone.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,43 +7,48 @@
   ],
   "desc": "Virtual machine management GUI/API and registry",
   "homepage": "https://veertu.com/",
-  "url": "https://downloads.veertu.com/anka/AnkaControllerRegistry-1.22.0-5dc750f1.pkg",
+  "url": "https://downloads.veertu.com/anka/AnkaControllerRegistry-1.31.1-ab1c787e.pkg",
   "appcast": null,
-  "version": "1.22.0-5dc750f1",
+  "version": "1.31.1-ab1c787e",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6fd9483902699e862e17982c5ceb1917035bca55500538f629cb637c72e87e14",
+  "sha256": "e3effc1b5d265c182f3aa20a776aeddf14ac130468b4e6c33159b792b7974c86",
   "artifacts": [
     {
-      "script": {
-        "executable": "/Library/Application Support/Veertu/Anka/tools/controller/uninstall.sh",
-        "args": [
-          "-f"
-        ],
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "/Library/Application Support/Veertu/Anka/tools/controller/uninstall.sh",
+            "args": [
+              "-f"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    "AnkaControllerRegistry-1.22.0-5dc750f1.pkg (Pkg)",
     {
-      "trash": "/Library/Logs/Veertu/AnkaController",
-      "rmdir": "/Library/Application Support/Veertu/Anka/registry",
-      "signal": {
-      }
+      "pkg": [
+        "AnkaControllerRegistry-1.31.1-ab1c787e.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "/Library/Logs/Veertu/AnkaController",
+          "rmdir": "/Library/Application Support/Veertu/Anka/registry"
+        }
+      ]
     }
   ],
   "caveats": "Installing anka-build-cloud-controller-and-registry means you have AGREED to the license at:\n  https://veertu.com/terms-and-conditions/\n",
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

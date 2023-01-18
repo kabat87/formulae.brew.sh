@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/sntop/sntop/1.4.3/sntop-1.4.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "943a5af1905c3ae7ead064e531cde6e9b3dc82598bbda26ed4a43788d81d6d89"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sntop/blobs/sha256:b482ea74af9def4d942033c23ddacc43c16935bcd7e9094506e0008e8c69eed0",
+          "sha256": "b482ea74af9def4d942033c23ddacc43c16935bcd7e9094506e0008e8c69eed0"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/sntop/blobs/sha256:88c1bf529d00acd5093a911407aae68da341df753371f81d319862e9bafe2407",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/sntop/blobs/sha256:0674ad1a5387fadc27e9132d36bef2178e3ea821e9e05fadcc3a4d97b90a5758",
           "sha256": "0674ad1a5387fadc27e9132d36bef2178e3ea821e9e05fadcc3a4d97b90a5758"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sntop/blobs/sha256:20498a6ce6ef87de7400188bcbc095b7ea0fb1e2c90e02c35042b324835110ab",
+          "sha256": "20498a6ce6ef87de7400188bcbc095b7ea0fb1e2c90e02c35042b324835110ab"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -75,13 +86,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/sntop/blobs/sha256:c3f19036cf2d42ce9fa07ed6db6264b3e52ba475827903972877a8131eae60e9",
           "sha256": "c3f19036cf2d42ce9fa07ed6db6264b3e52ba475827903972877a8131eae60e9"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sntop/blobs/sha256:15e6f3f42a8d6afa68d48744f2673142104a0cfb84daff23c6706db8adbe6536",
+          "sha256": "15e6f3f42a8d6afa68d48744f2673142104a0cfb84daff23c6706db8adbe6536"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +106,9 @@
   "dependencies": [
     "fping"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -98,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "ncurses"
   ],
   "requirements": [
 
@@ -118,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

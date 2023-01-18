@@ -13,65 +13,70 @@
   "license": "MIT",
   "homepage": "http://projects.camlcity.org/projects/findlib.html",
   "versions": {
-    "stable": "1.9.1",
+    "stable": "1.9.6",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://download.camlcity.org/download/findlib-1.9.1.tar.gz",
+      "url": "http://download.camlcity.org/download/findlib-1.9.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2df996279ae16b606db5ff5879f93dbfade0898db9f1a3e82f7f845faa2930a2"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:bac75b12905f7138e93455ef3c4599fd417448dccafec8cbf5cc63b7192b63c7",
+          "sha256": "bac75b12905f7138e93455ef3c4599fd417448dccafec8cbf5cc63b7192b63c7"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:b05f66339e91c8aa5d0dc67242a82dc8c39a254532d8017c5d35bfd31139039e",
-          "sha256": "b05f66339e91c8aa5d0dc67242a82dc8c39a254532d8017c5d35bfd31139039e"
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:3b7dc9a49293c982c8b8fbb4bd3a979b652d9bf48b6ae6a915fe734960acb2d3",
+          "sha256": "3b7dc9a49293c982c8b8fbb4bd3a979b652d9bf48b6ae6a915fe734960acb2d3"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:747fcd3b425c998c45b5f83aaa72bab0a06a584ee409284447824472058a737e",
-          "sha256": "747fcd3b425c998c45b5f83aaa72bab0a06a584ee409284447824472058a737e"
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:259a336b537993add90ebef09bc6473dfa39426ee80292d443307f36e77e8ac4",
+          "sha256": "259a336b537993add90ebef09bc6473dfa39426ee80292d443307f36e77e8ac4"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:c9731166502de936c4897ce2f9c50b0432ac81f53dd904569ef406a4ac7bcbae",
+          "sha256": "c9731166502de936c4897ce2f9c50b0432ac81f53dd904569ef406a4ac7bcbae"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:f5e661018713080fa77ad4d33f1890f51682971eb9593d821340e51655797be8",
-          "sha256": "f5e661018713080fa77ad4d33f1890f51682971eb9593d821340e51655797be8"
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:716c17abb924c7958ebad686f456cd3c19842ba334875ae0a91f1392df756815",
+          "sha256": "716c17abb924c7958ebad686f456cd3c19842ba334875ae0a91f1392df756815"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:908202a20c99ce1e3021a2f415d876f59d8d65912df486d4085ca01b93b17e7a",
-          "sha256": "908202a20c99ce1e3021a2f415d876f59d8d65912df486d4085ca01b93b17e7a"
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:d6e7046fbe14735edb44ce83654736a476357344009fe7fd497416ade6374c47",
+          "sha256": "d6e7046fbe14735edb44ce83654736a476357344009fe7fd497416ade6374c47"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:64e0d27b20e1b6ea55beda463d21701bb96688bd9dbda5b5e66095eddd25ef49",
-          "sha256": "64e0d27b20e1b6ea55beda463d21701bb96688bd9dbda5b5e66095eddd25ef49"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:e236f3f0d85b74fc8ced41f56cf5caae52d6ef5f542b26dc27563a1db1ecbccf",
-          "sha256": "e236f3f0d85b74fc8ced41f56cf5caae52d6ef5f542b26dc27563a1db1ecbccf"
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:ef1c177401fad930e6912ae5103326dc673913e0ec16d1bd730bcc6ba5a43cf8",
+          "sha256": "ef1c177401fad930e6912ae5103326dc673913e0ec16d1bd730bcc6ba5a43cf8"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:fc83a61ef983085665a7a144d0d1d44d014da88cbb7a18b072a486555e460a40",
-          "sha256": "fc83a61ef983085665a7a144d0d1d44d014da88cbb7a18b072a486555e460a40"
+          "url": "https://ghcr.io/v2/homebrew/core/ocaml-findlib/blobs/sha256:c319106538e9f3e0faecd3900c1ebd105ad9b39645e0952ed5cd14de9b8ef2e4",
+          "sha256": "c319106538e9f3e0faecd3900c1ebd105ad9b39645e0952ed5cd14de9b8ef2e4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +85,9 @@
   ],
   "dependencies": [
     "ocaml"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

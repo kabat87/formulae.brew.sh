@@ -7,22 +7,26 @@
   ],
   "desc": "Nagios status monitor",
   "homepage": "https://nagstamon.de/",
-  "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.8.0/Nagstamon.3.8.0.dmg",
+  "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.10.1/Nagstamon.3.10.1.dmg",
   "appcast": null,
-  "version": "3.8.0",
+  "version": "3.10.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "99912e45dd8940dd508f31e775a4f1a2729d65fb7d4e072448b2f9e02daaaaf5",
+  "sha256": "ea8b51977a1bf257ad2533963e34c78403e62fbde3c29cab490b7f7898c2bec2",
   "artifacts": [
-    [
-      "Nagstamon.app"
-    ],
     {
-      "trash": "~/.nagstamon",
-      "signal": {
-      }
+      "app": [
+        "Nagstamon.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.nagstamon"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

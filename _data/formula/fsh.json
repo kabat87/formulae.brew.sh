@@ -10,7 +10,7 @@
 
   ],
   "desc": "Provides remote command execution",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://www.lysator.liu.se/fsh/",
   "versions": {
     "stable": "1.2",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.lysator.liu.se/fsh/fsh-1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9600882648966272c264cf3f1c41c11c91e704f473af43d8d4e0ac5850298826"
     }
   },
   "revision": 0,
@@ -75,18 +76,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/fsh/blobs/sha256:cec52eb07f9db79b15ff5907f30363bbb538c01b7c4eb7ae8634e7ce17eb5431",
           "sha256": "cec52eb07f9db79b15ff5907f30363bbb538c01b7c4eb7ae8634e7ce17eb5431"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/fsh/blobs/sha256:8a49ad906b045a293259c199fd5d1737894099c487b1bfc83fb60d18acf065ac",
-          "sha256": "8a49ad906b045a293259c199fd5d1737894099c487b1bfc83fb60d18acf065ac"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,10 +116,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-03-10",
+  "deprecation_reason": "unsupported",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

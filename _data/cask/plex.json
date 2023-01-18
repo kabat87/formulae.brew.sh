@@ -7,26 +7,30 @@
   ],
   "desc": "Home media player",
   "homepage": "https://www.plex.tv/",
-  "url": "https://downloads.plex.tv/plex-desktop/1.39.1.2763-300bb607/macos/Plex-1.39.1.2763-300bb607-x86_64.zip",
+  "url": "https://downloads.plex.tv/plex-desktop/1.61.1.3432-3929cb60/macos/Plex-1.61.1.3432-3929cb60-x86_64.zip",
   "appcast": null,
-  "version": "1.39.1.2763,300bb607",
+  "version": "1.61.1.3432,3929cb60",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f85e1818008a830f4255a22a84b815dc27ed1894176619db6d0efa967ab100cf",
+  "sha256": "19595a967538a470a3541cc2dd243a569cf5b3da53d4fb45cf52d2f4cf55e8c4",
   "artifacts": [
-    [
-      "Plex.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Plex",
-        "~/Library/Caches/Plex",
-        "~/Library/Logs/Plex"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Plex.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Plex",
+            "~/Library/Caches/Plex",
+            "~/Library/Logs/Plex"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

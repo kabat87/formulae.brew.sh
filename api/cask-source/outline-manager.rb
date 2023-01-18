@@ -9,10 +9,8 @@ cask "outline-manager" do
   homepage "https://www.getoutline.org/"
 
   livecheck do
-    url "https://github.com/Jigsaw-Code/outline-releases/raw/master/manager/latest-mac.yml"
-    strategy :page_match do |page|
-      YAML.safe_load(page)["version"]
-    end
+    url :url
+    strategy :github_latest
   end
 
   app "Outline Manager.app"

@@ -7,31 +7,37 @@
   ],
   "desc": "Download and manage your addons and mods",
   "homepage": "https://curseforge.overwolf.com/",
-  "url": "https://curseforge.overwolf.com/electron/mac/CurseForge-0.190.3-0.dmg",
+  "url": "https://curseforge.overwolf.com/electron/mac/CurseForge-0.216.4-1.dmg",
   "appcast": null,
-  "version": "0.190.3-0",
+  "version": "0.216.4-1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a90226b007dffbbc4bdd9bb07ac2345db3b8a7f97406b6fc16bd26aca484666e",
+  "sha256": "692d7519257d7d0fad70add271d9eafdb1e0774a2404c978e3016f5db0cce2e6",
   "artifacts": [
     {
-      "launchctl": "com.overwolf.curseforge.ShipIt",
-      "quit": "com.overwolf.curseforge",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "com.overwolf.curseforge.ShipIt",
+          "quit": "com.overwolf.curseforge"
+        }
+      ]
     },
-    [
-      "CurseForge.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Caches/curseforge-updater",
-        "~/Library/Application Support/CurseForge"
-      ],
-      "signal": {
-      }
+      "app": [
+        "CurseForge.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Caches/curseforge-updater",
+            "~/Library/Application Support/CurseForge"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

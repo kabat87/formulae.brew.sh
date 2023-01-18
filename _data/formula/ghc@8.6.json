@@ -7,7 +7,8 @@
 
   ],
   "versioned_formulae": [
-    "ghc@9",
+    "ghc@9.2",
+    "ghc@8.10",
     "ghc@8.8"
   ],
   "desc": "Glorious Glasgow Haskell Compilation System",
@@ -22,7 +23,8 @@
     "stable": {
       "url": "https://downloads.haskell.org/~ghc/8.6.5/ghc-8.6.5-src.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4d4aa1e96f4001b934ac6193ab09af5d6172f41f5a5d39d8e43393b9aafee361"
     }
   },
   "revision": 2,
@@ -32,6 +34,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ghc/8.6/blobs/sha256:5b70e3709e04b715d5e9d1948d14b77d0417290dac3c9c99897cf6b36807c612",
+          "sha256": "5b70e3709e04b715d5e9d1948d14b77d0417290dac3c9c99897cf6b36807c612"
+        },
         "monterey": {
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ghc/8.6/blobs/sha256:5449cd08c2d622390a65332c3c817e6866c2a9f4fab45d56c5159231ba99a4df",
@@ -60,7 +67,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -68,6 +74,9 @@
     "python@3.10"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,10 +112,22 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-12-10",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "python@3.10",
+        "m4",
+        "gmp"
+      ],
+      "dependencies": [
+        "ncurses"
+      ]
+    }
+  }
 }

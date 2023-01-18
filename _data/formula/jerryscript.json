@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jerryscript-project/jerryscript/archive/v2.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5850947c23db6fbce032d15560551408ab155b16a94a7ac4412dc3bb85762d2d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jerryscript/blobs/sha256:6fd5222f423cb3631821d682075287ffca06419089964788459ebfcfcd51eee8",
+          "sha256": "6fd5222f423cb3631821d682075287ffca06419089964788459ebfcfcd51eee8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jerryscript/blobs/sha256:d9fc5ed6b4d4694e46177bad3a5b3b8b6542e088224e10a4797e7bff39313077",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jerryscript/blobs/sha256:cf6ac8f80cc4c6b10bd27113e49727d31cd6f8237e55362bd5fc6cb10fdfa9b8",
           "sha256": "cf6ac8f80cc4c6b10bd27113e49727d31cd6f8237e55362bd5fc6cb10fdfa9b8"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jerryscript/blobs/sha256:1272a0788c46b580ed2736b94a60698c66a1b7b51b966a21c7045cd336f4cce6",
+          "sha256": "1272a0788c46b580ed2736b94a60698c66a1b7b51b966a21c7045cd336f4cce6"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

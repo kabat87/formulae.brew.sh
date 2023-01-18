@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/PaulStoffregen/teensy_loader_cli/archive/2.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "103c691f412d04906c4f46038c234d3e5f78322c1b78ded102df9f900724cd54"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/teensy_loader_cli/blobs/sha256:97148c203288820eb1f651a744f6bd0867b38383671ec7b7d0961504ecfc51ad",
+          "sha256": "97148c203288820eb1f651a744f6bd0867b38383671ec7b7d0961504ecfc51ad"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/teensy_loader_cli/blobs/sha256:a534e52c0de21164168c188ae60e929a17e183be3eba10ee7f4a1394c6bb94c6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/teensy_loader_cli/blobs/sha256:06529ad4373a483829c4b7ffd9bcb262077e7242be60c4a8645601ccc4aea134",
           "sha256": "06529ad4373a483829c4b7ffd9bcb262077e7242be60c4a8645601ccc4aea134"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/teensy_loader_cli/blobs/sha256:ea14a1fe61e74119a04a43a5fb0b66c2860863e7f380471679b2750794d3bde6",
+          "sha256": "ea14a1fe61e74119a04a43a5fb0b66c2860863e7f380471679b2750794d3bde6"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "libusb-compat"
+      ]
+    }
+  }
 }

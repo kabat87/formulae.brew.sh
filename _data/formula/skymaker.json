@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://web.archive.org/web/20161206053718/www.astromatic.net/download/skymaker/skymaker-3.10.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a16f9c2bd653763b5e1629e538d49f63882c46291b479b4a4997de84d8e9fb0f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/skymaker/blobs/sha256:27e46c46cf30f77353d447b24629b1d2824c70369fdcd08307be2e0984a0fb3e",
+          "sha256": "27e46c46cf30f77353d447b24629b1d2824c70369fdcd08307be2e0984a0fb3e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/skymaker/blobs/sha256:41786c90ee63b22f0d1a582dc7b42ed9aa9a749e4be35772169805c6b7804510",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/skymaker/blobs/sha256:44e3eadc4f4a2984ffff332f93e9aa7a383b7a395ccd9fd6714a237a48ed72d0",
           "sha256": "44e3eadc4f4a2984ffff332f93e9aa7a383b7a395ccd9fd6714a237a48ed72d0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/skymaker/blobs/sha256:b535c7f706a5139cde6cbbb0893009287cc2bf7062474f90de68a557ba3a4397",
+          "sha256": "b535c7f706a5139cde6cbbb0893009287cc2bf7062474f90de68a557ba3a4397"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "fftw"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

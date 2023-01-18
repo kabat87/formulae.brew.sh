@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dev-www.libreoffice.org/src/libwpd-0.10.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2465b0b662fdc5d4e3bebcdc9a79027713fb629ca2bff04a3c9251fdec42dd09"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libwpd/blobs/sha256:99f0b0dd570023f92e2d932d5a6fc9308450fcc2a89a5af43ce595b477bf90ba",
+          "sha256": "99f0b0dd570023f92e2d932d5a6fc9308450fcc2a89a5af43ce595b477bf90ba"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libwpd/blobs/sha256:07859be4298f02006c4fc96a58d0cb26a01302d8417ae4131d40342bbbb069a3",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libwpd/blobs/sha256:0a31f499bc64b2f40d0eca1eb0b4c1e0be8b54f143692aa498d2e3003e5afc2d",
           "sha256": "0a31f499bc64b2f40d0eca1eb0b4c1e0be8b54f143692aa498d2e3003e5afc2d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libwpd/blobs/sha256:94ab87267b633ee7c374462f66cd7a377253c302d651228a2ae3aadbf45e5ef2",
+          "sha256": "94ab87267b633ee7c374462f66cd7a377253c302d651228a2ae3aadbf45e5ef2"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libwpd/blobs/sha256:f4ef8b16411ea32e77e35bf0a8109b5f7651931e885ffd4ad7a8933a12d4f749",
           "sha256": "f4ef8b16411ea32e77e35bf0a8109b5f7651931e885ffd4ad7a8933a12d4f749"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libwpd/blobs/sha256:589effab1c398690ba5ee3b616d3ab9667260d013ac3ebb93aef4a69dc1ebe9b",
+          "sha256": "589effab1c398690ba5ee3b616d3ab9667260d013ac3ebb93aef4a69dc1ebe9b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +102,9 @@
     "glib",
     "libgsf",
     "librevenge"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

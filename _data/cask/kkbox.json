@@ -7,39 +7,45 @@
   ],
   "desc": "Music streaming service",
   "homepage": "https://www.kkbox.com/",
-  "url": "https://dl-universal.kfs.io/21.12.10/KKBOX-21.12.10.dmg",
+  "url": "https://dl-universal.kfs.io/22.12.0/KKBOX-22.12.0.dmg",
   "appcast": null,
-  "version": "21.12.10",
+  "version": "22.12.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "96b5fbe1a1c13b75eef940a75e2a3f8ab7a28918d28c7c44e4de24879ce199d4",
+  "sha256": "ee7bb8c9da1e0f1a873a75f579ef1a82d4d3158feeaa3165316541c273b401a0",
   "artifacts": [
     {
-      "quit": "com.kkbox.electron-app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.kkbox.electron-app"
+        }
+      ]
     },
-    [
-      "KKBOX.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.kkbox.KKBOX",
-        "~/Library/Application Support/KKBOX",
-        "~/Library/Caches/com.kkbox.electron-app.ShipIt",
-        "~/Library/Caches/com.kkbox.electron-app",
-        "~/Library/Caches/com.kkbox.KKBOX",
-        "~/Library/Caches/KKBOX",
-        "~/Library/HTTPStorages/com.kkbox.electron-app",
-        "~/Library/HTTPStorages/com.kkbox.KKBOX",
-        "~/Library/Preferences/com.kkbox.electron-app.plist",
-        "~/Library/Preferences/com.kkbox.KKBOX.plist",
-        "~/Library/Saved Application State/com.kkbox.electron-app.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "KKBOX.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.kkbox.KKBOX",
+            "~/Library/Application Support/KKBOX",
+            "~/Library/Caches/com.kkbox.electron-app.ShipIt",
+            "~/Library/Caches/com.kkbox.electron-app",
+            "~/Library/Caches/com.kkbox.KKBOX",
+            "~/Library/Caches/KKBOX",
+            "~/Library/HTTPStorages/com.kkbox.electron-app",
+            "~/Library/HTTPStorages/com.kkbox.KKBOX",
+            "~/Library/Preferences/com.kkbox.electron-app.plist",
+            "~/Library/Preferences/com.kkbox.KKBOX.plist",
+            "~/Library/Saved Application State/com.kkbox.electron-app.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -52,5 +58,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

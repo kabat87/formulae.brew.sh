@@ -7,25 +7,31 @@
   ],
   "desc": "Neovim client",
   "homepage": "https://github.com/vv-vim/vv",
-  "url": "https://github.com/vv-vim/vv/releases/download/v2.4.7/VV-2.4.7.dmg",
+  "url": "https://github.com/vv-vim/vv/releases/download/v2.4.10/VV-2.4.10.dmg",
   "appcast": null,
-  "version": "2.4.7",
+  "version": "2.4.10",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "867cbde494f7a447fd56efe9efc644e0cc546c5168277eeab8d6cea89af46c31",
+  "sha256": "b6060d1105745640728fd7cdcc6a312a1d497a29cb30e5575cfb3318cd9577e8",
   "artifacts": [
-    [
-      "VV.app"
-    ],
-    [
-      "/Applications/VV.app/Contents/Resources/bin/vv"
-    ],
     {
-      "trash": "~/Library/Application Support/VV",
-      "signal": {
-      }
+      "app": [
+        "VV.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/VV.app/Contents/Resources/bin/vv"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/VV"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -11,7 +11,7 @@
   ],
   "desc": "High performance TCP and WebSocket load generator and sink",
   "license": "BSD-2-Clause",
-  "homepage": "https://github.com/machinezone/tcpkali",
+  "homepage": "https://github.com/satori-com/tcpkali",
   "versions": {
     "stable": "1.1.1",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/machinezone/tcpkali/releases/download/v1.1.1/tcpkali-1.1.1.tar.gz",
+      "url": "https://github.com/satori-com/tcpkali/releases/download/v1.1.1/tcpkali-1.1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a9a15a1703fc4960360a414ee282d821a7b42d4bbba89f9e72a796164ff69598"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcpkali/blobs/sha256:a4e360c9b9f4e392e429075847cf3d4f02d0318668d19d5745a7f0108c381330",
+          "sha256": "a4e360c9b9f4e392e429075847cf3d4f02d0318668d19d5745a7f0108c381330"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcpkali/blobs/sha256:1da7a44e7f3a40440cbb5ac8fa5fde5156c22125080daf5c6afc884b3f8dc264",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcpkali/blobs/sha256:7e7b45ed05cf7d7ad1dde75394b670e192c217cdfe98012e8da514cf6717d64a",
           "sha256": "7e7b45ed05cf7d7ad1dde75394b670e192c217cdfe98012e8da514cf6717d64a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcpkali/blobs/sha256:e3a2e0de9e4081e5f2720aec73737040ad1449b1d69d4ce7fbd1cad1940f4c11",
+          "sha256": "e3a2e0de9e4081e5f2720aec73737040ad1449b1d69d4ce7fbd1cad1940f4c11"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/tcpkali/blobs/sha256:2d0075b2fca885fb694660a3914362030be255c8e3dfed407bb8ca96c996bbf7",
           "sha256": "2d0075b2fca885fb694660a3914362030be255c8e3dfed407bb8ca96c996bbf7"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tcpkali/blobs/sha256:71573c4926d086721c028e73d9812475fe3a58bd8313a43ef9c6a54918334760",
-          "sha256": "71573c4926d086721c028e73d9812475fe3a58bd8313a43ef9c6a54918334760"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcpkali/blobs/sha256:ae1230bcf9879d1d8f09d5e0a3b80c9baf7f59c2bfa77a296a06ed6a821d5be7",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -131,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

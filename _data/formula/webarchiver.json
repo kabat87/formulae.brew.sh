@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/newzealandpaul/webarchiver/archive/0.10.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "06705d361ebb1de6411e4d386a01a60314aa52d5c20f64603c1b9652a3eceae4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/webarchiver/blobs/sha256:6ea8cae29374c5b638bc0ef3d6041c2841c167fdcd113fc8596fe33a77f526f7",
+          "sha256": "6ea8cae29374c5b638bc0ef3d6041c2841c167fdcd113fc8596fe33a77f526f7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/webarchiver/blobs/sha256:01db745b1093daa64bf029a355126fabade68c7a2126f8cbec2b2db22d812628",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/webarchiver/blobs/sha256:50bf552bad7141e95abb811a7bb8e200747183486e3875524281175c83e81941",
           "sha256": "50bf552bad7141e95abb811a7bb8e200747183486e3875524281175c83e81941"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/webarchiver/blobs/sha256:21bd410ab07dd9e4af041de01cdb1f0699f9565d9e3672f0b6dd17b14d39bf30",
+          "sha256": "21bd410ab07dd9e4af041de01cdb1f0699f9565d9e3672f0b6dd17b14d39bf30"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -99,6 +112,15 @@
       "contexts": [
         "build"
       ]
+    },
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
+
+      ]
     }
   ],
   "conflicts_with": [
@@ -116,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

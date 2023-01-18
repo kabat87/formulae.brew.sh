@@ -7,50 +7,58 @@
   ],
   "desc": "Remote desktop software",
   "homepage": "https://edovia.com/en/screens-connect/",
-  "url": "https://updates.edovia.com/com.edovia.screens.connect.mac/ScreensConnect_4.11.1b21658.zip",
+  "url": "https://updates.edovia.com/com.edovia.screens.connect.mac/ScreensConnect_4.12.2b21680.zip",
   "appcast": null,
-  "version": "4.11.1,21658",
+  "version": "4.12.2,21680",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a61c1f5be03406b02309d78adee51963f268564548a379bbfc12d560a32b7362",
+  "sha256": "5998bfe68f9f95c77dc9e0e6c39db2285a575e655580e0c4447f5e58de912be6",
   "artifacts": [
     {
-      "quit": "com.edovia.Screens-Connect",
-      "launchctl": [
-        "com.edovia.Screens-Connect.launcher",
-        "com.edovia.screens.connect"
-      ],
-      "script": {
-        "executable": "/Applications/Screens Connect.app/Contents/Resources/sc-uninstaller.tool",
-        "must_succeed": "false",
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.edovia.Screens-Connect",
+          "launchctl": [
+            "com.edovia.Screens-Connect.launcher",
+            "com.edovia.screens.connect"
+          ],
+          "script": {
+            "executable": "/Applications/Screens Connect.app/Contents/Resources/sc-uninstaller.tool",
+            "must_succeed": "false",
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    [
-      "Screens Connect.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.edovia.Screens-Connect.plist",
-        "~/Library/Preferences/com.edovia.ScreensConnect.Shared.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Screens Connect.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.edovia.Screens-Connect.plist",
+            "~/Library/Preferences/com.edovia.ScreensConnect.Shared.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.11"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

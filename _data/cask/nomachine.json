@@ -7,36 +7,54 @@
   ],
   "desc": "Remote desktop software",
   "homepage": "https://www.nomachine.com/",
-  "url": "https://download.nomachine.com/download/7.7/MacOSX/nomachine_7.7.4_1.dmg",
+  "url": "https://download.nomachine.com/download/8.2/MacOSX/nomachine_8.2.3_12.dmg",
   "appcast": null,
-  "version": "7.7.4_1",
+  "version": "8.2.3_12",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "776d49dbe26570ebbca6903cc5b50f072cd70c5bc4162907a2f52b44d07b5d54",
+  "sha256": "6aac0a746c43defe585c8b6dbf39018d7f582ad126844b1e6cda113025a2afc2",
   "artifacts": [
     {
-      "delete": "/Applications/NoMachine.app",
-      "pkgutil": "com.nomachine.nomachine.NoMachine-*.pkg",
-      "launchctl": [
-        "com.nomachine.localnxserver",
-        "com.nomachine.nxserver",
-        "com.nomachine.server",
-        "com.nomachine.uninstall"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/NoMachine.app",
+          "pkgutil": [
+            "com.nomachine.nomachine.NoMachine-*.pkg",
+            "com.nomachine.nxnode",
+            "com.nomachine.nxplayer",
+            "com.nomachine.nxrunner",
+            "com.nomachine.nxserver"
+          ],
+          "launchctl": [
+            "com.nomachine.nxnode",
+            "com.nomachine.nxplayer",
+            "com.nomachine.nxrunner",
+            "com.nomachine.nxserver",
+            "com.nomachine.localnxserver",
+            "com.nomachine.uninstall",
+            "com.nomachine.server",
+            "com.nomachine.nxlaunchconf"
+          ]
+        }
+      ]
     },
-    "NoMachine.pkg (Pkg)",
     {
-      "trash": [
-        "/Library/Application Support/NoMachine",
-        "~/Documents/NoMachine",
-        "~/Library/Preferences/com.nomachine.nxdock.plist"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "NoMachine.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/Application Support/NoMachine",
+            "~/Documents/NoMachine",
+            "~/Library/Preferences/com.nomachine.nxdock.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +62,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

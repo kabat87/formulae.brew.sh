@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://www.netlib.org/lapack/",
   "versions": {
-    "stable": "3.10.0",
+    "stable": "3.11",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/Reference-LAPACK/lapack/archive/v3.10.0.tar.gz",
+      "url": "https://github.com/Reference-LAPACK/lapack/archive/v3.11.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5a5b3bac27709d8c66286b7a0d1d7bf2d7170ec189a1a756fdf812c97aa7fd10"
     }
   },
   "revision": 0,
@@ -31,40 +32,40 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:f70b3ce19cf4a9fb328f71caba7b40bacbddda80e9ad196401bcb3e0cd9e4ad7",
+          "sha256": "f70b3ce19cf4a9fb328f71caba7b40bacbddda80e9ad196401bcb3e0cd9e4ad7"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:95407dca1870630e2a99175bd55210f151dc1db7e264a1ff396f79965e6bdc3d",
-          "sha256": "95407dca1870630e2a99175bd55210f151dc1db7e264a1ff396f79965e6bdc3d"
+          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:c9e7171ba3cc0159086737a3905e7403c81bcd3ad6cc506e955e00ac730eb302",
+          "sha256": "c9e7171ba3cc0159086737a3905e7403c81bcd3ad6cc506e955e00ac730eb302"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:57b25ebfd66edca32e16acf1f7127af22bb1ea43a1f7b758895789696fe0590e",
-          "sha256": "57b25ebfd66edca32e16acf1f7127af22bb1ea43a1f7b758895789696fe0590e"
+          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:c814d96489b94449715fdab61925f859092e7d4103ec35d42bf46652628e9a52",
+          "sha256": "c814d96489b94449715fdab61925f859092e7d4103ec35d42bf46652628e9a52"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:7f59f3c3bb3d76b6f44d28bfb0abc7c13970c473b5f53f810acd58060c6a71df",
+          "sha256": "7f59f3c3bb3d76b6f44d28bfb0abc7c13970c473b5f53f810acd58060c6a71df"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:ce6223d15a12cf1535460a3a6a59cd822ed5f44ca417f94a5bf29ed46931897e",
-          "sha256": "ce6223d15a12cf1535460a3a6a59cd822ed5f44ca417f94a5bf29ed46931897e"
+          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:f0ac2a70102bc54a9f617678161653d7d261966b6a9ec68d22a805f0d3f66658",
+          "sha256": "f0ac2a70102bc54a9f617678161653d7d261966b6a9ec68d22a805f0d3f66658"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:3b57e303806b0fa8cb17738b10b3bd2b4801ef898fc5433af05b90cab9dddf40",
-          "sha256": "3b57e303806b0fa8cb17738b10b3bd2b4801ef898fc5433af05b90cab9dddf40"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:cbdfdaa3de046ff377bf0e6a974541016a0790c0ddba295eecdb4615f8ec5923",
-          "sha256": "cbdfdaa3de046ff377bf0e6a974541016a0790c0ddba295eecdb4615f8ec5923"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:619839fc1623b36c0b7bf8903e424c003bbd6ef96a0f9f7ed1ff684f231c54ec",
-          "sha256": "619839fc1623b36c0b7bf8903e424c003bbd6ef96a0f9f7ed1ff684f231c54ec"
+          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:a98f6ed1c5cba50e0887b9599da3c881e83198965afd471f9532effd0dc9491a",
+          "sha256": "a98f6ed1c5cba50e0887b9599da3c881e83198965afd471f9532effd0dc9491a"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:7f1c1dcfcf68dd35f484bba3c43c7e070dcd4da9a03fad5c50a408a00d26e217",
-          "sha256": "7f1c1dcfcf68dd35f484bba3c43c7e070dcd4da9a03fad5c50a408a00d26e217"
+          "url": "https://ghcr.io/v2/homebrew/core/lapack/blobs/sha256:39ebab237ba84c5ba207b2d31e84e75e901bffb769e8ee7680060e9ba36c2ed0",
+          "sha256": "39ebab237ba84c5ba207b2d31e84e75e901bffb769e8ee7680060e9ba36c2ed0"
         }
       }
     }
@@ -74,7 +75,6 @@
     "reason": ":shadowed_by_macos",
     "explanation": "macOS provides LAPACK in Accelerate.framework"
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +83,9 @@
   ],
   "dependencies": [
     "gcc"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +114,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "keg_only_reason": {
+        "reason": "it conflicts with openblas",
+        "explanation": ""
+      }
+    }
+  }
 }

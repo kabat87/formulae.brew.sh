@@ -7,18 +7,42 @@
   ],
   "desc": "Collection of tools to build a dedicated basic communication network",
   "homepage": "https://github.com/yanue/V2rayU",
-  "url": "https://github.com/yanue/V2rayU/releases/download/3.2.0/V2rayU.dmg",
+  "url": "https://github.com/yanue/V2rayU/releases/download/3.3.0/V2rayU-64.dmg",
   "appcast": null,
-  "version": "3.2.0",
+  "version": "3.3.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c22301909180efb6750def820952c25e0b7fbe5838de3cbfac1bdd219ececae5",
+  "sha256": "f20de5fae2308ac4c528d1e6ce9fd1aa071cfc05245d19924408640b2bbfd62b",
   "artifacts": [
-    [
-      "V2rayU.app"
-    ]
+    {
+      "uninstall": [
+        {
+          "launchctl": [
+            "yanue.v2rayu.http",
+            "yanue.v2rayu.v2ray-core"
+          ]
+        }
+      ]
+    },
+    {
+      "app": [
+        "V2rayU.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.V2rayU/",
+            "~/Library/LaunchAgents/yanue.v2rayu.v2ray-core.plist",
+            "~/Library/Logs/V2rayU.log",
+            "~/Library/Preferences/net.yanue.V2rayU.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -30,5 +54,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/yanue/V2rayU/releases/download/3.3.0/V2rayU-arm64.dmg",
+      "sha256": "9fb1aa5a2e8d5dc0243c6f5c6b99ee5ac44cf233d0a0280badc5a9709a22421c"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/yanue/V2rayU/releases/download/3.3.0/V2rayU-arm64.dmg",
+      "sha256": "9fb1aa5a2e8d5dc0243c6f5c6b99ee5ac44cf233d0a0280badc5a9709a22421c"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/yanue/V2rayU/releases/download/3.3.0/V2rayU-arm64.dmg",
+      "sha256": "9fb1aa5a2e8d5dc0243c6f5c6b99ee5ac44cf233d0a0280badc5a9709a22421c"
+    }
+  }
 }

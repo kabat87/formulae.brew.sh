@@ -7,34 +7,40 @@
   ],
   "desc": "Tool to wirelessly mirror the screen or stream media files",
   "homepage": "https://www.airsquirrels.com/airparrot/",
-  "url": "https://download.airsquirrels.com/AirParrot3/Mac/AirParrot-3.1.2.dmg",
+  "url": "https://download.airsquirrels.com/AirParrot3/Mac/AirParrot-3.1.4.dmg",
   "appcast": null,
-  "version": "3.1.2",
+  "version": "3.1.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "fac0deb4339ed1979b91cc24fe15e5b291800e0ef64e0dbe84d55dd1dc9492bc",
+  "sha256": "68776d52852e3c7c5702f83e14c3e1e812855e67c483b09ab3ea8a4d06c75141",
   "artifacts": [
     {
-      "kext": [
-        "com.squirrels.driver.AirParrotSpeakers",
-        "/Library/Extensions/AirParrotDriver.kext",
-        "/Library/Extensions/APExtFramebuffer.kext",
-        "/System/Library/Extensions/AirParrotDriver.kext",
-        "/System/Library/Extensions/APExtFramebuffer.kext"
-      ],
-      "quit": "com.squirrels.AirParrot-3",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "kext": [
+            "/Library/Extensions/AirParrotDriver.kext",
+            "/Library/Extensions/APExtFramebuffer.kext",
+            "/System/Library/Extensions/AirParrotDriver.kext",
+            "/System/Library/Extensions/APExtFramebuffer.kext",
+            "com.squirrels.driver.AirParrotSpeakers"
+          ],
+          "quit": "com.squirrels.AirParrot-3"
+        }
+      ]
     },
-    [
-      "AirParrot 3.app"
-    ],
     {
-      "trash": "~/Library/Preferences/com.squirrels.AirParrot-*.plist",
-      "signal": {
-      }
+      "app": [
+        "AirParrot 3.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/com.squirrels.AirParrot-*.plist"
+        }
+      ]
     }
   ],
   "caveats": "airparrot requires a kernel extension to work.\nIf the installation fails, retry after you enable it in:\n  System Preferences → Security & Privacy → General\n\nFor more information, refer to vendor documentation or this Apple Technical Note:\n  https://developer.apple.com/library/content/technotes/tn2459/_index.html\n",
@@ -42,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

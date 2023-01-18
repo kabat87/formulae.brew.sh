@@ -13,15 +13,16 @@
   "license": "BSD-2-Clause",
   "homepage": "https://libspng.org/",
   "versions": {
-    "stable": "0.7.1",
+    "stable": "0.7.3",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/randy408/libspng/archive/v0.7.1.tar.gz",
+      "url": "https://github.com/randy408/libspng/archive/v0.7.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a50cadbe808ffda1a7fab17d145f52a23b163f34b3eb3696c7ecb5a52340fc1d"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:deb3a3d4552e7c993cb6f91645f52488ba1e7c310c60f07544e16b2918ff7575",
+          "sha256": "deb3a3d4552e7c993cb6f91645f52488ba1e7c310c60f07544e16b2918ff7575"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:113f103b85fb26b23deea38dba6952e43eb5f66a7b487435bb6192cc226afdd8",
-          "sha256": "113f103b85fb26b23deea38dba6952e43eb5f66a7b487435bb6192cc226afdd8"
+          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:84b61c16e0cf8ec194780d6616eb3670c26369d0b79f4670c63a5583b646c223",
+          "sha256": "84b61c16e0cf8ec194780d6616eb3670c26369d0b79f4670c63a5583b646c223"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:3dab6addd815f5c2581819f6898a5b89697749e6430bec257070427e16b0ab48",
-          "sha256": "3dab6addd815f5c2581819f6898a5b89697749e6430bec257070427e16b0ab48"
+          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:a152fb7f0a64b0ddac056e29578c6cebb64dae60cba7509ed4f82f3c59ac1591",
+          "sha256": "a152fb7f0a64b0ddac056e29578c6cebb64dae60cba7509ed4f82f3c59ac1591"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:d8784bef29e67699a913680022e5a48d6f499bf19564228383efdfbb9a518c8a",
+          "sha256": "d8784bef29e67699a913680022e5a48d6f499bf19564228383efdfbb9a518c8a"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:f3ad98cd2b7c1cfc01016b7971b02d35d3a96625e2846b52a4b08c0f8429b49b",
-          "sha256": "f3ad98cd2b7c1cfc01016b7971b02d35d3a96625e2846b52a4b08c0f8429b49b"
+          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:c3190740fd003e35cbeb8b71c0cae74bbc49478a5581781289bcd6a3966afaee",
+          "sha256": "c3190740fd003e35cbeb8b71c0cae74bbc49478a5581781289bcd6a3966afaee"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:348a4922588fdaac780287189ac57df2e0f8161eb52c433279fff1c91c83fd79",
-          "sha256": "348a4922588fdaac780287189ac57df2e0f8161eb52c433279fff1c91c83fd79"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:2b901c432dee3e6cc812445d71801fd4454cd1c1950214bf4654a97de358fdc6",
-          "sha256": "2b901c432dee3e6cc812445d71801fd4454cd1c1950214bf4654a97de358fdc6"
+          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:fa2c6820fcdfe82921c55d077c696210bfcf7185e84a384fd8a14779117e212f",
+          "sha256": "fa2c6820fcdfe82921c55d077c696210bfcf7185e84a384fd8a14779117e212f"
         },
         "x86_64_linux": {
-          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:3512ae373da63acb54044f904e61e00a3a674e2b4d30153498f65bbda91a8c78",
-          "sha256": "3512ae373da63acb54044f904e61e00a3a674e2b4d30153498f65bbda91a8c78"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libspng/blobs/sha256:e8590ea4e1f4679adf589ceef9ad5a39b32aa24678d75cd6194d8b1114ef2747",
+          "sha256": "e8590ea4e1f4679adf589ceef9ad5a39b32aa24678d75cd6194d8b1114ef2747"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -105,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.lighttpd.net/download/spawn-fcgi-1.6.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ab327462cb99894a3699f874425a421d934f957cb24221f00bb888108d9dd09e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/spawn-fcgi/blobs/sha256:56eaf8799a8a03bec6c678f53cf48aa3b9828a473479150a67a2a58399cc3613",
+          "sha256": "56eaf8799a8a03bec6c678f53cf48aa3b9828a473479150a67a2a58399cc3613"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/spawn-fcgi/blobs/sha256:9efa91b0b383106235bc16d9fad9852f33233eb6b81891109b60733ec40ec71c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/spawn-fcgi/blobs/sha256:89bc1faf59756165a4a27cd43fdbac4c5d81ba5e12613fc1152c181a60f5c0df",
           "sha256": "89bc1faf59756165a4a27cd43fdbac4c5d81ba5e12613fc1152c181a60f5c0df"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/spawn-fcgi/blobs/sha256:16b2c04a3bca92100db5fe04d56741257daccd7f91737526af4ac45c5805167b",
+          "sha256": "16b2c04a3bca92100db5fe04d56741257daccd7f91737526af4ac45c5805167b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/spawn-fcgi/blobs/sha256:4e6f999ebcad8b7ce84473379b6358ec569559f9e4b772d31ef1a5b0e01fc865",
           "sha256": "4e6f999ebcad8b7ce84473379b6358ec569559f9e4b772d31ef1a5b0e01fc865"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/spawn-fcgi/blobs/sha256:7473e3e2cd5322b2f09011e2b5119622e145d136cd0a8d4ce7adcb255a13d83b",
-          "sha256": "7473e3e2cd5322b2f09011e2b5119622e145d136cd0a8d4ce7adcb255a13d83b"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/spawn-fcgi/blobs/sha256:0298a54805a7a33df96d41668d628b3c062700328e5e40be7f745092fb3d3077",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

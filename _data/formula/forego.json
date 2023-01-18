@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ddollar/forego/archive/20180216151118.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "23119550cc0e45191495823aebe28b42291db6de89932442326340042359b43d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/forego/blobs/sha256:544f9c669387997e9197bf3de714106580d23b38fbcd7ba5d5dfba80876563e7",
+          "sha256": "544f9c669387997e9197bf3de714106580d23b38fbcd7ba5d5dfba80876563e7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/forego/blobs/sha256:add9895abd190b3c092406ff31939139d7f4e84ea4b8826a3e81e701ce5a482f",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/forego/blobs/sha256:ae42636ee209a05effd8db31e34d9458bac997f778227eb9bab935fc3699f3fa",
           "sha256": "ae42636ee209a05effd8db31e34d9458bac997f778227eb9bab935fc3699f3fa"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/forego/blobs/sha256:26c2704d12c1d17ec4a2c5da4d57088de37c98d08403771e1bc216bf39ac1fef",
+          "sha256": "26c2704d12c1d17ec4a2c5da4d57088de37c98d08403771e1bc216bf39ac1fef"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/freetype/ttfautohint/1.8.4/ttfautohint-1.8.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8a876117fa6ebfd2ffe1b3682a9a98c802c0f47189f57d3db4b99774206832e1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ttfautohint/blobs/sha256:e783c67f64f6aeeaf22b635133eacac161f936bb5c71479109d5bc86ee188c98",
+          "sha256": "e783c67f64f6aeeaf22b635133eacac161f936bb5c71479109d5bc86ee188c98"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ttfautohint/blobs/sha256:6aa8eb3acf16503b4f18ff09c7a072449e1b1c519bb8b72a7827ec8242a9c9b1",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ttfautohint/blobs/sha256:1ff2650d6b448e25018921dd855a32d1414c7491fef92f44af042ca1025b1976",
           "sha256": "1ff2650d6b448e25018921dd855a32d1414c7491fef92f44af042ca1025b1976"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ttfautohint/blobs/sha256:288ff076d988ce45c5a253188f1da0a7a7fbded29b52499678e3c649c61ec226",
+          "sha256": "288ff076d988ce45c5a253188f1da0a7a7fbded29b52499678e3c649c61ec226"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
     "freetype",
     "harfbuzz",
     "libpng"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

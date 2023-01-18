@@ -9,19 +9,20 @@
   "versioned_formulae": [
 
   ],
-  "desc": "Extendable open-source CI server",
+  "desc": "Extendable open source continuous integration server",
   "license": "MIT",
-  "homepage": "https://www.jenkins.io/index.html#stable",
+  "homepage": "https://www.jenkins.io/",
   "versions": {
-    "stable": "2.319.2",
+    "stable": "2.375.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://get.jenkins.io/war-stable/2.319.2/jenkins.war",
+      "url": "https://get.jenkins.io/war-stable/2.375.2/jenkins.war",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e572525f7fa43b082e22896f72570297d88daec4f36ab4f25fdadca885f95492"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-lts/blobs/sha256:c196bc86bea532c715b8d30ea9187c0012c316cb8a7dd0128cbfb7f623c41fba",
-          "sha256": "c196bc86bea532c715b8d30ea9187c0012c316cb8a7dd0128cbfb7f623c41fba"
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-lts/blobs/sha256:069c3d1e664ad97b411ebec505b29331969b178ab754b1baba0d9f7e148a1e2f",
+          "sha256": "069c3d1e664ad97b411ebec505b29331969b178ab754b1baba0d9f7e148a1e2f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@11"
+    "openjdk@17"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

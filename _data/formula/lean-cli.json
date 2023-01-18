@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/leancloud/lean-cli",
   "versions": {
-    "stable": "0.29.1",
+    "stable": "1.1.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/leancloud/lean-cli/archive/v0.29.1.tar.gz",
+      "url": "https://github.com/leancloud/lean-cli/archive/v1.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2453bd3c89d56c53dc995a2f6eae2161faec41955614601d2e028f95635b6313"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:b3f7c6fa12a9de98424bce49c809897cfa3c585cd9da0a873e960d7065728124",
+          "sha256": "b3f7c6fa12a9de98424bce49c809897cfa3c585cd9da0a873e960d7065728124"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:297e5b3365b8b9962c9043f83187d134f1dfbde6a5e9bf701ffdf930a04aef34",
-          "sha256": "297e5b3365b8b9962c9043f83187d134f1dfbde6a5e9bf701ffdf930a04aef34"
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:5a59d6806979cfeb03dfb144a7dc1faffbc6ff240022f8da9861bdca66ae2650",
+          "sha256": "5a59d6806979cfeb03dfb144a7dc1faffbc6ff240022f8da9861bdca66ae2650"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:93f973a8f75638ba51473f543a9a6df01072e9d6a83f2565d4afb0fe4dbb31b1",
-          "sha256": "93f973a8f75638ba51473f543a9a6df01072e9d6a83f2565d4afb0fe4dbb31b1"
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:dc016fd06623d63e3a7ba4a517300526b9f43b1dd660b4b125d9b4ec5b7b95bd",
+          "sha256": "dc016fd06623d63e3a7ba4a517300526b9f43b1dd660b4b125d9b4ec5b7b95bd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:91152db2c2b4601cce89f336f7eddc1f872c0aad8678fe080fd7f0d7bbc00e1e",
+          "sha256": "91152db2c2b4601cce89f336f7eddc1f872c0aad8678fe080fd7f0d7bbc00e1e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:0ae987771c7232f15febd496216f1a6c58c9a480ce07177021dfe0f13ccebd34",
-          "sha256": "0ae987771c7232f15febd496216f1a6c58c9a480ce07177021dfe0f13ccebd34"
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:44f0b9fb4047a2c4b4e8f8fd2ed1caa2217dba378697563fe18c83a4c7bdc3d3",
+          "sha256": "44f0b9fb4047a2c4b4e8f8fd2ed1caa2217dba378697563fe18c83a4c7bdc3d3"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:2569f335f70633cf3b4934985b28a75c8901ea7d1bcee18f6c72dc17121db48b",
-          "sha256": "2569f335f70633cf3b4934985b28a75c8901ea7d1bcee18f6c72dc17121db48b"
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:700f97f1dafe246ded16a9c51331c50f85086d0c894e28d4cd68d7c58674a9c5",
+          "sha256": "700f97f1dafe246ded16a9c51331c50f85086d0c894e28d4cd68d7c58674a9c5"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:28f91cea2e135ad326b1809dc847830cffb7c1817cf5de08dd9f9a17f0e5e38d",
-          "sha256": "28f91cea2e135ad326b1809dc847830cffb7c1817cf5de08dd9f9a17f0e5e38d"
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:a671ed40ef27195e163e264b02affad345ff67b048982c06c65bb904360711a7",
+          "sha256": "a671ed40ef27195e163e264b02affad345ff67b048982c06c65bb904360711a7"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:43cc33d0a8b9c99482403d3ec6ed07d8ac0dacd5943d18636f51022edc7c4a77",
-          "sha256": "43cc33d0a8b9c99482403d3ec6ed07d8ac0dacd5943d18636f51022edc7c4a77"
+          "url": "https://ghcr.io/v2/homebrew/core/lean-cli/blobs/sha256:f89fb965cf2378ddf47cbc3d83f12d09110c33565f760c8775ee9005b571d4ec",
+          "sha256": "f89fb965cf2378ddf47cbc3d83f12d09110c33565f760c8775ee9005b571d4ec"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

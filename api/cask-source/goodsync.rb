@@ -1,8 +1,8 @@
 cask "goodsync" do
-  version "11.9.8"
-  sha256 "058c9b9c3eb864bbbcad7529fa4db1b2d3e7714e143d0b5c6d83a8f680642750"
+  version "12.1.4"
+  sha256 :no_check # required as upstream package is updated in-place
 
-  url "https://www.goodsync.com/download/goodsync-v#{version.major}-mac.dmg"
+  url "https://www.goodsync.com/download/goodsync-v11-mac.dmg"
   name "GoodSync"
   desc "File synchronization and backup software"
   homepage "https://www.goodsync.com/"
@@ -11,8 +11,6 @@ cask "goodsync" do
     url "https://www.goodsync.com/download?os=macos"
     regex(/GoodSync\s+for\s+Mac\s+v?\s*(\d+(?:\.\d+)+)/i)
   end
-
-  depends_on macos: ">= :yosemite"
 
   app "GoodSync.app"
 

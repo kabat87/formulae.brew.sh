@@ -7,38 +7,46 @@
   ],
   "desc": "Screen recorder",
   "homepage": "https://www.berrycast.com/",
-  "url": "https://media.berrycast.app/desktop-installer/Berrycast-0.35.5-latest.dmg",
+  "url": "https://media.berrycast.app/desktop-installer/Berrycast-0.37.1-latest.dmg",
   "appcast": null,
-  "version": "0.35.5",
+  "version": "0.37.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a1962cfb3d0304c0e209d10e6391a661064f9d084fc9382d40d9bc811f71381f",
+  "sha256": "f6691b84c09eb9d8cc1f36e0e34ddf3df1190f169cd120fb5d448121b65438ce",
   "artifacts": [
     {
-      "login_item": "Berrycast",
-      "quit": [
-        "com.openmindt.berrycast",
-        "com.openmindt.berrycast.helper",
-        "com.openmindt.berrycast.helper.GPU",
-        "com.openmindt.berrycast.helper.Plugin",
-        "com.openmindt.berrycast.helper.Renderer"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "login_item": "Berrycast",
+          "quit": [
+            "com.openmindt.berrycast",
+            "com.openmindt.berrycast.helper",
+            "com.openmindt.berrycast.helper.GPU",
+            "com.openmindt.berrycast.helper.Plugin",
+            "com.openmindt.berrycast.helper.Renderer"
+          ]
+        }
+      ]
     },
-    [
-      "Berrycast.app"
-    ],
     {
-      "trash": [
-        "~/Library/Logs/Berrycast",
-        "~/Library/Preferences/com.openmindt.berrycast.plist",
-        "~/Library/Saved Application State/com.openmindt.berrycast.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Berrycast.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/berrycast-desktop",
+            "~/Library/Logs/Berrycast",
+            "~/Library/Logs/berrycast-desktop",
+            "~/Library/Preferences/com.openmindt.berrycast.plist",
+            "~/Library/Saved Application State/com.openmindt.berrycast.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -51,5 +59,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

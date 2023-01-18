@@ -17,23 +17,31 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": [
-        "fr.white.iceberg.pkg.*",
-        "fr.whitebox.pkg.*"
-      ],
-      "script": {
-        "executable": "uninstall.sh",
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "fr.white.iceberg.pkg.*",
+            "fr.whitebox.pkg.*"
+          ],
+          "script": {
+            "executable": "uninstall.sh",
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    "Iceberg.mpkg (Pkg)"
+    {
+      "pkg": [
+        "Iceberg.mpkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

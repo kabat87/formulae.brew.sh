@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dl.cihar.com/enca/enca-1.19.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4c305cc59f3e57f2cfc150a6ac511690f43633595760e1cb266bf23362d72f8a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/enca/blobs/sha256:e15cd4000e00b96652d900fdce002e2180eed2fe09662ad0359fd176a4e1e3ce",
+          "sha256": "e15cd4000e00b96652d900fdce002e2180eed2fe09662ad0359fd176a4e1e3ce"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/enca/blobs/sha256:305c3af3a704843192d4ed0bf9e75df33742d186ba3bcfec4273ced362dab5da",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/enca/blobs/sha256:bb6dbdce00c0f724d1c6bbb8afdf057e857851dac9d7ced14f61504382ce6ee0",
           "sha256": "bb6dbdce00c0f724d1c6bbb8afdf057e857851dac9d7ced14f61504382ce6ee0"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/enca/blobs/sha256:d71371be8f80e3c61e5a53cd3fc8624d65b58f79cb27f72de95ea16ecf959b22",
+          "sha256": "d71371be8f80e3c61e5a53cd3fc8624d65b58f79cb27f72de95ea16ecf959b22"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/enca/blobs/sha256:889b9d13ff462aee05bb0afdbe012f6a388a2b5e30e13b55954f94a18db69a13",
           "sha256": "889b9d13ff462aee05bb0afdbe012f6a388a2b5e30e13b55954f94a18db69a13"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/enca/blobs/sha256:c7e41db5725d169800674add5dfc3ab82d888f55f6703e44cda109348ed509e7",
-          "sha256": "c7e41db5725d169800674add5dfc3ab82d888f55f6703e44cda109348ed509e7"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/enca/blobs/sha256:c434ad486d2bc894f2562f7a02257bfa726a8623287e5f665cc4d20f7ea42c25",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

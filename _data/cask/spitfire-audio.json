@@ -7,34 +7,40 @@
   ],
   "desc": "Download manager for Spitfire audio libraries",
   "homepage": "https://www.spitfireaudio.com/info/library-manager/",
-  "url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1639562400/mac/SpitfireAudio-Mac-3.3.22.dmg",
+  "url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1671408000/mac/SpitfireAudio-Mac-3.4.4.dmg",
   "appcast": null,
-  "version": "3.3.22,1639562400",
+  "version": "3.4.4,1671408000",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0a4b97c384b790a5ded9e426fb6b14a8401f67222af68225bebcea90e61b630b",
+  "sha256": "9fd4de1f7e1c5bb4873dc1d682b7ece8cd17ec2da0564129be3352f424876fa8",
   "artifacts": [
     {
-      "delete": [
-        "/Library/LaunchDaemons/com.spitfireaudio.LibraryManagerHelper.plist",
-        "/Library/Logs/Spitfire Audio",
-        "/Library/PrivilegedHelperTools/com.spitfireaudio.LibraryManagerHelper"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": [
+            "/Library/LaunchDaemons/com.spitfireaudio.LibraryManagerHelper.plist",
+            "/Library/Logs/Spitfire Audio",
+            "/Library/PrivilegedHelperTools/com.spitfireaudio.LibraryManagerHelper"
+          ]
+        }
+      ]
     },
-    [
-      "Spitfire Audio.app"
-    ],
     {
-      "delete": [
-        "~/Library/Caches/com.spitfireaudio.spitfireaudio",
-        "~/Library/Preferences/com.spitfireaudio.spitfireaudio.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Spitfire Audio.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "delete": [
+            "~/Library/Caches/com.spitfireaudio.spitfireaudio",
+            "~/Library/Preferences/com.spitfireaudio.spitfireaudio.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

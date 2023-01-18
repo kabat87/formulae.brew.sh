@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/gtkmm/2.24/gtkmm-2.24.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0680a53b7bf90b4e4bf444d1d89e6df41c777e0bacc96e9c09fc4dd2f5fe6b72"
     }
   },
   "revision": 8,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gtkmm/blobs/sha256:eb5a449be66c463ce2cca96c861c91ad509ec3bc1720089525fbbccee1ac0dc2",
+          "sha256": "eb5a449be66c463ce2cca96c861c91ad509ec3bc1720089525fbbccee1ac0dc2"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtkmm/blobs/sha256:a99c01f03822751ae2add9413279226e3dc62bb46f96f24f4dab38d71a787487",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtkmm/blobs/sha256:ae2cb84a696c040281a8131961c755865f4ba96ef223e77cf8e5a8d02b88edb8",
           "sha256": "ae2cb84a696c040281a8131961c755865f4ba96ef223e77cf8e5a8d02b88edb8"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gtkmm/blobs/sha256:23282900c778b38cb847cfcf4d7fb34646ba437cbe3c83ff8a27e5393e335568",
+          "sha256": "23282900c778b38cb847cfcf4d7fb34646ba437cbe3c83ff8a27e5393e335568"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
     "gtk+",
     "libsigc++@2",
     "pangomm@2.46"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

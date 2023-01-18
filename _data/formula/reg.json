@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/genuinetools/reg/archive/v0.16.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b65787bff71bff21f21adc933799e70aa9b868d19b1e64f8fd24ebdc19058430"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/reg/blobs/sha256:2c6f6d7cef992aec32bb6742dd36c85c0ad46fc3b2d47450e31f983964725681",
+          "sha256": "2c6f6d7cef992aec32bb6742dd36c85c0ad46fc3b2d47450e31f983964725681"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/reg/blobs/sha256:cf9938a3488e5e4ceb2534f2a032c4d9427787a92e6550f90eea0ff70cdb77da",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/reg/blobs/sha256:6bf430c32dbb66c850bf8c6acbe2fc2953a8ada29e12c0e7b474317fe537fffb",
           "sha256": "6bf430c32dbb66c850bf8c6acbe2fc2953a8ada29e12c0e7b474317fe537fffb"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/reg/blobs/sha256:702ff0454b5ab6cb3dc19c8fc2a18587a510a93a81069b8701bffdbcf25e350f",
+          "sha256": "702ff0454b5ab6cb3dc19c8fc2a18587a510a93a81069b8701bffdbcf25e350f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,14 +87,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

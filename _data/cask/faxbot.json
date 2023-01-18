@@ -16,24 +16,35 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Faxbot.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/de.hosy.Faxer",
-        "~/Library/Application Support/Faxbot",
-        "~/Library/Caches/de.hosy.Faxer",
-        "~/Library/Preferences/de.hosy.Faxer.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Faxbot.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/de.hosy.Faxer",
+            "~/Library/Application Support/Faxbot",
+            "~/Library/Caches/de.hosy.Faxer",
+            "~/Library/Preferences/de.hosy.Faxer.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.12"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

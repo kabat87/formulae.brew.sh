@@ -1,11 +1,14 @@
 cask "binance" do
-  version "1.28.1"
-  sha256 "8f454ccb16d5c823536a06e6cf3da153387bf72470c2d62c07466e5fa54baeeb"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://ftp.binance.com/electron-desktop/mac/production/binance-#{version}.dmg"
+  version "1.42.0"
+  sha256  arm:   "8671695393712b366168e9bb136f536bb97a7e096af1c2e771579bd49ad1f498",
+          intel: "fc8370b8b4ce2558b69a55043ec7f0d252d370cb6a8524d240845c8c28e3f40b"
+
+  url "https://ftp.binance.com/electron-desktop/mac/production/binance-#{version}-#{arch}.dmg"
   name "Binance"
   desc "Cryptocurrency exchange"
-  homepage "http://binance.com/"
+  homepage "https://binance.com/"
 
   livecheck do
     url "https://ftp.binance.com/electron-desktop/mac/production/latest-mac.yml"

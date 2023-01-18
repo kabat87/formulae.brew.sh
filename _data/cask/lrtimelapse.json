@@ -7,35 +7,43 @@
   ],
   "desc": "Time lapse editing, keyframing, grading and rendering",
   "homepage": "https://lrtimelapse.com/",
-  "url": "https://lrtimelapse.com/files/lrtimelapse-5-mac/?version=5-8-0",
+  "url": "https://lrtimelapse.com/files/lrtimelapse-6-mac/?version=6-2-1",
   "appcast": null,
-  "version": "5.8.0",
+  "version": "6.2.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "951c9295f5879040e6b73f6faf9a47c7d1164ce80a24bb2e88b09a5c9446edf5",
+  "sha256": "d11813f01e553c952a2454cb314d601dd1a35ea4f90146f2cce7b24b68ef3ef9",
   "artifacts": [
     {
-      "script": {
-        "executable": "$(brew --prefix)/LRTimelapse/uninstall.sh",
-        "input": "\n",
-        "sudo": "true"
-      },
-      "pkgutil": [
-        "com.lrtimelapse.LRAddons",
-        "com.lrtimelapse.LRTimelapse5",
-        "com.lrttimelapse.LRTTools"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "$(brew --prefix)/LRTimelapse/uninstall.sh",
+            "input": "\n",
+            "sudo": "true"
+          },
+          "pkgutil": [
+            "com.lrtimelapse.LRAddons",
+            "com.lrtimelapse.LRTimelapse6",
+            "com.lrttimelapse.LRTTools"
+          ]
+        }
+      ]
     },
-    "LRTimelapse 5.8.0 Installer.pkg (Pkg)"
+    {
+      "pkg": [
+        "LRTimelapse 6.2.1 Installer.pkg"
+      ]
+    }
   ],
   "caveats": "Cask lrtimelapse installs files under $(brew --prefix). The presence of such\nfiles can cause warnings when running `brew doctor`, which is considered\nto be a bug in Homebrew Cask.\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

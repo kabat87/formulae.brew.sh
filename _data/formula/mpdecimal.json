@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9f9cd4c041f99b5c49ffb7b59d9f12d95b683d88585608aa56a6307667b2b21f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:5b1c62c08b42feb6e48c461a9de4751803f3ccc76830213a517f0905178dbbef",
+          "sha256": "5b1c62c08b42feb6e48c461a9de4751803f3ccc76830213a517f0905178dbbef"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:726e8ec0713eb452bb744fe9147771bacc2c3713a128aaee03b6ddcc78011d1a",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:eebbc5c7e71710c848eb60b90f946aefdee1b5269c840c30b8098d6bb758500b",
           "sha256": "eebbc5c7e71710c848eb60b90f946aefdee1b5269c840c30b8098d6bb758500b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mpdecimal/blobs/sha256:91f795d74747bf8723022ac813f3f81d71fefb774116c27f936b2e32018a1926",
+          "sha256": "91f795d74747bf8723022ac813f3f81d71fefb774116c27f936b2e32018a1926"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -105,6 +118,7 @@
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154053,
       "runtime_dependencies": [
 
       ],
@@ -120,5 +134,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

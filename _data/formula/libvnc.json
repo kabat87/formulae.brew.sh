@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/LibVNC/libvncserver/archive/LibVNCServer-0.9.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0ae5bb9175dc0a602fe85c1cf591ac47ee5247b87f2bf164c16b05f87cbfa81a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libvnc/blobs/sha256:f48e89588cb1a19576b281f57e5603dd4be43fc243d0cd8ba11e89b2d945791b",
+          "sha256": "f48e89588cb1a19576b281f57e5603dd4be43fc243d0cd8ba11e89b2d945791b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libvnc/blobs/sha256:bed86692d7831c43a601f2c0a1eb26aed08540bec111db9ad356068e7b1a7b2f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libvnc/blobs/sha256:20c74a915bd00103a38d68a25a24aa700b36f4b0f1882ce399f1ad45b9b4a3c5",
           "sha256": "20c74a915bd00103a38d68a25a24aa700b36f4b0f1882ce399f1ad45b9b4a3c5"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libvnc/blobs/sha256:63c3153959a0b3a9efef2eaf7bd6352b3e9d434071fe06ecc746a64bb74c870b",
+          "sha256": "63c3153959a0b3a9efef2eaf7bd6352b3e9d434071fe06ecc746a64bb74c870b"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "lzo",
     "openssl@1.1",
     "sdl2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,7 +123,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2023-01-02",
+  "disable_reason": "use libvncserver instead",
+  "variations": {
+  }
 }

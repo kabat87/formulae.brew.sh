@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://www.ginac.de/",
   "versions": {
-    "stable": "1.8.2",
+    "stable": "1.8.5",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.ginac.de/ginac-1.8.2.tar.bz2",
+      "url": "https://www.ginac.de/ginac-1.8.5.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c24b37a1e709f660d0978787e86b334803cd28ec17689cf36ddff380073ea261"
     }
   },
   "revision": 0,
@@ -31,32 +32,31 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:85518e6ad146cfe4a5a8d6764f7b7b573e880e097cea5fd0c115a31ed28c7aff",
+          "sha256": "85518e6ad146cfe4a5a8d6764f7b7b573e880e097cea5fd0c115a31ed28c7aff"
+        },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:8f0a3d73801e6075b0d327b96163cdee33f343f4e92b98b3afc17cb647aef67f",
-          "sha256": "8f0a3d73801e6075b0d327b96163cdee33f343f4e92b98b3afc17cb647aef67f"
+          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:8f9c28d02c6e49a7a48e766c7bce80e99d6a54c29a520c184d82af92c3b8b345",
+          "sha256": "8f9c28d02c6e49a7a48e766c7bce80e99d6a54c29a520c184d82af92c3b8b345"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:d4506efbe735f7e139855cfe63089fe8f69ad79332ef6a6e52191666af53c552",
-          "sha256": "d4506efbe735f7e139855cfe63089fe8f69ad79332ef6a6e52191666af53c552"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:91f8da2327e83022ab1198c80a3aea34d2bed2cd12d1940915f3963aa9f15351",
-          "sha256": "91f8da2327e83022ab1198c80a3aea34d2bed2cd12d1940915f3963aa9f15351"
+          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:55867c97f2e4763be2c53bfde7c4a67668e9deef977fea6581031f17c06084b3",
+          "sha256": "55867c97f2e4763be2c53bfde7c4a67668e9deef977fea6581031f17c06084b3"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:0f3350bc62359b413ec62d69009139977641a97068edf8ae8aad7bb5c7eaa6f1",
-          "sha256": "0f3350bc62359b413ec62d69009139977641a97068edf8ae8aad7bb5c7eaa6f1"
+          "url": "https://ghcr.io/v2/homebrew/core/ginac/blobs/sha256:b4c54fdd8866e2f79b1a0e74ca5ff400e99eaecb350adc19a83bccad9712c570",
+          "sha256": "b4c54fdd8866e2f79b1a0e74ca5ff400e99eaecb350adc19a83bccad9712c570"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -65,8 +65,11 @@
   ],
   "dependencies": [
     "cln",
-    "python@3.10",
+    "python@3.11",
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -95,5 +98,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

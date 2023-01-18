@@ -1,31 +1,30 @@
 cask "eloston-chromium" do
-  if Hardware::CPU.intel?
-    version "97.0.4692.71-1.2_x86-64"
-    sha256 "324d339576b17029a692d20c80dbee4e81b72b92183b1196532dc4d72d7d51a5"
+  arch arm: "arm64", intel: "x86-64"
 
-    url "https://github.com/kramred/ungoogled-chromium-macos/releases/download/#{version}/ungoogled-chromium_#{version}-macos.dmg",
-        verified: "github.com/kramred/ungoogled-chromium-macos/"
-  else
-    version "97.0.4692.71-1.1_arm64,1641722599"
-    sha256 "875065219a9f3cbd88dc290b1a98c4780dc84228939fc37bfdaba675ead99b3c"
-
-    url "https://github.com/kramred/ungoogled-chromium-macos/releases/download/#{version.csv.first}__#{version.csv.second}/ungoogled-chromium_#{version.csv.first}-macos.dmg",
-        verified: "github.com/kramred/ungoogled-chromium-macos/"
-
-    livecheck do
-      url "https://github.com/kramred/ungoogled-chromium-macos/releases/"
-      strategy :page_match do |page|
-        match = page.match(%r{releases/download/(.+)[._-][._-](\d+)/ungoogled[._-]chromium[._-](.+)[._-]macos\.dmg}i)
-        next if match.blank?
-
-        "#{match[1]},#{match[2]}"
-      end
-    end
+  on_intel do
+    version "108.0.5359.125-1.1,1671136997"
+    sha256 "15200461b3e88c969bffda6988c6f4688b23970f21d5208645bd543c3479bcef"
+  end
+  on_arm do
+    version "108.0.5359.125-1.1,1671643030"
+    sha256 "741fda860fefddcd7e399e1ecff96b0136b596c3d169737995aaf61296ff2ed8"
   end
 
+  url "https://github.com/kramred/ungoogled-chromium-macos/releases/download/#{version.csv.first}_#{arch}__#{version.csv.second}/ungoogled-chromium_#{version.csv.first}_#{arch}-macos.dmg",
+      verified: "github.com/kramred/ungoogled-chromium-macos/"
   name "Ungoogled Chromium"
   desc "Google Chromium, sans integration with Google"
   homepage "https://ungoogled-software.github.io/ungoogled-chromium-binaries/"
+
+  livecheck do
+    url "https://github.com/kramred/ungoogled-chromium-macos/releases?q=prerelease%3Afalse"
+    regex(%r{href=["']?[^"' >]*?/tree/v?(\d+(?:[.-]\d+)+)(?:[._-]#{arch})?(?:[._-]+?(\d+(?:\.\d+)*))?["' >]}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map do |match|
+        (match.length > 1) ? "#{match[0]},#{match[1]}" : match[0]
+      end
+    end
+  end
 
   conflicts_with cask: [
     "chromium",

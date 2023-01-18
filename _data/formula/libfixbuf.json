@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://tools.netsa.cert.org/releases/libfixbuf-2.4.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8c535d48120b08df1731de709f2dbd2ba8bce568ad64cac34826102caf594d84"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libfixbuf/blobs/sha256:1f90d97eb8549f9daddef3c3d01834a0613111fa8d4af46f1d4a596b27b1a3e7",
+          "sha256": "1f90d97eb8549f9daddef3c3d01834a0613111fa8d4af46f1d4a596b27b1a3e7"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libfixbuf/blobs/sha256:74d131854da80f316aeaf105d83c590ea4ea0f705c5617b0ddfdc07d59063232",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libfixbuf/blobs/sha256:d29c4e4bd8a1d13508214f781306188fe89e78579747aea4ab1166a9d33a4402",
           "sha256": "d29c4e4bd8a1d13508214f781306188fe89e78579747aea4ab1166a9d33a4402"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libfixbuf/blobs/sha256:1fb266b06143e3465a96d3354eced7650241c3894d713a659ba8caee658c9018",
+          "sha256": "1fb266b06143e3465a96d3354eced7650241c3894d713a659ba8caee658c9018"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   "dependencies": [
     "glib",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

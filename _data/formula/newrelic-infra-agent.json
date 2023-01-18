@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/newrelic/infrastructure-agent",
   "versions": {
-    "stable": "1.20.7",
+    "stable": "1.36.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/newrelic/infrastructure-agent.git",
-      "tag": "1.20.7",
-      "revision": "b17a417d4745da7be9c00ecc72619523867f7add"
+      "tag": "1.36.1",
+      "revision": "d9c6f5f86b23b3bd7f3ea9111bb5886ba5156d83",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,39 +32,56 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:666e287a11c50cc229fd2f4deb4212a422e33a5cd49f812e86d1e3df42e49ce0",
+          "sha256": "666e287a11c50cc229fd2f4deb4212a422e33a5cd49f812e86d1e3df42e49ce0"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:b853abfb58d61f226a99a27019e3cc524f9043b3f32dada012879decf7986c64",
+          "sha256": "b853abfb58d61f226a99a27019e3cc524f9043b3f32dada012879decf7986c64"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:335b54c7845198c2f5409b45fd1706e87beb4511145cd1db60aba75c34fcfa15",
+          "sha256": "335b54c7845198c2f5409b45fd1706e87beb4511145cd1db60aba75c34fcfa15"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:efa63b2b0e25b38bfce538408f1f2e91f08bb8ff0c9a39122c089c6f59dc91f7",
+          "sha256": "efa63b2b0e25b38bfce538408f1f2e91f08bb8ff0c9a39122c089c6f59dc91f7"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:ffdb274016361a220fbc8fb21cfae1b90347c03ff7c86e128d20a6c3a0a6053b",
-          "sha256": "ffdb274016361a220fbc8fb21cfae1b90347c03ff7c86e128d20a6c3a0a6053b"
+          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:571a763d44b29fed12c06736f93edbbfde49f270bdc0d20ca74795d8371a6a95",
+          "sha256": "571a763d44b29fed12c06736f93edbbfde49f270bdc0d20ca74795d8371a6a95"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:bf1f38cc2c2f73370f92c7645eb9c228dbaf5f760b700477f1c40e7de34690b7",
-          "sha256": "bf1f38cc2c2f73370f92c7645eb9c228dbaf5f760b700477f1c40e7de34690b7"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:966da6a25822e35c9e96e518336b3d1bb3ceb9e06c88d9456c19e2305ab45570",
-          "sha256": "966da6a25822e35c9e96e518336b3d1bb3ceb9e06c88d9456c19e2305ab45570"
+          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:ecf855c7f3acbaad860d4ebc4e1a1e2b80ed1eff0c4f7ab2b44b566c9b8fdc4a",
+          "sha256": "ecf855c7f3acbaad860d4ebc4e1a1e2b80ed1eff0c4f7ab2b44b566c9b8fdc4a"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:93328d150756320c4ea4a9aba6c66dd773cdc1b7c63db1165918f64ca8409194",
-          "sha256": "93328d150756320c4ea4a9aba6c66dd773cdc1b7c63db1165918f64ca8409194"
+          "url": "https://ghcr.io/v2/homebrew/core/newrelic-infra-agent/blobs/sha256:fa12211728536a16c0e8134f5762e9696e8cb235564b5dc2238f382796c90e4f",
+          "sha256": "fa12211728536a16c0e8134f5762e9696e8cb235564b5dc2238f382796c90e4f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go@1.16"
+    "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -76,15 +94,7 @@
 
   ],
   "requirements": [
-    {
-      "name": "arch",
-      "cask": null,
-      "download": null,
-      "version": "x86_64",
-      "contexts": [
 
-      ]
-    }
   ],
   "conflicts_with": [
 
@@ -101,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

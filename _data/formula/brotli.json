@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/google/brotli/archive/v1.0.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:dda0779953c24b98703ae950195fdd7f5ae6dbd697e026cb65520d13ea8b1258",
+          "sha256": "dda0779953c24b98703ae950195fdd7f5ae6dbd697e026cb65520d13ea8b1258"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:5e9bddd862bda5b950307710430f3adf65486554d12e29629f67df8a0c5b881c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:bcd00b6f423ec35f98aec55bc2c1cf433b6e70e915cdf04dd2c3a3707f1ce341",
           "sha256": "bcd00b6f423ec35f98aec55bc2c1cf433b6e70e915cdf04dd2c3a3707f1ce341"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/brotli/blobs/sha256:ed4f61a9dc166cb1241e6b0a890298789eb564bfac1b4438ebe8ddf3d2632662",
+          "sha256": "ed4f61a9dc166cb1241e6b0a890298789eb564bfac1b4438ebe8ddf3d2632662"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -110,6 +123,7 @@
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671153567,
       "runtime_dependencies": [
 
       ],
@@ -125,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

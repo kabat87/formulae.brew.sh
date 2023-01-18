@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/xqilla/XQilla-2.3.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "292631791631fe2e7eb9727377335063a48f12611d641d0296697e0c075902eb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/xqilla/blobs/sha256:6fcb5f3c1fc9d9964b88e428c2b82e93eed3d3cad94fc583a3249db04c334db7",
+          "sha256": "6fcb5f3c1fc9d9964b88e428c2b82e93eed3d3cad94fc583a3249db04c334db7"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/xqilla/blobs/sha256:adc61de0a3a381d0ceab22a8449c209d06ded447a3e2750733f673cbbc14ca82",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/xqilla/blobs/sha256:1b8493188f6fc779948193c1ae7cc803e85a4a18c32464c039448a27f830d9fe",
           "sha256": "1b8493188f6fc779948193c1ae7cc803e85a4a18c32464c039448a27f830d9fe"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/xqilla/blobs/sha256:865b3199b6ec57665912c1aab41b98bb6e883c351e56d7f6d00983c6104828b1",
+          "sha256": "865b3199b6ec57665912c1aab41b98bb6e883c351e56d7f6d00983c6104828b1"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "xerces-c"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

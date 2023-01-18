@@ -7,65 +7,95 @@
   ],
   "desc": "Penetration testing framework",
   "homepage": "https://www.metasploit.com/",
-  "url": "https://osx.metasploit.com/metasploit-framework-6.1.25%2B20220113112934-1rapid7-1.x86_64.pkg",
+  "url": "https://osx.metasploit.com/metasploit-framework-6.2.36%2B20230113112939-1rapid7-1.x86_64.pkg",
   "appcast": null,
-  "version": "6.1.25,20220113112934",
+  "version": "6.2.36,20230113112939",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c029efad92a84dc7d3703606eeecc7edab65ae48c8c561091cb7e5b3c3c9c2e2",
+  "sha256": "f5bfc9ff543bb4e4c65e521782b2adcd2d699f0d947dd2ad648a52f2d7ddb288",
   "artifacts": [
     {
-      "script": {
-        "executable": "/opt/metasploit-framework/bin/msfremove",
-        "input": [
-          "y"
-        ],
-        "sudo": "true"
-      },
-      "rmdir": "/opt/metasploit-framework",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "/opt/metasploit-framework/bin/msfremove",
+            "input": [
+              "y"
+            ],
+            "sudo": "true"
+          },
+          "rmdir": "/opt/metasploit-framework"
+        }
+      ]
     },
-    "metasploit-framework-6.1.25+20220113112934-1rapid7-1.x86_64.pkg (Pkg)",
-    [
-      "/opt/metasploit-framework/bin/msfconsole"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfd"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfdb"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfelfscan"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfmachscan"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfrop"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfrpc"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfrpcd"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfvenom"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfpescan"
-    ],
-    [
-      "/opt/metasploit-framework/bin/msfbinscan"
-    ],
     {
-      "trash": "~/.msf4",
-      "signal": {
-      }
+      "pkg": [
+        "metasploit-framework-6.2.36+20230113112939-1rapid7-1.x86_64.pkg"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfconsole"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfd"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfdb"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfelfscan"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfmachscan"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfrop"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfrpc"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfrpcd"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfvenom"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfpescan"
+      ]
+    },
+    {
+      "binary": [
+        "/opt/metasploit-framework/bin/msfbinscan"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.msf4"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -76,5 +106,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

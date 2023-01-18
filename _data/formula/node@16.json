@@ -7,6 +7,7 @@
 
   ],
   "versioned_formulae": [
+    "node@18",
     "node@14",
     "node@12",
     "node@10"
@@ -15,53 +16,59 @@
   "license": "MIT",
   "homepage": "https://nodejs.org/",
   "versions": {
-    "stable": "16.13.2",
+    "stable": "16.19.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://nodejs.org/dist/v16.13.2/node-v16.13.2.tar.xz",
+      "url": "https://nodejs.org/dist/v16.19.0/node-v16.19.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4f1fec1aea2392f6eb6d1d040b01e7ee3e51e762a9791dfea590920bc1156706"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:409301e232b4522fc92d9236b34feda83e566487ff3482685f086184cdd95728",
+          "sha256": "409301e232b4522fc92d9236b34feda83e566487ff3482685f086184cdd95728"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:29aa5d9aea29b4e5f03b9c6d72e7c19389fcb28a117a37531061d54934722969",
-          "sha256": "29aa5d9aea29b4e5f03b9c6d72e7c19389fcb28a117a37531061d54934722969"
+          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:86681e0881084419c49698dea823a595d3c436cc2a2e09dda8435a342b81533f",
+          "sha256": "86681e0881084419c49698dea823a595d3c436cc2a2e09dda8435a342b81533f"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:9bca2da2dfb03a46a8673639b7e8e44c5c605fcf1f80dc6bb3eef3bf487dcac4",
-          "sha256": "9bca2da2dfb03a46a8673639b7e8e44c5c605fcf1f80dc6bb3eef3bf487dcac4"
+          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:cac7580ac336f12b2c4f52d7a08a989e27d59509e4156ef13147bed6bce66e12",
+          "sha256": "cac7580ac336f12b2c4f52d7a08a989e27d59509e4156ef13147bed6bce66e12"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:35f5c627199a794ba1f79de4da0c35aaedc0e8871cfe5255a8449475638ba441",
+          "sha256": "35f5c627199a794ba1f79de4da0c35aaedc0e8871cfe5255a8449475638ba441"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:a38170c8983bb2b3721e209ef67767486f31346d66cac9183a4e5fa40cb9b956",
-          "sha256": "a38170c8983bb2b3721e209ef67767486f31346d66cac9183a4e5fa40cb9b956"
+          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:6b32504d6420c6b52d08d1aba3a97c7eba3af0a1a56ba02ca7db9637a808ffec",
+          "sha256": "6b32504d6420c6b52d08d1aba3a97c7eba3af0a1a56ba02ca7db9637a808ffec"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:1dd88b692f0fd5a6f9f8ba37c1f9d9b3833a902ca94b657f1669910c74e8d0bc",
-          "sha256": "1dd88b692f0fd5a6f9f8ba37c1f9d9b3833a902ca94b657f1669910c74e8d0bc"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:2ce28873b8224b1445bbc02bcc59c11e957cd4242fb339bba0e53ff156681278",
-          "sha256": "2ce28873b8224b1445bbc02bcc59c11e957cd4242fb339bba0e53ff156681278"
+          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:36e741a2cfd9b934a12468bcb89f3cbc4c9f82da8b8d2db9c8734993e9e7172d",
+          "sha256": "36e741a2cfd9b934a12468bcb89f3cbc4c9f82da8b8d2db9c8734993e9e7172d"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:510f036e1a74acf8f358d3944e1eaebf934300eb4bcfaaab68dec00372678e24",
-          "sha256": "510f036e1a74acf8f358d3944e1eaebf934300eb4bcfaaab68dec00372678e24"
+          "url": "https://ghcr.io/v2/homebrew/core/node/16/blobs/sha256:1b8e667c9dfa32f37fc2b05d89eca46625215baa773309290e1ec0e045dc6ec5",
+          "sha256": "1b8e667c9dfa32f37fc2b05d89eca46625215baa773309290e1ec0e045dc6ec5"
         }
       }
     }
@@ -71,13 +78,12 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "pkg-config",
-    "python@3.10"
+    "python@3.11"
   ],
   "dependencies": [
     "brotli",
@@ -86,6 +92,9 @@
     "libnghttp2",
     "libuv",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,12 +115,13 @@
   "caveats": null,
   "installed": [
     {
-      "version": "16.13.1_1",
+      "version": "16.19.0",
       "used_options": [
 
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154463,
       "runtime_dependencies": [
         {
           "full_name": "brotli",
@@ -125,27 +135,27 @@
         },
         {
           "full_name": "icu4c",
-          "version": "69.1",
+          "version": "71.1",
           "declared_directly": true
         },
         {
           "full_name": "libnghttp2",
-          "version": "1.46.0",
+          "version": "1.51.0",
           "declared_directly": true
         },
         {
           "full_name": "libuv",
-          "version": "1.43.0",
+          "version": "1.44.2",
           "declared_directly": true
         },
         {
           "full_name": "ca-certificates",
-          "version": "2021-10-26",
+          "version": "2022-10-11",
           "declared_directly": false
         },
         {
           "full_name": "openssl@1.1",
-          "version": "1.1.1m",
+          "version": "1.1.1s",
           "declared_directly": true
         }
       ],
@@ -153,7 +163,7 @@
       "installed_on_request": true
     }
   ],
-  "linked_keg": "16.13.1_1",
+  "linked_keg": "16.19.0",
   "pinned": false,
   "outdated": true,
   "deprecated": false,
@@ -161,5 +171,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

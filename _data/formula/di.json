@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/diskinfo-di/di-4.51.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "79b2129c4aff27428695441175940a1717fa0fe2ec2f46d1b886ebb4921461bb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/di/blobs/sha256:0fe76ffb07cc8e29f57a247c138a888384fb3d8610dcddd29fab93c9aca547ee",
+          "sha256": "0fe76ffb07cc8e29f57a247c138a888384fb3d8610dcddd29fab93c9aca547ee"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/di/blobs/sha256:2f0155678e6e44db1dbfbc24fff96aaee23c22a69d553457dd8ac1f9de13b527",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/di/blobs/sha256:4fc57febb3e9e00603674540b9c90fff49df3f9b376149fd3ed37ed72d3c29b8",
           "sha256": "4fc57febb3e9e00603674540b9c90fff49df3f9b376149fd3ed37ed72d3c29b8"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/di/blobs/sha256:a2f171a92a951fe16ac39c70720257ea80e2d75312eb9ebd98c07138f8363566",
+          "sha256": "a2f171a92a951fe16ac39c70720257ea80e2d75312eb9ebd98c07138f8363566"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

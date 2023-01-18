@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.arpoison.net/arpoison-0.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "63571633826e413a9bdaab760425d0fab76abaf71a2b7ff6a00d1de53d83e741"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/arpoison/blobs/sha256:fda2504283a2fc1da565c46545d392afca3bf569aab288480f0d2521898a1967",
+          "sha256": "fda2504283a2fc1da565c46545d392afca3bf569aab288480f0d2521898a1967"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/arpoison/blobs/sha256:26c33452df47e5d7ec7953bce6aab14f87ea5151363530593440964bacd36266",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/arpoison/blobs/sha256:376ce845d964f61c095ab7a16d2645d3688ebf5810b18dfb8badb8a24da0e66f",
           "sha256": "376ce845d964f61c095ab7a16d2645d3688ebf5810b18dfb8badb8a24da0e66f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/arpoison/blobs/sha256:eee365fdbdf0f7a61b4a2ca6f97f62d3a011bf9b4d27b30ec20ffb7f088633cf",
+          "sha256": "eee365fdbdf0f7a61b4a2ca6f97f62d3a011bf9b4d27b30ec20ffb7f088633cf"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "libnet"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

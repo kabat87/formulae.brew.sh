@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.inet.no/dante/files/dante-1.4.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "418a065fe1a4b8ace8fbf77c2da269a98f376e7115902e76cda7e741e4846a5d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dante/blobs/sha256:a922a104d5d267fffd6cbc3a7e476ecf9ac4ffe71c6b3b90880fd3c2df661a04",
+          "sha256": "a922a104d5d267fffd6cbc3a7e476ecf9ac4ffe71c6b3b90880fd3c2df661a04"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dante/blobs/sha256:6ba49e77d7e95f26793d9283ea19a0fd2649480808873491ce1263087e0bab0f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dante/blobs/sha256:7b25a50f17292cdad4dd0e52de401117411fc6bb660c66bedbdbc8c7759dea9a",
           "sha256": "7b25a50f17292cdad4dd0e52de401117411fc6bb660c66bedbdbc8c7759dea9a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dante/blobs/sha256:5e7f2f4d7eefed3dedc103f89cd6f0b91fb9b67e6569f90ac20df70bc4d083f3",
+          "sha256": "5e7f2f4d7eefed3dedc103f89cd6f0b91fb9b67e6569f90ac20df70bc4d083f3"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

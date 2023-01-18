@@ -7,27 +7,31 @@
   ],
   "desc": "Create searchable and smaller PDF",
   "homepage": "https://pdfify.app/",
-  "url": "https://pdfify.app/get/cask/download/macos/PDFify-3.3.3-136.zip",
+  "url": "https://pdfify.app/get/cask/download/macos/PDFify-3.7.1-222.zip",
   "appcast": null,
-  "version": "3.3.3-136",
+  "version": "3.7.1-222",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "08c72b5e4bf83b1e948ec87caf74965191c505ed81eb08f6f7dce3741ccb49d0",
+  "sha256": "922964cb631873da91e3468d75a5bcd05787b260bf17a022b4d8167d12941209",
   "artifacts": [
-    [
-      "PDFify.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/de.holtwick.mac.homebrew.PDFify",
-        "~/Library/Caches/de.holtwick.mac.homebrew.PDFify",
-        "~/Library/Logs/PDFify",
-        "~/Library/Preferences/de.holtwick.mac.homebrew.PDFify.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PDFify.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/de.holtwick.mac.homebrew.PDFify",
+            "~/Library/Caches/de.holtwick.mac.homebrew.PDFify",
+            "~/Library/Logs/PDFify",
+            "~/Library/Preferences/de.holtwick.mac.homebrew.PDFify.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

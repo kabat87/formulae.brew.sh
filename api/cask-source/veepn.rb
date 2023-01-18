@@ -1,6 +1,6 @@
 cask "veepn" do
-  version "2.0.1,66431"
-  sha256 "6aa503a97f9520d6047159299cf4d97e56fcce68ca85deaf1ad9e14c48869a7c"
+  version "2.2.2,918496"
+  sha256 "3d7a0790b514d17c1bc2dcb2a504ff8d8ddffde0596afbf129529c19ee99874c"
 
   url "https://download.veepn.com/mac/VeePN_v#{version.csv.first}.dmg"
   name "VeePN"
@@ -12,13 +12,15 @@ cask "veepn" do
     strategy :sparkle
   end
 
+  depends_on macos: ">= :mojave"
+
   app "VeePN.app"
 
-  uninstall launchctl: "com.veepn.macos.helper"
+  uninstall launchctl: "com.veepn.macos.helper",
+            delete:    "/Library/PrivilegedHelperTools/com.veepn.macos.helper"
 
   zap trash: [
     "~/Library/Application Support/com.veepn.macos.direct",
     "~/Library/Preferences/com.veepn.macos.direct.plist",
-    "/Library/PrivilegedHelperTools/com.veepn.macos.helper",
   ]
 end

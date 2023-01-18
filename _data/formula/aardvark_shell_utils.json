@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://web.archive.org/web/20170106105512/downloads.laffeycomputer.com/current_builds/shellutils/aardvark_shell_utils-1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "aa2b83d9eea416aa31dd1ce9b04054be1a504e60e46426225543476c0ebc3f67"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aardvark_shell_utils/blobs/sha256:19675479ac1913e690b2820e6cd788e67ac3e3b7fd42fa86f0395df61408f559",
+          "sha256": "19675479ac1913e690b2820e6cd788e67ac3e3b7fd42fa86f0395df61408f559"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aardvark_shell_utils/blobs/sha256:9c21b88c0adf1d80654686705f6961c5fcde8c99ee5e27cc15ecd6e0eef9ced9",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aardvark_shell_utils/blobs/sha256:43c817950566219fac5ddffbf9e4e2810f1841c29d1c742c96364932aae6d0a0",
           "sha256": "43c817950566219fac5ddffbf9e4e2810f1841c29d1c742c96364932aae6d0a0"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aardvark_shell_utils/blobs/sha256:0e2cf7fb21cec6ec0b573987f67638f6824c691a4bef53b5e2ae9753e0b00735",
+          "sha256": "0e2cf7fb21cec6ec0b573987f67638f6824c691a4bef53b5e2ae9753e0b00735"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/aardvark_shell_utils/blobs/sha256:4fc19fca9729b408c5a77f362fff72a8c74c324d4a81cc0cf3e4c91b41bf2d6f",
           "sha256": "4fc19fca9729b408c5a77f362fff72a8c74c324d4a81cc0cf3e4c91b41bf2d6f"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aardvark_shell_utils/blobs/sha256:ca1cb774102a7e5128f964c2c9d48b45877f1fd3347288edb2adef5981fdd0f4",
-          "sha256": "ca1cb774102a7e5128f964c2c9d48b45877f1fd3347288edb2adef5981fdd0f4"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aardvark_shell_utils/blobs/sha256:9286900cc5bf3886defd02832667001eb609328b5244ea49ee3200656c5f6826",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

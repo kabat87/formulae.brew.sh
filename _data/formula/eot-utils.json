@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.w3.org/Tools/eot-utils/eot-utilities-1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4eed49dac7052e4147deaddbe025c7dfb404fc847d9fe71e1c42eba5620e6431"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/eot-utils/blobs/sha256:2f0213f9bcedaf984fcd8d2d03894e8a19e1a61c58775efe87d557946dfea9b4",
+          "sha256": "2f0213f9bcedaf984fcd8d2d03894e8a19e1a61c58775efe87d557946dfea9b4"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/eot-utils/blobs/sha256:8cac289120cb93a9612419cd0108051fff840e4136011a31c44a2dbee6e31214",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/eot-utils/blobs/sha256:8f017607b1caeb3d53e2054abe9b3a75cd8a513b3ef5874b297f7b076ecd5c9a",
           "sha256": "8f017607b1caeb3d53e2054abe9b3a75cd8a513b3ef5874b297f7b076ecd5c9a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/eot-utils/blobs/sha256:1a0d54258d1c6df0ded3e820520cf809bc1ffd0c6fb5b9c1236aead95c8f69d1",
+          "sha256": "1a0d54258d1c6df0ded3e820520cf809bc1ffd0c6fb5b9c1236aead95c8f69d1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/eot-utils/blobs/sha256:b2a4e0f385fa861baf54ac3c483f5599bc96994b3797fe00430653f1a5c28ba4",
           "sha256": "b2a4e0f385fa861baf54ac3c483f5599bc96994b3797fe00430653f1a5c28ba4"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/eot-utils/blobs/sha256:3276e755d84fda54851733b693e56922ddb597f1ac4f14792f4221ce794832da",
-          "sha256": "3276e755d84fda54851733b693e56922ddb597f1ac4f14792f4221ce794832da"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/eot-utils/blobs/sha256:48cf7e721c0bd57766f90fa9cde2704d44e997016d814994b2df85d345b90f8d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

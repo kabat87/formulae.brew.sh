@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://files.pythonhosted.org/packages/c8/2e/db84fa9d33c9361024343411875835143dc7b73eb3320b41c4f543b40ad6/passpie-1.6.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "eec50eabb9f4c9abd9a1d89794f86afe3956e1ba9f6c831d04b164fd4fc0ad02"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/passpie/blobs/sha256:ab4a9bdce97d2e9a86ce099d618109301f2bf1cfb5a1717c64c2991533b0bfb3",
+          "sha256": "ab4a9bdce97d2e9a86ce099d618109301f2bf1cfb5a1717c64c2991533b0bfb3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/passpie/blobs/sha256:cf72c916dcef8440341f090154893ccdd78dc2237118cc6163cb1159a638fffc",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/passpie/blobs/sha256:2bea6978498b4a19b59ba269d158c833d31ee75c10528f34ceb4eaa7ffe2293f",
           "sha256": "2bea6978498b4a19b59ba269d158c833d31ee75c10528f34ceb4eaa7ffe2293f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/passpie/blobs/sha256:9a0fe7bf96d30a99d8935250138fe1dde53e47e4fad542edbc53d2e254d41870",
+          "sha256": "9a0fe7bf96d30a99d8935250138fe1dde53e47e4fad542edbc53d2e254d41870"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
     "gnupg",
     "libyaml",
     "python@3.8"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,10 +123,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-12-31",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -10,7 +10,7 @@
 
   ],
   "desc": "GLib bindings for the D-Bus message bus system",
-  "license": null,
+  "license": "GPL-2.0-or-later and (AFL-2.1 or GPL-2.0-or-later)",
   "homepage": "https://wiki.freedesktop.org/www/Software/DBusBindings/",
   "versions": {
     "stable": "0.112",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.112.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7d550dccdfcd286e33895501829ed971eeb65c614e73aadb4a08aeef719b143a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dbus-glib/blobs/sha256:c88874e0737f46cfc08bcc30c2b2d1feddeb95b19ef1725a1d006bef17999968",
+          "sha256": "c88874e0737f46cfc08bcc30c2b2d1feddeb95b19ef1725a1d006bef17999968"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dbus-glib/blobs/sha256:24a79926eb518b6de78cacfc8d6893655bdbc6c62ad5b84c89131697fa97a568",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dbus-glib/blobs/sha256:d87340d630e5e4e08fcaf5c557ad1577736069561e3903f763cb50396b417830",
           "sha256": "d87340d630e5e4e08fcaf5c557ad1577736069561e3903f763cb50396b417830"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dbus-glib/blobs/sha256:ed1a98a4ab509c8179f348c10c8b7e9d07762388abf988c4c9e0857daf8a642d",
+          "sha256": "ed1a98a4ab509c8179f348c10c8b7e9d07762388abf988c4c9e0857daf8a642d"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
     "dbus",
     "gettext",
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

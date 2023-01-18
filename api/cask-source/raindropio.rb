@@ -1,24 +1,20 @@
 cask "raindropio" do
-  arch = Hardware::CPU.intel? ? "x64" : "arm64"
+  arch arm: "arm64", intel: "x64"
 
-  version "5.4.2"
+  version "5.5.10"
+  sha256 arm:   "bf63030598416520d234ef99673128ef5cc8f29904733aa47e10e8557575b4ca",
+         intel: "29688c40f374e6739674364e6d185477fc7d243d6e44cde0511ebb07a3d1e8aa"
 
   url "https://github.com/raindropio/desktop/releases/download/v#{version}/Raindrop-#{arch}.dmg",
       verified: "github.com/raindropio/desktop/"
-  if Hardware::CPU.intel?
-    sha256 "0247825f9c23cf0cdc24dc1ada4b63a9113c76010a60355b52d432e3c1faada1"
-  else
-    sha256 "001d27bf87dcf46517e400f146227a330db16d34376bca2f996cbb668ee9d6a3"
-  end
-
   name "Raindrop.io"
   desc "All-in-one bookmark manager"
   homepage "https://raindrop.io/"
 
+  # First-party download page links to dmg file from GitHub "latest" release.
   livecheck do
-    url "https://github.com/raindropio/desktop/releases"
-    strategy :page_match
-    regex(%r{v?(\d+(?:\.\d+)*)/Raindrop[._-]#{arch}\.dmg}i)
+    url :url
+    strategy :github_latest
   end
 
   auto_updates true

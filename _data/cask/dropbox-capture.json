@@ -7,29 +7,33 @@
   ],
   "desc": "Share your work and ideas with video messages and screenshots",
   "homepage": "https://dropbox.com/capture/",
-  "url": "https://clientupdates.dropboxstatic.com/dbx-releng/dropbox_capture/mac/Dropbox_Capture.dmg",
+  "url": "https://edge.dropboxstatic.com/dbx-releng/products/dropbox-capture/91.0.4/mac.x86_64/Dropbox_Capture.dmg",
   "appcast": null,
-  "version": "63.0.0",
+  "version": "91.0.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "no_check",
+  "sha256": "42dddfa2a969b40feca7219dbf6fd3c66209c7d73d267f8e4c963eb6a4789d00",
   "artifacts": [
-    [
-      "Dropbox Capture.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Dropbox-Capture",
-        "~/Library/Caches/Dropbox-Capture",
-        "~/Library/Caches/com.electron.dropbox-capture",
-        "~/Library/Caches/com.electron.dropbox-capture.ShipIt",
-        "~/Library/Logs/Dropbox-Capture",
-        "~/Library/Preferences/com.electron.dropbox-capture.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Dropbox Capture.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Dropbox-Capture",
+            "~/Library/Caches/Dropbox-Capture",
+            "~/Library/Caches/com.electron.dropbox-capture",
+            "~/Library/Caches/com.electron.dropbox-capture.ShipIt",
+            "~/Library/Logs/Dropbox-Capture",
+            "~/Library/Preferences/com.electron.dropbox-capture.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +46,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://edge.dropboxstatic.com/dbx-releng/products/dropbox-capture/91.0.4/mac.arm64/Dropbox_Capture.dmg",
+      "sha256": "dabe69bc3340cbe35f4eafd004ff1fecaa46282a9e54d241717b9e660636468f"
+    },
+    "arm64_monterey": {
+      "url": "https://edge.dropboxstatic.com/dbx-releng/products/dropbox-capture/91.0.4/mac.arm64/Dropbox_Capture.dmg",
+      "sha256": "dabe69bc3340cbe35f4eafd004ff1fecaa46282a9e54d241717b9e660636468f"
+    },
+    "arm64_big_sur": {
+      "url": "https://edge.dropboxstatic.com/dbx-releng/products/dropbox-capture/91.0.4/mac.arm64/Dropbox_Capture.dmg",
+      "sha256": "dabe69bc3340cbe35f4eafd004ff1fecaa46282a9e54d241717b9e660636468f"
+    }
+  }
 }

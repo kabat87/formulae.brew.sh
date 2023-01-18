@@ -21,37 +21,27 @@
     "stable": {
       "url": "https://www.cybernoia.de/software/archivemount/archivemount-0.9.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c529b981cacb19541b48ddafdafb2ede47a40fcaf16c677c1e2cd198b159c5b3"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/archivemount/blobs/sha256:68c3994948be590e8ee5e9a9de00182162135a76b0a5dd780c7d8b067a480062",
-          "sha256": "68c3994948be590e8ee5e9a9de00182162135a76b0a5dd780c7d8b067a480062"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/archivemount/blobs/sha256:439cdd8d7c962cf9a5144e20206ddaeaabc15c1752c58acd059e31976e254f6a",
-          "sha256": "439cdd8d7c962cf9a5144e20206ddaeaabc15c1752c58acd059e31976e254f6a"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/archivemount/blobs/sha256:428113b60673b6bb8be9467587f1d82bf4c9447c7f0bbdea47749bed3ec86798",
-          "sha256": "428113b60673b6bb8be9467587f1d82bf4c9447c7f0bbdea47749bed3ec86798"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/archivemount/blobs/sha256:ac01adc4cf171af9509390a108469579aaaccb9eada8a57e54c10419ad239b3e",
+          "sha256": "ac01adc4cf171af9509390a108469579aaaccb9eada8a57e54c10419ad239b3e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -59,7 +49,11 @@
     "pkg-config"
   ],
   "dependencies": [
-    "libarchive"
+    "libarchive",
+    "libfuse@2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -71,12 +65,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -86,7 +88,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,26 +7,30 @@
   ],
   "desc": "Game Master for Fantasy Flight board games",
   "homepage": "https://npbruce.github.io/valkyrie/",
-  "url": "https://github.com/NPBruce/valkyrie/releases/download/release/2.5/v2.5.6/valkyrie-macos-2.5.6.tar.gz",
+  "url": "https://github.com/NPBruce/valkyrie/releases/download/release/2.5/v2.5.7/valkyrie-macos-2.5.7.tar.gz",
   "appcast": null,
-  "version": "2.5.6",
+  "version": "2.5.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6b73e8f9eb7fca202feea27545163d08d237ea1b23289716a1d4d0928f392c0d",
+  "sha256": "e667934e6ee3f27d3f81591b830d2be4513c8997f54f5312be56917c0697ce75",
   "artifacts": [
-    [
-      "Valkyrie.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/CrashReporter/Valkyrie_*.plist",
-        "~/Library/Preferences/unity.NA.Valkyrie.plist",
-        "~/Library/Saved Application State/unity.NA.Valkyrie.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Valkyrie.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/CrashReporter/Valkyrie_*.plist",
+            "~/Library/Preferences/unity.NA.Valkyrie.plist",
+            "~/Library/Saved Application State/unity.NA.Valkyrie.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

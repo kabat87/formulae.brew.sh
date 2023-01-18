@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/bats-core/bats-core",
   "versions": {
-    "stable": "1.5.0",
+    "stable": "1.8.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/bats-core/bats-core/archive/v1.5.0.tar.gz",
+      "url": "https://github.com/bats-core/bats-core/archive/v1.8.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0f2df311a536e625a72bff64c838e67c7b5032e6ea9edcdf32758303062b2f3b"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bats-core/blobs/sha256:6911a873446605176d6cfb219b335f1bd073da5be1834290829b062497443420",
-          "sha256": "6911a873446605176d6cfb219b335f1bd073da5be1834290829b062497443420"
+          "url": "https://ghcr.io/v2/homebrew/core/bats-core/blobs/sha256:40d5c46e73b90a20ba13bc3bdfdfd3d9bfcbf3286c1d4d1e524fef64b87ffdb1",
+          "sha256": "40d5c46e73b90a20ba13bc3bdfdfd3d9bfcbf3286c1d4d1e524fef64b87ffdb1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "coreutils"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -80,5 +83,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

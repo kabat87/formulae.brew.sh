@@ -7,22 +7,26 @@
   ],
   "desc": "Network and infrastructure monitoring and management system",
   "homepage": "https://netxms.org/",
-  "url": "https://netxms.org/download/releases/3.9/nxmc-3.9.420.dmg",
+  "url": "https://netxms.org/download/releases/4.2/nxmc-4.2.461.dmg",
   "appcast": null,
-  "version": "3.9.420",
+  "version": "4.2.461",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c36286ace290ce11813a0977af973963b2383cef068ca040c8004c41fdde7915",
+  "sha256": "25f82ecf39de43ed2db0b92a5abd0badb7304bc03e6d8244140b2eaf46eeabe1",
   "artifacts": [
-    [
-      "NetXMS Console (3.9.420).app"
-    ],
     {
-      "trash": "~/.nxmc",
-      "signal": {
-      }
+      "app": [
+        "NetXMS Console (4.2.461).app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.nxmc"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://netxms.org/download/releases/4.2/nxmc-4.2.461-aarch64.dmg",
+      "sha256": "505d9220ae6cd89a8d4ed31357006b3448616a1345d4b2142fbd4dd8af7140da"
+    },
+    "arm64_monterey": {
+      "url": "https://netxms.org/download/releases/4.2/nxmc-4.2.461-aarch64.dmg",
+      "sha256": "505d9220ae6cd89a8d4ed31357006b3448616a1345d4b2142fbd4dd8af7140da"
+    },
+    "arm64_big_sur": {
+      "url": "https://netxms.org/download/releases/4.2/nxmc-4.2.461-aarch64.dmg",
+      "sha256": "505d9220ae6cd89a8d4ed31357006b3448616a1345d4b2142fbd4dd8af7140da"
+    }
+  }
 }

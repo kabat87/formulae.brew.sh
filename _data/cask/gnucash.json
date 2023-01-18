@@ -7,26 +7,30 @@
   ],
   "desc": "Double-entry accounting program",
   "homepage": "https://www.gnucash.org/",
-  "url": "https://github.com/Gnucash/gnucash/releases/download/4.9/Gnucash-Intel-4.9-1.dmg",
+  "url": "https://github.com/Gnucash/gnucash/releases/download/4.13/Gnucash-Intel-4.13-1.dmg",
   "appcast": null,
-  "version": "4.9-1",
+  "version": "4.13-1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ac288ffa06a759d6104b74f9c91449ce218de392ac8ca4739bce217e2f9817b1",
+  "sha256": "dbff2cf8afb1a98ae5bb973e89ea3f4318b60e59754d857c0f62fba2b7dd6c84",
   "artifacts": [
-    [
-      "Gnucash.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Gnucash",
-        "~/Library/Preferences/org.gnucash.Gnucash.plist",
-        "~/Library/Saved Application State/org.gnucash.Gnucash.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Gnucash.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Gnucash",
+            "~/Library/Preferences/org.gnucash.Gnucash.plist",
+            "~/Library/Saved Application State/org.gnucash.Gnucash.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -5,34 +5,45 @@
   "name": [
     "Sproutcube Shortcat"
   ],
-  "desc": null,
-  "homepage": "https://shortcatapp.com/",
-  "url": "https://files.shortcatapp.com/v0.7.11/Shortcat.zip",
+  "desc": "App that enables mouse-free UI interaction",
+  "homepage": "https://shortcat.app/",
+  "url": "https://files.shortcat.app/releases/v0.11.1/Shortcat.zip",
   "appcast": null,
-  "version": "0.7.11,91",
+  "version": "0.11.1,174",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "bb62fcb6c644c1ccca356d0ac1ede1b29ebbc1cebe5809e186b3ba295ed51b07",
+  "sha256": "6a2d3cf21754c81f4e92c65410fa5d3a24f2149cb6f6f36146ab4f91962ca5b1",
   "artifacts": [
-    [
-      "Shortcat.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Shortcat",
-        "~/Library/Cookies/com.sproutcube.Shortcat.binarycookies",
-        "~/Library/Preferences/com.sproutcube.Shortcat.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Shortcat.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Shortcat",
+            "~/Library/Cookies/com.sproutcube.Shortcat.binarycookies",
+            "~/Library/Preferences/com.sproutcube.Shortcat.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "11"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

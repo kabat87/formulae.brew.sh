@@ -1,7 +1,7 @@
 cask "termius" do
-  arch = Hardware::CPU.intel? ? "mac" : "mac-arm64"
+  arch arm: "mac-arm64", intel: "mac"
 
-  version "7.32.0"
+  version "7.55.2"
   sha256 :no_check
 
   url "https://autoupdate.termius.com/#{arch}/Termius.dmg"
@@ -15,12 +15,13 @@ cask "termius" do
   end
 
   auto_updates true
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :el_capitan"
 
   app "Termius.app"
 
+  uninstall delete: "/Library/Preferences/com.termius-dmg.mac.plist"
+
   zap trash: [
-    "/Library/Preferences/com.termius-dmg.mac.plist",
     "~/.termius",
     "~/Library/Application Support/Termius",
     "~/Library/Logs/Termius",

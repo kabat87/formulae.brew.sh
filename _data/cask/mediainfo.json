@@ -7,26 +7,30 @@
   ],
   "desc": "Display technical and tag data for video and audio files",
   "homepage": "https://mediaarea.net/en/MediaInfo",
-  "url": "https://mediaarea.net/download/binary/mediainfo-gui/21.09/MediaInfo_GUI_21.09_Mac.dmg",
+  "url": "https://mediaarea.net/download/binary/mediainfo-gui/22.12/MediaInfo_GUI_22.12_Mac.dmg",
   "appcast": null,
-  "version": "21.09",
+  "version": "22.12",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "283afcd04ab4428f857f4495451c06ff38ef0a47dfede923d070952b5965e98a",
+  "sha256": "d6ef7f26adfb3dd79502d8a3a66ffe92ee5c28dff4c649a417ebcc54a345d606",
   "artifacts": [
-    [
-      "MediaInfo.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.mediaarea.mediainfo.mac-old.sfl*",
-        "~/Library/Preferences/net.mediaarea.mediainfo.mac-old.plist",
-        "~/Library/Saved Application State/net.mediaarea.mediainfo.mac-old.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "MediaInfo.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.mediaarea.mediainfo.mac-old.sfl*",
+            "~/Library/Preferences/net.mediaarea.mediainfo.mac-old.plist",
+            "~/Library/Saved Application State/net.mediaarea.mediainfo.mac-old.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -11,7 +11,7 @@
   ],
   "desc": "JSON parser/generator for C++ with SAX and DOM style APIs",
   "license": "MIT",
-  "homepage": "https://miloyip.github.io/rapidjson/",
+  "homepage": "https://rapidjson.org/",
   "versions": {
     "stable": "1.1.0",
     "head": "HEAD",
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/miloyip/rapidjson/archive/v1.1.0.tar.gz",
+      "url": "https://github.com/Tencent/rapidjson/archive/v1.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bf7ced29704a1e696fbccf2a2b4ea068e7774fa37f6d7dd4039d0787f8bed98e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rapidjson/blobs/sha256:62c117feb50a99962d154041516ad8c919ff05e6a5f83480112910b1cdcdddad",
+          "sha256": "62c117feb50a99962d154041516ad8c919ff05e6a5f83480112910b1cdcdddad"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rapidjson/blobs/sha256:3d0b51a74337aee74ad9f17eafba4694dc414aa9f45585607fab67efde2373f8",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rapidjson/blobs/sha256:07acf5e89f30f9db3b69ad953bf4490ed02f6e5eec9d5f84987962132373aa6e",
           "sha256": "07acf5e89f30f9db3b69ad953bf4490ed02f6e5eec9d5f84987962132373aa6e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rapidjson/blobs/sha256:62c117feb50a99962d154041516ad8c919ff05e6a5f83480112910b1cdcdddad",
+          "sha256": "62c117feb50a99962d154041516ad8c919ff05e6a5f83480112910b1cdcdddad"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/rapidjson/blobs/sha256:d0b949a9bd043535e2ff3e032b45b26de0083d319bc094db7ccc1edfea6cbdb3",
           "sha256": "d0b949a9bd043535e2ff3e032b45b26de0083d319bc094db7ccc1edfea6cbdb3"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rapidjson/blobs/sha256:252ec61e7d5cba129a888bb566d4f2b61bd1bd2886de637f48afa638e6764007",
-          "sha256": "252ec61e7d5cba129a888bb566d4f2b61bd1bd2886de637f48afa638e6764007"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rapidjson/blobs/sha256:a48429c06deb753e76e4354d25bb1f57c40719b0d1df3b907b1e996fd27d0e8b",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
     "doxygen"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

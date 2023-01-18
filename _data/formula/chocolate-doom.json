@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.chocolate-doom.org/downloads/3.0.1/chocolate-doom-3.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d435d6177423491d60be706da9f07d3ab4fabf3e077ec2a3fc216e394fcfc8c7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/chocolate-doom/blobs/sha256:8e670f4a512697c01cf64c4b6f12bf10dd512241b18b6901d60cfb545d7c755c",
+          "sha256": "8e670f4a512697c01cf64c4b6f12bf10dd512241b18b6901d60cfb545d7c755c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/chocolate-doom/blobs/sha256:413b538d84ce6683c965c9a996da15ce4a6217bcdc950761164bae1355bd9ad2",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/chocolate-doom/blobs/sha256:2ec976b70085d5774860143fa03bc8c46493383faf512c61eba9eb0ab3985942",
           "sha256": "2ec976b70085d5774860143fa03bc8c46493383faf512c61eba9eb0ab3985942"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/chocolate-doom/blobs/sha256:6a82c853bac7bf16dc7e2d54ff79a4806e4ceb6a84a6292450aff548e2afd8d3",
+          "sha256": "6a82c853bac7bf16dc7e2d54ff79a4806e4ceb6a84a6292450aff548e2afd8d3"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "sdl2",
     "sdl2_mixer",
     "sdl2_net"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -117,5 +130,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

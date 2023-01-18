@@ -10,18 +10,19 @@
 
   ],
   "desc": "C++14 implementation of the TLS-1.3 standard",
-  "license": "BSD-2-Clause",
+  "license": "BSD-3-Clause",
   "homepage": "https://github.com/facebookincubator/fizz",
   "versions": {
-    "stable": "2022.01.10.00",
+    "stable": "2023.01.16.00",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/facebookincubator/fizz/releases/download/v2022.01.10.00/fizz-v2022.01.10.00.tar.gz",
+      "url": "https://github.com/facebookincubator/fizz/releases/download/v2023.01.16.00/fizz-v2023.01.16.00.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "879c0fb260bcb0d9d1f6cf92e81353db99dcd7bf1e9c5a9af714cf041f320715"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:a9097ebd0dab10cc0b80fcbbb939d99815a126107bae009e9a9984f6adb9d216",
+          "sha256": "a9097ebd0dab10cc0b80fcbbb939d99815a126107bae009e9a9984f6adb9d216"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:4ba55fd8fa690236ae43b8b9923a2ebbefa38e2861ab527f2e8e6a763af2dc2c",
-          "sha256": "4ba55fd8fa690236ae43b8b9923a2ebbefa38e2861ab527f2e8e6a763af2dc2c"
+          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:65f9ea9f8b3fde25c2eafb3ef28035762279394650aa6591432f1c7b64de52f2",
+          "sha256": "65f9ea9f8b3fde25c2eafb3ef28035762279394650aa6591432f1c7b64de52f2"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:c19b907c40874a9575166cd78ad1419ab00b539785dbd159d661ea2bc8c1dcec",
-          "sha256": "c19b907c40874a9575166cd78ad1419ab00b539785dbd159d661ea2bc8c1dcec"
+          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:b5d4006ddf278f5fa98975e1c18380a42f742491e55545192dfe759c7323a9df",
+          "sha256": "b5d4006ddf278f5fa98975e1c18380a42f742491e55545192dfe759c7323a9df"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:ddcbbf9e0b22ff31bad0796d7caeca034b180cb90c72174076a48cfccac468b8",
+          "sha256": "ddcbbf9e0b22ff31bad0796d7caeca034b180cb90c72174076a48cfccac468b8"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:5bdd5e39b834666035eef5c565fb17c7c06731744c4a85f6310536432b1e4bf3",
-          "sha256": "5bdd5e39b834666035eef5c565fb17c7c06731744c4a85f6310536432b1e4bf3"
+          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:ea28324449247551e432f2f673ee269826f0709c3e0103eb3ce8001cee503b29",
+          "sha256": "ea28324449247551e432f2f673ee269826f0709c3e0103eb3ce8001cee503b29"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:d28d0cfce42bd150d2fb034503c07ec61f864873e42ea05851dbd28eb46909e6",
-          "sha256": "d28d0cfce42bd150d2fb034503c07ec61f864873e42ea05851dbd28eb46909e6"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:899dfcd278354f04ca79f13e4dcaaa8cd092a94a2dcef289668f40a1893798b8",
-          "sha256": "899dfcd278354f04ca79f13e4dcaaa8cd092a94a2dcef289668f40a1893798b8"
+          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:6fb8b162f2cec3fe47d85d0715d85c353c28949d79050b75536b89c3d5233a98",
+          "sha256": "6fb8b162f2cec3fe47d85d0715d85c353c28949d79050b75536b89c3d5233a98"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:4e363244ae965db4ae8a84f8b528537cdf3d8ed013fd3cb1a2d29061b3dabf39",
-          "sha256": "4e363244ae965db4ae8a84f8b528537cdf3d8ed013fd3cb1a2d29061b3dabf39"
+          "url": "https://ghcr.io/v2/homebrew/core/fizz/blobs/sha256:0cfd1e43375aa0d760e0865359bf02fcec5218d36cf6e2e2f7b33d725a61dec6",
+          "sha256": "0cfd1e43375aa0d760e0865359bf02fcec5218d36cf6e2e2f7b33d725a61dec6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +91,9 @@
     "openssl@1.1",
     "snappy",
     "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

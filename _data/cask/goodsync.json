@@ -9,37 +9,38 @@
   "homepage": "https://www.goodsync.com/",
   "url": "https://www.goodsync.com/download/goodsync-v11-mac.dmg",
   "appcast": null,
-  "version": "11.9.8",
+  "version": "12.1.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "058c9b9c3eb864bbbcad7529fa4db1b2d3e7714e143d0b5c6d83a8f680642750",
+  "sha256": "no_check",
   "artifacts": [
-    [
-      "GoodSync.app"
-    ],
     {
-      "trash": [
-        "/Library/Application Support/GoodSync",
-        "/Library/LaunchDaemons/com.siber.gs-server.plist",
-        "~/.goodsync",
-        "~/Library/Application Support/GoodSync",
-        "~/Library/Preferences/com.sibersystems.goodsyncmac2000.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "GoodSync.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/Application Support/GoodSync",
+            "/Library/LaunchDaemons/com.siber.gs-server.plist",
+            "~/.goodsync",
+            "~/Library/Application Support/GoodSync",
+            "~/Library/Preferences/com.sibersystems.goodsyncmac2000.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

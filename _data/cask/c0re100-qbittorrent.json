@@ -7,29 +7,33 @@
   ],
   "desc": "Bittorrent client",
   "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
-  "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.0.10/qBittorrent_enhanced-4.4.0.10.dmg",
+  "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.5.0.10/qBittorrent-Enhanced-Edition-release-4.5.0.10-macOS-universal.dmg",
   "appcast": null,
-  "version": "4.4.0.10",
+  "version": "4.5.0.10",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8d4b9a203ff5c048c8208fc40c8d9cff79e22695f0bc8ea7b2ba151728c763c9",
+  "sha256": "05956480747112d98afa4e417d646218cc61339b2c551b23c0ef8ed015eab759",
   "artifacts": [
-    [
-      "qbittorrent.app"
-    ],
     {
-      "trash": [
-        "~/.config/qBittorrent",
-        "~/Library/Application Support/qBittorrent",
-        "~/Library/Caches/qBittorrent",
-        "~/Library/Preferences/org.qbittorrent.qBittorrent.plist",
-        "~/Library/Preferences/qBittorrent",
-        "~/Library/Saved Application State/org.qbittorrent.qBittorrent.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "qbittorrent.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.config/qBittorrent",
+            "~/Library/Application Support/qBittorrent",
+            "~/Library/Caches/qBittorrent",
+            "~/Library/Preferences/org.qbittorrent.qBittorrent.plist",
+            "~/Library/Preferences/qBittorrent",
+            "~/Library/Saved Application State/org.qbittorrent.qBittorrent.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,7 +44,13 @@
       ]
     }
   },
-  "conflicts_with": null,
+  "conflicts_with": {
+    "cask": [
+      "qbittorrent"
+    ]
+  },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

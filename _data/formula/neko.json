@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/HaxeFoundation/neko/archive/v2-3-0/neko-2.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "850e7e317bdaf24ed652efeff89c1cb21380ca19f20e68a296c84f6bad4ee995"
     }
   },
   "revision": 7,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:7884de8412bd4275f2ad1d64391b7b42c3c816143a8ae6f13b268bb2e9aa29a4",
+          "sha256": "7884de8412bd4275f2ad1d64391b7b42c3c816143a8ae6f13b268bb2e9aa29a4"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:5c98fefc1af0c5b4391c48c2c28957f3b11e635b4f6fdf2b8a274a9b3d71c6fc",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:7dc2386e227172ce35a3c01583bcac98793e3477f23ac0dd764514fb1ad8126d",
           "sha256": "7dc2386e227172ce35a3c01583bcac98793e3477f23ac0dd764514fb1ad8126d"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/neko/blobs/sha256:41e4b5cafe8330cabb6fb97ec386beb2a0390a2f89a2d91a3c0ff325d3cdba7b",
+          "sha256": "41e4b5cafe8330cabb6fb97ec386beb2a0390a2f89a2d91a3c0ff325d3cdba7b"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "mbedtls@2",
     "openssl@1.1",
     "pcre"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +122,21 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "bdw-gc",
+        "mbedtls@2",
+        "openssl@1.1",
+        "pcre",
+        "sqlite",
+        "zlib",
+        "apr",
+        "apr-util",
+        "gtk+",
+        "httpd"
+      ]
+    }
+  }
 }

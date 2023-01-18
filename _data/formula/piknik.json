@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jedisct1/piknik/archive/0.10.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9172acb424d864ba3563bbdb0cd2307815129027eec1a6ca04aee17da7f936c2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/piknik/blobs/sha256:ad21c6f5534120bf7b51f809e0441ed40d6c1647fd3df8ae5324f44b4b11d04f",
+          "sha256": "ad21c6f5534120bf7b51f809e0441ed40d6c1647fd3df8ae5324f44b4b11d04f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/piknik/blobs/sha256:3b11a027946eda7b8937861f4458d6d0a8e320fb297fa44ea8a84883e5614b9f",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/piknik/blobs/sha256:b503df3a16dfdf25219a598da5ae3c17676ee2367c0db0837403a6f728e4fcb4",
           "sha256": "b503df3a16dfdf25219a598da5ae3c17676ee2367c0db0837403a6f728e4fcb4"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/piknik/blobs/sha256:6124866e63102b6c82103a39a6d6287ed0808648e619af94d8ef44df915e22c1",
+          "sha256": "6124866e63102b6c82103a39a6d6287ed0808648e619af94d8ef44df915e22c1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

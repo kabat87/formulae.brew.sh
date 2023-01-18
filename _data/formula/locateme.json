@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/iharder/locateme/LocateMe-v0.2.1.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "137016e6c1a847bbe756d8ed294b40f1d26c1cb08869940e30282e933e5aeecd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/locateme/blobs/sha256:ee7e0709959839eb57d29307a2f835a93cb69e36eddd389bd62fb2d58d7e95be",
+          "sha256": "ee7e0709959839eb57d29307a2f835a93cb69e36eddd389bd62fb2d58d7e95be"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/locateme/blobs/sha256:5c3de0a8398901fcfa93cce0b7dbaeb38989029d1eb2b76cac4246b042b3ef27",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/locateme/blobs/sha256:1f946f1ef48eae5f8cbbdcd78655f3baf0cae307f2730b4aea76360044ed315e",
           "sha256": "1f946f1ef48eae5f8cbbdcd78655f3baf0cae307f2730b4aea76360044ed315e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/locateme/blobs/sha256:db1688ffa07905231ed8d2c04fe43c2eabd575541ef596e16a67eec803275250",
+          "sha256": "db1688ffa07905231ed8d2c04fe43c2eabd575541ef596e16a67eec803275250"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -75,18 +86,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/locateme/blobs/sha256:5f8e1febc1886565bfa9691cb3ffc0486999f8b682a52276c1d9ea6e0f1f4470",
           "sha256": "5f8e1febc1886565bfa9691cb3ffc0486999f8b682a52276c1d9ea6e0f1f4470"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/locateme/blobs/sha256:a7876905a4c06452431e506523c5fdf142e2de364427600122fbb9b4928bc6d1",
-          "sha256": "a7876905a4c06452431e506523c5fdf142e2de364427600122fbb9b4928bc6d1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -131,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

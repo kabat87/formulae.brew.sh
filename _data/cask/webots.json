@@ -8,31 +8,37 @@
   ],
   "desc": "Open source desktop application used to simulate robots",
   "homepage": "https://www.cyberbotics.com/",
-  "url": "https://github.com/cyberbotics/webots/releases/download/R2022a/webots-R2022a.dmg",
+  "url": "https://github.com/cyberbotics/webots/releases/download/R2023a/webots-R2023a.dmg",
   "appcast": null,
-  "version": "R2022a",
+  "version": "R2023a",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b93c1d13b1e9679e642f7035bf9bec1ca05d4191b9152fdb59beeb405edaf993",
+  "sha256": "54a1d7a94cef0f1b7cadb5c485dac81224628aa725c92dcf630b7e45c3bf6a4f",
   "artifacts": [
     {
-      "quit": "com.cyberbotics.webots",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.cyberbotics.webots"
+        }
+      ]
     },
-    [
-      "Webots.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Cyberbotics/Webots",
-        "~/Library/Caches/Cyberbotics/Webots",
-        "~/Library/Preferences/com.cyberbotics.Webots-R2022a.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Webots.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Cyberbotics/Webots",
+            "~/Library/Caches/Cyberbotics/Webots",
+            "~/Library/Preferences/com.cyberbotics.Webots-R2023a.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +51,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

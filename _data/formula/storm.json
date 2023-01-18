@@ -13,35 +13,35 @@
   "license": "Apache-2.0",
   "homepage": "https://storm.apache.org",
   "versions": {
-    "stable": "2.3.0",
+    "stable": "2.4.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://dlcdn.apache.org/storm/apache-storm-2.3.0/apache-storm-2.3.0.tar.gz",
+      "url": "https://dlcdn.apache.org/storm/apache-storm-2.4.0/apache-storm-2.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "54535c68848f05130647997f3fafe91a72bb9470a50d6d80997274d20cf1c0c6"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/storm/blobs/sha256:3fef017e3bad462d37bab431a30e59923a1b7e17a532f01f1080e4586123d8f5",
-          "sha256": "3fef017e3bad462d37bab431a30e59923a1b7e17a532f01f1080e4586123d8f5"
+          "url": "https://ghcr.io/v2/homebrew/core/storm/blobs/sha256:f731eb6706ecc4d40e83a8441e6abb46b157575c257a0d29e0d0d255b4609244",
+          "sha256": "f731eb6706ecc4d40e83a8441e6abb46b157575c257a0d29e0d0d255b4609244"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,7 +50,10 @@
   ],
   "dependencies": [
     "openjdk",
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -79,5 +82,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

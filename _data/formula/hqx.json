@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/grom358/hqx.git",
       "tag": "v1.2",
-      "revision": "124c9399fa136fb0f743417ca27dfa2ca2860c2d"
+      "revision": "124c9399fa136fb0f743417ca27dfa2ca2860c2d",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/hqx/blobs/sha256:83b6c8f9ae3cfcf01fd4745bf1170829206069830a119324cf382c7a258ea66b",
+          "sha256": "83b6c8f9ae3cfcf01fd4745bf1170829206069830a119324cf382c7a258ea66b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/hqx/blobs/sha256:09abea6af7106f8bdcf0e58e7b17cd91e1c22074139596a2c4f23afdbf9c9a07",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/hqx/blobs/sha256:d782e36758fe3e2a3b354a3c9e021078230934c2bbc2bd4f7043cf7ad570f542",
           "sha256": "d782e36758fe3e2a3b354a3c9e021078230934c2bbc2bd4f7043cf7ad570f542"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/hqx/blobs/sha256:dcf39c5df3a0caa4b58e68cf62d77fb1f5c75fdfb1c2d1cd31dab8ad263d69f5",
+          "sha256": "dcf39c5df3a0caa4b58e68cf62d77fb1f5c75fdfb1c2d1cd31dab8ad263d69f5"
         },
         "monterey": {
           "cellar": ":any",
@@ -60,13 +71,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/hqx/blobs/sha256:3714c62ed8c552ddf8242b87845c5d35d17341d44ffea5cc3feceaa2e4c7e960",
           "sha256": "3714c62ed8c552ddf8242b87845c5d35d17341d44ffea5cc3feceaa2e4c7e960"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hqx/blobs/sha256:d10418410cbd8fb6be975c40e233a41031491a307ef05a021f5be55e379063cc",
+          "sha256": "d10418410cbd8fb6be975c40e233a41031491a307ef05a021f5be55e379063cc"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,8 +92,10 @@
     "pkg-config"
   ],
   "dependencies": [
-    "php",
     "devil"
+  ],
+  "test_dependencies": [
+    "php"
   ],
   "recommended_dependencies": [
 
@@ -107,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

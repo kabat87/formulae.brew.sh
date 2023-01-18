@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://gkrellm.srcbox.net/releases/gkrellm-2.3.11.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1ee0643ed9ed99f88c1504c89d9ccb20780cf29319c904b68e80a8e7c8678c06"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gkrellm/blobs/sha256:d02c2824c12ada8d88960c1e0cc2bcb9faf8b245c2bbe7926e6df1ccd6b9cdb0",
+          "sha256": "d02c2824c12ada8d88960c1e0cc2bcb9faf8b245c2bbe7926e6df1ccd6b9cdb0"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gkrellm/blobs/sha256:a32eb484583ec59dd701fd6c8a7ad2ae44656bf7eab9037929b22880ebbfb7f6",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gkrellm/blobs/sha256:97f8dcd6b453a73339369feef0512c94129cf55e923f6d8f114a99f0ee732a88",
           "sha256": "97f8dcd6b453a73339369feef0512c94129cf55e923f6d8f114a99f0ee732a88"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gkrellm/blobs/sha256:f50c1ce59316495ebec312303308ea46eef65df83323f1f5b7c2133e6c93ce2a",
+          "sha256": "f50c1ce59316495ebec312303308ea46eef65df83323f1f5b7c2133e6c93ce2a"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -70,13 +81,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gkrellm/blobs/sha256:f90adbb22bdbc169d95c932591d4c5a7c5e869f61c79744bb743c50a4698acc9",
           "sha256": "f90adbb22bdbc169d95c932591d4c5a7c5e869f61c79744bb743c50a4698acc9"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gkrellm/blobs/sha256:ca8de16de4f193874d68b638ac2a0d3b007fdf178967b45a7945814167ada700",
+          "sha256": "ca8de16de4f193874d68b638ac2a0d3b007fdf178967b45a7945814167ada700"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +109,9 @@
     "gtk+",
     "openssl@1.1",
     "pango"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -122,5 +140,22 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "atk",
+        "cairo",
+        "fontconfig",
+        "freetype",
+        "gdk-pixbuf",
+        "gettext",
+        "glib",
+        "gtk+",
+        "openssl@1.1",
+        "pango",
+        "libsm"
+      ]
+    }
+  }
 }

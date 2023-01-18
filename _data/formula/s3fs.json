@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/s3fs-fuse/s3fs-fuse/wiki",
   "versions": {
-    "stable": "1.87",
+    "stable": "1.91",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/s3fs-fuse/s3fs-fuse/archive/v1.87.tar.gz",
+      "url": "https://github.com/s3fs-fuse/s3fs-fuse/archive/refs/tags/v1.91.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f130fec375dc6972145c56f53e83ea7c98c82621406d0208a328989e5d900b0f"
     }
   },
   "revision": 0,
@@ -31,27 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/s3fs/blobs/sha256:5183ab606057fbe8e46a737b25c1ad4e82dd67389f48827d7bfd567c67cf8417",
-          "sha256": "5183ab606057fbe8e46a737b25c1ad4e82dd67389f48827d7bfd567c67cf8417"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/s3fs/blobs/sha256:d691bdeb4abd443bc1f1f3de46c286a97829f95ba3d47b026e535a6688085d07",
-          "sha256": "d691bdeb4abd443bc1f1f3de46c286a97829f95ba3d47b026e535a6688085d07"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/s3fs/blobs/sha256:f475d03b68102dd400a22de99b9ddc044653f6658e2cb84349adf507ffbddcad",
-          "sha256": "f475d03b68102dd400a22de99b9ddc044653f6658e2cb84349adf507ffbddcad"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/s3fs/blobs/sha256:40366ae4c296e3095014f8639d77d0ede2b0f8f960d305a8ed43f0b160702fff",
+          "sha256": "40366ae4c296e3095014f8639d77d0ede2b0f8f960d305a8ed43f0b160702fff"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -61,9 +51,15 @@
     "pkg-config"
   ],
   "dependencies": [
+    "curl",
     "gnutls",
+    "libfuse@2",
     "libgcrypt",
+    "libxml2",
     "nettle"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -75,12 +71,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -90,7 +94,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

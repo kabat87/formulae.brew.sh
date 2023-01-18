@@ -10,7 +10,7 @@
 
   ],
   "desc": "Convert bootable DMG images for use in VMware Fusion",
-  "license": null,
+  "license": "Apache-2.0",
   "homepage": "https://github.com/chilcote/vfuse",
   "versions": {
     "stable": "2.2.6",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/chilcote/vfuse/archive/2.2.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fbf5f8a1c664b03c7513a70aa05c3fc501a7ebdb53f128f1f05c24395871a314"
     }
   },
   "revision": 0,
@@ -66,7 +67,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +74,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -86,7 +89,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -103,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

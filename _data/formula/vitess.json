@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://vitess.io",
   "versions": {
-    "stable": "12.0.3",
+    "stable": "15.0.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/vitessio/vitess/archive/v12.0.3.tar.gz",
+      "url": "https://github.com/vitessio/vitess/archive/v15.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "83a443237d244dc03ee19e76370369e331be15e9e843f1a0a10d740ea71edb4b"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:d3ebcfbec10f2f797b56cd651239bff6d9c4d59955745d2fe1edca565e35bc81",
+          "sha256": "d3ebcfbec10f2f797b56cd651239bff6d9c4d59955745d2fe1edca565e35bc81"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:7408c0c135fd24477d0372bea43bd800a6f3c556fb793bcb1144153467ca37a0",
-          "sha256": "7408c0c135fd24477d0372bea43bd800a6f3c556fb793bcb1144153467ca37a0"
+          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:c621d9f338c99c3afb9a83fcd4fcf929378de6f38b2ebe6d07037d8c2c7eb33e",
+          "sha256": "c621d9f338c99c3afb9a83fcd4fcf929378de6f38b2ebe6d07037d8c2c7eb33e"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:bdd83add8df585cb7b35773a885a9932b9125ee1639027a4b54c45286efd565f",
-          "sha256": "bdd83add8df585cb7b35773a885a9932b9125ee1639027a4b54c45286efd565f"
+          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:240d701595519687b7b18e83f4a0bdcdabb5465eb84a4875278fb5833d5f333e",
+          "sha256": "240d701595519687b7b18e83f4a0bdcdabb5465eb84a4875278fb5833d5f333e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:90a5c931e6196d017fdb6e1a081f412ac7e88c667d6c56453731ad4f70305ab4",
+          "sha256": "90a5c931e6196d017fdb6e1a081f412ac7e88c667d6c56453731ad4f70305ab4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:8a9fe9b58b840eb1c9c956869338b249f5c6ed724b6a46b1eed6aec46c4c1951",
-          "sha256": "8a9fe9b58b840eb1c9c956869338b249f5c6ed724b6a46b1eed6aec46c4c1951"
+          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:609c5a52614b14be3a0403d2fb6bb6186360cc4620df11fa6fa0df2859ab776d",
+          "sha256": "609c5a52614b14be3a0403d2fb6bb6186360cc4620df11fa6fa0df2859ab776d"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:48c2e3bf47e6b8db640cec9f67d8849edfc835100aed51120d560f0d861ec95d",
-          "sha256": "48c2e3bf47e6b8db640cec9f67d8849edfc835100aed51120d560f0d861ec95d"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:a1b76a95ff2e7660e1cc896ffbe0057df245a0ec95c2d05357a9f648820ede9a",
-          "sha256": "a1b76a95ff2e7660e1cc896ffbe0057df245a0ec95c2d05357a9f648820ede9a"
+          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:26c95f69d22fe503e3e11c162c9eab925e6c6c02dbf7a5dbb59e08289a23e85c",
+          "sha256": "26c95f69d22fe503e3e11c162c9eab925e6c6c02dbf7a5dbb59e08289a23e85c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:861bafece13fc35de445b82638f94bab9c00c4694ea5f7dbfe80504fe0c89639",
-          "sha256": "861bafece13fc35de445b82638f94bab9c00c4694ea5f7dbfe80504fe0c89639"
+          "url": "https://ghcr.io/v2/homebrew/core/vitess/blobs/sha256:e4312ec085eccf3ce6fb6e818b92822d53e3a18e50482d9660e10a9a851550a4",
+          "sha256": "e4312ec085eccf3ce6fb6e818b92822d53e3a18e50482d9660e10a9a851550a4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "etcd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

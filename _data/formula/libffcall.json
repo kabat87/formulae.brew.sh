@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/libffcall/libffcall-2.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8ef69921dbdc06bc5bb90513622637a7b83a71f31f5ba377be9d8fd8f57912c2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libffcall/blobs/sha256:cb0b3113b4075bd871c9dbc7c1c0af213e77b700aaedc4cf5532b1944015defc",
+          "sha256": "cb0b3113b4075bd871c9dbc7c1c0af213e77b700aaedc4cf5532b1944015defc"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libffcall/blobs/sha256:58dd56d1ab429bde2b8078bb3737682b57a37a7d67b70e8c27bcc023f988e2fd",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libffcall/blobs/sha256:d7ace5f73fe02c38febe33718fbb293e765f7d1909763b39dc280d410e2a1488",
           "sha256": "d7ace5f73fe02c38febe33718fbb293e765f7d1909763b39dc280d410e2a1488"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libffcall/blobs/sha256:ee2b7df162625a59cd9ac90a61a91a238138cf244a385c1c94dc50d90319d546",
+          "sha256": "ee2b7df162625a59cd9ac90a61a91a238138cf244a385c1c94dc50d90319d546"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

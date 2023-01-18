@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/rgxg/rgxg/releases/download/v0.1.2/rgxg-0.1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "554741f95dcc320459875c248e2cc347b99f809d9555c957d763d3d844e917c6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rgxg/blobs/sha256:56fc8fea2ebbbe0a03cddb55f18d6a744b7ab028980276b8e17a2fdada7f6cce",
+          "sha256": "56fc8fea2ebbbe0a03cddb55f18d6a744b7ab028980276b8e17a2fdada7f6cce"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rgxg/blobs/sha256:7c78f7917c24d61418d48dbdb2b61eea9f098cfdc999532542044372fbea04af",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rgxg/blobs/sha256:42b3f11c2a0fe78d84df3ae4ef3bcf9d3dd4cb04a5f8ac9a2c2196c7ef7b904b",
           "sha256": "42b3f11c2a0fe78d84df3ae4ef3bcf9d3dd4cb04a5f8ac9a2c2196c7ef7b904b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rgxg/blobs/sha256:ed2bfec2c314aad06476ce78a33f9c6cc4d1c1f18e254dba53f71bfcbcf66596",
+          "sha256": "ed2bfec2c314aad06476ce78a33f9c6cc4d1c1f18e254dba53f71bfcbcf66596"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

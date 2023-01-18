@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/airspy/airspyhf/archive/1.6.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cd1e5ae89e09b813b096ae4a328e352c9432a582e03fd7da86760ba60efa77ab"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/airspyhf/blobs/sha256:5fbaa0afc4b557fad2a08babdbe97253a76ab494b81dbc402fe0ca9d5c26674a",
+          "sha256": "5fbaa0afc4b557fad2a08babdbe97253a76ab494b81dbc402fe0ca9d5c26674a"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/airspyhf/blobs/sha256:eef302a163fb091b112c40684b5dcc04e226e95df03042cc9c77ff6e1b637f9c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/airspyhf/blobs/sha256:687651c9d95e06436df3a43a0dca6e3d39747bbf2d92892edf44bddd964c5345",
           "sha256": "687651c9d95e06436df3a43a0dca6e3d39747bbf2d92892edf44bddd964c5345"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/airspyhf/blobs/sha256:506b301e7f411e447bd5b0bab09551eb1ace6fdd62d76a99239e42c648cb2cb4",
+          "sha256": "506b301e7f411e447bd5b0bab09551eb1ace6fdd62d76a99239e42c648cb2cb4"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   ],
   "dependencies": [
     "libusb"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

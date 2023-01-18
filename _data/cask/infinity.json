@@ -17,34 +17,35 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": [
-        "com.electron.infinity"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.electron.infinity"
+        }
+      ]
     },
-    [
-      "Infinity.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Infinity",
-        "~/Library/Preferences/com.electron.infinity.plist",
-        "~/Library/Saved Application State/com.electron.infinity.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Infinity.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Infinity",
+            "~/Library/Preferences/com.electron.infinity.plist",
+            "~/Library/Saved Application State/com.electron.infinity.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.ibiblio.org/pub/linux/apps/sound/mp3-utils/mp3info/mp3info-0.8.5a.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0438ac68e9f04947fb14ca5573d27c62454cb9db3a93b7f1d2c226cd3e0b4e10"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mp3info/blobs/sha256:81ac6e08be5d5bcdeb1fe53b6ae9967662fc31fcb18cd9de9a8758ced4a1d3a7",
+          "sha256": "81ac6e08be5d5bcdeb1fe53b6ae9967662fc31fcb18cd9de9a8758ced4a1d3a7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mp3info/blobs/sha256:4d14f5dd7a1e4f7e441e94d5c43f7786169190125da84e1b425005c79164e55d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mp3info/blobs/sha256:ebb88262f3ba1eb8196c8821769298b4aa29bb4c5d0733fc8dcd47092cfafdd5",
           "sha256": "ebb88262f3ba1eb8196c8821769298b4aa29bb4c5d0733fc8dcd47092cfafdd5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mp3info/blobs/sha256:0f0471f80fe9004fd5c0028ffc6ab8b5b5240474a5b04533b5d53104e732d7a8",
+          "sha256": "0f0471f80fe9004fd5c0028ffc6ab8b5b5240474a5b04533b5d53104e732d7a8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

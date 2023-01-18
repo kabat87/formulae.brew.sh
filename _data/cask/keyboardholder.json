@@ -6,31 +6,35 @@
     "KeyboardHolder"
   ],
   "desc": "Switch input method per application",
-  "homepage": "https://github.com/leaves615/KeyboardHolder",
-  "url": "https://github.com/leaves615/KeyboardHolder/releases/download/1.5.0/KeyboardHolder.app.1.5.0.zip",
+  "homepage": "https://keyboardholder.leavesc.com/",
+  "url": "https://github.com/leaves615/KeyboardHolder/releases/download/v1.10.2/KeyboardHolder-1.10.2.zip",
   "appcast": null,
-  "version": "1.5.0",
+  "version": "1.10.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4823e40c93d2dd8fa2624c2f4ab9003e6417ad538361ce0dc7608b21063cb452",
+  "sha256": "1eebe195e751f38c91f22c0825f528f72fb415a2a69b707ca4185fdd5b89f410",
   "artifacts": [
-    [
-      "KeyboardHolder.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/cn.leaves.KeyboardHolderLaunchHelper",
-        "~/Library/Application Support/cn.leaves.KeyboardHolder",
-        "~/Library/Caches/cn.leaves.KeyboardHolder",
-        "~/Library/Caches/com.plausiblelabs.crashreporter.data/cn.leaves.KeyboardHolder",
-        "~/Library/Containers/cn.leaves.KeyboardHolderLaunchHelper",
-        "~/Library/Logs/cn.leaves.KeyboardHolder",
-        "~/Library/Preferences/cn.leaves.KeyboardHolder.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "KeyboardHolder.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/cn.leaves.KeyboardHolderLaunchHelper",
+            "~/Library/Application Support/cn.leaves.KeyboardHolder",
+            "~/Library/Caches/cn.leaves.KeyboardHolder",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/cn.leaves.KeyboardHolder",
+            "~/Library/Containers/cn.leaves.KeyboardHolderLaunchHelper",
+            "~/Library/Logs/cn.leaves.KeyboardHolder",
+            "~/Library/Preferences/cn.leaves.KeyboardHolder.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

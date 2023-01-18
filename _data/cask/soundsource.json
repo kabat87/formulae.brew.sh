@@ -9,36 +9,42 @@
   "homepage": "https://rogueamoeba.com/soundsource/",
   "url": "https://rogueamoeba.com/soundsource/download/SoundSource.zip",
   "appcast": null,
-  "version": "5.3.9",
+  "version": "5.5.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "SoundSource.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/SoundSource",
-        "~/Library/Caches/com.rogueamoeba.soundsource",
-        "~/Library/Preferences/com.rogueamoeba.soundsource.plist",
-        "~/Library/WebKit/com.rogueamoeba.soundsource"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SoundSource.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/SoundSource",
+            "~/Library/Caches/com.rogueamoeba.soundsource",
+            "~/Library/Preferences/com.rogueamoeba.soundsource.plist",
+            "~/Library/WebKit/com.rogueamoeba.soundsource"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.13"
+        "10.15"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

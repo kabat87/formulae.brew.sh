@@ -9,7 +9,7 @@
   "homepage": "https://debookee.com/",
   "url": "https://www.iwaxx.com/debookee/debookee.zip",
   "appcast": null,
-  "version": "8.1.1,3238",
+  "version": "8.1.4,3321",
   "versions": {
   },
   "installed": null,
@@ -17,27 +17,33 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "delete": "/Library/PrivilegedHelperTools/com.iwaxx.Debookee.PacketTool",
-      "launchctl": "com.iwaxx.Debookee.PacketTool",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Library/PrivilegedHelperTools/com.iwaxx.Debookee.PacketTool",
+          "launchctl": "com.iwaxx.Debookee.PacketTool"
+        }
+      ]
     },
-    [
-      "Debookee.app"
-    ],
     {
-      "trash": [
-        "~/.debookee",
-        "~/Library/Application Support/com.iwaxx.Debookee",
-        "~/Library/Caches/com.iwaxx.Debookee",
-        "~/Library/Cookies/com.iwaxx.Debookee.binarycookies",
-        "~/Library/Logs/Debookee",
-        "~/Library/Preferences/com.iwaxx.Debookee.plist",
-        "~/Library/Saved Application State/com.iwaxx.Debookee.savedState",
-        "~/Library/WebKit/com.iwaxx.Debookee"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Debookee.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.debookee",
+            "~/Library/Application Support/com.iwaxx.Debookee",
+            "~/Library/Caches/com.iwaxx.Debookee",
+            "~/Library/Cookies/com.iwaxx.Debookee.binarycookies",
+            "~/Library/Logs/Debookee",
+            "~/Library/Preferences/com.iwaxx.Debookee.plist",
+            "~/Library/Saved Application State/com.iwaxx.Debookee.savedState",
+            "~/Library/WebKit/com.iwaxx.Debookee"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -50,5 +56,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/ploticus/ploticus/2.42/ploticus242_src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3f29e4b9f405203a93efec900e5816d9e1b4381821881e241c08cab7dd66e0b0"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ploticus/blobs/sha256:07c219e6f16f0218d44236bc252ac69566859751a2f485e21f2058446aa552a1",
+          "sha256": "07c219e6f16f0218d44236bc252ac69566859751a2f485e21f2058446aa552a1"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ploticus/blobs/sha256:01092932df498e7d7a50dd52ec5036e103999b3609ff73a4a86036d417da57dc",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ploticus/blobs/sha256:3b0d37697feadd571e84831579e10d1e0e3180833794e8784a2e8a7b5205e7c6",
           "sha256": "3b0d37697feadd571e84831579e10d1e0e3180833794e8784a2e8a7b5205e7c6"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ploticus/blobs/sha256:70dc7caa237162f2feeb5e4149777350aa2ad2254070bde21619be0fa5334f1e",
+          "sha256": "70dc7caa237162f2feeb5e4149777350aa2ad2254070bde21619be0fa5334f1e"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/ploticus/blobs/sha256:088f4ba0eea75ed4b401f94331b70dd64e23f02fa0d95731fbaccf6904c8cea5",
           "sha256": "088f4ba0eea75ed4b401f94331b70dd64e23f02fa0d95731fbaccf6904c8cea5"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ploticus/blobs/sha256:b15be72d80abf16b348c625945de811bf1fb411b1cb329adc701bc04cfb41dd8",
-          "sha256": "b15be72d80abf16b348c625945de811bf1fb411b1cb329adc701bc04cfb41dd8"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ploticus/blobs/sha256:c7218f15936e3bc96796454d09612f99c8e8c5694b71d37af6625bbb3b254627",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libpng"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

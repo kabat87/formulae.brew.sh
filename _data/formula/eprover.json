@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://wwwlehre.dhbw-stuttgart.de/~sschulz/WORK/E_DOWNLOAD/V_2.6/E.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "aa1f3deaa229151e60d607560301a46cd24b06a51009e0a9ba86071e40d73edd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/eprover/blobs/sha256:933c3244099f0d7631bc4b5fff2ff790686d3fd8519448118d80a57664133984",
+          "sha256": "933c3244099f0d7631bc4b5fff2ff790686d3fd8519448118d80a57664133984"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/eprover/blobs/sha256:f2df4ffe6c58bfdbd59c96e662f1ca66a91f5f26b21b8de2cbf6e36368443f4c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/eprover/blobs/sha256:6c5b3ef3fe7c4d8a83d6bc36414cc31a75ee9ec0444e8bc3a53ad9c0e398d388",
           "sha256": "6c5b3ef3fe7c4d8a83d6bc36414cc31a75ee9ec0444e8bc3a53ad9c0e398d388"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/eprover/blobs/sha256:fa5c8ccf21c2651c3e5ce3ee03cd4b02bfd17e2f6d4a4cd7d84f27a0eb86fa8b",
+          "sha256": "fa5c8ccf21c2651c3e5ce3ee03cd4b02bfd17e2f6d4a4cd7d84f27a0eb86fa8b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

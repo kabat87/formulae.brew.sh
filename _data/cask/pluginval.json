@@ -7,25 +7,29 @@
   ],
   "desc": "Cross-platform plugin validator and tester application",
   "homepage": "https://www.tracktion.com/develop/pluginval",
-  "url": "https://github.com/Tracktion/pluginval/releases/download/v0.3.0/pluginval_macOS.zip",
+  "url": "https://github.com/Tracktion/pluginval/releases/download/v1.0.2/pluginval_macOS.zip",
   "appcast": null,
-  "version": "0.3.0",
+  "version": "1.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1678f91c1afed6857a7a7c05bb13fc2b5586a7a29b02381751aa622c0386429c",
+  "sha256": "a743a4546c16f4f4049dc8eee2c45c0c723693f76f82f1505ae9159649b54e6e",
   "artifacts": [
-    [
-      "pluginval.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/pluginval/pluginval.xml",
-        "~/Library/Caches/pluginval/pluginval_crash.txt"
-      ],
-      "signal": {
-      }
+      "app": [
+        "pluginval.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/pluginval/pluginval.xml",
+            "~/Library/Caches/pluginval/pluginval_crash.txt"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

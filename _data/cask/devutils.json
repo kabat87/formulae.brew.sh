@@ -5,39 +5,45 @@
   "name": [
     "DevUtils"
   ],
-  "desc": "Offline toolbox for developers",
-  "homepage": "https://devutils.app/",
-  "url": "https://devutils.app/archives/DevUtils-1.12.0.dmg",
+  "desc": "All-in-one toolbox for developers",
+  "homepage": "https://devutils.com/",
+  "url": "https://devutils.com/archives/DevUtils-1.16.0.dmg",
   "appcast": null,
-  "version": "1.12.0,99",
+  "version": "1.16.0,139",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "00fd3320528d32324dbb03b08ee795ed5f1e254a5d54ef09859c9e45cea7c1e7",
+  "sha256": "f92897d414143161d679433bcceb83e0588fd0970342ee9e81e537263515807d",
   "artifacts": [
-    [
-      "DevUtils.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/DevUtils",
-        "~/Library/Caches/tonyapp.devutils",
-        "~/Library/Preferences/tonyapp.devutils"
-      ],
-      "signal": {
-      }
+      "app": [
+        "DevUtils.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/DevUtils",
+            "~/Library/Caches/tonyapp.devutils",
+            "~/Library/Preferences/tonyapp.devutils"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.11"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

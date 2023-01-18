@@ -9,38 +9,39 @@
   "homepage": "https://nektony.com/memory-cleaner",
   "url": "https://nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg",
   "appcast": null,
-  "version": "4.4,117",
+  "version": "4.5,120",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Memory Cleaner 4.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.nektony.Memory-Cleaner-SII.launcher",
-        "~/Library/Application Scripts/com.nektony.Memory-Cleaner-SII",
-        "~/Library/Application Support/Memory Cleaner",
-        "~/Library/Caches/com.nektony.Memory-Cleaner-SII",
-        "~/Library/Cookies/com.nektony.Memory-Cleaner-SII.binarycookies",
-        "~/Library/Preferences/com.nektony.Memory-Cleaner-SII.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Memory Cleaner 4.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.nektony.Memory-Cleaner-SII.launcher",
+            "~/Library/Application Scripts/com.nektony.Memory-Cleaner-SII",
+            "~/Library/Application Support/Memory Cleaner",
+            "~/Library/Caches/com.nektony.Memory-Cleaner-SII",
+            "~/Library/Cookies/com.nektony.Memory-Cleaner-SII.binarycookies",
+            "~/Library/Preferences/com.nektony.Memory-Cleaner-SII.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

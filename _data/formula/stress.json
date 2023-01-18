@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/s/stress/stress_1.0.5.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1798e49ca365d928fb194ba1b8e8d1e09963b49e9edb0a78bcbba15750bb5027"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/stress/blobs/sha256:682417d0cce887de4bfad5dbf1382917cda827e21b760f890a74d1856e45915d",
+          "sha256": "682417d0cce887de4bfad5dbf1382917cda827e21b760f890a74d1856e45915d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/stress/blobs/sha256:d62a404e264f4d64f2e5a14c9adee3f6cdb3593c31880410d24f38accea32bdf",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/stress/blobs/sha256:3dc5c125c3eb8cf95cb21bf4ae2efaf114b9b47677747026ba92a5c9eb09ad6e",
           "sha256": "3dc5c125c3eb8cf95cb21bf4ae2efaf114b9b47677747026ba92a5c9eb09ad6e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/stress/blobs/sha256:cf4131cee3e5082600056d0872a4a0147d477c6b87f24fab295a86201a649973",
+          "sha256": "cf4131cee3e5082600056d0872a4a0147d477c6b87f24fab295a86201a649973"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

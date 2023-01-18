@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://qosient.com/argus/src/argus-3.0.8.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ca4e3bd5b9d4a8ff7c01cc96d1bffd46dbd6321237ec94c52f8badd51032eeff"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/argus/blobs/sha256:c77cf2ebf326271560f9ab2bc5e50889133cc8ea1a39c5a719b4016710c3c764",
+          "sha256": "c77cf2ebf326271560f9ab2bc5e50889133cc8ea1a39c5a719b4016710c3c764"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/argus/blobs/sha256:e1b3fe3a7c3dd11ee63dbca00091b02d68f821087efb4343ce4136137c36295e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/argus/blobs/sha256:b3b0421c50d060c2f6812a9b10ee5121336f80306a96271819737903ec98574c",
           "sha256": "b3b0421c50d060c2f6812a9b10ee5121336f80306a96271819737903ec98574c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/argus/blobs/sha256:45ecaf9689f988463d3971f73d5da0c0401d2818bbef025cb06f818f15f8a3db",
+          "sha256": "45ecaf9689f988463d3971f73d5da0c0401d2818bbef025cb06f818f15f8a3db"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -75,18 +86,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/argus/blobs/sha256:ea46f2010610e46c120e2df100d61e01c21ee58627e105273c0e0a76437150e1",
           "sha256": "ea46f2010610e46c120e2df100d61e01c21ee58627e105273c0e0a76437150e1"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/argus/blobs/sha256:b4d359943e8404d7c6a340c36bbc4d42e14a56cd80e17a997114fdc6f76552d8",
-          "sha256": "b4d359943e8404d7c6a340c36bbc4d42e14a56cd80e17a997114fdc6f76552d8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

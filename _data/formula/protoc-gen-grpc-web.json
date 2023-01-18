@@ -13,60 +13,70 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/grpc/grpc-web",
   "versions": {
-    "stable": "1.3.0",
+    "stable": "1.4.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/grpc/grpc-web/archive/1.3.0.tar.gz",
+      "url": "https://github.com/grpc/grpc-web/archive/1.4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "376937b22095bdbea00f8bcd9442c1824419a99cbc37caf0967e4a0fa8b16658"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:54e59010fc995ac571f6c76369721c28dad336723404e858cce02e893db30e61",
+          "sha256": "54e59010fc995ac571f6c76369721c28dad336723404e858cce02e893db30e61"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:694f70b69029f55a659d0981473b025467dc9f88ec84195f6b88d6ca2d67c3cf",
-          "sha256": "694f70b69029f55a659d0981473b025467dc9f88ec84195f6b88d6ca2d67c3cf"
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:b7ad14af33ee7f73663972c1ceb97727bc0fea026c1e4c16ba2913272208578d",
+          "sha256": "b7ad14af33ee7f73663972c1ceb97727bc0fea026c1e4c16ba2913272208578d"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:b8c378b553e2ac95659369ada0af31198ef30e72391c3ac867faa999be965ede",
-          "sha256": "b8c378b553e2ac95659369ada0af31198ef30e72391c3ac867faa999be965ede"
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:9d8551246e95b74f03875968666431ed0a5b9db6282c752ed49e106eb5e70034",
+          "sha256": "9d8551246e95b74f03875968666431ed0a5b9db6282c752ed49e106eb5e70034"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:70b8eac814308965112d0101ab8033ad5897c4e3c509ee9c9755583a0bccb55b",
+          "sha256": "70b8eac814308965112d0101ab8033ad5897c4e3c509ee9c9755583a0bccb55b"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:25779d4c29e4c1f8299db7ada86e4d568cd8d6a5ce8bbce2956d1f6a2785e347",
-          "sha256": "25779d4c29e4c1f8299db7ada86e4d568cd8d6a5ce8bbce2956d1f6a2785e347"
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:f5435c6bc4f25d62a67d56904a593640ddf4a7c868e8255f9d86620693a34873",
+          "sha256": "f5435c6bc4f25d62a67d56904a593640ddf4a7c868e8255f9d86620693a34873"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:f4ffae6839a5a559e198d61c79bc567a714fa0fc884f0f6f031ebd9c78c83115",
-          "sha256": "f4ffae6839a5a559e198d61c79bc567a714fa0fc884f0f6f031ebd9c78c83115"
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:52b8503b1b9053fc90043c83d7d3b86767a97616955b89841f4d59ab6269daa8",
+          "sha256": "52b8503b1b9053fc90043c83d7d3b86767a97616955b89841f4d59ab6269daa8"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:7480b35d0d8e6e280da6824c70a8e0c58308a51511f4010fdf2c165f1d8e14ed",
-          "sha256": "7480b35d0d8e6e280da6824c70a8e0c58308a51511f4010fdf2c165f1d8e14ed"
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:b839a0129eca03ab237945ff1a81249b860bb3421814dc42ca52132cb5303ecb",
+          "sha256": "b839a0129eca03ab237945ff1a81249b860bb3421814dc42ca52132cb5303ecb"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:ae7d825f02135ab092f592229bea5a3d0dff5ae02374bebb3ff6920efcd9b7f0",
-          "sha256": "ae7d825f02135ab092f592229bea5a3d0dff5ae02374bebb3ff6920efcd9b7f0"
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-grpc-web/blobs/sha256:95f9dcef9a241e6104e446900dc34fc9daafa8bc38886d3ba55cbf49b1f66cd4",
+          "sha256": "95f9dcef9a241e6104e446900dc34fc9daafa8bc38886d3ba55cbf49b1f66cd4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,9 +84,11 @@
     "cmake"
   ],
   "dependencies": [
+    "protobuf@3"
+  ],
+  "test_dependencies": [
     "node",
-    "typescript",
-    "protobuf"
+    "typescript"
   ],
   "recommended_dependencies": [
 
@@ -105,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

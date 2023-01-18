@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/HewlettPackard/netperf/archive/netperf-2.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4569bafa4cca3d548eb96a486755af40bd9ceb6ab7c6abd81cc6aa4875007c4e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/netperf/blobs/sha256:76bf2f77ea0a7e854b9de5b139b4c8d6010a658aeace9a8bbe4691f26f4537e2",
+          "sha256": "76bf2f77ea0a7e854b9de5b139b4c8d6010a658aeace9a8bbe4691f26f4537e2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/netperf/blobs/sha256:aa20dd669c5ea235a264c1684859a7c97e82bc3a5f210584ff17eb402ada2510",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/netperf/blobs/sha256:fb2e8ee85592d6dff9445af33d752ea5e73abb92fe690a7844e556059ba9e9f9",
           "sha256": "fb2e8ee85592d6dff9445af33d752ea5e73abb92fe690a7844e556059ba9e9f9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/netperf/blobs/sha256:251f856fc4ffa7c7f5c5e0c865b1b5fa41d4f4cd25c213704c0e19657dcf67fb",
+          "sha256": "251f856fc4ffa7c7f5c5e0c865b1b5fa41d4f4cd25c213704c0e19657dcf67fb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

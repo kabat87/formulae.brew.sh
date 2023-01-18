@@ -7,28 +7,29 @@
   ],
   "desc": "Word processor with markdown formatting and select themes",
   "homepage": "https://calmlywriter.com/",
-  "url": "https://www.calmlywriter.com/releases/x64/Calmly%20Writer-2.0.37.pkg",
+  "url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.50.dmg",
   "appcast": null,
-  "version": "2.0.37",
+  "version": "2.0.50",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "5426fbcd4d33244df6d61ea4eac2fcd4941d162013a3e1e51b1997dad55d4a4a",
+  "sha256": "843782d181acfde85f9137b5640a184ae23d5d072b115c0fdf31b3fe5ab0c1bc",
   "artifacts": [
     {
-      "pkgutil": "calmlywriter",
-      "signal": {
-      }
+      "app": [
+        "Calmly Writer.app"
+      ]
     },
-    "Calmly Writer-2.0.37.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Preferences/calmlywriter.plist",
-        "~/Library/Saved Application State/calmlywriter.savedState"
-      ],
-      "signal": {
-      }
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/calmlywriter.plist",
+            "~/Library/Saved Application State/calmlywriter.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +42,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.50-arm64.dmg",
+      "sha256": "9688a991c0eeb42b472863f18ca3aaf9aa7d954bbc557a3cd3829b6807692450"
+    },
+    "arm64_monterey": {
+      "url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.50-arm64.dmg",
+      "sha256": "9688a991c0eeb42b472863f18ca3aaf9aa7d954bbc557a3cd3829b6807692450"
+    },
+    "arm64_big_sur": {
+      "url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.50-arm64.dmg",
+      "sha256": "9688a991c0eeb42b472863f18ca3aaf9aa7d954bbc557a3cd3829b6807692450"
+    }
+  }
 }

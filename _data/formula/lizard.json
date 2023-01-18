@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/inikep/lizard/archive/v1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6f666ed699fc15dc7fdaabfaa55787b40ac251681b50c0d8df017c671a9457e6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lizard/blobs/sha256:6fcf6c0c2243f9fa4a9f06ebb9b28c2fcf5aaed5916bc3ab6be36024e3096556",
+          "sha256": "6fcf6c0c2243f9fa4a9f06ebb9b28c2fcf5aaed5916bc3ab6be36024e3096556"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lizard/blobs/sha256:870168a41711bd2dac174484f576c7573b422e9b9a9ba20a4f761b262747966f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lizard/blobs/sha256:25adf9383bbad3ab6c4f51e38ea46ebe4fc636cc347c8625b2fbd65e89a3144d",
           "sha256": "25adf9383bbad3ab6c4f51e38ea46ebe4fc636cc347c8625b2fbd65e89a3144d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lizard/blobs/sha256:75bd1c568655f58d515f452ee69c5b615e3d65c7f9eadba2581a4df5bd2e7d3c",
+          "sha256": "75bd1c568655f58d515f452ee69c5b615e3d65c7f9eadba2581a4df5bd2e7d3c"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

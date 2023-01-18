@@ -7,31 +7,35 @@
   ],
   "desc": "HTTP client that helps testing and describing APIs",
   "homepage": "https://paw.cloud/",
-  "url": "https://cdn-builds.paw.cloud/paw/Paw-3.3.3.zip",
+  "url": "https://cdn-builds.paw.cloud/paw/Paw-3.4.0.zip",
   "appcast": null,
-  "version": "3.3.3,3003003001",
+  "version": "3.4.0,3004000012",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b1dbfaecce74773d98364e9460a63d03a5c0a6a76c83c92a7a863b404f1cafee",
+  "sha256": "d393c6fb175d8e5f671361e1e2e4578fbab0eb6a03a2226507cad953a8a819da",
   "artifacts": [
-    [
-      "Paw.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.luckymarmot.Paw",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.luckymarmot.paw.sfl*",
-        "~/Library/Containers/com.luckymarmot.Paw",
-        "~/Library/Preferences/com.luckymarmot.Paw.plist",
-        "~/Library/Saved Application State/com.luckymarmot.Paw.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Paw.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.luckymarmot.Paw",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.luckymarmot.paw.sfl*",
+            "~/Library/Containers/com.luckymarmot.Paw",
+            "~/Library/Preferences/com.luckymarmot.Paw.plist",
+            "~/Library/Saved Application State/com.luckymarmot.Paw.savedState"
+          ]
+        }
+      ]
     }
   ],
-  "caveats": null,
+  "caveats": "paw has been renamed 'rapidapi',\ninstall rapidapi to continue receiving updates;\n\n  brew install --cask rapidapi\n\npaw has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
     "macos": {
       ">=": [
@@ -41,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -7,27 +7,31 @@
   ],
   "desc": "Icon manager and library",
   "homepage": "https://nucleoapp.com/",
-  "url": "https://nucleo-app-releases.s3.amazonaws.com/mac/Nucleo_3.1.6.zip",
+  "url": "https://nucleo-app-releases.s3.amazonaws.com/mac/Nucleo_3.2.2.zip",
   "appcast": null,
-  "version": "3.1.6",
+  "version": "3.2.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f54e0a5c2e6c53a9804cb59a33c57bd6342a068269cbd17781e26a8ab78ba3be",
+  "sha256": "fe40cf1a35dbb62eae73f9cc65f0fdb0bf41dd1942443b5a8e5c5074fceba9f1",
   "artifacts": [
-    [
-      "Nucleo.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Nucleo",
-        "~/Library/Logs/Nucleo",
-        "~/Library/Preferences/co.ambercreative.nucleo.plist",
-        "~/Library/Saved Application State/co.ambercreative.nucleo.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Nucleo.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Nucleo",
+            "~/Library/Logs/Nucleo",
+            "~/Library/Preferences/co.ambercreative.nucleo.plist",
+            "~/Library/Saved Application State/co.ambercreative.nucleo.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

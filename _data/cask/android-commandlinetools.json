@@ -7,43 +7,59 @@
   ],
   "desc": "Command-line tools for building and debugging Android apps",
   "homepage": "https://developer.android.com/studio",
-  "url": "https://dl.google.com/android/repository/commandlinetools-mac-7583922_latest.zip",
+  "url": "https://dl.google.com/android/repository/commandlinetools-mac-9123335_latest.zip",
   "appcast": null,
-  "version": "7583922",
+  "version": "9123335",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6929a1957f3e71008adfade0cebd08ebea9b9f506aa77f1849c7bdc3418df7cf",
+  "sha256": "d0192807f7e1cd4a001d13bb1e5904fc287b691211648877258aa44d1fa88275",
   "artifacts": [
-    [
-      "cmdline-tools",
-      {
-        "target": "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/homebrew"
-      }
-    ],
-    [
-      "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/homebrew/bin/avdmanager"
-    ],
-    [
-      "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/homebrew/bin/lint"
-    ],
-    [
-      "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/homebrew/bin/retrace"
-    ],
-    [
-      "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/homebrew/bin/screenshot2"
-    ],
-    [
-      "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/homebrew/bin/sdkmanager"
-    ],
-    [
-      "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/homebrew/bin/apkanalyzer"
-    ],
     {
-      "trash": "$(brew --prefix)/share/android-commandlinetools",
-      "signal": {
-      }
+      "artifact": [
+        "cmdline-tools",
+        {
+          "target": "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/latest"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/latest/bin/avdmanager"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/latest/bin/lint"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/latest/bin/retrace"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/latest/bin/screenshot2"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/latest/bin/sdkmanager"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/share/android-commandlinetools/cmdline-tools/latest/bin/apkanalyzer"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "$(brew --prefix)/share/android-commandlinetools"
+        }
+      ]
     }
   ],
   "caveats": "Default Android SDK root is $(brew --prefix)/share/android-commandlinetools\n\nandroid-commandlinetools requires Java. You can install the latest version with:\n  brew install --cask temurin\n",
@@ -58,5 +74,7 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

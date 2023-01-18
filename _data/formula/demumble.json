@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/nico/demumble/archive/refs/tags/v1.2.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "663e5d205c83cc36a257bb168d3ecbc2a49693088c0451b2405d25646651c63e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/demumble/blobs/sha256:7bfa72834af03942bb6eacc60ec52006997dd1fbdc68351398a78ffe046e19d8",
+          "sha256": "7bfa72834af03942bb6eacc60ec52006997dd1fbdc68351398a78ffe046e19d8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/demumble/blobs/sha256:ff3563d728d6ad3ba851fe1a9e95e599f0fb835ea6e046b30e329537f19aaedc",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/demumble/blobs/sha256:b43c1b4396d845e300f9f5c7746fb6a393ea8a3189c822ba96c35cb1ddd7786b",
           "sha256": "b43c1b4396d845e300f9f5c7746fb6a393ea8a3189c822ba96c35cb1ddd7786b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/demumble/blobs/sha256:e98aeeb71355a2125a7e5c7d91c3926e2889864242ca65cf961b2de49900d55d",
+          "sha256": "e98aeeb71355a2125a7e5c7d91c3926e2889864242ca65cf961b2de49900d55d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/demumble/blobs/sha256:f843e7116cf05d2a7dff4fb8351d0609e8120d49aad84e810f44cc85d6b62811",
           "sha256": "f843e7116cf05d2a7dff4fb8351d0609e8120d49aad84e810f44cc85d6b62811"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/demumble/blobs/sha256:addf214742de13338bbbc8f19e8f41593bc66bcacb6870f9add57a9e00c0eca9",
+          "sha256": "addf214742de13338bbbc8f19e8f41593bc66bcacb6870f9add57a9e00c0eca9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

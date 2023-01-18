@@ -5,31 +5,44 @@
   "name": [
     "JDownloader"
   ],
-  "desc": null,
+  "desc": "Download manager",
   "homepage": "https://jdownloader.org/",
-  "url": "http://installer.jdownloader.org/clean/JD2Setup.dmg",
+  "url": "https://installer.jdownloader.org/clean/JD2Setup.dmg",
   "appcast": null,
-  "version": "latest",
+  "version": "47256",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    "preflight (Preflight Block)",
     {
-      "delete": [
-        "/Applications/JDownloader 2.0",
-        "/Applications/JDownloader2.app"
-      ],
-      "signal": {
-      }
+      "preflight": "  preflight do\n    system_command \"#{staged_path}/JDownloader Installer.app/Contents/MacOS/JavaApplicationStub\",\n                   args:         [\n                     \"-dir\", appdir.to_s,\n                     \"-q\",\n                     \"-Dinstall4j.suppressStdout=true\",\n                     \"-Dinstall4j.debug=false\",\n                     \"-VcreateDesktopLinkAction$Boolean=false\",\n                     \"-VaddToDockAction$Boolean=false\"\n                   ],\n                   print_stderr: false\n  end\n"
+    },
+    {
+      "uninstall": [
+        {
+          "delete": [
+            "/Applications/JDownloader 2.0",
+            "/Applications/JDownloader2.app"
+          ]
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/org.jdownloader.launcher.plist"
+        }
+      ]
     }
   ],
-  "caveats": "jdownloader requires Java 8. You can install it with:\n  brew install --cask homebrew/cask-versions/temurin8\n",
+  "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -1,8 +1,11 @@
 cask "mongodb-compass" do
-  version "1.30.1"
-  sha256 "0a93a48ae84215996bc0bdd95a52ca726ab6c03d9a68aa5605f9247e515f14c0"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://downloads.mongodb.com/compass/mongodb-compass-#{version}-darwin-x64.dmg"
+  version "1.35.0"
+  sha256 arm:   "dc84118990ac145261ea2cce5751443c6521c517fac21cb41f8f68218791991c",
+         intel: "569a2db8790050a43bb13467a7cf56964d6875503206c14a24a4127d6f698b65"
+
+  url "https://downloads.mongodb.com/compass/mongodb-compass-#{version}-darwin-#{arch}.dmg"
   name "MongoDB Compass"
   desc "Explore and manipulate your MongoDB data"
   homepage "https://www.mongodb.com/products/compass"
@@ -11,6 +14,8 @@ cask "mongodb-compass" do
     url "https://info-mongodb-com.s3.amazonaws.com/com-download-center/compass.json"
     regex(/"version"\s*:\s*"(\d+(?:\.\d+)+)\s*\(Stable/i)
   end
+
+  auto_updates true
 
   app "MongoDB Compass.app"
 

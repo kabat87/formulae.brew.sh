@@ -7,7 +7,7 @@
   ],
   "desc": "Drive health diagnostic & monitoring tool",
   "homepage": "https://binaryfruit.com/drivedx",
-  "url": "https://download.binaryfruit.com/drivedx/mac/1/DriveDx.1.11.0.zip",
+  "url": "https://binaryfruit.com/download/drivedx/mac/1/bin/DriveDx.1.11.0.zip",
   "appcast": null,
   "version": "1.11.0,730",
   "versions": {
@@ -16,19 +16,23 @@
   "outdated": false,
   "sha256": "e72c18695916cc99ce10dd08b91d7c5d6d799ca471fef8cbabf79fb3a3d93bef",
   "artifacts": [
-    [
-      "DriveDx.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/DriveDx",
-        "~/Library/Caches/DriveDx",
-        "~/Library/Caches/com.binaryfruit.DriveDx",
-        "~/Library/Logs/DriveDx",
-        "~/Library/Preferences/com.binaryfruit.DriveDx.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "DriveDx.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/DriveDx",
+            "~/Library/Caches/DriveDx",
+            "~/Library/Caches/com.binaryfruit.DriveDx",
+            "~/Library/Logs/DriveDx",
+            "~/Library/Preferences/com.binaryfruit.DriveDx.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

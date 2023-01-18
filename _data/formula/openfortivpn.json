@@ -10,18 +10,19 @@
 
   ],
   "desc": "Open Fortinet client for PPP+SSL VPN tunnel services",
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0-or-later with openvpn-openssl-exception",
   "homepage": "https://github.com/adrienverge/openfortivpn",
   "versions": {
-    "stable": "1.17.1",
+    "stable": "1.19.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/adrienverge/openfortivpn/archive/v1.17.1.tar.gz",
+      "url": "https://github.com/adrienverge/openfortivpn/archive/v1.19.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9e244c3b63176269ce433349e67f8fd6e532f7c8d515f4c97558911a449152c3"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:cf3085228d1c1d791e69d60fc848b4758ff224359f3dedd46d7aa8d149fa1936",
+          "sha256": "cf3085228d1c1d791e69d60fc848b4758ff224359f3dedd46d7aa8d149fa1936"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:ec8d7033e8e96e347ed56b4fc81ee11805ba23a0f343b1519eb496533f1c5bca",
-          "sha256": "ec8d7033e8e96e347ed56b4fc81ee11805ba23a0f343b1519eb496533f1c5bca"
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:2f65a3ce47bfa55079ece31bf270b4111ddd9ac81ac742a8243afe1c6600e932",
+          "sha256": "2f65a3ce47bfa55079ece31bf270b4111ddd9ac81ac742a8243afe1c6600e932"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:c4748e81cb20fb01c9d414e0ed293fc368e564301a5bd30a12331c874110386f",
-          "sha256": "c4748e81cb20fb01c9d414e0ed293fc368e564301a5bd30a12331c874110386f"
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:7e130cbe9a544dbd3d447d455399ef8cef88d31b0e81e8a8e0713b2a469f67a2",
+          "sha256": "7e130cbe9a544dbd3d447d455399ef8cef88d31b0e81e8a8e0713b2a469f67a2"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:c06e9f31eda964a6622822a8a1b0178c73c9eb38ceae9dbefdf6994558a1c454",
+          "sha256": "c06e9f31eda964a6622822a8a1b0178c73c9eb38ceae9dbefdf6994558a1c454"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:b26201d5191b156c69840c7116e0ba57afb2e32290884d7da3a1826c2aa9f6b2",
-          "sha256": "b26201d5191b156c69840c7116e0ba57afb2e32290884d7da3a1826c2aa9f6b2"
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:ff5c82ec39545a45ca3676cca127c699e438e0eb2d0972cf98bddab8994a9c6e",
+          "sha256": "ff5c82ec39545a45ca3676cca127c699e438e0eb2d0972cf98bddab8994a9c6e"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:bd22ebd6c3c8303346885799b63c8fc75c324d5d5a3b467960852bbc3be0bb7a",
-          "sha256": "bd22ebd6c3c8303346885799b63c8fc75c324d5d5a3b467960852bbc3be0bb7a"
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:36df758b6d887467cd0e90f704d0b603f5486ac6f5375d845bb391cdbb9afdfb",
+          "sha256": "36df758b6d887467cd0e90f704d0b603f5486ac6f5375d845bb391cdbb9afdfb"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:4a6d61358a7c7d950cc10c59089eed15fb8b8dfc3bcf345c83a87b08c1308028",
-          "sha256": "4a6d61358a7c7d950cc10c59089eed15fb8b8dfc3bcf345c83a87b08c1308028"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:07ed32d58eeee4cd3fc6ee3635cd70ad5ecdb67fd0e44265da4784c81b3442fa",
-          "sha256": "07ed32d58eeee4cd3fc6ee3635cd70ad5ecdb67fd0e44265da4784c81b3442fa"
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:4a09b2f6e762b7eac8e5e8ce0ca2997e1764439c3af6e5b54aa019c532c45e2b",
+          "sha256": "4a09b2f6e762b7eac8e5e8ce0ca2997e1764439c3af6e5b54aa019c532c45e2b"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:a6e1156d037a572b3f9dcb511bb9d708e6775a7a68027399f5451f690c097cd6",
-          "sha256": "a6e1156d037a572b3f9dcb511bb9d708e6775a7a68027399f5451f690c097cd6"
+          "url": "https://ghcr.io/v2/homebrew/core/openfortivpn/blobs/sha256:66bd0b3ebcaea501bda4aca5664ec71503b6930c24fdc2300f0ab96094438f7b",
+          "sha256": "66bd0b3ebcaea501bda4aca5664ec71503b6930c24fdc2300f0ab96094438f7b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,7 +86,10 @@
     "pkg-config"
   ],
   "dependencies": [
-    "openssl@1.1"
+    "openssl@3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

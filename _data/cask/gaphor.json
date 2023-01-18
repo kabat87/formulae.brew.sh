@@ -7,30 +7,36 @@
   ],
   "desc": "UML/SysML modeling tool",
   "homepage": "https://gaphor.org/",
-  "url": "https://github.com/gaphor/gaphor/releases/download/2.8.0/Gaphor-2.8.0.dmg",
+  "url": "https://github.com/gaphor/gaphor/releases/download/2.15.0/Gaphor-2.15.0.dmg",
   "appcast": null,
-  "version": "2.8.0",
+  "version": "2.15.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8e73804fe6115d6f087338ffd9b62c3917e9bd3cbd3d371af19c74f2f697f1b7",
+  "sha256": "3e6ac4381cba2c933928f911b747cd4a40c7a0fb5c8fbe977452a403de6de1ed",
   "artifacts": [
     {
-      "quit": "Gaphor-2.8.0",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "Gaphor-2.15.0"
+        }
+      ]
     },
-    [
-      "Gaphor.app"
-    ],
     {
-      "trash": [
-        "~/.cache/gaphor",
-        "~/.local/share/gaphor"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Gaphor.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.cache/gaphor",
+            "~/.local/share/gaphor"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

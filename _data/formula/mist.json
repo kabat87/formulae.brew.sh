@@ -9,19 +9,20 @@
   "versioned_formulae": [
 
   ],
-  "desc": "Mac command-line tool that automatically downloads macOS Installers / Firmwares",
+  "desc": "Mac command-line tool that automatically downloads macOS Firmwares / Installers",
   "license": "MIT",
-  "homepage": "https://github.com/ninxsoft/Mist",
+  "homepage": "https://github.com/ninxsoft/mist-cli",
   "versions": {
-    "stable": "1.6.1",
+    "stable": "1.10",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/ninxsoft/Mist/archive/refs/tags/v1.6.1.tar.gz",
+      "url": "https://github.com/ninxsoft/mist-cli/archive/refs/tags/v1.10.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c40ae66b84ab20998794a2e6d5e94e71afc65a4b3f9b4417babb2f34cd09608b"
     }
   },
   "revision": 0,
@@ -31,32 +32,31 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:bc508927c1bdda99abe23778eac259286e54a7f36ccd0c76ed02821440261b9b",
+          "sha256": "bc508927c1bdda99abe23778eac259286e54a7f36ccd0c76ed02821440261b9b"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:35375786bef6d615bdcb87cb580f18dd0e3825a48eb297b6e18e8a4de0b4c25a",
-          "sha256": "35375786bef6d615bdcb87cb580f18dd0e3825a48eb297b6e18e8a4de0b4c25a"
+          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:b81d11c1a272ed78fc7dfd4c476d34d3f4e46184232e33013e83cfa917b937fc",
+          "sha256": "b81d11c1a272ed78fc7dfd4c476d34d3f4e46184232e33013e83cfa917b937fc"
         },
-        "arm64_big_sur": {
+        "ventura": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:ffcafe421bb04ffa7b4509ae724f900d11a894891e27252398cc198ad330aa89",
-          "sha256": "ffcafe421bb04ffa7b4509ae724f900d11a894891e27252398cc198ad330aa89"
+          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:6772980dd498a6b6ff21ad5541257c51f9eba540a3b252908ebc3b63a8a0f4db",
+          "sha256": "6772980dd498a6b6ff21ad5541257c51f9eba540a3b252908ebc3b63a8a0f4db"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:a385b61b7c5db3f570ad7f004d63fe16e87f8d9e19b5cf12c648f10cdb544f18",
-          "sha256": "a385b61b7c5db3f570ad7f004d63fe16e87f8d9e19b5cf12c648f10cdb544f18"
-        },
-        "big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:ab75aa8de44adc4fd72be7d70feb92eced0603238c209d0461c25e2341b1cb4e",
-          "sha256": "ab75aa8de44adc4fd72be7d70feb92eced0603238c209d0461c25e2341b1cb4e"
+          "url": "https://ghcr.io/v2/homebrew/core/mist/blobs/sha256:1b55c65fcc47bc62c4ca6700610a4722a350deb69a1126cea19dce2b6dfd0765",
+          "sha256": "1b55c65fcc47bc62c4ca6700610a4722a350deb69a1126cea19dce2b6dfd0765"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -64,6 +64,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -80,9 +83,18 @@
       "name": "xcode",
       "cask": null,
       "download": null,
-      "version": "13.1",
+      "version": "14.0",
       "contexts": [
         "build"
+      ]
+    },
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
+
       ]
     }
   ],
@@ -101,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

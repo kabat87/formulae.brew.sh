@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jedisct1/dsvpn/archive/0.1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b98604e1ca2ffa7a909bf07ca7cf0597e3baa73c116fbd257f93a4249ac9c0c5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dsvpn/blobs/sha256:889d8f51fbe721906b84001adfcced14178739901beead09b88977a8b194c97f",
+          "sha256": "889d8f51fbe721906b84001adfcced14178739901beead09b88977a8b194c97f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dsvpn/blobs/sha256:533ca096976136d7eeb0923c0164a0b3e8305d344036c1ad095a586f8768f5a2",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dsvpn/blobs/sha256:5f0269b49b371b7330a7397c73ca1a8791da2e1215242eacd3e612f6705dd9c4",
           "sha256": "5f0269b49b371b7330a7397c73ca1a8791da2e1215242eacd3e612f6705dd9c4"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dsvpn/blobs/sha256:bf4216d9f7d920dd9c3addf7c946ee730f74e2fdb361ea76e835855106a97ba1",
+          "sha256": "bf4216d9f7d920dd9c3addf7c946ee730f74e2fdb361ea76e835855106a97ba1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

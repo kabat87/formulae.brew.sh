@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://hspell.ivrix.org.il/hspell-1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7310f5d58740d21d6d215c1179658602ef7da97a816bc1497c8764be97aabea3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hspell/blobs/sha256:2fcc00698fda6279a021ece352de8c8c7597cabec4ae896416db031215e2dcbb",
+          "sha256": "2fcc00698fda6279a021ece352de8c8c7597cabec4ae896416db031215e2dcbb"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/hspell/blobs/sha256:743ad6762f4452a62702961c030950a6d70d36877140dd8728ce45f8d06411c3",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/hspell/blobs/sha256:421fdc3ab5d0ebde258ce7bdb235d2b50144966a27a74cbbe5c607dff0984c7f",
           "sha256": "421fdc3ab5d0ebde258ce7bdb235d2b50144966a27a74cbbe5c607dff0984c7f"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hspell/blobs/sha256:8409b8e239d65f3109f29b1a5317c30c88fb468e1591d1a056c303afd3a95edd",
+          "sha256": "8409b8e239d65f3109f29b1a5317c30c88fb468e1591d1a056c303afd3a95edd"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "autoconf"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

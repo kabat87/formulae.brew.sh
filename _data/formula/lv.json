@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://web.archive.org/web/20150915000000/www.ff.iij4u.or.jp/~nrt/freeware/lv451.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e1cd2e27109fbdbc6d435f2c3a99c8a6ef2898941f5d2f7bacf0c1ad70158bcf"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lv/blobs/sha256:40b16905a4cdbe254c41f5cec691b7363b8fefc543226fb5d0ca5f1b073510ed",
+          "sha256": "40b16905a4cdbe254c41f5cec691b7363b8fefc543226fb5d0ca5f1b073510ed"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/lv/blobs/sha256:8567f1d743b65f76bfebc80dc8a27e4604b283a07ee5e11ffd1173227c683946",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/lv/blobs/sha256:b96a459a6aa0f11cb8d498c71ab902b1b2bdd75bdf02aa5233366171f61d750a",
           "sha256": "b96a459a6aa0f11cb8d498c71ab902b1b2bdd75bdf02aa5233366171f61d750a"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lv/blobs/sha256:1dbe3c32dcbada980502a6494084c34579d045e38bc475fa43c37b727f7905cd",
+          "sha256": "1dbe3c32dcbada980502a6494084c34579d045e38bc475fa43c37b727f7905cd"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "ncurses",
+        "gzip"
+      ]
+    }
+  }
 }

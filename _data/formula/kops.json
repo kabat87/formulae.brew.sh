@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://kops.sigs.k8s.io/",
   "versions": {
-    "stable": "1.22.3",
+    "stable": "1.25.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/kubernetes/kops/archive/v1.22.3.tar.gz",
+      "url": "https://github.com/kubernetes/kops/archive/v1.25.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7ecd4eb7dc109d34fcd13930d0660342ec5945d0456a63ef4ace2955f556d450"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:2ab459b3293cbcd8d6b0827d4b23af8449a3810b38d0bc0c4c821e66f7b3a9e8",
+          "sha256": "2ab459b3293cbcd8d6b0827d4b23af8449a3810b38d0bc0c4c821e66f7b3a9e8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:0fe1943d71112f782c2454f1b3694a06603e98eb6451684bf7452066c8533272",
-          "sha256": "0fe1943d71112f782c2454f1b3694a06603e98eb6451684bf7452066c8533272"
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:8ebbebc2f36d16b1b9987d57fd18d4134e0a697c737235799bf9f5eeb81a2430",
+          "sha256": "8ebbebc2f36d16b1b9987d57fd18d4134e0a697c737235799bf9f5eeb81a2430"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:e62f2eb1836620e847c9351526dad54222e83c6cfb54fab4ddc5224aced6f839",
-          "sha256": "e62f2eb1836620e847c9351526dad54222e83c6cfb54fab4ddc5224aced6f839"
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:e6c77aef751e0bf2972508f0b087b5817cd21307090072d5724e112d710e2b60",
+          "sha256": "e6c77aef751e0bf2972508f0b087b5817cd21307090072d5724e112d710e2b60"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:2fa275955609bdaf8ddf700254b6c9742c24e375906eeedd2bd534e9cd864670",
+          "sha256": "2fa275955609bdaf8ddf700254b6c9742c24e375906eeedd2bd534e9cd864670"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:ab5bdda358bc64ce1d52bcace39c730ba7114f98ceb7825d13abb4021db2e9f0",
-          "sha256": "ab5bdda358bc64ce1d52bcace39c730ba7114f98ceb7825d13abb4021db2e9f0"
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:9745c086b5a923336a992c2acf92d0a1f8462a3462a55f31e1bfe6526ba6bbe1",
+          "sha256": "9745c086b5a923336a992c2acf92d0a1f8462a3462a55f31e1bfe6526ba6bbe1"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:f3dec44c868ec0ad65086a33bb4c4aea6d94ac115f5c7ee61bf1296bd24db7eb",
-          "sha256": "f3dec44c868ec0ad65086a33bb4c4aea6d94ac115f5c7ee61bf1296bd24db7eb"
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:d42775fb0cf3d22ae072d933ade1efad35ec6fdc8b58d5fdde13f598af24933a",
+          "sha256": "d42775fb0cf3d22ae072d933ade1efad35ec6fdc8b58d5fdde13f598af24933a"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:f0c842d8424346d52b05d72759a931062fb5151a55495b5281796f8ae7fef38c",
-          "sha256": "f0c842d8424346d52b05d72759a931062fb5151a55495b5281796f8ae7fef38c"
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:07096057856cfb9620419a150bede943dc961d9f53bf8f9e82cca6d4db797382",
+          "sha256": "07096057856cfb9620419a150bede943dc961d9f53bf8f9e82cca6d4db797382"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:9d006913e830fe89f10abc0e3f87be4b40166923062723b5803a2011bfc1e337",
-          "sha256": "9d006913e830fe89f10abc0e3f87be4b40166923062723b5803a2011bfc1e337"
+          "url": "https://ghcr.io/v2/homebrew/core/kops/blobs/sha256:abd9a621067522b14e18e3c5ad67209b897c56723176259d6a61a3f8dce38b0e",
+          "sha256": "abd9a621067522b14e18e3c5ad67209b897c56723176259d6a61a3f8dce38b0e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "kubernetes-cli"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

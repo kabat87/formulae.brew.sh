@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://iredis.io",
   "versions": {
-    "stable": "1.10.0",
+    "stable": "1.13.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/73/b9/9f282c23eaa45a6c468b27a9d9263f7cb86699785d47e2d8b165daf8b928/iredis-1.10.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/33/ee/758d256fdcc53566f8bc852d48402b7f197a78c29684113180d8d7ce95f6/iredis-1.13.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d1e4e7936d0be456f70a39abeb1c97d931f66ccd60e891f4fd796ffb06dfeaf9"
     }
   },
   "revision": 0,
@@ -31,37 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:e376d00887b8cb8e38ef216916f257e4bf18581d9597992fd692379bcd03a1a2",
+          "sha256": "e376d00887b8cb8e38ef216916f257e4bf18581d9597992fd692379bcd03a1a2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:2bcf5e6425ebf2343801455530e7e95ab2cc4382c4769b5ba955aa5a86068bc5",
-          "sha256": "2bcf5e6425ebf2343801455530e7e95ab2cc4382c4769b5ba955aa5a86068bc5"
+          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:7e1dc66c8fe90942fbe2ed172eb61c82d441de4de6c0e5b3232678dc2e6264d3",
+          "sha256": "7e1dc66c8fe90942fbe2ed172eb61c82d441de4de6c0e5b3232678dc2e6264d3"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:aa5d7ebe907eebb70a4dee6c7a55305e8960fd19beb2f5e03a49dd673e31b0bd",
-          "sha256": "aa5d7ebe907eebb70a4dee6c7a55305e8960fd19beb2f5e03a49dd673e31b0bd"
+          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:2b2af779c30fbf425d3ebd3c3828fa2db0218a5060552a59e91e4dc6c1742dfc",
+          "sha256": "2b2af779c30fbf425d3ebd3c3828fa2db0218a5060552a59e91e4dc6c1742dfc"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:5d3e0892bd0edd90f6ba630cd129f288708628ac29da109efa25c6c37b933a28",
+          "sha256": "5d3e0892bd0edd90f6ba630cd129f288708628ac29da109efa25c6c37b933a28"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:a7bb01765cfc82e35b3d35664a2c86ac2041ccdfdd61639d500fa9b33c8417ad",
-          "sha256": "a7bb01765cfc82e35b3d35664a2c86ac2041ccdfdd61639d500fa9b33c8417ad"
+          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:678e464ba06d3e4e7bccace1d99172e08982c8e41d7c93363b2b4e3472bdb50a",
+          "sha256": "678e464ba06d3e4e7bccace1d99172e08982c8e41d7c93363b2b4e3472bdb50a"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:826ce7e9c27bbb41f5eb15835a5c2a1c2b36455d9b3c8ba0007b6734631ddd07",
-          "sha256": "826ce7e9c27bbb41f5eb15835a5c2a1c2b36455d9b3c8ba0007b6734631ddd07"
+          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:dfb7eefce52d8bdb38ba9c255e6209dd653b1119cbd14c6be6ee243e6fb98cab",
+          "sha256": "dfb7eefce52d8bdb38ba9c255e6209dd653b1119cbd14c6be6ee243e6fb98cab"
         },
-        "catalina": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:91379e3a940cf2212f8eab29e1bf6d29c525d767c941ae5ee583e93fbf2e55f7",
-          "sha256": "91379e3a940cf2212f8eab29e1bf6d29c525d767c941ae5ee583e93fbf2e55f7"
+          "url": "https://ghcr.io/v2/homebrew/core/iredis/blobs/sha256:06cf10b414296d9626e18b70c5277dc22f87dca95ec3ca0ff1af75620f1e3aa9",
+          "sha256": "06cf10b414296d9626e18b70c5277dc22f87dca95ec3ca0ff1af75620f1e3aa9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,8 +79,11 @@
 
   ],
   "dependencies": [
-    "python@3.10",
+    "python@3.11",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -99,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

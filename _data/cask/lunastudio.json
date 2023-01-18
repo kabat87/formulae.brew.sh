@@ -17,17 +17,25 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "delete": "/Applications/LunaStudio.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/LunaStudio.app"
+        }
+      ]
     },
     {
-      "path": "lunaInstaller.app"
+      "installer": [
+        {
+          "manual": "lunaInstaller.app"
+        }
+      ]
     },
     {
-      "trash": "~/.luna",
-      "signal": {
-      }
+      "zap": [
+        {
+          "trash": "~/.luna"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

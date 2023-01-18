@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/xmp/xmp/4.1.0/xmp-4.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1dbd61074783545ac7bef5b5daa772fd2110764cb70f937af8c3fad30f73289e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/xmp/blobs/sha256:3ae0cdbec5798aa32c8672a6cf52fa6c149d8aba8fbeb33e8087a07db0178b87",
+          "sha256": "3ae0cdbec5798aa32c8672a6cf52fa6c149d8aba8fbeb33e8087a07db0178b87"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/xmp/blobs/sha256:3c26ef9b53e449f11014a97c30bdf8d81b09118bdb5a80f7ecc8088af44c0b31",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/xmp/blobs/sha256:a070ab6f7dc8b2c4177f11128d266b0ac606b7e8c252a320d2bf6a5be030d377",
           "sha256": "a070ab6f7dc8b2c4177f11128d266b0ac606b7e8c252a320d2bf6a5be030d377"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/xmp/blobs/sha256:8da6d8db5ad790cd922b6aaba9a0e0e914ffc6386a431dd76136e57bf20b0abf",
+          "sha256": "8da6d8db5ad790cd922b6aaba9a0e0e914ffc6386a431dd76136e57bf20b0abf"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "libxmp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

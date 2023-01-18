@@ -7,44 +7,59 @@
   ],
   "desc": "Lets you interact with your content live as you stream or record",
   "homepage": "https://prezi.com/video/",
-  "url": "https://desktopassets.prezi.com/mac/prezi-video/releases/Prezi_Video_1.13.0.dmg",
+  "url": "https://desktopassets.prezi.com/mac/prezi-video/releases/Prezi_Video_2.15.1.zip",
   "appcast": null,
-  "version": "1.13.0",
+  "version": "2.15.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "477a3d199b1f108e3e1e394a93787fde89f499dea273937c0c1f5fd410b66410",
+  "sha256": "0ba6639e1a62bef58cdb11e9197da122281421f5163136d0ec91ad693ff6e24a",
   "artifacts": [
     {
-      "quit": "com.prezi.PreziCast",
-      "launchctl": "com.prezi.prezivideo.vcam.assistant",
-      "pkgutil": [
-        "com.prezi.PreziCast",
-        "com.prezi.prezivideo.vcam.plugin"
-      ],
-      "delete": [
-        "/Applications/Prezi Video.app",
-        "/Library/CoreMediaIO/Plug-Ins/DAL/PreziAR.plugin"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.prezi.PreziCast",
+          "launchctl": "com.prezi.prezivideo.vcam.assistant",
+          "pkgutil": [
+            "com.prezi.PreziCast",
+            "com.prezi.prezivideo.vcam.plugin"
+          ],
+          "delete": [
+            "/Applications/Prezi Video.app",
+            "/Library/CoreMediaIO/Plug-Ins/DAL/PreziAR.plugin"
+          ]
+        }
+      ]
     },
-    "Install Prezi Video.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/com.prezi.PreziCast",
-        "~/Library/Preferences/com.prezi.PreziCast.plist",
-        "~/Library/Preferences/com.prezi.PreziVideo.vcam"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Prezi_Video.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.prezi.PreziCast",
+            "~/Library/Preferences/com.prezi.PreziCast.plist",
+            "~/Library/Preferences/com.prezi.PreziVideo.vcam"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.15"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

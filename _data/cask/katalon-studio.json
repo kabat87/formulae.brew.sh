@@ -7,26 +7,30 @@
   ],
   "desc": "Test automation solution",
   "homepage": "https://www.katalon.com/download/",
-  "url": "https://download.katalon.com/8.2.0/Katalon%20Studio.dmg",
+  "url": "https://download.katalon.com/8.5.5/Katalon%20Studio.dmg",
   "appcast": null,
-  "version": "8.2.0",
+  "version": "8.5.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "391b211aa79cdba41f8fac284d114b2ce1ef0a974a0576610e3be07d59de14e8",
+  "sha256": "47a9f832974b4a7fa150e73aa40b43f1dde4d7c57a95f232a5829783f41b5d0e",
   "artifacts": [
-    [
-      "Katalon Studio.app"
-    ],
     {
-      "trash": [
-        "~/.katalon",
-        "~/Library/Preferences/com.kms.katalon.product.product.plist",
-        "~/Library/Saved Application State/com.kms.katalon.product.product.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Katalon Studio.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.katalon",
+            "~/Library/Preferences/com.kms.katalon.product.product.plist",
+            "~/Library/Saved Application State/com.kms.katalon.product.product.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

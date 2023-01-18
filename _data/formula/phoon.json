@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.acme.com/software/phoon/phoon_14Aug2014.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bad9b5e37ccaf76a10391cc1fa4aff9654e54814be652b443853706db18ad7c1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/phoon/blobs/sha256:dd15d230ce1c25ac23caf064b0468fcbb779b3c0ba264410f59f3d8796c9f0c6",
+          "sha256": "dd15d230ce1c25ac23caf064b0468fcbb779b3c0ba264410f59f3d8796c9f0c6"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/phoon/blobs/sha256:16e0d7747e8d27e1d2070e9c0a977e978df8e050fcfec31ad4da2363450ac297",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/phoon/blobs/sha256:4ffb866ee12dee9890eb0ad36b0bc1e721bba69b631951fbeba3f2fb20a87168",
           "sha256": "4ffb866ee12dee9890eb0ad36b0bc1e721bba69b631951fbeba3f2fb20a87168"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/phoon/blobs/sha256:503f0d23d27f7016072550d71117f16691c827f1c9f8502bd52ec1562178be30",
+          "sha256": "503f0d23d27f7016072550d71117f16691c827f1c9f8502bd52ec1562178be30"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

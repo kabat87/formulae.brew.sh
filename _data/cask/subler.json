@@ -7,27 +7,31 @@
   ],
   "desc": "Mux and tag mp4 files",
   "homepage": "https://subler.org/",
-  "url": "https://bitbucket.org/galad87/subler/downloads/Subler-1.7.2.zip",
+  "url": "https://bitbucket.org/galad87/subler/downloads/Subler-1.7.5.zip",
   "appcast": null,
-  "version": "1.7.2",
+  "version": "1.7.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f7736e43df1df1b3772b28d9a2af1e2ba1e9b5bfd3599faaf1bf08a77ada78a2",
+  "sha256": "3596dad190deae9dfcdd6bac68a477def27df407e97f6870553b4640c08fd0b6",
   "artifacts": [
-    [
-      "Subler.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Subler",
-        "~/Library/Caches/org.galad.Subler",
-        "~/Library/Preferences/org.galad.Subler.plist",
-        "~/Library/Saved Application State/org.galad.Subler.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Subler.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Subler",
+            "~/Library/Caches/org.galad.Subler",
+            "~/Library/Preferences/org.galad.Subler.plist",
+            "~/Library/Saved Application State/org.galad.Subler.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

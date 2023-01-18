@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://sjeng.org/ftp/vorbis/vorbisgain-0.37.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dd6db051cad972bcac25d47b4a9e40e217bb548a1f16328eddbb4e66613530ec"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vorbisgain/blobs/sha256:5d6e594f8ec28faf2891f44a74881f69332db9a43a8e3058032a32d2d00612c1",
+          "sha256": "5d6e594f8ec28faf2891f44a74881f69332db9a43a8e3058032a32d2d00612c1"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/vorbisgain/blobs/sha256:5d007797235d2075ef13137bbbc16f2781e7657501f5d8c023acdd1b8a67fb91",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/vorbisgain/blobs/sha256:5763a2b6c8f9c2d5c27e708a8cbc88f5274dcb7e44f5f5ecf2b29b909e18e017",
           "sha256": "5763a2b6c8f9c2d5c27e708a8cbc88f5274dcb7e44f5f5ecf2b29b909e18e017"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vorbisgain/blobs/sha256:c24c65881c8ef77deee9c5c06aa1ee1f7ea6270d34c2aae39916850e7d87283a",
+          "sha256": "c24c65881c8ef77deee9c5c06aa1ee1f7ea6270d34c2aae39916850e7d87283a"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/vorbisgain/blobs/sha256:00f7047e5d884dbf22ed036154961b41d4ad6ae8295c55043929b008ae82a9f7",
           "sha256": "00f7047e5d884dbf22ed036154961b41d4ad6ae8295c55043929b008ae82a9f7"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/vorbisgain/blobs/sha256:a1315eaaaf667f7486deb2b899c422e3cc9caa8f9e771221dca12b0ecc085dc7",
-          "sha256": "a1315eaaaf667f7486deb2b899c422e3cc9caa8f9e771221dca12b0ecc085dc7"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vorbisgain/blobs/sha256:98180bd55bee493621155475e77ba5de249c1ce27f85edc895a69c9d41a63df3",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +106,9 @@
   "dependencies": [
     "libogg",
     "libvorbis"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

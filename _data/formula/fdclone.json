@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.unixusers.net/src/fdclone/FD-3.01j.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fe5bb67eb670dcdb1f7368698641c928523e2269b9bee3d13b3b77565d22a121"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/fdclone/blobs/sha256:6307f6eece0a8e13794fb57ef3ac793c5f72bb2769310803e4fee5bb30352e2b",
+          "sha256": "6307f6eece0a8e13794fb57ef3ac793c5f72bb2769310803e4fee5bb30352e2b"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/fdclone/blobs/sha256:770b2d767ccfa06c3fe7a4066b59a9e067b27a2f719bac604a1588c7ec57c134",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/fdclone/blobs/sha256:e4346ef1c465a9753d44998015f004ef76d49f35b57e224c4c74da48fa00a226",
           "sha256": "e4346ef1c465a9753d44998015f004ef76d49f35b57e224c4c74da48fa00a226"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/fdclone/blobs/sha256:77caac2a97e0b941e44f6985c618f7877d75d918cc73d90b1b7c2e87a9e647ba",
+          "sha256": "77caac2a97e0b941e44f6985c618f7877d75d918cc73d90b1b7c2e87a9e647ba"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "nkf"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

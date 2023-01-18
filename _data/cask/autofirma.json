@@ -7,28 +7,38 @@
   ],
   "desc": "Digital signature editor and validator",
   "homepage": "https://firmaelectronica.gob.es/Home/Descargas.htm",
-  "url": "https://estaticos.redsara.es/comunes/autofirma/1/6/5/AutoFirma_Mac.zip",
+  "url": "https://estaticos.redsara.es/comunes/autofirma/1/7/1/AutoFirma_Mac.zip",
   "appcast": null,
-  "version": "1.6.5",
+  "version": "1.7.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4564893f65a1566ea82c131a63bb56b44dbd2bcc218b5ba501ebb6dc22634c79",
+  "sha256": "83131c5809815742bf23406361b514f8c798d9f9dc344b7a42bc178886dbd0da",
   "artifacts": [
     {
-      "pkgutil": "es.gob.afirma",
-      "delete": "/Applications/AutoFirma.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "es.gob.afirma",
+          "delete": "/Applications/AutoFirma.app"
+        }
+      ]
     },
-    "AutoFirma_1_6_5.pkg (Pkg)",
-    "uninstall_postflight (Postflight Block)"
+    {
+      "pkg": [
+        "AutoFirma_1_7_1.pkg"
+      ]
+    },
+    {
+      "uninstall_postflight": "  uninstall_postflight do\n    system_command \"/usr/bin/security\",\n                   args: [\n                     \"delete-certificate\",\n                     \"-c\", \"AutoFirma ROOT\"\n                   ],\n                   sudo: true\n\n    system_command \"/usr/bin/security\",\n                   args: [\n                     \"delete-certificate\",\n                     \"-c\", \"127.0.0.1\"\n                   ],\n                   sudo: true\n  end\n"
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

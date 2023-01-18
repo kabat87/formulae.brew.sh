@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.digital-scurf.org/files/libgfshare/libgfshare-2.0.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "86f602860133c828356b7cf7b8c319ba9b27adf70a624fe32275ba1ed268331f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libgfshare/blobs/sha256:ff95631a45cf14842a1cb98a7496022a886360fad2d4a9bae3154ebd6113726a",
+          "sha256": "ff95631a45cf14842a1cb98a7496022a886360fad2d4a9bae3154ebd6113726a"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libgfshare/blobs/sha256:0890a2e8ac99ea0497d467e1ab82bb8fe7a34d0f5cd75c01897f15b12ac65211",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libgfshare/blobs/sha256:d8fc2d9c78a69fc3fe30913aeaa6f1dbeea7091d78d50bd6e6fafcf4dc6dc212",
           "sha256": "d8fc2d9c78a69fc3fe30913aeaa6f1dbeea7091d78d50bd6e6fafcf4dc6dc212"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libgfshare/blobs/sha256:72816d2d02cec8f669f242e020e7b2980d9f16f51d8e388b57d77c5257a2775d",
+          "sha256": "72816d2d02cec8f669f242e020e7b2980d9f16f51d8e388b57d77c5257a2775d"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libgfshare/blobs/sha256:c50ebaadca206eef93bc6d835f5814e0d640223c2c7e39cd12feff47720c054d",
           "sha256": "c50ebaadca206eef93bc6d835f5814e0d640223c2c7e39cd12feff47720c054d"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libgfshare/blobs/sha256:6929a937f6f8ee624f02891622375d23aa65114475cf53ce82342976b4705454",
-          "sha256": "6929a937f6f8ee624f02891622375d23aa65114475cf53ce82342976b4705454"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libgfshare/blobs/sha256:4439a61e14f81e80009ad0e85a4e2a8183c106161d29e232176faa061ba380ba",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

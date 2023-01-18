@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.swftools.org/swftools-0.9.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bf6891bfc6bf535a1a99a485478f7896ebacbe3bbf545ba551298080a26f01f1"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/swftools/blobs/sha256:e5d604b100f9911bd2d61f4f4c2bfc5bc3121734de1cef9beedb7b5ae06b1a67",
+          "sha256": "e5d604b100f9911bd2d61f4f4c2bfc5bc3121734de1cef9beedb7b5ae06b1a67"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/swftools/blobs/sha256:f580bc8117485a0a4be18f76ffa5d3c5764aa04e1d4eb6b3e17b64239d88fb4d",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/swftools/blobs/sha256:4737739b57d119d07cca0689481151e9ed2a815d3e026d85be4354ef76200877",
           "sha256": "4737739b57d119d07cca0689481151e9ed2a815d3e026d85be4354ef76200877"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/swftools/blobs/sha256:4e099a2079eb825d49c09fd0214bdde20e9b0e52754d73b920de4de4aaa5a7bd",
+          "sha256": "4e099a2079eb825d49c09fd0214bdde20e9b0e52754d73b920de4de4aaa5a7bd"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -65,13 +76,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/swftools/blobs/sha256:d0e441ed7eef07c3536965d5269f648744ceb62d41fbcfe9a12248b8154c4f62",
           "sha256": "d0e441ed7eef07c3536965d5269f648744ceb62d41fbcfe9a12248b8154c4f62"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/swftools/blobs/sha256:0ed51b95634f090cb753b57fdd73df90a944cc37fc2c34de45592d74c8b74139",
+          "sha256": "0ed51b95634f090cb753b57fdd73df90a944cc37fc2c34de45592d74c8b74139"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +96,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -88,7 +106,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
 
@@ -108,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

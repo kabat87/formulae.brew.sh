@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/marp-team/marp-cli",
   "versions": {
-    "stable": "1.5.1",
+    "stable": "2.3.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://registry.npmjs.org/@marp-team/marp-cli/-/marp-cli-1.5.1.tgz",
+      "url": "https://registry.npmjs.org/@marp-team/marp-cli/-/marp-cli-2.3.0.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "aa297d401756b9c2992935d18e53e1c2c3ad9529588d74a0c950e277b3499428"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:54b99863b43bd661040432ba033c930bdeb523a6b3a1a47f8b04b78f3b94b817",
+          "sha256": "54b99863b43bd661040432ba033c930bdeb523a6b3a1a47f8b04b78f3b94b817"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:57c00c570a3cd0ea2f2e87150d2e65721d76eaa37c7abd3af226d9c97157d7cf",
-          "sha256": "57c00c570a3cd0ea2f2e87150d2e65721d76eaa37c7abd3af226d9c97157d7cf"
+          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:54b99863b43bd661040432ba033c930bdeb523a6b3a1a47f8b04b78f3b94b817",
+          "sha256": "54b99863b43bd661040432ba033c930bdeb523a6b3a1a47f8b04b78f3b94b817"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:57c00c570a3cd0ea2f2e87150d2e65721d76eaa37c7abd3af226d9c97157d7cf",
-          "sha256": "57c00c570a3cd0ea2f2e87150d2e65721d76eaa37c7abd3af226d9c97157d7cf"
+          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:54b99863b43bd661040432ba033c930bdeb523a6b3a1a47f8b04b78f3b94b817",
+          "sha256": "54b99863b43bd661040432ba033c930bdeb523a6b3a1a47f8b04b78f3b94b817"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:eeb05c478f02916031c91af4a18d7f48f278426b0acf965af95ca3517fdb73f3",
+          "sha256": "eeb05c478f02916031c91af4a18d7f48f278426b0acf965af95ca3517fdb73f3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:940d413e38d4eadb69a456ad6c83f6754f13c14190e372a7b9b736091b9d0eeb",
-          "sha256": "940d413e38d4eadb69a456ad6c83f6754f13c14190e372a7b9b736091b9d0eeb"
+          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:eeb05c478f02916031c91af4a18d7f48f278426b0acf965af95ca3517fdb73f3",
+          "sha256": "eeb05c478f02916031c91af4a18d7f48f278426b0acf965af95ca3517fdb73f3"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:940d413e38d4eadb69a456ad6c83f6754f13c14190e372a7b9b736091b9d0eeb",
-          "sha256": "940d413e38d4eadb69a456ad6c83f6754f13c14190e372a7b9b736091b9d0eeb"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:940d413e38d4eadb69a456ad6c83f6754f13c14190e372a7b9b736091b9d0eeb",
-          "sha256": "940d413e38d4eadb69a456ad6c83f6754f13c14190e372a7b9b736091b9d0eeb"
+          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:eeb05c478f02916031c91af4a18d7f48f278426b0acf965af95ca3517fdb73f3",
+          "sha256": "eeb05c478f02916031c91af4a18d7f48f278426b0acf965af95ca3517fdb73f3"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:f202aa54a46f7d8db6c09f2461d31d2858ac83973bdf0ec9a1faf75e8993b48f",
-          "sha256": "f202aa54a46f7d8db6c09f2461d31d2858ac83973bdf0ec9a1faf75e8993b48f"
+          "url": "https://ghcr.io/v2/homebrew/core/marp-cli/blobs/sha256:0455db0de1b53e40ab06519622ea1ade7b10531523d8d8ebdac873062230ea1d",
+          "sha256": "0455db0de1b53e40ab06519622ea1ade7b10531523d8d8ebdac873062230ea1d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "node"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

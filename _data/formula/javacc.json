@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://javacc.org/",
   "versions": {
-    "stable": "7.0.10",
+    "stable": "7.0.12",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/javacc/javacc/archive/javacc-7.0.10.tar.gz",
+      "url": "https://github.com/javacc/javacc/archive/javacc-7.0.12.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1b38fa8c9e8348fe72b46fbdbaed2f05783a796a7417e3d22af18df5833b8850"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:c7466143225c24a1036a193bf7a0762e110c16606993fc427954959318ff35cb",
+          "sha256": "c7466143225c24a1036a193bf7a0762e110c16606993fc427954959318ff35cb"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:c75b5136be3d309ea45af335749e60b9ced4f44fdc02f4c4e766f84254f3ed27",
-          "sha256": "c75b5136be3d309ea45af335749e60b9ced4f44fdc02f4c4e766f84254f3ed27"
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:39bb12ada55f290fb1c1a78f4d213043085473d98fb807acdd689799da5ded6a",
+          "sha256": "39bb12ada55f290fb1c1a78f4d213043085473d98fb807acdd689799da5ded6a"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:8a3acf2460346b3e8fb8fccdff9098574002e3fd927633bf6135a0ab0dd400ce",
-          "sha256": "8a3acf2460346b3e8fb8fccdff9098574002e3fd927633bf6135a0ab0dd400ce"
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:1a83efed645f130bab65f202a0b33b75671988767b9e163d5cb124fe6e6b6743",
+          "sha256": "1a83efed645f130bab65f202a0b33b75671988767b9e163d5cb124fe6e6b6743"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:b006fcc7e7738ad3596c8fd565ed19ba36eaae5efcac77ca1d1e1d8121a07f6c",
+          "sha256": "b006fcc7e7738ad3596c8fd565ed19ba36eaae5efcac77ca1d1e1d8121a07f6c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:6c8777f66a4c1aff7d0c558f55fa6c261b133bb91db761141f0532b4cb264ddf",
-          "sha256": "6c8777f66a4c1aff7d0c558f55fa6c261b133bb91db761141f0532b4cb264ddf"
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:a9b7638acf530cb10611b394486b16a8f9c411b529e8c954428e84f95aa6cf85",
+          "sha256": "a9b7638acf530cb10611b394486b16a8f9c411b529e8c954428e84f95aa6cf85"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:81fa6c9cfa14578b76e7baa27ef7ac27ad0038558f4d372ecac6486f2eadc35a",
-          "sha256": "81fa6c9cfa14578b76e7baa27ef7ac27ad0038558f4d372ecac6486f2eadc35a"
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:9a7f5daba6e577455d592eeb3f5da018f6a7479aa60be2872297fe809b19410d",
+          "sha256": "9a7f5daba6e577455d592eeb3f5da018f6a7479aa60be2872297fe809b19410d"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:54792663583f44565206d4728237a9452859c162cea1e9c7ff782bf33daf6d99",
-          "sha256": "54792663583f44565206d4728237a9452859c162cea1e9c7ff782bf33daf6d99"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:f954f391fb286509601a18d87042c3f6d218a7b57414e719cd37786723d71106",
-          "sha256": "f954f391fb286509601a18d87042c3f6d218a7b57414e719cd37786723d71106"
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:5ebc37d85cd1cac3a449c06d377e62d40e989e1debb3b9c3dd10b0eada6b8ce5",
+          "sha256": "5ebc37d85cd1cac3a449c06d377e62d40e989e1debb3b9c3dd10b0eada6b8ce5"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:75989c6e01cade18da9de70a7e5f3ddae779372b365e9eff2e8dbd78d46ad2cf",
-          "sha256": "75989c6e01cade18da9de70a7e5f3ddae779372b365e9eff2e8dbd78d46ad2cf"
+          "url": "https://ghcr.io/v2/homebrew/core/javacc/blobs/sha256:f040860fb051d65ce29f77810fa6babc68b6a067f4bb854995cd73f1f50ba4d7",
+          "sha256": "f040860fb051d65ce29f77810fa6babc68b6a067f4bb854995cd73f1f50ba4d7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +85,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

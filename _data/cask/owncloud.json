@@ -7,36 +7,44 @@
   ],
   "desc": "Desktop syncing client for ownCloud",
   "homepage": "https://owncloud.com/",
-  "url": "https://download.owncloud.com/desktop/ownCloud/stable/2.9.2.6206/mac/ownCloud-2.9.2.6206.pkg",
+  "url": "https://download.owncloud.com/desktop/ownCloud/stable/3.0.0.9215/mac/ownCloud-3.0.0.9215-x86_64.pkg",
   "appcast": null,
-  "version": "2.9.2.6206",
+  "version": "3.0.0.9215",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a89ac94be5ff56ac175c3a75ad810c0309a109e306658e5fdf33374cdac6ae51",
+  "sha256": "c264c38182cf0e7083e486edf5f41682ac4970f80563fac181a309e91f5eface",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.ownCloud.client",
-        "com.owncCloud.finderPlugin"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.ownCloud.client",
+            "com.owncCloud.finderPlugin"
+          ]
+        }
+      ]
     },
-    "ownCloud-2.9.2.6206.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Scripts/com.owncloud.desktopclient.FinderSyncExt",
-        "~/Library/Application Support/ownCloud",
-        "~/Library/Caches/com.owncloud.desktopclient",
-        "~/Library/Containers/com.owncloud.desktopclient.FinderSyncExt",
-        "~/Library/Group Containers/9B5WD74GWJ.com.owncloud.desktopclient",
-        "~/Library/Preferences/com.owncloud.desktopclient.plist",
-        "~/Library/Preferences/ownCloud"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "ownCloud-3.0.0.9215-x86_64.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.owncloud.desktopclient.FinderSyncExt",
+            "~/Library/Application Support/ownCloud",
+            "~/Library/Caches/com.owncloud.desktopclient",
+            "~/Library/Containers/com.owncloud.desktopclient.FinderSyncExt",
+            "~/Library/Group Containers/9B5WD74GWJ.com.owncloud.desktopclient",
+            "~/Library/Preferences/com.owncloud.desktopclient.plist",
+            "~/Library/Preferences/ownCloud"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -49,5 +57,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

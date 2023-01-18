@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/dfu-programmer/dfu-programmer/0.7.2/dfu-programmer-0.7.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1db4d36b1aedab2adc976e8faa5495df3cf82dc4bf883633dc6ba71f7c4af995"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dfu-programmer/blobs/sha256:9f41045987af7f7daa4470dcb37de69a210e4ccb6bc5f8e9b4d5d2bf310ec562",
+          "sha256": "9f41045987af7f7daa4470dcb37de69a210e4ccb6bc5f8e9b4d5d2bf310ec562"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dfu-programmer/blobs/sha256:9559a215bd458ba59d0b037792b7d63dbc3dc4c099b14357e8e53acb5d3af922",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dfu-programmer/blobs/sha256:8bfdfd329dcd8f8590c02bd7ba062f21def25d6009dc7a546956406d921a9181",
           "sha256": "8bfdfd329dcd8f8590c02bd7ba062f21def25d6009dc7a546956406d921a9181"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dfu-programmer/blobs/sha256:72c883e635e387c2ce8ed4d85dd96a752e3b56ed5aceb846051fcfe37876aab2",
+          "sha256": "72c883e635e387c2ce8ed4d85dd96a752e3b56ed5aceb846051fcfe37876aab2"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/dfu-programmer/blobs/sha256:e9657f69d69597d89bd94bb1b1fc806f61a476c409a2da5a57abb062742bed04",
           "sha256": "e9657f69d69597d89bd94bb1b1fc806f61a476c409a2da5a57abb062742bed04"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/dfu-programmer/blobs/sha256:4dea1ba0456ff657f6bc332db3040d1f9955a1845fcf8d34585187d67637c39e",
-          "sha256": "4dea1ba0456ff657f6bc332db3040d1f9955a1845fcf8d34585187d67637c39e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dfu-programmer/blobs/sha256:e92b3de2d143401517c149f42de3acd6f2d64bc779ed515f7f89ac5fadb1fe9c",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libusb-compat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

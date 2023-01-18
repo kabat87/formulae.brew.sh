@@ -13,15 +13,16 @@
   "license": "GPL-3.0",
   "homepage": "https://mg.pov.lt/restview/",
   "versions": {
-    "stable": "3.0.0",
+    "stable": "3.0.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/df/57/c39171d211168008153b00c0dd9b873afb6d9e76eecbd3496c86aeaac8bf/restview-3.0.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/10/93/20516dada3c64de14305fd8137251cd4accaa7eba15b44deb1f2419aa9ff/restview-3.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8c1a171c159d46d15d5569f77021828883a121d6f9baf758d641fc1e54b05ae5"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:b7144d1e54ac3ed388b6af07e9d5d4d5c3ab69a7d8335827d436e5d95cd90700",
+          "sha256": "b7144d1e54ac3ed388b6af07e9d5d4d5c3ab69a7d8335827d436e5d95cd90700"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:75222c9a80589397d43420afc5cba5d73976a93d8233b82285f778c7ac57dc12",
-          "sha256": "75222c9a80589397d43420afc5cba5d73976a93d8233b82285f778c7ac57dc12"
+          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:c41b60a583752a7c15309695cdc0dccccc9f98771cc28d290352863877fadfd4",
+          "sha256": "c41b60a583752a7c15309695cdc0dccccc9f98771cc28d290352863877fadfd4"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:41ab5c0a14611252d535453bd87c54c6bf0070d3ee786bf39c171dff8cba23ad",
-          "sha256": "41ab5c0a14611252d535453bd87c54c6bf0070d3ee786bf39c171dff8cba23ad"
+          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:f0526020a022a59774f2eb26fbcf5f9422085fce34286004c37e8a74f715ff51",
+          "sha256": "f0526020a022a59774f2eb26fbcf5f9422085fce34286004c37e8a74f715ff51"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:5c36b262a3d8898d9caeebc8f9faf3806e2554a3836d430ad2ce985ae389c69d",
+          "sha256": "5c36b262a3d8898d9caeebc8f9faf3806e2554a3836d430ad2ce985ae389c69d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:3ea3915d3a778e23677a900c3aab7425b028468150e266e74e5b6adb1e083a05",
-          "sha256": "3ea3915d3a778e23677a900c3aab7425b028468150e266e74e5b6adb1e083a05"
+          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:045d7c7fbec94805454c23b54ac749995171610eb9b7e8a39d96f740bd02e44d",
+          "sha256": "045d7c7fbec94805454c23b54ac749995171610eb9b7e8a39d96f740bd02e44d"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:c897987aa35d178a5c1b7a9d4bc1fc6dcad8a094d850e245f91c82ace51d410d",
-          "sha256": "c897987aa35d178a5c1b7a9d4bc1fc6dcad8a094d850e245f91c82ace51d410d"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:892229bead0eeddd16397bd8f6adae818bed7269a1f8ca89e7cc67c1224c08bb",
-          "sha256": "892229bead0eeddd16397bd8f6adae818bed7269a1f8ca89e7cc67c1224c08bb"
+          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:41c9ba7729e2494ef67b6158b715b03dbf186e33cd12f9cdf7f35263578ea456",
+          "sha256": "41c9ba7729e2494ef67b6158b715b03dbf186e33cd12f9cdf7f35263578ea456"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:04ddf5e1109e7978a814dfa5824461b7e70679754a3aba9b08e2618b87504ee4",
-          "sha256": "04ddf5e1109e7978a814dfa5824461b7e70679754a3aba9b08e2618b87504ee4"
+          "url": "https://ghcr.io/v2/homebrew/core/restview/blobs/sha256:c959a52879a1835bda4c7e8b9e454afc7ac20613a72c31547cfad5264e294991",
+          "sha256": "c959a52879a1835bda4c7e8b9e454afc7ac20613a72c31547cfad5264e294991"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,8 +79,13 @@
 
   ],
   "dependencies": [
-    "python@3.10",
+    "docutils",
+    "pygments",
+    "python@3.11",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

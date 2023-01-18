@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/winexe/winexe-1.00.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "99238bd3e1c0637041c737c86a05bd73a9375abc9794dca71d2765e22d87537e"
     }
   },
   "revision": 0,
@@ -55,18 +56,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/winexe/blobs/sha256:58080b3729c9b261a65c7db2072ec867176bfd6a802c23f9b343feb44592789a",
           "sha256": "58080b3729c9b261a65c7db2072ec867176bfd6a802c23f9b343feb44592789a"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/winexe/blobs/sha256:fa7654ed5641e517a658fe8852a9ee5459acca047518c433d989f1aef69a7a6d",
-          "sha256": "fa7654ed5641e517a658fe8852a9ee5459acca047518c433d989f1aef69a7a6d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +70,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -102,7 +100,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2022-11-03",
+  "disable_reason": "depends on Python 2 to build",
+  "variations": {
+  }
 }

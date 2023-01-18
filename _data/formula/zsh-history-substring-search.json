@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/zsh-users/zsh-history-substring-search/archive/v1.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c1bb21490bd31273fb511b23000fb7caf49c258a79c4b8842f3e1f2ff76fd84c"
     }
   },
   "revision": 0,
@@ -41,7 +42,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -66,7 +69,7 @@
   "conflicts_with": [
 
   ],
-  "caveats": "To activate the history search, add the following at the end of your .zshrc:\n\n  source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh\n\nYou will also need to force reload of your .zshrc:\n\n  source ~/.zshrc\n",
+  "caveats": "To activate the history search, add the following at the end of your .zshrc:\n\n  source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh\n\nYou will also need to restart your terminal for this change to take effect.\n",
   "installed": [
 
   ],
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

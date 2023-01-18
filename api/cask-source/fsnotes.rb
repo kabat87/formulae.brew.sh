@@ -1,6 +1,6 @@
 cask "fsnotes" do
-  version "5.3.4"
-  sha256 "7a9ff884e9a8f7e3b2b9d22675aef12cfd0c67c87be26d7218130ac3894fcdda"
+  version "6.1.1"
+  sha256 "e2e13c98abb4369a40c4f8b0e64f494197e50d79badffdde4f6438f27a672a11"
 
   url "https://github.com/glushchenko/fsnotes/releases/download/#{version}/FSNotes_#{version}.zip",
       verified: "github.com/glushchenko/fsnotes/"

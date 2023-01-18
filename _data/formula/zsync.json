@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://zsync.moria.org.uk/download/zsync-0.6.2.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0b9d53433387aa4f04634a6c63a5efa8203070f2298af72a705f9be3dda65af2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zsync/blobs/sha256:9c26ab39f23b57f14fcb5407541cc6785209d09c4408d516069d8fe8694f5e01",
+          "sha256": "9c26ab39f23b57f14fcb5407541cc6785209d09c4408d516069d8fe8694f5e01"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zsync/blobs/sha256:5d9c561ebe0167e590847ed7993ff01e098eed20ba1ab158ffc3fc6a1295d220",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zsync/blobs/sha256:0ee85fb722fa125e4323e14732d4de448f3751e9445e2ec6933fce0ee38d5a90",
           "sha256": "0ee85fb722fa125e4323e14732d4de448f3751e9445e2ec6933fce0ee38d5a90"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zsync/blobs/sha256:aa55a9ccdc3c06c605580b6820afd107819cf970a59f96beed53e7988f73e8fc",
+          "sha256": "aa55a9ccdc3c06c605580b6820afd107819cf970a59f96beed53e7988f73e8fc"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/zsync/blobs/sha256:9bbe0e102ca6a2b7ca57af6b2b29984f7da59ce97d15ce550bbbb206f1ad1815",
           "sha256": "9bbe0e102ca6a2b7ca57af6b2b29984f7da59ce97d15ce550bbbb206f1ad1815"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/zsync/blobs/sha256:b7436466e25e1fe44e2169059d613d9df279a69c31183f6cacce953fc6a47e8b",
-          "sha256": "b7436466e25e1fe44e2169059d613d9df279a69c31183f6cacce953fc6a47e8b"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zsync/blobs/sha256:1961843c2195ae143b2f2ece7e26f91aa4c5a0acc67721441c221b5ae3404150",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

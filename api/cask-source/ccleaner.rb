@@ -1,8 +1,8 @@
 cask "ccleaner" do
-  version "1.18.30"
-  sha256 "52295172b846c477f1c5396c9f568d602b89fad52d2fcaba394a14296e096ce6"
+  version "2.07.166"
+  sha256 "479d670d5e550932fcaabe5d6928185e98162464215e69f8838c1a31290d8032"
 
-  url "https://download.ccleaner.com/mac/CCMacSetup#{version.major_minor.no_dots}.dmg"
+  url "https://download.ccleaner.com/mac/CCMacSetup#{version.major}#{version.minor.rjust(2, "0")}.dmg"
   name "Piriform CCleaner"
   desc "Remove junk and unused files"
   homepage "https://www.ccleaner.com/ccleaner-mac"
@@ -12,12 +12,21 @@ cask "ccleaner" do
     regex(/CCleaner\s*for\s*Mac\s*v?(\d+(?:\.\d+)+)/i)
   end
 
-  depends_on macos: ">= :yosemite"
-
-  app "CCleaner.app"
+  pkg "Install CCleaner.pkg"
 
   uninstall quit:      "com.piriform.ccleaner",
-            launchctl: "com.piriform.ccleaner.CCleanerAgent",
+            pkgutil:   "com.piriform.pkg.CCleaner",
+            launchctl: [
+              "com.piriform.CCleaner",
+              "com.piriform.ccleaner.CCleanerAgent",
+              "com.piriform.ccleaner (com.piriform.CCleaner)",
+              "com.piriform.ccleaner.engine.xpc",
+              "com.piriform.ccleaner.services.submit",
+              "com.piriform.ccleaner.services.xpc",
+              "com.piriform.ccleaner.uninstall",
+              "com.piriform.ccleaner.update",
+              "com.piriform.ccleaner.update.xpc",
+            ],
             delete:    "/Library/PrivilegedHelperTools/com.piriform.ccleaner.CCleanerAgent"
 
   zap trash: [

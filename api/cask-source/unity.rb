@@ -1,8 +1,11 @@
 cask "unity" do
-  version "2021.2.8f1,d0e5f0a7b06a"
-  sha256 "f0369662e6300ae209db5b259a3761598d5e7795011b3ba94c473f4ad1042e81"
+  arch arm: "Arm64"
 
-  url "https://download.unity3d.com/download_unity/#{version.csv.second}/MacEditorInstaller/Unity-#{version.csv.first}.pkg",
+  version "2022.1.23f1,9636b062134a"
+  sha256 arm:   "5f4e8d5b8b2df25c3a84e5a875502e62df63759c20925e3b1e8a9d1bcfac9343",
+         intel: "be6f32f4e5e8388471f7ed0be8e050762f6b12e492f2b1b91d310f5b6144b590"
+
+  url "https://download.unity3d.com/download_unity/#{version.csv.second}/MacEditorInstaller#{arch}/Unity-#{version.csv.first}.pkg",
       verified: "download.unity3d.com/download_unity/"
   name "Unity Editor"
   desc "Platform for 3D content"

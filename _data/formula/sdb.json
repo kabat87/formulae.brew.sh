@@ -11,17 +11,18 @@
   ],
   "desc": "Ondisk/memory hashtable based on CDB",
   "license": "MIT",
-  "homepage": "https://github.com/radare/sdb",
+  "homepage": "https://github.com/radareorg/sdb",
   "versions": {
-    "stable": "1.8.3",
+    "stable": "1.9.6",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/radareorg/sdb/archive/1.8.3.tar.gz",
+      "url": "https://github.com/radareorg/sdb/archive/1.9.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "da7ee00ed239f68dbb6a8fad165911ccbe332c6c664a5896cbd867fc9209c934"
     }
   },
   "revision": 0,
@@ -31,51 +32,60 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:d2939cb0acdbf0be6a9ad82f1a5585967ead14eab2b9b0ad0fcf2b808cf84811",
+          "sha256": "d2939cb0acdbf0be6a9ad82f1a5585967ead14eab2b9b0ad0fcf2b808cf84811"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:94907d3f9db6fee04ddbd257199239eb67c1d02f8861c644e39bb074e82ec9f6",
+          "sha256": "94907d3f9db6fee04ddbd257199239eb67c1d02f8861c644e39bb074e82ec9f6"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:47ba447117de5045231e485b097916942fad64b1ae7e88e64f02100e28104699",
-          "sha256": "47ba447117de5045231e485b097916942fad64b1ae7e88e64f02100e28104699"
+          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:07ecd9203fc1f6cd203738869734c82c5b85414347bbfff89cce08536d0b85fa",
+          "sha256": "07ecd9203fc1f6cd203738869734c82c5b85414347bbfff89cce08536d0b85fa"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:c0cdb33f226529e86954095cc6c211a51ca55fdb5c3d4f1d1f07ad066a922263",
+          "sha256": "c0cdb33f226529e86954095cc6c211a51ca55fdb5c3d4f1d1f07ad066a922263"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:7ac419ce083254e1a77685f248d181fbb332267dccf8d92d535f70a4de49337c",
-          "sha256": "7ac419ce083254e1a77685f248d181fbb332267dccf8d92d535f70a4de49337c"
+          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:ea30adaba77c49d81d0d3f6f81597ee70407bd8de0ac291a33d6b9e3aeecf557",
+          "sha256": "ea30adaba77c49d81d0d3f6f81597ee70407bd8de0ac291a33d6b9e3aeecf557"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:e6a3c1aeaddcc7558f3c7e1263bf0ae4b336ab1ec2803c0611fdd88a91d5cf5a",
-          "sha256": "e6a3c1aeaddcc7558f3c7e1263bf0ae4b336ab1ec2803c0611fdd88a91d5cf5a"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:3b83ffab7521c5de9794862e6b024412aba61ea62f82ac77b3f9e3c389072f4c",
-          "sha256": "3b83ffab7521c5de9794862e6b024412aba61ea62f82ac77b3f9e3c389072f4c"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:a9e8d136fcb35dcad3b24c3435bd9709c885dd943329c0ec8a820fca364df159",
-          "sha256": "a9e8d136fcb35dcad3b24c3435bd9709c885dd943329c0ec8a820fca364df159"
+          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:dbbee831f313753b1c7d4e6fa2a2a3485e59391584975d30a77094b661536aa5",
+          "sha256": "dbbee831f313753b1c7d4e6fa2a2a3485e59391584975d30a77094b661536aa5"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:7de64cba3235caff388c3667dcc42e5a321077179bd21750a7eb497fd7ba69fe",
-          "sha256": "7de64cba3235caff388c3667dcc42e5a321077179bd21750a7eb497fd7ba69fe"
+          "url": "https://ghcr.io/v2/homebrew/core/sdb/blobs/sha256:bfe7f6c1e471fb4c9d1347a968912b6ef1b56c1ce56b2929121f96dc5378488f",
+          "sha256": "bfe7f6c1e471fb4c9d1347a968912b6ef1b56c1ce56b2929121f96dc5378488f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
+    "meson",
+    "ninja",
     "pkg-config",
     "vala"
   ],
   "dependencies": [
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

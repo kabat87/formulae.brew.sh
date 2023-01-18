@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/mdbtools/mdbtools/releases/download/v1.0.0/mdbtools-1.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3446e1d71abdeb98d41e252777e67e1909b186496fda59f98f67032f7fbcd955"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mdbtools/blobs/sha256:cd5023a5419a776cefa3e4bcd408536a696459f1fd3084822e22565e3cd75c39",
+          "sha256": "cd5023a5419a776cefa3e4bcd408536a696459f1fd3084822e22565e3cd75c39"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mdbtools/blobs/sha256:c4502a9b481c4e40f0bc5c1767af43938cea64ea125a564dd1371e0cdad5729c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mdbtools/blobs/sha256:1f808f4f3574633bb4d3176046a4b98dd0f673291db20ef5f34357f8e04aa3f1",
           "sha256": "1f808f4f3574633bb4d3176046a4b98dd0f673291db20ef5f34357f8e04aa3f1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mdbtools/blobs/sha256:f4bf3ad76af45f61c2d29418a66c2ec3ae61bf34cd02bec78e84195653ace158",
+          "sha256": "f4bf3ad76af45f61c2d29418a66c2ec3ae61bf34cd02bec78e84195653ace158"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   "dependencies": [
     "glib",
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

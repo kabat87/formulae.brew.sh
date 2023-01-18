@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://fy.chalmers.se/~appro/linux/DVD+RW/tools/dvd+rw-tools-7.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f8d60f822e914128bcbc5f64fbe3ed131cbff9045dca7e12c5b77b26edde72ca"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dvdxrw-tools/blobs/sha256:031b8533eeb4ec71ab6f3e2b68826271b0c5ff3e97e0dddaebab9a721b43df53",
+          "sha256": "031b8533eeb4ec71ab6f3e2b68826271b0c5ff3e97e0dddaebab9a721b43df53"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dvdxrw-tools/blobs/sha256:b2cbe68ebfc5a48e4936264261fc269c7c4edf4e0c213dc817d962dcf97a1d86",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dvdxrw-tools/blobs/sha256:11ec6e949911cca76b2c3a940e362aff334523a7018dfd3bdcd232acb7b741d1",
           "sha256": "11ec6e949911cca76b2c3a940e362aff334523a7018dfd3bdcd232acb7b741d1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dvdxrw-tools/blobs/sha256:f87fed662aa38e3ae76443247e6f0db628a70c4dac97e1ef15e036728af4ffb2",
+          "sha256": "f87fed662aa38e3ae76443247e6f0db628a70c4dac97e1ef15e036728af4ffb2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/dvdxrw-tools/blobs/sha256:01bae78a5187a47ea770a9cb9c0cabdbafb60485e333a563240a6ea74d6718b0",
           "sha256": "01bae78a5187a47ea770a9cb9c0cabdbafb60485e333a563240a6ea74d6718b0"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dvdxrw-tools/blobs/sha256:13fa5b14889c82bd2ff44d4da2ba8049603bdfc6026196440fe33102939faa06",
-          "sha256": "13fa5b14889c82bd2ff44d4da2ba8049603bdfc6026196440fe33102939faa06"
+          "url": "https://ghcr.io/v2/homebrew/core/dvdxrw-tools/blobs/sha256:d491eb26d5db91ea03ea2403ae8866675d268a4d9962a4dc9cb4bdb0aedecb47",
+          "sha256": "d491eb26d5db91ea03ea2403ae8866675d268a4d9962a4dc9cb4bdb0aedecb47"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "m4": "build"
+    }
   ],
   "requirements": [
 
@@ -123,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

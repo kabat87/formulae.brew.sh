@@ -11,17 +11,18 @@
   ],
   "desc": "Adds an OCR text layer to scanned PDF files",
   "license": "MPL-2.0",
-  "homepage": "https://github.com/jbarlow83/OCRmyPDF",
+  "homepage": "https://ocrmypdf.readthedocs.io/en/latest/",
   "versions": {
-    "stable": "13.2.0",
+    "stable": "14.0.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/3e/dd/31c398e3dccad7a54bcb3c29c4012ede24120dd97151e5bb65057ad113a7/ocrmypdf-13.2.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/c1/d3/42aced6295de36a7a1018d73bd5bea8849dcbae7254b1039f2e381bfe631/ocrmypdf-14.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "68521c088b6b2fb1a77d6e72468e1484d68f0e948aa4d507f5db14449b70c5f1"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:a19b6bfcdfba520ad72c010bd16ef123bfc504aeac1c44d690682a7db9b82632",
+          "sha256": "a19b6bfcdfba520ad72c010bd16ef123bfc504aeac1c44d690682a7db9b82632"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:c9a470f0854e4e041777a1b16a326e37c804453b50577a58eeb04052668b6719",
-          "sha256": "c9a470f0854e4e041777a1b16a326e37c804453b50577a58eeb04052668b6719"
+          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:3ae02a495d4f6d703e143735da077016d9e6905e5aed9f9bdc63b0261ac32103",
+          "sha256": "3ae02a495d4f6d703e143735da077016d9e6905e5aed9f9bdc63b0261ac32103"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:6f30a51e9e07f29ff8cf280c1100df86ab8c6308bb8db078b0ef27b4774720d9",
-          "sha256": "6f30a51e9e07f29ff8cf280c1100df86ab8c6308bb8db078b0ef27b4774720d9"
+          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:7f628f6cafea762f94785cf43be021994ba1f2492bfb6d1bef31ff5c153abaf6",
+          "sha256": "7f628f6cafea762f94785cf43be021994ba1f2492bfb6d1bef31ff5c153abaf6"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:ef54d6b160cc4628af031779a9b4cb1a0d84ab613f76424b9426c1d84b0c3660",
+          "sha256": "ef54d6b160cc4628af031779a9b4cb1a0d84ab613f76424b9426c1d84b0c3660"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:a541cddbb963a4a8ecf77c8293f3acec522db038d4bfba9e29f5e1a5669444e2",
-          "sha256": "a541cddbb963a4a8ecf77c8293f3acec522db038d4bfba9e29f5e1a5669444e2"
+          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:fc51ecde8be0860570cc8ed320418247214cc36d775fc8eee6477ff0ef81d0d1",
+          "sha256": "fc51ecde8be0860570cc8ed320418247214cc36d775fc8eee6477ff0ef81d0d1"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:e0f56e47fb2d47b512fbe77cc198458c5733b15e39337b73855b3dc3c4becd0a",
-          "sha256": "e0f56e47fb2d47b512fbe77cc198458c5733b15e39337b73855b3dc3c4becd0a"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:a883aafbe4dc402517d41113bf74cb694b3f965396d969fcef3d0ef60c5cb378",
-          "sha256": "a883aafbe4dc402517d41113bf74cb694b3f965396d969fcef3d0ef60c5cb378"
+          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:3c26362a05029150074dc7b839dea36ddd656712bbcd97abf5522f5f1b7a9f95",
+          "sha256": "3c26362a05029150074dc7b839dea36ddd656712bbcd97abf5522f5f1b7a9f95"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:d63bf865bfdc14eec2c978a2e854bdf8aebe0c5846b738a4173830152c016b77",
-          "sha256": "d63bf865bfdc14eec2c978a2e854bdf8aebe0c5846b738a4173830152c016b77"
+          "url": "https://ghcr.io/v2/homebrew/core/ocrmypdf/blobs/sha256:74b86d933c3895f8ff2ccb70873c9f309685ba4745b2549bac97f5a0b6f3d0e4",
+          "sha256": "74b86d933c3895f8ff2ccb70873c9f309685ba4745b2549bac97f5a0b6f3d0e4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,17 +80,20 @@
     "rust"
   ],
   "dependencies": [
+    "freetype",
     "ghostscript",
     "jbig2enc",
-    "libffi",
     "libpng",
     "pillow",
     "pngquant",
     "pybind11",
-    "python@3.9",
+    "python@3.11",
     "qpdf",
     "tesseract",
     "unpaper"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -94,6 +102,7 @@
 
   ],
   "uses_from_macos": [
+    "libffi",
     "libxml2",
     "libxslt"
   ],
@@ -115,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

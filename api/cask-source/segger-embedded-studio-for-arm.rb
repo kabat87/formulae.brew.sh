@@ -1,15 +1,11 @@
 cask "segger-embedded-studio-for-arm" do
-  arch = Hardware::CPU.intel? ? "x64" : "arm64"
+  arch arm: "arm64", intel: "x64"
 
-  version "5.68"
+  version "7.10a"
+  sha256 arm:   "617b5b413be463a857d54fbc9609ee83b99eb77c3fa4ce615124c3e86ca11e55",
+         intel: "96dfc8f291b2a75a85cb1f2cc0d92cf4179d56f9c176083916d7d5f9e53d5c9b"
 
   url "https://www.segger.com/downloads/embedded-studio/Setup_EmbeddedStudio_ARM_v#{version.no_dots}_macos_#{arch}.dmg"
-  if Hardware::CPU.intel?
-    sha256 "d8240f6fa4a0980fb8977ffce6b910d65452b74c5164052ae05b9a8463907653"
-  else
-    sha256 "460c0022541bf9cc49b492c57c2a6939a59e5636a64b3642d75a53455b73e55c"
-  end
-
   name "SEGGER Embedded Studio for ARM"
   desc "IDE for embedded systems"
   homepage "https://www.segger.com/products/development-tools/embedded-studio"
@@ -21,5 +17,10 @@ cask "segger-embedded-studio-for-arm" do
 
   pkg "Install SEGGER Embedded Studio for ARM #{version}.pkg"
 
-  uninstall pkgutil: "arm_segger_studio"
+  uninstall pkgutil: [
+    "arm_segger_studio",
+    "com.segger.studio.arm_segger_studio.#{version}",
+    "com.segger.studio.arm_segger_studio.le.#{version}",
+    "com.segger.studio.arm_segger_studio.libcxx.#{version}",
+  ]
 end

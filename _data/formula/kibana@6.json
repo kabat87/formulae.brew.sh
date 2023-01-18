@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/elastic/kibana.git",
       "tag": "v6.8.20",
-      "revision": "d872739e24c6cdac75501f19bf4fe0a1b198c524"
+      "revision": "d872739e24c6cdac75501f19bf4fe0a1b198c524",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -54,7 +55,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -63,6 +63,9 @@
   ],
   "dependencies": [
     "node@10"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -97,7 +100,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "unsupported",
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://git.openldap.org/openldap/openldap/-/archive/LMDB_0.9.29/openldap-LMDB_0.9.29.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "182e69af99788b445585b8075bbca89ae8101069fbeee25b2756fb9590e833f8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lmdb/blobs/sha256:d6793d7269a7aa6ca79c684f0c2813963eead9a2139aabc4d7dff676a04d40fa",
+          "sha256": "d6793d7269a7aa6ca79c684f0c2813963eead9a2139aabc4d7dff676a04d40fa"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lmdb/blobs/sha256:5a02c8325714c21cf296f22807ab3eeca897e88f7163f9202b29cfbc97b1cce1",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lmdb/blobs/sha256:c41fb2e2798d68609b974ab0897a2aee8a09628f34e93b4d2dca9b39c96a8fd0",
           "sha256": "c41fb2e2798d68609b974ab0897a2aee8a09628f34e93b4d2dca9b39c96a8fd0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lmdb/blobs/sha256:8529779660590fb75751ce4b934be80c254eea795dd3dc8c5724cbbbfcad619f",
+          "sha256": "8529779660590fb75751ce4b934be80c254eea795dd3dc8c5724cbbbfcad619f"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

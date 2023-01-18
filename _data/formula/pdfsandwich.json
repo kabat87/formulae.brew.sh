@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/pdfsandwich/pdfsandwich%200.1.7/pdfsandwich-0.1.7.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9795ffea84b9b6b501f38d49a4620cf0469ddf15aac31bac6dbdc9ec1716fa39"
     }
   },
   "revision": 4,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pdfsandwich/blobs/sha256:93a40fb73e99c341323d434d2d03b7db027dd7b931aec4c2aed61f640f649b08",
+          "sha256": "93a40fb73e99c341323d434d2d03b7db027dd7b931aec4c2aed61f640f649b08"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pdfsandwich/blobs/sha256:a6af2fc71eb56e9f121e035b6348a1fa984989096a7158b963a84d5f7b92cc44",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pdfsandwich/blobs/sha256:9d03e5564d606b37f3b2aaa2dc68837ca023e87c455c9543836a854ec7728c4f",
           "sha256": "9d03e5564d606b37f3b2aaa2dc68837ca023e87c455c9543836a854ec7728c4f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pdfsandwich/blobs/sha256:83ad92b56bb7f058c816fa8a0fbd78b382f709ff69b42e5ae7684e98d811e2b8",
+          "sha256": "83ad92b56bb7f058c816fa8a0fbd78b382f709ff69b42e5ae7684e98d811e2b8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pdfsandwich/blobs/sha256:dd4a617ef7bb8bb83cb9da94556537624bcf188789846e978ccb25926fcd7027",
           "sha256": "dd4a617ef7bb8bb83cb9da94556537624bcf188789846e978ccb25926fcd7027"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pdfsandwich/blobs/sha256:6f77d1aa373059a0b32d879bc45f075527a28c6a0a2068b8d38d634dfd2d7d60",
+          "sha256": "6f77d1aa373059a0b32d879bc45f075527a28c6a0a2068b8d38d634dfd2d7d60"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +96,9 @@
     "poppler",
     "tesseract",
     "unpaper"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

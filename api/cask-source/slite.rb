@@ -1,15 +1,19 @@
 cask "slite" do
-  version "64"
-  sha256 :no_check
+  arch arm: "arm64", intel: "x64"
 
-  url "https://download.slite.com/mac"
+  version "1.2.17"
+  sha256 arm:   "4ee819ffe13fd0bdbf4a7da4eee8a8fa11710738f4acc3fc03fb284ae8565b8c",
+         intel: "ba6fba6ab16047f07c6f4a1b5c73609e9210f6757bbb12191e24827d5b985c8a"
+
+  url "https://download.todesktop.com/20062929x31pwfi/Slite%20#{version}-#{arch}-mac.zip",
+      verified: "download.todesktop.com/20062929x31pwfi/"
   name "Slite"
   desc "Team communication and collaboration software"
   homepage "https://slite.com/"
 
   livecheck do
-    url "https://download.slite.com/mac"
-    strategy :header_match
+    url "https://download.todesktop.com/20062929x31pwfi/latest-mac.yml"
+    strategy :electron_builder
   end
 
   app "Slite.app"

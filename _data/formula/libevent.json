@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libevent/libevent/archive/release-2.1.12-stable.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7180a979aaa7000e1264da484f712d403fcf7679b1e9212c4e3d09f5c93efc24"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libevent/blobs/sha256:4d411319fc3919ebfdc818f8109ffa2ef2140250d135f5ca019d8a572f7551be",
+          "sha256": "4d411319fc3919ebfdc818f8109ffa2ef2140250d135f5ca019d8a572f7551be"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libevent/blobs/sha256:4867e07fed355e41bf50f9f44e29307c0004387dd49f743e3b387478572dc8a8",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libevent/blobs/sha256:53ca41440aee8d770530b0de6e655d570028afe0a99ed0e4e16f83af29e06ecb",
           "sha256": "53ca41440aee8d770530b0de6e655d570028afe0a99ed0e4e16f83af29e06ecb"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libevent/blobs/sha256:2760d8ed33201d1ae70cfc1141af828b0276c589020bb708e8f1bf0f545eec77",
+          "sha256": "2760d8ed33201d1ae70cfc1141af828b0276c589020bb708e8f1bf0f545eec77"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -88,6 +98,9 @@
   ],
   "dependencies": [
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,15 +126,16 @@
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154729,
       "runtime_dependencies": [
         {
           "full_name": "ca-certificates",
-          "version": "2021-10-26",
+          "version": "2022-10-11",
           "declared_directly": false
         },
         {
           "full_name": "openssl@1.1",
-          "version": "1.1.1m",
+          "version": "1.1.1s",
           "declared_directly": true
         }
       ],
@@ -137,5 +151,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

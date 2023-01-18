@@ -1,10 +1,14 @@
 cask "webex-meetings" do
-  version "2112.3017.4201.3"
-  sha256 :no_check
+  on_intel do
+    version "2212.2704.4301.3"
+    sha256 :no_check
 
-  if Hardware::CPU.intel?
     url "https://akamaicdn.webex.com/client/webexapp.dmg"
-  else
+  end
+  on_arm do
+    version "2212.1600.4212.6"
+    sha256 :no_check
+
     url "https://akamaicdn.webex.com/client/Cisco_Webex_Meetings.pkg"
   end
 
@@ -22,9 +26,9 @@ cask "webex-meetings" do
   pkg "Cisco_Webex_Meetings.pkg"
 
   uninstall quit:      [
-    "com.cisco.webex.webexmta",
-    "com.cisco.webexmeetingsapp",
-  ],
+              "com.cisco.webex.webexmta",
+              "com.cisco.webexmeetingsapp",
+            ],
             delete:    [
               "/Applications/Cisco Webex Meetings.app",
               "/Applications/Webex", # App seems to get installed here on macOS < 10.15

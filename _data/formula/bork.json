@@ -11,7 +11,7 @@
   ],
   "desc": "Bash-Operated Reconciling Kludge",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/skylarmacdonald/bork",
+  "homepage": "https://bork.sh/",
   "versions": {
     "stable": "0.13.0",
     "head": "HEAD",
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/skylarmacdonald/bork/archive/v0.13.0.tar.gz",
+      "url": "https://github.com/borksh/bork/archive/v0.13.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5eaca1ebd984121df008b93c43ac259a455db7ccf13da1b1465d704e1faab563"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bork/blobs/sha256:9fd828ce87277cc3e9a312b56869e87156fa56ec1d6ec8649ad76192f447f25a",
+          "sha256": "9fd828ce87277cc3e9a312b56869e87156fa56ec1d6ec8649ad76192f447f25a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bork/blobs/sha256:29526cc2119003d1e1957071f35dd01ef782d8d2615b390768715a39d17b584c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bork/blobs/sha256:29526cc2119003d1e1957071f35dd01ef782d8d2615b390768715a39d17b584c",
           "sha256": "29526cc2119003d1e1957071f35dd01ef782d8d2615b390768715a39d17b584c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bork/blobs/sha256:41510ecf16c4671eea3f4c2ddf260bdeb0db6aa2302a8024ba145045e86c8311",
+          "sha256": "41510ecf16c4671eea3f4c2ddf260bdeb0db6aa2302a8024ba145045e86c8311"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,12 +1,17 @@
 cask "mockoon" do
-  version "1.17.0"
-  sha256 "4805ed66883ba0565f589e63b99c1e3c149308484cb30a369e4e879d1d974885"
+  version "1.22.0"
+  sha256 "763a298457ddbd2d27b03385adc14d19133e27f8fb4cd1781138b87d8fa3aef6"
 
   url "https://github.com/mockoon/mockoon/releases/download/v#{version}/mockoon.setup.#{version}.universal.dmg",
       verified: "github.com/mockoon/mockoon/"
   name "Mockoon"
-  desc "Create mock APIs locally"
+  desc "Create mock APIs in seconds"
   homepage "https://mockoon.com/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   auto_updates true
 

@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://jgi.doe.gov/data-and-tools/bbtools/",
   "versions": {
-    "stable": "38.95",
+    "stable": "39.01",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.sourceforge.net/bbmap/BBMap_38.95.tar.gz",
+      "url": "https://downloads.sourceforge.net/bbmap/BBMap_39.01.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "98608da50130c47f3abd095b889cc87f60beeb8b96169b664bc9d849abe093e6"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:ee5b3030f1acfe5105146f15689f3593356eeb1fcd783304d82120a5799e53ca",
+          "sha256": "ee5b3030f1acfe5105146f15689f3593356eeb1fcd783304d82120a5799e53ca"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:683e587bedffcbcdd78977b635fd00fda5d9596c35cdbf3d54a4ded2985356f9",
-          "sha256": "683e587bedffcbcdd78977b635fd00fda5d9596c35cdbf3d54a4ded2985356f9"
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:4f724b3391445cb3801dd8add9f385111f5d0ce8df1fde3956b71c7778df1a31",
+          "sha256": "4f724b3391445cb3801dd8add9f385111f5d0ce8df1fde3956b71c7778df1a31"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:8b78c6aea85776310295d31001a4281ecaca975a6c04aaab8494880a4e4b496f",
-          "sha256": "8b78c6aea85776310295d31001a4281ecaca975a6c04aaab8494880a4e4b496f"
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:8f5328602a99242b650931945bd1ad3b3fbd4da8c8ebb76a615148835fcbeb27",
+          "sha256": "8f5328602a99242b650931945bd1ad3b3fbd4da8c8ebb76a615148835fcbeb27"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:1e020f4b8b859f2d173f42c86eb8d6f03c90f4b33c4881722d32f0375d7cb500",
+          "sha256": "1e020f4b8b859f2d173f42c86eb8d6f03c90f4b33c4881722d32f0375d7cb500"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:7fd3f58fff2a6234a6e6d1c8ced09b062879a83551b377f5202c82b662e4c28d",
-          "sha256": "7fd3f58fff2a6234a6e6d1c8ced09b062879a83551b377f5202c82b662e4c28d"
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:fa2231392ff7a5cc23c618d3ede17dabf7c39fcab96af981f34a44d255d56986",
+          "sha256": "fa2231392ff7a5cc23c618d3ede17dabf7c39fcab96af981f34a44d255d56986"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:0bb75cdc4bc43683311c717bfc7ab03caaaed45575fe1321df383ef7fbd582cb",
-          "sha256": "0bb75cdc4bc43683311c717bfc7ab03caaaed45575fe1321df383ef7fbd582cb"
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:91b2d7d2cda27ae13fd9aa955874f5a3be3af97b481ee5d23ac10e09c54da33f",
+          "sha256": "91b2d7d2cda27ae13fd9aa955874f5a3be3af97b481ee5d23ac10e09c54da33f"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:e4aba87066fc72a1a091cb64c004f672f4ef552e8c2670457403f758f049b8d2",
-          "sha256": "e4aba87066fc72a1a091cb64c004f672f4ef552e8c2670457403f758f049b8d2"
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:2edf1f85161f3a245b29fb55b117f074d04c0859cc1abbb9406ac98c038c7730",
+          "sha256": "2edf1f85161f3a245b29fb55b117f074d04c0859cc1abbb9406ac98c038c7730"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:239f57b37ec781b1a246aafd47ed4ca170d210b26d673643b906b200bd1105ce",
-          "sha256": "239f57b37ec781b1a246aafd47ed4ca170d210b26d673643b906b200bd1105ce"
+          "url": "https://ghcr.io/v2/homebrew/core/bbtools/blobs/sha256:177acf4ad3c84029f0f067afc3c4838e8cc91ec4f693a02554eedcbd86a3f379",
+          "sha256": "177acf4ad3c84029f0f067afc3c4838e8cc91ec4f693a02554eedcbd86a3f379"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

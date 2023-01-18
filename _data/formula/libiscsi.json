@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sahlberg/libiscsi/archive/1.19.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c7848ac722c8361d5064654bc6e926c2be61ef11dd3875020a63931836d806df"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libiscsi/blobs/sha256:f5ed5adac677b700971eaa437336521ad23f85933ee801f3c5f8346b307c3d72",
+          "sha256": "f5ed5adac677b700971eaa437336521ad23f85933ee801f3c5f8346b307c3d72"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libiscsi/blobs/sha256:7f54d471025b9eda877c0b0d05c025f59b59413c1421c1335ff3091852e88e65",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libiscsi/blobs/sha256:aa722adc6341c8457b38c0078ab264ae30982b57510967de3e8181088036e0e3",
           "sha256": "aa722adc6341c8457b38c0078ab264ae30982b57510967de3e8181088036e0e3"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libiscsi/blobs/sha256:0e7293f4535f47d206a285a4074fd1054745f6efcd640f4fdf0e90c87c25e906",
+          "sha256": "0e7293f4535f47d206a285a4074fd1054745f6efcd640f4fdf0e90c87c25e906"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -92,6 +102,9 @@
   ],
   "dependencies": [
     "cunit"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -120,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

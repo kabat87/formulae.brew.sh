@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-or-later",
   "homepage": "https://spotbugs.github.io/",
   "versions": {
-    "stable": "4.5.3",
+    "stable": "4.7.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/4.5.3/spotbugs-4.5.3.tgz",
+      "url": "https://repo.maven.apache.org/maven2/com/github/spotbugs/spotbugs/4.7.3/spotbugs-4.7.3.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f02e2f1135b23f3edfddb75f64be0491353cfeb567b5a584115aa4fd373d4431"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/spotbugs/blobs/sha256:8305b1aabba6f6cab62d86e5d41a11aabc77254f1868679db4ad890a5b440ba3",
-          "sha256": "8305b1aabba6f6cab62d86e5d41a11aabc77254f1868679db4ad890a5b440ba3"
+          "url": "https://ghcr.io/v2/homebrew/core/spotbugs/blobs/sha256:c4a351e6423603de5b05a114912e6091977f287357ea8c23fbba1944026bba72",
+          "sha256": "c4a351e6423603de5b05a114912e6091977f287357ea8c23fbba1944026bba72"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

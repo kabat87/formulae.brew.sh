@@ -1,6 +1,6 @@
 cask "lightkey" do
-  version "3.8.3,6a381dabf4-1639498319"
-  sha256 "cbe572d9ed9bb7dcb70ae03c11759f7d40090153b0888b37d3dffb2288451019"
+  version "4.1.3,30f80ab1e6-1672325784"
+  sha256 "bc3647095a1bc9bbd338f693ac27b33d1244ce3c1828257879fa2d5d58af713c"
 
   url "https://lightkeyapp.com/media/pages/download/Lightkey-#{version.csv.first.dots_to_hyphens}/#{version.csv.second}/LightkeyInstaller.zip"
   name "Lightkey"
@@ -18,7 +18,7 @@ cask "lightkey" do
   end
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   pkg "LightkeyInstaller.pkg"
 

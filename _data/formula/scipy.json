@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://www.scipy.org",
   "versions": {
-    "stable": "1.7.3",
+    "stable": "1.10.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/61/67/1a654b96309c991762ee9bc39c363fc618076b155fe52d295211cf2536c7/scipy-1.7.3.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/d6/bd/2d13a273d95f7b7d9903c906c486040b0aebb85e008f93a5dd0891f21f1f/scipy-1.10.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c8b3cbc636a87a89b770c6afc999baa6bcbb01691b5ccbbc1b1791c7c0a07540"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:a8cca8494182a1eaeecc7d35b7944c6fcbe5f8632319d1460bb5273620d60c48",
+          "sha256": "a8cca8494182a1eaeecc7d35b7944c6fcbe5f8632319d1460bb5273620d60c48"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:731732e5ab4c433ae847981e764d8820c86a4445e8d1734c17b5bbc171741dfb",
-          "sha256": "731732e5ab4c433ae847981e764d8820c86a4445e8d1734c17b5bbc171741dfb"
+          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:6e54e369b57e99cddd7305ee818408a9878e0b5160b870cb02095bd16b42e5ae",
+          "sha256": "6e54e369b57e99cddd7305ee818408a9878e0b5160b870cb02095bd16b42e5ae"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:ef45dabf237da28bbc5dd2ffb8bd11b1ba8cb7409a4d9aad96f4cbb7a4df99b7",
-          "sha256": "ef45dabf237da28bbc5dd2ffb8bd11b1ba8cb7409a4d9aad96f4cbb7a4df99b7"
+          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:b7a08f2a0811da0fffb2b96a6bf5391816770867824765befe1fbd2352f59b47",
+          "sha256": "b7a08f2a0811da0fffb2b96a6bf5391816770867824765befe1fbd2352f59b47"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:5a6ddba0640bae403908adb4d0619630cf9148b86f956dfa55a934962eaeb74c",
+          "sha256": "5a6ddba0640bae403908adb4d0619630cf9148b86f956dfa55a934962eaeb74c"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:f6e6a33b62026f23e673585416a9954fb85704c84a08ea711d127786c8dd874a",
-          "sha256": "f6e6a33b62026f23e673585416a9954fb85704c84a08ea711d127786c8dd874a"
+          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:04202ac10975c9545b2acab246ddb258a60cec4683bd6b7f6ca47664b64fae4e",
+          "sha256": "04202ac10975c9545b2acab246ddb258a60cec4683bd6b7f6ca47664b64fae4e"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:fae9c01b7711dc23bb7a9b68c9107fe2baaf8622d3af02671c1e8980334134c7",
-          "sha256": "fae9c01b7711dc23bb7a9b68c9107fe2baaf8622d3af02671c1e8980334134c7"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:9f96da5ad40e75275727c2ceb0417399b08924cd9b6c4c24b26fb5fdb446fab0",
-          "sha256": "9f96da5ad40e75275727c2ceb0417399b08924cd9b6c4c24b26fb5fdb446fab0"
+          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:c5fb74fb1346d25ced9302b6294cff228cd1b9a57928cd5fbe16f92b7628f4c5",
+          "sha256": "c5fb74fb1346d25ced9302b6294cff228cd1b9a57928cd5fbe16f92b7628f4c5"
         },
         "x86_64_linux": {
-          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:e20ebace88671c5a3382ed15d64248603f86fae882978bda8e9e4d96d2d457ec",
-          "sha256": "e20ebace88671c5a3382ed15d64248603f86fae882978bda8e9e4d96d2d457ec"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/scipy/blobs/sha256:c09025ec76ca4c3226b66235ce60db52a00032ce6c0ae43cba2231c1f469dc78",
+          "sha256": "c09025ec76ca4c3226b66235ce60db52a00032ce6c0ae43cba2231c1f469dc78"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "cython",
+    "libcython",
     "pythran",
     "swig"
   ],
@@ -80,7 +85,10 @@
     "numpy",
     "openblas",
     "pybind11",
-    "python@3.9"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,31 +7,37 @@
   ],
   "desc": "GUI for the Neovim text editor",
   "homepage": "http://vimr.org/",
-  "url": "https://github.com/qvacua/vimr/releases/download/v0.36.0-20220102.161018/VimR-v0.36.0.tar.bz2",
+  "url": "https://github.com/qvacua/vimr/releases/download/v0.44.0-20230103.174333/VimR-v0.44.0.tar.bz2",
   "appcast": null,
-  "version": "0.36.0,20220102.161018",
+  "version": "0.44.0,20230103.174333",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b1361cd3b811b04702f924cdd1bca571778c56180b44c18d5a12b5e6d21a207f",
+  "sha256": "891783f6889ed66b745480cdcc9b18055b7f6d430d1228a887f68ed7ed1ff3ac",
   "artifacts": [
-    [
-      "VimR.app"
-    ],
-    [
-      "/Applications/VimR.app/Contents/Resources/vimr"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.qvacua.VimR",
-        "~/Library/Preferences/com.qvacua.VimR.plist",
-        "~/Library/Preferences/com.qvacua.VimR.menuitems.plist",
-        "~/Library/Saved Application State/com.qvacua.VimR.savedState",
-        "~/Library/WebKit/com.qvacua.VimR"
-      ],
-      "signal": {
-      }
+      "app": [
+        "VimR.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/VimR.app/Contents/Resources/vimr"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.qvacua.VimR",
+            "~/Library/Preferences/com.qvacua.VimR.menuitems.plist",
+            "~/Library/Preferences/com.qvacua.VimR.plist",
+            "~/Library/Saved Application State/com.qvacua.VimR.savedState",
+            "~/Library/WebKit/com.qvacua.VimR"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -9,20 +9,24 @@
   "homepage": "https://hazeover.com/touchswitcher.html",
   "url": "https://hazeover.com/touchswitcher/TouchSwitcher.zip",
   "appcast": null,
-  "version": "1.4.3,145",
+  "version": "1.4.4,152",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "TouchSwitcher.app"
-    ],
     {
-      "trash": "~/Library/Preferences/com.pointum.TouchSwitcher.plist",
-      "signal": {
-      }
+      "app": [
+        "TouchSwitcher.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/com.pointum.TouchSwitcher.plist"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

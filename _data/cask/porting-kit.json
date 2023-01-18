@@ -7,25 +7,29 @@
   ],
   "desc": "Install games and apps compiled for Microsoft Windows",
   "homepage": "https://portingkit.com/",
-  "url": "https://github.com/vitor251093/porting-kit-releases/releases/download/v4.2.41/Porting-Kit-4.2.41.dmg",
+  "url": "https://github.com/vitor251093/porting-kit-releases/releases/download/v5.12.1/Porting-Kit-5.12.1.dmg",
   "appcast": null,
-  "version": "4.2.41",
+  "version": "5.12.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "57ba837dd380ff731217476ee698e1879696aa205c47c33b82a9f0f7f6a7be84",
+  "sha256": "d4389ab74b56324451c2547f35eae9c5578797888b5751ac4c04918b66960397",
   "artifacts": [
-    [
-      "Porting Kit.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.paulthetall.portingkit.plist",
-        "~/Library/Saved Application State/com.paulthetall.portingkit.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Porting Kit.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.paulthetall.portingkit.plist",
+            "~/Library/Saved Application State/com.paulthetall.portingkit.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

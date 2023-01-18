@@ -7,26 +7,42 @@
   ],
   "desc": "Keyboard-driven, vim-like browser based on PyQt5",
   "homepage": "https://www.qutebrowser.org/",
-  "url": "https://github.com/qutebrowser/qutebrowser/releases/download/v2.4.0/qutebrowser-2.4.0.dmg",
+  "url": "https://github.com/qutebrowser/qutebrowser/releases/download/v2.5.2/qutebrowser-2.5.2.dmg",
   "appcast": null,
-  "version": "2.4.0",
+  "version": "2.5.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6c941f9f58742b70e9689300ba663b7797fccbf21c96bde3cc408e2b6c04837a",
+  "sha256": "9c52c7ade3485103686b31e49d2576da3f57f43bba2b062528988a5ee606bb39",
   "artifacts": [
-    [
-      "qutebrowser.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/qutebrowser",
-        "~/Library/Caches/qutebrowser",
-        "~/Library/Preferences/qutebrowser"
-      ],
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      '#{appdir}/qutebrowser.app/Contents/MacOS/qutebrowser' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "app": [
+        "qutebrowser.app"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/qutebrowser/2.5.2/qutebrowser.wrapper.sh",
+        {
+          "target": "qutebrowser"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "rmdir": "~/.qutebrowser",
+          "trash": [
+            "~/Library/Application Support/qutebrowser",
+            "~/Library/Caches/qutebrowser",
+            "~/Library/Preferences/qutebrowser"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

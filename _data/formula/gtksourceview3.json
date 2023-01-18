@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
     }
   },
   "revision": 3,
@@ -31,10 +32,25 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gtksourceview3/blobs/sha256:846bfed76c27fea9b7e441542ab1934d0c2e102958061c151b8a1896a692f70d",
+          "sha256": "846bfed76c27fea9b7e441542ab1934d0c2e102958061c151b8a1896a692f70d"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gtksourceview3/blobs/sha256:3bffd877e4f14e8ddfc09a213f14be337e4a2efc3f230bdeb25a5ed915b3f75d",
+          "sha256": "3bffd877e4f14e8ddfc09a213f14be337e4a2efc3f230bdeb25a5ed915b3f75d"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gtksourceview3/blobs/sha256:920ee02f85863c74d7c151cde00f0a8dbd18c66e825a50c7d8f36f3af9da06b6",
           "sha256": "920ee02f85863c74d7c151cde00f0a8dbd18c66e825a50c7d8f36f3af9da06b6"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gtksourceview3/blobs/sha256:71b20ca2f56e1509a261ae1191837de36f2a78bb8852d7ad2164553b3429b44d",
+          "sha256": "71b20ca2f56e1509a261ae1191837de36f2a78bb8852d7ad2164553b3429b44d"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +101,9 @@
   "dependencies": [
     "gettext",
     "gtk+3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +132,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "gobject-introspection",
+        "pkg-config",
+        "vala"
+      ]
+    }
+  }
 }

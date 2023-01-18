@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dev-www.libreoffice.org/src/cppunit-1.15.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "89c5c6665337f56fd2db36bc3805a5619709d51fb136e51937072f63fcc717a7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cppunit/blobs/sha256:45a8c4e8ca0defb8adee6028c2d213c7868bac9fdc9a4e814ad1b45aea1c3c14",
+          "sha256": "45a8c4e8ca0defb8adee6028c2d213c7868bac9fdc9a4e814ad1b45aea1c3c14"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cppunit/blobs/sha256:7acd81de05bc607287b7133050c269e2ea86ac4e1141cb71ae85af4cd62e7f50",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cppunit/blobs/sha256:42291951a34e6fae578a9c25d2a5c399dc1e13ec3f700c017f96d7576acabbf1",
           "sha256": "42291951a34e6fae578a9c25d2a5c399dc1e13ec3f700c017f96d7576acabbf1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cppunit/blobs/sha256:7e5529650f22b5b4e19ff31a2af7134a11a112b8cbdbbd383cb50b0257e6fe7b",
+          "sha256": "7e5529650f22b5b4e19ff31a2af7134a11a112b8cbdbbd383cb50b0257e6fe7b"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

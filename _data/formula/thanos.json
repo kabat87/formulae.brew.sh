@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://thanos.io",
   "versions": {
-    "stable": "0.24.0",
+    "stable": "0.30.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/thanos-io/thanos/archive/v0.24.0.tar.gz",
+      "url": "https://github.com/thanos-io/thanos/archive/v0.30.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bc389f315b6416fc226282f07500e6eb09bc7f71ad1a0d925456f306328ae8da"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:9627948031683b1f417a970aed9be0265de283fa2b75835a6f7737a9e57fb5a5",
+          "sha256": "9627948031683b1f417a970aed9be0265de283fa2b75835a6f7737a9e57fb5a5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:13d17c683b7cacdaeb7187567d82d571b2b40f68d9ce4ea602adcdd847dfe9be",
-          "sha256": "13d17c683b7cacdaeb7187567d82d571b2b40f68d9ce4ea602adcdd847dfe9be"
+          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:ce04130aa19a7244eb9fc0a6a03932e1783ae9268555f43b589823efff01f2e1",
+          "sha256": "ce04130aa19a7244eb9fc0a6a03932e1783ae9268555f43b589823efff01f2e1"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:8688b8a3004e7b8afe96c6815f02bf2420f3e9accca867df60a81770752a5415",
-          "sha256": "8688b8a3004e7b8afe96c6815f02bf2420f3e9accca867df60a81770752a5415"
+          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:24e1c8b7f2d63c5d995e6b557d3a502c14caa4e9950844182d15fee62df286bd",
+          "sha256": "24e1c8b7f2d63c5d995e6b557d3a502c14caa4e9950844182d15fee62df286bd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:9da8a3375ebe7bfa7569a2ed418170f32c0d36eb6e4848ca712814cddec17549",
+          "sha256": "9da8a3375ebe7bfa7569a2ed418170f32c0d36eb6e4848ca712814cddec17549"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:f3d711273db576318a63e9b545a0368364b68c70814651e8a9b6e88e77618b8e",
-          "sha256": "f3d711273db576318a63e9b545a0368364b68c70814651e8a9b6e88e77618b8e"
+          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:8839197bc0eab7f723afe7397c3f8d3f10f01a2d3c3f40b58a8ff5f6ce0a2964",
+          "sha256": "8839197bc0eab7f723afe7397c3f8d3f10f01a2d3c3f40b58a8ff5f6ce0a2964"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:b0d22988fa170bea9bf413efe94ef3c1c2cfc8d3e198c568045f155c84d068b9",
-          "sha256": "b0d22988fa170bea9bf413efe94ef3c1c2cfc8d3e198c568045f155c84d068b9"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:d2085ebe3ebdf93c54cde02189b1f73d87382b25c55b558da92981367805cd76",
-          "sha256": "d2085ebe3ebdf93c54cde02189b1f73d87382b25c55b558da92981367805cd76"
+          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:a04558e2fa71246adaaf0791684fbac6fe4966b7b1d340a11f902a09a3f2ee5e",
+          "sha256": "a04558e2fa71246adaaf0791684fbac6fe4966b7b1d340a11f902a09a3f2ee5e"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:3efc0915f8fa3e8837f2b1148a1d5110ad16b4018dac1339d92d27573cc74071",
-          "sha256": "3efc0915f8fa3e8837f2b1148a1d5110ad16b4018dac1339d92d27573cc74071"
+          "url": "https://ghcr.io/v2/homebrew/core/thanos/blobs/sha256:0be442d665ceecd7cc32a8344129f317a6291791ceb901bf05da5ba8ce4a4df0",
+          "sha256": "0be442d665ceecd7cc32a8344129f317a6291791ceb901bf05da5ba8ce4a4df0"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

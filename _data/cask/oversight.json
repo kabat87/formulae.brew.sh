@@ -7,46 +7,52 @@
   ],
   "desc": "Monitors computer mic and webcam",
   "homepage": "https://objective-see.com/products/oversight.html",
-  "url": "https://github.com/objective-see/OverSight/releases/download/v2.0.1/OverSight_2.0.1.zip",
+  "url": "https://github.com/objective-see/OverSight/releases/download/v2.1.5/OverSight_2.1.5.zip",
   "appcast": null,
-  "version": "2.0.1",
+  "version": "2.1.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e19d4da26aeba29343d3bdc33643c03b925ed29a13bc71eae46c5999b654b843",
+  "sha256": "795286f8fa94d7c25c7ea4ab8e6004ac824e48f1fc140f82a74030bbb394f680",
   "artifacts": [
     {
-      "script": {
-        "executable": "$(brew --prefix)/Caskroom/oversight/2.0.1/OverSight Installer.app/Contents/MacOS/OverSight Installer",
-        "args": [
-          "-uninstall"
-        ],
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "$(brew --prefix)/Caskroom/oversight/2.1.5/OverSight Installer.app/Contents/MacOS/OverSight Installer",
+            "args": [
+              "-uninstall"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
     {
-      "path": "$(brew --prefix)/Caskroom/oversight/2.0.1/OverSight Installer.app/Contents/MacOS/OverSight Installer",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "true",
-        "args": [
-          "-install"
-        ],
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "$(brew --prefix)/Caskroom/oversight/2.1.5/OverSight Installer.app/Contents/MacOS/OverSight Installer",
+            "args": [
+              "-install"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
     {
-      "trash": [
-        "~/Library/Caches/com.objective-see.oversight",
-        "~/Library/Caches/com.objective-see.OverSightHelper",
-        "~/Library/Preferences/com.objective-see.oversight.plist",
-        "~/Library/Preferences/com.objective-see.OverSightHelper.plist"
-      ],
-      "signal": {
-      }
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.objective-see.oversight",
+            "~/Library/Caches/com.objective-see.OverSightHelper",
+            "~/Library/Preferences/com.objective-see.oversight.plist",
+            "~/Library/Preferences/com.objective-see.OverSightHelper.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -59,5 +65,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

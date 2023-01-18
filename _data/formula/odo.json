@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/atomicobject/odo/archive/v0.2.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "52133a6b92510d27dfe80c7e9f333b90af43d12f7ea0cf00718aee8a85824df5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/odo/blobs/sha256:dd2fad51300e663cba126f61573c740198f66f1f8a505b8907605892ab1a0c48",
+          "sha256": "dd2fad51300e663cba126f61573c740198f66f1f8a505b8907605892ab1a0c48"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/odo/blobs/sha256:6ddc4ba217251c6827fcd32c3fda2df9c294305dddc68d976072cef25c4dd768",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/odo/blobs/sha256:6606d59561c5bfb5f3b6835c16e64c6d6bf25ddc85658900a735657faaf0660f",
           "sha256": "6606d59561c5bfb5f3b6835c16e64c6d6bf25ddc85658900a735657faaf0660f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/odo/blobs/sha256:8ee366eac5d82a7b60d33771791e9f44b01e648d77171b49793b5b54ae8d9ee8",
+          "sha256": "8ee366eac5d82a7b60d33771791e9f44b01e648d77171b49793b5b54ae8d9ee8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/odo/blobs/sha256:979cc7131a35180614e848fa5fa12a72f734da7321358c89dfbd425fc8dff837",
           "sha256": "979cc7131a35180614e848fa5fa12a72f734da7321358c89dfbd425fc8dff837"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/odo/blobs/sha256:ebfc6a2e616694a3862b1d6d11dda1a2c1cb4c966447678b342457490e0e0abc",
-          "sha256": "ebfc6a2e616694a3862b1d6d11dda1a2c1cb4c966447678b342457490e0e0abc"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/odo/blobs/sha256:23644efe576abf9c3e3a469cf1baad05b3a3cde749998045b2992c290cf57884",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -114,7 +122,7 @@
 
   ],
   "conflicts_with": [
-
+    "odo-dev"
   ],
   "caveats": null,
   "installed": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

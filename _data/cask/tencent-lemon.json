@@ -7,38 +7,44 @@
   ],
   "desc": "Cleanup and system status tool",
   "homepage": "https://lemon.qq.com/",
-  "url": "https://webcdn.m.qq.com/lemon/version/LemonV5.0.4_2.dmg",
+  "url": "https://pm.myapp.com/invc/xfspeed/qqpcmgr/module_update/LemonV511.dmg",
   "appcast": null,
-  "version": "5.0.4_2",
+  "version": "5.1.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e88a19b581fbf64ca80a21c390c697e635214cb451767f8a9e891dfc421f5beb",
+  "sha256": "32fab9dfb5d24ff02ae1311f53461b1d5165585fccd33a35f9f3eb9412ffa355",
   "artifacts": [
     {
-      "delete": [
-        "/Library/Logs/Lemon",
-        "/Library/Preferences/LemonDaemon_packet.dat"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": [
+            "/Library/Logs/Lemon",
+            "/Library/Preferences/LemonDaemon_packet.dat"
+          ]
+        }
+      ]
     },
-    [
-      "Tencent Lemon.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.tencent.Lemon",
-        "~/Library/Caches/com.tencent.LemonMonitor",
-        "~/Library/Logs/LemonMonitor.log",
-        "~/Library/Logs/Tencent Lemon.log",
-        "~/Library/Preferences/com.tencent.LemonUpdate.plist",
-        "~/Library/Preferences/LemonMonitor_packet.dat",
-        "~/Library/Preferences/Tencent Lemon_packet.dat"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Tencent Lemon.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.tencent.Lemon",
+            "~/Library/Caches/com.tencent.LemonMonitor",
+            "~/Library/Logs/LemonMonitor.log",
+            "~/Library/Logs/Tencent Lemon.log",
+            "~/Library/Preferences/com.tencent.LemonUpdate.plist",
+            "~/Library/Preferences/LemonMonitor_packet.dat",
+            "~/Library/Preferences/Tencent Lemon_packet.dat"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +52,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

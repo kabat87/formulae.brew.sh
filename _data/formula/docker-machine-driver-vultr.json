@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/janeczku/docker-machine-vultr/archive/v1.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f69b1b33c7c73bea4ab1980fbf59b7ba546221d31229d03749edee24a1e7e8b5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/docker-machine-driver-vultr/blobs/sha256:9eac2e453fb12dfc95df44c84afa1e502f92e7d0b49922ec2028ddcddf3ad036",
+          "sha256": "9eac2e453fb12dfc95df44c84afa1e502f92e7d0b49922ec2028ddcddf3ad036"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/docker-machine-driver-vultr/blobs/sha256:6e99d94cf096740acbfb7569e571bedcfcea8fb17fa084cd60395c6b668c74aa",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/docker-machine-driver-vultr/blobs/sha256:53bbef8c94f0a9dbe4aabb21ad4573b66e3aac1991730cbc4c4624650918b7a6",
           "sha256": "53bbef8c94f0a9dbe4aabb21ad4573b66e3aac1991730cbc4c4624650918b7a6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/docker-machine-driver-vultr/blobs/sha256:10213a1e41b628cd9dfc36c5e936da5baa77f2db328fb4a4f459960a2a264929",
+          "sha256": "10213a1e41b628cd9dfc36c5e936da5baa77f2db328fb4a4f459960a2a264929"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "docker-machine"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,10 +131,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-07-29",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

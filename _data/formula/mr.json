@@ -21,7 +21,8 @@
     "stable": {
       "url": "git://myrepos.branchable.com/",
       "tag": "1.20180726",
-      "revision": "0ad7a17bb455de1fec3b2375c7aac72ab2a22ac4"
+      "revision": "0ad7a17bb455de1fec3b2375c7aac72ab2a22ac4",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mr/blobs/sha256:fea4a97b97b7a89c314c1e66244eac2686e20ff15332782ce8ded266ffc6788a",
+          "sha256": "fea4a97b97b7a89c314c1e66244eac2686e20ff15332782ce8ded266ffc6788a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mr/blobs/sha256:1ef1fbe930aac818a5996a5280755f746d5595ed94a2d01ffe4c46d0aa066fb2",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mr/blobs/sha256:3acd961664e9d84ec19e6fa5044fc7b024bbfc691a3dc3d02a250d773abb6a18",
           "sha256": "3acd961664e9d84ec19e6fa5044fc7b024bbfc691a3dc3d02a250d773abb6a18"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mr/blobs/sha256:e77aa6bef7c23757654c48d75907eb00b5c5eb7469f96d8b0a59830235f01ffe",
+          "sha256": "e77aa6bef7c23757654c48d75907eb00b5c5eb7469f96d8b0a59830235f01ffe"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,26 +7,30 @@
   ],
   "desc": "Re-enable the font smoothing controls",
   "homepage": "https://www.fontsmoothingadjuster.com/",
-  "url": "https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font+Smoothing+Adjuster+1.2.1.dmg",
+  "url": "https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font+Smoothing+Adjuster+2.0.0.dmg",
   "appcast": null,
-  "version": "1.2.1",
+  "version": "2.0.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f0f02948be588bdff455195baeb8f72c0c45977775ab936644e8bf9053c316a6",
+  "sha256": "187401950b827c58262a9bb86878c5dd5820550c00ca414f971ce82837d7419f",
   "artifacts": [
-    [
-      "Font Smoothing Adjuster.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.bouncetechnologies.Font-Smoothing-Adjuster",
-        "~/Library/Preferences/com.bouncetechnologies.Font-Smoothing-Adjuster.plist",
-        "~/Library/Saved Application State/com.bouncetechnologies.Font-Smoothing-Adjuster.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Font Smoothing Adjuster.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.bouncetechnologies.Font-Smoothing-Adjuster",
+            "~/Library/Preferences/com.bouncetechnologies.Font-Smoothing-Adjuster.plist",
+            "~/Library/Saved Application State/com.bouncetechnologies.Font-Smoothing-Adjuster.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

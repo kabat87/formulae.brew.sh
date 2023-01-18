@@ -13,15 +13,16 @@
   "license": "MPL-2.0",
   "homepage": "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS",
   "versions": {
-    "stable": "3.74",
+    "stable": "3.87",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_74_RTM/src/nss-3.74.tar.gz",
+      "url": "https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_87_RTM/src/nss-3.87.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "68a1894496d3d158babc75f8a5dda3f55b7c1560573936e3b101a10fa4ac152d"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:a07951fb70d1317cf5c0548c1d804c0e22bc5a39e3bd6c716a062643e8a23c72",
+          "sha256": "a07951fb70d1317cf5c0548c1d804c0e22bc5a39e3bd6c716a062643e8a23c72"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:bcadb2b42b34d5fdcfc549baa9eaa5a135a4606150061c82902dbb6d05adf233",
-          "sha256": "bcadb2b42b34d5fdcfc549baa9eaa5a135a4606150061c82902dbb6d05adf233"
+          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:af41ccbb12f6728926c23dc6ac5b13f9da161e753e7dc90eeac036bf61a7fd87",
+          "sha256": "af41ccbb12f6728926c23dc6ac5b13f9da161e753e7dc90eeac036bf61a7fd87"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:74a5c018bd4d9ae51b736b8d14eed1f2b62e8212749ffa1efe203ca778cc0d85",
-          "sha256": "74a5c018bd4d9ae51b736b8d14eed1f2b62e8212749ffa1efe203ca778cc0d85"
+          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:cc23468a7f62f3733a9a2be1fedb65c7ce8fdf09f95abc4870aa8db456564427",
+          "sha256": "cc23468a7f62f3733a9a2be1fedb65c7ce8fdf09f95abc4870aa8db456564427"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:4b3a94b8075f9ae9eea2378621331cdad116a7ec3c4a2d9a2b396c3ed20728a4",
+          "sha256": "4b3a94b8075f9ae9eea2378621331cdad116a7ec3c4a2d9a2b396c3ed20728a4"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:dd78686dabd11e48f53c126cb11a13831e99aebe242a959b53d1e6d5cb0b81fc",
-          "sha256": "dd78686dabd11e48f53c126cb11a13831e99aebe242a959b53d1e6d5cb0b81fc"
+          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:cc233ff819ea08cd155b55a742a7982509d560196e4141e72fb76f80c9fe29de",
+          "sha256": "cc233ff819ea08cd155b55a742a7982509d560196e4141e72fb76f80c9fe29de"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:79359ad7312b4658dabb1db922ed52ce54264534da24ebcb72ff34c62de9964c",
-          "sha256": "79359ad7312b4658dabb1db922ed52ce54264534da24ebcb72ff34c62de9964c"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:0b55501276d866858272d075df659ab01bbf3ddbac3cbdb2b5815f2b6ec35ad7",
-          "sha256": "0b55501276d866858272d075df659ab01bbf3ddbac3cbdb2b5815f2b6ec35ad7"
+          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:a8c3b25e0600a38165d78f753d479bef568b67f6483647918fe9e9cf9c378d82",
+          "sha256": "a8c3b25e0600a38165d78f753d479bef568b67f6483647918fe9e9cf9c378d82"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:4f3520de03df679a4bd0f85c7088d9a2c0ad40499042b269096ee8628a1fb888",
-          "sha256": "4f3520de03df679a4bd0f85c7088d9a2c0ad40499042b269096ee8628a1fb888"
+          "url": "https://ghcr.io/v2/homebrew/core/nss/blobs/sha256:984f534a479cab89be9419bab705c08a50b883a44e42963a59c4100d7adb5505",
+          "sha256": "984f534a479cab89be9419bab705c08a50b883a44e42963a59c4100d7adb5505"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "nspr"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -90,8 +98,8 @@
 
   ],
   "conflicts_with": [
-    "resty",
-    "googletest"
+    "arabica",
+    "resty"
   ],
   "caveats": null,
   "installed": [
@@ -105,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

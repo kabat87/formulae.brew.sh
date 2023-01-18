@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://www.ory.sh/hydra/",
   "versions": {
-    "stable": "1.10.7",
+    "stable": "2.0.3",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/ory/hydra.git",
-      "tag": "v1.10.7",
-      "revision": "0a425352a80867ab7457e89414c3c30efd7d645c"
+      "tag": "v2.0.3",
+      "revision": "16831c55c41e64dd73637e8e2ca8f22202fc7d87",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:61571ebfd7601dd05cfe0f3e5e9f5dc470ed88c37212ae13ef9ffd1c443e1275",
+          "sha256": "61571ebfd7601dd05cfe0f3e5e9f5dc470ed88c37212ae13ef9ffd1c443e1275"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:015935d382ef65596a96f0d36527ba6ce51576b4caf8ac3000f77d740c376fc6",
-          "sha256": "015935d382ef65596a96f0d36527ba6ce51576b4caf8ac3000f77d740c376fc6"
+          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:f12b8a5e6f594c6308dfdfbeaa02c22d9e52a805241afb55726512c13d25c80a",
+          "sha256": "f12b8a5e6f594c6308dfdfbeaa02c22d9e52a805241afb55726512c13d25c80a"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:0af8b637ccc81a1f775e2f38c3e1dc1d60a08c64b916ac02d26fe6c1472769af",
-          "sha256": "0af8b637ccc81a1f775e2f38c3e1dc1d60a08c64b916ac02d26fe6c1472769af"
+          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:0e8ebcb43ee967b5a9a5af9588f67cd415cbbeff8c907a936ebfeccfd2ce191d",
+          "sha256": "0e8ebcb43ee967b5a9a5af9588f67cd415cbbeff8c907a936ebfeccfd2ce191d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:9672ab575aac913f6ffdd299835cc6c61288d03c58dd5f3675bb6cc44e80e55b",
+          "sha256": "9672ab575aac913f6ffdd299835cc6c61288d03c58dd5f3675bb6cc44e80e55b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:129ed0044c86ccece0985165ec1158cdb5b7fcdfd84e6e25a9b3c12132c042d4",
-          "sha256": "129ed0044c86ccece0985165ec1158cdb5b7fcdfd84e6e25a9b3c12132c042d4"
+          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:eb368d75f979b0a59c8149ab07b2ddaace682b6b43e59e9183a8861776e2e649",
+          "sha256": "eb368d75f979b0a59c8149ab07b2ddaace682b6b43e59e9183a8861776e2e649"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:9e3fc8e30be3ec3ce32373848d02350b73fe33cc12d01b88aada7a4292e3dc25",
-          "sha256": "9e3fc8e30be3ec3ce32373848d02350b73fe33cc12d01b88aada7a4292e3dc25"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:497d6dda3cb26b26da700bc6887b0edb315a93f6583a98a0b84c63dd19e401a8",
-          "sha256": "497d6dda3cb26b26da700bc6887b0edb315a93f6583a98a0b84c63dd19e401a8"
+          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:7d8851259d9c64bc8204f78d87f922c7307a71c570cd606ebda396d1a21bbe4e",
+          "sha256": "7d8851259d9c64bc8204f78d87f922c7307a71c570cd606ebda396d1a21bbe4e"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:0bc854e8748ed1fafca5c9d433a6a53e3fca5a892ad76798aa6f92a1f927836c",
-          "sha256": "0bc854e8748ed1fafca5c9d433a6a53e3fca5a892ad76798aa6f92a1f927836c"
+          "url": "https://ghcr.io/v2/homebrew/core/ory-hydra/blobs/sha256:ebe6a980bd7f7ecd82b8eb12244c2484eeee7713c355cf251f41aa3186101e41",
+          "sha256": "ebe6a980bd7f7ecd82b8eb12244c2484eeee7713c355cf251f41aa3186101e41"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

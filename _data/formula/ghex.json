@@ -10,85 +10,85 @@
 
   ],
   "desc": "GNOME hex editor",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://wiki.gnome.org/Apps/Ghex",
   "versions": {
-    "stable": "3.18.4",
+    "stable": "43.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.gnome.org/sources/ghex/3.18/ghex-3.18.4.tar.xz",
+      "url": "https://download.gnome.org/sources/ghex/43/ghex-43.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "866c0622c66fdb5ad2a475e9cfcccb219a1c6431f009acb2291d43f2140b147e"
     }
   },
-  "revision": 3,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:74e151da0528935da9049a5dd39123190d781a3c063bc98d9415618062bad480",
+          "sha256": "74e151da0528935da9049a5dd39123190d781a3c063bc98d9415618062bad480"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:292f84d1b19188dcb9b6ad7e8c812e1b4bb0189fbf377009118905daa4db7017",
-          "sha256": "292f84d1b19188dcb9b6ad7e8c812e1b4bb0189fbf377009118905daa4db7017"
+          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:402113e3b5f93b1792663309f438dc9d27b9509e5ef3242514a75a43462560ef",
+          "sha256": "402113e3b5f93b1792663309f438dc9d27b9509e5ef3242514a75a43462560ef"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:0b3953f55c7d99378104344d01d3f3207cf4e0f8364906c90561ca43484e9d34",
-          "sha256": "0b3953f55c7d99378104344d01d3f3207cf4e0f8364906c90561ca43484e9d34"
+          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:dd4c724e0c28832d8e15720d3aa128e570a1492e0022c4d1b13d41f81c614f2a",
+          "sha256": "dd4c724e0c28832d8e15720d3aa128e570a1492e0022c4d1b13d41f81c614f2a"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:c0438c0eb753283effd90008a2e4d980f0102dd098fd26c32ee2bc6c422695b3",
+          "sha256": "c0438c0eb753283effd90008a2e4d980f0102dd098fd26c32ee2bc6c422695b3"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:617fc014643a58da71c63bc935d01589c3f0df7b257c840a32250a9303556917",
-          "sha256": "617fc014643a58da71c63bc935d01589c3f0df7b257c840a32250a9303556917"
+          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:2c1c3e16266e772f2cdb4bf59247c7ff921f3394ab031528d719078897f3b997",
+          "sha256": "2c1c3e16266e772f2cdb4bf59247c7ff921f3394ab031528d719078897f3b997"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:3c7a8c7f133ff63b1398074340ed06140645d258b94e971d897f912b8631f609",
-          "sha256": "3c7a8c7f133ff63b1398074340ed06140645d258b94e971d897f912b8631f609"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:b152b5f03f5bc0d7a50a834fef582ea7fb477dd7560afb4a0b1f4df88e229970",
-          "sha256": "b152b5f03f5bc0d7a50a834fef582ea7fb477dd7560afb4a0b1f4df88e229970"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:c2e68caac31470d6dbc66050b2dc42333b3dfc6956ee7453fba9032b5cf894a4",
-          "sha256": "c2e68caac31470d6dbc66050b2dc42333b3dfc6956ee7453fba9032b5cf894a4"
-        },
-        "high_sierra": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:4de4a0a7ee3f81c7f7b36d7368380b2ff2a063c5d444302cd5979ee33727fb1c",
-          "sha256": "4de4a0a7ee3f81c7f7b36d7368380b2ff2a063c5d444302cd5979ee33727fb1c"
+          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:96265a286a5ee0db13a704dc2bf09417a694797a1b3362b90aa4a24def42e1b3",
+          "sha256": "96265a286a5ee0db13a704dc2bf09417a694797a1b3362b90aa4a24def42e1b3"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:162e20b386fe920b63142876b0e0100a471d69b9737c516a9c30ed04b27d5801",
-          "sha256": "162e20b386fe920b63142876b0e0100a471d69b9737c516a9c30ed04b27d5801"
+          "url": "https://ghcr.io/v2/homebrew/core/ghex/blobs/sha256:062720289937674dadc9f42fcc739292e89e54b0189820f2a8897e969672971c",
+          "sha256": "062720289937674dadc9f42fcc739292e89e54b0189820f2a8897e969672971c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
+    "desktop-file-utils",
     "itstool",
     "meson",
     "ninja",
     "pkg-config"
   ],
   "dependencies": [
-    "gtk+3",
-    "hicolor-icon-theme"
+    "gtk4",
+    "hicolor-icon-theme",
+    "libadwaita"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -117,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

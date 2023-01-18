@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/nickbruun/hayai/archive/v1.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e30e69b107361c132c831a2c8b2040ea51225bb9ed50675b51099435b8cd6594"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hayai/blobs/sha256:dd6a2a14ff0cd666059ddf5aecbbca1679a1fd40248c981566223c308f3dd659",
+          "sha256": "dd6a2a14ff0cd666059ddf5aecbbca1679a1fd40248c981566223c308f3dd659"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hayai/blobs/sha256:9dccf9e4fa4cd6918a8bf6e37008b59044af49aedf965a878d35fe5200d42062",
+          "sha256": "9dccf9e4fa4cd6918a8bf6e37008b59044af49aedf965a878d35fe5200d42062"
+        },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hayai/blobs/sha256:41ba5eb3f260d738729a866e1951d9caf2830eacb918944da50ab0761a4b4f56",
           "sha256": "41ba5eb3f260d738729a866e1951d9caf2830eacb918944da50ab0761a4b4f56"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hayai/blobs/sha256:9db2e26c1c283f4ce4875ba2c5b4639cbdfa800276f059abe407bff4098300df",
+          "sha256": "9db2e26c1c283f4ce4875ba2c5b4639cbdfa800276f059abe407bff4098300df"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hayai/blobs/sha256:fe3175b383887bb7a3c8d98378c76c09fd1b1bfe9ad64e7f119df3d6054faebc",
+          "sha256": "fe3175b383887bb7a3c8d98378c76c09fd1b1bfe9ad64e7f119df3d6054faebc"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +104,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ten0s/syntaxerl/archive/0.15.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "61d2d58e87a7a5eab1f58c5857b1a9c84a091d18cd683385258c3c0d7256eb64"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/syntaxerl/blobs/sha256:b8b0d346a0d701c3146aa9c6beedf9122be2efd84112b78b05d07e45d343cb00",
+          "sha256": "b8b0d346a0d701c3146aa9c6beedf9122be2efd84112b78b05d07e45d343cb00"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/syntaxerl/blobs/sha256:3b345b0ceabb3e230634ef5f9d8fe3bfee1500f94dc94a79b504bbf6173a6758",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/syntaxerl/blobs/sha256:ab2fde926ac270aa052a969bef6b5a41deed043b9ca49255c77f6d4ec94d9041",
           "sha256": "ab2fde926ac270aa052a969bef6b5a41deed043b9ca49255c77f6d4ec94d9041"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/syntaxerl/blobs/sha256:9cc0483c3b108df574160bd98eb42cbfc72567e59fdefa71dc2998b45b2b65b5",
+          "sha256": "9cc0483c3b108df574160bd98eb42cbfc72567e59fdefa71dc2998b45b2b65b5"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,15 +87,17 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "rebar3"
   ],
   "dependencies": [
     "erlang"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,37 +7,38 @@
   ],
   "desc": "Task manager for teams",
   "homepage": "https://www.taskade.com/",
-  "url": "https://apps.taskade.com/updates/Taskade-4.1.2-universal.dmg",
+  "url": "https://apps.taskade.com/updates/Taskade-4.2.7-universal.dmg",
   "appcast": null,
-  "version": "4.1.2",
+  "version": "4.2.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8acb02232a8f9e8513ab931789e621566242e70ca71be301a1cdf43d025f0bf6",
+  "sha256": "f4486ac4914e8ede5a64a8c552369a4140936b9f73bb9d3829debff896e9002e",
   "artifacts": [
-    [
-      "Taskade.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/taskade",
-        "~/Library/Preferences/com.taskade.plist",
-        "~/Library/Saved Application State/com.taskade.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Taskade.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/taskade",
+            "~/Library/Preferences/com.taskade.plist",
+            "~/Library/Saved Application State/com.taskade.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,22 +7,26 @@
   ],
   "desc": "Gmail client",
   "homepage": "https://mailplaneapp.com/",
-  "url": "https://builds.mailplaneapp.com/Mailplane_4_4905.tbz",
+  "url": "https://builds.mailplaneapp.com/Mailplane_4_4923.tbz",
   "appcast": null,
-  "version": "4.3.3,4905",
+  "version": "4.3.5,4923",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2fd9726afc0202493a30ceb16fd770b5b3a3d410ec4def851531dc2bfa8c630f",
+  "sha256": "c26290504e2b557f146b6571baf143a14508d1a3edaf934a409008af3d7ef0eb",
   "artifacts": [
-    [
-      "Mailplane.app"
-    ],
     {
-      "trash": "~/Library/Preferences/com.mailplaneapp.Mailplane.plist",
-      "signal": {
-      }
+      "app": [
+        "Mailplane.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/com.mailplaneapp.Mailplane.plist"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

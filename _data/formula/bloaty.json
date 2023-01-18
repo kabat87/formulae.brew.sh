@@ -21,52 +21,57 @@
     "stable": {
       "url": "https://github.com/google/bloaty/releases/download/v1.1/bloaty-1.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a308d8369d5812aba45982e55e7c3db2ea4780b7496a5455792fb3dcba9abd6f"
     }
   },
-  "revision": 8,
+  "revision": 10,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:485449be09072bf5044e7a8252cf4385d3f1b4365a7907fb5cea4646dbfae409",
+          "sha256": "485449be09072bf5044e7a8252cf4385d3f1b4365a7907fb5cea4646dbfae409"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:ba9f5939fc1a0b26f069c79e03e82c46172f3e7414cdd9a8575180535dd7ac74",
-          "sha256": "ba9f5939fc1a0b26f069c79e03e82c46172f3e7414cdd9a8575180535dd7ac74"
+          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:6f7fe502951cf3d07307e67df4b5813ab9aeacf75582fbf4ae6ed9faf54defb7",
+          "sha256": "6f7fe502951cf3d07307e67df4b5813ab9aeacf75582fbf4ae6ed9faf54defb7"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:0f3047ba12a5f2094fda29e2deb3247dfbdd4812367e27708dee4c6237688e79",
-          "sha256": "0f3047ba12a5f2094fda29e2deb3247dfbdd4812367e27708dee4c6237688e79"
+          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:2f1d101a8d32c7ae3a27cf35d2ba3244e9497e9d87a8d3166905ba5794d0ca9e",
+          "sha256": "2f1d101a8d32c7ae3a27cf35d2ba3244e9497e9d87a8d3166905ba5794d0ca9e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:6af103ce721c668c67e36cfabb7ac5ba83bb5d5579b03bb53cb75e11847ae79f",
+          "sha256": "6af103ce721c668c67e36cfabb7ac5ba83bb5d5579b03bb53cb75e11847ae79f"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:28c336018b3967d6588ff4973e579ab4fb33035a01489ea21ed2db45ef1dad68",
-          "sha256": "28c336018b3967d6588ff4973e579ab4fb33035a01489ea21ed2db45ef1dad68"
+          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:1d3dd26f8b27220c07b0afeff8b33ee47b105362c99378f731295a3207e6e3b7",
+          "sha256": "1d3dd26f8b27220c07b0afeff8b33ee47b105362c99378f731295a3207e6e3b7"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:f1f5844b6791049e0fed204d4e585292fdbb31b30f14399303c1649f0d5589d0",
-          "sha256": "f1f5844b6791049e0fed204d4e585292fdbb31b30f14399303c1649f0d5589d0"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:9ba7cb7e18921902ae6539bb92087d609266913a47a380ccd8ba7e40d8a630d1",
-          "sha256": "9ba7cb7e18921902ae6539bb92087d609266913a47a380ccd8ba7e40d8a630d1"
+          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:d5a19327b5539c53a956e006f3cca6d40227757eec2eac6d32a76f95241342d5",
+          "sha256": "d5a19327b5539c53a956e006f3cca6d40227757eec2eac6d32a76f95241342d5"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:183c718270cf78df476bfd92945beebc6141ad794916c024dec0421c617304e4",
-          "sha256": "183c718270cf78df476bfd92945beebc6141ad794916c024dec0421c617304e4"
+          "url": "https://ghcr.io/v2/homebrew/core/bloaty/blobs/sha256:56b54d53756f1662d6c73b914b42140c96fc6e6478555452701423551805cc8d",
+          "sha256": "56b54d53756f1662d6c73b914b42140c96fc6e6478555452701423551805cc8d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,6 +83,9 @@
     "capstone",
     "protobuf",
     "re2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

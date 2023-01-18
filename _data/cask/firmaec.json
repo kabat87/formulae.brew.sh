@@ -9,27 +9,33 @@
   "homepage": "https://www.firmadigital.gob.ec/",
   "url": "https://www.firmadigital.gob.ec/firmaec/FirmaEC.zip",
   "appcast": null,
-  "version": "2.10.1",
+  "version": "3.0.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "FirmaEC/FirmaEC.app"
-    ],
-    [
-      "FirmaEC/FirmaECTransversal.app"
-    ],
     {
-      "trash": [
-        "~/firmadigital.log",
-        "~/firmadigital.log.lck",
-        "~/firmadigital.properties"
-      ],
-      "signal": {
-      }
+      "app": [
+        "FirmaEC/FirmaEC.app"
+      ]
+    },
+    {
+      "app": [
+        "FirmaEC/FirmaECTransversal.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/firmadigital.log",
+            "~/firmadigital.log.lck",
+            "~/firmadigital.properties"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

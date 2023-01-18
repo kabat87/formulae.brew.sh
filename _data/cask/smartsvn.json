@@ -7,37 +7,43 @@
   ],
   "desc": "Subversion client",
   "homepage": "https://www.smartsvn.com/",
-  "url": "https://www.smartsvn.com/downloads/smartsvn/smartsvn-macosx-14_1_1.dmg",
+  "url": "https://www.smartsvn.com/downloads/smartsvn/smartsvn-x86_64-14_2_2.dmg",
   "appcast": null,
-  "version": "14.1.1",
+  "version": "14.2.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "bd60c98f8e92eff0d8d8c196bc54fef8d9e3dbda2d20861971643095d3817457",
+  "sha256": "43d8ec95ce3e8b4a40a08a0ceff76c9d06f282ab3d211e2e6e37a7bb61ec8a3a",
   "artifacts": [
-    [
-      "SmartSVN.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.syntevo.smartsvn.plist",
-        "~/Library/Preferences/SmartSVN",
-        "~/Library/Saved Application State/com.syntevo.smartsvn.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SmartSVN.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.syntevo.smartsvn.plist",
+            "~/Library/Preferences/SmartSVN",
+            "~/Library/Saved Application State/com.syntevo.smartsvn.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.11"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

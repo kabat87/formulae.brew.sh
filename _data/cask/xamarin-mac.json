@@ -6,22 +6,28 @@
     "Xamarin Mac"
   ],
   "desc": "Gives C# and .NET developers access to Objective-C and Swift API's",
-  "homepage": "https://www.xamarin.com/platform",
-  "url": "https://dl.xamarin.com/XamarinforMac/Mac/xamarin.mac-8.4.0.0.pkg",
+  "homepage": "https://dotnet.microsoft.com/en-us/apps/xamarin",
+  "url": "https://download.visualstudio.microsoft.com/download/pr/c8bc547f-869e-4d64-a271-f8b3a29ee545/4fbfc55453fe36fe5bf4128d6d495911/xamarin.mac-9.0.0.27.pkg",
   "appcast": null,
-  "version": "8.4.0.0",
+  "version": "9.0.0.27,c8bc547f-869e-4d64-a271-f8b3a29ee545,4fbfc55453fe36fe5bf4128d6d495911",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "df6a44dd4502ee03bb4855f54af00788c02e6c19a7ce7eb3a415f3297fdace62",
+  "sha256": "996542292606cadb8b5b47f8fe5f78a31fde4e43184af29133d22cafda93549c",
   "artifacts": [
     {
-      "pkgutil": "com.xamarin.mac-.*",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.xamarin.mac-.*"
+        }
+      ]
     },
-    "xamarin.mac-8.4.0.0.pkg (Pkg)"
+    {
+      "pkg": [
+        "xamarin.mac-9.0.0.27.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -31,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

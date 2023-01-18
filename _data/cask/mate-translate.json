@@ -7,36 +7,42 @@
   ],
   "desc": "Select text in any app and translate it",
   "homepage": "https://twopeoplesoftware.com/mate",
-  "url": "https://gikken.co/mate/MateTranslate.zip",
+  "url": "https://gikken.co/mate/MateTranslate.dmg",
   "appcast": null,
-  "version": "8.1.2,3038",
+  "version": "8.1.8,3055",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Mate Translate.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.twopeoplesoftware.InstantTranslate-nomas.Mate-Translate-Safari",
-        "~/Library/Containers/com.twopeoplesoftware.InstantTranslate-nomas.Mate-Translate-Safari"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Mate Translate.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.twopeoplesoftware.InstantTranslate-nomas.Mate-Translate-Safari",
+            "~/Library/Containers/com.twopeoplesoftware.InstantTranslate-nomas.Mate-Translate-Safari"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -5,9 +5,9 @@
   "name": [
     "Lantern"
   ],
-  "desc": null,
-  "homepage": "https://getlantern.org/",
-  "url": "https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer.dmg",
+  "desc": "Open Internet For All",
+  "homepage": "https://lantern.io/",
+  "url": "https://s3.amazonaws.com/lantern/lantern-installer.dmg",
   "appcast": null,
   "version": "latest",
   "versions": {
@@ -17,21 +17,27 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": "com.getlantern.lantern",
-      "launchctl": "org.getlantern",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.getlantern.lantern",
+          "launchctl": "org.getlantern"
+        }
+      ]
     },
-    [
-      "Lantern.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Lantern",
-        "~/Library/Logs/Lantern"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Lantern.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Lantern",
+            "~/Library/Logs/Lantern"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

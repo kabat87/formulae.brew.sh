@@ -7,40 +7,50 @@
   ],
   "desc": "Reimplementation of Sonic 3 & Knuckles (requires original game)",
   "homepage": "https://sonic3air.org/",
-  "url": "https://projects.sappharad.com/s3air_mac/sonic3air_mac_210928.dmg",
+  "url": "https://projects.sappharad.com/s3air_mac/sonic3air_mac_220910.dmg",
   "appcast": null,
-  "version": "21.09.28.0",
+  "version": "22.09.10.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "689c7de10c6a6f4c795902e470e63f3e49017970387d34ca932a66b33e1ee79c",
+  "sha256": "c76b7e305ef0e73e588a40c5970dd3168e527aaf87d1fb636be7fb0c61070c0f",
   "artifacts": [
-    [
-      "Sonic 3 AIR.app"
-    ],
-    [
-      "Manual.pdf",
-      {
-        "target": "$HOME/Library/Application Support/sonic3air/Manual.pdf"
-      }
-    ],
-    [
-      "doc",
-      {
-        "target": "$HOME/Library/Application Support/sonic3air/doc"
-      }
-    ],
-    [
-      "bonus",
-      {
-        "target": "$HOME/Library/Application Support/sonic3air/bonus"
-      }
-    ],
     {
-      "trash": "~/Library/Application Support/sonic3air",
-      "signal": {
-      }
+      "app": [
+        "Sonic 3 AIR.app"
+      ]
+    },
+    {
+      "artifact": [
+        "Manual.pdf",
+        {
+          "target": "$HOME/Library/Application Support/sonic3air/Manual.pdf"
+        }
+      ]
+    },
+    {
+      "artifact": [
+        "doc",
+        {
+          "target": "$HOME/Library/Application Support/sonic3air/doc"
+        }
+      ]
+    },
+    {
+      "artifact": [
+        "bonus",
+        {
+          "target": "$HOME/Library/Application Support/sonic3air/bonus"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/sonic3air"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -48,5 +58,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

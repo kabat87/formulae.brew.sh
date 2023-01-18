@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/quvi/0.4/quvi/quvi-0.4.2.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1f4e40c14373cb3d358ae1b14a427625774fd09a366b6da0c97d94cb1ff733c3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/quvi/blobs/sha256:abcf9320832f1108b62a02bb81a66a2bc1c3289aac582b541226ce514a19be3a",
+          "sha256": "abcf9320832f1108b62a02bb81a66a2bc1c3289aac582b541226ce514a19be3a"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/quvi/blobs/sha256:5507b545d2705556712e4548c8cb6a62777163a7b496fc69cbc6974845c5fe28",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/quvi/blobs/sha256:195d1401be4ab2b454d97e611163251bb4ed1986cab9c39b089268969fe67ff1",
           "sha256": "195d1401be4ab2b454d97e611163251bb4ed1986cab9c39b089268969fe67ff1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/quvi/blobs/sha256:80f6ec0049b5093fd6ca04550dd724da426e44fb156dc2217a250ef47f8b37f8",
+          "sha256": "80f6ec0049b5093fd6ca04550dd724da426e44fb156dc2217a250ef47f8b37f8"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/quvi/blobs/sha256:c5a8c9b53432e15b4ec31a9c1374bde130d56f73f8ee43e392917a52f34ab945",
           "sha256": "c5a8c9b53432e15b4ec31a9c1374bde130d56f73f8ee43e392917a52f34ab945"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/quvi/blobs/sha256:944922426376a9962bb90f032e02ef2404d3155ed3bba81a0b4d349ba1f1aec8",
-          "sha256": "944922426376a9962bb90f032e02ef2404d3155ed3bba81a0b4d349ba1f1aec8"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/quvi/blobs/sha256:bde81ca6c65e967a5f18c0552cbe4823bc393e5e943c24d809f55dbefc6ea59d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libquvi"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,10 +131,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-07-04",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

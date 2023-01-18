@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/wren-lang/wren-cli/archive/0.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fafdc5d6615114d40de3956cd3a255e8737dadf8bd758b48bac00db61563cb4c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/wren-cli/blobs/sha256:8b957b7b11199a05f30c2b5fcaea97cdb2cc2ac212b3e6633e51e2f4b5820a53",
+          "sha256": "8b957b7b11199a05f30c2b5fcaea97cdb2cc2ac212b3e6633e51e2f4b5820a53"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/wren-cli/blobs/sha256:72841b4f7f8562ee72899224e0c1d04c72047be6f86ae00df7aed6c3370320e4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/wren-cli/blobs/sha256:b2f527af8074dda364da8571385473dcaee9b3034d30cd1407ef6a4057e0e4a0",
           "sha256": "b2f527af8074dda364da8571385473dcaee9b3034d30cd1407ef6a4057e0e4a0"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/wren-cli/blobs/sha256:2ed8a9779e0eb400fb4ae0c6aa4db564e0ba996b449b267ea054d8220438a756",
+          "sha256": "2ed8a9779e0eb400fb4ae0c6aa4db564e0ba996b449b267ea054d8220438a756"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

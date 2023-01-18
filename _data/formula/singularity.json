@@ -11,48 +11,50 @@
   ],
   "desc": "Application container and unprivileged sandbox platform for Linux",
   "license": "BSD-3-Clause",
-  "homepage": "https://singularity.hpcng.org",
+  "homepage": "https://apptainer.org/",
   "versions": {
-    "stable": "3.8.5",
+    "stable": "3.8.7",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/hpcng/singularity/releases/download/v3.8.5/singularity-3.8.5.tar.gz",
+      "url": "https://github.com/apptainer/singularity/releases/download/v3.8.7/singularity-3.8.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3329f2e583f84a8343cb2c0380a1d6cbceafae7d1e633b5cbcadf7143eac859b"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/singularity/blobs/sha256:39fa3d8b8948d86a543b4a71d2272f099141cf2104081ad1d76b71f44eca64ae",
-          "sha256": "39fa3d8b8948d86a543b4a71d2272f099141cf2104081ad1d76b71f44eca64ae"
+          "url": "https://ghcr.io/v2/homebrew/core/singularity/blobs/sha256:d069275ad84aab8b61a14a312a6db06a4000ca2b8f1664a261461b4b560b0d7a",
+          "sha256": "d069275ad84aab8b61a14a312a6db06a4000ca2b8f1664a261461b4b560b0d7a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "go",
-    "openssl@1.1",
     "pkg-config"
   ],
   "dependencies": [
     "libseccomp",
     "squashfs"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -89,5 +91,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

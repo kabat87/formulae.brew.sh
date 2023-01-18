@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/garmintools/garmintools-0.10.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ffd50b7f963fa9b8ded3223c4786b07906c887ed900de64581a24ff201444cee"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:6c16db8a8f76d0b5dfdae1ae49cf31ebe12ea2bf6ee35b791849fa66fb2fc6ee",
+          "sha256": "6c16db8a8f76d0b5dfdae1ae49cf31ebe12ea2bf6ee35b791849fa66fb2fc6ee"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:9b16bdc132c970434babd5033664d00b697deeb0fd3796c8986b1a95b7941582",
+          "sha256": "9b16bdc132c970434babd5033664d00b697deeb0fd3796c8986b1a95b7941582"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:97d99c30f0c47262b295405d79c9a0dc7bbd5b38bc67f6d7fb3e96789e0cad97",
           "sha256": "97d99c30f0c47262b295405d79c9a0dc7bbd5b38bc67f6d7fb3e96789e0cad97"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:1fba9cf9c8ce7383afbde00c72aa5082b0a2a87fdae51ced08dee7dc00e9575a",
+          "sha256": "1fba9cf9c8ce7383afbde00c72aa5082b0a2a87fdae51ced08dee7dc00e9575a"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:b49cda53d64a80e61cd1de700036714c6470d5b77fad8f6320d164cb1e50db15",
+          "sha256": "b49cda53d64a80e61cd1de700036714c6470d5b77fad8f6320d164cb1e50db15"
         },
         "big_sur": {
           "cellar": ":any",
@@ -66,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:dd86a8e306d3c4ebb9b94ddd4aaf60fdb79aa06fc7eb56ca95942248db33924e",
           "sha256": "dd86a8e306d3c4ebb9b94ddd4aaf60fdb79aa06fc7eb56ca95942248db33924e"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:62d2b45ae3d7ef7de9a8deaa658e12021f16b14008f1a91e8c747f84b0e803d3",
-          "sha256": "62d2b45ae3d7ef7de9a8deaa658e12021f16b14008f1a91e8c747f84b0e803d3"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/garmintools/blobs/sha256:230b31dd83d9514c35abdb2477e4f1e4941eb1c94bf394814acd46676ced1318",
@@ -81,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +105,9 @@
   ],
   "dependencies": [
     "libusb-compat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

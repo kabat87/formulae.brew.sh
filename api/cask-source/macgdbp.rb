@@ -1,6 +1,6 @@
 cask "macgdbp" do
-  version "2.1,204.5"
-  sha256 "0dcd472d65ca20cd3e5680865d63556c4cf66738f3aef29a4538503c5ee370a0"
+  version "2.1.2,212.0"
+  sha256 "2951d17fadbdb50df79f50a386265d0cdcd8fb5526348712a86e2a801d4064cc"
 
   url "https://www.bluestatic.org/downloads/macgdbp/macgdbp-#{version.csv.first}.zip"
   name "MacGDBp"

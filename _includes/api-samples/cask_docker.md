@@ -10,105 +10,140 @@
   ],
   "desc": "App to build and share containerized applications and microservices",
   "homepage": "https://www.docker.com/products/docker-desktop",
-  "url": "https://desktop.docker.com/mac/main/amd64/73305/Docker.dmg",
+  "url": "https://desktop.docker.com/mac/main/amd64/95567/Docker.dmg",
   "appcast": null,
-  "version": "4.4.2,73305",
+  "version": "4.16.1,95567",
   "versions": {},
   "installed": null,
   "outdated": false,
-  "sha256": "101c573dea42dd8eb07c8af6a6c01fa5508fce8371fa1279ab8d1a71eb6305d7",
+  "sha256": "b6d8720e2ceb64a6102c5efba53e2adf441c60508457aeb8cc1fd7c30cd7b28f",
   "artifacts": [
     {
-      "delete": [
-        "/Library/PrivilegedHelperTools/com.docker.vmnetd",
-        "$(brew --prefix)/bin/docker-compose",
-        "$(brew --prefix)/bin/docker-credential-desktop",
-        "$(brew --prefix)/bin/docker-credential-ecr-login",
-        "$(brew --prefix)/bin/docker-credential-osxkeychain",
-        "$(brew --prefix)/bin/docker",
-        "$(brew --prefix)/bin/hyperkit",
-        "$(brew --prefix)/bin/kubectl.docker",
-        "$(brew --prefix)/bin/kubectl",
-        "$(brew --prefix)/bin/notary",
-        "$(brew --prefix)/bin/vpnkit"
-      ],
-      "launchctl": [
-        "com.docker.helper",
-        "com.docker.vmnetd"
-      ],
-      "quit": "com.docker.docker",
-      "signal": {}
+      "uninstall": [
+        {
+          "delete": [
+            "/Library/PrivilegedHelperTools/com.docker.vmnetd",
+            "$(brew --prefix)/bin/com.docker.cli",
+            "$(brew --prefix)/bin/docker-compose-v1",
+            "$(brew --prefix)/bin/docker-compose",
+            "$(brew --prefix)/bin/docker-credential-desktop",
+            "$(brew --prefix)/bin/docker-credential-ecr-login",
+            "$(brew --prefix)/bin/docker-credential-osxkeychain",
+            "$(brew --prefix)/bin/docker",
+            "$(brew --prefix)/bin/hub-tool",
+            "$(brew --prefix)/bin/hyperkit",
+            "$(brew --prefix)/bin/kubectl.docker",
+            "$(brew --prefix)/bin/kubectl",
+            "$(brew --prefix)/bin/notary",
+            "$(brew --prefix)/bin/vpnkit",
+            "$(brew --prefix)/share/zsh/site-functions/_docker",
+            "$(brew --prefix)/share/zsh/site-functions/_docker_compose",
+            "$(brew --prefix)/share/fish/vendor_completions.d/docker.fish",
+            "$(brew --prefix)/share/fish/vendor_completions.d/docker-compose.fish",
+            "$(brew --prefix)/etc/bash_completion.d/docker",
+            "$(brew --prefix)/etc/bash_completion.d/docker-compose"
+          ],
+          "launchctl": [
+            "com.docker.helper",
+            "com.docker.vmnetd"
+          ],
+          "quit": "com.docker.docker"
+        }
+      ]
     },
-    [
-      "Docker.app"
-    ],
-    [
-      "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion",
-      {
-        "target": "$(brew --prefix)/etc/bash_completion.d/docker-compose"
-      }
-    ],
-    [
-      "/Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion",
-      {
-        "target": "$(brew --prefix)/share/zsh/site-functions/_docker"
-      }
-    ],
-    [
-      "/Applications/Docker.app/Contents/Resources/etc/docker.fish-completion",
-      {
-        "target": "$(brew --prefix)/share/fish/vendor_completions.d/docker.fish"
-      }
-    ],
-    [
-      "/Applications/Docker.app/Contents/Resources/etc/docker-compose.fish-completion",
-      {
-        "target": "$(brew --prefix)/share/fish/vendor_completions.d/docker-compose.fish"
-      }
-    ],
-    [
-      "/Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion",
-      {
-        "target": "$(brew --prefix)/share/zsh/site-functions/_docker_compose"
-      }
-    ],
-    [
-      "/Applications/Docker.app/Contents/Resources/etc/docker.bash-completion",
-      {
-        "target": "$(brew --prefix)/etc/bash_completion.d/docker"
-      }
-    ],
     {
-      "trash": [
-        "$(brew --prefix)/bin/docker-compose.backup",
-        "$(brew --prefix)/bin/docker.backup",
-        "~/.docker",
-        "~/Library/Application Scripts/com.docker.helper",
-        "~/Library/Application Support/com.bugsnag.Bugsnag/com.docker.docker",
-        "~/Library/Application Support/Docker Desktop",
-        "~/Library/Caches/com.docker.docker",
-        "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.docker.docker",
-        "~/Library/Caches/KSCrashReports/Docker",
-        "~/Library/Containers/com.docker.docker",
-        "~/Library/Containers/com.docker.helper",
-        "~/Library/Group Containers/group.com.docker",
-        "~/Library/HTTPStorages/com.docker.docker.binarycookies",
-        "~/Library/Logs/Docker Desktop",
-        "~/Library/Preferences/com.docker.docker.plist",
-        "~/Library/Preferences/com.electron.docker-frontend.plist",
-        "~/Library/Preferences/com.electron.dockerdesktop.plist",
-        "~/Library/Saved Application State/com.electron.docker-frontend.savedState",
-        "~/Library/Saved Application State/com.electron.dockerdesktop.savedState"
-      ],
-      "rmdir": [
-        "~/Library/Caches/com.plausiblelabs.crashreporter.data",
-        "~/Library/Caches/KSCrashReports"
-      ],
-      "signal": {}
+      "app": [
+        "Docker.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion",
+        {
+          "target": "$(brew --prefix)/etc/bash_completion.d/docker-compose"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion",
+        {
+          "target": "$(brew --prefix)/share/zsh/site-functions/_docker"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Docker.app/Contents/Resources/etc/docker.fish-completion",
+        {
+          "target": "$(brew --prefix)/share/fish/vendor_completions.d/docker.fish"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Docker.app/Contents/Resources/etc/docker-compose.fish-completion",
+        {
+          "target": "$(brew --prefix)/share/fish/vendor_completions.d/docker-compose.fish"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion",
+        {
+          "target": "$(brew --prefix)/share/zsh/site-functions/_docker_compose"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Docker.app/Contents/Resources/etc/docker.bash-completion",
+        {
+          "target": "$(brew --prefix)/etc/bash_completion.d/docker"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "$(brew --prefix)/bin/docker-compose.backup",
+            "$(brew --prefix)/bin/docker.backup",
+            "~/.docker",
+            "~/Library/Application Scripts/com.docker.helper",
+            "~/Library/Application Support/com.bugsnag.Bugsnag/com.docker.docker",
+            "~/Library/Application Support/Docker Desktop",
+            "~/Library/Caches/com.docker.docker",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.docker.docker",
+            "~/Library/Caches/KSCrashReports/Docker",
+            "~/Library/Containers/com.docker.docker",
+            "~/Library/Containers/com.docker.helper",
+            "~/Library/Group Containers/group.com.docker",
+            "~/Library/HTTPStorages/com.docker.docker.binarycookies",
+            "~/Library/Logs/Docker Desktop",
+            "~/Library/Preferences/com.docker.docker.plist",
+            "~/Library/Preferences/com.electron.docker-frontend.plist",
+            "~/Library/Preferences/com.electron.dockerdesktop.plist",
+            "~/Library/Saved Application State/com.electron.docker-frontend.savedState",
+            "~/Library/Saved Application State/com.electron.dockerdesktop.savedState"
+          ],
+          "rmdir": [
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data",
+            "~/Library/Caches/KSCrashReports"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
-  "depends_on": {},
+  "depends_on": {
+    "macos": {
+      ">=": [
+        "10.15"
+      ]
+    }
+  },
   "conflicts_with": {
     "formula": [
       "docker",
@@ -122,19 +157,33 @@
   },
   "container": null,
   "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://desktop.docker.com/mac/main/arm64/95567/Docker.dmg",
+      "sha256": "327725664ac86d34ee3b311b09eace0075492f7ff3e0e384015171769f75bff4"
+    },
+    "arm64_monterey": {
+      "url": "https://desktop.docker.com/mac/main/arm64/95567/Docker.dmg",
+      "sha256": "327725664ac86d34ee3b311b09eace0075492f7ff3e0e384015171769f75bff4"
+    },
+    "arm64_big_sur": {
+      "url": "https://desktop.docker.com/mac/main/arm64/95567/Docker.dmg",
+      "sha256": "327725664ac86d34ee3b311b09eace0075492f7ff3e0e384015171769f75bff4"
+    }
+  },
   "analytics": {
     "install": {
       "30d": {
-        "docker": 19492
+        "docker": 19939
       },
       "90d": {
-        "docker": 63569
+        "docker": 71925
       },
       "365d": {
-        "docker": 231315
+        "docker": 309720
       }
     }
   },
-  "generated_date": "2022-01-17"
+  "generated_date": "2023-01-18"
 }
 ```

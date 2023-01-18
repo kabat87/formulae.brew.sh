@@ -7,32 +7,36 @@
   ],
   "desc": "File transfer application",
   "homepage": "https://panic.com/transmit/",
-  "url": "https://www.panic.com/transmit/d/Transmit%205.8.2.zip",
+  "url": "https://www.panic.com/transmit/d/Transmit%205.9.1.zip",
   "appcast": null,
-  "version": "5.8.2",
+  "version": "5.9.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d1ccc52f08cb2980548675a456d301d74613d7f48461945b5f766676361ad7a0",
+  "sha256": "87971d49f5d8515d6546a5f90c555461359befcd97e57fafe11a82550102728d",
   "artifacts": [
-    [
-      "Transmit.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Transmit",
-        "~/Library/Application Support/com.panic.Transmit",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.panic.transmit.sfl2",
-        "~/Library/Caches/com.panic.Transmit",
-        "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.panic.Transmit",
-        "~/Library/Caches/Transmit",
-        "~/Library/Preferences/com.panic.Transmit.plist",
-        "~/Library/Saved Application State/com.panic.Transmit.savedState",
-        "~/Library/WebKit/com.panic.Transmit"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Transmit.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.panic.transmit.sfl2",
+            "~/Library/Application Support/com.panic.Transmit",
+            "~/Library/Application Support/Transmit",
+            "~/Library/Caches/com.panic.Transmit",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.panic.Transmit",
+            "~/Library/Caches/Transmit",
+            "~/Library/Preferences/com.panic.Transmit.plist",
+            "~/Library/Saved Application State/com.panic.Transmit.savedState",
+            "~/Library/WebKit/com.panic.Transmit"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +49,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

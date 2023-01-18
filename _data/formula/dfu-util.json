@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/dfu-util/dfu-util-0.11.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b4b53ba21a82ef7e3d4c47df2952adf5fa494f499b6b0b57c58c5d04ae8ff19e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dfu-util/blobs/sha256:03e81fc129ada62759e3cd8d892131ca326851ab6631730e9d101405c0e2594d",
+          "sha256": "03e81fc129ada62759e3cd8d892131ca326851ab6631730e9d101405c0e2594d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dfu-util/blobs/sha256:7d09c40c797df76fdea2862b205111fa9c14d44b09c27a0b00e083fcc827bee9",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dfu-util/blobs/sha256:c7dd53f422003b99c57f565aad8371e8cef1aa3de825f36cd927cd61ed64249d",
           "sha256": "c7dd53f422003b99c57f565aad8371e8cef1aa3de825f36cd927cd61ed64249d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dfu-util/blobs/sha256:84abd91cd4595f7d3445b7d3ba754528fdb671c7cfcdf82977b96e701c0cf60e",
+          "sha256": "84abd91cd4595f7d3445b7d3ba754528fdb671c7cfcdf82977b96e701c0cf60e"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "libusb"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

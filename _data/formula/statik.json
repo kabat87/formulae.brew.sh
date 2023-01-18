@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://files.pythonhosted.org/packages/c1/f7/c1dc03a0ed218cb5d3e72f0983dcc18b441cc9d3275b527a5cb0a479dc2a/statik-0.23.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9ce2c5a76284aa7d3eba2dc5b167c39d0249f96da08213a14c89f0b7edcb7746"
     }
   },
   "revision": 4,
@@ -66,7 +67,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +76,9 @@
   "dependencies": [
     "libpq",
     "python@3.9"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -99,10 +102,22 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-08-09",
+  "deprecation_reason": "does_not_build",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config"
+      ],
+      "dependencies": [
+        "libpq",
+        "python@3.9",
+        "libffi"
+      ]
+    }
+  }
 }

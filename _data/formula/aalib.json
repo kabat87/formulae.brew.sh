@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/aa-project/aa-lib/1.4rc5/aalib-1.4rc5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fbddda9230cf6ee2a4f5706b4b11e2190ae45f5eda1f0409dc4f99b35e0a70ee"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aalib/blobs/sha256:3bbe40492b5ff2d6bde6effd36a8fa0b179786032c1da624d0f6bd15e71cd044",
+          "sha256": "3bbe40492b5ff2d6bde6effd36a8fa0b179786032c1da624d0f6bd15e71cd044"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aalib/blobs/sha256:292e704fb6cca01e6ab77baac8960df5c9b45f2fb209a0f670a7de16242c3ee0",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aalib/blobs/sha256:031eac9658cb6878fea6b53e232e0b3f294b81953dd1803bd808c26c5b1a934a",
           "sha256": "031eac9658cb6878fea6b53e232e0b3f294b81953dd1803bd808c26c5b1a934a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aalib/blobs/sha256:a71c6ea0888e11ca4512de9bab4142c160e360e41ef5eb761740af5f77a459cb",
+          "sha256": "a71c6ea0888e11ca4512de9bab4142c160e360e41ef5eb761740af5f77a459cb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

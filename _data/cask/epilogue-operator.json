@@ -7,25 +7,29 @@
   ],
   "desc": "Play and manage Game Boy cartridges on your computer",
   "homepage": "https://www.epilogue.co/",
-  "url": "https://www.epilogue.co/downloads/operator/osx",
+  "url": "https://epilogue.nyc3.cdn.digitaloceanspaces.com/releases/software/Operator/release/mac/Operator.dmg",
   "appcast": null,
-  "version": "0.7.1",
+  "version": "0.9.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Operator.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Epilogue/Operator",
-        "~/Library/Saved Application State/com.epilogue.operator.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Operator.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Epilogue/Operator",
+            "~/Library/Saved Application State/com.epilogue.operator.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

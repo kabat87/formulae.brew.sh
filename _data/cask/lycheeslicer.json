@@ -7,28 +7,32 @@
   ],
   "desc": "Slicer for Resin 3D printers",
   "homepage": "https://mango3d.io/lychee-slicer-3-for-sla-3d-printers/",
-  "url": "https://mango-lychee.nyc3.cdn.digitaloceanspaces.com/LycheeSlicer-3.6.2.dmg",
+  "url": "https://mango-lychee.nyc3.cdn.digitaloceanspaces.com/LycheeSlicer-5.0.1.dmg",
   "appcast": null,
-  "version": "3.6.2",
+  "version": "5.0.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ab8882ab0cb96f729dff4e66fa8a769d0a26859ce0f5212c2905f407950ad859",
+  "sha256": "03a7578f7665fd6934ad8de60405c5a49a70f3f2955a8ef47f682bfc563c7e04",
   "artifacts": [
-    [
-      "LycheeSlicer.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/LycheeSlicer",
-        "~/Library/Application Support/LycheeSlicerconfig.json",
-        "~/Library/Logs/LycheeSlicer",
-        "~/Library/Preferences/com.mango3d.lychee.plist",
-        "~/Library/Saved Application State/com.mango3d.lychee.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "LycheeSlicer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/LycheeSlicer",
+            "~/Library/Application Support/LycheeSlicerconfig.json",
+            "~/Library/Logs/LycheeSlicer",
+            "~/Library/Preferences/com.mango3d.lychee.plist",
+            "~/Library/Saved Application State/com.mango3d.lychee.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

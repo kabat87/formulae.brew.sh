@@ -7,28 +7,71 @@
   ],
   "desc": "Multi-platform graphical interface for official Nmap Security Scanner",
   "homepage": "https://nmap.org/zenmap/",
-  "url": "https://nmap.org/dist/nmap-7.92.dmg",
+  "url": "https://nmap.org/dist/nmap-7.93.dmg",
   "appcast": null,
-  "version": "7.92",
+  "version": "7.93",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c561fb11d9c84922d9ebcf095f31ee2e314f3e6800ad66c93381ada43b6ca30c",
+  "sha256": "f6011d06adc96540632df6fb7c9f8a9e9b3c83edad2193054b31a203a410270c",
   "artifacts": [
     {
-      "pkgutil": "org.insecure.nmap.zenmap",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "org.insecure.nmap.zenmap",
+          "delete": "/Applications/Zenmap.app"
+        }
+      ]
     },
-    "nmap-7.92.mpkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Saved Application State/org.insecure.Zenmap.savedState",
-        "~/.zenmap"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "nmap-7.93.mpkg",
+        {
+          "choices": [
+            {
+              "choiceIdentifier": "org.insecure.nmap",
+              "choiceAttribute": "selected",
+              "attributeSetting": "0"
+            },
+            {
+              "choiceIdentifier": "org.insecure.nmap.ncat",
+              "choiceAttribute": "selected",
+              "attributeSetting": "0"
+            },
+            {
+              "choiceIdentifier": "org.insecure.nmap.ndiff",
+              "choiceAttribute": "selected",
+              "attributeSetting": "0"
+            },
+            {
+              "choiceIdentifier": "org.insecure.nmap.nping",
+              "choiceAttribute": "selected",
+              "attributeSetting": "0"
+            },
+            {
+              "choiceIdentifier": "org.insecure.nmap.nmap-update",
+              "choiceAttribute": "selected",
+              "attributeSetting": "0"
+            },
+            {
+              "choiceIdentifier": "org.insecure.nmap.zenmap",
+              "choiceAttribute": "selected",
+              "attributeSetting": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Saved Application State/org.insecure.Zenmap.savedState",
+            "~/.zenmap"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +82,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

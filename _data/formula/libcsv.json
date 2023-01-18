@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/libcsv/libcsv/libcsv-3.0.3/libcsv-3.0.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d9c0431cb803ceb9896ce74f683e6e5a0954e96ae1d9e4028d6e0f967bebd7e4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcsv/blobs/sha256:98c6f484207a9291a7d5696a9eff9ecdb6c6579834b86f8df8731ae61d8f3f4e",
+          "sha256": "98c6f484207a9291a7d5696a9eff9ecdb6c6579834b86f8df8731ae61d8f3f4e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcsv/blobs/sha256:37da5ecb6f4175cf6e044d2cd5a5797ffd20ddac9631d5b2bb54b2db53f3dab1",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcsv/blobs/sha256:5fab325e7caac0db2cb892eebd55b5ef1094b92eaa3413bdd9ce85f47d82ff17",
           "sha256": "5fab325e7caac0db2cb892eebd55b5ef1094b92eaa3413bdd9ce85f47d82ff17"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcsv/blobs/sha256:975bc0968b6d54eb26b6d21983086472cd473159163e525080e6ece157a3cc58",
+          "sha256": "975bc0968b6d54eb26b6d21983086472cd473159163e525080e6ece157a3cc58"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libcsv/blobs/sha256:3f69bb369fafd5c207f1c8ea500dc1e725e8e7dfe005215ff14b61fc25ac28e6",
           "sha256": "3f69bb369fafd5c207f1c8ea500dc1e725e8e7dfe005215ff14b61fc25ac28e6"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libcsv/blobs/sha256:ace67ec808ae6963525164b700ace39c8552f0c68364415401fea532f3ea2fe2",
-          "sha256": "ace67ec808ae6963525164b700ace39c8552f0c68364415401fea532f3ea2fe2"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libcsv/blobs/sha256:a66bd666958e3125f08377688cf86c94cd38e077bedea9a70cb17c721794211f",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

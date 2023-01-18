@@ -7,41 +7,47 @@
   ],
   "desc": "Translation editor",
   "homepage": "https://poedit.net/",
-  "url": "https://download.poedit.net/Poedit-3.0.zip",
+  "url": "https://download.poedit.net/Poedit-3.2.2.zip",
   "appcast": null,
-  "version": "3.0,6376",
+  "version": "3.2.2,6555",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "183371b3f3d557944ad9568d86d0e1c6029dc4ca4f7e9f054554be4bd827bedb",
+  "sha256": "059a8726434b19a3661db324ef3004fd9943024687f701fb354573220cd9c260",
   "artifacts": [
-    [
-      "Poedit.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.poedit.poedit.sfl2",
-        "~/Library/Application Support/Poedit",
-        "~/Library/Caches/net.poedit.Poedit",
-        "~/Library/HTTPStorages/net.poedit.Poedit.binarycookies",
-        "~/Library/Preferences/net.poedit.Poedit.cfg",
-        "~/Library/Preferences/net.poedit.Poedit.plist",
-        "~/Library/Saved Application State/net.poedit.Poedit.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Poedit.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.poedit.poedit.sfl2",
+            "~/Library/Application Support/Poedit",
+            "~/Library/Caches/net.poedit.Poedit",
+            "~/Library/HTTPStorages/net.poedit.Poedit.binarycookies",
+            "~/Library/Preferences/net.poedit.Poedit.cfg",
+            "~/Library/Preferences/net.poedit.Poedit.plist",
+            "~/Library/Saved Application State/net.poedit.Poedit.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

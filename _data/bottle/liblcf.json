@@ -1,53 +1,56 @@
 {
   "name": "liblcf",
-  "pkg_version": "0.7.0",
+  "pkg_version": "0.7.0_3",
   "rebuild": 0,
   "bottles": {
+    "arm64_ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:420ae4d8fd864017912ebd7863f6bead1aded6604f72f56a5a674a7cffb071c8"
+    },
     "arm64_monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:7f1164e942934fc234d035cfc9eab11330831244bc69a96061fb3cefc00dd03b"
+      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:09dd2d9ba9b6d1a7b004051586a6a1abe6929a036a5556479840477c4e8b0b5a"
     },
     "arm64_big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:be2a943fe7db52a0a29c910e04f981464a58e0cab77b65b3f0c39fd56490635b"
+      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:6130ad6bf07fda73da7ba0f6b2ff98cc37122f0e3b6cd4a32c011f65db9a2499"
+    },
+    "ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:72a859a84917356fad5415a44dcf89274ead353c25866696c1156597edc90256"
     },
     "monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:5520823380b4ff8f68aeaacef327c264e6edd9208e30acd717d792d527aa3763"
+      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:c97668249d45a99d5da6355d8ec127db44dad2a133ca3dddf1e046035ab8d1fd"
     },
     "big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:7ef6b01e609ba9d7f4d57d28b97e396122b6f09245954a6229493d86ea3aa879"
-    },
-    "catalina": {
-      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:f73afcd81ca34da7633475f9ee5cb470b12fd5e485199bc5073d6d30dacbb77f"
+      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:3e01df65a875158b6d06780db5f60286a7291201dca42c99960179b66eb25014"
     },
     "x86_64_linux": {
-      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:b640ca618fe564b9377ebdb7d7f3b7adcdcbef7690ae2e4a37b473d21c0e255a"
+      "url": "https://ghcr.io/v2/homebrew/core/liblcf/blobs/sha256:66e456b887b1a3e490fedd8ead94a0f6cd95fbdcfad4df086042ec6078d7eb90"
     }
   },
   "dependencies": [
     {
       "name": "icu4c",
-      "pkg_version": "69.1",
+      "pkg_version": "72.1",
       "rebuild": 0,
       "bottles": {
+        "arm64_ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:0666e999875e81eadd009af55007c95cda37c7234acc12eb85cf42177984c699"
+        },
         "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:3771949f179992723acc5bf1457bb5bab960e1f6887913b9e7378023dba6394c"
+          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:90c50fe2cbf8bedcae43886caaa096ab6fc54f893be192912220ba1ec48e634f"
         },
         "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:25a1ec460d422ba5abff15dc5cb60ad36003ad021585fa7be278d1dca6fcd2c4"
+          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:19575d7aa6e4451271cf20a9c455fc7f4a05103573879fa83d7b4625cffddcf5"
+        },
+        "ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:ecb91e87e3e4d075e3e1392b8ec7dc6774bec47f4b534d318f2ec259052b10e4"
         },
         "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:3cf5e9b63ae618b577e057b5745e3ceff557e546d5520c749d3ecd8184750fb5"
+          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:ec1d2f2fe462d2cbe9775e48d5c4231af2b265f946de3902e0e042619c8ac205"
         },
         "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:d46b8ec5c3db629e7848e9fd31e5ec99ed952d9c81c8936a2511fae803d831fd"
-        },
-        "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:3f75c907dadc6e7e647920506e740a312e56279369f3c9708cac54b018410120"
-        },
-        "mojave": {
-          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:e0362362d26379b8c2456de163a148bc4e186d058ea8ed4a38fe41354bea96a8"
+          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:899d9a8e7ab10896afad66a3d3c9053a5a10ae290b23197b1210c03bc0af6e1d"
         },
         "x86_64_linux": {
-          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:781fa2a4d1e2eed1fbea456d8f39770668ef78f922bbab26adeae30c1f5ae760"
+          "url": "https://ghcr.io/v2/homebrew/core/icu4c/blobs/sha256:880ba1731d14d66d48594a7ca1532b12ec50c1e2e3b6c7cd96cfaf05bab04d2f"
         }
       }
     }

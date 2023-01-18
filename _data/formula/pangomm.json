@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-only",
   "homepage": "https://www.pango.org/",
   "versions": {
-    "stable": "2.50.0",
+    "stable": "2.50.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.gnome.org/sources/pangomm/2.50/pangomm-2.50.0.tar.xz",
+      "url": "https://download.gnome.org/sources/pangomm/2.50/pangomm-2.50.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ccc9923413e408c2bff637df663248327d72822f11e394b423e1c5652b7d9214"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:240d818a0f389065c06f1b6cb55a7a65b28181717dd4ee5017d93bf7e8575608",
+          "sha256": "240d818a0f389065c06f1b6cb55a7a65b28181717dd4ee5017d93bf7e8575608"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:a21f7c630199d45ac1b8cf9878cf82aaaac75561407e0d239f4308a7ce8b64c5",
-          "sha256": "a21f7c630199d45ac1b8cf9878cf82aaaac75561407e0d239f4308a7ce8b64c5"
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:cd508f02963834ff60dc5b02ccd2f6516373c6f63698b153bae6f5521b6fbe56",
+          "sha256": "cd508f02963834ff60dc5b02ccd2f6516373c6f63698b153bae6f5521b6fbe56"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:e7103018de987f68f1760f9e63784ba4ec048efa0f125e488e21bd0a604a40f9",
-          "sha256": "e7103018de987f68f1760f9e63784ba4ec048efa0f125e488e21bd0a604a40f9"
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:8133d833f805dcf72e25e766fe02feecd52ba937bc5ea6fd9a49cedad914fc41",
+          "sha256": "8133d833f805dcf72e25e766fe02feecd52ba937bc5ea6fd9a49cedad914fc41"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:3243026755b4a058991bb6bcdbbe8a2504255e3c324eafc2c55a538c2ac6e7d8",
+          "sha256": "3243026755b4a058991bb6bcdbbe8a2504255e3c324eafc2c55a538c2ac6e7d8"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:eb0528f025413ada3a409fbc9bf893062fc37af65d1071a414ca319fe9cdd3d5",
-          "sha256": "eb0528f025413ada3a409fbc9bf893062fc37af65d1071a414ca319fe9cdd3d5"
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:e460a123e6a56d4ceea894435fa9ac65acc3f9875708f9d24b0f5a75e11d43b2",
+          "sha256": "e460a123e6a56d4ceea894435fa9ac65acc3f9875708f9d24b0f5a75e11d43b2"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:01d08e7417d287fa932a966c4f6c763c699f33dbb416529ff9f12229e14a182c",
-          "sha256": "01d08e7417d287fa932a966c4f6c763c699f33dbb416529ff9f12229e14a182c"
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:9044bfea7d53b7916e7e5ba23da64b71b4a3b01e505553af8b07760a889b4f47",
+          "sha256": "9044bfea7d53b7916e7e5ba23da64b71b4a3b01e505553af8b07760a889b4f47"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:006118a2224607e8bcacc9118a92d82625f8d9f4edcfd502e1b6278fff29a852",
-          "sha256": "006118a2224607e8bcacc9118a92d82625f8d9f4edcfd502e1b6278fff29a852"
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:72142eb96fbd86564dabeab768e93a0e7b271c328a25ed9288eb129779e983d1",
+          "sha256": "72142eb96fbd86564dabeab768e93a0e7b271c328a25ed9288eb129779e983d1"
         },
         "x86_64_linux": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:9411ad0f8933a13794ca70d8b4f4e6fde004e627f49e67190203d9fa1c22828c",
-          "sha256": "9411ad0f8933a13794ca70d8b4f4e6fde004e627f49e67190203d9fa1c22828c"
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/pangomm/blobs/sha256:50fbc4de8c8a95af450e0ee638e02e8a20ac5ace7cb15a2d334143b1bade658d",
+          "sha256": "50fbc4de8c8a95af450e0ee638e02e8a20ac5ace7cb15a2d334143b1bade658d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cairomm",
     "glibmm",
     "pango"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

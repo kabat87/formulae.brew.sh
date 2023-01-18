@@ -7,6 +7,7 @@
 
   ],
   "versioned_formulae": [
+    "erlang@24",
     "erlang@22",
     "erlang@21"
   ],
@@ -14,53 +15,59 @@
   "license": "Apache-2.0",
   "homepage": "https://www.erlang.org/",
   "versions": {
-    "stable": "23.3.4.10",
+    "stable": "23.3.4.18",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/erlang/otp/releases/download/OTP-23.3.4.10/otp_src_23.3.4.10.tar.gz",
+      "url": "https://github.com/erlang/otp/releases/download/OTP-23.3.4.18/otp_src_23.3.4.18.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fde15701e97cce3a036108ead20409c87a81c6ad3421ece5b66bd4d26dcb1cb7"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:9d9a43ab7b541905c9c49495fa3a47c4a6b52fc19bfb218e12abfabbb2186b17",
+          "sha256": "9d9a43ab7b541905c9c49495fa3a47c4a6b52fc19bfb218e12abfabbb2186b17"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:c914a3577d5d4570092f5f9cc9262f83bdb230eac0c0087d5241b2daab4085e3",
-          "sha256": "c914a3577d5d4570092f5f9cc9262f83bdb230eac0c0087d5241b2daab4085e3"
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:2b1dae3630c5b14c2ffebb12c51e1cf91ca52969f8c7f0fd1479e29f1b43de00",
+          "sha256": "2b1dae3630c5b14c2ffebb12c51e1cf91ca52969f8c7f0fd1479e29f1b43de00"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:09d447d2ba492376608f98abb89287934cb0730575f73aa937255e7348da6834",
-          "sha256": "09d447d2ba492376608f98abb89287934cb0730575f73aa937255e7348da6834"
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:4258e12b10fed77f694c7ddfa52fd2af15817b9dc2dbb0fd2187b7c5b388df83",
+          "sha256": "4258e12b10fed77f694c7ddfa52fd2af15817b9dc2dbb0fd2187b7c5b388df83"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:b1f89d9e2a8beb5a37f4d453dcf15670de01e5e1b25747c7b0a3b4937169faf6",
+          "sha256": "b1f89d9e2a8beb5a37f4d453dcf15670de01e5e1b25747c7b0a3b4937169faf6"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:fe79e0f2e7304f267f6cd61b803643171ec95b2898cfd662ee59117e77dd9a2e",
-          "sha256": "fe79e0f2e7304f267f6cd61b803643171ec95b2898cfd662ee59117e77dd9a2e"
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:a3d3b5609b1035ef2d8c4a6933aa6e80c784fb59a9b4c8b0f340ff680ecf8571",
+          "sha256": "a3d3b5609b1035ef2d8c4a6933aa6e80c784fb59a9b4c8b0f340ff680ecf8571"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:5515810e0b31aa71ed0e1396caffb7d18f00ffd7ffca3bfa0121f2dfc67f34bd",
-          "sha256": "5515810e0b31aa71ed0e1396caffb7d18f00ffd7ffca3bfa0121f2dfc67f34bd"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:2afda978c143f08a0926ac472dfb0e0597a573f04ab198c20cda428415b91ed5",
-          "sha256": "2afda978c143f08a0926ac472dfb0e0597a573f04ab198c20cda428415b91ed5"
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:3ab52ba5f02fa37d4f27dbae09c4fb2bcaa28bb8c313f019883d4a867e877916",
+          "sha256": "3ab52ba5f02fa37d4f27dbae09c4fb2bcaa28bb8c313f019883d4a867e877916"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:195fa88e6d6d632150880012ab039c26991d392ca3a5af8ae2b5da8eb3b12968",
-          "sha256": "195fa88e6d6d632150880012ab039c26991d392ca3a5af8ae2b5da8eb3b12968"
+          "url": "https://ghcr.io/v2/homebrew/core/erlang/23/blobs/sha256:2dfe079ec780373e8c97fb7f3deef1c77a6b71d3c89c9fa959a2a267ce7cad9e",
+          "sha256": "2dfe079ec780373e8c97fb7f3deef1c77a6b71d3c89c9fa959a2a267ce7cad9e"
         }
       }
     }
@@ -70,7 +77,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,7 +85,11 @@
   ],
   "dependencies": [
     "openssl@1.1",
+    "unixodbc",
     "wxwidgets"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

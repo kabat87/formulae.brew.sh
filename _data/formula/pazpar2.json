@@ -21,52 +21,57 @@
     "stable": {
       "url": "https://ftp.indexdata.com/pub/pazpar2/pazpar2-1.14.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9baf590adb52cd796eccf01144eeaaf7353db1fd05ae436bdb174fe24362db53"
     }
   },
-  "revision": 0,
+  "revision": 3,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:162654ec2c087897997249feccbf3595e456bdad51b6140b5a3fa6134ff484ad",
+          "sha256": "162654ec2c087897997249feccbf3595e456bdad51b6140b5a3fa6134ff484ad"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:78416003bce41475a204ac9c6790ddc3d54b447420df819bf435d584a2732643",
-          "sha256": "78416003bce41475a204ac9c6790ddc3d54b447420df819bf435d584a2732643"
+          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:0f14b91888d588aad368bf8611b603f141db2834e361b842d490aa6d5ee156e5",
+          "sha256": "0f14b91888d588aad368bf8611b603f141db2834e361b842d490aa6d5ee156e5"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:97853be3b6575960315829c3d405783d807ce3ef2e02a1be58a99f15940242a7",
-          "sha256": "97853be3b6575960315829c3d405783d807ce3ef2e02a1be58a99f15940242a7"
+          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:78304e1b4666d5db378d16a3b6c0915c77271e919208baa149532fa2ab9be197",
+          "sha256": "78304e1b4666d5db378d16a3b6c0915c77271e919208baa149532fa2ab9be197"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:1335d7c65c598cd0535767853aaecbc93c741901e133fae9d4e0c91517d0180b",
+          "sha256": "1335d7c65c598cd0535767853aaecbc93c741901e133fae9d4e0c91517d0180b"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:ebf7437098ce671bdea94f57a994fad64dc857480d1230451240120a336fb669",
-          "sha256": "ebf7437098ce671bdea94f57a994fad64dc857480d1230451240120a336fb669"
+          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:c76b9a7e741031283bf83a96d5c051016fdaf19bb3b5854842d1dd3e8ac56b80",
+          "sha256": "c76b9a7e741031283bf83a96d5c051016fdaf19bb3b5854842d1dd3e8ac56b80"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:f0f875a02f27f621b8d3853067f2de93e81f14bd5d39410a8a5fd16bd77fed72",
-          "sha256": "f0f875a02f27f621b8d3853067f2de93e81f14bd5d39410a8a5fd16bd77fed72"
+          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:fce42a0b3e170d057b9a6b8602a7bfd91570ff9bfaf825b3e547a0b5b27075fe",
+          "sha256": "fce42a0b3e170d057b9a6b8602a7bfd91570ff9bfaf825b3e547a0b5b27075fe"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:3dc830947f389049e4960f548f407cf1d867bd13822038e1580d864faebd5cde",
-          "sha256": "3dc830947f389049e4960f548f407cf1d867bd13822038e1580d864faebd5cde"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:4ae1cdd71740cfad4d06799ebc4b131dd705fea1411c9fd85aacaf49ff63d66c",
-          "sha256": "4ae1cdd71740cfad4d06799ebc4b131dd705fea1411c9fd85aacaf49ff63d66c"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pazpar2/blobs/sha256:822af8eb36975de56c5802a76d1e2f947ff964be6f1c7b7e6077968f0701320c",
+          "sha256": "822af8eb36975de56c5802a76d1e2f947ff964be6f1c7b7e6077968f0701320c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
   "dependencies": [
     "icu4c",
     "yaz"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

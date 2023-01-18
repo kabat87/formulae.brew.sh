@@ -7,27 +7,31 @@
   ],
   "desc": "Administration and development platform for PostgreSQL",
   "homepage": "https://www.pgadmin.org/",
-  "url": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v6.4/macos/pgadmin4-6.4.dmg",
+  "url": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v6.19/macos/pgadmin4-6.19.dmg",
   "appcast": null,
-  "version": "6.4",
+  "version": "6.19",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "72caf0e5a55079b3fc77b45c434b7d5c3ac2703c4233f3a0cc5093f74f66e57c",
+  "sha256": "776b7266237276b12b4664e7674c417711907ffd9c5fa8b5ae8304719f5fc811",
   "artifacts": [
-    [
-      "pgAdmin 4.app"
-    ],
     {
-      "trash": [
-        "~/.pgadmin",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.pgadmin.pgadmin4.sfl*",
-        "~/Library/Preferences/org.pgadmin.pgadmin4.plist",
-        "~/Library/Saved Application State/org.pgadmin.pgAdmin4.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "pgAdmin 4.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.pgadmin",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.pgadmin.pgadmin4.sfl*",
+            "~/Library/Preferences/org.pgadmin.pgadmin4.plist",
+            "~/Library/Saved Application State/org.pgadmin.pgAdmin4.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

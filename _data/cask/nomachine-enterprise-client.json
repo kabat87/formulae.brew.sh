@@ -7,31 +7,42 @@
   ],
   "desc": "Remote desktop software",
   "homepage": "https://www.nomachine.com/",
-  "url": "https://download.nomachine.com/download/7.7/MacOSX/nomachine-enterprise-client_7.7.4_1.dmg",
+  "url": "https://download.nomachine.com/download/8.2/MacOSX/nomachine-enterprise-client_8.2.3_12.dmg",
   "appcast": null,
-  "version": "7.7.4_1",
+  "version": "8.2.3_12",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "058dba4eb82c389f09a94ffa273e6c80fcdcf96290c18f58824e6a677990193c",
+  "sha256": "ffce21299f4a833b33d298578a77211cd38d67dde73c76fd73edbba040a10a52",
   "artifacts": [
     {
-      "delete": "/Applications/NoMachine.app",
-      "pkgutil": "com.nomachine.nomachine.NoMachine*.pkg",
-      "launchctl": [
-        "com.nomachine.uninstall",
-        "com.nomachine.nxlaunchconf"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/NoMachine.app",
+          "pkgutil": [
+            "com.nomachine.nomachine.NoMachine*.pkg",
+            "com.nomachine.*"
+          ],
+          "launchctl": [
+            "com.nomachine.uninstall",
+            "com.nomachine.launchconf"
+          ]
+        }
+      ]
     },
-    "NoMachine.pkg (Pkg)"
+    {
+      "pkg": [
+        "NoMachine.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

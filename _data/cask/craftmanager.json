@@ -9,35 +9,41 @@
   "homepage": "https://www.invisionapp.com/craft",
   "url": "https://craft-assets.invisionapp.com/CraftManager/production/CraftManager.zip",
   "appcast": null,
-  "version": "1.0.117,292",
+  "version": "1.4.0,499",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "CraftManager.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/CraftManager",
-        "~/Library/Caches/com.invisionlabs.CraftManager",
-        "~/Library/Preferences/com.invisionlabs.CraftManager.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "CraftManager.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/CraftManager",
+            "~/Library/Caches/com.invisionlabs.CraftManager",
+            "~/Library/Preferences/com.invisionlabs.CraftManager.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "litecoin" do
-  version "0.18.1"
-  sha256 "b81d9101c6ecb38b7699cf3d05ab57df7922f40f23c8a3377750c335d7102266"
+  version "0.21.2.1"
+  sha256 "3b05591f117d487de0323ad3aca30b64a086125c22992a4c528c789db75b5b81"
 
   url "https://download.litecoin.org/litecoin-#{version}/osx/litecoin-#{version}-osx.dmg"
   name "Litecoin"
@@ -9,7 +9,7 @@ cask "litecoin" do
 
   livecheck do
     url "https://github.com/litecoin-project/litecoin"
-    strategy :git
+    strategy :github_latest
   end
 
   app "Litecoin-Qt.app"

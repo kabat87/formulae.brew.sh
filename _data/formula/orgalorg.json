@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/reconquest/orgalorg.git",
       "tag": "1.2.0",
-      "revision": "5024122fb3efaad577fa509e2d17aab1f12217de"
+      "revision": "5024122fb3efaad577fa509e2d17aab1f12217de",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/orgalorg/blobs/sha256:96c0e16b29df9e9001a2dfa6b52f75ed29a6c1f0364c471ee8d2bbe6d219d7ed",
+          "sha256": "96c0e16b29df9e9001a2dfa6b52f75ed29a6c1f0364c471ee8d2bbe6d219d7ed"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/orgalorg/blobs/sha256:94c8876f125804235f739721fd76b638142a2d201efa722f80ed9dca67a2bc71",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/orgalorg/blobs/sha256:d351128a7c84c2719ab26b2ff7f4188d8cc511bdd05a9abccaf674ded52baf7f",
           "sha256": "d351128a7c84c2719ab26b2ff7f4188d8cc511bdd05a9abccaf674ded52baf7f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/orgalorg/blobs/sha256:b1c2fb13e6c3b0764c4b7fbf450b5d5c71e39def12efb6685ab281e4f1df3ad0",
+          "sha256": "b1c2fb13e6c3b0764c4b7fbf450b5d5c71e39def12efb6685ab281e4f1df3ad0"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

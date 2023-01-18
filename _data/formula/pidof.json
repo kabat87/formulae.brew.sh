@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.nightproductions.net/downloads/pidof_source.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2a2cd618c7b9130e1a1d9be0210e786b85cbc9849c9b6f0cad9cbde31541e1b8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pidof/blobs/sha256:964d09783be4f829eeac50a16939ba0f289fa2c88dc7fba155f258683f009884",
+          "sha256": "964d09783be4f829eeac50a16939ba0f289fa2c88dc7fba155f258683f009884"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pidof/blobs/sha256:6b299aebe4224da62d4f287f46a6816362986a9a78089c3315ab2c4e2f946420",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pidof/blobs/sha256:a7d1943e3d14377270554f16198f105b0e00cc9d53da79c7d22bc7974b711a23",
           "sha256": "a7d1943e3d14377270554f16198f105b0e00cc9d53da79c7d22bc7974b711a23"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pidof/blobs/sha256:0accd2ab3d57c68efa55bd50dfc7c5343ce1da7f6c9e76d534a6d6a234209973",
+          "sha256": "0accd2ab3d57c68efa55bd50dfc7c5343ce1da7f6c9e76d534a6d6a234209973"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -126,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,40 +7,46 @@
   ],
   "desc": "Note Taking: Nimble, Calm, Plain.txt",
   "homepage": "https://zettelkasten.de/the-archive/",
-  "url": "https://dlyfuw95744jo.cloudfront.net/TheArchive-v1.6.3.dmg",
+  "url": "https://dlyfuw95744jo.cloudfront.net/TheArchive-v1.7.7.dmg",
   "appcast": null,
-  "version": "1.6.3",
+  "version": "1.7.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a606b8d4146d546eade3aa52994cba1e34ffcd95ea717e491e0de4b5ffaec44d",
+  "sha256": "650e68f9a94b925c85d4fdef1189e5cb98814c278c0c4e671f2049c661956a37",
   "artifacts": [
     {
-      "quit": [
-        "de.zettelkasten.TheArchive",
-        "de.zettelkasten.TheArchive.QuickEntryHelper"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "de.zettelkasten.TheArchive",
+            "de.zettelkasten.TheArchive.QuickEntryHelper"
+          ]
+        }
+      ]
     },
-    [
-      "The Archive.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/TheArchive",
-        "~/Library/Caches/de.zettelkasten.TheArchive",
-        "~/Library/Group Containers/FRMDA3XRGC.de.zettelkasten.TheArchive.prefs",
-        "~/Library/Logs/TheArchive",
-        "~/Library/Preferences/de.zettelkasten.TheArchive.plist",
-        "~/Library/Preferences/de.zettelkasten.TheArchive.QuickEntryHelper.plist",
-        "~/Library/Preferences/group.de.zettelkasten.TheArchive.prefs.plist",
-        "~/Library/Saved Application State/de.zettelkasten.TheArchive.savedState",
-        "~/Library/WebKit/de.zettelkasten.TheArchive"
-      ],
-      "signal": {
-      }
+      "app": [
+        "The Archive.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/TheArchive",
+            "~/Library/Caches/de.zettelkasten.TheArchive",
+            "~/Library/Group Containers/FRMDA3XRGC.de.zettelkasten.TheArchive.prefs",
+            "~/Library/Logs/TheArchive",
+            "~/Library/Preferences/de.zettelkasten.TheArchive.plist",
+            "~/Library/Preferences/de.zettelkasten.TheArchive.QuickEntryHelper.plist",
+            "~/Library/Preferences/group.de.zettelkasten.TheArchive.prefs.plist",
+            "~/Library/Saved Application State/de.zettelkasten.TheArchive.savedState",
+            "~/Library/WebKit/de.zettelkasten.TheArchive"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -53,5 +59,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

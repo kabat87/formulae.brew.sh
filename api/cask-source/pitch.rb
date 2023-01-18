@@ -1,19 +1,17 @@
 cask "pitch" do
-  version "1.57.3,2546277"
-  sha256 "89cae692935d3a8117d0e78bd421b91be4c3f1e36e53d692c6b51e94da029e2d"
+  version "1.106.1,stable.1,5063132"
+  sha256 "b6e707d17520cef0e9b5b456afddeca887e9f7ca3177326075e6c9ef334233be"
 
-  url "https://desktop-app-builds.pitch.com/Pitch-#{version.csv.first}-ci#{version.csv.second}.dmg"
+  url "https://desktop-app-builds.pitch.com/Pitch-#{version.csv.first}-#{version.csv.second}-ci#{version.csv.third}.dmg"
   name "Pitch"
   desc "Collaborative presentation software"
   homepage "https://pitch.com/"
 
   livecheck do
     url "https://desktop-app-builds.pitch.com/latest-mac.yml"
-    strategy :page_match do |page|
-      match = page.match(/Pitch[._-]v?(\d+(?:\.\d+)+)[._-]ci(\d+)\.dmg/i)
-      next if match.blank?
-
-      "#{match[1]},#{match[2]}"
+    regex(/Pitch[._-]v?(\d+(?:\.\d+)+)-([^-]+)-ci(\d+)\.dmg/i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match.first},#{match.second},#{match.third}" }
     end
   end
 

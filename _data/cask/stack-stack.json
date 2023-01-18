@@ -7,42 +7,62 @@
   ],
   "desc": "Workspace to manage all your productivity apps from one place",
   "homepage": "https://getstack.app/",
-  "url": "https://binaries.getstack.app/builds/prod/Stack-3.41.1.dmg",
+  "url": "https://binaries.getstack.app/builds/prod/Stack-3.43.2.dmg",
   "appcast": null,
-  "version": "3.41.1",
+  "version": "3.43.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "eaca3be87c4dc15eb7634a350d3d0da3ba814f08cc9950878248eeb4492efdf9",
+  "sha256": "5846b9af905bdbaef11f04c099a0d0015ab62077ca4d17f33946ca473ef9dd91",
   "artifacts": [
     {
-      "quit": "com.stack.io",
-      "login_item": "Stack",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.stack.io",
+          "login_item": "Stack"
+        }
+      ]
     },
-    [
-      "Stack.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Stack",
-        "~/Library/Preferences/com.stack.io.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Stack.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Stack",
+            "~/Library/Preferences/com.stack.io.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://binaries.getstack.app/builds/prod/mac/arm64/Stack%203.43.2-arm64.dmg",
+      "sha256": "2615a79ea08750e3fd4f60b376f8a4e617d578e4c21863a55af0adccc8504dc5"
+    },
+    "arm64_monterey": {
+      "url": "https://binaries.getstack.app/builds/prod/mac/arm64/Stack%203.43.2-arm64.dmg",
+      "sha256": "2615a79ea08750e3fd4f60b376f8a4e617d578e4c21863a55af0adccc8504dc5"
+    },
+    "arm64_big_sur": {
+      "url": "https://binaries.getstack.app/builds/prod/mac/arm64/Stack%203.43.2-arm64.dmg",
+      "sha256": "2615a79ea08750e3fd4f60b376f8a4e617d578e4c21863a55af0adccc8504dc5"
+    }
+  }
 }

@@ -1,13 +1,9 @@
 cask "pycharm-edu" do
-  arch = Hardware::CPU.intel? ? "" : "-aarch64"
+  arch arm: "-aarch64"
 
-  version "2021.3.1,213.5744.302"
-
-  if Hardware::CPU.intel?
-    sha256 "baa2ccc3b2c50dc207217fa852d1a38c9b4165dec05af534fe3f3ed0c2db28d7"
-  else
-    sha256 "2f75c1ee6b80370c9d5d9afd9b347736ba754622957e3fe99ba990f66e7826d1"
-  end
+  version "2022.2.2,222.4345.35"
+  sha256 arm:   "fc25074308eb574eb4369c3a76c5d2625657ce854d6e1a8036f8ade967d5fd5e",
+         intel: "6902d330174b258cce1353343fd4ba2ccd7b6da1b3736d31a7cc3da6e41a93f4"
 
   url "https://download.jetbrains.com/python/pycharm-edu-#{version.csv.first}#{arch}.dmg"
   name "Jetbrains PyCharm Educational Edition"
@@ -31,7 +27,7 @@ cask "pycharm-edu" do
 
   uninstall_postflight do
     ENV["PATH"].split(File::PATH_SEPARATOR).map { |path| File.join(path, "charm") }.each do |path|
-      if File.exist?(path) &&
+      if File.readable?(path) &&
          File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?
         File.delete(path)
       end

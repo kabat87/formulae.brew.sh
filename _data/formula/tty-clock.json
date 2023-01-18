@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/xorg62/tty-clock/archive/v2.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "343e119858db7d5622a545e15a3bbfde65c107440700b62f9df0926db8f57984"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tty-clock/blobs/sha256:fa482bfe16706d591d196d62b30fd517e4b0e677ee9c320466a0f4021e6ad361",
+          "sha256": "fa482bfe16706d591d196d62b30fd517e4b0e677ee9c320466a0f4021e6ad361"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tty-clock/blobs/sha256:da788fd6f94799b9cb8fe52dae41d592871e9c7e422e216d90d08350f2f51a48",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tty-clock/blobs/sha256:fcae9d0e0eeaf68815b4a521f7f75c352d4188a38652b4841bd48b608120edce",
           "sha256": "fcae9d0e0eeaf68815b4a521f7f75c352d4188a38652b4841bd48b608120edce"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tty-clock/blobs/sha256:29d7e07686de67b6b7e20cb51c72e756582aad75a15d3ca603751842ebe2bcbb",
+          "sha256": "29d7e07686de67b6b7e20cb51c72e756582aad75a15d3ca603751842ebe2bcbb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/tty-clock/blobs/sha256:c0d981769811bf1c265e11702ea0d26bcf87102ac92896c04c14a91fbed1cc8c",
           "sha256": "c0d981769811bf1c265e11702ea0d26bcf87102ac92896c04c14a91fbed1cc8c"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tty-clock/blobs/sha256:9341fb07070b665dc5f9593c1b4811ec734f7221afbde2547cee55fc9102aa1e",
-          "sha256": "9341fb07070b665dc5f9593c1b4811ec734f7221afbde2547cee55fc9102aa1e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tty-clock/blobs/sha256:2b676f9ca583791e909a241667741a84289d4f75c5673fdd31176c48450ab701",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

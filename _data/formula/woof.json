@@ -10,38 +10,38 @@
 
   ],
   "desc": "Ad-hoc single-file webserver",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "http://www.home.unix-ag.org/simon/woof.html",
   "versions": {
-    "stable": "20120531",
+    "stable": "20220202",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://www.home.unix-ag.org/simon/woof-2012-05-31.py",
+      "url": "https://github.com/simon-budig/woof/archive/woof-20220202.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cf29214aca196a1778e2f5df1f5cc653da9bee8fc2b19f01439c750c41ae83c1"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/woof/blobs/sha256:854310e14cd958d44e42c8b6dd5aac3ca360ae2154763a0967cfbe4dee76a512",
-          "sha256": "854310e14cd958d44e42c8b6dd5aac3ca360ae2154763a0967cfbe4dee76a512"
+          "url": "https://ghcr.io/v2/homebrew/core/woof/blobs/sha256:6f5ec883ad9fdb67965bc8a7a08318adcc1fa5a48e1da24f56cb85697bd28e0d",
+          "sha256": "6f5ec883ad9fdb67965bc8a7a08318adcc1fa5a48e1da24f56cb85697bd28e0d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
 
   ],
   "dependencies": [
+    "python@3.11"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "podpisuj" do
-  version "5.5.39"
-  sha256 "06141b49385d58ddfce030c8aae7a89e4db3390cc832263c58d5ebec8103b0a2"
+  version "5.6.53"
+  sha256 "540238bbe2ca1c2dac8889ab5412ae63069d0487f4ca24f63b9dffa61e712d20"
 
   url "https://www.podpisuj.sk/staticweb/install/podpisuj-#{version}.dmg"
   name "Podpisuj"
@@ -8,8 +8,8 @@ cask "podpisuj" do
   homepage "https://www.podpisuj.sk/"
 
   livecheck do
-    url "https://www.podpisuj.sk/o/portal-services3/client/appVersion?ext=dmg&version=0"
-    regex(/(\d+(?:\.\d+)+)/i)
+    url "https://www.podpisuj.sk/staticweb/install/"
+    regex(/href=.*?podpisuj[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
   app "Podpisuj.app"

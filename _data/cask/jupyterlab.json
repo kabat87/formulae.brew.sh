@@ -7,37 +7,48 @@
   ],
   "desc": "Desktop application for JupyterLab",
   "homepage": "https://github.com/jupyterlab/jupyterlab-desktop",
-  "url": "https://github.com/jupyterlab/jupyterlab-desktop/releases/download/v3.2.5-2/JupyterLab-Setup-macOS.pkg",
+  "url": "https://github.com/jupyterlab/jupyterlab-desktop/releases/download/v3.5.1-1/JupyterLab-Setup-macOS.dmg",
   "appcast": null,
-  "version": "3.2.5-2",
+  "version": "3.5.1-1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "721bee40dfa1377a7c4b0ef90479d6e55abf3bf5b405c206c1ae9bb23ab5dc82",
+  "sha256": "814948ee9b05a8d17d0e08d7d2faab0a7183a9185d144c7734b4e78c21537afa",
   "artifacts": [
     {
-      "pkgutil": "com.electron.jupyterlab-desktop",
-      "delete": [
-        "/Applications/JupyterLab.app",
-        "$(brew --prefix)/bin/jlab"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.electron.jupyterlab-desktop",
+          "delete": [
+            "$(brew --prefix)/bin/jlab",
+            "~/Library/jupyterlab-desktop"
+          ]
+        }
+      ]
     },
-    "JupyterLab-Setup-macOS.pkg (Pkg)",
     {
-      "trash": [
-        "~/.jupyter",
-        "~/Library/Application Support/jupyterlab-desktop",
-        "~/Library/Jupyter",
-        "~/Library/Logs/jupyterlab-desktop",
-        "~/Library/Logs/JupyterLab",
-        "~/Library/Preferences/com.electron.jupyterlab-desktop.plist",
-        "~/Library/Saved Application State/com.electron.jupyterlab-desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "JupyterLab.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.jupyter",
+            "~/Library/Application Support/jupyterlab-desktop",
+            "~/Library/Caches/org.jupyter.jupyterlab-desktop",
+            "~/Library/Caches/org.jupyter.jupyterlab-desktop.ShipIt",
+            "~/Library/HTTPStorages/org.jupyter.jupyterlab-desktop",
+            "~/Library/Jupyter",
+            "~/Library/Logs/jupyterlab-desktop",
+            "~/Library/Logs/JupyterLab",
+            "~/Library/Preferences/com.electron.jupyterlab-desktop.plist",
+            "~/Library/Saved Application State/com.electron.jupyterlab-desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +56,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

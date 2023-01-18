@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.musicpd.org/download/libmpdclient/2/libmpdclient-2.20.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "18793f68e939c3301e34d8fcadea1f7daa24143941263cecadb80126194e277d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmpdclient/blobs/sha256:375a77d9a5e35735bf4075b1d00f2a8e58e2c42db81ea84628376450290e5d03",
+          "sha256": "375a77d9a5e35735bf4075b1d00f2a8e58e2c42db81ea84628376450290e5d03"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmpdclient/blobs/sha256:cf069d8465152e64482a30cdd9be6d9db373eb6e033e20b36f5ed0c6ff787a81",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmpdclient/blobs/sha256:5b121fcd7d0df82dd8b3f9ee14f2084441e3cf4ad116d7b9deb556ed06fe2244",
           "sha256": "5b121fcd7d0df82dd8b3f9ee14f2084441e3cf4ad116d7b9deb556ed06fe2244"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmpdclient/blobs/sha256:cf82a221e32a91e34931b38104bb0d307e5983dd8aa0e0e24188796fc3b8e6bf",
+          "sha256": "cf82a221e32a91e34931b38104bb0d307e5983dd8aa0e0e24188796fc3b8e6bf"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +86,9 @@
     "ninja"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -105,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

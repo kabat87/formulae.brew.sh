@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://www.alluxio.io/",
   "versions": {
-    "stable": "2.7.2",
+    "stable": "2.9.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.alluxio.io/downloads/files/2.7.2/alluxio-2.7.2-bin.tar.gz",
+      "url": "https://downloads.alluxio.io/downloads/files/2.9.0/alluxio-2.9.0-bin.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9d31364538938031c618e3ffafdd2da8aa62b08e0c9e6710cce544eebd829690"
     }
   },
   "revision": 0,
@@ -31,27 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710",
+          "sha256": "3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710",
+          "sha256": "3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710"
+        },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:9a50ee2f9a8b7a486fddf67f61b03f19783855ab13eb193b972f7f9c5b4f72d4",
-          "sha256": "9a50ee2f9a8b7a486fddf67f61b03f19783855ab13eb193b972f7f9c5b4f72d4"
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710",
+          "sha256": "3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde",
+          "sha256": "a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde",
+          "sha256": "a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:d2c73e41d28cbd794ea51c286987641e796eac18de2124745eeb25ca3862f244",
-          "sha256": "d2c73e41d28cbd794ea51c286987641e796eac18de2124745eeb25ca3862f244"
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde",
+          "sha256": "a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:d2c73e41d28cbd794ea51c286987641e796eac18de2124745eeb25ca3862f244",
-          "sha256": "d2c73e41d28cbd794ea51c286987641e796eac18de2124745eeb25ca3862f244"
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde",
+          "sha256": "a809890dbdc53b58af2ae19c20f78cd97cc22c29b7da43e40fab816cfab44bde"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/alluxio/blobs/sha256:3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710",
+          "sha256": "3930ec62c479edaf64ced09ef732e10460682ac79d27469157dd5ba1509d2710"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -60,6 +85,9 @@
   ],
   "dependencies": [
     "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -88,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

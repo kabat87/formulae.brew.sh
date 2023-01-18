@@ -10,7 +10,7 @@
 
   ],
   "desc": "Source-code syntax highlighter",
-  "license": null,
+  "license": "GPL-3.0-or-later",
   "homepage": "https://www.gnu.org/software/src-highlite/",
   "versions": {
     "stable": "3.1.9",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/src-highlite/source-highlight-3.1.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3a7fd28378cb5416f8de2c9e77196ec915145d44e30ff4e0ee8beb3fe6211c91"
     }
   },
   "revision": 5,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/source-highlight/blobs/sha256:dddc83be2e682364f8d04b17885d93a5413b9b2978190e584f35fb48f1f36538",
+          "sha256": "dddc83be2e682364f8d04b17885d93a5413b9b2978190e584f35fb48f1f36538"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/source-highlight/blobs/sha256:b9eb7acf4fe56cfe110ac6fae44645dc71f4b7dde15ed02573b985354753b488",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/source-highlight/blobs/sha256:5571281923274d301cadd6ea132603c76a8865fe222b1f9b912ed54618ce8944",
           "sha256": "5571281923274d301cadd6ea132603c76a8865fe222b1f9b912ed54618ce8944"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/source-highlight/blobs/sha256:00c9f2aa3ec6407652f9483a3ca017f3a6260b42a4fd5785d6811e1f113e965e",
+          "sha256": "00c9f2aa3ec6407652f9483a3ca017f3a6260b42a4fd5785d6811e1f113e965e"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "boost"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

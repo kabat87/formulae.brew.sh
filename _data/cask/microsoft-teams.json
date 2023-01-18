@@ -7,38 +7,52 @@
   ],
   "desc": "Meet, chat, call, and collaborate in just one place",
   "homepage": "https://teams.microsoft.com/downloads",
-  "url": "https://statics.teams.cdn.office.net/production-osx/1.4.00.34557/Teams_osx.pkg",
+  "url": "https://statics.teams.cdn.office.net/production-osx/1.5.00.33356/Teams_osx.pkg",
   "appcast": null,
-  "version": "1.4.00.34557",
+  "version": "1.5.00.33356",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4e540460dbc8910eddae44b64889d37b6ea261175fdeede4a6d45c81030456a9",
+  "sha256": "741fc105209b922f8ba20018d46f4096f95f175cf0e162e8bbe92a8f3644e5aa",
   "artifacts": [
     {
-      "pkgutil": "com.microsoft.teams",
-      "launchctl": "com.microsoft.teams.TeamsUpdaterDaemon",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.microsoft.MSTeamsAudioDevice",
+            "com.microsoft.teams"
+          ],
+          "launchctl": "com.microsoft.teams.TeamsUpdaterDaemon",
+          "delete": [
+            "/Library/Logs/Microsoft/Teams",
+            "/Library/Preferences/com.microsoft.teams.plist"
+          ]
+        }
+      ]
     },
-    "Teams_osx.pkg (Pkg)",
     {
-      "trash": [
-        "/Library/Logs/Microsoft/Teams",
-        "/Library/Preferences/com.microsoft.teams.plist",
-        "~/Library/Application Support/com.microsoft.teams",
-        "~/Library/Application Support/Microsoft/Teams",
-        "~/Library/Application Support/Teams",
-        "~/Library/Caches/com.microsoft.teams",
-        "~/Library/Cookies/com.microsoft.teams.binarycookies",
-        "~/Library/Logs/Microsoft Teams",
-        "~/Library/Preferences/com.microsoft.teams.plist",
-        "~/Library/Saved Application State/com.microsoft.teams.savedState",
-        "~/Library/WebKit/com.microsoft.teams"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Teams_osx.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.microsoft.teams",
+            "~/Library/Application Support/Microsoft/Teams",
+            "~/Library/Application Support/Teams",
+            "~/Library/Caches/com.microsoft.teams",
+            "~/Library/Cookies/com.microsoft.teams.binarycookies",
+            "~/Library/Logs/Microsoft Teams",
+            "~/Library/Preferences/com.microsoft.teams.plist",
+            "~/Library/Saved Application State/com.microsoft.teams.savedState",
+            "~/Library/WebKit/com.microsoft.teams"
+          ],
+          "rmdir": "~/Library/Application Support/Microsoft"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +60,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

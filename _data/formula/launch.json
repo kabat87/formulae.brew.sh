@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://sabi.net/nriley/software/launch-1.2.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "486632b11bee04d9f6bcb595fd2a68b5fde2f748ebdc182274778cc5cf97ff70"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/launch/blobs/sha256:df847f012511a511c1e2b9b70dd171a7a8e3d8a829cc58cb20a113ef6dc5a526",
+          "sha256": "df847f012511a511c1e2b9b70dd171a7a8e3d8a829cc58cb20a113ef6dc5a526"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/launch/blobs/sha256:37a22a51899be9434558af2a787f253c90af7b1dc5dc17017096b221c0b85dc3",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/launch/blobs/sha256:a8bc9136d5da0270c108662086bebfd5cf74cd5eb82a773318e9be1b7a61b986",
           "sha256": "a8bc9136d5da0270c108662086bebfd5cf74cd5eb82a773318e9be1b7a61b986"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/launch/blobs/sha256:55dd24d6048328483994c1d22a56a4c26317399322ec52fbf81968bc1b64a4d0",
+          "sha256": "55dd24d6048328483994c1d22a56a4c26317399322ec52fbf81968bc1b64a4d0"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -120,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

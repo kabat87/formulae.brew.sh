@@ -7,9 +7,9 @@
   ],
   "desc": "File system and storage management software",
   "homepage": "https://ntfsformac.tuxera.com/",
-  "url": "https://tuxera.com/mac/tuxerantfs_2021.dmg",
+  "url": "https://tuxera.com/mac/tuxerantfs_2022.dmg",
   "appcast": null,
-  "version": "2021",
+  "version": "2022",
   "versions": {
   },
   "installed": null,
@@ -17,23 +17,31 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": [
-        "com.tuxera.Tuxera-NTFS",
-        "com.tuxera.filesystems.ntfs.agent"
-      ],
-      "pkgutil": [
-        "com.tuxera.pkg.Tuxera_NTFS",
-        "com.tuxera.pkg.Tuxera_NTFS_compat"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "com.tuxera.Tuxera-NTFS",
+            "com.tuxera.filesystems.ntfs.agent"
+          ],
+          "pkgutil": [
+            "com.tuxera.pkg.Tuxera_NTFS",
+            "com.tuxera.pkg.Tuxera_NTFS_compat"
+          ]
+        }
+      ]
     },
-    ".packages/Flat/Install Tuxera NTFS.mpkg (Pkg)"
+    {
+      "pkg": [
+        ".packages/Flat/Install Tuxera NTFS.mpkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

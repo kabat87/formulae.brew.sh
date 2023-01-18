@@ -16,14 +16,29 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "QuickHue.app"
-    ]
+    {
+      "app": [
+        "QuickHue.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/QuickHue",
+            "~/Library/Caches/cat.moo.QuickHue",
+            "~/Library/Preferences/cat.moo.QuickHue.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://orc.apache.org/",
   "versions": {
-    "stable": "1.7.2",
+    "stable": "1.8.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://search.maven.org/remotecontent?filepath=org/apache/orc/orc-tools/1.7.2/orc-tools-1.7.2-uber.jar",
+      "url": "https://search.maven.org/remotecontent?filepath=org/apache/orc/orc-tools/1.8.2/orc-tools-1.8.2-uber.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4c5b2db57925021d62cd23554419a2583d95f609be94b36f2ad14b5fee0021af"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/orc-tools/blobs/sha256:344befd82f662ab9e02ddfeaef419d27a6a1c91d5602dca8d4f9335f06f14148",
-          "sha256": "344befd82f662ab9e02ddfeaef419d27a6a1c91d5602dca8d4f9335f06f14148"
+          "url": "https://ghcr.io/v2/homebrew/core/orc-tools/blobs/sha256:14d47af5ff0ec0128a3aa1aeb834af80bd5c4ef3d376dca5e07af108b1e97d5f",
+          "sha256": "14d47af5ff0ec0128a3aa1aeb834af80bd5c4ef3d376dca5e07af108b1e97d5f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

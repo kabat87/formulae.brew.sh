@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/matricks/bam/archive/v0.5.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cc8596af3325ecb18ebd6ec2baee550e82cb7b2da19588f3f843b02e943a15a9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bam/blobs/sha256:b8e89910d5b1ebfbf030acf7e764ed714826bf7920f0dd5fe755861cee969784",
+          "sha256": "b8e89910d5b1ebfbf030acf7e764ed714826bf7920f0dd5fe755861cee969784"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bam/blobs/sha256:ee7ac2a67e4d72ef0cea6c7c34afa9284bcba629991e8ec38ca185c2f470a472",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bam/blobs/sha256:6c0a42f9cf83eabac04cd67c5441590f3fea48f7dd9aacd1a7fef524b4a40cf9",
           "sha256": "6c0a42f9cf83eabac04cd67c5441590f3fea48f7dd9aacd1a7fef524b4a40cf9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bam/blobs/sha256:75d5f23cc6cfc164c893479517a3cfbdcae7f08ccade50ab8408a83cd5939e54",
+          "sha256": "75d5f23cc6cfc164c893479517a3cfbdcae7f08ccade50ab8408a83cd5939e54"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

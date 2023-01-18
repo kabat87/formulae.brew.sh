@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/freeimage/Source%20Distribution/3.18.0/FreeImage3180.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f41379682f9ada94ea7b34fe86bf9ee00935a3147be41b6569c9605a53e438fd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 3,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/freeimage/blobs/sha256:acdcf908bcc7bf5ce7fe7acf6c7d3de9787872c47687e25951411c07d86d7146",
+          "sha256": "acdcf908bcc7bf5ce7fe7acf6c7d3de9787872c47687e25951411c07d86d7146"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/freeimage/blobs/sha256:ec0035876daea1189f9e681ac3858c99270b6faab6c9701fe3d83333081feb9b",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/freeimage/blobs/sha256:02080c0a6c32413b1e85f6e1393559426b77f0a7e5dcfda406617bc6e46a13e0",
           "sha256": "02080c0a6c32413b1e85f6e1393559426b77f0a7e5dcfda406617bc6e46a13e0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/freeimage/blobs/sha256:57fd52efb2fe5109a77c46f42affd2192fc94acd0211d74a9045719e2ee54c9f",
+          "sha256": "57fd52efb2fe5109a77c46f42affd2192fc94acd0211d74a9045719e2ee54c9f"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

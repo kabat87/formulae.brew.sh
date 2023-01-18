@@ -5,7 +5,7 @@
   "name": [
     "Knock"
   ],
-  "desc": null,
+  "desc": "Unlock with AppleWatch",
   "homepage": "http://www.knocktounlock.com/",
   "url": "https://knock-updates.s3.amazonaws.com/Knock.zip",
   "appcast": null,
@@ -16,21 +16,23 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Knock.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.knock.mac.plist",
-        "~/Library/Logs/Knock",
-        "~/Library/Caches/com.knock.mac",
-        "~/Library/Caches/com.crashlytics.data/com.knock.mac"
-      ],
-      "rmdir": [
-        "~/Library/Caches/com.crashlytics.data"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Knock.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.crashlytics.data/com.knock.mac",
+            "~/Library/Caches/com.knock.mac",
+            "~/Library/Logs/Knock",
+            "~/Library/Preferences/com.knock.mac.plist"
+          ],
+          "rmdir": "~/Library/Caches/com.crashlytics.data"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

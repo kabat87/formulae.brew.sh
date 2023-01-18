@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://docs.libcpr.org/",
   "versions": {
-    "stable": "1.7.2",
+    "stable": "1.9.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/libcpr/cpr/archive/1.7.2.tar.gz",
+      "url": "https://github.com/libcpr/cpr/archive/1.9.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "df53e7213d80fdc24583528521f7d3349099f5bb4ed05ab05206091a678cc53c"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:daf5f4894c2478834e450baac837154179fc88a2ec3d7d06ddf6c3be24ad4ffc",
+          "sha256": "daf5f4894c2478834e450baac837154179fc88a2ec3d7d06ddf6c3be24ad4ffc"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:762abcd0fb7e48407e592ba6a9c0ed8c4e249ca69de5a5aa1dae72c7da403b21",
-          "sha256": "762abcd0fb7e48407e592ba6a9c0ed8c4e249ca69de5a5aa1dae72c7da403b21"
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:2d53f0135afc4e4b3767a5a3293d7cf467830d7c0a634d663f4bfd353054991e",
+          "sha256": "2d53f0135afc4e4b3767a5a3293d7cf467830d7c0a634d663f4bfd353054991e"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:0b45cfe51cde43bc34d3fc717c89b3a75cfe48d7d414cd53471c434835129f83",
-          "sha256": "0b45cfe51cde43bc34d3fc717c89b3a75cfe48d7d414cd53471c434835129f83"
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:95ec7967fa535c4b6d80ebb3f5112f91b74432a372b4ee15b88fae50b5f9c3c4",
+          "sha256": "95ec7967fa535c4b6d80ebb3f5112f91b74432a372b4ee15b88fae50b5f9c3c4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:7fb242be16db5b1d40f897c9ae3c9c3707c4bae8550af47f27177106aff45eb8",
+          "sha256": "7fb242be16db5b1d40f897c9ae3c9c3707c4bae8550af47f27177106aff45eb8"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:c8e0f954e5c6e1a35c36cddda36c39d3641558d3fa97d7a96a6c0fc4d6cba01c",
-          "sha256": "c8e0f954e5c6e1a35c36cddda36c39d3641558d3fa97d7a96a6c0fc4d6cba01c"
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:36a7fe15e003dd3bf20d1f8e3dbb8101ca4db8d52864b701ca5f4e956086d67b",
+          "sha256": "36a7fe15e003dd3bf20d1f8e3dbb8101ca4db8d52864b701ca5f4e956086d67b"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:d1d3dd4fa29989de103e8a47c643081843ea9dbb83855ea6530f0a6d290c16d7",
-          "sha256": "d1d3dd4fa29989de103e8a47c643081843ea9dbb83855ea6530f0a6d290c16d7"
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:8f04311199164cf7afb2d552b177fe0f61c0bae1f226161fb4bca5492e3dc3da",
+          "sha256": "8f04311199164cf7afb2d552b177fe0f61c0bae1f226161fb4bca5492e3dc3da"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:57a942ca83e169a8b07af37258b574c06ffd10faddc46daa1da7312d32219cec",
-          "sha256": "57a942ca83e169a8b07af37258b574c06ffd10faddc46daa1da7312d32219cec"
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:58275768c618ee0fb50833391bcc6ffe4ed380eba1cb86ffdf65f2d935b3b140",
+          "sha256": "58275768c618ee0fb50833391bcc6ffe4ed380eba1cb86ffdf65f2d935b3b140"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:e334f8513f9cc5b862d4486c3ee2a818d41433376137d4c5258316c800a33938",
-          "sha256": "e334f8513f9cc5b862d4486c3ee2a818d41433376137d4c5258316c800a33938"
+          "url": "https://ghcr.io/v2/homebrew/core/cpr/blobs/sha256:aeb29af6745f6c1503aae57ae9bf2e73615beae9e66626eb633501331dc3f8b8",
+          "sha256": "aeb29af6745f6c1503aae57ae9bf2e73615beae9e66626eb633501331dc3f8b8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,7 +84,10 @@
     "cmake"
   ],
   "dependencies": [
-    "openssl@1.1"
+
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "curl",
+        "openssl@3"
+      ]
+    }
+  }
 }

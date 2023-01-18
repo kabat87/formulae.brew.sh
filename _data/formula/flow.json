@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://flowtype.org/",
   "versions": {
-    "stable": "0.169.0",
+    "stable": "0.197.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/facebook/flow/archive/v0.169.0.tar.gz",
+      "url": "https://github.com/facebook/flow/archive/v0.197.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f62245ac39d344e6372ae497e532dc3e26bb898cbd7abae4abe83f5add9ad20b"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:acc32f819578922f67b14b8f0a6e1fb15cfbd2cb7f2e428cb9a33222568ec94a",
+          "sha256": "acc32f819578922f67b14b8f0a6e1fb15cfbd2cb7f2e428cb9a33222568ec94a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:bc12b52f41161556ef08c91cac73b4b01d4360e82dcad9794347238fc5b35dfd",
-          "sha256": "bc12b52f41161556ef08c91cac73b4b01d4360e82dcad9794347238fc5b35dfd"
+          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:e63314d21849e8f9dfd1e12806603a1cc5f88570f239c83fd92ba55e46222205",
+          "sha256": "e63314d21849e8f9dfd1e12806603a1cc5f88570f239c83fd92ba55e46222205"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:0dee43131977e1679048a1000f1c09e8aba8dc2f387ea7a04cd2e5edf330fa1f",
-          "sha256": "0dee43131977e1679048a1000f1c09e8aba8dc2f387ea7a04cd2e5edf330fa1f"
+          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:41ed7ba616828582410c8375871ea2b14c78fc153220e327b183c0143d2f9133",
+          "sha256": "41ed7ba616828582410c8375871ea2b14c78fc153220e327b183c0143d2f9133"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:a3e798ab10d219ba87b5b875cfb66c10d79d8c47567a687f41864a68357593d5",
+          "sha256": "a3e798ab10d219ba87b5b875cfb66c10d79d8c47567a687f41864a68357593d5"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:08bfc111cee81fe518b2dad484588328a8b2062ca1fe793a321ad3004f20aef0",
-          "sha256": "08bfc111cee81fe518b2dad484588328a8b2062ca1fe793a321ad3004f20aef0"
+          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:494c1a449e685531b7f025dde3d1324519772a9e5490a7f6326544f37b011656",
+          "sha256": "494c1a449e685531b7f025dde3d1324519772a9e5490a7f6326544f37b011656"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:facba26e73c353977d1bf1fb4c79af6c7c4341d465eea6f93a3a3c89369e719c",
-          "sha256": "facba26e73c353977d1bf1fb4c79af6c7c4341d465eea6f93a3a3c89369e719c"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:0209daff11af039b830fdffa153611eb6e29a3d3ab6306db66c2d8348e00495e",
-          "sha256": "0209daff11af039b830fdffa153611eb6e29a3d3ab6306db66c2d8348e00495e"
+          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:644cc7015d532f60762d1e15df53f65162843961810b28d78e93e7eeddee1aea",
+          "sha256": "644cc7015d532f60762d1e15df53f65162843961810b28d78e93e7eeddee1aea"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:c396945873fca13521fa2c1b9004e38a44fcfaf8ef87d51216e343d697308e17",
-          "sha256": "c396945873fca13521fa2c1b9004e38a44fcfaf8ef87d51216e343d697308e17"
+          "url": "https://ghcr.io/v2/homebrew/core/flow/blobs/sha256:b66a7003f2982cb730cd4db1a2e5c2ca2386e3e585011be4470e6821d077923f",
+          "sha256": "b66a7003f2982cb730cd4db1a2e5c2ca2386e3e585011be4470e6821d077923f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
     "opam"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -112,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

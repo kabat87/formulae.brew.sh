@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://pkg.freebsd.org/ports-distfiles/trafshow-5.2.3.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ea7e22674a66afcc7174779d0f803c1f25b42271973b4f75fab293b8d7db11fc"
     }
   },
   "revision": 1,
@@ -76,17 +77,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/trafshow/blobs/sha256:c6bd1f502ddbcc756a400958f1f79da193c5784b7cd71361e1e6742412ae442c",
           "sha256": "c6bd1f502ddbcc756a400958f1f79da193c5784b7cd71361e1e6742412ae442c"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/trafshow/blobs/sha256:fd7be4933f9be5a4a3ebaf0e31086e0f5566608305dd88779f0b0790fdc75c05",
-          "sha256": "fd7be4933f9be5a4a3ebaf0e31086e0f5566608305dd88779f0b0790fdc75c05"
+          "url": "https://ghcr.io/v2/homebrew/core/trafshow/blobs/sha256:16a44efd2d96a93d0dfeb3b6328338710599370308f21728f6900c98bb8df781",
+          "sha256": "16a44efd2d96a93d0dfeb3b6328338710599370308f21728f6900c98bb8df781"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +96,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +106,8 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap",
+    "ncurses"
   ],
   "requirements": [
 
@@ -123,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

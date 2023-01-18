@@ -7,27 +7,31 @@
   ],
   "desc": "Business messaging and team collaboration app",
   "homepage": "https://flock.com/",
-  "url": "https://updates.flock.co/fl_mac_electron/Flock-macOS-2.2.507.dmg",
+  "url": "https://updates.flock.co/fl_mac_electron/Flock-macOS-2.2.511.dmg",
   "appcast": null,
-  "version": "2.2.507",
+  "version": "2.2.511",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2aa1f906d5dcdba7bba34e66841f470814b2ff305335ec07d1fc610a9f4d4b29",
+  "sha256": "0019e1db5e001d4f0cbb12b40d45360ba1ceae3438ea8aa61c7ba26791145a1a",
   "artifacts": [
-    [
-      "Flock.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Flock",
-        "~/Library/Logs/Flock",
-        "~/Library/Preferences/to.go.osx.plist",
-        "~/Library/Saved Application State/to.go.osx.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Flock.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Flock",
+            "~/Library/Logs/Flock",
+            "~/Library/Preferences/to.go.osx.plist",
+            "~/Library/Saved Application State/to.go.osx.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

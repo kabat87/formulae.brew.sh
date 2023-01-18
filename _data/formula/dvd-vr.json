@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.pixelbeat.org/programs/dvd-vr/dvd-vr-0.9.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "19d085669aa59409e8862571c29e5635b6b6d3badf8a05886a3e0336546c938f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dvd-vr/blobs/sha256:f134891dbbb4f74aa606a2f560ae6992764387c39e8d92977828d1983f04e575",
+          "sha256": "f134891dbbb4f74aa606a2f560ae6992764387c39e8d92977828d1983f04e575"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dvd-vr/blobs/sha256:09d9566df3e194af10ca708f99f20d0d7ca0f2d14dae84c797508c443cd5fb8e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dvd-vr/blobs/sha256:34cfb579dcddb0ded88010dea55a3b5bb4d78628ab6c0bc0e7f70d93882b2156",
           "sha256": "34cfb579dcddb0ded88010dea55a3b5bb4d78628ab6c0bc0e7f70d93882b2156"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dvd-vr/blobs/sha256:fd4bf8df87ae39182a966d3f85daa450777ad8e1f2a247a64309a0045246a244",
+          "sha256": "fd4bf8df87ae39182a966d3f85daa450777ad8e1f2a247a64309a0045246a244"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/dvd-vr/blobs/sha256:a048c7985df06e3a1d4c7145064b87bd51945f15da2494c03e7af542f07ca8b4",
           "sha256": "a048c7985df06e3a1d4c7145064b87bd51945f15da2494c03e7af542f07ca8b4"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dvd-vr/blobs/sha256:22919ace8aeedc16d406797273402498c0c97ceec31e2dfbffcba6fff957ce65",
-          "sha256": "22919ace8aeedc16d406797273402498c0c97ceec31e2dfbffcba6fff957ce65"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dvd-vr/blobs/sha256:64fbe6463814cb9fa4e34863bebe256e8973abeb1241f299173ae409c00da770",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

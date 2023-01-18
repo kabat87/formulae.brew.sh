@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/bsdsfv/bsdsfv/1.18/bsdsfv-1.18.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "577245da123d1ea95266c1628e66a6cf87b8046e1a902ddd408671baecf88495"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bsdsfv/blobs/sha256:81531b6407c9081e4118d7abd4ed94f9f84899e349b6785141874bd0fd375390",
+          "sha256": "81531b6407c9081e4118d7abd4ed94f9f84899e349b6785141874bd0fd375390"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bsdsfv/blobs/sha256:30b9057ddfd9c6135bec8299b07b4070df1b9d27c78cbfdf02b60af48628915d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bsdsfv/blobs/sha256:1f2a24ab528de05007b43da3e52628380f4bf6acf8d0d9d2d52cd3defd0c429c",
           "sha256": "1f2a24ab528de05007b43da3e52628380f4bf6acf8d0d9d2d52cd3defd0c429c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bsdsfv/blobs/sha256:6f7366afb6194e3d5feca85e754ab5e0b3a2d02c5c56419aa2d9d7372a85afee",
+          "sha256": "6f7366afb6194e3d5feca85e754ab5e0b3a2d02c5c56419aa2d9d7372a85afee"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/bsdsfv/blobs/sha256:404ec03e044a019a487adfab90012a29a6655fe67b907d9b4e9a46d4f6c57a9b",
           "sha256": "404ec03e044a019a487adfab90012a29a6655fe67b907d9b4e9a46d4f6c57a9b"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bsdsfv/blobs/sha256:fd15cb46a9499bcd1182e8fe4a6ae1de9fb77ced85186601ef6c6579a22d9c51",
-          "sha256": "fd15cb46a9499bcd1182e8fe4a6ae1de9fb77ced85186601ef6c6579a22d9c51"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bsdsfv/blobs/sha256:ffa21308fb20dc93bbe80e8735590e035e0810e858a088f50c8d1ce1cfee041d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

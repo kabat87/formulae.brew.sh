@@ -7,26 +7,31 @@
   ],
   "desc": "Music streaming and sharing platform",
   "homepage": "https://audius.co/",
-  "url": "https://download.audius.co/Audius-0.24.38.dmg",
+  "url": "https://download.audius.co/Audius-1.5.5.dmg",
   "appcast": null,
-  "version": "0.24.38",
+  "version": "1.5.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c342d6a656f47282486baa860db1487fec24083745a2bea18cfb9e378e6ade26",
+  "sha256": "ce28d3f5d3fdd19a53f6d04d290d269449fc34afe29c5d9f0e39fd4a9a106f1e",
   "artifacts": [
-    [
-      "Audius.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Audius",
-        "~/Library/Logs/Audius",
-        "~/Library/Saved Application State/co.audius.app.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Audius.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Audius",
+            "~/Library/Application Support/Caches/audius-client-updater",
+            "~/Library/Logs/Audius",
+            "~/Library/Saved Application State/co.audius.app.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

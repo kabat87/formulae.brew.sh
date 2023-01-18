@@ -13,60 +13,65 @@
   "license": "LGPL-2.1-or-later and GPL-2.0-or-later",
   "homepage": "https://libvirt.org/",
   "versions": {
-    "stable": "7.10.0",
+    "stable": "9.0.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://libvirt.org/sources/libvirt-7.10.0.tar.xz",
+      "url": "https://libvirt.org/sources/libvirt-9.0.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "deca5cff1b7baac297bca9663907c61f71a47183371dc7ac019c107806d5435a"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:402a89194a98ec8f0b2770b445810bd7beb67ed171344eb9f9fcee8f15ba116d",
+          "sha256": "402a89194a98ec8f0b2770b445810bd7beb67ed171344eb9f9fcee8f15ba116d"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:f157ec2148e509becfcfa7d2f093a40f2ddef006687a1a503a984a56c20149a9",
-          "sha256": "f157ec2148e509becfcfa7d2f093a40f2ddef006687a1a503a984a56c20149a9"
+          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:831811c79b2361f65bddddbc0fcfb7eed9776cfe59214c055a2be54c6f4cded4",
+          "sha256": "831811c79b2361f65bddddbc0fcfb7eed9776cfe59214c055a2be54c6f4cded4"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:ae5b59937198b088873ea400c601ba99b2930e08186b960b0a0a3338e69afc0e",
-          "sha256": "ae5b59937198b088873ea400c601ba99b2930e08186b960b0a0a3338e69afc0e"
+          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:bf27a096b9a4fa31d7d4b6353df15a11be0c30e412d8dbb8a00f0c72533f1208",
+          "sha256": "bf27a096b9a4fa31d7d4b6353df15a11be0c30e412d8dbb8a00f0c72533f1208"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:14cd947ffa7b8749e80703faf377999dafeca993bea59a93bf019d13ea3f50cd",
+          "sha256": "14cd947ffa7b8749e80703faf377999dafeca993bea59a93bf019d13ea3f50cd"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:5f3e532a6f37cc24b9ff38bdfa1ab6deb76a6079af8008504fdc03deae7bb0b4",
-          "sha256": "5f3e532a6f37cc24b9ff38bdfa1ab6deb76a6079af8008504fdc03deae7bb0b4"
+          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:b849d2281175dd130690c7d98ba5b52f7d9222560aec7cb9d42aa329481e02a9",
+          "sha256": "b849d2281175dd130690c7d98ba5b52f7d9222560aec7cb9d42aa329481e02a9"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:6c475624430a0251278ba2e08b49ad0bc59f0634033a4914b62ef854fcb2ed1a",
-          "sha256": "6c475624430a0251278ba2e08b49ad0bc59f0634033a4914b62ef854fcb2ed1a"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:f4bf14b1d3e236a5d71de7cf1b8801adc8bd2b05181ad197975c01adbaa28edc",
-          "sha256": "f4bf14b1d3e236a5d71de7cf1b8801adc8bd2b05181ad197975c01adbaa28edc"
+          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:3326d511d68cdecac06845f4cb1afa000a44946842ea2d65993da61dcbcf6e3f",
+          "sha256": "3326d511d68cdecac06845f4cb1afa000a44946842ea2d65993da61dcbcf6e3f"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:6626249198109787d347375c988bf5374677e30ea0bcdd4042de170bae35bb54",
-          "sha256": "6626249198109787d347375c988bf5374677e30ea0bcdd4042de170bae35bb54"
+          "url": "https://ghcr.io/v2/homebrew/core/libvirt/blobs/sha256:a489e0e5ea1d27807b2b6262159bee2fecb488280057615fc19bb2157548d98b",
+          "sha256": "a489e0e5ea1d27807b2b6262159bee2fecb488280057615fc19bb2157548d98b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,7 +81,7 @@
     "ninja",
     "perl",
     "pkg-config",
-    "python@3.9",
+    "python@3.11",
     "rpcgen"
   ],
   "dependencies": [
@@ -89,6 +94,9 @@
     "libiscsi",
     "libssh2",
     "yajl"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +126,32 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "docutils",
+        "meson",
+        "ninja",
+        "perl",
+        "pkg-config",
+        "python@3.11"
+      ],
+      "dependencies": [
+        "gettext",
+        "glib",
+        "gnu-sed",
+        "gnutls",
+        "grep",
+        "libgcrypt",
+        "libiscsi",
+        "libssh2",
+        "yajl",
+        "curl",
+        "libxslt",
+        "libtirpc",
+        "linux-headers@5.16"
+      ]
+    }
+  }
 }

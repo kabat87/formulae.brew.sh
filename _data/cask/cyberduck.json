@@ -7,34 +7,45 @@
   ],
   "desc": "Server and cloud storage browser",
   "homepage": "https://cyberduck.io/",
-  "url": "https://update.cyberduck.io/Cyberduck-8.2.1.36773.zip",
+  "url": "https://update.cyberduck.io/Cyberduck-8.5.4.39083.zip",
   "appcast": null,
-  "version": "8.2.1,36773",
+  "version": "8.5.4,39083",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "052125fa4acfb4dc42b6e6849d9307d26ac543d723c088f3a1f86ffdb15fe8c9",
+  "sha256": "673d49f20fec320eb7a1729531291688220fcf9aa15d30f203af0d6e409bd48d",
   "artifacts": [
-    [
-      "Cyberduck.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Cyberduck",
-        "~/Library/Caches/ch.sudo.cyberduck",
-        "~/Library/Group Containers/G69SCX94XU.duck",
-        "~/Library/Preferences/ch.sudo.cyberduck.plist",
-        "~/Library/Saved Application State/ch.sudo.cyberduck.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Cyberduck.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Cyberduck",
+            "~/Library/Caches/ch.sudo.cyberduck",
+            "~/Library/Group Containers/G69SCX94XU.duck",
+            "~/Library/Preferences/ch.sudo.cyberduck.plist",
+            "~/Library/Saved Application State/ch.sudo.cyberduck.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.12"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

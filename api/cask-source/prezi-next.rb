@@ -1,6 +1,6 @@
 cask "prezi-next" do
-  version "1.53.2,27109"
-  sha256 "f178259032d03fefd33645ea66232dbfa858d5a2fd3e0b41a47ea60ad3522be3"
+  version "1.59.0,27276"
+  sha256 "1bbdf99a92b8d8ffa752c40900f7d0c90ae4e6001da76794db8140ce3d5b93fd"
 
   url "https://desktopassets.prezi.com/mac/pitch/releases/Prezi_Next_#{version.csv.first}.dmg"
   name "Prezi Next"

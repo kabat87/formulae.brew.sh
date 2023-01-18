@@ -7,30 +7,36 @@
   ],
   "desc": ".NET IDE",
   "homepage": "https://www.jetbrains.com/rider/",
-  "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2021.3.2.dmg",
+  "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.3.1.dmg",
   "appcast": null,
-  "version": "2021.3.2,213.6461.51",
+  "version": "2022.3.1,223.8214.53",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "91a6298baf58350eb8e092965d68142214d51cb92471cffe4de515adb72d92bb",
+  "sha256": "9d73b21e558db89ac24a406187cb96e506e320ca0154e8db6aeac7ff960c8944",
   "artifacts": [
-    [
-      "Rider.app"
-    ],
-    "uninstall_postflight (Postflight Block)",
     {
-      "trash": [
-        "~/Library/Application Support/Rider2021.3",
-        "~/Library/Caches/Rider2021.3",
-        "~/Library/Logs/Rider2021.3",
-        "~/Library/Preferences/jetbrains.rider.71e559ef.plist",
-        "~/Library/Preferences/Rider2021.3",
-        "~/Library/Saved Application State/com.jetbrains.rider.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Rider.app"
+      ]
+    },
+    {
+      "uninstall_postflight": "  uninstall_postflight do\n    ENV[\"PATH\"].split(File::PATH_SEPARATOR).map { |path| File.join(path, \"rider\") }.each do |path|\n      if File.readable?(path) &&\n         File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?\n        File.delete(path)\n      end\n    end\n  end\n"
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Rider2022.3",
+            "~/Library/Caches/Rider2022.3",
+            "~/Library/Logs/Rider2022.3",
+            "~/Library/Preferences/jetbrains.rider.71e559ef.plist",
+            "~/Library/Preferences/Rider2022.3",
+            "~/Library/Saved Application State/com.jetbrains.rider.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +49,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.3.1-aarch64.dmg",
+      "sha256": "d25ba49504c22e8669b8e15033cb6e944e9948ecbb0394ba4bbd5804f1f6657f"
+    },
+    "arm64_monterey": {
+      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.3.1-aarch64.dmg",
+      "sha256": "d25ba49504c22e8669b8e15033cb6e944e9948ecbb0394ba4bbd5804f1f6657f"
+    },
+    "arm64_big_sur": {
+      "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2022.3.1-aarch64.dmg",
+      "sha256": "d25ba49504c22e8669b8e15033cb6e944e9948ecbb0394ba4bbd5804f1f6657f"
+    }
+  }
 }

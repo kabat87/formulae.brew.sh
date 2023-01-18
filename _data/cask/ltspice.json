@@ -9,7 +9,7 @@
   "homepage": "https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html",
   "url": "https://ltspice.analog.com/software/LTspice.pkg",
   "appcast": null,
-  "version": "17.0.40",
+  "version": "17.0.42",
   "versions": {
   },
   "installed": null,
@@ -17,20 +17,28 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.analog.LTspice.App",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.analog.LTspice.App"
+        }
+      ]
     },
-    "LTspice.pkg (Pkg)",
     {
-      "trash": [
-        "~/Documents/LTspice/examples",
-        "~/Library/Application Support/LTspice",
-        "~/Library/Preferences/com.analog.LTspice.App.plist"
-      ],
-      "rmdir": "~/Documents/LTspice",
-      "signal": {
-      }
+      "pkg": [
+        "LTspice.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Documents/LTspice/examples",
+            "~/Library/Application Support/LTspice",
+            "~/Library/Preferences/com.analog.LTspice.App.plist"
+          ],
+          "rmdir": "~/Documents/LTspice"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

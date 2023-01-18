@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/docbook2x/docbook2x/0.8.8/docbook2X-0.8.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4077757d367a9d1b1427e8d5dfc3c49d993e90deabc6df23d05cfe9cd2fcdc45"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/docbook2x/blobs/sha256:986216ef87f311cd1a823db850f45fd8228be0f0f1db35cf875d2cf57d29cec4",
+          "sha256": "986216ef87f311cd1a823db850f45fd8228be0f0f1db35cf875d2cf57d29cec4"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/docbook2x/blobs/sha256:c3012b908f1a415b3ff679474eb15f97842b96eb61a03ba8d4c68f83c0a9dfba",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/docbook2x/blobs/sha256:88732999a070c6a9f609c5740fcdf7ed6c014be05555a9aea867e1a69b71aeec",
           "sha256": "88732999a070c6a9f609c5740fcdf7ed6c014be05555a9aea867e1a69b71aeec"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/docbook2x/blobs/sha256:3d7054d71c1423f9b206092c71fcf6c63dec19a55c4600cf6d941fcbba9d1e9a",
+          "sha256": "3d7054d71c1423f9b206092c71fcf6c63dec19a55c4600cf6d941fcbba9d1e9a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/docbook2x/blobs/sha256:acfdd1c80cb523b213dea0125819b1b6fc783d6d740cc8fc0047f44756b57889",
           "sha256": "acfdd1c80cb523b213dea0125819b1b6fc783d6d740cc8fc0047f44756b57889"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/docbook2x/blobs/sha256:e3efe4afe190e126174c6e3bec0a9feb4ad37ddd0ecaef778b1e8df8a60e8717",
-          "sha256": "e3efe4afe190e126174c6e3bec0a9feb4ad37ddd0ecaef778b1e8df8a60e8717"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/docbook2x/blobs/sha256:1e054b07a0d7e8817a58b2c656e8f435289cd1d2110d7fae083e1bf79eece522",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "docbook"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -129,5 +137,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "docbook",
+        "libxslt",
+        "perl"
+      ]
+    }
+  }
 }

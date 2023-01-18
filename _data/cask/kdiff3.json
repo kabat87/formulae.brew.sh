@@ -7,29 +7,37 @@
   ],
   "desc": "Utility for comparing and merging files and directories",
   "homepage": "https://invent.kde.org/sdk/kdiff3",
-  "url": "https://download.kde.org/stable/kdiff3/kdiff3-1.9.3-macos-64.dmg",
+  "url": "https://download.kde.org/stable/kdiff3/kdiff3-1.10.0-macos-64-en.dmg",
   "appcast": null,
-  "version": "1.9.3",
+  "version": "1.10.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "502e7631364aa1eda7ed3caed634137e5d848255b5147f46a5c615956dfb4a79",
+  "sha256": "cb15fbddc8b7f186889816deb10a8d2248d9dd97601853f51409669e1a4467b9",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "kdiff3.app"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/kdiff3/1.9.3/kdiff3.wrapper.sh",
-      {
-        "target": "kdiff3"
-      }
-    ],
     {
-      "trash": "~/.kdiff3rc",
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/bash\n      '#{appdir}/kdiff3.app/Contents/MacOS/kdiff3' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "app": [
+        "kdiff3.app"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/kdiff3/1.10.0/kdiff3.wrapper.sh",
+        {
+          "target": "kdiff3"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.kdiff3rc"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

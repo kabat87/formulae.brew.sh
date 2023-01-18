@@ -5,42 +5,55 @@
   "name": [
     "SysEx Librarian"
   ],
-  "desc": null,
+  "desc": "Communicate with MIDI devices using System Exclusive messages",
   "homepage": "https://www.snoize.com/SysExLibrarian/",
-  "url": "https://www.snoize.com/SysExLibrarian/SysExLibrarian_1_4_1.zip",
+  "url": "https://www.snoize.com/SysExLibrarian/SysExLibrarian_1_5_1.dmg",
   "appcast": null,
-  "version": "1.4.1",
+  "version": "1.5.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "dbb1d9cb1c79cb873cb768c775a441b0da866f356cc18d697e33fc300f6b789a",
+  "sha256": "19d6905404ec1b16815d0ed2fc12aa93a84e6f66fedf3213f23d55f2960d88b0",
   "artifacts": [
     {
-      "quit": [
-        "com.snoize.SnoizeMIDI",
-        "com.snoize.SysExLibrarian"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "com.snoize.SnoizeMIDI",
+            "com.snoize.SysExLibrarian"
+          ]
+        }
+      ]
     },
-    [
-      "SysEx Librarian.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.snoize.SysExLibrarian.plist",
-        "~/Library/Caches/com.snoize.SysExLibrarian",
-        "~/Library/Saved Application State/com.snoize.SysExLibrarian.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SysEx Librarian.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.snoize.SysExLibrarian.plist",
+            "~/Library/Caches/com.snoize.SysExLibrarian",
+            "~/Library/Saved Application State/com.snoize.SysExLibrarian.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.13"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

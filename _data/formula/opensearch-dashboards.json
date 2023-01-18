@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://opensearch.org/docs/dashboards/index/",
   "versions": {
-    "stable": "1.2.0",
+    "stable": "2.4.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/opensearch-project/OpenSearch-Dashboards.git",
-      "tag": "1.2.0",
-      "revision": "caf668e73304bac890f41c37cd6c3a41257cd289"
+      "tag": "2.4.1",
+      "revision": "ea36827cdedf1e726e7cb8315ffc49f73f9b4eb7",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,17 +32,31 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "all": {
+        "ventura": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/opensearch-dashboards/blobs/sha256:8b4edd3b2d6d03a979fc7b3fb45e4bfad9267865bd6f51ea5d8eecac86244577",
-          "sha256": "8b4edd3b2d6d03a979fc7b3fb45e4bfad9267865bd6f51ea5d8eecac86244577"
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch-dashboards/blobs/sha256:a0cadcb258cd3d3aecedc07a713a1929a419fde666f2ce6539fed6a85767fe7a",
+          "sha256": "a0cadcb258cd3d3aecedc07a713a1929a419fde666f2ce6539fed6a85767fe7a"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch-dashboards/blobs/sha256:0a875887f3c90fd984dbe6653265bd11a5337e6feab30200a0b64962d30fd5e8",
+          "sha256": "0a875887f3c90fd984dbe6653265bd11a5337e6feab30200a0b64962d30fd5e8"
+        },
+        "big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch-dashboards/blobs/sha256:0a875887f3c90fd984dbe6653265bd11a5337e6feab30200a0b64962d30fd5e8",
+          "sha256": "0a875887f3c90fd984dbe6653265bd11a5337e6feab30200a0b64962d30fd5e8"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch-dashboards/blobs/sha256:cf2468536ee662d63c4acb9583ed4e74a2548407bd7bc78140aa7bc899e09532",
+          "sha256": "cf2468536ee662d63c4acb9583ed4e74a2548407bd7bc78140aa7bc899e09532"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +64,10 @@
     "yarn"
   ],
   "dependencies": [
-    "node@10"
+    "node@14"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -61,7 +79,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -78,5 +104,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

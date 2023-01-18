@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libbitcoin/libbitcoin-consensus/archive/v3.6.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a4252f40910fcb61da14cf8028bf3824125bacb0fc251491c9bb4e2818065fca"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libbitcoin-consensus/blobs/sha256:46734a045992d1a1e2cba4689ab58537f5e7729310d6acb476178d170c54d63d",
+          "sha256": "46734a045992d1a1e2cba4689ab58537f5e7729310d6acb476178d170c54d63d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libbitcoin-consensus/blobs/sha256:1a6488ba887d026f465280fc3f2c27847d539eca7c3ab733eff3e4bed89d6c26",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libbitcoin-consensus/blobs/sha256:b2a70f871df4a376246e9882383751a65d04e7f30ff1b0c7abab507cf3d80e49",
           "sha256": "b2a70f871df4a376246e9882383751a65d04e7f30ff1b0c7abab507cf3d80e49"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libbitcoin-consensus/blobs/sha256:c1fa7160b3b53e24caf0b92cc8cd1276f859966a15aac8e2950b67bf2e301ac3",
+          "sha256": "c1fa7160b3b53e24caf0b92cc8cd1276f859966a15aac8e2950b67bf2e301ac3"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +93,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -112,5 +125,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

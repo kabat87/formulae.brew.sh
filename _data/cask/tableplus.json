@@ -7,28 +7,32 @@
   ],
   "desc": "Native GUI tool for relational databases",
   "homepage": "https://tableplus.com/",
-  "url": "https://download.tableplus.com/macos/402/TablePlus.dmg",
+  "url": "https://download.tableplus.com/macos/478/TablePlus.dmg",
   "appcast": null,
-  "version": "4.5.2,402",
+  "version": "5.2.2,478",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3ce0dcc6e68480b1201abe6093c471e078d22bf4bdfa651280e6cdeaaf85a268",
+  "sha256": "f4f358e38f289affe9eba41cf0e769ab797bf98a31b89910ba95769540bf6882",
   "artifacts": [
-    [
-      "TablePlus.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.tinyapp.TablePlus",
-        "~/Library/Caches/com.tinyapp.TablePlus",
-        "~/Library/Cookies/com.tinyapp.TablePlus.binarycookies",
-        "~/Library/Preferences/com.tinyapp.TablePlus.plist",
-        "~/Library/Saved Application State/com.tinyapp.TablePlus.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "TablePlus.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.tinyapp.TablePlus",
+            "~/Library/Caches/com.tinyapp.TablePlus",
+            "~/Library/Cookies/com.tinyapp.TablePlus.binarycookies",
+            "~/Library/Preferences/com.tinyapp.TablePlus.plist",
+            "~/Library/Saved Application State/com.tinyapp.TablePlus.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

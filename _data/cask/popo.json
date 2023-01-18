@@ -7,27 +7,31 @@
   ],
   "desc": "Instant messaging platform",
   "homepage": "https://popo.netease.com/",
-  "url": "https://popo.netease.com/file/popomac/POPO-setup_3_41_1.dmg",
+  "url": "https://popo.netease.com/file/popomac/POPO-setup_prod_1672828857142.dmg",
   "appcast": null,
-  "version": "3.41.1",
+  "version": "3.63.0,1672828857142",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "accdad72b4a19a5b8f4e26ad22d118ced0164aab532e99715f2b6be0b927546b",
+  "sha256": "518c0660696f75fe7455f815cd28779681baf2d105ed4d26ae3b72c3e5006e56",
   "artifacts": [
-    [
-      "popo_mac.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Netease/Popo",
-        "~/Library/Caches/com.netease.game.popo",
-        "~/Library/Preferences/com.netease.game.popo.plist",
-        "~/Library/Saved Application State/com.netease.game.popo.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "popo_mac.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Netease/Popo",
+            "~/Library/Caches/com.netease.game.popo",
+            "~/Library/Preferences/com.netease.game.popo.plist",
+            "~/Library/Saved Application State/com.netease.game.popo.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

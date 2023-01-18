@@ -7,27 +7,31 @@
   ],
   "desc": "Build desktop apps with JavaScript, HTML, and CSS",
   "homepage": "https://electronjs.org/",
-  "url": "https://github.com/electron/electron/releases/download/v16.0.7/electron-v16.0.7-darwin-x64.zip",
+  "url": "https://github.com/electron/electron/releases/download/v22.0.2/electron-v22.0.2-darwin-x64.zip",
   "appcast": null,
-  "version": "16.0.7",
+  "version": "22.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e5c825d4cfc1dabd066986fa1cae3ee880f222b053c760b700b24899fb02d4db",
+  "sha256": "b42c036e099fd402b8f907aef229fb66bd4040a1b4d38a249a60bbd250b444a9",
   "artifacts": [
-    [
-      "Electron.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Electron",
-        "~/Library/Caches/Electron",
-        "~/Library/Preferences/com.github.electron.helper.plist",
-        "~/Library/Preferences/com.github.electron.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Electron.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Electron",
+            "~/Library/Caches/Electron",
+            "~/Library/Preferences/com.github.electron.helper.plist",
+            "~/Library/Preferences/com.github.electron.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/electron/electron/releases/download/v22.0.2/electron-v22.0.2-darwin-arm64.zip",
+      "sha256": "2aace0a6f4797b6fa6c3f84932ebcd5601168cd2945b2191e3fea48a29aa9f46"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/electron/electron/releases/download/v22.0.2/electron-v22.0.2-darwin-arm64.zip",
+      "sha256": "2aace0a6f4797b6fa6c3f84932ebcd5601168cd2945b2191e3fea48a29aa9f46"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/electron/electron/releases/download/v22.0.2/electron-v22.0.2-darwin-arm64.zip",
+      "sha256": "2aace0a6f4797b6fa6c3f84932ebcd5601168cd2945b2191e3fea48a29aa9f46"
+    }
+  }
 }

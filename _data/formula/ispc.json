@@ -13,55 +13,65 @@
   "license": "BSD-3-Clause",
   "homepage": "https://ispc.github.io",
   "versions": {
-    "stable": "1.17.0",
+    "stable": "1.18.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/ispc/ispc/archive/v1.17.0.tar.gz",
+      "url": "https://github.com/ispc/ispc/archive/v1.18.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5b004c121e7a39c8654bb61930a240e4bd3e432a80d851c6281fae49f9aca7b7"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:71d036db4d1c72e0d482b6319ae80b2f2b689d193206f062d0e5d5be79fba506",
+          "sha256": "71d036db4d1c72e0d482b6319ae80b2f2b689d193206f062d0e5d5be79fba506"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:95e78ba62fbcd1d290db0d04e1738b339a40c0d600f67bd6cc7ac3158e2ec58d",
-          "sha256": "95e78ba62fbcd1d290db0d04e1738b339a40c0d600f67bd6cc7ac3158e2ec58d"
+          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:ebbb9f84e98e02d9d48c8edbbcbc441ededec14a275a02dc50159442838d8d46",
+          "sha256": "ebbb9f84e98e02d9d48c8edbbcbc441ededec14a275a02dc50159442838d8d46"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:7847016c49b86fde9b9807d33090a81997b9736a5a564b4ca696324815a4d2d2",
-          "sha256": "7847016c49b86fde9b9807d33090a81997b9736a5a564b4ca696324815a4d2d2"
+          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:2f0b43f9129c4f8612b6ec3733fa33a9481716f5c4fc64722a0484e2faf29490",
+          "sha256": "2f0b43f9129c4f8612b6ec3733fa33a9481716f5c4fc64722a0484e2faf29490"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:c9acd44951ee26fde637a827891ca2723d40504e387836bac49652249a330743",
+          "sha256": "c9acd44951ee26fde637a827891ca2723d40504e387836bac49652249a330743"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:18c71e795071937755b19b4ad1d38352305e5135fa376cdf822760f818ff2384",
-          "sha256": "18c71e795071937755b19b4ad1d38352305e5135fa376cdf822760f818ff2384"
+          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:74cc731b62d211f510f3186c9cfcac8f9115320e4c818d6e4a53fa3b337dc2df",
+          "sha256": "74cc731b62d211f510f3186c9cfcac8f9115320e4c818d6e4a53fa3b337dc2df"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:87c6ea89cf9c56e909ec1467fa738e554e0e72c2692401bd6d487bb1de0cb6ee",
-          "sha256": "87c6ea89cf9c56e909ec1467fa738e554e0e72c2692401bd6d487bb1de0cb6ee"
+          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:c767f2a66574d1f4ec414facdd0406f81e9efdda8be02ced32ab32a3c8732d36",
+          "sha256": "c767f2a66574d1f4ec414facdd0406f81e9efdda8be02ced32ab32a3c8732d36"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:9db07b42653f019b89aa885e92c15b471444116dc7e899857ecfe77ef3c3d5c3",
-          "sha256": "9db07b42653f019b89aa885e92c15b471444116dc7e899857ecfe77ef3c3d5c3"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ispc/blobs/sha256:568d7315e62e78e6556ce76831c39638034c0497eed5de3176c200d139324126",
+          "sha256": "568d7315e62e78e6556ce76831c39638034c0497eed5de3176c200d139324126"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,10 +79,13 @@
     "bison",
     "cmake",
     "flex",
-    "python@3.9"
+    "python@3.11"
   ],
   "dependencies": [
-    "llvm@12"
+    "llvm@14"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

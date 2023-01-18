@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://flak.tedunangst.com/files/reop-2.1.1.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fa8ae058c51efec5bde39fab15b4275e6394d9ab1dd2190ffdba3cf9983fdcac"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/reop/blobs/sha256:d1ac56f04d4010007247372bc939e57aede683ca431c4f6426e587add87bf29f",
+          "sha256": "d1ac56f04d4010007247372bc939e57aede683ca431c4f6426e587add87bf29f"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/reop/blobs/sha256:8db72af3ee635c310ecc3fac68ef41eabd0808442c295da16fc380ef9c78593d",
+          "sha256": "8db72af3ee635c310ecc3fac68ef41eabd0808442c295da16fc380ef9c78593d"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/reop/blobs/sha256:2f19ce5ab996a6d2cf7e5152160f0f0298e3c19eed633a9c52c0d548b2be0017",
           "sha256": "2f19ce5ab996a6d2cf7e5152160f0f0298e3c19eed633a9c52c0d548b2be0017"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/reop/blobs/sha256:dc7414711fe53ab8de8276160881c85c6344b6c210cfc30a522584d4e4f3a9aa",
+          "sha256": "dc7414711fe53ab8de8276160881c85c6344b6c210cfc30a522584d4e4f3a9aa"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/reop/blobs/sha256:68ca1188f2246247c5025502802889c5483bdcd13ae49662ef8e231874dcd4d8",
+          "sha256": "68ca1188f2246247c5025502802889c5483bdcd13ae49662ef8e231874dcd4d8"
         },
         "big_sur": {
           "cellar": ":any",
@@ -60,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/reop/blobs/sha256:1fdb2fd33a36c6cc57971c3399e2536ee2548acfde8761f0536cee33b2f61354",
           "sha256": "1fdb2fd33a36c6cc57971c3399e2536ee2548acfde8761f0536cee33b2f61354"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/reop/blobs/sha256:7d80f151eacf4cc18df604fb3bf3daf0e786e07b6e82860399dc20b8d30b6363",
+          "sha256": "7d80f151eacf4cc18df604fb3bf3daf0e786e07b6e82860399dc20b8d30b6363"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +100,9 @@
   ],
   "dependencies": [
     "libsodium"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

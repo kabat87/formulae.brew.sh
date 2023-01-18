@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/zboy/zBoy%20v0.71/zboy-0.71.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d359b87e3149418fbe1599247c9ca71e870d213b64a912616ffc6e77d1dff506"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zboy/blobs/sha256:4c1255995acd35d950d0625b1c505b32feeb5f92ba8428e5a91405aca49f5841",
+          "sha256": "4c1255995acd35d950d0625b1c505b32feeb5f92ba8428e5a91405aca49f5841"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zboy/blobs/sha256:19932605bd410edb2aa29dca7ee24442f62323f35118faee2132434a68cf891f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zboy/blobs/sha256:3ca2df4138ab68a6124473e973ac17161cbb8850388c21cf768008f204361eb6",
           "sha256": "3ca2df4138ab68a6124473e973ac17161cbb8850388c21cf768008f204361eb6"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zboy/blobs/sha256:1770fc751708bba11c935142cf5d51ebcda11a816b9d183c270df6b11b52601f",
+          "sha256": "1770fc751708bba11c935142cf5d51ebcda11a816b9d183c270df6b11b52601f"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "sdl2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

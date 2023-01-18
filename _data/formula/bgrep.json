@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tmbinc/bgrep/archive/bgrep-0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "24c02393fb436d7a2eb02c6042ec140f9502667500b13a59795388c1af91f9ba"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bgrep/blobs/sha256:b808abe4e0fd7be98cd1d9916c7e839f95cb086d28a987101aa51a73c22da87f",
+          "sha256": "b808abe4e0fd7be98cd1d9916c7e839f95cb086d28a987101aa51a73c22da87f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bgrep/blobs/sha256:c65ddc4ca486db177cd63f45e4cb97172f590ed9b2f70364120b2326e7ab3f94",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bgrep/blobs/sha256:2d5628a1b93a4ad2e770502b011140bc301051e1679ac5d59eadbd9b94944b1b",
           "sha256": "2d5628a1b93a4ad2e770502b011140bc301051e1679ac5d59eadbd9b94944b1b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bgrep/blobs/sha256:0240d1970176f07cb0649f1da10501aadd49ca7a915756ecadb0d08fb1032bb5",
+          "sha256": "0240d1970176f07cb0649f1da10501aadd49ca7a915756ecadb0d08fb1032bb5"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/bgrep/blobs/sha256:29f0b2d7ab307eae228a03d4f42f677d9ff0884edc5c96771da36182cb592cd2",
           "sha256": "29f0b2d7ab307eae228a03d4f42f677d9ff0884edc5c96771da36182cb592cd2"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bgrep/blobs/sha256:af4dab94130c48930d064074da8492c5531842a348747b0dd39420db738f6ae9",
-          "sha256": "af4dab94130c48930d064074da8492c5531842a348747b0dd39420db738f6ae9"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bgrep/blobs/sha256:b5a19c037fcdd2ef3d50b419dd0d80208febfe24fb6bf785f40f47b7b2f87f45",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

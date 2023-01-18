@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dstosberg/odt2txt/archive/v0.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "23a889109ca9087a719c638758f14cc3b867a5dcf30a6c90bf6a0985073556dd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/odt2txt/blobs/sha256:6da6cd6c262ef01c0f0c7cf9de4e4897f255bcf5266313a373c6b89ebc15d162",
+          "sha256": "6da6cd6c262ef01c0f0c7cf9de4e4897f255bcf5266313a373c6b89ebc15d162"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/odt2txt/blobs/sha256:1990d5bd2ed1d5d9b5f7165ecd8285ded82ff8ed0d622b5f9820e9bc2123252c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/odt2txt/blobs/sha256:00a813eeef30b44f3c760435055a40f5471aa64fac6f390fcbc5bea64f34e9cd",
           "sha256": "00a813eeef30b44f3c760435055a40f5471aa64fac6f390fcbc5bea64f34e9cd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/odt2txt/blobs/sha256:d0beae42729ad6c48197a6575aa419f1c9b9c742252ce70b3105a3d19a2a6815",
+          "sha256": "d0beae42729ad6c48197a6575aa419f1c9b9c742252ce70b3105a3d19a2a6815"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/odt2txt/blobs/sha256:4b86c07be0d96899d76adee3bf65390beb4288eeddbfb531dfcdbc3f17ff5bc8",
           "sha256": "4b86c07be0d96899d76adee3bf65390beb4288eeddbfb531dfcdbc3f17ff5bc8"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/odt2txt/blobs/sha256:2005cd3ccfc24aa3c188339a63d48454636ace229cffc6b2add8ecf05eea40a1",
-          "sha256": "2005cd3ccfc24aa3c188339a63d48454636ace229cffc6b2add8ecf05eea40a1"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/odt2txt/blobs/sha256:2b48cef7a1fb7bf172435fbf6b465ea9fde29785f9be3d088075ad0e5224cfab",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "LGPL-2.0-or-later",
   "homepage": "https://gstreamer.freedesktop.org/",
   "versions": {
-    "stable": "1.18.5",
+    "stable": "1.20.5",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.18.5.tar.xz",
+      "url": "https://gstreamer.freedesktop.org/src/gstreamer/gstreamer-1.20.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5a19083faaf361d21fc391124f78ba6d609be55845a82fa8f658230e5fa03dff"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:a81bbd2b8ede4504609920eea3d4e908a6ef8c1006711882d21caa359583aef1",
+          "sha256": "a81bbd2b8ede4504609920eea3d4e908a6ef8c1006711882d21caa359583aef1"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:17eaa301f59d1fe050947a33170c19a740249d30071df7cfea328c07f73ef21d",
-          "sha256": "17eaa301f59d1fe050947a33170c19a740249d30071df7cfea328c07f73ef21d"
+          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:76df20e4746ca63128f17e2439ed4e4cb76207044a289739cbf3156948bd8289",
+          "sha256": "76df20e4746ca63128f17e2439ed4e4cb76207044a289739cbf3156948bd8289"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:8a5e1cea56b64080ed4849d694c5c93d6e4379c06d371006e844bdfa78c1bdf7",
-          "sha256": "8a5e1cea56b64080ed4849d694c5c93d6e4379c06d371006e844bdfa78c1bdf7"
+          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:e8146e692c253562731f4caefabf6077593df8ea2ed7e321c14398e5a57ae8a4",
+          "sha256": "e8146e692c253562731f4caefabf6077593df8ea2ed7e321c14398e5a57ae8a4"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:205272cca1648d3495603171c7174d4fbb3072a7dcce5f7847e34282b4280b75",
+          "sha256": "205272cca1648d3495603171c7174d4fbb3072a7dcce5f7847e34282b4280b75"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:623bec9c478267a5964e1bb0e6e9fa18212a3bdc8ad70978509059e6a501b2e1",
-          "sha256": "623bec9c478267a5964e1bb0e6e9fa18212a3bdc8ad70978509059e6a501b2e1"
+          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:6b9306bbc88b4b86db3578d37f7e67a0904eecece00b7af42a49afd5deb7a8f7",
+          "sha256": "6b9306bbc88b4b86db3578d37f7e67a0904eecece00b7af42a49afd5deb7a8f7"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:572b2ffe10da57213e900b3b23d12e2ba5be8f912e327ba46cbc7b40dcff9b02",
-          "sha256": "572b2ffe10da57213e900b3b23d12e2ba5be8f912e327ba46cbc7b40dcff9b02"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:33c77ef7ddd3b4d5daf1e5851efc0a293e4284726a35e732938c49f9bcbdfbf3",
-          "sha256": "33c77ef7ddd3b4d5daf1e5851efc0a293e4284726a35e732938c49f9bcbdfbf3"
+          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:98e5374f5f6c70b8c72f2182cd5dcee45704e66ea98be561a52bd30ff4d28004",
+          "sha256": "98e5374f5f6c70b8c72f2182cd5dcee45704e66ea98be561a52bd30ff4d28004"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:5bcd1f49326cd27c245157336af71b43da146e3824a6845cb10fdfe65098ee33",
-          "sha256": "5bcd1f49326cd27c245157336af71b43da146e3824a6845cb10fdfe65098ee33"
+          "url": "https://ghcr.io/v2/homebrew/core/gstreamer/blobs/sha256:3560eb3799b8070c94e4d07d432974dbfd1bdd06b956e32280c9e0b8e40a163c",
+          "sha256": "3560eb3799b8070c94e4d07d432974dbfd1bdd06b956e32280c9e0b8e40a163c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +85,9 @@
   "dependencies": [
     "gettext",
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

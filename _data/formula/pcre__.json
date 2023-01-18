@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "77ee9fc1afe142e4ba2726416239ced66c3add4295ab1e5ed37ca8a9e7bb638a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pcrexx/blobs/sha256:67b2481140ac7c4101d443b54f4d6c7bb7bb1ede6338bae81a4c78509ff49f52",
+          "sha256": "67b2481140ac7c4101d443b54f4d6c7bb7bb1ede6338bae81a4c78509ff49f52"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/pcrexx/blobs/sha256:07536c89d8da585a2604dbc109e7cefa2784c83c25b505541b7f407444266f87",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/pcrexx/blobs/sha256:1232e288cacfd0124da243208e1584caf1925be4dcdcc7b94b96585fb50bfabf",
           "sha256": "1232e288cacfd0124da243208e1584caf1925be4dcdcc7b94b96585fb50bfabf"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pcrexx/blobs/sha256:ce44cf5554199289582744bb08fb4f2361e4d502ead44860aa6442a1381a72ab",
+          "sha256": "ce44cf5554199289582744bb08fb4f2361e4d502ead44860aa6442a1381a72ab"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
   ],
   "dependencies": [
     "pcre"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

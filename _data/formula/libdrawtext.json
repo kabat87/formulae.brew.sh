@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jtsiomb/libdrawtext/archive/v0.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7eea99dbf9c86698b5b00ad7f0675b9327098112bf5c11f1bad0635077eae8a9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdrawtext/blobs/sha256:62aeef081e3a86502eb7b867f8cd2e44dd4f54ad795183c6a8e6abcda00367e2",
+          "sha256": "62aeef081e3a86502eb7b867f8cd2e44dd4f54ad795183c6a8e6abcda00367e2"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdrawtext/blobs/sha256:0159f6a1ff8d4337e94df6fd14c7746906e2cc813b6557bf5792bf609c9f9262",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdrawtext/blobs/sha256:7383b095117bbcb658bb4563a709509bc01b4a3e747cf74c394fadb39a677300",
           "sha256": "7383b095117bbcb658bb4563a709509bc01b4a3e747cf74c394fadb39a677300"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdrawtext/blobs/sha256:b7aacf82e9f288e7c0b2c61853b062a260859be357ddc1f235dcfad6def2ff0e",
+          "sha256": "b7aacf82e9f288e7c0b2c61853b062a260859be357ddc1f235dcfad6def2ff0e"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "freetype"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

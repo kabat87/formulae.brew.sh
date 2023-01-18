@@ -13,73 +13,77 @@
   "license": "BSD-3-Clause",
   "homepage": "https://camlp5.github.io/",
   "versions": {
-    "stable": "8.00",
+    "stable": "8.00.04",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/camlp5/camlp5/archive/rel8.00.tar.gz",
+      "url": "https://github.com/camlp5/camlp5/archive/refs/tags/rel8.00.04.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bddbcb5c3c2d410c9a61c4dfb6e46e3bbe984d25ac68221a7a65c82a29956b1d"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:899fe2710188efbca347817a752d5ddb8ce8288434cf2d5911611be932bcc9f3",
+          "sha256": "899fe2710188efbca347817a752d5ddb8ce8288434cf2d5911611be932bcc9f3"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:4e9d1250091a2c965ef8870806c20c8aeec04ecd14c15f98d3d71103271b8f20",
-          "sha256": "4e9d1250091a2c965ef8870806c20c8aeec04ecd14c15f98d3d71103271b8f20"
+          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:63f83e1410d36a10a0f7878487126dcb8d1637d99c97584207d8e44dce84e10e",
+          "sha256": "63f83e1410d36a10a0f7878487126dcb8d1637d99c97584207d8e44dce84e10e"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:549ee3a8bfbc3b3d6f466087562d15fd1e1b1b092786c488ae3109c19b1ca50d",
-          "sha256": "549ee3a8bfbc3b3d6f466087562d15fd1e1b1b092786c488ae3109c19b1ca50d"
+          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:c7ca80e8ca739c8648a52da3ee4af318fe5e58de5fc8fdd7c7e08d822f44a512",
+          "sha256": "c7ca80e8ca739c8648a52da3ee4af318fe5e58de5fc8fdd7c7e08d822f44a512"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:169409404579083889e4c5703bd717f19c7931b502e5b4f99e89e8d47d5af12b",
+          "sha256": "169409404579083889e4c5703bd717f19c7931b502e5b4f99e89e8d47d5af12b"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:8c3a3a59d9cf228c480b49ff3c0d4ff77f5be92e301d2017f1462e86d16e6ae4",
-          "sha256": "8c3a3a59d9cf228c480b49ff3c0d4ff77f5be92e301d2017f1462e86d16e6ae4"
+          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:0576eff6922d5a79b3fdf401259876de4fa628bc2f14190214e47b6dc5210c47",
+          "sha256": "0576eff6922d5a79b3fdf401259876de4fa628bc2f14190214e47b6dc5210c47"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:a01dea02114f9eb35e8d151ea3b61c34c7fcf5c2db09583cc3480a010211e7b3",
-          "sha256": "a01dea02114f9eb35e8d151ea3b61c34c7fcf5c2db09583cc3480a010211e7b3"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:14d9affdc0d1aaeef2a2e122523acba47d3b271f7002c66e407e02387f48b1fe",
-          "sha256": "14d9affdc0d1aaeef2a2e122523acba47d3b271f7002c66e407e02387f48b1fe"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:6b753cfd90a18e4d813cfc9ce3d3345547a0424527c15d51304621c9f6689b14",
-          "sha256": "6b753cfd90a18e4d813cfc9ce3d3345547a0424527c15d51304621c9f6689b14"
+          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:2dc7634e71780ddb7bd0e6409086fd66073e3044f781dc0614daee7f31922bbb",
+          "sha256": "2dc7634e71780ddb7bd0e6409086fd66073e3044f781dc0614daee7f31922bbb"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:bf2ef6220fef116a8deb1cc76be1172c98b764a36980317aa81fe44eb2cc4354",
-          "sha256": "bf2ef6220fef116a8deb1cc76be1172c98b764a36980317aa81fe44eb2cc4354"
+          "url": "https://ghcr.io/v2/homebrew/core/camlp5/blobs/sha256:f749e0f60738786a289d2f5df57f6d4a82f27679353b059d9f6adf30c7b325ea",
+          "sha256": "f749e0f60738786a289d2f5df57f6d4a82f27679353b059d9f6adf30c7b325ea"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "ocaml-findlib"
   ],
   "dependencies": [
+    "camlp-streams",
     "ocaml"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "profind" do
-  version "1.9.3,1930"
-  sha256 "37e53e1f371c165c8e10ad719f95ccb837b6b7ce6015ea610c5ea1d4d06ea3a0"
+  version "1.19.0,11905"
+  sha256 "f4b379ea297c51e79b9f271b2fd7692b1311da371b336b0e188e9dc89d863e7b"
 
   url "https://www.zeroonetwenty.com/profind/downloads/ProFind#{version.csv.first.no_dots}.dmg"
   name "ProFind"

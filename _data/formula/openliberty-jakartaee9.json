@@ -13,15 +13,16 @@
   "license": "EPL-1.0",
   "homepage": "https://openliberty.io",
   "versions": {
-    "stable": "21.0.0.12",
+    "stable": "22.0.0.13",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/2021-11-17_1256/openliberty-jakartaee9-21.0.0.12.zip",
+      "url": "https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/22.0.0.13/openliberty-jakartaee9-22.0.0.13.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "385f8689ad3b702c1e34031474655a29d84a27e7ae8677bdccefb780d82007b5"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openliberty-jakartaee9/blobs/sha256:bda475b6d60e8f11c1500e62b70c9c414dc86d8984d7cce0029d9963b462e2b8",
-          "sha256": "bda475b6d60e8f11c1500e62b70c9c414dc86d8984d7cce0029d9963b462e2b8"
+          "url": "https://ghcr.io/v2/homebrew/core/openliberty-jakartaee9/blobs/sha256:f02981bb1d39d6b8b9c1c4d8af95ac06e528fca7610aaee89db6a9fdc1524236",
+          "sha256": "f02981bb1d39d6b8b9c1c4d8af95ac06e528fca7610aaee89db6a9fdc1524236"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/xiaoyeli/superlu/archive/v5.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3e464afa77335de200aeb739074a11e96d9bef6d0b519950cfa6684c4be1f350"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/superlu/blobs/sha256:3f6b4dbf526e0617cce7676aa335838964d2cde06f0a898d85f4775ef04673da",
+          "sha256": "3f6b4dbf526e0617cce7676aa335838964d2cde06f0a898d85f4775ef04673da"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/superlu/blobs/sha256:9f4ff68d59c8d6fa46ee8dec38a16d132b768f0774bde07ce47382df778f157f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/superlu/blobs/sha256:8ce0014c1d671eb0666d67f7955b949e64cfa4832bb4866a3d21c7969b437253",
           "sha256": "8ce0014c1d671eb0666d67f7955b949e64cfa4832bb4866a3d21c7969b437253"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/superlu/blobs/sha256:6296bd9709682fe5306fbc41211779c731699144c5ef3199d50058d52c7000c7",
+          "sha256": "6296bd9709682fe5306fbc41211779c731699144c5ef3199d50058d52c7000c7"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +86,9 @@
   "dependencies": [
     "gcc",
     "openblas"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,26 +7,30 @@
   ],
   "desc": "Customize mouse buttons, wheels and cursor speed",
   "homepage": "https://plentycom.jp/en/steermouse/",
-  "url": "https://plentycom.jp/ctrl/files_sm/SteerMouse5.6.dmg",
+  "url": "https://plentycom.jp/ctrl/files_sm/SteerMouse5.6.7.dmg",
   "appcast": null,
-  "version": "5.6",
+  "version": "5.6.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "720ac0f9616e58ebb59ae01e726aaddee0a1207ab732d20dd03ff55b1a17d4fc",
+  "sha256": "c939f1fc38bbbc894a7aa45a56cc9a400d7c5ef88f1ecc0d26a08b1120525e4c",
   "artifacts": [
-    [
-      "SteerMouse.prefPane"
-    ],
     {
-      "trash": "~/Library/Application Support/SteerMouse & CursorSense/Device.smsetting",
-      "rmdir": [
-        "~/Library/Application Support/SteerMouse & CursorSense/Device Definitions/",
-        "~/Library/Application Support/SteerMouse & CursorSense/"
-      ],
-      "signal": {
-      }
+      "prefpane": [
+        "SteerMouse.prefPane"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/SteerMouse & CursorSense/Device.smsetting",
+          "rmdir": [
+            "~/Library/Application Support/SteerMouse & CursorSense/Device Definitions/",
+            "~/Library/Application Support/SteerMouse & CursorSense/"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

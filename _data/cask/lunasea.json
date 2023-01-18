@@ -5,27 +5,31 @@
   "name": [
     "LunaSea"
   ],
-  "desc": "Open source self-hosted remote control for media software",
-  "homepage": "https://github.com/CometTools/LunaSea/",
-  "url": "https://github.com/CometTools/LunaSea/releases/download/6.0.0%2B60000006/LunaSea-macOS-60000006.zip",
+  "desc": "Self-hosted controller built using the Flutter framework",
+  "homepage": "https://www.lunasea.app/",
+  "url": "https://github.com/JagandeepBrar/LunaSea/releases/download/v10.2.2/lunasea-macos-amd64.zip",
   "appcast": null,
-  "version": "6.0.0,60000006",
+  "version": "10.2.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "10ad53618b83ca1b94ef0190805911f54c73865fd477695191991c41223454d2",
+  "sha256": "61ef622b70c31550ec6f700eba1e938c23fb97717344e8876d56e2d856a51be4",
   "artifacts": [
-    [
-      "LunaSea.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/app.lunasea.lunasea",
-        "~/Library/Containers/app.lunasea.lunasea"
-      ],
-      "signal": {
-      }
+      "app": [
+        "LunaSea.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/app.lunasea.lunasea",
+            "~/Library/Containers/app.lunasea.lunasea"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

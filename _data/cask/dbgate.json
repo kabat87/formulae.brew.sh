@@ -7,28 +7,32 @@
   ],
   "desc": "Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others",
   "homepage": "https://dbgate.org/",
-  "url": "https://github.com/dbgate/dbgate/releases/download/v4.5.1/dbgate-4.5.1-mac_x64.dmg",
+  "url": "https://github.com/dbgate/dbgate/releases/download/v5.2.1/dbgate-5.2.1-mac_universal.dmg",
   "appcast": null,
-  "version": "4.5.1",
+  "version": "5.2.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2dcc9ceef53d346f18e6212172a4453697cbc4867b27dd75f093ec7a226745bc",
+  "sha256": "f059bbdc52ff540f26495de85245272013ed046d9288cb61a99f6f3816897f36",
   "artifacts": [
-    [
-      "dbgate.app"
-    ],
     {
-      "trash": [
-        "~/dbgate-data",
-        "~/Library/Application Support/dbgate",
-        "~/Library/Logs/dbgate",
-        "~/Library/Preferences/org.dbgate.plist",
-        "~/Library/Saved Application State/org.dbgate.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "dbgate.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/dbgate-data",
+            "~/Library/Application Support/dbgate",
+            "~/Library/Logs/dbgate",
+            "~/Library/Preferences/org.dbgate.plist",
+            "~/Library/Saved Application State/org.dbgate.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

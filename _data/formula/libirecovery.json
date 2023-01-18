@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libimobiledevice/libirecovery/releases/download/1.0.0/libirecovery-1.0.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cda0aba10a5b6fc2e1d83946b009e3e64d0be36912a986e35ad6d34b504ad9b4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libirecovery/blobs/sha256:4d21cd165479e408542f64d4b03e607650bed9eeaf8564ace51746310a443bea",
+          "sha256": "4d21cd165479e408542f64d4b03e607650bed9eeaf8564ace51746310a443bea"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libirecovery/blobs/sha256:f84e04eff5b2a9a9679179f427ff5eca930ea9210f86e58d905c23a4185229b2",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libirecovery/blobs/sha256:934427f0de5e9990ca8569960ac0d6cd80f5739401e017b49bb4f79244c953ee",
           "sha256": "934427f0de5e9990ca8569960ac0d6cd80f5739401e017b49bb4f79244c953ee"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libirecovery/blobs/sha256:7be7894d857845b641bf1e0caad511eb5698d1f4f3b504db2e91bdf8c31289d4",
+          "sha256": "7be7894d857845b641bf1e0caad511eb5698d1f4f3b504db2e91bdf8c31289d4"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,16 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config"
+      ],
+      "dependencies": [
+        "libusb",
+        "readline"
+      ]
+    }
+  }
 }

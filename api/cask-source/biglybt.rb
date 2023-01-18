@@ -1,6 +1,6 @@
 cask "biglybt" do
-  version "2.9.0.0"
-  sha256 "efab84c5c1887dc1ece21b8e9b98be70556f74b4a6c62a0d3cb5dabf3695e54c"
+  version "3.2.0.0"
+  sha256 "fa21d851206f13a59d63a8cbfed60c40b49b4cde4f35ba71bfb13e2f35ad9c5a"
 
   url "https://github.com/BiglySoftware/BiglyBT/releases/download/v#{version}/GitHub_BiglyBT_Installer.dmg",
       verified: "github.com/BiglySoftware/BiglyBT/"

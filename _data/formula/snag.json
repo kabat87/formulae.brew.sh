@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Tonkpils/snag/archive/v1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "37bf661436edf4526adf5428ac5ff948871c613ff4f9b61fbbdfe1fb95f58b37"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/snag/blobs/sha256:fa9946a8925f1aa3881c48e93893a412938c9681f0bd2427a4d652e366c0aedc",
+          "sha256": "fa9946a8925f1aa3881c48e93893a412938c9681f0bd2427a4d652e366c0aedc"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/snag/blobs/sha256:1714f0e948566336c34fcf45dce8f7a5d76cfdcad20545af460dd271daf8bdde",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/snag/blobs/sha256:687d1c28e0f911d8343db56f993e4ab0088ec34e40b9a99c1139ec4f8db558c3",
           "sha256": "687d1c28e0f911d8343db56f993e4ab0088ec34e40b9a99c1139ec4f8db558c3"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/snag/blobs/sha256:e9512e6adfaa81d36ec98c2b95e2cd5dcd2bc9bda8fa441fb9c37f01d565106d",
+          "sha256": "e9512e6adfaa81d36ec98c2b95e2cd5dcd2bc9bda8fa441fb9c37f01d565106d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/snag/blobs/sha256:18a6d589a0b416ee502a8dacd6f919959d25cc08d9bbaad152fdade4c72634dc",
           "sha256": "18a6d589a0b416ee502a8dacd6f919959d25cc08d9bbaad152fdade4c72634dc"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/snag/blobs/sha256:00edba081c3a56f6cda3a4fc5bb1125d8ce93a8239c3cae89346b1893df12025",
-          "sha256": "00edba081c3a56f6cda3a4fc5bb1125d8ce93a8239c3cae89346b1893df12025"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/snag/blobs/sha256:7096008e3aab8b00c45a600edab938bd16918a92543423662f3a6015e5a14edb",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

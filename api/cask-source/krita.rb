@@ -1,16 +1,16 @@
 cask "krita" do
-  version "5.0.2"
-  sha256 "ecf98fd1ceba8dce196984d4db631d1c6728af6ee426f69d99da7b7d3aefa507"
+  version "5.1.5"
+  sha256 "0a4e742c91225b8563484cebc1a55b5356fd027d722a951f3df7847af10f72fd"
 
-  url "https://cdn.download.kde.org/stable/krita/#{version.major_minor_patch}/krita-#{version}.dmg",
-      verified: "cdn.download.kde.org/stable/krita/"
+  url "https://download.kde.org/stable/krita/#{version}/krita-#{version}.dmg",
+      verified: "download.kde.org/stable/krita/"
   name "Krita"
   desc "Free and open-source painting and sketching program"
   homepage "https://krita.org/"
 
   livecheck do
     url "https://download.kde.org/stable/krita/"
-    regex(%r{href=['"]?(\d+(?:\.\d+)+)/['"]?}i)
+    regex(%r{href="(\d+(?:\.\d+)+)/"}i)
   end
 
   depends_on macos: ">= :sierra"

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ccrma.stanford.edu/software/stk/release/stk-4.6.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "573e26ccf72ce436a1dc4ee3bea05fd35e0a8e742c339c7f5b85225502238083"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/stk/blobs/sha256:2ca7a7e90edb7b136d1cd229632e33c31fe108eabd0351a3332b57a04db938ca",
+          "sha256": "2ca7a7e90edb7b136d1cd229632e33c31fe108eabd0351a3332b57a04db938ca"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/stk/blobs/sha256:cfb08e28312687b79737423cf59db64cd30aa2d7b5527a9e65ff6d2a3d4a437c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/stk/blobs/sha256:d42d3b5288a6f8b595eb45c2f870f0494cc63e902d28a358656a4b6d3ae6b795",
           "sha256": "d42d3b5288a6f8b595eb45c2f870f0494cc63e902d28a358656a4b6d3ae6b795"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/stk/blobs/sha256:e663a628ee25dc71a782badbd50598852678eb32b249ca77424f4eae9f00187f",
+          "sha256": "e663a628ee25dc71a782badbd50598852678eb32b249ca77424f4eae9f00187f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -55,13 +66,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/stk/blobs/sha256:c5857693fa1111471c746d769db8bac3486db28d7eafb3c3e61d8a680ddbce4b",
           "sha256": "c5857693fa1111471c746d769db8bac3486db28d7eafb3c3e61d8a680ddbce4b"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/stk/blobs/sha256:767854c871ad23240582a554a26385f0980d6847d4e8012eb06ff071800cc0c1",
+          "sha256": "767854c871ad23240582a554a26385f0980d6847d4e8012eb06ff071800cc0c1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -70,6 +85,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -99,5 +117,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "alsa-lib"
+      ]
+    }
+  }
 }

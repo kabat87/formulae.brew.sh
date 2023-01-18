@@ -1,5 +1,5 @@
 cask "jump-desktop-connect" do
-  version "6.7.69,60769"
+  version "6.8.91,60891"
   sha256 :no_check
 
   url "https://mirror.jumpdesktop.com/downloads/connect/JumpDesktopConnect.dmg"
@@ -14,10 +14,10 @@ cask "jump-desktop-connect" do
 
   pkg ".jdc.sparkle_guided.pkg"
 
-  uninstall quit:      "com.p5sys.jump.connect",
-            signal:    [["QUIT", "com.p5sys.jump.connect"]],
+  uninstall signal:    ["QUIT", "com.p5sys.jump.connect"],
             pkgutil:   "com.p5sys.jump.connect",
             launchctl: [
+              "application.com.p5sys.jump.connect.*",
               "com.p5sys.jump.connect.service",
               "com.p5sys.jump.connect.agent",
             ],
@@ -28,12 +28,12 @@ cask "jump-desktop-connect" do
             ]
 
   zap trash: [
-    "~/Library/Application Support/com.p5sys.jump.connect",
-    "~/Library/Caches/com.p5sys.jump.connect",
-    "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.p5sys.jump.connect",
-    "~/Library/Caches/Jump Desktop/jump.connect",
-    "~/Library/HTTPStorages/com.p5sys.jump.connect",
-    "~/Library/Preferences/com.p5sys.jump.connect.plist",
-  ],
+        "~/Library/Application Support/com.p5sys.jump.connect",
+        "~/Library/Caches/com.p5sys.jump.connect",
+        "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.p5sys.jump.connect",
+        "~/Library/Caches/Jump Desktop/jump.connect",
+        "~/Library/HTTPStorages/com.p5sys.jump.connect",
+        "~/Library/Preferences/com.p5sys.jump.connect.plist",
+      ],
       rmdir: "~/Library/Caches/Jump Desktop"
 end

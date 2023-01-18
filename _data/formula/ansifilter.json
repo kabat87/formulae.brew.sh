@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.andre-simon.de/zip/ansifilter-2.18.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "66cf017d36a43d5f6ae20609ce3b58647494ee6c0e41fc682c598bffce7d7d39"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansifilter/blobs/sha256:dc395b12e05e924850d9c3140e2df688645dbd3cb6fbe0ee55a85efecfc3a25d",
+          "sha256": "dc395b12e05e924850d9c3140e2df688645dbd3cb6fbe0ee55a85efecfc3a25d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ansifilter/blobs/sha256:b2b6a8ec1dbee03ec73761e62abdb29e25daf9a5f5cd2339281784e73e35b27f",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ansifilter/blobs/sha256:604a45cdc202a4cb1ee084a350b8ad989f135e29d1d4153a9c9e20818da8e31e",
           "sha256": "604a45cdc202a4cb1ee084a350b8ad989f135e29d1d4153a9c9e20818da8e31e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansifilter/blobs/sha256:82beb4fa65191d059c74f556d92b2c2250f676a60fe9ca69fea353b40cc14ec5",
+          "sha256": "82beb4fa65191d059c74f556d92b2c2250f676a60fe9ca69fea353b40cc14ec5"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

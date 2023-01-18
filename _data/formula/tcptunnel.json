@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vakuum/tcptunnel/archive/v0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1926e2636d26570035a5a0292c8d7766c4a9af939881121660df0d0d4513ade4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcptunnel/blobs/sha256:9503c7ec45671862d4d806931e056c9d0c6e7ea9cdda143bd17ea355b6c6a78a",
+          "sha256": "9503c7ec45671862d4d806931e056c9d0c6e7ea9cdda143bd17ea355b6c6a78a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcptunnel/blobs/sha256:08ea4f67e68abd0d281d62a9f59f172b3ada2f84de3efba2c66318909686fd04",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcptunnel/blobs/sha256:f551ae0b42199f7636702669a5f32d4fb6bafef330036e8b14f3cfda556a4d32",
           "sha256": "f551ae0b42199f7636702669a5f32d4fb6bafef330036e8b14f3cfda556a4d32"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcptunnel/blobs/sha256:8eb0261ee4669e199766ea61e9b9f7ab7cd1b9ca51794f5d26650c542dc55e10",
+          "sha256": "8eb0261ee4669e199766ea61e9b9f7ab7cd1b9ca51794f5d26650c542dc55e10"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/tcptunnel/blobs/sha256:e387a861c4a9ceb3014883c851cdc43a56eddba635e1d313d976095ff78bb686",
           "sha256": "e387a861c4a9ceb3014883c851cdc43a56eddba635e1d313d976095ff78bb686"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tcptunnel/blobs/sha256:513995a3f0a331a06ac6531ddad6e1812a9c32add2252852c81d8abe6714c5aa",
-          "sha256": "513995a3f0a331a06ac6531ddad6e1812a9c32add2252852c81d8abe6714c5aa"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcptunnel/blobs/sha256:b82ce2df1293960dc7d0e4b5b9d809198073121331d7287edacbd5cffe17d94c",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

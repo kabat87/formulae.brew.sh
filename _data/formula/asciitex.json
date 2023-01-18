@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/asciitex/asciiTeX-0.21.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "abf964818833d8b256815eb107fb0de391d808fe131040fb13005988ff92a48d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/asciitex/blobs/sha256:f12101117b2b9663ac74cfed4d14daa32fbbbc0fbeba1463063c6a151cdb0040",
+          "sha256": "f12101117b2b9663ac74cfed4d14daa32fbbbc0fbeba1463063c6a151cdb0040"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/asciitex/blobs/sha256:99da7eb7e14ae19b86cbb881e662fbc6a67cd26c7aadd4cb038add368f9eeb3b",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/asciitex/blobs/sha256:2b9cae6e65df9390c4a9a9ab55813fe05e291ca928364350d333f0389042b8d1",
           "sha256": "2b9cae6e65df9390c4a9a9ab55813fe05e291ca928364350d333f0389042b8d1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/asciitex/blobs/sha256:72fc542175fc6f213602a22893bdbcb784db02431dc17aba29a2509cc04fbb87",
+          "sha256": "72fc542175fc6f213602a22893bdbcb784db02431dc17aba29a2509cc04fbb87"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/asciitex/blobs/sha256:0ae267d7ffcf17769da97275af047dc2a4ba9e5086acdb53dd11ca41f3d40ddb",
           "sha256": "0ae267d7ffcf17769da97275af047dc2a4ba9e5086acdb53dd11ca41f3d40ddb"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/asciitex/blobs/sha256:e9eadc960e449db67f305c3e1cc8d4f025288967bb8b6a37f5ba4bf5ad58493d",
-          "sha256": "e9eadc960e449db67f305c3e1cc8d4f025288967bb8b6a37f5ba4bf5ad58493d"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/asciitex/blobs/sha256:630265b0202b14fd9459b9f772f8f2c1518ddf1b5a5baf6f086f693c8054b470",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

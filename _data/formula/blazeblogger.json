@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/blazeblogger/blazeblogger-1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "39024b70708be6073e8aeb3943eb3b73d441fbb7b8113e145c0cf7540c4921aa"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/blazeblogger/blobs/sha256:971cf089545d50d6b751253a1ffe63b4bc3cb10c55287bf5f43cabcee9088afa",
+          "sha256": "971cf089545d50d6b751253a1ffe63b4bc3cb10c55287bf5f43cabcee9088afa"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/blazeblogger/blobs/sha256:971cf089545d50d6b751253a1ffe63b4bc3cb10c55287bf5f43cabcee9088afa",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/blazeblogger/blobs/sha256:d7c1a4c1663a7da5774e534eec48e6ab245f22d20f1f98a3186b7877f8bc4bcf",
           "sha256": "d7c1a4c1663a7da5774e534eec48e6ab245f22d20f1f98a3186b7877f8bc4bcf"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/blazeblogger/blobs/sha256:6cbe0fa6acb72e64523b98192c50de16a12c919e91a7467136876d25c60372fe",
+          "sha256": "6cbe0fa6acb72e64523b98192c50de16a12c919e91a7467136876d25c60372fe"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/blazeblogger/blobs/sha256:0d6bf439fa6f880cb9457581da66082f49f514f8b0fd4b57ac81180948aaa5e1",
           "sha256": "0d6bf439fa6f880cb9457581da66082f49f514f8b0fd4b57ac81180948aaa5e1"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/blazeblogger/blobs/sha256:bac92237da25ffb0b9b31bd78fea353bf717cfb6f1381fbb0df333f555fbab91",
-          "sha256": "bac92237da25ffb0b9b31bd78fea353bf717cfb6f1381fbb0df333f555fbab91"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/blazeblogger/blobs/sha256:534e43639b7ee566bbc9f675f94043e4579b0e01ba1b8b5651dcd308f640a182",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

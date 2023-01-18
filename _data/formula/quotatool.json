@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://quotatool.ekenberg.se/quotatool-1.6.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e53adc480d54ae873d160dc0e88d78095f95d9131e528749fd982245513ea090"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/quotatool/blobs/sha256:6c633899b45ad7d378cf68b79b199b8f7a3599fbd68e5ad0f5ad5b13c26084d9",
+          "sha256": "6c633899b45ad7d378cf68b79b199b8f7a3599fbd68e5ad0f5ad5b13c26084d9"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/quotatool/blobs/sha256:745e9918ee9275d034efcbfe3907e48b760e6e22fb0b6381b120592bfe9b92af",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/quotatool/blobs/sha256:33cf581ce810cb4704669a05ee01b5cc963008f02393db65453ef06216ed257f",
           "sha256": "33cf581ce810cb4704669a05ee01b5cc963008f02393db65453ef06216ed257f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/quotatool/blobs/sha256:96f6f27296e9997a291c8468832d8dd6b267b3359bffeef7706529b362c03294",
+          "sha256": "96f6f27296e9997a291c8468832d8dd6b267b3359bffeef7706529b362c03294"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/quotatool/blobs/sha256:da5c90f85204fa90a38da073765ec5c0f0a20333bcdcd131d79b682afa74233f",
           "sha256": "da5c90f85204fa90a38da073765ec5c0f0a20333bcdcd131d79b682afa74233f"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/quotatool/blobs/sha256:8af3549d42247f0b79458c96978f8f5e5fbe04cc1c0dd86f84accdf03e8e510f",
-          "sha256": "8af3549d42247f0b79458c96978f8f5e5fbe04cc1c0dd86f84accdf03e8e510f"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/quotatool/blobs/sha256:296d3ea40771bb113792f0bd6b57cbcba371d9c80d95271b29474a1bbcd16194",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

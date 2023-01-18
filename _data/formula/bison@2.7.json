@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/bison/bison-2.7.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "08e2296b024bab8ea36f3bb3b91d071165b22afda39a17ffc8ff53ade2883431"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/bison/2.7/blobs/sha256:4c2881dcd188abeb431f4f53f1b01186b7dc588f12e890021ae77b3f3b547005",
+          "sha256": "4c2881dcd188abeb431f4f53f1b01186b7dc588f12e890021ae77b3f3b547005"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/bison/2.7/blobs/sha256:52c4f32eb121a9442b25748e155a1d9d4ace7d433a07eafc13faed18272a2714",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/bison/2.7/blobs/sha256:a8889d09761ad553f7b7061947a1715e88a658ce7f4d3755b7d8d00f25a53f1a",
           "sha256": "a8889d09761ad553f7b7061947a1715e88a658ce7f4d3755b7d8d00f25a53f1a"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/bison/2.7/blobs/sha256:355f1fc5d497c0ce49e161173ff9c98a737dc8ec037ce2edde491f6bf65b6f79",
+          "sha256": "355f1fc5d497c0ce49e161173ff9c98a737dc8ec037ce2edde491f6bf65b6f79"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -89,7 +100,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -97,6 +107,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -126,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

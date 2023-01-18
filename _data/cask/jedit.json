@@ -16,14 +16,18 @@
   "outdated": false,
   "sha256": "7fc6bcf042401899915793e038bab826546d91b593b6f3855e9f29d4101aab61",
   "artifacts": [
-    [
-      "jEdit.app"
-    ]
+    {
+      "app": [
+        "jEdit.app"
+      ]
+    }
   ],
-  "caveats": null,
+  "caveats": "jedit requires Java 11+. You can install the latest version with:\n  brew install --cask temurin\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

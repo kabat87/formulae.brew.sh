@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tomclegg/mp3cat/archive/0.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b1ec915c09c7e1c0ff48f54844db273505bc0157163bed7b2940792dca8ff951"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mp3cat/blobs/sha256:48fda37f67df97cd462cbcda6e81dddb94bb1aea9615b899225ca8ca0f4a6d49",
+          "sha256": "48fda37f67df97cd462cbcda6e81dddb94bb1aea9615b899225ca8ca0f4a6d49"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mp3cat/blobs/sha256:11c1d1c6470951c00be5c9bc094686503ef53fb1a8ac7231c2de57232f2177f1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mp3cat/blobs/sha256:d5b602f2c0aafa37b863446069097523612ae44f2a14c4e49f179445a4b0edd5",
           "sha256": "d5b602f2c0aafa37b863446069097523612ae44f2a14c4e49f179445a4b0edd5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mp3cat/blobs/sha256:d7de68fc20fca732b5cc6f5d7a62f961e88d97e59f938a6f0aff4a96ad6125da",
+          "sha256": "d7de68fc20fca732b5cc6f5d7a62f961e88d97e59f938a6f0aff4a96ad6125da"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

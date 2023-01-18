@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/grpc/grpc-go/archive/cmd/protoc-gen-go-grpc/v1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cbca93d6dce724248dfdea6303bf27ed24cc3ed9cf8f7485eb825682eab21284"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-go-grpc/blobs/sha256:4b312550d444e21364492c1ff057b43c3ecc6bae4ada717f279f61ffb5f71503",
+          "sha256": "4b312550d444e21364492c1ff057b43c3ecc6bae4ada717f279f61ffb5f71503"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-go-grpc/blobs/sha256:cd352d68303c62b39a576046b4a68684b9fcf2785a4cf7fb7da623366a5c0c9c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-go-grpc/blobs/sha256:cd352d68303c62b39a576046b4a68684b9fcf2785a4cf7fb7da623366a5c0c9c",
           "sha256": "cd352d68303c62b39a576046b4a68684b9fcf2785a4cf7fb7da623366a5c0c9c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-go-grpc/blobs/sha256:1533c1cc3cd0e193e630ac450922793f7a4b4bb6dfae8817a1c52de1f388e690",
+          "sha256": "1533c1cc3cd0e193e630ac450922793f7a4b4bb6dfae8817a1c52de1f388e690"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "protobuf"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

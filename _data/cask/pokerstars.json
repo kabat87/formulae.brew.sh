@@ -9,7 +9,7 @@
   "homepage": "https://www.pokerstars.net/",
   "url": "https://download.pokerstars.net/client/download/",
   "appcast": null,
-  "version": "46.372",
+  "version": "56.772",
   "versions": {
   },
   "installed": null,
@@ -17,33 +17,43 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": [
-        "com.pokerstars.PokerStars.net",
-        "com.pokerstars.PokerStarsBrowse"
-      ],
-      "delete": "/Applications/PokerStars.net.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "com.pokerstars.PokerStars.net",
+            "com.pokerstars.PokerStarsBrowse"
+          ],
+          "delete": "/Applications/PokerStars.net.app"
+        }
+      ]
     },
-    [
-      "PokerStars.net.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/PokerStars.net",
-        "~/Library/Preferences/com.pokerstars.net.user.ini",
-        "~/Library/Preferences/com.pokerstars.NetworkStatus.plist",
-        "~/Library/Preferences/com.pokerstars.PokerStars.net.plist",
-        "~/Library/Preferences/com.pokerstars.PokerStarsBrowse.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PokerStars.net.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/PokerStars.net",
+            "~/Library/Preferences/com.pokerstars.net.user.ini",
+            "~/Library/Preferences/com.pokerstars.NetworkStatus.plist",
+            "~/Library/Preferences/com.pokerstars.PokerStars.net.plist",
+            "~/Library/Preferences/com.pokerstars.PokerStarsBrowse.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
-  "container": "{:nested=>\"PokerStars.net/PokerStars.net.dmg\"}",
-  "auto_updates": null
+  "container": {
+    "nested": "PokerStars.net/PokerStars.net.dmg"
+  },
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-1.0.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "63e0e01addedc9df2f85b93a248f06e8a04affa014a835c2ea34bfe34e576262"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sdl2_gfx/blobs/sha256:9c294fad8fbad927f3041868451946dc56c35f1d90f9aeef625e803113e65d09",
+          "sha256": "9c294fad8fbad927f3041868451946dc56c35f1d90f9aeef625e803113e65d09"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sdl2_gfx/blobs/sha256:7c17dcf54036d30d7bbc8d76bfcd51b8c966cc1653c886a7b188a897a483da94",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sdl2_gfx/blobs/sha256:7c632415953aecce33ea6b66b0d0b75461db7987bf560802e408d308bcd9b653",
           "sha256": "7c632415953aecce33ea6b66b0d0b75461db7987bf560802e408d308bcd9b653"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sdl2_gfx/blobs/sha256:07ced752aa459a1242b44edb51e3ad95146ac3a0920a904ce85d00ff22389906",
+          "sha256": "07ced752aa459a1242b44edb51e3ad95146ac3a0920a904ce85d00ff22389906"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "sdl2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

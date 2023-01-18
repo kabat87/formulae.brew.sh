@@ -7,25 +7,29 @@
   ],
   "desc": "GPS log file viewer and analyzer",
   "homepage": "https://www.gpxsee.org/",
-  "url": "https://downloads.sourceforge.net/gpxsee/Mac%20OS%20X/GPXSee-10.1.dmg",
+  "url": "https://downloads.sourceforge.net/gpxsee/Mac%20OS%20X/GPXSee-11.11.dmg",
   "appcast": null,
-  "version": "10.1",
+  "version": "11.11",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "92cd7a3471254626964ada3956349b8214b823fe10612d8135408b5e2357bfa7",
+  "sha256": "50dcbf6b41d49a15fd9bd31f5faa92e678ab85f8b6c34b7a56173fe89d5d495d",
   "artifacts": [
-    [
-      "GPXSee.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/GPXSee",
-        "~/Library/Preferences/com.gpxsee.GPXSee.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "GPXSee.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/GPXSee",
+            "~/Library/Preferences/com.gpxsee.GPXSee.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

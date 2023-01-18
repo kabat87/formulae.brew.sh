@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/etr/libhttpserver/archive/0.18.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1dfe548ac2add77fcb6c05bd00222c55650ffd02b209f4e3f133a6e3eb29c89d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libhttpserver/blobs/sha256:4006a6d0b9bb22cb3f326988fc0a8f5bc4d7a5256206a8434a6449a23e74b169",
+          "sha256": "4006a6d0b9bb22cb3f326988fc0a8f5bc4d7a5256206a8434a6449a23e74b169"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libhttpserver/blobs/sha256:a7373b51c70174b698e57eb9543662b342a9c277d87dc096fd00359e82e83c85",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libhttpserver/blobs/sha256:fdec5ac92f5b5d22d3b8a335938b23b9e20605b475dc3c1b2e9ced920b0b33e0",
           "sha256": "fdec5ac92f5b5d22d3b8a335938b23b9e20605b475dc3c1b2e9ced920b0b33e0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libhttpserver/blobs/sha256:eb4d4ce20b63ca07f91e98b772bd585cf243682f36690ec6087932fa779d4e2a",
+          "sha256": "eb4d4ce20b63ca07f91e98b772bd585cf243682f36690ec6087932fa779d4e2a"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +93,9 @@
   ],
   "dependencies": [
     "libmicrohttpd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

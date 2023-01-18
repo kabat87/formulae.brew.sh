@@ -11,7 +11,7 @@
   ],
   "desc": "Assembler for the Atmel AVR microcontroller family",
   "license": "GPL-2.0",
-  "homepage": "https://github.com/hsoft/avra",
+  "homepage": "https://github.com/Ro5bert/avra",
   "versions": {
     "stable": "1.4.2",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/hsoft/avra/archive/1.4.2.tar.gz",
+      "url": "https://github.com/Ro5bert/avra/archive/1.4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cc56837be973d1a102dc6936a0b7235a1d716c0f7cd053bf77e0620577cff986"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/avra/blobs/sha256:e1534538fee5207f6bae424a84ecf108e7c0100c513a853b777b817f6baa5e89",
+          "sha256": "e1534538fee5207f6bae424a84ecf108e7c0100c513a853b777b817f6baa5e89"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/avra/blobs/sha256:875e98a908da8ed0978f4b7e3854579dc63dc821df67c924e4ce12c5cd194a0e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/avra/blobs/sha256:22a03e978b90b0c87a7a7d15f63975880a8bad314c2592bf107b7bcb3d5fe5c6",
           "sha256": "22a03e978b90b0c87a7a7d15f63975880a8bad314c2592bf107b7bcb3d5fe5c6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/avra/blobs/sha256:d1df06956805a9e7e69e5a4057535dfffa974f782637f26f92a4000e7c1f0c29",
+          "sha256": "d1df06956805a9e7e69e5a4057535dfffa974f782637f26f92a4000e7c1f0c29"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

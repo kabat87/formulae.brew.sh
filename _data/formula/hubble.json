@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/cilium/hubble",
   "versions": {
-    "stable": "0.9.0",
+    "stable": "0.11.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/cilium/hubble/archive/refs/tags/v0.9.0.tar.gz",
+      "url": "https://github.com/cilium/hubble/archive/refs/tags/v0.11.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2bd9114f6cee3a56e7f48397f25235462305c695cdf8d8bcddf74e8b67492527"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:8d459f0a1e3cf0437454a852c499515ae74ce6f20db5988e37f7f4d46b051489",
+          "sha256": "8d459f0a1e3cf0437454a852c499515ae74ce6f20db5988e37f7f4d46b051489"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:96ee50ebdf0b2c30e32d0592525f4a2cf3df70fadce4cb364e3f7f32d678e283",
-          "sha256": "96ee50ebdf0b2c30e32d0592525f4a2cf3df70fadce4cb364e3f7f32d678e283"
+          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:12b8ee23eec148a50ee3e252e0aca168d2ae7cbed5c5ca439fb4c48e49ebb07e",
+          "sha256": "12b8ee23eec148a50ee3e252e0aca168d2ae7cbed5c5ca439fb4c48e49ebb07e"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:2389500d861bcb47df9b7c5a159f686bb1ae52261de7e9ead299b98eb48f1464",
-          "sha256": "2389500d861bcb47df9b7c5a159f686bb1ae52261de7e9ead299b98eb48f1464"
+          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:63cf90330346b311c19c17f0ad8c262ba42f031eda1c0e1b876e56772abd52c5",
+          "sha256": "63cf90330346b311c19c17f0ad8c262ba42f031eda1c0e1b876e56772abd52c5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:603d756f0e816f37faf26d643304a65313b296c3423b960c2efb30c7bfef6c9e",
+          "sha256": "603d756f0e816f37faf26d643304a65313b296c3423b960c2efb30c7bfef6c9e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:6921898f83ac3f2cd4416b4ef7b7cd1abef57171f892b357540f173cf68ffe8b",
-          "sha256": "6921898f83ac3f2cd4416b4ef7b7cd1abef57171f892b357540f173cf68ffe8b"
+          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:71947c3ff45eb4e625788906ce24fe5eccfdf097cc424d3f2144db1a022b4792",
+          "sha256": "71947c3ff45eb4e625788906ce24fe5eccfdf097cc424d3f2144db1a022b4792"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:7401646b648ca09c7536c4f84391ee9ed5d6f2dd1a6f862d377a4566e35d1414",
-          "sha256": "7401646b648ca09c7536c4f84391ee9ed5d6f2dd1a6f862d377a4566e35d1414"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:dcb62e2b92ad49850a6914ebf1e7325bc9256a4e6bf4c5a3cc37d0cf26f50718",
-          "sha256": "dcb62e2b92ad49850a6914ebf1e7325bc9256a4e6bf4c5a3cc37d0cf26f50718"
+          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:384a9a45d0dfc6e6abedcd48f52fc7c3f694700bf54ce0b760295eec7c63c02c",
+          "sha256": "384a9a45d0dfc6e6abedcd48f52fc7c3f694700bf54ce0b760295eec7c63c02c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:f4c8ee1f06b389c5d2a132cd8e42898abbe6723e537358999d8e0e492ed346aa",
-          "sha256": "f4c8ee1f06b389c5d2a132cd8e42898abbe6723e537358999d8e0e492ed346aa"
+          "url": "https://ghcr.io/v2/homebrew/core/hubble/blobs/sha256:cdd3a45f2a3549e774681ec59f1c822c3ca3720c1f1c7d0170eaf47966cee496",
+          "sha256": "cdd3a45f2a3549e774681ec59f1c822c3ca3720c1f1c7d0170eaf47966cee496"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

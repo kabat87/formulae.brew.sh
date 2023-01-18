@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://tomee.apache.org/",
   "versions": {
-    "stable": "8.0.9",
+    "stable": "9.0.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/closer.lua?path=tomee/tomee-8.0.9/apache-tomee-8.0.9-plume.tar.gz",
+      "url": "https://www.apache.org/dyn/closer.lua?path=tomee/tomee-9.0.0/apache-tomee-9.0.0-plume.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6fc93289536edcba09cc1ad38d045a88acff9330198e755043960d9a3e2190e6"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tomee-plume/blobs/sha256:d6dc52735387b04df2df5684ac39b013e378e3e89fae9c78a889a9023e856f8a",
-          "sha256": "d6dc52735387b04df2df5684ac39b013e378e3e89fae9c78a889a9023e856f8a"
+          "url": "https://ghcr.io/v2/homebrew/core/tomee-plume/blobs/sha256:a1d324faeeeca5c81b7654bd1584fa25cbee3cfcf7b4bd66fa20fa28c48e7797",
+          "sha256": "a1d324faeeeca5c81b7654bd1584fa25cbee3cfcf7b4bd66fa20fa28c48e7797"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://developers.yubico.com/yubico-c/Releases/libyubikey-1.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "04edd0eb09cb665a05d808c58e1985f25bb7c5254d2849f36a0658ffc51c3401"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libyubikey/blobs/sha256:4580266e70e2afadf36db6e307f1e2f5046e06628b1482d55c11af8714c9fd87",
+          "sha256": "4580266e70e2afadf36db6e307f1e2f5046e06628b1482d55c11af8714c9fd87"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libyubikey/blobs/sha256:b1df3ed34996e203f862b623d96606645e25f564e8b2827539c4744c3712fd28",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libyubikey/blobs/sha256:281fc4490bcdf4c4b19c5aa08a10a996e8fb10c9e1385ba95abd973186e18932",
           "sha256": "281fc4490bcdf4c4b19c5aa08a10a996e8fb10c9e1385ba95abd973186e18932"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libyubikey/blobs/sha256:4a3cef8d90a4771f8af5102c61544d8c2479333553fd2671ecf8faaf6bdb8388",
+          "sha256": "4a3cef8d90a4771f8af5102c61544d8c2479333553fd2671ecf8faaf6bdb8388"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libyubikey/blobs/sha256:2b1fbc1860932dd4a4c2b09928d838bc3646ff0b2a97bc5c538981befdc21760",
           "sha256": "2b1fbc1860932dd4a4c2b09928d838bc3646ff0b2a97bc5c538981befdc21760"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libyubikey/blobs/sha256:7f5c7a55b9e5bf373f01f8f02a983d45ae11d801acc8110cd8f5e13edf0e2973",
-          "sha256": "7f5c7a55b9e5bf373f01f8f02a983d45ae11d801acc8110cd8f5e13edf0e2973"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libyubikey/blobs/sha256:47be6e603ede5ef7fee2f40cfd4ac4338ca094d25b2a897388df4b90ca5101b7",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

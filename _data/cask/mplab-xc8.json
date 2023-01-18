@@ -7,73 +7,91 @@
   ],
   "desc": "Compiler for 8-bit PIC and SAM MCUs and MPUs",
   "homepage": "https://www.microchip.com/mplab/compilers",
-  "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/xc8-v2.32-full-install-macos-x64-installer.dmg",
+  "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/xc8-v2.40-full-install-macos-x64-installer.dmg",
   "appcast": null,
-  "version": "2.32",
+  "version": "2.40",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "651919702d7e68416908983784971c83c2e816aaf0735dbcd587f556bdcee904",
+  "sha256": "5889b2fe70738deb5476707a8ab5af7a73362f0a0c5a6b92634ac3c19c5f9a8c",
   "artifacts": [
     {
-      "script": {
-        "executable": "Uninstall-xc8-v2.32.app/Contents/MacOS/installbuilder.sh",
-        "args": [
-          "--mode",
-          "unattended"
-        ],
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "Uninstall-xc8-v2.40.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
     {
-      "path": "xc8-v2.32-full-install-macos-x64-installer.app/Contents/MacOS/installbuilder.sh",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "true",
-        "args": [
-          "--mode",
-          "unattended",
-          "--unattendedmodeui",
-          "none",
-          "--ModifyAll",
-          "0",
-          "--netservername",
-          "\"\"",
-          "--LicenseType",
-          "FreeMode",
-          "--prefix",
-          "$(brew --prefix)/Caskroom/mplab-xc8/2.32"
-        ],
-        "input": [
-          "y"
-        ],
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "xc8-v2.40-full-install-macos-x64-installer.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended",
+              "--unattendedmodeui",
+              "none",
+              "--ModifyAll",
+              "0",
+              "--netservername",
+              "\"\"",
+              "--LicenseType",
+              "FreeMode",
+              "--prefix",
+              "$(brew --prefix)/Caskroom/mplab-xc8/2.40"
+            ],
+            "input": [
+              "y"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    [
-      "$(brew --prefix)/Caskroom/mplab-xc8/2.32/bin/xc8"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/mplab-xc8/2.32/bin/xc8-ar"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/mplab-xc8/2.32/bin/xc8-cc"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/mplab-xc8/2.32/bin/xclm"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/mplab-xc8/2.32/bin/xc-ccov"
-    ],
-    "postflight (Postflight Block)"
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/mplab-xc8/2.40/bin/xc8"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/mplab-xc8/2.40/bin/xc8-ar"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/mplab-xc8/2.40/bin/xc8-cc"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/mplab-xc8/2.40/bin/xclm"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/mplab-xc8/2.40/bin/xc-ccov"
+      ]
+    },
+    {
+      "postflight": "  postflight do\n    set_ownership staged_path.to_s\n  end\n"
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

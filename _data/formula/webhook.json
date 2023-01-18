@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/adnanh/webhook/archive/2.8.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c521558083f96bcefef16575a6f3f98ac79c0160fd0073be5e76d6645e068398"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/webhook/blobs/sha256:d6d44cd57a6f9449c397152344acb7a83f90102488ea92e7b3a3e89e9c666dd2",
+          "sha256": "d6d44cd57a6f9449c397152344acb7a83f90102488ea92e7b3a3e89e9c666dd2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/webhook/blobs/sha256:2a243c7fe554c0380da0f68556ea1f1613b1847e94a4d21e89b5fe1a38e62b61",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/webhook/blobs/sha256:9e77443d3500d2cd479cf3b326c66cc5c59a7009ddb63f2fb3492488e7b3412c",
           "sha256": "9e77443d3500d2cd479cf3b326c66cc5c59a7009ddb63f2fb3492488e7b3412c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/webhook/blobs/sha256:2d37a39c5cdc90e47da0abd9aff2d4bcf3857eceb1c9f7453df6aa13aa097ba8",
+          "sha256": "2d37a39c5cdc90e47da0abd9aff2d4bcf3857eceb1c9f7453df6aa13aa097ba8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

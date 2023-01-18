@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/CovenantSQL/CovenantSQL/archive/v0.8.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "73abb65106e5045208aa4a7cda56bc7c17ba377557ae47d60dad39a63f9c88a6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cql/blobs/sha256:9c8e9a72ff6ac7a64ad0d7cfb5919ebbe5fda03e57db8d5241e87470226546c2",
+          "sha256": "9c8e9a72ff6ac7a64ad0d7cfb5919ebbe5fda03e57db8d5241e87470226546c2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cql/blobs/sha256:6f3d16b39545a07b7811657ed8de92063b3f4fc13f96e8b092be420ff80d0ed6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cql/blobs/sha256:a5f446cb406f5aafce83406573b0a808f718e4e8b3df3d112692b824d4912e45",
           "sha256": "a5f446cb406f5aafce83406573b0a808f718e4e8b3df3d112692b824d4912e45"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cql/blobs/sha256:3fcb9c1f88fcf471a71342c7b339f1f5da89003b4ca0f205780422d3ee705cf2",
+          "sha256": "3fcb9c1f88fcf471a71342c7b339f1f5da89003b4ca0f205780422d3ee705cf2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

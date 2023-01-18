@@ -1,6 +1,6 @@
 cask "flipper" do
-  version "0.128.4"
-  sha256 "b3a47f90f6a0a29902c38a6c7ca7c566d1f25e89c76c5cc364bd5317ad44bdd7"
+  version "0.176.1"
+  sha256 "2c6a8ce242e7f87a15e2fc7f43d0098a3b7fc69611c1a1cbdb3c1bfcc86ca3b2"
 
   url "https://github.com/facebook/flipper/releases/download/v#{version}/Flipper-mac.dmg",
       verified: "github.com/facebook/flipper/"
@@ -8,5 +8,18 @@ cask "flipper" do
   desc "Desktop debugging platform for mobile developers"
   homepage "https://fbflipper.com/"
 
+  livecheck do
+    url "https://www.facebook.com/fbflipper/public/latest.json?version=0.0.0"
+    strategy :page_match do |page|
+      JSON.parse(page)["version"]
+    end
+  end
+
   app "Flipper.app"
+
+  zap trash: [
+    "~/.flipper",
+    "~/Library/Application Support/Flipper",
+    "~/Library/Preferences/rs.flipper-launcher",
+  ]
 end

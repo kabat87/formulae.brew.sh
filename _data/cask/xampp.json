@@ -7,40 +7,44 @@
   ],
   "desc": "Apache distribution containing MySQL, PHP, and Perl",
   "homepage": "https://www.apachefriends.org/index.html",
-  "url": "https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/8.1.1/xampp-osx-8.1.1-2-installer.dmg",
+  "url": "https://downloads.sourceforge.net/xampp/xampp-osx-8.2.0-0-installer.dmg",
   "appcast": null,
-  "version": "8.1.1-2",
+  "version": "8.2.0-0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "64a696b4732de3c106c51553ff0b206a4e6d54b16dbc53324c3e45110702c70e",
+  "sha256": "4702e3d6e9f9920e8f63d7f9e1bffa258405cf7298a766f767d237abd1fa6f23",
   "artifacts": [
     {
-      "quit": "com.bitnami.manager",
-      "script": {
-        "executable": "/Applications/XAMPP/uninstall.app/Contents/MacOS/osx-x86_64",
-        "args": [
-          "--mode",
-          "unattended"
-        ],
-        "sudo": "true"
-      },
-      "delete": "/Applications/XAMPP/",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.bitnami.manager",
+          "script": {
+            "executable": "/Applications/XAMPP/uninstall.app/Contents/MacOS/osx-x86_64",
+            "args": [
+              "--mode",
+              "unattended"
+            ],
+            "sudo": "true"
+          },
+          "delete": "/Applications/XAMPP/"
+        }
+      ]
     },
     {
-      "path": "XAMPP.app/Contents/MacOS/osx-x86_64",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "true",
-        "args": [
-          "--mode",
-          "unattended"
-        ],
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "xampp-osx-8.2.0-0-installer.app/Contents/MacOS/osx-x86_64",
+            "args": [
+              "--mode",
+              "unattended"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -48,5 +52,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

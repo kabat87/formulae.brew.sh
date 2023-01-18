@@ -7,5 +7,10 @@ cask "zeronet" do
   name "ZeroNet"
   homepage "https://zeronet.io/"
 
+  livecheck do
+    url "https://github.com/HelloZeroNet/ZeroNet/releases/"
+    strategy :github_latest
+  end
+
   app "ZeroNet-dist-mac/ZeroNet.app"
 end

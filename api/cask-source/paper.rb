@@ -1,28 +1,27 @@
 cask "paper" do
-  version "3.5.1"
-  sha256 "a9e6c336d1cfb8d50c2704e91a302c5b3635d6ff865a0199e49b6f6429a8f658"
+  version "5.2.7"
+  sha256 "acb47bbc7e47152d7d31723adee5c6fdf6c158598fb83612bc25edb7fe31db00"
 
-  url "http://paperimg.meiyuan.in/pap.er_v#{version}.dmg"
-  name "Paper"
-  desc "Live wallpaper app"
+  url "https://s3.nsns.in/dl/paper-v#{version}.dmg",
+      verified: "s3.nsns.in/"
+  name "pap.er"
+  desc "Pap.er, 4K 5K HD Wallpaper Application"
   homepage "https://paper.meiyuan.in/"
 
   livecheck do
     url :homepage
-    regex(/["'][^"']*pap\.er[._-]v?(\d+(?:\.\d+)+)\.dmg["']/i)
+    regex(/paper[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 
-  depends_on macos: ">= :el_capitan"
+  auto_updates true
+  depends_on macos: ">= :big_sur"
 
   app "pap.er.app"
 
-  uninstall quit: "com.meiyuan.paper"
+  uninstall quit: "com.w.paper"
 
   zap trash: [
-    "~/Library/Application Scripts/com.meiyuan.LauncherApplication",
-    "~/Library/Application Scripts/com.meiyuan.paper",
-    "~/Library/Preferences/com.meiyuan.paper.plist",
-    "~/Library/Containers/com.meiyuan.LauncherApplication",
-    "~/Library/Containers/com.meiyuan.paper",
+    "~/Library/Containers/com.w.paper-LaunchAtLoginHelper",
+    "~/Library/Containers/com.w.paper",
   ]
 end

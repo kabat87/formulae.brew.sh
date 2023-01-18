@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/nlohmann/json",
   "versions": {
-    "stable": "3.10.5",
+    "stable": "3.11.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/nlohmann/json/archive/v3.10.5.tar.gz",
+      "url": "https://github.com/nlohmann/json/archive/v3.11.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d69f9deb6a75e2580465c6c4c5111b89c4dc2fa94e3a85fcd2ffcd9a143d9273"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/nlohmann-json/blobs/sha256:6c7473b0acc64f87a1697bea4df7c439ee2c90ccec4343d7c95024cfec17a5e6",
-          "sha256": "6c7473b0acc64f87a1697bea4df7c439ee2c90ccec4343d7c95024cfec17a5e6"
+          "url": "https://ghcr.io/v2/homebrew/core/nlohmann-json/blobs/sha256:9ca4704d40b8e80ae9405d98e64c89922ace4de66ededabe63b65d73d14d8bc8",
+          "sha256": "9ca4704d40b8e80ae9405d98e64c89922ace4de66ededabe63b65d73d14d8bc8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

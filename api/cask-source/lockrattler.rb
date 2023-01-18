@@ -1,6 +1,6 @@
 cask "lockrattler" do
-  version "4.31,2021.09"
-  sha256 "58445fe9ee0a527f93580a8a532b39671755513e8c8ba92c2b8c38e37989ec65"
+  version "4.36,2022.11"
+  sha256 "acc7c61542a2709491361b86456bd0e1f2aacfa8a14bc6fb50ad944a2fc37361"
 
   url "https://eclecticlightdotcom.files.wordpress.com/#{version.csv.second.major}/#{version.csv.second.minor}/lockrattler#{version.csv.first.no_dots}.zip",
       verified: "eclecticlightdotcom.files.wordpress.com/"

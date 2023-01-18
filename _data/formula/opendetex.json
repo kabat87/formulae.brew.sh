@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/pkubowicz/opendetex/releases/download/v2.8.9/opendetex-2.8.9.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0d6b8cb1f3394b790dd757b0171ad8b398c48e306fa6339e86ed8303c51df084"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opendetex/blobs/sha256:ed55ca17def1bdc6fec261be8ddb46618fb1a310170796d1ad90bfadbeeee68d",
+          "sha256": "ed55ca17def1bdc6fec261be8ddb46618fb1a310170796d1ad90bfadbeeee68d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/opendetex/blobs/sha256:7b7c22303e3de7519dc20cc7862c6aa3ac49fa6bae8d3bd043c46c3930dea810",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/opendetex/blobs/sha256:9416484618318a11e895667857e7d8b39598bc31c2c1d8fbdbb7914176345e5e",
           "sha256": "9416484618318a11e895667857e7d8b39598bc31c2c1d8fbdbb7914176345e5e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opendetex/blobs/sha256:7562459cf4cb848fbc8ea3d3d1843355e6c200bb112890bf511ce9d67b6c61bd",
+          "sha256": "7562459cf4cb848fbc8ea3d3d1843355e6c200bb112890bf511ce9d67b6c61bd"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

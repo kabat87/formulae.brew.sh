@@ -7,6 +7,7 @@
 
   ],
   "versioned_formulae": [
+    "ansible@6",
     "ansible@2.9"
   ],
   "desc": "Automate deployment, configuration, and upgrading",
@@ -21,30 +22,36 @@
     "stable": {
       "url": "https://files.pythonhosted.org/packages/e6/a3/d68781949f0b6d261ef8f17a4d1c6ee75df261ff168f4ead585604899e26/ansible-2.8.20.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f0672d138cf79cd39197952df0f8c761aac27c639a8ff7bdbd62cf463a7edaea"
     }
   },
-  "revision": 1,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ansible/2.8/blobs/sha256:32ad0d9b268cc30e130b80338f832f1f0f78839be71f4504262f4ebb8794dec3",
+          "sha256": "32ad0d9b268cc30e130b80338f832f1f0f78839be71f4504262f4ebb8794dec3"
+        },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible/2.8/blobs/sha256:94e517f56308b730aa6489d492d7031ba6ba14780cff64ae0c6a218c7f287e19",
-          "sha256": "94e517f56308b730aa6489d492d7031ba6ba14780cff64ae0c6a218c7f287e19"
+          "url": "https://ghcr.io/v2/homebrew/core/ansible/2.8/blobs/sha256:3d3c4a7c3b54b3ab76ec1aeb78e1faf00dec6b775d912262ea9228e1beae7734",
+          "sha256": "3d3c4a7c3b54b3ab76ec1aeb78e1faf00dec6b775d912262ea9228e1beae7734"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible/2.8/blobs/sha256:0c7c0e90ce339a6570165e909986fa92cc00a5ffdd0b89f658e462add5705481",
-          "sha256": "0c7c0e90ce339a6570165e909986fa92cc00a5ffdd0b89f658e462add5705481"
+          "url": "https://ghcr.io/v2/homebrew/core/ansible/2.8/blobs/sha256:49f5e63f3f67588d6b71b79702a84eac580b54f905a111ced3a3386c81975888",
+          "sha256": "49f5e63f3f67588d6b71b79702a84eac580b54f905a111ced3a3386c81975888"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible/2.8/blobs/sha256:15b0aebb811533e98b41c3c3f6b227f8332560e42100fcd05e50275e9fc09dbc",
-          "sha256": "15b0aebb811533e98b41c3c3f6b227f8332560e42100fcd05e50275e9fc09dbc"
+          "url": "https://ghcr.io/v2/homebrew/core/ansible/2.8/blobs/sha256:ce97b8ec3ea2d975c27f6018231261cddc8fb750be7067b630746a0b7296ad9b",
+          "sha256": "ce97b8ec3ea2d975c27f6018231261cddc8fb750be7067b630746a0b7296ad9b"
         }
       }
     }
@@ -54,7 +61,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -66,6 +72,9 @@
     "libyaml",
     "openssl@1.1",
     "python@3.7"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -91,10 +100,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-04-12",
-  "deprecation_reason": "versioned_formula",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "versioned_formula",
+  "variations": {
+  }
 }

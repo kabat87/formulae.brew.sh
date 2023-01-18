@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.mirrorservice.org/sites/distfiles.macports.org/wirouterkeyrec/WiRouter_KeyRec_1.1.2.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3e59138f35502b32b47bd91fe18c0c232921c08d32525a2ae3c14daec09058d4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wirouter_keyrec/blobs/sha256:d0f76ae3936a32cc3be17614e325503686400bd1c38abf3a072d0f0de9444628",
+          "sha256": "d0f76ae3936a32cc3be17614e325503686400bd1c38abf3a072d0f0de9444628"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/wirouter_keyrec/blobs/sha256:43c8cb4e4f1389c6a584c27b0407c11e31422cdb2802706f316a93f7e5d8c7a5",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/wirouter_keyrec/blobs/sha256:e3cfa2752a3957af0fcc474d4ad24ab76f026ee4479e0fa74d84222d16c02812",
           "sha256": "e3cfa2752a3957af0fcc474d4ad24ab76f026ee4479e0fa74d84222d16c02812"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wirouter_keyrec/blobs/sha256:e0334033e6d6ac7f366a556d8e89d3394bc85968180e52ef7bc5ad4edcfa2548",
+          "sha256": "e0334033e6d6ac7f366a556d8e89d3394bc85968180e52ef7bc5ad4edcfa2548"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/wirouter_keyrec/blobs/sha256:3982522d8e15ced547c4f1d3019fe3ca6ddaa88d33fad03d2c97a53c849ec217",
           "sha256": "3982522d8e15ced547c4f1d3019fe3ca6ddaa88d33fad03d2c97a53c849ec217"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/wirouter_keyrec/blobs/sha256:65d21ba4cb167dd2cca395dd5b51edc1ddd0df06fc65843cd2d2eba9e307ea11",
-          "sha256": "65d21ba4cb167dd2cca395dd5b51edc1ddd0df06fc65843cd2d2eba9e307ea11"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/wirouter_keyrec/blobs/sha256:1d3f91f6d9f53dda66211c8d0f01081e92a1b43dbbb98b2cabfb63d337cb7eea",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

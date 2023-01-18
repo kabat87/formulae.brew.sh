@@ -10,7 +10,7 @@
 
   ],
   "desc": "Gzip recovery toolkit",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://www.urbanophile.com/arenn/coding/gzrt/gzrt.html",
   "versions": {
     "stable": "0.8",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.urbanophile.com/arenn/coding/gzrt/gzrt-0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b0b7dc53dadd8309ad9f43d6d6be7ac502c68ef854f1f9a15bd7f543e4571fee"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gzrt/blobs/sha256:d6dfe52fd268de29704f3367daa802012d68b7162d957716d96d9da41bef80e6",
+          "sha256": "d6dfe52fd268de29704f3367daa802012d68b7162d957716d96d9da41bef80e6"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gzrt/blobs/sha256:46794bf9bc734a2a73e7f7b8f9bb16825249bed562bd516a97aa8b2b3349b264",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gzrt/blobs/sha256:b1bc6db3fef40f0c48ceac080ee84108364cf4ff1d94bb1423c1be5b2f14bc96",
           "sha256": "b1bc6db3fef40f0c48ceac080ee84108364cf4ff1d94bb1423c1be5b2f14bc96"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gzrt/blobs/sha256:cfb47aeeccbaacbeefddc130b44f5c36e7660067dce5c903ebceac40199db8bf",
+          "sha256": "cfb47aeeccbaacbeefddc130b44f5c36e7660067dce5c903ebceac40199db8bf"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/gzrt/blobs/sha256:01df00fd35c6eaee9d32da4644d694ce33deda79a9c3da0284b52694f94a9515",
           "sha256": "01df00fd35c6eaee9d32da4644d694ce33deda79a9c3da0284b52694f94a9515"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gzrt/blobs/sha256:af8ffc53bcf606b0634537adfeb67733c27ec079fa0347de41c668dbb5cce037",
-          "sha256": "af8ffc53bcf606b0634537adfeb67733c27ec079fa0347de41c668dbb5cce037"
+          "url": "https://ghcr.io/v2/homebrew/core/gzrt/blobs/sha256:befaf922391daf55b95098ef2c66c02fcd04813517cef56c60caf3cd1297d986",
+          "sha256": "befaf922391daf55b95098ef2c66c02fcd04813517cef56c60caf3cd1297d986"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

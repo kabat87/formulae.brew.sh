@@ -21,37 +21,27 @@
     "stable": {
       "url": "https://github.com/phatina/simple-mtpfs/archive/v0.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1d011df3fa09ad0a5c09d48d84c03e6cddf86390af9eb4e0c178193f32f0e2fc"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/simple-mtpfs/blobs/sha256:d902aae104d1f2ae07bdb28ecabbef8d9d97d9326a3e29050c83a4dd69597ed4",
-          "sha256": "d902aae104d1f2ae07bdb28ecabbef8d9d97d9326a3e29050c83a4dd69597ed4"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/simple-mtpfs/blobs/sha256:4f9c18fb88084e24773591124bdcfdc0ceb3741f2cdaffa2d67e7b22cfe5672e",
-          "sha256": "4f9c18fb88084e24773591124bdcfdc0ceb3741f2cdaffa2d67e7b22cfe5672e"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/simple-mtpfs/blobs/sha256:0a22b0fd5ea759ce48068efabf40ac09b4a76d5dcf942db8b672edfd3e1b90a8",
-          "sha256": "0a22b0fd5ea759ce48068efabf40ac09b4a76d5dcf942db8b672edfd3e1b90a8"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/simple-mtpfs/blobs/sha256:0a3312b826ab7fd86c703b24855864bb86660bbcefde74ecb949ad8d09ff035e",
+          "sha256": "0a3312b826ab7fd86c703b24855864bb86660bbcefde74ecb949ad8d09ff035e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -62,7 +52,11 @@
     "pkg-config"
   ],
   "dependencies": [
+    "libfuse@2",
     "libmtp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -74,12 +68,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -89,7 +91,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/chaos/powerman/releases/download/v2.3.27/powerman-2.3.27.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1575f0c2cc49ba14482582b9bbba19e95496434f95d52de6ad2412e66200d2d8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/powerman/blobs/sha256:111132a22f3537ebc1726cec49965768bc874fabaf46b2c2c7e5c1dfe7bd6c1c",
+          "sha256": "111132a22f3537ebc1726cec49965768bc874fabaf46b2c2c7e5c1dfe7bd6c1c"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/powerman/blobs/sha256:bf7397842c0e10d990a848340dfb2287596ed94591840997a946886edfb307d9",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/powerman/blobs/sha256:9742622a1433440ff96eb624c08a9b28c30fa12d4d120bc3d73072acc371a968",
           "sha256": "9742622a1433440ff96eb624c08a9b28c30fa12d4d120bc3d73072acc371a968"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/powerman/blobs/sha256:07d0663bbe475dbe29617e4a7678ca4a6076303da2c1553a8fc2ca411ac0b575",
+          "sha256": "07d0663bbe475dbe29617e4a7678ca4a6076303da2c1553a8fc2ca411ac0b575"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "curl"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

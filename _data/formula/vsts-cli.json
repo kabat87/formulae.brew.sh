@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://files.pythonhosted.org/packages/f9/c2/3ed698480ab30d2807fc961eef152099589aeaec3f1407945a4e07275de5/vsts-cli-0.1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "27defe1d8aaa1fcbc3517274c0fdbd42b5ebe2c1c40edfc133d98fe4bb7114de"
     }
   },
   "revision": 5,
@@ -61,7 +62,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -70,6 +70,9 @@
   ],
   "dependencies": [
     "python@3.9"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -93,10 +96,22 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2019-01-22",
-  "deprecation_reason": "unsupported",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-05-27",
+  "disable_reason": "unsupported",
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "rust",
+        "pkg-config"
+      ],
+      "dependencies": [
+        "python@3.9",
+        "libffi"
+      ]
+    }
+  }
 }

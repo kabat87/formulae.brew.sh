@@ -13,55 +13,50 @@
   "license": "GPL-2.0-only",
   "homepage": "https://cab.spbu.ru/software/spades/",
   "versions": {
-    "stable": "3.15.3",
+    "stable": "3.15.5",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://cab.spbu.ru/files/release3.15.3/SPAdes-3.15.3.tar.gz",
+      "url": "https://cab.spbu.ru/files/release3.15.5/SPAdes-3.15.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "155c3640d571f2e7b19a05031d1fd0d19bd82df785d38870fb93bd241b12bbfa"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:04556a71583e8f9a32f8eb0e68509156ceb41f801c7c67311ed5abee49c673fd",
+          "sha256": "04556a71583e8f9a32f8eb0e68509156ceb41f801c7c67311ed5abee49c673fd"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:4488276aba5695c211bce6ded3078c83a14cfe376bf11fd870a2d423cd53d55d",
-          "sha256": "4488276aba5695c211bce6ded3078c83a14cfe376bf11fd870a2d423cd53d55d"
+          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:20789d391cc248d051c8370922326ed590944aaf6bbdd822ae9ba506f73cfdbb",
+          "sha256": "20789d391cc248d051c8370922326ed590944aaf6bbdd822ae9ba506f73cfdbb"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:1709900ba50cdaec70d864c3b7f6c68eaa4e7396055abc6fe540e3529296d84b",
-          "sha256": "1709900ba50cdaec70d864c3b7f6c68eaa4e7396055abc6fe540e3529296d84b"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:07c4724e3a1236f19f6c9a7899077035c17501f1581838428849fc9ec8d25d78",
-          "sha256": "07c4724e3a1236f19f6c9a7899077035c17501f1581838428849fc9ec8d25d78"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:6efc26bfefb204c0ed9370b2d46a2ec0e12c999b6f150d3e2a22c2d38e15d93d",
-          "sha256": "6efc26bfefb204c0ed9370b2d46a2ec0e12c999b6f150d3e2a22c2d38e15d93d"
+          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:57f9773581ada2f7410f4b8a75e987fdb1571a95e32361780efdbec29edb9217",
+          "sha256": "57f9773581ada2f7410f4b8a75e987fdb1571a95e32361780efdbec29edb9217"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:aa82716b39775ce1f1a5961aad0322514723e92138f9f525db36bc389d47f694",
-          "sha256": "aa82716b39775ce1f1a5961aad0322514723e92138f9f525db36bc389d47f694"
+          "url": "https://ghcr.io/v2/homebrew/core/spades/blobs/sha256:ba08213dc4deed3d1ddc56d1a6a7c449c782f8eb1d5bc25fd8e6d50f356edb64",
+          "sha256": "ba08213dc4deed3d1ddc56d1a6a7c449c782f8eb1d5bc25fd8e6d50f356edb64"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,8 +64,11 @@
     "cmake"
   ],
   "dependencies": [
-    "python@3.9",
+    "python@3.11",
     "libomp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,5 +99,17 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "python@3.11",
+        "bzip2",
+        "ncurses",
+        "zlib",
+        "jemalloc",
+        "readline"
+      ]
+    }
+  }
 }

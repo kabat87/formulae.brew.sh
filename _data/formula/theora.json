@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b6ae1ee2fa3d42ac489287d3ec34c5885730b1296f0801ae577a35193d3affbc"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 4,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:b4b1fe0a53ce538d88ca098fce885c20cca62175c2d2141ad96454e7163674a6",
+          "sha256": "b4b1fe0a53ce538d88ca098fce885c20cca62175c2d2141ad96454e7163674a6"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:56008e9450fcf3f712f34ec79407b8e738953d5fc50feaf72a6434dd28fc1101",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:1e5271cb88e3dad8eb5f06460e7f3f2cec0129679c7f7fb4f84db1d09664b827",
           "sha256": "1e5271cb88e3dad8eb5f06460e7f3f2cec0129679c7f7fb4f84db1d09664b827"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/theora/blobs/sha256:cab83d4adc91a223bdc43ca9e26f3a15d37ffcda352be74de313ffe2c1160189",
+          "sha256": "cab83d4adc91a223bdc43ca9e26f3a15d37ffcda352be74de313ffe2c1160189"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
   "dependencies": [
     "libogg",
     "libvorbis"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

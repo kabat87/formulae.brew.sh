@@ -10,8 +10,8 @@
 
   ],
   "desc": "Multitrack-capable audio recorder and effect processor",
-  "license": null,
-  "homepage": "https://www.eca.cx/ecasound/",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://ecasound.seul.org/ecasound/",
   "versions": {
     "stable": "2.9.3",
     "head": null,
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ecasound.seul.org/download/ecasound-2.9.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "468bec44566571043c655c808ddeb49ae4f660e49ab0072970589fd5a493f6d4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ecasound/blobs/sha256:0e52338802663453eb4ed6cd44967b7b2baf80b5cc133a4ae42c36f6e4208fed",
+          "sha256": "0e52338802663453eb4ed6cd44967b7b2baf80b5cc133a4ae42c36f6e4208fed"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ecasound/blobs/sha256:73ca5b440adf4626dea12d21da27ecc13d76829efee851e8160dedb78709023d",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ecasound/blobs/sha256:3032ed920ff4b40250c2c1efcd19a591e0df1b2714159aed9fd6ea4db094af4c",
           "sha256": "3032ed920ff4b40250c2c1efcd19a591e0df1b2714159aed9fd6ea4db094af4c"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ecasound/blobs/sha256:ee2fba8822efd205930d9b0329d54d2175eb14043d19aeea77130acc193dece7",
+          "sha256": "ee2fba8822efd205930d9b0329d54d2175eb14043d19aeea77130acc193dece7"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -65,13 +76,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ecasound/blobs/sha256:9dd2864d7b5a66bf3a7fc674b64a11d3cb1abeaf9fc4c65dd8898a2724c1a5a8",
           "sha256": "9dd2864d7b5a66bf3a7fc674b64a11d3cb1abeaf9fc4c65dd8898a2724c1a5a8"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ecasound/blobs/sha256:6c81d3065ae81f06d5c338aa6d892be6916c1215c5cb6c6cfd57f60d2249dd2e",
+          "sha256": "6c81d3065ae81f06d5c338aa6d892be6916c1215c5cb6c6cfd57f60d2249dd2e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +97,9 @@
     "jack",
     "libsamplerate",
     "libsndfile"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

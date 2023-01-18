@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/aws-cloudformation/rain/archive/v1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "064bc2b563c9b759d16147f33fe5c64bf0af3640cb4ae543e49615ae17b22e01"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rain/blobs/sha256:5ed570796adfa7b5f287198ab69fbdb321c2c77bd388685d575ebc87b1ded60b",
+          "sha256": "5ed570796adfa7b5f287198ab69fbdb321c2c77bd388685d575ebc87b1ded60b"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rain/blobs/sha256:b07cdea377e89b93e512473f90965a56f39d1eebacd8cbbd5048035843553348",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rain/blobs/sha256:9d734401c46693b663ebb1f7cc070f13b5685a8699a02a92e8c24a61b3f5b367",
           "sha256": "9d734401c46693b663ebb1f7cc070f13b5685a8699a02a92e8c24a61b3f5b367"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rain/blobs/sha256:d8a0a96d1a5922713605f919b2863056de53897f1f8cd965fbd3de167ca03fa8",
+          "sha256": "d8a0a96d1a5922713605f919b2863056de53897f1f8cd965fbd3de167ca03fa8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

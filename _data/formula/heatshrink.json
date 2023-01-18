@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/atomicobject/heatshrink/archive/v0.4.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7529a1c8ac501191ad470b166773364e66d9926aad632690c72c63a1dea7e9a6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/heatshrink/blobs/sha256:f897e27aea76f1c2723f8cca5418f8d1cad173b0457348200b609e452f8584da",
+          "sha256": "f897e27aea76f1c2723f8cca5418f8d1cad173b0457348200b609e452f8584da"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/heatshrink/blobs/sha256:1c86c8958da5c539b53eb0a34f12502aea411b86fd0bcece742397fc515178db",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/heatshrink/blobs/sha256:a6a1ec3b2cd5dc0ebc16fe7ed2beabdb2aba1c7fd9782d3d7fe5f667f4298b44",
           "sha256": "a6a1ec3b2cd5dc0ebc16fe7ed2beabdb2aba1c7fd9782d3d7fe5f667f4298b44"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/heatshrink/blobs/sha256:0bde7796c0ff7e0b7d9963db722a39a69baa5b9d89b975b8e49bbab5a6b246a7",
+          "sha256": "0bde7796c0ff7e0b7d9963db722a39a69baa5b9d89b975b8e49bbab5a6b246a7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

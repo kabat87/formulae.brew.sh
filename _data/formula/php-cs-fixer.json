@@ -4,7 +4,7 @@
   "tap": "homebrew/core",
   "oldname": null,
   "aliases": [
-
+    "php-cs-fixer@3"
   ],
   "versioned_formulae": [
     "php-cs-fixer@2"
@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://cs.symfony.com/",
   "versions": {
-    "stable": "3.5.0",
+    "stable": "3.13.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v3.5.0/php-cs-fixer.phar",
+      "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/releases/download/v3.13.2/php-cs-fixer.phar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5cbd6179122f4bcdcc988209aa19019ecb300890589ed8b26fa452efd63046bc"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/php-cs-fixer/blobs/sha256:46199394d927b44bc298fe719f8e6f13da9e0f5fb5bc412d9617dba54352d326",
-          "sha256": "46199394d927b44bc298fe719f8e6f13da9e0f5fb5bc412d9617dba54352d326"
+          "url": "https://ghcr.io/v2/homebrew/core/php-cs-fixer/blobs/sha256:104989a41dede365583c39bc41ad97b34cba666dcf48e68647880b0a1d8660d4",
+          "sha256": "104989a41dede365583c39bc41ad97b34cba666dcf48e68647880b0a1d8660d4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "php"
+    "php@8.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

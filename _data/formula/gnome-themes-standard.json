@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/gnome-themes-standard/3.22/gnome-themes-standard-3.22.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "61dc87c52261cfd5b94d65e8ffd923ddeb5d3944562f84942eeeb197ab8ab56a"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gnome-themes-standard/blobs/sha256:228742756729ddd853a82b325d965fe83258dd25cbb849e8b270ccea0e4565b2",
+          "sha256": "228742756729ddd853a82b325d965fe83258dd25cbb849e8b270ccea0e4565b2"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gnome-themes-standard/blobs/sha256:2b19b436b1dd9784e0bd347e663168f9fc8481132db0cc208e2571d1fb37c079",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gnome-themes-standard/blobs/sha256:e7f20854195f04389a9ebbd968b59541979fbea64379a45af6c3b09f850a5f6e",
           "sha256": "e7f20854195f04389a9ebbd968b59541979fbea64379a45af6c3b09f850a5f6e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gnome-themes-standard/blobs/sha256:aeec4ff469b8b0aafd9f44ebe5a907be0ab209fa5b3ce8605caaadbf72d833ef",
+          "sha256": "aeec4ff469b8b0aafd9f44ebe5a907be0ab209fa5b3ce8605caaadbf72d833ef"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -92,6 +102,9 @@
   ],
   "dependencies": [
     "gtk+"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -120,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

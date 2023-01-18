@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/hyattpd/Prodigal/archive/v2.6.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "89094ad4bff5a8a8732d899f31cec350f5a4c27bcbdd12663f87c9d1f0ec599f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prodigal/blobs/sha256:a790b0ef414bf71bd6382b1e7e2acee149988003a3def80085c4ae555e436ed0",
+          "sha256": "a790b0ef414bf71bd6382b1e7e2acee149988003a3def80085c4ae555e436ed0"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prodigal/blobs/sha256:bcf9c5deb46b542d95f4bcca4f4f947d60fee5138b76eab5018b61eb6f86279d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/prodigal/blobs/sha256:abcf0f632ae6187b7b29e2ebd9680717c3678d3e2694b87840591a0f51d4db09",
           "sha256": "abcf0f632ae6187b7b29e2ebd9680717c3678d3e2694b87840591a0f51d4db09"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/prodigal/blobs/sha256:8b27c484b78ade21719983f96701441033f3c8bc409f12db3678a4da740b108e",
+          "sha256": "8b27c484b78ade21719983f96701441033f3c8bc409f12db3678a4da740b108e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

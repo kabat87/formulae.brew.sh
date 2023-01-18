@@ -10,7 +10,7 @@
 
   ],
   "desc": "Random number test suite",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://webhome.phy.duke.edu/~rgb/General/dieharder.php",
   "versions": {
     "stable": "3.31.1",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://webhome.phy.duke.edu/~rgb/General/dieharder/dieharder-3.31.1.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6cff0ff8394c553549ac7433359ccfc955fb26794260314620dfa5e4cd4b727f"
     }
   },
   "revision": 3,
@@ -76,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +85,9 @@
   ],
   "dependencies": [
     "gsl"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,7 +114,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2022-01-20",
+  "disable_reason": "uses an upstream server with an incomplete SSL certificate chain",
+  "variations": {
+  }
 }

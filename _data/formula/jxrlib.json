@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/j/jxrlib/jxrlib_1.1.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c7287b86780befa0914f2eeb8be2ac83e672ebd4bd16dc5574a36a59d9708303"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jxrlib/blobs/sha256:6dd0a252b9af046d657a6fe9e9e65092d4c756295202b74ac9ae41d896850014",
+          "sha256": "6dd0a252b9af046d657a6fe9e9e65092d4c756295202b74ac9ae41d896850014"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jxrlib/blobs/sha256:5689b2bb17ccb49efc307704c0f1eb677c66cd1727605b04db013f519f90a51c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jxrlib/blobs/sha256:5fed25d3e908ae5f825c8ef875363e5f191c8ba5e932ee4675747874c33f570a",
           "sha256": "5fed25d3e908ae5f825c8ef875363e5f191c8ba5e932ee4675747874c33f570a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jxrlib/blobs/sha256:abd82d9714ef6fae49062ca6487ccb78bc1541addd590b097206252e6cc2a17b",
+          "sha256": "abd82d9714ef6fae49062ca6487ccb78bc1541addd590b097206252e6cc2a17b"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

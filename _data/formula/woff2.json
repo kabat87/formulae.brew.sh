@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/google/woff2/archive/v1.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "add272bb09e6384a4833ffca4896350fdb16e0ca22df68c0384773c67a175594"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/woff2/blobs/sha256:fb62fd8c1f19bf0eabbc4e82ea9db15cb8fd74b158bc137a6e4da08a95c57759",
+          "sha256": "fb62fd8c1f19bf0eabbc4e82ea9db15cb8fd74b158bc137a6e4da08a95c57759"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/woff2/blobs/sha256:1108c65b488acc65da207d66d8cb1c6964f4bcc23cfd29de4563d783a174d639",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/woff2/blobs/sha256:7ca5f49e0a75c2e9935606e2d065104bf7e29f48d767cdcd373e2f84a8a322b6",
           "sha256": "7ca5f49e0a75c2e9935606e2d065104bf7e29f48d767cdcd373e2f84a8a322b6"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/woff2/blobs/sha256:3583be57fecbc4f9c17c9bee38c9c484637bcb7b4868ff948811cdbe679a53c7",
+          "sha256": "3583be57fecbc4f9c17c9bee38c9c484637bcb7b4868ff948811cdbe679a53c7"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "brotli"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

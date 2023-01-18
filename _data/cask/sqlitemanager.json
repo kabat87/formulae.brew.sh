@@ -16,17 +16,21 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "SQLiteManager.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/SQLiteManager",
-        "~/Library/Preferences/com.sqlabs.sqlitemanager4.plist",
-        "~/Library/Saved Application State/com.sqlabs.sqlitemanager4.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SQLiteManager.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/SQLiteManager",
+            "~/Library/Preferences/com.sqlabs.sqlitemanager4.plist",
+            "~/Library/Saved Application State/com.sqlabs.sqlitemanager4.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

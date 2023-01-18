@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Xfennec/progress/archive/v0.16.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "59944ee35f8ae6d62ed4f9b643eee2ae6d03825da288d9779dc43de41164c834"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/progress/blobs/sha256:97145efe8aa3701c8f6327c23a029827ab755b737f9768608f86c72a7cb5e95a",
+          "sha256": "97145efe8aa3701c8f6327c23a029827ab755b737f9768608f86c72a7cb5e95a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/progress/blobs/sha256:95538fd7595dfdb2d046961264df824fd0ad908afaf732b6bbd2e5ddf13af2ea",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/progress/blobs/sha256:97407ff56c65c8f77371ce073478868eb507742db82c11e107a43413bce646c3",
           "sha256": "97407ff56c65c8f77371ce073478868eb507742db82c11e107a43413bce646c3"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/progress/blobs/sha256:575b87849ef9d8e50e80d169304c65568a9c2b3a8d69590dded348cebc4fe3c0",
+          "sha256": "575b87849ef9d8e50e80d169304c65568a9c2b3a8d69590dded348cebc4fe3c0"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,15 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config"
+      ],
+      "dependencies": [
+        "ncurses"
+      ]
+    }
+  }
 }

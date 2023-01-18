@@ -1,8 +1,11 @@
 cask "eclipse-jee" do
-  version "4.22.0,2021-12"
-  sha256 "3a4d32951ddb2b1a5e87ed31a4fa49bf16516407152f49c1ad82b18931fc9b57"
+  arch arm: "aarch64", intel: "x86_64"
 
-  url "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/#{version.csv.second}/R/eclipse-jee-#{version.csv.second}-R-macosx-cocoa-x86_64.dmg&r=1"
+  version "4.26.0,2022-12"
+  sha256 arm:   "c6c869fce960f22c1820ad2f646d0d1e9cdcb1f05957676dcbdc5fad24aede09",
+         intel: "810f22b4e24d620f4290034d93cedeb774a4ce63ed165b66dd66c3be6e34ee82"
+
+  url "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/#{version.csv.second}/R/eclipse-jee-#{version.csv.second}-R-macosx-cocoa-#{arch}.dmg&r=1"
   name "Eclipse IDE for Java EE Developers"
   desc "Eclipse IDE for Java EE developers"
   homepage "https://eclipse.org/"

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.sqlite.org/2021/sqlite-src-3360000.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "25a3b9d08066b3a9003f06a96b2a8d1348994c29cc912535401154501d875324"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lemon/blobs/sha256:e2bbe4a5b574c3bc162a9e9ef5073f642c89930bd0b81f1ae7bb78463d6491aa",
+          "sha256": "e2bbe4a5b574c3bc162a9e9ef5073f642c89930bd0b81f1ae7bb78463d6491aa"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lemon/blobs/sha256:acad2c45ba75ce33323c6cf4558dae1872faa88ee4fe76bd07ceb4a2be5824aa",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lemon/blobs/sha256:c9895753eefde9fd60263be373f014f1cb77bbd4065ff1c2c6fca12450bbc138",
           "sha256": "c9895753eefde9fd60263be373f014f1cb77bbd4065ff1c2c6fca12450bbc138"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lemon/blobs/sha256:c4922851d6002649701c324500e665be56fba4aaafe8d7a4213fc3b0fef5bc57",
+          "sha256": "c4922851d6002649701c324500e665be56fba4aaafe8d7a4213fc3b0fef5bc57"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -6,39 +6,50 @@
     "Macs Fan Control"
   ],
   "desc": "Controls and monitors all fans on Apple computers",
-  "homepage": "https://www.crystalidea.com/macs-fan-control",
-  "url": "https://github.com/crystalidea/macs-fan-control/releases/download/v1.5.11/macsfancontrol.zip",
+  "homepage": "https://crystalidea.com/macs-fan-control",
+  "url": "https://github.com/crystalidea/macs-fan-control/releases/download/v1.5.14/macsfancontrol.zip",
   "appcast": null,
-  "version": "1.5.11",
+  "version": "1.5.14",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "92327f23ef485e81a2d5ed4ee41317fbd7cb7ea6a7035944e1c4566058c6bd15",
+  "sha256": "994e081315f0b91afa6920cb8380b42028f394f5c0ba5ab3ac53f4fc37b3cdff",
   "artifacts": [
     {
-      "signal": {
-        "TERM": "com.crystalidea.MacsFanControl"
-      }
+      "uninstall": [
+        {
+          "signal": [
+            "TERM",
+            "com.crystalidea.MacsFanControl"
+          ]
+        }
+      ]
     },
-    [
-      "Macs Fan Control.app"
-    ],
     {
-      "trash": "~/Library/Preferences/com.crystalidea.macsfancontrol.plist",
-      "signal": {
-      }
+      "app": [
+        "Macs Fan Control.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/com.crystalidea.macsfancontrol.plist"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

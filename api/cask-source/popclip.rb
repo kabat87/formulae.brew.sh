@@ -1,6 +1,6 @@
 cask "popclip" do
-  version "2021.11.1,3788"
-  sha256 "0987f69055141f9c116f76b20eb0ed8086eebd0cf748460bae6df6d4565776fd"
+  version "2022.12,4069"
+  sha256 "91264a56675fb41ba13e07bd5cb6cab01ac64cdc551a19582914dbe3aa2bf63a"
 
   url "https://pilotmoon.com/downloads/PopClip-#{version.csv.first}.zip"
   name "PopClip"
@@ -12,7 +12,7 @@ cask "popclip" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :high_sierra"
 
   app "PopClip.app"
 

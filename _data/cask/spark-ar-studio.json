@@ -9,24 +9,28 @@
   "homepage": "https://sparkar.facebook.com/ar-studio/",
   "url": "https://www.facebook.com/sparkarmacos/download/",
   "appcast": null,
-  "version": "129",
+  "version": "154",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Spark AR Studio.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.facebook.arstudio.skylight",
-        "~/Library/Preferences/com.facebook.arstudio.skylight.plist",
-        "~/Library/Saved Application State/com.facebook.arstudio.skylight.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Meta Spark Studio.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.facebook.arstudio.skylight",
+            "~/Library/Preferences/com.facebook.arstudio.skylight.plist",
+            "~/Library/Saved Application State/com.facebook.arstudio.skylight.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

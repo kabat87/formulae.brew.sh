@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/rtf2latex2e/rtf2latex2e-unix/2-2/rtf2latex2e-2-2-3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7ef86edea11d5513cd86789257a91265fc82d978541d38ab2c08d3e9d6fcd3c3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/rtf2latex2e/blobs/sha256:12f88e9bf99968693672ded4a3784e42558e15895be581c13df04a7c99e978d4",
+          "sha256": "12f88e9bf99968693672ded4a3784e42558e15895be581c13df04a7c99e978d4"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/rtf2latex2e/blobs/sha256:dad0a2da5ef80b23fc0dfef461a75c8df8aea2d8c1fbe2714c0c1bc9cbf8f2fc",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/rtf2latex2e/blobs/sha256:35639bec913a1d60de52ac3d15d633bc17878c06829a1e5338272bae0f2399cd",
           "sha256": "35639bec913a1d60de52ac3d15d633bc17878c06829a1e5338272bae0f2399cd"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/rtf2latex2e/blobs/sha256:6c9d8dd73ea187545b5b6400918c8f2f493e32584c4ac01e9b035738c658fe66",
+          "sha256": "6c9d8dd73ea187545b5b6400918c8f2f493e32584c4ac01e9b035738c658fe66"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

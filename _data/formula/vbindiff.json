@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.cjmweb.net/vbindiff/vbindiff-3.0_beta5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f04da97de993caf8b068dcb57f9de5a4e7e9641dc6c47f79b60b8138259133b8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vbindiff/blobs/sha256:2765e76b73db2ad73a57dacd123cebc482dbc90dcded199f38d45fa5b3b63fad",
+          "sha256": "2765e76b73db2ad73a57dacd123cebc482dbc90dcded199f38d45fa5b3b63fad"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vbindiff/blobs/sha256:d8075454b11304c47a1e77537da4abe37c6188b0cd53c8d74cf920ec9f0015a1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vbindiff/blobs/sha256:2ded05d39834aefcfefe2639b2c861410dd94a6a1213ef892f8b5bfd4c1624b9",
           "sha256": "2ded05d39834aefcfefe2639b2c861410dd94a6a1213ef892f8b5bfd4c1624b9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vbindiff/blobs/sha256:b937359639366c69a2b3227d6c1c5ce6590fcbf30e7a8242e87e37772f42c575",
+          "sha256": "b937359639366c69a2b3227d6c1c5ce6590fcbf30e7a8242e87e37772f42c575"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

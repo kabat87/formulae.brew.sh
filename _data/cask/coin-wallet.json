@@ -7,39 +7,40 @@
   ],
   "desc": "Digital currency wallet",
   "homepage": "https://coin.space/",
-  "url": "https://github.com/CoinSpace/CoinSpace/releases/download/v5.1.4/Coin.Wallet.dmg",
+  "url": "https://github.com/CoinSpace/CoinSpace/releases/download/v5.9.3/Coin.Wallet.dmg",
   "appcast": null,
-  "version": "5.1.4",
+  "version": "5.9.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a0b517f97f5ae76dc7526f51ccb6546069f9d919640ce7a0865223d1d8f06d7b",
+  "sha256": "bd289b45d6500f7aa90ce8d5a294fcc027777714bccd81531b3d65c88742415c",
   "artifacts": [
-    [
-      "Coin Wallet.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Coin Wallet",
-        "~/Library/Caches/com.coinspace.wallet*",
-        "~/Library/Preferences/ByHost/com.coinspace.wallet.*.plist",
-        "~/Library/Preferences/com.coinspace.wallet*.plist",
-        "~/Library/Saved Application State/com.coinspace.wallet.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Coin Wallet.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Coin Wallet",
+            "~/Library/Caches/com.coinspace.wallet*",
+            "~/Library/Preferences/ByHost/com.coinspace.wallet.*.plist",
+            "~/Library/Preferences/com.coinspace.wallet*.plist",
+            "~/Library/Saved Application State/com.coinspace.wallet.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

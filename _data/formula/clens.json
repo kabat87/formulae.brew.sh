@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/conformal/clens/archive/CLENS_0_7_0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0cc18155c2c98077cb90f07f6ad8334314606c4be0b6ffc13d6996171c7dc09d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clens/blobs/sha256:6e42ef7f7f467d0bbe324659c9fe2a89c0049968a580bd1115d93a8423af0fe1",
+          "sha256": "6e42ef7f7f467d0bbe324659c9fe2a89c0049968a580bd1115d93a8423af0fe1"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clens/blobs/sha256:513fdfc8d9f7c710d81ade46ff26f9d74283c096029c55c99282e03682ffba97",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clens/blobs/sha256:6e62d3fb708d1585bda7aeef47488d5b765a7b3af5bba0e2d2544a12b08cb892",
           "sha256": "6e62d3fb708d1585bda7aeef47488d5b765a7b3af5bba0e2d2544a12b08cb892"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clens/blobs/sha256:930fc11da5b772ab93d361d1172b0cf4c2b0abc44c2f9acdeb7f37b5f6be17f5",
+          "sha256": "930fc11da5b772ab93d361d1172b0cf4c2b0abc44c2f9acdeb7f37b5f6be17f5"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/clens/blobs/sha256:f6c68d7dce9d824274e16e3867926528cc79d161418fac0a0052e37dc6604668",
           "sha256": "f6c68d7dce9d824274e16e3867926528cc79d161418fac0a0052e37dc6604668"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clens/blobs/sha256:b08580c90a8ed647005c437158972a1dbd770792c2db74391eec8ed5f4ec1b6e",
-          "sha256": "b08580c90a8ed647005c437158972a1dbd770792c2db74391eec8ed5f4ec1b6e"
+          "url": "https://ghcr.io/v2/homebrew/core/clens/blobs/sha256:4b5d5f5cba941676c726e09e2b14c9069dfebf9db9d6cb2b75fc321a2481aedf",
+          "sha256": "4b5d5f5cba941676c726e09e2b14c9069dfebf9db9d6cb2b75fc321a2481aedf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "libbsd"
+      ]
+    }
+  }
 }

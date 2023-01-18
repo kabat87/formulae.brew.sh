@@ -13,15 +13,16 @@
   "license": "GPL-3.0-only",
   "homepage": "https://github.com/abraunegg/onedrive",
   "versions": {
-    "stable": "2.4.14",
+    "stable": "2.4.23",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/abraunegg/onedrive/archive/v2.4.14.tar.gz",
+      "url": "https://github.com/abraunegg/onedrive/archive/v2.4.23.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fb57b9683302a53958671d1c74eb9b8f89ac229055647adce093e8a49ad846e0"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/onedrive/blobs/sha256:13c7622a3b77367575187d06d25a14ba33a5b2468ecb48acfe8e182f741f4326",
-          "sha256": "13c7622a3b77367575187d06d25a14ba33a5b2468ecb48acfe8e182f741f4326"
+          "url": "https://ghcr.io/v2/homebrew/core/onedrive/blobs/sha256:00ba2f4255b93fa6d90eab0969aca595385cfad98fad1e125484c1d301bf6814",
+          "sha256": "00ba2f4255b93fa6d90eab0969aca595385cfad98fad1e125484c1d301bf6814"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -53,6 +53,9 @@
     "curl",
     "sqlite",
     "systemd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -89,5 +92,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

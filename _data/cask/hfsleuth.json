@@ -16,20 +16,26 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "hfsleuth.universal",
-      {
-        "target": "hfsleuth"
-      }
-    ],
-    [
-      "hfsleuth.1"
-    ]
+    {
+      "binary": [
+        "hfsleuth.universal",
+        {
+          "target": "hfsleuth"
+        }
+      ]
+    },
+    {
+      "manpage": [
+        "hfsleuth.1"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

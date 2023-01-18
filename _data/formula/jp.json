@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sgreben/jp/archive/1.1.12.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8c9cddf8b9d9bfae72be448218ca0e18d24e755d36c915842b12398fefdc7a64"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jp/blobs/sha256:ea0dcfefb673157d2c4492bfa9e2bc012f475e7dfa23e28b6c18ce5805474a59",
+          "sha256": "ea0dcfefb673157d2c4492bfa9e2bc012f475e7dfa23e28b6c18ce5805474a59"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jp/blobs/sha256:37b85d8d9876ffae1cdf4a3897ca558f2586a826a229d9b85d5799b33e338a89",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jp/blobs/sha256:2aa9562dff431b094f70d345de3957b0732ccb1695647575fe34d027d2130938",
           "sha256": "2aa9562dff431b094f70d345de3957b0732ccb1695647575fe34d027d2130938"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jp/blobs/sha256:4ab9a9c62daeea0f88e6fbfaa6fccfb630ff4845f9d6fbf587ba4f2d36a015ba",
+          "sha256": "4ab9a9c62daeea0f88e6fbfaa6fccfb630ff4845f9d6fbf587ba4f2d36a015ba"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,8 +1,8 @@
 cask "volley" do
-  version "1.0.64"
-  sha256 "c0e3f221ecce63c27734c92a77fbb66026bb1691eed3de58e52626b43bae1cea"
+  version "1.2.0"
+  sha256 "745ef76b1c867054917018826ceb3215e74cdf7678c524fae262718c53a6b1b1"
 
-  url "https://s3.amazonaws.com/pieces.volley.app/downloads/Volley-#{version}-mac.zip",
+  url "https://s3.amazonaws.com/pieces.volley.app/downloads/Volley-#{version}.dmg",
       verified: "s3.amazonaws.com/pieces.volley.app/"
   name "Volley"
   desc "Asynchronous video messaging app"

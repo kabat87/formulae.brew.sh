@@ -1,6 +1,6 @@
 cask "utm" do
-  version "2.4.1"
-  sha256 "cab9a7d9dc23004e10382cb496ca5336f263d5e0f7e0dff3efd5a6d12e4fd291"
+  version "4.1.5"
+  sha256 "60e9937f9d1452fbe1e27a169e657a5aca164ae6b4b6959380b4e0f8276bddb4"
 
   url "https://github.com/utmapp/UTM/releases/download/v#{version}/UTM.dmg",
       verified: "github.com/utmapp/UTM/"
@@ -11,11 +11,13 @@ cask "utm" do
   livecheck do
     url :url
     strategy :github_latest
+    regex(%r{href=.*?/tag/v?(\d+(?:[.-]\d+)+)["' >]}i)
   end
 
   conflicts_with cask: "homebrew/cask-versions/utm-beta"
 
   app "UTM.app"
+  binary "#{appdir}/UTM.app/Contents/MacOS/utmctl"
 
   uninstall quit: "com.utmapp.UTM"
 

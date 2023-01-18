@@ -10,18 +10,19 @@
 
   ],
   "desc": "Checks ansible playbooks for practices and behaviour",
-  "license": "MIT",
+  "license": "MIT and GPL-3.0-or-later",
   "homepage": "https://github.com/ansible/ansible-lint/",
   "versions": {
-    "stable": "5.3.2",
+    "stable": "6.11.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/fa/8f/73f43b56d270dbebe36760c49132acbc18a824121b249a5810d2b13a385c/ansible-lint-5.3.2.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/85/fa/ef4a04d0d6bb88d22c79937d9983b903fc7de6448d4941457bf292173e29/ansible-lint-6.11.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "348ac356c3817a6db98fb6993ec17b5b236c16312238759f0a3f14f3543a9e50"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:66f7d351a6688ba385d40d2e7712207cc775c470a9948d8bca87d80483422354",
+          "sha256": "66f7d351a6688ba385d40d2e7712207cc775c470a9948d8bca87d80483422354"
+        },
         "arm64_monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:c68375f8a4a1d9a64f11bc3701b335968317dca58923294395d733686057c0fe",
-          "sha256": "c68375f8a4a1d9a64f11bc3701b335968317dca58923294395d733686057c0fe"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:b9bacde0eb596d07c8a9dc88b27b1488098bba576d301b77c4c18a741b6e08a9",
+          "sha256": "b9bacde0eb596d07c8a9dc88b27b1488098bba576d301b77c4c18a741b6e08a9"
         },
         "arm64_big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:9bcc5617df8382e30887927774f1898c4b837d4d5e6502a1aea8d3992059250d",
-          "sha256": "9bcc5617df8382e30887927774f1898c4b837d4d5e6502a1aea8d3992059250d"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:d3604a3839b46159bb5aac667ec16b67838f347ea7638f315b4e8649e3058444",
+          "sha256": "d3604a3839b46159bb5aac667ec16b67838f347ea7638f315b4e8649e3058444"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:1fdecc9cf2dcc3579202db6855eb54f6a629694c4e24f502aa90eaeb9491cf2a",
+          "sha256": "1fdecc9cf2dcc3579202db6855eb54f6a629694c4e24f502aa90eaeb9491cf2a"
         },
         "monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:9cf38cecb4f456896ca8f35dae3f4150188998f03b5159a0daf3d26494e8a716",
-          "sha256": "9cf38cecb4f456896ca8f35dae3f4150188998f03b5159a0daf3d26494e8a716"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:b54be7acdff28ebf1fde06f6372e489fa432de28d59b7103654797570e017788",
+          "sha256": "b54be7acdff28ebf1fde06f6372e489fa432de28d59b7103654797570e017788"
         },
         "big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:3cb2aa07907a84b6fc649b12d4fffe4ecc62e29ac3c2131d1e8acabacfd714d2",
-          "sha256": "3cb2aa07907a84b6fc649b12d4fffe4ecc62e29ac3c2131d1e8acabacfd714d2"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:8d481cb5ae545ae59271916b0df92d98651371b42d1db69ee5ac2da2b9c24a14",
-          "sha256": "8d481cb5ae545ae59271916b0df92d98651371b42d1db69ee5ac2da2b9c24a14"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:fe0fc41686f574da366c253465a4ea396d3a29abfa9614ef50aeab31399c24d6",
+          "sha256": "fe0fc41686f574da366c253465a4ea396d3a29abfa9614ef50aeab31399c24d6"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:e31657d5a43aa63d0875eb644106c0c602e0b2232681c68d5703f3b77f397e56",
-          "sha256": "e31657d5a43aa63d0875eb644106c0c602e0b2232681c68d5703f3b77f397e56"
+          "url": "https://ghcr.io/v2/homebrew/core/ansible-lint/blobs/sha256:5e0fe800991c7b7d2ebf6f2ef2a8922fd8c32312b2c1db92e828792f68bb9bf8",
+          "sha256": "5e0fe800991c7b7d2ebf6f2ef2a8922fd8c32312b2c1db92e828792f68bb9bf8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,8 +80,14 @@
   ],
   "dependencies": [
     "ansible",
-    "libyaml",
-    "python@3.10"
+    "black",
+    "pygments",
+    "python@3.11",
+    "pyyaml",
+    "yamllint"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,33 +7,34 @@
   ],
   "desc": "Binary newsreader",
   "homepage": "https://sabnzbd.org/",
-  "url": "https://github.com/sabnzbd/sabnzbd/releases/download/3.4.2/SABnzbd-3.4.2-osx.dmg",
+  "url": "https://github.com/sabnzbd/sabnzbd/releases/download/3.7.1/SABnzbd-3.7.1-osx.dmg",
   "appcast": null,
-  "version": "3.4.2",
+  "version": "3.7.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "299643d81d66702efa8b836031400b8302f48b53c8e09825204e18ac00bba2de",
+  "sha256": "a4eaaed2b0517b2115868a0fd7320f8d2e06229ff7d0ce65dfdc8202d42e062d",
   "artifacts": [
-    [
-      "SABnzbd.app"
-    ],
     {
-      "trash": "~/Library/Application Support/SABnzbd",
-      "signal": {
-      }
+      "app": [
+        "SABnzbd.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/SABnzbd"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

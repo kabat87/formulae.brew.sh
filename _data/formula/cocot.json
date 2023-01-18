@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vmi/cocot/archive/cocot-1.2-20171118.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b718630ce3ddf79624d7dcb625fc5a17944cbff0b76574d321fb80c61bb91e4c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cocot/blobs/sha256:efe840ebc69a0212b0563b64b05e44426624ee8ed3c0aa6ef8f8101d1ca7ea0c",
+          "sha256": "efe840ebc69a0212b0563b64b05e44426624ee8ed3c0aa6ef8f8101d1ca7ea0c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cocot/blobs/sha256:8f91587cce3e6d8aee833b0eefcbc49b50d8851455e523390f9a8899f39cd50d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cocot/blobs/sha256:835a54f7142add9b9a3ab35097a6821fc9c100568b54c2d7fa52c283fd5ca6af",
           "sha256": "835a54f7142add9b9a3ab35097a6821fc9c100568b54c2d7fa52c283fd5ca6af"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cocot/blobs/sha256:8c309ff7d2661f534506c63909107b699d469d782d659e86f765b9e2a28bd319",
+          "sha256": "8c309ff7d2661f534506c63909107b699d469d782d659e86f765b9e2a28bd319"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

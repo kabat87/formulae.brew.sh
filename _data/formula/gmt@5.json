@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/GenericMappingTools/gmt/releases/download/5.4.5/gmt-5.4.5-src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "225629c7869e204d5f9f1a384c4ada43e243f83e1ed28bdca4f7c2896bf39ef6"
     }
   },
   "revision": 13,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gmt/5/blobs/sha256:be46e95fb3bb1cb83195f10338e991c3dcff7ffe68b9dfdaf0daa7c3777cb2c2",
+          "sha256": "be46e95fb3bb1cb83195f10338e991c3dcff7ffe68b9dfdaf0daa7c3777cb2c2"
+        },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gmt/5/blobs/sha256:67c2cbd893bdb2d5e36aa034964df1d626547634608dc4b6385e0f64fe06163f",
@@ -49,7 +55,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -61,6 +66,9 @@
     "gdal",
     "netcdf",
     "pcre2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -84,10 +92,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-05-22",
-  "deprecation_reason": "unmaintained",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "unmaintained",
+  "variations": {
+  }
 }

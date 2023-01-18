@@ -21,52 +21,57 @@
     "stable": {
       "url": "https://github.com/stp/stp/archive/refs/tags/2.3.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ea6115c0fc11312c797a4b7c4db8734afcfce4908d078f386616189e01b4fffa"
     }
   },
-  "revision": 0,
+  "revision": 5,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:56b4a35b04e14bd72a3b1feed68bdf51c5685490ef217546544838a73d848e42",
+          "sha256": "56b4a35b04e14bd72a3b1feed68bdf51c5685490ef217546544838a73d848e42"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:48ccc2aaaf6df0975dbfc46a822c5c97beb4649f2162909dd7425ed9ab253f77",
-          "sha256": "48ccc2aaaf6df0975dbfc46a822c5c97beb4649f2162909dd7425ed9ab253f77"
+          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:1dc415463bd8ca89ef8220836f7f5884b9d13da8805acee98bda7da74e9718ad",
+          "sha256": "1dc415463bd8ca89ef8220836f7f5884b9d13da8805acee98bda7da74e9718ad"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:c85797a1bcf17ff2ee089ca7deffb73cb366073342c80805fb5d96f01b6862a8",
-          "sha256": "c85797a1bcf17ff2ee089ca7deffb73cb366073342c80805fb5d96f01b6862a8"
+          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:a28b087debbd62a35a1f54c59dc76b65dba5b32a919aeb5354ec9cda76f87478",
+          "sha256": "a28b087debbd62a35a1f54c59dc76b65dba5b32a919aeb5354ec9cda76f87478"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:21cfed5b9aaf58fcc7727caa8ad39d04f589149d7983591abca0cdbeb59789bd",
+          "sha256": "21cfed5b9aaf58fcc7727caa8ad39d04f589149d7983591abca0cdbeb59789bd"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:353ab0e8c4f043a7db593c30821faab858c1f3aa531b4bf475ed78181d4847c2",
-          "sha256": "353ab0e8c4f043a7db593c30821faab858c1f3aa531b4bf475ed78181d4847c2"
+          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:4c74e59f1548eec3152763ebd7f8dc97844f4851503e1df93f7440d5f6a1e961",
+          "sha256": "4c74e59f1548eec3152763ebd7f8dc97844f4851503e1df93f7440d5f6a1e961"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:67c02fd361c644c8b084a169780a08b3a784dc9be52c9526f43c46eedd43fa8b",
-          "sha256": "67c02fd361c644c8b084a169780a08b3a784dc9be52c9526f43c46eedd43fa8b"
+          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:2d022aa8899bd99248deae04511fe096bd3a4ea176d7a6772efe01d9678ec2e3",
+          "sha256": "2d022aa8899bd99248deae04511fe096bd3a4ea176d7a6772efe01d9678ec2e3"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:b62659c5952eb16980866fed30cfc8d12dd3b01093470307fc5b1bdbfdd079e1",
-          "sha256": "b62659c5952eb16980866fed30cfc8d12dd3b01093470307fc5b1bdbfdd079e1"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:665e74ae3f16e5f0a7f39f968e40a27adbbbe797b9abfabedbeb2105f8b39bb0",
-          "sha256": "665e74ae3f16e5f0a7f39f968e40a27adbbbe797b9abfabedbeb2105f8b39bb0"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/stp/blobs/sha256:6987938313274368694342d33c5b412685a9d60e050c037f8deb577d4c6bc6b8",
+          "sha256": "6987938313274368694342d33c5b412685a9d60e050c037f8deb577d4c6bc6b8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,7 +84,10 @@
     "boost",
     "cryptominisat",
     "minisat",
-    "python@3.9"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

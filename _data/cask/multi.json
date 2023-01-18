@@ -7,27 +7,31 @@
   ],
   "desc": "Create apps from groups of websites",
   "homepage": "https://github.com/hkgumbs/multi",
-  "url": "https://github.com/hkgumbs/multi/releases/download/v2.1.4/Multi.2.1.4.dmg",
+  "url": "https://github.com/hkgumbs/multi/releases/download/v2.2.2/Multi.2.2.2.dmg",
   "appcast": null,
-  "version": "2.1.4",
+  "version": "2.2.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "29b04f3a3e73d3ae63e756c907998d11f951df7874f13f5c8bb47a372b0f4590",
+  "sha256": "dc960eafb48ac9ba08f30f048e319c04992db3923fe113abbabdb883aa93275f",
   "artifacts": [
-    [
-      "Multi.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/llc.gumbs.multi.*",
-        "~/Library/Caches/llc.gumbs.multi",
-        "~/Library/Preferences/llc.gumbs.multi.*.plist",
-        "~/Library/Saved Application State/llc.gumbs.multi.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Multi.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/llc.gumbs.multi.*",
+            "~/Library/Caches/llc.gumbs.multi",
+            "~/Library/Preferences/llc.gumbs.multi.*.plist",
+            "~/Library/Saved Application State/llc.gumbs.multi.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

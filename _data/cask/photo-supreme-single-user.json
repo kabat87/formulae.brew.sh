@@ -5,11 +5,11 @@
   "name": [
     "Photo Supreme Single User"
   ],
-  "desc": null,
+  "desc": "Digital Asset Management",
   "homepage": "https://www.idimager.com/home",
-  "url": "https://trial.idimager.com/PhotoSupreme_V4.pkg",
+  "url": "https://trial.idimager.com/PhotoSupreme_V7.pkg",
   "appcast": null,
-  "version": "4",
+  "version": "7.4.3.4751",
   "versions": {
   },
   "installed": null,
@@ -17,16 +17,24 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.idimager.idimagersu",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.idimager.idimagersu"
+        }
+      ]
     },
-    "PhotoSupreme_V4.pkg (Pkg)"
+    {
+      "pkg": [
+        "PhotoSupreme_V7.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

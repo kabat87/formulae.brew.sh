@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/dmacvicar/terraform-provider-libvirt",
   "versions": {
-    "stable": "0.6.12",
+    "stable": "0.7.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/dmacvicar/terraform-provider-libvirt/archive/v0.6.12.tar.gz",
+      "url": "https://github.com/dmacvicar/terraform-provider-libvirt/archive/v0.7.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a540d3f5fc6afc7ee7759d03a43f85df7af2263fdfa6d73a8014fb4f5c480fa5"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:335b225a4a6dd7fd48fc292ae3829ad26f01365f271a9b4c7d965bdc1c1233fb",
+          "sha256": "335b225a4a6dd7fd48fc292ae3829ad26f01365f271a9b4c7d965bdc1c1233fb"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:4f09d7b51b1cb82628ed7cda6630f9ca68dc5579946845cf7b6039e8da54f8b3",
-          "sha256": "4f09d7b51b1cb82628ed7cda6630f9ca68dc5579946845cf7b6039e8da54f8b3"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:4a99d4558f10f6d9a24860ba42908e0fd6e5704c6218477d1ccb20268c25d199",
+          "sha256": "4a99d4558f10f6d9a24860ba42908e0fd6e5704c6218477d1ccb20268c25d199"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:fb0d4ece745a815f896b18fde87a373a8939748a5b9ea4918787448d5e8f544a",
-          "sha256": "fb0d4ece745a815f896b18fde87a373a8939748a5b9ea4918787448d5e8f544a"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:d0fe876c72f0393c1afa0419c0153b1cc42fb8d76340413b447e6feb12c2c82c",
+          "sha256": "d0fe876c72f0393c1afa0419c0153b1cc42fb8d76340413b447e6feb12c2c82c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:90e16f849bb32ed97d4558e7748fdf825602211f2abf25248f34521460f4e258",
+          "sha256": "90e16f849bb32ed97d4558e7748fdf825602211f2abf25248f34521460f4e258"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:dfa29e63a1cf32331642c8742d30c1b53a16464581216fcef2c833da20e50781",
-          "sha256": "dfa29e63a1cf32331642c8742d30c1b53a16464581216fcef2c833da20e50781"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:53ee35a68dee46b5d4130c8bd40fd7aa980f6567935f837c31e5fc2ee3e7ed87",
+          "sha256": "53ee35a68dee46b5d4130c8bd40fd7aa980f6567935f837c31e5fc2ee3e7ed87"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:7503be76ab7aacf2a9f182133e6aa35f28a83891574baf223f05113ffcab76e8",
-          "sha256": "7503be76ab7aacf2a9f182133e6aa35f28a83891574baf223f05113ffcab76e8"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:0306bcaa93b009451cf64a10d25d1a2b765e3ccfc6ff7291e790f69240c3b07a",
-          "sha256": "0306bcaa93b009451cf64a10d25d1a2b765e3ccfc6ff7291e790f69240c3b07a"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:5f342b2c06761eb27b0fde6a3a81a7a26563e72020df3296547fe04dd48dc0c7",
+          "sha256": "5f342b2c06761eb27b0fde6a3a81a7a26563e72020df3296547fe04dd48dc0c7"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:cae29cb654a620d134811eb4b1ef78e0d1391f4a7364b44220af804bc2bd9834",
-          "sha256": "cae29cb654a620d134811eb4b1ef78e0d1391f4a7364b44220af804bc2bd9834"
+          "url": "https://ghcr.io/v2/homebrew/core/terraform-provider-libvirt/blobs/sha256:f5d4e59ee77616ee37b6821d033bfef567d930e06162cec6c1525a72a87a3f2c",
+          "sha256": "f5d4e59ee77616ee37b6821d033bfef567d930e06162cec6c1525a72a87a3f2c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +82,9 @@
   "dependencies": [
     "libvirt",
     "terraform"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

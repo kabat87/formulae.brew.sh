@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/chriswalz/bit/archive/v1.1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "563ae6b0fa279cb8ea8f66b4b455c7cb74a9e65a0edbe694505b2c8fc719b2ff"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bit-git/blobs/sha256:82fc55cd7f3b2e7fa64bb366e4ca6e9024510df3e734e8e54800dcbda8870c77",
+          "sha256": "82fc55cd7f3b2e7fa64bb366e4ca6e9024510df3e734e8e54800dcbda8870c77"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bit-git/blobs/sha256:5ec8c891231ff16cf80a718430dec65bea587391dc0ebe31494fea95edb44723",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bit-git/blobs/sha256:cc0139db7fef5d988bd822b90f8551d8ed5a5cdccdcc71520ae6f326cdad89ac",
           "sha256": "cc0139db7fef5d988bd822b90f8551d8ed5a5cdccdcc71520ae6f326cdad89ac"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bit-git/blobs/sha256:23bc09ee2722746a76d3fbd4dba8d4f8d9adceba6e558c2f92ba051f385081d9",
+          "sha256": "23bc09ee2722746a76d3fbd4dba8d4f8d9adceba6e558c2f92ba051f385081d9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

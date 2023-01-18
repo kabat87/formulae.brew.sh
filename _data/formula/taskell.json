@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/smallhadroncollider/taskell/archive/1.11.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0d4f3f54fb0b975f969d7ef8a810bbc7a78e0b46aec28cc4cb337ee36e8abdfc"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/taskell/blobs/sha256:d3d4adedf5311251d430126a527c229bc743f7ad10204f953669c46ed1ecb1ae",
+          "sha256": "d3d4adedf5311251d430126a527c229bc743f7ad10204f953669c46ed1ecb1ae"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/taskell/blobs/sha256:e3bddb43e9655602e40fdbdc7152cc34d574d76654410ae2735b02eb66e402f9",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/taskell/blobs/sha256:0af5900a42ff1461448170364e3f8d7f81f274bb5e44db84779a34f6e76a7e46",
           "sha256": "0af5900a42ff1461448170364e3f8d7f81f274bb5e44db84779a34f6e76a7e46"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/taskell/blobs/sha256:d80b3487d9a6f372fe881ab460469daca32287cac49ddce328b794a067cb7c08",
+          "sha256": "d80b3487d9a6f372fe881ab460469daca32287cac49ddce328b794a067cb7c08"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,16 +82,18 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "cabal-install",
-    "ghc",
+    "ghc@9.2",
     "hpack"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

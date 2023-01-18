@@ -7,26 +7,30 @@
   ],
   "desc": "Mp4 meta-data editor",
   "homepage": "https://metaz.maven-group.org/",
-  "url": "https://github.com/griff/metaz/releases/download/v1.0.1/MetaZ-1.0.1.zip",
+  "url": "https://github.com/griff/metaz/releases/download/v1.0.3/MetaZ-1.0.3.zip",
   "appcast": null,
-  "version": "1.0.1",
+  "version": "1.0.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "102a57e1e0553149a3075aa68bfb8adf5c037178ceb3e04ee7db9a2091439747",
+  "sha256": "0458c1fdcadc198aeca68e1d775195c3022b549f70c0483e57930731af913cbe",
   "artifacts": [
-    [
-      "MetaZ.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/org.maven-group.MetaZ",
-        "~/Library/Logs/MetaZ.log",
-        "~/Library/Preferences/org.maven-group.MetaZ.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "MetaZ.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/org.maven-group.MetaZ",
+            "~/Library/Logs/MetaZ.log",
+            "~/Library/Preferences/org.maven-group.MetaZ.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://www.valgrind.org/",
   "versions": {
-    "stable": "3.18.1",
+    "stable": "3.20.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://sourceware.org/pub/valgrind/valgrind-3.18.1.tar.bz2",
+      "url": "https://sourceware.org/pub/valgrind/valgrind-3.20.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8536c031dbe078d342f121fa881a9ecd205cb5a78e639005ad570011bdb9f3c6"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/valgrind/blobs/sha256:298a721d4314e9c2a250e9296c88cd81e4ba0e4c439bee379f222dc89907abec",
-          "sha256": "298a721d4314e9c2a250e9296c88cd81e4ba0e4c439bee379f222dc89907abec"
+          "url": "https://ghcr.io/v2/homebrew/core/valgrind/blobs/sha256:5564cbedaeb51b4295895cbcd4486ee31c72d1de1dc78bea2aabb30cd204ddc8",
+          "sha256": "5564cbedaeb51b4295895cbcd4486ee31c72d1de1dc78bea2aabb30cd204ddc8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -86,5 +89,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

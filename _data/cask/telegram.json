@@ -7,41 +7,49 @@
   ],
   "desc": "Messaging app with a focus on speed and security",
   "homepage": "https://macos.telegram.org/",
-  "url": "https://osx.telegram.org/updates/Telegram-8.4.1.225774.app.zip",
+  "url": "https://osx.telegram.org/updates/Telegram-9.3.1.241825.app.zip",
   "appcast": null,
-  "version": "8.4.1,225774",
+  "version": "9.3.1,241825",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0dd3648d05c6c6577202b79952c9ef6b3342337b4144fa7161546bd35370fcf7",
+  "sha256": "f19e08de2d50c0118d18cc988e31b6e370734437ffc933b38d31a97540218d88",
   "artifacts": [
     {
-      "quit": "ru.keepcoder.Telegram",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "ru.keepcoder.Telegram"
+        }
+      ]
     },
-    [
-      "Telegram.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/*.ru.keepcoder.Telegram",
-        "~/Library/Application Scripts/*.ru.keepcoder.Telegram.TelegramShare",
-        "~/Library/Application Scripts/ru.keepcoder.Telegram",
-        "~/Library/Application Scripts/ru.keepcoder.Telegram.TelegramShare",
-        "~/Library/Caches/ru.keepcoder.Telegram",
-        "~/Library/Containers/ru.keepcoder.Telegram",
-        "~/Library/Containers/ru.keepcoder.Telegram.TelegramShare",
-        "~/Library/Cookies/ru.keepcoder.Telegram.binarycookies",
-        "~/Library/Group Containers/*.ru.keepcoder.Telegram",
-        "~/Library/Group Containers/*.ru.keepcoder.Telegram.TelegramShare",
-        "~/Library/HTTPStorages/ru.keepcoder.Telegram",
-        "~/Library/Preferences/ru.keepcoder.Telegram.plist",
-        "~/Library/Saved Application State/ru.keepcoder.Telegram.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Telegram.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/*.ru.keepcoder.Telegram",
+            "~/Library/Application Scripts/*.ru.keepcoder.Telegram.TelegramShare",
+            "~/Library/Application Scripts/ru.keepcoder.Telegram",
+            "~/Library/Application Scripts/ru.keepcoder.Telegram.TelegramShare",
+            "~/Library/Application Support/ru.keepcoder.Telegram",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/ru.keepcoder.Telegram",
+            "~/Library/Caches/ru.keepcoder.Telegram",
+            "~/Library/Containers/ru.keepcoder.Telegram",
+            "~/Library/Containers/ru.keepcoder.Telegram.TelegramShare",
+            "~/Library/Cookies/ru.keepcoder.Telegram.binarycookies",
+            "~/Library/Group Containers/*.ru.keepcoder.Telegram",
+            "~/Library/Group Containers/*.ru.keepcoder.Telegram.TelegramShare",
+            "~/Library/HTTPStorages/ru.keepcoder.Telegram",
+            "~/Library/Preferences/ru.keepcoder.Telegram.plist",
+            "~/Library/Saved Application State/ru.keepcoder.Telegram.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -54,5 +62,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

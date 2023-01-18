@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/esniper/esniper/2.35.0/esniper-2-35-0.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a93d4533e31640554f2e430ac76b43e73a50ed6d721511066020712ac8923c12"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/esniper/blobs/sha256:8bb981e2a11b1963ecba800ea00ec07647d3f5f6d4d90986e512e8e4a72dd422",
+          "sha256": "8bb981e2a11b1963ecba800ea00ec07647d3f5f6d4d90986e512e8e4a72dd422"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/esniper/blobs/sha256:1a00cc8d55d37e3b20069a08176bfea366e64bae3ab651fe7063f857610a36ae",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/esniper/blobs/sha256:6db787246047b9a9796d704b258f7f3c7a8f0d35eb77ea4eb5d766ee1c67895f",
           "sha256": "6db787246047b9a9796d704b258f7f3c7a8f0d35eb77ea4eb5d766ee1c67895f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/esniper/blobs/sha256:5fff65a1cec7ac2bbaaa5cc849cd61a4e795f589ee5f0ea6231f405841eb4a06",
+          "sha256": "5fff65a1cec7ac2bbaaa5cc849cd61a4e795f589ee5f0ea6231f405841eb4a06"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -75,13 +86,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/esniper/blobs/sha256:d269d258369cfb214baa129ade61616121341c0129d820e9c77dec6b841ce0e1",
           "sha256": "d269d258369cfb214baa129ade61616121341c0129d820e9c77dec6b841ce0e1"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/esniper/blobs/sha256:676227a142bc96ca566a352c446328a78c7ad02bb80b56e3f3f131e755994a31",
+          "sha256": "676227a142bc96ca566a352c446328a78c7ad02bb80b56e3f3f131e755994a31"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -98,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "curl"
   ],
   "requirements": [
 
@@ -118,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

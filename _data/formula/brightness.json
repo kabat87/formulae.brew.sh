@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/nriley/brightness/archive/1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6094c9f0d136f4afaa823d299f5ea6100061c1cec7730bf45c155fd98761f86b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/brightness/blobs/sha256:b9eeafad9f79ffee161eff12eb18073e5c3e22cdf00c727aead7f759e8d26b62",
+          "sha256": "b9eeafad9f79ffee161eff12eb18073e5c3e22cdf00c727aead7f759e8d26b62"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/brightness/blobs/sha256:baf05ff80ff28745c1fed3f18467752c217236335d14d99d45fa6330a010a7bd",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/brightness/blobs/sha256:553772d87cb89c4f482c3b4ea48eeb404a7572b6277ced0d87625695e480b4e7",
           "sha256": "553772d87cb89c4f482c3b4ea48eeb404a7572b6277ced0d87625695e480b4e7"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/brightness/blobs/sha256:ad0f98500a441f754f2f832e9d797f4dde7261874ceaee0a4d632f025d6d6985",
+          "sha256": "ad0f98500a441f754f2f832e9d797f4dde7261874ceaee0a4d632f025d6d6985"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -75,18 +86,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/brightness/blobs/sha256:675d9a1b7e39b75d2b569fa4f148fbc2342dbcd4a1b23045763c0103058ecc26",
           "sha256": "675d9a1b7e39b75d2b569fa4f148fbc2342dbcd4a1b23045763c0103058ecc26"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/brightness/blobs/sha256:360b009d1a2ffed665c9d9168b3f91edba44c8da8f08d2f307b09ee63f399e0d",
-          "sha256": "360b009d1a2ffed665c9d9168b3f91edba44c8da8f08d2f307b09ee63f399e0d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -131,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

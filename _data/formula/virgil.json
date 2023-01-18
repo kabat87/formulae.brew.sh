@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/VirgilSecurity/virgil-cli.git",
       "tag": "v5.2.9",
-      "revision": "604e4339d100c9cd133f4730ba0efbd599321ecb"
+      "revision": "604e4339d100c9cd133f4730ba0efbd599321ecb",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/virgil/blobs/sha256:933b5e559d600ae1953d8e627863ee64525bea81f11dd7cc87439471a1065625",
+          "sha256": "933b5e559d600ae1953d8e627863ee64525bea81f11dd7cc87439471a1065625"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/virgil/blobs/sha256:6ad1a2ee3c09e0ea3ae2027c7a35a26a9ab048ba3b3454072bc47ff2f144a7dc",
@@ -66,14 +72,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -86,7 +94,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -103,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

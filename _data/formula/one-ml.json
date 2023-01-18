@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://people.mpi-sws.org/~rossberg/1ml/1ml-0.1.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "64c40c497f48355811fc198a2f515d46c1bb5031957b87f6a297822b07bb9c9a"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/one-ml/blobs/sha256:64459d8c45af5876e383b215b4e717ae48d897a33c0dd456bf8ba33cb383a4a8",
+          "sha256": "64459d8c45af5876e383b215b4e717ae48d897a33c0dd456bf8ba33cb383a4a8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/one-ml/blobs/sha256:368f5935a15438e05e77d4293c36e2922b552b890e16819848de0c0d67a63856",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/one-ml/blobs/sha256:f160c6c8c3c5f2bdaa67f5b6a478718d622defd245d2c2cc292f3bb9eb7c9de1",
           "sha256": "f160c6c8c3c5f2bdaa67f5b6a478718d622defd245d2c2cc292f3bb9eb7c9de1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/one-ml/blobs/sha256:ca2bfa6656aa76e091ffa4b6b8cf56701931658911e2d84f010d6b98860ad6b3",
+          "sha256": "ca2bfa6656aa76e091ffa4b6b8cf56701931658911e2d84f010d6b98860ad6b3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "ocaml"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

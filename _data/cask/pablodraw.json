@@ -5,9 +5,9 @@
   "name": [
     "PabloDraw"
   ],
-  "desc": null,
-  "homepage": "http://picoe.ca/products/pablodraw/",
-  "url": "http://download.picoe.ca/pablodraw/3.2/PabloDrawMac-3.2.1.zip",
+  "desc": "Ansi/Ascii text and RIPscrip editor/viewer",
+  "homepage": "https://github.com/cwensley/pablodraw/",
+  "url": "https://github.com/cwensley/pablodraw/releases/download/3.2.1/PabloDrawMac-3.2.1.zip",
   "appcast": null,
   "version": "3.2.1",
   "versions": {
@@ -16,17 +16,21 @@
   "outdated": false,
   "sha256": "91a89ac33ba3e064a7a2b44d5c7c271cbd1303882874e7ce159b8fb058589301",
   "artifacts": [
-    [
-      "PabloDraw.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/ca.picoe.pablodraw",
-        "~/Library/Preferences/ca.picoe.pablodraw.plist",
-        "~/Library/Saved Application State/ca.picoe.pablodraw.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PabloDraw.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/ca.picoe.pablodraw",
+            "~/Library/Preferences/ca.picoe.pablodraw.plist",
+            "~/Library/Saved Application State/ca.picoe.pablodraw.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

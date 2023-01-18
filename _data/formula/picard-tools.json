@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://broadinstitute.github.io/picard/",
   "versions": {
-    "stable": "2.26.10",
+    "stable": "2.27.5",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/broadinstitute/picard/releases/download/2.26.10/picard.jar",
+      "url": "https://github.com/broadinstitute/picard/releases/download/2.27.5/picard.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "131ca3e0626a3ef12e8399795e7a49f829bb4e85d71b489bf4f231d21a6c3199"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/picard-tools/blobs/sha256:49725e2504b7a97fd32fa8b18f12dda3331f0f42870cf0c8c0aa1fbe8fa6c661",
-          "sha256": "49725e2504b7a97fd32fa8b18f12dda3331f0f42870cf0c8c0aa1fbe8fa6c661"
+          "url": "https://ghcr.io/v2/homebrew/core/picard-tools/blobs/sha256:c87428a462195f7d5d8912f9f6e4344ada16e075aa9b083a559a732227774848",
+          "sha256": "c87428a462195f7d5d8912f9f6e4344ada16e075aa9b083a559a732227774848"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

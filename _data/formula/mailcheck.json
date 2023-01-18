@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/mailcheck/mailcheck/1.91.2/mailcheck_1.91.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6ca6da5c9f8cc2361d4b64226c7d9486ff0962602c321fc85b724babbbfa0a5c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mailcheck/blobs/sha256:aa14d797b2b2de01428e52e56c0e26ffe36d72227393ec4554c0749b8189aa60",
+          "sha256": "aa14d797b2b2de01428e52e56c0e26ffe36d72227393ec4554c0749b8189aa60"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mailcheck/blobs/sha256:ebfbf5a09b426cf879dc604f856b3512febfe7013bc74039dc35dcbf0d28b57e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mailcheck/blobs/sha256:9cb8f491eff846164c8732bf372b323f8546830237ac097dc55dfba3747d6331",
           "sha256": "9cb8f491eff846164c8732bf372b323f8546830237ac097dc55dfba3747d6331"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mailcheck/blobs/sha256:d6e91d19af4b560df0f8a4c02dc922e7e31273812076b8d326109f394a8d7dbf",
+          "sha256": "d6e91d19af4b560df0f8a4c02dc922e7e31273812076b8d326109f394a8d7dbf"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/mailcheck/blobs/sha256:b7c134dc23431dfaa3f402b859b7154cab5e176711363bd884dc82ce896d7c7a",
           "sha256": "b7c134dc23431dfaa3f402b859b7154cab5e176711363bd884dc82ce896d7c7a"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mailcheck/blobs/sha256:242b05a6e9b8ccc1ac70e22cbf89bc33a885e726d32509fad6b34a3bee123945",
-          "sha256": "242b05a6e9b8ccc1ac70e22cbf89bc33a885e726d32509fad6b34a3bee123945"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mailcheck/blobs/sha256:84fa4f1d288f0f8824334bb68621b8589b65e0d9e21a4ca0961a33aae5d0ef63",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

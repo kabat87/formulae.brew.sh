@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/keenerd/jshon/archive/20131105.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "28420f6f02c6b762732898692cc0b0795cfe1a59fbfb24e67b80f332cf6d4fa2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jshon/blobs/sha256:143f521901ed3810e8b535bfe42acdb099026a2560c96a65095d977f5e1bb331",
+          "sha256": "143f521901ed3810e8b535bfe42acdb099026a2560c96a65095d977f5e1bb331"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jshon/blobs/sha256:61a74bb42fb52712f535d63e3a7e3f9b0e06c372ce6d4b0c20e07af22d360620",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/jshon/blobs/sha256:cda0d78d58a0f23419cef2718919688bef98ec7461e750e60f9a10dd528c02ff",
           "sha256": "cda0d78d58a0f23419cef2718919688bef98ec7461e750e60f9a10dd528c02ff"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/jshon/blobs/sha256:642bbf1d65f96c69316ce7e0294bb750107912515d47d92417a5482e73ba7e2b",
+          "sha256": "642bbf1d65f96c69316ce7e0294bb750107912515d47d92417a5482e73ba7e2b"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/jshon/blobs/sha256:bab45017500667c7f8cf3b73c513f043cd04da04610cb2dc8a117ad5c9a5b99a",
           "sha256": "bab45017500667c7f8cf3b73c513f043cd04da04610cb2dc8a117ad5c9a5b99a"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/jshon/blobs/sha256:a97e9310af44fae5cdd60a0bcbae2bc0190c4d773d6290db3b5e970cd9999395",
-          "sha256": "a97e9310af44fae5cdd60a0bcbae2bc0190c4d773d6290db3b5e970cd9999395"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jshon/blobs/sha256:75afb2192ca7b1257b811c27359474bed0d281e1d67eb3fdb86fbf04005563db",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "jansson"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

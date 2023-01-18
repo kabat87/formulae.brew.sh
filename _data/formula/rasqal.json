@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.librdf.org/source/rasqal-0.9.33.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6924c9ac6570bd241a9669f83b467c728a322470bf34f4b2da4f69492ccfd97c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rasqal/blobs/sha256:92f1cc01dd0623dedfb4b823b7b483e53158436fd1f19f31c743429cf63e9028",
+          "sha256": "92f1cc01dd0623dedfb4b823b7b483e53158436fd1f19f31c743429cf63e9028"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rasqal/blobs/sha256:df52f08c6ed78c573f5230851d5faf543be79ebdbf6d308f9911739c9c898f53",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rasqal/blobs/sha256:36d9d4a210921573c1cad68bc17bf0d0fced251de091855ce1b61cefc64a37c8",
           "sha256": "36d9d4a210921573c1cad68bc17bf0d0fced251de091855ce1b61cefc64a37c8"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rasqal/blobs/sha256:b3c70287723dc5ba946ee2ec128b443652a1ae3b30c82e1205547e3840a7b374",
+          "sha256": "b3c70287723dc5ba946ee2ec128b443652a1ae3b30c82e1205547e3840a7b374"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/rasqal/blobs/sha256:fa7368eb30256eb80ead76f7b551bc5980ed15ae8aa655d332a200edb073c2a3",
           "sha256": "fa7368eb30256eb80ead76f7b551bc5980ed15ae8aa655d332a200edb073c2a3"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/rasqal/blobs/sha256:c84ec1a4c837b4a30fe597c9cc728f5075764b87978c5977757e2836db3eca0b",
-          "sha256": "c84ec1a4c837b4a30fe597c9cc728f5075764b87978c5977757e2836db3eca0b"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rasqal/blobs/sha256:2267d3f39fc7d088095d64bb6cf86f5fcad6c2a72fdd72dde8237cc910b123d1",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "raptor"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

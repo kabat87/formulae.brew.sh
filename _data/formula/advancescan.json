@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/amadvance/advancescan/releases/download/v1.18/advancescan-1.18.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8c346c6578a1486ca01774f30c3e678058b9b8b02f265119776d523358d24672"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/advancescan/blobs/sha256:ac972445b713681140e05905b842621e3d5e845f4a697686f7d9d5578eb9a53b",
+          "sha256": "ac972445b713681140e05905b842621e3d5e845f4a697686f7d9d5578eb9a53b"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/advancescan/blobs/sha256:2f031fe7a7fcb2f3184a2b5e07339d6b400c3d776d43f6b1a1a62bdaaf49eed6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/advancescan/blobs/sha256:edf3274971a23adffeca610c2ec178698fea761c728f6b92a6610da67695dcbf",
           "sha256": "edf3274971a23adffeca610c2ec178698fea761c728f6b92a6610da67695dcbf"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/advancescan/blobs/sha256:a2cccf02a3885ffb4c04810b29b71f107596a875c0cad654f4de47c05166e448",
+          "sha256": "a2cccf02a3885ffb4c04810b29b71f107596a875c0cad654f4de47c05166e448"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/advancescan/blobs/sha256:e4295866cda2370aa37cb1144ff1269ada4df6b76145a25efaf072d7a6b09b5c",
           "sha256": "e4295866cda2370aa37cb1144ff1269ada4df6b76145a25efaf072d7a6b09b5c"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/advancescan/blobs/sha256:f91cbe31c7c8072fffffcd0cc8766e20df6f728abc73f66140f97c0a49d6f6c8",
-          "sha256": "f91cbe31c7c8072fffffcd0cc8766e20df6f728abc73f66140f97c0a49d6f6c8"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/advancescan/blobs/sha256:3a42de6a209af1dd02c8544621f7da76afabd415d46265b548b3e35b7667b45d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

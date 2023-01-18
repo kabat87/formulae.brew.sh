@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.musicpd.org/download/libmpd/11.8.17/libmpd-11.8.17.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fe20326b0d10641f71c4673fae637bf9222a96e1712f71f170fca2fc34bf7a83"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmpd/blobs/sha256:f248cd5ff2ab17fecdc881df0841de6201d9526b027a6708aa379c3a1d78d9ab",
+          "sha256": "f248cd5ff2ab17fecdc881df0841de6201d9526b027a6708aa379c3a1d78d9ab"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmpd/blobs/sha256:3a98a327553640a863093b4e134781ad8b6a86e706661e6cd52508143d34fd70",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmpd/blobs/sha256:782e0fccf8dbe605e9fd7740427335d5b7c2340f7506402c17b747560dea4852",
           "sha256": "782e0fccf8dbe605e9fd7740427335d5b7c2340f7506402c17b747560dea4852"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmpd/blobs/sha256:e71222f9e53c08a8ce4ddd62b6bc55411322b1117c301bd7ec8101a7976151e1",
+          "sha256": "e71222f9e53c08a8ce4ddd62b6bc55411322b1117c301bd7ec8101a7976151e1"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmpd/blobs/sha256:8518a3880db71a27a414e8e2ae020afec29afbb777694389cd57d983ec1904a5",
           "sha256": "8518a3880db71a27a414e8e2ae020afec29afbb777694389cd57d983ec1904a5"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libmpd/blobs/sha256:4035c1bec6e7cdd64abca505361da64a9de52e82dcd5da6bd84f2902fbab6157",
+          "sha256": "4035c1bec6e7cdd64abca505361da64a9de52e82dcd5da6bd84f2902fbab6157"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +101,9 @@
   "dependencies": [
     "gettext",
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

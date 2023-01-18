@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/mitchellh/gox/archive/v1.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "25aab55a4ba75653931be2a2b95e29216b54bd8fecc7931bd416efe49a388229"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gox/blobs/sha256:fc3541078d72a1444271a84d0ab43b61a21a4cdd4abdbaca8c221875f3711056",
+          "sha256": "fc3541078d72a1444271a84d0ab43b61a21a4cdd4abdbaca8c221875f3711056"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gox/blobs/sha256:b0ca344c6ffbd3aadec83b8cd9368048f0dc69e8315e48cb153fc7a9854a81fd",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gox/blobs/sha256:943375b71098b9de0d440507638f5e514cd09ec8a4b99d628f2a7d687786f3a9",
           "sha256": "943375b71098b9de0d440507638f5e514cd09ec8a4b99d628f2a7d687786f3a9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gox/blobs/sha256:fe5adf29a3549afb24073146789815be755280eaa7353dc447deaf6d45d75107",
+          "sha256": "fe5adf29a3549afb24073146789815be755280eaa7353dc447deaf6d45d75107"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "go"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -6,19 +6,28 @@
     "Monal"
   ],
   "desc": "Tool to securely connect to chat servers",
-  "homepage": "https://monal.im/",
-  "url": "https://monal.im/macOS/Monal-macOS.zip",
+  "homepage": "https://monal-im.org/",
+  "url": "https://downloads.monal-im.org/monal-im/stable/macOS/Monal-845.zip",
   "appcast": null,
-  "version": "5.1.0,764",
+  "version": "845",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "no_check",
+  "sha256": "21e5dafadda1916f0b7a429a3e936a1aa97406468eebd71931444184cf7d144d",
   "artifacts": [
-    [
-      "Monal.app"
-    ]
+    {
+      "app": [
+        "Monal.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Group Containers/group.monal"
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -28,7 +37,13 @@
       ]
     }
   },
-  "conflicts_with": null,
+  "conflicts_with": {
+    "cask": [
+      "homebrew/cask-versions/monal-beta"
+    ]
+  },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/BLAKE2/libb2/releases/download/v0.98.1/libb2-0.98.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "53626fddce753c454a3fea581cbbc7fe9bbcf0bc70416d48fdbbf5d87ef6c72e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libb2/blobs/sha256:6c9ffaf08fde8879febf2998a289d6e9bfa505ed29cdf5f4c41d52a632c11f1e",
+          "sha256": "6c9ffaf08fde8879febf2998a289d6e9bfa505ed29cdf5f4c41d52a632c11f1e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libb2/blobs/sha256:fa45f83dfa716f0f69bb395eeb3016c9cc3223c975b64bed5544304e0eb4cd2c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libb2/blobs/sha256:7713b483f3474a3531c5830bbc8de7ad1903989e55e5da3ff5bfd85e87c5c045",
           "sha256": "7713b483f3474a3531c5830bbc8de7ad1903989e55e5da3ff5bfd85e87c5c045"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libb2/blobs/sha256:cc245560dda3edceb402702f3066f6aeb5c526e93dbb2a1e06bc02139d6154c2",
+          "sha256": "cc245560dda3edceb402702f3066f6aeb5c526e93dbb2a1e06bc02139d6154c2"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

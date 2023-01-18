@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://orientdb.org/",
   "versions": {
-    "stable": "3.2.4",
+    "stable": "3.2.14",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://s3.us-east-2.amazonaws.com/orientdb3/releases/3.2.4/orientdb-3.2.4.zip",
+      "url": "https://search.maven.org/remotecontent?filepath=com/orientechnologies/orientdb-community/3.2.14/orientdb-community-3.2.14.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "22a7ae37b2b41e0370d40516753250421e590c6c6f5e3b09a64a04a44897ac91"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/orientdb/blobs/sha256:7448fdd230ad487e0b8558f21cfb65475eb34131ec147305ef8f85fb4afd443f",
-          "sha256": "7448fdd230ad487e0b8558f21cfb65475eb34131ec147305ef8f85fb4afd443f"
+          "url": "https://ghcr.io/v2/homebrew/core/orientdb/blobs/sha256:b1d90dfef9def8b04881d6e89f7cbe94a85d11d65d1af5b9143d78c2b606c6e1",
+          "sha256": "b1d90dfef9def8b04881d6e89f7cbe94a85d11d65d1af5b9143d78c2b606c6e1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

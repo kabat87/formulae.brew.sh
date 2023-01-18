@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/Z3Prover/z3",
   "versions": {
-    "stable": "4.8.14",
+    "stable": "4.12.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/Z3Prover/z3/archive/z3-4.8.14.tar.gz",
+      "url": "https://github.com/Z3Prover/z3/archive/z3-4.12.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5f575f0a3950760436217da1cc1a714569b6d4f664a75bb6775876328cf0a580"
     }
   },
   "revision": 0,
@@ -31,50 +32,58 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:ea1f3230c0febedfb16c9f943a68e05a4dd5d997818e6462bc81b70e45cffc68",
+          "sha256": "ea1f3230c0febedfb16c9f943a68e05a4dd5d997818e6462bc81b70e45cffc68"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:c08c76148660373a15f268ac97d8f9bbe588a8fc9c4110696611d7de5426fb3b",
-          "sha256": "c08c76148660373a15f268ac97d8f9bbe588a8fc9c4110696611d7de5426fb3b"
+          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:481a7a83ba02cbfc7d38b630c20ea7c5b6fcca83e3295b956131e6d78bbde057",
+          "sha256": "481a7a83ba02cbfc7d38b630c20ea7c5b6fcca83e3295b956131e6d78bbde057"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:884f1128a33ea7dea3ad375e50ef5ea36b26623e2999119cf31252dd4650692f",
-          "sha256": "884f1128a33ea7dea3ad375e50ef5ea36b26623e2999119cf31252dd4650692f"
+          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:5d76d998409009239dc736bbede4065f19dddc641671d2f163d3f2b5dff79f09",
+          "sha256": "5d76d998409009239dc736bbede4065f19dddc641671d2f163d3f2b5dff79f09"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:92a9b9975b27cdc4a99f082e3962157abd8aed65b762f044a3f384a5ba8b2bcc",
+          "sha256": "92a9b9975b27cdc4a99f082e3962157abd8aed65b762f044a3f384a5ba8b2bcc"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:ed92f871bf8581d2727cdaac80458180b403da8a0c724aa379528614b909621a",
-          "sha256": "ed92f871bf8581d2727cdaac80458180b403da8a0c724aa379528614b909621a"
+          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:c1ac2990e0ec97c65f57bdcb06912e0fec5006e0c33e94cb9dd022f4d0111bb2",
+          "sha256": "c1ac2990e0ec97c65f57bdcb06912e0fec5006e0c33e94cb9dd022f4d0111bb2"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:62cd495aca5ea782de53e47b812706620a2b87b0949a09cec54bef2555c81230",
-          "sha256": "62cd495aca5ea782de53e47b812706620a2b87b0949a09cec54bef2555c81230"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:ab18f92c882f92e413ddd2d9584cdb76abdf9962d19f378a255365c96d57459e",
-          "sha256": "ab18f92c882f92e413ddd2d9584cdb76abdf9962d19f378a255365c96d57459e"
+          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:4a95bc0657a0e7687ba146fab537fad7ce24311b5acccec811709f1c0fcfed72",
+          "sha256": "4a95bc0657a0e7687ba146fab537fad7ce24311b5acccec811709f1c0fcfed72"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:72e2ca52b39f7d29e420add82c44c31e0ce1afaae8ae5058d5ac3f2ad07a7478",
-          "sha256": "72e2ca52b39f7d29e420add82c44c31e0ce1afaae8ae5058d5ac3f2ad07a7478"
+          "url": "https://ghcr.io/v2/homebrew/core/z3/blobs/sha256:afbf73e6df6ca7ccfd4a6c2a28d827ef4c2fbba31f996a808dd23622268b2509",
+          "sha256": "afbf73e6df6ca7ccfd4a6c2a28d827ef4c2fbba31f996a808dd23622268b2509"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "python@3.10"
+    "cmake",
+    "python@3.11"
   ],
   "dependencies": [
 
+  ],
+  "test_dependencies": [
+    "python@3.11"
   ],
   "recommended_dependencies": [
 
@@ -103,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

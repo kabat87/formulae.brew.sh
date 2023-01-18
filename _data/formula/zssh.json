@@ -10,7 +10,7 @@
 
   ],
   "desc": "Interactive file transfers over SSH",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-only",
   "homepage": "https://zssh.sourceforge.io/",
   "versions": {
     "stable": "1.5c",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/zssh/zssh/1.5/zssh-1.5c.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a2e840f82590690d27ea1ea1141af509ee34681fede897e58ae8d354701ce71b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zssh/blobs/sha256:c89cb5197c40525efecccb42fb351668392d9c425742450896e4ecdc46b59587",
+          "sha256": "c89cb5197c40525efecccb42fb351668392d9c425742450896e4ecdc46b59587"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zssh/blobs/sha256:4450134a2610b41d037efaf910d6ccdf2cc6d836887b877337f91bf73d49f44c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zssh/blobs/sha256:9b567d08589f3ba595994ca4906bfde9fe2651ef246bbd872f332e9cc8993a60",
           "sha256": "9b567d08589f3ba595994ca4906bfde9fe2651ef246bbd872f332e9cc8993a60"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zssh/blobs/sha256:3168f9fb757fefc2c5ab7a5382a6fac4e489963324f9d57da667596769882713",
+          "sha256": "3168f9fb757fefc2c5ab7a5382a6fac4e489963324f9d57da667596769882713"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/zssh/blobs/sha256:04212f19c1d9a6b97fd56ffe937606f1779849fdf04b93e3f285889599845c8f",
           "sha256": "04212f19c1d9a6b97fd56ffe937606f1779849fdf04b93e3f285889599845c8f"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/zssh/blobs/sha256:94280569f9e1c1deb9d8c3be4256cd501399fd51758f8e2ea6d77fd9f1b6ef2e",
-          "sha256": "94280569f9e1c1deb9d8c3be4256cd501399fd51758f8e2ea6d77fd9f1b6ef2e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zssh/blobs/sha256:fb3265fd04dd6210c8706f04435d145e0941a50793aaccf7e1660b2956c1872c",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -102,6 +107,9 @@
   ],
   "dependencies": [
     "lrzsz"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -130,5 +138,19 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "autoconf",
+        "automake",
+        "libtool",
+        "pkg-config"
+      ],
+      "dependencies": [
+        "lrzsz",
+        "readline"
+      ]
+    }
+  }
 }

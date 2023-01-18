@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/ebook-tools/ebook-tools/0.2.2/ebook-tools-0.2.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cbc35996e911144fa62925366ad6a6212d6af2588f1e39075954973bbee627ae"
     }
   },
   "revision": 3,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ebook-tools/blobs/sha256:019f7789541693a154f71bb507db24ab2cd3901f539e08e2ce2e51f53aae48da",
+          "sha256": "019f7789541693a154f71bb507db24ab2cd3901f539e08e2ce2e51f53aae48da"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ebook-tools/blobs/sha256:ea1b7dcf30a98ec82dbe77c369168185565450ee4c4af8e4d77f9ae2ffaa360d",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ebook-tools/blobs/sha256:22676305647bc9cad4335aba2d28d27cbee0db6092901cf1682fff9c833c92bd",
           "sha256": "22676305647bc9cad4335aba2d28d27cbee0db6092901cf1682fff9c833c92bd"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ebook-tools/blobs/sha256:2bd78f9654202568c6d95821ca7d5f04a83859748a818b1234528993c5ba72e4",
+          "sha256": "2bd78f9654202568c6d95821ca7d5f04a83859748a818b1234528993c5ba72e4"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "libzip"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

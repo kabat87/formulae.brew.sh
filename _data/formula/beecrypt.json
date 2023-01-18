@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/beecrypt/beecrypt/4.2.1/beecrypt-4.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "286f1f56080d1a6b1d024003a5fa2158f4ff82cae0c6829d3c476a4b5898c55d"
     }
   },
   "revision": 7,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/beecrypt/blobs/sha256:3fcce19dcf6e9f7b864752d4a3a44864c774568203710fd7570684dec95c3f65",
+          "sha256": "3fcce19dcf6e9f7b864752d4a3a44864c774568203710fd7570684dec95c3f65"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/beecrypt/blobs/sha256:4acdd6c4d36e63cfdbcee335076ef3a2d037fabcda966692a02301bc3a1c59e1",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/beecrypt/blobs/sha256:c67f38d1f106232edf5db9ea96b28c9cc240805c3021a41279085e592b3d1a5e",
           "sha256": "c67f38d1f106232edf5db9ea96b28c9cc240805c3021a41279085e592b3d1a5e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/beecrypt/blobs/sha256:7657b38fa0f49bc9a8ecf87d84e6f7d6f3a2bee962632d43aea95da5207fe148",
+          "sha256": "7657b38fa0f49bc9a8ecf87d84e6f7d6f3a2bee962632d43aea95da5207fe148"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/beecrypt/blobs/sha256:aafed63c6eb816d71151cf20830d76375ef872d2502babfe20f94683b3fcbf33",
           "sha256": "aafed63c6eb816d71151cf20830d76375ef872d2502babfe20f94683b3fcbf33"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/beecrypt/blobs/sha256:c321c1ab92e2f644460e3f2cba59495962735a3b046744692a171deebffba29b",
-          "sha256": "c321c1ab92e2f644460e3f2cba59495962735a3b046744692a171deebffba29b"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/beecrypt/blobs/sha256:e5940b480e169cfe86dc568bd7a6a527c569797fc7a99155931b0d75798118c7",
+          "sha256": "e5940b480e169cfe86dc568bd7a6a527c569797fc7a99155931b0d75798118c7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

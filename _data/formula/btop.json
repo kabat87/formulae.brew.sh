@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/aristocratos/btop",
   "versions": {
-    "stable": "1.2.0",
+    "stable": "1.2.13",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/aristocratos/btop/archive/refs/tags/v1.2.0.tar.gz",
+      "url": "https://github.com/aristocratos/btop/archive/refs/tags/v1.2.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "668dc4782432564c35ad0d32748f972248cc5c5448c9009faeb3445282920e02"
     }
   },
   "revision": 0,
@@ -33,40 +34,44 @@
       "files": {
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:d9f3aacf8346fa09408c0d8d446a455a04c18833269ffab41019c9295ecaacd5",
-          "sha256": "d9f3aacf8346fa09408c0d8d446a455a04c18833269ffab41019c9295ecaacd5"
+          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:377bedf756891fdf81312df0de7f6698653c00bb74cbfc21859402139af71c12",
+          "sha256": "377bedf756891fdf81312df0de7f6698653c00bb74cbfc21859402139af71c12"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:c51023f5259f2e9524afd77f714cc7a1882e3c50e4e32e26b2b90708df8e1417",
-          "sha256": "c51023f5259f2e9524afd77f714cc7a1882e3c50e4e32e26b2b90708df8e1417"
+          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:048387f6e5b471decca93682518d7e30f1300dbb5e22f4d0ecd771447276f512",
+          "sha256": "048387f6e5b471decca93682518d7e30f1300dbb5e22f4d0ecd771447276f512"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:6c9f5da037520e6116a04ebf6c011a54aa38ff6d61d6b778266476985312f437",
+          "sha256": "6c9f5da037520e6116a04ebf6c011a54aa38ff6d61d6b778266476985312f437"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:415af6fc8ba8029719878370061a76a7638f217248d6b1c89ce4f7606e9903dc",
-          "sha256": "415af6fc8ba8029719878370061a76a7638f217248d6b1c89ce4f7606e9903dc"
+          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:13ff2c92dff4f98569dbcf19cd2d6d5eaa907485ce55fe3e6750eab687556ee3",
+          "sha256": "13ff2c92dff4f98569dbcf19cd2d6d5eaa907485ce55fe3e6750eab687556ee3"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:b554c6e739bfff023be61282a00d64341d4e151b9814e6b414baee1bb0c5f038",
-          "sha256": "b554c6e739bfff023be61282a00d64341d4e151b9814e6b414baee1bb0c5f038"
+          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:b5215ec41daa2216f3312738d4bb2d6e225fba7d3a760cc629d91bcdfaf87972",
+          "sha256": "b5215ec41daa2216f3312738d4bb2d6e225fba7d3a760cc629d91bcdfaf87972"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:68479a27848fba08e2579df2ec834a433026e12639c4b657dd245fabe3dffac1",
-          "sha256": "68479a27848fba08e2579df2ec834a433026e12639c4b657dd245fabe3dffac1"
+          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:fffa1b48e2a7dec0da167a25aa411b87e28619dd72026e650239d8c3d6012df8",
+          "sha256": "fffa1b48e2a7dec0da167a25aa411b87e28619dd72026e650239d8c3d6012df8"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:05c535ceb589907c66121f4b2acd54b5834dde12dba35658d1b1ad193d467f0d",
-          "sha256": "05c535ceb589907c66121f4b2acd54b5834dde12dba35658d1b1ad193d467f0d"
+          "url": "https://ghcr.io/v2/homebrew/core/btop/blobs/sha256:af5c08bf52c9d84b54b3fe3992240a50c048ff3b897e8ee13f428fac4db76e0f",
+          "sha256": "af5c08bf52c9d84b54b3fe3992240a50c048ff3b897e8ee13f428fac4db76e0f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "gcc"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,15 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+
+      ],
+      "dependencies": [
+
+      ]
+    }
+  }
 }

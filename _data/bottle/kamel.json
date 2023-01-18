@@ -1,44 +1,56 @@
 {
   "name": "kamel",
-  "pkg_version": "1.7.0",
+  "pkg_version": "1.11.0",
   "rebuild": 0,
   "bottles": {
+    "arm64_ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:c0b929f8b4d7ba65376fbe2d0914687439f6a15c066507b15a87f668fad4aac2"
+    },
+    "arm64_monterey": {
+      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:56ca18784815191b73ea9c7cf0ef727a398bb56393ba9679a81a6cee1e2aecbf"
+    },
     "arm64_big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:d59f0f710f46a7d87b3371de97a9c3a198147620704581c3bf3ab56cb22063fb"
+      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:a3871dbf94619608b54e4bb2d290c0cee92c1980618b919c035047b3ee01639b"
+    },
+    "ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:c293036aa73e13efe7d124fb5fee2207253656c3c4bae31be145295f4d366fd7"
+    },
+    "monterey": {
+      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:79fb5a67f2d1d71c8bdabb33505a41d1fdaa5701e2419fd889ea609a3af129e8"
     },
     "big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:1ff86ee0c0caeabcb098620e5a3d78bbbcee6877894d9aa58466345dc4cfb0e4"
-    },
-    "catalina": {
-      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:ed6fa0913666876ed715d2ec185ee8719c8e0e861fe8f74aa6b86ae8cf16a857"
+      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:8b8f66dac6a10bd79924b5566ed26d0ef41e3469fbb7cd1b52de178b6eb640e1"
     },
     "x86_64_linux": {
-      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:0e1ac50a747f31b9e6998b6547fc6a847047a3c8c3fd5b739e288e0058e2f015"
+      "url": "https://ghcr.io/v2/homebrew/core/kamel/blobs/sha256:d5390e8b95ce6caaf3e026b7e208759dc85cc07b1645880884df104912d755d1"
     }
   },
   "dependencies": [
     {
       "name": "kubernetes-cli",
-      "pkg_version": "1.23.1",
+      "pkg_version": "1.26.0",
       "rebuild": 0,
       "bottles": {
+        "arm64_ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:df437d83fe4e10ed1e2de03123c64c46b4ac35bbf869e96481e0df16915291a6"
+        },
         "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:d83112c71a4eaf166e272bfe6c5a83f353f6cc960c8b839d7ddd9b7f5055eb47"
+          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:e428f564fb49519bb6a3898022dd64bbbf95d1c32c26ea251b94f3e045174286"
         },
         "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:f608cd4a81ca802ab9a37392e7b0538d66cc23da93dbe6c78c3773ef11f19873"
+          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:1840699b8b214fd25e2b583db9eb6314884a4c1e73f8d9de8fe9876b8c6d7348"
+        },
+        "ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:0c1665fc588e0b75040173499131627295ee4d64cb71d3d96eaca69ec358ba1b"
         },
         "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:1c5602dc806ab7b21a958fd75a047ecd763cdc2bdb715fd8b076c405d1efa74e"
+          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:efca2e8ed0d5e0dfe76a0ef908ea9c5d121f62c69d904cce323f7a0748f112a4"
         },
         "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:1ab41ec398db8cf62816210c5136b7bb88e0b0750fc9abb8b68240eab65f8e36"
-        },
-        "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:bc8f58fca32bd5fd0028c6b39aab3c857e1351f1f1f8c07762f99bb7d5b4a110"
+          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:cce3a326347751f901d9f406ad14c04bb65ef609e95ee2e045d564d3032f7a88"
         },
         "x86_64_linux": {
-          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:05c6f903231e25f89d11ae55812056ea564348f49fa2818e0103c9776215d8ae"
+          "url": "https://ghcr.io/v2/homebrew/core/kubernetes-cli/blobs/sha256:132c7ece6c5aac4996bb630ff9c5e8def5e550fac15344f0385113d16f3301b9"
         }
       }
     }

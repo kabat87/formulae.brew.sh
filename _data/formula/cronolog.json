@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.mirrorservice.org/sites/distfiles.macports.org/cronolog/cronolog-1.6.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "65e91607643e5aa5b336f17636fa474eb6669acc89288e72feb2f54a27edb88e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cronolog/blobs/sha256:c35ef462c37f02fcb214571fe0b5a4cee014a21c01f996526468a29479bd2f30",
+          "sha256": "c35ef462c37f02fcb214571fe0b5a4cee014a21c01f996526468a29479bd2f30"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cronolog/blobs/sha256:3a4e3d4430cc1394a04c53a63725012906738f26acc227d58f91dd84ce3e6335",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cronolog/blobs/sha256:105b3e20c9a2c742c71e3c0367c451b37acc11945f05597e72a4c6ce98b9e82c",
           "sha256": "105b3e20c9a2c742c71e3c0367c451b37acc11945f05597e72a4c6ce98b9e82c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cronolog/blobs/sha256:b94c01d0c09bb4649bfe0e4bfd416c78d1805ce99ebc15ef0a2a61629e71c5a0",
+          "sha256": "b94c01d0c09bb4649bfe0e4bfd416c78d1805ce99ebc15ef0a2a61629e71c5a0"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/cronolog/blobs/sha256:964df15660a5c0ec25bedec56aeb128ae93794a8ad721c1c600e377df9be1c2d",
           "sha256": "964df15660a5c0ec25bedec56aeb128ae93794a8ad721c1c600e377df9be1c2d"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cronolog/blobs/sha256:f3f485105f7466422a507bafef3acfd741f18b8ab26438c267d10dbf4701282e",
-          "sha256": "f3f485105f7466422a507bafef3acfd741f18b8ab26438c267d10dbf4701282e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cronolog/blobs/sha256:5b7e0546314cd92d44b009de1894f4739f75865da5f95d425e305cf6ffeac10d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

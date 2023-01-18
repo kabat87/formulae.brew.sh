@@ -21,52 +21,57 @@
     "stable": {
       "url": "https://github.com/mapnik/mapnik/releases/download/v3.1.0/mapnik-v3.1.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "43d76182d2a975212b4ad11524c74e577576c11039fdab5286b828397d8e6261"
     }
   },
-  "revision": 5,
+  "revision": 17,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:772b8917d290b0e48a79d4f8657e9a2a8421df35296e8f0820b3f7147805922e",
+          "sha256": "772b8917d290b0e48a79d4f8657e9a2a8421df35296e8f0820b3f7147805922e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:5821727e6bd5b456ad80ba0d1dd8feea6b42de7af942fccb0279f0a24e23c003",
-          "sha256": "5821727e6bd5b456ad80ba0d1dd8feea6b42de7af942fccb0279f0a24e23c003"
+          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:7a7f7863189378825cf3d9fff3a1f92db88d51c150a042377a465cfa7980054a",
+          "sha256": "7a7f7863189378825cf3d9fff3a1f92db88d51c150a042377a465cfa7980054a"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:f969998d9b693da26699705c691d75b4cab8fa22b091d56a47e3ef92688fd8e0",
-          "sha256": "f969998d9b693da26699705c691d75b4cab8fa22b091d56a47e3ef92688fd8e0"
+          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:9b862109f452ac4a348f6951c2e298fd5f16ef7e0d5e9d85c0389095c4016b27",
+          "sha256": "9b862109f452ac4a348f6951c2e298fd5f16ef7e0d5e9d85c0389095c4016b27"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:2b707717510b0ec86caef8f764f46e9b977a51b7ba60ce6ab3da188d3e38c6b9",
+          "sha256": "2b707717510b0ec86caef8f764f46e9b977a51b7ba60ce6ab3da188d3e38c6b9"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:bd44d13a5e833ea36ae35e16bb56e9bf4e90134b5565fa1bd6adc13a1e1187cf",
-          "sha256": "bd44d13a5e833ea36ae35e16bb56e9bf4e90134b5565fa1bd6adc13a1e1187cf"
+          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:6bd44c2c18cc149413c9571e762a41115d88c1c5b7ca8a1f635ed408a003b9a2",
+          "sha256": "6bd44c2c18cc149413c9571e762a41115d88c1c5b7ca8a1f635ed408a003b9a2"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:9234f5235b6586f049f18a8812f676262009811b0c32eb14171901dbd64ec4b5",
-          "sha256": "9234f5235b6586f049f18a8812f676262009811b0c32eb14171901dbd64ec4b5"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:2840371dd8a84e29fe883e616c937962b32b1bf34066c13fa6ada13bd75cda3c",
-          "sha256": "2840371dd8a84e29fe883e616c937962b32b1bf34066c13fa6ada13bd75cda3c"
+          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:879fd855e4ddfc0a97846bc2e85fb79f383aaa3999ac7ec1ff136d761ef373b8",
+          "sha256": "879fd855e4ddfc0a97846bc2e85fb79f383aaa3999ac7ec1ff136d761ef373b8"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:08332dc59b66ceb70a6ff51a7d72826a3a28b109ee9eea0d69513fb4b38a7924",
-          "sha256": "08332dc59b66ceb70a6ff51a7d72826a3a28b109ee9eea0d69513fb4b38a7924"
+          "url": "https://ghcr.io/v2/homebrew/core/mapnik/blobs/sha256:9962a7e3f65fdf6c7319a42744738ca17c8f5386cde15c100e3b37f94a47887a",
+          "sha256": "9962a7e3f65fdf6c7319a42744738ca17c8f5386cde15c100e3b37f94a47887a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,12 +86,15 @@
     "gdal",
     "harfbuzz",
     "icu4c",
-    "jpeg",
+    "jpeg-turbo",
     "libpng",
+    "libpq",
     "libtiff",
-    "postgresql",
-    "proj@7",
+    "proj",
     "webp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

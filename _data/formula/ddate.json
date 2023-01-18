@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/bo0ts/ddate/archive/v0.2.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d53c3f0af845045f39d6d633d295fd4efbe2a792fd0d04d25d44725d11c678ad"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ddate/blobs/sha256:fe29278ae4f80f7c8db1de60b5aebf6d80b309b8b3d7cf866f1d092f7a4c518f",
+          "sha256": "fe29278ae4f80f7c8db1de60b5aebf6d80b309b8b3d7cf866f1d092f7a4c518f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ddate/blobs/sha256:967dbd56914c5b0d578b93c936f311f2af91dade23abefb8d3e6d6d8814b142c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ddate/blobs/sha256:f45b9a3b64d14ae95d1aabb359535c7394fbb9781618992e0d8987009d1b306b",
           "sha256": "f45b9a3b64d14ae95d1aabb359535c7394fbb9781618992e0d8987009d1b306b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ddate/blobs/sha256:dc6a83d4395ba0e0cc54890798b9dec02958912ad7f17fbadf2ca46c8236e9c8",
+          "sha256": "dc6a83d4395ba0e0cc54890798b9dec02958912ad7f17fbadf2ca46c8236e9c8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/ddate/blobs/sha256:fe87fe60ad1e8cbff1ebbcefd8be0f6f8ec87013a91e6385adbde0aebd45edea",
           "sha256": "fe87fe60ad1e8cbff1ebbcefd8be0f6f8ec87013a91e6385adbde0aebd45edea"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ddate/blobs/sha256:ad575dd84b5d2ac8395c9cd11c4ef811f28f105eb81510369bb33078164ec2e9",
-          "sha256": "ad575dd84b5d2ac8395c9cd11c4ef811f28f105eb81510369bb33078164ec2e9"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ddate/blobs/sha256:75baa9706ec0453896edf597bc5a9c52c012ea9188555654f698794f578d9f62",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

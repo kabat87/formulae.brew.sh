@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://pulsar.apache.org/",
   "versions": {
-    "stable": "2.9.1",
+    "stable": "2.10.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=pulsar/pulsar-2.9.1/apache-pulsar-2.9.1-src.tar.gz",
+      "url": "https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=pulsar/pulsar-2.10.3/apache-pulsar-2.10.3-src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4fca38025c6059b0cb1b8c8ca7526a6c525769529c270a0172e2294d311b8f96"
     }
   },
   "revision": 0,
@@ -31,27 +32,31 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/apache-pulsar/blobs/sha256:b2cb224fda738665fbc52ed1d5453a92029f93634e8595c7e12d6c53bf379127",
+          "sha256": "b2cb224fda738665fbc52ed1d5453a92029f93634e8595c7e12d6c53bf379127"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/apache-pulsar/blobs/sha256:e5da9cdecab9c6174a03dc5d1b762fe618fc305956432e37397a56413f0ef3f0",
+          "sha256": "e5da9cdecab9c6174a03dc5d1b762fe618fc305956432e37397a56413f0ef3f0"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/apache-pulsar/blobs/sha256:30d713f34fe9074fb582068cca80e13aefddc508219a0d045e11ecae050d9a2f",
-          "sha256": "30d713f34fe9074fb582068cca80e13aefddc508219a0d045e11ecae050d9a2f"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/apache-pulsar/blobs/sha256:b82051dede75c221887ece7e961e483fb38a9831ed1c2405cab3959d2749c768",
-          "sha256": "b82051dede75c221887ece7e961e483fb38a9831ed1c2405cab3959d2749c768"
+          "url": "https://ghcr.io/v2/homebrew/core/apache-pulsar/blobs/sha256:7bf2487edb3e1bb850c57407c06970869dc827bc45c0a91640c0de46b5592855",
+          "sha256": "7bf2487edb3e1bb850c57407c06970869dc827bc45c0a91640c0de46b5592855"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/apache-pulsar/blobs/sha256:e8aab2331d721486ea7ad5bcf4df54158f4184e6a88593ff85b4e12a45f22a45",
-          "sha256": "e8aab2331d721486ea7ad5bcf4df54158f4184e6a88593ff85b4e12a45f22a45"
+          "url": "https://ghcr.io/v2/homebrew/core/apache-pulsar/blobs/sha256:1d05c070af32efa5ad73ab95ce541f8d701fdfbb5f4c24647c42fb13ee91c6b3",
+          "sha256": "1d05c070af32efa5ad73ab95ce541f8d701fdfbb5f4c24647c42fb13ee91c6b3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -65,7 +70,10 @@
     "protobuf"
   ],
   "dependencies": [
-    "openjdk@11"
+    "openjdk@17"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -102,5 +110,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

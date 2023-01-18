@@ -9,26 +9,46 @@
   "homepage": "https://rightfontapp.com/",
   "url": "https://rightfontapp.com/update/rightfont.zip",
   "appcast": null,
-  "version": "5.9.3,2859",
+  "version": "6.3,3112",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "RightFont 5.app"
-    ]
+    {
+      "app": [
+        "RightFont.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/RightFont",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rightfontapp.rightfont*.sfl2",
+            "~/Library/Application Support/com.rightfontapp.RightFont*",
+            "~/Library/Caches/com.rightfontapp.RightFont*",
+            "~/Library/Logs/RightFont*",
+            "~/Library/Preferences/com.rightfontapp.RightFont*.plist",
+            "~/Library/WebKit/com.rightfontapp.RightFont*"
+          ],
+          "rmdir": "~/RightFont"
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

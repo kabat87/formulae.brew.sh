@@ -13,55 +13,70 @@
   "license": "LGPL-2.1-only",
   "homepage": "https://github.com/stachenov/quazip/",
   "versions": {
-    "stable": "1.2",
+    "stable": "1.3",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/stachenov/quazip/archive/v1.2.tar.gz",
+      "url": "https://github.com/stachenov/quazip/archive/v1.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c1239559cd6860cab80a0fd81f4204e606f9324f702dab6166b0960676ee1754"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:3809e4b7c831115e815f3fa7b84b9e537549a82a7e089a4007b0f752fd071c75",
+          "sha256": "3809e4b7c831115e815f3fa7b84b9e537549a82a7e089a4007b0f752fd071c75"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:b53bf839a2479d91bd033530ea182453a15a8376a92663b8b1c292e360ee81d6",
-          "sha256": "b53bf839a2479d91bd033530ea182453a15a8376a92663b8b1c292e360ee81d6"
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:46931218c7df1222282017d17ebaa4c22a05c6da6a62f605844b739c35bbef7a",
+          "sha256": "46931218c7df1222282017d17ebaa4c22a05c6da6a62f605844b739c35bbef7a"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:0fa2cc876d433725d8db9ea3ba88281b073205ad178fc775b3b35d6a97cae736",
-          "sha256": "0fa2cc876d433725d8db9ea3ba88281b073205ad178fc775b3b35d6a97cae736"
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:0e8abd2e6d2d81eb99ce309100c0e4115e364bd01344009cea7eef0d643096ee",
+          "sha256": "0e8abd2e6d2d81eb99ce309100c0e4115e364bd01344009cea7eef0d643096ee"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:dd342e62e1a4e8402742864c7a3ed75954d719d2ac1c92ec09c4132e4d5bd1a8",
+          "sha256": "dd342e62e1a4e8402742864c7a3ed75954d719d2ac1c92ec09c4132e4d5bd1a8"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:81eceb5944761190fab7e3fa3ebf64be503e13858a1a5ded1130d86172b02a71",
+          "sha256": "81eceb5944761190fab7e3fa3ebf64be503e13858a1a5ded1130d86172b02a71"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:16dfeecdd918f9d3b3149b75e6a9fa6a035e123b561d07dadc6da536fb775566",
-          "sha256": "16dfeecdd918f9d3b3149b75e6a9fa6a035e123b561d07dadc6da536fb775566"
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:753fd853f5823615f13e811e7813e5c95b1521d171bb2b612dd10a8e77bf4921",
+          "sha256": "753fd853f5823615f13e811e7813e5c95b1521d171bb2b612dd10a8e77bf4921"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:5597a6c0cf6f0c002bd6b89f4f3880d360b70d10514233ff99c642435df11025",
-          "sha256": "5597a6c0cf6f0c002bd6b89f4f3880d360b70d10514233ff99c642435df11025"
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:59181f16535ae197a7e4863961c6286995d40640cd9659adbe57f40b1f917e02",
+          "sha256": "59181f16535ae197a7e4863961c6286995d40640cd9659adbe57f40b1f917e02"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:6d8a371641c6977250974eed98c54fe85267f37af8433e177bde4bab1fcd9908",
-          "sha256": "6d8a371641c6977250974eed98c54fe85267f37af8433e177bde4bab1fcd9908"
+          "url": "https://ghcr.io/v2/homebrew/core/quazip/blobs/sha256:48d4f4e9e526b91297d4e768201a1d718500da5a2b61a2508308f2d54e96dbe6",
+          "sha256": "48d4f4e9e526b91297d4e768201a1d718500da5a2b61a2508308f2d54e96dbe6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,7 +84,10 @@
     "cmake"
   ],
   "dependencies": [
-    "qt@5"
+    "qt"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

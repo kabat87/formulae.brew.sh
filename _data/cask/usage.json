@@ -7,26 +7,30 @@
   ],
   "desc": "Tracks application usage",
   "homepage": "https://www.mediaatelier.com/Usage/",
-  "url": "https://mediaatelier.com/Usage/Usage_1.4.5.1.zip",
+  "url": "https://mediaatelier.com/Usage/Usage_1.4.6.dmg",
   "appcast": null,
-  "version": "1.4.5.1",
+  "version": "1.4.6",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "7ac63ed6601298e9b6739cde87e18bea9a6a41d2718979cbfb9cccb3d578f502",
+  "sha256": "1a782b03b08b544eb1277c18576ce14e9388510f53f6e3bda4a6793bd2780c66",
   "artifacts": [
-    [
-      "Usage.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.mediaatelier.Usage",
-        "~/Library/Caches/com.mediaatelier.Usage",
-        "~/Library/Preferences/com.mediaatelier.Usage.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Usage.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.mediaatelier.Usage",
+            "~/Library/Caches/com.mediaatelier.Usage",
+            "~/Library/Preferences/com.mediaatelier.Usage.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

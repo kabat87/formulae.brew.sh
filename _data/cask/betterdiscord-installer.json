@@ -3,37 +3,46 @@
   "full_token": "betterdiscord-installer",
   "tap": "homebrew/cask",
   "name": [
-    "betterdiscord"
+    "BetterDiscord"
   ],
   "desc": "Installer for BetterDiscord",
   "homepage": "https://betterdiscord.app/",
-  "url": "https://github.com/BetterDiscord/Installer/releases/download/v1.1.1/BetterDiscord-Mac.zip",
+  "url": "https://github.com/BetterDiscord/Installer/releases/download/v1.2.0/BetterDiscord-Mac.zip",
   "appcast": null,
-  "version": "1.1.1",
+  "version": "1.2.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "80810d4570eed463708a75cc88c74880330e22c61e4bd0d4db8c355aade31682",
+  "sha256": "fc660b631528230582e94d3c551a11d406715ecada2e8737043af6d9f24136b5",
   "artifacts": [
-    [
-      "BetterDiscord.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/BetterDiscord",
-        "~/Library/Application Support/BetterDiscord Installer",
-        "~/Library/Preferences/app.betterdiscord.installer.plist",
-        "~/Library/Saved Application State/app.betterdiscord.installer.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "BetterDiscord.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/BetterDiscord",
+            "~/Library/Application Support/BetterDiscord Installer",
+            "~/Library/Preferences/app.betterdiscord.installer.plist",
+            "~/Library/Saved Application State/app.betterdiscord.installer.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "cask": [
+      "discord"
+    ]
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

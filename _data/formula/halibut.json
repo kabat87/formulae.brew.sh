@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.chiark.greenend.org.uk/~sgtatham/halibut/halibut-1.3/halibut-1.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "aaa0f7696f17f74f42d97d0880aa088f5d68ed3079f3ed15d13b6e74909d3132"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/halibut/blobs/sha256:ed4000bb616ed6fcf26b2cb79659a1fec79d6e6728b05be5b3f53c1dea03ae7a",
+          "sha256": "ed4000bb616ed6fcf26b2cb79659a1fec79d6e6728b05be5b3f53c1dea03ae7a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/halibut/blobs/sha256:15128f8454d3cbfbe26c615f8a49daeeb3f7a6566be8f390370bf1b789ec3aa1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/halibut/blobs/sha256:8b45d0f3af3aba76ea7e2b5e0c447f0ae7674db57330c2d03c6a6dc8e5ef9a53",
           "sha256": "8b45d0f3af3aba76ea7e2b5e0c447f0ae7674db57330c2d03c6a6dc8e5ef9a53"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/halibut/blobs/sha256:bed49d04cdab196ff5554ee4d8a0f431407cbce92f2eccc5b97d2ae4bdb23ffd",
+          "sha256": "bed49d04cdab196ff5554ee4d8a0f431407cbce92f2eccc5b97d2ae4bdb23ffd"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

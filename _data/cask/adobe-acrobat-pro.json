@@ -9,7 +9,7 @@
   "homepage": "https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html",
   "url": "https://trials.adobe.com/AdobeProducts/APRO/Acrobat_HelpX/osx10/Acrobat_DC_Web_WWMUI.dmg",
   "appcast": null,
-  "version": "21.011.20039",
+  "version": "22.003.20310",
   "versions": {
   },
   "installed": null,
@@ -17,36 +17,48 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.adobe.acrobat.DC.*",
-        "com.adobe.PDApp.AdobeApplicationManager.installer.pkg",
-        "com.adobe.AcroServicesUpdater",
-        "com.adobe.armdc.app.pkg"
-      ],
-      "launchctl": [
-        "Adobe_Genuine_Software_Integrity_Service",
-        "com.adobe.AAM.Startup-1.0",
-        "com.adobe.AAM.Updater-1.0",
-        "com.adobe.ARMDC.Communicator",
-        "com.adobe.ARMDC.SMJobBlessHelper",
-        "com.adobe.ARMDCHelper.cc24aef4a1b90ed56a725c38014c95072f92651fb65e1bf9c8e43c37a23d420d",
-        "com.adobe.agsservice"
-      ],
-      "delete": "/Applications/Adobe Acrobat DC/",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.adobe.acrobat.DC.*",
+            "com.adobe.AcroServicesUpdater",
+            "com.adobe.armdc.app.pkg",
+            "com.adobe.PDApp.AdobeApplicationManager.installer.pkg"
+          ],
+          "launchctl": [
+            "Adobe_Genuine_Software_Integrity_Service",
+            "com.adobe.AAM.Startup-1.0",
+            "com.adobe.AAM.Updater-1.0",
+            "com.adobe.agsservice",
+            "com.adobe.ARMDC.Communicator",
+            "com.adobe.ARMDC.SMJobBlessHelper",
+            "com.adobe.ARMDCHelper.cc24aef4a1b90ed56a725c38014c95072f92651fb65e1bf9c8e43c37a23d420d"
+          ],
+          "delete": "/Applications/Adobe Acrobat DC/"
+        }
+      ]
     },
-    "Acrobat DC/Acrobat DC Installer.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/Adobe/Acrobat/",
-        "~/Library/Caches/Acrobat",
-        "~/Library/Caches/com.adobe.Acrobat.Pro",
-        "~/Library/Preferences/Adobe/Acrobat/",
-        "~/Library/Preferences/com.adobe.Acrobat.Pro.plist"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Acrobat/Acrobat DC Installer.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Adobe/Acrobat/",
+            "~/Library/Caches/Acrobat",
+            "~/Library/Caches/com.adobe.Acrobat.Pro",
+            "~/Library/HTTPStorages/com.adobe.Acrobat.Pro",
+            "~/Library/HTTPStorages/com.adobe.Acrobat.Pro.binarycookies",
+            "~/Library/Preferences/Adobe/Acrobat/",
+            "~/Library/Preferences/com.adobe.Acrobat.Pro.plist",
+            "~/Library/Saved Application State/com.adobe.Acrobat.Pro.savedState",
+            "~/Library/WebKit/com.adobe.Acrobat.Pro"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -54,5 +66,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

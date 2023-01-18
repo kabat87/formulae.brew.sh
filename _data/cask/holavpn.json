@@ -7,27 +7,31 @@
   ],
   "desc": "Peer-to-peer VPN",
   "homepage": "https://hola.org/",
-  "url": "https://cdn4.hola.org/static/HolaVPN2E-2.43-1.191.987-noc.dmg",
+  "url": "https://cdn4.hola.org/static/HolaVPN2E-2.79-1.205.884.dmg",
   "appcast": null,
-  "version": "2.43,1.191.987",
+  "version": "2.79,1.205.884",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6879c086e798af488a72e819fa1064bcbe34fe91f6ba19c5edf990356e5c991c",
+  "sha256": "0501df564caf86e26b255bb50a2a6bfa17d2025caac397075fec3cded8f59fc1",
   "artifacts": [
-    [
-      "HolaVPN2E.app"
-    ],
     {
-      "trash": [
-        "~/Documents/holavpn2e.db*",
-        "~/Library/Caches/org.hola.hola2e-nosdk",
-        "~/Library/Preferences/org.hola.hola2e-nosdk.plist",
-        "~/Library/Saved Application State/org.hola.hola2e-nosdk~iosmac.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "HolaVPN2E.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Documents/holavpn2e.db*",
+            "~/Library/Caches/org.hola.hola2e-nosdk",
+            "~/Library/Preferences/org.hola.hola2e-nosdk.plist",
+            "~/Library/Saved Application State/org.hola.hola2e-nosdk~iosmac.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

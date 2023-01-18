@@ -11,7 +11,7 @@
   ],
   "desc": "Securely transfers data between computers",
   "license": "MIT",
-  "homepage": "https://github.com/warner/magic-wormhole",
+  "homepage": "https://github.com/magic-wormhole/magic-wormhole",
   "versions": {
     "stable": "0.12.0",
     "head": null,
@@ -21,52 +21,62 @@
     "stable": {
       "url": "https://files.pythonhosted.org/packages/d4/62/5e4a86f7c4b111e016577f1b304063ebe604f430db15465ac58b13993608/magic-wormhole-0.12.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1b0fd8a334da978f3dd96b620fa9b9348cabedf26a87f74baac7a37052928160"
     }
   },
-  "revision": 5,
+  "revision": 7,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:f808b89ee6fe506e35c6793ea62a319f918c07b7ffb8bed7f804fb6def3af8ed",
+          "sha256": "f808b89ee6fe506e35c6793ea62a319f918c07b7ffb8bed7f804fb6def3af8ed"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:b4d63fefd1f9d6f1d660f30fd10eb7ca8b11175ce2713327b9f8cc1113fafbb3",
-          "sha256": "b4d63fefd1f9d6f1d660f30fd10eb7ca8b11175ce2713327b9f8cc1113fafbb3"
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:4a8908292c7c66a80c2024b555e31efb2ab01d5037de75f473f92e6cfe6e6ca8",
+          "sha256": "4a8908292c7c66a80c2024b555e31efb2ab01d5037de75f473f92e6cfe6e6ca8"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:074df734edb6a41d4ea52c40e13b0bfd7407af9c2928e6151fcb6705577a0487",
-          "sha256": "074df734edb6a41d4ea52c40e13b0bfd7407af9c2928e6151fcb6705577a0487"
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:ea7718fb7a5b340251fce45bd7fd7e9d7f61ece998d53bc909553045986e69c1",
+          "sha256": "ea7718fb7a5b340251fce45bd7fd7e9d7f61ece998d53bc909553045986e69c1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:fa1b7b1e3fef2c1ba86bdd04d416677191c237b99c7d76632bb5089b8ddc4fdd",
+          "sha256": "fa1b7b1e3fef2c1ba86bdd04d416677191c237b99c7d76632bb5089b8ddc4fdd"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:bd82f434f7f9adf94e6a9f791b06b0e6ccc9dcd80f9c3b1e6d101e6b23d75633",
-          "sha256": "bd82f434f7f9adf94e6a9f791b06b0e6ccc9dcd80f9c3b1e6d101e6b23d75633"
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:3bc3e519ccfb0898c777292271be52ddaa5e6010ef0b6cad77c238b1675602f8",
+          "sha256": "3bc3e519ccfb0898c777292271be52ddaa5e6010ef0b6cad77c238b1675602f8"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:8617eb70aa704e498e11900b482a37595f07c7cf4e7c851859acabc75e1375b1",
-          "sha256": "8617eb70aa704e498e11900b482a37595f07c7cf4e7c851859acabc75e1375b1"
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:8c70033c047ca74b1b9586e4d1f6bb3defda6e326ef29cfdfaa5002f5edb10c3",
+          "sha256": "8c70033c047ca74b1b9586e4d1f6bb3defda6e326ef29cfdfaa5002f5edb10c3"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:a09bdf71dce288dab17bc9f7a8e237bdebb3ec2a96b2c9b613495361cf2b9b63",
-          "sha256": "a09bdf71dce288dab17bc9f7a8e237bdebb3ec2a96b2c9b613495361cf2b9b63"
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:5dfcb38f77ca7b76cbdda33028553c0297a42a23391286c1d5adf32d4bb4bbdb",
+          "sha256": "5dfcb38f77ca7b76cbdda33028553c0297a42a23391286c1d5adf32d4bb4bbdb"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:5a57fd6d0241959f8f723ad845679035b18743777595ef14c6eb23c02c56c5d2",
-          "sha256": "5a57fd6d0241959f8f723ad845679035b18743777595ef14c6eb23c02c56c5d2"
+          "url": "https://ghcr.io/v2/homebrew/core/magic-wormhole/blobs/sha256:e0d6f23cdadb2e6062373d0b7973cebf6fd2178ab0522f1c9cc8260889cd0d05",
+          "sha256": "e0d6f23cdadb2e6062373d0b7973cebf6fd2178ab0522f1c9cc8260889cd0d05"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,7 +86,12 @@
   "dependencies": [
     "libsodium",
     "openssl@1.1",
-    "python@3.9"
+    "python-typing-extensions",
+    "python@3.11",
+    "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +120,21 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "rust",
+        "pkg-config"
+      ],
+      "dependencies": [
+        "libsodium",
+        "openssl@1.1",
+        "python-typing-extensions",
+        "python@3.11",
+        "six",
+        "libffi"
+      ]
+    }
+  }
 }

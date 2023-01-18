@@ -3,40 +3,48 @@
   "full_token": "sunloginclient",
   "tap": "homebrew/cask",
   "name": [
-    "Sunlogin 11",
-    "向日葵 11"
+    "Sunlogin Client",
+    "向日葵个人版"
   ],
   "desc": "Remote desktop control and monitoring tool",
   "homepage": "https://sunlogin.oray.com/",
-  "url": "https://down.oray.com/sunlogin/mac/SunloginClient_11.0.2.41962.dmg",
+  "url": "https://down.oray.com/sunlogin/mac/SunloginClient_12.5.2.46788.dmg",
   "appcast": null,
-  "version": "11.0.2.41962",
+  "version": "12.5.2.46788",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f2ca66a21fa3d09550ac65b89957ad35836403211c4456adbcd81d8bc147585f",
+  "sha256": "783f1e5b5243b9db8e40677b2552113e884366bcae17f45daf4a8f06708a1b3e",
   "artifacts": [
     {
-      "quit": "com.oray.sunlogin.macclient",
-      "pkgutil": "com.oray.sunlogin.macclient",
-      "launchctl": [
-        "com.oray.sunlogin ()",
-        "com.oray.sunlogin.agent",
-        "com.oray.sunlogin.desktopagent",
-        "com.oray.sunlogin.helper",
-        "com.oray.sunlogin.service",
-        "com.oray.sunlogin.startup"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.oray.sunlogin.macclient",
+          "pkgutil": "com.oray.sunlogin.macclient",
+          "launchctl": [
+            "com.oray.sunlogin ()",
+            "com.oray.sunlogin.agent",
+            "com.oray.sunlogin.desktopagent",
+            "com.oray.sunlogin.helper",
+            "com.oray.sunlogin.service",
+            "com.oray.sunlogin.startup"
+          ]
+        }
+      ]
     },
-    "SunloginClient.pkg (Pkg)"
+    {
+      "pkg": [
+        "SunloginClient.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

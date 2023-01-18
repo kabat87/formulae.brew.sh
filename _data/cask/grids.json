@@ -7,30 +7,36 @@
   ],
   "desc": "Instagram desktop application",
   "homepage": "https://gridsapp.net/",
-  "url": "https://gridsapp.net/bin/Grids_7.0.16.zip",
+  "url": "https://gridsapp.net/bin/Grids_8.3.zip",
   "appcast": null,
-  "version": "7.0.16",
+  "version": "8.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ef08b766abc59e4c237593cee997c1a80fe4ac26a719247e86c970fe097a1177",
+  "sha256": "0e375416f0e249b2af6b0ecd82e133b434ae7ab5bc7ba788a559b11b5dff55e5",
   "artifacts": [
     {
-      "quit": "com.thinktimecreations.Grids",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.thinktimecreations.Grids"
+        }
+      ]
     },
-    [
-      "Grids.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/ThinkTimeCreations/Grids",
-        "~/Library/Preferences/com.thinktimecreations.Grids.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Grids.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/ThinkTimeCreations/Grids",
+            "~/Library/Preferences/com.thinktimecreations.Grids.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +49,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

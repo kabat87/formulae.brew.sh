@@ -10,8 +10,8 @@
 
   ],
   "desc": "C library and API for coroutines",
-  "license": "GPL-2.0",
-  "homepage": "http://xmailserver.org/libpcl.html",
+  "license": "GPL-2.0-or-later",
+  "homepage": "http://www.xmailserver.org/libpcl.html",
   "versions": {
     "stable": "1.12",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "http://xmailserver.org/pcl-1.12.tar.gz",
+      "url": "http://www.xmailserver.org/pcl-1.12.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e7b30546765011575d54ae6b44f9d52f138f5809221270c815d2478273319e1a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libpcl/blobs/sha256:70513e7045a6a7757fcce07ae85a7acaf07efd83d6053c4ad6c83aaa971c1f9e",
+          "sha256": "70513e7045a6a7757fcce07ae85a7acaf07efd83d6053c4ad6c83aaa971c1f9e"
+        },
         "monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libpcl/blobs/sha256:454d1dd0179febc856b1d8b75fe9396e6ae6b695b513523162f9a3fa41d5dc4f",
@@ -66,11 +72,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libpcl/blobs/sha256:1975baf018352fd1f1ca88bd39fc02db384e2f6be4017976184dda3365c60608",
           "sha256": "1975baf018352fd1f1ca88bd39fc02db384e2f6be4017976184dda3365c60608"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libpcl/blobs/sha256:e9c6f7bc1efab583e44879426a5abb2ff5e7f3eb30261a81a7be723c3280c3a3",
-          "sha256": "e9c6f7bc1efab583e44879426a5abb2ff5e7f3eb30261a81a7be723c3280c3a3"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libpcl/blobs/sha256:4477cd796405dfbf475dc7f65339aac5bba8fdf4d9027724c479edaf6f3f2553",
@@ -81,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -101,7 +104,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -118,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

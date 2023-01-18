@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/nimble-code/Spin/archive/version-6.5.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e46a3bd308c4cd213cc466a8aaecfd5cedc02241190f3cb9a1d1b87e5f37080a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/spin/blobs/sha256:ff5eeb131b28f8551564e91d24e55f5da594a84535162e51ceeb579a5e8b0010",
+          "sha256": "ff5eeb131b28f8551564e91d24e55f5da594a84535162e51ceeb579a5e8b0010"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/spin/blobs/sha256:67ce597f95a1d2ae0b428f11b95c962bdddace66cb2cc4127ad619ce5b9bea47",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/spin/blobs/sha256:4f8951592f6d019eafb6466a4e991c7437d13a699af047bbbbfd0bc4fdcb82bf",
           "sha256": "4f8951592f6d019eafb6466a4e991c7437d13a699af047bbbbfd0bc4fdcb82bf"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/spin/blobs/sha256:6c6c7714cfa19cf39458ddccdd8323e7a08a21b99d59a02cb27d85f08a30f1dd",
+          "sha256": "6c6c7714cfa19cf39458ddccdd8323e7a08a21b99d59a02cb27d85f08a30f1dd"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

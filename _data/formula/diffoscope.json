@@ -13,15 +13,16 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://diffoscope.org",
   "versions": {
-    "stable": "200",
+    "stable": "232",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/81/77/1d5aa3eb24765ddca121c1f384ee549ad7aa19356e5eaf4b0a2b3acf7b13/diffoscope-200.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/54/05/d8833330abea8ecb2443c142630a7123ee1bb248ca591e945f65c10586d1/diffoscope-232.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1fd10b465d3566e6f65bdc00b6a814ff129900a2f4f9f4bae922069467214082"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:ec0495028144e66092f999aee96c43276dfa4ba87461a367b79c1e95a3b7487d",
+          "sha256": "ec0495028144e66092f999aee96c43276dfa4ba87461a367b79c1e95a3b7487d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:76af9397aa11516ec57ae92814ace8ee3eff07056b0fa8ee7d644feb9ac396d2",
-          "sha256": "76af9397aa11516ec57ae92814ace8ee3eff07056b0fa8ee7d644feb9ac396d2"
+          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:835fb717b6c1d00fe71aadf6fe6c3137214c0fb1efb270d1a04657f9adaeb458",
+          "sha256": "835fb717b6c1d00fe71aadf6fe6c3137214c0fb1efb270d1a04657f9adaeb458"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:2c58888a0caaff411246547d269fd83ca876404c4286aad182399bcd2fb1c4b1",
-          "sha256": "2c58888a0caaff411246547d269fd83ca876404c4286aad182399bcd2fb1c4b1"
+          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:4fb79cf0dc07e8177fec08cd5dfaf48a5ec6ba57b33c419107081ef69a5d65a1",
+          "sha256": "4fb79cf0dc07e8177fec08cd5dfaf48a5ec6ba57b33c419107081ef69a5d65a1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:1599bfef0fb771dc1c40a509eee7382ef266f9858ea1a40c9881902c699566fb",
+          "sha256": "1599bfef0fb771dc1c40a509eee7382ef266f9858ea1a40c9881902c699566fb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:7045431eb21b14cfa22e1eef4b137fc8032fcb10acc8b4531f10b579855dcaf3",
-          "sha256": "7045431eb21b14cfa22e1eef4b137fc8032fcb10acc8b4531f10b579855dcaf3"
+          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:fed6398db014919f7be231ee592cab715e36f24e23dd66e5f39af8758110904a",
+          "sha256": "fed6398db014919f7be231ee592cab715e36f24e23dd66e5f39af8758110904a"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:1adf329f577083569f3ee34b25051bb4156af278e3ac80a8cf75af7bbf366941",
-          "sha256": "1adf329f577083569f3ee34b25051bb4156af278e3ac80a8cf75af7bbf366941"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:226dac40ccee65a3269f1a4ec03f9b935739e2123c147578beb9658f0f3c7c9d",
-          "sha256": "226dac40ccee65a3269f1a4ec03f9b935739e2123c147578beb9658f0f3c7c9d"
+          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:4b7f55b82feea36e2bb066dc2cc9d7ccb1c4a1aa77a60a6fdc1def422e221248",
+          "sha256": "4b7f55b82feea36e2bb066dc2cc9d7ccb1c4a1aa77a60a6fdc1def422e221248"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:d20d0b66737dd48638841dd78f7f3b4b25b22077540fa4517022aa44e6dc1189",
-          "sha256": "d20d0b66737dd48638841dd78f7f3b4b25b22077540fa4517022aa44e6dc1189"
+          "url": "https://ghcr.io/v2/homebrew/core/diffoscope/blobs/sha256:95589bf00a3dfa676485bc157d4919ee283af824165e061e331b9ab1cf705d6e",
+          "sha256": "95589bf00a3dfa676485bc157d4919ee283af824165e061e331b9ab1cf705d6e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,7 +81,10 @@
   "dependencies": [
     "libarchive",
     "libmagic",
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

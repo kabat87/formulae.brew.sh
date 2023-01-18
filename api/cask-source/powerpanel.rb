@@ -1,21 +1,16 @@
 cask "powerpanel" do
-  version "2.3.0"
-  sha256 "5500b9ff1528c72ef2dacf0c03558b9cf3cbb68a5cc0bc0657c51bf49566b847"
+  version "2.4.6"
+  sha256 "85e4bcdaf178e3f2919aff1ad638bc9e80dcdbfa3a868486613aafb0d775c8a8"
 
-  url "https://dl4jz3rbrsfum.cloudfront.net/software/ppp_macos_#{version.dots_to_underscores}.dmg",
+  url "https://dl4jz3rbrsfum.cloudfront.net/software/PPP_Mac_v#{version}.dmg",
       verified: "dl4jz3rbrsfum.cloudfront.net/"
   name "CyberPower PowerPanel Personal"
   desc "Manage and control UPS systems"
   homepage "https://www.cyberpowersystems.com/products/software/power-panel-personal/"
 
   livecheck do
-    url :homepage
-    strategy :page_match do |page|
-      match = page[%r{href=.*?/ppp_macos_(\d+(?:_\d+)*)\.dmg}i, 1]
-      next if match.blank?
-
-      match.tr("_", ".")
-    end
+    url "https://www.cyberpowersystems.com/product/software/power-panel-personal/powerpanel-personal-mac/"
+    regex(%r{href=.*?/PPP_Mac[._-]v?(\d+(?:.\d+)*)\.dmg}i)
   end
 
   depends_on macos: ">= :mojave"

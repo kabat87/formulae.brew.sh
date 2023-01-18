@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/libcroco/0.6/libcroco-0.6.13.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "767ec234ae7aa684695b3a735548224888132e063f92db585759b422570621d4"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcroco/blobs/sha256:1936cc9609cb8de2360e762984a4a40d7c6ba2c92c6b2fd4133243a0b93426b0",
+          "sha256": "1936cc9609cb8de2360e762984a4a40d7c6ba2c92c6b2fd4133243a0b93426b0"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcroco/blobs/sha256:0c7ea7611c087cead41eabbc6e7680a7d47c8c3fd6736d7f97742f1311f61eaf",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libcroco/blobs/sha256:d6cced1a48822aac65fbb995159f26ed0552217d125969bcae4bd61bdf223407",
           "sha256": "d6cced1a48822aac65fbb995159f26ed0552217d125969bcae4bd61bdf223407"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libcroco/blobs/sha256:ce5d64ff6d4425936d3bd5a3f8af048edfe077b7fdb8fdf09fe0a831f1474af8",
+          "sha256": "ce5d64ff6d4425936d3bd5a3f8af048edfe077b7fdb8fdf09fe0a831f1474af8"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +101,9 @@
   ],
   "dependencies": [
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -119,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,28 +1,28 @@
 cask "seamonkey" do
-  version "2.53.10.2"
+  version "2.53.14"
 
   language "de" do
-    sha256 "8b1dbe420aac87e727e8b4a834a667eb25b1d1f2f14174a47813af7ba0b49f8e"
+    sha256 "9bf3f01c634b602d09a1b6824566946689a3beee948069761af34d9e7f71e8f6"
     "de"
   end
   language "en-GB" do
-    sha256 "8ab2ffd759d17e2b2332fe15e423e3785a28e9650eb478cd652104ffa097f7da"
+    sha256 "bce8a04b44f0848476747e1dcf6fc5ce587bfdcacb9772299d629293c8ef6e4c"
     "en-GB"
   end
   language "en-US", default: true do
-    sha256 "c18640c618558fd667b41074ebe125caef779dd8a044b5c82749ddda66f2597c"
+    sha256 "c3dc74bebf34666a12526c407c8ac088da58f97f871b42b20b259908a8de790b"
     "en-US"
   end
   language "fr" do
-    sha256 "4ed31c7572f97b8ba15986c88d8908b0a048a2121c9799501b63174069743b8b"
+    sha256 "a2e011dcd19a3886f0c3b6e262efb1294999634bc3fffb17a794ac5b1ad7aad8"
     "fr"
   end
   language "it" do
-    sha256 "952f029302379292aa79a528bca75b6f5b998dc98371aaa18b83e0653237434e"
+    sha256 "228291368b8ec0b25d0af656a60f37dc4dff1f070443c522eaa824cc451fc570"
     "it"
   end
   language "ru" do
-    sha256 "f7a48efd7cff44ae4fdde6817f6cbcc60f5bd9b7fabce2cf960cd1ecbbc55718"
+    sha256 "5720a410849c5626f4cde3ea92cdbdc773c96eaad08839608b7dec11d54d4619"
     "ru"
   end
 

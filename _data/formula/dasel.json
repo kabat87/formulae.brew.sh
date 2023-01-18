@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/TomWright/dasel",
   "versions": {
-    "stable": "1.22.1",
+    "stable": "2.1.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/TomWright/dasel/archive/v1.22.1.tar.gz",
+      "url": "https://github.com/TomWright/dasel/archive/v2.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "597d5ab3118eb5bd41859a9b134ebaf18855bba3b20f399c7202a2f132563662"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:6712f9a98d409da0c457a62c9a46a7240f4d3013a32f14de1dd9a6d3253151b4",
+          "sha256": "6712f9a98d409da0c457a62c9a46a7240f4d3013a32f14de1dd9a6d3253151b4"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:943acac1b078dd41b7019f3df90dcb9fba852c077d0ea86d564b7b6e2d1c53c7",
-          "sha256": "943acac1b078dd41b7019f3df90dcb9fba852c077d0ea86d564b7b6e2d1c53c7"
+          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:967a28a9aef93e4de9fb70fef81cb64eb5851636fd91112d5bda3b1c66ffd588",
+          "sha256": "967a28a9aef93e4de9fb70fef81cb64eb5851636fd91112d5bda3b1c66ffd588"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:7c6a8f17014cfc1f1e78f91914c7fabca627c3322a4c7688fb58bf7f104da148",
-          "sha256": "7c6a8f17014cfc1f1e78f91914c7fabca627c3322a4c7688fb58bf7f104da148"
+          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:78d5108c234f7951c6ff0ec2d00d13eb9dd70a5a80c6d153133cb27c3307c568",
+          "sha256": "78d5108c234f7951c6ff0ec2d00d13eb9dd70a5a80c6d153133cb27c3307c568"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:3da3194a50f113a64a959c43d575d0e784a71e5b1deef52e5aa1f81755ae0e9c",
+          "sha256": "3da3194a50f113a64a959c43d575d0e784a71e5b1deef52e5aa1f81755ae0e9c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:ceae8ec5712edcfd72e4eabaa5cd3954aecdd1d271bfe151b71a10ee50d59264",
-          "sha256": "ceae8ec5712edcfd72e4eabaa5cd3954aecdd1d271bfe151b71a10ee50d59264"
+          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:22368b00af32b9e1ac1b656660ae266fd464678e59e68356e88c213a69fd8c30",
+          "sha256": "22368b00af32b9e1ac1b656660ae266fd464678e59e68356e88c213a69fd8c30"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:e3c36d5e238135596e37f33c972cc726812f4b6dcfbb66e7904f7c3b93f28f28",
-          "sha256": "e3c36d5e238135596e37f33c972cc726812f4b6dcfbb66e7904f7c3b93f28f28"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:f273fd5ff9520c1f0fa3f823a9597d129d61793363a79f87b07e3a44985c2032",
-          "sha256": "f273fd5ff9520c1f0fa3f823a9597d129d61793363a79f87b07e3a44985c2032"
+          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:3341c7ba5e798a1e67f7aa89f99f31381e961d2fbe5450bb1dd483a1515ed925",
+          "sha256": "3341c7ba5e798a1e67f7aa89f99f31381e961d2fbe5450bb1dd483a1515ed925"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:6d2e145d365441ee2825d81a8d64d48e73fb63e0934fc1883633a2c1b5c9cd87",
-          "sha256": "6d2e145d365441ee2825d81a8d64d48e73fb63e0934fc1883633a2c1b5c9cd87"
+          "url": "https://ghcr.io/v2/homebrew/core/dasel/blobs/sha256:c538421579e158ebf76c06ba913dcab4d55c2f0c5934d2354a945f20f7430bf2",
+          "sha256": "c538421579e158ebf76c06ba913dcab4d55c2f0c5934d2354a945f20f7430bf2"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

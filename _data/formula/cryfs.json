@@ -13,60 +13,53 @@
   "license": "LGPL-3.0",
   "homepage": "https://www.cryfs.org",
   "versions": {
-    "stable": "0.10.2",
+    "stable": "0.11.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/cryfs/cryfs/releases/download/0.10.2/cryfs-0.10.2.tar.xz",
+      "url": "https://github.com/cryfs/cryfs/releases/download/0.11.3/cryfs-0.11.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cffef7669b8cbec3e7420088faac492390b9e1f3d3d0dc2a245b87f8df05f190"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cryfs/blobs/sha256:3a5986dc3775877188cbf4442bd72c6f20ffe1d384fefebac8041c0d8f9ff09b",
-          "sha256": "3a5986dc3775877188cbf4442bd72c6f20ffe1d384fefebac8041c0d8f9ff09b"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cryfs/blobs/sha256:cc94e5ba2d13205b0199e59779cecd7dd094965ee22c4ebf92d53ecaa65f8be7",
-          "sha256": "cc94e5ba2d13205b0199e59779cecd7dd094965ee22c4ebf92d53ecaa65f8be7"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cryfs/blobs/sha256:daa6d8961ef98fc509e806614c4daf6f589ee7d76bbb483066962b6bd700a2fe",
-          "sha256": "daa6d8961ef98fc509e806614c4daf6f589ee7d76bbb483066962b6bd700a2fe"
-        },
-        "sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cryfs/blobs/sha256:252aa90f3281ccff1b9d0c6292856df1a08be17ada7aacd320f05d2d2508565f",
-          "sha256": "252aa90f3281ccff1b9d0c6292856df1a08be17ada7aacd320f05d2d2508565f"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cryfs/blobs/sha256:998aed8cbec6408a24741d7b6ca69a7f85aed5d6b4bdc66d80755aa288b5191a",
+          "sha256": "998aed8cbec6408a24741d7b6ca69a7f85aed5d6b4bdc66d80755aa288b5191a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "cmake"
+    "cmake",
+    "pkg-config"
   ],
   "dependencies": [
     "boost",
-    "libomp",
-    "openssl@1.1"
+    "curl",
+    "libfuse@2",
+    "openssl@1.1",
+    "python@3.11",
+    "range-v3",
+    "spdlog"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,12 +71,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -93,7 +94,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

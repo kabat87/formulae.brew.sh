@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/k/kanif/kanif_1.2.2.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3f0c549428dfe88457c1db293cfac2a22b203f872904c3abf372651ac12e5879"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16",
+          "sha256": "c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16",
+          "sha256": "c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16"
+        },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:cfc06314d243173b2b0f0de1188570adde896ef6002dcbb75e7ce9fe056ae172",
           "sha256": "cfc06314d243173b2b0f0de1188570adde896ef6002dcbb75e7ce9fe056ae172"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16",
+          "sha256": "c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16",
+          "sha256": "c9976ca3c9f4b867f909300da1ac522ea0aa81db1beba857edb033b7475d5b16"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
@@ -66,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:ebe67d82aa8745a8ff29a82b9520e0fb4892a9645e17a12e8aeae4fda96cc8b4",
           "sha256": "ebe67d82aa8745a8ff29a82b9520e0fb4892a9645e17a12e8aeae4fda96cc8b4"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:7fc9517feb23867afe77730cdf28bb386570ccb5368d3b0c6b396214abf07e69",
-          "sha256": "7fc9517feb23867afe77730cdf28bb386570ccb5368d3b0c6b396214abf07e69"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/kanif/blobs/sha256:e78e474800a775d718770f2682e00735ed52963da4605be8ca023f1109798723",
@@ -81,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +105,9 @@
   ],
   "dependencies": [
     "taktuk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

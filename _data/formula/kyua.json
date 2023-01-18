@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jmmv/kyua/releases/download/kyua-0.13/kyua-0.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "db6e5d341d5cf7e49e50aa361243e19087a00ba33742b0855d2685c0b8e721d6"
     }
   },
   "revision": 2,
@@ -60,13 +61,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/kyua/blobs/sha256:b0d437da5f3f873795d6157dcc545a3ca72fef19d5288369a95b58ba5c8f4cc5",
           "sha256": "b0d437da5f3f873795d6157dcc545a3ca72fef19d5288369a95b58ba5c8f4cc5"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/kyua/blobs/sha256:056d090e0c1c5175016cb64ac1d8cebdf86e052895afd90d663e7ee8d65757e4",
+          "sha256": "056d090e0c1c5175016cb64ac1d8cebdf86e052895afd90d663e7ee8d65757e4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,6 +83,9 @@
     "lua",
     "lutok",
     "sqlite"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

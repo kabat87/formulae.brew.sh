@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/yahoojapan/NGT",
   "versions": {
-    "stable": "1.13.7",
+    "stable": "2.0.9",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/yahoojapan/NGT/archive/v1.13.7.tar.gz",
+      "url": "https://github.com/yahoojapan/NGT/archive/v2.0.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "61816974ac3e730827b8882a235adbf6d50b9a0af5ae214612b7a79bd02292b1"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:244539003eb84e06b855b1045ac49c5c5151469aa00296939685be2f35ce719e",
+          "sha256": "244539003eb84e06b855b1045ac49c5c5151469aa00296939685be2f35ce719e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:3232006df4ad89baea6bc0bb38dee7aa56429205c2456d0632a616200234562e",
-          "sha256": "3232006df4ad89baea6bc0bb38dee7aa56429205c2456d0632a616200234562e"
+          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:bd4207143377a5336d4f080ddc86ba5b9b04de4c986de847b34533288cf8f6c2",
+          "sha256": "bd4207143377a5336d4f080ddc86ba5b9b04de4c986de847b34533288cf8f6c2"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:d8abcaf46fe96f3e244ed2d07815ca354581c31f5266381d514473b696c543f1",
-          "sha256": "d8abcaf46fe96f3e244ed2d07815ca354581c31f5266381d514473b696c543f1"
+          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:f481f5c1c16ecc4b3c54828ceef614ad336f10ec877cbb016c46595c9f27439b",
+          "sha256": "f481f5c1c16ecc4b3c54828ceef614ad336f10ec877cbb016c46595c9f27439b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:a31d8a5b8f4bc84a21487c3e93775ef1674517f4a76f818b23d4a69c85f6cf75",
+          "sha256": "a31d8a5b8f4bc84a21487c3e93775ef1674517f4a76f818b23d4a69c85f6cf75"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:99123b5eb3fd2176a7f88f18e15e637fd8f59a67053159bcc7f78a591683866e",
-          "sha256": "99123b5eb3fd2176a7f88f18e15e637fd8f59a67053159bcc7f78a591683866e"
+          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:a24f41346a6e71f29ab707018e7f5eff811b3c39b66bee1732f99207cf4370c6",
+          "sha256": "a24f41346a6e71f29ab707018e7f5eff811b3c39b66bee1732f99207cf4370c6"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:98a991a6f62abaefbb3d9f7e1558ae73cc90eccc774ea26aebadfa38868d4dd6",
-          "sha256": "98a991a6f62abaefbb3d9f7e1558ae73cc90eccc774ea26aebadfa38868d4dd6"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:53bc81164848633944d7bfae6499187fe6bc138c841212ba99230413e1b4449f",
-          "sha256": "53bc81164848633944d7bfae6499187fe6bc138c841212ba99230413e1b4449f"
+          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:e6a87cff7a62640f9abb6b64adcec93d314cce32aea4e34ad6a8368a22bbe164",
+          "sha256": "e6a87cff7a62640f9abb6b64adcec93d314cce32aea4e34ad6a8368a22bbe164"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:2710494a91d33770331c4940f18d3905ae23691037c8a2ee405114d80c4a7c3d",
-          "sha256": "2710494a91d33770331c4940f18d3905ae23691037c8a2ee405114d80c4a7c3d"
+          "url": "https://ghcr.io/v2/homebrew/core/ngt/blobs/sha256:c7c8dc860c3b8dc59f651c63453070bad70fc441a9355a47df349e653d904135",
+          "sha256": "c7c8dc860c3b8dc59f651c63453070bad70fc441a9355a47df349e653d904135"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
   ],
   "dependencies": [
     "libomp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "openblas"
+      ]
+    }
+  }
 }

@@ -13,15 +13,16 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://neo4j.com/",
   "versions": {
-    "stable": "4.4.3",
+    "stable": "5.3.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://neo4j.com/artifact.php?name=neo4j-community-4.4.3-unix.tar.gz",
+      "url": "https://neo4j.com/artifact.php?name=neo4j-community-5.3.0-unix.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b20a3f253c42faccd1d2c37f9cc8bf6d557f0e645dced39e163da5ae12bb8d0a"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/neo4j/blobs/sha256:ac57f51d801562e73776e161a589bf9ef3bc6f2a8e7e6a4153a90f1646129d79",
-          "sha256": "ac57f51d801562e73776e161a589bf9ef3bc6f2a8e7e6a4153a90f1646129d79"
+          "url": "https://ghcr.io/v2/homebrew/core/neo4j/blobs/sha256:c5229246faf8a18d1895374e25219a2c76fb1c51fe13eff0feff571f2e85469c",
+          "sha256": "c5229246faf8a18d1895374e25219a2c76fb1c51fe13eff0feff571f2e85469c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@11"
+    "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

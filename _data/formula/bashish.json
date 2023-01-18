@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/bashish/bashish/2.2.4/bashish-2.2.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3de48bc1aa69ec73dafc7436070e688015d794f22f6e74d5c78a0b09c938204b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bashish/blobs/sha256:9de9a34d40236aa4fc76c38f69fa2b30b6d66bb1d6289a7552b543300abc753c",
+          "sha256": "9de9a34d40236aa4fc76c38f69fa2b30b6d66bb1d6289a7552b543300abc753c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bashish/blobs/sha256:9de9a34d40236aa4fc76c38f69fa2b30b6d66bb1d6289a7552b543300abc753c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bashish/blobs/sha256:c18a9d6903c20ae676bfdae2152d8c71b86d2a918298fa9276878002e4ed3320",
           "sha256": "c18a9d6903c20ae676bfdae2152d8c71b86d2a918298fa9276878002e4ed3320"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bashish/blobs/sha256:571da7c657359ce294d6cd556ef076cfcb8e80fdb44d7b9e494fd5207cb70afb",
+          "sha256": "571da7c657359ce294d6cd556ef076cfcb8e80fdb44d7b9e494fd5207cb70afb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/bashish/blobs/sha256:114d2ce95e530c6850bc36a52a1053ecf05185d774ed499bd1725811b3c1b88c",
           "sha256": "114d2ce95e530c6850bc36a52a1053ecf05185d774ed499bd1725811b3c1b88c"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bashish/blobs/sha256:cb3bfee8b595277be04660817eb269e97744d5f49dcac431ae7473982ad5d405",
-          "sha256": "cb3bfee8b595277be04660817eb269e97744d5f49dcac431ae7473982ad5d405"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bashish/blobs/sha256:9de9a34d40236aa4fc76c38f69fa2b30b6d66bb1d6289a7552b543300abc753c",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "dialog"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "ISC",
   "homepage": "https://drobilla.net/software/sratom.html",
   "versions": {
-    "stable": "0.6.8",
+    "stable": "0.6.14",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.drobilla.net/sratom-0.6.8.tar.bz2",
+      "url": "https://download.drobilla.net/sratom-0.6.14.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9982faf40db83aedd9b3850e499fecd6852b8b4ba6dede514013655cffaca1e6"
     }
   },
   "revision": 0,
@@ -31,52 +32,66 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:b884d697b5ca163cb39767e13f7efa886e05019103fcf370d9f45929848d4097",
+          "sha256": "b884d697b5ca163cb39767e13f7efa886e05019103fcf370d9f45929848d4097"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:c94f569e3354515ad380e13a97ad21f9a5ab4cefb3050830393e7637d5d72768",
-          "sha256": "c94f569e3354515ad380e13a97ad21f9a5ab4cefb3050830393e7637d5d72768"
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:4279011c330c294669c4a0269d588a2a13c94dd8572cbe5bd142a7e896f76b33",
+          "sha256": "4279011c330c294669c4a0269d588a2a13c94dd8572cbe5bd142a7e896f76b33"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:922ad15a5f15bf4c54ef685106b70658dce53581ae0ce680e13bc870fc1eab85",
-          "sha256": "922ad15a5f15bf4c54ef685106b70658dce53581ae0ce680e13bc870fc1eab85"
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:44288a39e0ff6b9744818a3cb288149f846ad5f53db803c8b0d833b0f912b3f9",
+          "sha256": "44288a39e0ff6b9744818a3cb288149f846ad5f53db803c8b0d833b0f912b3f9"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:697d38170f40d06ad287a1df04319f77720820eda51beb1b653562f78a1f4758",
+          "sha256": "697d38170f40d06ad287a1df04319f77720820eda51beb1b653562f78a1f4758"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:64c4dbc36211a45b6d7231ae40ff6c079af3600f15b7527345e09e5062bc363e",
-          "sha256": "64c4dbc36211a45b6d7231ae40ff6c079af3600f15b7527345e09e5062bc363e"
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:be71b80a11c1bb0e0abd54ec1e6823b962cedeb9be33da38ed880251ce4ad3ee",
+          "sha256": "be71b80a11c1bb0e0abd54ec1e6823b962cedeb9be33da38ed880251ce4ad3ee"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:8f20c286f07c722945a6bd3afd0b44ce62dbd0bb39777d90cbeea43b8e65df4d",
-          "sha256": "8f20c286f07c722945a6bd3afd0b44ce62dbd0bb39777d90cbeea43b8e65df4d"
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:a9080fe9fb2599855f5b512caab3cfdce9c40f3c285597de3899c67dfe8cb2d0",
+          "sha256": "a9080fe9fb2599855f5b512caab3cfdce9c40f3c285597de3899c67dfe8cb2d0"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:1ef0da557a528c1b979b78624de2bd6ff6b23beca8918ca94dadc4e5faa7783f",
-          "sha256": "1ef0da557a528c1b979b78624de2bd6ff6b23beca8918ca94dadc4e5faa7783f"
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:d6514a036efc5cd3820bcd686aaea2ab4fc9d85071dc32f09d702cf48d6c9004",
+          "sha256": "d6514a036efc5cd3820bcd686aaea2ab4fc9d85071dc32f09d702cf48d6c9004"
         },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:881192ccb8c3553de14975ab6175614170c3cba891760e82d58a1ad194b70269",
-          "sha256": "881192ccb8c3553de14975ab6175614170c3cba891760e82d58a1ad194b70269"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sratom/blobs/sha256:1a5c19504309b0a88bf93ca6c4e4176438af55b2bb638df0d54e31614cc811cb",
+          "sha256": "1a5c19504309b0a88bf93ca6c4e4176438af55b2bb638df0d54e31614cc811cb"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
+    "meson",
+    "ninja",
     "pkg-config"
   ],
   "dependencies": [
     "lv2",
     "serd",
     "sord"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

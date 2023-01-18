@@ -7,24 +7,34 @@
   ],
   "desc": "Font editor",
   "homepage": "https://birdfont.org/",
-  "url": "https://birdfont.org/download/birdfont-4.22.3-free.dmg",
+  "url": "https://birdfont.org/download/birdfont-5.0.3-free.dmg",
   "appcast": null,
-  "version": "4.22.3",
+  "version": "5.0.3",
   "versions": {
-    "catalina": "4.22.2",
     "mojave": "4.17.0",
     "high_sierra": "4.17.0",
     "sierra": "4.17.0",
-    "el_capitan": "4.17.0",
-    "yosemite": "4.17.0"
+    "el_capitan": "4.17.0"
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2934efa1ec461a3c6ab855d2af15ac4b8a20a09afeb97fc1fe78ed209ad0f57b",
+  "sha256": "e353967d9ac81edbf3dbf638b29fed81295751da7b80eff84e78f5faf84b449e",
   "artifacts": [
-    [
-      "BirdFontNonCommercial.app"
-    ]
+    {
+      "app": [
+        "BirdFontNonCommercial.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/org.birdfont.birdfont",
+            "~/Library/Containers/org.birdfont.birdfont"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -36,5 +46,27 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "mojave": {
+      "url": "https://birdfont.org/download/birdfont-4.17.0-free.dmg",
+      "version": "4.17.0",
+      "sha256": "74c778e3b7598a66b9ddb11b189ba6a21d68263fb0499a965dcedd0ac987b051"
+    },
+    "high_sierra": {
+      "url": "https://birdfont.org/download/birdfont-4.17.0-free.dmg",
+      "version": "4.17.0",
+      "sha256": "74c778e3b7598a66b9ddb11b189ba6a21d68263fb0499a965dcedd0ac987b051"
+    },
+    "sierra": {
+      "url": "https://birdfont.org/download/birdfont-4.17.0-free.dmg",
+      "version": "4.17.0",
+      "sha256": "74c778e3b7598a66b9ddb11b189ba6a21d68263fb0499a965dcedd0ac987b051"
+    },
+    "el_capitan": {
+      "url": "https://birdfont.org/download/birdfont-4.17.0-free.dmg",
+      "version": "4.17.0",
+      "sha256": "74c778e3b7598a66b9ddb11b189ba6a21d68263fb0499a965dcedd0ac987b051"
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/latex2rtf/latex2rtf-unix/2.3.18/latex2rtf-2.3.18a.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "338ba2e83360f41ded96a0ceb132db9beaaf15018b36101be2bae8bb239017d9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/latex2rtf/blobs/sha256:b4199f9894249b485a39086d881a86500f17a61bd54c268ca8a06bba188551ca",
+          "sha256": "b4199f9894249b485a39086d881a86500f17a61bd54c268ca8a06bba188551ca"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/latex2rtf/blobs/sha256:5205d467451011ecb588b38bf923bff4c50f4598ae9ede9629f7336ab4eb1dff",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/latex2rtf/blobs/sha256:29b2cd9987d2362995534aed209cf84ff93cb307de474bbe2ff16c5e94bfc9cb",
           "sha256": "29b2cd9987d2362995534aed209cf84ff93cb307de474bbe2ff16c5e94bfc9cb"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/latex2rtf/blobs/sha256:b4a170771dcabf60d657f8f9ac69b7bfebcc9986dcbd226d4a99909fe66bf29d",
+          "sha256": "b4a170771dcabf60d657f8f9ac69b7bfebcc9986dcbd226d4a99909fe66bf29d"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

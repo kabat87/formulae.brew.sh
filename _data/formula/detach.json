@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://inglorion.net/download/detach-0.2.3.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b2070e708d4fe3a84197e2a68f25e477dba3c2d8b1f9ce568f70fc8b8e8a30f0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/detach/blobs/sha256:43dbfbe7fe5ea211f28aff3bd251dad03ddb486ff8230bc35084b0c8111a0058",
+          "sha256": "43dbfbe7fe5ea211f28aff3bd251dad03ddb486ff8230bc35084b0c8111a0058"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/detach/blobs/sha256:f208e16128573ea8b839c8fe27a6f23e72dcf99064f088e4d552aec5358cf54f",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/detach/blobs/sha256:934338f4dbae7773162dfa2a6b83d3c72a0740747bd4494509a9d5ee20bf37b5",
           "sha256": "934338f4dbae7773162dfa2a6b83d3c72a0740747bd4494509a9d5ee20bf37b5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/detach/blobs/sha256:94bd75041180a9e7cf48d3c352d2ef788a3f9ca382a77ecc1195b221c375b99c",
+          "sha256": "94bd75041180a9e7cf48d3c352d2ef788a3f9ca382a77ecc1195b221c375b99c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

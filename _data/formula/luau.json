@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://luau-lang.org",
   "versions": {
-    "stable": "0.510",
+    "stable": "0.558",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/Roblox/luau/archive/0.510.tar.gz",
+      "url": "https://github.com/Roblox/luau/archive/0.558.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3484adddb18872700e033f5917af44d90c266f9e0fff2fac21aec1061f472a06"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:e23570aa08b7afe327abdc2286d8906abd96c9b32756466c8c140bf8aa756bcd",
+          "sha256": "e23570aa08b7afe327abdc2286d8906abd96c9b32756466c8c140bf8aa756bcd"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:eedf7db42a1a09b865365f47209ff8bf16b12e517ae7313b7905d88a5b0cf006",
-          "sha256": "eedf7db42a1a09b865365f47209ff8bf16b12e517ae7313b7905d88a5b0cf006"
+          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:8a8e8c3f005087b03a4ecbad2d7322e4ebb49313fdda8793fdfa1d6e6850279c",
+          "sha256": "8a8e8c3f005087b03a4ecbad2d7322e4ebb49313fdda8793fdfa1d6e6850279c"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:2161592db768292580c91e44e8d3addc5efecd683c47c592b4d6bc3144512eed",
-          "sha256": "2161592db768292580c91e44e8d3addc5efecd683c47c592b4d6bc3144512eed"
+          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:ee9bb89f21c414814d3d444a35f2fea6499b10e385f55d83cd2c01b39f7e730f",
+          "sha256": "ee9bb89f21c414814d3d444a35f2fea6499b10e385f55d83cd2c01b39f7e730f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:ca7625474509b9825358463ab1e5c91d63bd86a8432b059179cd31d321a535c3",
+          "sha256": "ca7625474509b9825358463ab1e5c91d63bd86a8432b059179cd31d321a535c3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:337c72956901c48edc2655a68fabbfe57623aabecb3de8386bffb1a657750ed9",
-          "sha256": "337c72956901c48edc2655a68fabbfe57623aabecb3de8386bffb1a657750ed9"
+          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:c13c39fda5015949168bb62fc93191ea3fcad773c746f334ba126efba6e30f58",
+          "sha256": "c13c39fda5015949168bb62fc93191ea3fcad773c746f334ba126efba6e30f58"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:621519a67b7bd3d670e68818b3ad3a948aa0d96ff55f8760257b7cde6f2a0adc",
-          "sha256": "621519a67b7bd3d670e68818b3ad3a948aa0d96ff55f8760257b7cde6f2a0adc"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:80f55b2ec890aa24a446fb0c668a9aef8d1023a52bc143fb5d039f271db30e98",
-          "sha256": "80f55b2ec890aa24a446fb0c668a9aef8d1023a52bc143fb5d039f271db30e98"
+          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:c3abd141d3200dbea395e079a16eefa5ecf4c66d80a2bd5073d926be04272656",
+          "sha256": "c3abd141d3200dbea395e079a16eefa5ecf4c66d80a2bd5073d926be04272656"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:4d39f3a01a7814cd48d8a24c796055b22f9539299fa3e716115896fd6b3373ec",
-          "sha256": "4d39f3a01a7814cd48d8a24c796055b22f9539299fa3e716115896fd6b3373ec"
+          "url": "https://ghcr.io/v2/homebrew/core/luau/blobs/sha256:8e2176d337d183fcbae603d6489d4a5f4598a5e6dc9b83a47ae03b662c04797a",
+          "sha256": "8e2176d337d183fcbae603d6489d4a5f4598a5e6dc9b83a47ae03b662c04797a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

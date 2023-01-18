@@ -21,10 +21,11 @@
     "stable": {
       "url": "https://github.com/khenriks/mp3fs/releases/download/v1.1.1/mp3fs-1.1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "942b588fb623ea58ce8cac8844e6ff2829ad4bc9b4c163bba58e3fa9ebc15608"
     }
   },
-  "revision": 1,
+  "revision": 3,
   "version_scheme": 0,
   "bottle": {
     "stable": {
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mp3fs/blobs/sha256:553dad1d8a1fe03cc3362b859d9fafbc47a34e024144cdfe56be1d1d5be71131",
-          "sha256": "553dad1d8a1fe03cc3362b859d9fafbc47a34e024144cdfe56be1d1d5be71131"
+          "url": "https://ghcr.io/v2/homebrew/core/mp3fs/blobs/sha256:3539466612aa0f46175ab58a559978aa14b92ba973b1d3819649aa8474537885",
+          "sha256": "3539466612aa0f46175ab58a559978aa14b92ba973b1d3819649aa8474537885"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,8 +51,12 @@
   "dependencies": [
     "flac",
     "lame",
+    "libfuse@2",
     "libid3tag",
     "libvorbis"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -64,12 +68,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -79,7 +91,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

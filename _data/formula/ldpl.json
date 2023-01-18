@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Lartu/ldpl/archive/4.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c34fb7d67d45050c7198f83ec9bb0b7790f78df8c6d99506c37141ccd2ac9ff1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ldpl/blobs/sha256:bf6959046e581454ad99a0916570bb6ec7891ad1666829ee926d14ae9029886b",
+          "sha256": "bf6959046e581454ad99a0916570bb6ec7891ad1666829ee926d14ae9029886b"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ldpl/blobs/sha256:bf32d6e3ea635273e2b9489962bbaf8e0cb635baf2f683ce140ca7b678e4b4dc",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ldpl/blobs/sha256:5c7715953497aa0104ad8262e84757529b33d1af90b9a41288895018515bea7f",
           "sha256": "5c7715953497aa0104ad8262e84757529b33d1af90b9a41288895018515bea7f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ldpl/blobs/sha256:f9e3a39562bdfcbc8d90486286ff19bbb0163c4df653c9e808c509c2a4ac9f00",
+          "sha256": "f9e3a39562bdfcbc8d90486286ff19bbb0163c4df653c9e808c509c2a4ac9f00"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

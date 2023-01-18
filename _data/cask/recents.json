@@ -5,10 +5,10 @@
   "name": [
     "Recents"
   ],
-  "desc": null,
+  "desc": "File launcher",
   "homepage": "https://recentsapp.com/",
   "url": "https://recentsapp.com/releases/Recents_latest.zip",
-  "appcast": "https://api.appcenter.ms/v0.1/public/sparkle/apps/74f5ee9e-bf2d-4be3-b92a-3e8766433b8b",
+  "appcast": null,
   "version": "2.2.1,6244",
   "versions": {
   },
@@ -16,19 +16,36 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Recents.app"
-    ]
+    {
+      "app": [
+        "Recents.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.lapier.Recents",
+            "~/Library/Caches/com.lapier.Recents",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.lapier.Recents",
+            "~/Library/HTTPStorages/com.lapier.Recents",
+            "~/Library/Preferences/com.lapier.Recents.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.13"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

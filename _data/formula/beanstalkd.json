@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/beanstalkd/beanstalkd/archive/v1.12.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f43a7ea7f71db896338224b32f5e534951a976f13b7ef7a4fb5f5aed9f57883f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/beanstalkd/blobs/sha256:f65fe8707dbd3fcbab4ef77c89ead60889a1b543159f1cc6d5fe4b69707caea0",
+          "sha256": "f65fe8707dbd3fcbab4ef77c89ead60889a1b543159f1cc6d5fe4b69707caea0"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/beanstalkd/blobs/sha256:eeea48d399e95e86921751ed92aab3b378d065f99ba5d488dc2fffb0f44296a1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/beanstalkd/blobs/sha256:7a3ff3ad7d79b13d3df7b8048134f8e7321d2daf4fa61c80e57041dff7a3d5ec",
           "sha256": "7a3ff3ad7d79b13d3df7b8048134f8e7321d2daf4fa61c80e57041dff7a3d5ec"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/beanstalkd/blobs/sha256:66c231b751e394fb9279996c5f7fc2cace2caed16b9637e75b2ca96c0610b526",
+          "sha256": "66c231b751e394fb9279996c5f7fc2cace2caed16b9637e75b2ca96c0610b526"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

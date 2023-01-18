@@ -1,17 +1,17 @@
 cask "dcp-o-matic-player" do
-  version "2.14.56"
-  sha256 "fee4792e65561b82df69488e115dc0da9be7860f6f87a9e48ca68b7f3a115313"
+  version "2.16.40"
+  sha256 "523adc881906a3ea4e81b5ee16c700738bbe0e8c168f1b1c18142d98a9cf25cb"
 
-  url "https://dcpomatic.com/dl.php?id=osx-10.9-player&version=#{version}"
+  url "https://dcpomatic.com/dl.php?id=osx-10.10-player&version=#{version}"
   name "DCP-o-matic Player"
   desc "Play Digital Cinema Packages"
   homepage "https://dcpomatic.com/"
 
   livecheck do
-    url "https://dcpomatic.com/download"
-    strategy :page_match
-    regex(/href=.*?id=osx[0-9._-]*player[^"']*?version=(\d+(?:\.\d+)+)/i)
+    cask "dcp-o-matic"
   end
 
   app "DCP-o-matic #{version.major} Player.app"
+
+  # No zap stanza required
 end

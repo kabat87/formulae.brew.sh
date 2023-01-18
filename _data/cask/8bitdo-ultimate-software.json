@@ -16,22 +16,33 @@
   "outdated": false,
   "sha256": "21c0af67e6aad0cda117d0ded8d964abf51f2957ab1c7caf0258fdc3e0178abb",
   "artifacts": [
-    [
-      "8BitDo Ultimate Software.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.8BitDo.Advance",
-        "~/Library/Preferences/com.8BitDo.Advance.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "8BitDo Ultimate Software.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.8BitDo.Advance",
+            "~/Library/Preferences/com.8BitDo.Advance.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.13"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

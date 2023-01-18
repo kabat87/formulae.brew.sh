@@ -3,35 +3,39 @@
   "full_token": "stork",
   "tap": "homebrew/cask",
   "name": [
-    "Stork for macOS"
+    "Stork"
   ],
-  "desc": "Messenger with a powerful features for hybrid work",
+  "desc": "Messenger with powerful features for hybrid work",
   "homepage": "https://stork.ai/",
-  "url": "https://downloads.stork.ai/macos/release/Stork-1.0.3.1418.dmg",
+  "url": "https://downloads.stork.ai/macos/release/Stork-1.0.18.1767.dmg",
   "appcast": null,
-  "version": "1.0.3,1418",
+  "version": "1.0.18,1767",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b54bca303547495f5c59bb5e890ddfa9d37f2ff641d6392efb6188e46e88e1df",
+  "sha256": "b901b9e64f386d0b2ac4fa3ae6ee1345e8c226acd178e27a311355fbb87450b3",
   "artifacts": [
-    [
-      "Stork.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.stork.stork",
-        "~/Library/Application Scripts/com.stork.stork-LaunchAtLoginHelper",
-        "~/Library/Application Support/com.stork.stork",
-        "~/Library/Caches/com.stork.stork",
-        "~/Library/Cookies/com.stork.stork.binarycookies",
-        "~/Library/Group Containers/*.group.com.stork.stork",
-        "~/Library/Preferences/com.stork.stork.plist",
-        "~/Library/Saved Application State/com.stork.stork.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Stork.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.stork.stork",
+            "~/Library/Application Scripts/com.stork.stork-LaunchAtLoginHelper",
+            "~/Library/Application Support/com.stork.stork",
+            "~/Library/Caches/com.stork.stork",
+            "~/Library/Cookies/com.stork.stork.binarycookies",
+            "~/Library/Group Containers/*.group.com.stork.stork",
+            "~/Library/Preferences/com.stork.stork.plist",
+            "~/Library/Saved Application State/com.stork.stork.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -7,27 +7,31 @@
   ],
   "desc": "Team communication and collaboration software",
   "homepage": "https://www.jetbrains.com/space/",
-  "url": "https://download-cdn.jetbrains.com/space/jetbrains-space-2021.4.2.zip",
+  "url": "https://download-cdn.jetbrains.com/space/jetbrains-space-2023.1.0.zip",
   "appcast": null,
-  "version": "2021.4.2",
+  "version": "2023.1.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "11b39e74234c21ce8322488668ea943275680f1f6e78948fbd5d69376d945259",
+  "sha256": "01e674c3ae14aa47eeea3171ec9526ffdac2f6d3d4658a7cfa948ec5f8bd917c",
   "artifacts": [
-    [
-      "JetBrains Space.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/JetBrains Space",
-        "~/Library/Logs/JetBrains Space",
-        "~/Library/Preferences/com.jetbrains.space.desktop.plist",
-        "~/Library/Saved Application State/com.jetbrains.space.desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "JetBrains Space.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/JetBrains Space",
+            "~/Library/Logs/JetBrains Space",
+            "~/Library/Preferences/com.jetbrains.space.desktop.plist",
+            "~/Library/Saved Application State/com.jetbrains.space.desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

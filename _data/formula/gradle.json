@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://www.gradle.org/",
   "versions": {
-    "stable": "7.3.3",
+    "stable": "7.6",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://services.gradle.org/distributions/gradle-7.3.3-all.zip",
+      "url": "https://services.gradle.org/distributions/gradle-7.6-all.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "312eb12875e1747e05c2f81a4789902d7e4ec5defbd1eefeaccc08acf096505d"
     }
   },
   "revision": 0,
@@ -31,17 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "all": {
+        "arm64_ventura": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:09ae079017b02f06a30fa5b2a917f299353bcf437389144f1e7ce87d1c420b03",
-          "sha256": "09ae079017b02f06a30fa5b2a917f299353bcf437389144f1e7ce87d1c420b03"
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5",
+          "sha256": "4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5",
+          "sha256": "4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5",
+          "sha256": "4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5",
+          "sha256": "4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5",
+          "sha256": "4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5"
+        },
+        "big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4be64b296fb7a3b5c16d7807dd278dbcb2fbc21a6209e65786e0548f48cffc44",
+          "sha256": "4be64b296fb7a3b5c16d7807dd278dbcb2fbc21a6209e65786e0548f48cffc44"
+        },
+        "catalina": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4be64b296fb7a3b5c16d7807dd278dbcb2fbc21a6209e65786e0548f48cffc44",
+          "sha256": "4be64b296fb7a3b5c16d7807dd278dbcb2fbc21a6209e65786e0548f48cffc44"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gradle/blobs/sha256:4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5",
+          "sha256": "4ba00f5fb6200ba402ef737e47cd3c3c079d77466299c7ef49ed28de3b1c4dc5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +84,10 @@
 
   ],
   "dependencies": [
-    "openjdk"
+    "openjdk@17"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -69,16 +107,157 @@
   "caveats": null,
   "installed": [
     {
-      "version": "7.3.3",
+      "version": "7.6",
       "used_options": [
 
       ],
-      "built_as_bottle": false,
-      "poured_from_bottle": false,
+      "built_as_bottle": true,
+      "poured_from_bottle": true,
+      "time": 1671162120,
       "runtime_dependencies": [
         {
-          "full_name": "openjdk",
-          "version": "17.0.1",
+          "full_name": "giflib",
+          "version": "5.2.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libpng",
+          "version": "1.6.39",
+          "declared_directly": false
+        },
+        {
+          "full_name": "freetype",
+          "version": "2.12.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "fontconfig",
+          "version": "2.14.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "gettext",
+          "version": "0.21.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "pcre2",
+          "version": "10.40",
+          "declared_directly": false
+        },
+        {
+          "full_name": "glib",
+          "version": "2.74.3",
+          "declared_directly": false
+        },
+        {
+          "full_name": "pkg-config",
+          "version": "0.29.2",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libpthread-stubs",
+          "version": "0.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "xorgproto",
+          "version": "2022.2",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libxau",
+          "version": "1.0.11",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libxdmcp",
+          "version": "1.1.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libxcb",
+          "version": "1.15",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libx11",
+          "version": "1.8.2",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libxext",
+          "version": "1.3.5",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libxrender",
+          "version": "0.9.10",
+          "declared_directly": false
+        },
+        {
+          "full_name": "lzo",
+          "version": "2.10",
+          "declared_directly": false
+        },
+        {
+          "full_name": "pixman",
+          "version": "0.42.2",
+          "declared_directly": false
+        },
+        {
+          "full_name": "cairo",
+          "version": "1.16.0",
+          "declared_directly": false
+        },
+        {
+          "full_name": "graphite2",
+          "version": "1.3.14",
+          "declared_directly": false
+        },
+        {
+          "full_name": "icu4c",
+          "version": "71.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "harfbuzz",
+          "version": "5.3.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "jpeg-turbo",
+          "version": "2.1.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "lz4",
+          "version": "1.9.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "xz",
+          "version": "5.2.9",
+          "declared_directly": false
+        },
+        {
+          "full_name": "zstd",
+          "version": "1.5.2",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libtiff",
+          "version": "4.4.0",
+          "declared_directly": false
+        },
+        {
+          "full_name": "little-cms2",
+          "version": "2.14",
+          "declared_directly": false
+        },
+        {
+          "full_name": "openjdk@17",
+          "version": "17.0.5",
           "declared_directly": true
         }
       ],
@@ -86,7 +265,7 @@
       "installed_on_request": true
     }
   ],
-  "linked_keg": "7.3.3",
+  "linked_keg": "7.6",
   "pinned": false,
   "outdated": false,
   "deprecated": false,
@@ -94,5 +273,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

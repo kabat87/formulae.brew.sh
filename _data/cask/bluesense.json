@@ -16,29 +16,30 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "BlueSense.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.inspira.bluesense.plist",
-        "~/Library/Application Support/BlueSense",
-        "~/Library/Caches/com.inspira.bluesense"
-      ],
-      "rmdir": "~/Library/Application Scripts/com.inspira.bluesense",
-      "signal": {
-      }
+      "app": [
+        "BlueSense.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.inspira.bluesense.plist",
+            "~/Library/Application Support/BlueSense",
+            "~/Library/Caches/com.inspira.bluesense"
+          ],
+          "rmdir": "~/Library/Application Scripts/com.inspira.bluesense"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

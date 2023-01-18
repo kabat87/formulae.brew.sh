@@ -1,6 +1,6 @@
 cask "vellum" do
-  version "3.0.1,30100"
-  sha256 "de10e693d35accd85e063de89225cfc949e12c1c8c6427af0595d0f16370de9b"
+  version "3.4.2,34200"
+  sha256 "f4b516fc8cd9979c66a1ef52468f6bb233899e9bdf4c7449c6dafbc98f4372a1"
 
   url "https://180g.s3.amazonaws.com/downloads/Vellum-#{version.csv.second}.zip",
       verified: "180g.s3.amazonaws.com/downloads/"
@@ -14,7 +14,7 @@ cask "vellum" do
   end
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :high_sierra"
 
   app "Vellum.app"
 

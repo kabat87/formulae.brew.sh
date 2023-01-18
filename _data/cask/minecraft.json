@@ -9,24 +9,28 @@
   "homepage": "https://minecraft.net/",
   "url": "https://launcher.mojang.com/download/Minecraft.dmg",
   "appcast": null,
-  "version": "973,1",
+  "version": "1.1.26",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Minecraft.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.mojang.minecraftlauncher",
-        "~/Library/Caches/com.mojang.minecraftlauncherupdater",
-        "~/Library/Application Support/Minecraft Launcher"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Minecraft.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Minecraft Launcher",
+            "~/Library/Caches/com.mojang.minecraftlauncher",
+            "~/Library/Caches/com.mojang.minecraftlauncherupdater"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/n/noweb/noweb_2.11b.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c913f26c1edb37e331c747619835b4cade000b54e459bb08f4d38899ab690d82"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/noweb/blobs/sha256:445837953be37e6f291e346a9469b445cacdf9a0ef4d7da96dbe6c779b62f9a3",
+          "sha256": "445837953be37e6f291e346a9469b445cacdf9a0ef4d7da96dbe6c779b62f9a3"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/noweb/blobs/sha256:cf0e3c32a2c45886fcf808941a29332aefaa8c619b89866a55f34d478054ae1a",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/noweb/blobs/sha256:58c550c2b55a37c6377eada0ffd5d3db747ebf46ddeef1f9803534ce58ea6c59",
           "sha256": "58c550c2b55a37c6377eada0ffd5d3db747ebf46ddeef1f9803534ce58ea6c59"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/noweb/blobs/sha256:1f16976e58f41d239d9029f6e3d649fda7d63f14d7cc2835847f088485fcb9f7",
+          "sha256": "1f16976e58f41d239d9029f6e3d649fda7d63f14d7cc2835847f088485fcb9f7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -65,13 +76,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/noweb/blobs/sha256:f3ca23f070a74c5e499232667ef64e73d68943d13f6344e70b74426feccca524",
           "sha256": "f3ca23f070a74c5e499232667ef64e73d68943d13f6344e70b74426feccca524"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/noweb/blobs/sha256:62301f6bc93e64de80a0eb63a862fcbd6580d25a7355303a2b70ac6a95a92ae7",
+          "sha256": "62301f6bc93e64de80a0eb63a862fcbd6580d25a7355303a2b70ac6a95a92ae7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +95,9 @@
   ],
   "dependencies": [
     "icon"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

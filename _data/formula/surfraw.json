@@ -10,7 +10,7 @@
 
   ],
   "desc": "Shell Users' Revolutionary Front Rage Against the Web",
-  "license": null,
+  "license": "Public Domain",
   "homepage": "https://packages.debian.org/sid/surfraw",
   "versions": {
     "stable": "2.3.0",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.openbsd.org/pub/OpenBSD/distfiles/surfraw-2.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ad0420583c8cdd84a31437e59536f8070f15ba4585598d82638b950e5c5c3625"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/surfraw/blobs/sha256:31d8b711776cd751f846106b974bd1aa944f614880f8038ba04b391120abe9c4",
+          "sha256": "31d8b711776cd751f846106b974bd1aa944f614880f8038ba04b391120abe9c4"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/surfraw/blobs/sha256:31d8b711776cd751f846106b974bd1aa944f614880f8038ba04b391120abe9c4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/surfraw/blobs/sha256:65d1418f750b53be50f7d67e98791242056d4d7b5e21ba177899435fd9ac9d0f",
           "sha256": "65d1418f750b53be50f7d67e98791242056d4d7b5e21ba177899435fd9ac9d0f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/surfraw/blobs/sha256:5e7b575c7ac5db980372aea5bc1276ccd78522d63f006c858b1b2394748b3ba7",
+          "sha256": "5e7b575c7ac5db980372aea5bc1276ccd78522d63f006c858b1b2394748b3ba7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

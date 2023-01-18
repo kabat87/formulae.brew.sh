@@ -10,8 +10,8 @@
 
   ],
   "desc": "Generate statistics about stdin or textfiles",
-  "license": null,
-  "homepage": "https://www.vanheusden.com/genstats/",
+  "license": "GPL-2.0",
+  "homepage": "https://web.archive.org/web/20180831170016/www.vanheusden.com/genstats/",
   "versions": {
     "stable": "1.2",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://www.vanheusden.com/genstats/genstats-1.2.tgz",
+      "url": "https://web.archive.org/web/20150331055106if_/vanheusden.com/genstats/genstats-1.2.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9988264357211a24f7024db05e24ed88db58227a626330114309147eb7078f6e"
     }
   },
   "revision": 0,
@@ -65,18 +66,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/genstats/blobs/sha256:44502f7a2dfcb1355336db69267d6363d6e8b8767b47628b0d3099743513ed5f",
           "sha256": "44502f7a2dfcb1355336db69267d6363d6e8b8767b47628b0d3099743513ed5f"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/genstats/blobs/sha256:91737ec825ed346716fddcedc4e075b195f214dfb22586a33d46f7ec5ea3a17e",
-          "sha256": "91737ec825ed346716fddcedc4e075b195f214dfb22586a33d46f7ec5ea3a17e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +79,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,10 +106,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-05-20",
-  "deprecation_reason": "Upstream website has disappeared",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "Upstream site gone; archive.org URLs provided for 'brew extract' usage",
+  "variations": {
+  }
 }

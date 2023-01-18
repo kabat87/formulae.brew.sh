@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/OpenHMD/OpenHMD/archive/0.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ec5c97ab456046a8aef3cde6d59e474603af398f1d064a66e364fe3c0b26a0fa"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:6b2e1d6170301fe50af6c5b9bee467a9c18f346cf2ff630338fd410bfbf992ff",
+          "sha256": "6b2e1d6170301fe50af6c5b9bee467a9c18f346cf2ff630338fd410bfbf992ff"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:536ae72b1f5e8dea9417cd010b787e4dfa94ece6c8fa3da651186f6e2ceb2d8c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:19e9b946bbefe306dc41aa803e5cb48aec3ab62bf334b8975e660f4a3644c0c7",
           "sha256": "19e9b946bbefe306dc41aa803e5cb48aec3ab62bf334b8975e660f4a3644c0c7"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openhmd/blobs/sha256:3f960a5ab5e3466341ac6fcf533c317e37183338d770ca5b63f8aec92f48cd1b",
+          "sha256": "3f960a5ab5e3466341ac6fcf533c317e37183338d770ca5b63f8aec92f48cd1b"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -93,6 +103,9 @@
   ],
   "dependencies": [
     "hidapi"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -122,5 +135,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

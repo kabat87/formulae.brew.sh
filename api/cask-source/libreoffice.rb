@@ -1,14 +1,10 @@
 cask "libreoffice" do
-  arch = Hardware::CPU.intel? ? "x86-64" : "aarch64"
-  folder = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+  arch arm: "aarch64", intel: "x86-64"
+  folder = on_arch_conditional arm: "aarch64", intel: "x86_64"
 
-  version "7.2.5"
-
-  if Hardware::CPU.intel?
-    sha256 "0b7ef18ed08341ac6c15339fe9a161ad17f6b469009d987cfc7d50c628d12a4e"
-  else
-    sha256 "bdbcb9a98211f866ca089d440aebcd1d313aa99e8ab4104aae4e65ea3cee74ca"
-  end
+  version "7.4.4"
+  sha256 arm:   "a5f289664f54184c290ed64dd24f788bf9661cefd0c0607aad60bd5a3ccbbbb3",
+         intel: "edc6946cbf84c0a8e8f5f43f16f516ad9b1eeb14b71718ba4d5745b1c716f6fb"
 
   url "https://download.documentfoundation.org/libreoffice/stable/#{version}/mac/#{folder}/LibreOffice_#{version}_MacOS_#{arch}.dmg",
       verified: "download.documentfoundation.org/libreoffice/stable/"
@@ -18,12 +14,11 @@ cask "libreoffice" do
 
   livecheck do
     url "https://download.documentfoundation.org/libreoffice/stable/"
-    strategy :page_match
     regex(%r{href="(\d+(?:\.\d+)+)/"}i)
   end
 
   conflicts_with cask: "homebrew/cask-versions/libreoffice-still"
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :sierra"
 
   app "LibreOffice.app"
   binary "#{appdir}/LibreOffice.app/Contents/MacOS/gengal"

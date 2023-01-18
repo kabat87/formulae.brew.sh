@@ -7,36 +7,44 @@
   ],
   "desc": "Vector graphics editor",
   "homepage": "https://inkscape.org/",
-  "url": "https://media.inkscape.org/dl/resources/file/Inkscape-1.1.1.dmg",
+  "url": "https://media.inkscape.org/dl/resources/file/Inkscape-1.2.2_x86_64.dmg",
   "appcast": null,
-  "version": "1.1.1",
+  "version": "1.2.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f201468781d827b6c4055d08a603d828a29d5cff40f96228e535842c91c9debe",
+  "sha256": "d2e9969ba8b5056926b08719e527f781cca9f6b35fdbc54e855d0540c93709b2",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "Inkscape.app"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/inkscape/1.1.1/inkscape.wrapper.sh",
-      {
-        "target": "inkscape"
-      }
-    ],
     {
-      "trash": [
-        "~/.config/inkscape",
-        "~/Library/Application Support/Inkscape",
-        "~/Library/Application Support/org.inkscape.Inkscape",
-        "~/Library/Caches/org.inkscape.Inkscape*",
-        "~/Library/Preferences/org.inkscape.Inkscape.plist",
-        "~/Library/Saved Application State/org.inkscape.Inkscape.savedState"
-      ],
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      exec '#{staged_path}/Inkscape.app/Contents/MacOS/inkscape' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "app": [
+        "Inkscape.app"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/inkscape/1.2.2/inkscape.wrapper.sh",
+        {
+          "target": "inkscape"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.config/inkscape",
+            "~/Library/Application Support/Inkscape",
+            "~/Library/Application Support/org.inkscape.Inkscape",
+            "~/Library/Caches/org.inkscape.Inkscape*",
+            "~/Library/Preferences/org.inkscape.Inkscape.plist",
+            "~/Library/Saved Application State/org.inkscape.Inkscape.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +52,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://media.inkscape.org/dl/resources/file/Inkscape-1.2.2_arm64.dmg",
+      "sha256": "e101f59f5ae858ac21199cd434dfc903b6e409eaebecc9447b9451b6a38cbd86"
+    },
+    "arm64_monterey": {
+      "url": "https://media.inkscape.org/dl/resources/file/Inkscape-1.2.2_arm64.dmg",
+      "sha256": "e101f59f5ae858ac21199cd434dfc903b6e409eaebecc9447b9451b6a38cbd86"
+    },
+    "arm64_big_sur": {
+      "url": "https://media.inkscape.org/dl/resources/file/Inkscape-1.2.2_arm64.dmg",
+      "sha256": "e101f59f5ae858ac21199cd434dfc903b6e409eaebecc9447b9451b6a38cbd86"
+    }
+  }
 }

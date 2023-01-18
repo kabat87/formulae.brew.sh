@@ -10,7 +10,7 @@
 
   ],
   "desc": "Wave-to-notes transcriber",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://kichiki.github.io/WaoN/",
   "versions": {
     "stable": "0.11",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/kichiki/WaoN/archive/v0.11.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "75d5c1721632afee55a54bcbba1a444e53b03f4224b03da29317e98aa223c30b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/waon/blobs/sha256:648dea99dcc66856eb8a50ae15b4f8b026be97accb83bdceaabe795933b63af1",
+          "sha256": "648dea99dcc66856eb8a50ae15b4f8b026be97accb83bdceaabe795933b63af1"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/waon/blobs/sha256:42e529969e77de03e3dccc5c7e8ea1883bb860f22cc253b710a2d0125f0648df",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/waon/blobs/sha256:5c2460bd2671fbb035d30f61a80c470caca47d2cc2b84b103b1d9d25540dd233",
           "sha256": "5c2460bd2671fbb035d30f61a80c470caca47d2cc2b84b103b1d9d25540dd233"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/waon/blobs/sha256:0cac05703864bf3fa9a3d7b5df3707eed37ed165926b63c9fe8fac3c3814427c",
+          "sha256": "0cac05703864bf3fa9a3d7b5df3707eed37ed165926b63c9fe8fac3c3814427c"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/waon/blobs/sha256:6f09559eaf287022f280991b44b5f4e86435fafda167c97a78239602183a3758",
           "sha256": "6f09559eaf287022f280991b44b5f4e86435fafda167c97a78239602183a3758"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/waon/blobs/sha256:a16c4df918f59a71396d7c4a5806bafe4bda4a89d3aeb2a52d8dfd41ce6c0432",
-          "sha256": "a16c4df918f59a71396d7c4a5806bafe4bda4a89d3aeb2a52d8dfd41ce6c0432"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/waon/blobs/sha256:f91b56d77254441ef842600da7b63b3ec7f84046cad6d89c64314aafa82af1e2",
+          "sha256": "f91b56d77254441ef842600da7b63b3ec7f84046cad6d89c64314aafa82af1e2"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
     "fftw",
     "libsndfile"
+  ],
+  "test_dependencies": [
+    "sox"
   ],
   "recommended_dependencies": [
 
@@ -124,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

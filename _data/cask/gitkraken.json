@@ -7,50 +7,70 @@
   ],
   "desc": "Git client focusing on productivity",
   "homepage": "https://www.gitkraken.com/",
-  "url": "https://release.axocdn.com/darwin/GitKraken-v8.2.1.zip",
+  "url": "https://release.axocdn.com/darwin/GitKraken-v9.0.1.zip",
   "appcast": null,
-  "version": "8.2.1",
+  "version": "9.0.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "40269f91fd979c7347cbedddbe719bd224cd303c3c55842e76cea6273ef8696a",
+  "sha256": "acef872c4577ad82b1a7ca49d0dbe9d589e0fb21ddce1014d0b94137725f2520",
   "artifacts": [
     {
-      "quit": "com.axosoft.gitkraken",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.axosoft.gitkraken"
+        }
+      ]
     },
-    [
-      "GitKraken.app"
-    ],
     {
-      "trash": [
-        "~/.gitkraken",
-        "~/Library/Application Support/com.axosoft.gitkraken.ShipIt",
-        "~/Library/Application Support/GitKraken",
-        "~/Library/Caches/com.axosoft.gitkraken.ShipIt",
-        "~/Library/Caches/com.axosoft.gitkraken",
-        "~/Library/Caches/GitKraken",
-        "~/Library/Cookies/com.axosoft.gitkraken.binarycookies",
-        "~/Library/HTTPStorages/com.axosoft.gitkraken",
-        "~/Library/Preferences/com.axosoft.gitkraken.helper.plist",
-        "~/Library/Preferences/com.axosoft.gitkraken.plist",
-        "~/Library/Saved Application State/com.axosoft.gitkraken.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "GitKraken.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.gitkraken",
+            "~/Library/Application Support/com.axosoft.gitkraken.ShipIt",
+            "~/Library/Application Support/GitKraken",
+            "~/Library/Caches/com.axosoft.gitkraken.ShipIt",
+            "~/Library/Caches/com.axosoft.gitkraken",
+            "~/Library/Caches/GitKraken",
+            "~/Library/Cookies/com.axosoft.gitkraken.binarycookies",
+            "~/Library/HTTPStorages/com.axosoft.gitkraken",
+            "~/Library/Preferences/com.axosoft.gitkraken.helper.plist",
+            "~/Library/Preferences/com.axosoft.gitkraken.plist",
+            "~/Library/Saved Application State/com.axosoft.gitkraken.savedState"
+          ]
+        }
+      ]
     }
   ],
-  "caveats": "Big Sur and later Performance Fix\nSee https://www.gitkraken.com/blog/workaround-gitkraken-big-sur-issues\n",
+  "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://release.axocdn.com/darwin-arm64/GitKraken-v9.0.1.zip",
+      "sha256": "67e177e1f57f185fd477ed402a1c8a98c9fc213bb1956ac9c17b8110e9d11ee9"
+    },
+    "arm64_monterey": {
+      "url": "https://release.axocdn.com/darwin-arm64/GitKraken-v9.0.1.zip",
+      "sha256": "67e177e1f57f185fd477ed402a1c8a98c9fc213bb1956ac9c17b8110e9d11ee9"
+    },
+    "arm64_big_sur": {
+      "url": "https://release.axocdn.com/darwin-arm64/GitKraken-v9.0.1.zip",
+      "sha256": "67e177e1f57f185fd477ed402a1c8a98c9fc213bb1956ac9c17b8110e9d11ee9"
+    }
+  }
 }

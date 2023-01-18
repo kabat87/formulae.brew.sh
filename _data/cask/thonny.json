@@ -7,30 +7,38 @@
   ],
   "desc": "Python IDE for beginners",
   "homepage": "https://thonny.org/",
-  "url": "https://github.com/thonny/thonny/releases/download/v3.3.13/thonny-3.3.13.pkg",
+  "url": "https://github.com/thonny/thonny/releases/download/v4.0.2/thonny-4.0.2.pkg",
   "appcast": null,
-  "version": "3.3.13",
+  "version": "4.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e734766222e986a2cefc4a80b24fea132ac74fec6887dc55abc047dcc8a874c4",
+  "sha256": "e9aa2e9433d2adbd5d4c11fde55c1c38f37d14fe085cd6aba464b6883f804d59",
   "artifacts": [
     {
-      "quit": "org.thonny.Thonny",
-      "pkgutil": "org.thonny.Thonny.component",
-      "delete": "/Applications/Thonny.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "org.thonny.Thonny",
+          "pkgutil": "org.thonny.Thonny.component",
+          "delete": "/Applications/Thonny.app"
+        }
+      ]
     },
-    "thonny-3.3.13.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Saved Application State/org.thonny.Thonny.savedState",
-        "~/Library/Thonny"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "thonny-4.0.2.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Saved Application State/org.thonny.Thonny.savedState",
+            "~/Library/Thonny"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +50,7 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

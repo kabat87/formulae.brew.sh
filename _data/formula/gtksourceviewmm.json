@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/gtksourceviewmm/2.10/gtksourceviewmm-2.10.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0000df1b582d7be2e412020c5d748f21c0e6e5074c6b2ca8529985e70479375b"
     }
   },
   "revision": 12,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gtksourceviewmm/blobs/sha256:420a7b698a8d7c40b3c30f4720c0c065e3ee71cda8542a517ae8aea3a3cbccbd",
+          "sha256": "420a7b698a8d7c40b3c30f4720c0c065e3ee71cda8542a517ae8aea3a3cbccbd"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtksourceviewmm/blobs/sha256:2735fdddc92f3280188428fc9fa83431a700c376bcae4424bca10005dd440c76",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtksourceviewmm/blobs/sha256:2b73a79e4c0df491e43dcc3def52858679c0d0ff699c3bb8a003014a7940408b",
           "sha256": "2b73a79e4c0df491e43dcc3def52858679c0d0ff699c3bb8a003014a7940408b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gtksourceviewmm/blobs/sha256:32ba822ec6c84be6a8848adbddfa727fae43613c710a07b9e64a2e5c579ea7f6",
+          "sha256": "32ba822ec6c84be6a8848adbddfa727fae43613c710a07b9e64a2e5c579ea7f6"
         },
         "monterey": {
           "cellar": ":any",
@@ -60,13 +71,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gtksourceviewmm/blobs/sha256:5c11aa110b1c22269ddc3a2ad31752c02b6522c8310db0367dd7f112b62e0b1f",
           "sha256": "5c11aa110b1c22269ddc3a2ad31752c02b6522c8310db0367dd7f112b62e0b1f"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gtksourceviewmm/blobs/sha256:cc5638fa500ed70f1de07180a729cee705fd3683305dabd4176f899bc7dfc17b",
+          "sha256": "cc5638fa500ed70f1de07180a729cee705fd3683305dabd4176f899bc7dfc17b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +91,9 @@
   "dependencies": [
     "gtkmm",
     "gtksourceview"
+  ],
+  "test_dependencies": [
+    "pkg-config"
   ],
   "recommended_dependencies": [
 
@@ -104,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

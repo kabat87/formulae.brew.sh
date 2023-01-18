@@ -9,41 +9,47 @@
   ],
   "desc": "Tencent video streaming and sharing platform",
   "homepage": "https://v.qq.com/download.html#mac",
-  "url": "https://dldir1.qq.com/qqtv/mac/QQLive_distribute_universal_2.30.0.53083.dmg",
+  "url": "https://dldir1.qq.com/qqtv/mac/TencentVideo2.62.0.53541.dmg",
   "appcast": null,
-  "version": "2.30.0.53083",
+  "version": "2.62.0.53541",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "84a117313a406284ec9221dcc27ca0f8a74af3f29721eb025bd29be7324557f4",
+  "sha256": "5058ae188e82865da77453de6df7195fbf82656452f23e0b6a4d3e23f120e924",
   "artifacts": [
-    [
-      "QQLive.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.tencent.tenvideo",
-        "~/Library/Containers/com.tencent.tenvideo",
-        "~/Library/Cookies/com.tencent.tenvideo.binarycookies",
-        "~/Library/Logs/QQLive",
-        "~/Library/Preferences/com.tencent.tenvideo.plist",
-        "~/Library/Saved Application State/com.tencent.tenvideo.savedState",
-        "~/Library/WebKit/com.tencent.tenvideo"
-      ],
-      "signal": {
-      }
+      "app": [
+        "QQLive.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.tencent.tenvideo",
+            "~/Library/Containers/com.tencent.tenvideo",
+            "~/Library/Cookies/com.tencent.tenvideo.binarycookies",
+            "~/Library/Logs/QQLive",
+            "~/Library/Preferences/com.tencent.tenvideo.plist",
+            "~/Library/Saved Application State/com.tencent.tenvideo.savedState",
+            "~/Library/WebKit/com.tencent.tenvideo"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

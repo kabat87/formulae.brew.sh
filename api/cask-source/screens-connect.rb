@@ -1,6 +1,6 @@
 cask "screens-connect" do
-  version "4.11.1,21658"
-  sha256 "a61c1f5be03406b02309d78adee51963f268564548a379bbfc12d560a32b7362"
+  version "4.12.2,21680"
+  sha256 "5998bfe68f9f95c77dc9e0e6c39db2285a575e655580e0c4447f5e58de912be6"
 
   url "https://updates.edovia.com/com.edovia.screens.connect.mac/ScreensConnect_#{version.csv.first}b#{version.csv.second}.zip"
   name "Screens Connect"
@@ -12,7 +12,7 @@ cask "screens-connect" do
     strategy :sparkle
   end
 
-  depends_on macos: ">= :el_capitan"
+  depends_on macos: ">= :high_sierra"
 
   app "Screens Connect.app"
 

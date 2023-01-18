@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/gvansickle/ucg/releases/download/0.3.3/universalcodegrep-0.3.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "116d832bbc743c7dd469e5e7f1b20addb3b7a08df4b4441d59da3acf221caf2d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ucg/blobs/sha256:afbb657bc288953de91236ba95f3c609ba4e411e8602f0efda43770422436c43",
+          "sha256": "afbb657bc288953de91236ba95f3c609ba4e411e8602f0efda43770422436c43"
+        },
         "monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ucg/blobs/sha256:3ffc7fcd491433d72238d232acc46f48e08e1c85b40a147f67dabb7de8ec830d",
@@ -76,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +95,9 @@
   "dependencies": [
     "pcre2"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -100,7 +108,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -117,5 +133,15 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "autoconf",
+        "automake",
+        "libtool",
+        "pkg-config"
+      ]
+    }
+  }
 }

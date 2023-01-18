@@ -7,31 +7,35 @@
   ],
   "desc": "Virtual office for remote teams",
   "homepage": "https://tandem.chat/",
-  "url": "https://download.todesktop.com/200527auaqaacsy/Tandem%202.1.1207-x64.dmg",
+  "url": "https://download.todesktop.com/200527auaqaacsy/Tandem%202.2.1130-x64.dmg",
   "appcast": null,
-  "version": "2.1.1207",
+  "version": "2.2.1130",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "52610c4f0fd97b3ea27030a16097c19eefe463205c7202cf88a9fbfcbc6a812a",
+  "sha256": "7b66d8e1bdcaef38e06c124577c1391ace575bde5cf7f0cfc02d7ced5bca5643",
   "artifacts": [
-    [
-      "Tandem.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Caches/tandem-updater",
-        "~/Library/Application Support/Tandem",
-        "~/Library/Caches/tandem.app",
-        "~/Library/Caches/tandem.app.ShipIt",
-        "~/Library/Logs/Tandem",
-        "~/Library/Preferences/ByHost/tandem.app.ShipIt.*.plist",
-        "~/Library/Preferences/tandem.app.plist",
-        "~/Library/Saved Application State/tandem.app.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Tandem.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Caches/tandem-updater",
+            "~/Library/Application Support/Tandem",
+            "~/Library/Caches/tandem.app",
+            "~/Library/Caches/tandem.app.ShipIt",
+            "~/Library/Logs/Tandem",
+            "~/Library/Preferences/ByHost/tandem.app.ShipIt.*.plist",
+            "~/Library/Preferences/tandem.app.plist",
+            "~/Library/Saved Application State/tandem.app.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +43,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download.todesktop.com/200527auaqaacsy/Tandem%202.2.1130-arm64.dmg",
+      "sha256": "79f180e2a33a0d609b2a61f018622dbffb22054e66c75587a200908e206a648b"
+    },
+    "arm64_monterey": {
+      "url": "https://download.todesktop.com/200527auaqaacsy/Tandem%202.2.1130-arm64.dmg",
+      "sha256": "79f180e2a33a0d609b2a61f018622dbffb22054e66c75587a200908e206a648b"
+    },
+    "arm64_big_sur": {
+      "url": "https://download.todesktop.com/200527auaqaacsy/Tandem%202.2.1130-arm64.dmg",
+      "sha256": "79f180e2a33a0d609b2a61f018622dbffb22054e66c75587a200908e206a648b"
+    }
+  }
 }

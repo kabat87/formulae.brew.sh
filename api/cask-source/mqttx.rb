@@ -1,19 +1,20 @@
 cask "mqttx" do
-  arch = Hardware::CPU.intel? ? "" : "universal-"
+  arch arm: "arm64-"
 
-  version "1.7.1"
-
-  if Hardware::CPU.intel?
-    sha256 "32231c6277bca3cf31335ed9f9bf6640f5c3d8cb4046f9919ef2f7c139fdc091"
-  else
-    sha256 "edc15c34e8ae013c8982a97ab20b3bbcce747c1f76a22a920d1312a3110ae25c"
-  end
+  version "1.9.0"
+  sha256 arm:   "9f410effc56a98bc54d09630b375b6161451b279581eea9a9fa8df6bf5e20f3b",
+         intel: "ee8bb1e7be241b6bc3b9d418d2523c16e5bb929f0f253927a5404ee8966960a7"
 
   url "https://github.com/emqx/MQTTX/releases/download/v#{version}/MQTTX-#{version}-#{arch}mac.zip",
       verified: "github.com/emqx/MQTTX/"
   name "MQTTX"
   desc "Cross-platform MQTT 5.0 Desktop Client"
   homepage "https://mqttx.app/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   app "MQTTX.app"
 

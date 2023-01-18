@@ -7,36 +7,47 @@
   ],
   "desc": "Evaluator for the Wolfram Language",
   "homepage": "https://www.wolfram.com/engine/",
-  "url": "https://files.wolframcdn.com/packages/Homebrew/13.0.0.0/WolframEngine_13.0.0_MAC.dmg",
+  "url": "https://files.wolframcdn.com/packages/Homebrew/13.2.0.0/WolframEngine_13.2.0_MAC.dmg",
   "appcast": null,
-  "version": "13.0.0.0",
+  "version": "13.2.0.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1309122aa25a01f394b552eb9968cfa92ea1f7581c196e9147d093cfca0811f3",
+  "sha256": "90233c70a56a104775666e2559f0126a074a6adf298aec949b316f51cb6372bc",
   "artifacts": [
-    [
-      "Wolfram Engine.app"
-    ],
     {
-      "trash": [
-        "~/Library/WolframEngine",
-        "~/Library/Caches/Wolfram"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Wolfram Engine.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Wolfram Engine.app/Contents/Resources/Wolfram Player.app/Contents/MacOS/wolframscript"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/Wolfram",
+            "~/Library/WolframEngine"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "The vendor offers a free license for wolfram-engine at:\n  https://www.wolfram.com/engine/free-license/\n",
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

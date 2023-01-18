@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/cernekee/ocproxy/archive/v1.60.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a7367647f07df33869e2f79da66b6f104f6495ae806b12a8b8d9ca82fb7899ac"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ocproxy/blobs/sha256:a30cfaf7533957b5a7fab43d8123047d97ad5e989189556dfff3b539c6d771aa",
+          "sha256": "a30cfaf7533957b5a7fab43d8123047d97ad5e989189556dfff3b539c6d771aa"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ocproxy/blobs/sha256:e7ef216d7ca89c5c390833fd8272b5e114d45b9740d4b0a21b1c751363405b87",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ocproxy/blobs/sha256:d598c7b18b39b70d0bff1cc24b044a7351f8161ada44ef860649bc658323734a",
           "sha256": "d598c7b18b39b70d0bff1cc24b044a7351f8161ada44ef860649bc658323734a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ocproxy/blobs/sha256:ddd7dee9b0d0f05232a844a56e2a9264504ba6abc0a16742640e92c408561ad9",
+          "sha256": "ddd7dee9b0d0f05232a844a56e2a9264504ba6abc0a16742640e92c408561ad9"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +101,9 @@
   ],
   "dependencies": [
     "libevent"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -119,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

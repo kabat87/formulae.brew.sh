@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/gopasspw/gopass-jsonapi",
   "versions": {
-    "stable": "1.11.1",
+    "stable": "1.15.3",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/gopasspw/gopass-jsonapi/archive/v1.11.1.tar.gz",
+      "url": "https://github.com/gopasspw/gopass-jsonapi/releases/download/v1.15.3/gopass-jsonapi-1.15.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "15f1d7a80f29f1741d7d37402432c12a0d331b2587c91d17485d284af1b20dcc"
     }
   },
   "revision": 0,
@@ -31,42 +32,41 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:976d44d96289e8b78a6bb73e614dd91dcaa093ac3c74e5e089dfac820f57a08f",
+          "sha256": "976d44d96289e8b78a6bb73e614dd91dcaa093ac3c74e5e089dfac820f57a08f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:5b029bea2be7e8ac0019e06a5483a3593e6b741c0b85b69e99f3625bbaa1f10e",
-          "sha256": "5b029bea2be7e8ac0019e06a5483a3593e6b741c0b85b69e99f3625bbaa1f10e"
+          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:525855818e0f1d2601029620389f67c87419c29891b1b3e186a0e586a25dd63a",
+          "sha256": "525855818e0f1d2601029620389f67c87419c29891b1b3e186a0e586a25dd63a"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:866c68f3fd44e4245febcee728c110d2fd2651514890eb7b4a31e6c5e3d429dc",
-          "sha256": "866c68f3fd44e4245febcee728c110d2fd2651514890eb7b4a31e6c5e3d429dc"
+          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:7dbac8abfa406087395cb505f38263fa50dac882e50d40e8fd4e34485cf81501",
+          "sha256": "7dbac8abfa406087395cb505f38263fa50dac882e50d40e8fd4e34485cf81501"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:37993983e7269d68480598a63336b81b8c88ec5a05ec9dfa8a40d1a021898e39",
+          "sha256": "37993983e7269d68480598a63336b81b8c88ec5a05ec9dfa8a40d1a021898e39"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:5ac1be40eec6bd6436c1f0ffc38fca10fdc1d4e57619d79dfbd6c395e8f2e44e",
-          "sha256": "5ac1be40eec6bd6436c1f0ffc38fca10fdc1d4e57619d79dfbd6c395e8f2e44e"
+          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:3ccc08e84bbe468ae7ab91f0fed235dad2095170daa59615920dc0fcb8f8eb8d",
+          "sha256": "3ccc08e84bbe468ae7ab91f0fed235dad2095170daa59615920dc0fcb8f8eb8d"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:57b58bc0327828830342b5268360f7f8b9c4980e3a07f1adac51d380f8241677",
-          "sha256": "57b58bc0327828830342b5268360f7f8b9c4980e3a07f1adac51d380f8241677"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:d8d10b1fb7fa79a18f6fa2949ce1bccc2582bd9628e46e43da34e56a5eedc4a1",
-          "sha256": "d8d10b1fb7fa79a18f6fa2949ce1bccc2582bd9628e46e43da34e56a5eedc4a1"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:9d9a8953da2f0777cef157a69c2784f46f3c5873fbb14f61dedffabce1074153",
-          "sha256": "9d9a8953da2f0777cef157a69c2784f46f3c5873fbb14f61dedffabce1074153"
+          "url": "https://ghcr.io/v2/homebrew/core/gopass-jsonapi/blobs/sha256:33cf89a62c696c85e1b9c090a848ff1bbd1a38d2c80a9798b2a42e53fa380e2a",
+          "sha256": "33cf89a62c696c85e1b9c090a848ff1bbd1a38d2c80a9798b2a42e53fa380e2a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +75,9 @@
   ],
   "dependencies": [
     "gopass"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +106,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

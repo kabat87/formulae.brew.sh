@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Phantas0s/devdash/archive/v0.5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "633a0a599a230a93b7c4eeacdf79a91a2bb672058ef3d5aacce5121167df8d28"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/devdash/blobs/sha256:521857b00245b916fc5e06de4232c73005a680e223d2474e75f3ce764ae39497",
+          "sha256": "521857b00245b916fc5e06de4232c73005a680e223d2474e75f3ce764ae39497"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/devdash/blobs/sha256:f4e13f2e58d6e125a578aca41e192b4e655d8daf706e8c1fc154b77c4d884984",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/devdash/blobs/sha256:688199921a304a5ba1c0ac78096d29c86c63076eafd6288085664a32b7e70056",
           "sha256": "688199921a304a5ba1c0ac78096d29c86c63076eafd6288085664a32b7e70056"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/devdash/blobs/sha256:7d3e2646c26975be3f9d006259000f8085cce1eb95ab1286083dbec7d0ab8b85",
+          "sha256": "7d3e2646c26975be3f9d006259000f8085cce1eb95ab1286083dbec7d0ab8b85"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

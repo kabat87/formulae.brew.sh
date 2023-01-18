@@ -7,6 +7,8 @@
 
   ],
   "versioned_formulae": [
+    "llvm@14",
+    "llvm@13",
     "llvm@12",
     "llvm@11",
     "llvm@8",
@@ -24,7 +26,8 @@
     "stable": {
       "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-9.0.1/llvm-9.0.1.src.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "00a1ee1f389f81e9979f3a640a01c431b3021de0d42278f6508391a2f0b81c9a"
     }
   },
   "revision": 4,
@@ -67,7 +70,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +78,9 @@
   ],
   "dependencies": [
     "swig"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,10 +116,49 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2023-01-03",
+  "deprecation_reason": "versioned_formula",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "mojave": {
+      "dependencies": [
+        "swig",
+        "libffi"
+      ]
+    },
+    "high_sierra": {
+      "dependencies": [
+        "swig",
+        "libffi"
+      ]
+    },
+    "sierra": {
+      "dependencies": [
+        "swig",
+        "libffi"
+      ]
+    },
+    "el_capitan": {
+      "dependencies": [
+        "swig",
+        "libffi"
+      ]
+    },
+    "x86_64_linux": {
+      "dependencies": [
+        "swig",
+        "libedit",
+        "libffi",
+        "libxml2",
+        "ncurses",
+        "zlib",
+        "binutils",
+        "elfutils",
+        "python@3.8"
+      ]
+    }
+  }
 }

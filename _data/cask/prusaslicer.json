@@ -7,26 +7,30 @@
   ],
   "desc": "G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)",
   "homepage": "https://www.prusa3d.com/slic3r-prusa-edition/",
-  "url": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.4.0/PrusaSlicer-2.4.0+universal-202112211607.dmg",
+  "url": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.5.0/PrusaSlicer-2.5.0+MacOS-universal-202209060719.dmg",
   "appcast": null,
-  "version": "2.4.0,202112211607",
+  "version": "2.5.0,202209060719",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b044b198aa97a8d53db9b012baf1db5fc2bdd8a2c6bf881cbbec5ceb725f3570",
+  "sha256": "b790aabf043e67aadca2ff2384ad377be71a40b26e2abe87f8d96cc4c228a9b0",
   "artifacts": [
-    [
-      "PrusaSlicer.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/PrusaSlicer",
-        "~/Library/Preferences/com.prusa3d.slic3r",
-        "~/Library/Saved Application State/com.prusa3d.slic3r.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PrusaSlicer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/PrusaSlicer",
+            "~/Library/Preferences/com.prusa3d.slic3r",
+            "~/Library/Saved Application State/com.prusa3d.slic3r.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

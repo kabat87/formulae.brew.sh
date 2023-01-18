@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause and GPL-2.0-or-later",
   "homepage": "https://sites.google.com/site/fullycapable/",
   "versions": {
-    "stable": "2.62",
+    "stable": "2.66",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://mirrors.edge.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.62.tar.xz",
+      "url": "https://mirrors.edge.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.66.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "15c40ededb3003d70a283fe587a36b7d19c8b3b554e33f86129c059a4bb466b2"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libcap/blobs/sha256:c04f7e5faad36c54810d3a4c1cdf29d2eb18df8d677d5db9d9a856adedec4343",
-          "sha256": "c04f7e5faad36c54810d3a4c1cdf29d2eb18df8d677d5db9d9a856adedec4343"
+          "url": "https://ghcr.io/v2/homebrew/core/libcap/blobs/sha256:bdd94d141c3ba1d750dd36d56a18cce0b36203fedd07a083fc5073c30915c069",
+          "sha256": "bdd94d141c3ba1d750dd36d56a18cce0b36203fedd07a083fc5073c30915c069"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -86,5 +89,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

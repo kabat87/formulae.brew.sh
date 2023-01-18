@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/abutaha/aws-es-proxy/archive/v1.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bf20710608b7615da937fb3507c67972cd0d9b6cb45df5ddbc66bc5606becebf"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aws-es-proxy/blobs/sha256:6027f93eaf468cef549261cb4ab8d9605fbc7eb039f00d387a066c958e549692",
+          "sha256": "6027f93eaf468cef549261cb4ab8d9605fbc7eb039f00d387a066c958e549692"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aws-es-proxy/blobs/sha256:b053918e93c51c2b3a562dc30cfbcf30f07f2c10b841b5c61ab146595920368d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aws-es-proxy/blobs/sha256:9ae9e19bb22445be989da3b8407bc42fba17a3f512d692bd8d727751b1703757",
           "sha256": "9ae9e19bb22445be989da3b8407bc42fba17a3f512d692bd8d727751b1703757"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aws-es-proxy/blobs/sha256:ba6e4eb41e1319edc2fb59dce4c0e9ac41a3ee461fac5240fc1bd3e98b66ed21",
+          "sha256": "ba6e4eb41e1319edc2fb59dce4c0e9ac41a3ee461fac5240fc1bd3e98b66ed21"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

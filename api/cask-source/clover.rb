@@ -1,6 +1,6 @@
 cask "clover" do
-  version "1.0.0"
-  sha256 "e125732a914d9be5eed5625bc407b8beb4fe52a84fc4ed4afe811f09d4641f93"
+  version "1.1.5"
+  sha256 "69052d1c6f4e5ee21a4254cb077ceb6887a5e76e7ec633051d76baf3468c7d54"
 
   url "https://clover-desktop-app.s3.amazonaws.com/Clover-#{version}.dmg",
       verified: "clover-desktop-app.s3.amazonaws.com/"
@@ -13,7 +13,7 @@ cask "clover" do
     strategy :electron_builder
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :el_capitan"
 
   app "Clover.app"
 

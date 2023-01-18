@@ -1,6 +1,6 @@
 cask "lbry" do
-  version "0.52.0"
-  sha256 "e5abfc080b41ba3a3d54574a9684e576fbf7dd041f827a27fd0b2fa206093810"
+  version "0.53.8"
+  sha256 "68e1aa1a5189a822ec160dc0a3134146148da3ffe62ff69862ce48a92cb1e079"
 
   url "https://github.com/lbryio/lbry-desktop/releases/download/v#{version}/LBRY_#{version}.dmg",
       verified: "github.com/lbryio/lbry-desktop/"
@@ -11,6 +11,7 @@ cask "lbry" do
   livecheck do
     url :url
     strategy :github_latest
+    regex(%r{href=.*?/lbry-desktop/releases/tag/v?(\d+(?:\.\d+)+)["' >]}i)
   end
 
   depends_on macos: ">= :mojave"

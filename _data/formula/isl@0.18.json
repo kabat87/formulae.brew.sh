@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://libisl.sourceforge.io/isl-0.18.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0f35051cc030b87c673ac1f187de40e386a1482a0cfdf2c552dd6031b307ddc4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/isl/0.18/blobs/sha256:26f1bae5fb46390983b0c4d9b1ce744ecad4994dab904df91dfeea4fc00cff03",
+          "sha256": "26f1bae5fb46390983b0c4d9b1ce744ecad4994dab904df91dfeea4fc00cff03"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/isl/0.18/blobs/sha256:17cdb6a0c6341f4ac4b5d373b94a2f24da71e618a5e8bfd1c0ac9d9156019072",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/isl/0.18/blobs/sha256:44fe4a7f5ed00ff3b3ba06a37d3b6d4633e7532c841d4e02fa1cb2678afc018c",
           "sha256": "44fe4a7f5ed00ff3b3ba06a37d3b6d4633e7532c841d4e02fa1cb2678afc018c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/isl/0.18/blobs/sha256:41ffec45800ea5922efc5829aed3c29ad827ab6ecefc2f49939de6be810161e6",
+          "sha256": "41ffec45800ea5922efc5829aed3c29ad827ab6ecefc2f49939de6be810161e6"
         },
         "monterey": {
           "cellar": ":any",
@@ -79,7 +90,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -88,6 +98,9 @@
   ],
   "dependencies": [
     "gmp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -116,5 +129,7 @@
   "deprecation_reason": "versioned_formula",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

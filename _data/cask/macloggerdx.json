@@ -7,27 +7,31 @@
   ],
   "desc": "Ham radio logging and rig control software",
   "homepage": "https://www.dogparksoftware.com/MacLoggerDX.html",
-  "url": "https://www.dogparksoftware.com/files/MacLoggerDX637.dmg",
+  "url": "https://www.dogparksoftware.com/files/MacLoggerDX643.dmg",
   "appcast": null,
-  "version": "6.37",
+  "version": "6.43",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "11851a42638050db2430429c4a489ca899b24cabae2fdf6cb8a1830e2ea08971",
+  "sha256": "d4a166221e2683aaca322d4a1f604d62108bf8f261b20dbf8d40c62534b733fe",
   "artifacts": [
-    [
-      "MacLoggerDX.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.apple.helpd/Generated/MacLoggerDX Help*",
-        "~/Library/Caches/com.dogparksoftware.MacLoggerDX",
-        "~/Library/HTTPStorages/com.dogparksoftware.MacLoggerDX",
-        "~/Library/Preferences/com.dogparksoftware.MacLoggerDX*.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "MacLoggerDX.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.apple.helpd/Generated/MacLoggerDX Help*",
+            "~/Library/Caches/com.dogparksoftware.MacLoggerDX",
+            "~/Library/HTTPStorages/com.dogparksoftware.MacLoggerDX",
+            "~/Library/Preferences/com.dogparksoftware.MacLoggerDX*.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +48,7 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

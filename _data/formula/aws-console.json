@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/aws-cloudformation/rain/archive/v1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "064bc2b563c9b759d16147f33fe5c64bf0af3640cb4ae543e49615ae17b22e01"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aws-console/blobs/sha256:508d88fc97215096bc0998bcc709cef5aa33499bfdc17ac47d123caccbe37bfb",
+          "sha256": "508d88fc97215096bc0998bcc709cef5aa33499bfdc17ac47d123caccbe37bfb"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aws-console/blobs/sha256:43a5d8ececf9b15da91d81d6218a9c137c1a4372d726888025437cf757d2cb18",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aws-console/blobs/sha256:cad10ed651e199a6ca16f3aed1a4ba7b78e29f7924af2e3b7fef9b88a3429ee8",
           "sha256": "cad10ed651e199a6ca16f3aed1a4ba7b78e29f7924af2e3b7fef9b88a3429ee8"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aws-console/blobs/sha256:7b0aa226d8a52ac09199c52763ff8b9ef9ad0439e00a42009a47f15ebec7f33f",
+          "sha256": "7b0aa226d8a52ac09199c52763ff8b9ef9ad0439e00a42009a47f15ebec7f33f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

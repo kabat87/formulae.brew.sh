@@ -7,31 +7,53 @@
   ],
   "desc": "Play music online with friends",
   "homepage": "https://jamulus.io/",
-  "url": "https://downloads.sourceforge.net/llcon/jamulus_3.8.1_mac.dmg",
+  "url": "https://downloads.sourceforge.net/llcon/jamulus_3.9.1_mac.dmg",
   "appcast": null,
-  "version": "3.8.1",
+  "version": "3.9.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "79fffe5c72c38260e6e5edff07ecccb355995c502d8a4a8c710eeccff8284624",
+  "sha256": "724f15fd564737fe06c717aa678a8c3817a006f7105bb13b71d5b650ed8c7cc5",
   "artifacts": [
-    [
-      "Jamulus.app"
-    ],
-    [
-      "JamulusServer.app"
-    ]
+    {
+      "app": [
+        "Jamulus.app"
+      ]
+    },
+    {
+      "app": [
+        "JamulusServer.app"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.11"
+        "10.15"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "mojave": {
+      "url": "https://downloads.sourceforge.net/llcon/jamulus_3.9.1_mac_legacy.dmg",
+      "sha256": "6c645ba373205f774a09df59565e39808868b7ef3fb296a56f616ef90e74aefe"
+    },
+    "high_sierra": {
+      "url": "https://downloads.sourceforge.net/llcon/jamulus_3.9.1_mac_legacy.dmg",
+      "sha256": "6c645ba373205f774a09df59565e39808868b7ef3fb296a56f616ef90e74aefe"
+    },
+    "sierra": {
+      "url": "https://downloads.sourceforge.net/llcon/jamulus_3.9.1_mac_legacy.dmg",
+      "sha256": "6c645ba373205f774a09df59565e39808868b7ef3fb296a56f616ef90e74aefe"
+    },
+    "el_capitan": {
+      "url": "https://downloads.sourceforge.net/llcon/jamulus_3.9.1_mac_legacy.dmg",
+      "sha256": "6c645ba373205f774a09df59565e39808868b7ef3fb296a56f616ef90e74aefe"
+    }
+  }
 }

@@ -9,24 +9,28 @@
   "homepage": "https://www.twobird.com/",
   "url": "https://www.twobird.com/download/mac-x64",
   "appcast": null,
-  "version": "1.0.45",
+  "version": "1.0.51",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Twobird.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Twobird",
-        "~/Library/Preferences/com.gingerlabs.bagel.plist",
-        "~/Library/Saved Application State/com.gingerlabs.bagel.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Twobird.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Twobird",
+            "~/Library/Preferences/com.gingerlabs.bagel.plist",
+            "~/Library/Saved Application State/com.gingerlabs.bagel.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,16 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://www.twobird.com/download/mac-arm64"
+    },
+    "arm64_monterey": {
+      "url": "https://www.twobird.com/download/mac-arm64"
+    },
+    "arm64_big_sur": {
+      "url": "https://www.twobird.com/download/mac-arm64"
+    }
+  }
 }

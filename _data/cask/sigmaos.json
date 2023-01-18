@@ -7,25 +7,29 @@
   ],
   "desc": "Web browser",
   "homepage": "https://sigmaos.com/",
-  "url": "https://releases.sigmaos.com/macos/SigmaOS-0.15.1.1-b.dmg",
+  "url": "https://releases.sigmaos.com/SigmaOS-1.2.0.1.dmg",
   "appcast": null,
-  "version": "0.15.1.1-b",
+  "version": "1.2.0.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3793b4f322ccae26ae4cbe2d740bdfcfaeb241defba09296ce326daa97baf43b",
+  "sha256": "f276efd79cb9470988ae98a63aa89cf65c7ece5d2e5fc3e1867eca7633f96b4a",
   "artifacts": [
-    [
-      "SigmaOS.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.sigmaos.sigmaos.macos",
-        "~/Library/Containers/com.sigmaos.sigmaos.macos"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SigmaOS.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.sigmaos.sigmaos.macos",
+            "~/Library/Containers/com.sigmaos.sigmaos.macos"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

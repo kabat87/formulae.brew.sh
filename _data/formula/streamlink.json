@@ -13,15 +13,16 @@
   "license": "BSD-2-Clause",
   "homepage": "https://streamlink.github.io/",
   "versions": {
-    "stable": "3.0.3",
+    "stable": "5.1.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/aa/43/650e13e9db710bee282adf58cca01878ca66aa1213d59ced5b7bf76163f1/streamlink-3.0.3.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/a4/1d/c3d998c9e9fb85395eef7fc1f340f6759c7396e8f5eb3f3daba5ceb93642/streamlink-5.1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "501f604d3dbfad05d5d50ed4432c041e51810890cc0e65eea43f27608238767a"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:c70bf73e06817a3924dea8c5ccf6e985b209679fa5833fb3828cbd604922cb31",
+          "sha256": "c70bf73e06817a3924dea8c5ccf6e985b209679fa5833fb3828cbd604922cb31"
+        },
         "arm64_monterey": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:6547aa4d4e68e0df594f7ea3f0708280e2cfda25955d0f5da90e62fb17469897",
-          "sha256": "6547aa4d4e68e0df594f7ea3f0708280e2cfda25955d0f5da90e62fb17469897"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:ea08fa134b6b13f661f12684307944660045d626a0f74e5b77bf7963eaf36562",
+          "sha256": "ea08fa134b6b13f661f12684307944660045d626a0f74e5b77bf7963eaf36562"
         },
         "arm64_big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:994ff304e5fa169c3c027479010910885b736400ee55c7d3e13d683c3b2af449",
-          "sha256": "994ff304e5fa169c3c027479010910885b736400ee55c7d3e13d683c3b2af449"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:ad1ebb0929e820ec70c6d6ccc02d5cc563e0eed799457a719747fec67666a1aa",
+          "sha256": "ad1ebb0929e820ec70c6d6ccc02d5cc563e0eed799457a719747fec67666a1aa"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:47e84563fc44d6f87978dcedf19dcd857371c77bde2cc5e60f1afdc3b412849d",
+          "sha256": "47e84563fc44d6f87978dcedf19dcd857371c77bde2cc5e60f1afdc3b412849d"
         },
         "monterey": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:4f0fbb742461e66892b3e0b290540fa72a43ca6b00741394a305b5fd32ccefc0",
-          "sha256": "4f0fbb742461e66892b3e0b290540fa72a43ca6b00741394a305b5fd32ccefc0"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:d00571b71bd35877f508f986d7b24baac043086de162b2160f5323c2676b2c34",
+          "sha256": "d00571b71bd35877f508f986d7b24baac043086de162b2160f5323c2676b2c34"
         },
         "big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:d7546e9707dc7857de742496663d7b657a2207b294e373aef678ad91ff6d1da8",
-          "sha256": "d7546e9707dc7857de742496663d7b657a2207b294e373aef678ad91ff6d1da8"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:5996694883ba88637c03c91d0d4fc83d4706b331d3edcef3494b53fe8d721b71",
-          "sha256": "5996694883ba88637c03c91d0d4fc83d4706b331d3edcef3494b53fe8d721b71"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:f346636ef1a1dca74c6cb33c96281d350f5803a8188d9f759fafcd062c30d201",
+          "sha256": "f346636ef1a1dca74c6cb33c96281d350f5803a8188d9f759fafcd062c30d201"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:bac7c0cbdd7ac22971bb8364abfb5542acfba49b5c2cd90da8deef0ca8da5395",
-          "sha256": "bac7c0cbdd7ac22971bb8364abfb5542acfba49b5c2cd90da8deef0ca8da5395"
+          "url": "https://ghcr.io/v2/homebrew/core/streamlink/blobs/sha256:073bb7a89ecd4baa6d685797b356b5e7a8077b292f90f4095f0d2809d65dfb07",
+          "sha256": "073bb7a89ecd4baa6d685797b356b5e7a8077b292f90f4095f0d2809d65dfb07"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,7 +79,12 @@
 
   ],
   "dependencies": [
-    "python@3.10"
+    "libxml2",
+    "python@3.11",
+    "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -84,7 +94,6 @@
   ],
   "uses_from_macos": [
     "libffi",
-    "libxml2",
     "libxslt"
   ],
   "requirements": [
@@ -105,5 +114,19 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config"
+      ],
+      "dependencies": [
+        "libxml2",
+        "python@3.11",
+        "six",
+        "libffi",
+        "libxslt"
+      ]
+    }
+  }
 }

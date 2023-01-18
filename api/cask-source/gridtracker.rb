@@ -1,15 +1,15 @@
 cask "gridtracker" do
-  version "1.21.1217"
-  sha256 "fd32335a82f663be0df1d03f5990c5ba2fa2df7790624e6ad30d862311efc350"
+  version "1.23.0110"
+  sha256 "4cbe5b383e42107d2fc9fd1dbd00f686a9e4d92f83ea3a207bf2c429e7fa8485"
 
-  url "https://download.gridtracker.org/v#{version}/GridTracker-#{version}-mac-x64.zip"
+  url "https://downloads.gridtracker.org/v#{version}/GridTracker-#{version}-mac-x64.zip"
   name "GridTracker"
   desc "Warehouse of amateur radio information presented in an easy to use interface"
-  homepage "https://gridtracker.org/grid-tracker/"
+  homepage "https://gridtracker.org/"
 
   livecheck do
-    url "https://download.gridtracker.org/"
-    regex(%r{href=["']?v?(\d+(?:\.\d+)+)/}i)
+    url "https://gridtracker.org/index.php/documentation/change-log"
+    regex(/v(\d+(?:\.\d+)+)/i)
   end
 
   depends_on macos: ">= :mojave"

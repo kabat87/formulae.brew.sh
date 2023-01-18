@@ -7,33 +7,40 @@
   ],
   "desc": "Move and resize windows using keyboard shortcuts or snap areas",
   "homepage": "https://rectangleapp.com/",
-  "url": "https://github.com/rxhanson/Rectangle/releases/download/v0.50/Rectangle0.50.dmg",
+  "url": "https://github.com/rxhanson/Rectangle/releases/download/v0.64/Rectangle0.64.dmg",
   "appcast": null,
-  "version": "0.50,55",
+  "version": "0.64,70",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b1323721795da2401736a60b300472d0d6c6727f5072992d27e794315556467c",
+  "sha256": "cf8c638b4ef68465059f1c0298c1371715be759bb334aa0cbcc435ee8459a1c7",
   "artifacts": [
     {
-      "quit": "com.knollsoft.Rectangle",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.knollsoft.Rectangle"
+        }
+      ]
     },
-    [
-      "Rectangle.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.knollsoft.RectangleLauncher",
-        "~/Library/Application Support/Rectangle",
-        "~/Library/Caches/com.knollsoft.Rectangle",
-        "~/Library/Containers/com.knollsoft.RectangleLauncher",
-        "~/Library/Preferences/com.knollsoft.Rectangle.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Rectangle.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.knollsoft.RectangleLauncher",
+            "~/Library/Application Support/Rectangle",
+            "~/Library/Caches/com.knollsoft.Rectangle",
+            "~/Library/HTTPStorages/com.knollsoft.Rectangle",
+            "~/Library/Containers/com.knollsoft.RectangleLauncher",
+            "~/Library/Preferences/com.knollsoft.Rectangle.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +53,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

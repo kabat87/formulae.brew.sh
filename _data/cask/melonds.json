@@ -6,23 +6,27 @@
     "melonDS"
   ],
   "desc": "Nintendo DS and DSi emulator",
-  "homepage": "http://melonds.kuribo64.net/",
-  "url": "https://github.com/Arisotura/melonDS/releases/download/0.9.3/melonDS_0.9.3_mac_x64.dmg",
+  "homepage": "https://melonds.kuribo64.net/",
+  "url": "https://github.com/melonDS-emu/melonDS/releases/download/0.9.5/melonDS_0.9.5_mac_UB2.dmg",
   "appcast": null,
-  "version": "0.9.3",
+  "version": "0.9.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "04127b3c4106ff1780e7e4082aa978e7030beeb9c231656faea0ef27f73e16c3",
+  "sha256": "649f9926894faf0776524a0885ecbe10eb9c5bd8b53ed1b33207ac464bd5a2f1",
   "artifacts": [
-    [
-      "melonDS.app"
-    ],
     {
-      "trash": "~/Library/Preferences/melonDS/melonDS.ini",
-      "signal": {
-      }
+      "app": [
+        "melonDS.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/melonDS/melonDS.ini"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

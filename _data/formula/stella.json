@@ -13,50 +13,70 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://stella-emu.github.io/",
   "versions": {
-    "stable": "6.6",
+    "stable": "6.7",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/stella-emu/stella/releases/download/6.6/stella-6.6-src.tar.xz",
+      "url": "https://github.com/stella-emu/stella/releases/download/6.7/stella-6.7-src.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "babfcbb39abbd1a992cb1e6d3b2f508df7ed19cb9d0b5b5d624828bb98f97267"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:721b36a943aab796fa12d945104c016ee7412a78ccc66a8f693481cdad1b5290",
+          "sha256": "721b36a943aab796fa12d945104c016ee7412a78ccc66a8f693481cdad1b5290"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:3e2b5920f695962de76de82cb7e26b5b5a6581d3f7452833ba6eb14f512cb616",
+          "sha256": "3e2b5920f695962de76de82cb7e26b5b5a6581d3f7452833ba6eb14f512cb616"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:cd289fabad0d7e63675f87b16648ae9c7ff2273705a7549a7563229f5306846e",
+          "sha256": "cd289fabad0d7e63675f87b16648ae9c7ff2273705a7549a7563229f5306846e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:4410a18f444c6c5806d8f3c2ce237a1ba31a8eaf2a230761f3ce2256f395ed8f",
+          "sha256": "4410a18f444c6c5806d8f3c2ce237a1ba31a8eaf2a230761f3ce2256f395ed8f"
+        },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:72e0d2b7a302b102a942fbc30d3b877792e676f2ea28608d874e64bf9cf88020",
-          "sha256": "72e0d2b7a302b102a942fbc30d3b877792e676f2ea28608d874e64bf9cf88020"
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:cd227d90fa8fdd64d31f0400f611bd5a5de5b5a95222b6f5cdf5ed478f987621",
+          "sha256": "cd227d90fa8fdd64d31f0400f611bd5a5de5b5a95222b6f5cdf5ed478f987621"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:0b8b9b3ea9c9e27a5274adc3a849c19fd41385fbc39a09d3b3af368399f97a06",
-          "sha256": "0b8b9b3ea9c9e27a5274adc3a849c19fd41385fbc39a09d3b3af368399f97a06"
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:b1e5009fce0af66109809b65cd3d9d2fc313e588180a42f93a430618189e0f36",
+          "sha256": "b1e5009fce0af66109809b65cd3d9d2fc313e588180a42f93a430618189e0f36"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:bc346d37156a2a5adae7d11e52dfd3d4d0bfad70f68826cba5cd94ced66e59da",
-          "sha256": "bc346d37156a2a5adae7d11e52dfd3d4d0bfad70f68826cba5cd94ced66e59da"
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:142b80858ea794a2fc57b420b1a1a7ee4254bfbbab9eda09706978cd8a2cea6c",
+          "sha256": "142b80858ea794a2fc57b420b1a1a7ee4254bfbbab9eda09706978cd8a2cea6c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:f5e2f0fe6837b8420b5ba6be490ee02eb965c6c3a129e8df8a6836797601befb",
-          "sha256": "f5e2f0fe6837b8420b5ba6be490ee02eb965c6c3a129e8df8a6836797601befb"
+          "url": "https://ghcr.io/v2/homebrew/core/stella/blobs/sha256:f33ba21d74a54ccc7dcf1510060b5a88e104483c6257abbc2379a4bee0ebc6b6",
+          "sha256": "f33ba21d74a54ccc7dcf1510060b5a88e104483c6257abbc2379a4bee0ebc6b6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -66,6 +86,9 @@
   "dependencies": [
     "libpng",
     "sdl2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -102,5 +125,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

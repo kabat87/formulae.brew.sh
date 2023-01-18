@@ -1,6 +1,6 @@
 cask "splashtop-personal" do
-  version "3.4.6.1"
-  sha256 "39e202c3a5376256d55ca26ef6bd6d5aca046039251fec077e5d094e087f8b0e"
+  version "3.5.2.3"
+  sha256 "0292f2f50864bee7db06cbdce5be833cd8de13a203594a5e26ce43236b4c95da"
 
   url "https://d17kmd0va0f0mp.cloudfront.net/macclient/STP/Splashtop_Personal_Mac_v#{version}.dmg",
       verified: "d17kmd0va0f0mp.cloudfront.net/"
@@ -9,8 +9,8 @@ cask "splashtop-personal" do
   homepage "https://www.splashtop.com/personal"
 
   livecheck do
-    url "https://www.splashtop.com/wp-content/themes/responsive/downloadx.php?product=stp&platform=mac-client"
-    regex(/v(\d+(?:\.\d+)+)\.dmg/i)
+    url "https://redirect.splashtop.com/stp-src/mac"
+    strategy :header_match
   end
 
   pkg "Splashtop Personal.pkg"

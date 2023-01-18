@@ -13,15 +13,16 @@
   "license": "GPL-3.0-only",
   "homepage": "http://www.goredo.cypherpunks.ru/",
   "versions": {
-    "stable": "1.21.0",
+    "stable": "1.29.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://www.goredo.cypherpunks.ru/download/goredo-1.21.0.tar.zst",
+      "url": "http://www.goredo.cypherpunks.ru/download/goredo-1.29.0.tar.zst",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cc8d5c0c2df9e868037ac47d30a2f9aa275d8945a5f1ee5106344de30181d053"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:b89e7fc27ef8d0329468ad818882f32a98a6b68ade99f5dc1af18d1642a99a44",
+          "sha256": "b89e7fc27ef8d0329468ad818882f32a98a6b68ade99f5dc1af18d1642a99a44"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:77ce1b6c009d57866d26594dddead756a742eefa1859f5562d7571688fa85471",
-          "sha256": "77ce1b6c009d57866d26594dddead756a742eefa1859f5562d7571688fa85471"
+          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:b89e7fc27ef8d0329468ad818882f32a98a6b68ade99f5dc1af18d1642a99a44",
+          "sha256": "b89e7fc27ef8d0329468ad818882f32a98a6b68ade99f5dc1af18d1642a99a44"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:77ce1b6c009d57866d26594dddead756a742eefa1859f5562d7571688fa85471",
-          "sha256": "77ce1b6c009d57866d26594dddead756a742eefa1859f5562d7571688fa85471"
+          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:b89e7fc27ef8d0329468ad818882f32a98a6b68ade99f5dc1af18d1642a99a44",
+          "sha256": "b89e7fc27ef8d0329468ad818882f32a98a6b68ade99f5dc1af18d1642a99a44"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:6e059679db1eb2ff20d31d6dce59e4c335822d245325cecd33d2fd37798a41c9",
+          "sha256": "6e059679db1eb2ff20d31d6dce59e4c335822d245325cecd33d2fd37798a41c9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:d7253ca2f6fe7c6536079260c806c134971527a89456cf3ee50b3d000e27bda9",
-          "sha256": "d7253ca2f6fe7c6536079260c806c134971527a89456cf3ee50b3d000e27bda9"
+          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:6e059679db1eb2ff20d31d6dce59e4c335822d245325cecd33d2fd37798a41c9",
+          "sha256": "6e059679db1eb2ff20d31d6dce59e4c335822d245325cecd33d2fd37798a41c9"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:d7253ca2f6fe7c6536079260c806c134971527a89456cf3ee50b3d000e27bda9",
-          "sha256": "d7253ca2f6fe7c6536079260c806c134971527a89456cf3ee50b3d000e27bda9"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:d7253ca2f6fe7c6536079260c806c134971527a89456cf3ee50b3d000e27bda9",
-          "sha256": "d7253ca2f6fe7c6536079260c806c134971527a89456cf3ee50b3d000e27bda9"
+          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:6e059679db1eb2ff20d31d6dce59e4c335822d245325cecd33d2fd37798a41c9",
+          "sha256": "6e059679db1eb2ff20d31d6dce59e4c335822d245325cecd33d2fd37798a41c9"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:1514410583c1e7ce537d0681a89add537d6b913fcfc5c62bec7f23e0a5181561",
-          "sha256": "1514410583c1e7ce537d0681a89add537d6b913fcfc5c62bec7f23e0a5181561"
+          "url": "https://ghcr.io/v2/homebrew/core/goredo/blobs/sha256:602d79668dcde980ce1c57112b15abff7405dce2061c781d47727ba0c8007a7c",
+          "sha256": "602d79668dcde980ce1c57112b15abff7405dce2061c781d47727ba0c8007a7c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
   ],
   "dependencies": [
 
+  ],
+  "test_dependencies": [
+    "zstd"
   ],
   "recommended_dependencies": [
 
@@ -104,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

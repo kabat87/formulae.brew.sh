@@ -9,24 +9,28 @@
   "homepage": "https://robofont.com/",
   "url": "https://static.typemytype.com/robofont/RoboFont.dmg",
   "appcast": null,
-  "version": "4.1,2111241049",
+  "version": "4.3,2210191628",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "RoboFont.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/RoboFont",
-        "~/Library/Preferences/com.typemytype.robofont4.plist",
-        "~/Library/Saved Application State/com.typemytype.robofont4.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "RoboFont.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/RoboFont",
+            "~/Library/Preferences/com.typemytype.robofont4.plist",
+            "~/Library/Saved Application State/com.typemytype.robofont4.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

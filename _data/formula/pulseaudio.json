@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.freedesktop.org/software/pulseaudio/releases/pulseaudio-14.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "75d3f7742c1ae449049a4c88900e454b8b350ecaa8c544f3488a2562a9ff66f1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:973ca6165c6909ac0bed7cb977ba80d85a19b9b9cf0033304dbd6f6cdec8ee2a",
+          "sha256": "973ca6165c6909ac0bed7cb977ba80d85a19b9b9cf0033304dbd6f6cdec8ee2a"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:ce44a5a697ba790ab27e97f4c96cd5f48489cdfc416a836348584064053eb725",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:efcbf144da932e05394e9768bf27dfa1908dbb17f4b7c52f49e56c791dd51860",
           "sha256": "efcbf144da932e05394e9768bf27dfa1908dbb17f4b7c52f49e56c791dd51860"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/pulseaudio/blobs/sha256:0e9de748555e1f5594f92b91f2bd81db3fef1f55f5987c88893834865bb664d2",
+          "sha256": "0e9de748555e1f5594f92b91f2bd81db3fef1f55f5987c88893834865bb664d2"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
     "libtool",
     "openssl@1.1",
     "speexdsp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -117,5 +130,26 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config",
+        "perl"
+      ],
+      "dependencies": [
+        "json-c",
+        "libsndfile",
+        "libsoxr",
+        "libtool",
+        "openssl@1.1",
+        "speexdsp",
+        "expat",
+        "m4",
+        "dbus",
+        "glib",
+        "libcap"
+      ]
+    }
+  }
 }

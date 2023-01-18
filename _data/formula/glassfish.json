@@ -13,15 +13,16 @@
   "license": "EPL-2.0",
   "homepage": "https://glassfish.org/",
   "versions": {
-    "stable": "6.2.4",
+    "stable": "7.0.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.eclipse.org/ee4j/glassfish/glassfish-6.2.4.zip",
+      "url": "https://download.eclipse.org/ee4j/glassfish/glassfish-7.0.0.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3bf2140d9cab4dafe773afaf85dd7489c075e8bfb883a95f12d0aa2be306a4e3"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/glassfish/blobs/sha256:3919da3f9c45ac37aff92991e4696a6c49df135780103178b537d6967f68f123",
-          "sha256": "3919da3f9c45ac37aff92991e4696a6c49df135780103178b537d6967f68f123"
+          "url": "https://ghcr.io/v2/homebrew/core/glassfish/blobs/sha256:8f56c18877af7bd6d49496282807e73e9efe1dcf795af88d3bfb1d3c3d18fc14",
+          "sha256": "8f56c18877af7bd6d49496282807e73e9efe1dcf795af88d3bfb1d3c3d18fc14"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@11"
+    "openjdk@17"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

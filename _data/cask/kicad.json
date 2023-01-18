@@ -7,41 +7,44 @@
   ],
   "desc": "Electronics design automation suite",
   "homepage": "https://kicad.org/",
-  "url": "https://kicad-downloads.s3.cern.ch/osx/stable/kicad-unified-6.0.1-0.dmg",
+  "url": "https://kicad-downloads.s3.cern.ch/osx/stable/kicad-unified-6.0.10-0.dmg",
   "appcast": null,
-  "version": "6.0.1-0",
+  "version": "6.0.10-0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b9d09d634a7359a4b5743b8cb01b71d815bdd5732086f18eb8db50a7260a54b8",
+  "sha256": "05427ee48570ab84b919753f164b36efd000bb6100e7b4d5ca88224b0b6acb53",
   "artifacts": [
     {
-      "delete": [
-        "/Applications/KiCad",
-        "/Library/Application Support/kicad/demos"
-      ],
-      "signal": {
-      }
+      "suite": [
+        "KiCad"
+      ]
     },
-    [
-      "KiCad"
-    ],
-    [
-      "demos",
-      {
-        "target": "/Library/Application Support/kicad/demos"
-      }
-    ],
     {
-      "trash": [
-        "/Library/Application Support/kicad",
-        "~/Library/Application Support/kicad",
-        "~/Library/Preferences/kicad",
-        "~/Library/Preferences/org.kicad-pcb.*"
-      ],
-      "signal": {
-      }
+      "artifact": [
+        "demos",
+        {
+          "target": "/Library/Application Support/kicad/demos"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/Application Support/kicad",
+            "~/Library/Application Support/kicad",
+            "~/Library/Preferences/kicad",
+            "~/Library/Preferences/org.kicad-pcb.*",
+            "~/Library/Saved Application State/org.kicad-pcb.bitmap2component.savedState",
+            "~/Library/Saved Application State/org.kicad-pcb.eeschema.savedState",
+            "~/Library/Saved Application State/org.kicad-pcb.kicad.savedState",
+            "~/Library/Saved Application State/org.kicad-pcb.pcb_calculator.savedState",
+            "~/Library/Saved Application State/org.kicad-pcb.pl_editor.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -54,5 +57,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

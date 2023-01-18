@@ -9,7 +9,7 @@
   "homepage": "https://www.pingidentity.com/",
   "url": "https://pingone-downloads.s3.amazonaws.com/pingid/mac-client/PingID.pkg",
   "appcast": null,
-  "version": "1.7.2",
+  "version": "1.7.3",
   "versions": {
   },
   "installed": null,
@@ -17,16 +17,24 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.pingidentity.pingid.pcclient",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.pingidentity.pingid.pcclient"
+        }
+      ]
     },
-    "PingID.pkg (Pkg)"
+    {
+      "pkg": [
+        "PingID.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

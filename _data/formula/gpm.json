@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/pote/gpm/archive/v1.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2e213abbb1a12ecb895c3f02b74077d3440b7ae3221b4b524659c2ea9065b02a"
     }
   },
   "revision": 1,
@@ -66,11 +67,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/gpm/blobs/sha256:ba26a6b34e92b4333d636ae3d9e54d726f6bd3bbabdabbfbdd9c3fec569e10fe",
           "sha256": "ba26a6b34e92b4333d636ae3d9e54d726f6bd3bbabdabbfbdd9c3fec569e10fe"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gpm/blobs/sha256:0ed200c92c086eebf306065403c6a18db6e55e6d2764904cbd53f442f3043179",
-          "sha256": "0ed200c92c086eebf306065403c6a18db6e55e6d2764904cbd53f442f3043179"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gpm/blobs/sha256:02b1f03f80d4477e80aaa5b1cc62e9a4be9288f4d4116a23c386bb9b6fcd3906",
@@ -86,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +90,9 @@
   ],
   "dependencies": [
     "go"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

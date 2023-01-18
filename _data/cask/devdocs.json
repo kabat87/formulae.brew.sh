@@ -16,25 +16,31 @@
   "outdated": false,
   "sha256": "88e4c14cd5b7f856796764591107e4e8e78a82de1384b737536a56d97b389f2d",
   "artifacts": [
-    [
-      "DevDocs.app"
-    ],
     {
-      "trash": [
-        "~/.devdocs",
-        "~/Library/Application Support/DevDocs",
-        "~/Library/Logs/DevDocs",
-        "~/Library/Preferences/sh.egoist.devdocs.plist",
-        "~/Library/Saved Application State/sh.egoist.devdocs.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "DevDocs.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.devdocs",
+            "~/Library/Application Support/DevDocs",
+            "~/Library/Logs/DevDocs",
+            "~/Library/Preferences/sh.egoist.devdocs.plist",
+            "~/Library/Saved Application State/sh.egoist.devdocs.savedState"
+          ]
+        }
+      ]
     }
   ],
-  "caveats": null,
+  "caveats": "devdocs has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

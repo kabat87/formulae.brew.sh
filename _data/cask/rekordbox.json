@@ -7,29 +7,37 @@
   ],
   "desc": "Free Dj app to prepare and manage your music files",
   "homepage": "https://rekordbox.com/en/",
-  "url": "https://cdn.rekordbox.com/files/20211125100827/Install_rekordbox_6_6_1.pkg_.zip",
-  "appcast": "https://rekordbox.com/en/download/",
-  "version": "6.6.1,20211125100827",
+  "url": "https://cdn.rekordbox.com/files/20221125124421/Install_rekordbox_6_6_8.pkg_.zip",
+  "appcast": null,
+  "version": "6.6.8,20221125124421",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "7d9e0c0d2a9a71c50c9d01770718f878041b5badf3166c22ad85e148ea1fdc44",
+  "sha256": "d61bb3b7ccedbe17459ae417480b52c81659d3cc7f4f89d33cb42fe92442db86",
   "artifacts": [
     {
-      "pkgutil": "com.pioneer.rekordbox.6.*",
-      "delete": "/Applications/rekordbox 6",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.pioneer.rekordbox.6.*",
+          "delete": "/Applications/rekordbox 6"
+        }
+      ]
     },
-    "Install_rekordbox_6_6_1.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/Pioneer/rekordbox",
-        "~/Library/Pioneer/rekordbox"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Install_rekordbox_6_6_8.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Pioneer/rekordbox",
+            "~/Library/Pioneer/rekordbox"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

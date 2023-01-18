@@ -13,15 +13,16 @@
   "license": "ISC",
   "homepage": "https://skarnet.org/software/s6/",
   "versions": {
-    "stable": "2.11.0.1",
+    "stable": "2.11.2.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://skarnet.org/software/s6/s6-2.11.0.1.tar.gz",
+      "url": "https://skarnet.org/software/s6/s6-2.11.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9fb43690e6018d94733b4dc18cc6926f02454508a4dd86060c9b4b9d20dc8037"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:9036deb01a38925a5a2224617aba7215b7e2bd090c604e7fffb19664a1496a01",
+          "sha256": "9036deb01a38925a5a2224617aba7215b7e2bd090c604e7fffb19664a1496a01"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:13615918f388b38eeef30dea23dad86323e05a9d8abd530adc9a2f87a5820fd6",
-          "sha256": "13615918f388b38eeef30dea23dad86323e05a9d8abd530adc9a2f87a5820fd6"
+          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:f30edaca6c99ca5375595ccb9aed3ad15a453ddea2e26d6240af305df521ad60",
+          "sha256": "f30edaca6c99ca5375595ccb9aed3ad15a453ddea2e26d6240af305df521ad60"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:b9da08275302eeb6457ba5bf2dff2ce96659bdbdc1105f7477e2dbf96ef9d22f",
-          "sha256": "b9da08275302eeb6457ba5bf2dff2ce96659bdbdc1105f7477e2dbf96ef9d22f"
+          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:267b0c2cd212a38eb8e166c4d60759a3701d8276f7624d5adaa9c4b086f11d7a",
+          "sha256": "267b0c2cd212a38eb8e166c4d60759a3701d8276f7624d5adaa9c4b086f11d7a"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:db1053bd3a19a232999a4d51d34c60594cf7932bb4dfe918b28d8631d3f1ddc7",
+          "sha256": "db1053bd3a19a232999a4d51d34c60594cf7932bb4dfe918b28d8631d3f1ddc7"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:b94e04c86c6977b9387269d9e01d71ca58f77c2ab594a019fd53dc45305ea657",
-          "sha256": "b94e04c86c6977b9387269d9e01d71ca58f77c2ab594a019fd53dc45305ea657"
+          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:c169933c1a6903f900295b4b7993762df24a63f2ab73129200a7de415b18faef",
+          "sha256": "c169933c1a6903f900295b4b7993762df24a63f2ab73129200a7de415b18faef"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:24d615356898f31742e83bc79e1441802a845f511bc9a4a127e6f496c676eaaf",
-          "sha256": "24d615356898f31742e83bc79e1441802a845f511bc9a4a127e6f496c676eaaf"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:d59a7a1fc6bac32484b4bd3771f2dd230da609acdc6402b54ed59bfb1a1f2e91",
-          "sha256": "d59a7a1fc6bac32484b4bd3771f2dd230da609acdc6402b54ed59bfb1a1f2e91"
+          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:9eef22c17e62fcad2a02830dd15d395ef89966ebbbd68e6be41489170f6449dd",
+          "sha256": "9eef22c17e62fcad2a02830dd15d395ef89966ebbbd68e6be41489170f6449dd"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:50d2f7b24c46b5c06f60433a6b89c0228646995338330b66ea3c707a037d34fa",
-          "sha256": "50d2f7b24c46b5c06f60433a6b89c0228646995338330b66ea3c707a037d34fa"
+          "url": "https://ghcr.io/v2/homebrew/core/s6/blobs/sha256:1ddcba8807707b9221dd242f72b3d72ef6fa8f5a5e66d938dc7a1166f65ba995",
+          "sha256": "1ddcba8807707b9221dd242f72b3d72ef6fa8f5a5e66d938dc7a1166f65ba995"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

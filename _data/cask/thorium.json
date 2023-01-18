@@ -7,25 +7,29 @@
   ],
   "desc": "Epub reader",
   "homepage": "https://www.edrlab.org/software/thorium-reader/",
-  "url": "https://github.com/edrlab/thorium-reader/releases/download/v1.8.0/Thorium-1.8.0.dmg",
+  "url": "https://github.com/edrlab/thorium-reader/releases/download/v2.2.0/Thorium-2.2.0.dmg",
   "appcast": null,
-  "version": "1.8.0",
+  "version": "2.2.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3837985b65a4728234e1892c1543999f7ae199ab95c5bc33242529d21fadf361",
+  "sha256": "a9d39609190a5db06de10edc3d94b069ed89737681f395cad8c1877d52c77c2a",
   "artifacts": [
-    [
-      "Thorium.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/EDRLab.ThoriumReader",
-        "~/Library/Preferences/io.github.edrlab.thorium.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Thorium.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/EDRLab.ThoriumReader",
+            "~/Library/Preferences/io.github.edrlab.thorium.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

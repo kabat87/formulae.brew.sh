@@ -7,30 +7,36 @@
   ],
   "desc": "Audio player",
   "homepage": "https://cog.losno.co/",
-  "url": "https://f.losno.co/cog/Cog-8eb2b4c4.zip",
+  "url": "https://cogcdn.cog.losno.co/Cog-01c38c94.zip",
   "appcast": null,
-  "version": "1784,8eb2b4c4",
+  "version": "2728,01c38c94",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b8bc880a0333ff7bb815cbc6084254cae2a316f3d2c6e75c0b0427e05cfcbc93",
+  "sha256": "55bcba02286725caf6fa9ba7976ef3b098327319ac32b84593ea2be4bc2f147f",
   "artifacts": [
     {
-      "quit": "org.cogx.cog",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "org.cogx.cog"
+        }
+      ]
     },
-    [
-      "Cog.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Cog",
-        "~/Library/Caches/org.cogx.cog"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Cog.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Cog",
+            "~/Library/Caches/org.cogx.cog"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +49,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

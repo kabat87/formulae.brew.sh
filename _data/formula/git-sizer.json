@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/github/git-sizer/archive/v1.5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "07a5ac5f30401a17d164a6be8d52d3d474ee9c3fb7f60fd83a617af9f7e902bb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/git-sizer/blobs/sha256:f6d81ce3b3553755497bfc41658af2f441ed1084c03ea8a19812f665cec082ce",
+          "sha256": "f6d81ce3b3553755497bfc41658af2f441ed1084c03ea8a19812f665cec082ce"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/git-sizer/blobs/sha256:f996c81d0b80e56313f6c187b498c5d3c71001bbac8bd704fd30e5f59c593d67",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/git-sizer/blobs/sha256:28f29227982128a8cd544fcfc1d0aa8425f8ec0d9a60ca601426de8050e7a727",
           "sha256": "28f29227982128a8cd544fcfc1d0aa8425f8ec0d9a60ca601426de8050e7a727"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/git-sizer/blobs/sha256:84eec3e5aeb0f702b96dc0e15c002a99f46fdf9899e445384a416d1b02b47ee8",
+          "sha256": "84eec3e5aeb0f702b96dc0e15c002a99f46fdf9899e445384a416d1b02b47ee8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

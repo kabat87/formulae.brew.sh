@@ -7,22 +7,26 @@
   ],
   "desc": "Free and open-source productivity suite",
   "homepage": "https://www.openoffice.org/",
-  "url": "https://downloads.sourceforge.net/openofficeorg.mirror/Apache_OpenOffice_4.1.11_MacOS_x86-64_install_en-US.dmg",
+  "url": "https://downloads.sourceforge.net/openofficeorg.mirror/Apache_OpenOffice_4.1.13_MacOS_x86-64_install_en-US.dmg",
   "appcast": null,
-  "version": "4.1.11",
+  "version": "4.1.13",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f3d01d6b7dd959ca6cc039f4bacb6ac03efa4773f6b404862a1cd14f0d75b17f",
+  "sha256": "0cd80a42594f0a077d005672c72b03172cd50708cd7bc92f2a85ec791bddd86d",
   "artifacts": [
-    [
-      "OpenOffice.app"
-    ],
     {
-      "trash": "~/Library/Application Support/OpenOffice",
-      "signal": {
-      }
+      "app": [
+        "OpenOffice.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/OpenOffice"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -11,17 +11,18 @@
   ],
   "desc": "Linting for your git commit messages",
   "license": "MIT",
-  "homepage": "https://jorisroovers.github.io/gitlint",
+  "homepage": "https://jorisroovers.com/gitlint/",
   "versions": {
-    "stable": "0.17.0",
+    "stable": "0.18.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/91/77/2fc5418edff33060dd7a51aa323ee7d3df11503952b8e4e46ee65d18d815/gitlint-core-0.17.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/fe/11/971074a89e50f31e32b79b73a84b8aed5787ad5718bb3857477514304db7/gitlint-core-0.18.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b032eb574f7399aec6a5246a78810bacb7ce9c9fd2d9e4375950549196cae681"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:e76c35c0f5c1264f660de5f79a30e5609247685ca0d27a0929696009870c6218",
+          "sha256": "e76c35c0f5c1264f660de5f79a30e5609247685ca0d27a0929696009870c6218"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:7391686d3bf8a32107e86bfa9ce33ce37d14497fd94e5f4642042060d61787e8",
-          "sha256": "7391686d3bf8a32107e86bfa9ce33ce37d14497fd94e5f4642042060d61787e8"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:e4ab8cb2671afa9e4aaa8de6fda45198162567a7e8611086bce572908f4e702a",
+          "sha256": "e4ab8cb2671afa9e4aaa8de6fda45198162567a7e8611086bce572908f4e702a"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:ba55c41aca93467e4a82ea5232f918fafee8dc21c7b65e59baec81d3aaaf784d",
-          "sha256": "ba55c41aca93467e4a82ea5232f918fafee8dc21c7b65e59baec81d3aaaf784d"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:526b454400bcc7440c23e3659728140d2b96372734d4c59784e59a7ff542c98b",
+          "sha256": "526b454400bcc7440c23e3659728140d2b96372734d4c59784e59a7ff542c98b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:f92add1cb7cca06297104b86f6c734bc164b197b440d53d86ec880159f89c5b3",
+          "sha256": "f92add1cb7cca06297104b86f6c734bc164b197b440d53d86ec880159f89c5b3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:6068fc62b06b5709151e600c4f2f2f6a68e33ed0f4b2638f53498e6886fd22a2",
-          "sha256": "6068fc62b06b5709151e600c4f2f2f6a68e33ed0f4b2638f53498e6886fd22a2"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:2043b77407919887505d5ac40225596e536a709e290be4840e9da25587b82731",
+          "sha256": "2043b77407919887505d5ac40225596e536a709e290be4840e9da25587b82731"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:748a6a66b668147364c4afc2a8b512d298c5c0609108d1b541be89d8687371d3",
-          "sha256": "748a6a66b668147364c4afc2a8b512d298c5c0609108d1b541be89d8687371d3"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:a519f46cce1b93e2045ef2880012e7a811accbe1816671ebc1b102ade4142d4c",
+          "sha256": "a519f46cce1b93e2045ef2880012e7a811accbe1816671ebc1b102ade4142d4c"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:139e2a00477ba3e2168c90580c85b9be1d5c3a5f806912701fc7b45c8e9effae",
-          "sha256": "139e2a00477ba3e2168c90580c85b9be1d5c3a5f806912701fc7b45c8e9effae"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:515ae6455446a91ae666d6e078e1c30eeaccac57f90976c6f72b867df31762e3",
+          "sha256": "515ae6455446a91ae666d6e078e1c30eeaccac57f90976c6f72b867df31762e3"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:05bf33a5d44c9da39cd35a277b25b4260215b818b72c27e0b623125737fce8bc",
-          "sha256": "05bf33a5d44c9da39cd35a277b25b4260215b818b72c27e0b623125737fce8bc"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlint/blobs/sha256:395a1c0dc259937b455d9792749abae1235b65d1a48e10039cd2743c475b4920",
+          "sha256": "395a1c0dc259937b455d9792749abae1235b65d1a48e10039cd2743c475b4920"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,7 +84,11 @@
 
   ],
   "dependencies": [
-    "python@3.10"
+    "python@3.11",
+    "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

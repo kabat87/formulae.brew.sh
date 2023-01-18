@@ -7,37 +7,54 @@
   ],
   "desc": "Microsofts instant messaging enterprise software",
   "homepage": "https://www.microsoft.com/download/details.aspx?id=54108",
-  "url": "https://download.microsoft.com/download/D/0/5/D055DA17-C7B8-4257-89A1-78E7BBE3833F/SkypeForBusinessInstaller-16.29.0.72.pkg",
+  "url": "https://download.microsoft.com/download/D/0/5/D055DA17-C7B8-4257-89A1-78E7BBE3833F/SkypeForBusinessInstaller-16.29.0.95.pkg",
   "appcast": null,
-  "version": "16.29.0.72",
+  "version": "16.29.0.95",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "02e50ee62e5bb940f71ae25a9c942db57013535db9ab18acd1be1383651ac951",
+  "sha256": "7e85e8a3640bc1187ccf6750554eeff9b80a85b4c5f0447f066e1156829d6f2e",
   "artifacts": [
     {
-      "delete": "/Applications/Skype for Business.app",
-      "pkgutil": [
-        "com.microsoft.SkypeForBusiness",
-        "com.microsoft.SkypeForBusiness.MeetingJoinPlugin"
-      ],
-      "login_item": "Skype for Business",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/Skype for Business.app",
+          "pkgutil": [
+            "com.microsoft.SkypeForBusiness",
+            "com.microsoft.SkypeForBusiness.MeetingJoinPlugin"
+          ],
+          "login_item": "Skype for Business"
+        }
+      ]
     },
-    "SkypeForBusinessInstaller-16.29.0.72.pkg (Pkg)",
     {
-      "trash": [
-        "/Library/Internet Plug-Ins/MeetingJoinPlugin.plugin",
-        "~/Library/Application Support/com.microsoft.SkypeForBusinessTAP",
-        "~/Library/Application Support/Skype for Business",
-        "~/Library/Preferences/com.microsoft.SkypeForBusinessTAP.plist",
-        "~/Library/Preferences/com.microsoft.SkypeForBusinessTAP.debuglogging.plist"
-      ],
-      "rmdir": "/Library/Application Support/Microsoft",
-      "signal": {
-      }
+      "pkg": [
+        "SkypeForBusinessInstaller-16.29.0.95.pkg",
+        {
+          "choices": [
+            {
+              "choiceIdentifier": "com.microsoft.autoupdate.fba",
+              "choiceAttribute": "selected",
+              "attributeSetting": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/Internet Plug-Ins/MeetingJoinPlugin.plugin",
+            "~/Library/Application Support/com.microsoft.SkypeForBusinessTAP",
+            "~/Library/Application Support/Skype for Business",
+            "~/Library/Preferences/com.microsoft.SkypeForBusinessTAP.plist",
+            "~/Library/Preferences/com.microsoft.SkypeForBusinessTAP.debuglogging.plist"
+          ],
+          "rmdir": "/Library/Application Support/Microsoft"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -53,5 +70,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

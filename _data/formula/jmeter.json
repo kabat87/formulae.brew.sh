@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://jmeter.apache.org/",
   "versions": {
-    "stable": "5.4.3",
+    "stable": "5.5",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/closer.lua?path=jmeter/binaries/apache-jmeter-5.4.3.tgz",
+      "url": "https://www.apache.org/dyn/closer.lua?path=jmeter/binaries/apache-jmeter-5.5.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "60e89c7c4523731467fdb717f33d614086c10f0316369cbaa45650ae1c402e1f"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jmeter/blobs/sha256:71af8d00cd769598a7a1291565a1d15d97f9ef78ea4dc23d0025b8d4d503e76a",
-          "sha256": "71af8d00cd769598a7a1291565a1d15d97f9ef78ea4dc23d0025b8d4d503e76a"
+          "url": "https://ghcr.io/v2/homebrew/core/jmeter/blobs/sha256:ad4c2d2fd4fe481f9443824e6555240d68b26bd01a7ce8444f755fe20f32e51e",
+          "sha256": "ad4c2d2fd4fe481f9443824e6555240d68b26bd01a7ce8444f755fe20f32e51e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

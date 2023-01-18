@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/rakyll/statik/archive/v0.1.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cd05f409e63674f29cff0e496bd33eee70229985243cce486107085fab747082"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/go-statik/blobs/sha256:26f7b3d318ee90136abccb38d929251dd06a2b689191ad9c34a29acde10a4645",
+          "sha256": "26f7b3d318ee90136abccb38d929251dd06a2b689191ad9c34a29acde10a4645"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/go-statik/blobs/sha256:1c5a13a7d21ea10888bdfb31153624ca587b2b3424ecf8c97f5bfa512aedf898",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/go-statik/blobs/sha256:5960b8ab88990df3e2a3ef0578da24b674d72c620466af263fdad6b479133fe9",
           "sha256": "5960b8ab88990df3e2a3ef0578da24b674d72c620466af263fdad6b479133fe9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/go-statik/blobs/sha256:ad26269af443084182676494a9d351fd977e0d8d4644f465b22e2f92498fc492",
+          "sha256": "ad26269af443084182676494a9d351fd977e0d8d4644f465b22e2f92498fc492"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

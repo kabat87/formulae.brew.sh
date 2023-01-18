@@ -16,17 +16,21 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "VK Messenger.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.vk.messages.plist",
-        "~/Library/Preferences/com.vk.messages.helper.plist",
-        "~/Library/Saved Application State/com.vk.messages.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "VK Messenger.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.vk.messages.plist",
+            "~/Library/Preferences/com.vk.messages.helper.plist",
+            "~/Library/Saved Application State/com.vk.messages.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

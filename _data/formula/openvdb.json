@@ -13,60 +13,65 @@
   "license": "MPL-2.0",
   "homepage": "https://www.openvdb.org/",
   "versions": {
-    "stable": "9.0.0",
+    "stable": "10.0.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/AcademySoftwareFoundation/openvdb/archive/v9.0.0.tar.gz",
+      "url": "https://github.com/AcademySoftwareFoundation/openvdb/archive/v10.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "887a3391fbd96b20c77914f4fb3ab4b33d26e5fc479aa036d395def5523c622f"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:5472be4da9c5a690cce44a39f0024a5ae9201da16dcc6438f883ffea4284de6c",
+          "sha256": "5472be4da9c5a690cce44a39f0024a5ae9201da16dcc6438f883ffea4284de6c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:4efeba9379d21856de78e1502bfbb0e9914fb9f770b10c8ca353c763c5425dbd",
-          "sha256": "4efeba9379d21856de78e1502bfbb0e9914fb9f770b10c8ca353c763c5425dbd"
+          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:f5b13e4ae82ce1ed42ced417cf01a168ee3d0a27a7fe9c01add81022fa60368c",
+          "sha256": "f5b13e4ae82ce1ed42ced417cf01a168ee3d0a27a7fe9c01add81022fa60368c"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:4acd2ab4377e2fc5a75ed9c778e96061d35e4bb4428d14e4d7ebfd669df305b7",
-          "sha256": "4acd2ab4377e2fc5a75ed9c778e96061d35e4bb4428d14e4d7ebfd669df305b7"
+          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:037bf5625ebe7cd3a1be4081d61431c3749ee6ecf488d73adfa49a7b7c9970c8",
+          "sha256": "037bf5625ebe7cd3a1be4081d61431c3749ee6ecf488d73adfa49a7b7c9970c8"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:74451d1fbe49b1f455790419e3e59b72177fd0146efe582b0c945a202db20781",
+          "sha256": "74451d1fbe49b1f455790419e3e59b72177fd0146efe582b0c945a202db20781"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:418a7fccce828311fa23674d50ed5d24422ba253bb7aac2adc37545e8046606a",
-          "sha256": "418a7fccce828311fa23674d50ed5d24422ba253bb7aac2adc37545e8046606a"
+          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:6d2c8e036d72302449e70a456085562421885b98e96466d00e8272762c0c8ce5",
+          "sha256": "6d2c8e036d72302449e70a456085562421885b98e96466d00e8272762c0c8ce5"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:3d094143c12d6b8708d2df2823c6713e7e773d7ce871c3c2443dc1f3278ec77e",
-          "sha256": "3d094143c12d6b8708d2df2823c6713e7e773d7ce871c3c2443dc1f3278ec77e"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:73d9710a66677ce795271bb0f737ae59ab01550729e4b848440c570566177b62",
-          "sha256": "73d9710a66677ce795271bb0f737ae59ab01550729e4b848440c570566177b62"
+          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:272179ed919a3111340891293cb11f39817d656a3a42ba89cb7c79cee87271a0",
+          "sha256": "272179ed919a3111340891293cb11f39817d656a3a42ba89cb7c79cee87271a0"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:eaa6699c14759acee35d1ea14a7c081924a0850ac99cdfc779fa234ea98238f7",
-          "sha256": "eaa6699c14759acee35d1ea14a7c081924a0850ac99cdfc779fa234ea98238f7"
+          "url": "https://ghcr.io/v2/homebrew/core/openvdb/blobs/sha256:1462c86b3cc54bc87e6551c565580feafa7111bd0e927170be74dd0d66ee1689",
+          "sha256": "1462c86b3cc54bc87e6551c565580feafa7111bd0e927170be74dd0d66ee1689"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +85,9 @@
     "jemalloc",
     "openexr",
     "tbb"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

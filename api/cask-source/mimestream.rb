@@ -1,9 +1,8 @@
 cask "mimestream" do
-  version "0.32.0"
-  sha256 "e906d4cd9e8e4a0886379a14b1b2a3b03d47764e81773a48fad57eef37f4ba85"
+  version "0.40.2"
+  sha256 "d0b256cbd0ee1942d0eb976cc24f36962c217d8547854c9e5d71ef143e02f11d"
 
-  url "https://storage.googleapis.com/mimestream-releases/Mimestream_#{version}.dmg",
-      verified: "storage.googleapis.com/mimestream-releases/"
+  url "https://download.mimestream.com/Mimestream_#{version}.dmg"
   name "Mimestream"
   desc "Native app email client for Gmail"
   homepage "https://mimestream.com/"
@@ -14,13 +13,17 @@ cask "mimestream" do
   end
 
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   app "Mimestream.app"
 
   zap trash: [
     "~/Library/Application Scripts/com.mimestream.Mimestream",
+    "~/Library/Application Scripts/com.mimestream.Mimestream.ShareExtension",
     "~/Library/Caches/com.mimestream.Mimestream",
     "~/Library/Containers/com.mimestream.Mimestream",
+    "~/Library/Containers/com.mimestream.Mimestream.ShareExtension",
+    "~/Library/Preferences/com.mimestream.Mimestream.plist",
     "~/Library/Saved Application State/com.mimestream.Mimestream.savedState",
   ]
 end

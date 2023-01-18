@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.cpan.org/src/5.0/perl-5.18.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "01a4e11a9a34616396c4a77b3cef51f76a297e1a2c2c490ae6138bf0351eb29f"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/perl/5.18/blobs/sha256:45502e783b4e89f4eb5392227e79a80313e46c9f5d10397b07ef80d2bc6c9d2b",
+          "sha256": "45502e783b4e89f4eb5392227e79a80313e46c9f5d10397b07ef80d2bc6c9d2b"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/perl/5.18/blobs/sha256:c331f308c1f7b2df92aaa51b30a4ff049454e2c1218843ae9e493db403ec165f",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/perl/5.18/blobs/sha256:6c250f7fbbb0cbc997ad0068b88802f5d097f3b3a635d5c64d7267c3ab39340f",
           "sha256": "6c250f7fbbb0cbc997ad0068b88802f5d097f3b3a635d5c64d7267c3ab39340f"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/perl/5.18/blobs/sha256:b5a9adf58ee29a45a3824d268ee4dd18f96a7ec29c560d18d231287f99b59def",
+          "sha256": "b5a9adf58ee29a45a3824d268ee4dd18f96a7ec29c560d18d231287f99b59def"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -79,7 +90,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,10 +124,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-08-16",
+  "deprecation_reason": "deprecated_upstream",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

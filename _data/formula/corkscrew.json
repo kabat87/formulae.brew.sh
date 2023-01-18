@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/c/corkscrew/corkscrew_2.0.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0d0fcbb41cba4a81c4ab494459472086f377f9edb78a2e2238ed19b58956b0be"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/corkscrew/blobs/sha256:1bd52cc5c72e9ca3461dc63fdfb584ac3622a57effae88f14a8e7eab146a57b8",
+          "sha256": "1bd52cc5c72e9ca3461dc63fdfb584ac3622a57effae88f14a8e7eab146a57b8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/corkscrew/blobs/sha256:d1add42728d114c019b0621bbd8aa9f3f95c433e006f38bdba71d9387e667357",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/corkscrew/blobs/sha256:7882ab8fa538eb9eee596f56fa6f65c14f1f3e467a822ce7a39ea197d2fe08a5",
           "sha256": "7882ab8fa538eb9eee596f56fa6f65c14f1f3e467a822ce7a39ea197d2fe08a5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/corkscrew/blobs/sha256:16b81ff2ca5d308f0eb953399f4ec771870ff1019d93b69630f1218fbd185dc5",
+          "sha256": "16b81ff2ca5d308f0eb953399f4ec771870ff1019d93b69630f1218fbd185dc5"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/corkscrew/blobs/sha256:f7e4e63df01aa33a6518f4f6c2c0ccbb0c7b8aaca95052d4aa827b5e56ed8e5c",
           "sha256": "f7e4e63df01aa33a6518f4f6c2c0ccbb0c7b8aaca95052d4aa827b5e56ed8e5c"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/corkscrew/blobs/sha256:5a0916aa242a22808bbbb652664f1e44620c1c78b896982f67c9a5a1b85a5efc",
-          "sha256": "5a0916aa242a22808bbbb652664f1e44620c1c78b896982f67c9a5a1b85a5efc"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/corkscrew/blobs/sha256:aad5bc0cad7686b7741300366d92107ed90c84eabc8868d309a2f61c96b3135d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

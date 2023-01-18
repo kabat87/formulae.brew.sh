@@ -10,7 +10,7 @@
 
   ],
   "desc": "Use multiple rubies on multiple platforms",
-  "license": null,
+  "license": "BSD-3-Clause",
   "homepage": "https://bitbucket.org/jonforums/uru",
   "versions": {
     "stable": "0.8.5",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://bitbucket.org/jonforums/uru/get/v0.8.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "47148454f4c4d5522641ac40aec552a9390a2edc1a0cd306c5d16924f0be7e34"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/uru/blobs/sha256:e1c97e2f9106da354206149ff4138bc8731b9e68675d57e2080c19bd2951c23c",
+          "sha256": "e1c97e2f9106da354206149ff4138bc8731b9e68675d57e2080c19bd2951c23c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/uru/blobs/sha256:afe47dce0be291a7c3c15d9723f5892164d4b72a481747bf2e1f74a1ba7b56fa",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/uru/blobs/sha256:70e3160416c65e40510431b1bd79105074505ceb63f9619451783eda48cd29e8",
           "sha256": "70e3160416c65e40510431b1bd79105074505ceb63f9619451783eda48cd29e8"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/uru/blobs/sha256:aeb836f9cc4bc8f40f488f21abb3ca10bc2d20364e961737a541e0856c9b38fa",
+          "sha256": "aeb836f9cc4bc8f40f488f21abb3ca10bc2d20364e961737a541e0856c9b38fa"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

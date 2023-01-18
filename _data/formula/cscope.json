@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/cscope/cscope/v15.9/cscope-15.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c5505ae075a871a9cd8d9801859b0ff1c09782075df281c72c23e72115d9f159"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cscope/blobs/sha256:955599d1da5c49055ac99ef74278c40fa33079472e106115a5b3d754758167e0",
+          "sha256": "955599d1da5c49055ac99ef74278c40fa33079472e106115a5b3d754758167e0"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cscope/blobs/sha256:b85e2ad5e9ddcdb57a2cca430520e64f70cefd2b182bae70c216360e72757611",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cscope/blobs/sha256:149cb1ebe576bca4c8c928ed98005054e9ac2b8822c80ce9582d500453bce0ad",
           "sha256": "149cb1ebe576bca4c8c928ed98005054e9ac2b8822c80ce9582d500453bce0ad"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cscope/blobs/sha256:2de1fac38c80a9b6643ebaaf7990928e7ea2764c435489d8fda616e661620d03",
+          "sha256": "2de1fac38c80a9b6643ebaaf7990928e7ea2764c435489d8fda616e661620d03"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

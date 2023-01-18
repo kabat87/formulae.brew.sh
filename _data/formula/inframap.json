@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/cycloidio/inframap/archive/v0.6.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e9d6daa48c6fa1a8ecc5437c7121cb5072eb81c29c88ca9e6d778637c8442332"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/inframap/blobs/sha256:a8346b10cb9a2054a86aaefba38ffa80f36bb2696b987aca77ab9e2c7e68dca3",
+          "sha256": "a8346b10cb9a2054a86aaefba38ffa80f36bb2696b987aca77ab9e2c7e68dca3"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/inframap/blobs/sha256:763af27a8d3dbb2ccb3c7bcb63d337ee96e7f5c011dcecbee7768d76214814e4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/inframap/blobs/sha256:ee096fc9fe0909cc34675dbd7a7269c8092ffee0d6ba71fa333e75afc4ff28c1",
           "sha256": "ee096fc9fe0909cc34675dbd7a7269c8092ffee0d6ba71fa333e75afc4ff28c1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/inframap/blobs/sha256:41de7c7b91cc5ccf46b5d4de5fc59e9ca9d941a4dd060fab01c3db3b7e62b80d",
+          "sha256": "41de7c7b91cc5ccf46b5d4de5fc59e9ca9d941a4dd060fab01c3db3b7e62b80d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

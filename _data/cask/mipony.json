@@ -5,11 +5,11 @@
   "name": [
     "Mipony"
   ],
-  "desc": null,
+  "desc": "Download manager",
   "homepage": "https://www.mipony.net/en/",
   "url": "https://download.mipony.net/downloads/mac/Mipony-Installer.pkg",
   "appcast": null,
-  "version": "1.7,9",
+  "version": "1.10,0",
   "versions": {
   },
   "installed": null,
@@ -17,17 +17,25 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "net.installer.mipony.*",
-      "quit": "com.downloader.Mipony",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "net.installer.mipony.*",
+          "quit": "com.downloader.Mipony"
+        }
+      ]
     },
-    "Mipony-Installer.pkg (Pkg)"
+    {
+      "pkg": [
+        "Mipony-Installer.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

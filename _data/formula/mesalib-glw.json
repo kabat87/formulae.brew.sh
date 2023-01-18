@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://archive.mesa3d.org/glw/glw-8.0.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2da1d06e825f073dcbad264aec7b45c649100e5bcde688ac3035b34c8dbc8597"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mesalib-glw/blobs/sha256:a9fdf656540dc268519f8e3fded305c1e86c4690cf7cfa5571e3edbee9e56cc5",
+          "sha256": "a9fdf656540dc268519f8e3fded305c1e86c4690cf7cfa5571e3edbee9e56cc5"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mesalib-glw/blobs/sha256:f19366ec40b0666882b3d10a0e6635ecc25e75446a85bb695f44ccaf35ca809a",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mesalib-glw/blobs/sha256:fed357436c36aa832c46cad896d75a9b3f0015658732af9cad3a18b19769ea72",
           "sha256": "fed357436c36aa832c46cad896d75a9b3f0015658732af9cad3a18b19769ea72"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mesalib-glw/blobs/sha256:04daf708d2f8327ba0ae42652d4b6d332fd560cdcf6c7ac9b09140bd0ced8a67",
+          "sha256": "04daf708d2f8327ba0ae42652d4b6d332fd560cdcf6c7ac9b09140bd0ced8a67"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
     "libx11",
     "libxt",
     "mesa"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

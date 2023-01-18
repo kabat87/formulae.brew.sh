@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.music.mcgill.ca/~gary/rtaudio/release/rtaudio-5.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d6089c214e5dbff136ab21f3f5efc284e93475ebd198c54d4b9b6c44419ef4e6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rtaudio/blobs/sha256:47821e8d59de91cc4b0207b4167985586fee5018216279dc91d072ef26596f6e",
+          "sha256": "47821e8d59de91cc4b0207b4167985586fee5018216279dc91d072ef26596f6e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rtaudio/blobs/sha256:ecedd19fd1867f51b7c8bfd6f408d6b33619f544a536d8145bee666c1940e75d",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rtaudio/blobs/sha256:820e94dc0c131b738c77bd0f06658ccecfd284197fbb9051859751cfee6d7090",
           "sha256": "820e94dc0c131b738c77bd0f06658ccecfd284197fbb9051859751cfee6d7090"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rtaudio/blobs/sha256:775eea8548612570a4d328678eb7d5430cf833fdb91f4e9e9e34c12526e260bb",
+          "sha256": "775eea8548612570a4d328678eb7d5430cf833fdb91f4e9e9e34c12526e260bb"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "alsa-lib"
+      ]
+    }
+  }
 }

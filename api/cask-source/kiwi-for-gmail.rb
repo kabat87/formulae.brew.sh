@@ -1,5 +1,5 @@
 cask "kiwi-for-gmail" do
-  version "3.4.1,2405"
+  version "3.6.2,2518"
   sha256 :no_check
 
   url "https://downloads.kiwiforgmail.com/kiwi/release/consumer/Kiwi+for+Gmail+Setup.dmg"
@@ -11,8 +11,6 @@ cask "kiwi-for-gmail" do
     url :url
     strategy :extract_plist
   end
-
-  depends_on macos: ">= :yosemite"
 
   app "Kiwi for Gmail.app"
 

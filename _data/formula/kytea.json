@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.phontron.com/kytea/download/kytea-0.4.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "534a33d40c4dc5421f053c71a75695c377df737169f965573175df5d2cff9f46"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/kytea/blobs/sha256:ef9042105ea5b55cfc0dde6e495c287601ec8aad58d8e14342702e127a7d97dd",
+          "sha256": "ef9042105ea5b55cfc0dde6e495c287601ec8aad58d8e14342702e127a7d97dd"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/kytea/blobs/sha256:5de2fbf7e068e2c61aac03c0b672990f22280ab377d7034dc708d96b5ce76ce6",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/kytea/blobs/sha256:e6507d77b03cee09e01eed90d0eb1c724c8acce9ffb7ad0d75a4dfc7ba434fe8",
           "sha256": "e6507d77b03cee09e01eed90d0eb1c724c8acce9ffb7ad0d75a4dfc7ba434fe8"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/kytea/blobs/sha256:0ec4d5bde1d09dd1b51f2cd047b8e586b1aebadc0a8d418025f778ef68ce1c72",
+          "sha256": "0ec4d5bde1d09dd1b51f2cd047b8e586b1aebadc0a8d418025f778ef68ce1c72"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/kytea/blobs/sha256:3e0c66a7efb34ddb8e4f80d9b95562779e224271b8d63d38f9bc8176103427e2",
           "sha256": "3e0c66a7efb34ddb8e4f80d9b95562779e224271b8d63d38f9bc8176103427e2"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/kytea/blobs/sha256:2f2dda314728cd74750db339ebc2d166b8b611ad54668cc3e7b6225d39aec3f5",
-          "sha256": "2f2dda314728cd74750db339ebc2d166b8b611ad54668cc3e7b6225d39aec3f5"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/kytea/blobs/sha256:91e9f57d0c837e62f789d7189349120d1925eca4fa05479072f89b4f617c2ffd",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

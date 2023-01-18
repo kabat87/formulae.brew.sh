@@ -7,26 +7,30 @@
   ],
   "desc": "Companion app for scanner hardware",
   "homepage": "https://www.getdoxie.com/",
-  "url": "https://download.getdoxie.com/Doxie-2.14.dmg",
+  "url": "https://download.getdoxie.com/Doxie-3.0.dmg",
   "appcast": null,
-  "version": "2.14",
+  "version": "3.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "94b01a798705e792ebc932f7a997f8ad18fd8dfe01a9aba7a661b533306e1510",
+  "sha256": "dc8fd2a733668b08761d28e91e713eff74c629edcbe2057fcbc6c4ac1c41ff37",
   "artifacts": [
-    [
-      "Doxie.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.getdoxie.doxie",
-        "~/Library/Preferences/com.getdoxie.doxie.plist",
-        "~/Library/Saved Application State/com.getdoxie.doxie.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Doxie.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.getdoxie.doxie",
+            "~/Library/Preferences/com.getdoxie.doxie.plist",
+            "~/Library/Saved Application State/com.getdoxie.doxie.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,22 +7,28 @@
   ],
   "desc": "Virtual meeting client",
   "homepage": "https://www.adobe.com/products/adobeconnect.html",
-  "url": "https://download.adobe.com/pub/connect/updaters/meeting/11/AdobeConnect_2021_11_22.dmg",
+  "url": "https://download.adobe.com/pub/connect/updaters/meeting/11/AdobeConnect_2022_10_42.dmg",
   "appcast": null,
-  "version": "11,2021.11.22",
+  "version": "11,2022.10.42",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "62369795374e6d05b7b6799f265864707d2caa56a61b6858f50ba5f32b100d74",
+  "sha256": "fe4ecaa3823e50a7a4443439982b27737aa636622ff42d7d3e8db645f64a2766",
   "artifacts": [
     {
-      "delete": "/Applications/Adobe Connect",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/Adobe Connect"
+        }
+      ]
     },
     {
-      "path": "AdobeConnectInstaller.app"
+      "installer": [
+        {
+          "manual": "AdobeConnectInstaller.app"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +36,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

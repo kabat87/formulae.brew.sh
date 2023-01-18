@@ -7,34 +7,40 @@
   ],
   "desc": "Personal assistant and productivity tool for Apple Mail",
   "homepage": "https://www.mailbutler.io/",
-  "url": "https://downloads.mailbutler.io/sparkle/public/Mailbutler_4709-2071582.zip",
+  "url": "https://downloads.mailbutler.io/sparkle/public/Mailbutler_5920-2614587.zip",
   "appcast": null,
-  "version": "4709,2071582",
+  "version": "5920,2614587",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "198ca74f42e38d8ad1c5e7181ac401aa66054788eae5ed70f86a01c7ad4ff90e",
+  "sha256": "55416e8140d09da1f52a118c1fa128bfbae2325b46b209869fdb9c940d6b64c4",
   "artifacts": [
     {
-      "delete": "/Library/Mail/Bundles/Mailbutler.mailbundle",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Library/Mail/Bundles/Mailbutler.mailbundle"
+        }
+      ]
     },
-    [
-      "Mailbutler.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.mailbutler.app",
-        "~/Library/Caches/com.mailbutler.app",
-        "~/Library/LaunchAgents/com.mailbutler.agent.plist",
-        "~/Library/Preferences/com.mailbutler.agent.plist",
-        "~/Library/Preferences/com.mailbutler.app.plist",
-        "~/Library/Saved Application State/com.mailbutler.app.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Mailbutler.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.mailbutler.app",
+            "~/Library/Caches/com.mailbutler.app",
+            "~/Library/LaunchAgents/com.mailbutler.agent.plist",
+            "~/Library/Preferences/com.mailbutler.agent.plist",
+            "~/Library/Preferences/com.mailbutler.app.plist",
+            "~/Library/Saved Application State/com.mailbutler.app.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -47,5 +53,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

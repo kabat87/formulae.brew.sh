@@ -11,7 +11,7 @@
   ],
   "desc": "Port-knock server",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://zeroflux.org/projects/knock",
+  "homepage": "https://github.com/jvinet/knock",
   "versions": {
     "stable": "0.8",
     "head": "HEAD",
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://zeroflux.org/proj/knock/files/knock-0.8.tar.gz",
+      "url": "https://github.com/jvinet/knock/releases/download/v0.8/knock-0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "698d8c965624ea2ecb1e3df4524ed05afe387f6d20ded1e8a231209ad48169c7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/knock/blobs/sha256:326959f0e368e3b38816abdc5b45d483d1c4d46f0d26775171bd7d5ebeaa059d",
+          "sha256": "326959f0e368e3b38816abdc5b45d483d1c4d46f0d26775171bd7d5ebeaa059d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/knock/blobs/sha256:4f84095e2b3b16af1f3d2263b79dd3432f9dbc9db27654377d520fdb54a0c520",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/knock/blobs/sha256:81bcc7e4f700f88fd52678bcb97fe0eddf0a562e28bd406268ae263e286903dd",
           "sha256": "81bcc7e4f700f88fd52678bcb97fe0eddf0a562e28bd406268ae263e286903dd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/knock/blobs/sha256:765d3a0f6ae6560d5c274cda7330e50faaa3412d11251594a8463b5acd9a0539",
+          "sha256": "765d3a0f6ae6560d5c274cda7330e50faaa3412d11251594a8463b5acd9a0539"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

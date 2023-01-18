@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/andreazorzetto/yh/archive/v0.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "78ef799c500c00164ea05aacafc5c34dccc565e364285f05636c920c2c356d73"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/yh/blobs/sha256:676027b73d92187c5394037264a16c8b1e5c175e0619db4d26b4eef92ea224d7",
+          "sha256": "676027b73d92187c5394037264a16c8b1e5c175e0619db4d26b4eef92ea224d7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/yh/blobs/sha256:d48312b6e67ee8a4bd548dcbb392a296310bc7100cda5072fdd85cf700defc87",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/yh/blobs/sha256:1c7d591013f9ba22f605f81f1f058c3377f4125ef1d0f990651e9cdd12805cdc",
           "sha256": "1c7d591013f9ba22f605f81f1f058c3377f4125ef1d0f990651e9cdd12805cdc"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/yh/blobs/sha256:26c0d39a156eb0dfe843e5fe5a70ff7d6e83caa2198fcb6b9f9c859829504ed3",
+          "sha256": "26c0d39a156eb0dfe843e5fe5a70ff7d6e83caa2198fcb6b9f9c859829504ed3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

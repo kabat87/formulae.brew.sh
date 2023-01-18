@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.apache.org/dyn/closer.lua?path=subversion/subversion-1.8.19.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "56e869b0db59519867f7077849c9c0962c599974f1412ea235eab7f98c20e6be"
     }
   },
   "revision": 1,
@@ -54,7 +55,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -67,6 +67,9 @@
     "apr-util",
     "openssl@1.1",
     "sqlite"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -93,7 +96,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2022-10-19",
+  "disable_reason": "does_not_build",
+  "variations": {
+  }
 }

@@ -11,17 +11,18 @@
   ],
   "desc": "Simulator for HTTP-based APIs",
   "license": "Apache-2.0",
-  "homepage": "http://wiremock.org/docs/running-standalone/",
+  "homepage": "https://wiremock.org/docs/running-standalone/",
   "versions": {
-    "stable": "2.32.0",
+    "stable": "2.35.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://search.maven.org/remotecontent?filepath=com/github/tomakehurst/wiremock-jre8-standalone/2.32.0/wiremock-jre8-standalone-2.32.0.jar",
+      "url": "https://search.maven.org/remotecontent?filepath=com/github/tomakehurst/wiremock-jre8-standalone/2.35.0/wiremock-jre8-standalone-2.35.0.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ae156ae2812e3cfa470c47ed073100ef4ec77927372a4e203f0e3bd531f3eb57"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wiremock-standalone/blobs/sha256:6c7c7c2361e2bb4a012cea8064df7ac283d1043a0a2d5c32742f0b8724923f9e",
-          "sha256": "6c7c7c2361e2bb4a012cea8064df7ac283d1043a0a2d5c32742f0b8724923f9e"
+          "url": "https://ghcr.io/v2/homebrew/core/wiremock-standalone/blobs/sha256:cf5d7cfa1ff79a55030816f8569480bbedb6221bb0f7900525d29b3793c4c4d9",
+          "sha256": "cf5d7cfa1ff79a55030816f8569480bbedb6221bb0f7900525d29b3793c4c4d9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

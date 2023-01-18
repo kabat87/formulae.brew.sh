@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jubalh/nudoku/archive/2.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "eeff7f3adea5bfe7b88bf7683d68e9a597aabd1442d1621f21760c746400b924"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/nudoku/blobs/sha256:2235a839fa91c8f417abad05439f67f70d6beb71458e84fe26fbfeefd0dabccf",
+          "sha256": "2235a839fa91c8f417abad05439f67f70d6beb71458e84fe26fbfeefd0dabccf"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/nudoku/blobs/sha256:71845f6de82d5ac9465279ae7f0dc65b580899f321d43e8bd8b2d59b194ebf24",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/nudoku/blobs/sha256:daa1278f79f9fdf5cd8780ba68d3bf89982728c1ddf636f89475e89b14bd9c64",
           "sha256": "daa1278f79f9fdf5cd8780ba68d3bf89982728c1ddf636f89475e89b14bd9c64"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/nudoku/blobs/sha256:ecfe15bec230427b33ea50f132610048b1f9933e4fed347fcc1e51b24bf46c80",
+          "sha256": "ecfe15bec230427b33ea50f132610048b1f9933e4fed347fcc1e51b24bf46c80"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
   ],
   "dependencies": [
     "gettext"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

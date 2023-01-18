@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/LASzip/LASzip/releases/download/3.4.3/laszip-src-3.4.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "53f546a7f06fc969b38d1d71cceb1862b4fc2c4a0965191a0eee81a57c7b373d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/laszip/blobs/sha256:5d2325d42a6958fad99c62e6330f6081fcf0bb95568345a321eb301cff46549d",
+          "sha256": "5d2325d42a6958fad99c62e6330f6081fcf0bb95568345a321eb301cff46549d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/laszip/blobs/sha256:5064bc999925063dab10850a16565f0e6146565496fe53357b138dffbe5ade18",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/laszip/blobs/sha256:6849693f9166120961fcada7af8d222c1e7580bc191d75a3fdef7ca685f22566",
           "sha256": "6849693f9166120961fcada7af8d222c1e7580bc191d75a3fdef7ca685f22566"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/laszip/blobs/sha256:f2928df3b4e05788c49e8f6b8b4180e5c5c74c8e29939adede4186ddde872a64",
+          "sha256": "f2928df3b4e05788c49e8f6b8b4180e5c5c74c8e29939adede4186ddde872a64"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

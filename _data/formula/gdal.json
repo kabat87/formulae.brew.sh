@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://www.gdal.org/",
   "versions": {
-    "stable": "3.4.1",
+    "stable": "3.6.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.osgeo.org/gdal/3.4.1/gdal-3.4.1.tar.xz",
+      "url": "http://download.osgeo.org/gdal/3.6.2/gdal-3.6.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "35f40d2e08061b342513cdcddc2b997b3814ef8254514f0ef1e8bc7aa56cf681"
     }
   },
   "revision": 0,
@@ -31,39 +32,55 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:d08762b512461dee51727b5f9039f8f7cda24f45af98f079a394c886d69d796e",
+          "sha256": "d08762b512461dee51727b5f9039f8f7cda24f45af98f079a394c886d69d796e"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:57ee5af7856afd3d7de3c9100826e7a564b2aad8f7baca123da52d55d6eeab46",
+          "sha256": "57ee5af7856afd3d7de3c9100826e7a564b2aad8f7baca123da52d55d6eeab46"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:2a48a92a0beaa82e0c090449bb1f023d91d7adea5b258b6cda919d42124534f4",
-          "sha256": "2a48a92a0beaa82e0c090449bb1f023d91d7adea5b258b6cda919d42124534f4"
+          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:5b51bb6dfc5d237ed7d2309dc2d893565479a6d3106de8206bf2e9eab271a087",
+          "sha256": "5b51bb6dfc5d237ed7d2309dc2d893565479a6d3106de8206bf2e9eab271a087"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:a4fec61bbc5ac86eabd4c06d2b86a961a26d05ab8983a131e07772356a74c483",
+          "sha256": "a4fec61bbc5ac86eabd4c06d2b86a961a26d05ab8983a131e07772356a74c483"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:6d3c327fb8482acaa12a4532dd0193b044e36a58161b54e18c6ff72ca0482a8f",
+          "sha256": "6d3c327fb8482acaa12a4532dd0193b044e36a58161b54e18c6ff72ca0482a8f"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:cdff18784e78118ad2fc722af3df6f4ef11c04ba4d0259fc5e539b72644d0cf8",
-          "sha256": "cdff18784e78118ad2fc722af3df6f4ef11c04ba4d0259fc5e539b72644d0cf8"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:55db5c6a5f8d23c80f2650eb8c7935dfa6faf2c090f026121368583e21180dd6",
-          "sha256": "55db5c6a5f8d23c80f2650eb8c7935dfa6faf2c090f026121368583e21180dd6"
+          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:f2bf6ce3f81043819dde60f065428c64a9fadd92f0b892669874b888a713973f",
+          "sha256": "f2bf6ce3f81043819dde60f065428c64a9fadd92f0b892669874b888a713973f"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:5b49a0798e305762ab8121d1cd11c44623881bbd0321a08087132565fe933761",
-          "sha256": "5b49a0798e305762ab8121d1cd11c44623881bbd0321a08087132565fe933761"
+          "url": "https://ghcr.io/v2/homebrew/core/gdal/blobs/sha256:7e3f364f934ddc0048563a3085a4d10bb962d233806ce235dc6284b6ae87d398",
+          "sha256": "7e3f364f934ddc0048563a3085a4d10bb962d233806ce235dc6284b6ae87d398"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
+    "cmake",
     "pkg-config"
   ],
   "dependencies": [
+    "apache-arrow",
     "cfitsio",
     "epsilon",
     "expat",
@@ -71,10 +88,12 @@
     "geos",
     "giflib",
     "hdf5",
-    "jpeg",
+    "jpeg-turbo",
+    "jpeg-xl",
     "json-c",
     "libdap",
     "libgeotiff",
+    "libheif",
     "libpng",
     "libpq",
     "libspatialite",
@@ -82,17 +101,21 @@
     "libxml2",
     "netcdf",
     "numpy",
+    "openexr",
     "openjpeg",
-    "pcre",
-    "poppler-qt5",
-    "proj@7",
-    "python@3.9",
+    "pcre2",
+    "poppler",
+    "proj",
+    "python@3.11",
     "sqlite",
     "unixodbc",
     "webp",
     "xerces-c",
     "xz",
     "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -122,5 +145,46 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "apache-arrow",
+        "cfitsio",
+        "epsilon",
+        "expat",
+        "freexl",
+        "geos",
+        "giflib",
+        "hdf5",
+        "jpeg-turbo",
+        "jpeg-xl",
+        "json-c",
+        "libdap",
+        "libgeotiff",
+        "libheif",
+        "libpng",
+        "libpq",
+        "libspatialite",
+        "libtiff",
+        "libxml2",
+        "netcdf",
+        "numpy",
+        "openexr",
+        "openjpeg",
+        "pcre2",
+        "poppler",
+        "proj",
+        "python@3.11",
+        "sqlite",
+        "unixodbc",
+        "webp",
+        "xerces-c",
+        "xz",
+        "zstd",
+        "curl",
+        "util-linux"
+      ]
+    }
+  }
 }

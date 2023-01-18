@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/libwpd/writerperfect/writerperfect-0.9.6/writerperfect-0.9.6.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1fe162145013a9786b201cb69724b2d55ff2bf2354c3cd188fd4466e7fc324e6"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/writerperfect/blobs/sha256:27bbb6aa97e00bc78675eebde04a4b08754fca44b466df2f1c8dda4180293c6c",
+          "sha256": "27bbb6aa97e00bc78675eebde04a4b08754fca44b466df2f1c8dda4180293c6c"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/writerperfect/blobs/sha256:e5cbdebbad8e36cc2cd59a140c2eb4a8a5fd914b4ed9360fa3f1a4042cd74efe",
+          "sha256": "e5cbdebbad8e36cc2cd59a140c2eb4a8a5fd914b4ed9360fa3f1a4042cd74efe"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/writerperfect/blobs/sha256:00f00e38b26c51048a374d8becec3fbc1c1b1c05105710761575ae4906194920",
           "sha256": "00f00e38b26c51048a374d8becec3fbc1c1b1c05105710761575ae4906194920"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/writerperfect/blobs/sha256:1411634e211f31dd5ea7d9b6dee254337eb61a68a540104310d7f5ccc1f01ee3",
+          "sha256": "1411634e211f31dd5ea7d9b6dee254337eb61a68a540104310d7f5ccc1f01ee3"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/writerperfect/blobs/sha256:bcebaf60ba257cf542554dae36548c5fb0d7b8f1ef7a7c85b55637c1e8bc28aa",
+          "sha256": "bcebaf60ba257cf542554dae36548c5fb0d7b8f1ef7a7c85b55637c1e8bc28aa"
         },
         "big_sur": {
           "cellar": ":any",
@@ -65,13 +86,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/writerperfect/blobs/sha256:549f41525d1a5cf4cad493650ea0f8daae0208246f36984d6a56a4af533fc881",
           "sha256": "549f41525d1a5cf4cad493650ea0f8daae0208246f36984d6a56a4af533fc881"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/writerperfect/blobs/sha256:8ba99fa8423726871a3437205306e9cec03cc3715ed8630f1e29acd7ae74be14",
+          "sha256": "8ba99fa8423726871a3437205306e9cec03cc3715ed8630f1e29acd7ae74be14"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +109,9 @@
     "libwpd",
     "libwpg",
     "libwps"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -112,5 +140,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

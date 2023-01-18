@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.rkeene.org/files/oss/libopennet/libopennet-0.9.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d1350abe17ac507ffb50d360c5bf8290e97c6843f569a1d740f9c1d369200096"
     }
   },
   "revision": 0,
@@ -31,6 +32,31 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:1ce4bb615aaa4579a6719a21eaaea4cdcf6beba142a9191e9aca597d6fbdf726",
+          "sha256": "1ce4bb615aaa4579a6719a21eaaea4cdcf6beba142a9191e9aca597d6fbdf726"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:7adee83fdb8fc7a65bd7a4f34b2cedfe58a2ef51e66892fd9ecd89732c1b779c",
+          "sha256": "7adee83fdb8fc7a65bd7a4f34b2cedfe58a2ef51e66892fd9ecd89732c1b779c"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:6c773cf155f2d32421b30368262329bb8d943c8c9f34b095fc1387682bb11386",
+          "sha256": "6c773cf155f2d32421b30368262329bb8d943c8c9f34b095fc1387682bb11386"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:789a576fa0b7cfcaf5fb155d4b65ae8afd4c8d7835c36bfedbaaebb33434c7d7",
+          "sha256": "789a576fa0b7cfcaf5fb155d4b65ae8afd4c8d7835c36bfedbaaebb33434c7d7"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:d14a15468f38a3c053272c0669e1db3a550bd121ddb6dbbf8a47637de6fc956c",
+          "sha256": "d14a15468f38a3c053272c0669e1db3a550bd121ddb6dbbf8a47637de6fc956c"
+        },
         "big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:1c514ff48871809fd77cadcded9c2dc71f7913fde66c81fe3a9c6488b927d17f",
@@ -61,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:de1cb9622ec3b6501236af7e66367bc5bbaa20dfb8e3ae328a339bea6d708bab",
           "sha256": "de1cb9622ec3b6501236af7e66367bc5bbaa20dfb8e3ae328a339bea6d708bab"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:abcf105b630a05b8a7d26f1a0ba8defafcf31c0dc23e79c3a5f8a9a14878e6de",
-          "sha256": "abcf105b630a05b8a7d26f1a0ba8defafcf31c0dc23e79c3a5f8a9a14878e6de"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libopennet/blobs/sha256:d12f92e4c1e648507685be0a40102bbf253da35bc2bf2bc25b412e8900165a6d",
@@ -76,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +136,22 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "automake"
+      ]
+    },
+    "arm64_monterey": {
+      "build_dependencies": [
+        "automake"
+      ]
+    },
+    "arm64_big_sur": {
+      "build_dependencies": [
+        "automake"
+      ]
+    }
+  }
 }

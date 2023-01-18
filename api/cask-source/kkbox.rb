@@ -1,6 +1,6 @@
 cask "kkbox" do
-  version "21.12.10"
-  sha256 "96b5fbe1a1c13b75eef940a75e2a3f8ab7a28918d28c7c44e4de24879ce199d4"
+  version "22.12.0"
+  sha256 "ee7bb8c9da1e0f1a873a75f579ef1a82d4d3158feeaa3165316541c273b401a0"
 
   url "https://dl-universal.kfs.io/#{version}/KKBOX-#{version}.dmg",
       verified: "dl-universal.kfs.io/"
@@ -9,8 +9,8 @@ cask "kkbox" do
   homepage "https://www.kkbox.com/"
 
   livecheck do
-    url "https://www.kkbox.com/tw/en/download"
-    regex(/href=.*?KKBOX[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+    url "https://dl-universal.kfs.io/latest/darwin"
+    strategy :header_match
   end
 
   depends_on macos: ">= :el_capitan"

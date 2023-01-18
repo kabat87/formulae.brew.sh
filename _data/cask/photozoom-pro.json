@@ -9,7 +9,7 @@
   "homepage": "https://www.benvista.com/photozoompro",
   "url": "https://www.benvista.com/photozoompro8/download/mac",
   "appcast": null,
-  "version": "8",
+  "version": "8.1.0",
   "versions": {
   },
   "installed": null,
@@ -17,16 +17,24 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.benvista.pkg.PhotoZoom-Pro-8.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.benvista.pkg.PhotoZoom-Pro-8.app"
+        }
+      ]
     },
-    "PhotoZoom Pro 8 Installer.mpkg (Pkg)"
+    {
+      "pkg": [
+        "PhotoZoom Pro 8 Installer.mpkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

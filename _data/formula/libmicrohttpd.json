@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/libmicrohttpd/libmicrohttpd-0.9.75.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9278907a6f571b391aab9644fd646a5108ed97311ec66f6359cebbedb0a4e3bb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:8b0d7364c3c44c0efa904dcc80f7beb63640454a34cec5d35c84614e3305f57b",
+          "sha256": "8b0d7364c3c44c0efa904dcc80f7beb63640454a34cec5d35c84614e3305f57b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:719b89039fa6d2a7bf46e3e41d092854fcf7a2192bff60dcc6d307416f67758d",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:0ca1f7a5751af784f3ec1afc2fa85bde3487be08a7b5fc17a07335c0d399b13c",
           "sha256": "0ca1f7a5751af784f3ec1afc2fa85bde3487be08a7b5fc17a07335c0d399b13c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmicrohttpd/blobs/sha256:7ebbaab537451e21141c40b20afc157d187a4ce0297ecff798256375cfee7eb1",
+          "sha256": "7ebbaab537451e21141c40b20afc157d187a4ce0297ecff798256375cfee7eb1"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "gnutls"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

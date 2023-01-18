@@ -1,15 +1,15 @@
 cask "kaleidoscope" do
-  version "3.1.3,2027"
-  sha256 "21d46bb5cb251cab1e4822ed1b12604bec91ea4653e50b8243dda9c38a02badc"
+  version "3.8,2132"
+  sha256 "b8407246c523dc27610726c7365bd739fed869cf203a4a2591b6cc150c19cedb"
 
   url "https://updates.kaleidoscope.app/v#{version.major}/prod/Kaleidoscope-#{version.csv.first}-#{version.csv.second}.app.zip"
   name "Kaleidoscope"
   desc "Spot and merge differences in text and image files or folders"
-  homepage "https://www.kaleidoscope.app/"
+  homepage "https://kaleidoscope.app/"
 
   livecheck do
     url "https://updates.kaleidoscope.app/v#{version.major}/prod/appcast"
-    regex(/Kaleidoscope-(\d+(?:\.\d+)+)-(\d+)\.app\.zip/i)
+    regex(/Kaleidoscope[._-]v?(\d+(?:\.\d+)+)[._-](\d+)\.app\.zip/i)
     strategy :page_match do |page, regex|
       page.scan(regex).map { |match| "#{match[0]},#{match[1]}" }
     end
@@ -20,7 +20,6 @@ cask "kaleidoscope" do
   depends_on macos: ">= :big_sur"
 
   app "Kaleidoscope.app"
-  binary "#{appdir}/Kaleidoscope.app/Contents/Resources/bin/ksdiff"
 
   zap trash: [
     "~/Library/Application Support/app.kaleidoscope.v*",

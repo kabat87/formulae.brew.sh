@@ -13,15 +13,16 @@
   "license": "GPL-2.0-only",
   "homepage": "https://wiki.linuxfoundation.org/networking/iproute2",
   "versions": {
-    "stable": "5.15.0",
+    "stable": "6.1.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.15.0.tar.xz",
+      "url": "https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-v6.1.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b58b95f34c5b6e8171d1833ccfcf43c86aaa064c99419bd1b2a2eb7ee741f089"
     }
   },
   "revision": 0,
@@ -32,16 +33,15 @@
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "x86_64_linux": {
-          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/iproute2/blobs/sha256:1101f8a608be6e4c999c0d2abe3cc980466faca68f7f5b04696b67fadba84c28",
-          "sha256": "1101f8a608be6e4c999c0d2abe3cc980466faca68f7f5b04696b67fadba84c28"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/iproute2/blobs/sha256:e44296638b851bde19bea18f2405c95a5bc1cec9f0c8a03be7ee4f3507a344b3",
+          "sha256": "e44296638b851bde19bea18f2405c95a5bc1cec9f0c8a03be7ee4f3507a344b3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
     "flex"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -87,5 +90,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "curio" do
-  version "20,20009"
-  sha256 "d1cb21d05345cc77dd31726ba0b3cac665e81974681959401f9c0d5d7cc21c20"
+  version "24.0,24007"
+  sha256 "a0eefd3334158825e09e2857aaff6ed0e5cf2bc849b035e123eeaa5d0aa3df03"
 
   url "https://www.zengobi.com/downloads/Curio#{version.csv.second.no_dots}.zip"
   name "Curio"
@@ -8,18 +8,11 @@ cask "curio" do
   homepage "https://zengobi.com/curio/"
 
   livecheck do
-    url "https://www.zengobi.com/curio/download/"
-    strategy :header_match do |headers|
-      match = headers["location"].match(%r{/Curio(\d+)\.zip})
-      next if match.blank?
-
-      puts match
-
-      "#{match[1][0..1]},#{match[1]}"
-    end
+    url "https://www.zengobi.com/curio/appcasts/Curio#{version.major}.xml"
+    strategy :sparkle
   end
 
-  depends_on macos: ">= :mojave"
+  depends_on macos: ">= :big_sur"
 
   app "Curio.app"
 end

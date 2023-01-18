@@ -13,50 +13,55 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://www.gnu.org/software/gdb/",
   "versions": {
-    "stable": "11.2",
+    "stable": "12.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://ftp.gnu.org/gnu/gdb/gdb-11.2.tar.xz",
+      "url": "https://ftp.gnu.org/gnu/gdb/gdb-12.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0e1793bf8f2b54d53f46dea84ccfd446f48f81b297b28c4f7fc017b818d69fed"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:653c9164e734b074e7688d59250d33ea6a1b52ace2f4da61a1d8e3f666c031a7",
+          "sha256": "653c9164e734b074e7688d59250d33ea6a1b52ace2f4da61a1d8e3f666c031a7"
+        },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:4c57b1959063153df73c7df07418e3ad59b730567ada8e2320f940a4026df479",
-          "sha256": "4c57b1959063153df73c7df07418e3ad59b730567ada8e2320f940a4026df479"
+          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:4b3dab2ae56bc0df8de29113b853386a0db29f14035f01af6003bab9195418a1",
+          "sha256": "4b3dab2ae56bc0df8de29113b853386a0db29f14035f01af6003bab9195418a1"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:6d7c793bde6483c24cd905b4ed8bb0e295bc6c5f0f441cc2637a78782cd423b6",
-          "sha256": "6d7c793bde6483c24cd905b4ed8bb0e295bc6c5f0f441cc2637a78782cd423b6"
+          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:77a26612312e83da76b6fc7eaf14baf71ed62b6565cb87b63c8807897773fc83",
+          "sha256": "77a26612312e83da76b6fc7eaf14baf71ed62b6565cb87b63c8807897773fc83"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:e56c861c6ea4d560c61efb1a360343514162142c07604751a8107e625cb01d6e",
-          "sha256": "e56c861c6ea4d560c61efb1a360343514162142c07604751a8107e625cb01d6e"
+          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:91f4480cfccf02902efc12e30099f899704fb44eac21b96cd5d2e773328cc03b",
+          "sha256": "91f4480cfccf02902efc12e30099f899704fb44eac21b96cd5d2e773328cc03b"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:271013a91e3dbc94654df18414018c4a66af56ef3976ae37263fada80e76a070",
-          "sha256": "271013a91e3dbc94654df18414018c4a66af56ef3976ae37263fada80e76a070"
+          "url": "https://ghcr.io/v2/homebrew/core/gdb/blobs/sha256:79529333571b0bceb8f8307582cc608e597fbed6be24392a0318e25590ebbd51",
+          "sha256": "79529333571b0bceb8f8307582cc608e597fbed6be24392a0318e25590ebbd51"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -65,8 +70,11 @@
   ],
   "dependencies": [
     "gmp",
-    "python@3.10",
+    "python@3.11",
     "xz"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -75,14 +83,20 @@
 
   ],
   "uses_from_macos": [
-    {
-      "texinfo": "build"
-    },
     "expat",
+    "libxcrypt",
     "ncurses"
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -99,5 +113,33 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "texinfo",
+        "pkg-config"
+      ],
+      "dependencies": [
+        "gmp",
+        "python@3.11",
+        "xz",
+        "expat",
+        "libxcrypt",
+        "ncurses",
+        "guile"
+      ],
+      "caveats": null
+    }
+  }
 }

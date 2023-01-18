@@ -22,7 +22,8 @@
     "stable": {
       "url": "https://github.com/zeromq/libzmq/releases/download/v4.3.4/zeromq-4.3.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c593001a89f5a85dd2ddf564805deb860e02471171b3f204944857336295c3e5"
     }
   },
   "revision": 0,
@@ -32,6 +33,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:6bc660ae09b329a376dc1784d2fa5d7f97ebfffdbbd8548fc664668d5b7d9406",
+          "sha256": "6bc660ae09b329a376dc1784d2fa5d7f97ebfffdbbd8548fc664668d5b7d9406"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:3776994a62536dd689bfa39321f8d0eb92cb9e71ae6fb8c7c3041be344af52c9",
@@ -41,6 +47,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:eb0ee61f9c1e894c9ad5e55a5a8bc0b3859d56fab57179f82e3e41df6ca4b9f5",
           "sha256": "eb0ee61f9c1e894c9ad5e55a5a8bc0b3859d56fab57179f82e3e41df6ca4b9f5"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zeromq/blobs/sha256:c4e25da540f8d95e6d5048e6c7caf2e5f367b6e6b0858cfb6bdcc00f39223525",
+          "sha256": "c4e25da540f8d95e6d5048e6c7caf2e5f367b6e6b0858cfb6bdcc00f39223525"
         },
         "monterey": {
           "cellar": ":any",
@@ -72,7 +83,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +93,9 @@
   ],
   "dependencies": [
     "libsodium"
+  ],
+  "test_dependencies": [
+    "pkg-config"
   ],
   "recommended_dependencies": [
 
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

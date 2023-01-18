@@ -7,25 +7,29 @@
   ],
   "desc": "Pi-hole(s) management in the menu bar",
   "homepage": "https://github.com/amiantos/pibar",
-  "url": "https://s3.amazonaws.com/amiantos/PiBar-1.1.1.zip",
+  "url": "https://s3.amazonaws.com/amiantos/PiBar-1.1.2.zip",
   "appcast": null,
-  "version": "1.1.1",
+  "version": "1.1.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4badcd4056f879e35cf749ce4e2a142a127fd198eec5ddcb15da63a2a0b3c64c",
+  "sha256": "61808096da94b8e7f857e48b0bd499f28ad9f3822ba0d0fed29be9d6b1163949",
   "artifacts": [
-    [
-      "PiBar.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/net.amiantos.PiBar",
-        "~/Library/Containers/net.amiantos.PiBar"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PiBar.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/net.amiantos.PiBar",
+            "~/Library/Containers/net.amiantos.PiBar"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

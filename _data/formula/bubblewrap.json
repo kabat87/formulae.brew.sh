@@ -13,15 +13,16 @@
   "license": "LGPL-2.0-or-later",
   "homepage": "https://github.com/containers/bubblewrap",
   "versions": {
-    "stable": "0.5.0",
+    "stable": "0.7.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/containers/bubblewrap/releases/download/v0.5.0/bubblewrap-0.5.0.tar.xz",
+      "url": "https://github.com/containers/bubblewrap/releases/download/v0.7.0/bubblewrap-0.7.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "764ab7100bd037ea53d440d362e099d7a425966bc62d1f00ab26b8fbb882a9dc"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bubblewrap/blobs/sha256:5e73247a62f45274fa1eba92e4b33a4a8e3bdc059efe34f2a3c92a97998aab38",
-          "sha256": "5e73247a62f45274fa1eba92e4b33a4a8e3bdc059efe34f2a3c92a97998aab38"
+          "url": "https://ghcr.io/v2/homebrew/core/bubblewrap/blobs/sha256:73f968a609c8ccb42909bfdebab5addcd52c59ecda5bfb19a081ae9f95e0dbbf",
+          "sha256": "73f968a609c8ccb42909bfdebab5addcd52c59ecda5bfb19a081ae9f95e0dbbf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,8 +50,10 @@
     "libxslt"
   ],
   "dependencies": [
-    "strace",
     "libcap"
+  ],
+  "test_dependencies": [
+    "strace"
   ],
   "recommended_dependencies": [
 
@@ -88,5 +90,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

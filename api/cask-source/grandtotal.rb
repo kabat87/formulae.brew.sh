@@ -1,14 +1,14 @@
 cask "grandtotal" do
-  version "7.2.3"
-  sha256 "11cd8e1f3c40119ef68d508c77cafa0a7781e59970dfb339c5beef9fd63e06b1"
+  version "8.0.2"
+  sha256 "65f9469683d0c113fc82bd22bf1a26a951f4e2eee8b09f3158974fc19b66eada"
 
-  url "https://mediaatelier.com/GrandTotal#{version.major}/GrandTotal_#{version}.zip"
+  url "https://www.mediaatelier.com/GrandTotal#{version.major}/GrandTotal_#{version}.dmg"
   name "GrandTotal"
   desc "Create invoices and estimates"
   homepage "https://www.mediaatelier.com/GrandTotal#{version.major}/"
 
   livecheck do
-    url "https://mediaatelier.com/GrandTotal#{version.major}/feed.php"
+    url "https://www.mediaatelier.com/GrandTotal#{version.major}/feed.php"
     strategy :sparkle
   end
 

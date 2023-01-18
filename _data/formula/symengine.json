@@ -13,60 +13,70 @@
   "license": "MIT",
   "homepage": "https://sympy.org",
   "versions": {
-    "stable": "0.8.1",
+    "stable": "0.9.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/symengine/symengine/releases/download/v0.8.1/symengine-0.8.1.tar.gz",
+      "url": "https://github.com/symengine/symengine/releases/download/v0.9.0/symengine-0.9.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dcf174ac708ed2acea46691f6e78b9eb946d8a2ba62f75e87cf3bf4f0d651724"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:5e9da40908b2b1a4dd09e1d150db04c1fea72ede228e5df81cb4ba7fd699b48c",
+          "sha256": "5e9da40908b2b1a4dd09e1d150db04c1fea72ede228e5df81cb4ba7fd699b48c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:abe08332bac543566383c8db4f39281f000af279aa0dc49f8ba270f6c2575aba",
-          "sha256": "abe08332bac543566383c8db4f39281f000af279aa0dc49f8ba270f6c2575aba"
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:a21f1ecb176e2381decdbc6571f59541f496d6a0e051830e30580efec1243a48",
+          "sha256": "a21f1ecb176e2381decdbc6571f59541f496d6a0e051830e30580efec1243a48"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:7326b614f16bfe94f168093b138f8a5ea64d1c26375edc80494c14b2f71919d9",
-          "sha256": "7326b614f16bfe94f168093b138f8a5ea64d1c26375edc80494c14b2f71919d9"
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:5761bf631464fe6891de913a4f96804a5b40a90bbe419dc3887b25d9f155c58e",
+          "sha256": "5761bf631464fe6891de913a4f96804a5b40a90bbe419dc3887b25d9f155c58e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:e653de90c0bf275adcdfe257ba6dd4891c226eff6a1782bf6ef4d25ca007b446",
+          "sha256": "e653de90c0bf275adcdfe257ba6dd4891c226eff6a1782bf6ef4d25ca007b446"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:da5f894beea834d4736105580d896218e62e470e3af4004f46bbdeabf94415e8",
-          "sha256": "da5f894beea834d4736105580d896218e62e470e3af4004f46bbdeabf94415e8"
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:8af8b961cbd4dec429440094b7dc5dea18ff766682f013b915d2688497ccc626",
+          "sha256": "8af8b961cbd4dec429440094b7dc5dea18ff766682f013b915d2688497ccc626"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:8797e85c5af2516586b9b2fd3c8510dc714616e08642dff3d9fa6cf49fc969da",
-          "sha256": "8797e85c5af2516586b9b2fd3c8510dc714616e08642dff3d9fa6cf49fc969da"
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:db330d18c95e408e3ad4ae1496cedc00313218fe08a11c8f5590e27d9016af81",
+          "sha256": "db330d18c95e408e3ad4ae1496cedc00313218fe08a11c8f5590e27d9016af81"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:99ef93943b81e12248e9ccc1ae8cd391e28802915ce86567e67b49986efb0a9e",
-          "sha256": "99ef93943b81e12248e9ccc1ae8cd391e28802915ce86567e67b49986efb0a9e"
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:6a0483496434c4d7205a05295db8862d068c92c2e6c7c92cb0dbafeb147d3fc7",
+          "sha256": "6a0483496434c4d7205a05295db8862d068c92c2e6c7c92cb0dbafeb147d3fc7"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:6c6191c7d326ae878fde11604f09887c7b5a6b7aa579755cfc0b4672b752afdb",
-          "sha256": "6c6191c7d326ae878fde11604f09887c7b5a6b7aa579755cfc0b4672b752afdb"
+          "url": "https://ghcr.io/v2/homebrew/core/symengine/blobs/sha256:f113390949772bbe3514e1a7e49c78a29c9e3f2fae7dbac59415b06bf5b2a58b",
+          "sha256": "f113390949772bbe3514e1a7e49c78a29c9e3f2fae7dbac59415b06bf5b2a58b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,11 +84,15 @@
     "cmake"
   ],
   "dependencies": [
+    "cereal",
     "flint",
     "gmp",
     "libmpc",
     "llvm",
     "mpfr"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

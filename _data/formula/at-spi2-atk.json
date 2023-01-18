@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/at-spi2-atk/2.38/at-spi2-atk-2.38.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cfa008a5af822b36ae6287f18182c40c91dd699c55faa38605881ed175ca464f"
     }
   },
   "revision": 0,
@@ -41,7 +42,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,12 +49,15 @@
     "meson",
     "ninja",
     "pkg-config",
-    "python@3.9"
+    "python@3.11"
   ],
   "dependencies": [
     "at-spi2-core",
     "atk",
     "libxml2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -91,5 +94,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

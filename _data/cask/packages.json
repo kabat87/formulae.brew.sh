@@ -9,7 +9,7 @@
   "homepage": "http://s.sudre.free.fr/Software/Packages/about.html",
   "url": "http://s.sudre.free.fr/Software/files/Packages.dmg",
   "appcast": null,
-  "version": "1.2.9",
+  "version": "1.2.10",
   "versions": {
   },
   "installed": null,
@@ -17,16 +17,27 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "script": "Extras/uninstall.sh",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "Extras/uninstall.sh",
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    "packages/Packages.pkg (Pkg)"
+    {
+      "pkg": [
+        "packages/Packages.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

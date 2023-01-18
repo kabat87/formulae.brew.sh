@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vicgeralds/vitetris/archive/v0.59.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "699443df03c8d4bf2051838c1015da72039bbbdd0ab0eede891c59c840bdf58d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vitetris/blobs/sha256:a7e9d7a5f17a0ecec24844b5170fa3a022e98e957bc8c957aed74278f90b5e6f",
+          "sha256": "a7e9d7a5f17a0ecec24844b5170fa3a022e98e957bc8c957aed74278f90b5e6f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vitetris/blobs/sha256:1abdb3a699387c63bb17e24037ba5f6233758ba792964c076db235622de37c0c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vitetris/blobs/sha256:4ab846d19502cc5c5aea07435f491a2e7e73f84b37bae0d40e79dffed69a8e6b",
           "sha256": "4ab846d19502cc5c5aea07435f491a2e7e73f84b37bae0d40e79dffed69a8e6b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vitetris/blobs/sha256:ffb6b3d04c4295734d3278c42f819ff40a9b17e4b01869cb9c8fdadba2e8657f",
+          "sha256": "ffb6b3d04c4295734d3278c42f819ff40a9b17e4b01869cb9c8fdadba2e8657f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

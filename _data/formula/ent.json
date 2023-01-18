@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/psm14/ent/archive/1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6316b9956f2e0cc39f2b934f3c53019eafe2715316c260fd5c1e5ef4523ae520"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ent/blobs/sha256:b9870a5d35b78ac2198a5f793e861dacb1961226df38d8d14dc3538a2f36775b",
+          "sha256": "b9870a5d35b78ac2198a5f793e861dacb1961226df38d8d14dc3538a2f36775b"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ent/blobs/sha256:711e6b4a66e2ca5ecb20bf7bdc9f74d2b8b8c30e9b5e78bd5f2b24717fc5c008",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ent/blobs/sha256:1ae99ed1f191f24e6a66bc3bbe668af5d0bf43437fe28a4b58b6b96643845b78",
           "sha256": "1ae99ed1f191f24e6a66bc3bbe668af5d0bf43437fe28a4b58b6b96643845b78"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ent/blobs/sha256:eff4c785445db5ab72694aee597e36b1a42bff98520f8a9eef4955f513da620f",
+          "sha256": "eff4c785445db5ab72694aee597e36b1a42bff98520f8a9eef4955f513da620f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/ent/blobs/sha256:f5244a065b7aafe3ba60077de0072e9b5d231a7fd1eb348cd7f6583a69a08ad3",
           "sha256": "f5244a065b7aafe3ba60077de0072e9b5d231a7fd1eb348cd7f6583a69a08ad3"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ent/blobs/sha256:072e3e71ee3b6813dafb15e53e8b474c1d15f26865b9cd05652e46c220e3926d",
-          "sha256": "072e3e71ee3b6813dafb15e53e8b474c1d15f26865b9cd05652e46c220e3926d"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ent/blobs/sha256:2473992bc5d574c4fff2dafdc65e23e72c6661fab3b939d6a853a98b45538e4e",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

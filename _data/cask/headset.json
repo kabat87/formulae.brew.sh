@@ -7,31 +7,35 @@
   ],
   "desc": "Music player powered by YouTube and Reddit",
   "homepage": "https://headsetapp.co/",
-  "url": "https://github.com/headsetapp/headset-electron/releases/download/v3.3.3/Headset-3.3.3.dmg",
+  "url": "https://github.com/headsetapp/headset-electron/releases/download/v4.2.1/Headset-4.2.1-x64.dmg",
   "appcast": null,
-  "version": "3.3.3",
+  "version": "4.2.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a4d36f21a4981da9df25331056a13fe3701c006b5d1f9fdc8b0269fcd6c74196",
+  "sha256": "1fa8274db4738f363b741df1dc5004ca87b947e81d3732eefbea5bce39c6ce57",
   "artifacts": [
-    [
-      "Headset.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Headset",
-        "~/Library/Caches/co.headsetapp.app",
-        "~/Library/Caches/co.headsetapp.app.ShipIt",
-        "~/Library/Cookies/co.headsetapp.app.binarycookies",
-        "~/Library/Logs/Headset",
-        "~/Library/Preferences/ByHost/co.headsetapp.app.ShipIt.*.plist",
-        "~/Library/Preferences/co.headsetapp.app.plist",
-        "~/Library/Saved Application State/co.headsetapp.app.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Headset.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Headset",
+            "~/Library/Caches/co.headsetapp.app",
+            "~/Library/Caches/co.headsetapp.app.ShipIt",
+            "~/Library/Cookies/co.headsetapp.app.binarycookies",
+            "~/Library/Logs/Headset",
+            "~/Library/Preferences/ByHost/co.headsetapp.app.ShipIt.*.plist",
+            "~/Library/Preferences/co.headsetapp.app.plist",
+            "~/Library/Saved Application State/co.headsetapp.app.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +43,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/headsetapp/headset-electron/releases/download/v4.2.1/Headset-4.2.1-arm64.dmg",
+      "sha256": "63c6b9b45e7de083eee9267546b5695648d70b088da3488cffa0ca5897691d61"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/headsetapp/headset-electron/releases/download/v4.2.1/Headset-4.2.1-arm64.dmg",
+      "sha256": "63c6b9b45e7de083eee9267546b5695648d70b088da3488cffa0ca5897691d61"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/headsetapp/headset-electron/releases/download/v4.2.1/Headset-4.2.1-arm64.dmg",
+      "sha256": "63c6b9b45e7de083eee9267546b5695648d70b088da3488cffa0ca5897691d61"
+    }
+  }
 }

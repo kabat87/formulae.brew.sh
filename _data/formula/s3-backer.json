@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/archiecobbs/s3backer",
   "versions": {
-    "stable": "1.5.6",
+    "stable": "2.0.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://archie-public.s3.amazonaws.com/s3backer/s3backer-1.5.6.tar.gz",
+      "url": "https://s3.amazonaws.com/archie-public/s3backer/s3backer-2.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0b2432f08e9b986364e35674f39dd11afc1670be382b23cdb7375e86ce132a02"
     }
   },
   "revision": 0,
@@ -31,27 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/s3-backer/blobs/sha256:f54a33c549b57b056808803b4cc722596a89bb9413d135161952903de975a3f5",
-          "sha256": "f54a33c549b57b056808803b4cc722596a89bb9413d135161952903de975a3f5"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/s3-backer/blobs/sha256:346fe1b085490959e17acf9930878b46b8224bf20b7aada21a1a48ab963c0da3",
-          "sha256": "346fe1b085490959e17acf9930878b46b8224bf20b7aada21a1a48ab963c0da3"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/s3-backer/blobs/sha256:4d23cfd2c126c5f3efa1023e7c061830de6f1fdda69760bbd3ed70a169def288",
-          "sha256": "4d23cfd2c126c5f3efa1023e7c061830de6f1fdda69760bbd3ed70a169def288"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/s3-backer/blobs/sha256:5c8f5e8a937e4838c0bada7dcbd98727e6e9d73d5558652b75d0a7a1b8657b0c",
+          "sha256": "5c8f5e8a937e4838c0bada7dcbd98727e6e9d73d5558652b75d0a7a1b8657b0c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -59,7 +49,13 @@
     "pkg-config"
   ],
   "dependencies": [
+    "curl",
+    "expat",
+    "libfuse@2",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -71,12 +67,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -86,7 +90,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

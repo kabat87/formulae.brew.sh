@@ -1,6 +1,6 @@
 cask "microsoft-remote-desktop" do
-  version "10.7.4"
-  sha256 "cbd8362a99e6d3e0e342156fc93b4eaa5a45788b10a890b6d5d6df4173977249"
+  version "10.8.0"
+  sha256 "afcf377cf42f8a9d9235daa751506e545838ca0fac3128fba90ccf1587a91d56"
 
   url "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Remote_Desktop_#{version}_installer.pkg",
       verified: "officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/"
@@ -18,11 +18,18 @@ cask "microsoft-remote-desktop" do
 
   pkg "Microsoft_Remote_Desktop_#{version}_installer.pkg"
 
-  uninstall pkgutil:   "com.microsoft.rdc.macos",
-            launchctl: "com.microsoft.update.agent",
+  uninstall pkgutil:   [
+              "com.microsoft.rdc.macos",
+              "com.microsoft.package.Microsoft_AutoUpdate.app",
+            ],
+            launchctl: [
+              "com.microsoft.autoupdate.helper",
+              "com.microsoft.update.agent",
+            ],
             quit:      [
               "com.microsoft.autoupdate2",
               "com.microsoft.autoupdate.fba",
+              "com.microsoft.errorreporting",
             ]
 
   zap trash: [

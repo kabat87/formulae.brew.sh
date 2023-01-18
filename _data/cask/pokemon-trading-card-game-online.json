@@ -5,28 +5,32 @@
   "name": [
     "Pokemon Trading Card Game Online"
   ],
-  "desc": "PLay the Pokemon TCG online",
+  "desc": "Play the Pokemon TCG online",
   "homepage": "https://www.pokemon.com/us/pokemon-tcg/play-online/",
   "url": "https://tcgo-installer.s3.amazonaws.com/PokemonInstaller_Mac.dmg",
   "appcast": null,
-  "version": "2.78.0.5176",
+  "version": "2.92.0.5691",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Pokemon Trading Card Game Online.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/unity.The Pokémon Company International.Pokemon Trading Card Game Online",
-        "~/Library/Caches/com.plausiblelabs.crashreporter.data/unity.The Pokémon Company International.Pokemon Trading Card Game Online",
-        "~/Library/Preferences/unity.The Pokémon Company International.Pokemon Trading Card Game Online.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Pokemon Trading Card Game Online.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/unity.The Pokémon Company International.Pokemon Trading Card Game Online",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/unity.The Pokémon Company International.Pokemon Trading Card Game Online",
+            "~/Library/Preferences/unity.The Pokémon Company International.Pokemon Trading Card Game Online.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

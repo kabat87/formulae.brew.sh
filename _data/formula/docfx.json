@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://dotnet.github.io/docfx/",
   "versions": {
-    "stable": "2.58.9",
+    "stable": "2.59.4",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/dotnet/docfx/releases/download/v2.58.9/docfx.zip",
+      "url": "https://github.com/dotnet/docfx/releases/download/v2.59.4/docfx.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6de3058630cd89eeee8157d26a81d508a3ce5c0b64b0473c6360bf10a985a52b"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/docfx/blobs/sha256:202f8f1240d24d16474e82acb39561fffd761a889f0b06078f4763a957b3f958",
-          "sha256": "202f8f1240d24d16474e82acb39561fffd761a889f0b06078f4763a957b3f958"
+          "url": "https://ghcr.io/v2/homebrew/core/docfx/blobs/sha256:41c68c370d8e8599bdf37e345baa01988523b618fbc7c65718c4b78d7ed8b3d3",
+          "sha256": "41c68c370d8e8599bdf37e345baa01988523b618fbc7c65718c4b78d7ed8b3d3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "mono"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -10,7 +10,7 @@
 
   ],
   "desc": "Implements E-component of network intrusion detection system",
-  "license": null,
+  "license": "GPL-2.0-only",
   "homepage": "https://libnids.sourceforge.io/",
   "versions": {
     "stable": "1.24",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/libnids/libnids/1.24/libnids-1.24.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "314b4793e0902fbf1fdb7fb659af37a3c1306ed1aad5d1c84de6c931b351d359"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnids/blobs/sha256:a9b786affb4887f607fabbe0df202bdf0d1601ae3210afbf6337577a23ca49ef",
+          "sha256": "a9b786affb4887f607fabbe0df202bdf0d1601ae3210afbf6337577a23ca49ef"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnids/blobs/sha256:085e5576236a751d84a975412ef34f206f2eb0c639c826dde4a7298cea4f00d3",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnids/blobs/sha256:6c7f242b8c5564eebc95837bf61f5760b88e2e543772357d43132921f20f858d",
           "sha256": "6c7f242b8c5564eebc95837bf61f5760b88e2e543772357d43132921f20f858d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnids/blobs/sha256:38b6e4dea05881c126f5abfaa13e8f4c8e5435cf6e51a135ce1c3fd10c120227",
+          "sha256": "38b6e4dea05881c126f5abfaa13e8f4c8e5435cf6e51a135ce1c3fd10c120227"
         },
         "monterey": {
           "cellar": ":any",
@@ -65,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnids/blobs/sha256:e9e968ec057ae597b39c45ff1e804fde87f265c6783e62cb70e009ecc4aafd05",
           "sha256": "e9e968ec057ae597b39c45ff1e804fde87f265c6783e62cb70e009ecc4aafd05"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libnids/blobs/sha256:53191548aacc1a482ec1bec888da8809da4c17b7b88e631b7c725acce36456e9",
+          "sha256": "53191548aacc1a482ec1bec888da8809da4c17b7b88e631b7c725acce36456e9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +100,9 @@
     "glib",
     "libnet"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -92,7 +110,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -112,5 +130,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/cloudposse/atmos",
   "versions": {
-    "stable": "1.3.19",
+    "stable": "1.24.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/cloudposse/atmos/archive/v1.3.19.tar.gz",
+      "url": "https://github.com/cloudposse/atmos/archive/v1.24.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ea4d899b1df9340cb2165b58efecd8f38cecf6329dd889dfa3d4b565f3fb27df"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:bf204cc4db47f54733a7b8e8798be44c4a03e3b06e15a5b3e84fd70154633817",
+          "sha256": "bf204cc4db47f54733a7b8e8798be44c4a03e3b06e15a5b3e84fd70154633817"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:e33dfc37d9b0709d33b53b93007a37e1a00af8459fc339682faab56b741d6225",
-          "sha256": "e33dfc37d9b0709d33b53b93007a37e1a00af8459fc339682faab56b741d6225"
+          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:7c0945bdb8d498181c17019930fecdfcff472bafb6ab7827450276489c9b4a75",
+          "sha256": "7c0945bdb8d498181c17019930fecdfcff472bafb6ab7827450276489c9b4a75"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:ed5a5c7f1eb927996299105170c415a2d73a5737c489e299ec6db2175af47503",
-          "sha256": "ed5a5c7f1eb927996299105170c415a2d73a5737c489e299ec6db2175af47503"
+          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:53d93d8071f6a3a057ac340f0e3cd2c226fe845215142d0bdf4c74cd3cd6d840",
+          "sha256": "53d93d8071f6a3a057ac340f0e3cd2c226fe845215142d0bdf4c74cd3cd6d840"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:7206acf3d644f95e5dbd7ffcd1c22727066d74b2c625102d6d5cd38a4765543a",
+          "sha256": "7206acf3d644f95e5dbd7ffcd1c22727066d74b2c625102d6d5cd38a4765543a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:ec2827d582085180ce610553f8d7ec61a1f8a08ea721c8c7a747096cced78239",
-          "sha256": "ec2827d582085180ce610553f8d7ec61a1f8a08ea721c8c7a747096cced78239"
+          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:f3218b125f713ac3758290df6f39f383e717004d3acb1201d1d776f527966389",
+          "sha256": "f3218b125f713ac3758290df6f39f383e717004d3acb1201d1d776f527966389"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:55b959ede2faf8003b4c74727d320a9da27f6b0df442c3dcb280b3fa78f7a5eb",
-          "sha256": "55b959ede2faf8003b4c74727d320a9da27f6b0df442c3dcb280b3fa78f7a5eb"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:bb31c2eabe6123d803071466807f97f2b0f3dcd33a3c3d48470eba8e8d6a95d1",
-          "sha256": "bb31c2eabe6123d803071466807f97f2b0f3dcd33a3c3d48470eba8e8d6a95d1"
+          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:bc3874c5f38f383619368ff3aa31cc65cf67a1328ad49b96a6dd42a756cd2d5d",
+          "sha256": "bc3874c5f38f383619368ff3aa31cc65cf67a1328ad49b96a6dd42a756cd2d5d"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:3889150195195258390737be9b347fde6069cb441b414af53e5533397a6b24c1",
-          "sha256": "3889150195195258390737be9b347fde6069cb441b414af53e5533397a6b24c1"
+          "url": "https://ghcr.io/v2/homebrew/core/atmos/blobs/sha256:878511f16f76174e8333c7be95245a401c9c68a303b6982676fc7e6603f4c16c",
+          "sha256": "878511f16f76174e8333c7be95245a401c9c68a303b6982676fc7e6603f4c16c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

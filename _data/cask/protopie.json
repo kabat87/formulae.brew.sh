@@ -7,26 +7,30 @@
   ],
   "desc": "Create interactive prototypes",
   "homepage": "https://www.protopie.io/",
-  "url": "https://release.protopie.io/ProtoPie-6.0.4.dmg",
+  "url": "https://release.protopie.io/ProtoPie-7.4.0.dmg",
   "appcast": null,
-  "version": "6.0.4",
+  "version": "7.4.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f81159a54dbfbb61f63dae3969d2c58ca835da76002029055d1615fea9963fa6",
+  "sha256": "b55b7887f951dfb3f0a0a981c959d5121efff13da1c22afb3cf1a445849acde6",
   "artifacts": [
-    [
-      "ProtoPie.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/ProtoPie",
-        "~/Library/Preferences/io.protopie.plist",
-        "~/Library/Saved Application State/io.protopie.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "ProtoPie.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/ProtoPie",
+            "~/Library/Preferences/io.protopie.plist",
+            "~/Library/Saved Application State/io.protopie.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

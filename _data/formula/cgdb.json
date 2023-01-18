@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://cgdb.me/files/cgdb-0.8.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0d38b524d377257b106bad6d856d8ae3304140e1ee24085343e6ddf1b65811f1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cgdb/blobs/sha256:2c71862edb76b37a42f6d41f2f461a56313bb6e56139ab78fe32ee0fe1cea7c5",
+          "sha256": "2c71862edb76b37a42f6d41f2f461a56313bb6e56139ab78fe32ee0fe1cea7c5"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cgdb/blobs/sha256:cf029cddf3d08875c2f363d6ed9df10bfb944830d448557784e669138a3aefa5",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cgdb/blobs/sha256:1dfbebad73683e283033ce308c131a9509a1db30df30830f8177c08f631b69c4",
           "sha256": "1dfbebad73683e283033ce308c131a9509a1db30df30830f8177c08f631b69c4"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cgdb/blobs/sha256:d959481de39f00122a3274092eebb71c62892c0a2abbee8f59fbb3c1040a5c16",
+          "sha256": "d959481de39f00122a3274092eebb71c62892c0a2abbee8f59fbb3c1040a5c16"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -85,9 +98,6 @@
   "uses_from_macos": [
     {
       "flex": "build"
-    },
-    {
-      "texinfo": "build"
     }
   ],
   "requirements": [
@@ -108,5 +118,26 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "help2man",
+        "texinfo"
+      ]
+    },
+    "ventura": {
+      "build_dependencies": [
+        "help2man",
+        "texinfo"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "help2man",
+        "flex",
+        "texinfo"
+      ]
+    }
+  }
 }

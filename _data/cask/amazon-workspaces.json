@@ -7,30 +7,38 @@
   ],
   "desc": "Cloud native persistent desktop virtualization",
   "homepage": "https://clients.amazonworkspaces.com/",
-  "url": "https://d2td7dqidlhjx7.cloudfront.net/prod/iad/osx/WorkSpaces_AllProducts_2177.zip",
+  "url": "https://d2td7dqidlhjx7.cloudfront.net/prod/global/osx/WorkSpaces.pkg",
   "appcast": null,
-  "version": "4.0.6.2177",
+  "version": "5.6.0.2715",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3ff5cfdf6628c8a208d137f3319d563240948e83ce1534ff5661044fcb736442",
+  "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.amazon.workspaces",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.amazon.workspaces"
+        }
+      ]
     },
-    "WorkSpaces.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/Amazon Web Services/Amazon WorkSpaces",
-        "~/Library/Caches/com.amazon.workspaces",
-        "~/Library/Preferences/com.amazon.workspaces.plist",
-        "~/Library/Saved Application State/com.amazon.workspaces.savedState"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "WorkSpaces.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Amazon Web Services/Amazon WorkSpaces",
+            "~/Library/Caches/com.amazon.workspaces",
+            "~/Library/Preferences/com.amazon.workspaces.plist",
+            "~/Library/Saved Application State/com.amazon.workspaces.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +51,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

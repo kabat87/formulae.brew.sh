@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://rfsber.home.xs4all.nl/Robo/archives/robodoc-4.99.44.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3721c3be9668a1503454618ed807ae0fba5068b15bc0ea63846787d7e9e78c0f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/robodoc/blobs/sha256:a279a45d7a1bfdcba730c3be5811f449807f7eb190990407e3f6a7218f5e6129",
+          "sha256": "a279a45d7a1bfdcba730c3be5811f449807f7eb190990407e3f6a7218f5e6129"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/robodoc/blobs/sha256:228f269b8f73406ae0386c01329c95ff14e4a395344e59f93abbfb079fc8cfa4",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/robodoc/blobs/sha256:4dddc1a534d6c0e60601403b9272f84cb14ce2e665e6882b9609b6f7db27d981",
           "sha256": "4dddc1a534d6c0e60601403b9272f84cb14ce2e665e6882b9609b6f7db27d981"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/robodoc/blobs/sha256:188ca55049ef7179545b9886787b5a68739d5034bb106eafb4ff1a19f7de8554",
+          "sha256": "188ca55049ef7179545b9886787b5a68739d5034bb106eafb4ff1a19f7de8554"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

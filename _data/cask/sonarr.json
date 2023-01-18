@@ -7,27 +7,26 @@
   ],
   "desc": "PVR for Usenet and BitTorrent users",
   "homepage": "https://sonarr.tv/",
-  "url": "https://download.sonarr.tv/v3/main/3.0.6.1342/Sonarr.main.3.0.6.1342.macos.zip",
+  "url": "https://download.sonarr.tv/v3/main/3.0.9.1549/Sonarr.main.3.0.9.1549.macos.zip",
   "appcast": null,
-  "version": "3.0.6.1342",
+  "version": "3.0.9.1549",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "27054a0c0da44f182195af5ae475bfe1cc518b2b8b56c01420b8c1ead1a1b7c6",
+  "sha256": "599b9e2fe8079bb4bc504aae2597c8f04e651c85e2eb7eb2af8aa90d30ee4781",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "Sonarr.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Sonarr",
-        "~/Library/Preferences/tv.sonarr.Sonarr.plist",
-        "~/.config/NzbDrone"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Sonarr.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.config/Sonarr"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

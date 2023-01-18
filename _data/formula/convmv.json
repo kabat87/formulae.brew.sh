@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.j3e.de/linux/convmv/convmv-2.05.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "53b6ac8ae4f9beaee5bc5628f6a5382bfd14f42a5bed3d881b829d7b52d81ca6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/convmv/blobs/sha256:a814874b65a3d67de4d5c4f0c1ae2dd94584e23cc8092b2df1cc95b35f7c260d",
+          "sha256": "a814874b65a3d67de4d5c4f0c1ae2dd94584e23cc8092b2df1cc95b35f7c260d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/convmv/blobs/sha256:f70af7ba1886110a7e4eef42e929480994cf73f6fa0511df4a84b17fc542720b",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/convmv/blobs/sha256:3b5226bc4a647dfcfacba43b505e94cd1c2ad5037f04660b267fe4d2f1a2158a",
           "sha256": "3b5226bc4a647dfcfacba43b505e94cd1c2ad5037f04660b267fe4d2f1a2158a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/convmv/blobs/sha256:333fc843d1aa7546df1fc8d19b0da7691125c6b5337e2ec54f458ad97cf99014",
+          "sha256": "333fc843d1aa7546df1fc8d19b0da7691125c6b5337e2ec54f458ad97cf99014"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

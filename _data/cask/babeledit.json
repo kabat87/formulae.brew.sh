@@ -7,22 +7,26 @@
   ],
   "desc": "Translation editor",
   "homepage": "https://www.codeandweb.com/babeledit",
-  "url": "https://www.codeandweb.com/download/babeledit/2.9.2/BabelEdit-2.9.2.dmg",
+  "url": "https://www.codeandweb.com/download/babeledit/4.0.2/BabelEdit-4.0.2.dmg",
   "appcast": null,
-  "version": "2.9.2",
+  "version": "4.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "459b46c4b9d669cca8c5cb07082f2f89890ca19ed23648ea1b50761a0ab758d6",
+  "sha256": "e0bd673abbbe600d5555fff6f3f7975b59d22a133f3b9f09f5beeaa0e84ea014",
   "artifacts": [
-    [
-      "BabelEdit.app"
-    ],
     {
-      "trash": "~/Library/Preferences/de.code-and-web.BabelEdit.plist",
-      "signal": {
-      }
+      "app": [
+        "BabelEdit.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/de.code-and-web.BabelEdit.plist"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

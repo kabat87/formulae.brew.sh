@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://f3d-app.github.io/f3d/",
   "versions": {
-    "stable": "1.2.1",
+    "stable": "1.3.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/f3d-app/f3d/archive/refs/tags/v1.2.1.tar.gz",
+      "url": "https://github.com/f3d-app/f3d/archive/refs/tags/v1.3.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "653dc4044e14d0618c1d947a8ee85d2513e100b3fc24bd6e51830131a13e795d"
     }
   },
   "revision": 1,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:1670039c44e7d3cf5dd1bed69f036b631ebb82eae0e7cad0a8d21e8c7dc61f58",
+          "sha256": "1670039c44e7d3cf5dd1bed69f036b631ebb82eae0e7cad0a8d21e8c7dc61f58"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:2caa72702320bdd5b7dfbedb8852f56a4b8681e8513beed387a1149c52deca45",
-          "sha256": "2caa72702320bdd5b7dfbedb8852f56a4b8681e8513beed387a1149c52deca45"
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:1730a7b915a69ef8a9369e7f032511a44bca9d280523cabaa69b2a64faeed122",
+          "sha256": "1730a7b915a69ef8a9369e7f032511a44bca9d280523cabaa69b2a64faeed122"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:01a5e5ead6c4655d1fbf6d2719026e64bfe6124fdf704654f661af0bc8f94802",
-          "sha256": "01a5e5ead6c4655d1fbf6d2719026e64bfe6124fdf704654f661af0bc8f94802"
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:082b489a728ad43f9f80a8aaa3610a2028d3e2eedf8303062973625bd1348fb7",
+          "sha256": "082b489a728ad43f9f80a8aaa3610a2028d3e2eedf8303062973625bd1348fb7"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:190ac079b6094bf7d5e1def52dcf255bf6339c4c5c6f56236ce76557f0558264",
+          "sha256": "190ac079b6094bf7d5e1def52dcf255bf6339c4c5c6f56236ce76557f0558264"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:ae600cd81acd26f328391bc6a1af2689bfbe301928c1b2f33b735863a22a53ed",
-          "sha256": "ae600cd81acd26f328391bc6a1af2689bfbe301928c1b2f33b735863a22a53ed"
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:f7f44e7c2c788be7a6ab133c54c1aabdca2fa2aa882f9a8fdc88e8c5bc3f1c7c",
+          "sha256": "f7f44e7c2c788be7a6ab133c54c1aabdca2fa2aa882f9a8fdc88e8c5bc3f1c7c"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:21b7488d08ee349bbbbd6524d90047d4bb545be38178b4314f77b6f8c9e2d635",
-          "sha256": "21b7488d08ee349bbbbd6524d90047d4bb545be38178b4314f77b6f8c9e2d635"
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:1978912917d63001226f844b18696ac2dee6f79e21f433d4f3c51b8090798920",
+          "sha256": "1978912917d63001226f844b18696ac2dee6f79e21f433d4f3c51b8090798920"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:2f1e76ff8693fb79a4655b832d21c5a440e7aac9c85775a3b75eda5c46db91ab",
-          "sha256": "2f1e76ff8693fb79a4655b832d21c5a440e7aac9c85775a3b75eda5c46db91ab"
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:9f118e2c5e7aeb9a84d2d04ed08fdfd7bdb922abdfd57c0c54409e3ed02e2209",
+          "sha256": "9f118e2c5e7aeb9a84d2d04ed08fdfd7bdb922abdfd57c0c54409e3ed02e2209"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:3ada81e427f873a0c70ee998ba84197d0050e6d2140807469db94de6cda524ad",
-          "sha256": "3ada81e427f873a0c70ee998ba84197d0050e6d2140807469db94de6cda524ad"
+          "url": "https://ghcr.io/v2/homebrew/core/f3d/blobs/sha256:0deb4bb19364627fd611df0040de1803a623556b27f159e79e3077cf99f53f89",
+          "sha256": "0deb4bb19364627fd611df0040de1803a623556b27f159e79e3077cf99f53f89"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,9 +84,13 @@
     "cmake"
   ],
   "dependencies": [
+    "alembic",
     "assimp",
     "opencascade",
     "vtk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/bitnami/kube-prod-runtime/archive/v1.8.0.tar.gz",
+      "url": "https://github.com/vmware-archive/kube-prod-runtime/archive/v1.8.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cc2fbda4c115d164afcaaabbbef4b5824b9b09b6df95d9cce021aee50c2ad2c1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kubeprod/blobs/sha256:d9299d3fcfdfbc1c9a0a24cc24f810cebf89375f4b9df5959479f21742cd8fff",
+          "sha256": "d9299d3fcfdfbc1c9a0a24cc24f810cebf89375f4b9df5959479f21742cd8fff"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/kubeprod/blobs/sha256:397d87c63d6eb199e49a2d695d3f16619f0fef0ffdf905c6378d241d1259b4c4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/kubeprod/blobs/sha256:0cf8f68102f72c4f3dc4398baa40bed174c9383fe70d6c092416a2413b59fea7",
           "sha256": "0cf8f68102f72c4f3dc4398baa40bed174c9383fe70d6c092416a2413b59fea7"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/kubeprod/blobs/sha256:d631ac16ddff9bfa543840aa89cbda0586c1e2e7390f50d1bb88ef0040bc4ef4",
+          "sha256": "d631ac16ddff9bfa543840aa89cbda0586c1e2e7390f50d1bb88ef0040bc4ef4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,10 +116,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-03-18",
+  "deprecation_reason": "repo_archived",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,50 +13,45 @@
   "license": "GPL-2.0-only",
   "homepage": "https://rpm.org/",
   "versions": {
-    "stable": "4.17.0",
+    "stable": "4.18.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://ftp.rpm.org/releases/rpm-4.17.x/rpm-4.17.0.tar.bz2",
+      "url": "https://ftp.osuosl.org/pub/rpm/releases/rpm-4.18.x/rpm-4.18.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2a17152d7187ab30edf2c2fb586463bdf6388de7b5837480955659e5e9054554"
     }
   },
   "revision": 0,
   "version_scheme": 1,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "big_sur": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rpm/blobs/sha256:6f857111ed59bf5efb8f97ad26c7ed52fb8e70a92d2978dc7d2f6173d14675cd",
-          "sha256": "6f857111ed59bf5efb8f97ad26c7ed52fb8e70a92d2978dc7d2f6173d14675cd"
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/rpm/blobs/sha256:b53546064adccbad8b399e755dee7ce53b7e5740bafb0c9f57c21755bbd44a4e",
+          "sha256": "b53546064adccbad8b399e755dee7ce53b7e5740bafb0c9f57c21755bbd44a4e"
         },
-        "catalina": {
+        "ventura": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rpm/blobs/sha256:29846a4e13dd2683318362442fe7a84c2b7cd71813291be24cc356bc657f8a8d",
-          "sha256": "29846a4e13dd2683318362442fe7a84c2b7cd71813291be24cc356bc657f8a8d"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rpm/blobs/sha256:aeab2644677216b3d631a4a1abb3d75aada85152f7f85a550ab43943b934f994",
-          "sha256": "aeab2644677216b3d631a4a1abb3d75aada85152f7f85a550ab43943b934f994"
+          "url": "https://ghcr.io/v2/homebrew/core/rpm/blobs/sha256:c3479781c5af9756f03f0fa03ae34a8810aa5fe4a5a578c012be0aa6d2778b18",
+          "sha256": "c3479781c5af9756f03f0fa03ae34a8810aa5fe4a5a578c012be0aa6d2778b18"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rpm/blobs/sha256:1147c07948c53779fdf751623b349d6da6d6b4753103ce2c898da2cc68a0a041",
-          "sha256": "1147c07948c53779fdf751623b349d6da6d6b4753103ce2c898da2cc68a0a041"
+          "url": "https://ghcr.io/v2/homebrew/core/rpm/blobs/sha256:92fa3dcdb9eb03d3db9941ac7ee1a01a380aa78bdf8d0446f397ac699ff02ca1",
+          "sha256": "92fa3dcdb9eb03d3db9941ac7ee1a01a380aa78bdf8d0446f397ac699ff02ca1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -64,18 +59,20 @@
 
   ],
   "dependencies": [
-    "berkeley-db",
     "gettext",
     "libarchive",
     "libmagic",
-    "libomp",
     "lua",
-    "openssl@1.1",
+    "openssl@3",
     "pkg-config",
     "popt",
     "sqlite",
     "xz",
-    "zstd"
+    "zstd",
+    "libomp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -84,10 +81,19 @@
 
   ],
   "uses_from_macos": [
-
+    "bzip2",
+    "zlib"
   ],
   "requirements": [
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": "13",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -104,5 +110,23 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "gettext",
+        "libarchive",
+        "libmagic",
+        "lua",
+        "openssl@3",
+        "pkg-config",
+        "popt",
+        "sqlite",
+        "xz",
+        "zstd",
+        "bzip2",
+        "zlib"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/avh4/elm-format.git",
       "tag": "0.8.5",
-      "revision": "80f15d85ee71e1663c9b53903f2b5b2aa444a3be"
+      "revision": "80f15d85ee71e1663c9b53903f2b5b2aa444a3be",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/elm-format/blobs/sha256:f0bb51492d7fc58de730bfb13034e5e01dbe84486303fa42c77418ea3142b728",
+          "sha256": "f0bb51492d7fc58de730bfb13034e5e01dbe84486303fa42c77418ea3142b728"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/elm-format/blobs/sha256:7522c2f606c3f292b32a6eb6b3b75bceacec062bfd1495e6189ab9858988760f",
+          "sha256": "7522c2f606c3f292b32a6eb6b3b75bceacec062bfd1495e6189ab9858988760f"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/elm-format/blobs/sha256:9066d69a558d83fd34502c7a8949213fbd8c62314d6020e7bf83bf533b48ff87",
@@ -56,7 +67,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -65,6 +75,9 @@
     "haskell-stack"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,5 +117,17 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "cabal-install",
+        "haskell-stack",
+        "xz"
+      ],
+      "dependencies": [
+        "gmp"
+      ]
+    }
+  }
 }

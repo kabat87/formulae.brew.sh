@@ -13,15 +13,16 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/rustscan/rustscan",
   "versions": {
-    "stable": "2.0.1",
+    "stable": "2.1.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/RustScan/RustScan/archive/2.0.1.tar.gz",
+      "url": "https://github.com/RustScan/RustScan/archive/2.1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "51244a5bde278b25de030bd91e4ebe1d4b87269b2d0f7f601565caef4fb5749a"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:0ffa89393900fa09821ce302ca8100e3b2faa144633248641898f10f1835f8ae",
+          "sha256": "0ffa89393900fa09821ce302ca8100e3b2faa144633248641898f10f1835f8ae"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:2f5e8433e240eebc01325acac2ed8605aeeb8f20d0e8b6ddaccdf850ef1c7176",
+          "sha256": "2f5e8433e240eebc01325acac2ed8605aeeb8f20d0e8b6ddaccdf850ef1c7176"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:5953c9a05726eb6c2e4296ebb6be4e1f440fcba58d874838f5cab3233f663955",
+          "sha256": "5953c9a05726eb6c2e4296ebb6be4e1f440fcba58d874838f5cab3233f663955"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:3dfcff3280f6fe5268ea39a88095acc38183eefff94fad38104fb9a7b84f5cdf",
+          "sha256": "3dfcff3280f6fe5268ea39a88095acc38183eefff94fad38104fb9a7b84f5cdf"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:3b9fda4219ae6932bc7725b11709405731ccc2ca3c04df7d4abe4ed00219ef8d",
-          "sha256": "3b9fda4219ae6932bc7725b11709405731ccc2ca3c04df7d4abe4ed00219ef8d"
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:a1ff86e5c734de2d5ca9b8daff9b3cf6ac3a5f23c57586db4fa3aab59e0a845a",
+          "sha256": "a1ff86e5c734de2d5ca9b8daff9b3cf6ac3a5f23c57586db4fa3aab59e0a845a"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:83c8a3e9b4a71e21590bd377b1db9518cb32794d341d161519e974dd3e837f2e",
-          "sha256": "83c8a3e9b4a71e21590bd377b1db9518cb32794d341d161519e974dd3e837f2e"
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:406658263b1be14a072f5a2f3df599b4f4c9095c6890ac9785566b4d62015b67",
+          "sha256": "406658263b1be14a072f5a2f3df599b4f4c9095c6890ac9785566b4d62015b67"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:21f4b50689613475ca9194ecae3b062e874d49bb987b1949f453885360715200",
-          "sha256": "21f4b50689613475ca9194ecae3b062e874d49bb987b1949f453885360715200"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:135ddda8cfa5a670c0c49e3730148e8f50dfa1b597d9bdf2c35b5fc4d5a8fd9e",
-          "sha256": "135ddda8cfa5a670c0c49e3730148e8f50dfa1b597d9bdf2c35b5fc4d5a8fd9e"
-        },
-        "high_sierra": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:d830a6c803a7cd609c6287452f9c02bb855e1f193463b2655cc2df19e46e1f6a",
-          "sha256": "d830a6c803a7cd609c6287452f9c02bb855e1f193463b2655cc2df19e46e1f6a"
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:aca14693bff909556d8ef512f239e1d373aa750d96275c75616c9b6f868b48a1",
+          "sha256": "aca14693bff909556d8ef512f239e1d373aa750d96275c75616c9b6f868b48a1"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:cbe4db4bdd1680a3ecb79f4b0a010d342583dc43fc740fee7c80589dd85dae09",
-          "sha256": "cbe4db4bdd1680a3ecb79f4b0a010d342583dc43fc740fee7c80589dd85dae09"
+          "url": "https://ghcr.io/v2/homebrew/core/rustscan/blobs/sha256:dde072367d2ed2cc481eb26f495cf2f8f0931e37cb73b21c853293d6d0162f6e",
+          "sha256": "dde072367d2ed2cc481eb26f495cf2f8f0931e37cb73b21c853293d6d0162f6e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "nmap"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

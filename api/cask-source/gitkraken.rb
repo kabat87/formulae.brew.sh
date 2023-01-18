@@ -1,20 +1,23 @@
 cask "gitkraken" do
-  version "8.2.1"
-  sha256 "40269f91fd979c7347cbedddbe719bd224cd303c3c55842e76cea6273ef8696a"
+  arch arm: "darwin-arm64", intel: "darwin"
 
-  url "https://release.axocdn.com/darwin/GitKraken-v#{version}.zip",
-      verified: "release.axocdn.com/darwin/"
+  version "9.0.1"
+  sha256 arm:   "67e177e1f57f185fd477ed402a1c8a98c9fc213bb1956ac9c17b8110e9d11ee9",
+         intel: "acef872c4577ad82b1a7ca49d0dbe9d589e0fb21ddce1014d0b94137725f2520"
+
+  url "https://release.axocdn.com/#{arch}/GitKraken-v#{version}.zip",
+      verified: "release.axocdn.com/"
   name "GitKraken"
   desc "Git client focusing on productivity"
   homepage "https://www.gitkraken.com/"
 
   livecheck do
-    url "https://support.gitkraken.com/release-notes/current/"
+    url "https://help.gitkraken.com/gitkraken-client/current/"
     regex(/Version\s(\d+(?:\.\d+)+)/i)
   end
 
   auto_updates true
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :el_capitan"
 
   app "GitKraken.app"
 
@@ -33,9 +36,4 @@ cask "gitkraken" do
     "~/Library/Preferences/com.axosoft.gitkraken.plist",
     "~/Library/Saved Application State/com.axosoft.gitkraken.savedState",
   ]
-
-  caveats <<~EOS
-    Big Sur and later Performance Fix
-    See https://www.gitkraken.com/blog/workaround-gitkraken-big-sur-issues
-  EOS
 end

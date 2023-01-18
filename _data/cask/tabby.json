@@ -8,27 +8,31 @@
   ],
   "desc": "Terminal emulator, SSH and serial client",
   "homepage": "https://eugeny.github.io/tabby/",
-  "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.170/tabby-1.0.170-macos-x86_64.zip",
+  "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.188/tabby-1.0.188-macos-x86_64.zip",
   "appcast": null,
-  "version": "1.0.170",
+  "version": "1.0.188",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0db486e1a925d7157e528b68e7c150f3b44f629d15c71c100ab827c61eeb4b34",
+  "sha256": "ea8adc451d19beafd9de3540cc882467b5d1efa00696367572bb7c9d64496ca5",
   "artifacts": [
-    [
-      "Tabby.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/tabby",
-        "~/Library/Preferences/org.tabby.helper.plist",
-        "~/Library/Preferences/org.tabby.plist",
-        "~/Library/Saved Application State/org.tabby.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Tabby.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/tabby",
+            "~/Library/Preferences/org.tabby.helper.plist",
+            "~/Library/Preferences/org.tabby.plist",
+            "~/Library/Saved Application State/org.tabby.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -36,5 +40,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.188/tabby-1.0.188-macos-arm64.zip",
+      "sha256": "457dd9f4fc4e5dfa3aa1ac857430d9c8c33713a3c454cd72d9e3f1afecb4fa3b"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.188/tabby-1.0.188-macos-arm64.zip",
+      "sha256": "457dd9f4fc4e5dfa3aa1ac857430d9c8c33713a3c454cd72d9e3f1afecb4fa3b"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/Eugeny/tabby/releases/download/v1.0.188/tabby-1.0.188-macos-arm64.zip",
+      "sha256": "457dd9f4fc4e5dfa3aa1ac857430d9c8c33713a3c454cd72d9e3f1afecb4fa3b"
+    }
+  }
 }

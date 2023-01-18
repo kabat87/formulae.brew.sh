@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/clutter-gtk/1.8/clutter-gtk-1.8.4.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "521493ec038973c77edcb8bc5eac23eed41645117894aaee7300b2487cb42b06"
     }
   },
   "revision": 4,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/clutter-gtk/blobs/sha256:7bdda03538852053c87def6ab4bf02a8a040389e25ddbaafc3a3d1d29de499ae",
+          "sha256": "7bdda03538852053c87def6ab4bf02a8a040389e25ddbaafc3a3d1d29de499ae"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/clutter-gtk/blobs/sha256:28a3283252422dbc864b7beb4c69e377688c33fbb2a0e535c62a9362264162bf",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/clutter-gtk/blobs/sha256:2fe413931adfbb5801835172149dbf10aa1f1cdc669a0a8f973d834a6251fe0f",
           "sha256": "2fe413931adfbb5801835172149dbf10aa1f1cdc669a0a8f973d834a6251fe0f"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/clutter-gtk/blobs/sha256:f26d721d02014fdc016c0fec68ed9d2d58b2ea101ed3460bd16566ccd009ea4b",
+          "sha256": "f26d721d02014fdc016c0fec68ed9d2d58b2ea101ed3460bd16566ccd009ea4b"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -65,13 +76,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/clutter-gtk/blobs/sha256:90929f36d6105b2b046e32f2d661c91305b785da535a7654fde19eb89617008e",
           "sha256": "90929f36d6105b2b046e32f2d661c91305b785da535a7654fde19eb89617008e"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clutter-gtk/blobs/sha256:ae50137a8bf0f24cc4ea36fe43e5d16f295968ab2efa30c9af8abcb5513ba70f",
+          "sha256": "ae50137a8bf0f24cc4ea36fe43e5d16f295968ab2efa30c9af8abcb5513ba70f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +99,9 @@
     "gdk-pixbuf",
     "glib",
     "gtk+3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,10 +125,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-09-21",
+  "deprecation_reason": "deprecated_upstream",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

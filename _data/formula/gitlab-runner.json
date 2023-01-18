@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://gitlab.com/gitlab-org/gitlab-runner",
   "versions": {
-    "stable": "14.6.0",
+    "stable": "15.7.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://gitlab.com/gitlab-org/gitlab-runner.git",
-      "tag": "v14.6.0",
-      "revision": "5316d4acc957286b43fe29e64684af694de6841d"
+      "tag": "v15.7.2",
+      "revision": "0e7679e6b7cf8d486e5b8e499ccb488c07ce0d1a",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:36ed39ec46b8544c29b6203b513320dc0424b295e3ca499ffa3b5ad5786f735e",
+          "sha256": "36ed39ec46b8544c29b6203b513320dc0424b295e3ca499ffa3b5ad5786f735e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:b136e081d906b25873e5288bfa822817f292d7c5bdf490e75dabaa5e316a9401",
-          "sha256": "b136e081d906b25873e5288bfa822817f292d7c5bdf490e75dabaa5e316a9401"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:34604c85c5fff0beacb5f431841e3123dd9f8f45c236a4bd6a98cd922b646dd7",
+          "sha256": "34604c85c5fff0beacb5f431841e3123dd9f8f45c236a4bd6a98cd922b646dd7"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:0d55714e1e13caf829706f197d109a5b39ec34af41c6f8230b49b1bb95c814d0",
-          "sha256": "0d55714e1e13caf829706f197d109a5b39ec34af41c6f8230b49b1bb95c814d0"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:1962c14f9351e8af641e02527412b869c6c7b23e02770972ec4311c24d453dc3",
+          "sha256": "1962c14f9351e8af641e02527412b869c6c7b23e02770972ec4311c24d453dc3"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:fecb129f3fe4bc1ec1f671f8e88e91a71ae8d5099aa1cd9095a14e45d5cff45d",
+          "sha256": "fecb129f3fe4bc1ec1f671f8e88e91a71ae8d5099aa1cd9095a14e45d5cff45d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:03798f980db0b4933e6f8d32e0aa80858be5ee250a28ab6de43e672a2244309b",
-          "sha256": "03798f980db0b4933e6f8d32e0aa80858be5ee250a28ab6de43e672a2244309b"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:2652f54a9f72d61604ebd38efcb88664600e2102bc4a44efdf154fdf6e98b125",
+          "sha256": "2652f54a9f72d61604ebd38efcb88664600e2102bc4a44efdf154fdf6e98b125"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:1c97ca1ba0b95c1cfc812d930b638ad2e6cbe9cfd500915468a39266a3992e1c",
-          "sha256": "1c97ca1ba0b95c1cfc812d930b638ad2e6cbe9cfd500915468a39266a3992e1c"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:cbb1a58b81a0e30287491b9bd9102b95d1724ed0c974cd84a37e9dca3c93a3c9",
-          "sha256": "cbb1a58b81a0e30287491b9bd9102b95d1724ed0c974cd84a37e9dca3c93a3c9"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:ddc7fd60c887ec77236e2e3ac33c9df4eabf26b282a55e8484c09587c8b67ac4",
+          "sha256": "ddc7fd60c887ec77236e2e3ac33c9df4eabf26b282a55e8484c09587c8b67ac4"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:3a4fde9e8854a5b29816ac6f208aa35ad724faaeb2101e9486a2ca3169db0825",
-          "sha256": "3a4fde9e8854a5b29816ac6f208aa35ad724faaeb2101e9486a2ca3169db0825"
+          "url": "https://ghcr.io/v2/homebrew/core/gitlab-runner/blobs/sha256:65f4d5777e2195f04e2c51c669aa2909674971455b4ec384cbaad13cf286a1b7",
+          "sha256": "65f4d5777e2195f04e2c51c669aa2909674971455b4ec384cbaad13cf286a1b7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

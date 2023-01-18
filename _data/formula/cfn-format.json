@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/aws-cloudformation/rain/archive/v1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "064bc2b563c9b759d16147f33fe5c64bf0af3640cb4ae543e49615ae17b22e01"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cfn-format/blobs/sha256:06656443d643f73ddbefc96742e5a6d3fcd063437e43a8cb90b622fa7d9d45e5",
+          "sha256": "06656443d643f73ddbefc96742e5a6d3fcd063437e43a8cb90b622fa7d9d45e5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cfn-format/blobs/sha256:746d5b7a5493b01f9263de7ae57d14f7debcc09ae37ed9b88e3ca94e71cccb96",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cfn-format/blobs/sha256:ae53259389b4dfb638b10beb48257b7edaf84797b2b1873cb18ce915c61cc8ad",
           "sha256": "ae53259389b4dfb638b10beb48257b7edaf84797b2b1873cb18ce915c61cc8ad"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cfn-format/blobs/sha256:b14811921f89efb1a203c97c1296d806c60d50d6b4c5efe95817bbaced12b4a6",
+          "sha256": "b14811921f89efb1a203c97c1296d806c60d50d6b4c5efe95817bbaced12b4a6"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

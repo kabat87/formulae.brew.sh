@@ -13,15 +13,16 @@
   "license": "GPL-3.0-or-later",
   "homepage": "https://github.com/NixOS/patchelf",
   "versions": {
-    "stable": "0.14.3",
+    "stable": "0.17.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/NixOS/patchelf/releases/download/0.14.3/patchelf-0.14.3.tar.bz2",
+      "url": "https://github.com/NixOS/patchelf/releases/download/0.17.2/patchelf-0.17.2.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bae2ea376072e422c196218dd9bdef0548ccc08da4de9f36b4672df84ea2d8e2"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:0df237f718647a8c248b2112f0b989ffdf5ac1d3261354cef4b5d0fef9425696",
+          "sha256": "0df237f718647a8c248b2112f0b989ffdf5ac1d3261354cef4b5d0fef9425696"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:86440e9f58c2b2451844fdc7a30bcc18f3ddc0e01adca2c1dcff6aea4475d2c7",
-          "sha256": "86440e9f58c2b2451844fdc7a30bcc18f3ddc0e01adca2c1dcff6aea4475d2c7"
+          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:bb45ccc30e36a71c817a3c2729300193830cb1dacd7ec169008421290a4d2c15",
+          "sha256": "bb45ccc30e36a71c817a3c2729300193830cb1dacd7ec169008421290a4d2c15"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:2d21bf1cb91b7457afcaf0c3f85da7858b3dd862542e4e19bac5235b7a3b40ef",
-          "sha256": "2d21bf1cb91b7457afcaf0c3f85da7858b3dd862542e4e19bac5235b7a3b40ef"
+          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:ff06f5e48778635bb7376d3f1f331f21a656dfa450d374fdd608cf0d759ee6ce",
+          "sha256": "ff06f5e48778635bb7376d3f1f331f21a656dfa450d374fdd608cf0d759ee6ce"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:7c3ccbd8364e10beb8fc36547fe9464f647301e2aea2d47754e6cbcf56b9f0c7",
+          "sha256": "7c3ccbd8364e10beb8fc36547fe9464f647301e2aea2d47754e6cbcf56b9f0c7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:1e070e3bbfa9942aebdc0bd7d7b0cde5ebf96677f490a5a9c28f41463092d017",
-          "sha256": "1e070e3bbfa9942aebdc0bd7d7b0cde5ebf96677f490a5a9c28f41463092d017"
+          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:0c4b905a8aa52108d722867b528317001a2cc70a81661ee0f4828a5be6c260d4",
+          "sha256": "0c4b905a8aa52108d722867b528317001a2cc70a81661ee0f4828a5be6c260d4"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:bfe10a967964115789954ec3866be9cfb3ea273cf7f025a3f8afda71d3e4b0f1",
-          "sha256": "bfe10a967964115789954ec3866be9cfb3ea273cf7f025a3f8afda71d3e4b0f1"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:d5b64e5588d18dbae9ffc01c0ea07c45db379cd1c592b3affce58284cdf234cd",
-          "sha256": "d5b64e5588d18dbae9ffc01c0ea07c45db379cd1c592b3affce58284cdf234cd"
+          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:26a100a5ed000ffa714c4c8442e5d2786014b7ece03d30be1564fa00b2e4eacd",
+          "sha256": "26a100a5ed000ffa714c4c8442e5d2786014b7ece03d30be1564fa00b2e4eacd"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:298d89f90bd63ad3170f4f767fa304c3e2b7d722a4eec71242d0e7f7bc8ed22c",
-          "sha256": "298d89f90bd63ad3170f4f767fa304c3e2b7d722a4eec71242d0e7f7bc8ed22c"
+          "url": "https://ghcr.io/v2/homebrew/core/patchelf/blobs/sha256:39f33251bdcfc18e7cd0113bd8c1080c6f868e64f10f9bb5d0a9afb3f66c64e5",
+          "sha256": "39f33251bdcfc18e7cd0113bd8c1080c6f868e64f10f9bb5d0a9afb3f66c64e5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

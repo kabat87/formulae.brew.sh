@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/amitsaha/gitbackup",
   "versions": {
-    "stable": "0.8.0",
+    "stable": "0.9.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/amitsaha/gitbackup/archive/v0.8.0.tar.gz",
+      "url": "https://github.com/amitsaha/gitbackup/archive/v0.9.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dc25680b498995ea4c52b1cb2c756aee200f163fc7dbfa695f0d0fd4cc10c28c"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:e2662dc58792c8acff07d745e88026a58ad2916aa943f03e214861ffff83ced8",
+          "sha256": "e2662dc58792c8acff07d745e88026a58ad2916aa943f03e214861ffff83ced8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:e9f5dd67f2cc158ef3e5735884b2aa5e51545020fdf1e048a685555cd8ef434d",
-          "sha256": "e9f5dd67f2cc158ef3e5735884b2aa5e51545020fdf1e048a685555cd8ef434d"
+          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:e2662dc58792c8acff07d745e88026a58ad2916aa943f03e214861ffff83ced8",
+          "sha256": "e2662dc58792c8acff07d745e88026a58ad2916aa943f03e214861ffff83ced8"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:e9f5dd67f2cc158ef3e5735884b2aa5e51545020fdf1e048a685555cd8ef434d",
-          "sha256": "e9f5dd67f2cc158ef3e5735884b2aa5e51545020fdf1e048a685555cd8ef434d"
+          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:e2662dc58792c8acff07d745e88026a58ad2916aa943f03e214861ffff83ced8",
+          "sha256": "e2662dc58792c8acff07d745e88026a58ad2916aa943f03e214861ffff83ced8"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:9c458fa964243f8611a16564f9afc526a101cc2c1167a0f1dd85def0cd35ce20",
+          "sha256": "9c458fa964243f8611a16564f9afc526a101cc2c1167a0f1dd85def0cd35ce20"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:464f30bd128dfb46f01bace2f652a9175c8d5dd03ce8d997ae03acb92bc8662f",
-          "sha256": "464f30bd128dfb46f01bace2f652a9175c8d5dd03ce8d997ae03acb92bc8662f"
+          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:9c458fa964243f8611a16564f9afc526a101cc2c1167a0f1dd85def0cd35ce20",
+          "sha256": "9c458fa964243f8611a16564f9afc526a101cc2c1167a0f1dd85def0cd35ce20"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:464f30bd128dfb46f01bace2f652a9175c8d5dd03ce8d997ae03acb92bc8662f",
-          "sha256": "464f30bd128dfb46f01bace2f652a9175c8d5dd03ce8d997ae03acb92bc8662f"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:464f30bd128dfb46f01bace2f652a9175c8d5dd03ce8d997ae03acb92bc8662f",
-          "sha256": "464f30bd128dfb46f01bace2f652a9175c8d5dd03ce8d997ae03acb92bc8662f"
+          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:9c458fa964243f8611a16564f9afc526a101cc2c1167a0f1dd85def0cd35ce20",
+          "sha256": "9c458fa964243f8611a16564f9afc526a101cc2c1167a0f1dd85def0cd35ce20"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:190d3d2addb023320b4a9e82550b51a912b2fbefa8ccc4f6fe29b335e80a8a44",
-          "sha256": "190d3d2addb023320b4a9e82550b51a912b2fbefa8ccc4f6fe29b335e80a8a44"
+          "url": "https://ghcr.io/v2/homebrew/core/gitbackup/blobs/sha256:2a062c0da560c0779e9ee952408cc4131980d0658f594933525ee795dd2e9635",
+          "sha256": "2a062c0da560c0779e9ee952408cc4131980d0658f594933525ee795dd2e9635"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

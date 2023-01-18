@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://gitlab.com/osm-c-tools/osmctools.git",
       "tag": "0.9",
-      "revision": "f341f5f237737594c1b024338f0a2fc04fabdff3"
+      "revision": "f341f5f237737594c1b024338f0a2fc04fabdff3",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/osmfilter/blobs/sha256:06e67f6d61cc209499475b010c4bfe2375d5e3dcb4429e89485d6b03454322c6",
+          "sha256": "06e67f6d61cc209499475b010c4bfe2375d5e3dcb4429e89485d6b03454322c6"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/osmfilter/blobs/sha256:daf330073a0fdad514305d1a2af9333705cc946c3bc8e52da4856ae2d0bba094",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/osmfilter/blobs/sha256:4b37db3c9ebe77673bbd83fb7d2e6c215760450987df2ded64044eccf6f34d3b",
           "sha256": "4b37db3c9ebe77673bbd83fb7d2e6c215760450987df2ded64044eccf6f34d3b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/osmfilter/blobs/sha256:b89f9122cd15cd5da3e03fac3b4a1c33ecd2efb325f98918c7e9e494b3bf130b",
+          "sha256": "b89f9122cd15cd5da3e03fac3b4a1c33ecd2efb325f98918c7e9e494b3bf130b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -124,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

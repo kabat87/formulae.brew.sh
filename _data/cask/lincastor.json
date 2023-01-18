@@ -16,9 +16,21 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "LinCastor.app"
-    ]
+    {
+      "app": [
+        "LinCastor.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/LinCastor",
+            "~/Library/Preferences/com.onflapp.LinCastor.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -30,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,41 +7,49 @@
   ],
   "desc": "Unofficial native application for Fastmail",
   "homepage": "https://arievanboxel.fr/fmail/en/",
-  "url": "https://arievanboxel.fr/fmail/sparkle/FMail_254.zip",
+  "url": "https://arievanboxel.fr/fmail/sparkle/FMail_276.zip",
   "appcast": null,
-  "version": "2.5.4,102",
+  "version": "2.7.6,123",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1300ac6037b2fb7fcd21e353b155d4d5bffe56aee9794fdcd2d2bf2fee6c772f",
+  "sha256": "bdbcef213dbf2a92ad5404a5f56326bc22218bd95c40d8f1bd98eb9c1d78762f",
   "artifacts": [
     {
-      "quit": "fr.arievanboxel.fmail",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "fr.arievanboxel.fmail"
+        }
+      ]
     },
-    [
-      "FMail.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/fr.arievanboxel.FMail",
-        "~/Library/Containers/fr.arievanboxel.FMail"
-      ],
-      "signal": {
-      }
+      "app": [
+        "FMail.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/fr.arievanboxel.FMail",
+            "~/Library/Containers/fr.arievanboxel.FMail"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

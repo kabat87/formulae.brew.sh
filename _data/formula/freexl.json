@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3de8b57a3d130cb2881ea52d3aa9ce1feedb1b57b7daa4eb37f751404f90fc22"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/freexl/blobs/sha256:d3b03b75eac2a439db87a56492103fe5eb0e619b1f5597cffc7f03bb11f4640c",
+          "sha256": "d3b03b75eac2a439db87a56492103fe5eb0e619b1f5597cffc7f03bb11f4640c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/freexl/blobs/sha256:f2f26c1449a3f79a89ec85deb5cd22507ee4715827afdf31469fd605c8a31b7f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/freexl/blobs/sha256:57d5fc25946a587bfebb8724bff578688f605edcabba8cd80b9ebbf5840616d0",
           "sha256": "57d5fc25946a587bfebb8724bff578688f605edcabba8cd80b9ebbf5840616d0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/freexl/blobs/sha256:3baeaebe274fc3c9db2a59278fbd334f5a009dfbf03614d63b6803097a5da85b",
+          "sha256": "3baeaebe274fc3c9db2a59278fbd334f5a009dfbf03614d63b6803097a5da85b"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "doxygen"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,26 +7,30 @@
   ],
   "desc": "Molecule editor and visualizer",
   "homepage": "https://avogadro.cc/",
-  "url": "https://github.com/OpenChemistry/avogadrolibs/releases/download/1.95.1/Avogadro2-1.95.1-Darwin.dmg",
+  "url": "https://github.com/OpenChemistry/avogadrolibs/releases/download/1.97.0/Avogadro2-1.97.0-Darwin.dmg",
   "appcast": null,
-  "version": "1.95.1",
+  "version": "1.97.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2fc23987f0955f19f3d58380e5e42bb58ee00a9c383953a2fb6caa9f95922f39",
+  "sha256": "feb33b01de7f83e74ccae47f251803baeef6de727b3a19622921bfa7d289f631",
   "artifacts": [
-    [
-      "Avogadro2.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/org.openchemistry.Avogadro.plist",
-        "~/Library/Saved Application State/cc.avogadro.savedState",
-        "~/Library/Application Support/OpenChemistry/Avogadro"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Avogadro2.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/org.openchemistry.Avogadro.plist",
+            "~/Library/Saved Application State/cc.avogadro.savedState",
+            "~/Library/Application Support/OpenChemistry/Avogadro"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

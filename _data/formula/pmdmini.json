@@ -10,18 +10,19 @@
 
   ],
   "desc": "Plays music in PC-88/98 PMD chiptune format",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://github.com/mistydemeo/pmdmini",
   "versions": {
-    "stable": "1.0.1",
+    "stable": "2.0.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/mistydemeo/pmdmini/archive/v1.0.1.tar.gz",
+      "url": "https://github.com/mistydemeo/pmdmini/archive/v2.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e3288dcf356e83ef4ad48cde44fcb703ca9ce478b9fcac1b44bd9d2d84bf2ba3"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:40b0b5792363acec17804091d52164083487b90a027f4fe2bdf05ca5a7045ba6",
+          "sha256": "40b0b5792363acec17804091d52164083487b90a027f4fe2bdf05ca5a7045ba6"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:27137c3e0caeb62401f16ff188ab94c629935342615a97be38e2a12e77877f33",
+          "sha256": "27137c3e0caeb62401f16ff188ab94c629935342615a97be38e2a12e77877f33"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:bd89f1d1b34981a1d1c10e1917a4303c8ce2937eeb25ab297cb9ab4868d82146",
-          "sha256": "bd89f1d1b34981a1d1c10e1917a4303c8ce2937eeb25ab297cb9ab4868d82146"
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:a2c9ff100327daa46dae7c0fb7d49ee5dd71f7dbd28d585d6a8f6f74b3c2db92",
+          "sha256": "a2c9ff100327daa46dae7c0fb7d49ee5dd71f7dbd28d585d6a8f6f74b3c2db92"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:1579283d159ce1e4a6cc100211eb926a463401e0cdee4ebf314008c478c14c09",
+          "sha256": "1579283d159ce1e4a6cc100211eb926a463401e0cdee4ebf314008c478c14c09"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:b84f6ad8b040a1b193b753e8d9934045d605b7ba37a547acab95302aea802a77",
+          "sha256": "b84f6ad8b040a1b193b753e8d9934045d605b7ba37a547acab95302aea802a77"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:5778b030ba5ad8c7b850946f038729089893f5dd066d9d49fc23377da56a8bc3",
-          "sha256": "5778b030ba5ad8c7b850946f038729089893f5dd066d9d49fc23377da56a8bc3"
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:149cbae3b8b5b93ad8b5e55590e87b96120aa5c4fa729f142d2ab62ea3758d4a",
+          "sha256": "149cbae3b8b5b93ad8b5e55590e87b96120aa5c4fa729f142d2ab62ea3758d4a"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:cfbf667e152bede1fce92c8d358195a651e807595bc5e704d71ee80cfe65682b",
-          "sha256": "cfbf667e152bede1fce92c8d358195a651e807595bc5e704d71ee80cfe65682b"
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:32eaf2e42986d019c891e922a4c6744abdc243c7d927210f65a26c4b363aa569",
+          "sha256": "32eaf2e42986d019c891e922a4c6744abdc243c7d927210f65a26c4b363aa569"
         },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:fe87429ee546fa0629d178c52476c4cc5696abac76b21abcd3e4977c7527bd22",
-          "sha256": "fe87429ee546fa0629d178c52476c4cc5696abac76b21abcd3e4977c7527bd22"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:c3195012d5b5333e76c1a8a44b3f734575540deee884dfb6685e139e1038c138",
-          "sha256": "c3195012d5b5333e76c1a8a44b3f734575540deee884dfb6685e139e1038c138"
-        },
-        "sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:59b287650c6e40c20da8000f5e73b910f8096bd949e4432b4f11e70b1c779a5d",
-          "sha256": "59b287650c6e40c20da8000f5e73b910f8096bd949e4432b4f11e70b1c779a5d"
-        },
-        "el_capitan": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:72afd84c66fef9f142a1922fd0995a6a173b46c40d06715808345cc1c71b6702",
-          "sha256": "72afd84c66fef9f142a1922fd0995a6a173b46c40d06715808345cc1c71b6702"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pmdmini/blobs/sha256:40d7b0addf0328bbb2bd4ab80af954ce4feaa11d57fb76aecc21da90b522cf9e",
+          "sha256": "40d7b0addf0328bbb2bd4ab80af954ce4feaa11d57fb76aecc21da90b522cf9e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,7 +84,10 @@
 
   ],
   "dependencies": [
-    "sdl"
+    "sdl2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

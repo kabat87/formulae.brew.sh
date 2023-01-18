@@ -10,7 +10,7 @@
 
   ],
   "desc": "Very capable calculator",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://w-calc.sourceforge.io/",
   "versions": {
     "stable": "2.5",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/w-calc/Wcalc/2.5/wcalc-2.5.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0e2c17c20f935328dcdc6cb4c06250a6732f9ee78adf7a55c01133960d6d28ee"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/w-calc/blobs/sha256:2140a067af2aa1e613e7dfc8ec7ef33ff4650f4519b4e989ad7d36d00636ffa2",
+          "sha256": "2140a067af2aa1e613e7dfc8ec7ef33ff4650f4519b4e989ad7d36d00636ffa2"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/w-calc/blobs/sha256:710c2684d517f0f0f522008f77b8e3cced2aa51e5e7f5a42d1c9441ad40c24db",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/w-calc/blobs/sha256:0213a099bdf4e642145fba3fa6d034edaa5d5c628259cd175f271b3aa5b35ff8",
           "sha256": "0213a099bdf4e642145fba3fa6d034edaa5d5c628259cd175f271b3aa5b35ff8"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/w-calc/blobs/sha256:5b810eb4cf6254d48f1d6c6c5c582db14cec2b7cd432ba052746b99c2434b0c7",
+          "sha256": "5b810eb4cf6254d48f1d6c6c5c582db14cec2b7cd432ba052746b99c2434b0c7"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
     "gmp",
     "mpfr"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -124,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

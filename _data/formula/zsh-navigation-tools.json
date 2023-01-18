@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/psprint/zsh-navigation-tools/archive/v2.2.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ee832b81ce678a247b998675111c66aa1873d72aa33c2593a65626296ca685fc"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zsh-navigation-tools/blobs/sha256:0c811e2509381123fd425b88a7970664174c9fb9f5d912913bdccf72ecedadcf",
+          "sha256": "0c811e2509381123fd425b88a7970664174c9fb9f5d912913bdccf72ecedadcf"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zsh-navigation-tools/blobs/sha256:8b5a0cee362c74dd8466a9551c20bdcdcef893f0c7a461ba7ac6b69f7e2b1b9f",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zsh-navigation-tools/blobs/sha256:a968a06b57fd74fb842f504c30d61e8c22aa57da9f84d8aca3159f1b5c2eb284",
           "sha256": "a968a06b57fd74fb842f504c30d61e8c22aa57da9f84d8aca3159f1b5c2eb284"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zsh-navigation-tools/blobs/sha256:ea03b58e36003ff31b164c9c66d9befe61b927675e283679216149eeb299c1e2",
+          "sha256": "ea03b58e36003ff31b164c9c66d9befe61b927675e283679216149eeb299c1e2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/zsh-navigation-tools/blobs/sha256:fca68610ba67c19d8516719d03ed5074a5611ba01941dcb135c87d6d561f3cb1",
           "sha256": "fca68610ba67c19d8516719d03ed5074a5611ba01941dcb135c87d6d561f3cb1"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/zsh-navigation-tools/blobs/sha256:fca68610ba67c19d8516719d03ed5074a5611ba01941dcb135c87d6d561f3cb1",
-          "sha256": "fca68610ba67c19d8516719d03ed5074a5611ba01941dcb135c87d6d561f3cb1"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zsh-navigation-tools/blobs/sha256:8b5a0cee362c74dd8466a9551c20bdcdcef893f0c7a461ba7ac6b69f7e2b1b9f",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -116,17 +124,19 @@
   "conflicts_with": [
 
   ],
-  "caveats": "To run zsh-navigation-tools, add the following at the end of your .zshrc:\n  source $(brew --prefix)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh\n\nYou will also need to force reload of your .zshrc:\n  source ~/.zshrc\n",
+  "caveats": "To run zsh-navigation-tools, add the following at the end of your .zshrc:\n  source $(brew --prefix)/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh\n\nYou will also need to restart your terminal for this change to take effect.\n",
   "installed": [
 
   ],
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-12-11",
-  "deprecation_reason": "repo_removed",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-12-30",
+  "disable_reason": "repo_removed",
+  "variations": {
+  }
 }

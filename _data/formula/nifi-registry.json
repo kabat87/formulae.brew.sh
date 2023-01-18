@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://nifi.apache.org/registry",
   "versions": {
-    "stable": "1.15.2",
+    "stable": "1.19.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/closer.lua?path=/nifi/1.15.2/nifi-registry-1.15.2-bin.tar.gz",
+      "url": "https://www.apache.org/dyn/closer.lua?path=/nifi/1.19.1/nifi-registry-1.19.1-bin.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a09db8b0787c8d9bb01130f6d5075154a306e42173ec60622fc96a5f2548b8b2"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/nifi-registry/blobs/sha256:39189768eaf8ff35aab8719d08e72f38618b50aca9e1819136347da025f71e0b",
-          "sha256": "39189768eaf8ff35aab8719d08e72f38618b50aca9e1819136347da025f71e0b"
+          "url": "https://ghcr.io/v2/homebrew/core/nifi-registry/blobs/sha256:8c4d58d05237eb6f5a2a607942a894ff02781fc6289a005a314a82fa48a611c5",
+          "sha256": "8c4d58d05237eb6f5a2a607942a894ff02781fc6289a005a314a82fa48a611c5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

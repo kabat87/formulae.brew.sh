@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/najoshi/sickle/archive/v1.33.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "eab271d25dc799e2ce67c25626128f8f8ed65e3cd68e799479bba20964624734"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sickle/blobs/sha256:e777fe310603467d2feaa5702bca61f2444c2b2e1e82cd2ba0bc21dfb7a2ccd7",
+          "sha256": "e777fe310603467d2feaa5702bca61f2444c2b2e1e82cd2ba0bc21dfb7a2ccd7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/sickle/blobs/sha256:520c9e80b25890a25bb12baca208128352164a31aa7cb76111d9a4a918106c48",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/sickle/blobs/sha256:26c645faa585ff21ef7eee6c62ac906df4bef93dcceb3647168a7c89bcb7ed48",
           "sha256": "26c645faa585ff21ef7eee6c62ac906df4bef93dcceb3647168a7c89bcb7ed48"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sickle/blobs/sha256:aa3b3a6e43a41be578a83db5967567233ae0958695485dba360ca79343b2e110",
+          "sha256": "aa3b3a6e43a41be578a83db5967567233ae0958695485dba360ca79343b2e110"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

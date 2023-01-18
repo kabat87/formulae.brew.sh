@@ -7,32 +7,38 @@
   ],
   "desc": "Screen capture tool for remote teams",
   "homepage": "https://zapier.com/zappy",
-  "url": "https://zappy.zapier.com/releases/zappy-3.0.3.dmg",
+  "url": "https://zappy.zapier.com/releases/zappy-3.2.1.dmg",
   "appcast": null,
-  "version": "3.0.3",
+  "version": "3.2.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "15043687f77135818751332ce7ace3d880fbaf8f239dfe46332006e2169b03bb",
+  "sha256": "9207f129d1ef9585a11004d5288dfe45053f98c736a9ccc143795d70dc48bbdb",
   "artifacts": [
     {
-      "quit": "com.blackbeltlabs.Zappy",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.blackbeltlabs.Zappy"
+        }
+      ]
     },
-    [
-      "Zappy.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.blackbeltlabs.Zappy",
-        "~/Library/Caches/com.blackbeltlabs.Zappy",
-        "~/Library/Preferences/com.blackbeltlabs.Zappy.plist",
-        "~/Library/zappy"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Zappy.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.blackbeltlabs.Zappy",
+            "~/Library/Caches/com.blackbeltlabs.Zappy",
+            "~/Library/Preferences/com.blackbeltlabs.Zappy.plist",
+            "~/Library/zappy"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +51,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

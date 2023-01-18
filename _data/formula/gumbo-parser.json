@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/google/gumbo-parser/archive/v0.10.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "28463053d44a5dfbc4b77bcf49c8cee119338ffa636cc17fc3378421d714efad"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gumbo-parser/blobs/sha256:dcfdbc776b1c99ced008e359753b09a8b8074dd2cd9eabad4d8941cb3516d56b",
+          "sha256": "dcfdbc776b1c99ced008e359753b09a8b8074dd2cd9eabad4d8941cb3516d56b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gumbo-parser/blobs/sha256:4a6e3a1bf98e9e1cae366ca87ca1edd454565ae058d654bd15f2ca363f7a3fb4",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gumbo-parser/blobs/sha256:9812d6af063b978c1314c5bc6f1eedcb34d9e395174ba9b68932feb69ed3f2e0",
           "sha256": "9812d6af063b978c1314c5bc6f1eedcb34d9e395174ba9b68932feb69ed3f2e0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gumbo-parser/blobs/sha256:a9042d2c69a6063a6b8f9c0f5ea0f5f77df66ef22fddeb0b1b04a163df1184fc",
+          "sha256": "a9042d2c69a6063a6b8f9c0f5ea0f5f77df66ef22fddeb0b1b04a163df1184fc"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/gumbo-parser/blobs/sha256:56f5446eb431b628655748659a8a7479466e00addf7d90070464364a3f3cafa9",
           "sha256": "56f5446eb431b628655748659a8a7479466e00addf7d90070464364a3f3cafa9"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gumbo-parser/blobs/sha256:02169cdaafcf9343bacf98e0e34b1f7383eb0b1b89385965d81796e110f8c38f",
-          "sha256": "02169cdaafcf9343bacf98e0e34b1f7383eb0b1b89385965d81796e110f8c38f"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gumbo-parser/blobs/sha256:7ae8a4b287fcbedb1cd48eeb3c26a257b2829401e23c0026dafb04461dcf07ae",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +106,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -130,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

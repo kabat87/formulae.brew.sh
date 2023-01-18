@@ -7,30 +7,38 @@
   ],
   "desc": "Free-as-in-Beer all-in-one installer for Chef infrastructure management tools",
   "homepage": "https://cinc.sh/start/workstation/",
-  "url": "http://downloads.cinc.sh/files/unstable/cinc-workstation/21.11.679/mac_os_x/10.15/cinc-workstation-21.11.679-1.x86_64.dmg",
+  "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/22.12.1024/mac_os_x/10.15/cinc-workstation-22.12.1024-1.x86_64.dmg",
   "appcast": null,
-  "version": "21.11.679",
+  "version": "22.12.1024",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0ced9049d506f9ceed08e8e47a2043e3b6b990ba184c8def7f733e02d6440f36",
+  "sha256": "c297e32e79dd30bddd643f39af532a5a3148a62e52193c261a3ea289786004e9",
   "artifacts": [
     {
-      "pkgutil": "com.cinc-project.pkg.cinc-workstation",
-      "launchctl": "io.chef.chef-workstation.app",
-      "script": {
-        "executable": "/opt/cinc-workstation/bin/uninstall_chef_workstation",
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.cinc-project.pkg.cinc-workstation",
+          "launchctl": "io.chef.chef-workstation.app",
+          "script": {
+            "executable": "/opt/cinc-workstation/bin/uninstall_chef_workstation",
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    "cinc-workstation-21.11.679-1.x86_64.pkg (Pkg)",
     {
-      "trash": "~/.cinc-workstation/",
-      "signal": {
-      }
+      "pkg": [
+        "cinc-workstation-22.12.1024-1.x86_64.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.cinc-workstation/"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +51,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

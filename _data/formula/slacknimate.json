@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/mroth/slacknimate/archive/v1.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "71c7a65192c8bbb790201787fabbb757de87f8412e0d41fe386c6b4343cb845c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/slacknimate/blobs/sha256:e1dcbf1a976b1addb776b43655464f1139969ade15c765d1fbad335529227c1a",
+          "sha256": "e1dcbf1a976b1addb776b43655464f1139969ade15c765d1fbad335529227c1a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/slacknimate/blobs/sha256:438d35da4f542723602cbaa0cb136069389c6216632d0145295b744eb473cfc8",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/slacknimate/blobs/sha256:35f24a47ca03293bec53b2b622cc1c6f0a012b5c674c0fea83a79795474caefb",
           "sha256": "35f24a47ca03293bec53b2b622cc1c6f0a012b5c674c0fea83a79795474caefb"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/slacknimate/blobs/sha256:15d0a3c26c46a946fd57fc49a92761ab1102df426d6b68bdbf7586d3cb436d90",
+          "sha256": "15d0a3c26c46a946fd57fc49a92761ab1102df426d6b68bdbf7586d3cb436d90"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

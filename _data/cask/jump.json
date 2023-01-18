@@ -7,26 +7,30 @@
   ],
   "desc": "Remote desktop application",
   "homepage": "https://jumpdesktop.com/#jdmac",
-  "url": "https://mirror.jumpdesktop.com/downloads/jdm/JumpDesktopMac-8.8.28.zip",
+  "url": "https://mirror.jumpdesktop.com/downloads/jdm/JumpDesktopMac-8.9.10.zip",
   "appcast": null,
-  "version": "8.8.28,80828",
+  "version": "8.9.10,80910",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "51c47eef515cef38da22c9e06b1b9ecfcfa152d14022cdbc016e364f7385d16e",
+  "sha256": "b21d07f9d1573f49ccc09d96fa0480a1b1680d7047ae1e55d84d09998b97075f",
   "artifacts": [
-    [
-      "Jump Desktop.app"
-    ],
     {
-      "trash": [
-        "~/Documents/JumpDesktop",
-        "~/Library/Caches/com.p5sys.jump.mac.viewer.web",
-        "~/Library/Cookies/com.p5sys.jump.mac.viewer.web.binarycookies"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Jump Desktop.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Documents/JumpDesktop",
+            "~/Library/Caches/com.p5sys.jump.mac.viewer.web",
+            "~/Library/Cookies/com.p5sys.jump.mac.viewer.web.binarycookies"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

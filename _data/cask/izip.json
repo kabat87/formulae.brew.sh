@@ -9,26 +9,32 @@
   "homepage": "https://www.izip.com/",
   "url": "https://www.izip.com/izip.dmg",
   "appcast": null,
-  "version": "3.9",
+  "version": "4.3.43",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "iZip.app"
-    ]
+    {
+      "app": [
+        "iZip.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/com.codeius.izip.plist"
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

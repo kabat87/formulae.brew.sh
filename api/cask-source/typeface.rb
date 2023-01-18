@@ -1,6 +1,6 @@
 cask "typeface" do
-  version "3.5.0,3122"
-  sha256 "a736843b8a4a9efe211684f66d32ade6f092f0fff041305729198f2ce62d5433"
+  version "3.7.2,3476"
+  sha256 "d2a38b6dc077060f7c0725ac10a43cee87cc400ad25953d48e956f48a9121698"
 
   url "https://dcdn.typefaceapp.com/Typeface-#{version.csv.first}-#{version.csv.second}/Typeface-#{version.csv.first}-#{version.csv.second}.dmg"
   name "Typeface"
@@ -12,5 +12,15 @@ cask "typeface" do
     strategy :sparkle
   end
 
+  depends_on macos: ">= :sierra"
+
   app "Typeface.app"
+
+  uninstall quit: "com.criminalbird.typeface.standalone"
+
+  zap trash: [
+    "~/Library/Application Scripts/com.criminalbird.typeface.standalone",
+    "~/Library/Containers/com.criminalbird.typeface.standalone",
+    "~/Library/Preferences/com.criminalbird.typeface.standalone.plist",
+  ]
 end

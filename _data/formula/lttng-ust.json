@@ -13,18 +13,19 @@
   "license": "LGPL-2.1-only and MIT and GPL-2.0-only and BSD-3-Clause and BSD-2-Clause and GPL-3.0-or-later",
   "homepage": "https://lttng.org/",
   "versions": {
-    "stable": "2.12.2",
+    "stable": "2.13.5",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://lttng.org/files/lttng-ust/lttng-ust-2.12.2.tar.bz2",
+      "url": "https://lttng.org/files/lttng-ust/lttng-ust-2.13.5.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f1d7bb4984a3dc5dacd3b7bcb4c10c04b041b0eecd7cba1fef3d8f86aff02bd6"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
@@ -33,24 +34,26 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lttng-ust/blobs/sha256:3913c063d8ff6cbd7ee20669968398bf187182d211bd2936b11bd07a3e03e2a3",
-          "sha256": "3913c063d8ff6cbd7ee20669968398bf187182d211bd2936b11bd07a3e03e2a3"
+          "url": "https://ghcr.io/v2/homebrew/core/lttng-ust/blobs/sha256:0f019a9945b2c99f4c1df697fa8e120465b20626154d295f854c36bcf99ee321",
+          "sha256": "0f019a9945b2c99f4c1df697fa8e120465b20626154d295f854c36bcf99ee321"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "pkg-config"
   ],
   "dependencies": [
     "numactl",
     "userspace-rcu"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -87,5 +90,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

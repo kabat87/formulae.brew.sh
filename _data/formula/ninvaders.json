@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/ninvaders/ninvaders/0.1.1/ninvaders-0.1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bfbc5c378704d9cf5e7fed288dac88859149bee5ed0850175759d310b61fd30b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ninvaders/blobs/sha256:b5086f1e6f104b199763ec9feedd2a3ee64340abf584d3dc2ea2fc50201ecb3e",
+          "sha256": "b5086f1e6f104b199763ec9feedd2a3ee64340abf584d3dc2ea2fc50201ecb3e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ninvaders/blobs/sha256:79c809a98982d7c68e1f31b53ff2644a750589f26e7a4fbba771b556d4929e46",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ninvaders/blobs/sha256:641248bbd6c7f8895dd3c6f42ce68f047db05864354ef772b7c2490c9ddced5d",
           "sha256": "641248bbd6c7f8895dd3c6f42ce68f047db05864354ef772b7c2490c9ddced5d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ninvaders/blobs/sha256:722274c2a69c82b9498dcaaf29da198deae44e81e51a320872d4c6003340dfd7",
+          "sha256": "722274c2a69c82b9498dcaaf29da198deae44e81e51a320872d4c6003340dfd7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/ninvaders/blobs/sha256:b2d4f23349e2214d5a0c8b51218974b0f8b2704d333f1bca19ca4b4539e2b9f1",
           "sha256": "b2d4f23349e2214d5a0c8b51218974b0f8b2704d333f1bca19ca4b4539e2b9f1"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ninvaders/blobs/sha256:fc7369a82b14fa5879d2e072ac7ceaa1b6b7bd6cabd163e6bea8adb3a5670b80",
-          "sha256": "fc7369a82b14fa5879d2e072ac7ceaa1b6b7bd6cabd163e6bea8adb3a5670b80"
+          "url": "https://ghcr.io/v2/homebrew/core/ninvaders/blobs/sha256:c4d884e93ed10e3c362cd6a7b948aba5099efe9921dfa45a5163f0e0a2136da2",
+          "sha256": "c4d884e93ed10e3c362cd6a7b948aba5099efe9921dfa45a5163f0e0a2136da2"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "ncurses"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

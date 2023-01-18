@@ -7,26 +7,34 @@
   ],
   "desc": "Software package for econometric analysis",
   "homepage": "https://gretl.sourceforge.io/",
-  "url": "https://downloads.sourceforge.net/gretl/gretl-2021d-macos-intel.pkg",
+  "url": "https://downloads.sourceforge.net/gretl/gretl-2022c-macos-intel.pkg",
   "appcast": null,
-  "version": "2021d",
+  "version": "2022c",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "958558fe2a90aa3c60f944066894be42836663d0805aa73b62806c886327621c",
+  "sha256": "54b34b2b51eda30b5eb7932ff25f641a1fd9a884bd25e40e60d8c6bb2fff9db1",
   "artifacts": [
     {
-      "pkgutil": "net.sourceforge.gretl.base.pkg",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "net.sourceforge.gretl.base.pkg"
+        }
+      ]
     },
-    "gretl-2021d-macos-intel.pkg (Pkg)"
+    {
+      "pkg": [
+        "gretl-2022c-macos-intel.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

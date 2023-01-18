@@ -5,35 +5,43 @@
   "name": [
     "After Dark Classic Set"
   ],
-  "desc": null,
+  "desc": "Classic After Dark screensaver set",
   "homepage": "https://en.infinisys.co.jp/product/afterdarkclassicset/index.shtml",
-  "url": "https://www.infinisys.co.jp/archive/online/online_afterdarkclassicset_e.dmg.gz",
+  "url": "https://www.infinisys.co.jp/archive/online/online_afterdark13e.dmg",
   "appcast": null,
-  "version": "1.0",
+  "version": "1.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "no_check",
+  "sha256": "4a0973a807232dc37c6994b6c46487ef86af7c3f08b946a74b181735865f0739",
   "artifacts": [
     {
-      "pkgutil": [
-        "jp.co.infinisys.flyingToastersmowingmanAndBoris.Boris.pkg",
-        "jp.co.infinisys.flyingToastersmowingmanAndBoris.FlyingToasters.pkg",
-        "jp.co.infinisys.flyingToastersmowingmanAndBoris.MowingMan.pkg"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "jp.co.infinisys.afterdark.boris11.pkg",
+            "jp.co.infinisys.afterdark.flyingtoasters12.pkg",
+            "jp.co.infinisys.afterdark.mowingman11.pkg"
+          ]
+        }
+      ]
     },
-    "ClassicSet.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Preferences/ByHost/jp.co.infinisys.boris.*.plist",
-        "~/Library/Preferences/ByHost/jp.co.infinisys.flyingtoasters.*.plist",
-        "~/Library/Preferences/ByHost/jp.co.infinisys.mowingman.*.plist"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "AfterDark.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/jp.co.infinisys.boris11.*.plist",
+            "~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/jp.co.infinisys.flyingscreensaver12.*.plist",
+            "~/Library/Containers/com.apple.ScreenSaver.Engine.legacyScreenSaver/Data/Library/Preferences/ByHost/jp.co.infinisys.mowingman11.*.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +49,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

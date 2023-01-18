@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://pycodestyle.pycqa.org/",
   "versions": {
-    "stable": "2.8.0",
+    "stable": "2.10.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/PyCQA/pycodestyle/archive/2.8.0.tar.gz",
+      "url": "https://github.com/PyCQA/pycodestyle/archive/2.10.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a7306561f1ddf7bc00419b9f0d698d312a8eaa173b834e7c8e4ff32db5efd27f"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pycodestyle/blobs/sha256:7b5d9577c8a3c826bb9f24e170bf7bf64a402b54181a98af3eeb6bdf83399150",
-          "sha256": "7b5d9577c8a3c826bb9f24e170bf7bf64a402b54181a98af3eeb6bdf83399150"
+          "url": "https://ghcr.io/v2/homebrew/core/pycodestyle/blobs/sha256:2c7fc7f468096461c73a2659dc705ac6ec26031e028d633f6ef6b6f58f44c18b",
+          "sha256": "2c7fc7f468096461c73a2659dc705ac6ec26031e028d633f6ef6b6f58f44c18b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

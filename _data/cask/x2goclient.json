@@ -16,18 +16,22 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "x2goclient.app"
-    ],
     {
-      "trash": [
-        "~/.x2go",
-        "~/.x2goclient",
-        "~/Library/Application Support/CrashReporter/x2goclient_*.plist",
-        "~/Library/Preferences/x2goclient.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "x2goclient.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.x2go",
+            "~/.x2goclient",
+            "~/Library/Application Support/CrashReporter/x2goclient_*.plist",
+            "~/Library/Preferences/x2goclient.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,13 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "sierra": {
+      "url": "https://code.x2go.org/releases/X2GoClient_latest_macosx_10_11.dmg"
+    },
+    "el_capitan": {
+      "url": "https://code.x2go.org/releases/X2GoClient_latest_macosx_10_11.dmg"
+    }
+  }
 }

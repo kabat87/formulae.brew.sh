@@ -9,27 +9,31 @@
   "homepage": "https://www.livehome3d.com/mac/live-home-3d",
   "url": "https://s3.amazonaws.com/belightsoft/LiveHome3DStd.dmg",
   "appcast": null,
-  "version": "4.2.1",
+  "version": "4.5.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Live Home 3D.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.belightsoft.LiveHome3D.ThumbnailProvider",
-        "~/Library/Application Support/Live Home 3D",
-        "~/Library/Caches/com.belightsoft.LiveHome3D",
-        "~/Library/Containers/com.belightsoft.LiveHome3D.ThumbnailProvider",
-        "~/Library/Preferences/com.belightsoft.LiveHome3D.plist",
-        "~/Library/Saved Application State/com.belightsoft.LiveHome3D.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Live Home 3D.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.belightsoft.LiveHome3D.ThumbnailProvider",
+            "~/Library/Application Support/Live Home 3D",
+            "~/Library/Caches/com.belightsoft.LiveHome3D",
+            "~/Library/Containers/com.belightsoft.LiveHome3D.ThumbnailProvider",
+            "~/Library/Preferences/com.belightsoft.LiveHome3D.plist",
+            "~/Library/Saved Application State/com.belightsoft.LiveHome3D.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

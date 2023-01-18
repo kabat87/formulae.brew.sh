@@ -7,48 +7,56 @@
   ],
   "desc": "Remote pair programming app",
   "homepage": "https://tuple.app/",
-  "url": "https://d32ifkf9k9ezcg.cloudfront.net/production/sparkle/tuple-0.92.2-2021-11-12-54306c8f.zip",
+  "url": "https://d32ifkf9k9ezcg.cloudfront.net/production/sparkle/tuple-0.99.7-2022-12-15-73ca8ae50.zip",
   "appcast": null,
-  "version": "0.92.2,2021-11-12,54306c8f",
+  "version": "0.99.7,2022-12-15,73ca8ae50",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "99e8aa3e59b35c7fa798e06f3895a41d80784679cd3a880a3c39d74a3ed53be4",
+  "sha256": "e8f135cd0ec2dec8cd13bc565cd0cb646ac1417546a1438a34f1e29baab1f6b7",
   "artifacts": [
     {
-      "quit": "app.tuple.app",
-      "launchctl": "app.tuple.app-LaunchAtLoginHelper",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "app.tuple.app",
+          "launchctl": "app.tuple.app-LaunchAtLoginHelper"
+        }
+      ]
     },
-    [
-      "Tuple.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/app.tuple.app-LaunchAtLoginHelper",
-        "~/Library/Application Support/app.tuple.app",
-        "~/Library/Caches/app.tuple.app",
-        "~/Library/Caches/com.crashlytics.data/app.tuple.app",
-        "~/Library/Caches/io.fabric.sdk.mac.data/app.tuple.app",
-        "~/Library/Containers/app.tuple.app-LaunchAtLoginHelper",
-        "~/Library/Preferences/app.tuple.app.plist",
-        "~/Library/WebKit/app.tuple.app"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Tuple.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/app.tuple.app-LaunchAtLoginHelper",
+            "~/Library/Application Support/app.tuple.app",
+            "~/Library/Caches/app.tuple.app",
+            "~/Library/Caches/com.crashlytics.data/app.tuple.app",
+            "~/Library/Caches/io.fabric.sdk.mac.data/app.tuple.app",
+            "~/Library/Containers/app.tuple.app-LaunchAtLoginHelper",
+            "~/Library/Preferences/app.tuple.app.plist",
+            "~/Library/WebKit/app.tuple.app"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "10.15"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

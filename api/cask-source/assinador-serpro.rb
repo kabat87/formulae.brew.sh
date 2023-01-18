@@ -1,21 +1,22 @@
 cask "assinador-serpro" do
-  version "3.0.0"
-  sha256 "a981db5b5a6a250c24565f031aa58a9fb2723ac4cbfcd3db74dbb7cdd53ca6df"
+  version "4.0.2"
+  sha256 "4ed47e37da89b5fe80568d14222407de9711f87d8e6c8a9505b590cd8d69af8a"
 
-  url "https://www.serpro.gov.br/links-fixos-superiores/assinador-digital/assinador-serpro/arquivos/assinador-serpro-#{version.dots_to_hyphens}-instalador.dmg"
-  name "assinador-serpro"
+  url "https://www.serpro.gov.br/links-fixos-superiores/assinador-digital/assinador-serpro/arquivos/AssinadorSerpro#{version}.mpkg.zip"
+  name "Assinador Serpro"
   desc "Validate and sign documents using digital certificates"
   homepage "https://www.serpro.gov.br/links-fixos-superiores/assinador-digital/assinador-serpro"
 
   livecheck do
     url :homepage
-    strategy :page_match
     regex(/Assinador\sSerpro\s(\d+(?:\.\d+)+)/i)
   end
 
   depends_on macos: ">= :sierra"
 
-  app "Assinador Serpro.app"
+  pkg "AssinadorSerpro-#{version}.mpkg"
+
+  uninstall pkgutil: "br.gov.serpro.desktop.assinador"
 
   zap trash: "~/Library/Preferences/org.demoiselle.signer.serpro.desktop.Main.plist"
 end

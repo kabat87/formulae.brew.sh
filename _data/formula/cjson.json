@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/DaveGamble/cJSON/archive/v1.7.15.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5308fd4bd90cef7aa060558514de6a1a4a0819974a26e6ed13973c5f624c24b2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cjson/blobs/sha256:ad434259c62a12cf5b5dbfc725214ae5dd4f49edc293e09f36d757f7832ec8e3",
+          "sha256": "ad434259c62a12cf5b5dbfc725214ae5dd4f49edc293e09f36d757f7832ec8e3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cjson/blobs/sha256:6e0051098016dfe778b578304a46af1a7e171c04abb9e507945b069bfe771d74",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cjson/blobs/sha256:5cee282ea9e05f687010993884e90b1f89980af0909fe2f8c376d520cb3a1cd7",
           "sha256": "5cee282ea9e05f687010993884e90b1f89980af0909fe2f8c376d520cb3a1cd7"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cjson/blobs/sha256:6faecacb90ee0e3149c329d71d8bcb3cea5fc0bb3da3b8258e54285a7fb02050",
+          "sha256": "6faecacb90ee0e3149c329d71d8bcb3cea5fc0bb3da3b8258e54285a7fb02050"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

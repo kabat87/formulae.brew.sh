@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://www.getmonero.org/",
   "versions": {
-    "stable": "0.17.3.0",
+    "stable": "0.18.1.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/monero-project/monero.git",
-      "tag": "v0.17.3.0",
-      "revision": "ab18fea3500841fc312630d49ed6840b3aedb34d"
+      "tag": "v0.18.1.2",
+      "revision": "66184f30859796f3c7c22f9497e41b15b5a4a7c9",
+      "checksum": null
     }
   },
   "revision": 1,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:12d44563e0159c54c56a4a433441caf17b1a69bf77fe85cf1963fc3b5af0cc65",
+          "sha256": "12d44563e0159c54c56a4a433441caf17b1a69bf77fe85cf1963fc3b5af0cc65"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:4f067219be06a643049ea8e4089ce988df64c71d290ba22d765f840b0e724aff",
-          "sha256": "4f067219be06a643049ea8e4089ce988df64c71d290ba22d765f840b0e724aff"
+          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:be03562ce5a4ade6bcdf825fff0b88475f08e5b1451499d37e5c478eb42f7176",
+          "sha256": "be03562ce5a4ade6bcdf825fff0b88475f08e5b1451499d37e5c478eb42f7176"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:44fc5b9a7ee3bbda3814a9b52996de2026336c84d7b2df2e1cbbb7cb5f1fa762",
-          "sha256": "44fc5b9a7ee3bbda3814a9b52996de2026336c84d7b2df2e1cbbb7cb5f1fa762"
+          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:05c89492ad4e3f295422d31c786e6e9a0f29b3ed67920927458783f5182446b1",
+          "sha256": "05c89492ad4e3f295422d31c786e6e9a0f29b3ed67920927458783f5182446b1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:8d65a6a36416fe84ff0136b2158a7db51356c5c552554aee70f93ee1f7f11f37",
+          "sha256": "8d65a6a36416fe84ff0136b2158a7db51356c5c552554aee70f93ee1f7f11f37"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:eea3e891de39cefcd32755707137417bcb1a4e3cfea78f50874cab1535f8eb2b",
-          "sha256": "eea3e891de39cefcd32755707137417bcb1a4e3cfea78f50874cab1535f8eb2b"
+          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:b0cac80957b41c8643768da8c7e3b891672723966b8ade5e2162bec5ef36e1f2",
+          "sha256": "b0cac80957b41c8643768da8c7e3b891672723966b8ade5e2162bec5ef36e1f2"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:eadf7f106af20240df858218a7263a51c232914b2c73f8adef706331e485129e",
-          "sha256": "eadf7f106af20240df858218a7263a51c232914b2c73f8adef706331e485129e"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:45f53509ab80f8e31ab278145c9ffb2d118f7e8bfc01f75dde4e7e53b6217912",
-          "sha256": "45f53509ab80f8e31ab278145c9ffb2d118f7e8bfc01f75dde4e7e53b6217912"
+          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:8ff02fccba4ea1e6ce8d4e92bf3d0f10d491e14ec72c6296a98f165fa167867a",
+          "sha256": "8ff02fccba4ea1e6ce8d4e92bf3d0f10d491e14ec72c6296a98f165fa167867a"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:edb06cb5dea479099bcd88422f8fddb03f1bcc30796c439242d6efa9916ea9d8",
-          "sha256": "edb06cb5dea479099bcd88422f8fddb03f1bcc30796c439242d6efa9916ea9d8"
+          "url": "https://ghcr.io/v2/homebrew/core/monero/blobs/sha256:ee9695530d499e3d7ff8b3cc759d7d80640b0cf8644f2fcfa35ad4277a6f7524",
+          "sha256": "ee9695530d499e3d7ff8b3cc759d7d80640b0cf8644f2fcfa35ad4277a6f7524"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,11 +83,15 @@
     "boost",
     "hidapi",
     "libsodium",
+    "libusb",
     "openssl@1.1",
     "protobuf",
     "readline",
     "unbound",
     "zeromq"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

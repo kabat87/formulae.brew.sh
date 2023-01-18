@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/MycroftAI/mimic1/archive/1.3.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9041f5c7d3720899c90c890ada179c92c3b542b90bb655c247e4a4835df79249"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mimic/blobs/sha256:05a0ae1e6862667edb0311db845d536bc98085e57793620e28f82a013bf58ff9",
+          "sha256": "05a0ae1e6862667edb0311db845d536bc98085e57793620e28f82a013bf58ff9"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mimic/blobs/sha256:d5e9edd6ea60a7c799c8d88e35f981dce913d950874ce44fa9805bb7c91c5e32",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mimic/blobs/sha256:72107347e7fd6f6ca1af6808fe3ea5b428e3dee2f733743a0d44cd9b9e67d492",
           "sha256": "72107347e7fd6f6ca1af6808fe3ea5b428e3dee2f733743a0d44cd9b9e67d492"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mimic/blobs/sha256:dee98adb3a5b5349d702a7ec8c781046d8ef54d143765d9c35b7e83055d3e9de",
+          "sha256": "dee98adb3a5b5349d702a7ec8c781046d8ef54d143765d9c35b7e83055d3e9de"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -65,13 +76,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mimic/blobs/sha256:98a927ebfffb3a965506102d758fe4a5e76d0c6bd732972e6b113505d28241c8",
           "sha256": "98a927ebfffb3a965506102d758fe4a5e76d0c6bd732972e6b113505d28241c8"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mimic/blobs/sha256:027d95ecca63daf3f9c20419da6630b9a6a2d00e92dbdccbbc5d1747e0aca4d4",
+          "sha256": "027d95ecca63daf3f9c20419da6630b9a6a2d00e92dbdccbbc5d1747e0aca4d4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +100,9 @@
     "icu4c",
     "pcre2",
     "portaudio"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

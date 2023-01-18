@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/fann/fann/2.2.0/FANN-2.2.0-Source.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3d6ee056dab91f3b34a3f233de6a15331737848a4cbdb4e0552123d95eed4485"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fann/blobs/sha256:5d06935d9df379bbb543080a1cfb15503854cd88cb88c6d14186187fdd18607a",
+          "sha256": "5d06935d9df379bbb543080a1cfb15503854cd88cb88c6d14186187fdd18607a"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fann/blobs/sha256:dd693aef10b32db6fe84a9eabfbd1e05c1d4ed83c4e48e936745fa76b2af7a4f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fann/blobs/sha256:2fc8447731fd2a1c7f4957b55e3906041796fd5c9c528c611048f48558e644fc",
           "sha256": "2fc8447731fd2a1c7f4957b55e3906041796fd5c9c528c611048f48558e644fc"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fann/blobs/sha256:f7df3b27256ce1656e6ccd36986dd65ee5b0bb8d9b5d0c5f3871bfe8c87ccfe6",
+          "sha256": "f7df3b27256ce1656e6ccd36986dd65ee5b0bb8d9b5d0c5f3871bfe8c87ccfe6"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

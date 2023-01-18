@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://ktlint.github.io/",
   "versions": {
-    "stable": "0.43.2",
+    "stable": "0.48.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/pinterest/ktlint/releases/download/0.43.2/ktlint",
+      "url": "https://github.com/pinterest/ktlint/releases/download/0.48.1/ktlint",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c6f392e8b788d0eac4e58845d6ab2a19435f2a2c63c4482667688fefd809ca1f"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ktlint/blobs/sha256:18a74e0f9177b36c202a54f142450e02db4b284e72a8d3e04bf9a7e172d96628",
-          "sha256": "18a74e0f9177b36c202a54f142450e02db4b284e72a8d3e04bf9a7e172d96628"
+          "url": "https://ghcr.io/v2/homebrew/core/ktlint/blobs/sha256:c2fc86a4fafe80a59dc173d1d96181dcbbce71f894ae80fe366f703fab9c93e6",
+          "sha256": "c2fc86a4fafe80a59dc173d1d96181dcbbce71f894ae80fe366f703fab9c93e6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@11"
+    "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

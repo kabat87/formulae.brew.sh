@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.xenoclast.org/autobench/downloads/autobench-2.1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d8b4d30aaaf652df37dff18ee819d8f42751bc40272d288ee2a5d847eaf0423b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/autobench/blobs/sha256:1395f353dcbb83ca42019534ce574f19eabdfaf6e5fa203f9e16a5c5d199e0a0",
+          "sha256": "1395f353dcbb83ca42019534ce574f19eabdfaf6e5fa203f9e16a5c5d199e0a0"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/autobench/blobs/sha256:feb1d05812e4ccfb525567d4193b0a567498c7aefe1bdf7b9c632b3100ea3e75",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/autobench/blobs/sha256:c475644370c0f887d23d5fb77b4c3e24fc31ab21366e35395a8c1214c3f91143",
           "sha256": "c475644370c0f887d23d5fb77b4c3e24fc31ab21366e35395a8c1214c3f91143"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/autobench/blobs/sha256:ebf91a63de293b20f1f7228ea1053543ab09bb63cf381d05caf0af8dfac2a794",
+          "sha256": "ebf91a63de293b20f1f7228ea1053543ab09bb63cf381d05caf0af8dfac2a794"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/autobench/blobs/sha256:37bb6f40825953f9ba176522bc64d74a6375304d7963331aee937417e339964f",
           "sha256": "37bb6f40825953f9ba176522bc64d74a6375304d7963331aee937417e339964f"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autobench/blobs/sha256:9884556bd5f7ab7c29a0aa199328cbe609e04437b1ddce4703214ba65f15d40a",
-          "sha256": "9884556bd5f7ab7c29a0aa199328cbe609e04437b1ddce4703214ba65f15d40a"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/autobench/blobs/sha256:f33306a0edae89cab46f98344c30feeab7a3d9d03e1d6c21e578720c8cac794f",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "httperf"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

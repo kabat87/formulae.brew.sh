@@ -1,6 +1,6 @@
 cask "ptpwebcam" do
-  version "1.3.0"
-  sha256 "3645fcfc2f8a6adc510c13399b44bac2d9e20dc9a2b50de6b4c441d9a769ec61"
+  version "1.3.1"
+  sha256 "43d38fd1d047d1119201f6cda21ddee6e8272bdae7a6908c0ccf0dee6850ee7c"
 
   url "https://github.com/dognotdog/ptpwebcam/releases/download/v#{version}/PTP_Webcam-v#{version}.pkg",
       verified: "https://github.com/dognotdog/ptpwebcam"
@@ -10,20 +10,19 @@ cask "ptpwebcam" do
 
   livecheck do
     url :url
-    strategy :git
-    regex(/^v(\d+(?:\.\d+)*)$/)
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
   pkg "PTP_Webcam-v#{version}.pkg"
 
   uninstall pkgutil:   [
-    "org.ptpwebcam.pkg.EnableChrome",
-    "org.ptpwebcam.pkg.EnableSkype",
-    "org.ptpwebcam.pkg.EnableTeams",
-    "org.ptpwebcam.pkg.EnableZoom",
-    "org.ptpwebcam.pkg.PTPWebcam",
-    "org.ptpwebcam.pkg.RemoveEOSWebcam",
-  ],
+              "org.ptpwebcam.pkg.EnableChrome",
+              "org.ptpwebcam.pkg.EnableSkype",
+              "org.ptpwebcam.pkg.EnableTeams",
+              "org.ptpwebcam.pkg.EnableZoom",
+              "org.ptpwebcam.pkg.PTPWebcam",
+              "org.ptpwebcam.pkg.RemoveEOSWebcam",
+            ],
             launchctl: [
               "org.ptpwebcam.PtpWebcamAgent",
               "org.ptpwebcam.PtpWebcamAssistant",

@@ -6,27 +6,31 @@
     "Basecamp"
   ],
   "desc": "All-In-One Toolkit for Working Remotely",
-  "homepage": "https://basecamp.com/help/3,2.2.9/guides/apps/mac",
-  "url": "https://bc3-desktop.s3.amazonaws.com/mac/basecamp3-2.2.9.zip",
+  "homepage": "https://basecamp.com/help/3,2.3.6/guides/apps/mac",
+  "url": "https://bc3-desktop.s3.amazonaws.com/mac/basecamp3-2.3.6.zip",
   "appcast": null,
-  "version": "3,2.2.9",
+  "version": "3,2.3.6",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4fb1f1a26a8217cd092b723de8afcb8727ecc1d36f207aca37d3822d54582783",
+  "sha256": "518bb54f6586a167f47245da68d159ea632747aeb72628c4be89bbe3b671b56e",
   "artifacts": [
-    [
-      "Basecamp 3.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Basecamp*",
-        "~/Library/Preferences/com.basecamp.basecamp*.plist",
-        "~/Library/Saved Application State/com.basecamp.basecamp*.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Basecamp 3.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Basecamp*",
+            "~/Library/Preferences/com.basecamp.basecamp*.plist",
+            "~/Library/Saved Application State/com.basecamp.basecamp*.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://bc3-desktop.s3.amazonaws.com/mac_arm64/basecamp3-2.3.6.zip",
+      "sha256": "f9145589201f247ee3aa9733a209d2dbf5a9a85bf8aa50143089e7bce81dba56"
+    },
+    "arm64_monterey": {
+      "url": "https://bc3-desktop.s3.amazonaws.com/mac_arm64/basecamp3-2.3.6.zip",
+      "sha256": "f9145589201f247ee3aa9733a209d2dbf5a9a85bf8aa50143089e7bce81dba56"
+    },
+    "arm64_big_sur": {
+      "url": "https://bc3-desktop.s3.amazonaws.com/mac_arm64/basecamp3-2.3.6.zip",
+      "sha256": "f9145589201f247ee3aa9733a209d2dbf5a9a85bf8aa50143089e7bce81dba56"
+    }
+  }
 }

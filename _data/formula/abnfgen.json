@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.quut.com/abnfgen/abnfgen-0.20.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "73ce23ab8f95d649ab9402632af977e11666c825b3020eb8c7d03fa4ca3e7514"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/abnfgen/blobs/sha256:04ac724e984219dd01fc9766bf24c9ed5b768d4d52cf600d1c358e0a5155f89c",
+          "sha256": "04ac724e984219dd01fc9766bf24c9ed5b768d4d52cf600d1c358e0a5155f89c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/abnfgen/blobs/sha256:c1ebec3242ff2bd1ad767c152536f7c33ec454dafbf902dd1b0bbf4ce026b856",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/abnfgen/blobs/sha256:e3c6fe963835658791592b3846bcab8bfeafbee2c63f3fb804405ce72ed2e64a",
           "sha256": "e3c6fe963835658791592b3846bcab8bfeafbee2c63f3fb804405ce72ed2e64a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/abnfgen/blobs/sha256:1f43fe85052ed7b06e560b1dd76958b47153625433eb7ce1b742f86c46b1ebd9",
+          "sha256": "1f43fe85052ed7b06e560b1dd76958b47153625433eb7ce1b742f86c46b1ebd9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

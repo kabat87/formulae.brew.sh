@@ -13,69 +13,80 @@
   "license": "GPL-3.0-only",
   "homepage": "https://sailed.io",
   "versions": {
-    "stable": "0.10.4",
+    "stable": "0.10.6",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/0e/d8/6cd8f95e1ad7abc50ce2e3cb4f21039cb56ffd68eb9cd4619defebd030f6/sailed.io-0.10.4.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/3a/6c/39b5e5e0ce557ddd98b6af0223b7a63afcc40b3646ee1a2511805dc45a08/sailed.io-0.10.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "158ed9f03bcbcefa080647da90bc64d0acdec26514a3635a2843233eea90efa0"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:691b4e73de719b7c5d8ff1334b2ffeb815c3bab72c2117cf916bf702e21d977c",
+          "sha256": "691b4e73de719b7c5d8ff1334b2ffeb815c3bab72c2117cf916bf702e21d977c"
+        },
         "arm64_monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:f12d0fe6c21bb6ebde916e154f5b6dc9d3085ffc8c99466c105fc1a13bcd43be",
-          "sha256": "f12d0fe6c21bb6ebde916e154f5b6dc9d3085ffc8c99466c105fc1a13bcd43be"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:cb1f30cfec22dcb58a7884e4714f59d3a436414cdbf0cfba2290d65eb2df4906",
+          "sha256": "cb1f30cfec22dcb58a7884e4714f59d3a436414cdbf0cfba2290d65eb2df4906"
         },
         "arm64_big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:40618cc7e6bea4c1af8eac7c46cf936105a9fd4562b6e69bec210ebd95a1436c",
-          "sha256": "40618cc7e6bea4c1af8eac7c46cf936105a9fd4562b6e69bec210ebd95a1436c"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:5b1db45ee41ddd5f37320358c0f7def75a6b23c7440cb0fabc53c393d3c3ba90",
+          "sha256": "5b1db45ee41ddd5f37320358c0f7def75a6b23c7440cb0fabc53c393d3c3ba90"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:efea5a3e709e6a651006e1e9b9835c220b3447630e5eb3b2857b47e078ebca1e",
+          "sha256": "efea5a3e709e6a651006e1e9b9835c220b3447630e5eb3b2857b47e078ebca1e"
         },
         "monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:6e27de2128ef7ec7bd6b76213d32d693f799bcd74f35dc5b62b0b64adf45412a",
-          "sha256": "6e27de2128ef7ec7bd6b76213d32d693f799bcd74f35dc5b62b0b64adf45412a"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:6a6dfb3f4805de29367ad623b081110930b6c3728d4765f08455003f72d241d0",
+          "sha256": "6a6dfb3f4805de29367ad623b081110930b6c3728d4765f08455003f72d241d0"
         },
         "big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:8ef237d0aa07ffe6186dc8b3540fea9160403c7d89ad1511c9c97d0cef1f5c4c",
-          "sha256": "8ef237d0aa07ffe6186dc8b3540fea9160403c7d89ad1511c9c97d0cef1f5c4c"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:48905b421de25616283558697aeca79dfe3126f28365fc0fc31b30370dff9f98",
-          "sha256": "48905b421de25616283558697aeca79dfe3126f28365fc0fc31b30370dff9f98"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:4ad344ba23b9249be000de77a1fd85b9db49e0431cef610cebb6ae57732320c9",
+          "sha256": "4ad344ba23b9249be000de77a1fd85b9db49e0431cef610cebb6ae57732320c9"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:4e1532dd427e403d0c3bb882b992ca7b87b8828794a33085dd5a611b018bbf1f",
-          "sha256": "4e1532dd427e403d0c3bb882b992ca7b87b8828794a33085dd5a611b018bbf1f"
+          "url": "https://ghcr.io/v2/homebrew/core/sail/blobs/sha256:c9ea914957b301fbfc79c457b5381b9ce5f8612e8d2d0c681728034b3ce89b0b",
+          "sha256": "c9ea914957b301fbfc79c457b5381b9ce5f8612e8d2d0c681728034b3ce89b0b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "rust"
+
   ],
   "dependencies": [
-    "python@3.10",
+    "fabric",
+    "pyinvoke",
+    "python@3.11",
+    "pyyaml",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +115,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -9,7 +9,7 @@
   "homepage": "https://raycast.app/",
   "url": "https://api.raycast.app/v2/download",
   "appcast": null,
-  "version": "1.27.0",
+  "version": "1.45.3",
   "versions": {
   },
   "installed": null,
@@ -17,33 +17,41 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": "com.raycast.macos",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.raycast.macos"
+        }
+      ]
     },
-    [
-      "Raycast.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.raycast.macos",
-        "~/Library/Caches/com.raycast.macos",
-        "~/Library/Cookies/com.raycast.macos.binarycookies",
-        "~/Library/Preferences/com.raycast.macos.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Raycast.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.raycast.macos",
+            "~/Library/Caches/com.raycast.macos",
+            "~/Library/Cookies/com.raycast.macos.binarycookies",
+            "~/Library/Preferences/com.raycast.macos.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "10.15"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

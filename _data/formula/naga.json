@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/anayjoshi/naga/archive/naga-v1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7f56b03b34e2756b9688e120831ef4f5932cd89b477ad8b70b5bcc7c32f2f3b3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/naga/blobs/sha256:d32ce728cc5082fb81b509ee4d2aacdf3f3b3e5c99653493412afca4f4558559",
+          "sha256": "d32ce728cc5082fb81b509ee4d2aacdf3f3b3e5c99653493412afca4f4558559"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/naga/blobs/sha256:060c060175d76dd77c768ec1fd07fe74fc01e404e4f4a6b8be3a75cead596abb",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/naga/blobs/sha256:5598664fc7fd64d0f76d0291bbe79c209a65fd8142d6cbf7f7164531d538b9c5",
           "sha256": "5598664fc7fd64d0f76d0291bbe79c209a65fd8142d6cbf7f7164531d538b9c5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/naga/blobs/sha256:b1a38c76c5088aab68b817aea8d249a40f2aec9101606494d42182826528561b",
+          "sha256": "b1a38c76c5088aab68b817aea8d249a40f2aec9101606494d42182826528561b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/naga/blobs/sha256:6ff3dd51d1cdeed9364c36c25d1c2794f973e2927077eaeb251fa0dbfc48a531",
           "sha256": "6ff3dd51d1cdeed9364c36c25d1c2794f973e2927077eaeb251fa0dbfc48a531"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/naga/blobs/sha256:fe303605603697993def097e9557a0dcec83d323a0b43d51fb1811108937da6c",
-          "sha256": "fe303605603697993def097e9557a0dcec83d323a0b43d51fb1811108937da6c"
+          "url": "https://ghcr.io/v2/homebrew/core/naga/blobs/sha256:e8ea8f618dc69a283560a3a51335c476824cee8bf5da7233620021e3c95f6fa7",
+          "sha256": "e8ea8f618dc69a283560a3a51335c476824cee8bf5da7233620021e3c95f6fa7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,13 +116,13 @@
 
   ],
   "uses_from_macos": [
-
+    "ncurses"
   ],
   "requirements": [
 
   ],
   "conflicts_with": [
-
+    "naga-cli"
   ],
   "caveats": null,
   "installed": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

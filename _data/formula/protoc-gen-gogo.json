@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/gogo/protobuf/archive/v1.3.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2bb4b13d6e56b3911f09b8e9ddd15708477fbff8823c057cc79dd99c9a452b34"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-gogo/blobs/sha256:80e3e677f3b12a02da7de60f3586d2ead2be403885c62f5c9700c010cc368be4",
+          "sha256": "80e3e677f3b12a02da7de60f3586d2ead2be403885c62f5c9700c010cc368be4"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-gogo/blobs/sha256:f806d12b79c1d49407fcad5fa50a8cf47303ee5f3e5f0403c2d1993387bf6a62",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-gogo/blobs/sha256:9ba5d8b674ef61368f7dfdc0f072190ec0927fc3c42fa846535ccd2dfd3030f9",
           "sha256": "9ba5d8b674ef61368f7dfdc0f072190ec0927fc3c42fa846535ccd2dfd3030f9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/protoc-gen-gogo/blobs/sha256:5b1296d9bf13d3eb67cbf999303e7a7b1e72369ced261c15567956fdcb5ef329",
+          "sha256": "5b1296d9bf13d3eb67cbf999303e7a7b1e72369ced261c15567956fdcb5ef329"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "protobuf"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

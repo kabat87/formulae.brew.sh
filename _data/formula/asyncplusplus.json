@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Amanieu/asyncplusplus/archive/v1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d160d3a433a1e08f51c785742843182c2b81a7bc872766f57bf5f3108377b858"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/asyncplusplus/blobs/sha256:898eddc5042c1c1022f157a250372b55a373d1c2a9d54c929280f60c3ea503f1",
+          "sha256": "898eddc5042c1c1022f157a250372b55a373d1c2a9d54c929280f60c3ea503f1"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/asyncplusplus/blobs/sha256:b6d8ffe80f5931825874903e480010524c9ce2d3a2d3f19b0152897459748bf9",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/asyncplusplus/blobs/sha256:c44cc09dbae0270a7e13b87eb4a9e5b0af39ba3e7ba13032e37065014e621be9",
           "sha256": "c44cc09dbae0270a7e13b87eb4a9e5b0af39ba3e7ba13032e37065014e621be9"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/asyncplusplus/blobs/sha256:3a0aa2292b9a2da7e16e906d48e48d4d4eb94e93b27f6b2dcc966fee2d6b7a80",
+          "sha256": "3a0aa2292b9a2da7e16e906d48e48d4d4eb94e93b27f6b2dcc966fee2d6b7a80"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

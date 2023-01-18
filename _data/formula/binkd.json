@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://happy.kiev.ua/pub/fidosoft/mailer/binkd/binkd-1.0.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "917e45c379bbd1a140d1fe43179a591f1b2ec4004b236d6e0c4680be8f1a0dc0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/binkd/blobs/sha256:b2df2fde26d69ad428bcc89b4108fee501ebf175a068db94ea97366212d66e7c",
+          "sha256": "b2df2fde26d69ad428bcc89b4108fee501ebf175a068db94ea97366212d66e7c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/binkd/blobs/sha256:ea0018141c5ebc35b7dca7fb49322682120a2eb5868eb16ff40c8f670123a3fc",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/binkd/blobs/sha256:4cd8c44619d3c04b646a1ea8ad7db21feb95e950656c78d5dc1a983d6472b469",
           "sha256": "4cd8c44619d3c04b646a1ea8ad7db21feb95e950656c78d5dc1a983d6472b469"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/binkd/blobs/sha256:5ffb321d48d1c22395d4c0453ebd2794a12ab267eb67117b17aa66004e0f5175",
+          "sha256": "5ffb321d48d1c22395d4c0453ebd2794a12ab267eb67117b17aa66004e0f5175"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/binkd/blobs/sha256:d69c67a3cb68789a0a96196b5d2d92e44e6dd9bab3eb870ec9727987ae538c35",
           "sha256": "d69c67a3cb68789a0a96196b5d2d92e44e6dd9bab3eb870ec9727987ae538c35"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/binkd/blobs/sha256:e56862a339a1de58072d3ffb23981bff13a1eb69322c5e12e47949c171d5ceff",
-          "sha256": "e56862a339a1de58072d3ffb23981bff13a1eb69322c5e12e47949c171d5ceff"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/binkd/blobs/sha256:83ac41663d506bea26d30d168d2b5193f2d42da32ed8530ec8422f990281c3b7",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

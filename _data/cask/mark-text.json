@@ -3,31 +3,35 @@
   "full_token": "mark-text",
   "tap": "homebrew/cask",
   "name": [
-    "Mark Text"
+    "MarkText"
   ],
-  "desc": null,
-  "homepage": "https://marktext.app/",
-  "url": "https://github.com/marktext/marktext/releases/download/v0.16.3/marktext.dmg",
+  "desc": "Simple and elegant markdown editor",
+  "homepage": "https://github.com/marktext/marktext",
+  "url": "https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg",
   "appcast": null,
-  "version": "0.16.3",
+  "version": "0.17.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "7054e56a439d5d09dd4b0898e01e541e1afb22fc74556678bcb006d37c1e041d",
+  "sha256": "83320faad3b217079f6638b1f4169ffc37465f255a93e262d1646f2a5f53f263",
   "artifacts": [
-    [
-      "Mark Text.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/marktext",
-        "~/Library/Preferences/com.github.marktext.marktext.plist",
-        "~/Library/Saved Application State/com.github.marktext.marktext.savedState",
-        "~/Library/Logs/Mark Text"
-      ],
-      "signal": {
-      }
+      "app": [
+        "MarkText.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/marktext",
+            "~/Library/Preferences/com.github.marktext.marktext.plist",
+            "~/Library/Saved Application State/com.github.marktext.marktext.savedState",
+            "~/Library/Logs/marktext"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

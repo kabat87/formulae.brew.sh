@@ -16,17 +16,23 @@
   "outdated": false,
   "sha256": "61637593237424a9bb7b44408ab3631a8e2458b58c68b5060fea9b218a10256f",
   "artifacts": [
-    [
-      "PyCharm with Anaconda plugin .app"
-    ],
-    "uninstall_postflight (Postflight Block)",
     {
-      "trash": [
-        "~/Library/Application Support/JetBrains/PyCharm*",
-        "~/Library/Saved Application State/com.jetbrains.pycharm.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PyCharm with Anaconda plugin .app"
+      ]
+    },
+    {
+      "uninstall_postflight": "  uninstall_postflight do\n    ENV[\"PATH\"].split(File::PATH_SEPARATOR).map { |path| File.join(path, \"charm\") }.each do |path|\n      if File.readable?(path) &&\n         File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?\n        File.delete(path)\n      end\n    end\n  end\n"
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/JetBrains/PyCharm*",
+            "~/Library/Saved Application State/com.jetbrains.pycharm.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "pycharm-with-anaconda-plugin has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
@@ -34,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

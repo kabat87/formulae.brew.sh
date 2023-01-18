@@ -7,6 +7,8 @@
 
   ],
   "versioned_formulae": [
+    "llvm@14",
+    "llvm@13",
     "llvm@12",
     "llvm@9",
     "llvm@8",
@@ -24,50 +26,51 @@
     "stable": {
       "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-11.1.0/llvm-project-11.1.0.src.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "74d2529159fd118c3eac6f90107b5611bccc6f647fdea104024183e8d5e25831"
     }
   },
-  "revision": 3,
+  "revision": 4,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:2dd2d2c64d4eaced81c3fd64beea1c8d68fa17b564b2c536a1931e614f18756c",
+          "sha256": "2dd2d2c64d4eaced81c3fd64beea1c8d68fa17b564b2c536a1931e614f18756c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:a0eef7340eed1570d0585eb89935f92cb9c30dc1bbee28c24750267784ddbb9c",
-          "sha256": "a0eef7340eed1570d0585eb89935f92cb9c30dc1bbee28c24750267784ddbb9c"
+          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:d0d40b083bab471b93e36a5075802906672cc666ccc242ec316820fc4349f298",
+          "sha256": "d0d40b083bab471b93e36a5075802906672cc666ccc242ec316820fc4349f298"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:0441f32a33dc14393118ff9d047af44d8fa7b87648b09c1e2ffa5c69d3d0c032",
-          "sha256": "0441f32a33dc14393118ff9d047af44d8fa7b87648b09c1e2ffa5c69d3d0c032"
+          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:d1732cbc50152aebc30471f942eeec30ca6b150e900a7000940baf3b98c5d5b5",
+          "sha256": "d1732cbc50152aebc30471f942eeec30ca6b150e900a7000940baf3b98c5d5b5"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:b1ad7348bfba7835c9360a7220689304d9be0092558b614fa52c9e5624dd4153",
+          "sha256": "b1ad7348bfba7835c9360a7220689304d9be0092558b614fa52c9e5624dd4153"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:2e2df0f2643ff97e9b3f7d87c610cf76b116d1b82d31e307473e1e8347ecacb6",
-          "sha256": "2e2df0f2643ff97e9b3f7d87c610cf76b116d1b82d31e307473e1e8347ecacb6"
+          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:ce98c1e1b94155d74a37826764e8b7f58bb9fe827f9c6988e753e53d78a3824f",
+          "sha256": "ce98c1e1b94155d74a37826764e8b7f58bb9fe827f9c6988e753e53d78a3824f"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:8b9e7e448f801daad56d3180cccf190486bd785c551aeb37300a5296f1d9e81b",
-          "sha256": "8b9e7e448f801daad56d3180cccf190486bd785c551aeb37300a5296f1d9e81b"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:47e26656712ba5efa159d2f42334972bf8c510ffa48f0c6ff35d8e55af1b9d94",
-          "sha256": "47e26656712ba5efa159d2f42334972bf8c510ffa48f0c6ff35d8e55af1b9d94"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:c7cd19b7849a499acd3d68648fadf9c8283ce47bd1706931c2f3223e8c97d8ac",
-          "sha256": "c7cd19b7849a499acd3d68648fadf9c8283ce47bd1706931c2f3223e8c97d8ac"
+          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:af3a8de67ed789b846b88f0f969026abd53bd4dc06869ac90ee486cda58e1c4c",
+          "sha256": "af3a8de67ed789b846b88f0f969026abd53bd4dc06869ac90ee486cda58e1c4c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:0fefecb000c832d751022756e68888df5bacce3dcd442515573b080c46859834",
-          "sha256": "0fefecb000c832d751022756e68888df5bacce3dcd442515573b080c46859834"
+          "url": "https://ghcr.io/v2/homebrew/core/llvm/11/blobs/sha256:0864d39f56bc7998edd70e07f822f4fdc946746959dd73387770b41fe699f608",
+          "sha256": "0864d39f56bc7998edd70e07f822f4fdc946746959dd73387770b41fe699f608"
         }
       }
     }
@@ -77,16 +80,19 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "cmake",
+    "python@3.11",
     "swig"
   ],
   "dependencies": [
-    "python@3.9"
+
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -97,7 +103,6 @@
   "uses_from_macos": [
     "libedit",
     "libffi",
-    "libxml2",
     "ncurses",
     "zlib"
   ],
@@ -119,5 +124,43 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "mojave": {
+      "dependencies": [
+        "libffi"
+      ]
+    },
+    "high_sierra": {
+      "dependencies": [
+        "libffi"
+      ]
+    },
+    "sierra": {
+      "dependencies": [
+        "libffi"
+      ]
+    },
+    "el_capitan": {
+      "dependencies": [
+        "libffi"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "cmake",
+        "python@3.11",
+        "swig",
+        "pkg-config"
+      ],
+      "dependencies": [
+        "libedit",
+        "libffi",
+        "ncurses",
+        "zlib",
+        "binutils",
+        "elfutils"
+      ]
+    }
+  }
 }

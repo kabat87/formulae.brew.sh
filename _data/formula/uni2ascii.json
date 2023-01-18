@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/u/uni2ascii/uni2ascii_4.18.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9e24bb6eb2ced0a2945e2dabed5e20c419229a8bf9281c3127fa5993bfa5930e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/uni2ascii/blobs/sha256:49692068ab523b29ff30943843d3c017b9c6e70fc5082e05d404e8dd4b6e3aa5",
+          "sha256": "49692068ab523b29ff30943843d3c017b9c6e70fc5082e05d404e8dd4b6e3aa5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/uni2ascii/blobs/sha256:de4fbbd1260caf3ea247e5127a0e0f77a7bba4ec57e3ed54b3cd4c40d83bbd22",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/uni2ascii/blobs/sha256:cfe655d4eef2cd9e47feec80bdca9905e61ba0de528db266d3fc76ad187c7ff2",
           "sha256": "cfe655d4eef2cd9e47feec80bdca9905e61ba0de528db266d3fc76ad187c7ff2"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/uni2ascii/blobs/sha256:6b8a59fc1998a56e96d6879998bc900f53294a9addee3b8404f4869a39db4714",
+          "sha256": "6b8a59fc1998a56e96d6879998bc900f53294a9addee3b8404f4869a39db4714"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/uni2ascii/blobs/sha256:3cc5e96fa9c49edb0b06d60af238f4a4803feefe22bbf5924698649e8c4db5fb",
           "sha256": "3cc5e96fa9c49edb0b06d60af238f4a4803feefe22bbf5924698649e8c4db5fb"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/uni2ascii/blobs/sha256:0200efd85e37c8c6e2582f82ff8fbb050bba07d31a1bf3720837f5d30da6a54b",
-          "sha256": "0200efd85e37c8c6e2582f82ff8fbb050bba07d31a1bf3720837f5d30da6a54b"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/uni2ascii/blobs/sha256:acc769baafa054d67c74f3965d7f7810ba19e45ea64d8e4f6ce7c83bf766f426",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

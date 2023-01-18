@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dharple/detox/archive/v1.4.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5d8b1eb53035589882f48316a88f50341bf98c284e8cd29dea74f680559e27cc"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/detox/blobs/sha256:4f66c9eef85d621b163b242087c3706aa322a8bc8965f37aba056c2161f8490b",
+          "sha256": "4f66c9eef85d621b163b242087c3706aa322a8bc8965f37aba056c2161f8490b"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/detox/blobs/sha256:5636ac88e873246ab060735d242fe4059703c6bed30bea931c63757851739dab",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/detox/blobs/sha256:4e440bf09a205498b109d633d30216632df0657d0956ce85eb0c49224b3916e2",
           "sha256": "4e440bf09a205498b109d633d30216632df0657d0956ce85eb0c49224b3916e2"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/detox/blobs/sha256:f57bd4079f8d360a4ad5da2e87f37cb2c0f8334aced2e6cdfd9271e61c75326a",
+          "sha256": "f57bd4079f8d360a4ad5da2e87f37cb2c0f8334aced2e6cdfd9271e61c75326a"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

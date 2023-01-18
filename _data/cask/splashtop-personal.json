@@ -7,27 +7,35 @@
   ],
   "desc": "Connect to and control computers from desktop and mobile devices",
   "homepage": "https://www.splashtop.com/personal",
-  "url": "https://d17kmd0va0f0mp.cloudfront.net/macclient/STP/Splashtop_Personal_Mac_v3.4.6.1.dmg",
+  "url": "https://d17kmd0va0f0mp.cloudfront.net/macclient/STP/Splashtop_Personal_Mac_v3.5.2.3.dmg",
   "appcast": null,
-  "version": "3.4.6.1",
+  "version": "3.5.2.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "39e202c3a5376256d55ca26ef6bd6d5aca046039251fec077e5d094e087f8b0e",
+  "sha256": "0292f2f50864bee7db06cbdce5be833cd8de13a203594a5e26ce43236b4c95da",
   "artifacts": [
     {
-      "quit": "com.splashtop.stp.macosx",
-      "pkgutil": "com.splashtop.stp.*",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.splashtop.stp.macosx",
+          "pkgutil": "com.splashtop.stp.*"
+        }
+      ]
     },
-    "Splashtop Personal.pkg (Pkg)"
+    {
+      "pkg": [
+        "Splashtop Personal.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

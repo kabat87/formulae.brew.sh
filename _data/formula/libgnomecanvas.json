@@ -10,7 +10,7 @@
 
   ],
   "desc": "Highlevel, structured graphics library",
-  "license": null,
+  "license": "LGPL-2.0-or-later and LGPL-2.1-or-later",
   "homepage": "https://gitlab.gnome.org/Archive/libgnomecanvas",
   "versions": {
     "stable": "2.30.3",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/libgnomecanvas/2.30/libgnomecanvas-2.30.3.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "859b78e08489fce4d5c15c676fec1cd79782f115f516e8ad8bed6abcb8dedd40"
     }
   },
   "revision": 5,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libgnomecanvas/blobs/sha256:4b8105aefd57fa86f23ce651fea0cf2e535fec792c17b8cecc33bf4824e57455",
+          "sha256": "4b8105aefd57fa86f23ce651fea0cf2e535fec792c17b8cecc33bf4824e57455"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libgnomecanvas/blobs/sha256:aef7d6bf446277bc167f620e3cb3da665cbd18a3b118b2234816078525b9d171",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libgnomecanvas/blobs/sha256:ed9d17d2b7100e9c5ef536c547119eb78e8658bc273f958e673d47383290c3d7",
           "sha256": "ed9d17d2b7100e9c5ef536c547119eb78e8658bc273f958e673d47383290c3d7"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libgnomecanvas/blobs/sha256:3b9fe981f867d678e4a4fc87f074afc8f82f3a9bce440fd1816d77fa2ac85350",
+          "sha256": "3b9fe981f867d678e4a4fc87f074afc8f82f3a9bce440fd1816d77fa2ac85350"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "gtk+",
     "libart",
     "libglade"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -102,10 +115,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-11-03",
-  "deprecation_reason": "repo_archived",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-11-29",
+  "disable_reason": "repo_archived",
+  "variations": {
+  }
 }

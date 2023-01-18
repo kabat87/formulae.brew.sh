@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/m/mecab/mecab_0.996.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e073325783135b72e666145c781bb48fada583d5224fb2490fb6c1403ba69c59"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 3,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mecab/blobs/sha256:492e9bdfcbb7968c03dff7736cd94ba5ad97df0c164bb62c1fe9f9e389881ceb",
+          "sha256": "492e9bdfcbb7968c03dff7736cd94ba5ad97df0c164bb62c1fe9f9e389881ceb"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mecab/blobs/sha256:868884cacf2503757291056a3cee77daaba404fd43abeeb0b2dc7e0a6fceee29",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mecab/blobs/sha256:495c42533a5ea5bdedcf4a95c05e613c3579f626b17d0df0396d8a0ea9328bbe",
           "sha256": "495c42533a5ea5bdedcf4a95c05e613c3579f626b17d0df0396d8a0ea9328bbe"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mecab/blobs/sha256:9bd251f2b61cab5850ac818ac06b879889c8c9c88c54c7163920099938c76b0d",
+          "sha256": "9bd251f2b61cab5850ac818ac06b879889c8c9c88c54c7163920099938c76b0d"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "texshop" do
-  version "4.68"
-  sha256 "f482f01217f5085cb26828ad7b3bcafdddef381b0d1f54d72e5d8641b1403514"
+  version "5.10"
+  sha256 "6fa0dc067cda2a08b7347c678faf9e304ca13d7044f9900288d152d4a6e23ef7"
 
   url "https://pages.uoregon.edu/koch/texshop/texshop-64/texshop#{version.no_dots}.zip"
   name "TeXShop"
@@ -13,7 +13,7 @@ cask "texshop" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :high_sierra"
 
   app "TeXShop.app"
 

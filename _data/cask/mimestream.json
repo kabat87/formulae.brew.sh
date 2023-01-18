@@ -7,33 +7,47 @@
   ],
   "desc": "Native app email client for Gmail",
   "homepage": "https://mimestream.com/",
-  "url": "https://storage.googleapis.com/mimestream-releases/Mimestream_0.32.0.dmg",
+  "url": "https://download.mimestream.com/Mimestream_0.40.2.dmg",
   "appcast": null,
-  "version": "0.32.0",
+  "version": "0.40.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e906d4cd9e8e4a0886379a14b1b2a3b03d47764e81773a48fad57eef37f4ba85",
+  "sha256": "d0b256cbd0ee1942d0eb976cc24f36962c217d8547854c9e5d71ef143e02f11d",
   "artifacts": [
-    [
-      "Mimestream.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.mimestream.Mimestream",
-        "~/Library/Caches/com.mimestream.Mimestream",
-        "~/Library/Containers/com.mimestream.Mimestream",
-        "~/Library/Saved Application State/com.mimestream.Mimestream.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Mimestream.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.mimestream.Mimestream",
+            "~/Library/Application Scripts/com.mimestream.Mimestream.ShareExtension",
+            "~/Library/Caches/com.mimestream.Mimestream",
+            "~/Library/Containers/com.mimestream.Mimestream",
+            "~/Library/Containers/com.mimestream.Mimestream.ShareExtension",
+            "~/Library/Preferences/com.mimestream.Mimestream.plist",
+            "~/Library/Saved Application State/com.mimestream.Mimestream.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "11"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

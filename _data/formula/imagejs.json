@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jklmnn/imagejs/archive/0.7.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ba75c7ea549c4afbcb2a516565ba0b762b5fc38a03a48e5b94bec78bac7dab07"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/imagejs/blobs/sha256:e76ab06468439a91138e802c3da8aa8d422a659aebb2abc94fea8a8f576d0b71",
+          "sha256": "e76ab06468439a91138e802c3da8aa8d422a659aebb2abc94fea8a8f576d0b71"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/imagejs/blobs/sha256:1297a2272e34c7bd91997cb8ec161fac1694089d5e4daeaa2a9377714e197d38",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/imagejs/blobs/sha256:f03279a8e5c316d74b2b93939714aa16dc624735ca8bda89b20468bc346c4216",
           "sha256": "f03279a8e5c316d74b2b93939714aa16dc624735ca8bda89b20468bc346c4216"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/imagejs/blobs/sha256:e2ad3d26c4cf47649428a26612ebf2db567717311fac840f894526c52efc423a",
+          "sha256": "e2ad3d26c4cf47649428a26612ebf2db567717311fac840f894526c52efc423a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

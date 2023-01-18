@@ -7,22 +7,26 @@
   ],
   "desc": "Minecraft mod downloader and manager",
   "homepage": "https://www.feed-the-beast.com/",
-  "url": "https://apps.modpacks.ch/FTBApp/release/202112101445-bdf8bdbaca-release/FTBA_macos_202112101445-bdf8bdbaca-release.dmg",
+  "url": "https://apps.modpacks.ch/FTBApp/release/202212152008-a5a6712906-release/FTBA_macos_202212152008-a5a6712906-release.dmg",
   "appcast": null,
-  "version": "202112101445,bdf8bdbaca",
+  "version": "202212152008,a5a6712906",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "26588e020c85b64a31e8143c8e5537b500c1f2ba880f1a9c5d89be2c4bd672c8",
+  "sha256": "e56fccabcac8ba8431134d4f6e58ee675cac4375345b86fa121f69cbde3bd187",
   "artifacts": [
-    [
-      "FTBApp.app"
-    ],
     {
-      "trash": "~/Library/Application Support/ftblauncher",
-      "signal": {
-      }
+      "app": [
+        "FTBApp.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/ftblauncher"
+        }
+      ]
     }
   ],
   "caveats": "feed-the-beast requires Java. You can install the latest version with:\n  brew install --cask temurin\n",
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

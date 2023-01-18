@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/gqview/gqview/2.0.4/gqview-2.0.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "97e3b7ce5f17a315c56d6eefd7b3a60b40cc3d18858ca194c7e7262acce383cb"
     }
   },
   "revision": 3,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gqview/blobs/sha256:a16fd3dcd391be5e7568bb232037c4af9c677cca3f520ab0886ea679cf5002f1",
+          "sha256": "a16fd3dcd391be5e7568bb232037c4af9c677cca3f520ab0886ea679cf5002f1"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gqview/blobs/sha256:ffe4e090d128841b174008928e53dcd153827c075ed8c8124cf6164f5733a9df",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gqview/blobs/sha256:9b80b415172fc45373bcb1c68b03b3c0c26e6181e3c5ff4e353c7b685fbf6524",
           "sha256": "9b80b415172fc45373bcb1c68b03b3c0c26e6181e3c5ff4e353c7b685fbf6524"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gqview/blobs/sha256:bd1802a32656bd2d9b61a0f7c9132130e2e3fea29aaefd4cb14616d33083ffbe",
+          "sha256": "bd1802a32656bd2d9b61a0f7c9132130e2e3fea29aaefd4cb14616d33083ffbe"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -70,13 +81,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gqview/blobs/sha256:b0e983e36c58634a2ae893003567dac0737c012811c1dcb64f0def22fc11f604",
           "sha256": "b0e983e36c58634a2ae893003567dac0737c012811c1dcb64f0def22fc11f604"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gqview/blobs/sha256:18698348461bc51c97a1439a409726c32000f608f5f71f4ef7503c099899e99f",
+          "sha256": "18698348461bc51c97a1439a409726c32000f608f5f71f4ef7503c099899e99f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +100,9 @@
   ],
   "dependencies": [
     "gtk+"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

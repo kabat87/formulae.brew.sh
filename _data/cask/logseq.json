@@ -7,27 +7,31 @@
   ],
   "desc": "Privacy-first, open-source platform for knowledge sharing and management",
   "homepage": "https://github.com/logseq/logseq",
-  "url": "https://github.com/logseq/logseq/releases/download/0.5.8/logseq-darwin-x64-0.5.8.dmg",
+  "url": "https://github.com/logseq/logseq/releases/download/0.8.16/logseq-darwin-x64-0.8.16.dmg",
   "appcast": null,
-  "version": "0.5.8",
+  "version": "0.8.16",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "085ee2ded2d4f1cfcd3cc7ed73b0fd6e266ee6c9cea6a40b337793660c67861f",
+  "sha256": "46c1e6663369b2f5facc905d55e1198f59ed2a80960bb751d7d305bdedd4e2b1",
   "artifacts": [
-    [
-      "Logseq.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Logseq",
-        "~/Library/Logs/Logseq",
-        "~/Library/Preferences/com.electron.logseq.plist",
-        "~/Library/Saved Application State/com.electron.logseq.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Logseq.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Logseq",
+            "~/Library/Logs/Logseq",
+            "~/Library/Preferences/com.electron.logseq.plist",
+            "~/Library/Saved Application State/com.electron.logseq.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/logseq/logseq/releases/download/0.8.16/logseq-darwin-arm64-0.8.16.dmg",
+      "sha256": "40173cf475809ff753e36fb58c0b76021d84ff0c63eeb8a98ec2d8cdcf9ca3f2"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/logseq/logseq/releases/download/0.8.16/logseq-darwin-arm64-0.8.16.dmg",
+      "sha256": "40173cf475809ff753e36fb58c0b76021d84ff0c63eeb8a98ec2d8cdcf9ca3f2"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/logseq/logseq/releases/download/0.8.16/logseq-darwin-arm64-0.8.16.dmg",
+      "sha256": "40173cf475809ff753e36fb58c0b76021d84ff0c63eeb8a98ec2d8cdcf9ca3f2"
+    }
+  }
 }

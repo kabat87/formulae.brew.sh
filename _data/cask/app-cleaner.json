@@ -9,38 +9,44 @@
   "homepage": "https://nektony.com/mac-app-cleaner",
   "url": "https://nektony.com/download/app-cleaner-uninstaller/app-cleaner-uninstaller.dmg",
   "appcast": null,
-  "version": "7.4.4,840",
+  "version": "8.0.4,1909",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "App Cleaner 7.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.nektony.App-Cleaner-Pro",
-        "~/Library/Application Support/com.nektony.App-Cleaner-Pro",
-        "~/Library/Caches/com.nektony.App-Cleaner-Pro",
-        "~/Library/Containers/com.nektony.StartupDiskFull",
-        "~/Library/Preferences/com.nektony.App-Cleaner-Pro.plist",
-        "~/Library/Saved Application State/com.nektony.App-Cleaner-Pro.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "App Cleaner 8.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.nektony.App-Cleaner-Pro",
+            "~/Library/Application Support/com.nektony.App-Cleaner-Pro",
+            "~/Library/Caches/com.nektony.App-Cleaner-Pro",
+            "~/Library/Containers/com.nektony.StartupDiskFull",
+            "~/Library/Preferences/com.nektony.App-Cleaner-Pro.plist",
+            "~/Library/Saved Application State/com.nektony.App-Cleaner-Pro.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

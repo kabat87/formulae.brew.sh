@@ -7,30 +7,36 @@
   ],
   "desc": "Utility to switch between applications",
   "homepage": "https://github.com/gbammc/Thor/",
-  "url": "https://github.com/gbammc/Thor/releases/download/1.5.6/Thor_1.5.6.zip",
+  "url": "https://github.com/gbammc/Thor/releases/download/1.5.11/Thor_1.5.11.zip",
   "appcast": null,
-  "version": "1.5.6",
+  "version": "1.5.11",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b35febd2c367f8fa266b914c4f93ca5b03a28d2902b8bbc79bbb7455ca2746ce",
+  "sha256": "951903493d87a78b5b70446e19ac91d4b59d0f74a66474183d7fd87082bcdb88",
   "artifacts": [
     {
-      "quit": "me.alvinzhu.Thor",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "me.alvinzhu.Thor"
+        }
+      ]
     },
-    [
-      "Thor.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/me.alvinzhu.Thor",
-        "~/Library/Containers/me.alvinzhu.Thor"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Thor.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/me.alvinzhu.Thor",
+            "~/Library/Containers/me.alvinzhu.Thor"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

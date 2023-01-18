@@ -7,7 +7,8 @@
 
   ],
   "versioned_formulae": [
-    "ghc@9",
+    "ghc@9.2",
+    "ghc@8.10",
     "ghc@8.6"
   ],
   "desc": "Glorious Glasgow Haskell Compilation System",
@@ -22,7 +23,8 @@
     "stable": {
       "url": "https://downloads.haskell.org/~ghc/8.8.4/ghc-8.8.4-src.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f0505e38b2235ff9f1090b51f44d6c8efd371068e5a6bb42a2a6d8b67b5ffc2d"
     }
   },
   "revision": 1,
@@ -60,7 +62,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -68,6 +69,9 @@
     "python@3.10"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,10 +107,22 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-12-08",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "python@3.10",
+        "m4",
+        "gmp"
+      ],
+      "dependencies": [
+        "ncurses"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dmalloc.com/releases/dmalloc-5.6.5.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "480e3414ab6cedca837721c756b7d64b01a84d2d0e837378d98444e2f63a7c01"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dmalloc/blobs/sha256:dc77030dce1a9f169758cd306be4a70d322479044dd598ce74e7733bbe0a7d71",
+          "sha256": "dc77030dce1a9f169758cd306be4a70d322479044dd598ce74e7733bbe0a7d71"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dmalloc/blobs/sha256:2f328197f63c96ff0ce40846bb242b3e1d04985567893adefd2d47f79f6f96d6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dmalloc/blobs/sha256:c8e1beff8a66f4a5d7a90fa8c5f9836ed79b9241ab642966d82550916a3af5c1",
           "sha256": "c8e1beff8a66f4a5d7a90fa8c5f9836ed79b9241ab642966d82550916a3af5c1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dmalloc/blobs/sha256:01adf9d08a79145edccb9004602becb64b659062815b15ce5504a80937c80970",
+          "sha256": "01adf9d08a79145edccb9004602becb64b659062815b15ce5504a80937c80970"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

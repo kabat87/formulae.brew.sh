@@ -3,11 +3,17 @@
   "pkg_version": "1.0.20210914",
   "rebuild": 0,
   "bottles": {
+    "arm64_ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/wireguard-tools/blobs/sha256:2e42616268659b793a62d92815d9e7f32554e89ec15a273b3ed0c15a1b861373"
+    },
     "arm64_monterey": {
       "url": "https://ghcr.io/v2/homebrew/core/wireguard-tools/blobs/sha256:dab3c446484b6fce766584a472894f32e476d0599df1c65b8115ca0c8abce262"
     },
     "arm64_big_sur": {
       "url": "https://ghcr.io/v2/homebrew/core/wireguard-tools/blobs/sha256:92e86c34ca2a747177fdc78ed6dfe44970f4943a6d929ca1c3c04698c05b5631"
+    },
+    "ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/wireguard-tools/blobs/sha256:a8591219586c71014fe555b8a5d8252298c8c385a2592033e5d1abc63ce646cc"
     },
     "monterey": {
       "url": "https://ghcr.io/v2/homebrew/core/wireguard-tools/blobs/sha256:ef2ec79723d6ad586e54148c0fc23775528fcea79ba3ef052e7000c1029e3d86"
@@ -28,54 +34,60 @@
   "dependencies": [
     {
       "name": "bash",
-      "pkg_version": "5.1.16",
+      "pkg_version": "5.2.15",
       "rebuild": 0,
       "bottles": {
+        "arm64_ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:f3a42b9282e6779504034485634a2f3e6e3bddfc70b9990e09e66e3c8c926b7d"
+        },
         "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:1b8834e7c9d1cd89f0cb4514e53ce905f6385c9455fd507298f73b3aa3e55087"
+          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:5e7e3e3387fc60e907683b437ac6e64879e117a3c5c1421fe6e6257f6aaa3c69"
         },
         "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:6954457b4e588e24fb339b407839a9b6c651738175a84adc75bbc525db032ece"
+          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:d19858831275271cc8aa9a1a28de6223faa44c6ebbc88e83898fd559de5b627e"
+        },
+        "ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:fd01a9dbdc56f6313a725cb345a3b991cfdaa9e1a91b08fd9791a0e695b55723"
         },
         "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:2823a6b24dc60b14b692cfc0544753e7d01a5c1f94eb1bdd590f9cb490eb1729"
+          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:05a5f9435c9e9ffe8377b03e0ca6b27bbb32cc01aff47dd1692cd8d7e735ab3a"
         },
         "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:4f387cc0993f868f31cd76483051a58420f80f57cf4626afc4b881d2a98959bb"
-        },
-        "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:85ac02733b659f4a7884395ed2cfd7dbdf59999a0d8a434a0c1a75085009ce2a"
+          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:680dd3b37e17cc4fa1af6dd8c51c774dd0c9aa3e594e96527020845516b1ea77"
         },
         "x86_64_linux": {
-          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:41849dc2ac9388255aaed32879cb32f977b9730220981eeca32bffca0b3bfb5f"
+          "url": "https://ghcr.io/v2/homebrew/core/bash/blobs/sha256:6185e7cdba0e671528c9f38b104c4af58a670240672f83537bfc95983476fbc2"
         }
       }
     },
     {
       "name": "wireguard-go",
-      "pkg_version": "0.0.20211016",
+      "pkg_version": "0.0.20220316",
       "rebuild": 0,
       "bottles": {
+        "arm64_ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:26bcf79b8fbbf79d4afcef86c1851fd2ddec8bcbd9b426977c7fdb3134365f1b"
+        },
         "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:615e120fd7feb068f5b9a0e1a67e33ebf402a2b860e33e7cdcdf57a00bf9f0ad"
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:07fe4038743e02c3474db81af543dcdb4ff35149eaacaae0944695f05facb140"
         },
         "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:cd13831d9e412f6d017dbea6e97b38fc969bd5291ff9c05c5c8f112a37542fc2"
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:49c9d68a379b6d68e45d6a7af04e8d684102a2f748b54d67e652a75e2fd0b671"
+        },
+        "ventura": {
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:3f8e802bac2d0063fcf8178acba2fe910e37db790b3b85e231d2e5e49fa21007"
         },
         "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:7e152bb6e2cdc60a5288d40c3baaee7535d784fe6cb47390cb294c126ceb65ad"
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:5b75283c47dc11a78114df31782b10f3715525ea18265c5bb059efbf32827f65"
         },
         "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:18fcc7e4677df06930a4ccad74386322b6067131f13a493478954da38a4e893c"
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:685bbaed5298bbb87c76e3166ee6ba2af26e322ef86bec67db51bc293bca250d"
         },
         "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:3a223d5f51f2cd4767526c5f7642d076b01b78468981b6fd996a36104ffc114b"
-        },
-        "mojave": {
-          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:7d5b923175d036e008358de3f15cce66c5317d742cbe22df52bd6bad0f931f59"
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:f66feff3fea2b654a6dd4af64cf42af35a57b9057aea22714e9ad56e7aa0ca25"
         },
         "x86_64_linux": {
-          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:5e7c52f5160ff952fc0e27b844ee783eec16ac7d196cb96a29f6900b49421c4d"
+          "url": "https://ghcr.io/v2/homebrew/core/wireguard-go/blobs/sha256:b2f1243b3617996b8a28480f700f491ed3c7bd92423a0f5a8954230244f99d75"
         }
       }
     }

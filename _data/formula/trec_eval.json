@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/usnistgov/trec_eval/archive/v9.0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c3994a73103ec842e12df693749584a45814c35c36dcc15f38984bd463566ba1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/trec_eval/blobs/sha256:16c8aaa0d9b33883411eba081aee36c8dda1bc3e2ed8ea84e9883c9edf320e9a",
+          "sha256": "16c8aaa0d9b33883411eba081aee36c8dda1bc3e2ed8ea84e9883c9edf320e9a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/trec_eval/blobs/sha256:01082fb524981b3e81e180e9a4a1ac92e0fe68ef210318e0a1c41eadad89a291",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/trec_eval/blobs/sha256:908cb93ceda4eb3561890ed39752d7ea5e2f41e5aced235445426bcc52958080",
           "sha256": "908cb93ceda4eb3561890ed39752d7ea5e2f41e5aced235445426bcc52958080"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/trec_eval/blobs/sha256:c3bc70311ebbcabf059835dcd53f3eb1fe056dfc01f517bad1e1f0c9f4cb6ec9",
+          "sha256": "c3bc70311ebbcabf059835dcd53f3eb1fe056dfc01f517bad1e1f0c9f4cb6ec9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/trec_eval/blobs/sha256:cecbd8490c8b889b72922ff9d6f6fdd5bed740e211217b4ac5c37b742b4e1b41",
           "sha256": "cecbd8490c8b889b72922ff9d6f6fdd5bed740e211217b4ac5c37b742b4e1b41"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/trec_eval/blobs/sha256:dc3ec132aca6dc41b193e739765cbc951b20c705d84aac1a98f930a5ebb1ee32",
+          "sha256": "dc3ec132aca6dc41b193e739765cbc951b20c705d84aac1a98f930a5ebb1ee32"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

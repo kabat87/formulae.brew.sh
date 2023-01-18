@@ -7,32 +7,38 @@
   ],
   "desc": "Data visualization software",
   "homepage": "https://www.tableau.com/products/desktop",
-  "url": "https://downloads.tableau.com/tssoftware/TableauDesktop-2021-4-3.dmg",
+  "url": "https://downloads.tableau.com/tssoftware/TableauDesktop-2022-4-0.dmg",
   "appcast": null,
-  "version": "2021.4.3",
+  "version": "2022.4.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d6dec11cf2a220225e5f90d92af8b4fdbaf5789325b11888096f22fdbf1b85e6",
+  "sha256": "d94206594ccd9851cd7eeb62463e6040646869257aecdebf6856cbe84fb28ff2",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.amazon.redshiftodbc",
-        "com.simba.sparkodbc",
-        "com.simba.sqlserverodbc",
-        "com.tableausoftware.Desktop.app",
-        "com.tableausoftware.DesktopShortcut",
-        "com.tableausoftware.FLEXNet.11.*",
-        "com.tableausoftware.mysql",
-        "com.tableausoftware.oracle",
-        "com.tableausoftware.postgresql",
-        "simba.sparkodbc"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.amazon.redshiftodbc",
+            "com.simba.sparkodbc",
+            "com.simba.sqlserverodbc",
+            "com.tableausoftware.Desktop.app",
+            "com.tableausoftware.DesktopShortcut",
+            "com.tableausoftware.FLEXNet.11.*",
+            "com.tableausoftware.mysql",
+            "com.tableausoftware.oracle",
+            "com.tableausoftware.postgresql",
+            "simba.sparkodbc"
+          ]
+        }
+      ]
     },
-    "Tableau Desktop.pkg (Pkg)"
+    {
+      "pkg": [
+        "Tableau Desktop.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -44,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

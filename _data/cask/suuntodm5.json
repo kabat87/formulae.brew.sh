@@ -9,20 +9,24 @@
   "homepage": "https://www.suunto.com/Support/software-support/dm5/",
   "url": "https://dm5.movescount.com/SuuntoDM5.dmg",
   "appcast": null,
-  "version": "1.5.3",
+  "version": "1.5.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "SuuntoDM5.app"
-    ],
     {
-      "trash": "~/Library/Logs/SuuntoDM5",
-      "signal": {
-      }
+      "app": [
+        "SuuntoDM5.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Logs/SuuntoDM5"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

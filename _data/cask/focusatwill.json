@@ -7,27 +7,31 @@
   ],
   "desc": "Personalized focus music",
   "homepage": "https://www.focusatwill.com/",
-  "url": "https://faw-desktop.s3.amazonaws.com/focusatwill-3.1.0.dmg",
+  "url": "https://faw-desktop.s3.amazonaws.com/focusatwill-3.4.0-universal.dmg",
   "appcast": null,
-  "version": "3.1.0",
+  "version": "3.4.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "86ff016571ffd43711c2eaf9f68db5eba51c5cc7b9446ab6cdebad194c02fbc7",
+  "sha256": "b5e2cfdd30e1f4ba69f41c06cc5c2e7c803b28541d24954d454b91e7af892524",
   "artifacts": [
-    [
-      "focusatwill.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/focusatwill",
-        "~/Library/Logs/focusatwill",
-        "~/Library/Preferences/com.focusatwill.desktop.plist",
-        "~/Library/Saved Application State/com.focusatwill.desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "focusatwill.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/focusatwill",
+            "~/Library/Logs/focusatwill",
+            "~/Library/Preferences/com.focusatwill.desktop.plist",
+            "~/Library/Saved Application State/com.focusatwill.desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

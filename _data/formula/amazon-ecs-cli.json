@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/aws/amazon-ecs-cli/archive/v1.21.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "27e93a5439090486a2f2f5a9b02cbbd1493e3c14affbbe2375ed57f8f903e677"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/amazon-ecs-cli/blobs/sha256:ef77e9ec799164485117cc7971285ef4cd0d9f7ce526eff3955c18270f215c0c",
+          "sha256": "ef77e9ec799164485117cc7971285ef4cd0d9f7ce526eff3955c18270f215c0c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/amazon-ecs-cli/blobs/sha256:997efae6c4c5bd40f018cf944093c3842d52c8ba09e6bbc68715b697438a1f77",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/amazon-ecs-cli/blobs/sha256:dfe17f71140b30b124679fee0a7b402f8f16a3d284ea357b315f2f9896f67beb",
           "sha256": "dfe17f71140b30b124679fee0a7b402f8f16a3d284ea357b315f2f9896f67beb"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/amazon-ecs-cli/blobs/sha256:f020f685eb458c206f9dad7f6f2d6767bc088a5132655569bd5d652552cf211c",
+          "sha256": "f020f685eb458c206f9dad7f6f2d6767bc088a5132655569bd5d652552cf211c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

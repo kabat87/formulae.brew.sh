@@ -13,15 +13,16 @@
   "license": "LGPL-2.0-or-later",
   "homepage": "https://gstreamer.freedesktop.org/",
   "versions": {
-    "stable": "1.18.5",
+    "stable": "1.20.5",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.18.5.tar.xz",
+      "url": "https://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-1.20.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e83ab4d12ca24959489bbb0ec4fac9b90e32f741d49cda357cb554b2cb8b97f9"
     }
   },
   "revision": 0,
@@ -31,37 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:a1aa81cabe957c407d7679ac939d5f31048582c42f252bda08f87a4b7d140c71",
+          "sha256": "a1aa81cabe957c407d7679ac939d5f31048582c42f252bda08f87a4b7d140c71"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:3c80e9ed3b66a12ff3dae5eaafc67571ef8f861bb24fe6d45590c42105019686",
+          "sha256": "3c80e9ed3b66a12ff3dae5eaafc67571ef8f861bb24fe6d45590c42105019686"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:23c5545d7dbb05726bef1fc711bffe95c5a337eacb6053dc141fa08523faed53",
-          "sha256": "23c5545d7dbb05726bef1fc711bffe95c5a337eacb6053dc141fa08523faed53"
+          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:81448a48c9779399c79a24a8e8d1818f25bf6b40b8b04503aced3a9a86b9d4cc",
+          "sha256": "81448a48c9779399c79a24a8e8d1818f25bf6b40b8b04503aced3a9a86b9d4cc"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:ec4d435e3b81e762fe1f01c131ce4da5b90b6bd6e13194ef8ffb798a8fcd05a8",
+          "sha256": "ec4d435e3b81e762fe1f01c131ce4da5b90b6bd6e13194ef8ffb798a8fcd05a8"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:28e2bd546fecb0a2e90f632e71d55c67108c88d3324f1db67a99002ea593f6a0",
-          "sha256": "28e2bd546fecb0a2e90f632e71d55c67108c88d3324f1db67a99002ea593f6a0"
+          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:b6e786de63649e1713a28edfc8b57fd56cd892b9d4e4b40cbb74124fa5887863",
+          "sha256": "b6e786de63649e1713a28edfc8b57fd56cd892b9d4e4b40cbb74124fa5887863"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:34ac73b746d4fc3c962e253fe71ec3a35a3dbed2f20342bd22955aa492a53562",
-          "sha256": "34ac73b746d4fc3c962e253fe71ec3a35a3dbed2f20342bd22955aa492a53562"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:72ba1c6c4e161443ef3b7913fe5ad6f733d818aef27de007645eb2b6195864df",
-          "sha256": "72ba1c6c4e161443ef3b7913fe5ad6f733d818aef27de007645eb2b6195864df"
+          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:d9dcaadfaa3bf955efa0ef4fa521204c3164e35ea02aae0dd18e0217f09256ea",
+          "sha256": "d9dcaadfaa3bf955efa0ef4fa521204c3164e35ea02aae0dd18e0217f09256ea"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:def92a5fff0a77ba3c384bc78cec86756342005a27242fb07e689f6b92440602",
-          "sha256": "def92a5fff0a77ba3c384bc78cec86756342005a27242fb07e689f6b92440602"
+          "url": "https://ghcr.io/v2/homebrew/core/gst-plugins-good/blobs/sha256:1dbbe80d68b14b1b1c080dfc04280b990ce76e246b6be2f6f98c512df1ebd548",
+          "sha256": "1dbbe80d68b14b1b1c080dfc04280b990ce76e246b6be2f6f98c512df1ebd548"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,15 +86,18 @@
     "gettext",
     "gst-plugins-base",
     "gtk+3",
-    "jpeg",
+    "jpeg-turbo",
     "lame",
     "libpng",
     "libshout",
-    "libsoup@2",
+    "libsoup",
     "libvpx",
     "orc",
     "speex",
     "taglib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

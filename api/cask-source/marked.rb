@@ -1,6 +1,6 @@
 cask "marked" do
-  version "2.6.13,1027"
-  sha256 "af1ce8a35b1235d45a5de18f88d337dc886592500678f6c8d97d3b7ff9e23d62"
+  version "2.6.22,1040"
+  sha256 "4e542c9ce220d7d035e07ece88d3fe604f7b5a7e444f33b381997037b3d593c1"
 
   url "https://updates.marked2app.com/Marked#{version.csv.first}#{version.csv.second}.dmg"
   name "Marked"

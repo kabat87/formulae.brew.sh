@@ -7,36 +7,44 @@
   ],
   "desc": "Remote desktop server application",
   "homepage": "https://www.realvnc.com/",
-  "url": "https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.8.0-MacOSX-x86_64.pkg",
+  "url": "https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.11.0-MacOSX-x86_64.pkg",
   "appcast": null,
-  "version": "6.8.0",
+  "version": "6.11.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "17f5d68ab4552066659f5e31fdd9f8c498f2e1b93473e5a277db31632b69c1c0",
+  "sha256": "e640cfa4691db78647d906b8aa4c2e9931753d2a437051238f43aa4aa77053a8",
   "artifacts": [
-    "uninstall_preflight (Preflight Block)",
     {
-      "launchctl": [
-        "com.realvnc.vncserver",
-        "com.realvnc.vncserver.peruser"
-      ],
-      "pkgutil": [
-        "com.realvnc.vncserver.pkg"
-      ],
-      "signal": {
-      }
+      "uninstall_preflight": "  uninstall_preflight do\n    system_command \"/Applications/RealVNC/Uninstall VNC Server.app/Contents/Resources/uninstaller.sh\",\n                   print_stderr: false, sudo: true\n  end\n"
     },
-    "VNC-Server-6.8.0-MacOSX-x86_64.pkg (Pkg)",
     {
-      "trash": [
-        "/Library/Logs/vncserver.log.bak",
-        "~/Library/Saved Application State/com.realvnc.vnclicensewiz.savedState",
-        "~/Library/Saved Application State/com.realvnc.vncserver.savedState"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": [
+            "com.realvnc.vncserver",
+            "com.realvnc.vncserver.peruser"
+          ],
+          "pkgutil": "com.realvnc.vncserver.pkg"
+        }
+      ]
+    },
+    {
+      "pkg": [
+        "VNC-Server-6.11.0-MacOSX-x86_64.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/Logs/vncserver.log.bak",
+            "~/Library/Saved Application State/com.realvnc.vnclicensewiz.savedState",
+            "~/Library/Saved Application State/com.realvnc.vncserver.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +52,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

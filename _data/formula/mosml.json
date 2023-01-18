@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/kfl/mosml/archive/ver-2.10.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fed5393668b88d69475b070999b1fd34e902591345de7f09b236824b92e4a78f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mosml/blobs/sha256:697eb51321f126674f814f5cca5c08956104eb3d4181c04aa055afbf779f068e",
+          "sha256": "697eb51321f126674f814f5cca5c08956104eb3d4181c04aa055afbf779f068e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mosml/blobs/sha256:0bcc8223cece7f0320b69b009eda89cda3cec9fc8e10877fbd985eea878cb345",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mosml/blobs/sha256:0163ff06ef4997b1ab8eb1e55463475fc78f89ad4dd795d7ff4caeaca932a901",
           "sha256": "0163ff06ef4997b1ab8eb1e55463475fc78f89ad4dd795d7ff4caeaca932a901"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mosml/blobs/sha256:d416c4d3d7861b6b964aefd53dbb97a2778f111245dabb69b8c3e9bf2933c612",
+          "sha256": "d416c4d3d7861b6b964aefd53dbb97a2778f111245dabb69b8c3e9bf2933c612"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/mosml/blobs/sha256:5dae62ca2034ba70844d684111cec58561895eac39db3177d439747512206002",
           "sha256": "5dae62ca2034ba70844d684111cec58561895eac39db3177d439747512206002"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/mosml/blobs/sha256:3a0289ba1b1a56cf3c2a598ccbee9b1739c7c35628a173dd00bd2f20fead6703",
-          "sha256": "3a0289ba1b1a56cf3c2a598ccbee9b1739c7c35628a173dd00bd2f20fead6703"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mosml/blobs/sha256:42bf79793655431b313d4c547e7c9b6867b2f1695035005a15b8da6c0b25c416",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "gmp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

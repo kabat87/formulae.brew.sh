@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://ballerina.io",
   "versions": {
-    "stable": "1.2.23",
+    "stable": "2201.3.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://dist.ballerina.io/downloads/1.2.23/ballerina-1.2.23.zip",
+      "url": "https://dist.ballerina.io/downloads/2201.3.2/ballerina-2201.3.2-swan-lake.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "44fdf1059ee6d54f50ff0d6c61462cc60dee3e4f6a1ed66907c1ce06f10d5af1"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ballerina/blobs/sha256:8040c042299eb2cd410e9ce310830be31b3c54921a6ff4f4437265f196190a62",
-          "sha256": "8040c042299eb2cd410e9ce310830be31b3c54921a6ff4f4437265f196190a62"
+          "url": "https://ghcr.io/v2/homebrew/core/ballerina/blobs/sha256:de37c8a36fd94926e51ed1e471b4f84911d451f64907a67d99a8bcf32970eb97",
+          "sha256": "de37c8a36fd94926e51ed1e471b4f84911d451f64907a67d99a8bcf32970eb97"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@8"
+    "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

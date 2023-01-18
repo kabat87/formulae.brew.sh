@@ -13,65 +13,69 @@
   "license": "MIT",
   "homepage": "https://sile-typesetter.org",
   "versions": {
-    "stable": "0.12.1",
+    "stable": "0.14.5",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/sile-typesetter/sile/releases/download/v0.12.1/sile-0.12.1.tar.xz",
+      "url": "https://github.com/sile-typesetter/sile/releases/download/v0.14.5/sile-0.14.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2f0d6bb49efdf38a44f322ccc7cdb5bb9c2207fdbb44f67aa362ea0963068e07"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:13ca61aa62f4dc8e6d627f75d1abfed698fe3df551b522086c1efa978a498933",
+          "sha256": "13ca61aa62f4dc8e6d627f75d1abfed698fe3df551b522086c1efa978a498933"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:75a641e650587f4200e267eff17cabceb1ab3fa4dfa6d97ff823c554d723aff0",
-          "sha256": "75a641e650587f4200e267eff17cabceb1ab3fa4dfa6d97ff823c554d723aff0"
+          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:b286d124eaac6ce9d984bf34037899de53b5089cfd1083b9477f65e0c8d6ee72",
+          "sha256": "b286d124eaac6ce9d984bf34037899de53b5089cfd1083b9477f65e0c8d6ee72"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:7ed3ea1af8a0a005dd0692a4a5bd61a31df4175723f81e13ae25f7b439ee6fc4",
-          "sha256": "7ed3ea1af8a0a005dd0692a4a5bd61a31df4175723f81e13ae25f7b439ee6fc4"
+          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:bc014c2e327de0f15b5aeca9e5c9e0b53e7ba017a37ef26067658d72911c4e93",
+          "sha256": "bc014c2e327de0f15b5aeca9e5c9e0b53e7ba017a37ef26067658d72911c4e93"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:9b6e7bc2fbc37d83bba0d2c78e7fd4aa9c477b828be2517cca50426d9a732593",
+          "sha256": "9b6e7bc2fbc37d83bba0d2c78e7fd4aa9c477b828be2517cca50426d9a732593"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:9aabe661257d7085345d2699a772c7eb922565d46b854fd9f56f38c38cbf6809",
-          "sha256": "9aabe661257d7085345d2699a772c7eb922565d46b854fd9f56f38c38cbf6809"
+          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:61c52d8b11be1c9bac065ed1c1a56df8ac72b2e057433ed0e687d46989f9da1a",
+          "sha256": "61c52d8b11be1c9bac065ed1c1a56df8ac72b2e057433ed0e687d46989f9da1a"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:150ebe6821dcbd960cf90007f453cf0a499b5cf413664a5e0d9789b70e74e51d",
-          "sha256": "150ebe6821dcbd960cf90007f453cf0a499b5cf413664a5e0d9789b70e74e51d"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:ffa6d30112fc3a7bfd927275c74f667774d3f06753338e509529f9fc017996a0",
-          "sha256": "ffa6d30112fc3a7bfd927275c74f667774d3f06753338e509529f9fc017996a0"
+          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:a5789d2eef2f67125e073e9cce109e8a67f9f25bd5bc7007c002165410f9dc96",
+          "sha256": "a5789d2eef2f67125e073e9cce109e8a67f9f25bd5bc7007c002165410f9dc96"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:0d995ad496e6a7208d2c56bdfa6ef75ff4fc1a1ace2449cef73ad56d2ce866ac",
-          "sha256": "0d995ad496e6a7208d2c56bdfa6ef75ff4fc1a1ace2449cef73ad56d2ce866ac"
+          "url": "https://ghcr.io/v2/homebrew/core/sile/blobs/sha256:5c52636810e6314d95fb78a5c2fdddc380e47744ffe5548a786248deb3c278ab",
+          "sha256": "5c52636810e6314d95fb78a5c2fdddc380e47744ffe5548a786248deb3c278ab"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "luarocks",
     "pkg-config"
   ],
   "dependencies": [
@@ -80,7 +84,11 @@
     "icu4c",
     "libpng",
     "lua",
+    "luarocks",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -89,6 +97,9 @@
 
   ],
   "uses_from_macos": [
+    {
+      "unzip": "build"
+    },
     "expat",
     "zlib"
   ],
@@ -110,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

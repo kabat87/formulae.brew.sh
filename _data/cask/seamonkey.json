@@ -7,27 +7,31 @@
   ],
   "desc": "Development of SeaMonkey Internet Application Suite",
   "homepage": "https://www.seamonkey-project.org/",
-  "url": "https://archive.mozilla.org/pub/seamonkey/releases/2.53.10.2/mac/en-US/seamonkey-2.53.10.2.en-US.mac.dmg",
+  "url": "https://archive.mozilla.org/pub/seamonkey/releases/2.53.14/mac/en-US/seamonkey-2.53.14.en-US.mac.dmg",
   "appcast": null,
-  "version": "2.53.10.2",
+  "version": "2.53.14",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c18640c618558fd667b41074ebe125caef779dd8a044b5c82749ddda66f2597c",
+  "sha256": "c3dc74bebf34666a12526c407c8ac088da58f97f871b42b20b259908a8de790b",
   "artifacts": [
-    [
-      "SeaMonkey.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/SeaMonkey",
-        "~/Library/Caches/SeaMonkey",
-        "~/Library/Preferences/org.mozilla.seamonkey.plist",
-        "~/Library/Saved Application State/org.mozilla.seamonkey.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SeaMonkey.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/SeaMonkey",
+            "~/Library/Caches/SeaMonkey",
+            "~/Library/Preferences/org.mozilla.seamonkey.plist",
+            "~/Library/Saved Application State/org.mozilla.seamonkey.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -7,29 +7,33 @@
   ],
   "desc": "Two-factor authentication software",
   "homepage": "https://authy.com/",
-  "url": "https://authy-electron-repository-production.s3.amazonaws.com/authy/stable/1.9.0/darwin/x64/Authy%20Desktop-1.9.0.dmg",
+  "url": "https://pkg.authy.com/authy/stable/2.2.2/darwin/x64/Authy%20Desktop-2.2.2.dmg",
   "appcast": null,
-  "version": "1.9.0",
+  "version": "2.2.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6cb1c94df75f4575148f369bba30ba0c5f49f563370545ecd687658090c0ac08",
+  "sha256": "bf76d0d7b64311f41644bdd5e5d5584eaf8ca11e5962459227beac40c754872e",
   "artifacts": [
-    [
-      "Authy Desktop.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Authy Desktop",
-        "~/Library/Caches/com.authy.authy-mac",
-        "~/Library/Caches/com.authy.authy-mac.ShipIt",
-        "~/Library/Cookies/com.authy.authy-mac.binarycookies",
-        "~/Library/Preferences/com.authy.authy-mac.helper.plist",
-        "~/Library/Preferences/com.authy.authy-mac.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Authy Desktop.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Authy Desktop",
+            "~/Library/Caches/com.authy.authy-mac",
+            "~/Library/Caches/com.authy.authy-mac.ShipIt",
+            "~/Library/Cookies/com.authy.authy-mac.binarycookies",
+            "~/Library/Preferences/com.authy.authy-mac.helper.plist",
+            "~/Library/Preferences/com.authy.authy-mac.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +41,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

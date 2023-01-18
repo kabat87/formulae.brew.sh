@@ -21,7 +21,8 @@
     "stable": {
       "url": "ftp://cirrus.ucsd.edu/pub/ncview/ncview-2.1.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e8badc507b9b774801288d1c2d59eb79ab31b004df4858d0674ed0d87dfc91be"
     }
   },
   "revision": 6,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ncview/blobs/sha256:00202073aeffac85fd800347d7c3854cc4d4de99bd6e4283541bb81baabc62c2",
+          "sha256": "00202073aeffac85fd800347d7c3854cc4d4de99bd6e4283541bb81baabc62c2"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ncview/blobs/sha256:f80fbf9c909cc45a91d44cdb8244a64fa57e53e95765f9d3e24cfb22b4fc9ea1",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ncview/blobs/sha256:891d85685f499d86b5666a688f1fed2e406a05082a0bd3916b5da325230d6c4b",
           "sha256": "891d85685f499d86b5666a688f1fed2e406a05082a0bd3916b5da325230d6c4b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ncview/blobs/sha256:9251eb13ae369b765732d7f71dd1beb98bfdecec4f76d52dac569581408d5323",
+          "sha256": "9251eb13ae369b765732d7f71dd1beb98bfdecec4f76d52dac569581408d5323"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
     "libxt",
     "netcdf",
     "udunits"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +128,20 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "libice",
+        "libpng",
+        "libsm",
+        "libx11",
+        "libxaw",
+        "libxt",
+        "netcdf",
+        "udunits",
+        "libxext"
+      ]
+    }
+  }
 }

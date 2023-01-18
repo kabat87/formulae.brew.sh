@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://foremost.sourceforge.io/pkg/foremost-1.5.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "502054ef212e3d90b292e99c7f7ac91f89f024720cd5a7e7680c3d1901ef5f34"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/foremost/blobs/sha256:6392cf002604c650162671aad2867f5247480eb2195472c1d403760430aec07f",
+          "sha256": "6392cf002604c650162671aad2867f5247480eb2195472c1d403760430aec07f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/foremost/blobs/sha256:82358815462d1b7d346af9c65a6cf8f4982aa7df77d0eda43dc25d1fd5880025",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/foremost/blobs/sha256:b00ca6770529d4df2682f62deda5cee60cd86553d2402e3e0b4411c63ea444a1",
           "sha256": "b00ca6770529d4df2682f62deda5cee60cd86553d2402e3e0b4411c63ea444a1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/foremost/blobs/sha256:2d80ae72544ef8057af1a21228eb3c6772ae35086fc710094c55778c716b0431",
+          "sha256": "2d80ae72544ef8057af1a21228eb3c6772ae35086fc710094c55778c716b0431"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

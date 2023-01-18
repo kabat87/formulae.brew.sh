@@ -7,28 +7,32 @@
   ],
   "desc": "Centralizes all remote connections on a single platform",
   "homepage": "https://mac.remotedesktopmanager.com/",
-  "url": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Mac.2021.2.12.0.dmg",
+  "url": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Mac.2022.3.15.2.dmg",
   "appcast": null,
-  "version": "2021.2.12.0",
+  "version": "2022.3.15.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "70ce6d5580e7f1d841b8c1dd5a42fd9c51aa08cb571bd8580b5d29be7fc904b8",
+  "sha256": "dbaa582f092dded5b0f7dd3ca6ed2dc31da641c16abcfc03f53762d9d1c1d940",
   "artifacts": [
-    [
-      "Remote Desktop Manager.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.devolutions.remotedesktopmanager",
-        "~/Library/Application Support/Remote Desktop Manager",
-        "~/Library/Caches/com.devolutions.remotedesktopmanager",
-        "~/Library/Preferences/com.devolutions.remotedesktopmanager.plist",
-        "~/Library/Saved Application State/com.devolutions.remotedesktopmanager.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Remote Desktop Manager.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.devolutions.remotedesktopmanager",
+            "~/Library/Application Support/Remote Desktop Manager",
+            "~/Library/Caches/com.devolutions.remotedesktopmanager",
+            "~/Library/Preferences/com.devolutions.remotedesktopmanager.plist",
+            "~/Library/Saved Application State/com.devolutions.remotedesktopmanager.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

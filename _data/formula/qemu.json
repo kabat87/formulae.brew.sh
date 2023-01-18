@@ -13,15 +13,16 @@
   "license": "GPL-2.0-only",
   "homepage": "https://www.qemu.org/",
   "versions": {
-    "stable": "6.2.0",
+    "stable": "7.2.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.qemu.org/qemu-6.2.0.tar.xz",
+      "url": "https://download.qemu.org/qemu-7.2.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5b49ce2687744dad494ae90a898c52204a3406e84d072482a1e1be854eeb2157"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:fa987f9dc770812c58333c910cb0f5c4e730d513a1568cc4d6a215dfa3ac82d1",
+          "sha256": "fa987f9dc770812c58333c910cb0f5c4e730d513a1568cc4d6a215dfa3ac82d1"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:57ffc7f97cbd053121f7767f08c2386beac29ef8efa7f93398d347b24d979621",
-          "sha256": "57ffc7f97cbd053121f7767f08c2386beac29ef8efa7f93398d347b24d979621"
+          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:62bea721ff6fa3ee15ed53ee8215fea42b2cd07e8fb39b77ce8e39f30287576f",
+          "sha256": "62bea721ff6fa3ee15ed53ee8215fea42b2cd07e8fb39b77ce8e39f30287576f"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:4550d24a0d2e6a708bdce2364087cb684b8655e18b8426fa6ef4d5dae8f68279",
-          "sha256": "4550d24a0d2e6a708bdce2364087cb684b8655e18b8426fa6ef4d5dae8f68279"
+          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:9b2c3aa359719358370901d00a1b9323459ec9af3add371d212fd98071418e6b",
+          "sha256": "9b2c3aa359719358370901d00a1b9323459ec9af3add371d212fd98071418e6b"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:b4ae1b25edf4276936ad69d9399cf117a28cd49e212b0467c4cb6c22a7074f86",
+          "sha256": "b4ae1b25edf4276936ad69d9399cf117a28cd49e212b0467c4cb6c22a7074f86"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:b543588b7415090b74759097084dd2104139f4a8e778204cc3bce2b280603c32",
-          "sha256": "b543588b7415090b74759097084dd2104139f4a8e778204cc3bce2b280603c32"
+          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:6a32684edc7ed07358a8b9b602198d69a45902ec7c72230caf5c9b9b8b5e7f10",
+          "sha256": "6a32684edc7ed07358a8b9b602198d69a45902ec7c72230caf5c9b9b8b5e7f10"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:8f1b83d17955d66e6df076a1d0abd4a00fdf91d23a0644d696a5937e1e64d156",
-          "sha256": "8f1b83d17955d66e6df076a1d0abd4a00fdf91d23a0644d696a5937e1e64d156"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:16455455bed508272b6de05d7f75c9d26b1e7bed3349f1fd56d361a3bc601616",
-          "sha256": "16455455bed508272b6de05d7f75c9d26b1e7bed3349f1fd56d361a3bc601616"
+          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:c327dffc16102993ab7fb81a2bbad0035af6af3e550a4095db72fcb8aff56ae8",
+          "sha256": "c327dffc16102993ab7fb81a2bbad0035af6af3e550a4095db72fcb8aff56ae8"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:93904b6e664abd95780e085c21eee15312b3bd56f742fbbfa1ccb03ec6762003",
-          "sha256": "93904b6e664abd95780e085c21eee15312b3bd56f742fbbfa1ccb03ec6762003"
+          "url": "https://ghcr.io/v2/homebrew/core/qemu/blobs/sha256:05ece9acbbb003a7e8035f18f5193ae7c9caffacd60a744eac629de4a545aea4",
+          "sha256": "05ece9acbbb003a7e8035f18f5193ae7c9caffacd60a744eac629de4a545aea4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,9 +82,10 @@
     "pkg-config"
   ],
   "dependencies": [
+    "capstone",
     "glib",
     "gnutls",
-    "jpeg",
+    "jpeg-turbo",
     "libpng",
     "libslirp",
     "libssh",
@@ -89,7 +95,11 @@
     "nettle",
     "pixman",
     "snappy",
-    "vde"
+    "vde",
+    "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,9 +118,196 @@
   ],
   "caveats": null,
   "installed": [
+    {
+      "version": "7.2.0",
+      "used_options": [
 
+      ],
+      "built_as_bottle": true,
+      "poured_from_bottle": true,
+      "time": 1671154754,
+      "runtime_dependencies": [
+        {
+          "full_name": "capstone",
+          "version": "4.0.2",
+          "declared_directly": true
+        },
+        {
+          "full_name": "gettext",
+          "version": "0.21.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "pcre2",
+          "version": "10.40",
+          "declared_directly": false
+        },
+        {
+          "full_name": "glib",
+          "version": "2.74.3",
+          "declared_directly": true
+        },
+        {
+          "full_name": "ca-certificates",
+          "version": "2022-10-11",
+          "declared_directly": false
+        },
+        {
+          "full_name": "gmp",
+          "version": "6.2.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "bdw-gc",
+          "version": "8.2.2",
+          "declared_directly": false
+        },
+        {
+          "full_name": "m4",
+          "version": "1.4.19",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libtool",
+          "version": "2.4.7",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libunistring",
+          "version": "1.0",
+          "declared_directly": false
+        },
+        {
+          "full_name": "pkg-config",
+          "version": "0.29.2",
+          "declared_directly": false
+        },
+        {
+          "full_name": "readline",
+          "version": "8.2.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "guile",
+          "version": "3.0.8",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libidn2",
+          "version": "2.3.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libtasn1",
+          "version": "4.19.0",
+          "declared_directly": false
+        },
+        {
+          "full_name": "nettle",
+          "version": "3.8.1",
+          "declared_directly": true
+        },
+        {
+          "full_name": "p11-kit",
+          "version": "0.24.1",
+          "declared_directly": false
+        },
+        {
+          "full_name": "openssl@1.1",
+          "version": "1.1.1s",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libevent",
+          "version": "2.1.12",
+          "declared_directly": false
+        },
+        {
+          "full_name": "libnghttp2",
+          "version": "1.51.0",
+          "declared_directly": false
+        },
+        {
+          "full_name": "unbound",
+          "version": "1.17.0",
+          "declared_directly": false
+        },
+        {
+          "full_name": "gnutls",
+          "version": "3.7.8",
+          "declared_directly": true
+        },
+        {
+          "full_name": "jpeg-turbo",
+          "version": "2.1.4",
+          "declared_directly": true
+        },
+        {
+          "full_name": "libpng",
+          "version": "1.6.39",
+          "declared_directly": true
+        },
+        {
+          "full_name": "libslirp",
+          "version": "4.7.0",
+          "declared_directly": true
+        },
+        {
+          "full_name": "libssh",
+          "version": "0.10.4",
+          "declared_directly": true
+        },
+        {
+          "full_name": "libusb",
+          "version": "1.0.26",
+          "declared_directly": true
+        },
+        {
+          "full_name": "lzo",
+          "version": "2.10",
+          "declared_directly": true
+        },
+        {
+          "full_name": "ncurses",
+          "version": "6.3",
+          "declared_directly": true
+        },
+        {
+          "full_name": "pixman",
+          "version": "0.42.2",
+          "declared_directly": true
+        },
+        {
+          "full_name": "snappy",
+          "version": "1.1.9",
+          "declared_directly": true
+        },
+        {
+          "full_name": "vde",
+          "version": "2.3.3",
+          "declared_directly": true
+        },
+        {
+          "full_name": "lz4",
+          "version": "1.9.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "xz",
+          "version": "5.2.9",
+          "declared_directly": false
+        },
+        {
+          "full_name": "zstd",
+          "version": "1.5.2",
+          "declared_directly": true
+        }
+      ],
+      "installed_as_dependency": true,
+      "installed_on_request": false
+    }
   ],
-  "linked_keg": null,
+  "linked_keg": "7.2.0",
   "pinned": false,
   "outdated": false,
   "deprecated": false,
@@ -118,5 +315,29 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "capstone",
+        "glib",
+        "gnutls",
+        "jpeg-turbo",
+        "libpng",
+        "libslirp",
+        "libssh",
+        "libusb",
+        "lzo",
+        "ncurses",
+        "nettle",
+        "pixman",
+        "snappy",
+        "vde",
+        "zstd",
+        "attr",
+        "gtk+3",
+        "libcap-ng"
+      ]
+    }
+  }
 }

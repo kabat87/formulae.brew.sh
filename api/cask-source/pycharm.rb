@@ -1,15 +1,11 @@
 cask "pycharm" do
-  arch = Hardware::CPU.intel? ? "" : "-aarch64"
+  arch arm: "-aarch64"
 
-  version "2021.3.1,213.6461.77"
+  version "2022.3.1,223.8214.51"
+  sha256 arm:   "640e4088d976820808d4571c8060b473ab6cfde34699d5913ec3c528ca70faac",
+         intel: "2e3bff74a53df74ceee0ac182ffc2f22248317ced0a33f8c0014b1ed504d9650"
 
   url "https://download.jetbrains.com/python/pycharm-professional-#{version.csv.first}#{arch}.dmg"
-  if Hardware::CPU.intel?
-    sha256 "ccef103ccc9dd1cfc4ffc2107702627ae8d1b7f33a5e89ac519b1de859d7c0c5"
-  else
-    sha256 "b9c6629f9ab15ce6174c4028506d6565b8f6f973ce6af73746923e2fcdc19942"
-  end
-
   name "PyCharm"
   name "PyCharm Professional"
   desc "IDE for professional Python development"
@@ -31,7 +27,7 @@ cask "pycharm" do
 
   uninstall_postflight do
     ENV["PATH"].split(File::PATH_SEPARATOR).map { |path| File.join(path, "charm") }.each do |path|
-      if File.exist?(path) &&
+      if File.readable?(path) &&
          File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?
         File.delete(path)
       end

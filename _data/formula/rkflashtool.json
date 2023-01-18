@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/rkflashtool/rkflashtool-6.1/rkflashtool-6.1-src.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2bc0ec580caa790b0aee634388a9110a429baf4b93ff2c4fce3d9ab583f51339"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rkflashtool/blobs/sha256:5743c6c5935567e3988de6d16bc6f8cd80591ab5e0982f8594d97d48e63d8475",
+          "sha256": "5743c6c5935567e3988de6d16bc6f8cd80591ab5e0982f8594d97d48e63d8475"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rkflashtool/blobs/sha256:82f0530f1f49db73cdba8463cd10c870a33cb3f527a0d4441557caf8e112b2d6",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rkflashtool/blobs/sha256:385d2324a9740b034fa99eabe5325cde073cf301dcfb343dee7cf44bda109cbd",
           "sha256": "385d2324a9740b034fa99eabe5325cde073cf301dcfb343dee7cf44bda109cbd"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rkflashtool/blobs/sha256:5d00a439fe6a9c9f4b09ed9612e5b4536c1497e5baf33c0b95c06279b734fa6f",
+          "sha256": "5d00a439fe6a9c9f4b09ed9612e5b4536c1497e5baf33c0b95c06279b734fa6f"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/rkflashtool/blobs/sha256:7a8b5c66395b179ce38845c36369b1a65c6eacc73fd29227809597257669af6d",
           "sha256": "7a8b5c66395b179ce38845c36369b1a65c6eacc73fd29227809597257669af6d"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/rkflashtool/blobs/sha256:cf5c51c7aa18c9304ade585c82d9083421eafde114ef6ab22736a24f45530226",
-          "sha256": "cf5c51c7aa18c9304ade585c82d9083421eafde114ef6ab22736a24f45530226"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rkflashtool/blobs/sha256:c38a8b6e2f2f2b8dd7b437c07916c5624076f472392a2899fbb3c397c07bb4a3",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libusb"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

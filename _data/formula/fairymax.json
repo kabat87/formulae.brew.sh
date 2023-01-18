@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://hgm.nubati.net/git/fairymax.git",
       "tag": "5.0b",
-      "revision": "f7a7847ea2d4764d9a0a211ba6559fa98e8dbee6"
+      "revision": "f7a7847ea2d4764d9a0a211ba6559fa98e8dbee6",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/fairymax/blobs/sha256:16510c0f87a8895135e6b4bcbbbef25a2d525abcdc98d09aa3a792de04d08e40",
+          "sha256": "16510c0f87a8895135e6b4bcbbbef25a2d525abcdc98d09aa3a792de04d08e40"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/fairymax/blobs/sha256:85ed95611bf8ffcdec73d5d5f3f3372b4e72d73a0c4eed0dcf3183b2ec94743d",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/fairymax/blobs/sha256:77d45d92cbfb8e3318ba17fe95aa3fdd24fa4f7e7cfdffdd7aaa8a29d5f837ec",
           "sha256": "77d45d92cbfb8e3318ba17fe95aa3fdd24fa4f7e7cfdffdd7aaa8a29d5f837ec"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/fairymax/blobs/sha256:14ec7cb6c5ef741a66e8c3253c529a5b67155d77d0dd9f8840a614654f536641",
+          "sha256": "14ec7cb6c5ef741a66e8c3253c529a5b67155d77d0dd9f8840a614654f536641"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

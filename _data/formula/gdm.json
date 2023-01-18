@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sparrc/gdm/archive/1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2ac8800319d922fe2816e57f30e23ddd9a11ce2e93294c533318b9f081debde4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gdm/blobs/sha256:d8c01e7222d46005257a757c00fb6dbf6e476be44502d4cee0d7afc2b759b801",
+          "sha256": "d8c01e7222d46005257a757c00fb6dbf6e476be44502d4cee0d7afc2b759b801"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gdm/blobs/sha256:45fa20615c4ff168b2753f538d396a9a92cc851ead7eab94c2a21faac5bee814",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gdm/blobs/sha256:684b0b0f11a168b38500f0e9c4e8419bf39979501014f5e4a5177be2ac5352f1",
           "sha256": "684b0b0f11a168b38500f0e9c4e8419bf39979501014f5e4a5177be2ac5352f1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gdm/blobs/sha256:9ccfb93348ed299dfa37bb416202514672c7933189d438593b57a629169d2f88",
+          "sha256": "9ccfb93348ed299dfa37bb416202514672c7933189d438593b57a629169d2f88"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/gdm/blobs/sha256:b3f081076a078f90f6a534ff30ff268c89baec38bd02ff11c9e02804755c8c33",
           "sha256": "b3f081076a078f90f6a534ff30ff268c89baec38bd02ff11c9e02804755c8c33"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gdm/blobs/sha256:03f2d8cbcee0c4e41a00ec222f56b7d3204290b075afafe28afe6ced3458ebd8",
-          "sha256": "03f2d8cbcee0c4e41a00ec222f56b7d3204290b075afafe28afe6ced3458ebd8"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gdm/blobs/sha256:a0f0a95d921a3fe45e5f7eb32d5132f56d429475118c43e46de3e767edb9eeb0",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "go"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

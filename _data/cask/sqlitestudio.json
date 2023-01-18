@@ -7,25 +7,29 @@
   ],
   "desc": "Create, edit, browse SQLite databases",
   "homepage": "https://sqlitestudio.pl/",
-  "url": "https://github.com/pawelsalawa/sqlitestudio/releases/download/3.3.3/SQLiteStudio-3.3.3.dmg",
+  "url": "https://github.com/pawelsalawa/sqlitestudio/releases/download/3.4.1/SQLiteStudio-3.4.1.dmg",
   "appcast": null,
-  "version": "3.3.3",
+  "version": "3.4.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "bad152dd791c2b97c55b4c14b503f6dd61eb5989518f392c8a2ebac473999876",
+  "sha256": "390515c168fc9392881c62ed72343bda457baab66cf9865796786b0f5642f1ad",
   "artifacts": [
-    [
-      "SQLiteStudio.app"
-    ],
     {
-      "trash": [
-        "~/.config/sqlitestudio",
-        "~/Library/Saved Application State/com.yourcompany.SQLiteStudio.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SQLiteStudio.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.config/sqlitestudio",
+            "~/Library/Saved Application State/com.yourcompany.SQLiteStudio.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

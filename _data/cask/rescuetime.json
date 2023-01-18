@@ -7,9 +7,9 @@
   ],
   "desc": "Time optimising application",
   "homepage": "https://www.rescuetime.com/",
-  "url": "https://www.rescuetime.com/installers/RescueTimeInstaller.pkg",
-  "appcast": "https://www.rescuetime.com/release-notes/mac",
-  "version": "2.16.6.1",
+  "url": "https://www.rescuetime.com/installers/RescueTimeInstaller_X.pkg",
+  "appcast": null,
+  "version": "3.1.2.2",
   "versions": {
   },
   "installed": null,
@@ -17,20 +17,28 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.rescuetime.RescueTime",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.rescuetime.RescueTime"
+        }
+      ]
     },
-    "RescueTimeInstaller.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rescuetime.rescuetime.sfl*",
-        "~/Library/Caches/com.rescuetime.RescueTime",
-        "~/Library/Preferences/com.rescuetime.RescueTime.plist",
-        "~/Library/RescueTime.com"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "RescueTimeInstaller_X.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rescuetime.rescuetime.sfl*",
+            "~/Library/Caches/com.rescuetime.RescueTime",
+            "~/Library/Preferences/com.rescuetime.RescueTime.plist",
+            "~/Library/RescueTime.com"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

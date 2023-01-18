@@ -1,15 +1,11 @@
 cask "shutter-encoder" do
-  arch = Hardware::CPU.intel? ? "64bits" : "Silicon"
+  arch arm: "Apple Silicon", intel: "Mac 64bits"
 
-  version "15.7"
+  version "16.7"
+  sha256 arm:   "da48d829a7309bbdac99e0f5676a6bc115e91639c8ebe5e79b3f44b6d424f51b",
+         intel: "cbf0e95ce7d29766e22a4bfde1cf8b2bd26a8d5293dc46846bf1fdb40912ea3f"
 
-  if Hardware::CPU.intel?
-    sha256 "14bf5c1eb5f6979d1975fe1977cc57ec06515c07937da1c92ca458826037d449"
-  else
-    sha256 "4a39a50b7b7e4e601b1d4f11ff5e9959f39c8651d5533c962af6d52ce2f0ad1b"
-  end
-
-  url "https://www.shutterencoder.com/Shutter%20Encoder%20#{version}%20Mac%20#{arch}.pkg"
+  url "https://www.shutterencoder.com/Shutter%20Encoder%20#{version}%20#{arch.gsub(" ", "%20")}.pkg"
   name "Shutter Encoder"
   desc "Video, audio and image converter"
   homepage "https://www.shutterencoder.com/"
@@ -19,7 +15,7 @@ cask "shutter-encoder" do
     regex(/^\s*Version\s*(\d+(?:\.\d+)+)/i)
   end
 
-  pkg "Shutter Encoder #{version} Mac #{arch}.pkg"
+  pkg "Shutter Encoder #{version} #{arch}.pkg"
 
   uninstall pkgutil: "com.paulpacifico.shutterencoder",
             quit:    "com.paulpacifico.shutterencoder"

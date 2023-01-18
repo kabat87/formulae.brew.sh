@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/devnev/libxdg-basedir/archive/libxdg-basedir-1.2.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ff30c60161f7043df4dcc6e7cdea8e064e382aa06c73dcc3d1885c7d2c77451d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxdg-basedir/blobs/sha256:63e6eff0ad399d3054cd01b23563674d726fd502cdf0ae468e489427015e9b79",
+          "sha256": "63e6eff0ad399d3054cd01b23563674d726fd502cdf0ae468e489427015e9b79"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libxdg-basedir/blobs/sha256:e7aa730f8ebf8aed39fb649f132fe70611b658d3a2d5162bbc073f193c7050b9",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libxdg-basedir/blobs/sha256:45fb150350fc290277e2fe56f834065d7694aa1018bc2ffaf2b4a22f20962212",
           "sha256": "45fb150350fc290277e2fe56f834065d7694aa1018bc2ffaf2b4a22f20962212"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxdg-basedir/blobs/sha256:9c3b62fa19c3169a4641fc9c5d5a3e6700303335c49383bbe58daa23755d34ac",
+          "sha256": "9c3b62fa19c3169a4641fc9c5d5a3e6700303335c49383bbe58daa23755d34ac"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

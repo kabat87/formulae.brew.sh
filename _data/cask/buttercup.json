@@ -7,29 +7,33 @@
   ],
   "desc": "Javascript Secrets Vault - Multi-Platform Desktop Application",
   "homepage": "https://buttercup.pw/",
-  "url": "https://github.com/buttercup/buttercup-desktop/releases/download/v2.13.0/Buttercup-mac-x64-2.13.0.dmg",
+  "url": "https://github.com/buttercup/buttercup-desktop/releases/download/v2.18.0/Buttercup-mac-x64-2.18.0.dmg",
   "appcast": null,
-  "version": "2.13.0",
+  "version": "2.18.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0028f47a2f96bf090d5b1714a561d3b94d9012363ec96560711e8d0484b15427",
+  "sha256": "7e6581ba77865a050bdbc5c364029f22c5f6630100a9c895c44ddc26dbcace55",
   "artifacts": [
-    [
-      "Buttercup.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Buttercup",
-        "~/Library/Application Support/Buttercup-nodejs",
-        "~/Library/Logs/Buttercup-nodejs",
-        "~/Library/Preferences/Buttercup-nodejs",
-        "~/Library/Preferences/pw.buttercup.desktop.plist",
-        "~/Library/Saved Application State/pw.buttercup.desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Buttercup.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Buttercup",
+            "~/Library/Application Support/Buttercup-nodejs",
+            "~/Library/Logs/Buttercup-nodejs",
+            "~/Library/Preferences/Buttercup-nodejs",
+            "~/Library/Preferences/pw.buttercup.desktop.plist",
+            "~/Library/Saved Application State/pw.buttercup.desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +41,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

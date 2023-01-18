@@ -1,22 +1,18 @@
 cask "julia" do
-  arch, arch_folder = Hardware::CPU.intel? ? ["mac64", "x64"] : ["macaarch64", "aarch64"]
+  arch arm: "aarch64", intel: "x64"
 
-  version "1.7.1"
+  version "1.8.5"
+  sha256 arm:   "7f6a23a4a1d864f69e65b1542fd3d1cf324d59c922ac43804b1ba077b9cc475d",
+         intel: "22afd5e28a8a809dc7be0bc99cf491391a31af5669b173cf3318e433274148db"
 
-  if Hardware::CPU.intel?
-    sha256 "95842f2782d6cef397cfbde250f627def8c86cc281efce0d64a14c13bd62d494"
-  else
-    sha256 "b6489d1e00cd539dfd60b29743b5d813889368bdc1a8fb9418893db5ae2d43d6"
-  end
-
-  url "https://julialang-s3.julialang.org/bin/mac/#{arch_folder}/#{version.major_minor}/julia-#{version}-#{arch}.dmg"
+  url "https://julialang-s3.julialang.org/bin/mac/#{arch}/#{version.major_minor}/julia-#{version}-mac#{arch.delete_prefix("x")}.dmg"
   name "Julia"
   desc "Programming language for technical computing"
   homepage "https://julialang.org/"
 
   livecheck do
     url "https://julialang.org/downloads/"
-    regex(/href=.*?julia[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.dmg/i)
+    regex(/href=.*?julia[._-]v?(\d+(?:\.\d+)+)[._-]mac#{arch.delete_prefix("x")}\.dmg/i)
   end
 
   app "Julia-#{version.major_minor}.app"
@@ -24,6 +20,9 @@ cask "julia" do
 
   zap trash: [
     "~/.julia",
+    "~/Library/Logs/Julia",
+    "~/Library/Preferences/com.github.Julia.plist",
     "~/Library/Preferences/julia.plist",
+    "~/Library/Saved Application State/com.github.Julia.savedState",
   ]
 end

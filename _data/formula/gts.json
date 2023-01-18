@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/gts/gts/0.7.6/gts-0.7.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "059c3e13e3e3b796d775ec9f96abdce8f2b3b5144df8514eda0cc12e13e8b81e"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gts/blobs/sha256:c35739e0ed8143e634eb8f0f55b892a16ced6ec9a2970eabc1f64292a5d81215",
+          "sha256": "c35739e0ed8143e634eb8f0f55b892a16ced6ec9a2970eabc1f64292a5d81215"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gts/blobs/sha256:5eb4dfee13280ea9c104b3839dc42d6ace7b8f6a154c3ea1aa991aae0fc4d4a2",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/gts/blobs/sha256:efa1e3990e707e16709bbd258502b9c248c25bb5468e8a7b3ef491c56c3a180a",
           "sha256": "efa1e3990e707e16709bbd258502b9c248c25bb5468e8a7b3ef491c56c3a180a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gts/blobs/sha256:0b09f78c4fdc75e02a4036e72dc929da671249228bd67d94cbd581fd67fc5647",
+          "sha256": "0b09f78c4fdc75e02a4036e72dc929da671249228bd67d94cbd581fd67fc5647"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
     "gettext",
     "glib",
     "netpbm"
+  ],
+  "test_dependencies": [
+    "pkg-config"
   ],
   "recommended_dependencies": [
 
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

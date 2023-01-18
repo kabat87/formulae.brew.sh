@@ -7,27 +7,31 @@
   ],
   "desc": "Configurator of compatible keyboards in real time",
   "homepage": "https://get.vial.today/",
-  "url": "https://github.com/vial-kb/vial-gui/releases/download/v0.4.2/Vial-v0.4.2.dmg",
+  "url": "https://github.com/vial-kb/vial-gui/releases/download/v0.6/Vial-v0.6.dmg",
   "appcast": null,
-  "version": "0.4.2",
+  "version": "0.6",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "901fde94be7cddfa75c53c114c9e9d9e0f537490f8bad0e291584caa20a4732f",
+  "sha256": "7883aff5340113375f3c7a1e0be3bf32b5e69bb8e4bcc892f6ed1ac33657b940",
   "artifacts": [
-    [
-      "Vial.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Vial",
-        "~/Library/Caches/Vial",
-        "~/Library/Preferences/com.vial.Vial.plist",
-        "~/Library/Preferences/Vial.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Vial.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Vial",
+            "~/Library/Caches/Vial",
+            "~/Library/Preferences/com.vial.Vial.plist",
+            "~/Library/Preferences/Vial.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

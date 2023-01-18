@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/gosu-lang/gosu-lang/archive/v1.14.20.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "56c4782087c20ed9a5d6e8912d128c3f87d6906d74c0b75d3b63d7fabd705e73"
     }
   },
   "revision": 0,
@@ -31,6 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gosu/blobs/sha256:cfa06e74d45922c8c455829273ed19ee5afb3858dfaebcb0a32896f8a9bb5946",
+          "sha256": "cfa06e74d45922c8c455829273ed19ee5afb3858dfaebcb0a32896f8a9bb5946"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gosu/blobs/sha256:c3ee2e77dd6f53dc8dddbacfd55eb157f654ceb208073d38c3ba0485f621a0a2",
+          "sha256": "c3ee2e77dd6f53dc8dddbacfd55eb157f654ceb208073d38c3ba0485f621a0a2"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gosu/blobs/sha256:693e5dc4f4424b3a38797ca8cfefebee998c157abc23e7f2aee9d86f719f3812",
@@ -56,7 +67,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -65,6 +75,9 @@
   ],
   "dependencies": [
     "openjdk@8"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

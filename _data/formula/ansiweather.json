@@ -13,15 +13,16 @@
   "license": "BSD-2-Clause",
   "homepage": "https://github.com/fcambus/ansiweather",
   "versions": {
-    "stable": "1.18.0",
+    "stable": "1.19.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/fcambus/ansiweather/archive/1.18.0.tar.gz",
+      "url": "https://github.com/fcambus/ansiweather/archive/1.19.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5c902d4604d18d737c6a5d97d2d4a560717d72c8e9e853b384543c008dc46f4d"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ansiweather/blobs/sha256:242abc21c45bf8e66ff74e62dcaea4fd62b3ddeddc8d280b35e405341f37689f",
-          "sha256": "242abc21c45bf8e66ff74e62dcaea4fd62b3ddeddc8d280b35e405341f37689f"
+          "url": "https://ghcr.io/v2/homebrew/core/ansiweather/blobs/sha256:0c1bc49161f466ba2c18219918f324c2aa22e63b0e1078e275d1832f1c349e2f",
+          "sha256": "0c1bc49161f466ba2c18219918f324c2aa22e63b0e1078e275d1832f1c349e2f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,6 +51,9 @@
   "dependencies": [
     "jq"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -58,7 +61,7 @@
 
   ],
   "uses_from_macos": [
-
+    "bc"
   ],
   "requirements": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

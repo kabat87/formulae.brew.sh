@@ -7,26 +7,30 @@
   ],
   "desc": "Displays all open files and sockets in use by all running processes",
   "homepage": "https://sveinbjorn.org/sloth",
-  "url": "https://sveinbjorn.org/files/software/sloth/sloth-3.1.zip",
+  "url": "https://sveinbjorn.org/files/software/sloth/sloth-3.2.zip",
   "appcast": null,
-  "version": "3.1,282",
+  "version": "3.2,300",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "de6d97f2c63107e209f52f10f74ebe329e3a8c86ac578c188a9e36b790ed5e52",
+  "sha256": "f3fc7c23bebd57c906c6cb43b975d468cb46be0d379f6be1acabe66a5b52212a",
   "artifacts": [
-    [
-      "Sloth.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/org.sveinbjorn.Sloth",
-        "~/Library/Preferences/org.sveinbjorn.Sloth.plist",
-        "~/Library/Saved Application State/org.sveinbjorn.Sloth.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Sloth.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/org.sveinbjorn.Sloth",
+            "~/Library/Preferences/org.sveinbjorn.Sloth.plist",
+            "~/Library/Saved Application State/org.sveinbjorn.Sloth.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

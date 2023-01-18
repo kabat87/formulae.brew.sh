@@ -1,13 +1,9 @@
 cask "mps" do
-  arch = Hardware::CPU.intel? ? "macos" : "macos-aarch64"
+  arch arm: "macos-aarch64", intel: "macos"
 
-  version "2021.2.3,212.5284.1281"
-
-  if Hardware::CPU.intel?
-    sha256 "006e3eca78d9b7a4d3148e727731b70f06a9e1a2528e2bbe6c297ca3011a6ae7"
-  else
-    sha256 "86d6ab1d727c612dca694396caf26732a0fbdc016f0e4a6f88df642ba2e88a90"
-  end
+  version "2022.2,222.3345.1295"
+  sha256 arm:   "bdc83d9c7a3430cc2b0b0361a9e4eab82e951bfe87f0e4754106d09850947077",
+         intel: "4e36c60d281596c220287ab2191165be37ef01c3c54ab5f5e4e535c8b81bc754"
 
   url "https://download.jetbrains.com/mps/#{version.major_minor}/MPS-#{version.csv.first}-#{arch}.dmg"
   name "JetBrains MPS"
@@ -30,7 +26,7 @@ cask "mps" do
 
   uninstall_postflight do
     ENV["PATH"].split(File::PATH_SEPARATOR).map { |path| File.join(path, "mps") }.each do |path|
-      if File.exist?(path) &&
+      if File.readable?(path) &&
          File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?
         File.delete(path)
       end

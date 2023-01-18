@@ -13,72 +13,87 @@
   "license": "BSD-3-Clause",
   "homepage": "https://pgcli.com/",
   "versions": {
-    "stable": "3.3.0",
+    "stable": "3.5.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/45/ae/4e11eaba77b0a6e662bbd18e39ecd66b18d95bb45ed1cf862fb7381b2dea/pgcli-3.3.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/a7/2c/5ec926b4ef08c23126875e29923bb803f2aee56d597aa248d429385d2887/pgcli-3.5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cc448d95159fc0903d36182992778a096eda5752d660d47671383c8e2bf633f1"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:9ab2fb1bea21bef796157cf05da42a278404a67f394c592e4d3695ac0bb7fef3",
+          "sha256": "9ab2fb1bea21bef796157cf05da42a278404a67f394c592e4d3695ac0bb7fef3"
+        },
         "arm64_monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:4be456671fefcabc7687db17460cc87a6670e75f1167314e9fcd5184dc719bfc",
-          "sha256": "4be456671fefcabc7687db17460cc87a6670e75f1167314e9fcd5184dc719bfc"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:232fd7532980b69acfa8996dfd499b6df7e767a34bd4885b02aaa3deb54e3ea3",
+          "sha256": "232fd7532980b69acfa8996dfd499b6df7e767a34bd4885b02aaa3deb54e3ea3"
         },
         "arm64_big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:9e3aa6368894163478b511732d350860ba880b58b3573379555c5953f0b80ac4",
-          "sha256": "9e3aa6368894163478b511732d350860ba880b58b3573379555c5953f0b80ac4"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:fa9af36a0b43650bf8d5ffc161fb999cd47b542495ba5e21b9f1eba4a45563fb",
+          "sha256": "fa9af36a0b43650bf8d5ffc161fb999cd47b542495ba5e21b9f1eba4a45563fb"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:6d812a343973793dd97dc51c6bbe6b8434df4f95791be8cd6cdd1e2318462068",
+          "sha256": "6d812a343973793dd97dc51c6bbe6b8434df4f95791be8cd6cdd1e2318462068"
         },
         "monterey": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:587afa5da3a960273fe64a7d551f38d30e6fdd5e3990164fb3541660e9639c79",
-          "sha256": "587afa5da3a960273fe64a7d551f38d30e6fdd5e3990164fb3541660e9639c79"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:fce0f635384198b96b8f62d8110e8af32e60473d4bded167cfe7a1ea8e90c5bc",
+          "sha256": "fce0f635384198b96b8f62d8110e8af32e60473d4bded167cfe7a1ea8e90c5bc"
         },
         "big_sur": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:8f9a13b53478bdcda6a40f02d29c4c16ab7eb20917176d154261c6a03a7d5794",
-          "sha256": "8f9a13b53478bdcda6a40f02d29c4c16ab7eb20917176d154261c6a03a7d5794"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:bef5879324721cd250addf4be68c996c4563a94d38a44ff7bb59e45491111f60",
+          "sha256": "bef5879324721cd250addf4be68c996c4563a94d38a44ff7bb59e45491111f60"
         },
         "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:de665d69971ed6f07d908bdd08fcf712dddd1364f9f441d2a54308b4af14a558",
-          "sha256": "de665d69971ed6f07d908bdd08fcf712dddd1364f9f441d2a54308b4af14a558"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:6555ad57744f60f52e7dd6fb5887aed28a40a8acf03371b7613d924ac80a2c56",
+          "sha256": "6555ad57744f60f52e7dd6fb5887aed28a40a8acf03371b7613d924ac80a2c56"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:c21c3678e83915c0d1eba13c4d5740a340beb877909aa6967a5ae9f06dffa66e",
-          "sha256": "c21c3678e83915c0d1eba13c4d5740a340beb877909aa6967a5ae9f06dffa66e"
+          "url": "https://ghcr.io/v2/homebrew/core/pgcli/blobs/sha256:91fb5d0a6e079cd9e4ee1f7ddfedf00ca5c5b6d46fde2ff26d83dde8552794de",
+          "sha256": "91fb5d0a6e079cd9e4ee1f7ddfedf00ca5c5b6d46fde2ff26d83dde8552794de"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "poetry"
+
   ],
   "dependencies": [
     "libpq",
     "openssl@1.1",
+    "pygments",
     "python-tabulate",
-    "python@3.9",
+    "python-typing-extensions",
+    "python@3.11",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

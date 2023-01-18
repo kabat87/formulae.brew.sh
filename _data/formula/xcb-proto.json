@@ -13,44 +13,48 @@
   "license": "MIT",
   "homepage": "https://www.x.org/",
   "versions": {
-    "stable": "1.14.1",
+    "stable": "1.15.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.14.1.tar.xz",
+      "url": "https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.15.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7072beb1f680a2fe3f9e535b797c146d22528990c72f63ddb49d2f350a3653ed"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/xcb-proto/blobs/sha256:172e8c721816f274068bd9ec31a02ca14f036bb7f55ead5879c67dc42fabec16",
-          "sha256": "172e8c721816f274068bd9ec31a02ca14f036bb7f55ead5879c67dc42fabec16"
+          "url": "https://ghcr.io/v2/homebrew/core/xcb-proto/blobs/sha256:7aff8671654c8a9bde8b257cff31f05a6f09a322f35c16c5d985eb525faae8f2",
+          "sha256": "7aff8671654c8a9bde8b257cff31f05a6f09a322f35c16c5d985eb525faae8f2"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "pkg-config",
-    "python@3.10"
+    "python@3.11"
   ],
   "dependencies": [
 
+  ],
+  "test_dependencies": [
+    "pkg-config",
+    "python@3.11"
   ],
   "recommended_dependencies": [
 
@@ -79,5 +83,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

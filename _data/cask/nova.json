@@ -7,47 +7,58 @@
   ],
   "desc": "Native code editor",
   "homepage": "https://nova.app/",
-  "url": "https://download-cdn.panic.com/nova/Nova%208.3.zip",
+  "url": "https://download-keycdn.panic.com/nova/Nova%2010.6.zip",
   "appcast": null,
-  "version": "8.3",
+  "version": "10.6",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2d97ed0472e2042d0c5de1857381be4b07f2f9e33f1b07cd4ec9381d8f8bca47",
+  "sha256": "b41e17c7fb7018d41c202c00e0745dcb68c9275d4681888e729a10898f8e428c",
   "artifacts": [
-    [
-      "Nova.app"
-    ],
-    [
-      "/Applications/Nova.app/Contents/SharedSupport/nova"
-    ],
     {
-      "trash": [
-        "/Library/LaunchDaemons/com.panic.NovaPrivilegedHelper.plist",
-        "/Library/PrivilegedHelperTools/com.panic.NovaPrivilegedHelper",
-        "~/Library/Application Scripts/com.panic.Nova.NovaQuickLookPreview",
-        "~/Library/Application Scripts/com.panic.Nova.NovaQuickLookThumbnail",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.panic.nova.sfl2",
-        "~/Library/Caches/com.panic.Nova",
-        "~/Library/Containers/com.panic.Nova.NovaQuickLookPreview",
-        "~/Library/Containers/com.panic.Nova.NovaQuickLookThumbnail",
-        "~/Library/Preferences/com.panic.Nova.plist",
-        "~/Library/WebKit/com.panic.Nova"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": [
+            "/Library/LaunchDaemons/com.panic.NovaPrivilegedHelper.plist",
+            "/Library/PrivilegedHelperTools/com.panic.NovaPrivilegedHelper"
+          ]
+        }
+      ]
+    },
+    {
+      "app": [
+        "Nova.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.panic.Nova.NovaQuickLookPreview",
+            "~/Library/Application Scripts/com.panic.Nova.NovaQuickLookThumbnail",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.panic.nova.sfl*",
+            "~/Library/Caches/com.panic.Nova",
+            "~/Library/Containers/com.panic.Nova.NovaQuickLookPreview",
+            "~/Library/Containers/com.panic.Nova.NovaQuickLookThumbnail",
+            "~/Library/Preferences/com.panic.Nova.plist",
+            "~/Library/WebKit/com.panic.Nova"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

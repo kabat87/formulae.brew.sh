@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/scriptcs/scriptcs/archive/v0.17.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e876118d82f52cbdd9569783ec9278c4ac449055aa628cdcb2d785bf8098a434"
     }
   },
   "revision": 0,
@@ -31,6 +32,21 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/scriptcs/blobs/sha256:d25a27968072aa23232a11aceed62f1f8edcbdbe31ac2637cdd5becba69bed6e",
+          "sha256": "d25a27968072aa23232a11aceed62f1f8edcbdbe31ac2637cdd5becba69bed6e"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/scriptcs/blobs/sha256:f5187aaee21aced8951a79b8a23c8e9a870ce5e17da5d15837add0aeadb3f5dd",
+          "sha256": "f5187aaee21aced8951a79b8a23c8e9a870ce5e17da5d15837add0aeadb3f5dd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/scriptcs/blobs/sha256:507936c0cd4b26dd49508ebf8725b1d9356a611d958a93da0a024e98632b5484",
+          "sha256": "507936c0cd4b26dd49508ebf8725b1d9356a611d958a93da0a024e98632b5484"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/scriptcs/blobs/sha256:630be0cd09a3dc16e8c7404875adfe89d009ce9a73f6d5dcae9700253a3c110c",
@@ -65,18 +81,12 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/scriptcs/blobs/sha256:e3b6cb117d23ccf9a745e0ac5e61fcb531d7e8a08476699d2ece6c31e564450e",
           "sha256": "e3b6cb117d23ccf9a745e0ac5e61fcb531d7e8a08476699d2ece6c31e564450e"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/scriptcs/blobs/sha256:21891cea519df48979320ba74660002d270fb414181e3f7087505169af15a471",
-          "sha256": "21891cea519df48979320ba74660002d270fb414181e3f7087505169af15a471"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "mono"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

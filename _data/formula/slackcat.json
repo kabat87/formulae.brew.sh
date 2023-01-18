@@ -11,7 +11,7 @@
   ],
   "desc": "Command-line utility for posting snippets to Slack",
   "license": "MIT",
-  "homepage": "https://github.com/vektorlab/slackcat",
+  "homepage": "https://github.com/bcicen/slackcat",
   "versions": {
     "stable": "1.7.3",
     "head": null,
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/bcicen/slackcat/archive/refs/tags/1.7.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2e3ed7ad5ab3075a8e80a6a0b08a8c52bb8e6e39f6ab03597f456278bfa7768b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/slackcat/blobs/sha256:3056663a7ab0abf18ce63db1cf7dc853be37fcd8aa88e0935bc2c6eef2094437",
+          "sha256": "3056663a7ab0abf18ce63db1cf7dc853be37fcd8aa88e0935bc2c6eef2094437"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/slackcat/blobs/sha256:f485580b0cf05cf5d7dc4efd6e6dc9aa29545d119ebc843b06d53c84b87f2f29",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/slackcat/blobs/sha256:f765a9df06043f889342eb317e72648bc4904bea55d5339b69399b3a8b4ec3ff",
           "sha256": "f765a9df06043f889342eb317e72648bc4904bea55d5339b69399b3a8b4ec3ff"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/slackcat/blobs/sha256:6f909ddf90a97c5a2503f056677d2c8c802c6386ebd63cef1b8d4b3385ba6c93",
+          "sha256": "6f909ddf90a97c5a2503f056677d2c8c802c6386ebd63cef1b8d4b3385ba6c93"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

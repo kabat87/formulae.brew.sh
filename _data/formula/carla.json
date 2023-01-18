@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://kxstudio.linuxaudio.org/Applications:Carla",
   "versions": {
-    "stable": "2.4.1",
+    "stable": "2.5.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/falkTX/Carla/archive/v2.4.1.tar.gz",
+      "url": "https://github.com/falkTX/Carla/archive/v2.5.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4fe6772a52e677c926c4d21ce10a20888ddab487b0bb9dd7314e262a3200a342"
     }
   },
   "revision": 0,
@@ -31,32 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:af4603464e92f63b973f418c6756e7b5ef0597fc68bde190537023533f4e71a3",
+          "sha256": "af4603464e92f63b973f418c6756e7b5ef0597fc68bde190537023533f4e71a3"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:5cae6077d549dfa5736c5a0a21bb0689cf09507664ee1c51e52913f2bbb04004",
+          "sha256": "5cae6077d549dfa5736c5a0a21bb0689cf09507664ee1c51e52913f2bbb04004"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:d73c02d184d35358d663f45a067087c8b87547fce4c43a9d97059d69964b19bc",
-          "sha256": "d73c02d184d35358d663f45a067087c8b87547fce4c43a9d97059d69964b19bc"
+          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:27e94c1b2b9c15483c29fc3a55e26ef05f6dc645eee27d2b11586a681ffb474f",
+          "sha256": "27e94c1b2b9c15483c29fc3a55e26ef05f6dc645eee27d2b11586a681ffb474f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:8e21634e6fb47bbe96c0ff3f64609b0d42ef5c43c3c02552e08fbaa2dc4eb80d",
+          "sha256": "8e21634e6fb47bbe96c0ff3f64609b0d42ef5c43c3c02552e08fbaa2dc4eb80d"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:55d77147433c3cb484c235e0ac5b306669e5a6d256e1fa6285189f236763a3e0",
+          "sha256": "55d77147433c3cb484c235e0ac5b306669e5a6d256e1fa6285189f236763a3e0"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:968987ce59da62af302c1820b05a165441a6cbb8aadf8e5de9055f1f8dba615b",
-          "sha256": "968987ce59da62af302c1820b05a165441a6cbb8aadf8e5de9055f1f8dba615b"
+          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:90e5abcd75da09eed552d1cb272353450af73af44118c04c8eb2b86567450728",
+          "sha256": "90e5abcd75da09eed552d1cb272353450af73af44118c04c8eb2b86567450728"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:51e26ad503289b0241f695e9c1d3829b28ed569127168644c68c2b4dbde439ca",
-          "sha256": "51e26ad503289b0241f695e9c1d3829b28ed569127168644c68c2b4dbde439ca"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:bd7b6ed706d425e2c94a95060e837822b666586df658518025906a66ec2115dd",
-          "sha256": "bd7b6ed706d425e2c94a95060e837822b666586df658518025906a66ec2115dd"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/carla/blobs/sha256:284aeaa8d6d5fceb4e2c6c5ab6c07143e238adf309cddaa8ecd79c4a8eb76adb",
+          "sha256": "284aeaa8d6d5fceb4e2c6c5ab6c07143e238adf309cddaa8ecd79c4a8eb76adb"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -68,7 +83,10 @@
     "liblo",
     "libmagic",
     "pyqt@5",
-    "python@3.9"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -97,5 +115,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

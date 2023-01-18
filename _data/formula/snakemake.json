@@ -13,60 +13,65 @@
   "license": "MIT",
   "homepage": "https://snakemake.readthedocs.io/",
   "versions": {
-    "stable": "6.13.1",
+    "stable": "7.19.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/a2/c0/23fa94e97c23d194b927b1882382711afcaa2368aedde26c9b7162a5ebc5/snakemake-6.13.1.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/92/11/db720239549ce18bcef241a4dd3868ad56e8c475a8b457fc3edbb5dc4f20/snakemake-7.19.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "390ad5e2d5106e84700b7219c0eddf41d61be2205787d77a815fa91e4d624f33"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:7ca6e3af32988aa5b70ae508ed9713ed49313b943b9a147dbe9159dad9a12766",
+          "sha256": "7ca6e3af32988aa5b70ae508ed9713ed49313b943b9a147dbe9159dad9a12766"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:017412cc9a6210a3bef0b15e42c0812fc273b21ccb74eaf9e0fdcb63c711c887",
-          "sha256": "017412cc9a6210a3bef0b15e42c0812fc273b21ccb74eaf9e0fdcb63c711c887"
+          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:0cecd78d5e89e61266b229a82a981fc1add825f5e832914af95660be33903450",
+          "sha256": "0cecd78d5e89e61266b229a82a981fc1add825f5e832914af95660be33903450"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:4f285d304ba72faec9cbd8086a45dddcbc62689f20516552c2477237b2d7be3a",
-          "sha256": "4f285d304ba72faec9cbd8086a45dddcbc62689f20516552c2477237b2d7be3a"
+          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:8ebe13a3480f0ecb9f87e1673dc63cc7d3e2d55d254cf85533c2a9e465efe674",
+          "sha256": "8ebe13a3480f0ecb9f87e1673dc63cc7d3e2d55d254cf85533c2a9e465efe674"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:1dd5c62e9bfb6f9cc004584dfc37c9d20465af812995a3b3629505402d20e05f",
+          "sha256": "1dd5c62e9bfb6f9cc004584dfc37c9d20465af812995a3b3629505402d20e05f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:51ac5ee21d2062d345603bce801bd622f125f8cca0e28fda4bfb25bc53d59ebb",
-          "sha256": "51ac5ee21d2062d345603bce801bd622f125f8cca0e28fda4bfb25bc53d59ebb"
+          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:e15d00948bae02fdc26387076c402fe1571c69d0deaf40658e10a1c9cd99f16c",
+          "sha256": "e15d00948bae02fdc26387076c402fe1571c69d0deaf40658e10a1c9cd99f16c"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:9bfbd651ce840fb6d744ebe3375e9b078ac56c3066060f87965e9da1c3ac1fb3",
-          "sha256": "9bfbd651ce840fb6d744ebe3375e9b078ac56c3066060f87965e9da1c3ac1fb3"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:e25aa1f28233097fef9354df3ac4657f467678c45e676ecfe45cf9f1312a90f7",
-          "sha256": "e25aa1f28233097fef9354df3ac4657f467678c45e676ecfe45cf9f1312a90f7"
+          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:eba35e775c4c2738f9b093b2b1d26a9663c6a7d3d3cc08564e597d828aece08e",
+          "sha256": "eba35e775c4c2738f9b093b2b1d26a9663c6a7d3d3cc08564e597d828aece08e"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:da923d1cfdea5cfc7148b3b847e9905c3e64c17a3cc53370b9428f90fd93d223",
-          "sha256": "da923d1cfdea5cfc7148b3b847e9905c3e64c17a3cc53370b9428f90fd93d223"
+          "url": "https://ghcr.io/v2/homebrew/core/snakemake/blobs/sha256:8471d415c67d6b4b9d41c566aa97ae0401e558ed8bc67f19441beff6e896b1ff",
+          "sha256": "8471d415c67d6b4b9d41c566aa97ae0401e558ed8bc67f19441beff6e896b1ff"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,7 +80,13 @@
   ],
   "dependencies": [
     "cbc",
-    "python@3.10"
+    "docutils",
+    "python-tabulate",
+    "python@3.11",
+    "pyyaml"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +115,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

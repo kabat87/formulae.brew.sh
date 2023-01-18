@@ -13,15 +13,16 @@
   "license": "AGPL-3.0-or-later",
   "homepage": "https://github.com/minio/mc",
   "versions": {
-    "stable": "20220107060138",
+    "stable": "20230111031416",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/minio/mc.git",
-      "tag": "RELEASE.2022-01-07T06-01-38Z",
-      "revision": "aed4d3062f80d44384637832ad54c530ec32924e"
+      "tag": "RELEASE.2023-01-11T03-14-16Z",
+      "revision": "14c2e506fa78b53fb6db88bcf87d8f6d3fb6989e",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:768724e608d6bdae8c2686b7ca4e09996b1dd4e4a1f46afa8b16860df53282d5",
+          "sha256": "768724e608d6bdae8c2686b7ca4e09996b1dd4e4a1f46afa8b16860df53282d5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:ea008d8685ff39877edcf2dd7568d9983e8e834f626ae578a4e9723bc544e52a",
-          "sha256": "ea008d8685ff39877edcf2dd7568d9983e8e834f626ae578a4e9723bc544e52a"
+          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:93e0551be41511ced122892579c6383acbf3a6c5216ec463131bc40c8c967f72",
+          "sha256": "93e0551be41511ced122892579c6383acbf3a6c5216ec463131bc40c8c967f72"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:fc86d8e703b044d831e2749795922a039aed4018fcd3b39b7d45e1cd026eb99f",
-          "sha256": "fc86d8e703b044d831e2749795922a039aed4018fcd3b39b7d45e1cd026eb99f"
+          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:4336c05fe6722d9b71d809633c5341ff3901dd756cf75a02e71dfd080bc4783f",
+          "sha256": "4336c05fe6722d9b71d809633c5341ff3901dd756cf75a02e71dfd080bc4783f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:7f8654f9782b5b281722de8644f4909f1b6d8dbc3b846d665beebfdf6d971bb4",
+          "sha256": "7f8654f9782b5b281722de8644f4909f1b6d8dbc3b846d665beebfdf6d971bb4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:e87f539238a6ef8b93436593862623344b526d20bd27fdf3747775c8406ef4ab",
-          "sha256": "e87f539238a6ef8b93436593862623344b526d20bd27fdf3747775c8406ef4ab"
+          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:d0a0bc30400eed5881f891e718aa5a84c56356cf7e5fa174f61b9aa029d225d0",
+          "sha256": "d0a0bc30400eed5881f891e718aa5a84c56356cf7e5fa174f61b9aa029d225d0"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:379e4ff6a04b63fe882156d41632d176d867cc9cdbbb70f69c589b613a03dc87",
-          "sha256": "379e4ff6a04b63fe882156d41632d176d867cc9cdbbb70f69c589b613a03dc87"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:0974d8027fe701e44970c46c2d366da360e3361b419d2526fa223b806dd3b78d",
-          "sha256": "0974d8027fe701e44970c46c2d366da360e3361b419d2526fa223b806dd3b78d"
+          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:0b0d548760716f3577702f4f6ab6da55b1992496d74dd8a3181e19826bea1a17",
+          "sha256": "0b0d548760716f3577702f4f6ab6da55b1992496d74dd8a3181e19826bea1a17"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:5dbb3e72e2d98e13651dac16cb4b9c935068ec772d5b4b00618ca5cacf21c048",
-          "sha256": "5dbb3e72e2d98e13651dac16cb4b9c935068ec772d5b4b00618ca5cacf21c048"
+          "url": "https://ghcr.io/v2/homebrew/core/minio-mc/blobs/sha256:248f52bae8249ab7efacb3a2c8b1e25f5d160fecbc1ba6949a6c81254d3e4148",
+          "sha256": "248f52bae8249ab7efacb3a2c8b1e25f5d160fecbc1ba6949a6c81254d3e4148"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,36 +7,42 @@
   ],
   "desc": "Check important metrics from the menubar",
   "homepage": "https://getradar.co/",
-  "url": "https://getradar.co/download/v2.1.0.dmg",
+  "url": "https://getradar.co/download/v2.5.1.dmg",
   "appcast": null,
-  "version": "2.1.0",
+  "version": "2.5.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f4c7c57b8b9837d54b599985fbcdcbed737c0ece5180a335aff090af42401d7b",
+  "sha256": "ffef235dc3bdd94c244da5a8ba6be5995e877fadae85a69c3550653e1dde7f4c",
   "artifacts": [
     {
-      "launchctl": "com.syncwithtech.radar.ShipIt",
-      "quit": "com.syncwithtech.radar",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "com.syncwithtech.radar.ShipIt",
+          "quit": "com.syncwithtech.radar"
+        }
+      ]
     },
-    [
-      "Radar.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Caches/radar-updater",
-        "~/Library/Application Support/Radar",
-        "~/Library/Caches/com.syncwithtech.radar",
-        "~/Library/Caches/com.syncwithtech.radar.ShipIt",
-        "~/Library/Logs/Radar",
-        "~/Library/Preferences/com.syncwithtech.radar.plist",
-        "~/Library/Saved Application State/com.syncwithtech.radar.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Radar.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Caches/radar-updater",
+            "~/Library/Application Support/Radar",
+            "~/Library/Caches/com.syncwithtech.radar",
+            "~/Library/Caches/com.syncwithtech.radar.ShipIt",
+            "~/Library/Logs/Radar",
+            "~/Library/Preferences/com.syncwithtech.radar.plist",
+            "~/Library/Saved Application State/com.syncwithtech.radar.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

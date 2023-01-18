@@ -10,7 +10,7 @@
 
   ],
   "desc": "Text-to-HTML conversion tool",
-  "license": null,
+  "license": "BSD-3-Clause",
   "homepage": "https://daringfireball.net/projects/markdown/",
   "versions": {
     "stable": "1.0.1",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://daringfireball.net/projects/downloads/Markdown_1.0.1.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6520e9b6a58c5555e381b6223d66feddee67f675ed312ec19e9cee1b92bc0137"
     }
   },
   "revision": 0,
@@ -66,11 +67,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/markdown/blobs/sha256:a5b025bc09c8b274507cfc5c86da6350560477f24ce109dd5a79f2dafa97d805",
           "sha256": "a5b025bc09c8b274507cfc5c86da6350560477f24ce109dd5a79f2dafa97d805"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/markdown/blobs/sha256:5e1b8b5388f1b4ceefe3fae528ae83e2fa3f9ed9f27668e8faded36b9ec3274e",
-          "sha256": "5e1b8b5388f1b4ceefe3fae528ae83e2fa3f9ed9f27668e8faded36b9ec3274e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/markdown/blobs/sha256:81a249345ca5c8dac30337b38257abfe4e5479f8174998ac6cf3dee9dfab4a9d",
@@ -86,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -124,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,32 +7,40 @@
   ],
   "desc": "Build, render, and create LEGO instructions",
   "homepage": "https://www.bricklink.com/v3/studio/download.page",
-  "url": "https://blstudio.s3.amazonaws.com/Studio2.0/Archive/2.2.11_1/Studio+2.0.pkg",
+  "url": "https://blstudio.s3.amazonaws.com/Studio2.0/Archive/2.22.12_1/Studio+2.0.pkg",
   "appcast": null,
-  "version": "2.2.11_1",
+  "version": "2.22.12_1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0d509307a44c047500694c66802041732e75e371f00976dd4963f3e8bc813766",
+  "sha256": "c6ba7aeb9505adb284dcc7feb525c121858182afc13152b9abaffa514502fe41",
   "artifacts": [
     {
-      "pkgutil": "com.bricklink.pkg.Studio2.0",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.bricklink.pkg.Studio2.0"
+        }
+      ]
     },
-    "Studio 2.0.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/unity.BrickLink.Studio",
-        "~/Library/Caches/com.plausiblelabs.crashreporter.data/unity.BrickLink.Studio",
-        "~/Library/Preferences/unity.BrickLink.Patcher.plist",
-        "~/Library/Preferences/unity.BrickLink.Studio.plist",
-        "~/Library/Saved Application State/unity.BrickLink.Patcher.savedState",
-        "~/Library/Saved Application State/unity.BrickLink.Studio.savedState"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Studio 2.0.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/unity.BrickLink.Studio",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/unity.BrickLink.Studio",
+            "~/Library/Preferences/unity.BrickLink.Patcher.plist",
+            "~/Library/Preferences/unity.BrickLink.Studio.plist",
+            "~/Library/Saved Application State/unity.BrickLink.Patcher.savedState",
+            "~/Library/Saved Application State/unity.BrickLink.Studio.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

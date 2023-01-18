@@ -11,7 +11,7 @@
   ],
   "desc": "Mach-O to PE/COFF binary converter",
   "license": null,
-  "homepage": "https://opensource.apple.com/source/cctools/cctools-949.0.1/",
+  "homepage": "https://opensource.apple.com/",
   "versions": {
     "stable": "949.0.1",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://opensource.apple.com/tarballs/cctools/cctools-949.0.1.tar.gz",
+      "url": "https://github.com/apple-oss-distributions/cctools/archive/refs/tags/cctools-949.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8b2d8dc371a57e42852fa6102efaf324ef004adf86072bf9957e2ac9005326c1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mtoc/blobs/sha256:04d75f24e8a8dbf876aa37fddd44139c5177b08348210ef3acacedb5ba8e1dc7",
+          "sha256": "04d75f24e8a8dbf876aa37fddd44139c5177b08348210ef3acacedb5ba8e1dc7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mtoc/blobs/sha256:ebb0ffb0ba60ca6d02f0df9919427bf8a2579632e585a2a6ae851c5fbe858cc5",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mtoc/blobs/sha256:935bfd119379ec4d223830db858a2b2279152709a6e78eba895af5859110d22f",
           "sha256": "935bfd119379ec4d223830db858a2b2279152709a6e78eba895af5859110d22f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mtoc/blobs/sha256:bd70c47294b5c9bee72d0e7d0c2d1b8779eefd367a01ce13409cbb1191919798",
+          "sha256": "bd70c47294b5c9bee72d0e7d0c2d1b8779eefd367a01ce13409cbb1191919798"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "llvm"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -91,7 +104,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -103,10 +124,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-12-30",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

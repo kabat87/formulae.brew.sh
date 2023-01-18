@@ -7,42 +7,46 @@
   ],
   "desc": "Hardware-assisted virtualization engine (hypervisor)",
   "homepage": "https://github.com/intel/haxm",
-  "url": "https://github.com/intel/haxm/releases/download/v7.7.0/haxm-macosx_v7_7_0.zip",
+  "url": "https://github.com/intel/haxm/releases/download/v7.8.0/haxm-macosx_v7_8_0.zip",
   "appcast": null,
-  "version": "7.7.0",
+  "version": "7.8.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d3fb74ca55e5312fc1c10b850c46689ac723572453c1bb3ed3f47680c7f504b7",
+  "sha256": "4d30b68eccd31a8534d976e884de8e728746bf1d568912af23c894c8818481c6",
   "artifacts": [
     {
-      "pkgutil": "com.intel.kext.haxm.*",
-      "script": {
-        "sudo": "true",
-        "must_succeed": "true",
-        "executable": "silent_install.sh",
-        "args": [
-          "-u"
-        ]
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.intel.kext.haxm.*",
+          "script": {
+            "sudo": "true",
+            "must_succeed": "true",
+            "executable": "silent_install.sh",
+            "args": [
+              "-u"
+            ]
+          }
+        }
+      ]
     },
     {
-      "path": "silent_install.sh",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "true",
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "silent_install.sh",
+            "sudo": "true"
+          }
+        }
+      ]
     }
   ],
   "caveats": "intel-haxm requires a kernel extension to work.\nIf the installation fails, retry after you enable it in:\n  System Preferences → Security & Privacy → General\n\nFor more information, refer to vendor documentation or this Apple Technical Note:\n  https://developer.apple.com/library/content/technotes/tn2459/_index.html\n",
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.12"
       ]
     },
     "arch": [
@@ -54,5 +58,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

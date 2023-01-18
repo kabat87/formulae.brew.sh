@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libspatialindex/libspatialindex/releases/download/1.9.3/spatialindex-src-1.9.3.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4a529431cfa80443ab4dcd45a4b25aebbabe1c0ce2fa1665039c80e999dcc50a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/spatialindex/blobs/sha256:7b70926966d026440d780207a5f7ec0432ce2e5284b62c2907a94393392e6699",
+          "sha256": "7b70926966d026440d780207a5f7ec0432ce2e5284b62c2907a94393392e6699"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/spatialindex/blobs/sha256:1e01a5347e7bc5c45e0f4b06a92265c08868ee384f9e375f0b7cb42a13106fd2",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/spatialindex/blobs/sha256:5786e51306b202e51c9a81b4bc6c7b593027c8e88b777d142e486bf012eebe34",
           "sha256": "5786e51306b202e51c9a81b4bc6c7b593027c8e88b777d142e486bf012eebe34"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/spatialindex/blobs/sha256:436732ecbc6b625c4a712c918baf869b9e670bf4a7dea7e18866dce970a9ccfa",
+          "sha256": "436732ecbc6b625c4a712c918baf869b9e670bf4a7dea7e18866dce970a9ccfa"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

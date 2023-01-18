@@ -8,34 +8,45 @@
   ],
   "desc": "Downloads scientific computing jobs and runs them invisibly in the background",
   "homepage": "https://boinc.berkeley.edu/",
-  "url": "https://boinc.berkeley.edu/dl/boinc_7.16.19_macOSX_universal.zip",
+  "url": "https://boinc.berkeley.edu/dl/boinc_7.20.4_macOSX_universal.zip",
   "appcast": null,
-  "version": "7.16.19",
+  "version": "7.20.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1675f765ab6ab5308206be6100e15a747c0b87e3d3a73baee52ddccb49a7f78e",
+  "sha256": "7434428fa4bba8b7d7103d7c937c5ea2291644d8e3eace60583d0ec2bc4ea59c",
   "artifacts": [
     {
-      "pkgutil": "edu.berkeley.boinc",
-      "launchctl": "edu.berkeley.boinc-sshelper",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "edu.berkeley.boinc",
+          "launchctl": "edu.berkeley.boinc-sshelper"
+        }
+      ]
     },
-    "boinc_7.16.19_macOSX_universal/BOINC Installer.app/Contents/Resources/BOINC.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/edu.berkeley.boinc.sfl*",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/edu.berkeley.boinc.*.sfl*",
-        "~/Library/Application Support/BOINC",
-        "~/Library/Caches/edu.berkeley.boinc",
-        "~/Library/Preferences/BOINC Manager Preferences",
-        "~/Library/Preferences/edu.berkeley.boinc.plist",
-        "/Library/Screen Savers/BOINCSaver.saver"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "boinc_7.20.4_macOSX_universal/BOINC Installer.app/Contents/Resources/BOINC.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/edu.berkeley.boinc.sfl*",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/edu.berkeley.boinc.*.sfl*",
+            "~/Library/Application Support/BOINC",
+            "~/Library/Caches/edu.berkeley.boinc",
+            "~/Library/Preferences/BOINC Manager Preferences",
+            "~/Library/Preferences/edu.berkeley.boinc.plist",
+            "~/Library/Saved Application State/edu.berkeley.boinc.savedState",
+            "~/Library/WebKit/edu.berkeley.boinc",
+            "/Library/Application Support/BOINC Data",
+            "/Library/Screen Savers/BOINCSaver.saver"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +54,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

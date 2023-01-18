@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://sofia.nmsu.edu/~mleisher/Software/otf2bdf/otf2bdf-3.1.tbz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3d63892e81187d5192edb96c0dc6efca2e59577f00e461c28503006681aa5a83"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/otf2bdf/blobs/sha256:ad6e3edd7a5580a686f85804bace10257aac6fca2d986cdeac6a6a7ecc85a16d",
+          "sha256": "ad6e3edd7a5580a686f85804bace10257aac6fca2d986cdeac6a6a7ecc85a16d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/otf2bdf/blobs/sha256:24958a27ec3ab7c33c3a23e5617a2eee5ebf78d80df0fc0efb5da8fe4dee04b1",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/otf2bdf/blobs/sha256:077dfdbef2ee5d04e9101f64cfe6da40631d8ea685e2fd6dfe052bfd0374bcf0",
           "sha256": "077dfdbef2ee5d04e9101f64cfe6da40631d8ea685e2fd6dfe052bfd0374bcf0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/otf2bdf/blobs/sha256:253ccb814956456b58a293c71e9ab44d1bf225b14de70e2d64cf718a91f62fde",
+          "sha256": "253ccb814956456b58a293c71e9ab44d1bf225b14de70e2d64cf718a91f62fde"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "freetype"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

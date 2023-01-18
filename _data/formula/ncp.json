@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dl.fefe.de/ncp-1.2.4.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6cfa72edd5f7717bf7a4a93ccc74c4abd89892360e2e0bb095a73c24b9359b88"
     }
   },
   "revision": 0,
@@ -45,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ncp/blobs/sha256:63b3aefad79a434cf7dbe7a1883750a821c2b0a7bb068d25fe69bb95894d61e5",
           "sha256": "63b3aefad79a434cf7dbe7a1883750a821c2b0a7bb068d25fe69bb95894d61e5"
+        },
+        "big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ncp/blobs/sha256:ae49783af3ff52981d47b7a5bd9ac95cb3ee4e604fc3c23cbff5acf0a2e2cfc3",
+          "sha256": "ae49783af3ff52981d47b7a5bd9ac95cb3ee4e604fc3c23cbff5acf0a2e2cfc3"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +95,9 @@
   ],
   "dependencies": [
     "libowfat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,10 +121,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-12-03",
+  "deprecation_reason": "no license for the project",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

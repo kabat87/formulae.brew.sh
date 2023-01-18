@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/zeromq/zmqpp/archive/4.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c1d4587df3562f73849d9e5f8c932ca7dcfc7d8bec31f62d7f35073ef81f4d29"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zmqpp/blobs/sha256:79259180cd88ddb59497fbb3075a02c19ac854e5a57f1ff33f53c328789b4dd5",
+          "sha256": "79259180cd88ddb59497fbb3075a02c19ac854e5a57f1ff33f53c328789b4dd5"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zmqpp/blobs/sha256:ce6be56e7c768bc4c35b43d78a7938b5bf415293ce42e47230a47dc17d05e091",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/zmqpp/blobs/sha256:8784a9ab7929336cc1677315a134b8d379491e9980f1e2fc0c705bb0adf7c904",
           "sha256": "8784a9ab7929336cc1677315a134b8d379491e9980f1e2fc0c705bb0adf7c904"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/zmqpp/blobs/sha256:13235aadbe1f01545aa68211914aca2ee5c209121db4eb1964129476b515eb80",
+          "sha256": "13235aadbe1f01545aa68211914aca2ee5c209121db4eb1964129476b515eb80"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "zeromq"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

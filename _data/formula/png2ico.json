@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.winterdrache.de/freeware/png2ico/data/png2ico-src-2002-12-08.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d6bc2b8f9dacfb8010e5f5654aaba56476df18d88e344ea1a32523bb5843b68e"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/png2ico/blobs/sha256:6c622455e21df4ad015229e650548f113e34da96dc9e3fce58917ac55a2dc59c",
+          "sha256": "6c622455e21df4ad015229e650548f113e34da96dc9e3fce58917ac55a2dc59c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/png2ico/blobs/sha256:065215647e66fd79ec6412ce65189d5f26ecda3e6f71220707e57952351a8c80",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/png2ico/blobs/sha256:af73312990d3438e1a996e9f22cd034805b4851b2fa13d8fae17437e8123538b",
           "sha256": "af73312990d3438e1a996e9f22cd034805b4851b2fa13d8fae17437e8123538b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/png2ico/blobs/sha256:2ecc84b99276ef5631e78be7ee5af4890972b3071aa288174a215ce3fdfc5b53",
+          "sha256": "2ecc84b99276ef5631e78be7ee5af4890972b3071aa288174a215ce3fdfc5b53"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/png2ico/blobs/sha256:6b3b8e132ff06ed21308e73e1a30a3b74a593092e56dc94693c27ae4d03add09",
           "sha256": "6b3b8e132ff06ed21308e73e1a30a3b74a593092e56dc94693c27ae4d03add09"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/png2ico/blobs/sha256:0cf4b0ca3e7ce5c3fcf24006f0624d9046a36191450ea2a3de36bea47b3921e4",
-          "sha256": "0cf4b0ca3e7ce5c3fcf24006f0624d9046a36191450ea2a3de36bea47b3921e4"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/png2ico/blobs/sha256:52b7eb707f96b3b8526ca15ce86c442247f0e4c34112ccef3ed22fe6cafb5a3b",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libpng"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

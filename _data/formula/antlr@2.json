@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.antlr2.org/download/antlr-2.7.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "853aeb021aef7586bda29e74a6b03006bcb565a755c86b66032d8ec31b67dbb9"
     }
   },
   "revision": 4,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/antlr/2/blobs/sha256:bc327766c4c3b41d68077db70b1f0c21f9f623c0e38f0998715e3267bb1ba492",
+          "sha256": "bc327766c4c3b41d68077db70b1f0c21f9f623c0e38f0998715e3267bb1ba492"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/antlr/2/blobs/sha256:26acb924f40645e50255ac11d6cd9ad1d6153c80ee089e5f758a093eae2432d0",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/antlr/2/blobs/sha256:130f56b4182f57e74a535c97948667ff1b1e13bd821562ef573d048676db1e3f",
           "sha256": "130f56b4182f57e74a535c97948667ff1b1e13bd821562ef573d048676db1e3f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/antlr/2/blobs/sha256:bb362869f146659bd19dde3d4145d8cc3514e65bdb2c3271765766f51080dc4d",
+          "sha256": "bb362869f146659bd19dde3d4145d8cc3514e65bdb2c3271765766f51080dc4d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -69,7 +80,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,6 +88,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -101,10 +114,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-06-20",
+  "deprecation_reason": "deprecated_upstream",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

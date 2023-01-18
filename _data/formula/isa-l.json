@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/intel/isa-l/archive/refs/tags/v2.30.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bcf592c04fdfa19e723d2adf53d3e0f4efd5b956bb618fed54a1108d76a6eb56"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/isa-l/blobs/sha256:bb6ff29b6adfa19eb203ff666cb45901799fafb92cb92729f4919b7897905ac3",
+          "sha256": "bb6ff29b6adfa19eb203ff666cb45901799fafb92cb92729f4919b7897905ac3"
+        },
         "monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/isa-l/blobs/sha256:1894e71fbaf5e4d7e10fa7168065f84993eb031ac6da348f898584b23ad8f03c",
@@ -56,7 +62,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -67,6 +72,9 @@
     "nasm"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

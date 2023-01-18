@@ -21,27 +21,27 @@
     "stable": {
       "url": "https://github.com/linux-pam/linux-pam/releases/download/v1.5.2/Linux-PAM-1.5.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e4ec7131a91da44512574268f493c6d8ca105c87091691b8e9b56ca685d4f94d"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/linux-pam/blobs/sha256:5beee64dc646a1b870bee7b07259cbf2eb66146d2856233f5a17c69db709be4d",
-          "sha256": "5beee64dc646a1b870bee7b07259cbf2eb66146d2856233f5a17c69db709be4d"
+          "url": "https://ghcr.io/v2/homebrew/core/linux-pam/blobs/sha256:8ae64b723c369fdb8193bbdbc3f825c6daf21c9645a7eb8ba0ea333ae88ebe6c",
+          "sha256": "8ae64b723c369fdb8193bbdbc3f825c6daf21c9645a7eb8ba0ea333ae88ebe6c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,9 +49,13 @@
     "pkg-config"
   ],
   "dependencies": [
-    "berkeley-db",
+    "libnsl",
     "libprelude",
-    "libtirpc"
+    "libtirpc",
+    "libxcrypt"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -60,7 +64,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libxcrypt"
   ],
   "requirements": [
     {
@@ -88,5 +92,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

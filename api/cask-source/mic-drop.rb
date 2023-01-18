@@ -1,8 +1,9 @@
 cask "mic-drop" do
-  version "1.3.6,1306"
-  sha256 "8687b90e0d70d7147cdb93cacc27c834bb4b29610c650f4b0aab82a9d357ec57"
+  version "1.4.6,1460"
+  sha256 "24bac5d600f30eacbbfed2094cc674feea5286a009c32821edafece0fc465fdf"
 
-  url "https://getmicdrop.com/downloads/Mic%20Drop%20#{version.csv.first}.zip"
+  url "https://github.com/octopusthink/getmicdrop.com/releases/download/v#{version.csv.first}/Mic.Drop.#{version.csv.first}.zip",
+      verified: "github.com/octopusthink/getmicdrop.com/"
   name "Mic Drop"
   desc "Quickly mute your microphone with a global shortcut or menu bar control"
   homepage "https://getmicdrop.com/"
@@ -18,8 +19,8 @@ cask "mic-drop" do
   app "Mic Drop.app"
 
   zap trash: [
-    "~/Library/Application Support/Mic Drop",
     "~/Library/Application Support/com.octopusthink.Mic-Drop",
+    "~/Library/Application Support/Mic Drop",
     "~/Library/Caches/com.octopusthink.Mic-Drop",
     "~/Library/Preferences/com.octopusthink.Mic-Drop.plist",
   ]

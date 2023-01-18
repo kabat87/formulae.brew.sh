@@ -6,38 +6,39 @@
     "Kaleidoscope"
   ],
   "desc": "Spot and merge differences in text and image files or folders",
-  "homepage": "https://www.kaleidoscope.app/",
-  "url": "https://updates.kaleidoscope.app/v3/prod/Kaleidoscope-3.1.3-2027.app.zip",
+  "homepage": "https://kaleidoscope.app/",
+  "url": "https://updates.kaleidoscope.app/v3/prod/Kaleidoscope-3.8-2132.app.zip",
   "appcast": null,
-  "version": "3.1.3,2027",
+  "version": "3.8,2132",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "21d46bb5cb251cab1e4822ed1b12604bec91ea4653e50b8243dda9c38a02badc",
+  "sha256": "b8407246c523dc27610726c7365bd739fed869cf203a4a2591b6cc150c19cedb",
   "artifacts": [
-    [
-      "Kaleidoscope.app"
-    ],
-    [
-      "/Applications/Kaleidoscope.app/Contents/Resources/bin/ksdiff"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/app.kaleidoscope.v*",
-        "~/Library/Application Support/com.blackpixel.kaleidoscope",
-        "~/Library/Application Support/Kaleidoscope",
-        "~/Library/Caches/app.kaleidoscope.v*",
-        "~/Library/Caches/com.blackpixel.kaleidoscope",
-        "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.blackpixel.kaleidoscope",
-        "~/Library/Preferences/app.kaleidoscope.v*.plist",
-        "~/Library/Preferences/com.blackpixel.kaleidoscope.plist",
-        "~/Library/Saved Application State/app.kaleidoscope.v*.savedState",
-        "~/Library/Saved Application State/com.blackpixel.kaleidoscope.savedState",
-        "~/Library/WebKit/app.kaleidoscope.v*"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Kaleidoscope.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/app.kaleidoscope.v*",
+            "~/Library/Application Support/com.blackpixel.kaleidoscope",
+            "~/Library/Application Support/Kaleidoscope",
+            "~/Library/Caches/app.kaleidoscope.v*",
+            "~/Library/Caches/com.blackpixel.kaleidoscope",
+            "~/Library/Caches/com.plausiblelabs.crashreporter.data/com.blackpixel.kaleidoscope",
+            "~/Library/Preferences/app.kaleidoscope.v*.plist",
+            "~/Library/Preferences/com.blackpixel.kaleidoscope.plist",
+            "~/Library/Saved Application State/app.kaleidoscope.v*.savedState",
+            "~/Library/Saved Application State/com.blackpixel.kaleidoscope.savedState",
+            "~/Library/WebKit/app.kaleidoscope.v*"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -54,5 +55,7 @@
     ]
   },
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

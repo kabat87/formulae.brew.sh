@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libexif/libexif/releases/download/v0.6.24/libexif-0.6.24.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d47564c433b733d83b6704c70477e0a4067811d184ec565258ac563d8223f6ae"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libexif/blobs/sha256:07c1f865b09e4e77513478147dd0ac074dfcb9cfed61fe6322677f60448b7425",
+          "sha256": "07c1f865b09e4e77513478147dd0ac074dfcb9cfed61fe6322677f60448b7425"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libexif/blobs/sha256:b71456dcf43a1697530075ed530dd4561e921de1ef9ac872ae173fb3c4b70596",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libexif/blobs/sha256:89e01320edd8d164b9a885c8f72b08215e175cece967f6c86a9bcf472e4d85bc",
           "sha256": "89e01320edd8d164b9a885c8f72b08215e175cece967f6c86a9bcf472e4d85bc"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libexif/blobs/sha256:4c9a1d5ccb014a53709b251a51411d3f9269f1bd3226013e5d85ede67fec37c5",
+          "sha256": "4c9a1d5ccb014a53709b251a51411d3f9269f1bd3226013e5d85ede67fec37c5"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +87,9 @@
   ],
   "dependencies": [
     "gettext"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

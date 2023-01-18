@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://tjaberg.com/gsar151.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "72908ae302d2293de5218fd4da0b98afa2ce8890a622e709360576e93f5e8cc8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gsar/blobs/sha256:2259d416f5a0fa7f855879195ab6ff9855c0d9c4786522311abaa058e90fa798",
+          "sha256": "2259d416f5a0fa7f855879195ab6ff9855c0d9c4786522311abaa058e90fa798"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gsar/blobs/sha256:68051084dfbefccd95074b0e7cf9316fe916bd23e452a8c018b83c2aa185c0e7",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gsar/blobs/sha256:86de578de3d7754f9f3b6f3f092a262e32e2621f240105a8e983ce2b2afe4f7c",
           "sha256": "86de578de3d7754f9f3b6f3f092a262e32e2621f240105a8e983ce2b2afe4f7c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gsar/blobs/sha256:101d468b37350873bfee957164379ee006a8f8947577d88c580e0ed4f2041197",
+          "sha256": "101d468b37350873bfee957164379ee006a8f8947577d88c580e0ed4f2041197"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

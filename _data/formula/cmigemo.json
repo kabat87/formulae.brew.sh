@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cmigemo/cmigemo-default-src-20110227.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4aa759b2e055ef3c3fbeb9e92f7f0aacc1fd1f8602fdd2f122719793ee14414c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmigemo/blobs/sha256:4da77419c2e50f2a97340f7d6ad6a125895c46ed40900ba6c60ffb73256185c3",
+          "sha256": "4da77419c2e50f2a97340f7d6ad6a125895c46ed40900ba6c60ffb73256185c3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cmigemo/blobs/sha256:772f9659f6828e8404a849a9f52accab024a59e012d7b1c671a47facf7afdead",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cmigemo/blobs/sha256:231afa328130c08c9ae6429cedbd5221633dca46fa478477f5ff441ec6c1ff8a",
           "sha256": "231afa328130c08c9ae6429cedbd5221633dca46fa478477f5ff441ec6c1ff8a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmigemo/blobs/sha256:20da1760b82a2a4b9857dbddc20f48ea095f655df971cf06d3dcfa9abc2932d5",
+          "sha256": "20da1760b82a2a4b9857dbddc20f48ea095f655df971cf06d3dcfa9abc2932d5"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/cmigemo/blobs/sha256:866dfa4f493c088c1b2eb3cff23ed04e33862f7bc5dcff0976ce5b7cb4835dd2",
           "sha256": "866dfa4f493c088c1b2eb3cff23ed04e33862f7bc5dcff0976ce5b7cb4835dd2"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cmigemo/blobs/sha256:4ab378bb5f5d2462a6043d9226aade8b87974b52a7fec8a24e3814f93ac936f6",
-          "sha256": "4ab378bb5f5d2462a6043d9226aade8b87974b52a7fec8a24e3814f93ac936f6"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cmigemo/blobs/sha256:3551bebcc00f059d5acf9e60c4e757596c4c8349cb2870a00fcfdb75aa079db1",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
     "nkf"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

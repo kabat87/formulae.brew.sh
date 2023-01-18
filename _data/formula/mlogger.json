@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/nbrownus/mlogger/archive/v1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "141bb9af13a8f0e865c8509ac810c10be4e21f14db5256ef5c7a6731b490bf32"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mlogger/blobs/sha256:3aa5e9292806dcc8150dafdd703720141806be0b610198826e8d226baad776d8",
+          "sha256": "3aa5e9292806dcc8150dafdd703720141806be0b610198826e8d226baad776d8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mlogger/blobs/sha256:a2446f830d72176c5dda94e2023f588fea40cb7f0d1fbcce88e07f7ba56cb414",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mlogger/blobs/sha256:ae9dd6052251a2283883741ec0c1643cf70e62c2acbda9bec06971375b98eced",
           "sha256": "ae9dd6052251a2283883741ec0c1643cf70e62c2acbda9bec06971375b98eced"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mlogger/blobs/sha256:23fb2fbde1f3dcf119ad7d994555dd2920170009a3cf768af1e98b877521f981",
+          "sha256": "23fb2fbde1f3dcf119ad7d994555dd2920170009a3cf768af1e98b877521f981"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/mlogger/blobs/sha256:e1f78a9ef569085efcac8c41bd2a70feda85e7fcba5eb7b46a9ee5341cf8cb2d",
           "sha256": "e1f78a9ef569085efcac8c41bd2a70feda85e7fcba5eb7b46a9ee5341cf8cb2d"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mlogger/blobs/sha256:f64331a815b26047bc982340650aae806a568a10060adfc819e25d077059af2e",
-          "sha256": "f64331a815b26047bc982340650aae806a568a10060adfc819e25d077059af2e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mlogger/blobs/sha256:893dd3f909fe05978eef82de9222ba24cb05e208d73d63f5ef591098df8ceb56",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

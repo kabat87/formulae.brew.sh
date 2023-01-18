@@ -7,32 +7,40 @@
   ],
   "desc": "Online remote concert service: enjoy playing even if far away from each other",
   "homepage": "https://syncroom.yamaha.com/",
-  "url": "https://syncroom.yamaha.com/play/dl/app/SYNCROOM-JP-mac-1.1.0.zip",
+  "url": "https://syncroom.yamaha.com/play/dl/app/SYNCROOM-JP-mac-1.5.3.zip",
   "appcast": null,
-  "version": "1.1.0",
+  "version": "1.5.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "867afd64937ef81b8546c30c5264c1262f5c08930b4e804ba3d5d7a4abb1b377",
+  "sha256": "3fd96720f4060eb5675fdac7f8b72e101fed7f166be9245cba09e8388f6dafaa",
   "artifacts": [
     {
-      "pkgutil": [
-        "jp.co.yamaha.ux.SYNCROOM.pkg",
-        "jp.co.yamaha.ux.SYNCROOM-AU-BRIDGE.pkg"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "jp.co.yamaha.ux.SYNCROOM.pkg",
+            "jp.co.yamaha.ux.SYNCROOM-AU-BRIDGE.pkg"
+          ]
+        }
+      ]
     },
-    "SYNCROOM.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Caches/jp.co.yamaha.ux.SYNCROOM",
-        "~/Library/Preferences/jp.co.yamaha.ux.syncroom.SYNCROOM.plist",
-        "~/Library/Saved Application State/jp.co.yamaha.ux.SYNCROOM.savedState"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "SYNCROOM.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/jp.co.yamaha.ux.SYNCROOM",
+            "~/Library/Preferences/jp.co.yamaha.ux.syncroom.SYNCROOM.plist",
+            "~/Library/Saved Application State/jp.co.yamaha.ux.SYNCROOM.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +53,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

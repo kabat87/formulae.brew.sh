@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.librdf.org/source/redland-1.0.17.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "de1847f7b59021c16bdc72abb4d8e2d9187cd6124d69156f3326dd34ee043681"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/redland/blobs/sha256:16c721b39acf16e65892930227303d74673ce56ddaf252ca867da9391de7bad3",
+          "sha256": "16c721b39acf16e65892930227303d74673ce56ddaf252ca867da9391de7bad3"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/redland/blobs/sha256:25dd020d5d83642dd83c56583dd742dc549fcc32efbec67958faeebed4e1a849",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/redland/blobs/sha256:f54c731eecd682be899b7b8b5ab3424db134a1a48fe7076f0113deedb9a7f057",
           "sha256": "f54c731eecd682be899b7b8b5ab3424db134a1a48fe7076f0113deedb9a7f057"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/redland/blobs/sha256:2c9931ba94fa4e8c4cd3b1983fdf55afa01838c3e6556664126733a7743c1575",
+          "sha256": "2c9931ba94fa4e8c4cd3b1983fdf55afa01838c3e6556664126733a7743c1575"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/redland/blobs/sha256:38eac3bae25aa65cbb7b688ecfaae91ab79c0c292e7505596ffc3b409bc8ca3b",
           "sha256": "38eac3bae25aa65cbb7b688ecfaae91ab79c0c292e7505596ffc3b409bc8ca3b"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/redland/blobs/sha256:6047842b51137c968df4787bbfcf2080b4f32b73bb9d3412fa117ee9c1ff22d2",
-          "sha256": "6047842b51137c968df4787bbfcf2080b4f32b73bb9d3412fa117ee9c1ff22d2"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/redland/blobs/sha256:5439aed60715d12f7bce18e9292ce3301fc93b89cdb2eae2bd072a0a59a5fc6b",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -103,6 +108,9 @@
     "rasqal",
     "sqlite",
     "unixodbc"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -131,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/wren-lang/wren/archive/0.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "23c0ddeb6c67a4ed9285bded49f7c91714922c2e7bb88f42428386bf1cf7b339"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wren/blobs/sha256:a56a102a2a2e336cae95c2df5bec5ddc48dcb53dd7c922ae6f19380637f6c759",
+          "sha256": "a56a102a2a2e336cae95c2df5bec5ddc48dcb53dd7c922ae6f19380637f6c759"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/wren/blobs/sha256:c3e1412d38068f8218c7753b55468289c1602c0bc60ab2d60f45fb2bb7547dbf",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/wren/blobs/sha256:cbe4d9028c361a3e725091eb9d15b9b040160f03508d674de3052df405691e24",
           "sha256": "cbe4d9028c361a3e725091eb9d15b9b040160f03508d674de3052df405691e24"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/wren/blobs/sha256:9404afe9b05d7f6c8453162417624aa4c67c1bdd13bc296353c7b3b65aec1329",
+          "sha256": "9404afe9b05d7f6c8453162417624aa4c67c1bdd13bc296353c7b3b65aec1329"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

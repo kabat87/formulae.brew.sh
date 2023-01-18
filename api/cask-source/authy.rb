@@ -1,9 +1,8 @@
 cask "authy" do
-  version "1.9.0"
-  sha256 "6cb1c94df75f4575148f369bba30ba0c5f49f563370545ecd687658090c0ac08"
+  version "2.2.2"
+  sha256 "bf76d0d7b64311f41644bdd5e5d5584eaf8ca11e5962459227beac40c754872e"
 
-  url "https://authy-electron-repository-production.s3.amazonaws.com/authy/stable/#{version}/darwin/x64/Authy%20Desktop-#{version}.dmg",
-      verified: "authy-electron-repository-production.s3.amazonaws.com/"
+  url "https://pkg.authy.com/authy/stable/#{version}/darwin/x64/Authy%20Desktop-#{version}.dmg"
   name "Authy Desktop"
   desc "Two-factor authentication software"
   homepage "https://authy.com/"

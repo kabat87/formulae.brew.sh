@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libimobiledevice/libplist/archive/2.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7e654bdd5d8b96f03240227ed09057377f06ebad08e1c37d0cfa2abe6ba0cee2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libplist/blobs/sha256:6d101d1a75fe2859fce732e1a9448053c74707a3cdc7e10e4b67488d978b0796",
+          "sha256": "6d101d1a75fe2859fce732e1a9448053c74707a3cdc7e10e4b67488d978b0796"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libplist/blobs/sha256:b31c287f7c027c0f241dbfecb261e2a71910dcff601ceb5404ec8072dfd2a453",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libplist/blobs/sha256:ed9c2d665d5700c91f099bd433a38ba904b63eef4d3cdc47bd0f6b0229ac689a",
           "sha256": "ed9c2d665d5700c91f099bd433a38ba904b63eef4d3cdc47bd0f6b0229ac689a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libplist/blobs/sha256:df3e285aa4d7ce69059bf1609fa5d2a442e0c1434e478e5603567702d3e38760",
+          "sha256": "df3e285aa4d7ce69059bf1609fa5d2a442e0c1434e478e5603567702d3e38760"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -116,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

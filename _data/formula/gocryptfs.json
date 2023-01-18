@@ -13,35 +13,35 @@
   "license": "MIT",
   "homepage": "https://nuetzlich.net/gocryptfs/",
   "versions": {
-    "stable": "2.0.1",
+    "stable": "2.3",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/rfjakob/gocryptfs/releases/download/v2.0.1/gocryptfs_v2.0.1_src-deps.tar.gz",
+      "url": "https://github.com/rfjakob/gocryptfs/releases/download/v2.3/gocryptfs_v2.3_src-deps.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "945e3287311547f9227f4a5b5d051fd6df8b8b41ce2a65f424de9829cc785129"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gocryptfs/blobs/sha256:43d8cf09fcd4cb76ac51246225cd30c68ea4abe9c944843a9788534e09ea9e18",
-          "sha256": "43d8cf09fcd4cb76ac51246225cd30c68ea4abe9c944843a9788534e09ea9e18"
+          "url": "https://ghcr.io/v2/homebrew/core/gocryptfs/blobs/sha256:f384f63c39b0ce1fabb815e8efb6a14f06cd75d051b7f62ef041058a13fdd369",
+          "sha256": "f384f63c39b0ce1fabb815e8efb6a14f06cd75d051b7f62ef041058a13fdd369"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,7 +50,11 @@
     "pkg-config"
   ],
   "dependencies": [
-    "openssl@1.1"
+    "libfuse",
+    "openssl@3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -62,12 +66,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -77,7 +89,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

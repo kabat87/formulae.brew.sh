@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/a2ps/a2ps-4.14.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f3ae8d3d4564a41b6e2a21f237d2f2b104f48108591e8b83497500182a3ab3a4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 4,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/a2ps/blobs/sha256:adf71e909a31762f566a32be68297e0ed7b43faa0e386e5b90b199896dcd5884",
+          "sha256": "adf71e909a31762f566a32be68297e0ed7b43faa0e386e5b90b199896dcd5884"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/a2ps/blobs/sha256:b92375f7cc49a7440b431d2248cad0d97c96fcca127dace6efdeb0b2f3faa08c",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/a2ps/blobs/sha256:8ac02041dbec3966b6a695dfc4215b90b9e331ae6eb8c6698cbbfa0175154c9f",
           "sha256": "8ac02041dbec3966b6a695dfc4215b90b9e331ae6eb8c6698cbbfa0175154c9f"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/a2ps/blobs/sha256:9d729c98415a5953f0c8ef4f6dbb9ce9a7864bcf7aeda3b3dc8473130fddbc42",
+          "sha256": "9d729c98415a5953f0c8ef4f6dbb9ce9a7864bcf7aeda3b3dc8473130fddbc42"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "gperf"
+      ]
+    }
+  }
 }

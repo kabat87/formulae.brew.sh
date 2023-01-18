@@ -7,25 +7,29 @@
   ],
   "desc": "Online collaborate editor for Word, Excel and PPT documents",
   "homepage": "https://www.kdocs.cn/",
-  "url": "https://qn.cache.wpscdn.cn/kdocs/apk/kdesktopmac/KDocs_1001_v3.0.4.dmg",
+  "url": "https://qn.cache.wpscdn.cn/kdocs/apk/kdesktopmac/KDocs_1001_v3.7.9.dmg",
   "appcast": null,
-  "version": "3.0.4,1001",
+  "version": "3.7.9,1001",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c25b4f7edeed4099d0551748c14512a65a47be75904db432f8b249a4b5c322ee",
+  "sha256": "463c23da48754e7cdfdb7fe10a4d7dcfdc080f2196e7c3c89ff7f278ce396531",
   "artifacts": [
-    [
-      "金山文档.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.kingsoft.kdocs.mac.plist",
-        "~/Library/Saved Application State/com.kingsoft.kdocs.mac.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "金山文档.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.kingsoft.kdocs.mac.plist",
+            "~/Library/Saved Application State/com.kingsoft.kdocs.mac.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

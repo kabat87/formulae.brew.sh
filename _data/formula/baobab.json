@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://wiki.gnome.org/Apps/Baobab",
   "versions": {
-    "stable": "41.0",
+    "stable": "43.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.gnome.org/sources/baobab/41/baobab-41.0.tar.xz",
+      "url": "https://download.gnome.org/sources/baobab/43/baobab-43.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "52c6864118f5697f5a5736882dcda27db22e7220bc492838deecc699246cdb26"
     }
   },
   "revision": 0,
@@ -31,37 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:696a1ee25cc6f0c4dec94272b120f01eb3fd97d65f512e7563cf69982681fe9f",
+          "sha256": "696a1ee25cc6f0c4dec94272b120f01eb3fd97d65f512e7563cf69982681fe9f"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:36e7a78b2ac54de9c2a941eeae4699221a255b00700368391fe899890cee0b99",
+          "sha256": "36e7a78b2ac54de9c2a941eeae4699221a255b00700368391fe899890cee0b99"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:99df49e1259144e3b641e6cd6b8b71b30a10cf6d6dec12e2b137914708daf9bc",
-          "sha256": "99df49e1259144e3b641e6cd6b8b71b30a10cf6d6dec12e2b137914708daf9bc"
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:5743961c7cb063883844064fad670e28b30a0659b05e3c6359457b48b0279542",
+          "sha256": "5743961c7cb063883844064fad670e28b30a0659b05e3c6359457b48b0279542"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:2c39108ca5e7b83099425b15cc5560eaf494554d2cc6cce0fb434059fe6ec2f5",
+          "sha256": "2c39108ca5e7b83099425b15cc5560eaf494554d2cc6cce0fb434059fe6ec2f5"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:e4457c4ed768ee2bb061f7c1995997d1ef87fdab1cb317d47e4b9d693ebe4ab9",
-          "sha256": "e4457c4ed768ee2bb061f7c1995997d1ef87fdab1cb317d47e4b9d693ebe4ab9"
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:8602055a45c12aac7ca949c24d244ad8eb823ba9728849eb19916e7b47a2bed7",
+          "sha256": "8602055a45c12aac7ca949c24d244ad8eb823ba9728849eb19916e7b47a2bed7"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:9dfe596e51e700f6973aeccdbcd4047000b63994e3e6d8af62913d684edfc68b",
-          "sha256": "9dfe596e51e700f6973aeccdbcd4047000b63994e3e6d8af62913d684edfc68b"
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:87a993cb66ebb1b1b3e4175bd0ed78d09fbebc3468d6872b2f207c11dc9ba6e5",
+          "sha256": "87a993cb66ebb1b1b3e4175bd0ed78d09fbebc3468d6872b2f207c11dc9ba6e5"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:d873858d8bf8c7358f9840d280f94f5247a11393dc079ebbb659ada5bc7660f3",
-          "sha256": "d873858d8bf8c7358f9840d280f94f5247a11393dc079ebbb659ada5bc7660f3"
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:58ba5831f86cce5d2eeaff71254000aa10ed5cb249553270f50d8956e91c0760",
+          "sha256": "58ba5831f86cce5d2eeaff71254000aa10ed5cb249553270f50d8956e91c0760"
         },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:46b4cfbbfe550d56996a7275049e53f2e8d653c46c750ec4cd48e618cd1c83e1",
-          "sha256": "46b4cfbbfe550d56996a7275049e53f2e8d653c46c750ec4cd48e618cd1c83e1"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/baobab/blobs/sha256:a8e1d5e8a4bd3bd5ab45d1d2378de419695d4da58e111a3d64113f9d5e7da30b",
+          "sha256": "a8e1d5e8a4bd3bd5ab45d1d2378de419695d4da58e111a3d64113f9d5e7da30b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,9 +89,12 @@
   ],
   "dependencies": [
     "adwaita-icon-theme",
-    "gtk+3",
+    "gtk4",
     "hicolor-icon-theme",
-    "libhandy"
+    "libadwaita"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

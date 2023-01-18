@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sctplab/usrsctp/archive/0.9.5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "260107caf318650a57a8caa593550e39bca6943e93f970c80d6c17e59d62cd92"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libusrsctp/blobs/sha256:1327b9355f6c879443e9a3b8d405559d87ee245e05b435a0fe5257b3d72fd5b4",
+          "sha256": "1327b9355f6c879443e9a3b8d405559d87ee245e05b435a0fe5257b3d72fd5b4"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libusrsctp/blobs/sha256:2bf65d4cad3f3abcec79432f82c040761b3bf8b5b04417172ea343efc7ff878c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libusrsctp/blobs/sha256:cccdb95cc428680b9dc8c57ae970f23874889797d8438eaa9079e675473ab394",
           "sha256": "cccdb95cc428680b9dc8c57ae970f23874889797d8438eaa9079e675473ab394"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libusrsctp/blobs/sha256:f0b2353ab9feebdbd5b7d37551429d7956a4fdf2d7fd628aff589b41da0f9d04",
+          "sha256": "f0b2353ab9feebdbd5b7d37551429d7956a4fdf2d7fd628aff589b41da0f9d04"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

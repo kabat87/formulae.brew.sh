@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/i/iprint/iprint_1.3.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1079b2b68f4199bc286ed08abba3ee326ce3b4d346bdf77a7b9a5d5759c243a3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/iprint/blobs/sha256:16caeb56b6e78b172acd4aefd102fd4614bec7950d43dc426bb00b247bab3568",
+          "sha256": "16caeb56b6e78b172acd4aefd102fd4614bec7950d43dc426bb00b247bab3568"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/iprint/blobs/sha256:59184069028344bc9b2d24985c049efc45ededd3f8aff7d82bdf6692545f6f63",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/iprint/blobs/sha256:eb538fa6b5466dac71f52ec8f428e4ef0674e1f475893879a857cf27ce914a9f",
           "sha256": "eb538fa6b5466dac71f52ec8f428e4ef0674e1f475893879a857cf27ce914a9f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/iprint/blobs/sha256:e60db16bfc4230af55c4e8dd9330d4622832d6bc0189078bb34b58ba906095e1",
+          "sha256": "e60db16bfc4230af55c4e8dd9330d4622832d6bc0189078bb34b58ba906095e1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/iprint/blobs/sha256:caa018741bb84409295f4fec33bcf427df199e717abf1323c9325d44238548ff",
           "sha256": "caa018741bb84409295f4fec33bcf427df199e717abf1323c9325d44238548ff"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iprint/blobs/sha256:eb0a1df1375a29fd3a88cddbe844820c9650b4ee14406245ee5d93ad41e48586",
-          "sha256": "eb0a1df1375a29fd3a88cddbe844820c9650b4ee14406245ee5d93ad41e48586"
+          "url": "https://ghcr.io/v2/homebrew/core/iprint/blobs/sha256:581a57b43314eb6fb95034df6b36ece5a5ef1b4dfc03554b57fb40a8a4cc9de7",
+          "sha256": "581a57b43314eb6fb95034df6b36ece5a5ef1b4dfc03554b57fb40a8a4cc9de7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

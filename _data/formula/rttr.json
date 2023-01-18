@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/rttrorg/rttr/archive/v0.9.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "058554f8644450185fd881a6598f9dee7ef85785cbc2bb5a5526a43225aa313f"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rttr/blobs/sha256:fa3316e83f1ef591accfaf47c509009633178b817e6a6d064c293faa53445bf0",
+          "sha256": "fa3316e83f1ef591accfaf47c509009633178b817e6a6d064c293faa53445bf0"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rttr/blobs/sha256:4aeeb410f8918197af10c1f52ed56d98c7d150b6c08ea3da94b1ef176abfc75b",
+          "sha256": "4aeeb410f8918197af10c1f52ed56d98c7d150b6c08ea3da94b1ef176abfc75b"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rttr/blobs/sha256:8064ec9a745621fcd2e913f48e188fbbdb01a870fe76ba3c66ebb88e20295556",
           "sha256": "8064ec9a745621fcd2e913f48e188fbbdb01a870fe76ba3c66ebb88e20295556"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rttr/blobs/sha256:8572bb48a52460b98f4292e253b0f441fe6036d766b1e6272fd891bdc7da159f",
+          "sha256": "8572bb48a52460b98f4292e253b0f441fe6036d766b1e6272fd891bdc7da159f"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rttr/blobs/sha256:276fea35306e5bb1f9d56520a4cb1ebdc6cb99183abe7f40338c9eccf3c9f357",
+          "sha256": "276fea35306e5bb1f9d56520a4cb1ebdc6cb99183abe7f40338c9eccf3c9f357"
         },
         "big_sur": {
           "cellar": ":any",
@@ -61,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -70,6 +90,9 @@
     "doxygen"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -99,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

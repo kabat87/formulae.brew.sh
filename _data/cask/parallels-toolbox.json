@@ -7,39 +7,50 @@
   ],
   "desc": "Bundle with over 30 tools",
   "homepage": "https://www.parallels.com/products/toolbox/",
-  "url": "https://download.parallels.com/toolbox/v5/5.1.0-4185/ParallelsToolbox-5.1.0-4185.dmg",
+  "url": "https://download.parallels.com/toolbox/v6/6.0.1-4541/ParallelsToolbox-6.0.1-4541.dmg",
   "appcast": null,
-  "version": "5.1.0-4185",
+  "version": "6.0.1-4541",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e9a216b4730b6de846e678bbb1194658bf7fad34afd79c5998b6537de917ee49",
+  "sha256": "0229e670bad744a02c5349ab1bf31aa7ba8dff52840b9d410ce599b350f61aa6",
   "artifacts": [
     {
-      "delete": "/Applications/Parallels Toolbox.app",
-      "signal": {
-        "TERM": "com.parallels.toolbox"
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/Parallels Toolbox.app",
+          "signal": [
+            "TERM",
+            "com.parallels.toolbox"
+          ]
+        }
+      ]
     },
     {
-      "path": "Install Parallels Toolbox.app"
+      "installer": [
+        {
+          "manual": "Install Parallels Toolbox.app"
+        }
+      ]
     },
     {
-      "trash": [
-        "~/Library/Application Scripts/*.com.parallels.toolbox",
-        "~/Library/Application Scripts/com.parallels.toolbox.*-Safari-Extension",
-        "~/Library/Application Support/com.parallels.toolbox",
-        "~/Library/Group Containers/*.com.parallels.toolbox",
-        "~/Library/Logs/ParallelsToolbox",
-        "~/Library/Logs/prl.toolbox.ceplog.log",
-        "~/Library/Logs/prl.toolbox.ceplog.xml",
-        "~/Library/Preferences/*.com.parallels.toolbox.*.plist",
-        "~/Library/Preferences/com.parallels.toolbox.*.plist",
-        "~/Library/Preferences/com.parallels.toolbox.plist"
-      ],
-      "signal": {
-      }
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/*.com.parallels.toolbox",
+            "~/Library/Application Scripts/com.parallels.toolbox.*-Safari-Extension",
+            "~/Library/Application Support/com.parallels.toolbox",
+            "~/Library/Group Containers/*.com.parallels.toolbox",
+            "~/Library/Logs/ParallelsToolbox",
+            "~/Library/Logs/prl.toolbox.ceplog.log",
+            "~/Library/Logs/prl.toolbox.ceplog.xml",
+            "~/Library/Preferences/*.com.parallels.toolbox.*.plist",
+            "~/Library/Preferences/com.parallels.toolbox.*.plist",
+            "~/Library/Preferences/com.parallels.toolbox.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -52,5 +63,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

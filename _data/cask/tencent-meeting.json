@@ -8,26 +8,30 @@
   ],
   "desc": "Cloud video conferencing",
   "homepage": "https://meeting.tencent.com/",
-  "url": "https://updatecdn.meeting.qq.com/cos/acfe51d51ade238d5826d039df581551/TencentMeeting_0300000000_3.3.3.436.publish.x86_64.dmg",
+  "url": "https://updatecdn.meeting.qq.com/cos/c57d6fb5198a489fce92a064dd0a09dd/TencentMeeting_0300000000_3.13.5.435.publish.x86_64.dmg",
   "appcast": null,
-  "version": "3.3.3.436,acfe51d51ade238d5826d039df581551",
+  "version": "3.13.5.435,c57d6fb5198a489fce92a064dd0a09dd",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "cf2d3839f72c0b94ea638750b63fbf8914334f074e10b1db347363ad2b15821f",
+  "sha256": "9b9a67f3fddafd8e2190a086f2853b4d33cb6facfddbab4e1c8bc8f856c3a4e1",
   "artifacts": [
-    [
-      "TencentMeeting.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.tencent.meeting",
-        "~/Library/Containers/com.tencent.meeting",
-        "~/Library/Preferences/com.tencent.meeting.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "TencentMeeting.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.tencent.meeting",
+            "~/Library/Containers/com.tencent.meeting",
+            "~/Library/Preferences/com.tencent.meeting.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,22 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://updatecdn.meeting.qq.com/cos/4b1ce1367f3b044ddfaf37f5671859af/TencentMeeting_0300000000_3.13.5.435.publish.arm64.dmg",
+      "version": "3.13.5.435,4b1ce1367f3b044ddfaf37f5671859af",
+      "sha256": "287aceb3e2a3f5c5379ec991ee6a5e66bb958270024e7b14e6403b8b0a48f52a"
+    },
+    "arm64_monterey": {
+      "url": "https://updatecdn.meeting.qq.com/cos/4b1ce1367f3b044ddfaf37f5671859af/TencentMeeting_0300000000_3.13.5.435.publish.arm64.dmg",
+      "version": "3.13.5.435,4b1ce1367f3b044ddfaf37f5671859af",
+      "sha256": "287aceb3e2a3f5c5379ec991ee6a5e66bb958270024e7b14e6403b8b0a48f52a"
+    },
+    "arm64_big_sur": {
+      "url": "https://updatecdn.meeting.qq.com/cos/4b1ce1367f3b044ddfaf37f5671859af/TencentMeeting_0300000000_3.13.5.435.publish.arm64.dmg",
+      "version": "3.13.5.435,4b1ce1367f3b044ddfaf37f5671859af",
+      "sha256": "287aceb3e2a3f5c5379ec991ee6a5e66bb958270024e7b14e6403b8b0a48f52a"
+    }
+  }
 }

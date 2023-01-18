@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/llvm-8.0.1.src.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "44787a6d02f7140f145e2250d56c9f849334e11f9ae379827510ed72f12b75e7"
     }
   },
   "revision": 1,
@@ -60,13 +61,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clang-format/8/blobs/sha256:d1fa0fa103bb53196f1289b2587e35e615bf3d4bf0b1c71f32a5f66effd3726a",
           "sha256": "d1fa0fa103bb53196f1289b2587e35e615bf3d4bf0b1c71f32a5f66effd3726a"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clang-format/8/blobs/sha256:67239a4a7a0a5d4bdfc9cf67241d35f53df65be6baf0d23fbcf694369e42c0cb",
+          "sha256": "67239a4a7a0a5d4bdfc9cf67241d35f53df65be6baf0d23fbcf694369e42c0cb"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
     "ninja"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -106,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

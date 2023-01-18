@@ -7,25 +7,29 @@
   ],
   "desc": "Open source re-implementation of Chris Sawyer's Locomotion",
   "homepage": "https://github.com/OpenLoco/OpenLoco",
-  "url": "https://github.com/OpenLoco/OpenLoco/releases/download/v21.10/openloco-v21.10-macos.zip",
+  "url": "https://github.com/OpenLoco/OpenLoco/releases/download/v22.06.1/openloco-v22.06.1-macos.zip",
   "appcast": null,
-  "version": "21.10",
+  "version": "22.06.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b35173556b5e15a059a9b66c86ea091a863c31850bbb6ed51363d209f923bc2a",
+  "sha256": "55c3f6faf38bdf89f989534b71783599f007d85e7f19d04711d47afd7f9f7b1b",
   "artifacts": [
-    [
-      "OpenLoco.app"
-    ],
     {
-      "trash": "~/Library/Preferences/io.openloco.OpenLoco.plist",
-      "signal": {
-      }
+      "app": [
+        "OpenLoco.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/io.openloco.OpenLoco.plist"
+        }
+      ]
     }
   ],
-  "caveats": null,
+  "caveats": "openloco has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
     "macos": {
       "<=": [
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -9,7 +9,7 @@
   "homepage": "https://www.amazon.com/Kindle-Previewer/b?ie=UTF8&node=21381691011",
   "url": "https://d2bzeorukaqrvt.cloudfront.net/KindlePreviewerInstaller.pkg",
   "appcast": null,
-  "version": "3.61.0",
+  "version": "3.67",
   "versions": {
   },
   "installed": null,
@@ -17,19 +17,27 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "launchctl": "com.amazon.KindlePreviewerUpdater",
-      "pkgutil": "Amazon.Kindle.Previewer.pkg",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "com.amazon.KindlePreviewerUpdater",
+          "pkgutil": "Amazon.Kindle.Previewer.pkg"
+        }
+      ]
     },
-    "KindlePreviewerInstaller.pkg (Pkg)",
     {
-      "trash": [
-        "/Library/LaunchDaemons/com.amazon.KindlePreviewerUpdater.plist",
-        "~/.kindle"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "KindlePreviewerInstaller.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/LaunchDaemons/com.amazon.KindlePreviewerUpdater.plist",
+            "~/.kindle"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

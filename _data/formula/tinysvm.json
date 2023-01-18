@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://chasen.org/~taku/software/TinySVM/src/TinySVM-0.09.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e377f7ede3e022247da31774a4f75f3595ce768bc1afe3de9fc8e962242c7ab8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tinysvm/blobs/sha256:9d10346e2bcb343d454ce390ad8388b25b3fd0040e9d0d163cf34db818b3d124",
+          "sha256": "9d10346e2bcb343d454ce390ad8388b25b3fd0040e9d0d163cf34db818b3d124"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tinysvm/blobs/sha256:6c2118088fe8eead47f050a218c6c7c5928f1c127cfebfb6652f845d5fa195fd",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tinysvm/blobs/sha256:0bc765f1a83890ba72ab3ddd3b7c43d947b4f8e2aaac19807e7703c6ee58158b",
           "sha256": "0bc765f1a83890ba72ab3ddd3b7c43d947b4f8e2aaac19807e7703c6ee58158b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tinysvm/blobs/sha256:0fed16a29b53d89101342664aed44ff3c3341d012ff02ba3b17de3bec6e5ceda",
+          "sha256": "0fed16a29b53d89101342664aed44ff3c3341d012ff02ba3b17de3bec6e5ceda"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/tinysvm/blobs/sha256:2b84b75043ba1d97172e2756e3da870a8ec8e074167ab5402e7a4e1b4c923864",
           "sha256": "2b84b75043ba1d97172e2756e3da870a8ec8e074167ab5402e7a4e1b4c923864"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tinysvm/blobs/sha256:ea90446332244176d4ec3bc4ff0c6175810c3a39d942f225bb55c0fb6252858d",
-          "sha256": "ea90446332244176d4ec3bc4ff0c6175810c3a39d942f225bb55c0fb6252858d"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tinysvm/blobs/sha256:8706fa788fd556b7f18b3c1aee12390a933b5eafaa909508304d6992f218e02d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

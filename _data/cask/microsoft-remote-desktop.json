@@ -7,34 +7,49 @@
   ],
   "desc": "Remote desktop client",
   "homepage": "https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac",
-  "url": "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Remote_Desktop_10.7.4_installer.pkg",
+  "url": "https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Remote_Desktop_10.8.0_installer.pkg",
   "appcast": null,
-  "version": "10.7.4",
+  "version": "10.8.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "cbd8362a99e6d3e0e342156fc93b4eaa5a45788b10a890b6d5d6df4173977249",
+  "sha256": "afcf377cf42f8a9d9235daa751506e545838ca0fac3128fba90ccf1587a91d56",
   "artifacts": [
     {
-      "pkgutil": "com.microsoft.rdc.macos",
-      "launchctl": "com.microsoft.update.agent",
-      "quit": [
-        "com.microsoft.autoupdate2",
-        "com.microsoft.autoupdate.fba"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.microsoft.rdc.macos",
+            "com.microsoft.package.Microsoft_AutoUpdate.app"
+          ],
+          "launchctl": [
+            "com.microsoft.autoupdate.helper",
+            "com.microsoft.update.agent"
+          ],
+          "quit": [
+            "com.microsoft.autoupdate2",
+            "com.microsoft.autoupdate.fba",
+            "com.microsoft.errorreporting"
+          ]
+        }
+      ]
     },
-    "Microsoft_Remote_Desktop_10.7.4_installer.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Scripts/com.microsoft.rdc.macos",
-        "~/Library/Containers/com.microsoft.rdc.macos",
-        "~/Library/Group Containers/UBF8T346G9.com.microsoft.rdc"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Microsoft_Remote_Desktop_10.8.0_installer.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.microsoft.rdc.macos",
+            "~/Library/Containers/com.microsoft.rdc.macos",
+            "~/Library/Group Containers/UBF8T346G9.com.microsoft.rdc"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -47,5 +62,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

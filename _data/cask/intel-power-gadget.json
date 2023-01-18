@@ -6,47 +6,57 @@
     "Intel Power Gadget"
   ],
   "desc": "Power usage monitoring tool enabled for Intel Core processors",
-  "homepage": "https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html",
-  "url": "https://software.intel.com/sites/landingpage/powergadget/updates/IntelPowerGadgetMac/b7b1b3e1dffd9b20/Intel%20Power%20Gadget.dmg",
+  "homepage": "https://www.intel.com/content/www/us/en/developer/articles/tool/power-gadget.html",
+  "url": "https://www.intel.com/content/dam/develop/external/us/en/documents/Intel-Power-Gadget-v3.7.0.dmg",
   "appcast": null,
-  "version": "3.7.0,b7b1b3e1dffd9b20",
+  "version": "3.7.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4a1f6e720edca9577fd5fad7c0775f74d4495b20fd59a835a6f0f38460ccc3c1",
+  "sha256": "22ed3fe050c3b965841ccc5590a3a03bb9498f8620e01ba4dea5557dcd24fe43",
   "artifacts": [
     {
-      "pkgutil": "com.intel.pkg.PowerGadget.*",
-      "kext": "com.intel.driver.EnergyDriver",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.intel.pkg.PowerGadget.*",
+          "kext": "com.intel.driver.EnergyDriver"
+        }
+      ]
     },
-    "Install Intel Power Gadget.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Caches/com.intel.PowerGadget",
-        "~/Library/Preferences/com.intel.PowerGadget.plist"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Install Intel Power Gadget.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.intel.PowerGadget",
+            "~/Library/Preferences/com.intel.PowerGadget.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "intel-power-gadget requires a kernel extension to work.\nIf the installation fails, retry after you enable it in:\n  System Preferences → Security & Privacy → General\n\nFor more information, refer to vendor documentation or this Apple Technical Note:\n  https://developer.apple.com/library/content/technotes/tn2459/_index.html\n",
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.11"
-      ]
-    },
     "arch": [
       {
         "type": "intel",
         "bits": 64
       }
-    ]
+    ],
+    "macos": {
+      ">=": [
+        "10.11"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -7,9 +7,9 @@
   ],
   "desc": "Free VPN client for FortiClient",
   "homepage": "https://forticlient.com/",
-  "url": "https://filestore.fortinet.com/forticlient/downloads/FortiClientVPN_7.0.0.22_OnlineInstaller.dmg",
+  "url": "https://filestore.fortinet.com/forticlient/downloads/FortiClientVPNOnlineInstaller_7.0.dmg",
   "appcast": null,
-  "version": "7.0.0.22",
+  "version": "7.0",
   "versions": {
   },
   "installed": null,
@@ -17,24 +17,32 @@
   "sha256": "9bc0fd4a55e468ac0ae9483a544e81489d05cce3ae0aab3edbe29c4d4aa8f057",
   "artifacts": [
     {
-      "script": {
-        "executable": "/Applications/FortiClientUninstaller.app/Contents/MacOS/Uninstall",
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "/Applications/FortiClientUninstaller.app/Contents/MacOS/Uninstall",
+            "sudo": "true"
+          }
+        }
+      ]
     },
     {
-      "path": "FortiClientUpdate.app"
+      "installer": [
+        {
+          "manual": "FortiClientUpdate.app"
+        }
+      ]
     },
     {
-      "trash": [
-        "/Library/Application Support/Fortinet",
-        "~/Library/Application Support/Fortinet",
-        "~/Library/Application Support/FortiClient"
-      ],
-      "signal": {
-      }
+      "zap": [
+        {
+          "trash": [
+            "/Library/Application Support/Fortinet",
+            "~/Library/Application Support/Fortinet",
+            "~/Library/Application Support/FortiClient"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

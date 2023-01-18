@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/google/cctz/archive/v2.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8615b20d4e33e02a271c3b93a3b208e3d7d5d66880f5f6208b03426e448f32db"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cctz/blobs/sha256:72f87dc452212bdf12aefe25c5ae745d15a6df0b5161919c3c01bcac29a39477",
+          "sha256": "72f87dc452212bdf12aefe25c5ae745d15a6df0b5161919c3c01bcac29a39477"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cctz/blobs/sha256:756dc7625a50e7e2e607a45c75fa7f2002fc7e8bcec504ddcb06eab20766948d",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cctz/blobs/sha256:4895638a03396673d972613bed298d7288d369fe91aca165ddcf9b0357aade18",
           "sha256": "4895638a03396673d972613bed298d7288d369fe91aca165ddcf9b0357aade18"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cctz/blobs/sha256:347a197be8fddb79983086f3a54fc3f7adda08b00cf926bb7596b1f71f898ea2",
+          "sha256": "347a197be8fddb79983086f3a54fc3f7adda08b00cf926bb7596b1f71f898ea2"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

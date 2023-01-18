@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tatsuhiro-t/spdylay/archive/v1.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "31ed26253943b9d898b936945a1c68c48c3e0974b146cef7382320a97d8f0fa0"
     }
   },
   "revision": 3,
@@ -81,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +95,9 @@
     "libevent",
     "openssl@1.1"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -102,6 +105,7 @@
 
   ],
   "uses_from_macos": [
+    "xz",
     "zlib"
   ],
   "requirements": [
@@ -117,10 +121,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2020-07-05",
-  "deprecation_reason": "is deprecated and not supported by most websites",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "is deprecated and not supported by most websites",
+  "variations": {
+  }
 }

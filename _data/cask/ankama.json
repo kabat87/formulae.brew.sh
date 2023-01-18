@@ -9,7 +9,7 @@
   "homepage": "https://www.ankama.com/en/launcher",
   "url": "https://launcher.cdn.ankama.com/installers/production/Ankama%20Launcher-Setup.dmg",
   "appcast": null,
-  "version": "3.5.10",
+  "version": "3.8.6",
   "versions": {
   },
   "installed": null,
@@ -17,32 +17,35 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": "Ankama Launcher",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "Ankama Launcher"
+        }
+      ]
     },
-    [
-      "Ankama Launcher.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Ankama Launcher",
-        "~/Library/Preferences/com.ankama.zaap.plist",
-        "~/Library/Saved Application State/com.ankama.zaap.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Ankama Launcher.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Ankama Launcher",
+            "~/Library/Preferences/com.ankama.zaap.plist",
+            "~/Library/Saved Application State/com.ankama.zaap.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,27 +7,38 @@
   ],
   "desc": "Screen and video recording software",
   "homepage": "https://www.loom.com/",
-  "url": "https://cdn.loom.com/desktop-packages/Loom-0.112.1.dmg",
+  "url": "https://cdn.loom.com/desktop-packages/Loom-0.151.0.dmg",
   "appcast": null,
-  "version": "0.112.1",
+  "version": "0.151.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "216667496fc31dbd4c1513c487da53fd25a08ea24e5bceec3d7ad53ff8c7340c",
+  "sha256": "b8e6a911cda03943cc42245d0003284b69ca1419e46ce45415d459d94edb5cae",
   "artifacts": [
-    [
-      "Loom.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Loom",
-        "~/Library/Logs/Loom",
-        "~/Library/Preferences/com.loom.desktop.plist",
-        "~/Library/Saved Application State/com.loom.desktop.savedState"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "login_item": "Loom"
+        }
+      ]
+    },
+    {
+      "app": [
+        "Loom.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Loom",
+            "~/Library/Logs/Loom",
+            "~/Library/Preferences/com.loom.desktop.plist",
+            "~/Library/Saved Application State/com.loom.desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +46,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://cdn.loom.com/desktop-packages/Loom-0.151.0-arm64.dmg",
+      "sha256": "d7e0751af7e912d2dba1ad9b3465d320657f3f7072a67c794463e1861afdb1e3"
+    },
+    "arm64_monterey": {
+      "url": "https://cdn.loom.com/desktop-packages/Loom-0.151.0-arm64.dmg",
+      "sha256": "d7e0751af7e912d2dba1ad9b3465d320657f3f7072a67c794463e1861afdb1e3"
+    },
+    "arm64_big_sur": {
+      "url": "https://cdn.loom.com/desktop-packages/Loom-0.151.0-arm64.dmg",
+      "sha256": "d7e0751af7e912d2dba1ad9b3465d320657f3f7072a67c794463e1861afdb1e3"
+    }
+  }
 }

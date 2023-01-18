@@ -7,9 +7,9 @@
   ],
   "desc": "Test localhost and staging websites",
   "homepage": "https://www.browserstack.com/",
-  "url": "https://www.browserstack.com/local-testing/downloads/native-app/BrowserStackLocal.dmg",
+  "url": "https://www.browserstack.com/local-testing/downloads/native-app/BrowserStackLocal.tar.gz",
   "appcast": null,
-  "version": "3.3.1",
+  "version": "3.5.6",
   "versions": {
   },
   "installed": null,
@@ -17,20 +17,26 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "launchctl": "com.browserstack.local",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "com.browserstack.local"
+        }
+      ]
     },
-    [
-      "BrowserStackLocal.app"
-    ],
     {
-      "trash": [
-        "~/.bstack",
-        "~/Library/Caches/com.browserstack.Local"
-      ],
-      "signal": {
-      }
+      "app": [
+        "BrowserStackLocal.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.bstack",
+            "~/Library/Caches/com.browserstack.Local"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

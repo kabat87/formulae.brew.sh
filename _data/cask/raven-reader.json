@@ -7,23 +7,41 @@
   ],
   "desc": "News reader with flexible settings",
   "homepage": "https://ravenreader.app/",
-  "url": "https://download.helloefficiency.com/ravenreader/Raven%20Reader-1.0.70.dmg",
+  "url": "https://download.helloefficiency.com/ravenreader/Raven%20Reader-1.0.78.dmg",
   "appcast": null,
-  "version": "1.0.70",
+  "version": "1.0.78",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1c259677b640952e22d3f67bddb1049a8857710dc94bffb129e9802e45cac81b",
+  "sha256": "b0f54f35b6ab6fd77cb5136719f12e72746d6f7f5c59d2d05427166fc55f3747",
   "artifacts": [
-    [
-      "Raven Reader.app"
-    ]
+    {
+      "app": [
+        "Raven Reader.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Raven Reader",
+            "~/Library/Caches/org.helloefficiency.ravenreader",
+            "~/Library/Caches/org.helloefficiency.ravenreader.ShipIt",
+            "~/Library/Logs/Raven Reader",
+            "~/Library/Preferences/org.helloefficiency.ravenreader.plist",
+            "~/Library/Saved Application State/org.helloefficiency.ravenreader.savedState"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

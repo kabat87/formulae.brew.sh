@@ -7,39 +7,57 @@
   ],
   "desc": "Multi-master syncing database",
   "homepage": "https://couchdb.apache.org/",
-  "url": "https://couchdbneighbourhoodie.fra1.digitaloceanspaces.com/downloads/3.2.0/mac/Apache-CouchDB.zip",
+  "url": "https://couchdbneighbourhoodie.fra1.digitaloceanspaces.com/downloads/3.3.1/mac/x86_64/Apache-CouchDB.zip",
   "appcast": null,
-  "version": "3.2.0",
+  "version": "3.3.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "43602aae22f4133f7ef2b5b16fd59c676f1a13e8fc596e3f7504c386a8525fea",
+  "sha256": "a8cfe964058855df0c78365991202f67f40d171b0fca9ed5c89b261758d986d6",
   "artifacts": [
-    [
-      "Apache CouchDB.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/CouchDB",
-        "~/Library/Caches/org.apache.couchdb",
-        "~/Library/Logs/couchdb.log",
-        "~/Library/Logs/couchdb.log.old",
-        "~/Library/Preferences/org.apache.couchdb.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Apache CouchDB.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/CouchDB",
+            "~/Library/Caches/org.apache.couchdb",
+            "~/Library/Logs/couchdb.log",
+            "~/Library/Logs/couchdb.log.old",
+            "~/Library/Preferences/org.apache.couchdb.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://couchdbneighbourhoodie.fra1.digitaloceanspaces.com/downloads/3.3.1/mac/arm64/Apache-CouchDB.zip",
+      "sha256": "7be33eefd613e899e89abcdf9576c49e33e5a80564458a4b36aa3839d98f7b62"
+    },
+    "arm64_monterey": {
+      "url": "https://couchdbneighbourhoodie.fra1.digitaloceanspaces.com/downloads/3.3.1/mac/arm64/Apache-CouchDB.zip",
+      "sha256": "7be33eefd613e899e89abcdf9576c49e33e5a80564458a4b36aa3839d98f7b62"
+    },
+    "arm64_big_sur": {
+      "url": "https://couchdbneighbourhoodie.fra1.digitaloceanspaces.com/downloads/3.3.1/mac/arm64/Apache-CouchDB.zip",
+      "sha256": "7be33eefd613e899e89abcdf9576c49e33e5a80564458a4b36aa3839d98f7b62"
+    }
+  }
 }

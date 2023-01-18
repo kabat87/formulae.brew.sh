@@ -7,27 +7,31 @@
   ],
   "desc": "GUI inspector for mobile apps",
   "homepage": "https://github.com/appium/appium-inspector/",
-  "url": "https://github.com/appium/appium-inspector/releases/download/v2021.12.2/Appium-Inspector-2021.12.2-mac.zip",
+  "url": "https://github.com/appium/appium-inspector/releases/download/v2022.11.1/Appium-Inspector-2022.11.1-universal-mac.zip",
   "appcast": null,
-  "version": "2021.12.2",
+  "version": "2022.11.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "5faf43f8c100bece91ad0c6b07d256ce0dea6ca7dae5af5a562b2c1b6d8a056a",
+  "sha256": "6950362beb5ed85852c6657c1f1a27d6f8a183c7284ac4e24c0dd583954c3671",
   "artifacts": [
-    [
-      "Appium Inspector.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/appium-inspector",
-        "~/Library/Logs/Appium Inspector",
-        "~/Library/Preferences/io.appium.inspector.plist",
-        "~/Library/Saved Application State/io.appium.inspector.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Appium Inspector.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/appium-inspector",
+            "~/Library/Logs/Appium Inspector",
+            "~/Library/Preferences/io.appium.inspector.plist",
+            "~/Library/Saved Application State/io.appium.inspector.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

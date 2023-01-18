@@ -11,7 +11,7 @@
   ],
   "desc": "Command-line (ND)JSON querying",
   "license": "MIT",
-  "homepage": "https://github.com/paybase/qp",
+  "homepage": "https://github.com/f5io/qp",
   "versions": {
     "stable": "1.0.1",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/paybase/qp/archive/1.0.1.tar.gz",
+      "url": "https://github.com/f5io/qp/archive/1.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6ef12fd4494262899ee12cc1ac0361ec0dd7b67e29c6ac6899d1df21efc7642b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/qp/blobs/sha256:3eec317220476506f3fd8acacf1ea1adc09184aa349f8ba040f3d32f45a6f330",
+          "sha256": "3eec317220476506f3fd8acacf1ea1adc09184aa349f8ba040f3d32f45a6f330"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/qp/blobs/sha256:458188f1637fb0dc6f865c73b9dfb5e6146070ad0193507df7979236afc60294",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/qp/blobs/sha256:2c583d1f819ffba8adcc8139efe3366ad4570f3efc7c94fb25742e4da602202e",
           "sha256": "2c583d1f819ffba8adcc8139efe3366ad4570f3efc7c94fb25742e4da602202e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/qp/blobs/sha256:9c5b1e3ed8e0e27e8f0b83a80037426153b1e4b9674ffa4b522027d97d55345a",
+          "sha256": "9c5b1e3ed8e0e27e8f0b83a80037426153b1e4b9674ffa4b522027d97d55345a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "quickjs"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

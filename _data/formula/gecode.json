@@ -21,47 +21,57 @@
     "stable": {
       "url": "https://github.com/Gecode/gecode/archive/release-6.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "27d91721a690db1e96fa9bb97cec0d73a937e9dc8062c3327f8a4ccb08e951fd"
     }
   },
   "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:d4034d14e93b5320709f5935ab5c338aa8944d6969a5641ac54533a38aec807d",
+          "sha256": "d4034d14e93b5320709f5935ab5c338aa8944d6969a5641ac54533a38aec807d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:f3cdbbfb25adcd0da1e9c5c41f3e5dec376b11925637c32aa107804697587842",
-          "sha256": "f3cdbbfb25adcd0da1e9c5c41f3e5dec376b11925637c32aa107804697587842"
+          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:3d84e1de9c817d479b07246fe62a5496d59f236f04e10c20b435ebab144a26c0",
+          "sha256": "3d84e1de9c817d479b07246fe62a5496d59f236f04e10c20b435ebab144a26c0"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:e0f6097e794cc4e9c329707cf95f23ff9dae359cae580f5dbb3024eb7d4d6053",
-          "sha256": "e0f6097e794cc4e9c329707cf95f23ff9dae359cae580f5dbb3024eb7d4d6053"
+          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:b1d5780bc5589bb71c73a14555df6fdb18ad4ae9f0a19a4741e4e687c15eaf4d",
+          "sha256": "b1d5780bc5589bb71c73a14555df6fdb18ad4ae9f0a19a4741e4e687c15eaf4d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:fd1dbd0150d87c2f9362d9283d4ef65fb3fd5366e4386cac6d226b5b26e91ac9",
+          "sha256": "fd1dbd0150d87c2f9362d9283d4ef65fb3fd5366e4386cac6d226b5b26e91ac9"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:13ce2759de416899038a4dbfd2c336ca30d09a4fe3fb3521d008bca1dcc277ab",
+          "sha256": "13ce2759de416899038a4dbfd2c336ca30d09a4fe3fb3521d008bca1dcc277ab"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:c3f810ac6de7a14b4822df9605150d209ec30b19635e0ee76447f36837e68d0c",
-          "sha256": "c3f810ac6de7a14b4822df9605150d209ec30b19635e0ee76447f36837e68d0c"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:aefca2af2ff839b0089eb1cb82cb77351ccd8edfb89a43231b9f33faf5e35fd2",
-          "sha256": "aefca2af2ff839b0089eb1cb82cb77351ccd8edfb89a43231b9f33faf5e35fd2"
+          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:3d08807bdd49d5078706ca78b108a276d55a4e6e74b0478ce5b8579f8610e36e",
+          "sha256": "3d08807bdd49d5078706ca78b108a276d55a4e6e74b0478ce5b8579f8610e36e"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:8c1527a7288d9563ccb403b3b9a7bf42fec644efa476661d36d3c36a05aed017",
-          "sha256": "8c1527a7288d9563ccb403b3b9a7bf42fec644efa476661d36d3c36a05aed017"
+          "url": "https://ghcr.io/v2/homebrew/core/gecode/blobs/sha256:65740a01de43a11491d8f6eefb60bf20670fa9e1d15ad8d79209324bb424a3fb",
+          "sha256": "65740a01de43a11491d8f6eefb60bf20670fa9e1d15ad8d79209324bb424a3fb"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -70,6 +80,9 @@
   ],
   "dependencies": [
     "qt@5"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -98,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

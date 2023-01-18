@@ -1,46 +1,31 @@
 {
   "name": "influxdb",
-  "pkg_version": "2.1.1",
+  "pkg_version": "2.6.1",
   "rebuild": 0,
   "bottles": {
+    "arm64_ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:c7631840c61c20fc289748ee995b7f880c96143236b40766b04860f6dc77a4af"
+    },
     "arm64_monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:7de2e0f730864bf4db5f3af35533d5b8d462def4013cebc1dd9991fab1b59d83"
+      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:19828b7089a667999c35b5fd0230211e8f31fbfadf19ed1a7fc871de5647f5a0"
     },
     "arm64_big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:42c89aa4f7c843b8f99ac406d42d822505ec9cf6d0ecb38d7ce4217f000ee165"
+      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:eb73569a5e5e6c5d57a0726970b55263ec9f262746733959eaf83e867c0cd20c"
+    },
+    "ventura": {
+      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:94f50e4434f9a3afb2430d134d87526c202e22383df70d32e7ef776edd3d3a2e"
     },
     "monterey": {
-      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:371081fed5b98ae9fbb03fee57ce016cb29d39796a35dc9b57bfe0fb8030681b"
+      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:088b718a0cc45d19a11b4a26b076421e3d98d25820f0c46802ad4cb8cca2202d"
     },
     "big_sur": {
-      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:2ffa689372e99aff4f2366eded763e59d2f1fb9c09f14cfe37ab6fc2cccbcc72"
+      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:0c339719cc4f7fa6ec81dfab5d7ce7e5bd8627162373744aacf61e7a9ee8b036"
     },
-    "catalina": {
-      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:23711126f0cb3c7b89bf68a9f933aec3be44d86cd88ebdd80079bc841c9b5728"
+    "x86_64_linux": {
+      "url": "https://ghcr.io/v2/homebrew/core/influxdb/blobs/sha256:1619d5a1cd7bae3b3c1b68de1121df2db8bde180bdbea4452571bedfb7743eb3"
     }
   },
   "dependencies": [
-    {
-      "name": "influxdb-cli",
-      "pkg_version": "2.2.1",
-      "rebuild": 0,
-      "bottles": {
-        "arm64_monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/influxdb-cli/blobs/sha256:caf7f1fbc75839240bc0311dc94c5e34caddcc92de8784babde1bec1a6b40da6"
-        },
-        "arm64_big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/influxdb-cli/blobs/sha256:1a00aeb8af79afeffa06dec4b24287b364cf1900e33bdd0217e26fb5e9bb4aff"
-        },
-        "monterey": {
-          "url": "https://ghcr.io/v2/homebrew/core/influxdb-cli/blobs/sha256:abcce77b01b318d3ce600f84ad6fc2693c994f2682996a7911bfe78094071245"
-        },
-        "big_sur": {
-          "url": "https://ghcr.io/v2/homebrew/core/influxdb-cli/blobs/sha256:246ed09000d1fae897da9bf1c2d17de559c03e8ce4c6bbf83edef81fe0679365"
-        },
-        "catalina": {
-          "url": "https://ghcr.io/v2/homebrew/core/influxdb-cli/blobs/sha256:cf8474e13d6092e7e7c45df7d868d649c2c60872069704fc9988d71641a9bbb8"
-        }
-      }
-    }
+
   ]
 }

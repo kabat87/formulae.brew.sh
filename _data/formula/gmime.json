@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/gmime/3.2/gmime-3.2.7.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2aea96647a468ba2160a64e17c6dc6afe674ed9ac86070624a3f584c10737d44"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gmime/blobs/sha256:2a4e60e2f6765cee1aa9b62cfefbf60ca2f8a9ed17515eaee2ffa498bae89e8f",
+          "sha256": "2a4e60e2f6765cee1aa9b62cfefbf60ca2f8a9ed17515eaee2ffa498bae89e8f"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gmime/blobs/sha256:18050619c00d2e6b994b91472ed9567716f0d77ee64b200626ff6ab066e87aaa",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gmime/blobs/sha256:0c12167da5badd3447325e0770666c1e7f5e5e8945613e4c54c4e3e5ef1915fa",
           "sha256": "0c12167da5badd3447325e0770666c1e7f5e5e8945613e4c54c4e3e5ef1915fa"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gmime/blobs/sha256:42a150333087225e353b0d4574bbd51b9eb0619acef18d5ca47895fc229bad4b",
+          "sha256": "42a150333087225e353b0d4574bbd51b9eb0619acef18d5ca47895fc229bad4b"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
   "dependencies": [
     "glib",
     "gpgme"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

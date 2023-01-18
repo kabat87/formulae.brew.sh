@@ -1,6 +1,6 @@
 cask "gaphor" do
-  version "2.8.0"
-  sha256 "8e73804fe6115d6f087338ffd9b62c3917e9bd3cbd3d371af19c74f2f697f1b7"
+  version "2.15.0"
+  sha256 "3e6ac4381cba2c933928f911b747cd4a40c7a0fb5c8fbe977452a403de6de1ed"
 
   url "https://github.com/gaphor/gaphor/releases/download/#{version}/Gaphor-#{version}.dmg",
       verified: "github.com/gaphor/gaphor/"

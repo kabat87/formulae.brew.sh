@@ -1,8 +1,14 @@
 cask "ableton-live-suite" do
-  version "11.0.12"
-  sha256 "291b277b42485d5b4ce959883b0600d7dbb7743056eac5007e3c73237672c9ea"
+  arch = "intel"
+  version "11.2.7"
+  sha256 "ae6f2c978009d7baa86b53d41be8a5eafda27bcb3a0bf102ebff629b4ebe091f"
 
-  url "https://cdn-downloads.ableton.com/channels/#{version}/ableton_live_suite_#{version}_64.dmg"
+  on_mojave :or_newer do
+    arch = "universal"
+    sha256 "83d0933ebb24e68dbefb8965a4c9ec47044a5ecc91689bcddc9c4ffdca38593e"
+  end
+
+  url "https://cdn-downloads.ableton.com/channels/#{version}/ableton_live_suite_#{version}_#{arch}.dmg"
   name "Ableton Live Suite"
   desc "Sound and music editor"
   homepage "https://www.ableton.com/en/live/"

@@ -7,22 +7,26 @@
   ],
   "desc": "MikroTik Winbox",
   "homepage": "https://github.com/nrlquaker/winbox-mac/",
-  "url": "https://github.com/nrlquaker/winbox-mac/releases/download/v3.32.0/Winbox-mac-3.32.0.zip",
+  "url": "https://github.com/nrlquaker/winbox-mac/releases/download/v3.37.0/Winbox-mac-3.37.0.zip",
   "appcast": null,
-  "version": "3.32.0",
+  "version": "3.37.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "7db9d1169b1e1b961ec5793372fe4341adf91ffe9fbdc9d2a31fb18522f048e3",
+  "sha256": "02294303a181663a79070c60d2c56e7e5b9aa36fa68c7abddcd7bf05078a7ae8",
   "artifacts": [
-    [
-      "Winbox-mac.app"
-    ],
     {
-      "trash": "~/Library/Application Support/com.mikrotik.winbox",
-      "signal": {
-      }
+      "app": [
+        "Winbox-mac.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/com.mikrotik.winbox"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

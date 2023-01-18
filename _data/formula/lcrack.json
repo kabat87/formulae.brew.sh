@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/l/lcrack/lcrack_20040914.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "63fe93dfeae92677007f1e1022841d25086b92d29ad66435ab3a80a0705776fe"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lcrack/blobs/sha256:5ed33a289956f6798336a9cc79d43cc3cbcdafad2474d8e553e70f0fbec02479",
+          "sha256": "5ed33a289956f6798336a9cc79d43cc3cbcdafad2474d8e553e70f0fbec02479"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lcrack/blobs/sha256:f8986278bb55beb07506b9953fb36dbe76d44bac1e876b955a1aaf3bd9236467",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lcrack/blobs/sha256:a9a11f709651ff447bc6a4ef8868e52fbf44587d4631cbbcba248c5a61dae2a5",
           "sha256": "a9a11f709651ff447bc6a4ef8868e52fbf44587d4631cbbcba248c5a61dae2a5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lcrack/blobs/sha256:b9be785163e014dce3f3263c4f37ca099d8cd9237b6c004c17c6b195b3e2ccce",
+          "sha256": "b9be785163e014dce3f3263c4f37ca099d8cd9237b6c004c17c6b195b3e2ccce"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/lcrack/blobs/sha256:2bd1de3426e4bd4ebfc6fb6026dc9a9fd046a5d9345459700a2361b7fe53f49c",
           "sha256": "2bd1de3426e4bd4ebfc6fb6026dc9a9fd046a5d9345459700a2361b7fe53f49c"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lcrack/blobs/sha256:443e64bdb0307e12f4ef990abea7941239784cb7c9798929880a7973f86cf5bc",
-          "sha256": "443e64bdb0307e12f4ef990abea7941239784cb7c9798929880a7973f86cf5bc"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lcrack/blobs/sha256:90d22ccc708ed4d14fd35364f07ee9cc7342dbeba5a8da0f051d39b699e84125",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,10 +131,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-08-28",
+  "deprecation_reason": "repo_removed",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

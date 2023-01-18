@@ -7,34 +7,45 @@
   ],
   "desc": "Dummy Display for Apple Silicon Macs to achieve custom resolutions",
   "homepage": "https://github.com/waydabber/BetterDummy",
-  "url": "https://github.com/waydabber/BetterDummy/releases/download/v1.0.13/BetterDummy-v1.0.13.zip",
+  "url": "https://github.com/waydabber/BetterDummy/releases/download/v1.1.24/BetterDummy-v1.1.24.dmg",
   "appcast": null,
-  "version": "1.0.13",
+  "version": "1.1.24",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "23a46ea3607045a74f9d1ebae5b8034964bb2d217a56d2f0dd8a298e03c4a7ed",
+  "sha256": "5d02657f3aa77017f5a94af16d042cef011094b58f19b4d0f4a79e090311cfb3",
   "artifacts": [
-    [
-      "BetterDummy.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/me.waydabber.BetterDummyHelper",
-        "~/Library/Application Scripts/me.waydabber.BetterDummy",
-        "~/Library/Containers/me.waydabber.BetterDummyHelper",
-        "~/Library/Containers/me.waydabber.BetterDummy",
-        "~/Library/Preferences/me.waydabber.BetterDummy.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "BetterDummy.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/me.waydabber.BetterDummyHelper",
+            "~/Library/Application Scripts/me.waydabber.BetterDummy",
+            "~/Library/Containers/me.waydabber.BetterDummyHelper",
+            "~/Library/Containers/me.waydabber.BetterDummy",
+            "~/Library/Preferences/me.waydabber.BetterDummy.plist"
+          ]
+        }
+      ]
     }
   ],
-  "caveats": null,
+  "caveats": "betterdummy has been renamed 'betterdisplay',\ninstall betterdisplay to continue receiving updates;\n\n  brew install --cask betterdisplay\n\nbetterdummy has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
+    "macos": {
+      ">=": [
+        "11"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

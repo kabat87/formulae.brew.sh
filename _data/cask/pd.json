@@ -7,26 +7,32 @@
   ],
   "desc": "Visual programming language for multimedia",
   "homepage": "http://msp.ucsd.edu/software.html",
-  "url": "http://msp.ucsd.edu/Software/pd-0.51-4.mac.tar.gz",
+  "url": "http://msp.ucsd.edu/Software/pd-0.53-1.macos.zip",
   "appcast": null,
-  "version": "0.51-4",
+  "version": "0.53-1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2dd4c637d8637eefc928e7a06586cb911a21eae72f1abb3a0649a90f7eff20f7",
+  "sha256": "d31d23b8a6d5d726b988b850a7140d2942ef595fab5ac80d4eb76b89a20fcc65",
   "artifacts": [
-    [
-      "Pd-0.51-4.app"
-    ],
-    "postflight (Postflight Block)",
     {
-      "trash": [
-        "~/Library/Preferences/org.puredata.pd.pd-gui.plist",
-        "~/Library/Saved Application State/org.puredata.pd.pd-gui.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Pd-0.53-1.app"
+      ]
+    },
+    {
+      "postflight": "  postflight do\n    set_permissions \"#{appdir}/Pd-#{version}.app\", \"u+w\"\n  end\n"
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/org.puredata.pd.pd-gui.plist",
+            "~/Library/Saved Application State/org.puredata.pd.pd-gui.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

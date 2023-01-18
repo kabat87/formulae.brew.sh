@@ -13,35 +13,35 @@
   "license": "LGPL-3.0-or-later",
   "homepage": "https://www.ortussolutions.com/products/commandbox",
   "versions": {
-    "stable": "5.4.2",
+    "stable": "5.7.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.ortussolutions.com/ortussolutions/commandbox/5.4.2/commandbox-bin-5.4.2.zip",
+      "url": "https://downloads.ortussolutions.com/ortussolutions/commandbox/5.7.0/commandbox-bin-5.7.0.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a45c30d12dd4805c48610b9948e48ed167a5f35cd4c8ce4a5b450b0e07514baf"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/commandbox/blobs/sha256:5dd25d2c17c758ee444ea547bec581a3d84f43d73fecb96e94eafd7c22780700",
-          "sha256": "5dd25d2c17c758ee444ea547bec581a3d84f43d73fecb96e94eafd7c22780700"
+          "url": "https://ghcr.io/v2/homebrew/core/commandbox/blobs/sha256:3a18aef55e8f1bda49d40d90d32996aeca8a67c3ab531a4031c751e5079508a1",
+          "sha256": "3a18aef55e8f1bda49d40d90d32996aeca8a67c3ab531a4031c751e5079508a1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.xiph.org/releases/libfishsound/libfishsound-1.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2e0b57ce2fecc9375eef72938ed08ac8c8f6c5238e1cae24458f0b0e8dade7c7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libfishsound/blobs/sha256:adb772f247d86852efce4345ef9a4d7496648412c5233e6417476256b531ddef",
+          "sha256": "adb772f247d86852efce4345ef9a4d7496648412c5233e6417476256b531ddef"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libfishsound/blobs/sha256:04042bd85b176dc50f99153f267fae3e5f82176ad010aaccff0c71d1434ab550",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libfishsound/blobs/sha256:3ec17aed1c22c99831e01e1938bf9b240439f45c130422dd90e06ccd8a57cd74",
           "sha256": "3ec17aed1c22c99831e01e1938bf9b240439f45c130422dd90e06ccd8a57cd74"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libfishsound/blobs/sha256:05f682b7c9612e5a31bb0cef75d324aa20ade7c5cf205a3999d973a3f7fb80bd",
+          "sha256": "05f682b7c9612e5a31bb0cef75d324aa20ade7c5cf205a3999d973a3f7fb80bd"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libfishsound/blobs/sha256:9cf94c3c6963895940e8720aef21c29b001257c918fce6b65685c33f8430f0e4",
           "sha256": "9cf94c3c6963895940e8720aef21c29b001257c918fce6b65685c33f8430f0e4"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libfishsound/blobs/sha256:4fcfc4270d73ac2b0e8d8a4d1fe6b94a1093502b802ed327febb5286ad5140b9",
-          "sha256": "4fcfc4270d73ac2b0e8d8a4d1fe6b94a1093502b802ed327febb5286ad5140b9"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libfishsound/blobs/sha256:5db56944c47f7f4084a4645ef252841be006ad54ee48fb55530eda206e6732c3",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libvorbis"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

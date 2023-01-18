@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/lib3ds/lib3ds-1.3.0.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f5b00c302955a67fa5fb1f2d3f2583767cdc61fdbc6fd843c0c7c9d95c5629e3"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:065e64a374733b5c8fe9a37c2897e5c366bc2e41bdbcc92708e130eb0a446f88",
+          "sha256": "065e64a374733b5c8fe9a37c2897e5c366bc2e41bdbcc92708e130eb0a446f88"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:630075c7c6f6a5d80d39592ed47c6f6a7694a02f32eb5ac0f7de12ddc15d4a56",
+          "sha256": "630075c7c6f6a5d80d39592ed47c6f6a7694a02f32eb5ac0f7de12ddc15d4a56"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:2959476e3f2e5a95ca23aa6a9fc4b11f9e8ca202e460d6b00ce2906f043c8936",
           "sha256": "2959476e3f2e5a95ca23aa6a9fc4b11f9e8ca202e460d6b00ce2906f043c8936"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:43e5029413555b545a6b4177acdc9b254f3e6a82251ea5bded95dfa5b7f4d93f",
+          "sha256": "43e5029413555b545a6b4177acdc9b254f3e6a82251ea5bded95dfa5b7f4d93f"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:745bdb83e2fd03b6f96e163055971471f3f4e1ef6ea465adcb765e799b9a01d1",
+          "sha256": "745bdb83e2fd03b6f96e163055971471f3f4e1ef6ea465adcb765e799b9a01d1"
         },
         "big_sur": {
           "cellar": ":any",
@@ -66,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:e5810afd47dd88fb769e6ef62ef558b4ee4e643d4f5ae3fddb019257642b3375",
           "sha256": "e5810afd47dd88fb769e6ef62ef558b4ee4e643d4f5ae3fddb019257642b3375"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:33f5b51953a8d4a583c7d5d6a7796ffaaccf8bf6a303fac300bfdb76dcd0ad60",
-          "sha256": "33f5b51953a8d4a583c7d5d6a7796ffaaccf8bf6a303fac300bfdb76dcd0ad60"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lib3ds/blobs/sha256:7adf7c63871e56081abf7ecbf0327d77970aa925812d04082152d32a13d229e5",
@@ -81,14 +97,18 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "autoconf",
+    "automake",
+    "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +138,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+
+      ]
+    }
+  }
 }

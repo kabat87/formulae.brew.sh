@@ -1,18 +1,18 @@
 cask "c0re100-qbittorrent" do
-  version "4.4.0.10"
-  sha256 "8d4b9a203ff5c048c8208fc40c8d9cff79e22695f0bc8ea7b2ba151728c763c9"
+  version "4.5.0.10"
+  sha256 "05956480747112d98afa4e417d646218cc61339b2c551b23c0ef8ed015eab759"
 
-  url "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-#{version}/qBittorrent_enhanced-#{version}.dmg"
+  url "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-#{version}/qBittorrent-Enhanced-Edition-release-#{version}-macOS-universal.dmg"
   name "qBittorrent Enhanced Edition"
   desc "Bittorrent client"
   homepage "https://github.com/c0re100/qBittorrent-Enhanced-Edition"
 
   livecheck do
     url :url
-    strategy :git
-    regex(/^release-(\d+(?:\.\d+)+)$/i)
+    regex(/^release[._-]v?(\d+(?:\.\d+)+)$/i)
   end
 
+  conflicts_with cask: "qbittorrent"
   depends_on macos: ">= :sierra"
 
   app "qbittorrent.app"

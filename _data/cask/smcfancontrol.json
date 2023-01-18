@@ -16,17 +16,22 @@
   "outdated": false,
   "sha256": "7662058e618537eb466307e3b12e540b857e61392646a5b09df51bec9ad6da38",
   "artifacts": [
-    [
-      "smcFanControl.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/smcFanControl",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eidac.smcfancontrol2.sfl*",
-        "~/Library/Caches/com.eidac.smcFanControl2"
-      ],
-      "signal": {
-      }
+      "app": [
+        "smcFanControl.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/smcFanControl",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eidac.smcfancontrol2.sfl*",
+            "~/Library/Caches/com.eidac.smcFanControl2",
+            "~/Library/Preferences/com.eidac.smcFanControl2.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

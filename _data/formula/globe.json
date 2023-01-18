@@ -10,7 +10,7 @@
 
   ],
   "desc": "Prints ASCII graphic of currently-lit side of the Earth",
-  "license": null,
+  "license": "BSD-2-Clause",
   "homepage": "https://www.acme.com/software/globe/",
   "versions": {
     "stable": "0.0.20140814",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.acme.com/software/globe/globe_14Aug2014.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5507a4caaf3e3318fd895ab1f8edfa5887c9f64547cad70cff3249350caa6c86"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/globe/blobs/sha256:4473c2c0beaa4ed43eb61e261c0dea124561f7060500b34f6dbe0d8ed2a74f54",
+          "sha256": "4473c2c0beaa4ed43eb61e261c0dea124561f7060500b34f6dbe0d8ed2a74f54"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/globe/blobs/sha256:7aaea040d2d0551c2b5ff578222fceb20b0768d9a040c1ab7091f919b7df1235",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/globe/blobs/sha256:d614010f862d04bbc2fc08ba4f220fde562ee07f08fe7f2fe15470afa2ad09c1",
           "sha256": "d614010f862d04bbc2fc08ba4f220fde562ee07f08fe7f2fe15470afa2ad09c1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/globe/blobs/sha256:f9fa4bb89e99be5518c6847948deac3e5b3406b1ea9b78e27ebc0936df60a654",
+          "sha256": "f9fa4bb89e99be5518c6847948deac3e5b3406b1ea9b78e27ebc0936df60a654"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/globe/blobs/sha256:11acded7be5d1ba22260d039e3daf4fdc4cac49ebcd234c879da655a1532c22f",
           "sha256": "11acded7be5d1ba22260d039e3daf4fdc4cac49ebcd234c879da655a1532c22f"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/globe/blobs/sha256:a3ccdf74813e704ab1c8d50bb32f3f9b3f62110c8a6a143e3df85eb6ab7ecd7d",
-          "sha256": "a3ccdf74813e704ab1c8d50bb32f3f9b3f62110c8a6a143e3df85eb6ab7ecd7d"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/globe/blobs/sha256:45f34a09b90224f8c3026702be8b9eb682417c8efca350ae807faa2484b603da",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,27 +7,31 @@
   ],
   "desc": "Action center for developers",
   "homepage": "https://catlight.io/",
-  "url": "https://download.catlight.io/rel/mac/beta/CatLightSetup-2.35.1.zip",
+  "url": "https://download.catlight.io/rel/mac/release/CatLightSetup-2.39.3.zip",
   "appcast": null,
-  "version": "2.35.1",
+  "version": "2.39.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "086409d6fecbd24ea49cb3ef75d33c9cd590c31e433b949dd56aa8d13ca979d5",
+  "sha256": "5e3ad4ea93bc914c362201895ae9044923c0be81a8c678a802234186d292aeb1",
   "artifacts": [
-    [
-      "Catlight.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Catlight",
-        "~/Library/Logs/Catlight",
-        "~/Library/Preferences/Catlight.plist",
-        "~/Library/Saved Application State/Catlight.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Catlight.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Catlight",
+            "~/Library/Logs/Catlight",
+            "~/Library/Preferences/Catlight.plist",
+            "~/Library/Saved Application State/Catlight.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

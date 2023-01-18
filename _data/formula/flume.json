@@ -13,18 +13,19 @@
   "license": "Apache-2.0",
   "homepage": "https://flume.apache.org",
   "versions": {
-    "stable": "1.9.0",
+    "stable": "1.11.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/closer.lua?path=flume/1.9.0/apache-flume-1.9.0-bin.tar.gz",
+      "url": "https://www.apache.org/dyn/closer.lua?path=flume/1.11.0/apache-flume-1.11.0-bin.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6eb7806076bdc3dcadb728275eeee7ba5cb12b63a2d981de3da9063008dba678"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flume/blobs/sha256:734753080fb6c3c2446b483ddf29032c997886c75470e0f43f7a0f489eceb3d8",
-          "sha256": "734753080fb6c3c2446b483ddf29032c997886c75470e0f43f7a0f489eceb3d8"
+          "url": "https://ghcr.io/v2/homebrew/core/flume/blobs/sha256:44935d1696a0723df20bbf9b4426ea278eb4293d2c22bfad5d9baf448d718a6a",
+          "sha256": "44935d1696a0723df20bbf9b4426ea278eb4293d2c22bfad5d9baf448d718a6a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,7 +50,10 @@
   ],
   "dependencies": [
     "hadoop",
-    "openjdk"
+    "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -79,5 +82,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

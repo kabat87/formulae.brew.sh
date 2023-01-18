@@ -7,40 +7,43 @@
   ],
   "desc": "Integrated development environment",
   "homepage": "https://www.ti.com/tool/CCSTUDIO",
-  "url": "https://software-dl.ti.com/ccs/esd/CCSv11/CCS_11_0_0/exports/ccs_installer_osx_11.0.0.00012.dmg",
+  "url": "https://dr-download.ti.com/software-development/ide-configuration-compiler-or-debugger/MD-J1VdearkvK/12.2.0/ccs_installer_osx_12.2.0.00009.dmg",
   "appcast": null,
-  "version": "11.0.0.00012",
+  "version": "12.2.0.00009",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "88800a47069513e5171b34b3e9e6e972336d1ba5c00dab6bbd7daade652db4f2",
+  "sha256": "53c43474e8a063d7ebe24028aca79208dfa64c3bffa9b80dcf01f8f03054053b",
   "artifacts": [
     {
-      "script": {
-        "executable": "/Applications/TI/ccs/uninstall_ccs.app/Contents/MacOS/installbuilder.sh",
-        "args": [
-          "--mode",
-          "unattended"
-        ],
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "/Applications/TI/ccs/uninstall_ccs.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
     {
-      "path": "ccs_setup_11.0.0.00012.app/Contents/MacOS/installbuilder.sh",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "false",
-        "args": [
-          "--mode",
-          "unattended",
-          "--prefix",
-          "/Applications/TI"
-        ],
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "ccs_setup_12.2.0.00009.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended",
+              "--prefix",
+              "/Applications/TI"
+            ]
+          }
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -48,5 +51,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

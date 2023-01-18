@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/freetype/ftjam/2.5.2/ftjam-2.5.2.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e89773500a92912de918e9febffabe4b6bce79d69af194435f4e032b8a6d66a3"
     }
   },
   "revision": 0,
@@ -31,6 +32,31 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:110a5feb1831f3bc2fd8d5c4b4cc8315cbc27676c3f08f65e040b9b109ef4bb6",
+          "sha256": "110a5feb1831f3bc2fd8d5c4b4cc8315cbc27676c3f08f65e040b9b109ef4bb6"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:09eb3674d68bc70c0a968bab37408395e82acb51ab594f36baae4275972ff9f2",
+          "sha256": "09eb3674d68bc70c0a968bab37408395e82acb51ab594f36baae4275972ff9f2"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:9c40cff88de5ed098fbc6373f6ceaf998a63b1f8189e930afbdeb7ab352e207e",
+          "sha256": "9c40cff88de5ed098fbc6373f6ceaf998a63b1f8189e930afbdeb7ab352e207e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:2a6730f7f7a27f783a412f4b42a5f4ee3e856aebc453e728c6d14aa8ae0f19ad",
+          "sha256": "2a6730f7f7a27f783a412f4b42a5f4ee3e856aebc453e728c6d14aa8ae0f19ad"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:2ade860ccc3972b17cab846917f1759e2676db0240b30375f9a289db365dd1e7",
+          "sha256": "2ade860ccc3972b17cab846917f1759e2676db0240b30375f9a289db365dd1e7"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:84e96d642732ab02748dad0b9129c8094348d030bdb414adcacfb6633cc2d958",
@@ -61,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:f94287203827dea6ac5031e695c217a48b1b69e939dcd68a489c8477b4100447",
           "sha256": "f94287203827dea6ac5031e695c217a48b1b69e939dcd68a489c8477b4100447"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:95490ead99e537713d8c26d1c1bea72b31ea06153a405867ffe83c044593caa0",
-          "sha256": "95490ead99e537713d8c26d1c1bea72b31ea06153a405867ffe83c044593caa0"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ftjam/blobs/sha256:03bc2f284df267e0e2f669480b142ae11c5bf15066eebc0dc7de69c42e116d41",
@@ -76,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -110,10 +133,32 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-09-18",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "automake"
+      ]
+    },
+    "arm64_monterey": {
+      "build_dependencies": [
+        "automake"
+      ]
+    },
+    "arm64_big_sur": {
+      "build_dependencies": [
+        "automake"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "bison"
+      ]
+    }
+  }
 }

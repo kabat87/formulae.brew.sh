@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/cifer/cifer-1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "436816c1f9112b8b80cf974596095648d60ffd47eca8eb91fdeb19d3538ea793"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cifer/blobs/sha256:0e91e9087a69d7922fe1fe9f84e11e9f222c45d5b1b1cd794f1e7f0bf3a295c2",
+          "sha256": "0e91e9087a69d7922fe1fe9f84e11e9f222c45d5b1b1cd794f1e7f0bf3a295c2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cifer/blobs/sha256:66851780bbfe9071936bd7f230dc0f0744f5dc16ae6bd5986d9494d31563b75b",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cifer/blobs/sha256:5f826a8dc0534a56e2c372abeba0f05124f79e96502243d1c89548777d2156b2",
           "sha256": "5f826a8dc0534a56e2c372abeba0f05124f79e96502243d1c89548777d2156b2"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cifer/blobs/sha256:8d266e4601b71e979f7580f3fe3eeb6aafe4aa5c350bf5db2f1fcf4950e556ed",
+          "sha256": "8d266e4601b71e979f7580f3fe3eeb6aafe4aa5c350bf5db2f1fcf4950e556ed"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/cifer/blobs/sha256:86cbc00f11a5818f48ee67bdc0fa5f2692cc7f37ae6c2c5eb237338c7dc6919b",
           "sha256": "86cbc00f11a5818f48ee67bdc0fa5f2692cc7f37ae6c2c5eb237338c7dc6919b"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cifer/blobs/sha256:bde7d97d9ef2a07c481ff8c5ec717fb2ec455fdef864db2a1a7b3056aa1934d2",
-          "sha256": "bde7d97d9ef2a07c481ff8c5ec717fb2ec455fdef864db2a1a7b3056aa1934d2"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cifer/blobs/sha256:58a55640d9031cea1c50d8ad9db0128993f4e5895ccf7a9069f762c34682e165",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "readline"
+      ]
+    }
+  }
 }

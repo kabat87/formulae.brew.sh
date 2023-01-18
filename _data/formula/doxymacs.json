@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/doxymacs/doxymacs/1.8.0/doxymacs-1.8.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a23fd833bc3c21ee5387c62597610941e987f9d4372916f996bf6249cc495afa"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/doxymacs/blobs/sha256:699c57cf8869c5eda84db1f8d58a160c6c821015c1c7bc4892d5ad2f1447c73e",
+          "sha256": "699c57cf8869c5eda84db1f8d58a160c6c821015c1c7bc4892d5ad2f1447c73e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/doxymacs/blobs/sha256:32c79209e9d8c2f8e47a4e6e28993954250060f74717a749e48ea04b381b63a8",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/doxymacs/blobs/sha256:4ffe57742c559c3ef80b3bf338d2903c7fc0137d4d9cc96f2b23bea2e0cab832",
           "sha256": "4ffe57742c559c3ef80b3bf338d2903c7fc0137d4d9cc96f2b23bea2e0cab832"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/doxymacs/blobs/sha256:e2ff086ebd4cdeb4945b9a67de2c74a6d22f47e84db58b17597ea5d6ef6d0fe4",
+          "sha256": "e2ff086ebd4cdeb4945b9a67de2c74a6d22f47e84db58b17597ea5d6ef6d0fe4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/doxymacs/blobs/sha256:fb892db831aed57dbdcb2d3a81d78bd05c5b689376d4b7f14bffc56826205ce9",
           "sha256": "fb892db831aed57dbdcb2d3a81d78bd05c5b689376d4b7f14bffc56826205ce9"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/doxymacs/blobs/sha256:09eb19921c2ecce5bb02b185c1040caef07d18706866006bdd5fa428bf6b8560",
-          "sha256": "09eb19921c2ecce5bb02b185c1040caef07d18706866006bdd5fa428bf6b8560"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/doxymacs/blobs/sha256:00c2ebbdf243dded3a23783b3a22ee3705a53dd0ba50c292dcb190bb5bcebc9a",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +106,9 @@
   "dependencies": [
     "doxygen",
     "emacs"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

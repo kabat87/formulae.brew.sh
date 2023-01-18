@@ -11,7 +11,7 @@
   ],
   "desc": "Database connectivity layer based on ODBC. (alternative to unixodbc)",
   "license": "BSD-3-Clause or LGPL-2.0-only",
-  "homepage": "http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/",
+  "homepage": "https://www.iodbc.org/",
   "versions": {
     "stable": "3.52.15",
     "head": null,
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/openlink/iODBC/archive/v3.52.15.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f6b376b6dffb4807343d6d612ed527089f99869ed91bab0bbbb47fdea5ed6ace"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libiodbc/blobs/sha256:7c7b33d3b2e0c688e10968d2c4a68267751f44d32b19de39afcb597462102772",
+          "sha256": "7c7b33d3b2e0c688e10968d2c4a68267751f44d32b19de39afcb597462102772"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libiodbc/blobs/sha256:b282396d02085ccf612c0625706f962d7010f05e5e02c325337fadd7de514e7a",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libiodbc/blobs/sha256:5147321e5b94a093ccb0e3ecf942cc69022c37a79ddac432185be9053353a797",
           "sha256": "5147321e5b94a093ccb0e3ecf942cc69022c37a79ddac432185be9053353a797"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libiodbc/blobs/sha256:642e1984978ebe3dd1ea69c8196becad77f08f07a3d86d69c65c90ec4a31859b",
+          "sha256": "642e1984978ebe3dd1ea69c8196becad77f08f07a3d86d69c65c90ec4a31859b"
         },
         "monterey": {
           "cellar": ":any",
@@ -69,9 +80,11 @@
       }
     }
   },
-  "keg_only": false,
-  "keg_only_reason": null,
-  "bottle_disabled": false,
+  "keg_only": true,
+  "keg_only_reason": {
+    "reason": "it conflicts with `unixodbc`",
+    "explanation": ""
+  },
   "options": [
 
   ],
@@ -81,6 +94,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -96,7 +112,7 @@
 
   ],
   "conflicts_with": [
-    "unixodbc"
+
   ],
   "caveats": null,
   "installed": [
@@ -110,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

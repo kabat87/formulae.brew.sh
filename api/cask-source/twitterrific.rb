@@ -1,6 +1,6 @@
 cask "twitterrific" do
-  version "5.4.8,179"
-  sha256 "d3c27d5227491bd9efd9bdedbf96a10d6f8f9c2fc268aad752e3773cd30d83c2"
+  version "5.4.10,189"
+  sha256 "7bda86aca6cba5bf1fa44e993409d194d6bde8095d5709721022f4bff622d5a5"
 
   url "https://downloads.iconfactory.com/phoenix/Twitterrific-#{version.csv.first}+#{version.csv.second}.zip",
       verified: "downloads.iconfactory.com/phoenix/"
@@ -25,10 +25,12 @@ cask "twitterrific" do
     "~/Library/Application Scripts/com.iconfactory.Phoenix",
     "~/Library/Application Scripts/com.iconfactory.Phoenix.Fixerrific",
     "~/Library/Application Scripts/com.iconfactory.Phoenix.ShareExtension",
+    "~/Library/Application Scripts/*.com.iconfactory.Twitterrific",
     "~/Library/Caches/com.iconfactory.Phoenix",
     "~/Library/Containers/com.iconfactory.Phoenix",
     "~/Library/Containers/com.iconfactory.Phoenix.Fixerrific",
     "~/Library/Containers/com.iconfactory.Phoenix.ShareExtension",
+    "~/Library/Group Containers/*.com.iconfactory.Twitterrific",
     "~/Library/Saved Application State/com.iconfactory.Phoenix.savedState",
   ]
 end

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://swapoff.org/files/devtodo/devtodo-0.1.20.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "379c6ac4499fc97e9676075188f7217e324e7ece3fb6daeda7bf7969c7093e09"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/devtodo/blobs/sha256:58105a4bbd78bdef5f52bd4de540591c1d647613b5b7ad70f43076c715939cfe",
+          "sha256": "58105a4bbd78bdef5f52bd4de540591c1d647613b5b7ad70f43076c715939cfe"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/devtodo/blobs/sha256:ca3402d8a1efde8eeaf00f4290c2d9921c9ce5f2b51c3bde4cbc9fcee836e589",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/devtodo/blobs/sha256:d7d93dba48edf2c4cf03bfe351796620f0082ad3a040d7d35bb820613499828a",
           "sha256": "d7d93dba48edf2c4cf03bfe351796620f0082ad3a040d7d35bb820613499828a"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/devtodo/blobs/sha256:66b1c96b904e87be75c601a68aa094ce97ea99d5bb36ab6ee3714fc40e69cacb",
+          "sha256": "66b1c96b904e87be75c601a68aa094ce97ea99d5bb36ab6ee3714fc40e69cacb"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -70,13 +81,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/devtodo/blobs/sha256:aa22627fa7722dd0ca564fdd9770a047901d71090bb5312edfa91c8cf0d72ba4",
           "sha256": "aa22627fa7722dd0ca564fdd9770a047901d71090bb5312edfa91c8cf0d72ba4"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/devtodo/blobs/sha256:3e73efa42394be4e0be78fe83c13b693f42a84d743fbc8e9248cdcaea13da1c2",
+          "sha256": "3e73efa42394be4e0be78fe83c13b693f42a84d743fbc8e9248cdcaea13da1c2"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +101,9 @@
   "dependencies": [
     "readline"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -93,7 +111,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "expect": "test"
+    }
   ],
   "requirements": [
 
@@ -113,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

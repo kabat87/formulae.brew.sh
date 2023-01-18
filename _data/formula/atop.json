@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://www.atoptool.nl",
   "versions": {
-    "stable": "2.7.1",
+    "stable": "2.8.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/Atoptool/atop/archive/refs/tags/v2.7.1.tar.gz",
+      "url": "https://github.com/Atoptool/atop/archive/refs/tags/v2.8.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7b8800757a491e962897cc16172a8f5afc7f7f35d80a36c137d2b637d9f8635d"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atop/blobs/sha256:8d6be49346e7ca6aaa8704f78696bb91e490d13e29cbb1137f464881b5cf40f7",
-          "sha256": "8d6be49346e7ca6aaa8704f78696bb91e490d13e29cbb1137f464881b5cf40f7"
+          "url": "https://ghcr.io/v2/homebrew/core/atop/blobs/sha256:7c71e2895dadf8776c08590290c3a24e589a849dc96eba7e0a3539699d450915",
+          "sha256": "7c71e2895dadf8776c08590290c3a24e589a849dc96eba7e0a3539699d450915"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,9 +49,12 @@
 
   ],
   "dependencies": [
-    "linux-headers@4.15",
+    "linux-headers@5.15",
     "ncurses",
     "zlib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -88,5 +91,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

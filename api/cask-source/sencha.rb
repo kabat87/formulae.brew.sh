@@ -1,10 +1,16 @@
 cask "sencha" do
-  version "7.2.0.66"
-  sha256 "e93272a168b7afcd64eaa373d93e9d356b2cf03bd19b56b6a976a3c816ef5614"
+  version "7.6.0.87"
+  sha256 "66a22a3fc9855a0a270640eb4b113a3826ec0f77f34b87732d4b8376a536addf"
 
-  url "https://cdn.sencha.com/cmd/#{version}/jre/SenchaCmd-#{version}-osx.app.zip"
+  url "https://trials.sencha.com/cmd/#{version.major_minor_patch}/SenchaCmd-#{version}-osx.app.zip"
   name "Sencha Cmd"
+  desc "Productivity and performance optimization tool for Sencha Ext JS"
   homepage "https://www.sencha.com/products/sencha-cmd/"
+
+  livecheck do
+    url "https://www.sencha.com/products/extjs/cmd-download/"
+    regex(/href=.*?SenchaCmd[._-]v?(\d+(?:\.\d+)+)[._-]osx\.app\.zip/i)
+  end
 
   installer script: {
     executable: "SenchaCmd-#{version}-osx.app/Contents/MacOS/JavaApplicationStub",

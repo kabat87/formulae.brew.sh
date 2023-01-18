@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/irtlab/rtptools/archive/1.22.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ac6641558200f5689234989e28ed3c44ead23757ccf2381c8878933f9c2523e0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rtptools/blobs/sha256:5d06d42bddd550eb32476e7412d204a11795fa1295c9c68e0b608e652b5092df",
+          "sha256": "5d06d42bddd550eb32476e7412d204a11795fa1295c9c68e0b608e652b5092df"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rtptools/blobs/sha256:3b656aa50230fbf083a0acd2bb82b6c9911b0c1e450280f2beba636aea4dd444",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rtptools/blobs/sha256:a760c9b142e55aba7732406eeb2603c49b9b7514e02bd01bc245d0661772bf20",
           "sha256": "a760c9b142e55aba7732406eeb2603c49b9b7514e02bd01bc245d0661772bf20"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rtptools/blobs/sha256:d9f2ab7acb5516a14a0da93a58364e92cd396275a687947d4c1fa6e66419f2d5",
+          "sha256": "d9f2ab7acb5516a14a0da93a58364e92cd396275a687947d4c1fa6e66419f2d5"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

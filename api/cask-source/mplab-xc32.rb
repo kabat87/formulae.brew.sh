@@ -1,15 +1,15 @@
 cask "mplab-xc32" do
-  version "4.00"
-  sha256 "fbea8fbf0160cc91a86934e246cbca97238c625c191a903d05ed6648662c7459"
+  version "4.21"
+  sha256 "91a339baaf82746f1961832738f1564054cc0640ec3e4eaf7a3b57ab440da046"
 
-  url "https://ww1.microchip.com/downloads/en/DeviceDoc/xc32-v#{version}-full-install-osx-installer.dmg"
+  url "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/xc32-v#{version}-full-install-osx-installer.dmg"
   name "MPLab XC32 Compiler"
   desc "Compiler for 32-bit PIC and SAM MCUs and MPUs"
   homepage "https://www.microchip.com/mplab/compilers"
 
   livecheck do
-    url "https://www.microchip.com/mplabxc32osx"
-    strategy :header_match
+    url "https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/downloads-documentation"
+    regex(%r{href=.*?ProductDocuments/SoftwareTools/xc32[._-]v?(\d+(?:\.\d+)+)-full-install-osx-installer\.dmg}i)
   end
 
   installer script: {

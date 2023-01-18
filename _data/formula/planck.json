@@ -13,60 +13,65 @@
   "license": "EPL-1.0",
   "homepage": "https://planck-repl.org/",
   "versions": {
-    "stable": "2.25.0",
+    "stable": "2.27.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/planck-repl/planck/archive/2.25.0.tar.gz",
+      "url": "https://github.com/planck-repl/planck/archive/2.27.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d69be456efd999a8ace0f8df5ea017d4020b6bd806602d94024461f1ac36fe41"
     }
   },
-  "revision": 2,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:c81dda09a6a3a8344297eaa3df9166d7b122c21a2517ffb4f0f444a44b295ec7",
+          "sha256": "c81dda09a6a3a8344297eaa3df9166d7b122c21a2517ffb4f0f444a44b295ec7"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:ae9c4d505e495c03e50facc262a0c2a4cc924707aadd380d68e72c828f8707b3",
-          "sha256": "ae9c4d505e495c03e50facc262a0c2a4cc924707aadd380d68e72c828f8707b3"
+          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:f54712c0e883a890d941d0a98bb221d56d5c893103127f8de7772d71eb751879",
+          "sha256": "f54712c0e883a890d941d0a98bb221d56d5c893103127f8de7772d71eb751879"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:d8a3539294b4ba931761adad175e84404a95dd991f977501f89c19e533fff9a2",
-          "sha256": "d8a3539294b4ba931761adad175e84404a95dd991f977501f89c19e533fff9a2"
+          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:e63c950981cf2bed5c64b7f9b451acdfed2fa373abb088971a1812456507815d",
+          "sha256": "e63c950981cf2bed5c64b7f9b451acdfed2fa373abb088971a1812456507815d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:aef5e8e914c5a14fe894ab88d5b37c60ce46648b64d0cf4a995a5a73ae19297d",
+          "sha256": "aef5e8e914c5a14fe894ab88d5b37c60ce46648b64d0cf4a995a5a73ae19297d"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:85198ae6acebb93fe6fc8c7f0d00911e8e3806eb06fbb73101ac712f1d9ebac1",
-          "sha256": "85198ae6acebb93fe6fc8c7f0d00911e8e3806eb06fbb73101ac712f1d9ebac1"
+          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:5f89821929f06839eaeb4ec0aeaca9514318f4369ff21466f8057ead1be8cd79",
+          "sha256": "5f89821929f06839eaeb4ec0aeaca9514318f4369ff21466f8057ead1be8cd79"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:436bb7f0481e0a6a0edeaa1abd2687c349e6314bf6139a2b8ae4e9a73978ed8e",
-          "sha256": "436bb7f0481e0a6a0edeaa1abd2687c349e6314bf6139a2b8ae4e9a73978ed8e"
+          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:7ba97d3ba268d49078c097cc5ee97e24d9e794d609468fc1d2e1e8d68835c6dc",
+          "sha256": "7ba97d3ba268d49078c097cc5ee97e24d9e794d609468fc1d2e1e8d68835c6dc"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:2528a360ad99d9d5031ae53138523c691e5a5ccb93da15cc44d214a9ad0d2e3b",
-          "sha256": "2528a360ad99d9d5031ae53138523c691e5a5ccb93da15cc44d214a9ad0d2e3b"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:b0d1fe14b9ab71a5a18601e8e21fe3b16dc96247b877ce6842bbc7c7cae93784",
-          "sha256": "b0d1fe14b9ab71a5a18601e8e21fe3b16dc96247b877ce6842bbc7c7cae93784"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/planck/blobs/sha256:831a7271ddea7ebbd62b95ae33b52ad65804cebe9a60e7a717f9d5fa035db2da",
+          "sha256": "831a7271ddea7ebbd62b95ae33b52ad65804cebe9a60e7a717f9d5fa035db2da"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +84,9 @@
     "icu4c",
     "libzip"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -86,7 +94,11 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "vim": "build"
+    },
+    "curl",
+    "libffi"
   ],
   "requirements": [
     {
@@ -114,5 +126,24 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "clojure",
+        "cmake",
+        "pkg-config",
+        "vim"
+      ],
+      "dependencies": [
+        "icu4c",
+        "libzip",
+        "curl",
+        "libffi",
+        "glib",
+        "pcre",
+        "webkitgtk"
+      ]
+    }
+  }
 }

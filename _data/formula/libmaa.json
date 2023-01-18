@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/dict/libmaa/libmaa-1.4.7/libmaa-1.4.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4e01a9ebc5d96bc9284b6706aa82bddc2a11047fa9bd02e94cf8753ec7dcb98e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmaa/blobs/sha256:25c0b4572fe7bf62814749448134d94f4dce1933a3881fe147469a14948243cd",
+          "sha256": "25c0b4572fe7bf62814749448134d94f4dce1933a3881fe147469a14948243cd"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmaa/blobs/sha256:d880dd810a8e28a38d62d420f7e0afd55d8135c19497794697690411b1b42ccd",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmaa/blobs/sha256:39eb7101638dba1cd91aad7b7f33c281cb8b9709ed0bf3709b61a2315cf9f786",
           "sha256": "39eb7101638dba1cd91aad7b7f33c281cb8b9709ed0bf3709b61a2315cf9f786"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmaa/blobs/sha256:52c5ad403f403c0e6bd38ba1dcc1f5fa2f0c4b06cfc06870da085f1ad1ee7c77",
+          "sha256": "52c5ad403f403c0e6bd38ba1dcc1f5fa2f0c4b06cfc06870da085f1ad1ee7c77"
         },
         "monterey": {
           "cellar": ":any",
@@ -60,13 +71,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmaa/blobs/sha256:1ec304723997a8aabf2848900aa5293c560abbebfe2bc293eb40ace2176c148e",
           "sha256": "1ec304723997a8aabf2848900aa5293c560abbebfe2bc293eb40ace2176c148e"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libmaa/blobs/sha256:85484c0740508cbc0c66f738210e832b820b8491469250bca336bdc673aca9c9",
+          "sha256": "85484c0740508cbc0c66f738210e832b820b8491469250bca336bdc673aca9c9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +90,9 @@
     "mk-configure"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

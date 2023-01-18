@@ -11,62 +11,67 @@
   ],
   "desc": "Terminal emulator widget used by GNOME terminal",
   "license": "LGPL-2.0-or-later",
-  "homepage": "https://developer.gnome.org/vte/",
+  "homepage": "https://wiki.gnome.org/Apps/Terminal/VTE",
   "versions": {
-    "stable": "0.64.2",
+    "stable": "0.70.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.gnome.org/sources/vte/0.64/vte-0.64.2.tar.xz",
+      "url": "https://download.gnome.org/sources/vte/0.70/vte-0.70.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4d15b4380de3f564d57eabd006389c407c705df5b0c70030fdcc24971a334d80"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:eb57fde7e74efe6d97f791028d097d55ba00a5226526a95e72f2d4a7c3fc81aa",
+          "sha256": "eb57fde7e74efe6d97f791028d097d55ba00a5226526a95e72f2d4a7c3fc81aa"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:4e7eb735689f2f0b583ef2da76125c32cc93f150e777c910f4b9347eee249b91",
+          "sha256": "4e7eb735689f2f0b583ef2da76125c32cc93f150e777c910f4b9347eee249b91"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:805b98e4a5b77ac8385fdf15c555bdbc6cfa19fa586e140d7f030366c80b1f69",
-          "sha256": "805b98e4a5b77ac8385fdf15c555bdbc6cfa19fa586e140d7f030366c80b1f69"
+          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:0c5e8fb9555270b2309158bcd1d36f3b6ae7c37da4e7e490c9de9943542652f8",
+          "sha256": "0c5e8fb9555270b2309158bcd1d36f3b6ae7c37da4e7e490c9de9943542652f8"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:1b6bea826a7256dbd44d3d0de6cbeef078280aff9e308bfb48eba7b529db419c",
+          "sha256": "1b6bea826a7256dbd44d3d0de6cbeef078280aff9e308bfb48eba7b529db419c"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:3967df10f8100cc5a5e99f740b6cade8d3f58fcb9589cc974fd6292a60a2fa4e",
-          "sha256": "3967df10f8100cc5a5e99f740b6cade8d3f58fcb9589cc974fd6292a60a2fa4e"
+          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:6a2a1442d72544d7a10e252ac1c9673bb9fa4a096d0f3725e56671d2511cbf83",
+          "sha256": "6a2a1442d72544d7a10e252ac1c9673bb9fa4a096d0f3725e56671d2511cbf83"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:80db6f9c0b62cd99beaf9eaadde7be8cfe3c09a54eb9b385bd103891d7a12af8",
-          "sha256": "80db6f9c0b62cd99beaf9eaadde7be8cfe3c09a54eb9b385bd103891d7a12af8"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:ad7a7e195ce43afdf30eff81f83e606b79e78db8e6ed39f0370ef34ebeeb39e4",
-          "sha256": "ad7a7e195ce43afdf30eff81f83e606b79e78db8e6ed39f0370ef34ebeeb39e4"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:2404d321dc1eb3e61c5f6282c214395beae288e97ae62d6d6b5afe3edd9b7adf",
-          "sha256": "2404d321dc1eb3e61c5f6282c214395beae288e97ae62d6d6b5afe3edd9b7adf"
+          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:217e5ae3fea4e1dcd2b0ed48f4624c4c84236f4a364f03e62759eacc402ba81c",
+          "sha256": "217e5ae3fea4e1dcd2b0ed48f4624c4c84236f4a364f03e62759eacc402ba81c"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:fb813f9bc1317086d4e1374aa003f0796084aeabc85fa077a40e0a785b877a54",
-          "sha256": "fb813f9bc1317086d4e1374aa003f0796084aeabc85fa077a40e0a785b877a54"
+          "url": "https://ghcr.io/v2/homebrew/core/vte3/blobs/sha256:b1ec1d73d262b8dc6a92d14da66b1889391079302fc45ea1dbb61562c0266d99",
+          "sha256": "b1ec1d73d262b8dc6a92d14da66b1889391079302fc45ea1dbb61562c0266d99"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,7 +86,11 @@
     "gettext",
     "gnutls",
     "gtk+3",
+    "icu4c",
     "pcre2"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +127,25 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "gobject-introspection",
+        "meson",
+        "ninja",
+        "pkg-config",
+        "vala",
+        "linux-headers@5.15"
+      ],
+      "dependencies": [
+        "gettext",
+        "gnutls",
+        "gtk+3",
+        "icu4c",
+        "pcre2",
+        "systemd"
+      ]
+    }
+  }
 }

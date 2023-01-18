@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Enigma-Game/Enigma/releases/download/1.30/Enigma-1.30-src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ae64b91fbc2b10970071d0d78ed5b4ede9ee3868de2e6e9569546fc58437f8af"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/enigma/blobs/sha256:29d4ab1fe62d50bf1ff571784ce4f58bfc52bfdf1dc5c745566a59220ec0dda4",
+          "sha256": "29d4ab1fe62d50bf1ff571784ce4f58bfc52bfdf1dc5c745566a59220ec0dda4"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/enigma/blobs/sha256:d03595cec1ddb59025fcecbf6888f4aa111ea3109248dad844afff91da8589cc",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/enigma/blobs/sha256:5b867b942c96de07f01505e2208cf578f744425346ba180e96ba3d569c4cc15c",
           "sha256": "5b867b942c96de07f01505e2208cf578f744425346ba180e96ba3d569c4cc15c"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/enigma/blobs/sha256:e5e1f7aa32037bc31bd4288b93039efb05f70da1558890f413dd6fa2d0a07c83",
+          "sha256": "e5e1f7aa32037bc31bd4288b93039efb05f70da1558890f413dd6fa2d0a07c83"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "sdl2_mixer",
     "sdl2_ttf",
     "xerces-c"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -117,5 +130,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

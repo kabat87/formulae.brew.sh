@@ -13,60 +13,70 @@
   "license": "BSD-3-Clause",
   "homepage": "http://www.epicsol.org/",
   "versions": {
-    "stable": "2.1.6",
+    "stable": "2.1.12",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION/epic5-2.1.6.tar.xz",
+      "url": "http://ftp.epicsol.org/pub/epic/EPIC5-PRODUCTION/epic5-2.1.12.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c89ae4fc014ddcf0084b748e22f47b46a85ab1ac9bf0b22560360ba8626b6da6"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:5209a0e6fb595e179556ec87ecb8ba080fe8802b6ff9d829775177fda5aab632",
+          "sha256": "5209a0e6fb595e179556ec87ecb8ba080fe8802b6ff9d829775177fda5aab632"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:a840f83399674d45b45c29bd41cbaf6a901779e33226c83cc4d71e08cbc93ec6",
-          "sha256": "a840f83399674d45b45c29bd41cbaf6a901779e33226c83cc4d71e08cbc93ec6"
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:a79602d8312fd7f4d9ed1cd5943ebf896900b33217e9d22e186644b8d434dd65",
+          "sha256": "a79602d8312fd7f4d9ed1cd5943ebf896900b33217e9d22e186644b8d434dd65"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:5139ccc0ee27332891de4634edccab4b74d39c0a65b9bac8034c4f76ae8dc8be",
-          "sha256": "5139ccc0ee27332891de4634edccab4b74d39c0a65b9bac8034c4f76ae8dc8be"
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:59f284a1e7e852f151c02ac16a64ac23fff0a8018736e9db42108dfe4481c515",
+          "sha256": "59f284a1e7e852f151c02ac16a64ac23fff0a8018736e9db42108dfe4481c515"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:bae652c9a1a9dfa1e428fdba9b6e6c87f3d32669220be7b27989710129292cda",
+          "sha256": "bae652c9a1a9dfa1e428fdba9b6e6c87f3d32669220be7b27989710129292cda"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:e91fcbf5d7cc3af521719f0172836dab56634f0f7a8c52854343d38151e11f04",
-          "sha256": "e91fcbf5d7cc3af521719f0172836dab56634f0f7a8c52854343d38151e11f04"
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:0eb4696dd63599841100cb9dc9d3d3c7da7535d53d576efb787e72accb73180e",
+          "sha256": "0eb4696dd63599841100cb9dc9d3d3c7da7535d53d576efb787e72accb73180e"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:e34de29881ed577de6ffbc5fdec471f59707c4e6a91bce1f453656d93612c37f",
-          "sha256": "e34de29881ed577de6ffbc5fdec471f59707c4e6a91bce1f453656d93612c37f"
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:bd772ddbdb174d0b6e9b469c05f2ae6ed356ef05239dd81becc7b3f46600d2d3",
+          "sha256": "bd772ddbdb174d0b6e9b469c05f2ae6ed356ef05239dd81becc7b3f46600d2d3"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:882c365f9c32d24c729464e83b399a35d4620944bffc5732cc21bff52751836f",
-          "sha256": "882c365f9c32d24c729464e83b399a35d4620944bffc5732cc21bff52751836f"
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:946b9c949126dc8a77f6d3ac1e79a03873b71bcb00d561684c9af8c29ecdd12b",
+          "sha256": "946b9c949126dc8a77f6d3ac1e79a03873b71bcb00d561684c9af8c29ecdd12b"
         },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:1ddec44e5b0af07dd5a434ebd913c7139a3270cb8bf6a0807eafca9795aa5dc0",
-          "sha256": "1ddec44e5b0af07dd5a434ebd913c7139a3270cb8bf6a0807eafca9795aa5dc0"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/epic5/blobs/sha256:625c386a734ca3cdae4366ac6745633642aa130af22773050320202f1804c4e3",
+          "sha256": "625c386a734ca3cdae4366ac6745633642aa130af22773050320202f1804c4e3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,7 +84,10 @@
 
   ],
   "dependencies": [
-    "openssl@1.1"
+    "openssl@3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -83,7 +96,8 @@
 
   ],
   "uses_from_macos": [
-
+    "libxcrypt",
+    "ncurses"
   ],
   "requirements": [
 
@@ -103,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

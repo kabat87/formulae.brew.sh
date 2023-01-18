@@ -13,15 +13,16 @@
   "license": "MPL-2.0",
   "homepage": "https://kampfkarren.github.io/selene",
   "versions": {
-    "stable": "0.15.0",
+    "stable": "0.24.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/Kampfkarren/selene/archive/0.15.0.tar.gz",
+      "url": "https://github.com/Kampfkarren/selene/archive/0.24.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "136700c26dff0fc1e6219fd089a0a98578dc00d681a8e4fd5e494466abcd3a39"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:74278a032b89a8f0d28b1a8285287b78e773f1d31a02afe61ca0b2b249df785c",
+          "sha256": "74278a032b89a8f0d28b1a8285287b78e773f1d31a02afe61ca0b2b249df785c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:77f3b05dbba2541abd3c6e68080dd063ade95a516986e90944186b7c0a9b189a",
-          "sha256": "77f3b05dbba2541abd3c6e68080dd063ade95a516986e90944186b7c0a9b189a"
+          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:1756d3883eaebf1458f83e19b46421e3e6de79e7bf86b837b52d07c5f2497991",
+          "sha256": "1756d3883eaebf1458f83e19b46421e3e6de79e7bf86b837b52d07c5f2497991"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:8ee0c7b082a27b6ba4f340e56fa5155b19820a70b559befea0f2aade51fe4a3b",
-          "sha256": "8ee0c7b082a27b6ba4f340e56fa5155b19820a70b559befea0f2aade51fe4a3b"
+          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:87f0bd65aa6d219360e5797411c3c311230871ba47563e97b44dc965432d0420",
+          "sha256": "87f0bd65aa6d219360e5797411c3c311230871ba47563e97b44dc965432d0420"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:214e7e9b9f665f860288096461e317f91d9e0f0cacc6a220cd64d2b894c041ec",
+          "sha256": "214e7e9b9f665f860288096461e317f91d9e0f0cacc6a220cd64d2b894c041ec"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:0423ac9a94646713c6011117c0039d1d8ad3454bfb6234674787c3cb19682f7a",
-          "sha256": "0423ac9a94646713c6011117c0039d1d8ad3454bfb6234674787c3cb19682f7a"
+          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:0d27b771f6125c46ba4ed88981aa77eddee67d535450bfb4d38344476253c564",
+          "sha256": "0d27b771f6125c46ba4ed88981aa77eddee67d535450bfb4d38344476253c564"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:5c88363d87b5b92366e4f06c5cafd4ba5a4b5a40d910fe89fab1c9cffbe8968c",
-          "sha256": "5c88363d87b5b92366e4f06c5cafd4ba5a4b5a40d910fe89fab1c9cffbe8968c"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:5c62786dbafe6f0344bb2a31025a04ac63b30f088215ab55fd49130e95bbad08",
-          "sha256": "5c62786dbafe6f0344bb2a31025a04ac63b30f088215ab55fd49130e95bbad08"
+          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:3884763fdc134be0d358f2b9d4cfb232d0f50c8d47ced03ace9faa4414cb8fe7",
+          "sha256": "3884763fdc134be0d358f2b9d4cfb232d0f50c8d47ced03ace9faa4414cb8fe7"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:b5501bc2e2f231c1b5b45fabb41f01e8c28fff8d48a0413f8e40e8e90723b05e",
-          "sha256": "b5501bc2e2f231c1b5b45fabb41f01e8c28fff8d48a0413f8e40e8e90723b05e"
+          "url": "https://ghcr.io/v2/homebrew/core/selene/blobs/sha256:d6c6c4712887a6f7fab3d7c4a7c63de817b699f7c2f6eda7ea759aeb13c7a27b",
+          "sha256": "d6c6c4712887a6f7fab3d7c4a7c63de817b699f7c2f6eda7ea759aeb13c7a27b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,7 +79,10 @@
     "rust"
   ],
   "dependencies": [
-    "openssl@1.1"
+
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "rust",
+        "pkg-config"
+      ]
+    }
+  }
 }

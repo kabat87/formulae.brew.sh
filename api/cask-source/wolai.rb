@@ -1,13 +1,9 @@
 cask "wolai" do
-  arch = Hardware::CPU.intel? ? "" : "-arm64"
+  arch arm: "-arm64"
 
-  version "1.1.3"
-
-  if Hardware::CPU.intel?
-    sha256 "46cb51fb18901fb5cfd7ae99bb9968f6f638ee0bf54d4916e09bc03a46ba79ec"
-  else
-    sha256 "f93c0ad0ee63b0f80aa5d2632dc49255eb4ef06369f8e40e2e5dc10515b260ec"
-  end
+  version "1.2.5"
+  sha256 arm:   "c0bec35d6d1bc8ea21a2cf9bd7c131599c8c6dd5fbbd5ca63b1a1485e09362a8",
+         intel: "9bfb86a832c6b1c4dc6b6b70c00186633cfa0dd617b655c7c0e34096c268937c"
 
   url "https://cdn.wostatic.cn/dist/installers/wolai-#{version}#{arch}.dmg",
       verified: "cdn.wostatic.cn/dist/installers/"
@@ -19,6 +15,8 @@ cask "wolai" do
     url "https://static2.wolai.com/dist/installers/latest-mac.yml"
     strategy :electron_builder
   end
+
+  auto_updates true
 
   app "wolai.app"
 

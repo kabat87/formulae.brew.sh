@@ -1,10 +1,15 @@
 cask "diskmaker-x" do
-  if MacOS.version <= :mojave
+  on_mojave :or_older do
     version "8.0.3"
     sha256 "79b490dc829775450aafadeddd0afc58bdcef9c60fc82d9db1427c51b57e88a7"
 
     app "DiskMaker X #{version.major} for macOS Mojave.app"
-  else
+
+    livecheck do
+      skip "Legacy version"
+    end
+  end
+  on_catalina :or_newer do
     version "9.0"
     sha256 "96845cd375543401b822fb4e17d2ecc300fcb621f56afcdad613ae11c9afddce"
 
@@ -12,7 +17,6 @@ cask "diskmaker-x" do
 
     livecheck do
       url "https://diskmakerx.com/"
-      strategy :page_match
       regex(/DiskMaker\s*X\s*(\d+(?:\.\d+)+)/i)
     end
   end
@@ -21,6 +25,4 @@ cask "diskmaker-x" do
   name "DiskMaker X"
   desc "Tool to build a system install disk"
   homepage "https://diskmakerx.com/"
-
-  depends_on macos: ">= :yosemite"
 end

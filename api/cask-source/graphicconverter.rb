@@ -1,6 +1,6 @@
 cask "graphicconverter" do
-  version "11.5.5,5314"
-  sha256 "91ad56e4e7645946313333b9ce78c5216d8e1fadf2a013f256b9e92adbc0e670"
+  version "11.7,5629"
+  sha256 "ad0ab04aace8b40fc53eeca5fa823c7fbe1e796c08cbaeaa88998be38445694b"
 
   url "https://www.lemkesoft.info/files/graphicconverter/gc#{version.major}_build#{version.csv.second}.zip",
       verified: "lemkesoft.info/"
@@ -8,9 +8,13 @@ cask "graphicconverter" do
   desc "For browsing, enhancing and converting images"
   homepage "https://www.lemkesoft.de/en/products/graphicconverter/"
 
+  # The Sparkle feed can contain items on the "beta" channel, so we restrict
+  # matching to the default channel.
   livecheck do
     url "https://www.lemkesoft.info/sparkle/graphicconverter/graphicconverter#{version.major}.xml"
-    strategy :sparkle
+    strategy :sparkle do |items|
+      items.find { |item| item.channel.nil? }&.nice_version
+    end
   end
 
   auto_updates true

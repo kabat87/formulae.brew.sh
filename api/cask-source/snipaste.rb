@@ -1,6 +1,6 @@
 cask "snipaste" do
-  version "2.7.1-Beta"
-  sha256 "c26d93f499229ebd14a19cd036028a7b3d4f34a28486cd080a2adb7e415bf90f"
+  version "2.8.3-Beta2"
+  sha256 "34828092963044681664e7178599e9668298a3bec8f34187b2fcb20642310820"
 
   url "https://bitbucket.org/liule/snipaste/downloads/Snipaste-#{version}.dmg",
       verified: "bitbucket.org/liule/snipaste/"
@@ -19,5 +19,8 @@ cask "snipaste" do
 
   uninstall quit: "com.Snipaste"
 
-  zap trash: "~/Library/Preferences/com.Snipaste.plist"
+  zap trash: [
+    "~/.snipaste/",
+    "~/Library/Preferences/com.Snipaste.plist",
+  ]
 end

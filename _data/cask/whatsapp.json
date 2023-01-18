@@ -7,31 +7,35 @@
   ],
   "desc": "Desktop client for WhatsApp",
   "homepage": "https://www.whatsapp.com/",
-  "url": "https://web.whatsapp.com/desktop/mac/files/release-2.2149.4.zip",
+  "url": "https://web.whatsapp.com/desktop/mac/files/release-2.2246.10.zip",
   "appcast": null,
-  "version": "2.2149.4",
+  "version": "2.2246.10",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "094c67f08762e52b3f98b7011267d9e8ad37581ecae2f0d761e0dbd77c425bca",
+  "sha256": "62ef98bbf67dad707c5a3cfe9a946ae7b49eb251f13693a0f50718900d7cf3fe",
   "artifacts": [
-    [
-      "WhatsApp.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/WhatsApp",
-        "~/Library/Application Support/WhatsApp.ShipIt",
-        "~/Library/Caches/WhatsApp",
-        "~/Library/Caches/WhatsApp.ShipIt",
-        "~/Library/Preferences/ByHost/WhatsApp.ShipIt.*.plist",
-        "~/Library/Preferences/WhatsApp.plist",
-        "~/Library/Preferences/WhatsApp-Helper.plist",
-        "~/Library/Saved Application State/WhatsApp.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "WhatsApp.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/WhatsApp",
+            "~/Library/Application Support/WhatsApp.ShipIt",
+            "~/Library/Caches/WhatsApp",
+            "~/Library/Caches/WhatsApp.ShipIt",
+            "~/Library/Preferences/ByHost/WhatsApp.ShipIt.*.plist",
+            "~/Library/Preferences/WhatsApp.plist",
+            "~/Library/Preferences/WhatsApp-Helper.plist",
+            "~/Library/Saved Application State/WhatsApp.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +47,7 @@
     ]
   },
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

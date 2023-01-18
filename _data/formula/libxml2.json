@@ -13,58 +13,59 @@
   "license": "MIT",
   "homepage": "http://xmlsoft.org/",
   "versions": {
-    "stable": "2.9.12",
+    "stable": "2.10.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://xmlsoft.org/sources/libxml2-2.9.12.tar.gz",
+      "url": "https://download.gnome.org/sources/libxml2/2.10/libxml2-2.10.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5d2cc3d78bec3dbe212a9d7fa629ada25a7da928af432c93060ff5c17ee28a9c"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:a708bd03acce240aed84cf429ccb2af3bc6605bd728fc225dfb76ba47b93878f",
+          "sha256": "a708bd03acce240aed84cf429ccb2af3bc6605bd728fc225dfb76ba47b93878f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:b279b3fe83d85482b13607b051188b256ee9382ffec26230d42fdbb1f96642ae",
-          "sha256": "b279b3fe83d85482b13607b051188b256ee9382ffec26230d42fdbb1f96642ae"
+          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:0d9e841c5e2713a739abec51f3404d158348454cdcb7f5134b4e31ed51fd3f53",
+          "sha256": "0d9e841c5e2713a739abec51f3404d158348454cdcb7f5134b4e31ed51fd3f53"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:a08e1ca1be7f5d1b1cf4eee4efabf906fb59fec8422292fe124002aa98d11540",
-          "sha256": "a08e1ca1be7f5d1b1cf4eee4efabf906fb59fec8422292fe124002aa98d11540"
+          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:a2dc1f53bda46e711a62f252ed6090746e7ce92a56656945401bc7f291fe0433",
+          "sha256": "a2dc1f53bda46e711a62f252ed6090746e7ce92a56656945401bc7f291fe0433"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:e98c021d5e43e40ca2f88fe5628da02408282b8e7cf0e7a2f0b6625c309b1433",
+          "sha256": "e98c021d5e43e40ca2f88fe5628da02408282b8e7cf0e7a2f0b6625c309b1433"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:f03e58ff77808c951c61fa10465965a9f71e94e1da8b850d70c335a8f3b9fc12",
-          "sha256": "f03e58ff77808c951c61fa10465965a9f71e94e1da8b850d70c335a8f3b9fc12"
+          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:33abb9294868acf28859d95d45ba1c962423c1863bd52ae3d4e5f340bca1d733",
+          "sha256": "33abb9294868acf28859d95d45ba1c962423c1863bd52ae3d4e5f340bca1d733"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:fbc422ede343b2bd4047ccdf2f697430da636b66fc550697a2f921b97cebe18f",
-          "sha256": "fbc422ede343b2bd4047ccdf2f697430da636b66fc550697a2f921b97cebe18f"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:eb2c8a444b4cf1f09e35c23b91e7cc16c11bc63527bfc3e19a4442e41cfd4b4d",
-          "sha256": "eb2c8a444b4cf1f09e35c23b91e7cc16c11bc63527bfc3e19a4442e41cfd4b4d"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:cf7b2b2ddb047582b9fb5c649d76ab6d4025ea328dff5ad22bcc4d929a8730ff",
-          "sha256": "cf7b2b2ddb047582b9fb5c649d76ab6d4025ea328dff5ad22bcc4d929a8730ff"
+          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:614e1c3cb83710861357deae2bc3ec16eeac9b3a27387d6a1c366f1c24a218cc",
+          "sha256": "614e1c3cb83710861357deae2bc3ec16eeac9b3a27387d6a1c366f1c24a218cc"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:28c0f1b5ed535d8ac6ae60d8ecde883605ed21691ad89be8869d47427a44b7a2",
-          "sha256": "28c0f1b5ed535d8ac6ae60d8ecde883605ed21691ad89be8869d47427a44b7a2"
+          "url": "https://ghcr.io/v2/homebrew/core/libxml2/blobs/sha256:c707815a1730c8e83bea251ca7d95f027bd5e8f4914ad17f84df268a4582272b",
+          "sha256": "c707815a1730c8e83bea251ca7d95f027bd5e8f4914ad17f84df268a4582272b"
         }
       }
     }
@@ -74,15 +75,23 @@
     "reason": ":provided_by_macos",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
+    "python@3.10",
+    "python@3.11",
     "python@3.9"
   ],
   "dependencies": [
+    "icu4c",
     "readline"
+  ],
+  "test_dependencies": [
+    "python@3.10",
+    "python@3.11",
+    "python@3.9",
+    "pkg-config"
   ],
   "recommended_dependencies": [
 
@@ -111,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

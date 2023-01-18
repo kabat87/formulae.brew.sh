@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.bernhard-baehr.de/sleepwatcher_2.2.1.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4bf1656702167871141fbc119a844d1363d89994e1a67027f0e773023ae9643e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sleepwatcher/blobs/sha256:009536d9992206c912bd778ca8a596cd56915d900ea30f5db94c5ff48cec6c92",
+          "sha256": "009536d9992206c912bd778ca8a596cd56915d900ea30f5db94c5ff48cec6c92"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/sleepwatcher/blobs/sha256:84f1c692fe19acb2929dd41746c3a184efb36146039b3b9c4554a4ca7a3e0d55",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/sleepwatcher/blobs/sha256:01c66d5808a4c8defb52bb8c9acf2584dbe542940bf758a53cae0c4d68229c3e",
           "sha256": "01c66d5808a4c8defb52bb8c9acf2584dbe542940bf758a53cae0c4d68229c3e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/sleepwatcher/blobs/sha256:b85e0d84e33f248cfd9315efbfe6789886b4e65eafb82eed4f727aea18c49a84",
+          "sha256": "b85e0d84e33f248cfd9315efbfe6789886b4e65eafb82eed4f727aea18c49a84"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

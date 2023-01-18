@@ -7,50 +7,59 @@
   ],
   "desc": "Flash tool for microcontrollers",
   "homepage": "https://www.ti.com/tool/UNIFLASH",
-  "url": "https://downloads.ti.com/ccs/esd/uniflash/uniflash_sl.6.4.0.3394.dmg",
+  "url": "https://dr-download.ti.com/software-development/software-programming-tool/MD-QeJBJLj8gq/8.1.1/uniflash_sl.8.1.1.4146.dmg",
   "appcast": null,
-  "version": "6.4.0.3394",
+  "version": "8.1.1.4146",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8ddb6990b78fa40d293effd471ba8850613a2ae2997e87b8d9863ccba172d43a",
+  "sha256": "723c810548da724a60e85aa218354cde2144b3271a7e91e77e3a94230c11e603",
   "artifacts": [
-    "preflight (Preflight Block)",
     {
-      "script": {
-        "executable": "/Applications/TI/UniFlash/uninstall.app/Contents/MacOS/installbuilder.sh",
-        "args": [
-          "--mode",
-          "unattended"
-        ],
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      exec '/Applications/TI/UniFlash/dslite.sh' \"$@\"\n    EOS\n  end\n"
     },
     {
-      "path": "uniflash_sl.6.4.0.3394.app/Contents/MacOS/installbuilder.sh",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "false",
-        "args": [
-          "--mode",
-          "unattended",
-          "--prefix",
-          "/Applications/TI/UniFlash"
-        ],
-        "print_stdout": "true"
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "/Applications/TI/UniFlash/uninstall.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    [
-      "$(brew --prefix)/Caskroom/uniflash/6.4.0.3394/dslite"
-    ]
+    {
+      "installer": [
+        {
+          "script": {
+            "executable": "uniflash_sl.8.1.1.4146.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended",
+              "--prefix",
+              "/Applications/TI/UniFlash"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/uniflash/8.1.1.4146/dslite"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

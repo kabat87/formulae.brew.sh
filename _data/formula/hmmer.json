@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://eddylab.org/software/hmmer/hmmer-3.3.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "92fee9b5efe37a5276352d3502775e7c46e9f7a0ee45a331eacb2a0cac713c69"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/hmmer/blobs/sha256:0663d641b8c378d675b29c085eac9473db9c043a23193c46ae109316c5aced17",
+          "sha256": "0663d641b8c378d675b29c085eac9473db9c043a23193c46ae109316c5aced17"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hmmer/blobs/sha256:85399c5d79f4d97c5e1755688bc29ce31985a6a489d8c859a5e080e5a564ad98",
@@ -61,7 +67,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,6 +74,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -98,5 +106,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/zile/zile-2.6.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "77eb7daff3c98bdc88daa1ac040dccca72b81dc32fc3166e079dd7a63e42c741"
     }
   },
   "revision": 0,
@@ -31,10 +32,25 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/zile/blobs/sha256:1268429ea4818cca64c876e674d4995fc7d04712b7830c846d0132bc3fabf965",
+          "sha256": "1268429ea4818cca64c876e674d4995fc7d04712b7830c846d0132bc3fabf965"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/zile/blobs/sha256:2fbea44ef3130aff7733469b94bc24e75978bdb5cf8858e848a9bc23c1ddd97e",
+          "sha256": "2fbea44ef3130aff7733469b94bc24e75978bdb5cf8858e848a9bc23c1ddd97e"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/zile/blobs/sha256:2975be9af2cd9d330bcf85dc81f9f74b2f30d17972e987db3fd225212b0483ff",
           "sha256": "2975be9af2cd9d330bcf85dc81f9f74b2f30d17972e987db3fd225212b0483ff"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/zile/blobs/sha256:115e3fd1f729eaa56b32f2ca64b7d9c6835643692f6a8ed73940f9ff2b09e08c",
+          "sha256": "115e3fd1f729eaa56b32f2ca64b7d9c6835643692f6a8ed73940f9ff2b09e08c"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -66,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,6 +93,9 @@
     "bdw-gc",
     "glib",
     "libgee"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

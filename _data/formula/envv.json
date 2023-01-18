@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jakewendt/envv/archive/v1.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1db05b46904e0cc4d777edf3ea14665f6157ade0567359e28663b5b00f6fa59a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/envv/blobs/sha256:e2d47b445c7d02827f54b9cfd3341e2646d10f0156a9dcf27d7745988b1e4497",
+          "sha256": "e2d47b445c7d02827f54b9cfd3341e2646d10f0156a9dcf27d7745988b1e4497"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/envv/blobs/sha256:023e55714270ba7a388b290d867a4fd334a962b33f4bd9d0ed8de513ad7c034b",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/envv/blobs/sha256:21e6f6e3c94dd0f14178ba1d5a53317bf1a6bf269762b5b79d9f93eff1ae3f00",
           "sha256": "21e6f6e3c94dd0f14178ba1d5a53317bf1a6bf269762b5b79d9f93eff1ae3f00"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/envv/blobs/sha256:ab99488e9001da3147d116a80bc6f7235b60f6ca348587e573b92d20f88149aa",
+          "sha256": "ab99488e9001da3147d116a80bc6f7235b60f6ca348587e573b92d20f88149aa"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/envv/blobs/sha256:3b2fb0b35749280461b3982797ceea34bfa42d63cb5c6547986cf106669ee744",
           "sha256": "3b2fb0b35749280461b3982797ceea34bfa42d63cb5c6547986cf106669ee744"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/envv/blobs/sha256:90a718606ec61e5a0e494d3e41b7d87048de803567f4ba2c65231fe41880bd97",
-          "sha256": "90a718606ec61e5a0e494d3e41b7d87048de803567f4ba2c65231fe41880bd97"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/envv/blobs/sha256:9cb0c8481042567e17ff04b7d5dd3cc46fccbc0e321203770791588fc51d11b7",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

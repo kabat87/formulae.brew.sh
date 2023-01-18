@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/minidjvu/minidjvu/0.8/minidjvu-0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e9c892e0272ee4e560eaa2dbd16b40719b9797a1fa2749efeb6622f388dfb74a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minidjvu/blobs/sha256:985e67e5358157239fda57613e0b6384bb960b97f39a41664840593da23c75c7",
+          "sha256": "985e67e5358157239fda57613e0b6384bb960b97f39a41664840593da23c75c7"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/minidjvu/blobs/sha256:bb4837b0b0e44a2778ae1cb381f55a4f2eb5af6ae274502e9e7a0d28089c112f",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/minidjvu/blobs/sha256:a0a735a5315eba83afe335cd152f428e292527df6a3d3c0ce06aecc29eb7efc4",
           "sha256": "a0a735a5315eba83afe335cd152f428e292527df6a3d3c0ce06aecc29eb7efc4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minidjvu/blobs/sha256:d1cfde8c870c6d0e421fefcf1e7e2fe2e69495bbc5185c886e19eaeb3ac7a40d",
+          "sha256": "d1cfde8c870c6d0e421fefcf1e7e2fe2e69495bbc5185c886e19eaeb3ac7a40d"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/minidjvu/blobs/sha256:fd6b121a06139dc071c2f7fdcf4731d5becc93350ed92f760c0b11631a985d16",
           "sha256": "fd6b121a06139dc071c2f7fdcf4731d5becc93350ed92f760c0b11631a985d16"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/minidjvu/blobs/sha256:c008144fc38184c5a438ed120b5cd1a009d07b4a8cf759bfa58955b4b34f6e85",
-          "sha256": "c008144fc38184c5a438ed120b5cd1a009d07b4a8cf759bfa58955b4b34f6e85"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/minidjvu/blobs/sha256:98d5e5eeb3d8e0c3cb1a327c12d0e633c590d683c6fd533a3fdd1758c54d3083",
+          "sha256": "98d5e5eeb3d8e0c3cb1a327c12d0e633c590d683c6fd533a3fdd1758c54d3083"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -98,6 +108,9 @@
   "dependencies": [
     "djvulibre",
     "libtiff"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -126,5 +139,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "djvulibre",
+        "libtiff",
+        "gzip"
+      ]
+    }
+  }
 }

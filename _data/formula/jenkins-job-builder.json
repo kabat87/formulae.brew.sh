@@ -13,65 +13,70 @@
   "license": "Apache-2.0",
   "homepage": "https://docs.openstack.org/infra/jenkins-job-builder/",
   "versions": {
-    "stable": "3.11.0",
+    "stable": "4.1.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/ff/0a/5ed164f5e10ff7841e6f408aaf29eac4a2ca4f5288aaf9cc2d7478d6b1a4/jenkins-job-builder-3.11.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/45/9b/bf0f284d27fd41707d849126b5bac29a1a02919304372a334ed869613318/jenkins-job-builder-4.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e630a5b5da260f8bb92d9ad824550707fb0b3915d8b96a1e24e6a501c8b4f974"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:1db587e3f2322b6b3cf75ab30993008b12e2c4f2c3eab6a9941211b85dc84c2c",
+          "sha256": "1db587e3f2322b6b3cf75ab30993008b12e2c4f2c3eab6a9941211b85dc84c2c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:35c8d22a60495e29b450dfd2220ee6f10aa77aad50bce893bd39a5433c285a6a",
-          "sha256": "35c8d22a60495e29b450dfd2220ee6f10aa77aad50bce893bd39a5433c285a6a"
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:e68aeb1306e7d5b3b07d1e6c6eb4121f11a3306a082250b6da684702fd0f2afb",
+          "sha256": "e68aeb1306e7d5b3b07d1e6c6eb4121f11a3306a082250b6da684702fd0f2afb"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:9ba53ae0b7014810b81813161316c9071c86b82600581ff5a70e24bec9f93fca",
-          "sha256": "9ba53ae0b7014810b81813161316c9071c86b82600581ff5a70e24bec9f93fca"
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:cae82ede6ac57d56ae9f8e507bd890365036fb45bb989f7a829a5241e8a68d35",
+          "sha256": "cae82ede6ac57d56ae9f8e507bd890365036fb45bb989f7a829a5241e8a68d35"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:2a6ccbc82b33735df0e64039044d486ffb5579363eae888146c9a40435513192",
+          "sha256": "2a6ccbc82b33735df0e64039044d486ffb5579363eae888146c9a40435513192"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:5016bc64c99ba56bab09a61065c500bd1ad481f375df0dcffd0e8c80530e3f7f",
-          "sha256": "5016bc64c99ba56bab09a61065c500bd1ad481f375df0dcffd0e8c80530e3f7f"
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:325fc32604dd452eee660da4be8e10d0635cb0c86542b64b0805a54fc09fdf9b",
+          "sha256": "325fc32604dd452eee660da4be8e10d0635cb0c86542b64b0805a54fc09fdf9b"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:110cb98febf8d9ffd03b562cb79f3bf2fa992cb9b036c3e0d74c3a8437e50431",
-          "sha256": "110cb98febf8d9ffd03b562cb79f3bf2fa992cb9b036c3e0d74c3a8437e50431"
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:63042b584656c8f987289298d8723778bab8af7461d118c1cd42f49cf8958f01",
+          "sha256": "63042b584656c8f987289298d8723778bab8af7461d118c1cd42f49cf8958f01"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:37b7ddb8ab5d198557b9d6000ab2d9210e9686f9f37325973a6ecdbd987673e0",
-          "sha256": "37b7ddb8ab5d198557b9d6000ab2d9210e9686f9f37325973a6ecdbd987673e0"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:d4ec72cb626e3fd091c3ba0d077ce28914923e85dc6b23e40978faeef6ade89b",
-          "sha256": "d4ec72cb626e3fd091c3ba0d077ce28914923e85dc6b23e40978faeef6ade89b"
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:dbb9684dc8dce274e52388e7d89b0617e376eb63a2e7cf0aea8d63272cf9679c",
+          "sha256": "dbb9684dc8dce274e52388e7d89b0617e376eb63a2e7cf0aea8d63272cf9679c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:2682dcc83eb3304d98410c8844728d78acf496228c912d2b722c2feea4d7c287",
-          "sha256": "2682dcc83eb3304d98410c8844728d78acf496228c912d2b722c2feea4d7c287"
+          "url": "https://ghcr.io/v2/homebrew/core/jenkins-job-builder/blobs/sha256:d9ebeb0bb6b29520e93048a242bfbce9a241dafa7b8d7d762e243f5cd9ac1dab",
+          "sha256": "d9ebeb0bb6b29520e93048a242bfbce9a241dafa7b8d7d762e243f5cd9ac1dab"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,8 +84,12 @@
 
   ],
   "dependencies": [
-    "python@3.9",
+    "python@3.11",
+    "pyyaml",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +118,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/chbrown/overdrive",
   "versions": {
-    "stable": "2.2.0",
+    "stable": "2.3.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/chbrown/overdrive/archive/2.2.0.tar.gz",
+      "url": "https://github.com/chbrown/overdrive/archive/2.3.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dc64b2c026d328b72e2e8bb0416387ea9ba53a12b45bc77811c12e7725e9e0ec"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/overdrive/blobs/sha256:b521ed34238151360b2c55997d73e19eef47b9a7c52821781f527d69fad1fde2",
-          "sha256": "b521ed34238151360b2c55997d73e19eef47b9a7c52821781f527d69fad1fde2"
+          "url": "https://ghcr.io/v2/homebrew/core/overdrive/blobs/sha256:b698873d3befaf71c5b14d172ca06df202e311c5b6d2f7f285b1749a4b0a1ab1",
+          "sha256": "b698873d3befaf71c5b14d172ca06df202e311c5b6d2f7f285b1749a4b0a1ab1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,6 +51,9 @@
   "dependencies": [
     "tidy-html5"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -59,7 +62,6 @@
   ],
   "uses_from_macos": [
     "curl",
-    "libressl",
     "libxml2"
   ],
   "requirements": [
@@ -80,5 +82,16 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "tidy-html5",
+        "curl",
+        "libxml2",
+        "openssl@1.1",
+        "util-linux"
+      ]
+    }
+  }
 }

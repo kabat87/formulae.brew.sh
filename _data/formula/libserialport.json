@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://sigrok.org/download/source/libserialport/libserialport-0.1.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4a2af9d9c3ff488e92fb75b4ba38b35bcf9b8a66df04773eba2a7bbf1fa7529d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libserialport/blobs/sha256:a098b8aa4d66fea6cdc78e340af45f3e87844075e38e28ccded1bddd3aa6bffb",
+          "sha256": "a098b8aa4d66fea6cdc78e340af45f3e87844075e38e28ccded1bddd3aa6bffb"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libserialport/blobs/sha256:98634bbc472a1c93a19a2dab32765f0f5fce4b9991988283477254f7d7b30085",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libserialport/blobs/sha256:cd674d1a466be43b3783028ca9f794d97ee5ce9c90f080cbbdb7c0479094cb26",
           "sha256": "cd674d1a466be43b3783028ca9f794d97ee5ce9c90f080cbbdb7c0479094cb26"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libserialport/blobs/sha256:775d4354019f534d14f9cec2b95b817e1c64037ea891980d16985fe641980033",
+          "sha256": "775d4354019f534d14f9cec2b95b817e1c64037ea891980d16985fe641980033"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

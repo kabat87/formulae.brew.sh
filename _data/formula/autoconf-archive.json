@@ -13,15 +13,16 @@
   "license": "GPL-3.0",
   "homepage": "https://savannah.gnu.org/projects/autoconf-archive/",
   "versions": {
-    "stable": "2021.02.19",
+    "stable": "2022.09.03",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://ftp.gnu.org/gnu/autoconf-archive/autoconf-archive-2021.02.19.tar.xz",
+      "url": "https://ftp.gnu.org/gnu/autoconf-archive/autoconf-archive-2022.09.03.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e07454f00d8cae7907bed42d0747798927809947684d94c37207a4d63a32f423"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:07da3d145d395749125f2402925fd6995056bf303f9514ed9018cb9140b8d2fd",
+          "sha256": "07da3d145d395749125f2402925fd6995056bf303f9514ed9018cb9140b8d2fd"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:7534edb1ee8fc202616422b29a63001f4b126c3af117759d13cf4d84b20ef580",
-          "sha256": "7534edb1ee8fc202616422b29a63001f4b126c3af117759d13cf4d84b20ef580"
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:07da3d145d395749125f2402925fd6995056bf303f9514ed9018cb9140b8d2fd",
+          "sha256": "07da3d145d395749125f2402925fd6995056bf303f9514ed9018cb9140b8d2fd"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:7d26fd3151dd3c363c91ea3c507d3c7dab579b906cf610d37c944abce78cc42a",
-          "sha256": "7d26fd3151dd3c363c91ea3c507d3c7dab579b906cf610d37c944abce78cc42a"
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:07da3d145d395749125f2402925fd6995056bf303f9514ed9018cb9140b8d2fd",
+          "sha256": "07da3d145d395749125f2402925fd6995056bf303f9514ed9018cb9140b8d2fd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68",
+          "sha256": "e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:e520c12e6203011dcfd64fbb7119235a1f99cf8a0e8717bd6142d9f005f64b62",
-          "sha256": "e520c12e6203011dcfd64fbb7119235a1f99cf8a0e8717bd6142d9f005f64b62"
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68",
+          "sha256": "e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:c86fcd19fecc5c52847daebba5f81c768eb2d1c3f80cc3f8bee7ef1d0eb6e08c",
-          "sha256": "c86fcd19fecc5c52847daebba5f81c768eb2d1c3f80cc3f8bee7ef1d0eb6e08c"
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68",
+          "sha256": "e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:5eebb7b244cba512dc9ebb16d6ec6743d7c3859079af58213027adbdad6807de",
-          "sha256": "5eebb7b244cba512dc9ebb16d6ec6743d7c3859079af58213027adbdad6807de"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:d2957cc212b85b0627cfb70760d7ab7d18dd984d838f9b62f8267b09220831ac",
-          "sha256": "d2957cc212b85b0627cfb70760d7ab7d18dd984d838f9b62f8267b09220831ac"
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68",
+          "sha256": "e7e7b1edebfa9d71d86a1885139b5271986eaddb691f5a5b826337910595fe68"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:7534edb1ee8fc202616422b29a63001f4b126c3af117759d13cf4d84b20ef580",
-          "sha256": "7534edb1ee8fc202616422b29a63001f4b126c3af117759d13cf4d84b20ef580"
+          "url": "https://ghcr.io/v2/homebrew/core/autoconf-archive/blobs/sha256:1e8d9592853fb11e37c161cf4eba16e4ba34b1720ac61d016793ca5ab7d34e19",
+          "sha256": "1e8d9592853fb11e37c161cf4eba16e4ba34b1720ac61d016793ca5ab7d34e19"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +85,9 @@
   ],
   "dependencies": [
     "autoconf"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

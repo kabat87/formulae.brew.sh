@@ -1,6 +1,6 @@
 cask "acorn" do
-  version "7.1.2,15994"
-  sha256 "6c8ba460da21798b952988ee8fdae6cbcbebf56ac137fa9b0a618b8ecc405641"
+  version "7.3.1,16186"
+  sha256 "28afce73853d500737d84cfb4689c6130ead29b217ff65535e1d008f29687ee5"
 
   url "https://flyingmeat.com/download/Acorn-#{version.csv.first}.zip"
   name "Acorn"
@@ -13,6 +13,7 @@ cask "acorn" do
   end
 
   auto_updates true
+  depends_on macos: ">= :mojave"
 
   app "Acorn.app"
 

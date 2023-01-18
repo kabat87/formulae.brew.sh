@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/picoc/picoc-2.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bfed355fab810b337ccfa9e3215679d0b9886c00d9cb5e691f7e7363fd388b7e"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/picoc/blobs/sha256:37c038b18d6e2dd02636901429fabaced73eb533eb1254e06bb3a74f53906a66",
+          "sha256": "37c038b18d6e2dd02636901429fabaced73eb533eb1254e06bb3a74f53906a66"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/picoc/blobs/sha256:4a572c33c2dc1b913132786154a5013d4c380bd1dcc5d64a696071ccb15b2589",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/picoc/blobs/sha256:b39c116bb09cdd9f91143aaf9c928feadac8b281807e06ab87c4ca2992c13ec4",
           "sha256": "b39c116bb09cdd9f91143aaf9c928feadac8b281807e06ab87c4ca2992c13ec4"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/picoc/blobs/sha256:9237788f85a665a1e368d6cae408450ea66ae3ad8c0fedcf3fc659ceab88f73c",
+          "sha256": "9237788f85a665a1e368d6cae408450ea66ae3ad8c0fedcf3fc659ceab88f73c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -65,13 +76,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/picoc/blobs/sha256:5b2c6a5c8c3404cbd75b4b0e1c6f6cbf1be0246ca0b3d1df70d78a6785e51711",
           "sha256": "5b2c6a5c8c3404cbd75b4b0e1c6f6cbf1be0246ca0b3d1df70d78a6785e51711"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/picoc/blobs/sha256:dbc930c96079c197b124afefbcf14153ad4435e9ff95d42753348778f6efb85e",
+          "sha256": "dbc930c96079c197b124afefbcf14153ad4435e9ff95d42753348778f6efb85e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +126,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "readline"
+      ]
+    }
+  }
 }

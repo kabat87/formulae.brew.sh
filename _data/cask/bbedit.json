@@ -7,69 +7,87 @@
   ],
   "desc": "Text, code, and markup editor",
   "homepage": "https://www.barebones.com/products/bbedit/",
-  "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_14.0.4.dmg",
+  "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_14.6.2.dmg",
   "appcast": null,
-  "version": "14.0.4",
+  "version": "14.6.2",
   "versions": {
-    "high_sierra": "12.6.7",
-    "sierra": "12.6.7",
-    "el_capitan": "12.1.6",
-    "yosemite": "12.1.6"
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6958194e05948152ecb601fec9272a0b407727a9bce6444f8f4506b1074a41ec",
+  "sha256": "e5805e4b38fb3e27c006cf69f6d759637349f02799cf4963dd61969000f49cba",
   "artifacts": [
-    [
-      "BBEdit.app"
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Helpers/bbedit_tool",
-      {
-        "target": "bbedit"
-      }
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Helpers/bbdiff"
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Helpers/bbfind"
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Helpers/bbresults"
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Resources/bbedit.1"
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Resources/bbdiff.1"
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Resources/bbfind.1"
-    ],
-    [
-      "/Applications/BBEdit.app/Contents/Resources/bbresults.1"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/BBEdit",
-        "~/Library/BBEdit",
-        "~/Library/Caches/com.barebones.bbedit",
-        "~/Library/Preferences/com.barebones.bbedit.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "BBEdit.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/BBEdit.app/Contents/Helpers/bbedit_tool",
+        {
+          "target": "bbedit"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/BBEdit.app/Contents/Helpers/bbdiff"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/BBEdit.app/Contents/Helpers/bbfind"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/BBEdit.app/Contents/Helpers/bbresults"
+      ]
+    },
+    {
+      "manpage": [
+        "/Applications/BBEdit.app/Contents/Resources/bbedit.1"
+      ]
+    },
+    {
+      "manpage": [
+        "/Applications/BBEdit.app/Contents/Resources/bbdiff.1"
+      ]
+    },
+    {
+      "manpage": [
+        "/Applications/BBEdit.app/Contents/Resources/bbfind.1"
+      ]
+    },
+    {
+      "manpage": [
+        "/Applications/BBEdit.app/Contents/Resources/bbresults.1"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/BBEdit",
+            "~/Library/BBEdit",
+            "~/Library/Caches/com.barebones.bbedit",
+            "~/Library/Preferences/com.barebones.bbedit.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "10.15"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

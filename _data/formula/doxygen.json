@@ -11,62 +11,67 @@
   ],
   "desc": "Generate documentation for several programming languages",
   "license": "GPL-2.0-only",
-  "homepage": "https://www.doxygen.org/",
+  "homepage": "https://www.doxygen.nl/",
   "versions": {
-    "stable": "1.9.3",
+    "stable": "1.9.6",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://doxygen.nl/files/doxygen-1.9.3.src.tar.gz",
+      "url": "https://doxygen.nl/files/doxygen-1.9.6.src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "297f8ba484265ed3ebd3ff3fe7734eb349a77e4f95c8be52ed9977f51dea49df"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:ff3b2363de6662c5f02baee6ba7125aa1bfd3063e11e4b7d0ffe95249dbe0e8c",
+          "sha256": "ff3b2363de6662c5f02baee6ba7125aa1bfd3063e11e4b7d0ffe95249dbe0e8c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:4480d3fc744af8e694082acf0f49eb1177efa777b052772dfae462d3d721c0a6",
-          "sha256": "4480d3fc744af8e694082acf0f49eb1177efa777b052772dfae462d3d721c0a6"
+          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:0e27b254a3dff2f8d32bb335115b83d9b2a2c7149b05d9f8aa12548196d11fcc",
+          "sha256": "0e27b254a3dff2f8d32bb335115b83d9b2a2c7149b05d9f8aa12548196d11fcc"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:394d436a05fa82a549ceff74805491fdc789c27a5ae93cfbf42d4990e24e19a5",
-          "sha256": "394d436a05fa82a549ceff74805491fdc789c27a5ae93cfbf42d4990e24e19a5"
+          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:718307b0bbf838d49bca0ab13aeec628c2ecdbb7c45f815fd066468ded4e2c8c",
+          "sha256": "718307b0bbf838d49bca0ab13aeec628c2ecdbb7c45f815fd066468ded4e2c8c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:c87450dc06cd1f3d0f03d9b8c0d10c99b2c3d6547e46456ec69b487aeb0ca08f",
+          "sha256": "c87450dc06cd1f3d0f03d9b8c0d10c99b2c3d6547e46456ec69b487aeb0ca08f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:861eb638fe0f4af8f43f53a0cb4c09ceb154695ff0896e9bab21531b99088a54",
-          "sha256": "861eb638fe0f4af8f43f53a0cb4c09ceb154695ff0896e9bab21531b99088a54"
+          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:74e681c39f442204f0a8826844125c6c44f72d45d6a1722a8eeac1fb0dd9ace9",
+          "sha256": "74e681c39f442204f0a8826844125c6c44f72d45d6a1722a8eeac1fb0dd9ace9"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:0e08a4950256754440a961bbc22829fefeee4778c7b5249e59df0d145d247d47",
-          "sha256": "0e08a4950256754440a961bbc22829fefeee4778c7b5249e59df0d145d247d47"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:e725c473cf26d1f43e2b85bf5859c31f6ea87c9c367153cf85f63b29ce6c318f",
-          "sha256": "e725c473cf26d1f43e2b85bf5859c31f6ea87c9c367153cf85f63b29ce6c318f"
+          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:84f2283441f36a5f8b547326bee5ec9d5e9bdde12e8db4cfbc183003db501c1c",
+          "sha256": "84f2283441f36a5f8b547326bee5ec9d5e9bdde12e8db4cfbc183003db501c1c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:14f8ff5de43df4782711ca36f9d667530f53c6c2c96e396f183e8cc29ab34c53",
-          "sha256": "14f8ff5de43df4782711ca36f9d667530f53c6c2c96e396f183e8cc29ab34c53"
+          "url": "https://ghcr.io/v2/homebrew/core/doxygen/blobs/sha256:254c81f1fde19f4e7c8eb3fa9da389634301e1885de55ef5eb5641d6909c85f7",
+          "sha256": "254c81f1fde19f4e7c8eb3fa9da389634301e1885de55ef5eb5641d6909c85f7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -86,6 +94,9 @@
   "uses_from_macos": [
     {
       "flex": "build"
+    },
+    {
+      "python": "build"
     }
   ],
   "requirements": [
@@ -106,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

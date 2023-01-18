@@ -7,40 +7,46 @@
   ],
   "desc": "Temperature monitoring, fan control and diagnostics",
   "homepage": "https://www.tunabellysoftware.com/tgpro/",
-  "url": "https://www.tunabellysoftware.com/resources/TG%20Pro%202.66.dmg",
+  "url": "https://www.tunabellysoftware.com/resources/TG%20Pro%202.76.dmg",
   "appcast": null,
-  "version": "2.66,13197",
+  "version": "2.76,13841",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d29ff69b4b7520d738830c8f0e8b6c9e1d289c651043baa0540a123c622d7a71",
+  "sha256": "0e434e5a08eb3f2e5f72b2e60b65b6bee9e844ddeece1b1322cec8b2d43a48d5",
   "artifacts": [
-    [
-      "TG Pro.app"
-    ],
     {
-      "trash": [
-        "/Library/LaunchDaemons/com.tunabellysoftware.TGFanHelper.plist",
-        "/Library/PrivilegedHelperTools/com.tunabellysoftware.TGFanHelper",
-        "~/Library/Application Support/TG Pro",
-        "~/Library/Caches/com.tunabellysoftware.tgpro",
-        "~/Library/Cookies/com.tunabellysoftware.tgpro.binarycookies",
-        "~/Library/Preferences/com.tunabellysoftware.tgpro.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "TG Pro.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/LaunchDaemons/com.tunabellysoftware.TGFanHelper.plist",
+            "/Library/PrivilegedHelperTools/com.tunabellysoftware.TGFanHelper",
+            "~/Library/Application Support/TG Pro",
+            "~/Library/Caches/com.tunabellysoftware.tgpro",
+            "~/Library/Cookies/com.tunabellysoftware.tgpro.binarycookies",
+            "~/Library/Preferences/com.tunabellysoftware.tgpro.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.11"
+        "10.12"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -13,65 +13,70 @@
   "license": "LGPL-2.1-or-later",
   "homepage": "https://www.gtkmm.org/",
   "versions": {
-    "stable": "2.36.1",
+    "stable": "2.36.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.1.tar.xz",
+      "url": "https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6f62dd99f746985e573605937577ccfc944368f606a71ca46342d70e1cdae079"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:00058c5e0579838d818c89064001c7389e0df4a0b92148a33cf354cc662eff24",
+          "sha256": "00058c5e0579838d818c89064001c7389e0df4a0b92148a33cf354cc662eff24"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:62a52bf13cb3e8ae0f3de2c22fe5eb99c82e2bfcf70562e7299b81e3b0eb46ab",
-          "sha256": "62a52bf13cb3e8ae0f3de2c22fe5eb99c82e2bfcf70562e7299b81e3b0eb46ab"
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:84e99c11a87b16554bf8a6f3682cad91fe3538afce18acc63cda1fdb8f374f38",
+          "sha256": "84e99c11a87b16554bf8a6f3682cad91fe3538afce18acc63cda1fdb8f374f38"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:82e89f908e2a3cc349c8478eef60d7b755f968d3523f037b8b78ea4edc4031ba",
-          "sha256": "82e89f908e2a3cc349c8478eef60d7b755f968d3523f037b8b78ea4edc4031ba"
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:87202974bb4c7d0e5c7c8ecd3cf049113de10bf2a4df1c76c43effc72b1be682",
+          "sha256": "87202974bb4c7d0e5c7c8ecd3cf049113de10bf2a4df1c76c43effc72b1be682"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:970d410522bd804a3a2a9c846edb941a18a2afee480338ba553461ca380d86da",
+          "sha256": "970d410522bd804a3a2a9c846edb941a18a2afee480338ba553461ca380d86da"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:8d00072e06cb6fa4748cad51217427499ace42f1177e0f1d6bfbb00363329378",
-          "sha256": "8d00072e06cb6fa4748cad51217427499ace42f1177e0f1d6bfbb00363329378"
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:7f98497f232811faec23f3535d1dbb059f8eb6629c83286a72cc0073ffb09d75",
+          "sha256": "7f98497f232811faec23f3535d1dbb059f8eb6629c83286a72cc0073ffb09d75"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:4b147e97566fe8f13c6e72e1d350da5c8bbabe3abb6f4966eec44f227c9fa807",
-          "sha256": "4b147e97566fe8f13c6e72e1d350da5c8bbabe3abb6f4966eec44f227c9fa807"
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:c87d7feef3d12d582873fe0acf9b419dde0d218684b4d9e3a407f8279cd15e43",
+          "sha256": "c87d7feef3d12d582873fe0acf9b419dde0d218684b4d9e3a407f8279cd15e43"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:09b0e72f5d9fd8e2a3328202d8c2b8fc7f896cdd208ab51fa75bb87c79eee53d",
-          "sha256": "09b0e72f5d9fd8e2a3328202d8c2b8fc7f896cdd208ab51fa75bb87c79eee53d"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:a3ed94c51be9ae22f3a3c1d6650ade4037748f2c8602db9b647effd71b4d5108",
-          "sha256": "a3ed94c51be9ae22f3a3c1d6650ade4037748f2c8602db9b647effd71b4d5108"
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:b1fd80ccf96230f38a8faf3dd67cdf97bb359a075dbb4b48b016c08d7563e5f5",
+          "sha256": "b1fd80ccf96230f38a8faf3dd67cdf97bb359a075dbb4b48b016c08d7563e5f5"
         },
         "x86_64_linux": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:a2e8f09c113ecfd68cac31cc2e96daecc200a4260a076ef5c58bf852774fbdc1",
-          "sha256": "a2e8f09c113ecfd68cac31cc2e96daecc200a4260a076ef5c58bf852774fbdc1"
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/atkmm/blobs/sha256:5a473139c858d0c2be2d2a97751a095c5091dafad3cd8a44ac5e56223ca506e9",
+          "sha256": "5a473139c858d0c2be2d2a97751a095c5091dafad3cd8a44ac5e56223ca506e9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +88,9 @@
   "dependencies": [
     "atk",
     "glibmm"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -10,7 +10,7 @@
 
   ],
   "desc": "Analyze a sound file into a spectrogram",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://arss.sourceforge.io/",
   "versions": {
     "stable": "0.2.3",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/arss/arss/0.2.3/arss-0.2.3-src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e2faca8b8a3902226353c4053cd9ab71595eec6ead657b5b44c14b4bef52b2b2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/arss/blobs/sha256:8daf9486dc32c8698fa1fb731ceb12b04d00019043a803803a71e7472a0781ee",
+          "sha256": "8daf9486dc32c8698fa1fb731ceb12b04d00019043a803803a71e7472a0781ee"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/arss/blobs/sha256:89e8bfca3e620702bbf44ad9f75dcf18c48ef90b5ea97709a657be4cf15e6d25",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/arss/blobs/sha256:0f31b0ca051c5caa089350b30ffd07bed2c24ff2c64dcec6776e19d594b36ad7",
           "sha256": "0f31b0ca051c5caa089350b30ffd07bed2c24ff2c64dcec6776e19d594b36ad7"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/arss/blobs/sha256:1be5f2c7ce8ee18a767065c0ed7b3783de17a36dae8eaf73f838537ece38fb71",
+          "sha256": "1be5f2c7ce8ee18a767065c0ed7b3783de17a36dae8eaf73f838537ece38fb71"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/arss/blobs/sha256:5da45934b19d0cab02c809932fb8c5da3fd76d2f781bc9e2e7a98fa1825989eb",
           "sha256": "5da45934b19d0cab02c809932fb8c5da3fd76d2f781bc9e2e7a98fa1825989eb"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/arss/blobs/sha256:268225389842f4952424b17c7b94759b7a3d3009053b50718f1e4155b7eace86",
-          "sha256": "268225389842f4952424b17c7b94759b7a3d3009053b50718f1e4155b7eace86"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/arss/blobs/sha256:c5c0a1ade41f7ff063620d37b071556cd71382e9728f160c24393809f89c0f80",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "fftw"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

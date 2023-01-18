@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e87aae032bf07c26f85ac0ed3250998c37621d95f8bd748b31f15b33c45ee995"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/flex/blobs/sha256:900f81d92ac336f0deac4e23141807b77cd15c57460c55ddfafa873d62447d0c",
+          "sha256": "900f81d92ac336f0deac4e23141807b77cd15c57460c55ddfafa873d62447d0c"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/flex/blobs/sha256:fba3fc3fe93abae2c8c436f0cf2fba194f6cf68e6938496937163c416fe6f402",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/flex/blobs/sha256:ba78304da35f69526d386e1d1decca8818b155b4dda4f470d9393d23cf713e11",
           "sha256": "ba78304da35f69526d386e1d1decca8818b155b4dda4f470d9393d23cf713e11"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/flex/blobs/sha256:d4b974c982ab96f6d372d7e76b0a3965ae2afb084cb533a0abedc840979f78b9",
+          "sha256": "d4b974c982ab96f6d372d7e76b0a3965ae2afb084cb533a0abedc840979f78b9"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -74,7 +85,6 @@
     "reason": ":provided_by_macos",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +93,9 @@
   ],
   "dependencies": [
     "gettext"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

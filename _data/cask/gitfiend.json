@@ -7,33 +7,41 @@
   ],
   "desc": "Git client",
   "homepage": "https://gitfiend.com/",
-  "url": "https://gitfiend.com/resources/GitFiend-0.30.1.dmg",
+  "url": "https://gitfiend.com/resources/GitFiend-0.38.3.dmg",
   "appcast": null,
-  "version": "0.30.1",
+  "version": "0.38.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ee81b40c15c62709e750f01ad3e57c7c470c569f121a4b6c38a7a0e2b80ce4bf",
+  "sha256": "ec727c3db0827ec612c3f89047da807f898316dfddbc3235879ec2fc3478f60f",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "GitFiend.app"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/gitfiend/0.30.1/gitfiend.wrapper.sh",
-      {
-        "target": "gitfiend"
-      }
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/GitFiend",
-        "~/Library/Preferences/com.tobysuggate.gitfiend.plist",
-        "~/Library/Saved Application State/com.tobysuggate.gitfiend.savedState"
-      ],
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      exec '#{appdir}/GitFiend.app/Contents/MacOS/GitFiend' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "app": [
+        "GitFiend.app"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/gitfiend/0.38.3/gitfiend.wrapper.sh",
+        {
+          "target": "gitfiend"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/GitFiend",
+            "~/Library/Preferences/com.tobysuggate.gitfiend.plist",
+            "~/Library/Saved Application State/com.tobysuggate.gitfiend.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +49,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

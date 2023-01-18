@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/joewalnes/websocketd/archive/v0.4.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6b8fe0fad586d794e002340ee597059b2cfc734ba7579933263aef4743138fe5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/websocketd/blobs/sha256:b7d6fde3236364942816c8578c1a5d6e436b562d2db34b9d0fb0fa9d501e8dde",
+          "sha256": "b7d6fde3236364942816c8578c1a5d6e436b562d2db34b9d0fb0fa9d501e8dde"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/websocketd/blobs/sha256:256933f91abb70b0974f791cbbd8158f4399c27ed2ce99438f7ac566a560003e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/websocketd/blobs/sha256:8d9e5282df6737a6870a2a750570ab79909fb4463411797b0bf5d20cb269162d",
           "sha256": "8d9e5282df6737a6870a2a750570ab79909fb4463411797b0bf5d20cb269162d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/websocketd/blobs/sha256:302d431c2759cde95803ec57e9001ec22367b7b3c18a55693aa61547d47bac8d",
+          "sha256": "302d431c2759cde95803ec57e9001ec22367b7b3c18a55693aa61547d47bac8d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

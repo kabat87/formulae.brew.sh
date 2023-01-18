@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5c032f5c8cc2937eb55a81a94effdfed3b0a0304b6376147b86f951e225e3ab5"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:6a1838baea154e65800058df58a36adcbb2e153337803503b7b1bed5989fd6f1",
+          "sha256": "6a1838baea154e65800058df58a36adcbb2e153337803503b7b1bed5989fd6f1"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:f0787745f3b2ac7c173b3582b7079a2f30ad82dcad69a34fb79edf76e804dbb2",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:67c47ecf95d2f4367685fb0ab04c913d55743e5bafccce721f665c6579f3b599",
           "sha256": "67c47ecf95d2f4367685fb0ab04c913d55743e5bafccce721f665c6579f3b599"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rtmpdump/blobs/sha256:eb50329d49a5795f9048dd7052785afa713af2eb1df00536dfbf6144e3783593",
+          "sha256": "eb50329d49a5795f9048dd7052785afa713af2eb1df00536dfbf6144e3783593"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
   ],
   "dependencies": [
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,15 +128,16 @@
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671153604,
       "runtime_dependencies": [
         {
           "full_name": "ca-certificates",
-          "version": "2021-10-26",
+          "version": "2022-10-11",
           "declared_directly": false
         },
         {
           "full_name": "openssl@1.1",
-          "version": "1.1.1m",
+          "version": "1.1.1s",
           "declared_directly": true
         }
       ],
@@ -139,5 +153,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

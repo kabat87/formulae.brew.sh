@@ -7,68 +7,94 @@
   ],
   "desc": "Office suite",
   "homepage": "https://www.libreoffice.org/",
-  "url": "https://download.documentfoundation.org/libreoffice/stable/7.2.5/mac/x86_64/LibreOffice_7.2.5_MacOS_x86-64.dmg",
+  "url": "https://download.documentfoundation.org/libreoffice/stable/7.4.4/mac/x86_64/LibreOffice_7.4.4_MacOS_x86-64.dmg",
   "appcast": null,
-  "version": "7.2.5",
+  "version": "7.4.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0b7ef18ed08341ac6c15339fe9a161ad17f6b469009d987cfc7d50c628d12a4e",
+  "sha256": "edc6946cbf84c0a8e8f5f43f16f516ad9b1eeb14b71718ba4d5745b1c716f6fb",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "LibreOffice.app"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/regmerge"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/regview"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/senddoc"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/uno"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/unopkg"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/uri-encode"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/xpdfimport"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/libreoffice/7.2.5/soffice.wrapper.sh",
-      {
-        "target": "soffice"
-      }
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/unoinfo"
-    ],
-    [
-      "/Applications/LibreOffice.app/Contents/MacOS/gengal"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.libreoffice.script.sfl*",
-        "~/Library/Application Support/LibreOffice",
-        "~/Library/Preferences/org.libreoffice.script.plist",
-        "~/Library/Saved Application State/org.libreoffice.script.savedState"
-      ],
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      '#{appdir}/LibreOffice.app/Contents/MacOS/soffice' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "app": [
+        "LibreOffice.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/regmerge"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/regview"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/senddoc"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/uno"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/unopkg"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/uri-encode"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/xpdfimport"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/libreoffice/7.4.4/soffice.wrapper.sh",
+        {
+          "target": "soffice"
+        }
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/unoinfo"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/LibreOffice.app/Contents/MacOS/gengal"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.libreoffice.script.sfl*",
+            "~/Library/Application Support/LibreOffice",
+            "~/Library/Preferences/org.libreoffice.script.plist",
+            "~/Library/Saved Application State/org.libreoffice.script.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.12"
       ]
     }
   },
@@ -78,5 +104,19 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download.documentfoundation.org/libreoffice/stable/7.4.4/mac/aarch64/LibreOffice_7.4.4_MacOS_aarch64.dmg",
+      "sha256": "a5f289664f54184c290ed64dd24f788bf9661cefd0c0607aad60bd5a3ccbbbb3"
+    },
+    "arm64_monterey": {
+      "url": "https://download.documentfoundation.org/libreoffice/stable/7.4.4/mac/aarch64/LibreOffice_7.4.4_MacOS_aarch64.dmg",
+      "sha256": "a5f289664f54184c290ed64dd24f788bf9661cefd0c0607aad60bd5a3ccbbbb3"
+    },
+    "arm64_big_sur": {
+      "url": "https://download.documentfoundation.org/libreoffice/stable/7.4.4/mac/aarch64/LibreOffice_7.4.4_MacOS_aarch64.dmg",
+      "sha256": "a5f289664f54184c290ed64dd24f788bf9661cefd0c0607aad60bd5a3ccbbbb3"
+    }
+  }
 }

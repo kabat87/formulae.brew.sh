@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/hooklift/gowsdl.git",
       "tag": "v0.5.0",
-      "revision": "51f3ef6c0e8f41ed1bdccce4c04e86b6769da313"
+      "revision": "51f3ef6c0e8f41ed1bdccce4c04e86b6769da313",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gowsdl/blobs/sha256:4aa45e1319557557ca74011ec372ffa4d404a3d4199d0b2c7ae78480b68cf266",
+          "sha256": "4aa45e1319557557ca74011ec372ffa4d404a3d4199d0b2c7ae78480b68cf266"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gowsdl/blobs/sha256:0391c1e4a9fdbd2f14d5daff2789d490802da3b4a09a227d021dcb1a58b2f92a",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gowsdl/blobs/sha256:1e00fdcd6cf4d9f6b4d8df22fbd7622ec946b4188944e4f5fb04aed3c29878f4",
           "sha256": "1e00fdcd6cf4d9f6b4d8df22fbd7622ec946b4188944e4f5fb04aed3c29878f4"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gowsdl/blobs/sha256:03fd4af0ea805054cf29bc1156533b8540de308889d827459da3809f65cb6335",
+          "sha256": "03fd4af0ea805054cf29bc1156533b8540de308889d827459da3809f65cb6335"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

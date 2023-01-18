@@ -13,15 +13,16 @@
   "license": "GPL-3.0",
   "homepage": "https://github.com/DanielDent/git-annex-remote-rclone",
   "versions": {
-    "stable": "0.6",
+    "stable": "0.7",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/DanielDent/git-annex-remote-rclone/archive/v0.6.tar.gz",
+      "url": "https://github.com/DanielDent/git-annex-remote-rclone/archive/v0.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a119e3a4c194ff24a07aa1620714d60e0dc2a3148f5479cb07faf31e0e31889c"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/git-annex-remote-rclone/blobs/sha256:3cc09391797c0e451e94b4b5cf7b909e4fdb834fe7d0dc321c42572c41c39279",
-          "sha256": "3cc09391797c0e451e94b4b5cf7b909e4fdb834fe7d0dc321c42572c41c39279"
+          "url": "https://ghcr.io/v2/homebrew/core/git-annex-remote-rclone/blobs/sha256:d9853f2712e4e5c03a8b5e7a3c8295ab4c7b8720583ff75276f62a476a701f99",
+          "sha256": "d9853f2712e4e5c03a8b5e7a3c8295ab4c7b8720583ff75276f62a476a701f99"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,6 +51,9 @@
   "dependencies": [
     "git-annex",
     "rclone"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -79,5 +82,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

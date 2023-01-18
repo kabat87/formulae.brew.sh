@@ -6,80 +6,106 @@
     "MPLab X IDE"
   ],
   "desc": "IDE for Microchip's microcontrollers and digital signal controllers",
-  "homepage": "https://www.microchip.com/mplab/mplab-x-ide",
-  "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/MPLABX-v5.50-osx-installer.dmg",
+  "homepage": "https://www.microchip.com/en-us/development-tools-tools-and-software/mplab-x-ide",
+  "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/MPLABX-v6.05-osx-installer.dmg",
   "appcast": null,
-  "version": "5.50",
+  "version": "6.05",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6839ceb3d3e276aff3d9f5b3b97c58070881778d8a8eb5428b9cac114b7b9f08",
+  "sha256": "13fd0da992178e0962d7c09075d15d85f2a41ad573747c0bb2dc8e1caf7ed696",
   "artifacts": [
     {
-      "script": {
-        "executable": "Uninstall_MPLAB_X_IDE_v5.50.app/Contents/MacOS/installbuilder.sh",
-        "args": [
-          "--mode",
-          "unattended"
-        ],
-        "input": [
-          "y",
-          "3"
-        ],
-        "sudo": "true"
-      },
-      "delete": "/Applications/microchip",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "Uninstall_MPLAB_X_IDE_v6.05.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended"
+            ],
+            "input": [
+              "y",
+              "3"
+            ],
+            "sudo": "true"
+          },
+          "delete": [
+            "/Applications/microchip/mplabx/6.05",
+            "/Applications/microchip/mplabcomm/3.51.00"
+          ],
+          "rmdir": [
+            "/Applications/microchip/mplabx",
+            "/Applications/microchip/mplabcomm"
+          ]
+        }
+      ]
     },
     {
-      "path": "MPLABX-v5.50-osx-installer.app/Contents/MacOS/installbuilder.sh",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "true",
-        "args": [
-          "--mode",
-          "unattended",
-          "--unattendedmodeui",
-          "none",
-          "--ide",
-          "1",
-          "--ipe",
-          "1",
-          "--othermcu",
-          "0",
-          "--exepermission",
-          "no",
-          "--collectInfo",
-          "0",
-          "--installdir",
-          "$(brew --prefix)/Caskroom/mplabx-ide/5.50"
-        ],
-        "input": [
-          "y"
-        ],
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "MPLABX-v6.05-osx-installer.app/Contents/MacOS/installbuilder.sh",
+            "args": [
+              "--mode",
+              "unattended",
+              "--unattendedmodeui",
+              "none",
+              "--ide",
+              "1",
+              "--ipe",
+              "1",
+              "--othermcu",
+              "0",
+              "--exepermission",
+              "no",
+              "--collectInfo",
+              "0",
+              "--installdir",
+              "$(brew --prefix)/Caskroom/mplabx-ide/6.05"
+            ],
+            "input": [
+              "y"
+            ],
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    [
-      "mplab_ide.app",
-      {
-        "target": "microchip/mplab_ide.app"
-      }
-    ],
-    [
-      "mplab_ipe.app",
-      {
-        "target": "microchip/mplab_ipe.app"
-      }
-    ],
-    "postflight (Postflight Block)"
+    {
+      "app": [
+        "MPLAB IPE v6.05.app",
+        {
+          "target": "microchip/mplabx/6.05/MPLAB IPE v6.05.app"
+        }
+      ]
+    },
+    {
+      "app": [
+        "MPLAB X IDE v6.05.app",
+        {
+          "target": "microchip/mplabx/6.05/MPLAB X IDE v6.05.app"
+        }
+      ]
+    },
+    {
+      "postflight": "  postflight do\n    set_ownership staged_path.to_s\n    set_ownership \"/Applications/microchip/mplabx/#{version}\"\n  end\n"
+    },
+    {
+      "zap": [
+        {
+          "trash": "/Applications/microchip"
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

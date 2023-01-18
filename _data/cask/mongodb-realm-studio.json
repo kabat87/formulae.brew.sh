@@ -3,34 +3,38 @@
   "full_token": "mongodb-realm-studio",
   "tap": "homebrew/cask",
   "name": [
-    "MongoDB Realm Studio"
+    "Realm Studio"
   ],
   "desc": "Tool for the Realm Database and Realm Platform",
-  "homepage": "https://docs.mongodb.com/realm-legacy/products/realm-studio.html",
-  "url": "https://github.com/realm/realm-studio/releases/download/v11.1.1/MongoDB.Realm.Studio-11.1.1.dmg",
+  "homepage": "https://realm.io/products/realm-studio/",
+  "url": "https://github.com/realm/realm-studio/releases/download/v13.0.2/Realm.Studio-13.0.2.dmg",
   "appcast": null,
-  "version": "11.1.1",
+  "version": "13.0.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6fa53d7e9ea4e707f353167e7fc79e6d1f0e5914a59c82d1fd57e54a9928a49a",
+  "sha256": "39f8a9bc620084190e511c86d1f3aafac1abb18234d803b8a6573838a6541b1a",
   "artifacts": [
-    [
-      "MongoDB Realm Studio.app"
-    ],
     {
-      "delete": [
-        "~/Library/Application Support/Realm Studio",
-        "~/Library/Caches/io.realm.realm-studio",
-        "~/Library/Caches/io.realm.realm-studio.ShipIt",
-        "~/Library/Logs/Realm Studio",
-        "~/Library/Preferences/io.realm.realm-studio.helper.plist",
-        "~/Library/Preferences/io.realm.realm-studio.plist",
-        "~/Library/Saved Application State/io.realm.realm-studio.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Realm Studio.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "delete": [
+            "~/Library/Application Support/Realm Studio",
+            "~/Library/Caches/io.realm.realm-studio",
+            "~/Library/Caches/io.realm.realm-studio.ShipIt",
+            "~/Library/Logs/Realm Studio",
+            "~/Library/Preferences/io.realm.realm-studio.helper.plist",
+            "~/Library/Preferences/io.realm.realm-studio.plist",
+            "~/Library/Saved Application State/io.realm.realm-studio.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

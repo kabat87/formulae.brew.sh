@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://software.internet2.edu/sources/owamp/owamp-3.4-10.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "059f0ab99b2b3d4addde91a68e6e3641c85ce3ae43b85fe9435841d950ee2fb3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/owamp/blobs/sha256:103fa8cc22dd7993f374d851aa24dbb37369e5fa442304d3623f0015d0feb0d5",
+          "sha256": "103fa8cc22dd7993f374d851aa24dbb37369e5fa442304d3623f0015d0feb0d5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/owamp/blobs/sha256:07c1548f42dba72b33b71fcebfae84e881ec9c298434d77715cdc49bdcf6b8a3",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/owamp/blobs/sha256:e3c656cab3adb4646e47897e27351fb92b97b9a7cd0810887567b5d1bb9a125a",
           "sha256": "e3c656cab3adb4646e47897e27351fb92b97b9a7cd0810887567b5d1bb9a125a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/owamp/blobs/sha256:38c978e23ada6dd9e9441b7fb577995b830f5a01d3c548ec487991ee296899b9",
+          "sha256": "38c978e23ada6dd9e9441b7fb577995b830f5a01d3c548ec487991ee296899b9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/owamp/blobs/sha256:6f86a33c176ba1394560b7707466c088930f13db102b7adc159e80e889fdc5cf",
           "sha256": "6f86a33c176ba1394560b7707466c088930f13db102b7adc159e80e889fdc5cf"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/owamp/blobs/sha256:fce4cc5bf0a9b5355779fb45637651f6a78bb8d3dd93bdc3ff2826b7866617fd",
-          "sha256": "fce4cc5bf0a9b5355779fb45637651f6a78bb8d3dd93bdc3ff2826b7866617fd"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/owamp/blobs/sha256:7861b9b519cb1dd21940335fa2e904a72105938981e66637a4887db79988067b",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "i2util"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

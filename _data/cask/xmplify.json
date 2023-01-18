@@ -7,32 +7,38 @@
   ],
   "desc": "XML editor",
   "homepage": "http://xmplifyapp.com/",
-  "url": "http://xmplifyapp.com/releases/Xmplify-1.10.3.dmg",
+  "url": "http://xmplifyapp.com/releases/Xmplify-1.10.7.dmg",
   "appcast": null,
-  "version": "1.10.3",
+  "version": "1.10.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "497d87a00e6112ae818ecc47936061f54e71178ef3594f2af5251805eda666f7",
+  "sha256": "33d626aaf22dfa6c74789c9a4031a71c513e2191abc440d0fca600d5f0fa0c5a",
   "artifacts": [
     {
-      "quit": "au.com.moso.Xmplify",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "au.com.moso.Xmplify"
+        }
+      ]
     },
-    [
-      "Xmplify.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/au.com.moso.Xmplify",
-        "~/Library/Logs/Xmplify*.log",
-        "~/Library/Preferences/au.com.moso.Xmplify*.plist",
-        "~/Library/Saved Application State/au.com.moso.Xmplify.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Xmplify.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/au.com.moso.Xmplify",
+            "~/Library/Logs/Xmplify*.log",
+            "~/Library/Preferences/au.com.moso.Xmplify*.plist",
+            "~/Library/Saved Application State/au.com.moso.Xmplify.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +51,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

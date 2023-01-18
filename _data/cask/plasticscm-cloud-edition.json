@@ -7,39 +7,47 @@
   ],
   "desc": "Install PlasticSCM locally and join a Cloud Edition subscription",
   "homepage": "https://www.plasticscm.com/",
-  "url": "https://s3.eu-west-2.amazonaws.com/plastic-releases/releases/10.0.16.6375/plasticscm/osx/plasticscm-cloud-10.0.16.6375.pkg.zip",
+  "url": "https://s3.eu-west-2.amazonaws.com/plastic-releases/releases/11.0.16.7709/plasticscm/osx/plasticscm-cloud-11.0.16.7709.pkg.zip",
   "appcast": null,
-  "version": "10.0.16.6375",
+  "version": "11.0.16.7709",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6921855233cb19866c58fd5e8fdd0c93c03d07624122d0016bb57b151ddae26b",
+  "sha256": "ca57ee7aa5bd541865e39b431fe256f22d6753202777f3c10195b96f4f00f92d",
   "artifacts": [
     {
-      "launchctl": [
-        "com.codicesoftware.plasticscm.macplastic",
-        "com.codicesoftware.plasticscm.server"
-      ],
-      "quit": "com.codicesoftware.plasticscm",
-      "pkgutil": [
-        "com.codicesoftware.plasticscm.macplastic",
-        "com.codicesoftware.plasticscm.server"
-      ],
-      "delete": [
-        "/Applications/Gluon.app",
-        "/Applications/PlasticSCM.app",
-        "/Applications/PlasticSCMServer.app"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": [
+            "com.codicesoftware.plasticscm.macplastic",
+            "com.codicesoftware.plasticscm.server"
+          ],
+          "quit": "com.codicesoftware.plasticscm",
+          "pkgutil": [
+            "com.codicesoftware.plasticscm.macplastic",
+            "com.codicesoftware.plasticscm.server"
+          ],
+          "delete": [
+            "/Applications/Gluon.app",
+            "/Applications/PlasticSCM.app",
+            "/Applications/PlasticSCMServer.app"
+          ]
+        }
+      ]
     },
-    "plasticscm-cloud-10.0.16.6375.pkg (Pkg)"
+    {
+      "pkg": [
+        "plasticscm-cloud-11.0.16.7709.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

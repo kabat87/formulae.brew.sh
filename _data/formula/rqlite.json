@@ -11,17 +11,18 @@
   ],
   "desc": "Lightweight, distributed relational database built on SQLite",
   "license": "MIT",
-  "homepage": "http://www.rqlite.com/",
+  "homepage": "https://www.rqlite.io/",
   "versions": {
-    "stable": "6.10.2",
+    "stable": "7.13.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/rqlite/rqlite/archive/v6.10.2.tar.gz",
+      "url": "https://github.com/rqlite/rqlite/archive/v7.13.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d184873b64f30c8a8ce73d9e937a8ae044b5bd39466e16c84b250f94a6e9fbfa"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:d0839348e21be6fc4e1b5d0a1556232d881e3c8731b5986dcb70debc071109ff",
+          "sha256": "d0839348e21be6fc4e1b5d0a1556232d881e3c8731b5986dcb70debc071109ff"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:ceb498125a226ad68d9fa9c55cbe06d582b32d67507bdb340238600d4877ab10",
-          "sha256": "ceb498125a226ad68d9fa9c55cbe06d582b32d67507bdb340238600d4877ab10"
+          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:9c2569148303f27e882e92017e863dcbd211099224bb8164d2c862d09e376aa1",
+          "sha256": "9c2569148303f27e882e92017e863dcbd211099224bb8164d2c862d09e376aa1"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:2ef178fd693294b7ed241d46de4c14a4632d8f2bd98920b0dcc3c420799dc416",
-          "sha256": "2ef178fd693294b7ed241d46de4c14a4632d8f2bd98920b0dcc3c420799dc416"
+          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:7020d8b3185eaf99f05795d86beffb80cfb7179889f970309a8578fa5e3bbfb9",
+          "sha256": "7020d8b3185eaf99f05795d86beffb80cfb7179889f970309a8578fa5e3bbfb9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:90d44abd6724a7f9b2828b7421a9a6ab604be2dbc10e91f23d1bceba9ad2679e",
+          "sha256": "90d44abd6724a7f9b2828b7421a9a6ab604be2dbc10e91f23d1bceba9ad2679e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:6c7351f4c287fbf2c58e4b7c9558d73c05f44442e456564a89aefc81111d7368",
-          "sha256": "6c7351f4c287fbf2c58e4b7c9558d73c05f44442e456564a89aefc81111d7368"
+          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:2a0834de01ea70bce727231a665505064ee69f8d59600eacb2ab5441010934de",
+          "sha256": "2a0834de01ea70bce727231a665505064ee69f8d59600eacb2ab5441010934de"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:7a972a7d2f1f436bd0bda85e70dc95b71e6afdeb62097e3dae45011396cb2a47",
-          "sha256": "7a972a7d2f1f436bd0bda85e70dc95b71e6afdeb62097e3dae45011396cb2a47"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:d6f6dbc6946cb5deab61dfb38e7bab7a8ddeef5494a030fe39719ea96b4a6926",
-          "sha256": "d6f6dbc6946cb5deab61dfb38e7bab7a8ddeef5494a030fe39719ea96b4a6926"
+          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:aa9b0c680516f1aae9e790ceae74aab02d5112955e6b2310b70c2675f9834b5f",
+          "sha256": "aa9b0c680516f1aae9e790ceae74aab02d5112955e6b2310b70c2675f9834b5f"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:bcd2371c8251c72b85b8b799cc81944b27854e97893f78426ab222a0f79c79c0",
-          "sha256": "bcd2371c8251c72b85b8b799cc81944b27854e97893f78426ab222a0f79c79c0"
+          "url": "https://ghcr.io/v2/homebrew/core/rqlite/blobs/sha256:74d37bbc317a415c292e68d8803503978385a30259d0850f00b03f2e7db17a42",
+          "sha256": "74d37bbc317a415c292e68d8803503978385a30259d0850f00b03f2e7db17a42"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

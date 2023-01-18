@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://bindfs.org/",
   "versions": {
-    "stable": "1.15.1",
+    "stable": "1.17.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://bindfs.org/downloads/bindfs-1.15.1.tar.gz",
+      "url": "https://bindfs.org/downloads/bindfs-1.17.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "edb4989144d28f75affc4f5b18074fb97a58d6ee35ad6919ac75eb6a4cbfe352"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bindfs/blobs/sha256:735ffeec80a1525bfcfe246c699b2a2890f900694b741a1646efeb0f5ba918bf",
-          "sha256": "735ffeec80a1525bfcfe246c699b2a2890f900694b741a1646efeb0f5ba918bf"
+          "url": "https://ghcr.io/v2/homebrew/core/bindfs/blobs/sha256:591b1b620631425439e0d7ecca9b9ad6b7427dc501a7417535accaea60bc404a",
+          "sha256": "591b1b620631425439e0d7ecca9b9ad6b7427dc501a7417535accaea60bc404a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
     "pkg-config"
   ],
   "dependencies": [
+    "libfuse"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -61,12 +64,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -76,7 +87,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://cmocka.org/files/1.1/cmocka-1.1.5.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f0ccd8242d55e2fd74b16ba518359151f6f8383ff8aef4976e48393f77bba8b6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmocka/blobs/sha256:a8f740f136437949637b8587bcb355b51b31a8a58f872738caabdafb8f649f56",
+          "sha256": "a8f740f136437949637b8587bcb355b51b31a8a58f872738caabdafb8f649f56"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cmocka/blobs/sha256:a504b57668ab63e04fd3ca656d6a0a48a215779b9779dad64e6e65e56441c2fd",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cmocka/blobs/sha256:e2ed51c48c56006bb4b8591259eb206968e46457e78b15570c567d990b5f97d3",
           "sha256": "e2ed51c48c56006bb4b8591259eb206968e46457e78b15570c567d990b5f97d3"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmocka/blobs/sha256:62276a9dcaed10332781bd14a2d6e23e174d88a588558ec384d76ebb4b334380",
+          "sha256": "62276a9dcaed10332781bd14a2d6e23e174d88a588558ec384d76ebb4b334380"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

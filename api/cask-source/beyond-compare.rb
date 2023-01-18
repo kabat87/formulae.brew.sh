@@ -1,6 +1,6 @@
 cask "beyond-compare" do
-  version "4.4.1.26165"
-  sha256 "801431270ee6eb8f726594029445ae3575edb757c26cca23c8b223cbdee3d6cf"
+  version "4.4.4.27058"
+  sha256 "528a64c8a1ef6c865bf6b34027e97774498e5f7de54306a4372a560a06034f4e"
 
   url "https://www.scootersoftware.com/BCompareOSX-#{version}.zip"
   name "Beyond Compare"
@@ -9,7 +9,6 @@ cask "beyond-compare" do
 
   livecheck do
     url "https://www.scootersoftware.com/download.php?zz=v4changelog"
-    strategy :page_match
     regex(/<h2[^>]*>(\d+(?:\.\d+)+)/i)
   end
 
@@ -17,12 +16,11 @@ cask "beyond-compare" do
 
   app "Beyond Compare.app"
   binary "#{appdir}/Beyond Compare.app/Contents/MacOS/bcomp"
-  binary "#{appdir}/Beyond Compare.app/Contents/MacOS/bcomp", target: "bcompare"
 
   zap trash: [
     "~/Library/Application Support/Beyond Compare",
-    "~/Library/Caches/com.apple.helpd/Generated/com.ScooterSoftware.BeyondCompare.help*",
     "~/Library/Caches/com.apple.helpd/Generated/Beyond Compare Help*",
+    "~/Library/Caches/com.apple.helpd/Generated/com.ScooterSoftware.BeyondCompare.help*",
     "~/Library/Caches/com.ScooterSoftware.BeyondCompare",
     "~/Library/Saved Application State/com.ScooterSoftware.BeyondCompare.savedState",
   ]

@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later or LGPL-2.1-or-later",
   "homepage": "https://github.com/containers/crun",
   "versions": {
-    "stable": "1.4.1",
+    "stable": "1.7.2",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/containers/crun/releases/download/1.4.1/crun-1.4.1.tar.xz",
+      "url": "https://github.com/containers/crun/releases/download/1.7.2/crun-1.7.2.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dfce0fdf042c7de84e8672369f54f723c2f788d2bde076a4c6edf530e6306b5a"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/crun/blobs/sha256:6c25f147a0fd53236dbe78b211b9a196e5da7afef0072687f88f32bc63c52501",
-          "sha256": "6c25f147a0fd53236dbe78b211b9a196e5da7afef0072687f88f32bc63c52501"
+          "url": "https://ghcr.io/v2/homebrew/core/crun/blobs/sha256:aa657e22ae5f3aac1539214d2535f12c93c26dc43099234a5c2e328b124c0e21",
+          "sha256": "aa657e22ae5f3aac1539214d2535f12c93c26dc43099234a5c2e328b124c0e21"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,13 +51,16 @@
     "go-md2man",
     "libtool",
     "pkg-config",
-    "python@3.10"
+    "python@3.11"
   ],
   "dependencies": [
     "libcap",
     "libseccomp",
     "systemd",
     "yajl"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -94,5 +97,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -11,7 +11,7 @@
   ],
   "desc": "Powerful interactive system for text processing",
   "license": "GPL-3.0",
-  "homepage": "https://www.lbreyer.com/xml-coreutils.html",
+  "homepage": "https://xml-coreutils.sourceforge.io/",
   "versions": {
     "stable": "0.8.1",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://www.lbreyer.com/gpl/xml-coreutils-0.8.1.tar.gz",
+      "url": "https://downloads.sourceforge.net/project/xml-coreutils/xml-coreutils-0.8.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7fb26d57bb17fa770452ccd33caf288deee1d757a0e0a484b90c109610d1b7df"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/xml-coreutils/blobs/sha256:0074dde2a0a868040ad32a09cba6947f7e27e0b69dcf95c9f05a478764e3a858",
+          "sha256": "0074dde2a0a868040ad32a09cba6947f7e27e0b69dcf95c9f05a478764e3a858"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/xml-coreutils/blobs/sha256:27121488a3c491191c025a484e1f76d0ad162f19ba6cddf733a5826cdddf05a9",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/xml-coreutils/blobs/sha256:7094a5673f2ab6ba2fa45c587397650f4d9b2ccea1ab66925f58ef776683298d",
           "sha256": "7094a5673f2ab6ba2fa45c587397650f4d9b2ccea1ab66925f58ef776683298d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/xml-coreutils/blobs/sha256:9a121bba70de700e46049e302ce80bb9ae45ffda8f1007cabbc0169b6e2c085a",
+          "sha256": "9a121bba70de700e46049e302ce80bb9ae45ffda8f1007cabbc0169b6e2c085a"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/xml-coreutils/blobs/sha256:19bdcacd49657e78f82fd7743a50266ff4945e644b069ac2c39a8787a57911a5",
           "sha256": "19bdcacd49657e78f82fd7743a50266ff4945e644b069ac2c39a8787a57911a5"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/xml-coreutils/blobs/sha256:1342c807e5ddc23a72e750f07258864fdf2fc1a8ce9072cb7797955fdd0e3656",
-          "sha256": "1342c807e5ddc23a72e750f07258864fdf2fc1a8ce9072cb7797955fdd0e3656"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/xml-coreutils/blobs/sha256:e62450955a07231a3334f3972e3ea93e622ca55c54ca3e0eae04db5df6d8fc69",
+          "sha256": "e62450955a07231a3334f3972e3ea93e622ca55c54ca3e0eae04db5df6d8fc69"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
     "s-lang"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,8 @@
 
   ],
   "uses_from_macos": [
-
+    "expat",
+    "ncurses"
   ],
   "requirements": [
 
@@ -123,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

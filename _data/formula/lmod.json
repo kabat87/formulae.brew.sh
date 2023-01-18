@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://lmod.readthedocs.io",
   "versions": {
-    "stable": "8.6.5",
+    "stable": "8.7.19",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/TACC/Lmod/archive/8.6.5.tar.gz",
+      "url": "https://github.com/TACC/Lmod/archive/8.7.19.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1d706ef7f50378dd869ece2081a6b116ae59ede82f6cd7ca2771c6a33e3ddcf8"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:83f10926dfd4462068ed15aa0ac8e2dd7177df2ba8e61ac2cdcb51fba207dd59",
+          "sha256": "83f10926dfd4462068ed15aa0ac8e2dd7177df2ba8e61ac2cdcb51fba207dd59"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:7b4ca831aa354bc45548f4ac207bb80cfdc6be8143e2c7aabacf1de94a7627ef",
-          "sha256": "7b4ca831aa354bc45548f4ac207bb80cfdc6be8143e2c7aabacf1de94a7627ef"
+          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:feb221e05f092f479a7a52405d9dd7885290e6b2959f0b96b48add94e6787583",
+          "sha256": "feb221e05f092f479a7a52405d9dd7885290e6b2959f0b96b48add94e6787583"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:400a15f9ed66f00b3d9e0c2f94b698c6e7613ffa3f2da6ff6eb8233e6948d80f",
-          "sha256": "400a15f9ed66f00b3d9e0c2f94b698c6e7613ffa3f2da6ff6eb8233e6948d80f"
+          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:25e3ffcb3b8ef175e8a57cc09dcea09b0f70f1504f5be78a6b8d01fdd7b9bf24",
+          "sha256": "25e3ffcb3b8ef175e8a57cc09dcea09b0f70f1504f5be78a6b8d01fdd7b9bf24"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:6043d0a5eefa97d164f2e0ee9fd11efc03b91fea193be2fbda8d662927fa13bf",
+          "sha256": "6043d0a5eefa97d164f2e0ee9fd11efc03b91fea193be2fbda8d662927fa13bf"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:bc1f2896e0a1d778937b52e3cb70ef00e09469f872ff2b6ba384a698ac1ab410",
-          "sha256": "bc1f2896e0a1d778937b52e3cb70ef00e09469f872ff2b6ba384a698ac1ab410"
+          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:213c4443af4f69829e5b0e0a24d1f7eb8faadae527f64ed9a13ca591aaf0a82d",
+          "sha256": "213c4443af4f69829e5b0e0a24d1f7eb8faadae527f64ed9a13ca591aaf0a82d"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:358e7c5039f51b6a07cad95418088ea096314ffc6ac459a9671db32e38251cd5",
-          "sha256": "358e7c5039f51b6a07cad95418088ea096314ffc6ac459a9671db32e38251cd5"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:b976bc248d45b84d74fef695ffda452d7a55240216a1118812b7a360658bd8d8",
-          "sha256": "b976bc248d45b84d74fef695ffda452d7a55240216a1118812b7a360658bd8d8"
+          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:a6d625e6f7f219b43740cc1b37a2bfda56ac15a0931c2b7a364cf0e2a9fb7111",
+          "sha256": "a6d625e6f7f219b43740cc1b37a2bfda56ac15a0931c2b7a364cf0e2a9fb7111"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:57b94abe9cc8e0ac1486ff0e9ff0c1984336e7871cd504b7c3aae4b8c36172bf",
-          "sha256": "57b94abe9cc8e0ac1486ff0e9ff0c1984336e7871cd504b7c3aae4b8c36172bf"
+          "url": "https://ghcr.io/v2/homebrew/core/lmod/blobs/sha256:06b338a6421b0b63ded903f8617fba26587a46aa07c1d8568450d33228bf2ce8",
+          "sha256": "06b338a6421b0b63ded903f8617fba26587a46aa07c1d8568450d33228bf2ce8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +82,9 @@
   "dependencies": [
     "lua"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -84,6 +92,10 @@
 
   ],
   "uses_from_macos": [
+    {
+      "bc": "build"
+    },
+    "libxcrypt",
     "tcl-tk"
   ],
   "requirements": [
@@ -104,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

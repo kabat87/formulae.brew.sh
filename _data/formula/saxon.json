@@ -10,38 +10,38 @@
 
   ],
   "desc": "XSLT and XQuery processor",
-  "license": null,
-  "homepage": "https://saxon.sourceforge.io",
+  "license": "BSD-3-Clause and MIT and MPL-2.0",
+  "homepage": "https://github.com/Saxonica/Saxon-HE",
   "versions": {
-    "stable": "10.6",
+    "stable": "12.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-6J.zip",
+      "url": "https://github.com/Saxonica/Saxon-HE/blob/main/12/Java/SaxonHE12-0J.zip?raw=true",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c476746275dd5a0de1d203e89c21a249a02efe33350b560c4086cb08b0816be7"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/saxon/blobs/sha256:4db59b57012438613c9fac1e2685c22598b91a3ce7ebbff0a1e3eb1dd2320092",
-          "sha256": "4db59b57012438613c9fac1e2685c22598b91a3ce7ebbff0a1e3eb1dd2320092"
+          "url": "https://ghcr.io/v2/homebrew/core/saxon/blobs/sha256:f251d15ee9c43c8c24034263f84fe9b5b81bddec4507e4891d657597964b078b",
+          "sha256": "f251d15ee9c43c8c24034263f84fe9b5b81bddec4507e4891d657597964b078b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

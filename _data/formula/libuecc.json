@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://git.universe-factory.net/libuecc/snapshot/libuecc-7.tar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0120aee869f56289204255ba81535369816655264dd018c63969bf35b71fd707"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libuecc/blobs/sha256:52bf8320fc75e714e3b8ba3b6421fdb5165ab1719597539d20de7371c2b3a64b",
+          "sha256": "52bf8320fc75e714e3b8ba3b6421fdb5165ab1719597539d20de7371c2b3a64b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libuecc/blobs/sha256:015dfe9431583fd7f8638500cbb3ea7f812feb0c8db8bcb54f60c865ed3ca820",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libuecc/blobs/sha256:411158650719304f490887eb4a88d54a6a10ccee7238c7f7a92fb5407c312813",
           "sha256": "411158650719304f490887eb4a88d54a6a10ccee7238c7f7a92fb5407c312813"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libuecc/blobs/sha256:59b7963752350f8eeb7b2c57330094648df6089bc0b4dd5b9b5a4515b1cfaf5e",
+          "sha256": "59b7963752350f8eeb7b2c57330094648df6089bc0b4dd5b9b5a4515b1cfaf5e"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

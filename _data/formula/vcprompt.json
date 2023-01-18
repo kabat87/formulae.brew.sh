@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://hg.gerg.ca/vcprompt/archive/1.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fdf26566e2bd73cf734b7228f78c09a0f53d0166662fcd482a076ed01c9dbe36"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vcprompt/blobs/sha256:dabda586720b4a2e74cc9d64c4f53f306e589e6a213f9b906fd65e6df0135edc",
+          "sha256": "dabda586720b4a2e74cc9d64c4f53f306e589e6a213f9b906fd65e6df0135edc"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/vcprompt/blobs/sha256:68f6b1d5918c5abed9e6412109d5964f5b0652464b258dd236d31235f5b56cf3",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/vcprompt/blobs/sha256:2aaf6bc2c4bd41f4732aab8837c892a0f8f179b8db58ceff29dd38919d7d830d",
           "sha256": "2aaf6bc2c4bd41f4732aab8837c892a0f8f179b8db58ceff29dd38919d7d830d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vcprompt/blobs/sha256:efee1589bcaf744a2dc8b2c4950a9776713c57cdef7070dc6ac99a108a387b12",
+          "sha256": "efee1589bcaf744a2dc8b2c4950a9776713c57cdef7070dc6ac99a108a387b12"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "sqlite"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

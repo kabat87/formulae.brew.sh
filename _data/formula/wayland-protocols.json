@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://wayland.freedesktop.org",
   "versions": {
-    "stable": "1.24",
+    "stable": "1.31",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://wayland.freedesktop.org/releases/wayland-protocols-1.24.tar.xz",
+      "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.31/downloads/wayland-protocols-1.31.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a07fa722ed87676ec020d867714bc9a2f24c464da73912f39706eeef5219e238"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wayland-protocols/blobs/sha256:620063d8f8eda5758eac194db2e42604f38d1eb6ac618953bf68cfe6d94d0941",
-          "sha256": "620063d8f8eda5758eac194db2e42604f38d1eb6ac618953bf68cfe6d94d0941"
+          "url": "https://ghcr.io/v2/homebrew/core/wayland-protocols/blobs/sha256:1d30825fae12dbe4a0db88898c303d7758b9bc81c5e81cbf1529794ec37eb96b",
+          "sha256": "1d30825fae12dbe4a0db88898c303d7758b9bc81c5e81cbf1529794ec37eb96b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,10 +49,14 @@
     "meson",
     "ninja",
     "pkg-config",
+    "python@3.11",
     "wayland"
   ],
   "dependencies": [
 
+  ],
+  "test_dependencies": [
+    "pkg-config"
   ],
   "recommended_dependencies": [
 
@@ -89,5 +93,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

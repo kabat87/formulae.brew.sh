@@ -16,15 +16,21 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "VoiceMac/VoiceMac.app"
-    ],
-    "postflight (Postflight Block)"
+    {
+      "app": [
+        "VoiceMac/VoiceMac.app"
+      ]
+    },
+    {
+      "postflight": "  postflight do\n    set_permissions \"#{appdir}/VoiceMac.app/Contents/Info.plist\", \"a+r\"\n  end\n"
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

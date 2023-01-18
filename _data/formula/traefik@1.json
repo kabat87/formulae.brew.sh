@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/traefik/traefik/archive/refs/tags/v1.7.34.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0f068c2720dadd66ce303863a80d2386a4d13b5475d4219ba3e65b8445c653f2"
     }
   },
   "revision": 0,
@@ -41,6 +42,11 @@
           "url": "https://ghcr.io/v2/homebrew/core/traefik/1/blobs/sha256:6e8060b579d2b50e927526da6c8ced95ee5b297a15085e2358651dff21aa41d7",
           "sha256": "6e8060b579d2b50e927526da6c8ced95ee5b297a15085e2358651dff21aa41d7"
         },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/traefik/1/blobs/sha256:fd0dd9a960fbb6e5abd966c41e6c4423ec5b4051954e7d17b57d72f7d4da5c53",
+          "sha256": "fd0dd9a960fbb6e5abd966c41e6c4423ec5b4051954e7d17b57d72f7d4da5c53"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/traefik/1/blobs/sha256:66cc839bf105e161e16aec5b056c5a5c908d7d5fbe2fadb5668614d8c764e783",
@@ -55,6 +61,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/traefik/1/blobs/sha256:a1f090529ee3ed1646d872898219662f76d215c5cf7389cb84d4f22e540b7afd",
           "sha256": "a1f090529ee3ed1646d872898219662f76d215c5cf7389cb84d4f22e540b7afd"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/traefik/1/blobs/sha256:69adbe00d348f14f732bbd9fe57d57e6f513f6f1c72f5ff2f4e09fae5b4ee2d9",
+          "sha256": "69adbe00d348f14f732bbd9fe57d57e6f513f6f1c72f5ff2f4e09fae5b4ee2d9"
         }
       }
     }
@@ -64,7 +75,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +87,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -87,15 +100,7 @@
 
   ],
   "requirements": [
-    {
-      "name": "macos",
-      "cask": null,
-      "download": null,
-      "version": null,
-      "contexts": [
 
-      ]
-    }
   ],
   "conflicts_with": [
 
@@ -110,7 +115,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2022-12-31",
+  "disable_reason": "unsupported",
+  "variations": {
+  }
 }

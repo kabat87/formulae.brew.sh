@@ -13,15 +13,16 @@
   "license": "BSD-4-Clause",
   "homepage": "https://pmd.github.io",
   "versions": {
-    "stable": "6.41.0",
+    "stable": "6.53.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/pmd/pmd/releases/download/pmd_releases/6.41.0/pmd-bin-6.41.0.zip",
+      "url": "https://github.com/pmd/pmd/releases/download/pmd_releases/6.53.0/pmd-bin-6.53.0.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a47106048bc2e1702ecd6669c2cee575119a6df2a102a66769a86a55d3695091"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pmd/blobs/sha256:e7a6cfb479e27acc5739c0ec986758232b29bd185c3b689adfc73ad1683c3858",
-          "sha256": "e7a6cfb479e27acc5739c0ec986758232b29bd185c3b689adfc73ad1683c3858"
+          "url": "https://ghcr.io/v2/homebrew/core/pmd/blobs/sha256:d1db4799a2aec3cd0aef8fb58b63f283be0488d4e330d1de3ced5514165a86d2",
+          "sha256": "d1db4799a2aec3cd0aef8fb58b63f283be0488d4e330d1de3ced5514165a86d2"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

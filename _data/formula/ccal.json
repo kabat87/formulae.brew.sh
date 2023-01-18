@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://ccal.chinesebay.com/ccal/ccal-2.5.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3d4cbdc9f905ce02ab484041fbbf7f0b7a319ae6a350c6c16d636e1a5a50df96"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ccal/blobs/sha256:5501517c464734afd6d7dde343bcce5508be8a298f861181d7bb41b799098ca9",
+          "sha256": "5501517c464734afd6d7dde343bcce5508be8a298f861181d7bb41b799098ca9"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ccal/blobs/sha256:c64a8df40556f6f6778bfa5f5dbe5b3f19bd96d8ff83d208fedc4bf13cabd032",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ccal/blobs/sha256:e9555bba354683597a63cf86554624a01afbf7cc897c0e292b10edc3657f4572",
           "sha256": "e9555bba354683597a63cf86554624a01afbf7cc897c0e292b10edc3657f4572"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ccal/blobs/sha256:ebcd46da3c774e8cfee8e5a480e9d6aa665646bef41eed5774056eb62dd03ae2",
+          "sha256": "ebcd46da3c774e8cfee8e5a480e9d6aa665646bef41eed5774056eb62dd03ae2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

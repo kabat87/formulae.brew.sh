@@ -14,14 +14,15 @@
   "homepage": "https://packages.debian.org/sid/minicom",
   "versions": {
     "stable": "2.8",
-    "head": null,
+    "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/m/minicom/minicom_2.8.orig.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "38cea30913a20349326ff3f1763ee1512b7b41601c24f065f365e18e9db0beba"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/minicom/blobs/sha256:2846c9012370f9e0d674adddb25fb5ade25175bc3c09f4e3e5c458ff958bf58c",
+          "sha256": "2846c9012370f9e0d674adddb25fb5ade25175bc3c09f4e3e5c458ff958bf58c"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/minicom/blobs/sha256:12256c7a67eeb793ee71b419a2319c80038bf20b24a583a9f09ba36dc9c5b75e",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/minicom/blobs/sha256:396aa4bed62d6a9162d061ff1b97a1c5fe25e5a890141d4f39c1849564e3521f",
           "sha256": "396aa4bed62d6a9162d061ff1b97a1c5fe25e5a890141d4f39c1849564e3521f"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/minicom/blobs/sha256:e54b71e10799dd92bd3bf337a9a0ccab6d6fc6b3f93b119652dc05b48bad0fda",
+          "sha256": "e54b71e10799dd92bd3bf337a9a0ccab6d6fc6b3f93b119652dc05b48bad0fda"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

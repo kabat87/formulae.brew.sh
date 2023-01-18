@@ -10,7 +10,7 @@
 
   ],
   "desc": "General-purpose software audio FSK modem",
-  "license": null,
+  "license": "GPL-3.0-or-later",
   "homepage": "http://www.whence.com/minimodem/",
   "versions": {
     "stable": "0.24",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.whence.com/minimodem/minimodem-0.24.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f8cca4db8e3f284d67f843054d6bb4d88a3db5e77b26192410e41e9a06f4378e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minimodem/blobs/sha256:c3b2dedf19a1253a4e9b5eef4ae278875eda2759f82c8ec9d503ead44ce0fcd2",
+          "sha256": "c3b2dedf19a1253a4e9b5eef4ae278875eda2759f82c8ec9d503ead44ce0fcd2"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/minimodem/blobs/sha256:d2eae4352ba72db26b2b38798cfb1c48f937df4e4cad3a5d50036abe2a2b8f52",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/minimodem/blobs/sha256:659dd378a4d6fc0f96d3752b6fd8303f0f6c79beeb0424fa8456ec33d270fb02",
           "sha256": "659dd378a4d6fc0f96d3752b6fd8303f0f6c79beeb0424fa8456ec33d270fb02"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/minimodem/blobs/sha256:f8cad830872535b888d97d61e4444b5dc16091afbf340f358a2c93e6d464ce86",
+          "sha256": "f8cad830872535b888d97d61e4444b5dc16091afbf340f358a2c93e6d464ce86"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/minimodem/blobs/sha256:1539133df2fe9f85e8dcdf56e2a62d5ae116861e6dbc3b02e45680fbf8a467a9",
           "sha256": "1539133df2fe9f85e8dcdf56e2a62d5ae116861e6dbc3b02e45680fbf8a467a9"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/minimodem/blobs/sha256:ac39bf2ca304ce0f513a037193aca0850cf3cafddf17cd40a2ac047e5f051db7",
-          "sha256": "ac39bf2ca304ce0f513a037193aca0850cf3cafddf17cd40a2ac047e5f051db7"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/minimodem/blobs/sha256:e160d02015fdfd48ef348ef8f73bb6040e2a66ff9047cf1bc7f720ad94c173a7",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -102,6 +107,9 @@
     "fftw",
     "libsndfile",
     "pulseaudio"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -130,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

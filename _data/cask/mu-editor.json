@@ -7,23 +7,38 @@
   ],
   "desc": "Small, simple editor for beginner Python programmers",
   "homepage": "https://codewith.mu/",
-  "url": "https://github.com/mu-editor/mu/releases/download/1.0.3/mu-editor.dmg",
+  "url": "https://github.com/mu-editor/mu/releases/download/v1.2.0/MuEditor-osx-1.2.0.dmg",
   "appcast": null,
-  "version": "1.0.3",
+  "version": "1.2.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b1815923ab38d00a5ec512912e50694e29c17f087989cd21aa52c88ce10452b0",
+  "sha256": "306bef4ebfafd1dcf928bc260d5d57e64efbccb537b27f5818a9fc12437726b6",
   "artifacts": [
-    [
-      "mu-editor.app"
-    ]
+    {
+      "app": [
+        "Mu Editor.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "rmdir": "~/mu_code",
+          "trash": [
+            "~/Library/Application Support/mu",
+            "~/Library/Logs/mu"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

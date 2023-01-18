@@ -1,13 +1,9 @@
 cask "visual-studio-code" do
-  arch = Hardware::CPU.intel? ? "darwin" : "darwin-arm64"
+  arch arm: "darwin-arm64", intel: "darwin"
 
-  version "1.63.2"
-
-  if Hardware::CPU.intel?
-    sha256 "1ef5957499ecbf92cc14fd9f49eef6251f3fc77c83babc8185c6f564a2886633"
-  else
-    sha256 "be22b8fcea0af2d2416f47fbe0cae7f8199f21ad0c3ba28402027752d4f93630"
-  end
+  version "1.74.3"
+  sha256 arm:   "131a8bee3d42f1bcb1705ac6c08b9a9b5023d31ebf74791ef82032c2e5ed83da",
+         intel: "c49606fcb2e800d0fcb54395bce519ca1c6044634c94a7da38eeb437d43ab650"
 
   url "https://update.code.visualstudio.com/#{version}/#{arch}/stable"
   name "Microsoft Visual Studio Code"
@@ -17,7 +13,7 @@ cask "visual-studio-code" do
 
   livecheck do
     url "https://update.code.visualstudio.com/api/update/#{arch}/stable/VERSION"
-    regex(/"productVersion"\s*:\s*"(\d+(:?\.\d+)+)"/)
+    regex(/"productVersion"\s*:\s*"(\d+(:?\.\d+)+)"/i)
   end
 
   auto_updates true

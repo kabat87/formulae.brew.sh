@@ -1,6 +1,6 @@
 cask "genymotion" do
-  version "3.2.1"
-  sha256 "60dc9996e988f42a09e2870766a10072010b49a21fe9fd655a02b944db3a3f2d"
+  version "3.3.2"
+  sha256 "cf79d8bca79dfb0518184d148339667650202273083ba55248cbe2386c406850"
 
   url "https://dl.genymotion.com/releases/genymotion-#{version}/genymotion-#{version}.dmg"
   name "Genymotion"
@@ -9,8 +9,7 @@ cask "genymotion" do
 
   livecheck do
     url "https://www.genymotion.com/download/"
-    strategy :page_match
-    regex(/Genymotion\s*Desktop\s*(\d+(?:\.\d+)*)/i)
+    regex(/Genymotion\s*Desktop\s*(\d+(?:\.\d+)+)/i)
   end
 
   depends_on cask: "virtualbox"

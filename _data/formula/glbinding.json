@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/cginternals/glbinding/archive/v2.1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cb5971b086c0d217b2304d31368803fd2b8c12ee0d41c280d40d7c23588f8be2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/glbinding/blobs/sha256:8414c2062a0413be5ce4d3104464d77ded39a971883839f5162d1eda60c1dc9e",
+          "sha256": "8414c2062a0413be5ce4d3104464d77ded39a971883839f5162d1eda60c1dc9e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/glbinding/blobs/sha256:6679892b95d63354d1aa3cde01824915003d8decbbe4479a19cea82e31d20be6",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/glbinding/blobs/sha256:5c77227ab2d41d56069711ea964f5222feb1d9f1f88228b88ff657131cec9093",
           "sha256": "5c77227ab2d41d56069711ea964f5222feb1d9f1f88228b88ff657131cec9093"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/glbinding/blobs/sha256:7eef393fef969da975966933406213df6d32a9ec757d3a581751c83aa7e0ef4a",
+          "sha256": "7eef393fef969da975966933406213df6d32a9ec757d3a581751c83aa7e0ef4a"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/glbinding/blobs/sha256:454bfd4f3f6a983a0614f469388cbe27437350d203c61aed34a8c05fa9bb0710",
           "sha256": "454bfd4f3f6a983a0614f469388cbe27437350d203c61aed34a8c05fa9bb0710"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/glbinding/blobs/sha256:f433dde2dd1326a5d9be03bbc45fcbe33f0d48cee1ea070c17dd878759c87a82",
+          "sha256": "f433dde2dd1326a5d9be03bbc45fcbe33f0d48cee1ea070c17dd878759c87a82"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +99,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +131,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "mesa",
+        "mesa-glu"
+      ]
+    }
+  }
 }

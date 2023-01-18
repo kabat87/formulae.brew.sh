@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/transmission/transmission-releases/raw/d5ccf14/transmission-3.00.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9144652fe742f7f7dd6657716e378da60b751aaeda8bef8344b3eefc4db255f2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/transmission-cli/blobs/sha256:b6c5414407b789d0c97b2454a636d7abf5cd7344a3c55846b1e0648877db0986",
+          "sha256": "b6c5414407b789d0c97b2454a636d7abf5cd7344a3c55846b1e0648877db0986"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/transmission-cli/blobs/sha256:7cea8d14774f036fb808ab778efd7aaebfdd46b0057e401ccfc1744e09f05e30",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/transmission-cli/blobs/sha256:07a84ee48fdee3046614731074c3e3f20f814011d644e6804a836e586a11f4a5",
           "sha256": "07a84ee48fdee3046614731074c3e3f20f814011d644e6804a836e586a11f4a5"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/transmission-cli/blobs/sha256:643cf06d5177d5df947ff6021971ba0605f7ad7cade990204d5d29a3820dd7f9",
+          "sha256": "643cf06d5177d5df947ff6021971ba0605f7ad7cade990204d5d29a3820dd7f9"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   "dependencies": [
     "libevent",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

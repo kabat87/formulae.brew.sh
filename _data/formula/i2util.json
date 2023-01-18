@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://software.internet2.edu/sources/I2util/I2util-1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3b704cdb88e83f7123f3cec0fe3283b0681cc9f80c426c3f761a0eefd1d72c59"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/i2util/blobs/sha256:12c812bcd9c964c3e757e7a519aeb4162da4f969abe426cb99e82b1c890df368",
+          "sha256": "12c812bcd9c964c3e757e7a519aeb4162da4f969abe426cb99e82b1c890df368"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/i2util/blobs/sha256:61ebc5e903b3abd79421b9ac585d02beff1fdffbeb4112c58abfa9fbaea6d4c3",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/i2util/blobs/sha256:15ccc5cf4852a0d03f022a6127de5ef518a162e8e9cd69ec3800a8c9a42e2c1b",
           "sha256": "15ccc5cf4852a0d03f022a6127de5ef518a162e8e9cd69ec3800a8c9a42e2c1b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/i2util/blobs/sha256:6d9b2843805a327c13210bfce32be19b5fbd1e0619a56aecbdeb8ac4a4b37107",
+          "sha256": "6d9b2843805a327c13210bfce32be19b5fbd1e0619a56aecbdeb8ac4a4b37107"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/i2util/blobs/sha256:44f87d48502ae3e34ebfc0882aa689a70e8c92d398247c5a53e2f4b7d7652b39",
           "sha256": "44f87d48502ae3e34ebfc0882aa689a70e8c92d398247c5a53e2f4b7d7652b39"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/i2util/blobs/sha256:ad1821b2637c75638de2ecd2bd3127a0c8300fe4fbd72c18ae648a131b97b6f7",
-          "sha256": "ad1821b2637c75638de2ecd2bd3127a0c8300fe4fbd72c18ae648a131b97b6f7"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/i2util/blobs/sha256:feacfcb52a15646c245053b709c6cb0105e916eab0d7e1884ac7146ff40b8513",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

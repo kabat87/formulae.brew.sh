@@ -7,25 +7,29 @@
   ],
   "desc": "App to manage bank accounts in one place",
   "homepage": "https://www.iggsoftware.com/banktivity/",
-  "url": "https://www.iggsoft.com/banktivity/Banktivity8.6.2.dmg",
+  "url": "https://www.iggsoft.com/banktivity/Banktivity8.8.2.dmg",
   "appcast": null,
-  "version": "8.6.2",
+  "version": "8.8.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "baeb75a9b3376d38ccf8dab73fde0a64a89b01c9dfdd6409cd174538453a3f88",
+  "sha256": "48c3ea1ce06e9ef54f6864f80836c90a9752e9959a15a43f02c888abce60bd5c",
   "artifacts": [
-    [
-      "Banktivity.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.iggsoftware.banktivity",
-        "~/Library/Containers/com.iggsoftware.banktivity"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Banktivity.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.iggsoftware.banktivity",
+            "~/Library/Containers/com.iggsoftware.banktivity"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

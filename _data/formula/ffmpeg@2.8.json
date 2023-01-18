@@ -7,21 +7,22 @@
 
   ],
   "versioned_formulae": [
-
+    "ffmpeg@4"
   ],
   "desc": "Play, record, convert, and stream audio and video",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ffmpeg.org/",
   "versions": {
-    "stable": "2.8.18",
+    "stable": "2.8.21",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://ffmpeg.org/releases/ffmpeg-2.8.18.tar.xz",
+      "url": "https://ffmpeg.org/releases/ffmpeg-2.8.21.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e5d956c19bff2aa5bdd60744509c9d8eb01330713d52674a7f650d54b570c82d"
     }
   },
   "revision": 0,
@@ -31,30 +32,45 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:631da5126dffc9e3a5d6b3566600043d24db1d0ac1018ed8186f640140a06a57",
+          "sha256": "631da5126dffc9e3a5d6b3566600043d24db1d0ac1018ed8186f640140a06a57"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:c9062aaa537c8d0dea31ecf713f3d193a1c716207ad93b680d7cf690f0e3fa65",
-          "sha256": "c9062aaa537c8d0dea31ecf713f3d193a1c716207ad93b680d7cf690f0e3fa65"
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:d245628d182a509c300fd92a75dfbabf768233d23a58d2b50319e193b099ddb7",
+          "sha256": "d245628d182a509c300fd92a75dfbabf768233d23a58d2b50319e193b099ddb7"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:46dcab918292c83b05fe0a66b5093494a91cb4de3862137d5584941692f68557",
-          "sha256": "46dcab918292c83b05fe0a66b5093494a91cb4de3862137d5584941692f68557"
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:47a272fe59671de09bebb4531127d0490ad6691db2577949208b3767943e9283",
+          "sha256": "47a272fe59671de09bebb4531127d0490ad6691db2577949208b3767943e9283"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:e770a4067a200bffa6723f49788d4e50a0956d0e26200d864bc3901d4e826a6b",
+          "sha256": "e770a4067a200bffa6723f49788d4e50a0956d0e26200d864bc3901d4e826a6b"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:84fbb1fe0f5c5aa78cd61fbaa46cf4e3dc6ecf12c2d5abbf5531a288838c57cb",
-          "sha256": "84fbb1fe0f5c5aa78cd61fbaa46cf4e3dc6ecf12c2d5abbf5531a288838c57cb"
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:bec2b52eef70f54ac9de2b885d14d5e68e16b6e79beeb78ea7fdffeddbe2bbc1",
+          "sha256": "bec2b52eef70f54ac9de2b885d14d5e68e16b6e79beeb78ea7fdffeddbe2bbc1"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:bab81dd752fec0d0945c4683863d6fb89176e8d8213e227f67414d43a9305b94",
-          "sha256": "bab81dd752fec0d0945c4683863d6fb89176e8d8213e227f67414d43a9305b94"
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:2fa1b3d92f4c1c7712213c39b693867498c13fe9b3e771932268bd3a78dbe992",
+          "sha256": "2fa1b3d92f4c1c7712213c39b693867498c13fe9b3e771932268bd3a78dbe992"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:edea22eff2016286a9da86bbc0e7ec16508d57744fe023bf3621e97827745956",
-          "sha256": "edea22eff2016286a9da86bbc0e7ec16508d57744fe023bf3621e97827745956"
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:b09b941d608db1dcd63f846ccb9f6076dc7242242394ce1d915d4ce8fda26a3f",
+          "sha256": "b09b941d608db1dcd63f846ccb9f6076dc7242242394ce1d915d4ce8fda26a3f"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ffmpeg/2.8/blobs/sha256:2488d7dc0593af8df7660f49a01edb4d432228ad8211da187fee43a7670d4404",
+          "sha256": "2488d7dc0593af8df7660f49a01edb4d432228ad8211da187fee43a7670d4404"
         }
       }
     }
@@ -64,7 +80,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,13 +100,17 @@
     "opencore-amr",
     "opus",
     "rtmpdump",
-    "sdl",
+    "sdl12-compat",
     "snappy",
     "speex",
     "theora",
     "x264",
     "x265",
-    "xvid"
+    "xvid",
+    "xz"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -120,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.fpx.de/fp/Software/UUDeview/download/uudeview-0.5.20.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e49a510ddf272022af204e96605bd454bb53da0b3fe0be437115768710dae435"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/uudeview/blobs/sha256:28d8a4e08275d26926e19c32a6ca833ed3a1c3969ea5126c4def92e72442e66d",
+          "sha256": "28d8a4e08275d26926e19c32a6ca833ed3a1c3969ea5126c4def92e72442e66d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/uudeview/blobs/sha256:8c72240dbc205cb79229af479b8dc1774b4eb11d0ffad47391102e033be4bb07",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/uudeview/blobs/sha256:93a098dc40d16b9785888c20c8d1707a62fe471938c99ea8074df042548cfed7",
           "sha256": "93a098dc40d16b9785888c20c8d1707a62fe471938c99ea8074df042548cfed7"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/uudeview/blobs/sha256:b82ecb8116e22c3c53af765f8da79f52aed9668182ff8b16d5a0523e739e51e7",
+          "sha256": "b82ecb8116e22c3c53af765f8da79f52aed9668182ff8b16d5a0523e739e51e7"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

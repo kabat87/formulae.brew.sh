@@ -7,26 +7,30 @@
   ],
   "desc": "Native desktop app for Messenger (formerly Facebook Messenger)",
   "homepage": "https://www.messenger.com/desktop",
-  "url": "https://www.facebook.com/messenger/desktop/update/331335098.zip",
+  "url": "https://www.messenger.com/messenger/desktop/downloadV2/?platform=mac",
   "appcast": null,
-  "version": "130.7.115,331335098",
+  "version": "171.0.0.29.105,426844812",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "7f418d731eba031599e8113c3b9360f68b2d97515daf40452a550757e322cf52",
+  "sha256": "no_check",
   "artifacts": [
-    [
-      "Messenger.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Messenger",
-        "~/Library/Caches/Messenger",
-        "~/Library/Logs/Messenger"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Messenger.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Messenger",
+            "~/Library/Caches/Messenger",
+            "~/Library/Logs/Messenger"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

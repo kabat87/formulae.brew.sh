@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://registry.npmjs.org/write-good/-/write-good-1.0.8.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f54db3db8db0076fd1c05411c7f3923f055176632c51dc4046ab216e51130221"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/write-good/blobs/sha256:3c0ae187140e31156c039234b5c38df8a326125edcd1ca45a3ef661c620002e1",
+          "sha256": "3c0ae187140e31156c039234b5c38df8a326125edcd1ca45a3ef661c620002e1"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/write-good/blobs/sha256:0d7f61673e4bf3404da929427c3ac1003ba259f9d781248d1cfde01da6780d6c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/write-good/blobs/sha256:61d0833a983986732c1d6abb5491a3cc787f30c6987d2c420ef69af5a82e8340",
           "sha256": "61d0833a983986732c1d6abb5491a3cc787f30c6987d2c420ef69af5a82e8340"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/write-good/blobs/sha256:a6794938945be53cbfe3e94f6bf16e8f260bb3ff5f40eeb2d37f64d97c48382d",
+          "sha256": "a6794938945be53cbfe3e94f6bf16e8f260bb3ff5f40eeb2d37f64d97c48382d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "node"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,25 +7,29 @@
   ],
   "desc": "Notes manager",
   "homepage": "https://fsnot.es/",
-  "url": "https://github.com/glushchenko/fsnotes/releases/download/5.3.4/FSNotes_5.3.4.zip",
+  "url": "https://github.com/glushchenko/fsnotes/releases/download/6.1.1/FSNotes_6.1.1.zip",
   "appcast": null,
-  "version": "5.3.4",
+  "version": "6.1.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "7a9ff884e9a8f7e3b2b9d22675aef12cfd0c67c87be26d7218130ac3894fcdda",
+  "sha256": "e2e13c98abb4369a40c4f8b0e64f494197e50d79badffdde4f6438f27a672a11",
   "artifacts": [
-    [
-      "FSNotes.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/co.fluder.FSNotes",
-        "~/Library/Containers/co.fluder.FSNotes"
-      ],
-      "signal": {
-      }
+      "app": [
+        "FSNotes.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/co.fluder.FSNotes",
+            "~/Library/Containers/co.fluder.FSNotes"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

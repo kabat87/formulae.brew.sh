@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.crosswire.org/ftpmirror/pub/sword/source/v1.9/sword-1.9.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "42409cf3de2faf1108523e2c5ac0745d21f9ed2a5c78ed878ee9dcc303426b8a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sword/blobs/sha256:2439903e03cee94fe9b519c1597d9bebda08eebb38f353f775202b637748403a",
+          "sha256": "2439903e03cee94fe9b519c1597d9bebda08eebb38f353f775202b637748403a"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/sword/blobs/sha256:639a1f62fdf085c51a76a685ece4432a26dddc2fe7d4ba65fce337d6adbfc500",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/sword/blobs/sha256:aa8af3684bf4475f2c4f193ce2eee82751525f99dfc718b49495ba58f1866662",
           "sha256": "aa8af3684bf4475f2c4f193ce2eee82751525f99dfc718b49495ba58f1866662"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sword/blobs/sha256:53e88cb788185e075f3d8bc1622098a2ca9f7dc506546ede4f3c29d5a3fd7105",
+          "sha256": "53e88cb788185e075f3d8bc1622098a2ca9f7dc506546ede4f3c29d5a3fd7105"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

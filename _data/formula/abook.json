@@ -10,7 +10,7 @@
 
   ],
   "desc": "Address book with mutt support",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-only and GPL-2.0-or-later and GPL-3.0-or-later and Public Domain and X11",
   "homepage": "https://abook.sourceforge.io/",
   "versions": {
     "stable": "0.6.1",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://abook.sourceforge.io/devel/abook-0.6.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f0a90df8694fb34685ecdd45d97db28b88046c15c95e7b0700596028bd8bc0f9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/abook/blobs/sha256:dbcc8ffc1eb5ee674721acec2fc715030ba3c53553f0b419c71994f72925e298",
+          "sha256": "dbcc8ffc1eb5ee674721acec2fc715030ba3c53553f0b419c71994f72925e298"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/abook/blobs/sha256:24854522e2901befeb323be066c744ab4471920495b7a91280e9d05c9bc3b9e7",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/abook/blobs/sha256:e062925ce6b559649d5574f2ee4a709611df4a9a54f3396cf706c2a399cc747f",
           "sha256": "e062925ce6b559649d5574f2ee4a709611df4a9a54f3396cf706c2a399cc747f"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/abook/blobs/sha256:82da61749b4896e7e09c2655a372f49a371d660f089c494ca49091a05a2f1993",
+          "sha256": "82da61749b4896e7e09c2655a372f49a371d660f089c494ca49091a05a2f1993"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
   "dependencies": [
     "gettext",
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

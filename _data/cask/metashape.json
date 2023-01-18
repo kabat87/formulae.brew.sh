@@ -7,25 +7,29 @@
   ],
   "desc": "Process digital images and generate 3D spatial data",
   "homepage": "https://www.agisoft.com/",
-  "url": "http://download.agisoft.com/metashape_1_8_0.dmg",
+  "url": "http://download.agisoft.com/metashape_2_0_0.dmg",
   "appcast": null,
-  "version": "1.8.0",
+  "version": "2.0.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "cd32618913ad89338923f7fbdface5e6cfb17a7d9f40f1f3bfb5bc4268ddcc17",
+  "sha256": "eb599c2945ea0ee5b278843b3435c09d2dae8ddca2b1face28678bedfd3390e9",
   "artifacts": [
-    [
-      "Metashape.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.agisoft.Metashape.plist",
-        "~/Library/Saved Application State/com.agisoft.metashape.standard.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Metashape.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.agisoft.Metashape.plist",
+            "~/Library/Saved Application State/com.agisoft.metashape.standard.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://people.freebsd.org/~brian/vmdktool/vmdktool-1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "981eb43d3db172144f2344886040424ef525e15c85f84023a7502b238aa7b89c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vmdktool/blobs/sha256:1a9371495c777605438ae7e124289e79bc22fc0c546b230046cd9e7010ca5d52",
+          "sha256": "1a9371495c777605438ae7e124289e79bc22fc0c546b230046cd9e7010ca5d52"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vmdktool/blobs/sha256:7823dbeb8f044ce3183f1ea2d6ebec16ce30fc9fe2951cc55b84c5a9043f8569",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vmdktool/blobs/sha256:2a19ea885fcf69d6929cb155489aab52543b1b1f456eedf9f49f3f6eebf51ec9",
           "sha256": "2a19ea885fcf69d6929cb155489aab52543b1b1f456eedf9f49f3f6eebf51ec9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vmdktool/blobs/sha256:d1dbb970c776f264f235648b87e6669b4d240176ef5ab3272e4d3432f0033344",
+          "sha256": "d1dbb970c776f264f235648b87e6669b4d240176ef5ab3272e4d3432f0033344"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/vmdktool/blobs/sha256:8604a90f9ad0f3b04767c021a4d24dacdcabd788767df56a45e3913231d4336e",
           "sha256": "8604a90f9ad0f3b04767c021a4d24dacdcabd788767df56a45e3913231d4336e"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vmdktool/blobs/sha256:f19ae3ac92ae4400c7139771f3a5ec07d32bf2e3ed49bfa7add445f8a680ef0c",
-          "sha256": "f19ae3ac92ae4400c7139771f3a5ec07d32bf2e3ed49bfa7add445f8a680ef0c"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vmdktool/blobs/sha256:7c1d93d16f35a13226a5b332895c50d04badd06732ff6b69094dc1844db8c98d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

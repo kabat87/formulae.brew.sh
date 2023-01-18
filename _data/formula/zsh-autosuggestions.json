@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/zsh-users/zsh-autosuggestions/archive/v0.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ccd97fe9d7250b634683c651ef8a2fe3513ea917d1b491e8696a2a352b714f08"
     }
   },
   "revision": 0,
@@ -41,7 +42,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -68,7 +71,7 @@
   "conflicts_with": [
 
   ],
-  "caveats": "To activate the autosuggestions, add the following at the end of your .zshrc:\n\n  source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh\n\nYou will also need to force reload of your .zshrc:\n\n  source ~/.zshrc\n",
+  "caveats": "To activate the autosuggestions, add the following at the end of your .zshrc:\n\n  source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh\n\nYou will also need to restart your terminal for this change to take effect.\n",
   "installed": [
 
   ],
@@ -80,5 +83,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

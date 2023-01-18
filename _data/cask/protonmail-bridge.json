@@ -3,13 +3,13 @@
   "full_token": "protonmail-bridge",
   "tap": "homebrew/cask",
   "name": [
-    "ProtonMail Bridge"
+    "Proton Mail Bridge"
   ],
-  "desc": "Bridges ProtonMail to email clients supporting IMAP and SMTP protocols",
-  "homepage": "https://protonmail.com/bridge/",
-  "url": "https://protonmail.com/download/Bridge-Installer.dmg",
+  "desc": "Bridges Proton Mail to email clients supporting IMAP and SMTP protocols",
+  "homepage": "https://proton.me/mail/bridge",
+  "url": "https://proton.me/download/bridge/Bridge-Installer.dmg",
   "appcast": null,
-  "version": "1.8.12",
+  "version": "2.3.0",
   "versions": {
   },
   "installed": null,
@@ -17,22 +17,28 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "launchctl": "ProtonMail Bridge",
-      "quit": "com.protonmail.bridge",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "Proton Mail Bridge",
+          "quit": "com.protonmail.bridge"
+        }
+      ]
     },
-    [
-      "ProtonMail Bridge.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/protonmail",
-        "~/Library/Caches/protonmail",
-        "~/Library/Caches/ProtonMail Bridge"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Proton Mail Bridge.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/protonmail",
+            "~/Library/Caches/protonmail",
+            "~/Library/Caches/Proton AG/Proton Mail Bridge"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

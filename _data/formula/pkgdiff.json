@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/lvc/pkgdiff/archive/1.7.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d0ef5c8ef04f019f00c3278d988350201becfbe40d04b734defd5789eaa0d321"
     }
   },
   "revision": 0,
@@ -66,11 +67,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/pkgdiff/blobs/sha256:18895054433b4b050c3a863306c62a910be7fa4e36b0020a742c5c7541c0df65",
           "sha256": "18895054433b4b050c3a863306c62a910be7fa4e36b0020a742c5c7541c0df65"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pkgdiff/blobs/sha256:c566b1a44ed89a1b7b3547adf0a0e0fa784174e1acc4a1dd46a240ea6d09bbff",
-          "sha256": "c566b1a44ed89a1b7b3547adf0a0e0fa784174e1acc4a1dd46a240ea6d09bbff"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pkgdiff/blobs/sha256:1b6dfddc360e2756ff78483c44796a5b55e84c8ec6b5666615baf29e9f1db891",
@@ -86,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -97,6 +92,9 @@
     "binutils",
     "gawk",
     "wdiff"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -125,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

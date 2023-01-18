@@ -1,6 +1,6 @@
 cask "wine-stable" do
-  version "6.0.2"
-  sha256 "b3dbbdeb43726c25e14fe5aa84d1c976d881bdce914aa1fe791ccf804b54e4c0"
+  version "7.0"
+  sha256 "cecf2e804e1b4d9c237c25ef4087c931220454f4e68eaad6b4660f1264bac10b"
 
   # Current winehq packages are deprecated and these are packages from
   # the new maintainers that will eventually be pushed to Winehq.
@@ -11,17 +11,18 @@ cask "wine-stable" do
   desc "Compatibility layer to run Windows applications"
   homepage "https://wiki.winehq.org/MacOS"
 
+  # See https://bugs.winehq.org/show_bug.cgi?id=52354
   livecheck do
-    url "https://github.com/Gcenx/macOS_Wine_builds/releases/latest"
-    strategy :page_match
-    regex(/wine[._-]stable[._-]v?(\d+(?:\.\d+)*)[._-]osx64\.tar\.xz/i)
+    # url "https://github.com/Gcenx/macOS_Wine_builds/releases/"
+    # regex(/wine[._-]stable[._-]v?(\d+(?:\.\d+)+)[._-]osx64\.t/i)
+    # strategy :page_match
+    skip "Stable builds are currently blocked by an upstream bug"
   end
 
   conflicts_with cask: [
     "wine-devel",
     "wine-staging",
   ]
-  depends_on formula: "xz"
 
   app "Wine Stable.app"
   binary "#{appdir}/Wine Stable.app/Contents/Resources/start/bin/appdb"

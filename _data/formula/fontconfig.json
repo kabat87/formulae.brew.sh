@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://wiki.freedesktop.org/www/Software/fontconfig/",
   "versions": {
-    "stable": "2.13.1",
+    "stable": "2.14.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.1.tar.bz2",
+      "url": "https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.14.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "298e883f6e11d2c5e6d53c8a8394de58d563902cfab934e6be12fb5a5f361ef0"
     }
   },
   "revision": 0,
@@ -31,62 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:d0dc5e1f28f8c7ded2351b6da95dc10c483f6a302390660b2b861a3b94c6cd18",
+          "sha256": "d0dc5e1f28f8c7ded2351b6da95dc10c483f6a302390660b2b861a3b94c6cd18"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:7b4e599e0ba2f56b5b3e22b83bebb1dc4e38c10b00d231c9c38319df31c7f65c",
-          "sha256": "7b4e599e0ba2f56b5b3e22b83bebb1dc4e38c10b00d231c9c38319df31c7f65c"
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:decbdcc8765f8aa654452570b3f2b151e319944210479a5637d6614a44dc0947",
+          "sha256": "decbdcc8765f8aa654452570b3f2b151e319944210479a5637d6614a44dc0947"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:19dd1db44a74a3fedf20bc6576f81469d0ba6c4301fc865a56c3bbda2733d519",
-          "sha256": "19dd1db44a74a3fedf20bc6576f81469d0ba6c4301fc865a56c3bbda2733d519"
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:143b68331a6332cc0e1e3883e2863d65139869ac5bf1823bbe49fd2127d2c7f5",
+          "sha256": "143b68331a6332cc0e1e3883e2863d65139869ac5bf1823bbe49fd2127d2c7f5"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:356fe902b2f81d7f039e6f5a7a0eddaa9f84553a660f54894bbf25034119aa6b",
+          "sha256": "356fe902b2f81d7f039e6f5a7a0eddaa9f84553a660f54894bbf25034119aa6b"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:7c40dab2076798df8b741c132bfc294f1c3fe3535c683d293b6711f2574d8675",
-          "sha256": "7c40dab2076798df8b741c132bfc294f1c3fe3535c683d293b6711f2574d8675"
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:e910d7850f921d5d0b5bdd50080c3985213e2a0eff0181bab4fd6f375d386862",
+          "sha256": "e910d7850f921d5d0b5bdd50080c3985213e2a0eff0181bab4fd6f375d386862"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:ee5961891c9e943c8bea6ad280d2346caa2d3efafdbd726670e663d0bdfdb010",
-          "sha256": "ee5961891c9e943c8bea6ad280d2346caa2d3efafdbd726670e663d0bdfdb010"
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:8479e4d4cb8c71606a221e9fad0c0d1d7089302eaece07e47489429a5dac1fd3",
+          "sha256": "8479e4d4cb8c71606a221e9fad0c0d1d7089302eaece07e47489429a5dac1fd3"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:64ff208b28613dfe2a65b9d74fd9b0129f3ca7e423db78329144cdaf51b36f70",
-          "sha256": "64ff208b28613dfe2a65b9d74fd9b0129f3ca7e423db78329144cdaf51b36f70"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:1c704a5a4249252bf42dc4f2a458f911a7858a931858ad257d9ec39978ca5095",
-          "sha256": "1c704a5a4249252bf42dc4f2a458f911a7858a931858ad257d9ec39978ca5095"
-        },
-        "high_sierra": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:3b763143a4d6e3c74b3a8b237d2e5a383696347ea3599d07957f73a3f6521d23",
-          "sha256": "3b763143a4d6e3c74b3a8b237d2e5a383696347ea3599d07957f73a3f6521d23"
-        },
-        "sierra": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:631531c4eb502bd97e4a5bef30760d1eef87dd50306ef2defb9460ac3338cfe1",
-          "sha256": "631531c4eb502bd97e4a5bef30760d1eef87dd50306ef2defb9460ac3338cfe1"
-        },
-        "el_capitan": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:40d70137a970e257de5cf1251b10d56d7db835faee88a9f4c020b4a4e4f82eb1",
-          "sha256": "40d70137a970e257de5cf1251b10d56d7db835faee88a9f4c020b4a4e4f82eb1"
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:1d6767bcdcf4390f88c120ca0beff6104d3339880950342802ad8b4b51520a6e",
+          "sha256": "1d6767bcdcf4390f88c120ca0beff6104d3339880950342802ad8b4b51520a6e"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:eccabe463fb0ecc1537d19628240caec276095a4afbbbc80233ac03c841cd4fe",
-          "sha256": "eccabe463fb0ecc1537d19628240caec276095a4afbbbc80233ac03c841cd4fe"
+          "url": "https://ghcr.io/v2/homebrew/core/fontconfig/blobs/sha256:0c84e31071c824f713407a666947cc4c6968c8a6c2a8733dd7818cfbab469749",
+          "sha256": "0c84e31071c824f713407a666947cc4c6968c8a6c2a8733dd7818cfbab469749"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +85,9 @@
   ],
   "dependencies": [
     "freetype"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,6 +98,9 @@
   "uses_from_macos": [
     {
       "gperf": "build"
+    },
+    {
+      "python": "build"
     },
     "bzip2",
     "expat"
@@ -118,21 +114,22 @@
   "caveats": null,
   "installed": [
     {
-      "version": "2.13.1",
+      "version": "2.14.1",
       "used_options": [
 
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154550,
       "runtime_dependencies": [
         {
           "full_name": "libpng",
-          "version": "1.6.37",
+          "version": "1.6.39",
           "declared_directly": false
         },
         {
           "full_name": "freetype",
-          "version": "2.11.1",
+          "version": "2.12.1",
           "declared_directly": true
         }
       ],
@@ -140,7 +137,7 @@
       "installed_on_request": false
     }
   ],
-  "linked_keg": "2.13.1",
+  "linked_keg": "2.14.1",
   "pinned": false,
   "outdated": false,
   "deprecated": false,
@@ -148,5 +145,46 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "mojave": {
+      "build_dependencies": [
+        "pkg-config",
+        "python"
+      ]
+    },
+    "high_sierra": {
+      "build_dependencies": [
+        "pkg-config",
+        "python"
+      ]
+    },
+    "sierra": {
+      "build_dependencies": [
+        "pkg-config",
+        "python"
+      ]
+    },
+    "el_capitan": {
+      "build_dependencies": [
+        "pkg-config",
+        "python"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config",
+        "gperf",
+        "python",
+        "gettext",
+        "json-c"
+      ],
+      "dependencies": [
+        "freetype",
+        "bzip2",
+        "expat",
+        "util-linux"
+      ]
+    }
+  }
 }

@@ -13,15 +13,16 @@
   "license": "AGPL-3.0-only",
   "homepage": "https://www.metabase.com/",
   "versions": {
-    "stable": "0.41.6",
+    "stable": "0.45.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.metabase.com/v0.41.6/metabase.jar",
+      "url": "https://downloads.metabase.com/v0.45.1/metabase.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "15f5fff922095a7492a937f4c87d3108359b05d5dbcd54a840448708ee68438b"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/metabase/blobs/sha256:25ef7b5cded9d0ad630d6e5872c41b5bdcf90392e8893e043f74b964cf6056df",
-          "sha256": "25ef7b5cded9d0ad630d6e5872c41b5bdcf90392e8893e043f74b964cf6056df"
+          "url": "https://ghcr.io/v2/homebrew/core/metabase/blobs/sha256:18eff84b7d948c724de728f56f5fb5c2efea1a93d18bbd3651fa7031a2b82092",
+          "sha256": "18eff84b7d948c724de728f56f5fb5c2efea1a93d18bbd3651fa7031a2b82092"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@11"
+    "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

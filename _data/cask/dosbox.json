@@ -16,13 +16,17 @@
   "outdated": false,
   "sha256": "83493d149318cb7bfe5d68d98d1cd10b003db2f0519374bf06de285dc0bb2768",
   "artifacts": [
-    [
-      "dosbox.app"
-    ],
     {
-      "trash": "~/Library/Preferences/DOSBox*",
-      "signal": {
-      }
+      "app": [
+        "dosbox.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/DOSBox*"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,26 +7,31 @@
   ],
   "desc": "Extensible editor for OpenStreetMap",
   "homepage": "https://josm.openstreetmap.de/",
-  "url": "https://github.com/JOSM/josm/releases/download/18360-tested/JOSM-macOS-java17-18360.zip",
+  "url": "https://github.com/JOSM/josm/releases/download/18622-tested/JOSM-macOS-java17-18622.zip",
   "appcast": null,
-  "version": "18360",
+  "version": "18622",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "642c9b81a2f03df4151b6809f9db4494863b6c66547bd47c6bfd01e902bcc8af",
+  "sha256": "ab72abd1859ee899bac0eea1edf30034a2c258a7d4d330e90598d11faeb67928",
   "artifacts": [
-    [
-      "JOSM.app"
-    ],
     {
-      "trash": [
-        "~/Library/JOSM",
-        "~/Library/Caches/JOSM",
-        "~/Library/Preferences/JOSM"
-      ],
-      "signal": {
-      }
+      "app": [
+        "JOSM.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/JOSM",
+            "~/Library/JOSM",
+            "~/Library/Preferences/JOSM",
+            "~/Library/Saved Application State/de.openstreetmap.josm.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

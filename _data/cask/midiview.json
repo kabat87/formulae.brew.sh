@@ -9,23 +9,27 @@
   "homepage": "https://hautetechnique.com/midi/midiview/",
   "url": "https://hautetechnique.com/apps/backend/v1/apps/midiview/latest/macOS",
   "appcast": null,
-  "version": "1.1.1",
+  "version": "1.2.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "MidiView.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/MidiView",
-        "~/Library/Preferences/com.hautetechnique.midiview.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "MidiView.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/MidiView",
+            "~/Library/Preferences/com.hautetechnique.midiview.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

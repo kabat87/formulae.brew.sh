@@ -7,29 +7,33 @@
   ],
   "desc": "Run classic graphical adventure and role-playing games",
   "homepage": "https://www.scummvm.org/",
-  "url": "https://downloads.scummvm.org/frs/scummvm/2.5.1/scummvm-2.5.1-macosx.dmg",
+  "url": "https://downloads.scummvm.org/frs/scummvm/2.6.1/scummvm-2.6.1-macosx.dmg",
   "appcast": null,
-  "version": "2.5.1",
+  "version": "2.6.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "583226d08db6ca10b05f42c9c00625d6ee583ab4c80011e07428484c0a21cace",
+  "sha256": "cab5131e620c5dde19fd41f0037a6dce5722cf74a3f02026acae0a9e83811846",
   "artifacts": [
-    [
-      "ScummVM.app"
-    ],
     {
-      "trash": [
-        "~/Documents/ScummVM Savegames",
-        "~/Library/Caches/org.scummvm.scummvm",
-        "~/Library/Logs/scummvm.log",
-        "~/Library/Preferences/org.scummvm.scummvm.plist",
-        "~/Library/Preferences/ScummVM Preferences",
-        "~/Library/Saved Application State/org.scummvm.scummvm.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "ScummVM.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Documents/ScummVM Savegames",
+            "~/Library/Caches/org.scummvm.scummvm",
+            "~/Library/Logs/scummvm.log",
+            "~/Library/Preferences/org.scummvm.scummvm.plist",
+            "~/Library/Preferences/ScummVM Preferences",
+            "~/Library/Saved Application State/org.scummvm.scummvm.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +41,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

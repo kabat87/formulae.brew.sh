@@ -7,30 +7,34 @@
   ],
   "desc": "Toast-bundled version of DiskCatalogMaker",
   "homepage": "https://diskcatalogmaker.com/",
-  "url": "https://download.diskcatalogmaker.com/download/zip/DiskCatalogMaker842.zip",
+  "url": "https://download.diskcatalogmaker.com/download/zip/DiskCatalogMaker857.zip",
   "appcast": null,
-  "version": "8.4.2",
+  "version": "8.5.7",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6941cbdb919285d0bafee416f18072e7ee0077300c77e468f7c05b9240290046",
+  "sha256": "ccb0fdb36d9368768e7b5b206a8c6c58143da2761293717c8e801749f4319376",
   "artifacts": [
-    [
-      "DiskCatalogMaker.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/DiskCatalogMaker",
-        "~/Library/Application Support/com.mac.fujisoft.DiskCatalogMaker",
-        "~/Library/Caches/DiskCatalogMaker",
-        "~/Library/Caches/com.mac.fujisoft.DiskCatalogMaker",
-        "~/Library/Logs/DiskCatalogMaker",
-        "~/Library/Preferences/com.mac.fujisoft.DiskCatalogMaker.plist",
-        "~/Library/Saved Application State/com.mac.fujisoft.DiskCatalogMaker.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "DiskCatalogMaker.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.mac.fujisoft.DiskCatalogMaker",
+            "~/Library/Application Support/DiskCatalogMaker",
+            "~/Library/Caches/com.mac.fujisoft.DiskCatalogMaker",
+            "~/Library/Caches/DiskCatalogMaker",
+            "~/Library/Logs/DiskCatalogMaker",
+            "~/Library/Preferences/com.mac.fujisoft.DiskCatalogMaker.plist",
+            "~/Library/Saved Application State/com.mac.fujisoft.DiskCatalogMaker.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +47,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

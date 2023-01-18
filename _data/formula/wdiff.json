@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/wdiff/wdiff-1.2.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "34ff698c870c87e6e47a838eeaaae729fa73349139fc8db12211d2a22b78af6b"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wdiff/blobs/sha256:4e8e8de9f66bdb3734ab9087a59528e2a0f7a27f2b3bd9ab853858c2ee928c41",
+          "sha256": "4e8e8de9f66bdb3734ab9087a59528e2a0f7a27f2b3bd9ab853858c2ee928c41"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/wdiff/blobs/sha256:b7349e744630b6db059c3d1ee542404eafab86aeb97382fca5e3a746d008ee73",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/wdiff/blobs/sha256:b9464ee06d7329a996f8546ee21a90847b3db438967f241d4c9adc8708ef6a21",
           "sha256": "b9464ee06d7329a996f8546ee21a90847b3db438967f241d4c9adc8708ef6a21"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/wdiff/blobs/sha256:b1a390b9eedcb428e27b948eb6bb73292570be55125dedf707e53e4732d2a0a6",
+          "sha256": "b1a390b9eedcb428e27b948eb6bb73292570be55125dedf707e53e4732d2a0a6"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +101,9 @@
   "dependencies": [
     "gettext"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -98,9 +111,6 @@
 
   ],
   "uses_from_macos": [
-    {
-      "texinfo": "build"
-    },
     "ncurses"
   ],
   "requirements": [
@@ -121,5 +131,26 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "texinfo"
+      ],
+      "dependencies": [
+        "gettext",
+        "ncurses"
+      ]
+    }
+  }
 }

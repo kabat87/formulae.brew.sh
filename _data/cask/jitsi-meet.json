@@ -7,25 +7,29 @@
   ],
   "desc": "Secure video conferencing app",
   "homepage": "https://github.com/jitsi/jitsi-meet-electron/",
-  "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2022.1.1/jitsi-meet.dmg",
+  "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2023.1.0/jitsi-meet.dmg",
   "appcast": null,
-  "version": "2022.1.1",
+  "version": "2023.1.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ac8652bbe05a80609786de470ee31913d5ad4f25ea787a160eef630573f4cd9d",
+  "sha256": "e6ce7f719faf145e69034c8ce64032487ce0c81ae1df1b118aa056a9c7311476",
   "artifacts": [
-    [
-      "Jitsi Meet.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Jitsi Meet",
-        "~/Library/Logs/Jitsi Meet"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Jitsi Meet.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Jitsi Meet",
+            "~/Library/Logs/Jitsi Meet"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

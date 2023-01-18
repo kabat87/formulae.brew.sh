@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "http://gwyddion.net/",
   "versions": {
-    "stable": "2.59",
+    "stable": "2.62",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://gwyddion.net/download/2.59/gwyddion-2.59.tar.gz",
+      "url": "http://gwyddion.net/download/2.62/gwyddion-2.62.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6c71fda9f783be5beabd21bfd749a91b2404b24cd74b7115adec31d235d40688"
     }
   },
   "revision": 0,
@@ -31,37 +32,60 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:7f1e88f594b85b1ff14136954abd497c76c6f714a424c4c5f60eebf5090eff71",
+          "sha256": "7f1e88f594b85b1ff14136954abd497c76c6f714a424c4c5f60eebf5090eff71"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:6d89eceaff946e5fa27619df49db3489cfa9faf0b84134d0973f7ff13345c939",
+          "sha256": "6d89eceaff946e5fa27619df49db3489cfa9faf0b84134d0973f7ff13345c939"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:84daa1965a976e10f7fc3c86181060ab41de374e60e40f4c583d1708c62f4e2d",
-          "sha256": "84daa1965a976e10f7fc3c86181060ab41de374e60e40f4c583d1708c62f4e2d"
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:4edda3a2def3d79679378aef727ca9a5f2c64d2f4aea813ff80fc384e1f5dd20",
+          "sha256": "4edda3a2def3d79679378aef727ca9a5f2c64d2f4aea813ff80fc384e1f5dd20"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:d165e2b0d7c9b8022ed75a2b31b4ecd05131bfd1e69708b8d1f7d06fe45edefc",
+          "sha256": "d165e2b0d7c9b8022ed75a2b31b4ecd05131bfd1e69708b8d1f7d06fe45edefc"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:accc13498182cc7f5dd0216afcee03825a6ed823a5eae8a58bdbe97c155cf1c1",
+          "sha256": "accc13498182cc7f5dd0216afcee03825a6ed823a5eae8a58bdbe97c155cf1c1"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:0843f910f945f7ccfa32b172e499733f03f5bd1ffb5651cd09dd9e4908bfa098",
-          "sha256": "0843f910f945f7ccfa32b172e499733f03f5bd1ffb5651cd09dd9e4908bfa098"
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:2a91c616047f1a3b9cb339490a2e4491bea9b78b4d954fc3bf4ee31d90f1c5ef",
+          "sha256": "2a91c616047f1a3b9cb339490a2e4491bea9b78b4d954fc3bf4ee31d90f1c5ef"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:ff6670705c707245cc11ae74a4b7c3ae973e6a5fdda03a4edf2cd1a114da0c13",
-          "sha256": "ff6670705c707245cc11ae74a4b7c3ae973e6a5fdda03a4edf2cd1a114da0c13"
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:bfb19b06d490f42a69db28807db6eedd064d00b5a63d5ec37562fd78951b4cab",
+          "sha256": "bfb19b06d490f42a69db28807db6eedd064d00b5a63d5ec37562fd78951b4cab"
         },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:78eb5e116ce465537772408846a45680195b1184f616fc3663fe60fa3db6a02b",
-          "sha256": "78eb5e116ce465537772408846a45680195b1184f616fc3663fe60fa3db6a02b"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gwyddion/blobs/sha256:ac5ab5522b9803996f26a5107e35bcff7ba90bc89577d442eb50bf64e674350c",
+          "sha256": "ac5ab5522b9803996f26a5107e35bcff7ba90bc89577d442eb50bf64e674350c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "pkg-config"
+    "pkg-config",
+    "autoconf",
+    "automake",
+    "gtk-doc",
+    "libtool"
   ],
   "dependencies": [
     "fftw",
@@ -71,6 +95,9 @@
     "libxml2",
     "minizip",
     "gtk-mac-integration"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -99,5 +126,20 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config"
+      ],
+      "dependencies": [
+        "fftw",
+        "gtk+",
+        "gtkglext",
+        "gtksourceview",
+        "libxml2",
+        "minizip"
+      ]
+    }
+  }
 }

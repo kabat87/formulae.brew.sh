@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/apng2gif/1.8/apng2gif-1.8-src.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9a07e386017dc696573cd7bc7b46b2575c06da0bc68c3c4f1c24a4b39cdedd4d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/apng2gif/blobs/sha256:96885dd78971006a1a9c2110cf491436d16cb705fd29c67a8506c06c41cf867c",
+          "sha256": "96885dd78971006a1a9c2110cf491436d16cb705fd29c67a8506c06c41cf867c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/apng2gif/blobs/sha256:06feb5f45bd0926a23bcda94caf5af7eb1f29166b71853ea3c9136c74c63d000",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/apng2gif/blobs/sha256:b11d6a2f6d1eba7587c8541f65440b027596ae8b3b60ea23e080a237d0b215a3",
           "sha256": "b11d6a2f6d1eba7587c8541f65440b027596ae8b3b60ea23e080a237d0b215a3"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/apng2gif/blobs/sha256:f67f54a6e9f79ca11e7d1c0f5b9d4fbbf43ed6f4b0045875287ad4dafb5df70d",
+          "sha256": "f67f54a6e9f79ca11e7d1c0f5b9d4fbbf43ed6f4b0045875287ad4dafb5df70d"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/apng2gif/blobs/sha256:42d033ae0a661d75b588af8d7c0cdb67a81bfc481aa88665973d95d3e4fb64ec",
           "sha256": "42d033ae0a661d75b588af8d7c0cdb67a81bfc481aa88665973d95d3e4fb64ec"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/apng2gif/blobs/sha256:5456ec2b90086c84f2094972fa0dacc11de0abdde5346e3445a6b7d64b49201c",
-          "sha256": "5456ec2b90086c84f2094972fa0dacc11de0abdde5346e3445a6b7d64b49201c"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/apng2gif/blobs/sha256:f98dfacc9457ddd5742ff27448fdd3b51dbd1445a586447327404bcb0028b72a",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libpng"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -9,25 +9,29 @@
   "homepage": "https://witt-software.com/pdfsqueezer/",
   "url": "https://www.witt-software.com/downloads/pdfsqueezer/PDF%20Squeezer.dmg",
   "appcast": null,
-  "version": "4.3.1,634b",
+  "version": "4.3.5,650b",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "PDF Squeezer.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.witt-software.PDF-Squeezer",
-        "~/Library/Application Scripts/group.witt-software.com.PDF-Squeezer",
-        "~/Library/Containers/com.witt-software.PDF-Squeezer",
-        "~/Library/Group Containers/group.witt-software.com.PDF-Squeezer"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PDF Squeezer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.witt-software.PDF-Squeezer",
+            "~/Library/Application Scripts/group.witt-software.com.PDF-Squeezer",
+            "~/Library/Containers/com.witt-software.PDF-Squeezer",
+            "~/Library/Group Containers/group.witt-software.com.PDF-Squeezer"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://mirrors.sohu.com/gentoo/distfiles/f2/CRF%2B%2B-0.58.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9d1c0a994f25a5025cede5e1d3a687ec98cd4949bfb2aae13f2a873a13259cb2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 3,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/crfxx/blobs/sha256:b2ace94562fd7e5a8abd1d05d40511e346e7a49ee504c448eba428f8c3b8a9db",
+          "sha256": "b2ace94562fd7e5a8abd1d05d40511e346e7a49ee504c448eba428f8c3b8a9db"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/crfxx/blobs/sha256:3a9ccdc1221e5b2516710ef51b3b50473d7d580f2676fca2c8f69cabcd7e6f61",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/crfxx/blobs/sha256:763da462b53ce92f9feae23750b038b96e79b121b7bdfa4c0d1c99701c3345d4",
           "sha256": "763da462b53ce92f9feae23750b038b96e79b121b7bdfa4c0d1c99701c3345d4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/crfxx/blobs/sha256:1233d831712132c1221d609f9ea56f217179ccae1d93c2fdb288efa2077d9eb0",
+          "sha256": "1233d831712132c1221d609f9ea56f217179ccae1d93c2fdb288efa2077d9eb0"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

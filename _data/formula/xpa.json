@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ericmandel/xpa/archive/2.1.20.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "854af367c0f4ffe7a65cb4da854a624e20af3c529f88187b50b22b68f024786a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/xpa/blobs/sha256:ad3b920ba7f22f7fecc369c4eb3f093d6f519fb24ca7c8bf90a0cbda4fc9a3b6",
+          "sha256": "ad3b920ba7f22f7fecc369c4eb3f093d6f519fb24ca7c8bf90a0cbda4fc9a3b6"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/xpa/blobs/sha256:dfe65258684be3dee93bc7c0649abc8496e359b1fc16baa5430e562c1c0e2361",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/xpa/blobs/sha256:6b22cf494e2ca55efce9a08463ddd9ef4044af0a479689aa5ab610e40465fc93",
           "sha256": "6b22cf494e2ca55efce9a08463ddd9ef4044af0a479689aa5ab610e40465fc93"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/xpa/blobs/sha256:72b8a37979de78f7d54a8e89e7f8058664276d184d185a3ddf849ca0e6dd36a2",
+          "sha256": "72b8a37979de78f7d54a8e89e7f8058664276d184d185a3ddf849ca0e6dd36a2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "libxt"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,10 +121,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-10-01",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

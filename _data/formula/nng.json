@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/nanomsg/nng/archive/v1.5.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f8b25ab86738864b1f2e3128e8badab581510fa8085ff5ca9bb980d317334c46"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/nng/blobs/sha256:667a5f6b653b1883e9d1dff858db9c6bbc446d0057567e8f52e05d7b8e6584d8",
+          "sha256": "667a5f6b653b1883e9d1dff858db9c6bbc446d0057567e8f52e05d7b8e6584d8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/nng/blobs/sha256:8a33b0d9fed3ae4df70c6c6c1bc0e6c86d5580aab8fd9d0c55b87a860c70f1a8",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/nng/blobs/sha256:65e87ec5195f73dd28ac038232cfd97f726e39d6420ee3eb8b09043fb6bbaf74",
           "sha256": "65e87ec5195f73dd28ac038232cfd97f726e39d6420ee3eb8b09043fb6bbaf74"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/nng/blobs/sha256:bfcae8b1a13d2f4ecd40586835cfd027e8e113cc9fca50386bc3bdaa19a6904a",
+          "sha256": "bfcae8b1a13d2f4ecd40586835cfd027e8e113cc9fca50386bc3bdaa19a6904a"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
     "ninja"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

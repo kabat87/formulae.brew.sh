@@ -7,25 +7,29 @@
   ],
   "desc": "Centralizes all remote connections on a single platform",
   "homepage": "https://mac.remotedesktopmanager.com/",
-  "url": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Free.Mac.2021.2.12.0.dmg",
+  "url": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Free.Mac.2022.2.16.0.dmg",
   "appcast": null,
-  "version": "2021.2.12.0",
+  "version": "2022.2.16.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "9ae6196792222180029968a819d4e41d576511b0dff447ea179e2e34142bd6f0",
+  "sha256": "26545b52627f780fc3618f62649ff58589adfd1409d72f5b84f50be11b218879",
   "artifacts": [
-    [
-      "Remote Desktop Manager Free.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.devolutions.remotedesktopmanager.free",
-        "~/Library/Preferences/com.devolutions.remotedesktopmanager.free"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Remote Desktop Manager Free.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.devolutions.remotedesktopmanager.free",
+            "~/Library/Preferences/com.devolutions.remotedesktopmanager.free"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

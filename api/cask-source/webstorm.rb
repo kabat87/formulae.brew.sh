@@ -1,13 +1,9 @@
 cask "webstorm" do
-  arch = Hardware::CPU.intel? ? "" : "-aarch64"
+  arch arm: "-aarch64"
 
-  version "2021.3.1,213.6461.79"
-
-  if Hardware::CPU.intel?
-    sha256 "8e6fcda77b963ad576f24a2fa10603ede82c2ca31487f2e217638a666a55c346"
-  else
-    sha256 "9903f4b22a03860e7eadec79becee55a3a8b43be343eaf488943ca6544f1d97a"
-  end
+  version "2022.3.1,223.8214.51"
+  sha256 arm:   "f63d2708cccc57bd404b782137f11e5dabf012df0c18aabf900743c4f02daa97",
+         intel: "ea2fb464cf8ba0bf553115cd0f006cb4dab729cbde941de2fc86588024abe8b9"
 
   url "https://download.jetbrains.com/webstorm/WebStorm-#{version.csv.first}#{arch}.dmg"
   name "WebStorm"
@@ -30,7 +26,7 @@ cask "webstorm" do
 
   uninstall_postflight do
     ENV["PATH"].split(File::PATH_SEPARATOR).map { |path| File.join(path, "wstorm") }.each do |path|
-      if File.exist?(path) &&
+      if File.readable?(path) &&
          File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?
         File.delete(path)
       end

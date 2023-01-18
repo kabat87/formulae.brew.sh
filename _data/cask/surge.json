@@ -7,45 +7,53 @@
   ],
   "desc": "Network toolbox",
   "homepage": "https://nssurge.com/",
-  "url": "https://dl.nssurge.com/mac/v4/Surge-4.3.1-1461-829471a307259fe1729cf06a7cd13d06.zip",
+  "url": "https://dl.nssurge.com/mac/v4/Surge-4.10.1-1964-34ee4f3efbd20065ad808cf0cab6d380.zip",
   "appcast": null,
-  "version": "4.3.1,1461,829471a307259fe1729cf06a7cd13d06",
+  "version": "4.10.1,1964,34ee4f3efbd20065ad808cf0cab6d380",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "062b1272231d5bbd042404b79d698298b5933a7474857e4ff65f70a3e71bddb4",
+  "sha256": "f43da8c4c45618de5b63351782fa0b5da243c1afbd7b64ab7ccee695b23b5471",
   "artifacts": [
     {
-      "launchctl": "com.nssurge.surge-mac.helper",
-      "delete": "/Library/PrivilegedHelperTools/com.nssurge.surge-mac.helper",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "com.nssurge.surge-mac.helper",
+          "delete": "/Library/PrivilegedHelperTools/com.nssurge.surge-mac.helper"
+        }
+      ]
     },
-    [
-      "Surge.app"
-    ],
     {
-      "delete": [
-        "~/Library/Application Support/com.nssurge.surge-mac",
-        "~/Library/Caches/com.nssurge.surge-mac",
-        "~/Library/Caches/com.nssurge.surge-mac.plist",
-        "~/Library/Logs/Surge",
-        "~/Library/Preferences/com.nssurge.surge-mac.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Surge.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "delete": [
+            "~/Library/Application Support/com.nssurge.surge-mac",
+            "~/Library/Caches/com.nssurge.surge-mac",
+            "~/Library/Caches/com.nssurge.surge-mac.plist",
+            "~/Library/Logs/Surge",
+            "~/Library/Preferences/com.nssurge.surge-mac.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.11"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

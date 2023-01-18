@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Swatto/td/archive/1.4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e85468dad3bf78c3fc32fc2ab53ef2d6bc28c3f9297410917af382a6d795574b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/td/blobs/sha256:c4726f25e4fea482ddc0341f590311e2098e4e5a3b12f569376d85e1c5570d09",
+          "sha256": "c4726f25e4fea482ddc0341f590311e2098e4e5a3b12f569376d85e1c5570d09"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/td/blobs/sha256:183862b016182f09f43d0c3092fdcb50894ca9f5814b83af816f1d4329368eab",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/td/blobs/sha256:c78967ab33419211ed531310b5d40da8b7cfdb4573099d8e1b38b940c75d7a24",
           "sha256": "c78967ab33419211ed531310b5d40da8b7cfdb4573099d8e1b38b940c75d7a24"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/td/blobs/sha256:ae0fe556264d24e6e18f4ecfbea037d1888269412dfab6a2e4c655b793985329",
+          "sha256": "ae0fe556264d24e6e18f4ecfbea037d1888269412dfab6a2e4c655b793985329"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/td/blobs/sha256:af978b05395618b4e095498b3a9a4aa66086f8bc793804fb59086177535c8565",
           "sha256": "af978b05395618b4e095498b3a9a4aa66086f8bc793804fb59086177535c8565"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/td/blobs/sha256:32afc5a28386f21e96fad99d94094b1011519e21bcbfd7ee14e6cef892f36e68",
+          "sha256": "32afc5a28386f21e96fad99d94094b1011519e21bcbfd7ee14e6cef892f36e68"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

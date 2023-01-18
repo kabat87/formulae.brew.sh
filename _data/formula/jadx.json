@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/skylot/jadx",
   "versions": {
-    "stable": "1.3.1",
+    "stable": "1.4.5",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/skylot/jadx/releases/download/v1.3.1/jadx-1.3.1.zip",
+      "url": "https://github.com/skylot/jadx/releases/download/v1.4.5/jadx-1.4.5.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f1d982d35fbea5ca64f2b1ab074841771e3990070016a3d2a3f936f3875fc0d2"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/jadx/blobs/sha256:d2c59276a15f5bf3508b5594f8ef7623a44b97d29bd91391b8fb91bb127dcac3",
-          "sha256": "d2c59276a15f5bf3508b5594f8ef7623a44b97d29bd91391b8fb91bb127dcac3"
+          "url": "https://ghcr.io/v2/homebrew/core/jadx/blobs/sha256:abbe08f40c9f574352998d1472ce8d5ea7f51bfad1021a6c98cc3da46bd0bb69",
+          "sha256": "abbe08f40c9f574352998d1472ce8d5ea7f51bfad1021a6c98cc3da46bd0bb69"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

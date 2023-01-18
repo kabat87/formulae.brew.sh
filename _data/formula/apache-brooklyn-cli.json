@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/apache/brooklyn-client/archive/rel/apache-brooklyn-1.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9eb52ac3cd76adf219b66eb8b5a7899c86e25736294bca666a5b4e24d34e911b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/apache-brooklyn-cli/blobs/sha256:32f68cb32eac244ea9a7745802db86ededbf56a38abbbfc6d3d1306164985cea",
+          "sha256": "32f68cb32eac244ea9a7745802db86ededbf56a38abbbfc6d3d1306164985cea"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/apache-brooklyn-cli/blobs/sha256:e28a0de7403bde7b164029cfd960cceaf1a10353381e486619cee2a14e917969",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/apache-brooklyn-cli/blobs/sha256:1294ffaaa4cebe9accd9686c723154f18b0c132200eddcfaefc9ec69cfc47b57",
           "sha256": "1294ffaaa4cebe9accd9686c723154f18b0c132200eddcfaefc9ec69cfc47b57"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/apache-brooklyn-cli/blobs/sha256:e59986c652c07c7b7f255d1e723d6d16a993bc35561d563126ebe0889b311763",
+          "sha256": "e59986c652c07c7b7f255d1e723d6d16a993bc35561d563126ebe0889b311763"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

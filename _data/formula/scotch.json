@@ -13,15 +13,16 @@
   "license": "CECILL-C",
   "homepage": "https://gitlab.inria.fr/scotch/scotch",
   "versions": {
-    "stable": "6.1.3",
+    "stable": "7.0.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://gitlab.inria.fr/scotch/scotch/-/archive/v6.1.3/scotch-v6.1.3.tar.bz2",
+      "url": "https://gitlab.inria.fr/scotch/scotch/-/archive/v7.0.2/scotch-v7.0.2.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f7d97da677c144dbcaf8e51f1d34d6aebd8ddafa5fe132c3225084d479a8a54c"
     }
   },
   "revision": 0,
@@ -31,50 +32,57 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:7a10ee9f5de730ce3ef53160311baafbd381a653bdbb62c669f87b54ef60c2ea",
+          "sha256": "7a10ee9f5de730ce3ef53160311baafbd381a653bdbb62c669f87b54ef60c2ea"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:91f03cb1007abbf67a644e735fe443e4169398c3695ba64dff5ecfd4847a5b31",
-          "sha256": "91f03cb1007abbf67a644e735fe443e4169398c3695ba64dff5ecfd4847a5b31"
+          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:f6bb78dbe627af602c76357d7737e318dd60b04e89315ad6d4f2bc0690fd2d99",
+          "sha256": "f6bb78dbe627af602c76357d7737e318dd60b04e89315ad6d4f2bc0690fd2d99"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:503025cb4b3f0d8db315970a30e4ffe30199913b30ff036aa73624d2201d0907",
-          "sha256": "503025cb4b3f0d8db315970a30e4ffe30199913b30ff036aa73624d2201d0907"
+          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:3dd424ff71c5bcb8cf188cec5719db292ee12336c187dfc313f6e0ebc700a63c",
+          "sha256": "3dd424ff71c5bcb8cf188cec5719db292ee12336c187dfc313f6e0ebc700a63c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:1f6d6230995059641860cd3bbeb39f8614d2af3bd14b2f274899c883354464b8",
+          "sha256": "1f6d6230995059641860cd3bbeb39f8614d2af3bd14b2f274899c883354464b8"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:ea1a22d651955876079f3c3b15e27359417dd32da4aaa08a31a9d0b8cd475849",
-          "sha256": "ea1a22d651955876079f3c3b15e27359417dd32da4aaa08a31a9d0b8cd475849"
+          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:d905aad48d0449754c178434bbab3e04628141a6ee27219dd2e389e45e4944fc",
+          "sha256": "d905aad48d0449754c178434bbab3e04628141a6ee27219dd2e389e45e4944fc"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:c0c83373c6fcbe49f01ba2cd8e73ff767671f0e43d00cd666c9005a9286059a0",
-          "sha256": "c0c83373c6fcbe49f01ba2cd8e73ff767671f0e43d00cd666c9005a9286059a0"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:8ef12d89d6d2de7ff4495456cb23f5dc89770c834a4d35b604d8ecdd6115c448",
-          "sha256": "8ef12d89d6d2de7ff4495456cb23f5dc89770c834a4d35b604d8ecdd6115c448"
+          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:4ba2ff04f51e8455c33c183209ba2bc5f6c2b2361ad0a0ee4e6cb35952ef016a",
+          "sha256": "4ba2ff04f51e8455c33c183209ba2bc5f6c2b2361ad0a0ee4e6cb35952ef016a"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:085ce19d188ae760959d428a7da362de763e74d4d83efc598cef3cb2772df291",
-          "sha256": "085ce19d188ae760959d428a7da362de763e74d4d83efc598cef3cb2772df291"
+          "url": "https://ghcr.io/v2/homebrew/core/scotch/blobs/sha256:dace04b4d66184873d185e0f10d23cce70096580bc670846027a8c11c9f89a14",
+          "sha256": "dace04b4d66184873d185e0f10d23cce70096580bc670846027a8c11c9f89a14"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "bison"
   ],
   "dependencies": [
     "open-mpi"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -83,8 +91,9 @@
 
   ],
   "uses_from_macos": [
-    "bison",
-    "flex",
+    {
+      "flex": "build"
+    },
     "zlib"
   ],
   "requirements": [
@@ -105,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

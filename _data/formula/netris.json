@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://deb.debian.org/debian/pool/main/n/netris/netris_0.52.orig.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8bc770ebb2c3ead1611ca7a1a2f3d833e169536c78d53b3fcf49381164ee9706"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/netris/blobs/sha256:7d1b2e0308a1ac7d02f0d76d91c805c32241191fc396d2a95e22b9456370e8af",
+          "sha256": "7d1b2e0308a1ac7d02f0d76d91c805c32241191fc396d2a95e22b9456370e8af"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/netris/blobs/sha256:325a86274ce6276ebecbf44fd386861b02ca96a8aa982da845c21ba0932aca00",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/netris/blobs/sha256:a7b88fa79c440ed0dc4c971eb32197e9f88b34afbf50cd6d9e8929f2e03d7866",
           "sha256": "a7b88fa79c440ed0dc4c971eb32197e9f88b34afbf50cd6d9e8929f2e03d7866"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/netris/blobs/sha256:73bf7b8515f9b4c10fd3f8dc686b6d29e614319a28fad0048b1ea3e99ea0d7c9",
+          "sha256": "73bf7b8515f9b4c10fd3f8dc686b6d29e614319a28fad0048b1ea3e99ea0d7c9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/netris/blobs/sha256:0e793cab922cded47c3eccbf4e9ba8840a71f24830d7e01da8e2262d08d61c56",
           "sha256": "0e793cab922cded47c3eccbf4e9ba8840a71f24830d7e01da8e2262d08d61c56"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/netris/blobs/sha256:1a1e54ff92dd1e8ecd745e149874071cb6e67662296c96d84538cf71b65b9bfe",
-          "sha256": "1a1e54ff92dd1e8ecd745e149874071cb6e67662296c96d84538cf71b65b9bfe"
+          "url": "https://ghcr.io/v2/homebrew/core/netris/blobs/sha256:7209cea9b9b79f4bc89a1aafdf2ac00af1b76aefcc9fb3f0e90f5d2dc3873232",
+          "sha256": "7209cea9b9b79f4bc89a1aafdf2ac00af1b76aefcc9fb3f0e90f5d2dc3873232"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "ncurses"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

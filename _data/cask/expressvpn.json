@@ -7,34 +7,42 @@
   ],
   "desc": "VPN client for secure internet access and private browsing",
   "homepage": "https://www.expressvpn.works/",
-  "url": "https://www.expressvpn.works/clients/mac/expressvpn_mac_10.12.0.6_release.pkg",
+  "url": "https://www.expressvpn.works/clients/mac/expressvpn_mac_11.17.0.71984_release.pkg",
   "appcast": null,
-  "version": "10.12.0.6",
+  "version": "11.17.0.71984",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "99c7ff5ef7615bfa6ad309bafaf466817504677b8fcad5931d686ab5534c488e",
+  "sha256": "a22c95c6f66acfd0c65e556453d8021e925bb3602a4405335ac1f4c57763c49b",
   "artifacts": [
     {
-      "launchctl": "com.expressvpn.ExpressVPN.agent",
-      "script": {
-        "executable": "/Applications/ExpressVPN.app/Contents/Resources/uninstall.tool",
-        "input": [
-          "Yes"
-        ],
-        "sudo": "true"
-      },
-      "pkgutil": "com.expressvpn.ExpressVPN",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "com.expressvpn.ExpressVPN.agent",
+          "script": {
+            "executable": "/Applications/ExpressVPN.app/Contents/Resources/uninstall.tool",
+            "input": [
+              "Yes"
+            ],
+            "sudo": "true"
+          },
+          "pkgutil": "com.expressvpn.ExpressVPN"
+        }
+      ]
     },
-    "expressvpn_mac_10.12.0.6_release.pkg (Pkg)"
+    {
+      "pkg": [
+        "expressvpn_mac_11.17.0.71984_release.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

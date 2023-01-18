@@ -1,8 +1,11 @@
 cask "leapp" do
-  version "0.8.0"
-  sha256 "a90dc0cea12008fad53ffef63f1eb109e31c0e49ed98d94ddc940c26fba8424e"
+  arch arm: "-arm64"
 
-  url "https://asset.noovolari.com/#{version}/Leapp-#{version}.dmg",
+  version "0.17.1"
+  sha256 arm:   "6a2cf1d2b1e95bbe65bf4508f4ff1a7826b803e98d8117e3aaa1d73e00ee5fb1",
+         intel: "856efbe7f8cd5b6bedeaba3c604cd685d8d93cd59bf2bdd7f5240d8005862df1"
+
+  url "https://asset.noovolari.com/#{version}/Leapp-#{version}#{arch}.dmg",
       verified: "asset.noovolari.com/"
   name "Leapp"
   desc "Cloud credentials manager"

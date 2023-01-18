@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a8de4e0bacfb4d76dd1c618ded263523b53b85d92a146d8835eb1a52932fa20a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/check/blobs/sha256:15a4e3c82d688948f0adc02dc5998f1abd24855aa16a4d0b673f46bc46bdcb0a",
+          "sha256": "15a4e3c82d688948f0adc02dc5998f1abd24855aa16a4d0b673f46bc46bdcb0a"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/check/blobs/sha256:81a1070f08dca8980cc77fc26b7938410cd1d1317e54cec0612763fe6920f5ab",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/check/blobs/sha256:ca05134bbcea8deffd6eabf0c11bed130f3b3bd4d9c917da88cc591220c469c8",
           "sha256": "ca05134bbcea8deffd6eabf0c11bed130f3b3bd4d9c917da88cc591220c469c8"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/check/blobs/sha256:ce18575f3c364179df6701ae91c328d1c2c50a68d700596f867e5bbc1e1b1eca",
+          "sha256": "ce18575f3c364179df6701ae91c328d1c2c50a68d700596f867e5bbc1e1b1eca"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "gawk"
+      ]
+    }
+  }
 }

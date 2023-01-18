@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://fabricmc.net/",
   "versions": {
-    "stable": "0.10.2",
+    "stable": "0.11.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.10.2/fabric-installer-0.10.2.jar",
+      "url": "https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.1/fabric-installer-0.11.1.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7917f9fa14be6da6ef3cdb7fe6bf3b63a593a0eb873bd627e981a7e3988cd73a"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/fabric-installer/blobs/sha256:4e9bfab2b9fc16e27b0285a2b5fa76981ed704327fd1d97f46871404ceef1005",
-          "sha256": "4e9bfab2b9fc16e27b0285a2b5fa76981ed704327fd1d97f46871404ceef1005"
+          "url": "https://ghcr.io/v2/homebrew/core/fabric-installer/blobs/sha256:9428f27d95d8ae7e4f552f3ba6a426add1c3184fa127f219b8bd19385881b61a",
+          "sha256": "9428f27d95d8ae7e4f552f3ba6a426add1c3184fa127f219b8bd19385881b61a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

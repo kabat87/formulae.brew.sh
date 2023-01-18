@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/nodenv/node-build",
   "versions": {
-    "stable": "4.9.65",
+    "stable": "4.9.103",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/nodenv/node-build/archive/v4.9.65.tar.gz",
+      "url": "https://github.com/nodenv/node-build/archive/v4.9.103.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "68e435771afc5dccf2ed3cd23e817c96a3d1caf29406e02f1440fcd2eafcc5f2"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/node-build/blobs/sha256:428ba7d943abffe37348c602eb9f3bf5d6a8f3770c18069cb2d4e5fc5ca60ddf",
-          "sha256": "428ba7d943abffe37348c602eb9f3bf5d6a8f3770c18069cb2d4e5fc5ca60ddf"
+          "url": "https://ghcr.io/v2/homebrew/core/node-build/blobs/sha256:4eab9eed222c59e3326007ec0b08f25003f5bbba237fc056294a320e5780c46a",
+          "sha256": "4eab9eed222c59e3326007ec0b08f25003f5bbba237fc056294a320e5780c46a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,8 +50,11 @@
   ],
   "dependencies": [
     "autoconf",
-    "openssl@1.1",
+    "openssl@3",
     "pkg-config"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -80,5 +83,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

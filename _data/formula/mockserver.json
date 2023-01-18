@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://www.mock-server.com/",
   "versions": {
-    "stable": "5.11.2",
+    "stable": "5.15.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://search.maven.org/remotecontent?filepath=org/mock-server/mockserver-netty/5.11.2/mockserver-netty-5.11.2-brew-tar.tar",
+      "url": "https://search.maven.org/remotecontent?filepath=org/mock-server/mockserver-netty/5.15.0/mockserver-netty-5.15.0-brew-tar.tar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5f679d84e4254f32f4b129cdeead98028d59f523419c2e61ac13f3dc3e7418df"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mockserver/blobs/sha256:3ee84c853d1d2ecce352978200c6133696e9f7b8500186864cd130cdfa34d9d9",
-          "sha256": "3ee84c853d1d2ecce352978200c6133696e9f7b8500186864cd130cdfa34d9d9"
+          "url": "https://ghcr.io/v2/homebrew/core/mockserver/blobs/sha256:019123f1946f7d2bd51fa089369f57d1e68b72c8b620b668689efc131202d882",
+          "sha256": "019123f1946f7d2bd51fa089369f57d1e68b72c8b620b668689efc131202d882"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

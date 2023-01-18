@@ -7,50 +7,57 @@
   ],
   "desc": "Menu bar icon organizer",
   "homepage": "https://www.macbartender.com/",
-  "url": "https://macbartender.com/B2/updates/4-1-21/Bartender%204.dmg",
+  "url": "https://macbartender.com/B2/updates/4-2-21/Bartender%204.dmg",
   "appcast": null,
-  "version": "4.1.21,41021",
+  "version": "4.2.21,42021",
   "versions": {
-    "catalina": "3.1.25,31125",
-    "mojave": "3.1.25,31125",
-    "high_sierra": "3.1.25,31125",
-    "sierra": "3.1.25,31125",
-    "el_capitan": "2.1.6",
-    "yosemite": "2.1.6"
   },
   "installed": null,
   "outdated": false,
-  "sha256": "87bf7e3861a359ff703423efd6a3a2134261268426619c05ef90ef189d2f7804",
+  "sha256": "28be16cbc69d1a2626c5a0e4846263c286d4e6cce95b68fb39b807ca9d360e8c",
   "artifacts": [
     {
-      "delete": [
-        "/Library/Audio/Plug-Ins/HAL/BartenderAudioPlugIn.plugin",
-        "/Library/PrivilegedHelperTools/com.surteesstudios.Bartender.BartenderInstallHelper",
-        "/Library/ScriptingAdditions/BartenderHelper.osax",
-        "/System/Library/ScriptingAdditions/BartenderSystemHelper.osax"
-      ],
-      "launchctl": "com.surteesstudios.Bartender.BartenderInstallHelper",
-      "quit": "com.surteesstudios.Bartender",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": [
+            "/Library/Audio/Plug-Ins/HAL/BartenderAudioPlugIn.plugin",
+            "/Library/PrivilegedHelperTools/com.surteesstudios.Bartender.BartenderInstallHelper",
+            "/Library/ScriptingAdditions/BartenderHelper.osax",
+            "/System/Library/ScriptingAdditions/BartenderSystemHelper.osax"
+          ],
+          "launchctl": "com.surteesstudios.Bartender.BartenderInstallHelper",
+          "quit": "com.surteesstudios.Bartender"
+        }
+      ]
     },
-    [
-      "Bartender 4.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.surteesstudios.Bartender",
-        "~/Library/Cookies/com.surteesstudios.Bartender.binarycookies",
-        "~/Library/Preferences/com.surteesstudios.Bartender.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Bartender 4.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.surteesstudios.Bartender",
+            "~/Library/Cookies/com.surteesstudios.Bartender.binarycookies",
+            "~/Library/Preferences/com.surteesstudios.Bartender.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "11"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

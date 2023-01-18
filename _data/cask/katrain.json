@@ -7,22 +7,26 @@
   ],
   "desc": "Tool for analyzing games and playing go with AI feedback from KataGo",
   "homepage": "https://github.com/sanderland/katrain",
-  "url": "https://github.com/sanderland/katrain/releases/download/1.10.1/KaTrain.dmg",
+  "url": "https://github.com/sanderland/katrain/releases/download/v1.12.1/KaTrain.dmg",
   "appcast": null,
-  "version": "1.10.1",
+  "version": "1.12.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "6bd26177ca780937901ef9ce6b6e61471624423e8b2579e93712d3290b6ab053",
+  "sha256": "d0f5f04a2e577432121e47f1e127f1f266d058ce57c21a6b64949796b8719f33",
   "artifacts": [
-    [
-      "KaTrain.app"
-    ],
     {
-      "trash": "~/.katrain",
-      "signal": {
-      }
+      "app": [
+        "KaTrain.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.katrain"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,28 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "depends_on": {
+        "formula": [
+          "katago"
+        ]
+      }
+    },
+    "arm64_monterey": {
+      "depends_on": {
+        "formula": [
+          "katago"
+        ]
+      }
+    },
+    "arm64_big_sur": {
+      "depends_on": {
+        "formula": [
+          "katago"
+        ]
+      }
+    }
+  }
 }

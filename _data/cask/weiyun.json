@@ -7,30 +7,36 @@
   ],
   "desc": "Document backup and online management",
   "homepage": "https://www.weiyun.com/",
-  "url": "https://dldir1.qq.com/weiyun/electron-update/release/mac/Weiyun-mac-x64-5.2.1184.dmg",
+  "url": "https://dldir1.qq.com/weiyun/electron-update/release/mac/Weiyun-mac-x64-5.2.1282.dmg",
   "appcast": null,
-  "version": "5.2.1184",
+  "version": "5.2.1282",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "50024cd35b10dac421b0457ddcfe44a192b456d86624b07dad8d50aec10b139a",
+  "sha256": "ea51cd3c356380f12a2c5c26795480ebbd19bac1021d9922e976f68460e84be5",
   "artifacts": [
     {
-      "quit": "com.tencent.MacWeiyun",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.tencent.MacWeiyun"
+        }
+      ]
     },
-    [
-      "Weiyun.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.tencent.MacWeiyun.plist",
-        "~/Library/Saved Application State/com.tencent.MacWeiyun.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Weiyun.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.tencent.MacWeiyun.plist",
+            "~/Library/Saved Application State/com.tencent.MacWeiyun.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

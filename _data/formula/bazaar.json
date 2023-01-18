@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://launchpad.net/bzr/2.7/2.7.0/+download/bzr-2.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0d451227b705a0dd21d8408353fe7e44d3a5069e6c4c26e5f146f1314b8fdab3"
     }
   },
   "revision": 1,
@@ -71,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +79,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,17 +107,19 @@
   "conflicts_with": [
     "breezy"
   ],
-  "caveats": null,
+  "caveats": "This software is no longer maintained. Try `breezy` instead:\n  brew install breezy\n",
   "installed": [
 
   ],
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-08-19",
-  "deprecation_reason": "is not supported. Check out `breezy` instead",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-10-18",
+  "disable_reason": "is not supported. Check out `breezy` instead",
+  "variations": {
+  }
 }

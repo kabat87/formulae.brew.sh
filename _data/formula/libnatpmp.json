@@ -10,7 +10,7 @@
 
   ],
   "desc": "NAT port mapping protocol library",
-  "license": null,
+  "license": "BSD-3-Clause",
   "homepage": "http://miniupnp.free.fr/libnatpmp.html",
   "versions": {
     "stable": "20150609",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://miniupnp.free.fr/files/download.php?file=libnatpmp-20150609.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e1aa9c4c4219bc06943d6b2130f664daee213fb262fcb94dd355815b8f4536b0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnatpmp/blobs/sha256:354cbe379ee3003657c8249507c1b3154c3a18b953e4aa8b020e507c997e76dc",
+          "sha256": "354cbe379ee3003657c8249507c1b3154c3a18b953e4aa8b020e507c997e76dc"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnatpmp/blobs/sha256:6e47414293d016589ebba6a965daf4c2716613fce6759ba5d98e067b517d1c8e",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnatpmp/blobs/sha256:748f4fea8075f967191c0f1862c2e20289bee92883c816b191490a35e0d0a9d4",
           "sha256": "748f4fea8075f967191c0f1862c2e20289bee92883c816b191490a35e0d0a9d4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnatpmp/blobs/sha256:213b2dd8f39ddb4e425b8cf13a6516eaadeb20da42bf3603d905b3be4202b21d",
+          "sha256": "213b2dd8f39ddb4e425b8cf13a6516eaadeb20da42bf3603d905b3be4202b21d"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

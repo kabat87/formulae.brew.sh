@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ssdeep-project/ssdeep/releases/download/release-2.14.1/ssdeep-2.14.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ff2eabc78106f009b4fb2def2d76fb0ca9e12acf624cbbfad9b3eb390d931313"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ssdeep/blobs/sha256:f8b44b58f8a6e76ee1061e7bd8d4a6e9ac3a23cca665b88295fdf30c72ce1b66",
+          "sha256": "f8b44b58f8a6e76ee1061e7bd8d4a6e9ac3a23cca665b88295fdf30c72ce1b66"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ssdeep/blobs/sha256:07961c7cdb77e1bca622785da334e2d80ea789c5619ade29e02f08e5f91249e0",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ssdeep/blobs/sha256:ee64c7c583f39962316b19684461489bf1c23ec97d910987430905f8c0b3e26c",
           "sha256": "ee64c7c583f39962316b19684461489bf1c23ec97d910987430905f8c0b3e26c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ssdeep/blobs/sha256:880e4fef3feaeb5236d52a45e34b1e2af00977400fe7105e41b3b93d74472ccc",
+          "sha256": "880e4fef3feaeb5236d52a45e34b1e2af00977400fe7105e41b3b93d74472ccc"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

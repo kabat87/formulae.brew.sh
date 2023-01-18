@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/CCExtractor/ccextractor/archive/v0.94.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9c7be386257c69b5d8cd9d7466dbf20e3a45cea950cc8ca7486a956c3be54a42"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ccextractor/blobs/sha256:12a98eca4d3a7de01e7320a4c949caab7b4d83ee822c928a06bdb0a51995ed1e",
+          "sha256": "12a98eca4d3a7de01e7320a4c949caab7b4d83ee822c928a06bdb0a51995ed1e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ccextractor/blobs/sha256:2921edfc33b26f792398dfbf85806ea3c26e3c74606fbf9fad69e19132a93633",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ccextractor/blobs/sha256:720a3d22c73a265a998dbab7a964e12f024fa010c31252684c8606ec39abf498",
           "sha256": "720a3d22c73a265a998dbab7a964e12f024fa010c31252684c8606ec39abf498"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ccextractor/blobs/sha256:18d2fa35c8d99364be1ccf249dd885aab6005eb89a9ca9b3b40f0bdca1c5e0c5",
+          "sha256": "18d2fa35c8d99364be1ccf249dd885aab6005eb89a9ca9b3b40f0bdca1c5e0c5"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
     "protobuf-c",
     "tesseract",
     "utf8proc"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,7 +120,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2022-12-24",
+  "disable_reason": "does_not_build",
+  "variations": {
+  }
 }

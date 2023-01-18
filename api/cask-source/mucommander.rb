@@ -1,8 +1,8 @@
 cask "mucommander" do
-  version "0.9.7-1"
-  sha256 "ee3598069ba9081a8ad7ffd81714bc7aef78bdaef55cd64f03ebe910f9fc9a33"
+  version "1.1.0-1"
+  sha256 "026de5992853d1bc28d8989ffec14fd9c3007ff2768ed8c6a5f96f912e8e62ed"
 
-  url "https://github.com/mucommander/mucommander/releases/download/#{version}/mucommander-#{version}.dmg",
+  url "https://github.com/mucommander/mucommander/releases/download/#{version}/muCommander-#{version}.dmg",
       verified: "github.com/mucommander/mucommander/"
   name "muCommander"
   desc "File manager with a dual-pane interface"

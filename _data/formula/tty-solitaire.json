@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/mpereira/tty-solitaire/archive/v1.3.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f2b80c8d5317e67db43c1dbf3b0f5f3dfea5e826c18744562615f1b1536ae433"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tty-solitaire/blobs/sha256:c6e0d4124e3f8a37e045611694d87d3b5a7399eb14487ce2e1b874fce96149eb",
+          "sha256": "c6e0d4124e3f8a37e045611694d87d3b5a7399eb14487ce2e1b874fce96149eb"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tty-solitaire/blobs/sha256:a8ea8909f9e522b9e6fbbbe1db5901a0f584ef25bb788099267ee6e035f84580",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tty-solitaire/blobs/sha256:91eea2f4dd14f6a81e3b3cc44fdb72916e1ae2dec5075b85136d5a224cc8d655",
           "sha256": "91eea2f4dd14f6a81e3b3cc44fdb72916e1ae2dec5075b85136d5a224cc8d655"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tty-solitaire/blobs/sha256:994d065c78b8dc3eb957b1e533df8c280d2c5adbb7be126580f728bfbb6e3cdb",
+          "sha256": "994d065c78b8dc3eb957b1e533df8c280d2c5adbb7be126580f728bfbb6e3cdb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tty-solitaire/blobs/sha256:ae38452ea77edde4a1c62085e6f1703cce1f91f04f869783761fa71399c03bf5",
           "sha256": "ae38452ea77edde4a1c62085e6f1703cce1f91f04f869783761fa71399c03bf5"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tty-solitaire/blobs/sha256:d5a265fd4dae6787d2560da92701d889f8413e1f9c13955e7ce640ff8d67714e",
+          "sha256": "d5a265fd4dae6787d2560da92701d889f8413e1f9c13955e7ce640ff8d67714e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +91,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -83,7 +101,7 @@
 
   ],
   "uses_from_macos": [
-
+    "ncurses"
   ],
   "requirements": [
 
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

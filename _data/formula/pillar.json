@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/comeara/pillar/archive/v2.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f1bb1f2913b10529263b5cf738dd171b14aff70e97a3c9f654c6fb49c91ef16f"
     }
   },
   "revision": 1,
@@ -31,6 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pillar/blobs/sha256:4abaecf745c4a7fc8b4e116ec80c22a81a41aa906a7bccae2fa8b409b12bc8f1",
+          "sha256": "4abaecf745c4a7fc8b4e116ec80c22a81a41aa906a7bccae2fa8b409b12bc8f1"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pillar/blobs/sha256:75a3f4f0ac66b98d05a55687f126fadca0dc86c8a82c5b97b2cf22a1db98615e",
+          "sha256": "75a3f4f0ac66b98d05a55687f126fadca0dc86c8a82c5b97b2cf22a1db98615e"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pillar/blobs/sha256:4edab61108a48ddf41f90c46872bbced08a6fb600ed84b8faa2a270be2d4eea4",
@@ -61,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -70,6 +80,9 @@
   ],
   "dependencies": [
     "openjdk@8"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

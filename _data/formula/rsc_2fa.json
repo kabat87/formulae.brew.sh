@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/rsc/2fa/archive/refs/tags/v1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d8db6b9a714c9146a4b82fd65b54f9bdda3e58380bce393f45e1ef49e4e9bee5"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rsc_2fa/blobs/sha256:c88d62abe74ed6cc04cc70f5c4b86a9fce044672beda3e026aff13cbe68a28ac",
+          "sha256": "c88d62abe74ed6cc04cc70f5c4b86a9fce044672beda3e026aff13cbe68a28ac"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rsc_2fa/blobs/sha256:f832afe87766e2847eadb453848ebf881c0c60bb608a71640b6c237ec44b9069",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rsc_2fa/blobs/sha256:6db5849c61249766bb9ac2168f2570c87b0893e19c7600e9749f375c6934ffa5",
           "sha256": "6db5849c61249766bb9ac2168f2570c87b0893e19c7600e9749f375c6934ffa5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rsc_2fa/blobs/sha256:ec0046a6c98d1fe4ac25ba97d805234e68b79158fa09019ee6a3ccf9ca0fcc98",
+          "sha256": "ec0046a6c98d1fe4ac25ba97d805234e68b79158fa09019ee6a3ccf9ca0fcc98"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rsc_2fa/blobs/sha256:7c0d499b3ee3fa0a1d2934e05fd36cdcf75f10710ec3fdc9192d07f74074262b",
           "sha256": "7c0d499b3ee3fa0a1d2934e05fd36cdcf75f10710ec3fdc9192d07f74074262b"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rsc_2fa/blobs/sha256:71c943ce568138c782321aaa436adf79d194707bd140f82b50046aff80851e3c",
+          "sha256": "71c943ce568138c782321aaa436adf79d194707bd140f82b50046aff80851e3c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

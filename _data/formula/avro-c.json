@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.apache.org/dyn/closer.lua?path=avro/avro-1.11.0/c/avro-c-1.11.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0652590a54ad8e4aa58a2b9ff1f4ce71a64a41b0a05c4529d1c518c61e760643"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/avro-c/blobs/sha256:e866c69e2e7cf6ed942aef633b01b38bbfd1fce8c9f2e6ab563f386c82652e5e",
+          "sha256": "e866c69e2e7cf6ed942aef633b01b38bbfd1fce8c9f2e6ab563f386c82652e5e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/avro-c/blobs/sha256:003f19bcd51baea53f86d97488f83552dc8477eedef78a371bdc166ac0d183ab",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/avro-c/blobs/sha256:f30243ab877db4e81ff07c5dea0e266228ac04bf178144d3f9caaab45a876f86",
           "sha256": "f30243ab877db4e81ff07c5dea0e266228ac04bf178144d3f9caaab45a876f86"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/avro-c/blobs/sha256:8b128950bcbd63c5f82e88773a0fcf5eac8c044f033ee5322ac4e35150fbd501",
+          "sha256": "8b128950bcbd63c5f82e88773a0fcf5eac8c044f033ee5322ac4e35150fbd501"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,6 +88,9 @@
     "jansson",
     "snappy",
     "xz"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

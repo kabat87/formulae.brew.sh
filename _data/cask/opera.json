@@ -7,25 +7,29 @@
   ],
   "desc": "Web browser",
   "homepage": "https://www.opera.com/",
-  "url": "https://get.geo.opera.com/pub/opera/desktop/82.0.4227.43/mac/Opera_82.0.4227.43_Setup.dmg",
+  "url": "https://get.geo.opera.com/pub/opera/desktop/94.0.4606.65/mac/Opera_94.0.4606.65_Setup.dmg",
   "appcast": null,
-  "version": "82.0.4227.43",
+  "version": "94.0.4606.65",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ad76462876254247964df45e888f6673cc37058806197bfeb41233dd43fee9be",
+  "sha256": "bdfc4266b58168a47956cfaf2dad6037fc0c4b7c9b51cead36a990ece83db4cd",
   "artifacts": [
-    [
-      "Opera.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.operasoftware.Opera/",
-        "~/Library/Preferences/com.operasoftware.Opera.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Opera.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.operasoftware.Opera/",
+            "~/Library/Preferences/com.operasoftware.Opera.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

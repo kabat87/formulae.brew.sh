@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://libcello.org/static/libCello-2.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "49acf6525ac6808c49f2125ecdc101626801cffe87da16736afb80684b172b28"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libcello/blobs/sha256:38071f3aa78102240020ea1e40db1c431f87fbf8d6d07308cb3952bd46577b41",
+          "sha256": "38071f3aa78102240020ea1e40db1c431f87fbf8d6d07308cb3952bd46577b41"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libcello/blobs/sha256:a700988ca7ac195700131c8ff6f2c1b555d0446351c01cc2e2a6f22a65b70c2a",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libcello/blobs/sha256:788079e8b941d6af2ee4c7f1fb84e1ed04072e85fb76a915203e04b0d0bfaaa6",
           "sha256": "788079e8b941d6af2ee4c7f1fb84e1ed04072e85fb76a915203e04b0d0bfaaa6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libcello/blobs/sha256:2a9787e8b4a681876780ed84d5f5966c13ebcf754d14b6bd3a4ee4310cd3520b",
+          "sha256": "2a9787e8b4a681876780ed84d5f5966c13ebcf754d14b6bd3a4ee4310cd3520b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

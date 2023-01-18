@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vrongmeal/leaf/archive/v1.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "00ba86c1670e4a547d6f584350d41d174452d0679be25828e7835a8da1fe100a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/leaf/blobs/sha256:5bd1b00e0418f45e3d96f7f2bfab43c68dda0d3f667335c64f4427bc6dad12ce",
+          "sha256": "5bd1b00e0418f45e3d96f7f2bfab43c68dda0d3f667335c64f4427bc6dad12ce"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/leaf/blobs/sha256:2bb7a962b8708d9d607dcff6ed3dba9e485a0963164608662bfcf70e84ad1d5d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/leaf/blobs/sha256:a7880e0f8658071b6040d8e32161e77ef72b6bf7b96489443acfa6b9852af31a",
           "sha256": "a7880e0f8658071b6040d8e32161e77ef72b6bf7b96489443acfa6b9852af31a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/leaf/blobs/sha256:310126fc24bf1b5141c5b17ea0e824fc9a424d61f0b80dbcafccfc2adb3eeb27",
+          "sha256": "310126fc24bf1b5141c5b17ea0e824fc9a424d61f0b80dbcafccfc2adb3eeb27"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

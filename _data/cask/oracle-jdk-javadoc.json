@@ -7,31 +7,37 @@
   ],
   "desc": "Documentation for the Oracle JDK",
   "homepage": "https://www.oracle.com/java/technologies/downloads/",
-  "url": "https://download.oracle.com/otn_software/java/jdk/17.0.1+12/2a2082e5a09d4267845be086888add4f/jdk-17.0.1_doc-all.zip",
+  "url": "https://download.oracle.com/otn_software/java/jdk/19.0.1+10/afdd2e245b014143b62ccb916125e3ce/jdk-19.0.1_doc-all.zip",
   "appcast": null,
-  "version": "17.0.1,12,2a2082e5a09d4267845be086888add4f",
+  "version": "19.0.1,10,afdd2e245b014143b62ccb916125e3ce",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "126a130be9a45d3f079d462c0b2ece8bcef7d422d252d06d1c8ca37c835e7cf8",
+  "sha256": "02ad1ad549a80703af321183b4607aaacf0c081049d1a8f808b401a844316bdc",
   "artifacts": [
     {
-      "rmdir": "/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "rmdir": "/Library/Java/JavaVirtualMachines/jdk-19.0.1.jdk"
+        }
+      ]
     },
-    [
-      "docs",
-      {
-        "target": "/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/docs"
-      }
-    ]
+    {
+      "artifact": [
+        "docs",
+        {
+          "target": "/Library/Java/JavaVirtualMachines/jdk-19.0.1.jdk/Contents/Home/docs"
+        }
+      ]
+    }
   ],
-  "caveats": "Installing oracle-jdk-javadoc means you have AGREED to the license at:\n  https://download.oracle.com/otndocs/jcp/java_se-17-final-spec/license.html\n",
+  "caveats": "Installing oracle-jdk-javadoc means you have AGREED to the license at:\n  https://download.oracle.com/otndocs/jcp/java_se-19-final-spec/license.html\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

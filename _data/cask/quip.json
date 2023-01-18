@@ -7,40 +7,46 @@
   ],
   "desc": "Tool for teams to create living documents",
   "homepage": "https://quip.com/",
-  "url": "https://quip-clients.com/macosx_7.50.0.dmg",
+  "url": "https://quip-clients.com/macosx_7.73.0.dmg",
   "appcast": null,
-  "version": "7.50.0",
+  "version": "7.73.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f2317f7449888dcdb309f2041fd0f808f6fc1c28d8affc1afbb924248e365fda",
+  "sha256": "34bd68a1a6a3e46ec89a22dac9868e3170031579090e27ef2acd5ffb8da9e9cb",
   "artifacts": [
-    [
-      "Quip.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.quip.Desktop.Quick-Look-Preview",
-        "~/Library/Application Support/com.quip.Desktop",
-        "~/Library/Caches/com.quip.Desktop",
-        "~/Library/Containers/com.quip.Desktop.Quick-Look-Preview",
-        "~/Library/Preferences/com.quip.Desktop.plist",
-        "~/Library/WebKit/com.quip.Desktop"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Quip.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.quip.Desktop.Quick-Look-Preview",
+            "~/Library/Application Support/com.quip.Desktop",
+            "~/Library/Caches/com.quip.Desktop",
+            "~/Library/Containers/com.quip.Desktop.Quick-Look-Preview",
+            "~/Library/Preferences/com.quip.Desktop.plist",
+            "~/Library/WebKit/com.quip.Desktop"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.13"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

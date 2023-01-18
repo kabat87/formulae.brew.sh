@@ -10,7 +10,7 @@
 
   ],
   "desc": "Command-line, ncurses library based hex editor",
-  "license": null,
+  "license": "MIT",
   "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/tweak/",
   "versions": {
     "stable": "3.02",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.chiark.greenend.org.uk/~sgtatham/tweak/tweak-3.02.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5b4c19b1bf8734d1623e723644b8da58150b882efa9f23bbe797c3922f295a1a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tweak/blobs/sha256:71052661cea0d22a4808275349d795438ae29ecee01aa145e0d0cef0214e6642",
+          "sha256": "71052661cea0d22a4808275349d795438ae29ecee01aa145e0d0cef0214e6642"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tweak/blobs/sha256:a7fd74395285898f8a5d187c349de12b3cdb658b3b613e0dde445e1c679de808",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tweak/blobs/sha256:c5688f682787ca49543c2a6bed37237fc52c4ecd11707ec7d5688eaa60e9bf21",
           "sha256": "c5688f682787ca49543c2a6bed37237fc52c4ecd11707ec7d5688eaa60e9bf21"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tweak/blobs/sha256:f124b1cff60dee61f0128c440f647f34e8b38bedc1b9120b822a5a3b50e4c2c8",
+          "sha256": "f124b1cff60dee61f0128c440f647f34e8b38bedc1b9120b822a5a3b50e4c2c8"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -9,24 +9,28 @@
   "homepage": "https://www.edrawsoft.com/",
   "url": "https://download.edrawsoft.com/edraw-max_full5380.dmg",
   "appcast": null,
-  "version": "11.5.0",
+  "version": "12.0.6",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Wondershare EdrawMax.app"
-    ],
     {
-      "trash": [
-        "~/Library/Edraw",
-        "~/Library/Preferences/com.edrawsoft.edrawmax.plist",
-        "~/Library/Saved Application State/com.edrawsoft.edrawmax.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Wondershare EdrawMax.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Edraw",
+            "~/Library/Preferences/com.edrawsoft.edrawmax.plist",
+            "~/Library/Saved Application State/com.edrawsoft.edrawmax.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "ssh-config-editor" do
-  version "2.3.2,91"
-  sha256 "f8086d24d97bb6a8a95698ea4b614c46bffc4b798ae59d5c629bf71c0e5fe3e6"
+  version "2.6.1,101"
+  sha256 "862e7de67a15706a4f693d7e9b8432e284993e088a28158a79d78e49288f0fc3"
 
   url "https://hejki.org/download/ssheditor/SSHConfigEditor-#{version.csv.second}.dmg"
   name "SSH Config Editor"
@@ -9,11 +9,13 @@ cask "ssh-config-editor" do
 
   livecheck do
     url "https://hejki.org/download/ssheditor/appcast#{version.major}.xml"
-    strategy :sparkle
+    strategy :sparkle do |items|
+      items.find { |item| item.channel.nil? }&.nice_version
+    end
   end
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   app "SSH Config Editor.app"
 

@@ -1,5 +1,5 @@
 cask "switchresx" do
-  version "4.11.3"
+  version "4.12.2"
   sha256 :no_check # required as upstream package is updated in-place
 
   url "https://www.madrau.com/data/switchresx/SwitchResX#{version.major}.zip"
@@ -9,16 +9,15 @@ cask "switchresx" do
 
   livecheck do
     url "https://www.madrau.com/srx_download/srx_download/history.php"
-    strategy :page_match
     regex(/SwitchResX\s*(\d+(?:\.\d+)*)/i)
   end
 
-  prefpane "SwitchResX Installer.app/Contents/Resources/SwitchResX.prefPane"
+  prefpane "SwitchResX Installer.app/Contents/Plugins/SwitchResX.prefPane"
 
   uninstall quit:   [
-    "fr.madrau.switchresx.app",
-    "fr.madrau.switchresx.daemon", # note, daemon does not :quit cleanly
-  ],
+              "fr.madrau.switchresx.app",
+              "fr.madrau.switchresx.daemon", # note, daemon does not :quit cleanly
+            ],
             signal: [
               ["INT",  "fr.madrau.switchresx.daemon"],
               ["KILL", "fr.madrau.switchresx.daemon"],

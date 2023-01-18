@@ -7,33 +7,46 @@
   ],
   "desc": "Open-source Dropbox client",
   "homepage": "https://maestral.app/",
-  "url": "https://github.com/SamSchott/maestral/releases/download/v1.5.2/Maestral-1.5.2.dmg",
+  "url": "https://github.com/SamSchott/maestral/releases/download/v1.6.4/Maestral-1.6.4.dmg",
   "appcast": null,
-  "version": "1.5.2",
+  "version": "1.6.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f0bfa344ebc5a0cee425c61a1848c11ff3a82ef4e9e93c14fb9643846eb19c70",
+  "sha256": "2a293a6d4836288e544c45bb804a33980b94a8f936eaf3e566260847dabc6b43",
   "artifacts": [
-    [
-      "Maestral.app"
-    ],
-    [
-      "/Applications/Maestral.app/Contents/MacOS/maestral-cli",
-      {
-        "target": "maestral"
-      }
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/maestral",
-        "~/Library/LaunchAgents/com.samschott.maestral.maestral.plist",
-        "~/Library/Logs/maestral",
-        "~/Library/Preferences/com.samschott.maestral.plist"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.samschott.maestral"
+        }
+      ]
+    },
+    {
+      "app": [
+        "Maestral.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Maestral.app/Contents/MacOS/maestral-cli",
+        {
+          "target": "maestral"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/maestral",
+            "~/Library/LaunchAgents/com.samschott.maestral.maestral.plist",
+            "~/Library/Logs/maestral",
+            "~/Library/Preferences/com.samschott.maestral.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +59,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

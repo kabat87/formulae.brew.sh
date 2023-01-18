@@ -1,12 +1,17 @@
 cask "mymonero" do
-  version "1.2.4"
-  sha256 "805dc1b709fd3d0919da1404ee69b37e1d64f8ebf2342a817283a194ffa9c4eb"
+  version "1.3.2"
+  sha256 "77719a53fe8b5ab19d632ce512836a4caad0e01f9f08ca56fed03ae094264755"
 
   url "https://github.com/mymonero/mymonero-app-js/releases/download/v#{version}/MyMonero-#{version}.dmg",
       verified: "github.com/mymonero/mymonero-app-js/"
   name "MyMonero"
   desc "Wallet for the Monero cryptocurrency"
   homepage "https://mymonero.com/"
+
+  livecheck do
+    url "https://mymonero.com/assets/js/application.js"
+    regex(/desktopVersionString.*?v?(\d+(?:\.\d+)+)/i)
+  end
 
   app "MyMonero.app"
 

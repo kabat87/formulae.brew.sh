@@ -8,25 +8,33 @@
   ],
   "desc": "Identity and access management",
   "homepage": "https://help.okta.com/asa/en-us/Content/Topics/Adv_Server_Access/docs/sft-osx.htm",
-  "url": "https://dist.scaleft.com/client-tools/mac/v1.55.1/ScaleFT-1.55.1.pkg",
+  "url": "https://dist.scaleft.com/client-tools/mac/v1.65.0/ScaleFT-1.65.0.pkg",
   "appcast": null,
-  "version": "1.55.1",
+  "version": "1.65.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "743690788fbca162ef312d68cbee1a10cf8ec2e1351569f85648e76301b1d859",
+  "sha256": "ca1fd50b7d38d1e6d4cda101f5df5ed235682ab663f3c80709fdba0d1d01b740",
   "artifacts": [
     {
-      "pkgutil": "com.scaleft.ScaleFT",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.scaleft.ScaleFT"
+        }
+      ]
     },
-    "ScaleFT-1.55.1.pkg (Pkg)",
     {
-      "trash": "~/Library/Caches/com.scaleft.ScaleFT",
-      "signal": {
-      }
+      "pkg": [
+        "ScaleFT-1.65.0.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Caches/com.scaleft.ScaleFT"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

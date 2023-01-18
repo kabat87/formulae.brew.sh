@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/glpk/glpk-5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4a1013eebb50f728fc601bdd833b0b2870333c3b3e5a816eeba921d95bec6f15"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/glpk/blobs/sha256:2fb927d88ff2f1e242e8909a153449ddaf2e6264d28efe7cf11e6a1e84065ce4",
+          "sha256": "2fb927d88ff2f1e242e8909a153449ddaf2e6264d28efe7cf11e6a1e84065ce4"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/glpk/blobs/sha256:c6f0f13896167f69d3dc9fed18ea36e19745006516abbff71d4dbf1a1a0c569b",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/glpk/blobs/sha256:e05ebe154868c3ae41e25c6d2bff72596275dc93c74a4f6f1a88c15a553a9bf2",
           "sha256": "e05ebe154868c3ae41e25c6d2bff72596275dc93c74a4f6f1a88c15a553a9bf2"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/glpk/blobs/sha256:f9085947b73dba1b8577d6837698047444dbb7226aa513803f8e319510553dc1",
+          "sha256": "f9085947b73dba1b8577d6837698047444dbb7226aa513803f8e319510553dc1"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "gmp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/chipsenkbeil/choose/archive/1.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cab6083be6429e9c67bd0026aedf8bd76675a2dea045d235a973fb61b106aeaf"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/choose-gui/blobs/sha256:15d2bee79fda8a6f9e569558bd549f0bdb14cb61c681a887d5caf461a8ea265c",
+          "sha256": "15d2bee79fda8a6f9e569558bd549f0bdb14cb61c681a887d5caf461a8ea265c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/choose-gui/blobs/sha256:37b3b5778df9ba0fc55ff277bb2ab4a6d920ba21875460c6e7ab4d944411e21a",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/choose-gui/blobs/sha256:e8abc11fca77fb82fc0cbf01c8a4a36a0abdd490f63066bd490ca1ff23af8ccf",
           "sha256": "e8abc11fca77fb82fc0cbf01c8a4a36a0abdd490f63066bd490ca1ff23af8ccf"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/choose-gui/blobs/sha256:2526b5a830c8e2057fe9a2d06d060e84e4d0d4d479f5ec2003d854bb76202330",
+          "sha256": "2526b5a830c8e2057fe9a2d06d060e84e4d0d4d479f5ec2003d854bb76202330"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -99,6 +112,15 @@
       "contexts": [
         "build"
       ]
+    },
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
+
+      ]
     }
   ],
   "conflicts_with": [
@@ -117,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

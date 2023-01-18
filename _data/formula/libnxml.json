@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.autistici.org/bakunin/libnxml/libnxml-0.18.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0f9460e3ba16b347001caf6843f0050f5482e36ebcb307f709259fd6575aa547"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:4eacea651f361f6159331989db43fcb5b88df845d5e3873c583a049826fcdc5f",
+          "sha256": "4eacea651f361f6159331989db43fcb5b88df845d5e3873c583a049826fcdc5f"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:7b9f770e09e58cede9baff8e2cb8b588529368a451ea876edc7d72edb00e324b",
+          "sha256": "7b9f770e09e58cede9baff8e2cb8b588529368a451ea876edc7d72edb00e324b"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:c9fb3bcc767561392f500093ca5549248153ba874b7d3df6ae17a9a94c9135b7",
           "sha256": "c9fb3bcc767561392f500093ca5549248153ba874b7d3df6ae17a9a94c9135b7"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:0630539c78edcfe2b7af9362a3928c41cbc578e64df98e22e10d5f83bc05e94c",
+          "sha256": "0630539c78edcfe2b7af9362a3928c41cbc578e64df98e22e10d5f83bc05e94c"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:db15774e70f1d15202c5c3a0412c87bf2a40625064976ee71b004c9f2a9f439a",
+          "sha256": "db15774e70f1d15202c5c3a0412c87bf2a40625064976ee71b004c9f2a9f439a"
         },
         "big_sur": {
           "cellar": ":any",
@@ -66,24 +87,28 @@
           "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:de106efa2da60ccb8567403547f904485c1c6431dd492ce4e1bbd66599c7f961",
           "sha256": "de106efa2da60ccb8567403547f904485c1c6431dd492ce4e1bbd66599c7f961"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:7c2bff9c49c93ef6a3901050212671c60e0cb4e72f2faf968eb4ae57f3d6fbeb",
-          "sha256": "7c2bff9c49c93ef6a3901050212671c60e0cb4e72f2faf968eb4ae57f3d6fbeb"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libnxml/blobs/sha256:ea65c2b532c9c55ac17f22075d0d4efbf83fbf36c522c57d797e9faa037588e1",
+          "sha256": "ea65c2b532c9c55ac17f22075d0d4efbf83fbf36c522c57d797e9faa037588e1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "autoconf",
+    "automake",
+    "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -93,7 +118,7 @@
 
   ],
   "uses_from_macos": [
-
+    "curl"
   ],
   "requirements": [
 
@@ -113,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/msdl/msdl/msdl-1.2.7-r2/msdl-1.2.7-r2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0297e87bafcab885491b44f71476f5d5bfc648557e7d4ef36961d44dd430a3a1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/msdl/blobs/sha256:6a22fd7fd9ae5684a10a7646d42a1397b700a31db017be4a40e95ad37ce2d02b",
+          "sha256": "6a22fd7fd9ae5684a10a7646d42a1397b700a31db017be4a40e95ad37ce2d02b"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/msdl/blobs/sha256:2bbb7be167030b97337113482fe1007cf0f48a9fbc343f590b19c9964827e71e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/msdl/blobs/sha256:5afd80d5dc62ee3c7a65fe5214d2fe51d89f8eda7ae9bb358bab102f5dd65e6a",
           "sha256": "5afd80d5dc62ee3c7a65fe5214d2fe51d89f8eda7ae9bb358bab102f5dd65e6a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/msdl/blobs/sha256:f2dceb8e2a874043888797e3ad8693aa41babf5c080afe531169ee2fff4e180a",
+          "sha256": "f2dceb8e2a874043888797e3ad8693aa41babf5c080afe531169ee2fff4e180a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/msdl/blobs/sha256:34ba320e82d1ce97fb0a106abd2c5ec848ba16857730ba51cadd0a030bee62ab",
           "sha256": "34ba320e82d1ce97fb0a106abd2c5ec848ba16857730ba51cadd0a030bee62ab"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/msdl/blobs/sha256:5b8ac26e3adbb19386398a5500a8d5631d426b2e0e951433134b5383b80bb568",
-          "sha256": "5b8ac26e3adbb19386398a5500a8d5631d426b2e0e951433134b5383b80bb568"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/msdl/blobs/sha256:5664cc49f99975d426fab1e8518356d8842512ab773aa4c2a3abe0fb957d1881",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

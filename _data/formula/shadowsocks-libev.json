@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/shadowsocks/shadowsocks-libev/releases/download/v3.3.5/shadowsocks-libev-3.3.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cfc8eded35360f4b67e18dc447b0c00cddb29cc57a3cec48b135e5fb87433488"
     }
   },
   "revision": 4,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/shadowsocks-libev/blobs/sha256:6490e3800ef7d2705e550b066a1b4c70b06e6563c9c1e5d1b8e4f2c3824611b3",
+          "sha256": "6490e3800ef7d2705e550b066a1b4c70b06e6563c9c1e5d1b8e4f2c3824611b3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/shadowsocks-libev/blobs/sha256:bcdae7a01e62e6af170c92174da04167b501787e7b041afa652f8f267c21a080",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/shadowsocks-libev/blobs/sha256:0974cdce9f0a548d04d0798d9b878013075206938ebf8b68273aa57f02df3ef4",
           "sha256": "0974cdce9f0a548d04d0798d9b878013075206938ebf8b68273aa57f02df3ef4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/shadowsocks-libev/blobs/sha256:616bbd5f8db762784be79dc2735192ab22f21dbf3219efc8e3ae2a222bc496ce",
+          "sha256": "616bbd5f8db762784be79dc2735192ab22f21dbf3219efc8e3ae2a222bc496ce"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "libsodium",
     "mbedtls@2",
     "pcre"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

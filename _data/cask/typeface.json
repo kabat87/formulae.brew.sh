@@ -7,23 +7,50 @@
   ],
   "desc": "Font manager application",
   "homepage": "https://typefaceapp.com/",
-  "url": "https://dcdn.typefaceapp.com/Typeface-3.5.0-3122/Typeface-3.5.0-3122.dmg",
+  "url": "https://dcdn.typefaceapp.com/Typeface-3.7.2-3476/Typeface-3.7.2-3476.dmg",
   "appcast": null,
-  "version": "3.5.0,3122",
+  "version": "3.7.2,3476",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a736843b8a4a9efe211684f66d32ade6f092f0fff041305729198f2ce62d5433",
+  "sha256": "d2a38b6dc077060f7c0725ac10a43cee87cc400ad25953d48e956f48a9121698",
   "artifacts": [
-    [
-      "Typeface.app"
-    ]
+    {
+      "uninstall": [
+        {
+          "quit": "com.criminalbird.typeface.standalone"
+        }
+      ]
+    },
+    {
+      "app": [
+        "Typeface.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.criminalbird.typeface.standalone",
+            "~/Library/Containers/com.criminalbird.typeface.standalone",
+            "~/Library/Preferences/com.criminalbird.typeface.standalone.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.12"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

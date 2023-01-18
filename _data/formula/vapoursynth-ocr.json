@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vapoursynth/vs-ocr/archive/R1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a551354c78fdbe9bcaf29f9a29ee9a7d257ed74d1b6a8403049fcd57855fa0f4"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vapoursynth-ocr/blobs/sha256:fa0a957b191e6e7213154c74a10f628f91163df23bf725f5cad95bc2061ef728",
+          "sha256": "fa0a957b191e6e7213154c74a10f628f91163df23bf725f5cad95bc2061ef728"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/vapoursynth-ocr/blobs/sha256:55ae2c3a8f8bf67d64d2346254daf47e219cfbc6d9614b116501f5d55133ef33",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/vapoursynth-ocr/blobs/sha256:03340882c45e954d15c563d411e2ceb2404bc0ea7fed0eb05104a9ce6630236b",
           "sha256": "03340882c45e954d15c563d411e2ceb2404bc0ea7fed0eb05104a9ce6630236b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vapoursynth-ocr/blobs/sha256:1e0fbd10dbf99ffc491c4efabf1334a122680e77c7d9b3db65472775d67615d6",
+          "sha256": "1e0fbd10dbf99ffc491c4efabf1334a122680e77c7d9b3db65472775d67615d6"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,6 +88,9 @@
   "dependencies": [
     "tesseract",
     "vapoursynth"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -106,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

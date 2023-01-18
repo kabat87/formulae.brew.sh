@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jpr5/ngrep/archive/V1_47.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dc4dbe20991cc36bac5e97e99475e2a1522fd88c59ee2e08f813432c04c5fff3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ngrep/blobs/sha256:6eb14e55176c89bc45e0cda15f725b5ff35d15d8dc017a5bf47609c763964271",
+          "sha256": "6eb14e55176c89bc45e0cda15f725b5ff35d15d8dc017a5bf47609c763964271"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ngrep/blobs/sha256:c9539b7c9783bce244c1310c691766b6c14fbc9a1c0b00ed9b480ed41575717d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ngrep/blobs/sha256:5bc88f61eaba46026963de70f44e84f73f04b041e913051fb21f3351d16cd9e4",
           "sha256": "5bc88f61eaba46026963de70f44e84f73f04b041e913051fb21f3351d16cd9e4"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ngrep/blobs/sha256:2f7aa884659d815ab2ace822663bd3a444ef90b8580dfe1ece26b4a93eacc79f",
+          "sha256": "2f7aa884659d815ab2ace822663bd3a444ef90b8580dfe1ece26b4a93eacc79f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

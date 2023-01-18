@@ -1,17 +1,19 @@
 cask "kyokan-bob" do
-  version "0.8.0"
-  sha256 "66a49484070979a3215bf164a47a33d1035795ad3d513a598cbdaa7896c7bf81"
+  arch arm: "arm64", intel: "x86"
 
-  url "https://github.com/kyokan/bob-wallet/releases/download/#{version}/Bob-#{version}.dmg",
-      verified: "github.com/kyokan/bob-wallet"
+  version "1.0.0"
+  sha256 arm:   "03c913e5ea5d8779122b4da3a9ef0d63307ce84a7a86e84feae53af82bb6fd36",
+         intel: "f4e962e38d8679a5abe7baf181d12ea679bd90876fe991a4c3c01b21f10195c8"
+
+  url "https://github.com/kyokan/bob-wallet/releases/download/v#{version}/Bob-#{version}-#{arch}.dmg",
+      verified: "github.com/kyokan/bob-wallet/"
   name "Bob Wallet"
-  desc "Handshake wallet GUI for name auction and DNS record management"
+  desc "Handshake wallet GUI for managing transactions, name auctions, and DNS records"
   homepage "https://bobwallet.io/"
 
   livecheck do
     url :url
-    strategy :git
-    regex(/^(\d+(?:\.\d+)*)$/i)
+    regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
   app "Bob.app"

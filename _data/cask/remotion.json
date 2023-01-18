@@ -7,26 +7,30 @@
   ],
   "desc": "Communication tool for remote teams",
   "homepage": "https://www.remotion.com/",
-  "url": "https://updates.remotion.com/installers/Remotion%201.69.0.dmg",
+  "url": "https://updates.remotion.com/installers/Remotion%201.99.1.dmg",
   "appcast": null,
-  "version": "1.69.0",
+  "version": "1.99.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a8b51d81f4d3237b86117cddea5c2bcebedf606edd39b24f7be992240891c312",
+  "sha256": "1e31b07ac1ee5edcd3bba315ac3aac67b88e404dfd1f2d203a720381f5718135",
   "artifacts": [
-    [
-      "Remotion.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Remotion",
-        "~/Library/Caches/com.remotion.remotion",
-        "~/Library/Preferences/com.remotion.remotion.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Remotion.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Remotion",
+            "~/Library/Caches/com.remotion.remotion",
+            "~/Library/Preferences/com.remotion.remotion.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

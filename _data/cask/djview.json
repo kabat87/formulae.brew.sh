@@ -5,28 +5,32 @@
   "name": [
     "DjView"
   ],
-  "desc": null,
+  "desc": "DjVu viewer and browser plugin",
   "homepage": "https://djvu.sourceforge.io/",
-  "url": "https://downloads.sourceforge.net/djvu/DjVuLibre-3.5.28%2BDjView-4.12-intel64-3.dmg",
-  "appcast": "https://sourceforge.net/projects/djvu/rss",
-  "version": "4.12,3",
+  "url": "https://downloads.sourceforge.net/djvu/DjVuLibre-3.5.28%2BDjView-4.12-universal-2.dmg",
+  "appcast": null,
+  "version": "4.12,3.5.28,2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f846b1488414f2063c1097768c5ca1d8a4dd8889749de03b108ce7c0941b9c3e",
+  "sha256": "c65460282d7d43c239d262551d415e0cf5873d4b8cbd845e434f2134cdd0a859",
   "artifacts": [
-    [
-      "DjView.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.djvu.djview.sfl*",
-        "~/Library/Preferences/org.djvu.DjView.plist",
-        "~/Library/Saved Application State/org.djvu.DjView.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "DjView.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.djvu.djview.sfl*",
+            "~/Library/Preferences/org.djvu.DjView.plist",
+            "~/Library/Saved Application State/org.djvu.DjView.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

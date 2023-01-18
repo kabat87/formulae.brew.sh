@@ -7,35 +7,44 @@
   ],
   "desc": "Managed client-based VPN service to securely access AWS resources",
   "homepage": "https://aws.amazon.com/vpn/",
-  "url": "https://d20adtppz83p9s.cloudfront.net/OSX/1.4.0/AWS_VPN_Client.pkg",
+  "url": "https://d20adtppz83p9s.cloudfront.net/OSX/3.1.0/AWS_VPN_Client.pkg",
   "appcast": null,
-  "version": "1.4.0",
+  "version": "3.1.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "594ade5053f6b35ea044adfe1a74b2b706a46bf2d976670d670d3b4e207c954e",
+  "sha256": "d88a4b5c9c0f9e64cef52ab508c65aff23913f712589c1f994b0578db985baf9",
   "artifacts": [
     {
-      "pkgutil": "com.amazon.awsvpnclient",
-      "quit": "com.amazonaws.acvc.osx",
-      "launchctl": "com.amazonaws.acvc.helper",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.amazon.awsvpnclient",
+          "quit": "com.amazonaws.acvc.osx",
+          "launchctl": "com.amazonaws.acvc.helper",
+          "delete": [
+            "/Library/Application Support/AWSVPNClient",
+            "/Library/LaunchDaemons/com.amazonaws.acvc.helper.plist",
+            "/Library/PrivilegedHelperTools/com.amazonaws.acvc.helper"
+          ]
+        }
+      ]
     },
-    "AWS_VPN_Client.pkg (Pkg)",
     {
-      "trash": [
-        "/Applications/AWS VPN Client",
-        "/Library/Application Support/AWSVPNClient",
-        "/Library/LaunchDaemons/com.amazonaws.acvc.helper.plist",
-        "/Library/PrivilegedHelperTools/com.amazonaws.acvc.helper",
-        "~/.config/AWSVPNClient",
-        "~/Library/Preferences/com.amazonaws.acvc.osx.plist",
-        "~/Library/Saved Application State/com.amazonaws.acvc.osx.savedState"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "AWS_VPN_Client.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.config/AWSVPNClient",
+            "~/Library/Preferences/com.amazonaws.acvc.osx.plist",
+            "~/Library/Saved Application State/com.amazonaws.acvc.osx.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -43,5 +52,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

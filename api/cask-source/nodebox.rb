@@ -8,6 +8,12 @@ cask "nodebox" do
   desc "Node-based data application for visualization and generative design"
   homepage "https://www.nodebox.net/node/"
 
+  livecheck do
+    url "https://www.nodebox.net/download"
+    strategy :page_match
+    regex(/href=.*?NodeBox[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
+  end
+
   depends_on macos: ">= :catalina"
 
   app "NodeBox.app"

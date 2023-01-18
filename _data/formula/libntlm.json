@@ -11,7 +11,7 @@
   ],
   "desc": "Implements Microsoft's NTLM authentication",
   "license": "LGPL-2.1-or-later",
-  "homepage": "https://www.nongnu.org/libntlm/",
+  "homepage": "https://gitlab.com/gsasl/libntlm/",
   "versions": {
     "stable": "1.6",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://www.nongnu.org/libntlm/releases/libntlm-1.6.tar.gz",
+      "url": "https://download.savannah.nongnu.org/releases/libntlm/libntlm-1.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f2376b87b06d8755aa3498bb1226083fdb1d2cf4460c3982b05a9aa0b51d6821"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libntlm/blobs/sha256:d8d6009fd8f61ed5c328f0dc175769f814070d7df24e112c13c4a41852eff77b",
+          "sha256": "d8d6009fd8f61ed5c328f0dc175769f814070d7df24e112c13c4a41852eff77b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libntlm/blobs/sha256:2f27227db0e6572c8332911e61888cbbc0cf223426de87191f97b35164ef20fa",
@@ -76,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

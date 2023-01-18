@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/soveran/clac/archive/0.3.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e751e31bd2d3cdf6daa80da0ea7761630767aa22df6954df35997d1fcc5fa8ae"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clac/blobs/sha256:5c24643fb296c8c63366fcd003bcf1833bea55e17e596f3712d2c46d2924dacb",
+          "sha256": "5c24643fb296c8c63366fcd003bcf1833bea55e17e596f3712d2c46d2924dacb"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clac/blobs/sha256:175565be3821dd977d0d0b59def680e2750c909e505a70c339c23672f051be23",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clac/blobs/sha256:5579baf3a429639b0cab2098d4dd5711fef715b6599a34b4b5ce11c383e8dbd6",
           "sha256": "5579baf3a429639b0cab2098d4dd5711fef715b6599a34b4b5ce11c383e8dbd6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clac/blobs/sha256:0a838fd0f803107e4e4315c8b9184f64f8727af3c3eb26362fe5e0880435484b",
+          "sha256": "0a838fd0f803107e4e4315c8b9184f64f8727af3c3eb26362fe5e0880435484b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

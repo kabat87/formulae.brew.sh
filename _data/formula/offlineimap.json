@@ -11,7 +11,7 @@
   ],
   "desc": "Synchronizes emails between two repositories",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://www.offlineimap.org/",
+  "homepage": "https://github.com/OfflineIMAP/offlineimap3",
   "versions": {
     "stable": "8.0.0",
     "head": "HEAD",
@@ -21,47 +21,62 @@
     "stable": {
       "url": "https://github.com/OfflineIMAP/offlineimap3/archive/v8.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5d40c163ca2fbf89658116e29f8fa75050d0c34c29619019eee1a84c90fcab32"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:d4165e941468399fa4990253ebc0a2f2eb7d7af8e88da8862b9c8c433f667e59",
+          "sha256": "d4165e941468399fa4990253ebc0a2f2eb7d7af8e88da8862b9c8c433f667e59"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:ca6ca7b5637188d594991786dd26549070571cde325550c4ec301fd0b50d9d3b",
-          "sha256": "ca6ca7b5637188d594991786dd26549070571cde325550c4ec301fd0b50d9d3b"
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:6f25420ab2c8efe5c0b5ac9223d1e49de090c3e5d5d7274ef11ed627114f4610",
+          "sha256": "6f25420ab2c8efe5c0b5ac9223d1e49de090c3e5d5d7274ef11ed627114f4610"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:7f1fb2cdac203f0fd3d933f0448b0d33eddd68088302f5ae3b0c2feb50ae2597",
-          "sha256": "7f1fb2cdac203f0fd3d933f0448b0d33eddd68088302f5ae3b0c2feb50ae2597"
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:3c26406e257f2211984f3e92e9c09f20c6c385fb7b1944ba87272d67a155ffb3",
+          "sha256": "3c26406e257f2211984f3e92e9c09f20c6c385fb7b1944ba87272d67a155ffb3"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:4e78e8faee9f701117fe5fac7e19a5bae79bad80ce5f5fc4cb3c4db6ef2877ca",
+          "sha256": "4e78e8faee9f701117fe5fac7e19a5bae79bad80ce5f5fc4cb3c4db6ef2877ca"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:37cb69a7d2cb44b30f248c823dd60861a24e9c12275c064903fe4d36a2791994",
-          "sha256": "37cb69a7d2cb44b30f248c823dd60861a24e9c12275c064903fe4d36a2791994"
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:04b485b04b07a1cca16998214493d1694c7b4c385be249690cc1d0a3d7c636fd",
+          "sha256": "04b485b04b07a1cca16998214493d1694c7b4c385be249690cc1d0a3d7c636fd"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:c9df9bac321c169322310691fc2e9727221d1f8692cd21bed9588f05521b8d35",
-          "sha256": "c9df9bac321c169322310691fc2e9727221d1f8692cd21bed9588f05521b8d35"
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:1eb38896c12bd4dca38c8499e989b016831e16b3a2dcd532c8137cda027861a0",
+          "sha256": "1eb38896c12bd4dca38c8499e989b016831e16b3a2dcd532c8137cda027861a0"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:42b1a6148dfed890446dc73e0cdc63214089b1eb0f1623b24ac298f043998fc8",
-          "sha256": "42b1a6148dfed890446dc73e0cdc63214089b1eb0f1623b24ac298f043998fc8"
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:b3b0e6de67b3b9f32ede8cbc78d1af4872df68cbfac59dde180b6174a7b99fae",
+          "sha256": "b3b0e6de67b3b9f32ede8cbc78d1af4872df68cbfac59dde180b6174a7b99fae"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/offlineimap/blobs/sha256:8d1d86aadc53a67390d6077c40de359b8d9bf67a06be8119d856c7dcd4f6a109",
+          "sha256": "8d1d86aadc53a67390d6077c40de359b8d9bf67a06be8119d856c7dcd4f6a109"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,7 +84,10 @@
 
   ],
   "dependencies": [
-    "python@3.9"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,7 +96,7 @@
 
   ],
   "uses_from_macos": [
-
+    "krb5"
   ],
   "requirements": [
 
@@ -98,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

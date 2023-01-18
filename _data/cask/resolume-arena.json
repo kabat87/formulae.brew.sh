@@ -7,39 +7,50 @@
   ],
   "desc": "Video mapping software",
   "homepage": "https://resolume.com/",
-  "url": "https://resolume.com/download/Resolume_Arena_7_8_0_rev_10490_Installer.dmg",
+  "url": "https://dd5sgwxv3xok.cloudfront.net/Resolume_Arena_7_13_2_rev_17774_Installer.dmg",
   "appcast": null,
-  "version": "7.8.0,10490",
+  "version": "7.13.2,17774",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "9e121793322a990afb14f54e43b202684defb0c767783f0f247a1c957148c19c",
+  "sha256": "3b4dfd12ef9c72d60afcc26d370c62f9ad1cef1a4b402e90c9b3afc0fddbe5ff",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.resolume.pkg.ResolumeArena.*",
-        "com.resolume.pkg.ResolumeDXV",
-        "com.resolume.pkg.ResolumeQuickLook",
-        "com.resolume.pkg.ResolumeAlley",
-        "com.resolume.pkg.ResolumeWireNodes",
-        "com.resolume.pkg.ResolumeCommon",
-        "com.resolume.pkg.ResolumeWire"
-      ],
-      "delete": "/Applications/Resolume Arena 7",
-      "signal": {
-        "TERM": "com.resolume.arena"
-      },
-      "launchctl": "com.resolume.arena"
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.resolume.pkg.ResolumeArena.*",
+            "com.resolume.pkg.ResolumeDXV",
+            "com.resolume.pkg.ResolumeQuickLook",
+            "com.resolume.pkg.ResolumeAlley",
+            "com.resolume.pkg.ResolumeWireNodes",
+            "com.resolume.pkg.ResolumeCommon",
+            "com.resolume.pkg.ResolumeWire"
+          ],
+          "delete": "/Applications/Resolume Arena 7",
+          "signal": [
+            "TERM",
+            "com.resolume.arena"
+          ],
+          "launchctl": "com.resolume.arena"
+        }
+      ]
     },
-    "Resolume Arena Installer.pkg (Pkg)",
     {
-      "pkgutil": [
-        "com.resolume.pkg.ResolumeDXV",
-        "com.resolume.pkg.ResolumeQuickLook"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "Resolume Arena Installer.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "pkgutil": [
+            "com.resolume.pkg.ResolumeDXV",
+            "com.resolume.pkg.ResolumeQuickLook"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -47,5 +58,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

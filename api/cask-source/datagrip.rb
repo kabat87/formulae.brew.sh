@@ -1,13 +1,9 @@
 cask "datagrip" do
-  arch = Hardware::CPU.intel? ? "" : "-aarch64"
+  arch arm: "-aarch64"
 
-  version "2021.3.3,213.6461.82"
-
-  if Hardware::CPU.intel?
-    sha256 "f0dc2324686f056256a18d46057169fbe692ca19d796327096026d19edb6f2d6"
-  else
-    sha256 "21e0e3a1a0c2bdc809430eea1011e929f120f290d8450de0070f641f752fe9d0"
-  end
+  version "2022.3.3,223.8617.3"
+  sha256 arm:   "ef76c7d61c64f7f0f831ef2774bd908e68d651a20648fc4e63618e24a81be6dd",
+         intel: "e9da8036c7d268368b3f82034389481730cb663b809659b1fa1ab91fd9bdc8cd"
 
   url "https://download.jetbrains.com/datagrip/datagrip-#{version.csv.first}#{arch}.dmg"
   name "DataGrip"
@@ -30,7 +26,7 @@ cask "datagrip" do
 
   uninstall_postflight do
     ENV["PATH"].split(File::PATH_SEPARATOR).map { |path| File.join(path, "datagrip") }.each do |path|
-      if File.exist?(path) &&
+      if File.readable?(path) &&
          File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?
         File.delete(path)
       end

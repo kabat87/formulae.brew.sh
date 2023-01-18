@@ -7,26 +7,30 @@
   ],
   "desc": "Open source audio file encoder",
   "homepage": "https://flacon.github.io/",
-  "url": "https://github.com/flacon/flacon/releases/download/v8.2.0/Flacon_8.2.0.dmg",
+  "url": "https://github.com/flacon/flacon/releases/download/v9.5.1/Flacon_9.5.1.dmg",
   "appcast": null,
-  "version": "8.2.0",
+  "version": "9.5.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "245cae6df3834119382ce87379db35da7d8bf846afd5501e647b0939f63db46f",
+  "sha256": "d5297f2cda050bc38eea89b7830e3744aadb6f5ebc58c41f876f77b0958952ec",
   "artifacts": [
-    [
-      "Flacon.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.flacon.flacon.plist",
-        "~/Library/Preferences/io.github.flacon.plist",
-        "~/Library/Saved Application State/io.github.flacon.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Flacon.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.flacon.flacon.plist",
+            "~/Library/Preferences/io.github.flacon.plist",
+            "~/Library/Saved Application State/io.github.flacon.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

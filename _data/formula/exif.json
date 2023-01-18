@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libexif/exif/releases/download/exif-0_6_22-release/exif-0.6.22.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0fe268736e0ca0538d4af941022761a438854a64c8024a4175e57bf0418117b9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/exif/blobs/sha256:834b4812f8e8828a2e6b274730df66ea88a093fd1342a45931f71e954fa07d0c",
+          "sha256": "834b4812f8e8828a2e6b274730df66ea88a093fd1342a45931f71e954fa07d0c"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/exif/blobs/sha256:17692fb4a47365f4828c8dd22eb29e10f38fdb53e9eaeab0bb4bb06b86d9f8fd",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/exif/blobs/sha256:6f8bd97c2b520c9ca089a39d2ae293f37e15a8049880c308a6413f295ef8b3fe",
           "sha256": "6f8bd97c2b520c9ca089a39d2ae293f37e15a8049880c308a6413f295ef8b3fe"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/exif/blobs/sha256:13a54ab17d7c7abd2604ec6f6b092051f587fbf5cf404ac8aa3cba3a5d8ef238",
+          "sha256": "13a54ab17d7c7abd2604ec6f6b092051f587fbf5cf404ac8aa3cba3a5d8ef238"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
   "dependencies": [
     "libexif",
     "popt"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/slashem/slashem-source/0.0.8E0F1/se008e0f1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e9bd3672c866acc5a0d75e245c190c689956319f192cb5d23ea924dd77e426c3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/slashem/blobs/sha256:fbc49014eb4afffa42419df08cb98337389fb1d87b76c2c900553e0c3739f069",
+          "sha256": "fbc49014eb4afffa42419df08cb98337389fb1d87b76c2c900553e0c3739f069"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/slashem/blobs/sha256:07334e0d163f5aef7e77cd2047374806fccca1071f0e8e6057e3f740746cc139",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/slashem/blobs/sha256:a7fcb3b60e93f0119b791410997a9552c4dd409061eeb06d7b5461a4ab75a52b",
           "sha256": "a7fcb3b60e93f0119b791410997a9552c4dd409061eeb06d7b5461a4ab75a52b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/slashem/blobs/sha256:1094c0410fe6414fe94e7d583d31a483fa2cb5a432876da3d533b5beb853fc83",
+          "sha256": "1094c0410fe6414fe94e7d583d31a483fa2cb5a432876da3d533b5beb853fc83"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/slashem/blobs/sha256:3b0ec09db5b1e2abccc22d2cc9282de211d9a15e4d2d66c404f898af2768d1b3",
           "sha256": "3b0ec09db5b1e2abccc22d2cc9282de211d9a15e4d2d66c404f898af2768d1b3"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/slashem/blobs/sha256:9220e4e678c8302cd7c1ae15b4af08a733899c38717021c867e35decf79f00a7",
-          "sha256": "9220e4e678c8302cd7c1ae15b4af08a733899c38717021c867e35decf79f00a7"
+          "url": "https://ghcr.io/v2/homebrew/core/slashem/blobs/sha256:03e6ce8d29f4ebd5eba336525f8d314b1f26c032d935389c704698f5881396f0",
+          "sha256": "03e6ce8d29f4ebd5eba336525f8d314b1f26c032d935389c704698f5881396f0"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,13 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "bison": "build"
+    },
+    {
+      "flex": "build"
+    },
+    "ncurses"
   ],
   "requirements": [
 
@@ -123,5 +142,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

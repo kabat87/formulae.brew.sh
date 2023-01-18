@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.x.org/archive/individual/lib/libXt-1.2.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "679cc08f1646dbd27f5e48ffe8dd49406102937109130caab02ca32c083a3d60"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:2f18dc5ac2a79e09dee386201da716fdaeb04cdfc544287c5382bd399e1e99ba",
+          "sha256": "2f18dc5ac2a79e09dee386201da716fdaeb04cdfc544287c5382bd399e1e99ba"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:7e817f2cb5cf9b4708246377c23745307d8cb7d0ee03d77b3a6e3b4fb16708ff",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:0fd900ad5097946ee343ba7c15311a3b85540dcd058233e05f198c15405b9da0",
           "sha256": "0fd900ad5097946ee343ba7c15311a3b85540dcd058233e05f198c15405b9da0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libxt/blobs/sha256:599e334d26186c677e16ce83c2cac7e116b5f0491b9d57e96e841192a50f487c",
+          "sha256": "599e334d26186c677e16ce83c2cac7e116b5f0491b9d57e96e841192a50f487c"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
     "libice",
     "libsm",
     "libx11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,71 +13,84 @@
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/pytorch/vision",
   "versions": {
-    "stable": "0.11.2",
+    "stable": "0.14.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/pytorch/vision/archive/refs/tags/v0.11.2.tar.gz",
+      "url": "https://github.com/pytorch/vision/archive/refs/tags/v0.14.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ced67e1cf1f97e168cdf271851a4d0b6d382ab7936e7bcbb39aaa87239c324b6"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:105fefd0fba873baa04bb18d258764f2c19381f8df4898275f4f011bb3cc5093",
+          "sha256": "105fefd0fba873baa04bb18d258764f2c19381f8df4898275f4f011bb3cc5093"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:56d44e29f256c6910b9e934245a16596470928d313740cd7f85f20a3cfcb9a8a",
-          "sha256": "56d44e29f256c6910b9e934245a16596470928d313740cd7f85f20a3cfcb9a8a"
+          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:1535824bd57631ff8233c97973adf6e5aa580d0480f1075a1abeff42a6a824f4",
+          "sha256": "1535824bd57631ff8233c97973adf6e5aa580d0480f1075a1abeff42a6a824f4"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:a14bc100a71305de6ed2c8203e86f84fc5c46c42ba7b5e3fe43b3233886747a8",
-          "sha256": "a14bc100a71305de6ed2c8203e86f84fc5c46c42ba7b5e3fe43b3233886747a8"
+          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:64468c7a188dc9e582ffbaa84f7676c0ab4429364ae0a4ff839c3b97666d5beb",
+          "sha256": "64468c7a188dc9e582ffbaa84f7676c0ab4429364ae0a4ff839c3b97666d5beb"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:ab654adfe800fb5651a631818801a603b942ff24b691ec1d48cf03b88e4b8a22",
+          "sha256": "ab654adfe800fb5651a631818801a603b942ff24b691ec1d48cf03b88e4b8a22"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:7f2107b6c338e4c7a2591b5f9d4b4ad5015820bcc950543b9015633b99be54a8",
-          "sha256": "7f2107b6c338e4c7a2591b5f9d4b4ad5015820bcc950543b9015633b99be54a8"
+          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:92dbfc9b11c8b410b8f3adfb3bff5bd1468865179e10ede6154a74be8d12bab2",
+          "sha256": "92dbfc9b11c8b410b8f3adfb3bff5bd1468865179e10ede6154a74be8d12bab2"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:eac9cb6c3f454d09fde67ea0e99699d4ac4dfb9dd76403b1f2494b09dc9e91ce",
-          "sha256": "eac9cb6c3f454d09fde67ea0e99699d4ac4dfb9dd76403b1f2494b09dc9e91ce"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:c2891965afae03ac7e11464b727e09af3a9251bd49a814dd664ff0cf5926e2ad",
-          "sha256": "c2891965afae03ac7e11464b727e09af3a9251bd49a814dd664ff0cf5926e2ad"
+          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:d494ddeddff9c94d692dc0bbc65881ca5a6ecb544884d8122b0aa100e427f90e",
+          "sha256": "d494ddeddff9c94d692dc0bbc65881ca5a6ecb544884d8122b0aa100e427f90e"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:0cc62bcfd4c2a7726201863b1771031b9c37ba5bdd2128c90c4c37fe8475d7cd",
-          "sha256": "0cc62bcfd4c2a7726201863b1771031b9c37ba5bdd2128c90c4c37fe8475d7cd"
+          "url": "https://ghcr.io/v2/homebrew/core/torchvision/blobs/sha256:7ee8ead5885d4f0e4cb5c4b9d1155e72111eb651998000cd8a5ab51654de055a",
+          "sha256": "7ee8ead5885d4f0e4cb5c4b9d1155e72111eb651998000cd8a5ab51654de055a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "cmake"
+    "cmake",
+    "ninja",
+    "python@3.11"
   ],
   "dependencies": [
-    "jpeg",
+    "jpeg-turbo",
     "libpng",
-    "libtorch",
-    "python@3.9"
+    "numpy",
+    "pillow",
+    "python-typing-extensions",
+    "pytorch",
+    "libomp"
+  ],
+  "test_dependencies": [
+    "python@3.11"
   ],
   "recommended_dependencies": [
 
@@ -106,5 +119,17 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "jpeg-turbo",
+        "libpng",
+        "numpy",
+        "pillow",
+        "python-typing-extensions",
+        "pytorch"
+      ]
+    }
+  }
 }

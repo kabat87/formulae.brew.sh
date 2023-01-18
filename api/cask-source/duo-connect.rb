@@ -1,6 +1,6 @@
 cask "duo-connect" do
-  version "1.1.1"
-  sha256 "ba54b65d5a4f8c0a79702f6d370e76fb14cb50148bc3f83b8ff29a4ac9997e78"
+  version "2.0.3"
+  sha256 "e49703db4d199c0a1b0ce3f5906f3998b56a96b552d870ecdfd694c368fc32f0"
 
   url "https://dl.duosecurity.com/DuoConnect-#{version}.pkg",
       verified: "dl.duosecurity.com/"
@@ -10,13 +10,16 @@ cask "duo-connect" do
 
   livecheck do
     url "https://duo.com/docs/checksums#duoconnect-for-macos"
-    strategy :page_match
-    regex(%r{href=.*?/DuoConnect-(\d+(?:\.\d+)+)\.pkg}i)
+    regex(%r{href=.*?/DuoConnect[._-]v?(\d+(?:\.\d+)+)\.pkg}i)
   end
-
-  depends_on macos: ">= :yosemite"
 
   pkg "DuoConnect-#{version}.pkg"
 
-  uninstall pkgutil: "com.duo.connect.bin"
+  uninstall launchctl: [
+              "com.duo.connect.tcp",
+              "com.duo.connect.tcp.plist",
+              "com.duo.connect.tun",
+              "com.duo.connect.tun.plist",
+            ],
+            pkgutil:   "com.duo.connect.bin"
 end

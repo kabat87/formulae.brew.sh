@@ -1,6 +1,6 @@
 cask "virtualbox" do
-  version "6.1.30,148432"
-  sha256 "e4973bef35922493f91e1395b491cf2ec9dee4944d78ced0ebeeb437d93724d4"
+  version "7.0.6,155176"
+  sha256 "f3d0bd75daaa9beb81c03fe5201fd49a39bd251bedb324e21adbd6ff047898c3"
 
   url "https://download.virtualbox.org/virtualbox/#{version.csv.first}/VirtualBox-#{version.csv.first}-#{version.csv.second}-OSX.dmg"
   name "Oracle VirtualBox"
@@ -53,23 +53,19 @@ cask "virtualbox" do
   end
 
   uninstall script:  {
-    executable: "VirtualBox_Uninstall.tool",
-    args:       ["--unattended"],
-    sudo:       true,
-  },
+              executable: "VirtualBox_Uninstall.tool",
+              args:       ["--unattended"],
+              sudo:       true,
+            },
             pkgutil: "org.virtualbox.pkg.*",
             delete:  "/usr/local/bin/vboximg-mount"
 
   zap trash: [
-    "/Library/Application Support/VirtualBox",
-    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualbox*",
-    "~/Library/Preferences/org.virtualbox.app.VirtualBox*",
-    "~/Library/Saved Application State/org.virtualbox.app.VirtualBox*",
-    "~/Library/VirtualBox",
-  ],
+        "/Library/Application Support/VirtualBox",
+        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualbox*",
+        "~/Library/Preferences/org.virtualbox.app.VirtualBox*",
+        "~/Library/Saved Application State/org.virtualbox.app.VirtualBox*",
+        "~/Library/VirtualBox",
+      ],
       rmdir: "~/VirtualBox VMs"
-
-  caveats do
-    kext
-  end
 end

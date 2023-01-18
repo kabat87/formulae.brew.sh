@@ -13,57 +13,71 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://www.geeqie.org/",
   "versions": {
-    "stable": "1.6",
+    "stable": "2.0.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/BestImageViewer/geeqie/releases/download/v1.6/geeqie-1.6.tar.xz",
+      "url": "https://github.com/BestImageViewer/geeqie/releases/download/v2.0.1/geeqie-2.0.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "89c1a7574cfe3888972d10723f4cf3a277249bea494fd9c630aa8d0df944555d"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:be131da5651dbaf7bbebc05071370964ace01fb7952318d77880e989571943ef",
+          "sha256": "be131da5651dbaf7bbebc05071370964ace01fb7952318d77880e989571943ef"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:21cbf95d6c94ee2ca0a829892af45658361648d06163a6459d0f341066430731",
+          "sha256": "21cbf95d6c94ee2ca0a829892af45658361648d06163a6459d0f341066430731"
+        },
         "arm64_big_sur": {
-          "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:72e256d7f4fe30fba145294fe3c12853259233e4bdf2582cc8f1e8a1032b952b",
-          "sha256": "72e256d7f4fe30fba145294fe3c12853259233e4bdf2582cc8f1e8a1032b952b"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:b87ef020a355a72de1b5678d0777f6437600358e8f727db1271ebfeba5d51da5",
+          "sha256": "b87ef020a355a72de1b5678d0777f6437600358e8f727db1271ebfeba5d51da5"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:dd7be8ecba39d584a89541517523c47050db8595d3551fc94dbe5934511d1cc7",
+          "sha256": "dd7be8ecba39d584a89541517523c47050db8595d3551fc94dbe5934511d1cc7"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:238386bb528cced0050a095c89973d0edf4cf04abba612cd5778c1ffc36ea6b4",
+          "sha256": "238386bb528cced0050a095c89973d0edf4cf04abba612cd5778c1ffc36ea6b4"
         },
         "big_sur": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:2aa83988145308caaa7bdd49b0fabfff7e2b7805c988f4cb5a782696355d53e7",
-          "sha256": "2aa83988145308caaa7bdd49b0fabfff7e2b7805c988f4cb5a782696355d53e7"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:edbd513fa2df92e02ce67adb19e95445744b1ff9c7a8f21d086d547a3c8c28d8",
+          "sha256": "edbd513fa2df92e02ce67adb19e95445744b1ff9c7a8f21d086d547a3c8c28d8"
         },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:6cd0177bb8e510ce20c440f21491e390e0f4339cb0461bc24fa2e0cadda17a99",
-          "sha256": "6cd0177bb8e510ce20c440f21491e390e0f4339cb0461bc24fa2e0cadda17a99"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:de5e6de4c8b6098193cff623e96f0fbbd9204705bff0accfc1c354cfd8cc95e5",
-          "sha256": "de5e6de4c8b6098193cff623e96f0fbbd9204705bff0accfc1c354cfd8cc95e5"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/geeqie/blobs/sha256:fdee4ae387afd0ef3ef45a0e09a505aae49d007eff9b2e288fbbac1ae6e61e10",
+          "sha256": "fdee4ae387afd0ef3ef45a0e09a505aae49d007eff9b2e288fbbac1ae6e61e10"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "autoconf",
-    "automake",
-    "intltool",
+    "meson",
+    "ninja",
     "pkg-config"
   ],
   "dependencies": [
@@ -76,11 +90,14 @@
     "glib",
     "gtk+3",
     "imagemagick",
-    "jpeg",
+    "jpeg-turbo",
     "libtiff",
     "libx11",
     "little-cms2",
     "pango"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -89,7 +106,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "vim": "build"
+    }
   ],
   "requirements": [
 
@@ -109,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

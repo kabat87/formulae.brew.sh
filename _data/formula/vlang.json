@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/vlang/v/archive/0.2.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8cdbc32fb928051ce7959dd943af3efee26bddc4ed3700a1cb365be73a306bf9"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vlang/blobs/sha256:c081325dfa17516e4d8bc5cfca8c610208c15e5d84938ca5a3a75c72a0bbca80",
+          "sha256": "c081325dfa17516e4d8bc5cfca8c610208c15e5d84938ca5a3a75c72a0bbca80"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vlang/blobs/sha256:bd921f6a5fececa1d04ad1361ba19c1da4ae361b88d3862fa02f7747bb87b0cb",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vlang/blobs/sha256:9fc0d5fea246584518fc01c59483f07ad89274c78606a70cb4623be28380f7d0",
           "sha256": "9fc0d5fea246584518fc01c59483f07ad89274c78606a70cb4623be28380f7d0"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vlang/blobs/sha256:664f602968c98de14dfa5f92f106c2016dc8a0517c2928336ad38e3404502940",
+          "sha256": "664f602968c98de14dfa5f92f106c2016dc8a0517c2928336ad38e3404502940"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,35 +13,35 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/detekt/detekt",
   "versions": {
-    "stable": "1.19.0",
+    "stable": "1.22.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/detekt/detekt/releases/download/v1.19.0/detekt-cli-1.19.0-all.jar",
+      "url": "https://github.com/detekt/detekt/releases/download/v1.22.0/detekt-cli-1.22.0-all.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "34238c05c02d93b70e94fdc7f01cff85f47fdf4e63fc37daa05af0739d386ffe"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/detekt/blobs/sha256:bbd9f04be63b4f3493ea4d95676ed905a22f6196abc6ecaa4ddc8aa0e6112eb9",
-          "sha256": "bbd9f04be63b4f3493ea4d95676ed905a22f6196abc6ecaa4ddc8aa0e6112eb9"
+          "url": "https://ghcr.io/v2/homebrew/core/detekt/blobs/sha256:0803c5a28780fc4fca5d86aeb440624d9a3477f8aceff76d70726528796d090c",
+          "sha256": "0803c5a28780fc4fca5d86aeb440624d9a3477f8aceff76d70726528796d090c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@11"
+    "openjdk@17"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

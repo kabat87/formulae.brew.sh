@@ -7,39 +7,48 @@
   ],
   "desc": "JetBrains tools manager",
   "homepage": "https://www.jetbrains.com/toolbox-app/",
-  "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.22.10970.dmg",
+  "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.27.2.13801.dmg",
   "appcast": null,
-  "version": "1.22,1.22.10970",
+  "version": "1.27.2,1.27.2.13801",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "179b0bc023a05382b0b4541f62ca50991b39e8ce42d05afa3d27823fda8fbc10",
+  "sha256": "a42aa308b1437b4a3e76eebbe6d8a802e65720be27cee3294320b536833cf86b",
   "artifacts": [
     {
-      "signal": {
-        "TERM": "com.jetbrains.toolbox"
-      },
-      "launchctl": "com.jetbrains.toolbox"
+      "uninstall": [
+        {
+          "signal": [
+            "TERM",
+            "com.jetbrains.toolbox"
+          ],
+          "launchctl": "com.jetbrains.toolbox"
+        }
+      ]
     },
-    [
-      "JetBrains Toolbox.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/JetBrains/Toolbox",
-        "~/Library/Caches/JetBrains/Toolbox",
-        "~/Library/Logs/JetBrains/Toolbox",
-        "~/Library/Preferences/com.jetbrains.toolbox.renderer.plist",
-        "~/Library/Saved Application State/com.jetbrains.toolbox.savedState"
-      ],
-      "rmdir": [
-        "~/Library/Application Support/JetBrains",
-        "~/Library/Caches/JetBrains",
-        "~/Library/Logs/JetBrains"
-      ],
-      "signal": {
-      }
+      "app": [
+        "JetBrains Toolbox.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/JetBrains/Toolbox",
+            "~/Library/Caches/JetBrains/Toolbox",
+            "~/Library/Logs/JetBrains/Toolbox",
+            "~/Library/Preferences/com.jetbrains.toolbox.renderer.plist",
+            "~/Library/Saved Application State/com.jetbrains.toolbox.savedState"
+          ],
+          "rmdir": [
+            "~/Library/Application Support/JetBrains",
+            "~/Library/Caches/JetBrains",
+            "~/Library/Logs/JetBrains"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -52,5 +61,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.27.2.13801-arm64.dmg",
+      "sha256": "051cced2b1e84cc1577c4000308d95726e0ed6725dc81df87b9f33837544d21e"
+    },
+    "arm64_monterey": {
+      "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.27.2.13801-arm64.dmg",
+      "sha256": "051cced2b1e84cc1577c4000308d95726e0ed6725dc81df87b9f33837544d21e"
+    },
+    "arm64_big_sur": {
+      "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.27.2.13801-arm64.dmg",
+      "sha256": "051cced2b1e84cc1577c4000308d95726e0ed6725dc81df87b9f33837544d21e"
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/metashell/metashell/archive/v4.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "02a88204fe36428cc6c74453059e8c399759d4306e8156d0920aefa4c07efc64"
     }
   },
   "revision": 0,
@@ -75,13 +76,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/metashell/blobs/sha256:209c4c475fa58cb42a2e98bd34c11a983463465ce4ee5470474177d6740fb2e5",
           "sha256": "209c4c475fa58cb42a2e98bd34c11a983463465ce4ee5470474177d6740fb2e5"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/metashell/blobs/sha256:f1e3a47564c136eedecb087617ebf7b7b9da158d0eef5497cfd04b5ffa74d814",
+          "sha256": "f1e3a47564c136eedecb087617ebf7b7b9da158d0eef5497cfd04b5ffa74d814"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +96,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -98,7 +106,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
 
@@ -118,5 +126,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "zlib",
+        "readline"
+      ]
+    }
+  }
 }

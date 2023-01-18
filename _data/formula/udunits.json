@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://artifacts.unidata.ucar.edu/repository/downloads-udunits/udunits-2.2.28.tar.gz",
+      "url": "https://artifacts.unidata.ucar.edu/repository/downloads-udunits/2.2.28/udunits-2.2.28.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "590baec83161a3fd62c00efa66f6113cec8a7c461e3f61a5182167e0cc5d579e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/udunits/blobs/sha256:c6f54e9f07ec6617aeee1bd95a6ebd444e5b72adb9c3268b9fdb68cd443c26f6",
+          "sha256": "c6f54e9f07ec6617aeee1bd95a6ebd444e5b72adb9c3268b9fdb68cd443c26f6"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/udunits/blobs/sha256:64af7e42ad61c45d6f1790d747c9e3d8bbd8634a86fc51961646b31a16f64edf",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/udunits/blobs/sha256:d7abb17bec04dc4aede1c62e24766a4f31c6d4c4cc5f1716fcb56f1da06b0492",
           "sha256": "d7abb17bec04dc4aede1c62e24766a4f31c6d4c4cc5f1716fcb56f1da06b0492"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/udunits/blobs/sha256:05ba4dddcb5941e0a0af12b1064403e144577e4910c851a2e8ecb13d1faa5b20",
+          "sha256": "05ba4dddcb5941e0a0af12b1064403e144577e4910c851a2e8ecb13d1faa5b20"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -93,9 +106,6 @@
     },
     {
       "flex": "build"
-    },
-    {
-      "texinfo": "build"
     },
     "expat"
   ],
@@ -117,5 +127,27 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "bison",
+        "flex",
+        "texinfo"
+      ],
+      "dependencies": [
+        "expat"
+      ]
+    }
+  }
 }

@@ -10,7 +10,7 @@
 
   ],
   "desc": "Network packet logger and soft tap daemon",
-  "license": null,
+  "license": "GPL-2.0-only",
   "homepage": "https://sourceforge.net/projects/daemonlogger/",
   "versions": {
     "stable": "1.2.1",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/daemonlogger/daemonlogger-1.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "79fcd34d815e9c671ffa1ea3c7d7d50f895bb7a79b4448c4fd1c37857cf44a0b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/daemonlogger/blobs/sha256:beee453bd9b0404bd4a145fb466eaf3ed8212d24570bc4eb0fa5480cda06c4c9",
+          "sha256": "beee453bd9b0404bd4a145fb466eaf3ed8212d24570bc4eb0fa5480cda06c4c9"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/daemonlogger/blobs/sha256:5df034d135e6be79eee9c27f0b53cc1b9531b8d027c40f6e7c9b76561a0476d6",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/daemonlogger/blobs/sha256:cebaf67384c1d536a827bd4da514b70f2342315cfc013fa3e0e9fd0c658c22a4",
           "sha256": "cebaf67384c1d536a827bd4da514b70f2342315cfc013fa3e0e9fd0c658c22a4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/daemonlogger/blobs/sha256:f85bf445ce68b5ab5914671739bebfe81ed91f7ee0bed9d4e92667e42edf6c5e",
+          "sha256": "f85bf445ce68b5ab5914671739bebfe81ed91f7ee0bed9d4e92667e42edf6c5e"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/daemonlogger/blobs/sha256:582aa8e07f269bdfa00b1f66157c06339b62285d94f6b8ffa6a472eac063e5e5",
           "sha256": "582aa8e07f269bdfa00b1f66157c06339b62285d94f6b8ffa6a472eac063e5e5"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/daemonlogger/blobs/sha256:3497b590f03a70d322452abd71a1121d9a952d05a82af875c1dc11e5ae0324d6",
-          "sha256": "3497b590f03a70d322452abd71a1121d9a952d05a82af875c1dc11e5ae0324d6"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/daemonlogger/blobs/sha256:462b6ecbf94169210be2591de29de97b69a701cc810485fb956bf7892e1b57fa",
+          "sha256": "462b6ecbf94169210be2591de29de97b69a701cc810485fb956bf7892e1b57fa"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
     "libdnet"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

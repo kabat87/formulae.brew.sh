@@ -13,55 +13,65 @@
   "license": "BSD-3-Clause and MPL-2.0 and BSL-1.0 and MIT",
   "homepage": "https://www.mlpack.org",
   "versions": {
-    "stable": "3.4.2",
-    "head": null,
+    "stable": "4.0.1",
+    "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://mlpack.org/files/mlpack-3.4.2.tar.gz",
+      "url": "https://mlpack.org/files/mlpack-4.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "4c746936ed9da9f16744240ed7b9f2815d3abb90c904071a1d1a628a9bbfb3a5"
     }
   },
-  "revision": 3,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:995a00364fb60be3312aef995709240af153cc59b0845a0dffc74d0650f5e563",
+          "sha256": "995a00364fb60be3312aef995709240af153cc59b0845a0dffc74d0650f5e563"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:30cf5ba4558baea34744e128d77bea54a1b4e0c53d7761fb6b83de578b6b1d2f",
+          "sha256": "30cf5ba4558baea34744e128d77bea54a1b4e0c53d7761fb6b83de578b6b1d2f"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:826d26c907780f6b8edc30180c6f6ae0885811534dec61bdbcfda3b7d75a42f2",
-          "sha256": "826d26c907780f6b8edc30180c6f6ae0885811534dec61bdbcfda3b7d75a42f2"
+          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:774d1218866a46e46cf7c57cf5587745ed692c207b854d22b69f833bed78a79d",
+          "sha256": "774d1218866a46e46cf7c57cf5587745ed692c207b854d22b69f833bed78a79d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:e6fc92e0b0741393ed7a3f7cf3fd9f18ee6e9e2871165a8695367786c4cfb97a",
+          "sha256": "e6fc92e0b0741393ed7a3f7cf3fd9f18ee6e9e2871165a8695367786c4cfb97a"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:6c7fcb29876984333188a9d59842d512bd324def5fabf694570510583b174e6a",
+          "sha256": "6c7fcb29876984333188a9d59842d512bd324def5fabf694570510583b174e6a"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:5aa83e0eb31c4355e128e5d7185710cbefe9ec4afcbe32e38229815428a58817",
-          "sha256": "5aa83e0eb31c4355e128e5d7185710cbefe9ec4afcbe32e38229815428a58817"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:c6024d74fc22e20c8075c05501864e998cb36b5cb4c8f1d133ea82166c0e0b95",
-          "sha256": "c6024d74fc22e20c8075c05501864e998cb36b5cb4c8f1d133ea82166c0e0b95"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:3445bbce49bef30c1818523cdf044ad15c9638d960002185144c6d71578e3600",
-          "sha256": "3445bbce49bef30c1818523cdf044ad15c9638d960002185144c6d71578e3600"
+          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:79e6ad32387cc7633da760c8d91649f217dea20c0d92ceae8a5f48073b89dabf",
+          "sha256": "79e6ad32387cc7633da760c8d91649f217dea20c0d92ceae8a5f48073b89dabf"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:ecad09f96c51721fd59dc7d0f10c146e79176234af215a3b4965565bf61605fe",
-          "sha256": "ecad09f96c51721fd59dc7d0f10c146e79176234af215a3b4965565bf61605fe"
+          "url": "https://ghcr.io/v2/homebrew/core/mlpack/blobs/sha256:e1898583f4112fd9ad3dc106d970526acfbd20d2f5770ce055fb52f59e37b643",
+          "sha256": "e1898583f4112fd9ad3dc106d970526acfbd20d2f5770ce055fb52f59e37b643"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -73,8 +83,12 @@
   "dependencies": [
     "armadillo",
     "boost",
+    "cereal",
     "ensmallen",
     "graphviz"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

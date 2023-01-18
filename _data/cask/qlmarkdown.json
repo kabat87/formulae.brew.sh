@@ -7,29 +7,33 @@
   ],
   "desc": "QuickLook generator for Markdown files",
   "homepage": "https://github.com/sbarex/QLMarkdown",
-  "url": "https://github.com/sbarex/QLMarkdown/releases/download/1.0.10/QLMarkdown.zip",
+  "url": "https://github.com/sbarex/QLMarkdown/releases/download/1.0.15/QLMarkdown.zip",
   "appcast": null,
-  "version": "1.0.10",
+  "version": "1.0.15",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "bc336b4e1c69d7d88eb54e54e792305516d2775e6c32705dbc9bf7eb3f58ec25",
+  "sha256": "f8ad590d9d5cc081d3e8f9ecf559e41991aa8a72fd41ed4e7bac70e8e804a2c5",
   "artifacts": [
-    [
-      "QLMarkdown.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/org.sbarex.QLMarkdown",
-        "~/Library/Application Scripts/org.sbarex.QLMarkdown.QLExtension",
-        "~/Library/Containers/org.sbarex.QLMarkdown",
-        "~/Library/Containers/org.sbarex.QLMarkdown.QLExtension",
-        "~/Library/Preferences/org.sbarex.QLMarkdown.plist",
-        "~/Library/QuickLook/QLMarkdown.qlgenerator"
-      ],
-      "signal": {
-      }
+      "app": [
+        "QLMarkdown.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/org.sbarex.QLMarkdown",
+            "~/Library/Application Scripts/org.sbarex.QLMarkdown.QLExtension",
+            "~/Library/Containers/org.sbarex.QLMarkdown",
+            "~/Library/Containers/org.sbarex.QLMarkdown.QLExtension",
+            "~/Library/Preferences/org.sbarex.QLMarkdown.plist",
+            "~/Library/QuickLook/QLMarkdown.qlgenerator"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "idagio" do
-  version "1.2.4"
-  sha256 "ab7d03ca7b506c32881b45efd33583b48f6e255908df82f7603ff5d0c0ff5767"
+  version "1.6.1"
+  sha256 "65893c74eb8dd8d07eb504496343ac04cda351c81bca9e0ed1b34a2430ad2725"
 
   url "https://dl.idagio.com/IDAGIO-#{version}.dmg"
   name "IDAGIO"
@@ -8,7 +8,7 @@ cask "idagio" do
   homepage "https://www.idagio.com/"
 
   livecheck do
-    url "https://www.idagio.com/download"
+    url "https://app.idagio.com/download"
     regex(/href=.*?IDAGIO[._-]v?(\d+(?:\.\d+)+)\.dmg/i)
   end
 

@@ -10,7 +10,7 @@
 
   ],
   "desc": "Command-line tool to put Macs to sleep",
-  "license": null,
+  "license": "Public Domain",
   "homepage": "https://github.com/Orc/Zzz",
   "versions": {
     "stable": "1",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Orc/Zzz/archive/v1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8c8958b65a74ab1081ce1a950af6d360166828bdb383d71cc8fe37ddb1702576"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zzz/blobs/sha256:5da5ac10ecb8c990e69702b8c671a701d662ab63755a25b2fd0a90e84790f007",
+          "sha256": "5da5ac10ecb8c990e69702b8c671a701d662ab63755a25b2fd0a90e84790f007"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zzz/blobs/sha256:1a1135d50a709f3c6a64316e5a92a6f269bdb865d21fa26e279c38344afde541",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/zzz/blobs/sha256:e08914c722e58a5f5a43c70b395a198faf42e08bc31476fcf226ee77bd42195f",
           "sha256": "e08914c722e58a5f5a43c70b395a198faf42e08bc31476fcf226ee77bd42195f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/zzz/blobs/sha256:0466ce782b6410ac3fd3df809c516c53763a9e4a90d1ed81f48118090dd497d9",
+          "sha256": "0466ce782b6410ac3fd3df809c516c53763a9e4a90d1ed81f48118090dd497d9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,27 +7,31 @@
   ],
   "desc": "Team communication and collaboration software",
   "homepage": "https://twist.com/",
-  "url": "https://downloads.twist.com/mac/Twist-1.0.3.dmg",
+  "url": "https://downloads.twist.com/mac/Twist-1.0.9.dmg",
   "appcast": null,
-  "version": "1.0.3",
+  "version": "1.0.9",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3d9e4b7e29fa6223d606e63052e3c71729b1f8967856c7670de5656c0bb0008d",
+  "sha256": "a4c87eabaf7b47bc8da2b7498c2358ba9df287e0ce521b84830c4add31d66c31",
   "artifacts": [
-    [
-      "Twist.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Twist",
-        "~/Library/Logs/Twist",
-        "~/Library/Preferences/com.twistapp.mac-sparkle.Twist.plist",
-        "~/Library/Saved Application State/com.twistapp.mac-sparkle.Twist.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Twist.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Twist",
+            "~/Library/Logs/Twist",
+            "~/Library/Preferences/com.twistapp.mac-sparkle.Twist.plist",
+            "~/Library/Saved Application State/com.twistapp.mac-sparkle.Twist.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

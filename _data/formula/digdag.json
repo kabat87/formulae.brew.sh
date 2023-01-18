@@ -13,35 +13,35 @@
   "license": "Apache-2.0",
   "homepage": "https://www.digdag.io/",
   "versions": {
-    "stable": "0.10.3",
+    "stable": "0.10.4",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://dl.digdag.io/digdag-0.10.3.jar",
+      "url": "https://dl.digdag.io/digdag-0.10.4.jar",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2020fa9395e74e14fdf4ada93bff0684dcea64f564788afd6a3ecc54e3bbd4bf"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/digdag/blobs/sha256:ca2ef842dc4f5b70a20896b7ba3fbeb34d14537b5dfc081ebe3e4c7150c04e8f",
-          "sha256": "ca2ef842dc4f5b70a20896b7ba3fbeb34d14537b5dfc081ebe3e4c7150c04e8f"
+          "url": "https://ghcr.io/v2/homebrew/core/digdag/blobs/sha256:1e8af040e14f05c1f648ef90f3e0e7da9037d7e813cfb1fc7c644d174244d0cf",
+          "sha256": "1e8af040e14f05c1f648ef90f3e0e7da9037d7e813cfb1fc7c644d174244d0cf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "openjdk@8"
+    "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

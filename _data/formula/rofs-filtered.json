@@ -21,37 +21,27 @@
     "stable": {
       "url": "https://github.com/gburca/rofs-filtered/archive/rel-1.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d66066dfd0274a2fb7b71dd929445377dd23100b9fa43e3888dbe3fc7e8228e8"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/rofs-filtered/blobs/sha256:250c65163e46fc9eaaab11b27562c70775f2481cfe9f649ab151f8da3616ff08",
-          "sha256": "250c65163e46fc9eaaab11b27562c70775f2481cfe9f649ab151f8da3616ff08"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/rofs-filtered/blobs/sha256:6f220b4a193928a97dc8442cadf6d161224a1ddac098d496c8cf9a20fb7cd02a",
-          "sha256": "6f220b4a193928a97dc8442cadf6d161224a1ddac098d496c8cf9a20fb7cd02a"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/rofs-filtered/blobs/sha256:74277c4f4cc2c60534cda38627450176f356da5bb7120334fd667eaa261fea7b",
-          "sha256": "74277c4f4cc2c60534cda38627450176f356da5bb7120334fd667eaa261fea7b"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rofs-filtered/blobs/sha256:a07f54de644092a439c5ae5a537aca17499ea8b1dad446bb1610f1fb30aaf5cf",
+          "sha256": "a07f54de644092a439c5ae5a537aca17499ea8b1dad446bb1610f1fb30aaf5cf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -59,6 +49,9 @@
     "cmake"
   ],
   "dependencies": [
+    "libfuse@2"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -71,12 +64,20 @@
 
   ],
   "requirements": [
+    {
+      "name": "linux",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
   ],
-  "caveats": "The reasons for disabling this formula can be found here:\n  https://github.com/Homebrew/homebrew-core/pull/64491\n\nAn external tap may provide a replacement formula. See:\n  https://docs.brew.sh/Interesting-Taps-and-Forks\n",
+  "caveats": null,
   "installed": [
 
   ],
@@ -86,7 +87,9 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": true,
-  "disable_date": "2021-04-08",
-  "disable_reason": "requires closed-source macFUSE"
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "variations": {
+  }
 }

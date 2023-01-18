@@ -21,42 +21,62 @@
     "stable": {
       "url": "https://github.com/innotop/innotop/archive/v1.13.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6ec91568e32bda3126661523d9917c7fbbd4b9f85db79224c01b2a740727a65c"
     }
   },
-  "revision": 1,
+  "revision": 3,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:514880fb1328de2d2aa76e929e5059c014aeee67b1355a35c04c85897d5feb38",
+          "sha256": "514880fb1328de2d2aa76e929e5059c014aeee67b1355a35c04c85897d5feb38"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:750258fa6cdba7d0c1f5b1c63c6f7147b71fd0c011143ac4aaf0e79de9a3db81",
+          "sha256": "750258fa6cdba7d0c1f5b1c63c6f7147b71fd0c011143ac4aaf0e79de9a3db81"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:cf80f3c8db711fe4481d9f9663fb1c9877c5a078542f9756a0f4f5dcb8658962",
-          "sha256": "cf80f3c8db711fe4481d9f9663fb1c9877c5a078542f9756a0f4f5dcb8658962"
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:3afc923395e6a125d9935d135b94b733512645155cd25f366a70b1f7e542b430",
+          "sha256": "3afc923395e6a125d9935d135b94b733512645155cd25f366a70b1f7e542b430"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:5580dfd4ea884c197b54a07a7f8c3a80b10d5864e8c1950c71cf0e84e88c8e19",
+          "sha256": "5580dfd4ea884c197b54a07a7f8c3a80b10d5864e8c1950c71cf0e84e88c8e19"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:cca41045f9fd17f918ddd019e901ccdf7378af84432569678de80a2f20a78a6c",
+          "sha256": "cca41045f9fd17f918ddd019e901ccdf7378af84432569678de80a2f20a78a6c"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:e064fd105588d19acfcf7c1a52afb674b140bf8ca66bbdbd85e0c4c45a14c784",
-          "sha256": "e064fd105588d19acfcf7c1a52afb674b140bf8ca66bbdbd85e0c4c45a14c784"
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:80dd83b847117c4134cfe92cbea270feab5d982cacf02589bdbe968c358d6998",
+          "sha256": "80dd83b847117c4134cfe92cbea270feab5d982cacf02589bdbe968c358d6998"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:e8becfe3d8da8c8ed971061e0814e46ae19609cd0ea0ab58260713d8ca2595d0",
-          "sha256": "e8becfe3d8da8c8ed971061e0814e46ae19609cd0ea0ab58260713d8ca2595d0"
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:37d9c2e484c05d25308a5868af10f09d8dc7641ca88b8fa68ca2d3372f1c1545",
+          "sha256": "37d9c2e484c05d25308a5868af10f09d8dc7641ca88b8fa68ca2d3372f1c1545"
         },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:d2430929751627ed8242594b4d0cfc59346e5604232a148a97e879d1700fa05e",
-          "sha256": "d2430929751627ed8242594b4d0cfc59346e5604232a148a97e879d1700fa05e"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/innotop/blobs/sha256:3cee83a61c30303263741258a618a9e7ae45c7737c9a54ab2bed264a031cfaae",
+          "sha256": "3cee83a61c30303263741258a618a9e7ae45c7737c9a54ab2bed264a031cfaae"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -66,6 +86,9 @@
   "dependencies": [
     "mysql-client",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -94,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "GPL-2.0-only",
   "homepage": "https://git-scm.com",
   "versions": {
-    "stable": "2.34.1",
+    "stable": "2.39.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.34.1.tar.xz",
+      "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.39.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "40a38a0847b30c371b35873b3afcf123885dd41ea3ecbbf510efa97f3ce5c161"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f",
+          "sha256": "586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:3bccb74d3bfc27acb23e0fbc3e83f61cbfb410dbd37e7172cd43b66c262dcc87",
-          "sha256": "3bccb74d3bfc27acb23e0fbc3e83f61cbfb410dbd37e7172cd43b66c262dcc87"
+          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f",
+          "sha256": "586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:46553c07e16ae80c0a95bb487cce4fb38c6905cde5b22e98a8fe4697c062a485",
-          "sha256": "46553c07e16ae80c0a95bb487cce4fb38c6905cde5b22e98a8fe4697c062a485"
+          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:16145663a90108b47b3966736cd35219d93b63f6f39a45ad68b93bf263ab0d23",
+          "sha256": "16145663a90108b47b3966736cd35219d93b63f6f39a45ad68b93bf263ab0d23"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f",
+          "sha256": "586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:3bccb74d3bfc27acb23e0fbc3e83f61cbfb410dbd37e7172cd43b66c262dcc87",
-          "sha256": "3bccb74d3bfc27acb23e0fbc3e83f61cbfb410dbd37e7172cd43b66c262dcc87"
+          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f",
+          "sha256": "586496be87f1a1ad17ae14a4ac93725856c97480a4200fce73c347e770b6143f"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:46553c07e16ae80c0a95bb487cce4fb38c6905cde5b22e98a8fe4697c062a485",
-          "sha256": "46553c07e16ae80c0a95bb487cce4fb38c6905cde5b22e98a8fe4697c062a485"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:5ebbf6c8ab9289f69ccf0fe204d6e556eb9b5a56d9f79695358a1070a25a5304",
-          "sha256": "5ebbf6c8ab9289f69ccf0fe204d6e556eb9b5a56d9f79695358a1070a25a5304"
+          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:16145663a90108b47b3966736cd35219d93b63f6f39a45ad68b93bf263ab0d23",
+          "sha256": "16145663a90108b47b3966736cd35219d93b63f6f39a45ad68b93bf263ab0d23"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:30fb84d987cf326586359307ceaf4abb2f84000647be541a8e3b4b496d635418",
-          "sha256": "30fb84d987cf326586359307ceaf4abb2f84000647be541a8e3b4b496d635418"
+          "url": "https://ghcr.io/v2/homebrew/core/git-svn/blobs/sha256:82c494f6b9bcc2a71b891fa21b5faeea67a044a969210e807aafa41da08fc29c",
+          "sha256": "82c494f6b9bcc2a71b891fa21b5faeea67a044a969210e807aafa41da08fc29c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
   "dependencies": [
     "git",
     "subversion"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

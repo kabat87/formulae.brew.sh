@@ -7,34 +7,45 @@
   ],
   "desc": "Settings and tweaks configurator",
   "homepage": "https://onmyway133.com/almighty/",
-  "url": "https://almighty-app.s3.eu-north-1.amazonaws.com/Almighty.app.zip",
+  "url": "https://almighty-app.s3.eu-north-1.amazonaws.com/Almighty.zip",
   "appcast": null,
-  "version": "2.2.1,32",
+  "version": "2.4.1,52",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Almighty.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Almighty",
-        "~/Library/Application Support/com.onmyway133.Almighty",
-        "~/Library/Caches/com.onmyway133.Almighty",
-        "~/Library/Preferences/com.onmyway133.Almighty.plist",
-        "~/Library/Saved Application State/com.onmyway133.Almighty.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Almighty.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Almighty",
+            "~/Library/Application Support/com.onmyway133.Almighty",
+            "~/Library/Caches/com.onmyway133.Almighty",
+            "~/Library/Preferences/com.onmyway133.Almighty.plist",
+            "~/Library/Saved Application State/com.onmyway133.Almighty.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "11"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -16,13 +16,26 @@
   "outdated": false,
   "sha256": "e5efe1de1283df05ad0bb2908c16c02bc0c34806119e83daefc0f049286f3c58",
   "artifacts": [
-    [
-      "Editaro.app"
-    ],
     {
-      "trash": "~/Library/ApplicationSupport/Editaro",
-      "signal": {
-      }
+      "app": [
+        "Editaro.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Editaro",
+            "~/Library/Caches/com.electron.editaro",
+            "~/Library/Caches/com.electron.editaro.ShipIt",
+            "~/Library/HTTPStorages/com.electron.editaro",
+            "~/Library/Logs/Editaro",
+            "~/Library/Preferences/com.electron.editaro.helper.plist",
+            "~/Library/Preferences/com.electron.editaro.plist",
+            "~/Library/Saved Application State/com.electron.editaro.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

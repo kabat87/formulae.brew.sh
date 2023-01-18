@@ -1,9 +1,9 @@
 cask "vpn-tracker-365" do
   # NOTE: "365" is not a version number, but an intrinsic part of the product name
-  version "21.7.3,210743"
-  sha256 "1ec147294b325eac97c50bb2279d406639ba2caad6115efa35b16f9f005c1f39"
+  version "22.4.2,220423"
+  sha256 "0b72496128f8866a7a65cda93cbd19e7795aa9b6fc7ed401c5626d0e90f1a918"
 
-  url "https://download.equinux.com/files/other/VPN-Tracker-365-#{version.csv.first}-#{version.csv.second}.zip",
+  url "https://download.equinux.com/files/other/VPN%20Tracker%20365%20-%20#{version.csv.first}%20#{version.csv.second}.zip",
       verified: "download.equinux.com/files/other/"
   name "VPN Tracker 365"
   desc "VPN client: IPsec, L2TP, OpenVPN, PPTP, SSTP, SonicWALL/AnyConnect/Fortinet SSL"
@@ -11,7 +11,7 @@ cask "vpn-tracker-365" do
 
   livecheck do
     url "https://www.equinux.com/dlc/?l=/x/products/vpntracker/download.html&cc=com.equinux.VPNTracker&v=365&d"
-    regex(/VPN[._-]Tracker[._-]365[._-]v?(\d+(?:\.\d+)+)[._-](\d+(?:\.\d+)*)\.zip/i)
+    regex(/VPN[\s._-]Tracker[\s._-]365[\s._-]+v?(\d+(?:\.\d+)+)[\s._-](\d+(?:\.\d+)*)\.zip/i)
     strategy :header_match do |headers, regex|
       match = headers["location"].match(regex)
       next if match.blank?

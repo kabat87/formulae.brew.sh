@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://c-ares.org/download/c-ares-1.18.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1a7d52a8a84a9fbffb1be9133c0f6e17217d91ea5a6fa61f6b4729cda78ebbcf"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/c-ares/blobs/sha256:d033d01f5fb60bfdf8c13970b543dc22b5930133266d3bd251bddf808dd72aa4",
+          "sha256": "d033d01f5fb60bfdf8c13970b543dc22b5930133266d3bd251bddf808dd72aa4"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/c-ares/blobs/sha256:a5818fef12f8028c1ee36d9df5213a74b8e3f33b08889043908bc59364cc29b5",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/c-ares/blobs/sha256:2a3a10365f123633607a3569a8cb31afeac814229e17d975c95be5139f33fed5",
           "sha256": "2a3a10365f123633607a3569a8cb31afeac814229e17d975c95be5139f33fed5"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/c-ares/blobs/sha256:e0fce37577a8cd007314f96c2132e7c64ca5ee52f7a90ebeb8121eb7435f380e",
+          "sha256": "e0fce37577a8cd007314f96c2132e7c64ca5ee52f7a90ebeb8121eb7435f380e"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -100,6 +113,7 @@
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671154455,
       "runtime_dependencies": [
 
       ],
@@ -115,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

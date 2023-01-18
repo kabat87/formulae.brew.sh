@@ -13,60 +13,65 @@
   "license": "Unlicense",
   "homepage": "https://github.com/iheanyi/bandcamp-dl",
   "versions": {
-    "stable": "0.0.12",
+    "stable": "0.0.13",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/53/3f/6ea718cf7f582e5b45208ffac2460a3c7e3616b831e72b0b3219a788bab9/bandcamp-downloader-0.0.12.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/cb/6f/08d0e2b1819327e375ebf67af0689727b2d49db7c0d11d4829552ea01ae4/bandcamp-downloader-0.0.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c7dbf489b2611406148a6ced25e5814b1fe666e3b3da6c744cfc3df2abe1b270"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:88184b5f54f7cf5a2b97e5753c6ca51e4cb02d3d669a58f7b804de1924130daf",
+          "sha256": "88184b5f54f7cf5a2b97e5753c6ca51e4cb02d3d669a58f7b804de1924130daf"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:6420612aba146d8df38badf88f0a179b6d346e3c83dedc0af2fee5e561b9f492",
-          "sha256": "6420612aba146d8df38badf88f0a179b6d346e3c83dedc0af2fee5e561b9f492"
+          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:c5999f01d7845e54ccd1f7790e5d0b1285b5299de67c38bfe0492ddc181ce6db",
+          "sha256": "c5999f01d7845e54ccd1f7790e5d0b1285b5299de67c38bfe0492ddc181ce6db"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:48ff0583d692d422c6931ec0f62d017879c7d64b4754d448dcfa401b4aca2458",
-          "sha256": "48ff0583d692d422c6931ec0f62d017879c7d64b4754d448dcfa401b4aca2458"
+          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:e0121b1c6d4e50130f55c9b562072f08bf73be81063c1eb1249668bedae593dc",
+          "sha256": "e0121b1c6d4e50130f55c9b562072f08bf73be81063c1eb1249668bedae593dc"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:0d930f610cad9f961102c75c2286c174bcaf0f4f2875191adda808c106b7b6a1",
+          "sha256": "0d930f610cad9f961102c75c2286c174bcaf0f4f2875191adda808c106b7b6a1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:096bce5121f17c8fa2939c14859413982ba0636787231e92b0a9437743ea2f6a",
-          "sha256": "096bce5121f17c8fa2939c14859413982ba0636787231e92b0a9437743ea2f6a"
+          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:c382d53c634f5e38415246adcb55c6d409e20e00a2895cdd635f1f149730cb4a",
+          "sha256": "c382d53c634f5e38415246adcb55c6d409e20e00a2895cdd635f1f149730cb4a"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:8a88cef1e63d59b628952ff0a2480c44f36b78f16ea3805c460c90e7de1dc909",
-          "sha256": "8a88cef1e63d59b628952ff0a2480c44f36b78f16ea3805c460c90e7de1dc909"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:c488a99c14e1453648fe847d0824e32d3098fb99161a781ec1ed462f58b8e2dd",
-          "sha256": "c488a99c14e1453648fe847d0824e32d3098fb99161a781ec1ed462f58b8e2dd"
+          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:e539394a1ea643940cd3b61b65ffb9aa1ad858b16c9927c621b5e37ce7b82f3e",
+          "sha256": "e539394a1ea643940cd3b61b65ffb9aa1ad858b16c9927c621b5e37ce7b82f3e"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:f4b80ae78882b162e27b0f389e7db4cc807827fc05f825c5f29e58959f9acb25",
-          "sha256": "f4b80ae78882b162e27b0f389e7db4cc807827fc05f825c5f29e58959f9acb25"
+          "url": "https://ghcr.io/v2/homebrew/core/bandcamp-dl/blobs/sha256:884da894acb5a386fcd4cf3c3e0b7696bbf6cf53534496743de958bbfe1e548f",
+          "sha256": "884da894acb5a386fcd4cf3c3e0b7696bbf6cf53534496743de958bbfe1e548f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,8 +79,11 @@
 
   ],
   "dependencies": [
-    "python@3.10",
+    "python@3.11",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -84,7 +92,8 @@
 
   ],
   "uses_from_macos": [
-
+    "libxml2",
+    "libxslt"
   ],
   "requirements": [
 
@@ -104,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

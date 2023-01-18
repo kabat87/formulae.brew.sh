@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/genuinetools/weather/archive/v0.15.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e5efd17d40d4246998293de6191e39954aee59c5a0f917f319b493a8dc335edb"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/darksky-weather/blobs/sha256:65acd7270545c3451f69c5fb5e3a6fc819c3f86f7ee6f687769ccdf8ce41a86d",
+          "sha256": "65acd7270545c3451f69c5fb5e3a6fc819c3f86f7ee6f687769ccdf8ce41a86d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/darksky-weather/blobs/sha256:3908f2bff7bb30a6c668211e255cdb4edfb073e90db2d4fd75addc316b061fc2",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/darksky-weather/blobs/sha256:d21740455ddc5db0a56e33e5f96dd7248d46b680414f5cff834faf3fb670b618",
           "sha256": "d21740455ddc5db0a56e33e5f96dd7248d46b680414f5cff834faf3fb670b618"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/darksky-weather/blobs/sha256:07f1e787ff616626dcf0e4493d4b7453bf6cf283f8a226899ee67265cd81e4b3",
+          "sha256": "07f1e787ff616626dcf0e4493d4b7453bf6cf283f8a226899ee67265cd81e4b3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/darksky-weather/blobs/sha256:a38cef91ca53c2d452353cf3a15198b9946b67e7b601627b5e414359d23fa559",
           "sha256": "a38cef91ca53c2d452353cf3a15198b9946b67e7b601627b5e414359d23fa559"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/darksky-weather/blobs/sha256:8f27ed1995e056157202f4785d0d4d28a8181d77cd0a971d6b778aafcbca7abc",
+          "sha256": "8f27ed1995e056157202f4785d0d4d28a8181d77cd0a971d6b778aafcbca7abc"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

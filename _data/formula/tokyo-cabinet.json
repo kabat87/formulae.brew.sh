@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dbmx.net/tokyocabinet/tokyocabinet-1.4.48.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a003f47c39a91e22d76bc4fe68b9b3de0f38851b160bbb1ca07a4f6441de1f90"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/tokyo-cabinet/blobs/sha256:50d14af6225ba943a9fda88ddfa7527525ace16d00fa6a67bb47a58bde2bad17",
+          "sha256": "50d14af6225ba943a9fda88ddfa7527525ace16d00fa6a67bb47a58bde2bad17"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/tokyo-cabinet/blobs/sha256:8613d58abe525cbea2a46d918013fc2372666dd3a158c49d71cc44c82aaad340",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/tokyo-cabinet/blobs/sha256:1c4886501c3137bf93f3afcb374fd4b218a37e2aa36fb1065e43753ebbb162a9",
           "sha256": "1c4886501c3137bf93f3afcb374fd4b218a37e2aa36fb1065e43753ebbb162a9"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/tokyo-cabinet/blobs/sha256:520ecff48dd7c1a31ac7c3fa9c12c91804778ff921a5bae42e8076e0fb2e4fdb",
+          "sha256": "520ecff48dd7c1a31ac7c3fa9c12c91804778ff921a5bae42e8076e0fb2e4fdb"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/tokyo-cabinet/blobs/sha256:a209fa62fdb84a86784de5eb9699a9a6811c962afab2ebf418b2a712f51852d8",
           "sha256": "a209fa62fdb84a86784de5eb9699a9a6811c962afab2ebf418b2a712f51852d8"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/tokyo-cabinet/blobs/sha256:3267823914e250aff7c8d3a5a686a010f0fc96242a417dbf47bb1502aa020ad6",
-          "sha256": "3267823914e250aff7c8d3a5a686a010f0fc96242a417dbf47bb1502aa020ad6"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/tokyo-cabinet/blobs/sha256:14fcc181d3ded3aae77cb94d6667b04c81c2dd46981529b40c8fa765b794b98f",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

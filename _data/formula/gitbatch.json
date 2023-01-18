@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/isacikgoz/gitbatch/archive/v0.6.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0ef36a4ea0b6cf4beb51928dd51281ec106006ba800c439d2588515c1bfeaf41"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitbatch/blobs/sha256:5ae6361b3bc790e3b226978f4a841f3dbae69050e0214ad1ee6d30a383249a42",
+          "sha256": "5ae6361b3bc790e3b226978f4a841f3dbae69050e0214ad1ee6d30a383249a42"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gitbatch/blobs/sha256:019454b03cd4d76a4fd4921b211dd74a1ac5d21263e5c81119b02fc56b4de151",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gitbatch/blobs/sha256:a6870e51c395a0c2bb7da37785ddd6932d18dd516905d0ab5c02632015edb39c",
           "sha256": "a6870e51c395a0c2bb7da37785ddd6932d18dd516905d0ab5c02632015edb39c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gitbatch/blobs/sha256:00104e93f6610498cccea2112338f3f9fa516ca3bdf66ead50640e9d97739b8b",
+          "sha256": "00104e93f6610498cccea2112338f3f9fa516ca3bdf66ead50640e9d97739b8b"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

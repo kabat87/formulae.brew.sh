@@ -1,6 +1,6 @@
 cask "clashx" do
-  version "1.72.0"
-  sha256 "5afd763eecfc34f430fb81a6c7d69e13f1fac459736262f2fd80211cb361ff25"
+  version "1.96.2"
+  sha256 "26dc384905bb55b10324c8ba690d8ca52d6a99bb3b491b9bb96cfa86ed0efa86"
 
   url "https://github.com/yichengchen/clashX/releases/download/#{version}/ClashX.dmg"
   name "ClashX"
@@ -18,9 +18,9 @@ cask "clashx" do
   app "ClashX.app"
 
   uninstall delete:    [
-    "/Library/LaunchDaemons/com.west2online.ClashX.ProxyConfigHelper.plist",
-    "/Library/PrivilegedHelperTools/com.west2online.ClashX.ProxyConfigHelper",
-  ],
+              "/Library/LaunchDaemons/com.west2online.ClashX.ProxyConfigHelper.plist",
+              "/Library/PrivilegedHelperTools/com.west2online.ClashX.ProxyConfigHelper",
+            ],
             launchctl: "com.west2online.ClashX.ProxyConfigHelper",
             quit:      "com.west2online.ClashX"
 

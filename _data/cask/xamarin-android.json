@@ -7,30 +7,38 @@
   ],
   "desc": "Gives .NET developers complete access to Android SDK's",
   "homepage": "https://www.xamarin.com/platform",
-  "url": "https://dl.xamarin.com/MonoforAndroid/Mac/xamarin.android-12.0.0.3.pkg",
+  "url": "https://dl.xamarin.com/MonoforAndroid/Mac/xamarin.android-13.1.0.1.pkg",
   "appcast": null,
-  "version": "12.0.0.3",
+  "version": "13.1.0.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "10777dbb5d636d1e9563b07cce892c6d1764750bec97df081562facb06491e54",
+  "sha256": "a21b7c9d503d7f220b85512c9cafaa889f9a2232f11a6b55119ddee0116efa20",
   "artifacts": [
     {
-      "pkgutil": "com.xamarin.android.pkg",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.xamarin.android.pkg"
+        }
+      ]
     },
-    "xamarin.android-12.0.0.3.pkg (Pkg)",
     {
-      "trash": [
-        "/Developer/MonoAndroid",
-        "/Library/Frameworks/Xamarin.Android.framework",
-        "~/Library/Caches/Xamarin.Android",
-        "~/Library/Caches/XamarinBuildDownload"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "xamarin.android-13.1.0.1.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Developer/MonoAndroid",
+            "/Library/Frameworks/Xamarin.Android.framework",
+            "~/Library/Caches/Xamarin.Android",
+            "~/Library/Caches/XamarinBuildDownload"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

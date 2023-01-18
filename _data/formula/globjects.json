@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/cginternals/globjects/archive/v1.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "68fa218c1478c09b555e44f2209a066b28be025312e0bab6e3a0b142a01ebbc6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/globjects/blobs/sha256:9f4e78cc1d1161dc273cd1a3bb0b920d11b1c249893bd39a69178d64704e2e0d",
+          "sha256": "9f4e78cc1d1161dc273cd1a3bb0b920d11b1c249893bd39a69178d64704e2e0d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/globjects/blobs/sha256:f268fe12c238a3714fd1bec33a818b7c372fb53e26f019596146538b2f2f7868",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/globjects/blobs/sha256:97b76d2b662c4f123604d312b442d2b59d606a3cc1e3e4f10cbe2dd3cc8b6f62",
           "sha256": "97b76d2b662c4f123604d312b442d2b59d606a3cc1e3e4f10cbe2dd3cc8b6f62"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/globjects/blobs/sha256:c1531e62e47c2e3119d37d2647f3937f602387ca7c60bc41071177361dd23ab3",
+          "sha256": "c1531e62e47c2e3119d37d2647f3937f602387ca7c60bc41071177361dd23ab3"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/globjects/blobs/sha256:dacabb07360fa768e54e9436f071a6ac2a56d0fc9da0d72b491fb8a645f48c33",
           "sha256": "dacabb07360fa768e54e9436f071a6ac2a56d0fc9da0d72b491fb8a645f48c33"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/globjects/blobs/sha256:6fe2640f8e2a366ca0d65e9afde39a1c60583af73fce21d22dadae53807c2b5a",
+          "sha256": "6fe2640f8e2a366ca0d65e9afde39a1c60583af73fce21d22dadae53807c2b5a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +101,9 @@
   "dependencies": [
     "glbinding",
     "glm"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

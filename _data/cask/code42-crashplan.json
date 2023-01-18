@@ -17,21 +17,29 @@
   "sha256": "3e2cafdcf35786e90a909961a8f839a4d9f31ebe68a236d52d97d5635ac5f03f",
   "artifacts": [
     {
-      "launchctl": "com.backup42.desktop",
-      "pkgutil": "com.code42.app.pkg",
-      "script": {
-        "executable": "Uninstall.app/Contents/Resources/uninstall.sh",
-        "sudo": "true"
-      },
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": "com.backup42.desktop",
+          "pkgutil": "com.code42.app.pkg",
+          "script": {
+            "executable": "Uninstall.app/Contents/Resources/uninstall.sh",
+            "sudo": "true"
+          }
+        }
+      ]
     },
-    "Install Code42.pkg (Pkg)"
+    {
+      "pkg": [
+        "Install Code42.pkg"
+      ]
+    }
   ],
-  "caveats": null,
+  "caveats": "code42-crashplan has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

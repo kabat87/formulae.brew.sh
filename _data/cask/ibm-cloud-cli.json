@@ -7,43 +7,46 @@
   ],
   "desc": "Command-line API client",
   "homepage": "https://cloud.ibm.com/docs/cli/index.html",
-  "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.3.0/IBM_Cloud_CLI_2.3.0.pkg",
+  "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.13.0/IBM_Cloud_CLI_2.13.0.pkg",
   "appcast": null,
-  "version": "2.3.0",
+  "version": "2.13.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "db056d44f6402412ece4d81090d1538408c98e88dede72aab526f65453e8f4d4",
+  "sha256": "daaaee51a20f9eb6dfa2af2fcacc25c058fef49b7dc8aa73b612b780bdc4d794",
   "artifacts": [
     {
-      "pkgutil": "com.ibm.cloud.cli",
-      "delete": [
-        "$(brew --prefix)/bin/bluemix",
-        "$(brew --prefix)/bin/bx",
-        "$(brew --prefix)/ibmcloud"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.ibm.cloud.cli",
+          "delete": [
+            "$(brew --prefix)/bin/bluemix",
+            "$(brew --prefix)/bin/bx",
+            "$(brew --prefix)/ibmcloud"
+          ]
+        }
+      ]
     },
-    "IBM_Cloud_CLI_2.3.0.pkg (Pkg)",
     {
-      "trash": "~/.bluemix",
-      "signal": {
-      }
+      "pkg": [
+        "IBM_Cloud_CLI_2.13.0.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.bluemix"
+        }
+      ]
     }
   ],
   "caveats": "Cask ibm-cloud-cli installs files under $(brew --prefix). The presence of such\nfiles can cause warnings when running `brew doctor`, which is considered\nto be a bug in Homebrew Cask.\n",
   "depends_on": {
-    "cask": [
-      "docker"
-    ],
-    "formula": [
-      "helm",
-      "kubernetes-cli"
-    ]
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

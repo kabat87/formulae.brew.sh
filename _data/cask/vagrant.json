@@ -7,32 +7,40 @@
   ],
   "desc": "Development environment",
   "homepage": "https://www.vagrantup.com/",
-  "url": "https://releases.hashicorp.com/vagrant/2.2.19/vagrant_2.2.19_x86_64.dmg",
+  "url": "https://releases.hashicorp.com/vagrant/2.3.4/vagrant_2.3.4_darwin_amd64.dmg",
   "appcast": null,
-  "version": "2.2.19",
+  "version": "2.3.4",
   "versions": {
   },
-  "installed": null,
+  "installed": "2.3.4",
   "outdated": false,
-  "sha256": "6307be217813a11c9e106448bf232803031e434a08c8b2df8c62fdc9e8543845",
+  "sha256": "8fd27ac9b6faa7a42fcf4b74b25150301f957e9251a1f193d1195b31464fe054",
   "artifacts": [
     {
-      "script": {
-        "executable": "uninstall.tool",
-        "input": [
-          "Yes"
-        ],
-        "sudo": "true"
-      },
-      "pkgutil": "com.vagrant.vagrant",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "script": {
+            "executable": "uninstall.tool",
+            "input": [
+              "Yes"
+            ],
+            "sudo": "true"
+          },
+          "pkgutil": "com.vagrant.vagrant"
+        }
+      ]
     },
-    "vagrant.pkg (Pkg)",
     {
-      "trash": "~/.vagrant.d",
-      "signal": {
-      }
+      "pkg": [
+        "vagrant.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/.vagrant.d"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

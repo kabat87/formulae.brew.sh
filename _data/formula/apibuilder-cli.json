@@ -13,18 +13,19 @@
   "license": "MIT",
   "homepage": "https://www.apibuilder.io",
   "versions": {
-    "stable": "0.1.41",
+    "stable": "0.1.43",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/apicollective/apibuilder-cli/archive/0.1.41.tar.gz",
+      "url": "https://github.com/apicollective/apibuilder-cli/archive/0.1.43.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "69c8c100ba9d56e83c146b5338c2a68c189fc6d1ca2eb184f357a84091224077"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/apibuilder-cli/blobs/sha256:53513c0623771a5d5fe3de708e2b89f99f930de4502d40612f317e51d0703e55",
-          "sha256": "53513c0623771a5d5fe3de708e2b89f99f930de4502d40612f317e51d0703e55"
+          "url": "https://ghcr.io/v2/homebrew/core/apibuilder-cli/blobs/sha256:635386febe5f3684c6ad68bc0a3372dfe899042ecd6fcb73f0a7e0ac39f8dfc1",
+          "sha256": "635386febe5f3684c6ad68bc0a3372dfe899042ecd6fcb73f0a7e0ac39f8dfc1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -51,6 +51,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -58,7 +61,7 @@
 
   ],
   "uses_from_macos": [
-
+    "ruby"
   ],
   "requirements": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

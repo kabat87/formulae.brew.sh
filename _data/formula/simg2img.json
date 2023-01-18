@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/anestisb/android-simg2img/archive/1.1.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cbd32490c1e29d9025601b81089b5aec1707cb62020dfcecd8747af4fde6fecd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/simg2img/blobs/sha256:a0dcd750c7e2a018a1947e3b944498f9032dbca077a8b5c90104d33f4db7c248",
+          "sha256": "a0dcd750c7e2a018a1947e3b944498f9032dbca077a8b5c90104d33f4db7c248"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/simg2img/blobs/sha256:f4c50b28f615335a6d9dcb2730676b4d3d0b5f1cc02d0279959d313ac0eda6fd",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/simg2img/blobs/sha256:cd4891712dae2fd35115f8ee32ba703bc3094ff365e52c8fe6a2b0d4694ee1ae",
           "sha256": "cd4891712dae2fd35115f8ee32ba703bc3094ff365e52c8fe6a2b0d4694ee1ae"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/simg2img/blobs/sha256:fc26e37af726109d97bf20222c18e97efba0d6259381a38380a21f90451fb34d",
+          "sha256": "fc26e37af726109d97bf20222c18e97efba0d6259381a38380a21f90451fb34d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

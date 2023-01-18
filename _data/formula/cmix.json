@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/byronknoll/cmix/archive/v18.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2f0272186a8ff693146d0d8070ad4d9687461a486805ab91d727891df316498d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cmix/blobs/sha256:0e7c677e5c3b587dc81178d363b9a1210ad52daaf903a248d1c77d4e589a6c3b",
+          "sha256": "0e7c677e5c3b587dc81178d363b9a1210ad52daaf903a248d1c77d4e589a6c3b"
+        },
         "monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cmix/blobs/sha256:ad293329e67ffa22e3e159643c1324b587096c27daf0f0b77feb3633f3adf0c3",
@@ -71,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -91,7 +99,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -108,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

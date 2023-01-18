@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ibex-team/ibex-lib/archive/ibex-2.8.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fee448b3fa3929a50d36231ff2f14e5480a0b82506594861536e3905801a6571"
     }
   },
   "revision": 0,
@@ -31,6 +32,16 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ibex/blobs/sha256:ac2a9082a320228a386cc45989c65f01f014642db9fc18cd94b998fdf84737fc",
+          "sha256": "ac2a9082a320228a386cc45989c65f01f014642db9fc18cd94b998fdf84737fc"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ibex/blobs/sha256:5c659f26d051f9c2e25308976051cff13d3c99a5ff579116ece615f0172d1705",
+          "sha256": "5c659f26d051f9c2e25308976051cff13d3c99a5ff579116ece615f0172d1705"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ibex/blobs/sha256:2fe73bcec8be89daf46ad449cced7ea3d5584d1eb8138343359fc0898e3ec826",
@@ -50,13 +61,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ibex/blobs/sha256:bb10a673525d7145196f523190401c2aa42345b5035ed2bcf261081e3653638f",
           "sha256": "bb10a673525d7145196f523190401c2aa42345b5035ed2bcf261081e3653638f"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ibex/blobs/sha256:396eb36d7b67037bd599525a5d591576dd25785076d6f117550c1885d2c81258",
+          "sha256": "396eb36d7b67037bd599525a5d591576dd25785076d6f117550c1885d2c81258"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -68,6 +83,9 @@
   ],
   "dependencies": [
 
+  ],
+  "test_dependencies": [
+    "pkg-config"
   ],
   "recommended_dependencies": [
 
@@ -96,5 +114,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

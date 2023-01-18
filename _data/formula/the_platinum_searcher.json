@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/monochromegane/the_platinum_searcher/archive/v2.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3d5412208644b13723b2b7ca4af0870d25c654e3a76feee846164c51b88240b0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/the_platinum_searcher/blobs/sha256:d34acea6e7a4f0bfff85c75756c119ad978a11e72e2901f15e40a107cd1a8564",
+          "sha256": "d34acea6e7a4f0bfff85c75756c119ad978a11e72e2901f15e40a107cd1a8564"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/the_platinum_searcher/blobs/sha256:920eca3416a24f405f47f9422797e405768da23008de8ec12f3beb292e8b6be2",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/the_platinum_searcher/blobs/sha256:0f3097b2d88f4b8479ecb3e3439f6688656fc1c5e20f18a4c300edf9ea953874",
           "sha256": "0f3097b2d88f4b8479ecb3e3439f6688656fc1c5e20f18a4c300edf9ea953874"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/the_platinum_searcher/blobs/sha256:f2f494e7c9a055b112241f2a9d30b260f6aec006382337941c7bb6ea23c5ef74",
+          "sha256": "f2f494e7c9a055b112241f2a9d30b260f6aec006382337941c7bb6ea23c5ef74"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

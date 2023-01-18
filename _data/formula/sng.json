@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/sng/sng-1.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "119c55870c1d1bdc65f7de9dbc62929ccb0c301c2fb79f77df63f5d477f34619"
     }
   },
   "revision": 1,
@@ -31,10 +32,30 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sng/blobs/sha256:6e6f0d6e03e0b52db9b6e4a802df9d6341840223af2b1b7e295bc743adf5253d",
+          "sha256": "6e6f0d6e03e0b52db9b6e4a802df9d6341840223af2b1b7e295bc743adf5253d"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sng/blobs/sha256:ca4f0ca6bb0e526a3726748f0b324d1d1aae3f017c8e74de1680ef932b511d15",
+          "sha256": "ca4f0ca6bb0e526a3726748f0b324d1d1aae3f017c8e74de1680ef932b511d15"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/sng/blobs/sha256:441c39690c079231af81a27fce72a0f0ea7cf982c9e48e320160ccc7304486a0",
           "sha256": "441c39690c079231af81a27fce72a0f0ea7cf982c9e48e320160ccc7304486a0"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sng/blobs/sha256:379346351f679ec6fce2a3546bcccd48cbc31f885fb0e0be6405e019b3f7fe2d",
+          "sha256": "379346351f679ec6fce2a3546bcccd48cbc31f885fb0e0be6405e019b3f7fe2d"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/sng/blobs/sha256:6f1323983fee9df6d97091c41c7f6df1b5ced3980a0a8bb72e1553db6d3a2656",
+          "sha256": "6f1323983fee9df6d97091c41c7f6df1b5ced3980a0a8bb72e1553db6d3a2656"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
@@ -61,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -71,6 +91,9 @@
   "dependencies": [
     "libpng",
     "xorgrgb"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -99,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

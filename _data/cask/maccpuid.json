@@ -8,21 +8,25 @@
   "desc": "Displays information via the CPUID instruction",
   "homepage": "https://software.intel.com/content/www/us/en/develop/download/download-maccpuid",
   "url": "https://software.intel.com/content/dam/develop/public/us/en/documents/maccpuid.zip",
-  "appcast": "https://software.intel.com/content/www/us/en/develop/download/download-maccpuid.html",
-  "version": "3.1",
+  "appcast": null,
+  "version": "3.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "MacCPUID.app"
-    ],
     {
-      "trash": "~/Library/Caches/com.intel.MacCPUID",
-      "signal": {
-      }
+      "app": [
+        "MacCPUID.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Caches/com.intel.MacCPUID"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

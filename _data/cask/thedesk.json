@@ -7,26 +7,30 @@
   ],
   "desc": "Mastodon/Misskey Client for PC",
   "homepage": "https://thedesk.top/",
-  "url": "https://github.com/cutls/TheDesk/releases/download/v22.3.1/TheDesk-22.3.1.dmg",
+  "url": "https://github.com/cutls/TheDesk/releases/download/v23.0.5/TheDesk-23.0.5-universal.dmg",
   "appcast": null,
-  "version": "22.3.1",
+  "version": "23.0.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "8271e41b214d1c4f20393a2e47d9653d2fe18896de31f383375431a914885f5b",
+  "sha256": "88e089902e377c02a44998e4fb13687b6ce60e44918eed31afd2f94b49daa104",
   "artifacts": [
-    [
-      "TheDesk.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/thedesk",
-        "~/Library/Preferences/top.thedesk.plist",
-        "~/Library/Saved Application State/top.thedesk.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "TheDesk.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/thedesk",
+            "~/Library/Preferences/top.thedesk.plist",
+            "~/Library/Saved Application State/top.thedesk.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

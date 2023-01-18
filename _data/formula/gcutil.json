@@ -10,8 +10,8 @@
 
   ],
   "desc": "Manage your Google Compute Engine resources",
-  "license": null,
-  "homepage": "https://cloud.google.com/compute/docs/gcutil/",
+  "license": "Apache-2.0",
+  "homepage": "https://cloud.google.com/sdk/gcloud/reference/compute",
   "versions": {
     "stable": "1.16.1",
     "head": null,
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dl.google.com/dl/cloudsdk/release/artifacts/gcutil-1.16.1.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "31f438c9ce3471f1404340e3411239b28b63f117d17776271fee1e1a352f3877"
     }
   },
   "revision": 0,
@@ -41,7 +42,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,6 +49,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -73,10 +76,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-07-09",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

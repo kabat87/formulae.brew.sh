@@ -10,7 +10,7 @@
 
   ],
   "desc": "Network Time Protocol (NTP) Distribution",
-  "license": null,
+  "license": "BSD-2-Clause and NTP",
   "homepage": "https://www.eecis.udel.edu/~mills/ntp/html/",
   "versions": {
     "stable": "4.2.8p15",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-4.2.8p15.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f65840deab68614d5d7ceb2d0bb9304ff70dcdedd09abb79754a87536b849c19"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ntp/blobs/sha256:cc4137b25ab98f7945a4be36050f894c37bcbb75b9464936a69f35e019978684",
+          "sha256": "cc4137b25ab98f7945a4be36050f894c37bcbb75b9464936a69f35e019978684"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ntp/blobs/sha256:56e2b28056f17d7650a305bfae1725adcff788bdfe53abde908c163fcc02ddd4",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ntp/blobs/sha256:5aaceeca360143de4591c0294ed75755f50c14cfcdb908b7c1622fa5caa22cf4",
           "sha256": "5aaceeca360143de4591c0294ed75755f50c14cfcdb908b7c1622fa5caa22cf4"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ntp/blobs/sha256:d33b166b24774cbed162d08af63e04d854837c96f79c16e6069857afe18caa08",
+          "sha256": "d33b166b24774cbed162d08af63e04d854837c96f79c16e6069857afe18caa08"
         },
         "monterey": {
           "cellar": ":any",
@@ -65,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ntp/blobs/sha256:9f7ce9c3ff545ff738fcf4049445923c968ec807cf1ecde451be76412442e6f1",
           "sha256": "9f7ce9c3ff545ff738fcf4049445923c968ec807cf1ecde451be76412442e6f1"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ntp/blobs/sha256:16137579ea8978ef71a1222071cd9e44a42eeeaa8d83ed83bdbf0fd048e6178c",
+          "sha256": "16137579ea8978ef71a1222071cd9e44a42eeeaa8d83ed83bdbf0fd048e6178c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +95,9 @@
   ],
   "dependencies": [
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,10 +121,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-12-26",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,62 +13,82 @@
   "license": "GPL-2.0-only",
   "homepage": "https://www.manticoresearch.com",
   "versions": {
-    "stable": "3.6.0",
+    "stable": "5.0.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://repo.manticoresearch.com/repository/manticoresearch_source/release/manticore-3.6.0-210504-96d61d8-release-source.tar.gz",
+      "url": "https://github.com/manticoresoftware/manticoresearch/archive/refs/tags/5.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ca7828a6841ed8bdbc330516f85ad3a85749998f443b9de319cec60e12c64c07"
     }
   },
-  "revision": 0,
+  "revision": 2,
   "version_scheme": 1,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:2cd2c5406f4f464f960a3b2ee67d76988c6a8ace8c1e82db8659623628d9046a",
+          "sha256": "2cd2c5406f4f464f960a3b2ee67d76988c6a8ace8c1e82db8659623628d9046a"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:89930dacf6668593f506ec7f2a353e94b0e0b20d141dc116c916d0f4e39bb54c",
+          "sha256": "89930dacf6668593f506ec7f2a353e94b0e0b20d141dc116c916d0f4e39bb54c"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:e285345ff7b6a8a99c0cbac69232301a6ad97cd09abae93bfffce5d3885f6ac2",
-          "sha256": "e285345ff7b6a8a99c0cbac69232301a6ad97cd09abae93bfffce5d3885f6ac2"
+          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:5395826686d53d7213550e84976202a6a78654844db8e322d8b1b19989838061",
+          "sha256": "5395826686d53d7213550e84976202a6a78654844db8e322d8b1b19989838061"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:af1bc06680f36e7526d680e01ca89e9172c8eaf4ca6f02c4b1e319b2ad33a50b",
+          "sha256": "af1bc06680f36e7526d680e01ca89e9172c8eaf4ca6f02c4b1e319b2ad33a50b"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:457beeda7981495d4ea609066f35aa90ad9bb65b46acfa19fc2534f3804b19fd",
+          "sha256": "457beeda7981495d4ea609066f35aa90ad9bb65b46acfa19fc2534f3804b19fd"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:11dfe819517e1b8c379d761ed9391192bb585564588a0ee23f85880a4b7e2f8c",
-          "sha256": "11dfe819517e1b8c379d761ed9391192bb585564588a0ee23f85880a4b7e2f8c"
+          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:6edb5cbeddca6fa981682578da0597c7f92698e291401ee2a5b0dc4ecfcc98b4",
+          "sha256": "6edb5cbeddca6fa981682578da0597c7f92698e291401ee2a5b0dc4ecfcc98b4"
         },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:77c342a7a0d4a7c786b2c777b92522ab8b9eae7806074b0f81112cd7890c4d91",
-          "sha256": "77c342a7a0d4a7c786b2c777b92522ab8b9eae7806074b0f81112cd7890c4d91"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:f20768ffb1961f40fe39b3bebd20491f31cd2d91f9c43c4b5897458a50354a06",
-          "sha256": "f20768ffb1961f40fe39b3bebd20491f31cd2d91f9c43c4b5897458a50354a06"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/manticoresearch/blobs/sha256:9938c37089d9bdb8055ddb6fb70c9872caa098fb4b78150575d3369465c6014f",
+          "sha256": "9938c37089d9bdb8055ddb6fb70c9872caa098fb4b78150575d3369465c6014f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "boost",
-    "cmake",
-    "icu4c",
-    "libpq",
-    "mysql"
+    "cmake"
   ],
   "dependencies": [
-    "openssl@1.1"
+    "icu4c",
+    "libpq",
+    "mysql-client",
+    "openssl@1.1",
+    "unixodbc",
+    "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -77,7 +97,14 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "bison": "build"
+    },
+    {
+      "flex": "build"
+    },
+    "libxml2",
+    "zlib"
   ],
   "requirements": [
 
@@ -97,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

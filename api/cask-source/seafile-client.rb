@@ -1,6 +1,6 @@
 cask "seafile-client" do
-  version "8.0.4"
-  sha256 "b398e2366b14d71a9eeb2b5d20e9bc06be071d381fb9589c1c1fb37ed3dcd054"
+  version "8.0.10"
+  sha256 "deec3ba9d125b84074fe62914bbc890be5cc616fe2e0582f5ae6ffcd1e3f5708"
 
   url "https://download.seadrive.org/seafile-client-#{version}.dmg",
       verified: "seadrive.org/"
@@ -16,4 +16,12 @@ cask "seafile-client" do
   depends_on macos: ">= :high_sierra"
 
   app "Seafile Client.app"
+
+  zap trash: [
+    "~/Library/Application Scripts/com.seafile.seafile-client.findersync",
+    "~/Library/Containers/com.seafile.seafile-client.findersync",
+    "~/Library/Group Containers/com.seafile.seafile-client.findersync",
+    "~/Library/Preferences/com.seafile.seafile-client.plist",
+    "~/Library/Saved Application State/com.seafile.seafile-client.savedState",
+  ]
 end

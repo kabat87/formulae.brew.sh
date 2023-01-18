@@ -9,19 +9,20 @@
   "versioned_formulae": [
 
   ],
-  "desc": "Perl 6 compiler targeting MoarVM",
+  "desc": "Mature, production-ready implementation of the Raku language",
   "license": "Artistic-2.0",
   "homepage": "https://rakudo.org",
   "versions": {
-    "stable": "2021.12",
+    "stable": "2022.12",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/rakudo/rakudo/releases/download/2021.12/rakudo-2021.12.tar.gz",
+      "url": "https://github.com/rakudo/rakudo/releases/download/2022.12/rakudo-2022.12.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8bf95488d89b81ef9254d72c7f6b1235b4796bb465f2800fe3b97bdf74695c9e"
     }
   },
   "revision": 0,
@@ -31,37 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:085640832724a98add766b9a42cc03948154cf707ddeef46d67ccb1d20d799eb",
+          "sha256": "085640832724a98add766b9a42cc03948154cf707ddeef46d67ccb1d20d799eb"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:d6bcf0a4b6241126ce1ad92b31db45bb2cf369f02ee5d01270b25630ba9a49cf",
-          "sha256": "d6bcf0a4b6241126ce1ad92b31db45bb2cf369f02ee5d01270b25630ba9a49cf"
+          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:e471cef0702a0f38f090cad88c071e4a88e6eeef355278f7542760cdc942d24a",
+          "sha256": "e471cef0702a0f38f090cad88c071e4a88e6eeef355278f7542760cdc942d24a"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:5d72bbc60d07c5293d3bb501d1fb7545dbc7a6062b9b14b7ba1970bfe8c29a3d",
-          "sha256": "5d72bbc60d07c5293d3bb501d1fb7545dbc7a6062b9b14b7ba1970bfe8c29a3d"
+          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:5917c2fde50b20002eaaadbbd301a8e926463dd69ef0a456e80e179ec8bebaa8",
+          "sha256": "5917c2fde50b20002eaaadbbd301a8e926463dd69ef0a456e80e179ec8bebaa8"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:da7593c192709ace8c1e8ecae54d54d8c25639e0114ba7c18d51d5ec2f703160",
+          "sha256": "da7593c192709ace8c1e8ecae54d54d8c25639e0114ba7c18d51d5ec2f703160"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:cc6fa15bbbd34301192fa1a704e82b73c754c470d465118e1fade02990e8cbd9",
-          "sha256": "cc6fa15bbbd34301192fa1a704e82b73c754c470d465118e1fade02990e8cbd9"
+          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:c797d1b9314cb79ab21fbcbd10b7e996df43a9f8d21410dc82c19b8970e84e71",
+          "sha256": "c797d1b9314cb79ab21fbcbd10b7e996df43a9f8d21410dc82c19b8970e84e71"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:6af9ca3fd8c12616229fa2b0182bb1daeffb3911eceb003c8e9a6a4626fc0740",
-          "sha256": "6af9ca3fd8c12616229fa2b0182bb1daeffb3911eceb003c8e9a6a4626fc0740"
+          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:e5db77f4cc28a4b749d9e7e96d5b179b9b7a113c1fdd691f4fa819424a2b6b1d",
+          "sha256": "e5db77f4cc28a4b749d9e7e96d5b179b9b7a113c1fdd691f4fa819424a2b6b1d"
         },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:12ff83a06c6f87b7f12cd69117f05e52fff92e0935b5ea1cab3c6abb190d939c",
-          "sha256": "12ff83a06c6f87b7f12cd69117f05e52fff92e0935b5ea1cab3c6abb190d939c"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/rakudo/blobs/sha256:f3827940afb9b1df7077efc41d200acea850cf2f8d85094074dd902fb5cebcdb",
+          "sha256": "f3827940afb9b1df7077efc41d200acea850cf2f8d85094074dd902fb5cebcdb"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,7 +79,13 @@
 
   ],
   "dependencies": [
-    "nqp"
+    "libtommath",
+    "libuv",
+    "nqp",
+    "zstd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,7 +94,10 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "perl": "build"
+    },
+    "libffi"
   ],
   "requirements": [
 
@@ -98,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

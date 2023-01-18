@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.pogo.org.uk/~mark/bpm-tools/releases/bpm-tools-0.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "37efe81ef594e9df17763e0a6fc29617769df12dfab6358f5e910d88f4723b94"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bpm-tools/blobs/sha256:f2b2f0588023837c6a2340024fce562029370273c22a79296756223907c8dc7c",
+          "sha256": "f2b2f0588023837c6a2340024fce562029370273c22a79296756223907c8dc7c"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bpm-tools/blobs/sha256:34949c1ed18d4065930654bb35f1fb88c4b5ab53a3571d1cbf52e6e79b452005",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/bpm-tools/blobs/sha256:19d555332dffb4fbcc6a80f15c3aa7692594b5c75fb3e01a9da6f0878fc5a98b",
           "sha256": "19d555332dffb4fbcc6a80f15c3aa7692594b5c75fb3e01a9da6f0878fc5a98b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bpm-tools/blobs/sha256:483c8d0501a94e517e62dda21c44474d9315286e206e7e61e990502bcad0717e",
+          "sha256": "483c8d0501a94e517e62dda21c44474d9315286e206e7e61e990502bcad0717e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

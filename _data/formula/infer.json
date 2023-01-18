@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/facebook/infer/archive/v1.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "201c7797668a4b498fe108fcc13031b72d9dbf04dab0dc65dd6bd3f30e1f89ee"
     }
   },
   "revision": 1,
@@ -56,7 +57,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +75,9 @@
     "gmp",
     "mpfr",
     "sqlite"
+  ],
+  "test_dependencies": [
+    "openjdk@11"
   ],
   "recommended_dependencies": [
 
@@ -112,10 +115,41 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-12-20",
-  "deprecation_reason": "does_not_build",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-12-30",
+  "disable_reason": "does_not_build",
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "autoconf",
+        "automake",
+        "cmake",
+        "libtool",
+        "ninja",
+        "opam",
+        "openjdk@11",
+        "pkg-config",
+        "python@3.9",
+        "llvm",
+        "m4",
+        "unzip",
+        "patchelf"
+      ],
+      "dependencies": [
+        "gmp",
+        "mpfr",
+        "sqlite",
+        "libedit",
+        "libffi",
+        "libxml2",
+        "ncurses",
+        "xz",
+        "zlib",
+        "elfutils"
+      ]
+    }
+  }
 }

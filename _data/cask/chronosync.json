@@ -8,8 +8,8 @@
   "desc": "Synchronization and backup tool",
   "homepage": "https://www.econtechnologies.com/",
   "url": "https://downloads.econtechnologies.com/CS4_Download.dmg",
-  "appcast": "https://www.econtechnologies.com/UC/updatecheck.php?prod=ChronoSync&vers=4.9.0&lang=en&plat=mac&os=10.14.1&hw=i64&req=1",
-  "version": "4.9.13",
+  "appcast": null,
+  "version": "10.3.2",
   "versions": {
   },
   "installed": null,
@@ -17,16 +17,33 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "com.econtechnologies.pkg.ChronoSyncApplication",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "com.econtechnologies.chronosync",
+            "com.econtechnologies.backgrounder.chronosync"
+          ],
+          "pkgutil": "com.econtechnologies.pkg.ChronoSyncApplication"
+        }
+      ]
     },
-    "Install.pkg (Pkg)"
+    {
+      "pkg": [
+        "Install.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.12"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

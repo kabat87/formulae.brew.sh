@@ -7,26 +7,34 @@
   ],
   "desc": "Orchestration with Kubernetes on Apple",
   "homepage": "https://orkadocs.macstadium.com/docs",
-  "url": "https://cli-builds-public.s3-eu-west-1.amazonaws.com/official/1.7.0/macos/orka.pkg",
+  "url": "https://cli-builds-public.s3-eu-west-1.amazonaws.com/official/2.3.0/macos/orka.pkg",
   "appcast": null,
-  "version": "1.7.0",
+  "version": "2.3.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0e07e9726a07d72ccd11230a9b29d3440e8f11ee3703d9be6ec3b5c7015378b4",
+  "sha256": "f1c537a6026cd389367af0edc572965dd8920a9b2397ee1664b3905680f6fef5",
   "artifacts": [
     {
-      "pkgutil": "com.macstadium.orka.pkg",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.macstadium.orka.pkg"
+        }
+      ]
     },
-    "orka.pkg (Pkg)"
+    {
+      "pkg": [
+        "orka.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

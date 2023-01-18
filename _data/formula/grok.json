@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jordansissel/grok/archive/v0.9.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "40edbdba488ff9145832c7adb04b27630ca2617384fbef2af014d0e5a76ef636"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/grok/blobs/sha256:b69e6b4812e82ce6007eda960673dc824e554fc8fea8c2a49968101b622dc11d",
+          "sha256": "b69e6b4812e82ce6007eda960673dc824e554fc8fea8c2a49968101b622dc11d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/grok/blobs/sha256:2556c5995021bc02cf5a41c99bd30e127dedb7350972333c0bf77b695ed94114",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/grok/blobs/sha256:172f626c4eb3d62d2f7b7dcd2c94a4890cc69a835ae3f33ddcb7b74762e4c52e",
           "sha256": "172f626c4eb3d62d2f7b7dcd2c94a4890cc69a835ae3f33ddcb7b74762e4c52e"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/grok/blobs/sha256:27073a9a9c34b78a3c7549d5709c371859b6612ed4a7dbd3a6eaf9de0707112a",
+          "sha256": "27073a9a9c34b78a3c7549d5709c371859b6612ed4a7dbd3a6eaf9de0707112a"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/grok/blobs/sha256:32dc46849684918dad9ca9005ca43b092de84b16a0837049146948379301b1fa",
           "sha256": "32dc46849684918dad9ca9005ca43b092de84b16a0837049146948379301b1fa"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/grok/blobs/sha256:2501596389a8ac61df64de2e691157b1e5383a19719f3ddbc42c661929abf1d3",
+          "sha256": "2501596389a8ac61df64de2e691157b1e5383a19719f3ddbc42c661929abf1d3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -88,6 +103,9 @@
     "pcre",
     "tokyo-cabinet"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -95,7 +113,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "gperf": "build"
+    }
   ],
   "requirements": [
 
@@ -115,5 +135,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "gperf"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/TigerVNC/tigervnc/archive/v1.12.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9ff3f3948f2a4e8cc06ee598ee4b1096beb62094c13e0b1462bff78587bed789"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tiger-vnc/blobs/sha256:109fdbc449f3d9888c9442b95280bf1f3c2b9ac876670a7bb52f1fb0c350e10e",
+          "sha256": "109fdbc449f3d9888c9442b95280bf1f3c2b9ac876670a7bb52f1fb0c350e10e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tiger-vnc/blobs/sha256:77eb966db9ec8b43de5c86e21e6626097271d58f7fbd8ccea5d551bfb0e7ddbf",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tiger-vnc/blobs/sha256:da27b10b7a89f771a6e134b9e81fa5fd49b8f0ffbd545c8e6569644cd0dcfc65",
           "sha256": "da27b10b7a89f771a6e134b9e81fa5fd49b8f0ffbd545c8e6569644cd0dcfc65"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tiger-vnc/blobs/sha256:8de663dc2ccab42a4256b3d3af1bf595f33e5c5dacc809961a54799df0d47103",
+          "sha256": "8de663dc2ccab42a4256b3d3af1bf595f33e5c5dacc809961a54799df0d47103"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "gnutls",
     "jpeg-turbo",
     "pixman"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -107,5 +120,28 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "fltk",
+        "gettext",
+        "gnutls",
+        "jpeg-turbo",
+        "pixman",
+        "libx11",
+        "libxcursor",
+        "libxdamage",
+        "libxext",
+        "libxfixes",
+        "libxft",
+        "libxi",
+        "libxinerama",
+        "libxrandr",
+        "libxrender",
+        "libxtst",
+        "linux-pam"
+      ]
+    }
+  }
 }

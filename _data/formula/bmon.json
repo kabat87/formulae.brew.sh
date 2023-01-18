@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tgraf/bmon/releases/download/v4.0/bmon-4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "02fdc312b8ceeb5786b28bf905f54328f414040ff42f45c83007f24b76cc9f7a"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bmon/blobs/sha256:890364e7d54a6673fccb4091d9643e24ddb1dfd4a3b2102618cc0b7d67953771",
+          "sha256": "890364e7d54a6673fccb4091d9643e24ddb1dfd4a3b2102618cc0b7d67953771"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bmon/blobs/sha256:321c0715286901cc997ead59058971667bb3bd491cd85cd3a82eca29c7ae2f83",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bmon/blobs/sha256:8f20f07b392953df52502a35c4430ae3f080e4cf8b932a95fa66c149e04ff149",
           "sha256": "8f20f07b392953df52502a35c4430ae3f080e4cf8b932a95fa66c149e04ff149"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bmon/blobs/sha256:68229b2903b717a8a03d324aebf0bab686723c9284d0124127b562beafa0be04",
+          "sha256": "68229b2903b717a8a03d324aebf0bab686723c9284d0124127b562beafa0be04"
         },
         "monterey": {
           "cellar": ":any",
@@ -60,13 +71,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bmon/blobs/sha256:54c90f958df855b99cc0b6fa4cbabd4b135e7913b844d774e607fb6d14045dcf",
           "sha256": "54c90f958df855b99cc0b6fa4cbabd4b135e7913b844d774e607fb6d14045dcf"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/bmon/blobs/sha256:4c35f5e85c98f864cb59ce589b03c05ce6dd37563a731d86c4491e8930449b8d",
+          "sha256": "4c35f5e85c98f864cb59ce589b03c05ce6dd37563a731d86c4491e8930449b8d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +90,9 @@
   ],
   "dependencies": [
     "confuse"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +121,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "confuse",
+        "ncurses",
+        "libnl"
+      ]
+    }
+  }
 }

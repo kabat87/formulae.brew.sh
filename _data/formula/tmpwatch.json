@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://releases.pagure.org/tmpwatch/tmpwatch-2.11.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "93168112b2515bc4c7117e8113b8d91e06b79550d2194d62a0c174fe6c2aa8d4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tmpwatch/blobs/sha256:5d6f80858cba05532b70c7d3ae636b0c7550ef651891fef8e36b182e131662c2",
+          "sha256": "5d6f80858cba05532b70c7d3ae636b0c7550ef651891fef8e36b182e131662c2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tmpwatch/blobs/sha256:aee3dbca7f86d8c80da945837cb30a43a5c55ade929df40d4c4221ca3243b954",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tmpwatch/blobs/sha256:b5f38895989ced860baaac4a22ed677b6adc7e3eaf07ecea5e65325b3a090071",
           "sha256": "b5f38895989ced860baaac4a22ed677b6adc7e3eaf07ecea5e65325b3a090071"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tmpwatch/blobs/sha256:e09f42c2a9e80778995eb414e36f92ab3735db17cdaee935ebc206bd30b3ecb9",
+          "sha256": "e09f42c2a9e80778995eb414e36f92ab3735db17cdaee935ebc206bd30b3ecb9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

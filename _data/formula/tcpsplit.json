@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.icir.org/mallman/software/tcpsplit/tcpsplit-0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "885a6609d04eb35f31f1c6f06a0b9afd88776d85dec0caa33a86cef3f3c09d1d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcpsplit/blobs/sha256:a3d3cd3c37dce379aa221133969b74a0b2bd61a6d7605172b952b26e3398a0cf",
+          "sha256": "a3d3cd3c37dce379aa221133969b74a0b2bd61a6d7605172b952b26e3398a0cf"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcpsplit/blobs/sha256:5bf4362d064b7f982e0fb8cb2e79010c80c19f555b79f18dd0e4f3a9dbfda8a1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcpsplit/blobs/sha256:f40f957faef51ed496030a97cda8ca0eb0716826969872185080bb8e94780f36",
           "sha256": "f40f957faef51ed496030a97cda8ca0eb0716826969872185080bb8e94780f36"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcpsplit/blobs/sha256:1931a69c46a6669e5a5a9716b260413bcbf24af89bb567ccde1bb17e1827f55a",
+          "sha256": "1931a69c46a6669e5a5a9716b260413bcbf24af89bb567ccde1bb17e1827f55a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/tcpsplit/blobs/sha256:5014edcbc87913b2103c9347dd4b132ca1b4c3b1a007c853eda75213481e7d30",
           "sha256": "5014edcbc87913b2103c9347dd4b132ca1b4c3b1a007c853eda75213481e7d30"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tcpsplit/blobs/sha256:c87bf331cb20c6301b922ee3fb37f0c92957f3e32d0391b07aa7b36980b20819",
-          "sha256": "c87bf331cb20c6301b922ee3fb37f0c92957f3e32d0391b07aa7b36980b20819"
+          "url": "https://ghcr.io/v2/homebrew/core/tcpsplit/blobs/sha256:f90bcbd78ee73c48c113f3f2b974c5aa6b2e17cecb6fa531be3a62a40fa0fb9f",
+          "sha256": "f90bcbd78ee73c48c113f3f2b974c5aa6b2e17cecb6fa531be3a62a40fa0fb9f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

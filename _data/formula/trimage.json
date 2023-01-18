@@ -14,54 +14,39 @@
   "homepage": "https://trimage.org",
   "versions": {
     "stable": "1.0.6",
-    "head": null,
+    "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/Kilian/Trimage/archive/1.0.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "60448b5a827691087a1bd016a68f84d8c457fc29179271f310fe5f9fa21415cf"
     }
   },
-  "revision": 2,
+  "revision": 3,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "arm64_monterey": {
+        "ventura": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/trimage/blobs/sha256:06945f0b2785db7539c7c40b1ed21f88d263906b565a20282c87830d35ab56d4",
-          "sha256": "06945f0b2785db7539c7c40b1ed21f88d263906b565a20282c87830d35ab56d4"
+          "url": "https://ghcr.io/v2/homebrew/core/trimage/blobs/sha256:8a431f153a9ebde3caaac7ce16403332dafa459476e7f2ad95863c87bd1941cc",
+          "sha256": "8a431f153a9ebde3caaac7ce16403332dafa459476e7f2ad95863c87bd1941cc"
         },
-        "arm64_big_sur": {
+        "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/trimage/blobs/sha256:1a6dca1721ee66b96bcc5f010fb96657024b17059eefc82db0e61c6e2ff12a21",
-          "sha256": "1a6dca1721ee66b96bcc5f010fb96657024b17059eefc82db0e61c6e2ff12a21"
-        },
-        "big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/trimage/blobs/sha256:eb3768183ebb466b03e1134b498a0331e43f9aa19ca2f5fb3550f14bf28c1998",
-          "sha256": "eb3768183ebb466b03e1134b498a0331e43f9aa19ca2f5fb3550f14bf28c1998"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/trimage/blobs/sha256:2174157bed654961ae8f5b1b60653c40a6a336aa4f26292ebe842d02652c62c5",
-          "sha256": "2174157bed654961ae8f5b1b60653c40a6a336aa4f26292ebe842d02652c62c5"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/trimage/blobs/sha256:638e2b76d476287fad690b99c20759798e1eab19bf3beadfad35c8f177bd59c8",
-          "sha256": "638e2b76d476287fad690b99c20759798e1eab19bf3beadfad35c8f177bd59c8"
+          "url": "https://ghcr.io/v2/homebrew/core/trimage/blobs/sha256:8a431f153a9ebde3caaac7ce16403332dafa459476e7f2ad95863c87bd1941cc",
+          "sha256": "8a431f153a9ebde3caaac7ce16403332dafa459476e7f2ad95863c87bd1941cc"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,7 +59,10 @@
     "optipng",
     "pngcrush",
     "pyqt@5",
-    "python@3.9"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +91,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

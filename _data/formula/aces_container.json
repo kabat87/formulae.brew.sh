@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ampas/aces_container/archive/v1.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cbbba395d2425251263e4ae05c4829319a3e399a0aee70df2eb9efb6a8afdbae"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/aces_container/blobs/sha256:15fd9fe1558e49d54f45bdd8b7dc124bca31732212fe502d48be8d0ba716997e",
+          "sha256": "15fd9fe1558e49d54f45bdd8b7dc124bca31732212fe502d48be8d0ba716997e"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/aces_container/blobs/sha256:2f2429a4ee7fdb7d58ee635a6d653f799d1f22ec9dddabab6b3b7e5d4d06b5de",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/aces_container/blobs/sha256:0d1d573d700561a2cc168c20f2de1dd752553f142575c64c8b3235cfb2dc6133",
           "sha256": "0d1d573d700561a2cc168c20f2de1dd752553f142575c64c8b3235cfb2dc6133"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/aces_container/blobs/sha256:411b910c990eb426a348c74ed2e7f40a46fba871b56314f3b2ea311f8a220ee6",
+          "sha256": "411b910c990eb426a348c74ed2e7f40a46fba871b56314f3b2ea311f8a220ee6"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -124,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

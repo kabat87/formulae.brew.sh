@@ -7,33 +7,39 @@
   ],
   "desc": "Inserts pre-made snippets of text anywhere",
   "homepage": "https://smilesoftware.com/TextExpander",
-  "url": "https://cdn.textexpander.com/mac/685.6/TextExpander_6.8.5.zip",
+  "url": "https://cdn.textexpander.com/mac/740.5/TextExpander_7.4.dmg",
   "appcast": null,
-  "version": "6.8.5,685.6",
+  "version": "7.4,740.5",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "08533d2c787ceaa04d34ba42e73fea3b7798134f33191acef68d68d38b604958",
+  "sha256": "66d8ad85a46e155f293377c37809348adf23f5dec088d82b1a3dbdb87a8144b1",
   "artifacts": [
-    [
-      "TextExpander.app"
-    ],
     {
-      "trash": "~/Library/Application Support/TextExpander/",
-      "signal": {
-      }
+      "app": [
+        "TextExpander.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/TextExpander/"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.14"
+        "10.15"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

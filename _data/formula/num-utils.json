@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://suso.suso.org/programs/num-utils/downloads/num-utils-0.5.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "03592760fc7844492163b14ddc9bb4e4d6526e17b468b5317b4a702ea7f6c64e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/num-utils/blobs/sha256:8695350e220210f7a33ac87237a246a17bb0a05a7f1ccadf91dbc728421d8cf3",
+          "sha256": "8695350e220210f7a33ac87237a246a17bb0a05a7f1ccadf91dbc728421d8cf3"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/num-utils/blobs/sha256:8695350e220210f7a33ac87237a246a17bb0a05a7f1ccadf91dbc728421d8cf3",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/num-utils/blobs/sha256:a1d2623cf894f0d8838ee705b922933605c1fa0a43a6a1dc7e38f7f6ff994c3f",
           "sha256": "a1d2623cf894f0d8838ee705b922933605c1fa0a43a6a1dc7e38f7f6ff994c3f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/num-utils/blobs/sha256:8695350e220210f7a33ac87237a246a17bb0a05a7f1ccadf91dbc728421d8cf3",
+          "sha256": "8695350e220210f7a33ac87237a246a17bb0a05a7f1ccadf91dbc728421d8cf3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "pod2man"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

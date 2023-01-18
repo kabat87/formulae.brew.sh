@@ -10,8 +10,8 @@
 
   ],
   "desc": "Analyze tcpdump output",
-  "license": null,
-  "homepage": "http://www.tcptrace.org/",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://web.archive.org/web/20210826120800/http://www.tcptrace.org/",
   "versions": {
     "stable": "6.6.7",
     "head": null,
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.mirrorservice.org/sites/distfiles.macports.org/tcptrace/tcptrace-6.6.7.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "63380a4051933ca08979476a9dfc6f959308bc9f60d45255202e388eb56910bd"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcptrace/blobs/sha256:5a61be1025abf1a097a9353517bc3e3f861a3b443f42350937ca345a0befe648",
+          "sha256": "5a61be1025abf1a097a9353517bc3e3f861a3b443f42350937ca345a0befe648"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcptrace/blobs/sha256:dc1e3a00440e80a1b1ad88fc3ab0c872f47bd1f9d8fa9909add44144f3703be8",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tcptrace/blobs/sha256:d27d973e94299d333fdd27c65e1260ee1c8ef12361a33e98a10cde109c781433",
           "sha256": "d27d973e94299d333fdd27c65e1260ee1c8ef12361a33e98a10cde109c781433"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tcptrace/blobs/sha256:1be33a669bf94abdb6259a9a92b8c72027cd5ccc2054cf25c592ea9b5b34c123",
+          "sha256": "1be33a669bf94abdb6259a9a92b8c72027cd5ccc2054cf25c592ea9b5b34c123"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/tcptrace/blobs/sha256:e46775d7cc808b5b52a0a36a33142b824a9b2d8bce5b0557bc1041c2e55c5ffb",
           "sha256": "e46775d7cc808b5b52a0a36a33142b824a9b2d8bce5b0557bc1041c2e55c5ffb"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tcptrace/blobs/sha256:f9de7ef41a2b9dc8daee1fddef1035ddf6a08cf473b6edafcf4bb069ab5f0052",
-          "sha256": "f9de7ef41a2b9dc8daee1fddef1035ddf6a08cf473b6edafcf4bb069ab5f0052"
+          "url": "https://ghcr.io/v2/homebrew/core/tcptrace/blobs/sha256:7516135879ddee3a7a4271980b8485ac12c3b1826cb99ba23e9f6f849fda4ceb",
+          "sha256": "7516135879ddee3a7a4271980b8485ac12c3b1826cb99ba23e9f6f849fda4ceb"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

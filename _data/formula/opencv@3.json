@@ -21,45 +21,56 @@
     "stable": {
       "url": "https://github.com/opencv/opencv/archive/3.4.16.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5e37b791b2fe42ed39b52d9955920b951ee42d5da95f79fbc9765a08ef733399"
     }
   },
-  "revision": 0,
+  "revision": 4,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:7e781bbd9512e29fb16453dc99d90d08c58da6f4eb8d5928021bd79b319078d6",
+          "sha256": "7e781bbd9512e29fb16453dc99d90d08c58da6f4eb8d5928021bd79b319078d6"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:39e9d703951125f7f2cf9847d7c7243f4fc609c4c69b942c9b3885ed70707cf2",
-          "sha256": "39e9d703951125f7f2cf9847d7c7243f4fc609c4c69b942c9b3885ed70707cf2"
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:f75bb2d7f18c01bca91163c1b4e92dd58a28f9bd3e8ab56847a0d0d6634c2c79",
+          "sha256": "f75bb2d7f18c01bca91163c1b4e92dd58a28f9bd3e8ab56847a0d0d6634c2c79"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:eee9b468a8becc00c64c6e0e30cf2d0707d2e2a65ab1c9b0295377c8d5b83446",
-          "sha256": "eee9b468a8becc00c64c6e0e30cf2d0707d2e2a65ab1c9b0295377c8d5b83446"
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:4e621e0ff3d86735c4512518c85c53a836ca9e302dbf24868b3a7e738ce3d4c9",
+          "sha256": "4e621e0ff3d86735c4512518c85c53a836ca9e302dbf24868b3a7e738ce3d4c9"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:64c6d7e78c93eb2e57bf4ef33d5dabe83cce246404de9971b631e73bd6fa5475",
+          "sha256": "64c6d7e78c93eb2e57bf4ef33d5dabe83cce246404de9971b631e73bd6fa5475"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:2ac347b30e8fe9290d8508922835b97c887169c443c358a709ffe3808c188ad2",
-          "sha256": "2ac347b30e8fe9290d8508922835b97c887169c443c358a709ffe3808c188ad2"
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:36fa66447534208b967e820a302647cb4b3ff47a6c589250094bceb6b56bb70a",
+          "sha256": "36fa66447534208b967e820a302647cb4b3ff47a6c589250094bceb6b56bb70a"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:58fae343319e8b5b800751f89c6fee58e9a8d72b80a51e0005fbe5c58be25d0c",
-          "sha256": "58fae343319e8b5b800751f89c6fee58e9a8d72b80a51e0005fbe5c58be25d0c"
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:4429807d11651fa53a5f37bd6f0a7b2ec3e46cb021450e3b4aac0feaca2433ac",
+          "sha256": "4429807d11651fa53a5f37bd6f0a7b2ec3e46cb021450e3b4aac0feaca2433ac"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:86059376726e7a2684b545975edf2d98a3d62784c37e4488541b6b45400fc0b3",
-          "sha256": "86059376726e7a2684b545975edf2d98a3d62784c37e4488541b6b45400fc0b3"
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:1868345fbc6ccc3e573ab768509ca65086f20c5aa4d59969fa46229a4fdb7876",
+          "sha256": "1868345fbc6ccc3e573ab768509ca65086f20c5aa4d59969fa46229a4fdb7876"
         },
         "x86_64_linux": {
-          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:e704bfba6ac73422ea69196c4a0a0adfafc82d94555d801a6a8756e808b37f73",
-          "sha256": "e704bfba6ac73422ea69196c4a0a0adfafc82d94555d801a6a8756e808b37f73"
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opencv/3/blobs/sha256:db558366ad194d1d8b17a73fc76a4abb58214902e39ed03bec1d2ec1c8e0964f",
+          "sha256": "db558366ad194d1d8b17a73fc76a4abb58214902e39ed03bec1d2ec1c8e0964f"
         }
       }
     }
@@ -69,7 +80,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,16 +90,21 @@
   "dependencies": [
     "ceres-solver",
     "eigen",
-    "ffmpeg",
+    "ffmpeg@4",
     "gflags",
     "glog",
-    "jpeg",
+    "jpeg-turbo",
     "libpng",
     "libtiff",
     "numpy",
     "openexr",
-    "python@3.9",
-    "tbb"
+    "protobuf",
+    "python@3.10",
+    "tbb",
+    "webp"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

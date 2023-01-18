@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/png85/json_spirit/archive/json_spirit-4.0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "43829f55755f725c06dd75d626d9e57d0ce68c2f0d5112fe9a01562c0501e94c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/json_spirit/blobs/sha256:ff7bae0412c5ee77fbf5579e6b15df6f20af925b091c955115c7a002a7836172",
+          "sha256": "ff7bae0412c5ee77fbf5579e6b15df6f20af925b091c955115c7a002a7836172"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/json_spirit/blobs/sha256:52958b3d198dfb427701516e4ee494219f60d4a9948fd435ddbb818a92c1e1a9",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/json_spirit/blobs/sha256:ef7641e5dd587a4595e326e74f438c9f99e411acceaeee75dc7450835e126895",
           "sha256": "ef7641e5dd587a4595e326e74f438c9f99e411acceaeee75dc7450835e126895"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/json_spirit/blobs/sha256:163cd63f53754c3c98eae77ad56d49a82061bc50f82cfd348efc9ca248d464a0",
+          "sha256": "163cd63f53754c3c98eae77ad56d49a82061bc50f82cfd348efc9ca248d464a0"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
   ],
   "dependencies": [
     "boost"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

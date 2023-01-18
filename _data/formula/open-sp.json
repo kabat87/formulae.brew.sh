@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/openjade/opensp/1.5.2/OpenSP-1.5.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "57f4898498a368918b0d49c826aa434bb5b703d2c3b169beb348016ab25617ce"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 5,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/open-sp/blobs/sha256:d6dc97e6caecf3c6090835b984cf03e7981f755e2a4e9bd884b874724fd62a34",
+          "sha256": "d6dc97e6caecf3c6090835b984cf03e7981f755e2a4e9bd884b874724fd62a34"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/open-sp/blobs/sha256:803db865811e2af00d1ea784c7bf0ed5d8b837f9bd5afff47bca13a5b97e8955",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/open-sp/blobs/sha256:032676f1cd5c4bc0c1368cdf08bfe9a8b6df8f2c26ee4367c4a1285ab4fadc3a",
           "sha256": "032676f1cd5c4bc0c1368cdf08bfe9a8b6df8f2c26ee4367c4a1285ab4fadc3a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/open-sp/blobs/sha256:4075ad44cb25e963f435a1f48a9cc910c00d2de4ab2623fe803422910b0ba325",
+          "sha256": "4075ad44cb25e963f435a1f48a9cc910c00d2de4ab2623fe803422910b0ba325"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
   ],
   "dependencies": [
     "gettext"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

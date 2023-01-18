@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/theZiz/aha/archive/0.5.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6aea13487f6b5c3e453a447a67345f8095282f5acd97344466816b05ebd0b3b1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aha/blobs/sha256:73761c6952a8eb254cf92b17f685bc1cb107d7f075e8e54ae97fc66bdf3b6707",
+          "sha256": "73761c6952a8eb254cf92b17f685bc1cb107d7f075e8e54ae97fc66bdf3b6707"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aha/blobs/sha256:638f024391f63bcaeb96fc614f0bd1d18ca42a42db7aaaacf939c5a473aa70b5",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aha/blobs/sha256:fed59f6650f5b40100644b0baf1bee57b0b3ca6a05d413af70350d9d0eaa8441",
           "sha256": "fed59f6650f5b40100644b0baf1bee57b0b3ca6a05d413af70350d9d0eaa8441"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aha/blobs/sha256:3c9adaf83f5ed9e8a0f6c6596888f97199f18900c203765b86b658a72036c145",
+          "sha256": "3c9adaf83f5ed9e8a0f6c6596888f97199f18900c203765b86b658a72036c145"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

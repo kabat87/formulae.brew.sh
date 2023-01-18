@@ -7,55 +7,230 @@
   ],
   "desc": "Client program for the OpenVPN Access Server",
   "homepage": "https://openvpn.net/client-connect-vpn-for-mac-os/",
-  "url": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.3.3.4163_signed.dmg",
+  "url": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.4.1.4522_signed.dmg",
   "appcast": null,
-  "version": "3.3.3,4163",
+  "version": "3.4.1,4522",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "758459b63a798bd57eb08bb3cbe94c080a1762656c9a7a7e43f017e1211ecd2d",
+  "sha256": "48c97a3c7251176ee4337f2b3100e8098367ba8cacdbaf35d8538169a52c06e5",
   "artifacts": [
     {
-      "quit": "org.openvpn.client.app",
-      "launchctl": [
-        "org.openvpn.client",
-        "org.openvpn.helper"
-      ],
-      "script": {
-        "executable": "/Applications/OpenVPN Connect/Uninstall OpenVPN Connect.app/Contents/Resources/remove.sh",
-        "sudo": "true"
-      },
-      "pkgutil": [
-        "org.openvpn.client_framework.pkg",
-        "org.openvpn.client_launch.pkg",
-        "org.openvpn.client_uninstall.pkg",
-        "org.openvpn.client.pkg",
-        "org.openvpn.helper_framework.pkg",
-        "org.openvpn.helper_launch.pkg"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "org.openvpn.client.app",
+          "launchctl": [
+            "org.openvpn.client",
+            "org.openvpn.helper"
+          ],
+          "pkgutil": [
+            "org.openvpn.client.pkg",
+            "org.openvpn.client_framework.pkg",
+            "org.openvpn.client_launch.pkg",
+            "org.openvpn.client_uninstall.pkg",
+            "org.openvpn.helper_framework.pkg",
+            "org.openvpn.helper_launch.pkg"
+          ],
+          "delete": [
+            "/Applications/OpenVPN Connect",
+            "/Applications/OpenVPN Connect.app"
+          ],
+          "login_item": "OpenVPN Connect"
+        }
+      ]
     },
-    "OpenVPN_Connect_3_3_3(4163)_Installer_signed.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Application Support/OpenVPN Connect",
-        "~/Library/Preferences/org.openvpn.client.app.plist"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "OpenVPN_Connect_3_4_1(4522)_x86_64_Installer_signed.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/OpenVPN Connect",
+            "~/Library/Logs/OpenVPN Connect",
+            "~/Library/Preferences/org.openvpn.client.app.helper.plist",
+            "~/Library/Preferences/org.openvpn.client.app.plist",
+            "~/Library/Saved Application State/org.openvpn.client.app.savedState"
+          ],
+          "script": {
+            "executable": "security",
+            "args": [
+              "delete-keychain",
+              "openvpn.keychain-db"
+            ]
+          }
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "quit": "org.openvpn.client.app",
+              "launchctl": [
+                "org.openvpn.client",
+                "org.openvpn.helper"
+              ],
+              "pkgutil": [
+                "org.openvpn.client.pkg",
+                "org.openvpn.client_framework.pkg",
+                "org.openvpn.client_launch.pkg",
+                "org.openvpn.client_uninstall.pkg",
+                "org.openvpn.helper_framework.pkg",
+                "org.openvpn.helper_launch.pkg"
+              ],
+              "delete": [
+                "/Applications/OpenVPN Connect",
+                "/Applications/OpenVPN Connect.app"
+              ],
+              "login_item": "OpenVPN Connect"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "OpenVPN_Connect_3_4_1(4522)_arm64_Installer_signed.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": [
+                "~/Library/Application Support/OpenVPN Connect",
+                "~/Library/Logs/OpenVPN Connect",
+                "~/Library/Preferences/org.openvpn.client.app.helper.plist",
+                "~/Library/Preferences/org.openvpn.client.app.plist",
+                "~/Library/Saved Application State/org.openvpn.client.app.savedState"
+              ],
+              "script": {
+                "executable": "security",
+                "args": [
+                  "delete-keychain",
+                  "openvpn.keychain-db"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_monterey": {
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "quit": "org.openvpn.client.app",
+              "launchctl": [
+                "org.openvpn.client",
+                "org.openvpn.helper"
+              ],
+              "pkgutil": [
+                "org.openvpn.client.pkg",
+                "org.openvpn.client_framework.pkg",
+                "org.openvpn.client_launch.pkg",
+                "org.openvpn.client_uninstall.pkg",
+                "org.openvpn.helper_framework.pkg",
+                "org.openvpn.helper_launch.pkg"
+              ],
+              "delete": [
+                "/Applications/OpenVPN Connect",
+                "/Applications/OpenVPN Connect.app"
+              ],
+              "login_item": "OpenVPN Connect"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "OpenVPN_Connect_3_4_1(4522)_arm64_Installer_signed.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": [
+                "~/Library/Application Support/OpenVPN Connect",
+                "~/Library/Logs/OpenVPN Connect",
+                "~/Library/Preferences/org.openvpn.client.app.helper.plist",
+                "~/Library/Preferences/org.openvpn.client.app.plist",
+                "~/Library/Saved Application State/org.openvpn.client.app.savedState"
+              ],
+              "script": {
+                "executable": "security",
+                "args": [
+                  "delete-keychain",
+                  "openvpn.keychain-db"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_big_sur": {
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "quit": "org.openvpn.client.app",
+              "launchctl": [
+                "org.openvpn.client",
+                "org.openvpn.helper"
+              ],
+              "pkgutil": [
+                "org.openvpn.client.pkg",
+                "org.openvpn.client_framework.pkg",
+                "org.openvpn.client_launch.pkg",
+                "org.openvpn.client_uninstall.pkg",
+                "org.openvpn.helper_framework.pkg",
+                "org.openvpn.helper_launch.pkg"
+              ],
+              "delete": [
+                "/Applications/OpenVPN Connect",
+                "/Applications/OpenVPN Connect.app"
+              ],
+              "login_item": "OpenVPN Connect"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "OpenVPN_Connect_3_4_1(4522)_arm64_Installer_signed.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": [
+                "~/Library/Application Support/OpenVPN Connect",
+                "~/Library/Logs/OpenVPN Connect",
+                "~/Library/Preferences/org.openvpn.client.app.helper.plist",
+                "~/Library/Preferences/org.openvpn.client.app.plist",
+                "~/Library/Saved Application State/org.openvpn.client.app.savedState"
+              ],
+              "script": {
+                "executable": "security",
+                "args": [
+                  "delete-keychain",
+                  "openvpn.keychain-db"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

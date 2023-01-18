@@ -13,15 +13,16 @@
   "license": "CC0-1.0",
   "homepage": "https://github.com/Y2Z/monolith",
   "versions": {
-    "stable": "2.6.1",
+    "stable": "2.7.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/Y2Z/monolith/archive/v2.6.1.tar.gz",
+      "url": "https://github.com/Y2Z/monolith/archive/v2.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2076b479638d4ae5c1d1009c915527213175e6ae1b18f95d296092cbda0e7cc2"
     }
   },
   "revision": 0,
@@ -31,47 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:7906a2428d7e39f543cbf7fdecb72ba83e7853400307f8c3e8acad7e7fe4c800",
+          "sha256": "7906a2428d7e39f543cbf7fdecb72ba83e7853400307f8c3e8acad7e7fe4c800"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:e744be2aadfc192445260fc508eb69b767b353d47d732f9d3829d5da4dbcd1aa",
-          "sha256": "e744be2aadfc192445260fc508eb69b767b353d47d732f9d3829d5da4dbcd1aa"
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:e8fa307ca859044ac1c9699a35dfd72c8746bbb4a96909ea6b9f65a025483694",
+          "sha256": "e8fa307ca859044ac1c9699a35dfd72c8746bbb4a96909ea6b9f65a025483694"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:f8d25cc101ab57a7b2392d748815de0d2dbf36654a4ef592b5eedf992846f17a",
-          "sha256": "f8d25cc101ab57a7b2392d748815de0d2dbf36654a4ef592b5eedf992846f17a"
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:90a44adc8f1ccbb88da3c6c904472c4944b6146ffacb39ba380d99f731391c0a",
+          "sha256": "90a44adc8f1ccbb88da3c6c904472c4944b6146ffacb39ba380d99f731391c0a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:7d13cc03f1f56004b2d28eb7e0dd7849544bcd60b035f8a44358a087295aa8db",
+          "sha256": "7d13cc03f1f56004b2d28eb7e0dd7849544bcd60b035f8a44358a087295aa8db"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:c44f5f556c6e8190bf26365878d6d592dce98a42c2c535b48b33568555f041b6",
-          "sha256": "c44f5f556c6e8190bf26365878d6d592dce98a42c2c535b48b33568555f041b6"
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:0f4d4ecdf066f62844db3422e1ba1219ca9ca187879cf38d95f860efda7f3dde",
+          "sha256": "0f4d4ecdf066f62844db3422e1ba1219ca9ca187879cf38d95f860efda7f3dde"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:f665108ed7bbba69ffd99220d6d23d6baeb380fee9ce569eaef11b510c8affec",
-          "sha256": "f665108ed7bbba69ffd99220d6d23d6baeb380fee9ce569eaef11b510c8affec"
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:53dde0061e4b7c58d7400aae84e4164a02ac003f2edb7c69c0b4226077d8c0f6",
+          "sha256": "53dde0061e4b7c58d7400aae84e4164a02ac003f2edb7c69c0b4226077d8c0f6"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:03eead42ea9e5f888b968147d1975ffaa04ad470747b985c3920dfe5724f9c62",
-          "sha256": "03eead42ea9e5f888b968147d1975ffaa04ad470747b985c3920dfe5724f9c62"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:3794386713e0d813abbcbc6377c943421efb94b8dde4ce01729bd8a88d206af2",
-          "sha256": "3794386713e0d813abbcbc6377c943421efb94b8dde4ce01729bd8a88d206af2"
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:d695f22c79b7b3c1ca434db9c8dfc87acd97c69d9ecf9463530dc15a8e0c58bc",
+          "sha256": "d695f22c79b7b3c1ca434db9c8dfc87acd97c69d9ecf9463530dc15a8e0c58bc"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:4e39b8d3264fb577e4afb9464c9ca88d0da5646aab9c0f0b09f0f9b48d00ba03",
-          "sha256": "4e39b8d3264fb577e4afb9464c9ca88d0da5646aab9c0f0b09f0f9b48d00ba03"
+          "url": "https://ghcr.io/v2/homebrew/core/monolith/blobs/sha256:f58a88c34fe41097ce534b2c0aef72d5f8805bfc349857b29b9e244a209e22ef",
+          "sha256": "f58a88c34fe41097ce534b2c0aef72d5f8805bfc349857b29b9e244a209e22ef"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,7 +85,10 @@
     "rust"
   ],
   "dependencies": [
-    "openssl@1.1"
+
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +117,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "openssl@3"
+      ]
+    }
+  }
 }

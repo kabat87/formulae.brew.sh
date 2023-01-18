@@ -7,27 +7,31 @@
   ],
   "desc": "Web editor",
   "homepage": "https://pinegrow.com/",
-  "url": "https://download.pinegrow.com/PinegrowMac.6.21.dmg",
+  "url": "https://download.pinegrow.com/PinegrowMacX64.7.05.dmg",
   "appcast": null,
-  "version": "6.21",
+  "version": "7.05",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d2c037f70a07a2ad4fc049a8e2bc6393593b12933a8c18ccb58a8c713899f9d5",
+  "sha256": "d7ebe0a6145ae0a3d094a8bbdb8230c27fb64a44a23c9c98ed95afd0774eefe9",
   "artifacts": [
-    [
-      "Pinegrow.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Pinegrow",
-        "~/Library/Caches/Pinegrow",
-        "~/Library/Preferences/com.pinegrow.pinegrow.plist",
-        "~/Library/Saved Application State/com.pinegrow.pinegrow.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Pinegrow.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Pinegrow",
+            "~/Library/Caches/Pinegrow",
+            "~/Library/Preferences/com.pinegrow.pinegrow.plist",
+            "~/Library/Saved Application State/com.pinegrow.pinegrow.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download.pinegrow.com/PinegrowMacARM64.7.05.dmg",
+      "sha256": "8324ab5f7556798b6b831918ff09abf16403bdb940b01fd854c526a26e196a08"
+    },
+    "arm64_monterey": {
+      "url": "https://download.pinegrow.com/PinegrowMacARM64.7.05.dmg",
+      "sha256": "8324ab5f7556798b6b831918ff09abf16403bdb940b01fd854c526a26e196a08"
+    },
+    "arm64_big_sur": {
+      "url": "https://download.pinegrow.com/PinegrowMacARM64.7.05.dmg",
+      "sha256": "8324ab5f7556798b6b831918ff09abf16403bdb940b01fd854c526a26e196a08"
+    }
+  }
 }

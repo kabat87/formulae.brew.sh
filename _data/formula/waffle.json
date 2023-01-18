@@ -11,7 +11,7 @@
   ],
   "desc": "C library for selecting an OpenGL API and window system at runtime",
   "license": "BSD-2-Clause",
-  "homepage": "http://www.waffle-gl.org/",
+  "homepage": "https://waffle.freedesktop.org/",
   "versions": {
     "stable": "1.7.0",
     "head": "HEAD",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://gitlab.freedesktop.org/mesa/waffle/-/raw/website/files/release/waffle-1.7.0/waffle-1.7.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "69e42d15d08f63e7a54a8b8770295a6eb04dfd1c6f86c328b6039dbe7de28ef3"
     }
   },
   "revision": 0,
@@ -60,13 +61,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/waffle/blobs/sha256:2f865431b367967e1ec77232813930923f3435332972334933cb4a0173a061b6",
           "sha256": "2f865431b367967e1ec77232813930923f3435332972334933cb4a0173a061b6"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/waffle/blobs/sha256:e2b0bf74c8eed8e3a8b3f85f62d4bb01172916808acc31ee74878833632e7825",
+          "sha256": "e2b0bf74c8eed8e3a8b3f85f62d4bb01172916808acc31ee74878833632e7825"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
     "docbook-xsl"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
     "pkg-config"
   ],
   "recommended_dependencies": [
@@ -84,7 +92,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "libxslt": "build"
+    }
   ],
   "requirements": [
 
@@ -104,5 +114,21 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "cmake",
+        "docbook-xsl",
+        "libxslt"
+      ],
+      "dependencies": [
+        "libxcb",
+        "mesa",
+        "mesa-glu",
+        "systemd",
+        "wayland"
+      ]
+    }
+  }
 }

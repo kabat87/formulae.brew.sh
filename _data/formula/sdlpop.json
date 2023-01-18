@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/NagyD/SDLPoP/archive/v1.22.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1af170f7f6def61b2ab9c3a9227feca335461d224faa99f3578fc09115ac505c"
     }
   },
   "revision": 0,
@@ -35,6 +36,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sdlpop/blobs/sha256:1ccdaf2e5186bcc2d0094fbdc59206c5b602b367287ee76a3473969897f1af8a",
           "sha256": "1ccdaf2e5186bcc2d0094fbdc59206c5b602b367287ee76a3473969897f1af8a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sdlpop/blobs/sha256:786990712dda58b6dc2e1e7047ad3b24cf7282034e4db22c5d3a28350c701e52",
+          "sha256": "786990712dda58b6dc2e1e7047ad3b24cf7282034e4db22c5d3a28350c701e52"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
   "dependencies": [
     "sdl2",
     "sdl2_image"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://mcabber.com/files/mcabber-1.1.2.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c4a1413be37434b6ba7d577d94afb362ce89e2dc5c6384b4fa55c3e7992a3160"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mcabber/blobs/sha256:9b70cf1483eede96a3c5b8df075a0e2cc92bf4ab3d84c83b8cf017b6b0c53677",
+          "sha256": "9b70cf1483eede96a3c5b8df075a0e2cc92bf4ab3d84c83b8cf017b6b0c53677"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mcabber/blobs/sha256:e7537262f19fcd123302a9a97d1e22af75f61881dff731375abc421291eb40eb",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mcabber/blobs/sha256:b9660212f5a994bd663e5795d9f707da933f95b8aad23bf11f5e724c2e59a1ef",
           "sha256": "b9660212f5a994bd663e5795d9f707da933f95b8aad23bf11f5e724c2e59a1ef"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mcabber/blobs/sha256:0f7cf3a039d23f52158294751d3488ba744f3489f1bb57d256f81cd48e6f0166",
+          "sha256": "0f7cf3a039d23f52158294751d3488ba744f3489f1bb57d256f81cd48e6f0166"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
     "libidn",
     "libotr",
     "loudmouth"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

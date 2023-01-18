@@ -13,60 +13,65 @@
   "license": "BSD-3-Clause",
   "homepage": "https://www.lighttpd.net/",
   "versions": {
-    "stable": "1.4.63",
+    "stable": "1.4.68",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.63.tar.xz",
+      "url": "https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.68.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e56f37ae52b63e1ada4d76ce78005affb6e56eea2f6bdb0ce17d6d36e9583384"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:1a30aefdaab4819bee28c3f63da0867f0031f825cd4dac522744b4d19162bc29",
+          "sha256": "1a30aefdaab4819bee28c3f63da0867f0031f825cd4dac522744b4d19162bc29"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:febd63ab82f4b96ee6b1b6b7e4e658202aa1f87af58b8a2f635d27da50c82137",
-          "sha256": "febd63ab82f4b96ee6b1b6b7e4e658202aa1f87af58b8a2f635d27da50c82137"
+          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:9dcbe27271a0cfb493dede9c97f5eb262c14e7f0e8fbb7aacced962040771f45",
+          "sha256": "9dcbe27271a0cfb493dede9c97f5eb262c14e7f0e8fbb7aacced962040771f45"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:1f2b0fa8fc1fa2e6bf4717da8a2b770ceaf3e028f60a54d4556991ef4170e887",
-          "sha256": "1f2b0fa8fc1fa2e6bf4717da8a2b770ceaf3e028f60a54d4556991ef4170e887"
+          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:b50b76039099704c744783debd8be8e392305e321ced2943063e1af7e9173002",
+          "sha256": "b50b76039099704c744783debd8be8e392305e321ced2943063e1af7e9173002"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:3b12c865b261aaee2a999dfa73256b3cf1b55c3f2068ac41f60739d815657187",
+          "sha256": "3b12c865b261aaee2a999dfa73256b3cf1b55c3f2068ac41f60739d815657187"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:6f2557e86538603fc34fefc4e33e35abd50962bc021e548877dad2877413fcbc",
-          "sha256": "6f2557e86538603fc34fefc4e33e35abd50962bc021e548877dad2877413fcbc"
+          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:57ed3baffc69083d2d203e250f0b9320f90014a33901b930724594ae465bd18c",
+          "sha256": "57ed3baffc69083d2d203e250f0b9320f90014a33901b930724594ae465bd18c"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:67edde9ec018c162d4188619e4840a6fdbea2f5418bb8c1d30d48a1438fba1b1",
-          "sha256": "67edde9ec018c162d4188619e4840a6fdbea2f5418bb8c1d30d48a1438fba1b1"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:30b655e43f0f325eab7157986e7832e85c37bc22686b259d6626a103af608794",
-          "sha256": "30b655e43f0f325eab7157986e7832e85c37bc22686b259d6626a103af608794"
+          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:d5d5f82673b4f4be6cde5a1f5b0af436c0eb5464288a8c95c59b9b18e31ea40a",
+          "sha256": "d5d5f82673b4f4be6cde5a1f5b0af436c0eb5464288a8c95c59b9b18e31ea40a"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:62a9f6a041bc72126cddf1fad869b4c33470ce9f4f1852b7c351f73163728610",
-          "sha256": "62a9f6a041bc72126cddf1fad869b4c33470ce9f4f1852b7c351f73163728610"
+          "url": "https://ghcr.io/v2/homebrew/core/lighttpd/blobs/sha256:7b0bc2fcaf8480de212268387ecd77162d89760a817c17d130c0d55a417c9445",
+          "sha256": "7b0bc2fcaf8480de212268387ecd77162d89760a817c17d130c0d55a417c9445"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +86,9 @@
     "openssl@1.1",
     "pcre2"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -88,7 +96,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libxcrypt"
   ],
   "requirements": [
 
@@ -108,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

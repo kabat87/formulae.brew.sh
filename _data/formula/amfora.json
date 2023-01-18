@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/makeworld-the-better-one/amfora.git",
       "tag": "v1.9.2",
-      "revision": "61d864540140f463a183e187e4211c258bd518bf"
+      "revision": "61d864540140f463a183e187e4211c258bd518bf",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/amfora/blobs/sha256:076083a307b78e2bdd5e4895ebc38330e076b473762322a063fcce004f664f70",
+          "sha256": "076083a307b78e2bdd5e4895ebc38330e076b473762322a063fcce004f664f70"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/amfora/blobs/sha256:01501f81b2ededf595e98e5a36ab17f87dc8a21fa7cb29c76a17497ca33ae8f4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/amfora/blobs/sha256:082d3f24c6c13351effa01f68e819b18f7bbf5767c5a106e18ea430c5f880bce",
           "sha256": "082d3f24c6c13351effa01f68e819b18f7bbf5767c5a106e18ea430c5f880bce"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/amfora/blobs/sha256:fd8068eca6705c1c22b96e1cdb0de4ef064300cfb101f77c9710e3ace99a7787",
+          "sha256": "fd8068eca6705c1c22b96e1cdb0de4ef064300cfb101f77c9710e3ace99a7787"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

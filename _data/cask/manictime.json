@@ -7,36 +7,121 @@
   ],
   "desc": "Time tracker that automatically collects computer usage data",
   "homepage": "https://www.manictime.com/Mac",
-  "url": "https://cdn.manictime.com/setup/mac/ManicTime-v2.1.2.dmg",
+  "url": "https://cdn.manictime.com/setup/mac/v2_3_2/manictime-2.3.2-osx-x64.dmg",
   "appcast": null,
-  "version": "2.1.2",
+  "version": "2.3.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4707b62865d984bc0c1a59bcb7732533e15d8db51b6b50fb68b7c611a694886f",
+  "sha256": "5324700989f984538ca85f530ac0c7256fdc83ca8ba8201c7d97c73bc9c0527e",
   "artifacts": [
     {
-      "pkgutil": "com.finkit.manictime.tracker",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.finkit.manictime.tracker"
+        }
+      ]
     },
-    "ManicTime-v2.1.2.pkg (Pkg)",
     {
-      "trash": "~/Library/Application Support/ManicTime",
-      "signal": {
-      }
+      "pkg": [
+        "manictime-2.3.2-osx-x64.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/ManicTime"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://cdn.manictime.com/setup/mac/v2_3_2/manictime-2.3.2-osx-arm64.dmg",
+      "sha256": "0d649ca734a3ec74f6805a5600d088d17070ef46c43cfebed80d25b2d6aef202",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "com.finkit.manictime.tracker"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "manictime-2.3.2-osx-arm64.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": "~/Library/Application Support/ManicTime"
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_monterey": {
+      "url": "https://cdn.manictime.com/setup/mac/v2_3_2/manictime-2.3.2-osx-arm64.dmg",
+      "sha256": "0d649ca734a3ec74f6805a5600d088d17070ef46c43cfebed80d25b2d6aef202",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "com.finkit.manictime.tracker"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "manictime-2.3.2-osx-arm64.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": "~/Library/Application Support/ManicTime"
+            }
+          ]
+        }
+      ]
+    },
+    "arm64_big_sur": {
+      "url": "https://cdn.manictime.com/setup/mac/v2_3_2/manictime-2.3.2-osx-arm64.dmg",
+      "sha256": "0d649ca734a3ec74f6805a5600d088d17070ef46c43cfebed80d25b2d6aef202",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "com.finkit.manictime.tracker"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "manictime-2.3.2-osx-arm64.pkg"
+          ]
+        },
+        {
+          "zap": [
+            {
+              "trash": "~/Library/Application Support/ManicTime"
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

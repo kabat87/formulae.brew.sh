@@ -7,22 +7,26 @@
   ],
   "desc": "Private and anonymous instant messaging over tor",
   "homepage": "https://www.ricochetrefresh.net/",
-  "url": "https://github.com/blueprint-freespeech/ricochet-refresh/releases/download/v3.0.10-release/ricochet-refresh-3.0.10-macos-x86_64.dmg",
+  "url": "https://github.com/blueprint-freespeech/ricochet-refresh/releases/download/v3.0.15-release/ricochet-refresh-3.0.15-macos-x86_64.dmg",
   "appcast": null,
-  "version": "3.0.10",
+  "version": "3.0.15",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "c9751b6f78365777f083d619aa36947bc83ae9043b4b74f099f884b70d8398ef",
+  "sha256": "dcbc9c5656e282d827759a297ab806ddd2cf8a3f5a197f72df3eb770568a8f04",
   "artifacts": [
-    [
-      "Ricochet Refresh.app"
-    ],
     {
-      "trash": "~/Library/Application Support/Ricochet-Refresh",
-      "signal": {
-      }
+      "app": [
+        "Ricochet Refresh.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/Ricochet-Refresh"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

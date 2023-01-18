@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/ganglia/ganglia%20monitoring%20core/3.7.2/ganglia-3.7.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "042dbcaf580a661b55ae4d9f9b3566230b2232169a0898e91a797a4c61888409"
     }
   },
   "revision": 3,
@@ -31,6 +32,21 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ganglia/blobs/sha256:ce6708001f5729b36e2a366a5569357598e0e1d0809e41cc3b637ceafd4eb154",
+          "sha256": "ce6708001f5729b36e2a366a5569357598e0e1d0809e41cc3b637ceafd4eb154"
+        },
+        "arm64_big_sur": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ganglia/blobs/sha256:a988e988b2b539eeffaa6b6d01ebfa7748615c822daaee1cf617a606e900683e",
+          "sha256": "a988e988b2b539eeffaa6b6d01ebfa7748615c822daaee1cf617a606e900683e"
+        },
+        "monterey": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ganglia/blobs/sha256:b52de8c622a7bc483b5dfbf36f8b1c43050a478837058b41508dcf5346b16adb",
+          "sha256": "b52de8c622a7bc483b5dfbf36f8b1c43050a478837058b41508dcf5346b16adb"
+        },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ganglia/blobs/sha256:31b343fa942e30bddbbc737be768225774b0e7c182e278f85e16cd1b8b9d626e",
@@ -71,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +98,9 @@
     "confuse",
     "pcre",
     "rrdtool"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

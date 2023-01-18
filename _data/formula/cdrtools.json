@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/cdrtools/alpha/cdrtools-3.02a09.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c7e4f732fb299e9b5d836629dadf5512aa5e6a5624ff438ceb1d056f4dcb07c2"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cdrtools/blobs/sha256:5bce367688103071cb34a38002f0c2dc767b3e55912c2605e27c705013ed3285",
+          "sha256": "5bce367688103071cb34a38002f0c2dc767b3e55912c2605e27c705013ed3285"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cdrtools/blobs/sha256:954f46597d28f0a8ca1eca8de6ca79182a3904472944e484c7406663f7b6a95c",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cdrtools/blobs/sha256:06bd97603df2dba522d6cb18b50815b3cb4f6b619b3244e6d870009831129a37",
           "sha256": "06bd97603df2dba522d6cb18b50815b3cb4f6b619b3244e6d870009831129a37"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cdrtools/blobs/sha256:3e1fd6e949d4a3f1d08a7fb658c6804c314775fad778c1c0171a07a84d301143",
+          "sha256": "3e1fd6e949d4a3f1d08a7fb658c6804c314775fad778c1c0171a07a84d301143"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "smake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,30 +7,38 @@
   ],
   "desc": "Transcode and manipulate REDCODE RAW footage",
   "homepage": "https://www.red.com/",
-  "url": "https://downloads.red.com/software/rcx/mac/release/54.51463/REDCINE-X_PRO_Build_54.0.pkg",
+  "url": "https://downloads.red.com/software/rcx/mac/release/60.2.2/REDCINE-X_PRO_Build_60.2.2.pkg",
   "appcast": null,
-  "version": "54.0,51463",
+  "version": "60.2.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "12164f4ce2a40b22c071779a24413eecedde51f2b6fadd71ffaa421f366aba59",
+  "sha256": "93526dacdcff4d72bdda5411ae700ba8f3b6aeca5d4e201c0db8afe7a98b536d",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.red.pkg.REDCINE-X PRO",
-        "com.red.pkg.SupportLibs"
-      ],
-      "delete": "/Applications/REDCINE-X Professional",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.red.pkg.REDCINE-XPRO",
+            "com.red.pkg.SupportLibs"
+          ],
+          "delete": "/Applications/REDCINE-X Professional"
+        }
+      ]
     },
-    "REDCINE-X_PRO_Build_54.0.pkg (Pkg)"
+    {
+      "pkg": [
+        "REDCINE-X_PRO_Build_60.2.2.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

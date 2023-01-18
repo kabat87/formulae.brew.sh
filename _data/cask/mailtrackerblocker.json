@@ -7,27 +7,37 @@
   ],
   "desc": "Email tracker, read receipt and spy pixel blocker plugin for Apple Mail",
   "homepage": "https://apparition47.github.io/MailTrackerBlocker/",
-  "url": "https://github.com/apparition47/MailTrackerBlocker/releases/download/0.5.7/MailTrackerBlocker.pkg",
+  "url": "https://github.com/apparition47/MailTrackerBlocker/releases/download/0.7.9/MailTrackerBlocker.pkg",
   "appcast": null,
-  "version": "0.5.7",
+  "version": "0.7.9",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2ab590aa3d3805551179298ceaf59521ddc34dc048648e0aa6147e3fed94d947",
+  "sha256": "96f7517fa0d82491b08e90acb752ca3e7b9e3eeeb61be907ae146a4aa16236a3",
   "artifacts": [
     {
-      "pkgutil": "com.onefatgiraffe.mailtrackerblocker",
-      "delete": "/Library/Mail/Bundles/MailTrackerBlocker.mailbundle",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.onefatgiraffe.mailtrackerblocker",
+          "delete": "/Library/Mail/Bundles/MailTrackerBlocker.mailbundle"
+        }
+      ]
     },
-    "MailTrackerBlocker.pkg (Pkg)",
-    "uninstall_postflight (Postflight Block)",
     {
-      "trash": "~/Library/Containers/com.apple.mail/Data/Library/Application Support/com.onefatgiraffe.mailtrackerblocker",
-      "signal": {
-      }
+      "pkg": [
+        "MailTrackerBlocker.pkg"
+      ]
+    },
+    {
+      "uninstall_postflight": "  uninstall_postflight do\n    if system_command(\"ps\", args: [\"x\"]).stdout.match?(\"Mail.app/Contents/MacOS/Mail\")\n      opoo \"Restart Mail.app to finish uninstalling #{token}\"\n    end\n  end\n"
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Containers/com.apple.mail/Data/Library/Application Support/com.onefatgiraffe.mailtrackerblocker"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

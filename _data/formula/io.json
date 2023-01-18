@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/IoLanguage/io/archive/2017.09.06.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9ac5cd94bbca65c989cd254be58a3a716f4e4f16480f0dc81070457aa353c217"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/io/blobs/sha256:48d3b14d0c9b9fc74b24bbd9b5e4cc5283a00ef49c1c0854a7d768b68f6a4bea",
+          "sha256": "48d3b14d0c9b9fc74b24bbd9b5e4cc5283a00ef49c1c0854a7d768b68f6a4bea"
+        },
         "monterey": {
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/io/blobs/sha256:7e191e8affbfeb613d6cf895ae482a077f54de8f2087ca2f4a8742fc488c73f2",
@@ -66,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -87,7 +95,15 @@
     "libxml2"
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -104,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

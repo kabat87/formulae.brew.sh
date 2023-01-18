@@ -5,28 +5,36 @@
   "name": [
     "Présentation"
   ],
-  "desc": null,
+  "desc": "Tool for pdf slides",
   "homepage": "http://iihm.imag.fr/blanch/software/osx-presentation/",
-  "url": "http://iihm.imag.fr/blanch/software/osx-presentation/releases/osx-presentation-2.3.1.pkg",
+  "url": "http://iihm.imag.fr/blanch/software/osx-presentation/releases/osx-presentation-3.2.0.pkg",
   "appcast": null,
-  "version": "2.3.1",
+  "version": "3.2.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1b25a24a898f7d51436846f3d59cb8095a8c28f30a1b4d924c3de085e0005f08",
+  "sha256": "7dff528b60dd7ca91a9f92f5bb64f804abea95e4f0db6866817b4674bacbb18f",
   "artifacts": [
     {
-      "pkgutil": "fr.imag.iihm.blanch.osx-presentation",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "fr.imag.iihm.blanch.osx-presentation"
+        }
+      ]
     },
-    "osx-presentation-2.3.1.pkg (Pkg)"
+    {
+      "pkg": [
+        "osx-presentation-3.2.0.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

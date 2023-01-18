@@ -7,48 +7,56 @@
   ],
   "desc": "Open-source music notation software",
   "homepage": "https://musescore.org/",
-  "url": "https://github.com/musescore/MuseScore/releases/download/v3.6.2/MuseScore-3.6.2.548020600.dmg",
+  "url": "https://github.com/musescore/MuseScore/releases/download/v4.0.1/MuseScore-4.0.1.230121751.dmg",
   "appcast": null,
-  "version": "3.6.2.548020600",
+  "version": "4.0.1.230121751",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "9477247e14d3ac3cda1b095b9d9e70d0ed6030f6d19ab9a0013206318e75ee5d",
+  "sha256": "b6420457eb424b44988764e50bbd3fcc405410e4a0fff11a48a0c603b907fefa",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "MuseScore 3.app"
-    ],
-    [
-      "$(brew --prefix)/Caskroom/musescore/3.6.2.548020600/mscore.wrapper.sh",
-      {
-        "target": "mscore"
-      }
-    ],
     {
-      "trash": [
-        "~/Documents/MuseScore3",
-        "~/Library/Application Support/MuseScore",
-        "~/Library/Caches/MuseScore",
-        "~/Library/Caches/org.musescore.MuseScore",
-        "~/Library/Preferences/org.musescore.MuseScore.plist",
-        "~/Library/Preferences/org.musescore.MuseScore3.plist",
-        "~/Library/Saved Application State/org.musescore.MuseScore.savedState"
-      ],
-      "signal": {
-      }
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      exec '#{appdir}/MuseScore #{version.major}.app/Contents/MacOS/mscore' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "app": [
+        "MuseScore 4.app"
+      ]
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/musescore/4.0.1.230121751/mscore.wrapper.sh",
+        {
+          "target": "mscore"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/MuseScore",
+            "~/Library/Caches/MuseScore",
+            "~/Library/Caches/org.musescore.MuseScore",
+            "~/Library/Preferences/org.musescore.MuseScore*.plist",
+            "~/Library/Saved Application State/org.musescore.MuseScore.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://tanka.dev",
   "versions": {
-    "stable": "0.19.0",
+    "stable": "0.23.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/grafana/tanka.git",
-      "tag": "v0.19.0",
-      "revision": "36e5ffe0f2b917e2a6e9ac63d968dec169f90c36"
+      "tag": "v0.23.1",
+      "revision": "e53e74b26e14cfcb320602badb471d0c34a24155",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:19ebc6c6a40455549d84339e13956678d2276a0791512e52389bee866829b493",
+          "sha256": "19ebc6c6a40455549d84339e13956678d2276a0791512e52389bee866829b493"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:a9d911bed665758e48c286e82ad7d91598d386acfea942154ae31ab3481b2869",
-          "sha256": "a9d911bed665758e48c286e82ad7d91598d386acfea942154ae31ab3481b2869"
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:924468a521b5334d2b9e9c7016dda2a91e58adbf8b09ae1d48373edc926d5174",
+          "sha256": "924468a521b5334d2b9e9c7016dda2a91e58adbf8b09ae1d48373edc926d5174"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:cfe123733366bfab2b45192fd09ec103410d5e9747e71b6cf71da1e3fca26bf3",
-          "sha256": "cfe123733366bfab2b45192fd09ec103410d5e9747e71b6cf71da1e3fca26bf3"
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:924468a521b5334d2b9e9c7016dda2a91e58adbf8b09ae1d48373edc926d5174",
+          "sha256": "924468a521b5334d2b9e9c7016dda2a91e58adbf8b09ae1d48373edc926d5174"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:298086067176aa6b272285f5d66c54ec3b57ca939f9efb2e226c3864e195436d",
+          "sha256": "298086067176aa6b272285f5d66c54ec3b57ca939f9efb2e226c3864e195436d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:96275cf448692e8a02de72a5bfb2e0f15f1e12df10403e192d52faf91932bce4",
-          "sha256": "96275cf448692e8a02de72a5bfb2e0f15f1e12df10403e192d52faf91932bce4"
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:dd7b67cab0598b62c26ce1101fcb4208d0ded91760780cecef88e38e472d0dc6",
+          "sha256": "dd7b67cab0598b62c26ce1101fcb4208d0ded91760780cecef88e38e472d0dc6"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:58d5f4ef2de1eed8d719bcc9f0ec73f28447f8feb45cacd88690b5291ab41734",
-          "sha256": "58d5f4ef2de1eed8d719bcc9f0ec73f28447f8feb45cacd88690b5291ab41734"
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:dd7b67cab0598b62c26ce1101fcb4208d0ded91760780cecef88e38e472d0dc6",
+          "sha256": "dd7b67cab0598b62c26ce1101fcb4208d0ded91760780cecef88e38e472d0dc6"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:76cb504b05cb6f9f8a99f517568dd8acf26e3b4631f1aac0f741c4a0b062e5c5",
-          "sha256": "76cb504b05cb6f9f8a99f517568dd8acf26e3b4631f1aac0f741c4a0b062e5c5"
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:dd7b67cab0598b62c26ce1101fcb4208d0ded91760780cecef88e38e472d0dc6",
+          "sha256": "dd7b67cab0598b62c26ce1101fcb4208d0ded91760780cecef88e38e472d0dc6"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:38298f36688a96245473c6702aa4c47ef7cc5ceb28b57f652561c04013716c2f",
-          "sha256": "38298f36688a96245473c6702aa4c47ef7cc5ceb28b57f652561c04013716c2f"
+          "url": "https://ghcr.io/v2/homebrew/core/tanka/blobs/sha256:38df5c3af8e10af2e9cb5d723d86527ddc04240de2265e5e780258b8927d2e6d",
+          "sha256": "38df5c3af8e10af2e9cb5d723d86527ddc04240de2265e5e780258b8927d2e6d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
     "kubernetes-cli"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

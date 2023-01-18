@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/rabauke/trng4/archive/refs/tags/v4.24.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "92dd7ab4de95666f453b4fef04827fa8599d93a3e533cdc604782c15edd0c13c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libtrng/blobs/sha256:03696ee318bd740740dee2edd2c1fa36ec3fb09db5d3d0aeae51ccb1e1c92ec6",
+          "sha256": "03696ee318bd740740dee2edd2c1fa36ec3fb09db5d3d0aeae51ccb1e1c92ec6"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libtrng/blobs/sha256:13e5f4fedf353053c7a7a1362123bd6788a2d12a0a730a2422c4283c06cd6160",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libtrng/blobs/sha256:9cfa0851919690b182b5cd227c71e77b7f07f5179ff5d06b52894fb98ca131df",
           "sha256": "9cfa0851919690b182b5cd227c71e77b7f07f5179ff5d06b52894fb98ca131df"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libtrng/blobs/sha256:223aa08ed405b3df299933f327c3d3259d8a7e92ecea6af789715fe5f3eddc6e",
+          "sha256": "223aa08ed405b3df299933f327c3d3259d8a7e92ecea6af789715fe5f3eddc6e"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

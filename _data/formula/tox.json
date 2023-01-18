@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://tox.readthedocs.io/",
   "versions": {
-    "stable": "3.24.5",
+    "stable": "4.3.4",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/6c/0e/b9789bd4eee8cc8adfb8127730a13dfcf2d5cc7c419da904cf6fbf459d37/tox-3.24.5.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/d9/92/385f9ff20bc11e436ac50839948e5cbdd4c0d3835792e3d55ae067bf3455/tox-4.3.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f5ac33b55de2f8764cff260661eb1257107a21c4819714b04f14669991aa7772"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:897a029c09457b6034b7013567cabf3689fdac8bec022240b1727449e73e7a44",
+          "sha256": "897a029c09457b6034b7013567cabf3689fdac8bec022240b1727449e73e7a44"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:20a26116fc557744bfb1288b3d3230fcacaea022b2d545cf96633af9357d3eab",
-          "sha256": "20a26116fc557744bfb1288b3d3230fcacaea022b2d545cf96633af9357d3eab"
+          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:033ff85f8398678817b592b0843d0d5f074963ef873749a3369ab2b022df71d5",
+          "sha256": "033ff85f8398678817b592b0843d0d5f074963ef873749a3369ab2b022df71d5"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:82de1b4fa300ca4480e132fd69fb2d21e3d730e8eb1226f649f033be624ef55f",
-          "sha256": "82de1b4fa300ca4480e132fd69fb2d21e3d730e8eb1226f649f033be624ef55f"
+          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:a8f430e7eae66fb0d31ac7697b46b76d1d14e52149c9e58efa5111bbeb26a013",
+          "sha256": "a8f430e7eae66fb0d31ac7697b46b76d1d14e52149c9e58efa5111bbeb26a013"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:1cbb9d8ef363080479b436b0fa8cb4ffcd55f0ea25c6eb56d0d3dd09c88b54d3",
+          "sha256": "1cbb9d8ef363080479b436b0fa8cb4ffcd55f0ea25c6eb56d0d3dd09c88b54d3"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:33e979ef35e07ca4a92528d9c2f57d357f36bfa6a1149c6b8995675d0afe62c1",
-          "sha256": "33e979ef35e07ca4a92528d9c2f57d357f36bfa6a1149c6b8995675d0afe62c1"
+          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:59c89a8c66f241a895f8f25e881fc4cba377f4b83f1d8497eb41ab24b80b5fc8",
+          "sha256": "59c89a8c66f241a895f8f25e881fc4cba377f4b83f1d8497eb41ab24b80b5fc8"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:45182139da0b2b29eeed46fcbecf625f3d2e013025436e1a79b559f7b047117a",
-          "sha256": "45182139da0b2b29eeed46fcbecf625f3d2e013025436e1a79b559f7b047117a"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:db8dd68fd0461f685535806f267075dc011cb20cb691a3634acf505faeb11178",
-          "sha256": "db8dd68fd0461f685535806f267075dc011cb20cb691a3634acf505faeb11178"
+          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:1fb5d312f2bb71ba3ec444e845940fe0d064373fc05733962047910bd13ffc8c",
+          "sha256": "1fb5d312f2bb71ba3ec444e845940fe0d064373fc05733962047910bd13ffc8c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:c1edd8c6b7a01b24eaa1c028961b5d11c63ee8341374f071cac60e34e44fb172",
-          "sha256": "c1edd8c6b7a01b24eaa1c028961b5d11c63ee8341374f071cac60e34e44fb172"
+          "url": "https://ghcr.io/v2/homebrew/core/tox/blobs/sha256:b2c0a2a127aa4f60fadada5bf6e930feb1a2810e159c962d744559ed386d5525",
+          "sha256": "b2c0a2a127aa4f60fadada5bf6e930feb1a2810e159c962d744559ed386d5525"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,8 +79,10 @@
 
   ],
   "dependencies": [
-    "python@3.10",
-    "six"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

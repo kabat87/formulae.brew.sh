@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/labstack/armor/archive/v0.4.14.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bcaee0eaa1ef29ef439d5235b955516871c88d67c3ec5191e3421f65e364e4b8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/armor/blobs/sha256:02d7191c5a891d0f0ef728f8bc365d81a8a79668b94c5c14745189e672380422",
+          "sha256": "02d7191c5a891d0f0ef728f8bc365d81a8a79668b94c5c14745189e672380422"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/armor/blobs/sha256:db7d324f8f1434871982290e8ce54ddae0652d1d82f8bfd478d4af44ec4f9727",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/armor/blobs/sha256:99f1b988d091e6175983074889c2695625a0bcd3ee3df94bfbea09851906848b",
           "sha256": "99f1b988d091e6175983074889c2695625a0bcd3ee3df94bfbea09851906848b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/armor/blobs/sha256:75226afa391ae7591d4325e011b9beaac23ec1b958e7e19a17836022bd59ae9c",
+          "sha256": "75226afa391ae7591d4325e011b9beaac23ec1b958e7e19a17836022bd59ae9c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,14 +87,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,10 +121,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-03-16",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

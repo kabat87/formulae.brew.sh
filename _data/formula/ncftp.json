@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://mirrorservice.org/sites/ftp.ncftp.com/ncftp/ncftp-3.2.6-src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "129e5954850290da98af012559e6743de193de0012e972ff939df9b604f81c23"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ncftp/blobs/sha256:f35284c1451cccd59675fff89f8a285aabfa287346928f1a3009db65074ec405",
+          "sha256": "f35284c1451cccd59675fff89f8a285aabfa287346928f1a3009db65074ec405"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ncftp/blobs/sha256:0d10c2e5a5cd32d495bb7cf1b16de23c8335658097ee209397170ccbec21e164",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/ncftp/blobs/sha256:1fc3f5a43b5e4e23f2bac0046acaf8f746d5d07e0eb6cf60d593830fb3acbf13",
           "sha256": "1fc3f5a43b5e4e23f2bac0046acaf8f746d5d07e0eb6cf60d593830fb3acbf13"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/ncftp/blobs/sha256:e83dbafd6d2cc7885ac986aa7d1452fa88fd73f6947dd7d6c8ef94c1dd0e4de0",
+          "sha256": "e83dbafd6d2cc7885ac986aa7d1452fa88fd73f6947dd7d6c8ef94c1dd0e4de0"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

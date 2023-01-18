@@ -7,6 +7,7 @@
 
   ],
   "versioned_formulae": [
+    "gcc@11",
     "gcc@10",
     "gcc@9",
     "gcc@8",
@@ -26,7 +27,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/gcc/gcc-4.9.4/gcc-4.9.4.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6c11d292cd01b294f9f84c9a59c230d80e9e4a47e5c6355f046bb36d4f358092"
     }
   },
   "revision": 2,
@@ -46,7 +48,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -54,6 +55,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -67,7 +71,7 @@
   ],
   "requirements": [
     {
-      "name": "maximum_macos",
+      "name": "maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_macos",
       "cask": null,
       "download": null,
       "version": "10.13",
@@ -86,10 +90,18 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-04-11",
-  "deprecation_reason": "deprecated_upstream",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "deprecated_upstream",
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "zlib",
+        "binutils"
+      ]
+    }
+  }
 }

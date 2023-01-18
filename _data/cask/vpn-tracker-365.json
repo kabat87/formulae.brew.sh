@@ -7,37 +7,43 @@
   ],
   "desc": "VPN client: IPsec, L2TP, OpenVPN, PPTP, SSTP, SonicWALL/AnyConnect/Fortinet SSL",
   "homepage": "https://vpntracker.com/",
-  "url": "https://download.equinux.com/files/other/VPN-Tracker-365-21.7.3-210743.zip",
+  "url": "https://download.equinux.com/files/other/VPN%20Tracker%20365%20-%2022.4.2%20220423.zip",
   "appcast": null,
-  "version": "21.7.3,210743",
+  "version": "22.4.2,220423",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "1ec147294b325eac97c50bb2279d406639ba2caad6115efa35b16f9f005c1f39",
+  "sha256": "0b72496128f8866a7a65cda93cbd19e7795aa9b6fc7ed401c5626d0e90f1a918",
   "artifacts": [
     {
-      "delete": [
-        "/Library/Application Support/VPN Tracker 365",
-        "/Library/Extensions/com.equinux.VPNTracker365.*",
-        "/Library/LaunchDaemons/com.equinux.VPNTracker365.agent.plist",
-        "/Library/Preferences/com.equinux.VPNTracker365.plist",
-        "/Library/PrivilegedHelperTools/com.equinux.VPNTracker365.agent",
-        "/Library/PrivilegedHelperTools/com.equinux.VPNTracker365.connectiond"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": [
+            "/Library/Application Support/VPN Tracker 365",
+            "/Library/Extensions/com.equinux.VPNTracker365.*",
+            "/Library/LaunchDaemons/com.equinux.VPNTracker365.agent.plist",
+            "/Library/Preferences/com.equinux.VPNTracker365.plist",
+            "/Library/PrivilegedHelperTools/com.equinux.VPNTracker365.agent",
+            "/Library/PrivilegedHelperTools/com.equinux.VPNTracker365.connectiond"
+          ]
+        }
+      ]
     },
-    [
-      "VPN Tracker 365.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/VPN Tracker 365",
-        "~/Library/Preferences/com.equinux.VPNTracker365.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "VPN Tracker 365.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/VPN Tracker 365",
+            "~/Library/Preferences/com.equinux.VPNTracker365.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -50,5 +56,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -9,7 +9,7 @@
   "homepage": "https://nordpass.com/",
   "url": "https://downloads.npass.app/mac/NordPass.dmg",
   "appcast": null,
-  "version": "4.16.22",
+  "version": "4.35.19",
   "versions": {
   },
   "installed": null,
@@ -17,36 +17,44 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": "com.nordsec.nordpass",
-      "login_item": "NordPass",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.nordsec.nordpass",
+          "login_item": "NordPass"
+        }
+      ]
     },
-    [
-      "NordPass.app"
-    ],
     {
-      "trash": [
-        "/Library/Application Support/NordPass",
-        "~/Library/Application Scripts/com.nordsec.nordpass.safari.extension",
-        "~/Library/Application Support/NordPass",
-        "~/Library/Containers/com.nordsec.nordpass.safari.extension",
-        "~/Library/Preferences/com.nordsec.nordpass.plist",
-        "~/Library/Saved Application State/com.nordsec.nordpass.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "NordPass.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Library/Application Support/NordPass",
+            "~/Library/Application Scripts/com.nordsec.nordpass.safari.extension",
+            "~/Library/Application Support/NordPass",
+            "~/Library/Containers/com.nordsec.nordpass.safari.extension",
+            "~/Library/Preferences/com.nordsec.nordpass.plist",
+            "~/Library/Saved Application State/com.nordsec.nordpass.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.10"
+        "10.11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

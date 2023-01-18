@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/apcupsd/apcupsd%20-%20Stable/3.14.14/apcupsd-3.14.14.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "db7748559b6b4c3784f9856561ef6ac6199ef7bd019b3edcd7e0a647bf8f9867"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 4,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/apcupsd/blobs/sha256:d09fad7812d162e402914ee0fdf8e5bd91593dfc1a5050258eb6ba2296ef767d",
+          "sha256": "d09fad7812d162e402914ee0fdf8e5bd91593dfc1a5050258eb6ba2296ef767d"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/apcupsd/blobs/sha256:a6cf4c78394837233cb366da2697b0c80a69d5191b09b5aba0125d40fcdb48a5",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/apcupsd/blobs/sha256:891644e5123fc8fd644cf88809642334f07093f7dae656c3f65d276e90a2b6bf",
           "sha256": "891644e5123fc8fd644cf88809642334f07093f7dae656c3f65d276e90a2b6bf"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/apcupsd/blobs/sha256:bb3971d7d541206fc672a8d01410674a3a7d8abac848f8e8049589369d1b081f",
+          "sha256": "bb3971d7d541206fc672a8d01410674a3a7d8abac848f8e8049589369d1b081f"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
   "dependencies": [
     "gd",
     "libusb-compat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

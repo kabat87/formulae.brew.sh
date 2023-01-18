@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/johnmorrow/pk/releases/download/v1.0.2/pk-1.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0431fe8fcbdfb3ac8ccfdef3d098d6397556f8905b7dec21bc15942a8fc5f110"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pk/blobs/sha256:7ca0e954622b756edff41bb508288566a7a950c3a30e83ba0d8013289599afa0",
+          "sha256": "7ca0e954622b756edff41bb508288566a7a950c3a30e83ba0d8013289599afa0"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pk/blobs/sha256:123a225b6c4a6208cb0b6847bae1cf60ce8934dccbfb1c5c9eb7ed5d055f6c0a",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/pk/blobs/sha256:410e868c6d09c373aba677fe256bea9dd1e3a09d867c009e0afba66c6c671c8e",
           "sha256": "410e868c6d09c373aba677fe256bea9dd1e3a09d867c009e0afba66c6c671c8e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pk/blobs/sha256:abd231d946e68bfa108184889fd1685c060908ffdfe2c09c203918f340160181",
+          "sha256": "abd231d946e68bfa108184889fd1685c060908ffdfe2c09c203918f340160181"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/pk/blobs/sha256:74c7822b2e3a74bc657d5e8490f184af120eddf9230695fe26dbb075391e10e6",
           "sha256": "74c7822b2e3a74bc657d5e8490f184af120eddf9230695fe26dbb075391e10e6"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pk/blobs/sha256:2e86bd1b33521a5856308b58ab35f7384988e9cb6506a4f3d9191ea38361235d",
-          "sha256": "2e86bd1b33521a5856308b58ab35f7384988e9cb6506a4f3d9191ea38361235d"
+          "url": "https://ghcr.io/v2/homebrew/core/pk/blobs/sha256:eebcfa3e63674f0aed1d0e541cfa74edd1efcdb1e1a4a4919ef993c14b4b9b6b",
+          "sha256": "eebcfa3e63674f0aed1d0e541cfa74edd1efcdb1e1a4a4919ef993c14b4b9b6b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "argp-standalone"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +136,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+
+      ]
+    }
+  }
 }

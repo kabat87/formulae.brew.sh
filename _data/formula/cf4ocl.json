@@ -11,7 +11,7 @@
   ],
   "desc": "C Framework for OpenCL",
   "license": "LGPL-3.0",
-  "homepage": "https://fakenmc.github.io/cf4ocl/",
+  "homepage": "https://nunofachada.github.io/cf4ocl/",
   "versions": {
     "stable": "2.1.0",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/fakenmc/cf4ocl/archive/v2.1.0.tar.gz",
+      "url": "https://github.com/nunofachada/cf4ocl/archive/v2.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "662c2cc4e035da3e0663be54efaab1c7fedc637955a563a85c332ac195d72cfa"
     }
   },
   "revision": 1,
@@ -40,6 +41,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cf4ocl/blobs/sha256:082e1894c94269ec1541fd6148a1dfca0f7385e64fb5e24dd0a3ed70563df603",
           "sha256": "082e1894c94269ec1541fd6148a1dfca0f7385e64fb5e24dd0a3ed70563df603"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cf4ocl/blobs/sha256:36084922834a956b46406aa9137c6a74a058e5f4e19e3ec53b7acde6fef43f07",
+          "sha256": "36084922834a956b46406aa9137c6a74a058e5f4e19e3ec53b7acde6fef43f07"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cf4ocl/blobs/sha256:dfbd0e6e303f7f8ff286e38b98562cbf9b18ac880070fcfa19240b0b9c8d4a2a",
           "sha256": "dfbd0e6e303f7f8ff286e38b98562cbf9b18ac880070fcfa19240b0b9c8d4a2a"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cf4ocl/blobs/sha256:28305a6cfb69ccd57b94203bb43beb18b29e3d4fc0eebbe37b04292660516da8",
+          "sha256": "28305a6cfb69ccd57b94203bb43beb18b29e3d4fc0eebbe37b04292660516da8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
   ],
   "dependencies": [
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +127,19 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "cmake",
+        "pkg-config",
+        "opencl-headers"
+      ],
+      "dependencies": [
+        "glib",
+        "ocl-icd",
+        "pocl"
+      ]
+    }
+  }
 }

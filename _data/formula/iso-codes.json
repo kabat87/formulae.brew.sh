@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-or-later",
   "homepage": "https://salsa.debian.org/iso-codes-team/iso-codes",
   "versions": {
-    "stable": "4.9.0",
+    "stable": "4.12.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.9.0.orig.tar.xz",
+      "url": "https://deb.debian.org/debian/pool/main/i/iso-codes/iso-codes_4.12.0.orig.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "650f050c3553adbf727e5ac74bd52a04ddc6b9f1bac79f1c041c02e581e209ad"
     }
   },
   "revision": 0,
@@ -33,23 +34,25 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/iso-codes/blobs/sha256:eec87541cb08d1862596b5768b2ee076259475a2b3d3d966acffdaf91d0f3388",
-          "sha256": "eec87541cb08d1862596b5768b2ee076259475a2b3d3d966acffdaf91d0f3388"
+          "url": "https://ghcr.io/v2/homebrew/core/iso-codes/blobs/sha256:311799cac0ba1b08e77c279a9cbf6d62e3edfeafb5859082953165d25fab2a7f",
+          "sha256": "311799cac0ba1b08e77c279a9cbf6d62e3edfeafb5859082953165d25fab2a7f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "gettext",
-    "python@3.10"
+    "python@3.11"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -79,5 +82,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -11,7 +11,7 @@
   ],
   "desc": "C library for creating IP packets",
   "license": "BSD-2-Clause",
-  "homepage": "https://github.com/sam-github/libnet",
+  "homepage": "https://github.com/libnet/libnet",
   "versions": {
     "stable": "1.2",
     "head": null,
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libnet/libnet/releases/download/v1.2/libnet-1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "caa4868157d9e5f32e9c7eac9461efeff30cb28357f7f6bf07e73933fb4edaa7"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnet/blobs/sha256:a723fce072aa1d71f2d9f3af1fe647e40348ae679705a902e6fe884c6650d3d0",
+          "sha256": "a723fce072aa1d71f2d9f3af1fe647e40348ae679705a902e6fe884c6650d3d0"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnet/blobs/sha256:e35635f157e1fa140f454b451ef60d5dadc60f0f7513fbcd82399193d4ab9155",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libnet/blobs/sha256:bc8839eea92ce445c790f503ec9342bbc254fba52751a3ac0ed90b5d13bed2f6",
           "sha256": "bc8839eea92ce445c790f503ec9342bbc254fba52751a3ac0ed90b5d13bed2f6"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libnet/blobs/sha256:938743e30a5f50726f54c9b2cbcd1e72e6897c4964259ee692dab300d9628738",
+          "sha256": "938743e30a5f50726f54c9b2cbcd1e72e6897c4964259ee692dab300d9628738"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "doxygen"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

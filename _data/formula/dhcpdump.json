@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.mavetju.org/download/dhcpdump-1.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6d5eb9418162fb738bc56e4c1682ce7f7392dd96e568cc996e44c28de7f77190"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dhcpdump/blobs/sha256:00e07738f28c1a7171439c05e7bbbe082a58db87bb52b7227920c5f6b1fb17d9",
+          "sha256": "00e07738f28c1a7171439c05e7bbbe082a58db87bb52b7227920c5f6b1fb17d9"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dhcpdump/blobs/sha256:1a948ff9d54f73ace571fef91ff0ea06c09216ecac07e4665526ad4caeb680de",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dhcpdump/blobs/sha256:ea331a3bb132f7f9fbc334e85fd7d7cfc6cf7314df93bf123c5e042febbe1951",
           "sha256": "ea331a3bb132f7f9fbc334e85fd7d7cfc6cf7314df93bf123c5e042febbe1951"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dhcpdump/blobs/sha256:51665ae0067f51c4ce8afa58c84ce5dd507834610a8bc03a7c212bd7026f4a09",
+          "sha256": "51665ae0067f51c4ce8afa58c84ce5dd507834610a8bc03a7c212bd7026f4a09"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/dhcpdump/blobs/sha256:1f30cb4146a741b3523d674336854c665546e939af04f619e38623d9298cd4ef",
           "sha256": "1f30cb4146a741b3523d674336854c665546e939af04f619e38623d9298cd4ef"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dhcpdump/blobs/sha256:6df64653cfd4b118db43e2acb2f08a565ac3cba9e1b739a258eeb7655c1a6103",
-          "sha256": "6df64653cfd4b118db43e2acb2f08a565ac3cba9e1b739a258eeb7655c1a6103"
+          "url": "https://ghcr.io/v2/homebrew/core/dhcpdump/blobs/sha256:f1fe4468b6228999e79e24c13f4b4e65b32d8124f1928f08960b2b144ed63077",
+          "sha256": "f1fe4468b6228999e79e24c13f4b4e65b32d8124f1928f08960b2b144ed63077"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -103,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

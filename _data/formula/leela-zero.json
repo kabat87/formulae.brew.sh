@@ -21,62 +21,57 @@
     "stable": {
       "url": "https://github.com/leela-zero/leela-zero.git",
       "tag": "v0.17",
-      "revision": "3f297889563bcbec671982c655996ccff63fa253"
+      "revision": "3f297889563bcbec671982c655996ccff63fa253",
+      "checksum": null
     }
   },
-  "revision": 0,
+  "revision": 3,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:0f2c0c4a069b613bf9c685447bead6375f71ccb9737800049b3bac3ef8b00525",
+          "sha256": "0f2c0c4a069b613bf9c685447bead6375f71ccb9737800049b3bac3ef8b00525"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:52fac10fbdf2cefc65a465088565a5d55accb0abfc134755f803afe18b94673c",
-          "sha256": "52fac10fbdf2cefc65a465088565a5d55accb0abfc134755f803afe18b94673c"
+          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:6774b93733d09000e1dee96c30121bdd33727734bad3a9d622d7f0e918a26c87",
+          "sha256": "6774b93733d09000e1dee96c30121bdd33727734bad3a9d622d7f0e918a26c87"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:634e2390b96220baa749c3dc08aefc7e668e164e5dde76a373ae59d6409ebcb7",
-          "sha256": "634e2390b96220baa749c3dc08aefc7e668e164e5dde76a373ae59d6409ebcb7"
+          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:06ae17d8ad3475b1deecee730a1b016eea91aa223267105fa925c708f4d30576",
+          "sha256": "06ae17d8ad3475b1deecee730a1b016eea91aa223267105fa925c708f4d30576"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:def45059b0e71028374487e27b2f540218ff9057b79a351b31a53d609f989d18",
+          "sha256": "def45059b0e71028374487e27b2f540218ff9057b79a351b31a53d609f989d18"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:fb80249de6bbb45e7a2f5a9b0660117cf225878c1fdfc2fb0985a8d5811f204c",
-          "sha256": "fb80249de6bbb45e7a2f5a9b0660117cf225878c1fdfc2fb0985a8d5811f204c"
+          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:69f9f6e60bb36b5d1eabbdc33d58c4772d37dfe4c6e17e4f3745569292153b6b",
+          "sha256": "69f9f6e60bb36b5d1eabbdc33d58c4772d37dfe4c6e17e4f3745569292153b6b"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:52c68240dc4e64a1e36879d2e57a704f3c1848444ab0d030c9dfefac37428876",
-          "sha256": "52c68240dc4e64a1e36879d2e57a704f3c1848444ab0d030c9dfefac37428876"
+          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:ab3c6444d9b61cfef71f3055e93716e7ec3c7af5315766b9ff1f6be5239289a8",
+          "sha256": "ab3c6444d9b61cfef71f3055e93716e7ec3c7af5315766b9ff1f6be5239289a8"
         },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:b9764e2ebdade7c55ffb44f29f3c546be8003348ecca7b6ea0e93969cdce9032",
-          "sha256": "b9764e2ebdade7c55ffb44f29f3c546be8003348ecca7b6ea0e93969cdce9032"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:6e95d7ef2f671bc404fcafd426b47cf3c4c9a9f2ab577772c03a1cf721a20444",
-          "sha256": "6e95d7ef2f671bc404fcafd426b47cf3c4c9a9f2ab577772c03a1cf721a20444"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:ddb11b34f4a1e210e52ad13c4e789b2f0958278fe3cadfc94dc22afcce59bfa4",
-          "sha256": "ddb11b34f4a1e210e52ad13c4e789b2f0958278fe3cadfc94dc22afcce59bfa4"
-        },
-        "sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:decf1639a96bb4fd9a198f74f7c20413cde1109d913769f0a32cc2a6c9527778",
-          "sha256": "decf1639a96bb4fd9a198f74f7c20413cde1109d913769f0a32cc2a6c9527778"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/leela-zero/blobs/sha256:23edd4fefe24d94423a93561c2055dc06f0ab0322b9658abac34b6e1c33dc44f",
+          "sha256": "23edd4fefe24d94423a93561c2055dc06f0ab0322b9658abac34b6e1c33dc44f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +80,9 @@
   ],
   "dependencies": [
     "boost"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +111,18 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "cmake",
+        "opencl-headers"
+      ],
+      "dependencies": [
+        "boost",
+        "ocl-icd",
+        "pocl"
+      ]
+    }
+  }
 }

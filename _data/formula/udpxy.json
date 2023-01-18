@@ -10,8 +10,8 @@
 
   ],
   "desc": "UDP-to-HTTP multicast traffic relay daemon",
-  "license": null,
-  "homepage": "http://www.udpxy.com/",
+  "license": "GPL-3.0-or-later",
+  "homepage": "http://gigapxy.com/udpxy-en.html",
   "versions": {
     "stable": "1.0.23-12",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "http://www.udpxy.com/download/1_23/udpxy.1.0.23-12-prod.tar.gz",
+      "url": "http://gigapxy.com/download/1_23/udpxy.1.0.23-12-prod.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "16bdc8fb22f7659e0427e53567dc3e56900339da261199b3d00104d699f7e94c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/udpxy/blobs/sha256:f2158d3d93904adbed3f47eb9b1a4a367650d7576821fc362cf260b4c276328f",
+          "sha256": "f2158d3d93904adbed3f47eb9b1a4a367650d7576821fc362cf260b4c276328f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/udpxy/blobs/sha256:f0c2b4a23d90563036f55cce0df21dcd71f140dd34a69a9d88d1d6f0b811a1ce",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/udpxy/blobs/sha256:04a26cca83eb951ff7a220607e100f1ba760ff1bc6cc92e6a315b8eb2890a663",
           "sha256": "04a26cca83eb951ff7a220607e100f1ba760ff1bc6cc92e6a315b8eb2890a663"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/udpxy/blobs/sha256:ccad0542a1d564b0d75ae086ed27c8d4b973410a8c7b8a3df8019ab1b9720acb",
+          "sha256": "ccad0542a1d564b0d75ae086ed27c8d4b973410a8c7b8a3df8019ab1b9720acb"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,10 +116,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-05-03",
+  "deprecation_reason": "unsupported",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

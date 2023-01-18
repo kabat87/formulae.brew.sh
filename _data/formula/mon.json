@@ -11,7 +11,7 @@
   ],
   "desc": "Monitor hosts/services/whatever and alert about problems",
   "license": "MIT",
-  "homepage": "https://github.com/visionmedia/mon",
+  "homepage": "https://github.com/tj/mon",
   "versions": {
     "stable": "1.2.3",
     "head": null,
@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/visionmedia/mon/archive/1.2.3.tar.gz",
+      "url": "https://github.com/tj/mon/archive/1.2.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "978711a1d37ede3fc5a05c778a2365ee234b196a44b6c0c69078a6c459e686ac"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mon/blobs/sha256:51930349a969998d73df25075032c233871f445a9e7419f90419103c223110f5",
+          "sha256": "51930349a969998d73df25075032c233871f445a9e7419f90419103c223110f5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mon/blobs/sha256:3f814c697e985f27214f721e5205baa19e3673f94b905975f2cf65bf8e47bd07",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mon/blobs/sha256:65f144b16a687002f9d30ac665886aa8b06bb914e4ff0fe04e692a6a153eb76b",
           "sha256": "65f144b16a687002f9d30ac665886aa8b06bb914e4ff0fe04e692a6a153eb76b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mon/blobs/sha256:44084ac7f259335761c5569cb0f59d00df44c39b5fea84d763140c364b3b9459",
+          "sha256": "44084ac7f259335761c5569cb0f59d00df44c39b5fea84d763140c364b3b9459"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

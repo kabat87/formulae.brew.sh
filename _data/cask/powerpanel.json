@@ -7,24 +7,30 @@
   ],
   "desc": "Manage and control UPS systems",
   "homepage": "https://www.cyberpowersystems.com/products/software/power-panel-personal/",
-  "url": "https://dl4jz3rbrsfum.cloudfront.net/software/ppp_macos_2_3_0.dmg",
+  "url": "https://dl4jz3rbrsfum.cloudfront.net/software/PPP_Mac_v2.4.6.dmg",
   "appcast": null,
-  "version": "2.3.0",
+  "version": "2.4.6",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "5500b9ff1528c72ef2dacf0c03558b9cf3cbb68a5cc0bc0657c51bf49566b847",
+  "sha256": "85e4bcdaf178e3f2919aff1ad638bc9e80dcdbfa3a868486613aafb0d775c8a8",
   "artifacts": [
     {
-      "pkgutil": "com.cpsww.ppupsd",
-      "launchctl": "com.cpsww.ppupsd",
-      "delete": "/Applications/CyberPower PowerPanel Personal",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.cpsww.ppupsd",
+          "launchctl": "com.cpsww.ppupsd",
+          "delete": "/Applications/CyberPower PowerPanel Personal"
+        }
+      ]
     },
     {
-      "path": "CyberPower PowerPanel Personal Installer.app"
+      "installer": [
+        {
+          "manual": "CyberPower PowerPanel Personal Installer.app"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

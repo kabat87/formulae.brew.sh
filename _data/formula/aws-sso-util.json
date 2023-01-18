@@ -13,69 +13,77 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/benkehoe/aws-sso-util",
   "versions": {
-    "stable": "4.26.0",
+    "stable": "4.30.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/74/05/b89d999b662d955ff362ebdf9a4494bd0966deaa689ef65f5fbbf175febc/aws-sso-util-4.26.0.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/6b/ea/2241ca0f8f3b2033a283ef06b9a03164559388d7cc1af9d20048d50cd578/aws-sso-util-4.30.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cfdca8877e7ab0a2dd9e360af45e9cb11420f7f8c31cec2c3b12f41d0a4f7f3a"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 3,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:f2d51350cbbbcf8933d30ea157006ccfede3902784c7d6cfb29598f3c65a0ce7",
+          "sha256": "f2d51350cbbbcf8933d30ea157006ccfede3902784c7d6cfb29598f3c65a0ce7"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:e7e95936b9e0eca06c4682112f0ac7bcef2676f47941c7ceb1dad2b67b6dcf6b",
-          "sha256": "e7e95936b9e0eca06c4682112f0ac7bcef2676f47941c7ceb1dad2b67b6dcf6b"
+          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:da33f75ef0541d1ffe48ecc66727319cfe49f1f32dd5f5494b88d60347ea9faa",
+          "sha256": "da33f75ef0541d1ffe48ecc66727319cfe49f1f32dd5f5494b88d60347ea9faa"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:4b15248c2b07828e0648d2a6bcb559e15854188825410878409c46eff58d5d6b",
-          "sha256": "4b15248c2b07828e0648d2a6bcb559e15854188825410878409c46eff58d5d6b"
+          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:b38be720c754ede85fedad1ec4c7a3de3ac2b0b9177efa7d6e65922ad2b8eca0",
+          "sha256": "b38be720c754ede85fedad1ec4c7a3de3ac2b0b9177efa7d6e65922ad2b8eca0"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:abd58e457502d85beda81b800f51a321af737d54fcb83a1ef330a6a5cf997f1d",
+          "sha256": "abd58e457502d85beda81b800f51a321af737d54fcb83a1ef330a6a5cf997f1d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:99f0eac92c4ea804cb715b65dc4337fdf862b8900db2ba192897a483f3db40e2",
-          "sha256": "99f0eac92c4ea804cb715b65dc4337fdf862b8900db2ba192897a483f3db40e2"
+          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:59dc8d854e9101315ce41d9fa09439605094ad7da4de9a3e4ae635757291f216",
+          "sha256": "59dc8d854e9101315ce41d9fa09439605094ad7da4de9a3e4ae635757291f216"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:5fdfb4972dcb323df7ceb70e80289f73958c77d8ba0eea4e5aefb02e7fddd8a5",
-          "sha256": "5fdfb4972dcb323df7ceb70e80289f73958c77d8ba0eea4e5aefb02e7fddd8a5"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:b71446536c7e9fd4426d4e7880b78a1615ecefb36806f40e94484a96aa40ce58",
-          "sha256": "b71446536c7e9fd4426d4e7880b78a1615ecefb36806f40e94484a96aa40ce58"
+          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:0a54b5a434ab6512f00ad15484d6c8b5fe77b56d8cf5efdc1968e769f88f2792",
+          "sha256": "0a54b5a434ab6512f00ad15484d6c8b5fe77b56d8cf5efdc1968e769f88f2792"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:027db2232e778186bd03672115d76aa1e2f2ba8850586cf4ca77cf089acf3589",
-          "sha256": "027db2232e778186bd03672115d76aa1e2f2ba8850586cf4ca77cf089acf3589"
+          "url": "https://ghcr.io/v2/homebrew/core/aws-sso-util/blobs/sha256:2fcda01f9fda6172a561fe6e0f8252a2bfad1b88ad205f6dafd2e927ba7c3abf",
+          "sha256": "2fcda01f9fda6172a561fe6e0f8252a2bfad1b88ad205f6dafd2e927ba7c3abf"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "rust"
+
   ],
   "dependencies": [
-    "python@3.10",
+    "python@3.11",
     "six"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

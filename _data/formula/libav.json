@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://libav.org/releases/libav-12.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6893cdbd7bc4b62f5d8fd6593c8e0a62babb53e323fbc7124db3658d04ab443b"
     }
   },
   "revision": 8,
@@ -71,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -88,10 +88,13 @@
     "libvorbis",
     "libvpx",
     "opus",
-    "sdl",
+    "sdl12-compat",
     "theora",
     "x264",
     "xvid"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,10 +118,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2020-04-16",
-  "deprecation_reason": "unmaintained",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "unmaintained",
+  "variations": {
+  }
 }

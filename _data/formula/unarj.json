@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://src.fedoraproject.org/repo/pkgs/unarj/unarj-2.65.tar.gz/c6fe45db1741f97155c7def322aa74aa/unarj-2.65.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d7dcc325160af6eb2956f5cb53a002edb2d833e4bb17846669f92ba0ce3f0264"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/unarj/blobs/sha256:b1ad20924840919b6dbbc86e4803e6a9ddf5d3b6379cdb0012307485a9849dbb",
+          "sha256": "b1ad20924840919b6dbbc86e4803e6a9ddf5d3b6379cdb0012307485a9849dbb"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/unarj/blobs/sha256:2de1efe29a501d00894c72615a3e8a81de02f3322965378a7c1fcff715968541",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/unarj/blobs/sha256:ba5ca05683704cf902159fbba1c6f81fcb45e3b97d2af79b393d2fa9147a4449",
           "sha256": "ba5ca05683704cf902159fbba1c6f81fcb45e3b97d2af79b393d2fa9147a4449"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/unarj/blobs/sha256:641c46ec2238ce0cbff45addb67e104128df86217c471b0b697d0cb0a305c12f",
+          "sha256": "641c46ec2238ce0cbff45addb67e104128df86217c471b0b697d0cb0a305c12f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/unarj/blobs/sha256:7bdcd771f852f59915623dae370c8f807cbf20f242dad60d62afa1dc683cdf4a",
           "sha256": "7bdcd771f852f59915623dae370c8f807cbf20f242dad60d62afa1dc683cdf4a"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/unarj/blobs/sha256:95794638930505f1d4a23553571d62de07dd3f62da7687ef571c6f7e893bba42",
-          "sha256": "95794638930505f1d4a23553571d62de07dd3f62da7687ef571c6f7e893bba42"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/unarj/blobs/sha256:adc76dba3257db6f81cb4a5d57a56cce3c525f3e0254609d3248a0472d699d9b",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

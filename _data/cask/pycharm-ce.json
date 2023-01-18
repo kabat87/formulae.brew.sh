@@ -8,32 +8,45 @@
   ],
   "desc": "IDE for Python programming - Community Edition",
   "homepage": "https://www.jetbrains.com/pycharm/",
-  "url": "https://download.jetbrains.com/python/pycharm-community-2021.3.1.dmg",
+  "url": "https://download.jetbrains.com/python/pycharm-community-2022.3.1.dmg",
   "appcast": null,
-  "version": "2021.3.1,213.6461.77",
+  "version": "2022.3.1,223.8214.51",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "aec1cb259c1418adfb864118ca6fc1df8ac845478c19e1f742aaa54e111638f4",
+  "sha256": "adfb73d85ffb30c2abf715a6c6a0a2ed64a047a3016021a2cb61838457c66a81",
   "artifacts": [
-    [
-      "PyCharm CE.app"
-    ],
-    "uninstall_postflight (Postflight Block)",
     {
-      "trash": [
-        "~/Library/Application Support/PyCharm2021.3",
-        "~/Library/Caches/PyCharmCE2021.3",
-        "~/Library/Caches/PyCharm2021.3",
-        "~/Library/Logs/PyCharm2021.3",
-        "~/Library/Logs/PyCharmCE2021.3",
-        "~/Library/Preferences/PyCharm2021.3",
-        "~/Library/Preferences/PyCharmCE2021.3",
-        "~/Library/Saved Application State/com.jetbrains.pycharm.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PyCharm CE.app"
+      ]
+    },
+    {
+      "uninstall_postflight": "  uninstall_postflight do\n    ENV[\"PATH\"].split(File::PATH_SEPARATOR).map { |path| File.join(path, \"charm\") }.each do |path|\n      if File.readable?(path) &&\n         File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?\n        File.delete(path)\n      end\n    end\n  end\n"
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/PyCharm2022.3",
+            "~/Library/Application Support/JetBrains/PyCharmCE2022.3",
+            "~/Library/Caches/com.apple.python/Applications/PyCharm CE.app",
+            "~/Library/Caches/JetBrains/PyCharmCE2022.3",
+            "~/Library/Caches/PyCharm2022.3",
+            "~/Library/Caches/PyCharmCE2022.3",
+            "~/Library/Logs/JetBrains/PyCharmCE2022.3",
+            "~/Library/Logs/PyCharm2022.3",
+            "~/Library/Logs/PyCharmCE2022.3",
+            "~/Library/Preferences/com.jetbrains.pycharm.ce.plist",
+            "~/Library/Preferences/jetbrains.jetprofile.asset.plist",
+            "~/Library/Preferences/PyCharm2022.3",
+            "~/Library/Preferences/PyCharmCE2022.3",
+            "~/Library/Saved Application State/com.jetbrains.pycharm.ce.savedState",
+            "~/Library/Saved Application State/com.jetbrains.pycharm.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +59,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download.jetbrains.com/python/pycharm-community-2022.3.1-aarch64.dmg",
+      "sha256": "6574cfd20a586fcbdfbac2ea0fa903ea078c1702fd9e5145c33c7c8dc4506388"
+    },
+    "arm64_monterey": {
+      "url": "https://download.jetbrains.com/python/pycharm-community-2022.3.1-aarch64.dmg",
+      "sha256": "6574cfd20a586fcbdfbac2ea0fa903ea078c1702fd9e5145c33c7c8dc4506388"
+    },
+    "arm64_big_sur": {
+      "url": "https://download.jetbrains.com/python/pycharm-community-2022.3.1-aarch64.dmg",
+      "sha256": "6574cfd20a586fcbdfbac2ea0fa903ea078c1702fd9e5145c33c7c8dc4506388"
+    }
+  }
 }

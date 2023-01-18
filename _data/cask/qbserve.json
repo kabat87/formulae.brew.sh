@@ -5,41 +5,42 @@
   "name": [
     "Qbserve"
   ],
-  "desc": null,
+  "desc": "Automatic time tracker",
   "homepage": "https://qotoqot.com/qbserve/",
-  "url": "https://qotoqot.com/qbserve/app/Qbserve-1.88.zip",
+  "url": "https://qotoqot.com/qbserve/app/Qbserve-1.89.zip",
   "appcast": null,
-  "version": "1.88",
+  "version": "1.89",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b5fe36245f5268b8a5a2a68848627fa6fcd9c7a8dbf05502f1eba8c9815d5adc",
+  "sha256": "517a975eb915c90df9ac9a49c0e009e0926008890b747ceba20a1476c80e58b1",
   "artifacts": [
-    [
-      "Qbserve.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qotoqot.qbserve.sfl*",
-        "~/Library/Application Support/Qbserve",
-        "~/Library/Caches/com.QotoQot.Qbserve",
-        "~/Library/Containers/com.QotoQot.QbserveLogin",
-        "~/Library/Preferences/com.qotoqot.qbserve.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Qbserve.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qotoqot.qbserve.sfl*",
+            "~/Library/Application Support/Qbserve",
+            "~/Library/Caches/com.QotoQot.Qbserve",
+            "~/Library/Containers/com.QotoQot.QbserveLogin",
+            "~/Library/Preferences/com.qotoqot.qbserve.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

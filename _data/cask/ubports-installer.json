@@ -7,26 +7,30 @@
   ],
   "desc": "Application to install ubports on mobile devices",
   "homepage": "https://ubports.com/",
-  "url": "https://github.com/ubports/ubports-installer/releases/download/0.8.8-beta/ubports-installer_0.8.8-beta_mac.dmg",
+  "url": "https://github.com/ubports/ubports-installer/releases/download/0.9.7-beta/ubports-installer_0.9.7-beta_mac_x64.dmg",
   "appcast": null,
-  "version": "0.8.8-beta",
+  "version": "0.9.7-beta",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "57b296031cf7d2f72384d7b43e336a5b629ef01e3af9afbd7b8a3a622c6c8bf9",
+  "sha256": "0800c9151d7abbd207404644ae4707f20d9b487586b0184952566cabc01f4dda",
   "artifacts": [
-    [
-      "ubports-installer.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/ubports-installer",
-        "~/Library/Preferences/com.ubports.installer.plist",
-        "~/Library/Saved Application State/com.ubports.installer.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "ubports-installer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/ubports-installer",
+            "~/Library/Preferences/com.ubports.installer.plist",
+            "~/Library/Saved Application State/com.ubports.installer.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

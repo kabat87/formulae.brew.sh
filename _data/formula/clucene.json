@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/clucene/clucene-core-unstable/2.3/clucene-core-2.3.3.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ddfdc433dd8ad31b5c5819cc4404a8d2127472a3b720d3e744e8c51d79732eab"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/clucene/blobs/sha256:f3f128d222d9407a6572c7ea4cfc84d3bd76ba0359969b2e0f1c6433e5368674",
+          "sha256": "f3f128d222d9407a6572c7ea4cfc84d3bd76ba0359969b2e0f1c6433e5368674"
+        },
         "monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/clucene/blobs/sha256:c557e0403dce15f14e8584b4542fbe6dbd7ddc467d085d99e396b3fd16651dcb",
@@ -66,11 +72,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/clucene/blobs/sha256:5ee0c98072c18c75dd8c25fd309ccb49f033300d474367a8e325ec601c427f66",
           "sha256": "5ee0c98072c18c75dd8c25fd309ccb49f033300d474367a8e325ec601c427f66"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/clucene/blobs/sha256:182db4f73e058e9d28b77cbbd642c40ecc403fbf1d9dc8357387b2c54dba8d1e",
-          "sha256": "182db4f73e058e9d28b77cbbd642c40ecc403fbf1d9dc8357387b2c54dba8d1e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clucene/blobs/sha256:4c61f6b320d11670d29ae7294ede5bcd3c1d5684c41cc01ed689de688dbab6e7",
@@ -81,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

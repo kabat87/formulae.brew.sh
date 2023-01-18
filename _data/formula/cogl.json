@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/cogl/1.22/cogl-1.22.8.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a805b2b019184710ff53d0496f9f0ce6dcca420c141a0f4f6fcc02131581d759"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cogl/blobs/sha256:320b79387543af4d34a6c5453a339c8206d1f4afdc74cd12aaad3d268234abf5",
+          "sha256": "320b79387543af4d34a6c5453a339c8206d1f4afdc74cd12aaad3d268234abf5"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cogl/blobs/sha256:619709d99ff34b8468b4036dad1a23a355e10672ccffc109cf093d57183c3ae8",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cogl/blobs/sha256:9a487a4bf7fbe5fdec29d902ba668fe20cbbc05e66864cb8d9c5fe564373e586",
           "sha256": "9a487a4bf7fbe5fdec29d902ba668fe20cbbc05e66864cb8d9c5fe564373e586"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cogl/blobs/sha256:8c2d1d7ecac6bddf3fef86eba3b195be8a1ec29ccdc3d68a78531ea6dae74b15",
+          "sha256": "8c2d1d7ecac6bddf3fef86eba3b195be8a1ec29ccdc3d68a78531ea6dae74b15"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "gdk-pixbuf",
     "glib",
     "pango"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -112,10 +125,22 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-09-21",
+  "deprecation_reason": "deprecated_upstream",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "cairo",
+        "gdk-pixbuf",
+        "glib",
+        "pango",
+        "libxcomposite",
+        "mesa"
+      ]
+    }
+  }
 }

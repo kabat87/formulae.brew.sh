@@ -21,51 +21,54 @@
     "stable": {
       "url": "https://github.com/chakra-core/ChakraCore/archive/v1.11.24.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b99e85f2d0fa24f2b6ccf9a6d2723f3eecfe986a9d2c4d34fa1fd0d015d0595e"
     }
   },
-  "revision": 2,
+  "revision": 5,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:055068057b76dc9d1162efbc643e875ac98b0984f452a00a25d021c6cb2998d1",
+          "sha256": "055068057b76dc9d1162efbc643e875ac98b0984f452a00a25d021c6cb2998d1"
+        },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:08ac087ce6235090a9eab40d02fcce9870e09619b61170979e8ddab267dda091",
-          "sha256": "08ac087ce6235090a9eab40d02fcce9870e09619b61170979e8ddab267dda091"
+          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:c49facef4ad763a4a676b199079826f67a63990a500177f599da389f02ad83ec",
+          "sha256": "c49facef4ad763a4a676b199079826f67a63990a500177f599da389f02ad83ec"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:fb1728dac033a81c14e4f93d0587b93809c8e5721754c1cf4b57a97e05ed8e0d",
-          "sha256": "fb1728dac033a81c14e4f93d0587b93809c8e5721754c1cf4b57a97e05ed8e0d"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:c2a373b2cc611c5d0dfdf9ed306c3e23d4b82ab5acc964445d2d356f93ef8c25",
-          "sha256": "c2a373b2cc611c5d0dfdf9ed306c3e23d4b82ab5acc964445d2d356f93ef8c25"
+          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:a76493a11e4ba47f12ca0b159e12dc0d11351f91308aa196e077136d1d99b099",
+          "sha256": "a76493a11e4ba47f12ca0b159e12dc0d11351f91308aa196e077136d1d99b099"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:52fef75657897bc5319e9eae21b246c97c3bd842a98eae395b76eb39975520b6",
-          "sha256": "52fef75657897bc5319e9eae21b246c97c3bd842a98eae395b76eb39975520b6"
+          "url": "https://ghcr.io/v2/homebrew/core/chakra/blobs/sha256:4aa30379663c11bee733e7c204bf4147a4019e952f0ccc2c73cc9ed6a061f4a1",
+          "sha256": "4aa30379663c11bee733e7c204bf4147a4019e952f0ccc2c73cc9ed6a061f4a1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "cmake",
-    "python@3.10"
+    "python@3.11"
   ],
   "dependencies": [
     "icu4c"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -82,7 +85,15 @@
     }
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -99,5 +110,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

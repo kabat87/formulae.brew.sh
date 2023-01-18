@@ -1,6 +1,6 @@
 cask "mixxx" do
-  version "2.3.1"
-  sha256 "27e2420e9527bf8748dce92bee1592e53d224ce04fa5095c7e9ce2ef22abdf1d"
+  version "2.3.3"
+  sha256 "cf971b89eed87e46670c4e4135954a4757217502c2958efd54b5a0636c6f5962"
 
   url "https://downloads.mixxx.org/releases/#{version}/mixxx-#{version}-macosintel.dmg"
   name "Mixxx"
@@ -9,8 +9,7 @@ cask "mixxx" do
 
   livecheck do
     url "https://www.mixxx.org/download/"
-    strategy :page_match
-    regex(%r{href=.*?/mixxx[-_.](\d+(?:\.\d+)*)[-_.]macosintel\.dmg}i)
+    regex(%r{href=.*?/mixxx[-_.]v?(\d+(?:\.\d+)+)[-_.]macosintel\.dmg}i)
   end
 
   app "Mixxx.app"

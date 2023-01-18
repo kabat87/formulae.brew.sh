@@ -9,23 +9,28 @@
   "homepage": "https://flavio.tordini.org/minitube",
   "url": "https://flavio.tordini.org/files/minitube/minitube.dmg",
   "appcast": null,
-  "version": "3.9.2,2021.1111.162544",
+  "version": "3.9.3,2022.0203.024456",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Minitube.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/org.tordini.flavio.minitube.plist",
-        "~/Library/Saved Application State/org.tordini.flavio.minitube.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Minitube.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/HTTPStorages/org.tordini.flavio.minitube",
+            "~/Library/Preferences/org.tordini.flavio.minitube.plist",
+            "~/Library/Saved Application State/org.tordini.flavio.minitube.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

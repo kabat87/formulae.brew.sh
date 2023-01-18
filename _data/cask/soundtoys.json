@@ -7,33 +7,41 @@
   ],
   "desc": "Audio Effects Plugins",
   "homepage": "https://www.soundtoys.com/product/soundtoys/",
-  "url": "https://storage.googleapis.com/soundtoys-download/versions/version_5_3_6_16152/Soundtoys5_5.3.6.16152.dmg",
+  "url": "https://storage.googleapis.com/soundtoys-download/versions/version_5_3_9_16828/Soundtoys5_5.3.9.16828.dmg",
   "appcast": null,
-  "version": "5.3.6.16152",
+  "version": "5.3.9.16828",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "859676347419937c6d77c2eb47dca2b262574db056138b7028e2e3792080bb27",
+  "sha256": "8c9d6243f1511952c79769030383b06afeb36ad688d303366e10b1c4eea450e5",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.soundtoys.*",
-        "com.paceap.pkg.eden.*"
-      ],
-      "launchctl": [
-        "com.paceap.eden.licensed",
-        "com.paceap.eden.licensed.agent"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.soundtoys.*",
+            "com.paceap.pkg.eden.*"
+          ],
+          "launchctl": [
+            "com.paceap.eden.licensed",
+            "com.paceap.eden.licensed.agent"
+          ]
+        }
+      ]
     },
-    "Install Soundtoys 5.pkg (Pkg)"
+    {
+      "pkg": [
+        "Install Soundtoys 5.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

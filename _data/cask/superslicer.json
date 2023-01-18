@@ -7,28 +7,49 @@
   ],
   "desc": "Convert 3D models into G-code instructions or PNG layers",
   "homepage": "https://github.com/supermerill/SuperSlicer",
-  "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.3.57.9/SuperSlicer_2.3.57.9_macos_220105.dmg",
+  "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.4.58.5/SuperSlicer_2.4.58.5_macos_220924.dmg",
   "appcast": null,
-  "version": "2.3.57.9,220105",
+  "version": "2.4.58.5,220924",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "ef30236e2a1de56f2300c3771fc4409f15fbfb18ecc2d921198f91e4a6f83614",
+  "sha256": "95652e91bef57c73f38c0c78f2fcc9dfce429516f5de516b5e8ac5db20d20132",
   "artifacts": [
-    [
-      "SuperSlicer.app"
-    ],
     {
-      "trash": "~/Library/Application Support/SuperSlicer",
-      "signal": {
-      }
+      "app": [
+        "SuperSlicer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/SuperSlicer"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "formula": [
+      "zstd"
+    ]
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.4.58.5/SuperSlicer_2.4.58.5_macos_arm_220924.dmg",
+      "sha256": "c65d21e51ac57eb75c915ae172a642f48d63584f6bdd8a280aa2443319a66010"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.4.58.5/SuperSlicer_2.4.58.5_macos_arm_220924.dmg",
+      "sha256": "c65d21e51ac57eb75c915ae172a642f48d63584f6bdd8a280aa2443319a66010"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/supermerill/SuperSlicer/releases/download/2.4.58.5/SuperSlicer_2.4.58.5_macos_arm_220924.dmg",
+      "sha256": "c65d21e51ac57eb75c915ae172a642f48d63584f6bdd8a280aa2443319a66010"
+    }
+  }
 }

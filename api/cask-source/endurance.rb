@@ -1,6 +1,6 @@
 cask "endurance" do
-  version "3.1,47"
-  sha256 "b408040af3018f2fe813d0100e8a758c3e3a52c62725c5d429ab1cc8f3dfe4be"
+  version "3.2.6,56"
+  sha256 "9e1e6b0f7f5ebeba844c867226ce6badc6dcc53c4b3eefbf6fb680fb16bfbf56"
 
   url "https://enduranceapp.com/downloads/Endurance#{version.csv.first}.zip"
   name "Endurance"

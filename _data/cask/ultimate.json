@@ -9,7 +9,7 @@
   "homepage": "https://www.epubor.com/",
   "url": "https://download.epubor.com/epubor_ultimate.zip",
   "appcast": null,
-  "version": "3.0.13.812",
+  "version": "3.0.14.402",
   "versions": {
   },
   "installed": null,
@@ -17,16 +17,24 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "pkgutil": "EpuborStudioUltimate2",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "EpuborStudioUltimate2"
+        }
+      ]
     },
-    "Ultimate.pkg (Pkg)"
+    {
+      "pkg": [
+        "Ultimate.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

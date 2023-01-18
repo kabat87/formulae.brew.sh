@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://gnupg.org/ftp/gcrypt/gnupg/gnupg-1.4.23.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c9462f17e651b6507848c08c430c791287cd75491f8b5a8b50c6ed46b12678ba"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gnupg/1.4/blobs/sha256:0745d4b4468cfecd559c6ddd3aa81582bde9f1def99761e8bf7989ddb9a76abf",
+          "sha256": "0745d4b4468cfecd559c6ddd3aa81582bde9f1def99761e8bf7989ddb9a76abf"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gnupg/1.4/blobs/sha256:d35c8557e2e77c6074a75bf4f4e575bd0a24ed57fbd061f9bd2a06d58bf8415c",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gnupg/1.4/blobs/sha256:30169aa8ef5373a4d5b36ee5714bd7e34d7222d02ad090bf3094b92b1c203bd6",
           "sha256": "30169aa8ef5373a4d5b36ee5714bd7e34d7222d02ad090bf3094b92b1c203bd6"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gnupg/1.4/blobs/sha256:d1beb68c6abb3a1d249621c8995d8e26bd1c8792260f36407c47627f84c84668",
+          "sha256": "d1beb68c6abb3a1d249621c8995d8e26bd1c8792260f36407c47627f84c84668"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

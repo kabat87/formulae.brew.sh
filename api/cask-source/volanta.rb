@@ -1,11 +1,11 @@
 cask "volanta" do
-  version "1.1.11,58470a63"
-  sha256 "51b9e61379ff029b7dad28feca4056c8a6d75ab8aaf20421f150bccc4eda8523"
+  version "1.4.9,24f2da3c"
+  sha256 "3f1286b688e3bb9a32d6cb86ef65ce9f81cd84ea35a8b6ea5aa29aa17688cfab"
 
   url "https://cdn.volanta.app/software/volanta-app/#{version.csv.first}-#{version.csv.second}/volanta-#{version.csv.first}.dmg"
   name "Volanta"
   desc "Personal flight tracker"
-  homepage "https://volanta.app/roadmap/"
+  homepage "https://volanta.app/"
 
   livecheck do
     url "https://api.volanta.app/api/v1/ClientUpdate/latest-mac.yml"

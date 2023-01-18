@@ -7,39 +7,40 @@
   ],
   "desc": "Drawing editor for creating figures in PDF format",
   "homepage": "https://ipe.otfried.org/",
-  "url": "https://github.com/otfried/ipe/releases/download/v7.2.24/ipe-7.2.24-mac.dmg",
+  "url": "https://github.com/otfried/ipe/releases/download/v7.2.26/ipe-7.2.26-mac.dmg",
   "appcast": null,
-  "version": "7.2.24",
+  "version": "7.2.26",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "af72be083497359d9ee61b716a7b8d718fa773383f44227d334323c4ab33275f",
+  "sha256": "93b9b39373b7dffa44b17e7f99bb1078d2d5742e50ff2940d8feef9a8b42e0fe",
   "artifacts": [
-    [
-      "Ipe.app"
-    ],
     {
-      "trash": [
-        "~/.ipe",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.otfried.ipe.ipe.sfl*",
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.otfried.ipe.sfl*",
-        "~/Library/Preferences/org.otfried.ipe.Ipe.plist",
-        "~/Library/Saved Application State/org.otfried.ipe.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Ipe.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.ipe",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.otfried.ipe.ipe.sfl*",
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.otfried.ipe.sfl*",
+            "~/Library/Preferences/org.otfried.ipe.Ipe.plist",
+            "~/Library/Saved Application State/org.otfried.ipe.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
-    "macos": {
-      ">=": [
-        "10.10"
-      ]
-    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

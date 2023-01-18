@@ -5,28 +5,32 @@
   "name": [
     "Bob Wallet"
   ],
-  "desc": "Handshake wallet GUI for name auction and DNS record management",
+  "desc": "Handshake wallet GUI for managing transactions, name auctions, and DNS records",
   "homepage": "https://bobwallet.io/",
-  "url": "https://github.com/kyokan/bob-wallet/releases/download/0.8.0/Bob-0.8.0.dmg",
+  "url": "https://github.com/kyokan/bob-wallet/releases/download/v1.0.0/Bob-1.0.0-x86.dmg",
   "appcast": null,
-  "version": "0.8.0",
+  "version": "1.0.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "66a49484070979a3215bf164a47a33d1035795ad3d513a598cbdaa7896c7bf81",
+  "sha256": "f4e962e38d8679a5abe7baf181d12ea679bd90876fe991a4c3c01b21f10195c8",
   "artifacts": [
-    [
-      "Bob.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Bob",
-        "~/Library/Preferences/com.kyokan.BobRelease.plist",
-        "~/Library/Saved Application State/com.kyokan.BobRelease.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Bob.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Bob",
+            "~/Library/Preferences/com.kyokan.BobRelease.plist",
+            "~/Library/Saved Application State/com.kyokan.BobRelease.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/kyokan/bob-wallet/releases/download/v1.0.0/Bob-1.0.0-arm64.dmg",
+      "sha256": "03c913e5ea5d8779122b4da3a9ef0d63307ce84a7a86e84feae53af82bb6fd36"
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/kyokan/bob-wallet/releases/download/v1.0.0/Bob-1.0.0-arm64.dmg",
+      "sha256": "03c913e5ea5d8779122b4da3a9ef0d63307ce84a7a86e84feae53af82bb6fd36"
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/kyokan/bob-wallet/releases/download/v1.0.0/Bob-1.0.0-arm64.dmg",
+      "sha256": "03c913e5ea5d8779122b4da3a9ef0d63307ce84a7a86e84feae53af82bb6fd36"
+    }
+  }
 }

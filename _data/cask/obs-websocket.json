@@ -6,27 +6,35 @@
     "obs-websocket"
   ],
   "desc": "Remote-control OBS Studio through WebSockets",
-  "homepage": "https://github.com/Palakis/obs-websocket",
-  "url": "https://github.com/Palakis/obs-websocket/releases/download/4.9.1/obs-websocket-4.9.1-macOS.pkg",
+  "homepage": "https://github.com/obsproject/obs-websocket",
+  "url": "https://github.com/obsproject/obs-websocket/releases/download/5.0.1/obs-websocket-5.0.1-macOS.pkg",
   "appcast": null,
-  "version": "4.9.1",
+  "version": "5.0.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "cdfb87b0d9ed1ae3fee61af957fb25402a4b65e9d4350e3959704b72e9b89fdb",
+  "sha256": "baf54b5dad9bc355c3af960ce94ddf8e88ed86c7d23d86e41baa8377cb1d4d06",
   "artifacts": [
     {
-      "pkgutil": "fr.palakis.obs-websocket",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.obsproject.obs-websocket"
+        }
+      ]
     },
-    "obs-websocket-4.9.1-macOS.pkg (Pkg)"
+    {
+      "pkg": [
+        "obs-websocket-5.0.1-macOS.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

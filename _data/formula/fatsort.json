@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/fatsort/fatsort-1.6.4.625.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9a6f89a0640bb782d82ff23a780c9f0aec3dfbe4682c0a8eda157e0810642ead"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/fatsort/blobs/sha256:5c889cd549f7283bb46f5a6118355979a1a9df632809775a79bf12c4cda559ff",
+          "sha256": "5c889cd549f7283bb46f5a6118355979a1a9df632809775a79bf12c4cda559ff"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/fatsort/blobs/sha256:b7d4a8f9701c12a1d3dd1acf54c007e7e554c139e13b1ec0038ef9c1203cb77e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/fatsort/blobs/sha256:8b9d29782c670f94450fadca0c8f79027da00b123811f405b0d3b09075ab8d5c",
           "sha256": "8b9d29782c670f94450fadca0c8f79027da00b123811f405b0d3b09075ab8d5c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/fatsort/blobs/sha256:171b82442e7e70a45b64094434cb5b772cecb00e5347afb9e7bfa09c5ffe539f",
+          "sha256": "171b82442e7e70a45b64094434cb5b772cecb00e5347afb9e7bfa09c5ffe539f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "help2man"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

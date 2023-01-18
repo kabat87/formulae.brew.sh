@@ -1,6 +1,6 @@
 cask "gpg-suite" do
-  version "2021.3"
-  sha256 "4a3ca87d9d8363542873b5eb695d85186ab1ff00d5adf2c37c3d055dd78d0a4d"
+  version "2022.2"
+  sha256 "11e4e0964d788bab4cceda7b6af696bf17a85510338322543867bd1c934cca70"
 
   url "https://releases.gpgtools.org/GPG_Suite-#{version}.dmg"
   name "GPG Suite"
@@ -23,15 +23,15 @@ cask "gpg-suite" do
   pkg "Install.pkg"
 
   uninstall_postflight do
-    ["gpg", "gpg2", "gpg-agent"].map { |exec_name| "/usr/local/bin/#{exec_name}" }.each do |exec|
-      File.rm(exec) if File.exist?(exec) && File.readlink(exec).include?("MacGPG2")
+    ["gpg", "gpg2", "gpg-agent"].map { |exec_name| Pathname("/usr/local/bin")/exec_name }.each do |exec|
+      exec.unlink if exec.exist? && exec.readlink.to_s.include?("MacGPG2")
     end
   end
 
   uninstall script:    {
-    executable: "#{staged_path}/Uninstall.app/Contents/Resources/GPG Suite Uninstaller.app/Contents/Resources/uninstall.sh",
-    sudo:       true,
-  },
+              executable: "#{staged_path}/Uninstall.app/Contents/Resources/GPG Suite Uninstaller.app/Contents/Resources/uninstall.sh",
+              sudo:       true,
+            },
             pkgutil:   "org.gpgtools.*",
             quit:      [
               "com.apple.mail",

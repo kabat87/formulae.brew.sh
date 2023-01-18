@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://source.android.com/source/developing.html",
   "versions": {
-    "stable": "2.20",
+    "stable": "2.31",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://gerrit.googlesource.com/git-repo.git",
-      "tag": "v2.20",
-      "revision": "98bb76577d9e7e0ffdeb643f1654ec006f6bbc8c"
+      "tag": "v2.31",
+      "revision": "a621254b263664efa308a645214d3d140e068676",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/repo/blobs/sha256:0b2fae2c70811902f5cc35aef0fad0545f0b9e19b4aadd260362db8cc2ba825c",
-          "sha256": "0b2fae2c70811902f5cc35aef0fad0545f0b9e19b4aadd260362db8cc2ba825c"
+          "url": "https://ghcr.io/v2/homebrew/core/repo/blobs/sha256:9404e919d2f51d27981802103ab75d2c75a50fbceb8e78ae3b09b6e0ac5013b6",
+          "sha256": "9404e919d2f51d27981802103ab75d2c75a50fbceb8e78ae3b09b6e0ac5013b6"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "python@3.10"
+
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -58,7 +61,7 @@
 
   ],
   "uses_from_macos": [
-
+    "python"
   ],
   "requirements": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

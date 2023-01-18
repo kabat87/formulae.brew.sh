@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/MiMo42/MMTabBarView/archive/refs/tags/v1.4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a5b79f1b50f6cabe97558f4c24a6317c448c534f15655309b6b29a532590e976"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mmtabbarview/blobs/sha256:ec634de2a8f60f6d6d09c88cc8ce9293fd94ee07ba2181a7b07a3ee2f29d99ac",
+          "sha256": "ec634de2a8f60f6d6d09c88cc8ce9293fd94ee07ba2181a7b07a3ee2f29d99ac"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mmtabbarview/blobs/sha256:8d752b1a6566f010c2a3c42c7248e56e15ea8c55b80a7cd6b7fc571b67f81912",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mmtabbarview/blobs/sha256:10a139efa381ffffb4b38609246914c123559b80ceaf16baa96135ae4687ba5b",
           "sha256": "10a139efa381ffffb4b38609246914c123559b80ceaf16baa96135ae4687ba5b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mmtabbarview/blobs/sha256:d7029d1e75a1a3e9fe45c92c67203ac9de958bc22b52193753db670484d31540",
+          "sha256": "d7029d1e75a1a3e9fe45c92c67203ac9de958bc22b52193753db670484d31540"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -120,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

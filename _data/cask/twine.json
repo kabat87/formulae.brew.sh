@@ -7,27 +7,31 @@
   ],
   "desc": "Tool for telling interactive, nonlinear stories",
   "homepage": "https://twinery.org/",
-  "url": "https://github.com/klembot/twinejs/releases/download/2.3.16/twine_2.3.16_macos.dmg",
+  "url": "https://github.com/klembot/twinejs/releases/download/2.6.0/Twine-2.6.0-macos.dmg",
   "appcast": null,
-  "version": "2.3.16",
+  "version": "2.6.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d3a479a4887910d3032e8f98461b86acd48c157b40406aa8354a267f47b0cfc2",
+  "sha256": "f66baaa14353d37293ce3ac82faa0fb16581692ff1aa965e2f23504621a9bab9",
   "artifacts": [
-    [
-      "Twine.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Twine",
-        "~/Library/Logs/Twine",
-        "~/Library/Preferences/com.electron.twine.plist",
-        "~/Library/Saved Application State/com.electron.twine.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Twine.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Twine",
+            "~/Library/Logs/Twine",
+            "~/Library/Preferences/com.electron.twine.plist",
+            "~/Library/Saved Application State/com.electron.twine.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -7,32 +7,38 @@
   ],
   "desc": "Turn your iPad into a professional drawing tablet",
   "homepage": "https://astropad.com/",
-  "url": "https://s3.amazonaws.com/astropad.com/downloads/AstropadStudio-3.7.0.dmg",
+  "url": "https://downloads.astropad.com/studio/mac/AstropadStudio-5.2.1.4459.dmg",
   "appcast": null,
-  "version": "3.7.0,3219",
+  "version": "5.2.1,4459",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f11c1f8c5cef55d35678fea3a08882c6cf6bac0e3493ec30d35a476783e15a47",
+  "sha256": "4641d148065a55982339bfdc648861ffc8fc30ff2c043ed9a40c8911baeb9aae",
   "artifacts": [
     {
-      "quit": "com.astro-hq.AstropadStudioMac",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.astro-hq.AstropadStudioMac"
+        }
+      ]
     },
-    [
-      "Astropad Studio.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/Astropad",
-        "~/Library/Caches/com.astro-hq.AstropadStudioMac",
-        "~/Library/Preferences/com.astro-hq.AstropadStudioMac.plist",
-        "~/Library/Saved Application State/com.astro-hq.AstropadStudioMac.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Astropad Studio.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/Astropad",
+            "~/Library/Caches/com.astro-hq.AstropadStudioMac",
+            "~/Library/Preferences/com.astro-hq.AstropadStudioMac.plist",
+            "~/Library/Saved Application State/com.astro-hq.AstropadStudioMac.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +46,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

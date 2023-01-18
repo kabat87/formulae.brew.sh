@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/cmusphinx/sphinxbase/0.8/sphinxbase-0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "55708944872bab1015b8ae07b379bf463764f469163a8fd114cbb16c5e486ca8"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmu-sphinxbase/blobs/sha256:933f1d75ffea23077cd4c3ba98f58c768c80c868694bc7b1167131c93d84db95",
+          "sha256": "933f1d75ffea23077cd4c3ba98f58c768c80c868694bc7b1167131c93d84db95"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cmu-sphinxbase/blobs/sha256:10c702ad300d51ffac6ed0251cf3b64952d549ad0a67792b80fe055a182014f2",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cmu-sphinxbase/blobs/sha256:d8ca2666d2ee6c5ff4a5a88ad086cfcf3e0cf744e6614ea31b451dfd86196c17",
           "sha256": "d8ca2666d2ee6c5ff4a5a88ad086cfcf3e0cf744e6614ea31b451dfd86196c17"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cmu-sphinxbase/blobs/sha256:f1df00fa88b69a58eb87a942014a00e14f941e7380b07cd1aea69cc256f31603",
+          "sha256": "f1df00fa88b69a58eb87a942014a00e14f941e7380b07cd1aea69cc256f31603"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +101,9 @@
   "dependencies": [
     "libsamplerate",
     "libsndfile"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -121,5 +134,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

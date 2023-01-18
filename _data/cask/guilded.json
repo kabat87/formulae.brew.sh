@@ -7,27 +7,31 @@
   ],
   "desc": "Group chat platform",
   "homepage": "https://www.guilded.gg/",
-  "url": "https://s3-us-west-2.amazonaws.com/www.guilded.gg/AppBuilds/mac/Guilded-1.0.9119474-release.dmg",
+  "url": "https://s3-us-west-2.amazonaws.com/www.guilded.gg/AppBuilds/mac/Guilded-1.0.9161723-release.dmg",
   "appcast": null,
-  "version": "1.0.9119474",
+  "version": "1.0.9161723",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "20dd322800da4509b47458bac048b9d0f63d69306e428e899e5bc1e5eb1cbfe7",
+  "sha256": "3ecb8a7f9684a754474d525fc2b7088d2085af7f1a10f35f6c638a1a3aea989c",
   "artifacts": [
-    [
-      "Guilded.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Guilded",
-        "~/Library/Logs/Guilded",
-        "~/Library/Preferences/com.electron.guilded.plist",
-        "~/Library/Saved Application State/com.electron.guilded.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Guilded.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Guilded",
+            "~/Library/Logs/Guilded",
+            "~/Library/Preferences/com.electron.guilded.plist",
+            "~/Library/Saved Application State/com.electron.guilded.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

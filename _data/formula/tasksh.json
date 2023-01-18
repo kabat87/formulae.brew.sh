@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://taskwarrior.org/download/tasksh-1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6e42f949bfd7fbdde4870af0e7b923114cc96c4344f82d9d924e984629e21ffd"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tasksh/blobs/sha256:1a8bbc54e5712ab5b9caa686e6348365da4c8bdaebeaae474be2edda28368d72",
+          "sha256": "1a8bbc54e5712ab5b9caa686e6348365da4c8bdaebeaae474be2edda28368d72"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tasksh/blobs/sha256:6c6390a79e5f4645f2cf2507a1c29ad1b935a5f51d87387412e557343688a11d",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tasksh/blobs/sha256:590c43b791080cc6ca56cef896c9e75a8ca77915b061a1d0a711a0489e69ab63",
           "sha256": "590c43b791080cc6ca56cef896c9e75a8ca77915b061a1d0a711a0489e69ab63"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tasksh/blobs/sha256:d0a97986a19732ce4d3818c5b452f6ce636ce957e401350cade47190e5b7b2e0",
+          "sha256": "d0a97986a19732ce4d3818c5b452f6ce636ce957e401350cade47190e5b7b2e0"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "task"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "task",
+        "readline"
+      ]
+    }
+  }
 }

@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://asdf-vm.com/",
   "versions": {
-    "stable": "0.9.0",
+    "stable": "0.11.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/asdf-vm/asdf/archive/v0.9.0.tar.gz",
+      "url": "https://github.com/asdf-vm/asdf/archive/refs/tags/v0.11.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e75af1ff2b2a6e2b41cbda6e74b441709264def62cf22d37d68baa1c10c66ced"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/asdf/blobs/sha256:2c1733505b491d9d5a9442655c123c68fd3a3b4e102c89bab39898246aa0e405",
-          "sha256": "2c1733505b491d9d5a9442655c123c68fd3a3b4e102c89bab39898246aa0e405"
+          "url": "https://ghcr.io/v2/homebrew/core/asdf/blobs/sha256:9ba9f78ec97892b0e463df856a3b5570fd3d92868e2acb6979f4074be066fa18",
+          "sha256": "9ba9f78ec97892b0e463df856a3b5570fd3d92868e2acb6979f4074be066fa18"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -54,9 +54,12 @@
     "coreutils",
     "libtool",
     "libyaml",
-    "openssl@1.1",
+    "openssl@3",
     "readline",
     "unixodbc"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -85,5 +88,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

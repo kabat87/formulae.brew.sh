@@ -11,17 +11,18 @@
   ],
   "desc": "Actions, Menus and Toolbars Kit for GNOME",
   "license": "LGPL-2.1-or-later",
-  "homepage": "https://wiki.gnome.org/Projects/Amtk",
+  "homepage": "https://gitlab.gnome.org/World/amtk",
   "versions": {
-    "stable": "5.2.0",
+    "stable": "5.6.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://download.gnome.org/sources/amtk/5.2/amtk-5.2.0.tar.xz",
-      "tag": null,
-      "revision": null
+      "url": "https://gitlab.gnome.org/World/amtk.git",
+      "tag": "5.6.1",
+      "revision": "f0029cf75ec416159079a27b578b9253a04b1c5a",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,61 +32,65 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:1cf380d9dbde9c3a165f32fe7fbfa409cfa3ace1748d07e46b22678f548450c9",
+          "sha256": "1cf380d9dbde9c3a165f32fe7fbfa409cfa3ace1748d07e46b22678f548450c9"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:63effad091e0f6f472dc0aeec62cf1623eff536542ecb91a08ea018b796a538f",
-          "sha256": "63effad091e0f6f472dc0aeec62cf1623eff536542ecb91a08ea018b796a538f"
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:f2b43d8dd35fb1d0f6da7cee85a96f322135bac94a1f59c783df4498b16ff1c7",
+          "sha256": "f2b43d8dd35fb1d0f6da7cee85a96f322135bac94a1f59c783df4498b16ff1c7"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:d540852fa3ee1d9af33c5c1effe96547a98c7e03d20064b508662b14c6da202f",
-          "sha256": "d540852fa3ee1d9af33c5c1effe96547a98c7e03d20064b508662b14c6da202f"
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:7b773cc55530831d0b2d5ea72b5b6f061b7988f68d72db771a7787dedaa3bf11",
+          "sha256": "7b773cc55530831d0b2d5ea72b5b6f061b7988f68d72db771a7787dedaa3bf11"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:6712f5ff43799d58d6dbbfd9f056057a3db085de298046dcef957052809b3970",
+          "sha256": "6712f5ff43799d58d6dbbfd9f056057a3db085de298046dcef957052809b3970"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:09d224f622a97da7897d6c2bd12eeb301b99bd18f53da33ef2b816673d5095ee",
-          "sha256": "09d224f622a97da7897d6c2bd12eeb301b99bd18f53da33ef2b816673d5095ee"
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:5ac785fbfb332717bcd7e5999269675b55b3e4fdc227f29398c04a80d9aa85a8",
+          "sha256": "5ac785fbfb332717bcd7e5999269675b55b3e4fdc227f29398c04a80d9aa85a8"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:6ab887f121458fad7c480b897bb296d48daf01e3379b96098ce18ca2ae9da7b7",
-          "sha256": "6ab887f121458fad7c480b897bb296d48daf01e3379b96098ce18ca2ae9da7b7"
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:e4d747ffc31a622fb484e6f6e29ca844d31aec1add51da911a8c6750ba079f60",
+          "sha256": "e4d747ffc31a622fb484e6f6e29ca844d31aec1add51da911a8c6750ba079f60"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:89e24e19e0614b13d387b9c0d2ccf89ac15f485edf49c7c39bcaa4f80deba3c1",
-          "sha256": "89e24e19e0614b13d387b9c0d2ccf89ac15f485edf49c7c39bcaa4f80deba3c1"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:004425110c03c91144cfd53df0f6141b05e38d86b64e96303cd6760db9e66a42",
-          "sha256": "004425110c03c91144cfd53df0f6141b05e38d86b64e96303cd6760db9e66a42"
-        },
-        "high_sierra": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:67ad617a78c6922647c2af49225a5f4b8fd7eff3635d0e7f8b4320687b896b60",
-          "sha256": "67ad617a78c6922647c2af49225a5f4b8fd7eff3635d0e7f8b4320687b896b60"
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:f057747729a7ced1beac244548ce06a22be404adf2d623ca10d3efacc3629e04",
+          "sha256": "f057747729a7ced1beac244548ce06a22be404adf2d623ca10d3efacc3629e04"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:816d3b14c924a5024ba23409a3af828a578325c0fe3eaeff9e4f81b553142ca9",
-          "sha256": "816d3b14c924a5024ba23409a3af828a578325c0fe3eaeff9e4f81b553142ca9"
+          "url": "https://ghcr.io/v2/homebrew/core/amtk/blobs/sha256:36eb21a4aff1008a95772f0f3570ce32c179b3637f508bc2525d24e7d216fd14",
+          "sha256": "36eb21a4aff1008a95772f0f3570ce32c179b3637f508bc2525d24e7d216fd14"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "gobject-introspection",
+    "meson",
+    "ninja",
     "pkg-config"
   ],
   "dependencies": [
     "gtk+3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

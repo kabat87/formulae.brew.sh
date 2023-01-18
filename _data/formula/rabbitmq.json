@@ -13,15 +13,16 @@
   "license": "MPL-2.0",
   "homepage": "https://www.rabbitmq.com",
   "versions": {
-    "stable": "3.9.12",
+    "stable": "3.11.7",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.9.12/rabbitmq-server-generic-unix-3.9.12.tar.xz",
+      "url": "https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.11.7/rabbitmq-server-generic-unix-3.11.7.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0db2b87c4f3b695e64940552cc6145be8bed11f22d9adbd94c4a7fe6d5d4242f"
     }
   },
   "revision": 0,
@@ -33,23 +34,25 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rabbitmq/blobs/sha256:e149ee34df0634dbfce3d1177b131e91b579817445998f05ac67f00d9d9a8f3b",
-          "sha256": "e149ee34df0634dbfce3d1177b131e91b579817445998f05ac67f00d9d9a8f3b"
+          "url": "https://ghcr.io/v2/homebrew/core/rabbitmq/blobs/sha256:09a9347ec8286ab3994caffd2f6616abfbad25a0c0d3f4523dcd15fabd0a09a8",
+          "sha256": "09a9347ec8286ab3994caffd2f6616abfbad25a0c0d3f4523dcd15fabd0a09a8"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "python@3.10"
+    "python@3.11"
   ],
   "dependencies": [
     "erlang"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

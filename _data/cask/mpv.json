@@ -7,33 +7,41 @@
   ],
   "desc": "Media player based on MPlayer and mplayer2",
   "homepage": "https://mpv.io/",
-  "url": "https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-0.34.1.tar.gz",
+  "url": "https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-0.35.0.tar.gz",
   "appcast": null,
-  "version": "0.34.1",
+  "version": "0.35.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "82f9bc62199744744ef01b64587e3995d78429e42b8687e9a8db4bf4df09862a",
+  "sha256": "376415c787aef391a3927cdecd5bb0dac9f21ef9d7742516b8cd8d8ce502e7b6",
   "artifacts": [
-    [
-      "mpv.app"
-    ],
-    [
-      "/Applications/mpv.app/Contents/MacOS/mpv"
-    ],
-    [
-      "documentation/man/mpv.1"
-    ],
     {
-      "trash": [
-        "~/.config/mpv",
-        "~/Library/Logs/mpv.log",
-        "~/Library/Preferences/io.mpv.plist",
-        "~/Library/Preferences/mpv.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "mpv.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/mpv.app/Contents/MacOS/mpv"
+      ]
+    },
+    {
+      "manpage": [
+        "documentation/man/mpv.1"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.config/mpv",
+            "~/Library/Logs/mpv.log",
+            "~/Library/Preferences/io.mpv.plist",
+            "~/Library/Preferences/mpv.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -50,5 +58,7 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

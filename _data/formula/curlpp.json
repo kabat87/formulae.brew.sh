@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jpbarrette/curlpp/archive/v0.8.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "97e3819bdcffc3e4047b6ac57ca14e04af85380bd93afe314bee9dd5c7f46a0a"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/curlpp/blobs/sha256:dd317f246e6c52b7cee844de9d5b89657d80c1a11442247da4a161c5fb31254b",
+          "sha256": "dd317f246e6c52b7cee844de9d5b89657d80c1a11442247da4a161c5fb31254b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/curlpp/blobs/sha256:54e27231617bfb44e79dbd5c5b87417f75ebeadf926b411c7b754cec0f07791e",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/curlpp/blobs/sha256:f727b823c94be8f12ab6ba0eb8ac326b19ac823f3313b9ff0a8ab43c1a21a4ec",
           "sha256": "f727b823c94be8f12ab6ba0eb8ac326b19ac823f3313b9ff0a8ab43c1a21a4ec"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/curlpp/blobs/sha256:89ec170a151056a46d8cdd4de90cc2cc199636f18f364321bcadc40a24d8b694",
+          "sha256": "89ec170a151056a46d8cdd4de90cc2cc199636f18f364321bcadc40a24d8b694"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

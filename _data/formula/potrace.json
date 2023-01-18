@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://potrace.sourceforge.io/download/1.16/potrace-1.16.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "be8248a17dedd6ccbaab2fcc45835bb0502d062e40fbded3bc56028ce5eb7acc"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/potrace/blobs/sha256:a7201a2a7bc8af588056ef0319281dab31dd376af60a379430edc495eea29041",
+          "sha256": "a7201a2a7bc8af588056ef0319281dab31dd376af60a379430edc495eea29041"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/potrace/blobs/sha256:cc774c2a6d82a036c9ccf80ed467aabbf39697e8a36ef210cb5b793fb4b6be05",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/potrace/blobs/sha256:80d3d0256f9b7add7d3835f6c84f30afec6a4893f2fcd2aa44b07ebe95876c7f",
           "sha256": "80d3d0256f9b7add7d3835f6c84f30afec6a4893f2fcd2aa44b07ebe95876c7f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/potrace/blobs/sha256:a79629c4ae550b6894ce39a3afd6ed75063c885155bf44365feaa551c346e2ca",
+          "sha256": "a79629c4ae550b6894ce39a3afd6ed75063c885155bf44365feaa551c346e2ca"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

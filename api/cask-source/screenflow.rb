@@ -1,6 +1,6 @@
 cask "screenflow" do
-  version "10.0.3,31849"
-  sha256 "5e2dfabe79f3a76324baff557e2022da85014ba2a8dee7dbce43225aa3e5835d"
+  version "10.0.8,31930"
+  sha256 "b8c3f731f81a2ea915ffbcd53aeaacf263908f44053acaca922faf1f40fb0f5f"
 
   url "https://www.telestream.net/download-files/screenflow/#{version.csv.first.major_minor.dots_to_hyphens}/ScreenFlow-#{version.csv.first}.dmg"
   name "ScreenFlow"

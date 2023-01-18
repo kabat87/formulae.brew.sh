@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/google/google-authenticator-libpam/archive/1.09.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ab1d7983413dc2f11de2efa903e5c326af8cb9ea37765dacb39949417f7cd037"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/google-authenticator-libpam/blobs/sha256:521a4e777e947db5535752430caee3bab7a95db3fc2897eb5d1487c269e97d09",
+          "sha256": "521a4e777e947db5535752430caee3bab7a95db3fc2897eb5d1487c269e97d09"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/google-authenticator-libpam/blobs/sha256:ceb57c28fa8ac36471c762ab3d2dd67c5026a0568100e82b756cef2196b5747e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/google-authenticator-libpam/blobs/sha256:8adf8be0fbea5003e02b748ef71a099635eb8dff716c62d6935581d493fcda78",
           "sha256": "8adf8be0fbea5003e02b748ef71a099635eb8dff716c62d6935581d493fcda78"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/google-authenticator-libpam/blobs/sha256:dc592e42daa5e9d661de8c515b4e7e5f3ce0eb92d6287811f2bbf547edf0cf48",
+          "sha256": "dc592e42daa5e9d661de8c515b4e7e5f3ce0eb92d6287811f2bbf547edf0cf48"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +97,9 @@
   ],
   "dependencies": [
     "qrencode"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -115,5 +128,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "qrencode",
+        "linux-pam"
+      ]
+    }
+  }
 }

@@ -13,15 +13,16 @@
   "license": "GPL-3.0-only",
   "homepage": "https://github.com/hirosystems/clarinet",
   "versions": {
-    "stable": "0.23.1",
+    "stable": "1.3.1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/hirosystems/clarinet.git",
-      "tag": "v0.23.1",
-      "revision": "a339bdcf4519b6074848e870eef5227e6e7061e3"
+      "tag": "v1.3.1",
+      "revision": "64baa79541ac9606fc635ad51503b081da505973",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -33,40 +34,39 @@
       "files": {
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:d43c947340d4884b9ac6dfe753c9dd84967323db1094876e2e18915e098b077c",
-          "sha256": "d43c947340d4884b9ac6dfe753c9dd84967323db1094876e2e18915e098b077c"
+          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:acf50564ba1c3b5e95c5145d08f75b684dac5ac0b9ecb6a821f64beb94ec31a1",
+          "sha256": "acf50564ba1c3b5e95c5145d08f75b684dac5ac0b9ecb6a821f64beb94ec31a1"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:ef44de0894f043f456a47b6f9a4def6b5e300fa549d3d0a5fe1d037693c5e544",
-          "sha256": "ef44de0894f043f456a47b6f9a4def6b5e300fa549d3d0a5fe1d037693c5e544"
+          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:ceca26f0c89a13f9868e154cd9a035a10d2f288320b074906899117d8681db39",
+          "sha256": "ceca26f0c89a13f9868e154cd9a035a10d2f288320b074906899117d8681db39"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:c76814f6ef76dfa767fa1c877d9f5d16c0326bc3a920f5ba2d661bdc606bdcf4",
+          "sha256": "c76814f6ef76dfa767fa1c877d9f5d16c0326bc3a920f5ba2d661bdc606bdcf4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:249d4357c099596b7367f44688a8b6dfd22701c5bd89c6117dc1c7157a6507f7",
-          "sha256": "249d4357c099596b7367f44688a8b6dfd22701c5bd89c6117dc1c7157a6507f7"
+          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:e88f81de5b4144d310d49f005443ac6ea9664b7047649760ba4c5ad479f5a5d3",
+          "sha256": "e88f81de5b4144d310d49f005443ac6ea9664b7047649760ba4c5ad479f5a5d3"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:2b299b3b92bcc65100bf944af4827c6d35170d2c5d0908f470fa3b929fb96d52",
-          "sha256": "2b299b3b92bcc65100bf944af4827c6d35170d2c5d0908f470fa3b929fb96d52"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:7821ae2c8072c0d4909d6103cdcc646a7b0518833a7fdea5859a55b71726a56b",
-          "sha256": "7821ae2c8072c0d4909d6103cdcc646a7b0518833a7fdea5859a55b71726a56b"
+          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:f162aa89b9773026aafb82696cace73bd6a1ed04fb20a3a1f00633d0058bd9c5",
+          "sha256": "f162aa89b9773026aafb82696cace73bd6a1ed04fb20a3a1f00633d0058bd9c5"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:8425505ef557f4d9be5efaeefa422df5451990b94f63d7a627fce7ee48d7b011",
-          "sha256": "8425505ef557f4d9be5efaeefa422df5451990b94f63d7a627fce7ee48d7b011"
+          "url": "https://ghcr.io/v2/homebrew/core/clarinet/blobs/sha256:83fcb2d9aea7a05407b3c68be10206d4e1164c9bed3135080853ee7c935292e0",
+          "sha256": "83fcb2d9aea7a05407b3c68be10206d4e1164c9bed3135080853ee7c935292e0"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +74,9 @@
     "rust"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +106,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

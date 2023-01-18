@@ -13,60 +13,65 @@
   "license": "MIT",
   "homepage": "https://www.pydocstyle.org/",
   "versions": {
-    "stable": "6.1.1",
+    "stable": "6.3.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://files.pythonhosted.org/packages/4c/30/4cdea3c8342ad343d41603afc1372167c224a04dc5dc0bf4193ccb39b370/pydocstyle-6.1.1.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/e9/5c/d5385ca59fd065e3c6a5fe19f9bc9d5ea7f2509fa8c9c22fb6b2031dd953/pydocstyle-6.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7ce43f0c0ac87b07494eb9c0b462c0b73e6ff276807f204d6b53edc72b7e44e1"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:ded273a89181fc24508db6ac20fc5209cc79ad923e2106e3de7e889b59711d3a",
+          "sha256": "ded273a89181fc24508db6ac20fc5209cc79ad923e2106e3de7e889b59711d3a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:b6bdedcab8085ebba46a6c61be194777ed70a2ad0a59b28f482292a499430bf9",
-          "sha256": "b6bdedcab8085ebba46a6c61be194777ed70a2ad0a59b28f482292a499430bf9"
+          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:8e4eb0b044ac8618e1b641ce53914c4e637d7b4dda414ff8f7f0ecff914278ef",
+          "sha256": "8e4eb0b044ac8618e1b641ce53914c4e637d7b4dda414ff8f7f0ecff914278ef"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:f484ef39a1a165ec192fafe7f6d76c1ebf5fa97d7499d729cf1de98c6444edef",
-          "sha256": "f484ef39a1a165ec192fafe7f6d76c1ebf5fa97d7499d729cf1de98c6444edef"
+          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:51de6784ad7eacf7e71abfd0a009566881fdcd97db71dcc9aa2b78b7c96f40c1",
+          "sha256": "51de6784ad7eacf7e71abfd0a009566881fdcd97db71dcc9aa2b78b7c96f40c1"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:0ef946f3ac8f8d1c805d010b207d55c691d795ef365e65eae8d82f32dbf8be91",
+          "sha256": "0ef946f3ac8f8d1c805d010b207d55c691d795ef365e65eae8d82f32dbf8be91"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:ac2eec2c0826c7923fbfe279c1cc587eff79ce1dd2b4c8e32daafa0f155ae01c",
-          "sha256": "ac2eec2c0826c7923fbfe279c1cc587eff79ce1dd2b4c8e32daafa0f155ae01c"
+          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:9b145d7b416f4274d592aaa309659bbf5f535bfb2d6351017af9cf0b5b86acb7",
+          "sha256": "9b145d7b416f4274d592aaa309659bbf5f535bfb2d6351017af9cf0b5b86acb7"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:6a454e42222a31a0437d0d33197b068b952c5a48011fe107f0d0f14f707e36f1",
-          "sha256": "6a454e42222a31a0437d0d33197b068b952c5a48011fe107f0d0f14f707e36f1"
+          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:66422fa848a63b8c185db46bde38ad09d2a7bd9954294d3408a6bb6b3c417f6c",
+          "sha256": "66422fa848a63b8c185db46bde38ad09d2a7bd9954294d3408a6bb6b3c417f6c"
         },
-        "catalina": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:a4091b17676b23f645aec6684939a19a2a5c05f991b25e9d4ebbf09c90764084",
-          "sha256": "a4091b17676b23f645aec6684939a19a2a5c05f991b25e9d4ebbf09c90764084"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:84a68e5f7328a5a2127b50254e52f13a3f68f8bc718dd8ef84ceae59461a3bbd",
-          "sha256": "84a68e5f7328a5a2127b50254e52f13a3f68f8bc718dd8ef84ceae59461a3bbd"
+          "url": "https://ghcr.io/v2/homebrew/core/pydocstyle/blobs/sha256:0f5028fbde0c073b5929daabb7fca939454809943f98fb5e15076899883277a4",
+          "sha256": "0f5028fbde0c073b5929daabb7fca939454809943f98fb5e15076899883277a4"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,7 +79,10 @@
 
   ],
   "dependencies": [
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

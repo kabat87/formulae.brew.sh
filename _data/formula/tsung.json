@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://tsung.erlang-projects.org/dist/tsung-1.7.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6394445860ef34faedf8c46da95a3cb206bc17301145bc920151107ffa2ce52a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tsung/blobs/sha256:d20e92b265cfe4d3f28787388630956ef8f695f4f4e219bf941c4187a0ebe81d",
+          "sha256": "d20e92b265cfe4d3f28787388630956ef8f695f4f4e219bf941c4187a0ebe81d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tsung/blobs/sha256:19a9d329b07bf0f12e1cd44363b33aa8fdae0a583b51c7f17e21f779220a5045",
@@ -40,6 +46,16 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tsung/blobs/sha256:8e48b00e815ae6bd028601423ce94a47d0ece9694fbb162808ff58f5d69e484f",
           "sha256": "8e48b00e815ae6bd028601423ce94a47d0ece9694fbb162808ff58f5d69e484f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tsung/blobs/sha256:849f05a8fa344b5eb1d9d9211c56a76c571ae83db3d6e96245aa51b55026871f",
+          "sha256": "849f05a8fa344b5eb1d9d9211c56a76c571ae83db3d6e96245aa51b55026871f"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tsung/blobs/sha256:c8f5e4f5aaf60ddd4c8c4ac6c3fab88d6ac8bfbf8b0a443f388f758eae35cbb4",
+          "sha256": "c8f5e4f5aaf60ddd4c8c4ac6c3fab88d6ac8bfbf8b0a443f388f758eae35cbb4"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +106,9 @@
   "dependencies": [
     "erlang",
     "gnuplot"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -119,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

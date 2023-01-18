@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mp3check/mp3check-0.8.7.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "27d976ad8495671e9b9ce3c02e70cb834d962b6fdf1a7d437bb0e85454acdd0e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mp3check/blobs/sha256:17d0d21d24eae65edccb72577dbc578d89d1660a7c95eda9c521c2ac27636f6a",
+          "sha256": "17d0d21d24eae65edccb72577dbc578d89d1660a7c95eda9c521c2ac27636f6a"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mp3check/blobs/sha256:ae74bb7b036881a560bb8de9ab44ef31cbdfc1d9c710fed0183de39c2fc5272f",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mp3check/blobs/sha256:c0c683cf446e72e17104142e290f2bf3fea6fd01fcf1534ba1c61c7d5a85bb05",
           "sha256": "c0c683cf446e72e17104142e290f2bf3fea6fd01fcf1534ba1c61c7d5a85bb05"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mp3check/blobs/sha256:8223c78bae026c58b1e0407a174a3614201b7bb909fcb8ad699973c61ba3406e",
+          "sha256": "8223c78bae026c58b1e0407a174a3614201b7bb909fcb8ad699973c61ba3406e"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/mp3check/blobs/sha256:d63ba27cfd87cf1f8b1871fe8b0531882c037f116933cbc59caf429dfeaab735",
           "sha256": "d63ba27cfd87cf1f8b1871fe8b0531882c037f116933cbc59caf429dfeaab735"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mp3check/blobs/sha256:5fd629e626c6227789c894f1fcf32e076118fd4fe9136e974610ef42135a4ddf",
-          "sha256": "5fd629e626c6227789c894f1fcf32e076118fd4fe9136e974610ef42135a4ddf"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mp3check/blobs/sha256:72769405fb206a5851bac35ea59bc0d4b7663c57a62cdc8bfa172fa21379130e",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

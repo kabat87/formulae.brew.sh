@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.linuxsampler.org/packages/libgig-4.3.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a06d09878780c6c19dd8db9c33544d53a93357f9e27b14a983aaaba68fffa794"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libgig/blobs/sha256:ad74c66aa9b606ed8b195ea1547ce273bc20c818830c25d2d1630fb928704267",
+          "sha256": "ad74c66aa9b606ed8b195ea1547ce273bc20c818830c25d2d1630fb928704267"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libgig/blobs/sha256:f25257d7f210d0d3a2f0cff724db229618be0a8123ccffa358d2823ef77f8241",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libgig/blobs/sha256:fa41e608f0e97d0854cb808a6841addebcefc1243b231b9fa98052feda51ea67",
           "sha256": "fa41e608f0e97d0854cb808a6841addebcefc1243b231b9fa98052feda51ea67"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libgig/blobs/sha256:63cfad1ef3c6f3c744d5bfaebbc234a9ea7c52317db2a932aed6e1dac4de7b46",
+          "sha256": "63cfad1ef3c6f3c744d5bfaebbc234a9ea7c52317db2a932aed6e1dac4de7b46"
         },
         "monterey": {
           "cellar": ":any",
@@ -60,13 +71,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libgig/blobs/sha256:17999aa905c481e685770fe73604dd5c0ff635fa9410c0a8e5ac1067f1de37c1",
           "sha256": "17999aa905c481e685770fe73604dd5c0ff635fa9410c0a8e5ac1067f1de37c1"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libgig/blobs/sha256:0f6e21355854f6b5b7ce78a61253f2b1c4f91f5a67092335bb582d10106ba4ff",
+          "sha256": "0f6e21355854f6b5b7ce78a61253f2b1c4f91f5a67092335bb582d10106ba4ff"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +90,9 @@
   ],
   "dependencies": [
     "libsndfile"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -103,5 +121,13 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "libsndfile",
+        "e2fsprogs"
+      ]
+    }
+  }
 }

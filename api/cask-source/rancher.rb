@@ -1,13 +1,9 @@
 cask "rancher" do
-  arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+  arch arm: "aarch64", intel: "x86_64"
 
-  version "0.7.1"
-
-  if Hardware::CPU.intel?
-    sha256 "2f2e9c0ee43fb6a3752d9244c32249714e91f638136c54184430e1c217356fe6"
-  else
-    sha256 "76fad627e3bab036904471735b9f5c402eabde6f70a0c8428a77d6ca6ccd803f"
-  end
+  version "1.7.0"
+  sha256 arm:   "41feea152b3dcff8fb729106b195e4dc7632cda669ef7054045f72c595825242",
+         intel: "828dde44868c3c33fe709e099f9af080143a379f9fba2e3bacd8641f5ad8e72b"
 
   url "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v#{version}/Rancher.Desktop-#{version}.#{arch}.dmg",
       verified: "github.com/rancher-sandbox/rancher-desktop/"
@@ -15,34 +11,29 @@ cask "rancher" do
   desc "Kubernetes and container management on the desktop"
   homepage "https://rancherdesktop.io/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   auto_updates true
-  conflicts_with cask:    %w[
-    docker
-  ],
-                 formula: %w[
-                   docker
-                   helm
-                   kubernetes-cli
-                 ]
+  conflicts_with cask: "docker"
 
   app "Rancher Desktop.app"
-  binary "#{appdir}/Rancher Desktop.app/Contents/Resources/resources/darwin/bin/docker"
-  binary "#{appdir}/Rancher Desktop.app/Contents/Resources/resources/darwin/bin/helm"
-  binary "#{appdir}/Rancher Desktop.app/Contents/Resources/resources/darwin/bin/kim"
-  binary "#{appdir}/Rancher Desktop.app/Contents/Resources/resources/darwin/bin/kubectl"
-  binary "#{appdir}/Rancher Desktop.app/Contents/Resources/resources/darwin/bin/nerdctl"
 
   uninstall delete: [
-    "/opt/rancher-desktop",
-    "/private/etc/sudoers.d/rancher-desktop-lima",
-    "/private/var/run/docker.sock",
-    "/private/var/run/rancher-desktop-lima",
-  ],
+              "/opt/rancher-desktop",
+              "/private/etc/sudoers.d/zzzzz-rancher-desktop-lima", # zzzzz is not a typo
+              "/private/var/run/docker.sock",
+              "/private/var/run/rancher-desktop-*",
+            ],
             quit:   "io.rancherdesktop.app"
 
   zap trash: [
     "~/.kuberlr",
+    "~/.rd",
     "~/Library/Application Support/Caches/rancher-desktop-updater",
+    "~/Library/Application Support/Rancher Desktop",
     "~/Library/Application Support/rancher-desktop",
     "~/Library/Caches/io.rancherdesktop.app*",
     "~/Library/Caches/rancher-desktop",

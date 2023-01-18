@@ -1,6 +1,6 @@
 cask "openlp" do
-  version "2.9.3"
-  sha256 "1e9e938a61bd99b5847ae03514eefbd20922d594173102cab288df8a5f02ea10"
+  version "3.0.1"
+  sha256 "ee7a1d1c7f1dd7c0af5db44b424179235e059dbaf1aff64ebb392dcccdc756a0"
 
   url "https://get.openlp.org/#{version}/OpenLP-#{version}.dmg"
   name "OpenLP"
@@ -9,8 +9,7 @@ cask "openlp" do
 
   livecheck do
     url "https://get.openlp.org"
-    strategy :page_match
-    regex(/href=['"]?(\d+(?:\.\d+)*)['"]?/i)
+    regex(/href=['"]?(\d+(?:\.\d+)+)['"]?/i)
   end
 
   app "OpenLP.app"

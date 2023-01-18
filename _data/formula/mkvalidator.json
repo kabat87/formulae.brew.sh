@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/matroska/mkvalidator/mkvalidator-0.6.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f9eaa2138fade7103e6df999425291d2947c5355294239874041471e3aa243f0"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mkvalidator/blobs/sha256:b92708846e9acdc1e65588e3404f835f91ef55c272d2d28e37893b519a30c156",
+          "sha256": "b92708846e9acdc1e65588e3404f835f91ef55c272d2d28e37893b519a30c156"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mkvalidator/blobs/sha256:2d72352ffb6de0c6ce0a925ca48e8e3276a99b4c15e503360a46dfc19f4b12dc",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mkvalidator/blobs/sha256:132951513f0022d9a2f8e0b0f81a5d76668b292873df6d6c67b81c4cd304ac31",
           "sha256": "132951513f0022d9a2f8e0b0f81a5d76668b292873df6d6c67b81c4cd304ac31"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mkvalidator/blobs/sha256:121279d1be5fc110bd686a6c1648ffc7325065140086e57473d96b2a09c5b456",
+          "sha256": "121279d1be5fc110bd686a6c1648ffc7325065140086e57473d96b2a09c5b456"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

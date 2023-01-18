@@ -3,10 +3,10 @@
   "full_token": "paragon-ntfs",
   "tap": "homebrew/cask",
   "name": [
-    "Paragon NTFS for Mac"
+    "Microsoft NTFS for Mac by Paragon Software"
   ],
-  "desc": null,
-  "homepage": "https://www.paragon-software.com/ufsdhome/ntfs-mac/",
+  "desc": "Read/write support for NTFS formatted volumes",
+  "homepage": "https://www.paragon-software.com/home/ntfs-mac/",
   "url": "https://dl.paragon-software.com/demo/ntfsmac15_trial.dmg",
   "appcast": null,
   "version": "15",
@@ -17,27 +17,51 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "kext": "com.paragon-software.filesystems.ntfs",
-      "launchctl": "com.paragon-software.ntfs*",
-      "pkgutil": "com.paragon-software.pkg.ntfs",
-      "quit": "com.paragon-software.ntfs*",
-      "signal": {
-        "KILL": "com.paragon-software.ntfs.notification-agent"
-      }
+      "uninstall": [
+        {
+          "kext": "com.paragon-software.filesystems.ntfs",
+          "launchctl": "com.paragon-software.ntfs*",
+          "pkgutil": "com.paragon-software.pkg.ntfs",
+          "quit": "com.paragon-software.ntfs*",
+          "signal": {
+            "KILL": "com.paragon-software.ntfs.notification-agent"
+          }
+        }
+      ]
     },
     {
-      "path": "FSInstaller.app"
+      "installer": [
+        {
+          "manual": "FSInstaller.app"
+        }
+      ]
     },
     {
-      "trash": "~/Library/Preferences/com.paragon-software.ntfs.fsapp.plist",
-      "signal": {
-      }
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.paragon-software.ntfs.*",
+            "~/Library/Caches/com.paragon-software.ntfs.fsapp",
+            "~/Library/HTTPStorages/com.paragon-software.ntfs.*",
+            "~/Library/Preferences/com.paragon-software.ntfs.*",
+            "~/Library/Saved Application State/com.paragon-software.ntfs.fsapp.savedState",
+            "~/Library/WebKit/com.paragon-software.ntfs.fsapp"
+          ]
+        }
+      ]
     }
   ],
   "caveats": "paragon-ntfs requires a kernel extension to work.\nIf the installation fails, retry after you enable it in:\n  System Preferences → Security & Privacy → General\n\nFor more information, refer to vendor documentation or this Apple Technical Note:\n  https://developer.apple.com/library/content/technotes/tn2459/_index.html\n",
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.12"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

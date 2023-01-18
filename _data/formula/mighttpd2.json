@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://hackage.haskell.org/package/mighttpd2-4.0.2/mighttpd2-4.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1d4dc43b96a3064a8c0b752f71591cb04d769b76e3b922a5ea3529057d530960"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mighttpd2/blobs/sha256:b02f60e5ed8ac8d9265c0660cdbd2d0ef54cc45a6bc2a3e5720f484d3f44c37b",
+          "sha256": "b02f60e5ed8ac8d9265c0660cdbd2d0ef54cc45a6bc2a3e5720f484d3f44c37b"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mighttpd2/blobs/sha256:e432ae1973470224bb1aaf5ae3ef7b70d20be866560f2ec4c0375c1962e7af30",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/mighttpd2/blobs/sha256:3fea445ba4059d1f0babdbf7d2133ae1a6cda242a636285e2fe93a816a6c7e73",
           "sha256": "3fea445ba4059d1f0babdbf7d2133ae1a6cda242a636285e2fe93a816a6c7e73"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mighttpd2/blobs/sha256:b18cfc5ecf3d042427cb214d92d8ba4bac0b99bb871f7fe91265dd00f67c021f",
+          "sha256": "b18cfc5ecf3d042427cb214d92d8ba4bac0b99bb871f7fe91265dd00f67c021f"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
     "ghc"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dse/vtclock/archive/0.0.20161228.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0148411febd672c34e436361f5969371ae5291bdc497c771af403a5ee85a78b4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vtclock/blobs/sha256:25259a2e776866b62ab94a2b3540f212ff1210fb5bb6aa8bc64a979f771053a2",
+          "sha256": "25259a2e776866b62ab94a2b3540f212ff1210fb5bb6aa8bc64a979f771053a2"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vtclock/blobs/sha256:89f35de639c75067c0b64b5df9642a6b08652b8574eb403f2d51038362b7c16e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vtclock/blobs/sha256:7ba3ce880fdedf82e166ed0f7f7a4124c57510680d5c591fd363ac14887618f5",
           "sha256": "7ba3ce880fdedf82e166ed0f7f7a4124c57510680d5c591fd363ac14887618f5"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vtclock/blobs/sha256:a9d0ccf5a02245e652c282d971eaf01115c97a43b176d4f2f4d41656ba013112",
+          "sha256": "a9d0ccf5a02245e652c282d971eaf01115c97a43b176d4f2f4d41656ba013112"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

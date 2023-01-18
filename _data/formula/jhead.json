@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Matthias-Wandel/jhead/archive/3.06.0.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5c5258c3d7a840bf831e22174e4a24cb1de3baf442f7cb73d5ab31b4ae0b0058"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jhead/blobs/sha256:47c50f4a450eba0ecfa6bdcd466d192724697b4a5885181ae98283dd4c79e4c5",
+          "sha256": "47c50f4a450eba0ecfa6bdcd466d192724697b4a5885181ae98283dd4c79e4c5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jhead/blobs/sha256:e473e54dcc077f4b803d1fa3acf390d8d74845f9c01e8316dbccf195844b5738",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/jhead/blobs/sha256:8ba17f494afc0590a876112f9f7f6b00664fbd1ad62ec3a9a21a5941188b9bbe",
           "sha256": "8ba17f494afc0590a876112f9f7f6b00664fbd1ad62ec3a9a21a5941188b9bbe"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/jhead/blobs/sha256:5be3868791c615b094607a955575219af8a7286a04e24b4abef54bb99c1bb44d",
+          "sha256": "5be3868791c615b094607a955575219af8a7286a04e24b4abef54bb99c1bb44d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

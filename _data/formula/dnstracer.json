@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.mavetju.org/download/dnstracer-1.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2ebc08af9693ba2d9fa0628416f2d8319ca1627e41d64553875d605b352afe9c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dnstracer/blobs/sha256:c90d0674735e546310ec3e6052242171258f29faf127138282ea4e396946d737",
+          "sha256": "c90d0674735e546310ec3e6052242171258f29faf127138282ea4e396946d737"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dnstracer/blobs/sha256:07ec9123818d074dcbd378fc46fcf0bf17557f1f4ceccb631aef4669af57373d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dnstracer/blobs/sha256:dc60fdb473c11615a27f62abb5aba5ae0a270c4b3d33001c07668266254c7486",
           "sha256": "dc60fdb473c11615a27f62abb5aba5ae0a270c4b3d33001c07668266254c7486"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dnstracer/blobs/sha256:1e163d7856ec1f1d8a420f080ad6d1593c8c0977c1f3d1c22b9c19728abe4094",
+          "sha256": "1e163d7856ec1f1d8a420f080ad6d1593c8c0977c1f3d1c22b9c19728abe4094"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/dnstracer/blobs/sha256:d90b34cfc2d03af3c80ef6118484ddff05863a0e4d9a7a5db8bcf3801bcb3414",
           "sha256": "d90b34cfc2d03af3c80ef6118484ddff05863a0e4d9a7a5db8bcf3801bcb3414"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/dnstracer/blobs/sha256:13eaef32eb5d1dd11e71adeb6abe9bd43200a219951648d0d4eb707ea935c542",
-          "sha256": "13eaef32eb5d1dd11e71adeb6abe9bd43200a219951648d0d4eb707ea935c542"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dnstracer/blobs/sha256:f5a8f70b7d7d09e10e995f908c4b581a9d3f2ea201719e768e7e65c022f8eb7d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

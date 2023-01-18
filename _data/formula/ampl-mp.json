@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ampl/mp/archive/3.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "587c1a88f4c8f57bef95b58a8586956145417c8039f59b1758365ccc5a309ae9"
     }
   },
   "revision": 3,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ampl-mp/blobs/sha256:0a6ec6b35631a0156e62ed56554b734b7d621ce0933784cf154d09c9d6419a30",
+          "sha256": "0a6ec6b35631a0156e62ed56554b734b7d621ce0933784cf154d09c9d6419a30"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ampl-mp/blobs/sha256:27fdafce7e558441048fe2107a783304a5ebb275fdb1c435f0f30a6135d3bbf5",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/ampl-mp/blobs/sha256:5a666c8f40e7d66e6c065e21abada4c2fbfc5917fed422beb6c14b357e0e41b2",
           "sha256": "5a666c8f40e7d66e6c065e21abada4c2fbfc5917fed422beb6c14b357e0e41b2"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/ampl-mp/blobs/sha256:7f1af712490a2a051c72196a15a17061184b1f0c0c2f29852455fb68c5895a6c",
+          "sha256": "7f1af712490a2a051c72196a15a17061184b1f0c0c2f29852455fb68c5895a6c"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

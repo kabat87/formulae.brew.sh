@@ -10,7 +10,7 @@
 
   ],
   "desc": "Convert Microsoft Reader format eBooks into open format",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "http://www.convertlit.com/",
   "versions": {
     "stable": "1.8",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.convertlit.com/clit18src.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d70a85f5b945104340d56f48ec17bcf544e3bb3c35b1b3d58d230be699e557ba"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/convertlit/blobs/sha256:c6f7298822916f88187c248ccf8c71b485eb397664fc3a84d84ca25f480de3b6",
+          "sha256": "c6f7298822916f88187c248ccf8c71b485eb397664fc3a84d84ca25f480de3b6"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/convertlit/blobs/sha256:487f8eae8213a6480a40b34b11acadb1e948090e3240ab557124c348e76a398c",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/convertlit/blobs/sha256:0ef0e8a30545af331a8acbc7280dfaa41fab75a0bb87a2bf05b84e5ebdc8db2e",
           "sha256": "0ef0e8a30545af331a8acbc7280dfaa41fab75a0bb87a2bf05b84e5ebdc8db2e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/convertlit/blobs/sha256:e5fca5a2bf373b68e302d6b9da7c475c516a33f9819448093af8b47cfdfec175",
+          "sha256": "e5fca5a2bf373b68e302d6b9da7c475c516a33f9819448093af8b47cfdfec175"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/convertlit/blobs/sha256:66b05c2c6371f16620c82b31b507413556b511b859644322c65f4ceea4a83a64",
           "sha256": "66b05c2c6371f16620c82b31b507413556b511b859644322c65f4ceea4a83a64"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/convertlit/blobs/sha256:024a9fdb4b58a3e04c12ec300facbac636b3510f8726726c4be93c60cf272ab1",
-          "sha256": "024a9fdb4b58a3e04c12ec300facbac636b3510f8726726c4be93c60cf272ab1"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/convertlit/blobs/sha256:983bf456c2fed65ab702faeb6ada0265c9cf32f72fbee7fcd967e81f68b49b2f",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "libtommath"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

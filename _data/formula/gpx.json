@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/markwal/GPX/archive/2.6.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0877de07d405e7ced8428caa9dd989ebf90e7bdb7b1c34b85b2d3ee30ed28360"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gpx/blobs/sha256:17010f57abfa7f6ad4f72d6859ddf2953c7032d8bce6e5cf4d83d5d9785e6a33",
+          "sha256": "17010f57abfa7f6ad4f72d6859ddf2953c7032d8bce6e5cf4d83d5d9785e6a33"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gpx/blobs/sha256:6ae5844965495fca29278f5af6319d2adc2f7d0d7c246ec33671def99d25d77d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gpx/blobs/sha256:60d8a577b0d45216452c475ff07e4641aec56c599a491c00409530a8fc5db856",
           "sha256": "60d8a577b0d45216452c475ff07e4641aec56c599a491c00409530a8fc5db856"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gpx/blobs/sha256:44f9dbf09fa8b6816aef12f79fe43f0d377e847fb746aca99d041fd48eaa023a",
+          "sha256": "44f9dbf09fa8b6816aef12f79fe43f0d377e847fb746aca99d041fd48eaa023a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

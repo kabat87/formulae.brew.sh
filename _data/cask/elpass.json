@@ -7,18 +7,32 @@
   ],
   "desc": "Password manager",
   "homepage": "https://elpass.app/",
-  "url": "https://elpass.app/macos/Elpass-1.4.3-425.zip",
+  "url": "https://elpass.app/macos/Elpass-1.5.3-476.zip",
   "appcast": null,
-  "version": "1.4.3,425",
+  "version": "1.5.3,476",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "eb2c9411c10431f2ec1188319e7e951b12f5fa60a2b5c9ba68f2d446d714c98c",
+  "sha256": "c4b5cdbf16ab0f2759cf0c9aa34c15d27b609b886098cc0c8ff5c1d3b466b0aa",
   "artifacts": [
-    [
-      "Elpass.app"
-    ]
+    {
+      "app": [
+        "Elpass.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/app.elpass.macos",
+            "~/Library/Caches/app.elpass.macos",
+            "~/Library/Group Containers/YCKFLA6N72.app.elpass.macos.group",
+            "~/Library/Preferences/app.elpass.macos.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -30,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

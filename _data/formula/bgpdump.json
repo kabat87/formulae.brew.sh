@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/RIPE-NCC/bgpdump/archive/v1.6.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "415692c173a84c48b1e927a6423a4f8fd3e6359bc3008c06b7702fe143a76223"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bgpdump/blobs/sha256:7d108fc2cd142cecb17da960a4ec7db84bd63178879596c9f9811ce7caf6f015",
+          "sha256": "7d108fc2cd142cecb17da960a4ec7db84bd63178879596c9f9811ce7caf6f015"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bgpdump/blobs/sha256:d4fe975c315b68318f0c63ff6b0d4ab3d9c6477fde81f6a4feed97ebe0fc39e4",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/bgpdump/blobs/sha256:547aa3e0a48f992ab4475b4f4b9203d46700fbde8588528382a7fc730157235c",
           "sha256": "547aa3e0a48f992ab4475b4f4b9203d46700fbde8588528382a7fc730157235c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bgpdump/blobs/sha256:ae7e665b60cb17e22cd9a145c59f8e5fb1e847892376fe8a621249b67e5786b9",
+          "sha256": "ae7e665b60cb17e22cd9a145c59f8e5fb1e847892376fe8a621249b67e5786b9"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "autoconf"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -10,23 +10,27 @@
   "homepage": "https://miro.com/",
   "url": "https://desktop.miro.com/platforms/darwin/Miro.dmg",
   "appcast": null,
-  "version": "0.7.1",
+  "version": "0.7.24",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Miro.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.electron.realtimeboard.plist",
-        "~/Library/Saved Application State/com.electron.realtimeboard.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Miro.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.electron.realtimeboard.plist",
+            "~/Library/Saved Application State/com.electron.realtimeboard.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,16 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://desktop.miro.com/platforms/darwin-arm64/Miro.dmg"
+    },
+    "arm64_monterey": {
+      "url": "https://desktop.miro.com/platforms/darwin-arm64/Miro.dmg"
+    },
+    "arm64_big_sur": {
+      "url": "https://desktop.miro.com/platforms/darwin-arm64/Miro.dmg"
+    }
+  }
 }

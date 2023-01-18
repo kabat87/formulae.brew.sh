@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/fragglet/lhasa/archive/v0.3.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ad76d763c7e91f47fde455a1baef4bfb0d1debba424039eabe0140fa8f115c5e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lhasa/blobs/sha256:081d94270fecc01d95be42d6c9a23e81ea8130c8d82f5b9496cd415eb94621ee",
+          "sha256": "081d94270fecc01d95be42d6c9a23e81ea8130c8d82f5b9496cd415eb94621ee"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lhasa/blobs/sha256:f2584155441658b209d336823dd3428b4da20896e6c478d34ef6870cef4b4c74",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/lhasa/blobs/sha256:90f888591f8bbbbc49b3616dfc43287474a510517cc1222488ac8a707f9968b8",
           "sha256": "90f888591f8bbbbc49b3616dfc43287474a510517cc1222488ac8a707f9968b8"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lhasa/blobs/sha256:1e6e2c4243ead9c658f121e0f2a8e8212bdd2a0a3310cb7615c550c49eac22ca",
+          "sha256": "1e6e2c4243ead9c658f121e0f2a8e8212bdd2a0a3310cb7615c550c49eac22ca"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/lhasa/blobs/sha256:0d407f1058853c656a4aef717c1e72ff57472e0622fb344a5ef57c4c9ad8c3ee",
           "sha256": "0d407f1058853c656a4aef717c1e72ff57472e0622fb344a5ef57c4c9ad8c3ee"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lhasa/blobs/sha256:afd0b2c24f4e4103c6ab8e918a972fda1b614890fc527bf314cc253e199013ee",
-          "sha256": "afd0b2c24f4e4103c6ab8e918a972fda1b614890fc527bf314cc253e199013ee"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/lhasa/blobs/sha256:6ea5cc36df44bf7e1b604f93003609cc3386172cad0875f3516435505c574839",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -102,6 +107,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -131,5 +139,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

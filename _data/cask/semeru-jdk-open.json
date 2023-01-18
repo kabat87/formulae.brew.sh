@@ -7,26 +7,88 @@
   ],
   "desc": "Production-ready JDK with the OpenJDK class libraries and the Eclipse OpenJ9 JVM",
   "homepage": "https://developer.ibm.com/languages/java/semeru-runtimes",
-  "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1+12_openj9-0.29.1/ibm-semeru-open-jdk_x64_mac_17.0.1_12_openj9-0.29.1.pkg",
+  "url": "https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2+9_openj9-0.33.1/ibm-semeru-open-jdk_x64_mac_18.0.2_9_openj9-0.33.1.pkg",
   "appcast": null,
-  "version": "17.0.1+12,openj9-0.29.1",
+  "version": "18.0.2+9,openj9-0.33.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3ad24cb042713fc3a448a4e113322436906cd2e27e4eb745aedcd3139183cd40",
+  "sha256": "9cc0bd4f66b68631ff43fed90fd05867bf3c69ab3d78daa6de3f77f6d6f99645",
   "artifacts": [
     {
-      "pkgutil": "net.ibm-semeru-open.17.jdk",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "net.ibm-semeru-open.18.jdk"
+        }
+      ]
     },
-    "ibm-semeru-open-jdk_x64_mac_17.0.1_12_openj9-0.29.1.pkg (Pkg)"
+    {
+      "pkg": [
+        "ibm-semeru-open-jdk_x64_mac_18.0.2_9_openj9-0.33.1.pkg"
+      ]
+    }
   ],
-  "caveats": null,
+  "caveats": "semeru-jdk-open has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2+9_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_mac_18.0.2_9_openj9-0.33.1.pkg",
+      "sha256": "b6dd0bca76fb3d606fdc2ad1dc75612354c4c515262e8450c326944a41be11d6",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "net.ibm-semeru-open.18.jdk"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "ibm-semeru-open-jdk_aarch64_mac_18.0.2_9_openj9-0.33.1.pkg"
+          ]
+        }
+      ]
+    },
+    "arm64_monterey": {
+      "url": "https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2+9_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_mac_18.0.2_9_openj9-0.33.1.pkg",
+      "sha256": "b6dd0bca76fb3d606fdc2ad1dc75612354c4c515262e8450c326944a41be11d6",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "net.ibm-semeru-open.18.jdk"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "ibm-semeru-open-jdk_aarch64_mac_18.0.2_9_openj9-0.33.1.pkg"
+          ]
+        }
+      ]
+    },
+    "arm64_big_sur": {
+      "url": "https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2+9_openj9-0.33.1/ibm-semeru-open-jdk_aarch64_mac_18.0.2_9_openj9-0.33.1.pkg",
+      "sha256": "b6dd0bca76fb3d606fdc2ad1dc75612354c4c515262e8450c326944a41be11d6",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "net.ibm-semeru-open.18.jdk"
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "ibm-semeru-open-jdk_aarch64_mac_18.0.2_9_openj9-0.33.1.pkg"
+          ]
+        }
+      ]
+    }
+  }
 }

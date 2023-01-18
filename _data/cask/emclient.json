@@ -7,31 +7,40 @@
   ],
   "desc": "Email client",
   "homepage": "https://www.emclient.com/",
-  "url": "https://cdn-dist.emclient.com/dist/v8.2.1687_Mac/setup.pkg",
+  "url": "https://cdn-dist.emclient.com/dist/v9.2.1222_Mac/setup.pkg",
   "appcast": null,
-  "version": "8.2.1687",
+  "version": "9.2.1222",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "3d2fe06dc75014d8f2c91eb8d7a9c0947b0abae94aa89e2da8a7bef7fdc65ae6",
+  "sha256": "60c820628bd5e29312c84997aa4c79132c1338f881086d743508191314ff2d8d",
   "artifacts": [
     {
-      "pkgutil": "com.emclient.mail.client.pkg",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/eM Client.app",
+          "pkgutil": "com.emclient.mail.client.pkg"
+        }
+      ]
     },
-    "setup.pkg (Pkg)",
     {
-      "trash": [
-        "~/Library/Caches/com.emclient.mail.client",
-        "~/Library/Preferences/com.emclient.mail.client.plist",
-        "~/Library/Preferences/com.emclient.mail.repair.plist",
-        "~/Library/Preferences/com.emclient.mail.shared.plist",
-        "~/Library/Saved Application State/com.emclient.mail.client.savedState"
-      ],
-      "signal": {
-      }
+      "pkg": [
+        "setup.pkg"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.emclient.mail.client",
+            "~/Library/Preferences/com.emclient.mail.client.plist",
+            "~/Library/Preferences/com.emclient.mail.repair.plist",
+            "~/Library/Preferences/com.emclient.mail.shared.plist",
+            "~/Library/Saved Application State/com.emclient.mail.client.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

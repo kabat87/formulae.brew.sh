@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://uriparser.github.io/",
   "versions": {
-    "stable": "0.9.6",
+    "stable": "0.9.7",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.6/uriparser-0.9.6.tar.bz2",
+      "url": "https://github.com/uriparser/uriparser/releases/download/uriparser-0.9.7/uriparser-0.9.7.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d27dea0c8b6f6fb9798f07caedef1cd96a6e3fc5c6189596774e19afa7ddded7"
     }
   },
   "revision": 0,
@@ -31,42 +32,51 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:e49771d86df067a567d44348b7c3778381346cccf8770fec3f47ea8b98257928",
+          "sha256": "e49771d86df067a567d44348b7c3778381346cccf8770fec3f47ea8b98257928"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:3f134b815c73529b29e59b870500d5b66f3643a3f77d26f0ae160d02114713c0",
-          "sha256": "3f134b815c73529b29e59b870500d5b66f3643a3f77d26f0ae160d02114713c0"
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:c246c0448bc8325163156ffc6f2978da545bb42724ba9cb9b17038292d1797e1",
+          "sha256": "c246c0448bc8325163156ffc6f2978da545bb42724ba9cb9b17038292d1797e1"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:e873b79a8af0b5331dcd4e51af7d4f52c88e6bf638b842f89cfeafa6606a6d1e",
-          "sha256": "e873b79a8af0b5331dcd4e51af7d4f52c88e6bf638b842f89cfeafa6606a6d1e"
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:5a8a8595cee32186f8e6d180a183ffc63a0d105563b7ec3a32b5ba2fb95e8562",
+          "sha256": "5a8a8595cee32186f8e6d180a183ffc63a0d105563b7ec3a32b5ba2fb95e8562"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:4a9e68259e098e8b50c4d4f0c9966ec995803435138298e540e52b24a400c580",
+          "sha256": "4a9e68259e098e8b50c4d4f0c9966ec995803435138298e540e52b24a400c580"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:ed815b10b6d13b85d1dcc744bdb27c619d7cea1065e0b225587fb15f530feaf2",
-          "sha256": "ed815b10b6d13b85d1dcc744bdb27c619d7cea1065e0b225587fb15f530feaf2"
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:24922aed78fc01f1b93cec54a5d7590689439128d18498131a327895bed353b0",
+          "sha256": "24922aed78fc01f1b93cec54a5d7590689439128d18498131a327895bed353b0"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:2e8ad9cd04d73bb1be69799562415023d2d5b3010e0cf1a5d3196ca5695912f8",
-          "sha256": "2e8ad9cd04d73bb1be69799562415023d2d5b3010e0cf1a5d3196ca5695912f8"
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:71253e72c359702d184f83b86c9d1e8c0acd123e37e9c86fdc783e79d81149b3",
+          "sha256": "71253e72c359702d184f83b86c9d1e8c0acd123e37e9c86fdc783e79d81149b3"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:e57fd509a1cf3725b9b95cdc75e387702d876065975e1401f83a634e442a7f92",
-          "sha256": "e57fd509a1cf3725b9b95cdc75e387702d876065975e1401f83a634e442a7f92"
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:ca0d40acafadaf72bcbef19b7e44e3351a3fd0c552e9b066316779bd5b8abc4e",
+          "sha256": "ca0d40acafadaf72bcbef19b7e44e3351a3fd0c552e9b066316779bd5b8abc4e"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:95d5ad1a9ad35dd79d6c7215349715c2f9f53ae1eec02d38506973a92d0706cc",
-          "sha256": "95d5ad1a9ad35dd79d6c7215349715c2f9f53ae1eec02d38506973a92d0706cc"
+          "url": "https://ghcr.io/v2/homebrew/core/uriparser/blobs/sha256:7ef786e370707bf3b8d646737116b723fc11fef8ecf8f2720bf107897c40ba33",
+          "sha256": "7ef786e370707bf3b8d646737116b723fc11fef8ecf8f2720bf107897c40ba33"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -89,7 +102,7 @@
 
   ],
   "conflicts_with": [
-    "libkml"
+
   ],
   "caveats": null,
   "installed": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

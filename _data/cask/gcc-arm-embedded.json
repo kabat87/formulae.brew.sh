@@ -6,124 +6,729 @@
     "GCC ARM Embedded"
   ],
   "desc": "Pre-built GNU bare-metal toolchain for 32-bit Arm processors",
-  "homepage": "https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm",
-  "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-mac.pkg",
+  "homepage": "https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain",
+  "url": "https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-darwin-x86_64-arm-none-eabi.pkg",
   "appcast": null,
-  "version": "10.3-2021.10",
+  "version": "12.2.rel1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e3888a1d0af798be7f98d67a3e6dc4fc96d92d5b57fc635e0c021a4a36087b5d",
+  "sha256": "318df42eca9231e4dd69591181f925307f0cfbb83c878152d8a2b735f275193c",
   "artifacts": [
     {
-      "pkgutil": "gcc.arm-none-eabi-10",
-      "delete": "/Applications/ARM",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "arm-gnu-toolchain-12.2.rel1-darwin-x86_64-arm-none-eabi",
+          "delete": "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi",
+          "rmdir": [
+            "/Applications/ArmGNUToolchain/12.2.rel1",
+            "/Applications/ArmGNUToolchain"
+          ]
+        }
+      ]
     },
-    "gcc-arm-none-eabi-10.3-2021.10-mac.pkg (Pkg)",
-    [
-      "/Applications/ARM/bin/arm-none-eabi-addr2line"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-as"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-c++"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-c++filt"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-cpp"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-elfedit"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-g++"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcc"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcc-10.3.1"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcc-ar"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcc-nm"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcc-ranlib"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcov"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcov-dump"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gcov-tool"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gdb"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gdb-add-index"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gdb-add-index-py"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gdb-py"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-gprof"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-ld"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-ld.bfd"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-lto-dump"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-nm"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-objcopy"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-objdump"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-ranlib"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-readelf"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-size"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-strings"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-strip"
-    ],
-    [
-      "/Applications/ARM/bin/arm-none-eabi-ar"
-    ]
+    {
+      "pkg": [
+        "arm-gnu-toolchain-12.2.rel1-darwin-x86_64-arm-none-eabi.pkg"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-addr2line"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-as"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++filt"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-cpp"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-elfedit"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-g++"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-12.2.1"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ar"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-nm"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-dump"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-tool"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb-add-index"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gfortran"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gprof"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld.bfd"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-lto-dump"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-nm"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objcopy"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objdump"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ranlib"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-readelf"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-size"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strings"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strip"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ar"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi.pkg",
+      "sha256": "224aa516be8329cdc5a65c4649b27fcb9d0e929aec096eeecd9cefc45dafe61e",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi",
+              "delete": "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi",
+              "rmdir": [
+                "/Applications/ArmGNUToolchain/12.2.rel1",
+                "/Applications/ArmGNUToolchain"
+              ]
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi.pkg"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-addr2line"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-as"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++filt"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-cpp"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-elfedit"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-g++"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-12.2.1"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ar"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-nm"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-dump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-tool"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb-add-index"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gfortran"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gprof"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld.bfd"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-lto-dump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-nm"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objcopy"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objdump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ranlib"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-readelf"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-size"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strings"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strip"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ar"
+          ]
+        }
+      ]
+    },
+    "arm64_monterey": {
+      "url": "https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi.pkg",
+      "sha256": "224aa516be8329cdc5a65c4649b27fcb9d0e929aec096eeecd9cefc45dafe61e",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi",
+              "delete": "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi",
+              "rmdir": [
+                "/Applications/ArmGNUToolchain/12.2.rel1",
+                "/Applications/ArmGNUToolchain"
+              ]
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi.pkg"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-addr2line"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-as"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++filt"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-cpp"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-elfedit"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-g++"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-12.2.1"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ar"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-nm"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-dump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-tool"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb-add-index"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gfortran"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gprof"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld.bfd"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-lto-dump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-nm"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objcopy"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objdump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ranlib"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-readelf"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-size"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strings"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strip"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ar"
+          ]
+        }
+      ]
+    },
+    "arm64_big_sur": {
+      "url": "https://developer.arm.com/-/media/Files/downloads/gnu/12.2.rel1/binrel/arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi.pkg",
+      "sha256": "224aa516be8329cdc5a65c4649b27fcb9d0e929aec096eeecd9cefc45dafe61e",
+      "artifacts": [
+        {
+          "uninstall": [
+            {
+              "pkgutil": "arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi",
+              "delete": "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi",
+              "rmdir": [
+                "/Applications/ArmGNUToolchain/12.2.rel1",
+                "/Applications/ArmGNUToolchain"
+              ]
+            }
+          ]
+        },
+        {
+          "pkg": [
+            "arm-gnu-toolchain-12.2.rel1-darwin-arm64-arm-none-eabi.pkg"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-addr2line"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-as"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-c++filt"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-cpp"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-elfedit"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-g++"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-12.2.1"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ar"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-nm"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc-ranlib"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-dump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcov-tool"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gdb-add-index"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gfortran"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-gprof"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ld.bfd"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-lto-dump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-nm"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objcopy"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-objdump"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ranlib"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-readelf"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-size"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strings"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-strip"
+          ]
+        },
+        {
+          "binary": [
+            "/Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/arm-none-eabi-ar"
+          ]
+        }
+      ]
+    }
+  }
 }

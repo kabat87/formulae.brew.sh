@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://kiyuko.org/software/cattle/releases/cattle-1.4.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9ba2d746f940978b5bfc6c39570dde7dc55d5b4d09d0d25f29252d6a25fb562f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cattle/blobs/sha256:dbe7b8b3f8f215b8d73218e64e6f884b248da90095f2dc6ea8f73abf3db72f79",
+          "sha256": "dbe7b8b3f8f215b8d73218e64e6f884b248da90095f2dc6ea8f73abf3db72f79"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cattle/blobs/sha256:a8cfe837a78af532853dc6fefce95c2b11212e287640a3b527ca6e30a99e8edb",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/cattle/blobs/sha256:30cc03818912570ba2f48545b53a8217d2f8d0883e0308b55825d59aba1e342d",
           "sha256": "30cc03818912570ba2f48545b53a8217d2f8d0883e0308b55825d59aba1e342d"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/cattle/blobs/sha256:3ea680e66032aa529230bab1e7f3d63fe1fa49febb51b6f5629c09370bfff182",
+          "sha256": "3ea680e66032aa529230bab1e7f3d63fe1fa49febb51b6f5629c09370bfff182"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
   ],
   "dependencies": [
     "glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

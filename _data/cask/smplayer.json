@@ -7,25 +7,29 @@
   ],
   "desc": "Media player with built-in codecs",
   "homepage": "https://www.smplayer.info/",
-  "url": "https://github.com/smplayer-dev/smplayer/releases/download/v21.10.0/smplayer-21.10.0.dmg",
+  "url": "https://github.com/smplayer-dev/smplayer/releases/download/v22.7.0/smplayer-22.7.0.dmg",
   "appcast": null,
-  "version": "21.10.0",
+  "version": "22.7.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "50e196d533565e161b2b543ce157489bc0d91bb364cc4e599408f8dfb7247a13",
+  "sha256": "f85905d155725fe2a3f642f09c67a95d4cb90f10e4d113a40451a6f5bb0ce88e",
   "artifacts": [
-    [
-      "SMPlayer.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/info.smplayer.SMPlayer.plist",
-        "~/Library/Saved Application State/info.smplayer.SMPlayer.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "SMPlayer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/info.smplayer.SMPlayer.plist",
+            "~/Library/Saved Application State/info.smplayer.SMPlayer.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

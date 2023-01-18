@@ -3,34 +3,34 @@
   "full_token": "youdaonote",
   "tap": "homebrew/cask",
   "name": [
-    "YoudaoNote",
+    "youdaonote",
     "有道云笔记"
   ],
   "desc": "Multi-platform note application",
   "homepage": "https://note.youdao.com/",
-  "url": "https://download.ydstatic.com/notewebsite/downloads/YoudaoNote.dmg",
+  "url": "https://artifact.lx.netease.com/download/ynote-electron/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0-7.2.1.zip",
   "appcast": null,
-  "version": "3.6.3",
+  "version": "7.2.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "no_check",
+  "sha256": "ca10a4efa806c3c06d03e0ada76f198447c74ab34d41183a3ce075d16ce0a723",
   "artifacts": [
-    [
-      "YoudaoNote.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.crashlytics.data/com.youdao.YoudaoDict",
-        "~/Library/Caches/com.youdao.YoudaoDict",
-        "~/Library/Caches/io.fabric.sdk.mac.data/com.youdao.YoudaoDict",
-        "~/Library/Containers/com.youdao.note.YoudaoNoteMac",
-        "~/Library/Saved Application State/com.youdao.YoudaoDict.savedState",
-        "~/Library/com.youdao.YoudaoDict"
-      ],
-      "signal": {
-      }
+      "app": [
+        "有道云笔记.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Containers/com.youdao.note.YoudaoNoteMac",
+            "~/Library/Saved Application State/com.youdao.YoudaoDict.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

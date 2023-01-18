@@ -7,28 +7,32 @@
   ],
   "desc": "Statistical analysis application",
   "homepage": "https://jasp-stats.org/",
-  "url": "https://static.jasp-stats.org/JASP-0.16.0.0.dmg",
+  "url": "https://static.jasp-stats.org/JASP-0.16.4.0-macOS-x86_64.dmg",
   "appcast": null,
-  "version": "0.16.0.0",
+  "version": "0.16.4.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "294e23665726fe4779da16259d46eb61ad6249a7d29e40ec0ebd1230c45bd211",
+  "sha256": "a6d8850a32a4ca859369591417db721e6f2017469074e6fd3ba0c53380cf1c0d",
   "artifacts": [
-    [
-      "JASP.app"
-    ],
     {
-      "trash": [
-        "~/.JASP",
-        "~/Library/Application Support/JASP",
-        "~/Library/Caches/JASP",
-        "~/Library/Preferences/org.jasp-stats.JASP.plist",
-        "~/Library/Saved Application State/org.jasp-stats.jasp.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "JASP.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/.JASP",
+            "~/Library/Application Support/JASP",
+            "~/Library/Caches/JASP",
+            "~/Library/Preferences/org.jasp-stats.JASP.plist",
+            "~/Library/Saved Application State/org.jasp-stats.jasp.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

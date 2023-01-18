@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://web.archive.org/web/20200323100335/members.home.nl/p.a.rombouts/pdnsd/releases/pdnsd-1.2.9a-par.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bb5835d0caa8c4b31679d6fd6a1a090b71bdf70950db3b1d0cea9cf9cb7e2a7b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/pdnsd/blobs/sha256:3319b3306f0a2561742e6f9cf3fe9fc826586ac3d9f2cb039df3f173bde01348",
+          "sha256": "3319b3306f0a2561742e6f9cf3fe9fc826586ac3d9f2cb039df3f173bde01348"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/pdnsd/blobs/sha256:3ea74a916606066431810d0b959ca508cb0fd6cb27c2902495db6e9cf6e1e30d",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/pdnsd/blobs/sha256:2a39399ddd344c3d38b4052ca914dc99eebd452a9cf323518504c19671e7b2f6",
           "sha256": "2a39399ddd344c3d38b4052ca914dc99eebd452a9cf323518504c19671e7b2f6"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/pdnsd/blobs/sha256:2963deb135757a0f82f140f9dadbfe35e8431d83ae1eecf67dd04dea88461012",
+          "sha256": "2963deb135757a0f82f140f9dadbfe35e8431d83ae1eecf67dd04dea88461012"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

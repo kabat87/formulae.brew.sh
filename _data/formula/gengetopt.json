@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.23.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b941aec9011864978dd7fdeb052b1943535824169d2aa2b0e7eae9ab807584ac"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gengetopt/blobs/sha256:65c731183d0fbdec83471189c83b19f7f3617daeabc4845baf8c0243e221d95f",
+          "sha256": "65c731183d0fbdec83471189c83b19f7f3617daeabc4845baf8c0243e221d95f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gengetopt/blobs/sha256:0187835bf0f0b221a2b1bb2bcc454aede83fe8cd15e74ea4bca09c7b7feccb29",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gengetopt/blobs/sha256:0d869a2ffa87824b4e5854df92e2f60f652fe4e5e20d188207bf6171d7d18f84",
           "sha256": "0d869a2ffa87824b4e5854df92e2f60f652fe4e5e20d188207bf6171d7d18f84"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gengetopt/blobs/sha256:8ca8065df65ce3ea45a4335c7c856f3f5718215e1adb5719e06eba9de3c6e80a",
+          "sha256": "8ca8065df65ce3ea45a4335c7c856f3f5718215e1adb5719e06eba9de3c6e80a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +101,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -98,7 +111,7 @@
 
   ],
   "uses_from_macos": [
-    "texinfo"
+
   ],
   "requirements": [
 
@@ -118,5 +131,22 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "arm64_ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "ventura": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    },
+    "x86_64_linux": {
+      "build_dependencies": [
+        "texinfo"
+      ]
+    }
+  }
 }

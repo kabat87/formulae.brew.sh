@@ -7,32 +7,37 @@
   ],
   "desc": "VPN client",
   "homepage": "https://speedify.com/",
-  "url": "https://downloads.speedify.com/speedify.php?platform=osx",
+  "url": "https://downloads.speedify.com/Speedify-12.8.0.9335.dmg",
   "appcast": null,
-  "version": "11.8.0,8872",
+  "version": "12.8.0,9335",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "no_check",
+  "sha256": "d948ae9d6d0a8e4232b8aadbb003ff6e902a85456e6a8e81f3c62a85f645b4d4",
   "artifacts": [
     {
-      "launchctl": [
-        "me.connectify.SMJobBlessHelper",
-        "SpeedifyService",
-        "SwitchboardService"
-      ],
-      "script": "/Applications/Speedify.app/Contents/Resources/uninstall-speedify-service.sh",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "launchctl": [
+            "me.connectify.SMJobBlessHelper",
+            "SpeedifyService",
+            "SwitchboardService"
+          ]
+        }
+      ]
     },
-    [
-      "Speedify.app"
-    ],
     {
-      "trash": "~/Library/Speedify",
-      "signal": {
-      }
+      "app": [
+        "Speedify.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Speedify"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -45,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

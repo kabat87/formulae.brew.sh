@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/twolame/twolame/0.4.0/twolame-0.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cc35424f6019a88c6f52570b63e1baf50f62963a3eac52a03a800bb070d7c87d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/two-lame/blobs/sha256:7ea2224ac3c69dcbbc8a2bced6b9bd1b478effea5ded33806420e70e51f396dd",
+          "sha256": "7ea2224ac3c69dcbbc8a2bced6b9bd1b478effea5ded33806420e70e51f396dd"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/two-lame/blobs/sha256:3b49ddbaac0612e42ffcfa8cda457d5602063d645f124da8c6353f15abc5c9c5",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/two-lame/blobs/sha256:15f7868c873400af4b2f9e566356bfa00217f563d51511120367c4dc75d2867f",
           "sha256": "15f7868c873400af4b2f9e566356bfa00217f563d51511120367c4dc75d2867f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/two-lame/blobs/sha256:5d52f911e18dfde2ae188d42b7f57033c4b246771da3faebd7b276962f6e88e4",
+          "sha256": "5d52f911e18dfde2ae188d42b7f57033c4b246771da3faebd7b276962f6e88e4"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

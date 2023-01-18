@@ -10,7 +10,7 @@
 
   ],
   "desc": "TCP traffic analyzer",
-  "license": null,
+  "license": "BSD-3-Clause",
   "homepage": "https://sourceforge.net/projects/yconalyzer/",
   "versions": {
     "stable": "1.0.4",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/yconalyzer/yconalyzer-1.0.4.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3b2bd33ffa9f6de707c91deeb32d9e9a56c51e232be5002fbed7e7a6373b4d5b"
     }
   },
   "revision": 0,
@@ -31,10 +32,30 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:c4b34ab4323a8d42637c2b41ee0f30f76200bc29070a31db211f36d96e2522e4",
+          "sha256": "c4b34ab4323a8d42637c2b41ee0f30f76200bc29070a31db211f36d96e2522e4"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:cc908152c7c95c1f6849997b3f3ef3ea58dd1f4093b03a6d043ddaf0ed272156",
+          "sha256": "cc908152c7c95c1f6849997b3f3ef3ea58dd1f4093b03a6d043ddaf0ed272156"
+        },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:58d53e3cef900391c6b010c6e5e7a8643630155947068b9755bed061b46c94c7",
           "sha256": "58d53e3cef900391c6b010c6e5e7a8643630155947068b9755bed061b46c94c7"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:91f17d0dc4ebdef21e2905a8f6ba20d465fd42b923904ff7ef86ff65a2f4c335",
+          "sha256": "91f17d0dc4ebdef21e2905a8f6ba20d465fd42b923904ff7ef86ff65a2f4c335"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:b44aa7bbb2dafbe58a1db1f4dfe228fc2cf7719e79f449185577817090d3a1a7",
+          "sha256": "b44aa7bbb2dafbe58a1db1f4dfe228fc2cf7719e79f449185577817090d3a1a7"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
@@ -66,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:918ca6d2bca328923ec3ff6e5612e9a0336aad666e993cfb0d1bc42a99758f1c",
           "sha256": "918ca6d2bca328923ec3ff6e5612e9a0336aad666e993cfb0d1bc42a99758f1c"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:e3e3fcebfdd0d25fbdad33c8f2aa13976c70ab4ff4bb81ed1fbae5cb8a7c2ffd",
-          "sha256": "e3e3fcebfdd0d25fbdad33c8f2aa13976c70ab4ff4bb81ed1fbae5cb8a7c2ffd"
+          "url": "https://ghcr.io/v2/homebrew/core/yconalyzer/blobs/sha256:c416d91d76c10a6331d9703d23597b5e03fb67c97155247cb6e5e3f852f89953",
+          "sha256": "c416d91d76c10a6331d9703d23597b5e03fb67c97155247cb6e5e3f852f89953"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +106,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -93,7 +116,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -113,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

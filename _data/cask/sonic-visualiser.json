@@ -7,27 +7,31 @@
   ],
   "desc": "Visualisation, analysis, and annotation of music audio recordings",
   "homepage": "https://www.sonicvisualiser.org/",
-  "url": "https://github.com/sonic-visualiser/sonic-visualiser/releases/download/sv_v4.4/Sonic.Visualiser-4.4.dmg",
+  "url": "https://github.com/sonic-visualiser/sonic-visualiser/releases/download/sv_v4.5.1/Sonic.Visualiser-4.5.1.dmg",
   "appcast": null,
-  "version": "4.4,2813",
+  "version": "4.5.1,2843",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "07550a124d503139837e809ff06701661749f0de77d43968a9e43494f4ff1bbf",
+  "sha256": "c422f8754430ca727523f8ab4d0f712f1850e92c19e3cf93b1cc15f9ee7092fa",
   "artifacts": [
-    [
-      "Sonic Visualiser.app"
-    ],
     {
-      "trash": [
-        "~/Library/Saved Application State/org.sonicvisualiser.SonicVisualiser.savedState",
-        "~/Library/Preferences/org.sonicvisualiser.Sonic Visualiser.plist",
-        "~/Library/Preferences/org.sonicvisualiser.SonicVisualiser.plist",
-        "~/Library/Application Support/sonic-visualiser/"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Sonic Visualiser.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Saved Application State/org.sonicvisualiser.SonicVisualiser.savedState",
+            "~/Library/Preferences/org.sonicvisualiser.Sonic Visualiser.plist",
+            "~/Library/Preferences/org.sonicvisualiser.SonicVisualiser.plist",
+            "~/Library/Application Support/sonic-visualiser/"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -40,5 +44,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/confluentinc/libserdes.git",
       "tag": "v8.0.0",
-      "revision": "152fad7ddec001e886452726e71f3b6a5c8e8c65"
+      "revision": "152fad7ddec001e886452726e71f3b6a5c8e8c65",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libserdes/blobs/sha256:8121b5492ec3631fb454765e917e234010bb6c0d314b3783062aeeaf00950111",
+          "sha256": "8121b5492ec3631fb454765e917e234010bb6c0d314b3783062aeeaf00950111"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libserdes/blobs/sha256:6496f4d41457a209c42b3221b91be84209a6b1fa25f1be8fba95f1398dbadfb5",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libserdes/blobs/sha256:0c3c3421a41fb3faceaf574465cf7554ee61ddfca287dd669fef6cddbbc56a44",
           "sha256": "0c3c3421a41fb3faceaf574465cf7554ee61ddfca287dd669fef6cddbbc56a44"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libserdes/blobs/sha256:42f216af7be083f8edca4b13888517bece78e4a46d16653ad752e04beb57fdfd",
+          "sha256": "42f216af7be083f8edca4b13888517bece78e4a46d16653ad752e04beb57fdfd"
         },
         "monterey": {
           "cellar": ":any",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +86,9 @@
   "dependencies": [
     "avro-c",
     "jansson"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

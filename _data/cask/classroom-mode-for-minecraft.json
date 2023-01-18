@@ -7,25 +7,29 @@
   ],
   "desc": "Classroom management app for Minecraft Education Edition",
   "homepage": "https://education.minecraft.net/",
-  "url": "https://meedownloads.blob.core.windows.net/retailbuilds/ClassroomMode/mac/Classroom_Mode_1_81.dmg",
+  "url": "https://meedownloads.blob.core.windows.net/retailbuilds/ClassroomMode/mac/Classroom_Mode_1_82.dmg",
   "appcast": null,
-  "version": "1.81",
+  "version": "1.82",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "982eac2c28235d483351760ee17a3a45ca9d8d3f4ada05959e2bda859b0e3538",
+  "sha256": "a0f6fc0ec5729df69e4cce7574b489d55de64b8593789663ccc2558e7c03af38",
   "artifacts": [
-    [
-      "Classroom Mode for Minecraft.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.microsoft.mc-classroommode",
-        "~/Library/WebKit/com.microsoft.mc-classroommode"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Classroom Mode for Minecraft.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.microsoft.mc-classroommode",
+            "~/Library/WebKit/com.microsoft.mc-classroommode"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

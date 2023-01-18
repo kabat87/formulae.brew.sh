@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.lcdf.org/gifsicle/gifsicle-1.93.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "92f67079732bf4c1da087e6ae0905205846e5ac777ba5caa66d12a73aa943447"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gifsicle/blobs/sha256:a217620aa3cf3c906a71e1d4c59e630e50150fa98968a9bf937abc60afb00bd8",
+          "sha256": "a217620aa3cf3c906a71e1d4c59e630e50150fa98968a9bf937abc60afb00bd8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gifsicle/blobs/sha256:1e566d5e1a954201d5adf69c8eceba9c9bb037e8bc84a9fc36afc63b099c5e2e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gifsicle/blobs/sha256:ad499b676a6a5e433964de6303f658838239c09b69e02ce2db62b6c5ffc1a017",
           "sha256": "ad499b676a6a5e433964de6303f658838239c09b69e02ce2db62b6c5ffc1a017"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gifsicle/blobs/sha256:da4a2920c8c761b708e58d9386be92da6a18b57bf9d5215fd0c17e95c7ac98c9",
+          "sha256": "da4a2920c8c761b708e58d9386be92da6a18b57bf9d5215fd0c17e95c7ac98c9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

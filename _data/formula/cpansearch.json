@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/c9s/cpansearch/archive/0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "09e631f361766fcacd608a0f5b3effe7b66b3a9e0970a458d418d58b8f3f2a74"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cpansearch/blobs/sha256:ce6adedeb53580d1436e7359feb68260918d4f336594184851a062b3d227c60a",
+          "sha256": "ce6adedeb53580d1436e7359feb68260918d4f336594184851a062b3d227c60a"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cpansearch/blobs/sha256:1aa72a4b6e9ec453f1fa20b57bf095f7e0446ec066d7718e115c67d87e95fa64",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cpansearch/blobs/sha256:37c73b9a5acde5677d8cb3d423c671eba4f0fae0e01fd057789c20184b033a54",
           "sha256": "37c73b9a5acde5677d8cb3d423c671eba4f0fae0e01fd057789c20184b033a54"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cpansearch/blobs/sha256:83f85b969c1f307e97bb0314b1ea7d88dec993451505abd3470147f5498b4cbf",
+          "sha256": "83f85b969c1f307e97bb0314b1ea7d88dec993451505abd3470147f5498b4cbf"
         },
         "monterey": {
           "cellar": ":any",
@@ -70,13 +81,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/cpansearch/blobs/sha256:6b4545b0455642a3b4f3c92ef480e704742cd06fd6ff64d24f9a5edbb3bc33a7",
           "sha256": "6b4545b0455642a3b4f3c92ef480e704742cd06fd6ff64d24f9a5edbb3bc33a7"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cpansearch/blobs/sha256:e02e86c167f6e624f0e162debd2e330fa4c44cbff65773ee309885a39fbeaa1b",
+          "sha256": "e02e86c167f6e624f0e162debd2e330fa4c44cbff65773ee309885a39fbeaa1b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,7 +100,11 @@
   ],
   "dependencies": [
     "glib",
-    "ncurses"
+    "ncurses",
+    "pcre"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -94,7 +113,7 @@
 
   ],
   "uses_from_macos": [
-
+    "curl"
   ],
   "requirements": [
 
@@ -114,5 +133,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "glib",
+        "ncurses",
+        "curl"
+      ]
+    }
+  }
 }

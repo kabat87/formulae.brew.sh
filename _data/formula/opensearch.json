@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/opensearch-project/OpenSearch",
   "versions": {
-    "stable": "1.2.3",
+    "stable": "2.4.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/opensearch-project/OpenSearch/archive/1.2.3.tar.gz",
+      "url": "https://github.com/opensearch-project/OpenSearch/archive/2.4.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "df87d5aac8b44aa08788394723d8d458b6bc3b0808aa5891bd9797959921c632"
     }
   },
   "revision": 0,
@@ -31,35 +32,57 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:3c4154bac462a7268b8bed4020efc5ebd7718e95fb08cdf3fd832d74a26dc986",
+          "sha256": "3c4154bac462a7268b8bed4020efc5ebd7718e95fb08cdf3fd832d74a26dc986"
+        },
+        "arm64_monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:3c4154bac462a7268b8bed4020efc5ebd7718e95fb08cdf3fd832d74a26dc986",
+          "sha256": "3c4154bac462a7268b8bed4020efc5ebd7718e95fb08cdf3fd832d74a26dc986"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:3c4154bac462a7268b8bed4020efc5ebd7718e95fb08cdf3fd832d74a26dc986",
+          "sha256": "3c4154bac462a7268b8bed4020efc5ebd7718e95fb08cdf3fd832d74a26dc986"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:a87cd8104ceb3efec4741d4a1ee8e333522b43078ff563ef771dee74ea72c25a",
+          "sha256": "a87cd8104ceb3efec4741d4a1ee8e333522b43078ff563ef771dee74ea72c25a"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:a87cd8104ceb3efec4741d4a1ee8e333522b43078ff563ef771dee74ea72c25a",
+          "sha256": "a87cd8104ceb3efec4741d4a1ee8e333522b43078ff563ef771dee74ea72c25a"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:1eaf5b19401ab7a2bb7e9a5545db2bb62ba54d87123ee6a02e22f07355e63019",
-          "sha256": "1eaf5b19401ab7a2bb7e9a5545db2bb62ba54d87123ee6a02e22f07355e63019"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:9d4ab92bf4587f5f16bc68bf3b83136ae24a5937a01aa4fc2f731d7187bd59a8",
-          "sha256": "9d4ab92bf4587f5f16bc68bf3b83136ae24a5937a01aa4fc2f731d7187bd59a8"
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:a87cd8104ceb3efec4741d4a1ee8e333522b43078ff563ef771dee74ea72c25a",
+          "sha256": "a87cd8104ceb3efec4741d4a1ee8e333522b43078ff563ef771dee74ea72c25a"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:011841a7d700b95af06cbc1aaf34a27df80b5970f1055b586e74098f0fcd6556",
-          "sha256": "011841a7d700b95af06cbc1aaf34a27df80b5970f1055b586e74098f0fcd6556"
+          "url": "https://ghcr.io/v2/homebrew/core/opensearch/blobs/sha256:48e31263abd13f372af3414ed7206ff1bb47d70d1cabe33a8470f4a39eefe717",
+          "sha256": "48e31263abd13f372af3414ed7206ff1bb47d70d1cabe33a8470f4a39eefe717"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "gradle@6"
+    "gradle"
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -88,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

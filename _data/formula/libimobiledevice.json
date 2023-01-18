@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/libimobiledevice/libimobiledevice/releases/download/1.3.0/libimobiledevice-1.3.0.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "53f2640c6365cd9f302a6248f531822dc94a6cced3f17128d4479a77bd75b0f6"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libimobiledevice/blobs/sha256:011e027433848f23cd9d96aee9f46531f48f8462bd763fe799e09b36eeaa4851",
+          "sha256": "011e027433848f23cd9d96aee9f46531f48f8462bd763fe799e09b36eeaa4851"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libimobiledevice/blobs/sha256:f3c97e567f59c4a8ab79f8a3d66a32d109fc9a7c22891589b998edb6a4e5ba28",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libimobiledevice/blobs/sha256:41a64c9856f7845bb4c21bba4f42eb55c640301b59c032eb4db416db19ecf97d",
           "sha256": "41a64c9856f7845bb4c21bba4f42eb55c640301b59c032eb4db416db19ecf97d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libimobiledevice/blobs/sha256:3db04118fec82077bd2b1a3e137f3a6a6037aeaa094865fc3d1187d7f795a308",
+          "sha256": "3db04118fec82077bd2b1a3e137f3a6a6037aeaa094865fc3d1187d7f795a308"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -88,6 +98,9 @@
     "libtasn1",
     "libusbmuxd",
     "openssl@1.1"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -116,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

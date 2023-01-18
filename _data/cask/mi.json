@@ -7,25 +7,29 @@
   ],
   "desc": "Text editor",
   "homepage": "https://www.mimikaki.net/",
-  "url": "https://www.mimikaki.net/download/mi3.5.3.dmg",
+  "url": "https://www.mimikaki.net/download/mi3.7.3.dmg",
   "appcast": null,
-  "version": "3.5.3,1035",
+  "version": "3.7.3,1213",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "849603d9dd14d5ad8527b44105dde9e48dc225046da579afcaf21155f86b99b8",
+  "sha256": "386c8ecd8e9788284345ea306440dcc7ba1a6761d424c439c93ccd3f295ee1f9",
   "artifacts": [
-    [
-      "mi.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/net.mimikaki.mi",
-        "~/Library/Preferences/net.mimikaki.mi.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "mi.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/net.mimikaki.mi",
+            "~/Library/Preferences/net.mimikaki.mi.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +41,7 @@
     ]
   },
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

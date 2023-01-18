@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.winfield.demon.nl/linux/antiword-0.37.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8e2c000fcbc6d641b0e6ff95e13c846da3ff31097801e86702124a206888f5ac"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/antiword/blobs/sha256:c4d6bfce24638c2f087af1f8bab031848f27584bbc4497d2b11913d9562a0047",
+          "sha256": "c4d6bfce24638c2f087af1f8bab031848f27584bbc4497d2b11913d9562a0047"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/antiword/blobs/sha256:3d34f162686148d496bee36265f1434f11daf29957de15c4bdce8ba386f90fc9",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/antiword/blobs/sha256:b47c2693abcaa8e3b9bc14a4239b1cd857f66f1fa381009659b7e1bc7f7d52c2",
           "sha256": "b47c2693abcaa8e3b9bc14a4239b1cd857f66f1fa381009659b7e1bc7f7d52c2"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/antiword/blobs/sha256:60dace4917a561e05ff9bcce49bdedab2d1e39b5e5b2bb3c7f81bb4b14c3e2e4",
+          "sha256": "60dace4917a561e05ff9bcce49bdedab2d1e39b5e5b2bb3c7f81bb4b14c3e2e4"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/antiword/blobs/sha256:ffc3b61781ffb2ae04537e34b28a19a4fe33683c534dd2d1504d2ec8d5ef4bef",
           "sha256": "ffc3b61781ffb2ae04537e34b28a19a4fe33683c534dd2d1504d2ec8d5ef4bef"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/antiword/blobs/sha256:1397c95409d671da764658460eba612b2564d4a0403bfffa667510e05f2fb08a",
-          "sha256": "1397c95409d671da764658460eba612b2564d4a0403bfffa667510e05f2fb08a"
-        },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/antiword/blobs/sha256:12935daff8ed3ffc2a68b8be542ea190bff6d7d2a2d46c854080d4023346d526",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

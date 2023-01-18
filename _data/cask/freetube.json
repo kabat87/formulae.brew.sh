@@ -7,26 +7,30 @@
   ],
   "desc": "YouTube player focusing on privacy",
   "homepage": "https://github.com/FreeTubeApp/FreeTube",
-  "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.15.1-beta/freetube-0.15.1-mac.dmg",
+  "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.18.0-beta/freetube-0.18.0-mac-x64.dmg",
   "appcast": null,
-  "version": "0.15.1",
+  "version": "0.18.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "33c663f726be44c5ea570a4545afc3581190ad9d1a37499e931db87639a1b400",
+  "sha256": "28ff5b17fd5e69184e7ab198fb0b196f78a427f52153b3a6164b4d7a9e9a785a",
   "artifacts": [
-    [
-      "FreeTube.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/FreeTube",
-        "~/Library/Preferences/io.freetubeapp.freetube.plist",
-        "~/Library/Saved Application State/io.freetubeapp.freetube.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "FreeTube.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/FreeTube",
+            "~/Library/Preferences/io.freetubeapp.freetube.plist",
+            "~/Library/Saved Application State/io.freetubeapp.freetube.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

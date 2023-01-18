@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.osgeo.org/shapelib/shapelib-1.5.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1fc0a480982caef9e7b9423070b47750ba34cd0ba82668f2e638fab1d07adae1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/shapelib/blobs/sha256:1c693a38da6fa7633ca03d6e2cf5e7bb5d32cf9d606bb1a4592bdccacc3b2456",
+          "sha256": "1c693a38da6fa7633ca03d6e2cf5e7bb5d32cf9d606bb1a4592bdccacc3b2456"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/shapelib/blobs/sha256:26b130368d9849bc2931523dcf1ea7985a88d52acc2709ce570f3503f2ebad44",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/shapelib/blobs/sha256:3f95046988d245291a4fb9973051b5c006500ba3ab0bf2842ae330c18936bdca",
           "sha256": "3f95046988d245291a4fb9973051b5c006500ba3ab0bf2842ae330c18936bdca"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/shapelib/blobs/sha256:07d4c243a8c75a0a26c7f6ec87476d49cb9876e7dc963254181c75c3d54ff2d9",
+          "sha256": "07d4c243a8c75a0a26c7f6ec87476d49cb9876e7dc963254181c75c3d54ff2d9"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +99,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -118,5 +131,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

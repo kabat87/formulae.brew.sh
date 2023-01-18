@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://svn.code.sf.net/p/spimsimulator/code",
       "tag": null,
-      "revision": "749"
+      "revision": "749",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/spim/blobs/sha256:884c825255b5915044db2bb49779018a5439749355b0d42ced7afbf50470b5a5",
+          "sha256": "884c825255b5915044db2bb49779018a5439749355b0d42ced7afbf50470b5a5"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/spim/blobs/sha256:bdc5c60be138784fc2abc92e1f75db7024c81867a53f6f9eeedfbb092f4c6534",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/spim/blobs/sha256:75f374887912346bd6acf5639a0f1b506c99feea75f0d4647ed233310be2f060",
           "sha256": "75f374887912346bd6acf5639a0f1b506c99feea75f0d4647ed233310be2f060"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/spim/blobs/sha256:ef5643eabf9261c32c62cf0c305d2ddb4d5aae0cc5602b5c2f6146185daa3391",
+          "sha256": "ef5643eabf9261c32c62cf0c305d2ddb4d5aae0cc5602b5c2f6146185daa3391"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +85,9 @@
   ],
   "dependencies": [
 
+  ],
+  "test_dependencies": [
+    "subversion"
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

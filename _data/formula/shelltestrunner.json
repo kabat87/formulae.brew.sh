@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://hackage.haskell.org/package/shelltestrunner-1.9/shelltestrunner-1.9.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cbc4358d447e32babe4572cda0d530c648cc4c67805f9f88002999c717feb3a8"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/shelltestrunner/blobs/sha256:3eac3b0a43294eace66fd737fc7aacfc3cc363b1748e53b21cee80897cefc4a5",
+          "sha256": "3eac3b0a43294eace66fd737fc7aacfc3cc363b1748e53b21cee80897cefc4a5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/shelltestrunner/blobs/sha256:6a8727bdd254b5af7101182d68e536f23421e6a08d880c4adf4ac949daed5628",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/shelltestrunner/blobs/sha256:58f03249e05d5808baff4da11f784b37bd818f35c3243855bdc467562526ff76",
           "sha256": "58f03249e05d5808baff4da11f784b37bd818f35c3243855bdc467562526ff76"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/shelltestrunner/blobs/sha256:9e42d023a03505d850b8b9d3bd7b9448d8c9711d604242015053438aedcea9fa",
+          "sha256": "9e42d023a03505d850b8b9d3bd7b9448d8c9711d604242015053438aedcea9fa"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "ghc"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -109,5 +122,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

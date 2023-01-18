@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/devshane/zork/archive/v1.0.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "929871abae9be902d4fb592f2e76e52b58b386d208f127c826ae1d7b7bade9ef"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/zork/blobs/sha256:ec4836e8f767968119feea70913b248475a549d10f9dc78f1777b0cffc78dde7",
+          "sha256": "ec4836e8f767968119feea70913b248475a549d10f9dc78f1777b0cffc78dde7"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/zork/blobs/sha256:506debc59ab6d891ce98da1bfe4c8a6e5604dc9a91cf225ed19fe3027544f3ea",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/zork/blobs/sha256:3f9f282ff618e0a31976bbae0b95e1fabcab2053cef50e2e54bce7877533bbec",
           "sha256": "3f9f282ff618e0a31976bbae0b95e1fabcab2053cef50e2e54bce7877533bbec"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/zork/blobs/sha256:d3bee8f46195e47e19bf1772a6e2bc394f314d1730af2576590a65a24875a10c",
+          "sha256": "d3bee8f46195e47e19bf1772a6e2bc394f314d1730af2576590a65a24875a10c"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

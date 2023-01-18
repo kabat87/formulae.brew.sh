@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.gnome.org/sources/msitools/0.101/msitools-0.101.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0cc4d2e0d108fa6f2b4085b9a97dd5bc6d9fcadecdd933f2094f86bafdbe85fe"
     }
   },
   "revision": 0,
@@ -31,10 +32,25 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/msitools/blobs/sha256:791534790bcc8e23c6def007f18407258258bede405d92375d256068123b0221",
+          "sha256": "791534790bcc8e23c6def007f18407258258bede405d92375d256068123b0221"
+        },
+        "arm64_monterey": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/msitools/blobs/sha256:1738ad06a080d802f991037d76fe78069ba16e601a27ef5a2c71a65463985db0",
+          "sha256": "1738ad06a080d802f991037d76fe78069ba16e601a27ef5a2c71a65463985db0"
+        },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/msitools/blobs/sha256:a8efd95e41c4b40428c1e2c6f2b3abafa76f99781d26c64cbe0ca80f27b8ab06",
           "sha256": "a8efd95e41c4b40428c1e2c6f2b3abafa76f99781d26c64cbe0ca80f27b8ab06"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/msitools/blobs/sha256:a2e1ead4ee47a0ec7f53106a6454e01ac6e82a9e8c5ee069e4d2515c9986a140",
+          "sha256": "a2e1ead4ee47a0ec7f53106a6454e01ac6e82a9e8c5ee069e4d2515c9986a140"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -66,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +98,9 @@
     "glib",
     "libgsf",
     "vala"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +129,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

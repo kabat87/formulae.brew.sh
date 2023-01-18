@@ -19,9 +19,10 @@
   },
   "urls": {
     "stable": {
-      "url": "http://pages.cs.wisc.edu/~plonka/ipv6toolkit/ipv6toolkit-v2.0.tar.gz",
+      "url": "https://pages.cs.wisc.edu/~plonka/ipv6toolkit/ipv6toolkit-v2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "16f13d3e7d17940ff53f028ef0090e4aa3a193a224c97728b07ea6e26a19e987"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ipv6toolkit/blobs/sha256:a1b2e4c72b667645eecf35a6fd6f5a155833a859d0871f8774d1c507cdac5eb1",
+          "sha256": "a1b2e4c72b667645eecf35a6fd6f5a155833a859d0871f8774d1c507cdac5eb1"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ipv6toolkit/blobs/sha256:79ca05285bd1af83adba5abc616a2b991fd65c0255466745b0b3a6815d49b0d2",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ipv6toolkit/blobs/sha256:ee329b82ef00e47b858fe38adc0e0320635c66847c3986dc2e1727fa529173af",
           "sha256": "ee329b82ef00e47b858fe38adc0e0320635c66847c3986dc2e1727fa529173af"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ipv6toolkit/blobs/sha256:9a075376fd95cbbbce662b52d4cb90a67c1a7970fe53cd48a730b9553e431745",
+          "sha256": "9a075376fd95cbbbce662b52d4cb90a67c1a7970fe53cd48a730b9553e431745"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +71,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ipv6toolkit/blobs/sha256:b589fdd1d51db357ecda7452f10ac8daa48266dc4bb52bd6f3b18864e8e8bcbb",
           "sha256": "b589fdd1d51db357ecda7452f10ac8daa48266dc4bb52bd6f3b18864e8e8bcbb"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ipv6toolkit/blobs/sha256:a659a7839c2b43480e498f9fa62a0655ebf3bf3a4c785b1fac682c56d35e788a",
+          "sha256": "a659a7839c2b43480e498f9fa62a0655ebf3bf3a4c785b1fac682c56d35e788a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +91,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -83,7 +101,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libpcap"
   ],
   "requirements": [
 
@@ -103,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

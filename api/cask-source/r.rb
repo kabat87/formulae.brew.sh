@@ -1,20 +1,18 @@
 cask "r" do
-  if MacOS.version <= :yosemite
-    version "3.3.3"
-    sha245 "77d7a145d1f7d5c3f5bd7310ae2beb7349118528d938e519845ce7d205b4c864"
-    url "https://cloud.r-project.org/bin/macosx/R-#{version}.pkg"
-  elsif MacOS.version <= :sierra
+  arch arm: "-arm64"
+  folder = on_arch_conditional arm: "big-sur-arm64/base/", intel: "base/"
+
+  version "4.2.2"
+  sha256 arm:   "a0fa5cdd3d3e14e0420d9605b5bfbad80267d1805c1f5a92672c157337d739c1",
+         intel: "df8db457fcc8aafbe1b084f87ec9fa8763fbcf909f9a252d05c28eb4c2aff0ff"
+
+  url "https://cloud.r-project.org/bin/macosx/#{folder}R-#{version}#{arch}.pkg"
+
+  on_sierra :or_older do
     version "3.6.3.nn"
     sha256 "f2b771e94915af0fe0a6f042bc7a04ebc84fb80cb01aad5b7b0341c4636336dd"
+
     url "https://cloud.r-project.org/bin/macosx/R-#{version}.pkg"
-  elsif Hardware::CPU.intel?
-    version "4.1.2"
-    sha256 "86d169f9d62b2b2ddbf5fde55935fbb96729da5c47d7bf09240228cd23b664e5"
-    url "https://cloud.r-project.org/bin/macosx/base/R-#{version}.pkg"
-  else
-    version "4.1.2"
-    sha256 "247604393ec271cb3e72f42f2ffca9024de1b2d77fcba142c8ab866dc498ba21"
-    url "https://cloud.r-project.org/bin/macosx/big-sur-arm64/base/R-#{version}-arm64.pkg"
   end
 
   name "R"
@@ -22,23 +20,18 @@ cask "r" do
   homepage "https://www.r-project.org/"
 
   livecheck do
-    url "https://cloud.r-project.org/bin/macosx/"
-    strategy :page_match
-    regex(/href=.*?R-(\d+(?:\.\d+)*)\.pkg/i)
+    url "https://cloud.r-project.org/bin/macosx"
+    regex(/href=.*?R[._-]v?(\d+(?:\.\d+)*)\.pkg/i)
   end
 
   depends_on macos: ">= :el_capitan"
 
-  if Hardware::CPU.intel?
-    pkg "R-#{version}.pkg"
-  else
-    pkg "R-#{version}-arm64.pkg"
-  end
+  pkg "R-#{version}#{arch}.pkg"
 
   uninstall pkgutil: [
-    "org.r-project*",
-    "org.R-project*",
-  ],
+              "org.r-project*",
+              "org.R-project*",
+            ],
             delete:  [
               "/Library/Frameworks/R.Framework",
               "/usr/bin/R",

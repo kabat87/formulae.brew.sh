@@ -13,78 +13,85 @@
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/VowpalWabbit/vowpal_wabbit",
   "versions": {
-    "stable": "8.11.0",
+    "stable": "9.6.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/VowpalWabbit/vowpal_wabbit.git",
-      "tag": "8.11.0",
-      "revision": "96ed8316de4391b77f4f29af69f885552a644769"
+      "url": "https://github.com/VowpalWabbit/vowpal_wabbit/archive/9.6.0.tar.gz",
+      "tag": null,
+      "revision": null,
+      "checksum": "dfbbd278472e5e4d61f50d6ab8a2147ee447db2451942d8a4689d1f3bf6e6e1f"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:a93633d4b89c08895d347e376812dbc4949238880295cd9e40b1c7989c6a5679",
+          "sha256": "a93633d4b89c08895d347e376812dbc4949238880295cd9e40b1c7989c6a5679"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:12d34acaa90b6dad0f9424623131ab9cc17afb22ac4ca3c2cfc78cd3bb87f444",
-          "sha256": "12d34acaa90b6dad0f9424623131ab9cc17afb22ac4ca3c2cfc78cd3bb87f444"
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:94844c66dd9e1ad1926f58274857a1fa8cadfc36b8c051a11ab98fb16e1e8740",
+          "sha256": "94844c66dd9e1ad1926f58274857a1fa8cadfc36b8c051a11ab98fb16e1e8740"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:b409d89003bcdf98e7ed731a30ebb197e06f151b75ac4f6f3906572a431eeb1f",
-          "sha256": "b409d89003bcdf98e7ed731a30ebb197e06f151b75ac4f6f3906572a431eeb1f"
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:137e1e3cfaf566104f384a0a73cb77704872e781910ca7e18e24cc8a0f7884bd",
+          "sha256": "137e1e3cfaf566104f384a0a73cb77704872e781910ca7e18e24cc8a0f7884bd"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:d6a3147090bdfa8b895db6b095407cbfbc563b2a0a3fb7fef1c84337bef95c41",
+          "sha256": "d6a3147090bdfa8b895db6b095407cbfbc563b2a0a3fb7fef1c84337bef95c41"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:76f0db5043b1538fd89d46feb993a874859a438d59f2ea9725bc7dc4551fbe10",
-          "sha256": "76f0db5043b1538fd89d46feb993a874859a438d59f2ea9725bc7dc4551fbe10"
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:8c3fbf88dfcaff31b65606de210beb85e8000e13b63156cf1cc8281e3cc97116",
+          "sha256": "8c3fbf88dfcaff31b65606de210beb85e8000e13b63156cf1cc8281e3cc97116"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:aa088ed972a626863ef2535ce3f2929ddaf7d5e64d8a7944cbff8d7d03714804",
-          "sha256": "aa088ed972a626863ef2535ce3f2929ddaf7d5e64d8a7944cbff8d7d03714804"
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:e2f852d4573bfe2584b0d87ce178b2219943ae109633066b8e95dd8ca9a08cac",
+          "sha256": "e2f852d4573bfe2584b0d87ce178b2219943ae109633066b8e95dd8ca9a08cac"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:6340e02d379e0381d079cf8b5c6ae64bce24fbd6d808a0d5ecc0734d08094893",
-          "sha256": "6340e02d379e0381d079cf8b5c6ae64bce24fbd6d808a0d5ecc0734d08094893"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:d9bcb3816f6e0cb53dad0ceb692fcd44c277471f500ea443ef4af25f733e2e48",
-          "sha256": "d9bcb3816f6e0cb53dad0ceb692fcd44c277471f500ea443ef4af25f733e2e48"
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:a5150986c662a1c629d603beb83aa7b0a555d11968f0a93a1a3c35fa6ca8cf0d",
+          "sha256": "a5150986c662a1c629d603beb83aa7b0a555d11968f0a93a1a3c35fa6ca8cf0d"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:c906f6f596bbc7e075ab1e192458dddf0bc5370d315d93e5d7f02aedbd36bbb2",
-          "sha256": "c906f6f596bbc7e075ab1e192458dddf0bc5370d315d93e5d7f02aedbd36bbb2"
+          "url": "https://ghcr.io/v2/homebrew/core/vowpal-wabbit/blobs/sha256:98957d759c485fefbe0489855bbcfcb6e2d18c788bb752fecf66747adf40b780",
+          "sha256": "98957d759c485fefbe0489855bbcfcb6e2d18c788bb752fecf66747adf40b780"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "cmake",
-    "flatbuffers",
     "rapidjson",
     "spdlog"
   ],
   "dependencies": [
     "boost",
-    "fmt",
-    "zlib"
+    "eigen",
+    "fmt"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -93,7 +100,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
 
@@ -113,5 +120,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

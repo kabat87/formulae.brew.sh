@@ -13,15 +13,16 @@
   "license": "MPL-2.0",
   "homepage": "https://www.h2database.com/",
   "versions": {
-    "stable": "2.0.206",
+    "stable": "2.1.214",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/h2database/h2database/releases/download/version-2.0.206/h2-2022-01-04.zip",
+      "url": "https://github.com/h2database/h2database/releases/download/version-2.1.214/h2-2022-06-13.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "34c5ffe2d27ceeff217e5b71aefe964fb3fb6c0e6891551bec4e599df5e78c9b"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/h2/blobs/sha256:7c09d2518e6405b87f379fd7e49fc8ea1838a0911a0968b160628be09acc2a1e",
-          "sha256": "7c09d2518e6405b87f379fd7e49fc8ea1838a0911a0968b160628be09acc2a1e"
+          "url": "https://ghcr.io/v2/homebrew/core/h2/blobs/sha256:fa5d5febd18e101ce73f94cab8a2c41d126dd0acbfd6386de14a85ed0b40671b",
+          "sha256": "fa5d5febd18e101ce73f94cab8a2c41d126dd0acbfd6386de14a85ed0b40671b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

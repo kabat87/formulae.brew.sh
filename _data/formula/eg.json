@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/davep/eg/archive/v1.02.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6b73fff51b5cf82e94cdd60f295a8f80e7bbb059891d4c75d5b1a6f0c5cc7003"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/eg/blobs/sha256:be6bd513bea9e8468a72127b84cb49d0ab0dc1d061c9fa42e799613ebb007357",
+          "sha256": "be6bd513bea9e8468a72127b84cb49d0ab0dc1d061c9fa42e799613ebb007357"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/eg/blobs/sha256:e2612dfd6d458297a3c8b0b405ff7663150c28f5a7665e3b69158d61da5e80be",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/eg/blobs/sha256:0f83d25f62f00b9a2e5170e8c33c1744476a193c54f174c6070d03ac80b18eaa",
           "sha256": "0f83d25f62f00b9a2e5170e8c33c1744476a193c54f174c6070d03ac80b18eaa"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/eg/blobs/sha256:7934ccf9ab53a286897f8bf177884685ab0ea5ca2db8918428643b3bb8f54067",
+          "sha256": "7934ccf9ab53a286897f8bf177884685ab0ea5ca2db8918428643b3bb8f54067"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/eg/blobs/sha256:500a97f229b78ab83b97591d9276f7d9e1e4ce4d392f2530f5c8a9f10543b469",
           "sha256": "500a97f229b78ab83b97591d9276f7d9e1e4ce4d392f2530f5c8a9f10543b469"
         },
-        "yosemite": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/eg/blobs/sha256:65d2bab2a43912dfd487f817724dc7feee3ba3e226c07d0bd78ad22edcea970c",
-          "sha256": "65d2bab2a43912dfd487f817724dc7feee3ba3e226c07d0bd78ad22edcea970c"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/eg/blobs/sha256:b56cf6712f27d8ec7ef757e04232e7d67921566701656a983a4eedcba812843f",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -100,6 +105,9 @@
   ],
   "dependencies": [
     "s-lang"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

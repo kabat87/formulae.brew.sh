@@ -7,25 +7,29 @@
   ],
   "desc": "Free open-source cross-platform bioinformatics software",
   "homepage": "https://ugene.net/",
-  "url": "https://github.com/ugeneunipro/ugene/releases/download/41.0/ugene-41.0-mac-x86-64.dmg",
+  "url": "https://github.com/ugeneunipro/ugene/releases/download/45.1/ugene-45.1-mac-x86-64.dmg",
   "appcast": null,
-  "version": "41.0",
+  "version": "45.1",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "dfaeea2e214a138db6453f8809e652db04ac8fc611a0cfd2f4087fb968a2a8a0",
+  "sha256": "01cc6f7f28d74a1f81a0c0f98909c49a014feba699abacd38e172285976f69e4",
   "artifacts": [
-    [
-      "Unipro UGENE.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.unipro.UGENE.plist",
-        "~/Library/Preferences/net.ugene.ugene.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Unipro UGENE.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.unipro.UGENE.plist",
+            "~/Library/Preferences/net.ugene.ugene.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

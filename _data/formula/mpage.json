@@ -10,7 +10,7 @@
 
   ],
   "desc": "Many to one page printing utility",
-  "license": null,
+  "license": "GPL-2.0-or-later",
   "homepage": "https://mesa.nl/pub/mpage/README",
   "versions": {
     "stable": "2.5.7",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://mesa.nl/pub/mpage/mpage-2.5.7.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "51ab9c4e5fdd37e03c90df6756f30c0b61a34f066cb625f8924feedc4b3ec3fe"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mpage/blobs/sha256:cd01e6be613230f334dc99b55c4dfa89a2007261233079513a91f762b6274604",
+          "sha256": "cd01e6be613230f334dc99b55c4dfa89a2007261233079513a91f762b6274604"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mpage/blobs/sha256:6a83b49a225ea3e7c45f06bcb70fc7c822b07aa80a23f51667e74d1264f6ef03",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/mpage/blobs/sha256:35ecb743e454140d1a0651cf435d5658a295cf7c97940635c71c644fdbe59646",
           "sha256": "35ecb743e454140d1a0651cf435d5658a295cf7c97940635c71c644fdbe59646"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/mpage/blobs/sha256:31b73fe1d79c5ac5904a3a8248a9471da356b0552fd032f1f445768301283edc",
+          "sha256": "31b73fe1d79c5ac5904a3a8248a9471da356b0552fd032f1f445768301283edc"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

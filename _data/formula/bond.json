@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://github.com/microsoft/bond",
   "versions": {
-    "stable": "9.0.5",
+    "stable": "10.0.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/microsoft/bond/archive/9.0.5.tar.gz",
+      "url": "https://github.com/microsoft/bond/archive/10.0.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "87858b597a1da74421974d5c3cf3a9ea56339643b19b48274d44b13bc9483f29"
     }
   },
   "revision": 0,
@@ -31,32 +32,36 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:1b43d85e0b9f6b61893d0c53a2e6609ae47b848cbc0d9edb5b16a8ce8c17d9c0",
+          "sha256": "1b43d85e0b9f6b61893d0c53a2e6609ae47b848cbc0d9edb5b16a8ce8c17d9c0"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:7c8b0675dd3148dee7a8cf6fd0a73fb870e1979a9a2121af9bd8486e3cc12f78",
+          "sha256": "7c8b0675dd3148dee7a8cf6fd0a73fb870e1979a9a2121af9bd8486e3cc12f78"
+        },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:9cc49b023fbd14c296f04cd5ae537bf6098f9b09025812a350a99a72bed00fea",
-          "sha256": "9cc49b023fbd14c296f04cd5ae537bf6098f9b09025812a350a99a72bed00fea"
+          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:31b834df421932bba76bc64d08b6a6900d6c05205c87e4f3d8c4e4218c3a953e",
+          "sha256": "31b834df421932bba76bc64d08b6a6900d6c05205c87e4f3d8c4e4218c3a953e"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:5d78ce28f6865648b61de0d5fc449c13e6ebc3093209efe781073d560b1b29b7",
-          "sha256": "5d78ce28f6865648b61de0d5fc449c13e6ebc3093209efe781073d560b1b29b7"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:54718f979d4ee63570fe76d4d96682f1c169791c3e1b91fc32471aee3bcccd0e",
-          "sha256": "54718f979d4ee63570fe76d4d96682f1c169791c3e1b91fc32471aee3bcccd0e"
+          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:d20864dea9b364962c2025a463ca19cc1136a633df86ff5d1f59b44ae9262f38",
+          "sha256": "d20864dea9b364962c2025a463ca19cc1136a633df86ff5d1f59b44ae9262f38"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:6580ebb4d4dad6e1c0d77ea8799b5fb106f315664f27c4bad881fa3c6f667e6d",
-          "sha256": "6580ebb4d4dad6e1c0d77ea8799b5fb106f315664f27c4bad881fa3c6f667e6d"
+          "url": "https://ghcr.io/v2/homebrew/core/bond/blobs/sha256:c5c047bff8729f94818174f40051191e242ccd8383553b30b18e0bc598847126",
+          "sha256": "c5c047bff8729f94818174f40051191e242ccd8383553b30b18e0bc598847126"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,6 +74,9 @@
     "boost",
     "rapidjson"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -76,10 +84,20 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "xz": "build"
+    }
   ],
   "requirements": [
+    {
+      "name": "arch",
+      "cask": null,
+      "download": null,
+      "version": "x86_64",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -91,10 +109,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-12-10",
+  "deprecation_reason": "depends on GHC 8.6 to build",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

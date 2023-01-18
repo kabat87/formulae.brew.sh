@@ -7,37 +7,48 @@
   ],
   "desc": "RSS and Atom reader",
   "homepage": "https://www.vienna-rss.com/",
-  "url": "https://github.com/ViennaRSS/vienna-rss/releases/download/v%2F3.7.2/Vienna3.7.2.tar.gz",
+  "url": "https://downloads.sourceforge.net/vienna-rss/v_3.8.4/Vienna3.8.4.tgz",
   "appcast": null,
-  "version": "3.7.2,7555",
+  "version": "3.8.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "168b5df56b7f53fb877717c3a06d7451d0cdab767fe0ad7afa950da1d0bfa573",
+  "sha256": "b3e06a80f0eb7377f278fb562c7b14779a99790522bc1ea6ac3203dd09433aca",
   "artifacts": [
-    [
-      "Vienna.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Vienna",
-        "~/Library/Application Scripts/uk.co.opencommunity.vienna2",
-        "~/Library/Caches/uk.co.opencommunity.vienna2",
-        "~/Library/Cookies/uk.co.opencommunity.vienna2.binarycookies",
-        "~/Library/HTTPStorages/uk.co.opencommunity.vienna2.binarycookies",
-        "~/Library/Preferences/uk.co.opencommunity.vienna2.plist",
-        "~/Library/Saved Application State/uk.co.opencommunity.vienna2.savedState",
-        "~/Library/Scripts/Vienna"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Vienna.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/uk.co.opencommunity.vienna2",
+            "~/Library/Application Support/Vienna",
+            "~/Library/Caches/uk.co.opencommunity.vienna2",
+            "~/Library/Cookies/uk.co.opencommunity.vienna2.binarycookies",
+            "~/Library/HTTPStorages/uk.co.opencommunity.vienna2.binarycookies",
+            "~/Library/Preferences/uk.co.opencommunity.vienna2.plist",
+            "~/Library/Saved Application State/uk.co.opencommunity.vienna2.savedState",
+            "~/Library/Scripts/Vienna"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
+    "macos": {
+      ">=": [
+        "10.12"
+      ]
+    }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

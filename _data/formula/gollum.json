@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/trivago/gollum/archive/0.6.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2d9e7539342ccf5dabb272bbba8223d279a256c0901e4a27d858488dd4343c49"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gollum/blobs/sha256:460291bccda886ab089032e4df6c5a289bfe1a0355fb81b10b1143200e306be6",
+          "sha256": "460291bccda886ab089032e4df6c5a289bfe1a0355fb81b10b1143200e306be6"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gollum/blobs/sha256:ac1e8bf4e7ddbe753112b22cf9544bbc3f1f831c8878a16c9992c194c7e35fd5",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/gollum/blobs/sha256:1ee4392902517d8c01ccefd711b89658420b8ab2727473538db2c8781e3ece6f",
           "sha256": "1ee4392902517d8c01ccefd711b89658420b8ab2727473538db2c8781e3ece6f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/gollum/blobs/sha256:201d868caa5e4eaf9ee8b0094496ea4deec2ac6fe2c6a1589baf695ebbb7be70",
+          "sha256": "201d868caa5e4eaf9ee8b0094496ea4deec2ac6fe2c6a1589baf695ebbb7be70"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/mad/libmad/0.15.1b/libmad-0.15.1b.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bbfac3ed6bfbc2823d3775ebb931087371e142bb0e9bb1bee51a76a6e0078690"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:9d6ef63d6de6de6a1fecf34c3f5be58952ca778829c93df51e4ec491b97b0fa3",
+          "sha256": "9d6ef63d6de6de6a1fecf34c3f5be58952ca778829c93df51e4ec491b97b0fa3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:e6a54111ab617580c360bfa07c8503cddf52b1df5bda2cd51da086e4e9470223",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:ee9a37f6202a784c1564ac92613821e9bfd0f75fca8ef24262e444e5ec424ca6",
           "sha256": "ee9a37f6202a784c1564ac92613821e9bfd0f75fca8ef24262e444e5ec424ca6"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mad/blobs/sha256:435f04d35968bb228b0f9078190f5895d90d5a46db66d5731b02cf916b1014a3",
+          "sha256": "435f04d35968bb228b0f9078190f5895d90d5a46db66d5731b02cf916b1014a3"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -81,6 +91,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -107,6 +120,7 @@
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671164774,
       "runtime_dependencies": [
 
       ],
@@ -122,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -22,7 +22,8 @@
     "stable": {
       "url": "https://www.apache.org/dyn/closer.lua?path=cassandra/3.11.10/apache-cassandra-3.11.10-bin.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bbe772956c841158e3228c3b6c8fc38cece6bceeface695473c59c0573039bf1"
     }
   },
   "revision": 0,
@@ -55,7 +56,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -64,6 +64,9 @@
   ],
   "dependencies": [
     "openjdk@8"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -104,10 +107,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
+  "deprecated": true,
   "deprecation_date": "2022-04-01",
-  "deprecation_reason": null,
+  "deprecation_reason": "deprecated_upstream",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

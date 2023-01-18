@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.gnu.org/gnu/xorriso/xorriso-1.5.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3ac155f0ca53e8dbeefacc7f32205a98f4f27d2d348de39ee0183ba8a4c9e392"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/xorriso/blobs/sha256:34c3f5f4e2083387b0b98c8b33cc360070ad04a81fcc0357ca0146b2b0557edb",
+          "sha256": "34c3f5f4e2083387b0b98c8b33cc360070ad04a81fcc0357ca0146b2b0557edb"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/xorriso/blobs/sha256:521d0487cdb0635a13a2c44014518db085743a03d9ef19b4cd09ddd7d1ac4ed1",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/xorriso/blobs/sha256:ad2d5c7472a70aedf02d2bb91f518b72ab2f3df0068eec13b2edf0ba2ab5af50",
           "sha256": "ad2d5c7472a70aedf02d2bb91f518b72ab2f3df0068eec13b2edf0ba2ab5af50"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/xorriso/blobs/sha256:b4a25bea1608c3794a364dc61cd5a4adbb44293e5ff654907d69a6d0e4377efe",
+          "sha256": "b4a25bea1608c3794a364dc61cd5a4adbb44293e5ff654907d69a6d0e4377efe"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,27 +21,27 @@
     "stable": {
       "url": "https://github.com/jarun/googler/archive/v4.3.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bd59af407e9a45c8a6fcbeb720790cb9eccff21dc7e184716a60e29f14c68d54"
     }
   },
-  "revision": 1,
+  "revision": 2,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/googler/blobs/sha256:18cddbd924b8544fa84dce44221443c08053e1939f4b638538e0da04a696df03",
-          "sha256": "18cddbd924b8544fa84dce44221443c08053e1939f4b638538e0da04a696df03"
+          "url": "https://ghcr.io/v2/homebrew/core/googler/blobs/sha256:1d6c7d8176987bf3ca799f10d913e853441b28c5cb394c7a3cbe70c30b61432d",
+          "sha256": "1d6c7d8176987bf3ca799f10d913e853441b28c5cb394c7a3cbe70c30b61432d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,10 @@
 
   ],
   "dependencies": [
-    "python@3.10"
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -73,10 +76,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-01-24",
+  "deprecation_reason": "repo_archived",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

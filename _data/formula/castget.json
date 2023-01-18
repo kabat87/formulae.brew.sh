@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.savannah.gnu.org/releases/castget/castget-2.0.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "438b5f7ec7e31a45ed3756630fe447f42015acda53ec09202f48628726b5e875"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/castget/blobs/sha256:85bc8985e90ece6ae58bf9d7a1f68eda1d2d2b3744694f5d7dfcfaf82d9b33df",
+          "sha256": "85bc8985e90ece6ae58bf9d7a1f68eda1d2d2b3744694f5d7dfcfaf82d9b33df"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/castget/blobs/sha256:dab2c9c9952ce1ecd3263ed1d6c1c002c772c9e7c310bde0b6277c46fd424edf",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/castget/blobs/sha256:320ee21622d1bd939ea95055395d84e5d7cb2d6f091d0da9f05c9eb3d0cff7b9",
           "sha256": "320ee21622d1bd939ea95055395d84e5d7cb2d6f091d0da9f05c9eb3d0cff7b9"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/castget/blobs/sha256:6fc622c18f0e57ca04747ce77b5663200f6669c6a1a4f01b071a13ae942ca231",
+          "sha256": "6fc622c18f0e57ca04747ce77b5663200f6669c6a1a4f01b071a13ae942ca231"
         },
         "monterey": {
           "cellar": ":any",
@@ -65,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/castget/blobs/sha256:4d1f21bb31abc39d28110a76608493423f96a1f19c4b67c1cb651887f3848675",
           "sha256": "4d1f21bb31abc39d28110a76608493423f96a1f19c4b67c1cb651887f3848675"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/castget/blobs/sha256:590a6ec3e2fe983ff5c82e3b5b96b43c87f3a51fd7848216da86dc48ba01b8ca",
+          "sha256": "590a6ec3e2fe983ff5c82e3b5b96b43c87f3a51fd7848216da86dc48ba01b8ca"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +97,9 @@
     "glib",
     "id3lib"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -89,7 +107,8 @@
 
   ],
   "uses_from_macos": [
-
+    "curl",
+    "libxml2"
   ],
   "requirements": [
 
@@ -109,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

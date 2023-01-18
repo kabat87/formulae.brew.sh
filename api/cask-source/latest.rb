@@ -1,8 +1,8 @@
 cask "latest" do
-  version "0.7.3,462"
-  sha256 :no_check
+  version "0.8.3,820"
+  sha256 "ecd8161f44719285b62e845bc60fbf1cfe93e9a571c8f8745971bfc69fd69551"
 
-  url "https://max.codes/latest/download"
+  url "https://max.codes/latest/#{version.csv.first}.zip"
   name "Latest"
   desc "Utility that shows the latest app updates"
   homepage "https://max.codes/latest"

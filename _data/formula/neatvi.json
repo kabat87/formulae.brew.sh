@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://repo.or.cz/neatvi.git",
       "tag": "10",
-      "revision": "1a5dcfa46dc0770bfe79f8f3ef2e5990b1fe98b9"
+      "revision": "1a5dcfa46dc0770bfe79f8f3ef2e5990b1fe98b9",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/neatvi/blobs/sha256:21431d7cfd1566d44ffac423f8780af05373d865e88c7de59658287d89881ebc",
+          "sha256": "21431d7cfd1566d44ffac423f8780af05373d865e88c7de59658287d89881ebc"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/neatvi/blobs/sha256:1885311d215041a7fcbe43af2aad4d243a72db131f59bf16d5e8c38833c420f5",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/neatvi/blobs/sha256:4d02348c64815db38c3e52784dcd444bf926a39f5ec45770e417938760a9574b",
           "sha256": "4d02348c64815db38c3e52784dcd444bf926a39f5ec45770e417938760a9574b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/neatvi/blobs/sha256:c57570242789947c6cf170de16b051ea318442359c8b88bec70f6c87673adccc",
+          "sha256": "c57570242789947c6cf170de16b051ea318442359c8b88bec70f6c87673adccc"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Parallels/docker-machine-parallels.git",
       "tag": "v2.0.1",
-      "revision": "a1c3d495487413bdd24a562c0edee1af1cfc2f0f"
+      "revision": "a1c3d495487413bdd24a562c0edee1af1cfc2f0f",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/docker-machine-parallels/blobs/sha256:1fb87aa45712af27c6bc92af37b696d61f9d0e120f8df21cdecb04d06be0f60e",
+          "sha256": "1fb87aa45712af27c6bc92af37b696d61f9d0e120f8df21cdecb04d06be0f60e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/docker-machine-parallels/blobs/sha256:bf73fbfd0498623e7bae13c5edc3b7dd83faa8b62cc5fe81fcb23accd70fab76",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/docker-machine-parallels/blobs/sha256:1bb048b170f5ca273b7e2e3be17459a9049e29982e2a3c6c866d088772b6744f",
           "sha256": "1bb048b170f5ca273b7e2e3be17459a9049e29982e2a3c6c866d088772b6744f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/docker-machine-parallels/blobs/sha256:cffb8f3f078241ce9d24ac48b8acfc931bffb49e477d22b1c189a92eed5ac0a4",
+          "sha256": "cffb8f3f078241ce9d24ac48b8acfc931bffb49e477d22b1c189a92eed5ac0a4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,15 +77,17 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
     "docker-machine"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

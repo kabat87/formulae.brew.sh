@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/luvit/luv",
   "versions": {
-    "stable": "1.42.0-1",
+    "stable": "1.44.2-1",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/luvit/luv/archive/1.42.0-1.tar.gz",
+      "url": "https://github.com/luvit/luv/archive/1.44.2-1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f8c69908e17ec8ab370253d1508e23deaecfc0c4752d2efb77e427e579501104"
     }
   },
   "revision": 0,
@@ -31,56 +32,65 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:7c8432625ecd382168eac3d0bc3615519528a8e338f8f33ee0c6761bf9f5dd65",
+          "sha256": "7c8432625ecd382168eac3d0bc3615519528a8e338f8f33ee0c6761bf9f5dd65"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:6b40a0433f4f7dbbb321d83600456394491c305a5faefa43626c94751d121db1",
-          "sha256": "6b40a0433f4f7dbbb321d83600456394491c305a5faefa43626c94751d121db1"
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:1d5aaf149019d3d775b093efaa51fda452248eccf109e961325d0a8de917f947",
+          "sha256": "1d5aaf149019d3d775b093efaa51fda452248eccf109e961325d0a8de917f947"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:138d35727357922de60de5e5f3bbfc61eb3d8d31bf2389776b65218fdf2eacb0",
-          "sha256": "138d35727357922de60de5e5f3bbfc61eb3d8d31bf2389776b65218fdf2eacb0"
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:ce3cf05ca363a0978151a8f1ae096bb1d13d26718d2dfc25c3618e6156a4f6e2",
+          "sha256": "ce3cf05ca363a0978151a8f1ae096bb1d13d26718d2dfc25c3618e6156a4f6e2"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:f3b9a7e332ee5024fcac9edc7ca8a9a17811033d3c0cf7f972bb6252bd6d7051",
+          "sha256": "f3b9a7e332ee5024fcac9edc7ca8a9a17811033d3c0cf7f972bb6252bd6d7051"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:08db7612d37222c7447e9cc6364679d4247dda77dad00937df30d9ace3bc9643",
-          "sha256": "08db7612d37222c7447e9cc6364679d4247dda77dad00937df30d9ace3bc9643"
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:1644986934f6275f3f7f632e074cdc9866ad3c2b83661035cd99f5f7912831c9",
+          "sha256": "1644986934f6275f3f7f632e074cdc9866ad3c2b83661035cd99f5f7912831c9"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:dabce5b68101043976dac8678d416ff9411a48c39d3f2148295aa3125f5f9b99",
-          "sha256": "dabce5b68101043976dac8678d416ff9411a48c39d3f2148295aa3125f5f9b99"
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:4c93fce6a32d76a35e365d1fb23b08c3bcfaf0de2426f8490d38128c9d2d8781",
+          "sha256": "4c93fce6a32d76a35e365d1fb23b08c3bcfaf0de2426f8490d38128c9d2d8781"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:546d125b85b7a5b92fe133f11eb31063b5e035936ef8135cad6b27328f23f2fb",
-          "sha256": "546d125b85b7a5b92fe133f11eb31063b5e035936ef8135cad6b27328f23f2fb"
-        },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:8c7f6541f39122b5183c218308b5300558eeffeb88b36bf0def29d1ef99d968e",
-          "sha256": "8c7f6541f39122b5183c218308b5300558eeffeb88b36bf0def29d1ef99d968e"
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:c2d5d6718df8309860cd392047a071770d3c298f29a441f4639d47d909cd873a",
+          "sha256": "c2d5d6718df8309860cd392047a071770d3c298f29a441f4639d47d909cd873a"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:d2d3f068a51e7744d6553114d0aa24c6a0b8332aa9f5c746a27ed4f2b1015609",
-          "sha256": "d2d3f068a51e7744d6553114d0aa24c6a0b8332aa9f5c746a27ed4f2b1015609"
+          "url": "https://ghcr.io/v2/homebrew/core/luv/blobs/sha256:4c1bd86d334299bd8b6af4f0d4080f2b5dab6033778e65a90424be090f10374b",
+          "sha256": "4c1bd86d334299bd8b6af4f0d4080f2b5dab6033778e65a90424be090f10374b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
     "cmake",
-    "luajit-openresty"
+    "lua",
+    "luajit"
   ],
   "dependencies": [
     "libuv"
+  ],
+  "test_dependencies": [
+    "lua",
+    "luajit"
   ],
   "recommended_dependencies": [
 
@@ -109,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

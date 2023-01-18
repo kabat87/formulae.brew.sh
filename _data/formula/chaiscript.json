@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/ChaiScript/ChaiScript/archive/v6.1.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3ca9ba6434b4f0123b5ab56433e3383b01244d9666c85c06cc116d7c41e8f92a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/chaiscript/blobs/sha256:6424e3a8c19e9c654db8954af3910392f6849bd0b6dfc4725ff62c757988d8ec",
+          "sha256": "6424e3a8c19e9c654db8954af3910392f6849bd0b6dfc4725ff62c757988d8ec"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/chaiscript/blobs/sha256:009f1ecb9cc7606337465866c209225a1282bda0bdef0a6bad35ba3e8582bad0",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/chaiscript/blobs/sha256:cf3080dd47601b28622c198749587901d6d7eb59b5b3716a7bf72bc292be7cfe",
           "sha256": "cf3080dd47601b28622c198749587901d6d7eb59b5b3716a7bf72bc292be7cfe"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/chaiscript/blobs/sha256:8a621c59024cf368be41bd03f834837b8473da66dbf3bdd8f5721fb3af3b0a67",
+          "sha256": "8a621c59024cf368be41bd03f834837b8473da66dbf3bdd8f5721fb3af3b0a67"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

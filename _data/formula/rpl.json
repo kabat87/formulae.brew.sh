@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://web.archive.org/web/20170106105512/downloads.laffeycomputer.com/current_builds/rpl-1.4.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "291055dc8763c855bab76142b5f7e9625392bcefa524b796bc4ddbcf941a1310"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rpl/blobs/sha256:286dbe82c334c92999af55394d6ae990ece5617563f39afe1d7e5d1e7b0510c0",
+          "sha256": "286dbe82c334c92999af55394d6ae990ece5617563f39afe1d7e5d1e7b0510c0"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rpl/blobs/sha256:46ef9e4c29ce913017b65e176d38f3d7b1a3ab33147c0fafb270cb7b442a2d78",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rpl/blobs/sha256:66905494cd9a1dcff546a819ed9be8dc20113323ae4dc339d346359e8f4752dc",
           "sha256": "66905494cd9a1dcff546a819ed9be8dc20113323ae4dc339d346359e8f4752dc"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/rpl/blobs/sha256:c199985afc0139e5a97ba13b719537e1423aa821c424f20af11dae0e78a133d9",
+          "sha256": "c199985afc0139e5a97ba13b719537e1423aa821c424f20af11dae0e78a133d9"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/rpl/blobs/sha256:175e1f127c8c707b0d90c3c7e4399cc5c1e18410bf8b7f6ec9340dbca4c16e4b",
           "sha256": "175e1f127c8c707b0d90c3c7e4399cc5c1e18410bf8b7f6ec9340dbca4c16e4b"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/rpl/blobs/sha256:d718355e56dd13c690f1d5a0541b5f051518f65b953aade9c525853a19266a61",
-          "sha256": "d718355e56dd13c690f1d5a0541b5f051518f65b953aade9c525853a19266a61"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/rpl/blobs/sha256:d343c559dc0109ebc9ea3c19568ab9a6aa222feeb21c3b94e6f17c98f67f76e3",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -1,6 +1,6 @@
 cask "prince" do
-  version "14.2"
-  sha256 "b6ba20b26e5451118727ab595bf5a0ea9342aa5923ac29e7edfd7e84407348d8"
+  version "15.0.1"
+  sha256 "b05bbd018c3532b1ef101799abf24247cf503caa25a105b18a5091bfccfc020b"
 
   url "https://www.princexml.com/download/prince-#{version}-macos.zip"
   name "Prince"
@@ -9,7 +9,6 @@ cask "prince" do
 
   livecheck do
     url "https://www.princexml.com/download/"
-    strategy :page_match
     regex(%r{href=.*?/prince-(\d+(?:\.\d+)*)-macos\.zip}i)
   end
 

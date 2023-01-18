@@ -13,60 +13,65 @@
   "license": "BSD-3-Clause",
   "homepage": "https://developers.google.com/speed/webp/",
   "versions": {
-    "stable": "1.2.1",
+    "stable": "1.3.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.1.tar.gz",
+      "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "64ac4614db292ae8c5aa26de0295bf1623dbb3985054cb656c55e67431def17c"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:fb2edf5a9f207f41aa11ff72efb0822da454f3a15e633738df8afdf69c40857d",
+          "sha256": "fb2edf5a9f207f41aa11ff72efb0822da454f3a15e633738df8afdf69c40857d"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:ffa72449868fe57e0f0569029599a16560655ced5608647c89ca6d387452d353",
-          "sha256": "ffa72449868fe57e0f0569029599a16560655ced5608647c89ca6d387452d353"
+          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:b184d1461126f09e2129f67cbc2025c3fc576f87a76a14bd7b5d76fd1d96a2d0",
+          "sha256": "b184d1461126f09e2129f67cbc2025c3fc576f87a76a14bd7b5d76fd1d96a2d0"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:5ce68fe9924fd7797ec5abcfd702e19cc1cccebd98e7f1d80e03858908c741d4",
-          "sha256": "5ce68fe9924fd7797ec5abcfd702e19cc1cccebd98e7f1d80e03858908c741d4"
+          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:edfeee19efb9e30eb99400eec5017d162ee70fb5d69346fec6f716a5f12c822b",
+          "sha256": "edfeee19efb9e30eb99400eec5017d162ee70fb5d69346fec6f716a5f12c822b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:f3f98d19c9ee4f773a937a0d5b44f504710c9f8af29cae6665820a18e2498e97",
+          "sha256": "f3f98d19c9ee4f773a937a0d5b44f504710c9f8af29cae6665820a18e2498e97"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:6c0016464b96910b886a0f1d8f179d352f2a2dddae3554a0a6e1e52f2edac78e",
-          "sha256": "6c0016464b96910b886a0f1d8f179d352f2a2dddae3554a0a6e1e52f2edac78e"
+          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:a07ca47cda0829022148d2b248972f3c37fd53bfbee6b767f8cbbd1a73e5fafe",
+          "sha256": "a07ca47cda0829022148d2b248972f3c37fd53bfbee6b767f8cbbd1a73e5fafe"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:f899dc2f56658f6c0481800f20e260084e3ec38c7a8b3ee8de59553b4d7e146d",
-          "sha256": "f899dc2f56658f6c0481800f20e260084e3ec38c7a8b3ee8de59553b4d7e146d"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:9782ff133700cc676327f9f1046c9d3b01e5179345d315734593df79dcb70e2e",
-          "sha256": "9782ff133700cc676327f9f1046c9d3b01e5179345d315734593df79dcb70e2e"
+          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:84ccd490c545a02910d950ba4b06027685939bec03256abbfbaf012fa02e7a1d",
+          "sha256": "84ccd490c545a02910d950ba4b06027685939bec03256abbfbaf012fa02e7a1d"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:00e8b65d83b94cd68e3d1340ef654381c6dfa7122a9b3fd239d7055414081f54",
-          "sha256": "00e8b65d83b94cd68e3d1340ef654381c6dfa7122a9b3fd239d7055414081f54"
+          "url": "https://ghcr.io/v2/homebrew/core/webp/blobs/sha256:89347c4622e958013b7977a06178766cf00d5a98e67acc03163d0c27595cf18f",
+          "sha256": "89347c4622e958013b7977a06178766cf00d5a98e67acc03163d0c27595cf18f"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,9 +80,12 @@
   ],
   "dependencies": [
     "giflib",
-    "jpeg",
+    "jpeg-turbo",
     "libpng",
     "libtiff"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -97,12 +105,13 @@
   "caveats": null,
   "installed": [
     {
-      "version": "1.2.1_1",
+      "version": "1.2.4",
       "used_options": [
 
       ],
       "built_as_bottle": true,
       "poured_from_bottle": true,
+      "time": 1671155056,
       "runtime_dependencies": [
         {
           "full_name": "giflib",
@@ -110,18 +119,33 @@
           "declared_directly": true
         },
         {
-          "full_name": "jpeg",
-          "version": "9d",
+          "full_name": "jpeg-turbo",
+          "version": "2.1.4",
           "declared_directly": true
         },
         {
           "full_name": "libpng",
-          "version": "1.6.37",
+          "version": "1.6.39",
           "declared_directly": true
         },
         {
+          "full_name": "lz4",
+          "version": "1.9.4",
+          "declared_directly": false
+        },
+        {
+          "full_name": "xz",
+          "version": "5.2.9",
+          "declared_directly": false
+        },
+        {
+          "full_name": "zstd",
+          "version": "1.5.2",
+          "declared_directly": false
+        },
+        {
           "full_name": "libtiff",
-          "version": "4.3.0",
+          "version": "4.4.0",
           "declared_directly": true
         }
       ],
@@ -129,13 +153,15 @@
       "installed_on_request": false
     }
   ],
-  "linked_keg": "1.2.1_1",
+  "linked_keg": "1.2.4",
   "pinned": false,
-  "outdated": false,
+  "outdated": true,
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

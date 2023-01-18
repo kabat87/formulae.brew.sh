@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-only",
   "homepage": "https://github.com/seccomp/libseccomp",
   "versions": {
-    "stable": "2.5.3",
-    "head": null,
+    "stable": "2.5.4",
+    "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.3/libseccomp-2.5.3.tar.gz",
+      "url": "https://github.com/seccomp/libseccomp/releases/download/v2.5.4/libseccomp-2.5.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "d82902400405cf0068574ef3dc1fe5f5926207543ba1ae6f8e7a1576351dcbdb"
     }
   },
   "revision": 0,
@@ -33,25 +34,24 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libseccomp/blobs/sha256:cb9632f847a27aa62f7e4ce9ec786550ebf2b45d1b9e909ffe74fcb888fa705d",
-          "sha256": "cb9632f847a27aa62f7e4ce9ec786550ebf2b45d1b9e909ffe74fcb888fa705d"
+          "url": "https://ghcr.io/v2/homebrew/core/libseccomp/blobs/sha256:49db89117b474de352eabc99840644ff081d9120d54d1eaf5cda150798852075",
+          "sha256": "49db89117b474de352eabc99840644ff081d9120d54d1eaf5cda150798852075"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "autoconf",
-    "automake",
-    "gperf",
-    "libtool"
+    "gperf"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -89,5 +89,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

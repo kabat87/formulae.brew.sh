@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://leanprover-community.github.io/",
   "versions": {
-    "stable": "3.38.0",
+    "stable": "3.50.3",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/leanprover-community/lean/archive/v3.38.0.tar.gz",
+      "url": "https://github.com/leanprover-community/lean/archive/v3.50.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "00316c946de2aa4f1b6655ea8bd92b21ff184afd305891e6803c7631753f5b87"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:8dbb51ed79cbfa8521ba6827fbcd3a19bc0b0c7a4caf1fc2084c769f0b07d682",
+          "sha256": "8dbb51ed79cbfa8521ba6827fbcd3a19bc0b0c7a4caf1fc2084c769f0b07d682"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:d3eb483d558db990c156d7f9f3d069cc7cf04ecd2ec6d9c67e5e2f5dfb9b74fd",
-          "sha256": "d3eb483d558db990c156d7f9f3d069cc7cf04ecd2ec6d9c67e5e2f5dfb9b74fd"
+          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:52f3fbb2af5e69d02ccccdef798dbc0300ce7a399afafd49ef9ccd4bc657cb4a",
+          "sha256": "52f3fbb2af5e69d02ccccdef798dbc0300ce7a399afafd49ef9ccd4bc657cb4a"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:a5f77757a93432bcbe33fefe6a248ebfa70c0739837ed4ad777c110a40ffd81e",
-          "sha256": "a5f77757a93432bcbe33fefe6a248ebfa70c0739837ed4ad777c110a40ffd81e"
+          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:bb0331dbdcd1de6b8f2d24938ef96658ebd10de90fcb6e084a297994473b8bbc",
+          "sha256": "bb0331dbdcd1de6b8f2d24938ef96658ebd10de90fcb6e084a297994473b8bbc"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:c085fa626d89dd857de35c19df59ea13d835bc3a595824b1b78bf364b950b24f",
+          "sha256": "c085fa626d89dd857de35c19df59ea13d835bc3a595824b1b78bf364b950b24f"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:ea9a5c6309e7ba371ff2508471bb15d456de6406d5c1c229b073e1fb0083e15d",
-          "sha256": "ea9a5c6309e7ba371ff2508471bb15d456de6406d5c1c229b073e1fb0083e15d"
+          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:bcbceb47384c0e6903a61874d16485dc2a3d5a5a1c684e05a1baae01ed2356e1",
+          "sha256": "bcbceb47384c0e6903a61874d16485dc2a3d5a5a1c684e05a1baae01ed2356e1"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:5ef4a13a741d6d28305131e2783c6fd913f8651b9c14745e393fd32abebc664e",
-          "sha256": "5ef4a13a741d6d28305131e2783c6fd913f8651b9c14745e393fd32abebc664e"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:c17817acf1c26f6a4fb3c0b6003327e92f2381648f6a7f6d8538b7ac4b2a73e7",
-          "sha256": "c17817acf1c26f6a4fb3c0b6003327e92f2381648f6a7f6d8538b7ac4b2a73e7"
+          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:d1076aebc8c7f3c834578c542e4bc01b5e55e327b0363494a2bdf9027cfa17d2",
+          "sha256": "d1076aebc8c7f3c834578c542e4bc01b5e55e327b0363494a2bdf9027cfa17d2"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:6941c67e5140300249e07b33aa2e83ca5cbf09f9e2534ec25a62ef68176b3062",
-          "sha256": "6941c67e5140300249e07b33aa2e83ca5cbf09f9e2534ec25a62ef68176b3062"
+          "url": "https://ghcr.io/v2/homebrew/core/lean/blobs/sha256:8be25df029dfc12cd9f95a2bde42fe0e37e88fd8294adb62a0533356764635c7",
+          "sha256": "8be25df029dfc12cd9f95a2bde42fe0e37e88fd8294adb62a0533356764635c7"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +82,9 @@
     "coreutils",
     "gmp",
     "jemalloc"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

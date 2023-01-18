@@ -1,18 +1,22 @@
 cask "dropbox-capture" do
-  version "63.0.0"
-  sha256 :no_check
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://clientupdates.dropboxstatic.com/dbx-releng/dropbox_capture/mac/Dropbox_Capture.dmg",
-      verified: "clientupdates.dropboxstatic.com/dbx-releng/dropbox_capture/mac/"
+  version "91.0.4"
+  sha256 arm:   "dabe69bc3340cbe35f4eafd004ff1fecaa46282a9e54d241717b9e660636468f",
+         intel: "42dddfa2a969b40feca7219dbf6fd3c66209c7d73d267f8e4c963eb6a4789d00"
+
+  url "https://edge.dropboxstatic.com/dbx-releng/products/dropbox-capture/#{version}/mac.#{arch}/Dropbox_Capture.dmg",
+      verified: "edge.dropboxstatic.com/dbx-releng/products/dropbox-capture/"
   name "Dropbox Capture"
   desc "Share your work and ideas with video messages and screenshots"
   homepage "https://dropbox.com/capture/"
 
   livecheck do
-    url :url
-    strategy :extract_plist
+    url "https://dropbox.com/capture/download"
+    strategy :header_match
   end
 
+  auto_updates true
   depends_on macos: ">= :el_capitan"
 
   app "Dropbox Capture.app"

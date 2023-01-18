@@ -7,9 +7,9 @@
   ],
   "desc": "Create, edit, convert and sign PDF documents",
   "homepage": "https://pdf.wondershare.com/",
-  "url": "https://download.wondershare.com/cbs_down/mac-pdfelement_full5237.zip",
+  "url": "https://download.wondershare.com/cbs_down/mac-pdfelement_full5237.dmg",
   "appcast": null,
-  "version": "8.5.10",
+  "version": "9.3.0",
   "versions": {
   },
   "installed": null,
@@ -17,29 +17,35 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": [
-        "com.wondershare.PDFelement",
-        "com.wondershare.helper_compact"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "com.wondershare.PDFelement",
+            "com.wondershare.helper_compact"
+          ]
+        }
+      ]
     },
-    [
-      "PDFelement.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.wondershare.pdfelement.sfl2",
-        "~/Library/Application Support/com.wondershare.PDFelement",
-        "~/Library/Caches/com.wondershare.PDFelement",
-        "~/Library/Caches/PDFelement",
-        "~/Library/Preferences/com.wondershare.PDFelement-custom.plist",
-        "~/Library/Preferences/com.wondershare.PDFelement.plist",
-        "~/Library/Saved Application State/com.wondershare.PDFelement.savedState",
-        "~/Library/WebKit/com.wondershare.PDFelement"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PDFelement.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.wondershare.pdfelement.sfl2",
+            "~/Library/Application Support/com.wondershare.PDFelement",
+            "~/Library/Caches/com.wondershare.PDFelement",
+            "~/Library/Caches/PDFelement",
+            "~/Library/Preferences/com.wondershare.PDFelement-custom.plist",
+            "~/Library/Preferences/com.wondershare.PDFelement.plist",
+            "~/Library/Saved Application State/com.wondershare.PDFelement.savedState",
+            "~/Library/WebKit/com.wondershare.PDFelement"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -52,5 +58,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

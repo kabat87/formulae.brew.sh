@@ -7,10 +7,11 @@
 
   ],
   "versioned_formulae": [
+    "postgresql@15",
+    "postgresql@14",
     "postgresql@12",
     "postgresql@11",
     "postgresql@10",
-    "postgresql@9.6",
     "postgresql@9.5",
     "postgresql@9.4"
   ],
@@ -18,53 +19,59 @@
   "license": "PostgreSQL",
   "homepage": "https://www.postgresql.org/",
   "versions": {
-    "stable": "13.5",
+    "stable": "13.9",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://ftp.postgresql.org/pub/source/v13.5/postgresql-13.5.tar.bz2",
+      "url": "https://ftp.postgresql.org/pub/source/v13.9/postgresql-13.9.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ef1966c0a5e49fbed3370ad2824928cb6b1164617aeeae1606da283f7f33a415"
     }
   },
   "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:6081c9d941b84d2b0079c89108ebda9a114ef2f25dd18a088786809da0bd141f",
+          "sha256": "6081c9d941b84d2b0079c89108ebda9a114ef2f25dd18a088786809da0bd141f"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:a84101063f387e69e80296c938f34407a5502eb29281a5684da0ea6de37457eb",
-          "sha256": "a84101063f387e69e80296c938f34407a5502eb29281a5684da0ea6de37457eb"
+          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:32326fb5a0028be1634e604e609cad9f2615701c6f1a5d2518b0ef92728271f0",
+          "sha256": "32326fb5a0028be1634e604e609cad9f2615701c6f1a5d2518b0ef92728271f0"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:d553cc91c53081225420b7f02047e8ee8155679dfa86529d9a2f3fe13be92713",
-          "sha256": "d553cc91c53081225420b7f02047e8ee8155679dfa86529d9a2f3fe13be92713"
+          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:82552e442e878b862a60ec4638d7422f138fcdcded43d7d29158b30105e9f59e",
+          "sha256": "82552e442e878b862a60ec4638d7422f138fcdcded43d7d29158b30105e9f59e"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:8beb3cd8c5f30a81b12e95e9183b2ef594454f3600048bbfd6b1ac43dfdd3fda",
+          "sha256": "8beb3cd8c5f30a81b12e95e9183b2ef594454f3600048bbfd6b1ac43dfdd3fda"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:09d77cc3b777078242e4430d4c23e88ec6a8e4953c7b4bdee397e6a1f7588f78",
-          "sha256": "09d77cc3b777078242e4430d4c23e88ec6a8e4953c7b4bdee397e6a1f7588f78"
+          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:9f3347ac830c7867a6ff8b6b4bba8d63d65aa567b472916cb86db53374fd18fa",
+          "sha256": "9f3347ac830c7867a6ff8b6b4bba8d63d65aa567b472916cb86db53374fd18fa"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:9df9951d736b0d2b66cd82c2b53129059b8608691c62ff9962054e8f6f18e915",
-          "sha256": "9df9951d736b0d2b66cd82c2b53129059b8608691c62ff9962054e8f6f18e915"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:30466d4ea80f1ededb1bd64e788d64dcf0f2e6666bf69a26386115e33f9a1a7d",
-          "sha256": "30466d4ea80f1ededb1bd64e788d64dcf0f2e6666bf69a26386115e33f9a1a7d"
+          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:d503054a70be4499e9cbd384cf9ea011fabb0ff451db530bceeff12b5a177b60",
+          "sha256": "d503054a70be4499e9cbd384cf9ea011fabb0ff451db530bceeff12b5a177b60"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:cc971147a6aafb1f181171eebd82a2eb16428a986042f7425e855716303e5abe",
-          "sha256": "cc971147a6aafb1f181171eebd82a2eb16428a986042f7425e855716303e5abe"
+          "url": "https://ghcr.io/v2/homebrew/core/postgresql/13/blobs/sha256:c9df3b2e4ad9bd720be935e848706e1438ec9f20fdf6020ee5a5fe10225fd465",
+          "sha256": "c9df3b2e4ad9bd720be935e848706e1438ec9f20fdf6020ee5a5fe10225fd465"
         }
       }
     }
@@ -74,7 +81,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +92,9 @@
     "krb5",
     "openssl@1.1",
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -113,9 +122,25 @@
   "pinned": false,
   "outdated": false,
   "deprecated": false,
-  "deprecation_date": "2024-11-13",
+  "deprecation_date": "2025-11-13",
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "icu4c",
+        "krb5",
+        "openssl@1.1",
+        "readline",
+        "libxml2",
+        "libxslt",
+        "openldap",
+        "perl",
+        "linux-pam",
+        "util-linux"
+      ]
+    }
+  }
 }

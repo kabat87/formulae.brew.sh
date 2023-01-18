@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/wget/ttf2eot/archive/v0.0.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f363c4f2841b6d0b0545b30462e3c202c687d002da3d5dec7e2b827a032a3a65"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ttf2eot/blobs/sha256:867b5d7d37b4ac230168ea41318dd3a6f9fed7b64dba3f6aed2e57ac3f89d9a8",
+          "sha256": "867b5d7d37b4ac230168ea41318dd3a6f9fed7b64dba3f6aed2e57ac3f89d9a8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ttf2eot/blobs/sha256:ac0f37ff08692308c939a421e2d2ab2dfc7130d1bcc85ca070e1baab844dfcc8",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/ttf2eot/blobs/sha256:ad7c55fc38097327fcc7ecc967f4af2a24ee690ffe8f1ed5e465f5ef398c4750",
           "sha256": "ad7c55fc38097327fcc7ecc967f4af2a24ee690ffe8f1ed5e465f5ef398c4750"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/ttf2eot/blobs/sha256:d2f96c1fb256084ee3ac130861a7a72ddf03841ff45414dada9ec4d04acc1241",
+          "sha256": "d2f96c1fb256084ee3ac130861a7a72ddf03841ff45414dada9ec4d04acc1241"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

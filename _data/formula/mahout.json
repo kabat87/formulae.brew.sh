@@ -21,27 +21,27 @@
     "stable": {
       "url": "https://www.apache.org/dyn/closer.lua?path=mahout/0.13.0/apache-mahout-distribution-0.13.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "87bdc86e16b5817d6b5a810b94d7389604887f7de9c680f34faaf0cbb8dabf6f"
     }
   },
   "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/mahout/blobs/sha256:baaec00c1e35a0a264b4ef3d0e7e5043f4ea8dfb264d3df278bd5fc629d7faf0",
-          "sha256": "baaec00c1e35a0a264b4ef3d0e7e5043f4ea8dfb264d3df278bd5fc629d7faf0"
+          "url": "https://ghcr.io/v2/homebrew/core/mahout/blobs/sha256:3b7e05dbbd5838236245dd37e3ed7a1cc10d4dd151adbc7979b345cb19daab0e",
+          "sha256": "3b7e05dbbd5838236245dd37e3ed7a1cc10d4dd151adbc7979b345cb19daab0e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,7 +50,10 @@
   ],
   "dependencies": [
     "hadoop",
-    "openjdk"
+    "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -79,5 +82,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

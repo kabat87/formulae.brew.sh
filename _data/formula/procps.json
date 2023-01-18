@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://gitlab.com/procps-ng/procps",
   "versions": {
-    "stable": "3.3.17",
+    "stable": "4.0.2",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://gitlab.com/procps-ng/procps/-/archive/v3.3.17/procps-v3.3.17.tar.gz",
+      "url": "https://gitlab.com/procps-ng/procps/-/archive/v4.0.2/procps-v4.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b03e4b55eaa5661e726acb714e689356d80bc056b09965c2284d039ba8dc21e8"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/procps/blobs/sha256:11f662e9854db3017ac6b6f1ba3182088e4f8271ac29412d4e7914b5c240a094",
-          "sha256": "11f662e9854db3017ac6b6f1ba3182088e4f8271ac29412d4e7914b5c240a094"
+          "url": "https://ghcr.io/v2/homebrew/core/procps/blobs/sha256:06259018ca643fff24ffba58139fff6176af84af752f5d4f0a213b743db4caa1",
+          "sha256": "06259018ca643fff24ffba58139fff6176af84af752f5d4f0a213b743db4caa1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -54,6 +54,9 @@
   ],
   "dependencies": [
     "ncurses"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -90,5 +93,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

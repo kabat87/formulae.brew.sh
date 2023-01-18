@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://p.outlyer.net/files/vcs/vcs-1.13.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "dc1d6145e10eeed61d16c3591cfe3496a6ac392c9c2f7c2393cbdb0cf248544b"
     }
   },
   "revision": 3,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vcs/blobs/sha256:032fbce3c72e8ea03c3b4fbcde03f391d7c9df149ae5b664618d7e5b2a265bce",
+          "sha256": "032fbce3c72e8ea03c3b4fbcde03f391d7c9df149ae5b664618d7e5b2a265bce"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vcs/blobs/sha256:032fbce3c72e8ea03c3b4fbcde03f391d7c9df149ae5b664618d7e5b2a265bce",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/vcs/blobs/sha256:5a12b2c51afec7626a44463cd9145bf47819e8561f05194f2f17ea8eec0459c9",
           "sha256": "5a12b2c51afec7626a44463cd9145bf47819e8561f05194f2f17ea8eec0459c9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/vcs/blobs/sha256:67aafd60a6d2b32a6bb487860c1ba6e6add8e082e9e6b5d4724d9932849940ce",
+          "sha256": "67aafd60a6d2b32a6bb487860c1ba6e6add8e082e9e6b5d4724d9932849940ce"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +93,9 @@
     "ghostscript",
     "gnu-getopt",
     "imagemagick"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

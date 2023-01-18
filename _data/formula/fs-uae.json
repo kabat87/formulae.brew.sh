@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://fs-uae.net/files/FS-UAE/Stable/3.1.66/fs-uae-3.1.66.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "606e1868b500413d69bd33bb469f8fd08d6c08988801f17b7dd022f3fbe23832"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fs-uae/blobs/sha256:796be0965c3ac6791c1dc8b2a55ced73b935ce5d74ed1406a2561ae1269bc59b",
+          "sha256": "796be0965c3ac6791c1dc8b2a55ced73b935ce5d74ed1406a2561ae1269bc59b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fs-uae/blobs/sha256:b9f361e0cc2b048aedb761409cd9a79c34c98ebaa22a35c426b4a42e93884933",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fs-uae/blobs/sha256:0caec2b541d80f8645decd87cabdb34e327844afaf5c06b526572eb52d3526ec",
           "sha256": "0caec2b541d80f8645decd87cabdb34e327844afaf5c06b526572eb52d3526ec"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fs-uae/blobs/sha256:8ffb22e83dade981cbd3b4ccb58dc032db6f38dc0401620491d96e93342a12a0",
+          "sha256": "8ffb22e83dade981cbd3b4ccb58dc032db6f38dc0401620491d96e93342a12a0"
         },
         "monterey": {
           "cellar": ":any",
@@ -55,13 +66,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fs-uae/blobs/sha256:7a373d3e50a22619466b27bfad1576df98e2bae34433f5bf2d8ae370e2858e87",
           "sha256": "7a373d3e50a22619466b27bfad1576df98e2bae34433f5bf2d8ae370e2858e87"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/fs-uae/blobs/sha256:3e7f4005c34030d2c8902fee844ff96ac8acd45d368c7cf28ba7c682fcc97ac5",
+          "sha256": "3e7f4005c34030d2c8902fee844ff96ac8acd45d368c7cf28ba7c682fcc97ac5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -77,6 +92,9 @@
     "libpng",
     "sdl2"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -84,7 +102,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zip"
   ],
   "requirements": [
 
@@ -104,5 +122,20 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "freetype",
+        "gettext",
+        "glew",
+        "glib",
+        "libmpeg2",
+        "libpng",
+        "sdl2",
+        "zip",
+        "openal-soft"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/viennacl/1.7.x/ViennaCL-1.7.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a596b77972ad3d2bab9d4e63200b171cd0e709fb3f0ceabcaf3668c87d3a238b"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/viennacl/blobs/sha256:cc8761095e89fe0ba92453ec1697ee2a6cbcf661d203d9ccd71f88b7c0ae7b08",
+          "sha256": "cc8761095e89fe0ba92453ec1697ee2a6cbcf661d203d9ccd71f88b7c0ae7b08"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/viennacl/blobs/sha256:09a95ad5ebf44a0b14c98a7b464ca6a3f83c47b8b9d6609b508051faf1ce3a41",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/viennacl/blobs/sha256:a59335b82a9f92448236ec0278d156f2425995d48fddcef730b906ca63aea6f9",
           "sha256": "a59335b82a9f92448236ec0278d156f2425995d48fddcef730b906ca63aea6f9"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/viennacl/blobs/sha256:a9a82d01da982124364d829362836bfcba075981bde2cf4be39fb036fd2f0341",
+          "sha256": "a9a82d01da982124364d829362836bfcba075981bde2cf4be39fb036fd2f0341"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/viennacl/blobs/sha256:cb5cd96fd4c730518b6b0e150fd15386ad71576e444bfbbd5f055e844d4a5976",
           "sha256": "cb5cd96fd4c730518b6b0e150fd15386ad71576e444bfbbd5f055e844d4a5976"
         },
-        "yosemite": {
+        "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/viennacl/blobs/sha256:875f61b8270246247450c0beedc9710b52d07171717dd2f9de9a493f3b4027b6",
-          "sha256": "875f61b8270246247450c0beedc9710b52d07171717dd2f9de9a493f3b4027b6"
+          "url": "https://ghcr.io/v2/homebrew/core/viennacl/blobs/sha256:5d32afb7f9b444c389613c17f224b510f353c8b82794c84b978ebc0e31a41911",
+          "sha256": "5d32afb7f9b444c389613c17f224b510f353c8b82794c84b978ebc0e31a41911"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
     "cmake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,17 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "cmake",
+        "opencl-headers"
+      ],
+      "dependencies": [
+        "ocl-icd",
+        "pocl"
+      ]
+    }
+  }
 }

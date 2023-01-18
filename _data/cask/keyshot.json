@@ -5,24 +5,30 @@
   "name": [
     "KeyShot"
   ],
-  "desc": null,
+  "desc": "Real-time 3D rendering",
   "homepage": "https://www.keyshot.com/",
-  "url": "https://download.keyshot.com/keyshot10/keyshot_mac64_10.0.198.pkg",
+  "url": "https://download.keyshot.com/keyshot11/keyshot_mac64_11.3.2.3.pkg",
   "appcast": null,
-  "version": "10.0.198",
+  "version": "11.3.2.3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "a909471657083bdeba227200845e5a61644c35f43ccc2aef2cb4b9f37fdff8b0",
+  "sha256": "0c6d96efd6edd6754d58ca29c83aa4cd4fa03a71724d7df7b51bb6624252b920",
   "artifacts": [
     {
-      "pkgutil": "com.luxion.pkg.keyshot10.*",
-      "delete": "/Applications/KeyShot10.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.luxion.pkg.keyshot11.*",
+          "delete": "/Applications/KeyShot11.app"
+        }
+      ]
     },
-    "keyshot_mac64_10.0.198.pkg (Pkg)"
+    {
+      "pkg": [
+        "keyshot_mac64_11.3.2.3.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -34,5 +40,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

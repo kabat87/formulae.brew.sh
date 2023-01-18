@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/t3rm1n4l/megacmd/archive/0.016.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "def4cda692860c85529c8de9b0bdb8624a30f57d265f7e70994fc212e5da7e40"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/megacmd/blobs/sha256:4d98cb6158cd237e86b81c5f975cd4d48bf51b67adc3d5b193ebe96b65717823",
+          "sha256": "4d98cb6158cd237e86b81c5f975cd4d48bf51b67adc3d5b193ebe96b65717823"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/megacmd/blobs/sha256:f392f9d6d1ba3acece2b86882a1ae6f5f396e37b814460764655d89704e9d5b3",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/megacmd/blobs/sha256:b0cc423d7d44f74416233d1890e003d8d1a92b32c4f281885e89dbda52031218",
           "sha256": "b0cc423d7d44f74416233d1890e003d8d1a92b32c4f281885e89dbda52031218"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/megacmd/blobs/sha256:59c060122906abf916aeae6cf3732d5d90f316e6bd48af758d91d958f06a7fb2",
+          "sha256": "59c060122906abf916aeae6cf3732d5d90f316e6bd48af758d91d958f06a7fb2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

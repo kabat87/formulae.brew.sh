@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "64926eebf90092dca21b14259a5301b7b98e7b1943e8a201c7d726084809b527"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dosfstools/blobs/sha256:40a3ed816a04a4104a60aa95f8ae76bee9be12872e8147c0a41fa3f879f11ced",
+          "sha256": "40a3ed816a04a4104a60aa95f8ae76bee9be12872e8147c0a41fa3f879f11ced"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dosfstools/blobs/sha256:41e7da04f31a04e5ad7fc460b9c15b6526780fab0de0339fcdea540dfbaec964",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/dosfstools/blobs/sha256:3d8437b8921385c7675d2502c0c7b746f060e6b1656923e061173d568927f34d",
           "sha256": "3d8437b8921385c7675d2502c0c7b746f060e6b1656923e061173d568927f34d"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/dosfstools/blobs/sha256:134a64a971297ad37b2635532916116f6350c3771c03efa6ea3da259bb260ce1",
+          "sha256": "134a64a971297ad37b2635532916116f6350c3771c03efa6ea3da259bb260ce1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -82,6 +92,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

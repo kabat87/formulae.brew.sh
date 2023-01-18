@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/cbmbasic/cbmbasic/1.0/cbmbasic-1.0.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2735dedf3f9ad93fa947ad0fb7f54acd8e84ea61794d786776029c66faf64b04"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cbmbasic/blobs/sha256:8382a3a84c232895e8581de79435c6c7629079ec8dbdec6b8d193f73715e4ca8",
+          "sha256": "8382a3a84c232895e8581de79435c6c7629079ec8dbdec6b8d193f73715e4ca8"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cbmbasic/blobs/sha256:4e090b459f2e44ad8f04e3e70a25b909fe16771f4b2fa325cc06ea233b019803",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cbmbasic/blobs/sha256:b693c2b8fbfe49736bdc0ae4bce13d96295da75a6683e593c021c9335f6c57fd",
           "sha256": "b693c2b8fbfe49736bdc0ae4bce13d96295da75a6683e593c021c9335f6c57fd"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cbmbasic/blobs/sha256:032eb3fb2490ed7ae7d4017bffd81e1052fbae0929427a6efc55cb2e612dae18",
+          "sha256": "032eb3fb2490ed7ae7d4017bffd81e1052fbae0929427a6efc55cb2e612dae18"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/cbmbasic/blobs/sha256:92762d9b7f5f21190b98d23e7fedf787cccc14e1c82699b60036948beaf1e7d1",
           "sha256": "92762d9b7f5f21190b98d23e7fedf787cccc14e1c82699b60036948beaf1e7d1"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cbmbasic/blobs/sha256:d7285a8376e20ac008e51814a97f155f8ac80ce94a809c953ee63932a1d2c1d7",
-          "sha256": "d7285a8376e20ac008e51814a97f155f8ac80ce94a809c953ee63932a1d2c1d7"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cbmbasic/blobs/sha256:0e08527ac4b01d5d2c747776b5d8be5ae6e402862a87bafe7331c3c3b49d6170",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

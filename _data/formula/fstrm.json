@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dl.farsightsecurity.com/dist/fstrm/fstrm-0.6.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bca4ac1e982a2d923ccd24cce2c98f4ceeed5009694430f73fc0dcebca8f098f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fstrm/blobs/sha256:ebb6daed2a3a732ef21027362600e71790574221dddfc45c7926fa31ac51d41f",
+          "sha256": "ebb6daed2a3a732ef21027362600e71790574221dddfc45c7926fa31ac51d41f"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fstrm/blobs/sha256:9a6bc2f1e46b05c45ea8f0925f08781d22604e8bc5a77357ccd29f2d90070ca3",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/fstrm/blobs/sha256:409e20e264b28337487a22ff762e8f7d1b4dc81bea1cd131c6d673a978d94e2f",
           "sha256": "409e20e264b28337487a22ff762e8f7d1b4dc81bea1cd131c6d673a978d94e2f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/fstrm/blobs/sha256:2ce57432abdc248382c8d9c333455c1c8dfbfc1f00958a66e0fe9772acd7f891",
+          "sha256": "2ce57432abdc248382c8d9c333455c1c8dfbfc1f00958a66e0fe9772acd7f891"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "libevent"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

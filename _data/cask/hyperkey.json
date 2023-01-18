@@ -7,47 +7,55 @@
   ],
   "desc": "Convert your caps lock key or any of your modifier keys to the hyper key",
   "homepage": "https://hyperkey.app/",
-  "url": "https://hyperkey.app/downloads/Hyperkey0.11.dmg",
+  "url": "https://hyperkey.app/downloads/Hyperkey0.22.dmg",
   "appcast": null,
-  "version": "0.11",
+  "version": "0.22",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b7ec7e59d8f5355ab7cfd7df93c84c9c38144da175c11dc8effd863b371a6583",
+  "sha256": "b4b78d923bb38424ceb302d595713b4541e0dd119e40aadb1e42d04d53d731b6",
   "artifacts": [
     {
-      "quit": "com.knollsoft.Hyperkey",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.knollsoft.Hyperkey"
+        }
+      ]
     },
-    [
-      "Hyperkey.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/com.knollsoft.HyperkeyLauncher",
-        "~/Library/Application Support/Hyperkey",
-        "~/Library/Caches/com.knollsoft.Hyperkey",
-        "~/Library/Containers/com.knollsoft.HyperkeyLauncher",
-        "~/Library/Cookies/com.knollsoft.Hyperkey.binarycookies",
-        "~/Library/HTTPStorages/com.knollsoft.Hyperkey",
-        "~/Library/HTTPStorages/com.knollsoft.Hyperkey.binarycookies",
-        "~/Library/Preferences/com.knollsoft.Hyperkey.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Hyperkey.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/com.knollsoft.HyperkeyLauncher",
+            "~/Library/Application Support/Hyperkey",
+            "~/Library/Caches/com.knollsoft.Hyperkey",
+            "~/Library/Containers/com.knollsoft.HyperkeyLauncher",
+            "~/Library/Cookies/com.knollsoft.Hyperkey.binarycookies",
+            "~/Library/HTTPStorages/com.knollsoft.Hyperkey",
+            "~/Library/HTTPStorages/com.knollsoft.Hyperkey.binarycookies",
+            "~/Library/Preferences/com.knollsoft.Hyperkey.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "10.13"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

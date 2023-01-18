@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "741754f293f6b7668f941506da07cd7725629a793108bb31633fb6c3eae5315f"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmypaint/blobs/sha256:45f120eb85a644dae61e2bcf2683256dc3cae8531fa59d339e07ff9a3ba1f135",
+          "sha256": "45f120eb85a644dae61e2bcf2683256dc3cae8531fa59d339e07ff9a3ba1f135"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmypaint/blobs/sha256:b481fb4e3ed5cb542d1ef073a5852a0a65361f0825051302ccdd6bc224901d90",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmypaint/blobs/sha256:4f5f706833fb183d4ad43a0b065b2b767a7787e7963eabced95016bd04ffdd12",
           "sha256": "4f5f706833fb183d4ad43a0b065b2b767a7787e7963eabced95016bd04ffdd12"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmypaint/blobs/sha256:4a895f28ea58e5415711bf7f3a415f639a958354992acd5a1ffd7719417fd5e9",
+          "sha256": "4a895f28ea58e5415711bf7f3a415f639a958354992acd5a1ffd7719417fd5e9"
         },
         "monterey": {
           "cellar": ":any",
@@ -65,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmypaint/blobs/sha256:4260697ececf5344aa3eacd16afdd5f4eff556cee6312e49a8e5544edb71aca1",
           "sha256": "4260697ececf5344aa3eacd16afdd5f4eff556cee6312e49a8e5544edb71aca1"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/libmypaint/blobs/sha256:6114302a8ff4e54cd64388fb0968dbb1fa4ab546bb9d2bbca786da787ec3bf62",
+          "sha256": "6114302a8ff4e54cd64388fb0968dbb1fa4ab546bb9d2bbca786da787ec3bf62"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +98,9 @@
     "gettext",
     "json-c"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -90,7 +108,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "perl": "build"
+    }
   ],
   "requirements": [
 
@@ -110,5 +130,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

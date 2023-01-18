@@ -1,15 +1,15 @@
 cask "presentation" do
-  version "2.3.1"
-  sha256 "1b25a24a898f7d51436846f3d59cb8095a8c28f30a1b4d924c3de085e0005f08"
+  version "3.2.0"
+  sha256 "7dff528b60dd7ca91a9f92f5bb64f804abea95e4f0db6866817b4674bacbb18f"
 
   url "http://iihm.imag.fr/blanch/software/osx-presentation/releases/osx-presentation-#{version}.pkg"
   name "Présentation"
+  desc "Tool for pdf slides"
   homepage "http://iihm.imag.fr/blanch/software/osx-presentation/"
 
   livecheck do
-    url :homepage
-    strategy :page_match
-    regex(%r{href=.*?/osx-presentation-(\d+(?:\.\d+)*)\.pkg}i)
+    url "http://iihm.imag.fr/blanch/software/osx-presentation/releases/version.txt"
+    regex(/^(\d+(?:\.\d+)+)$/i)
   end
 
   pkg "osx-presentation-#{version}.pkg"

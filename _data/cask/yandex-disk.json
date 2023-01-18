@@ -9,24 +9,28 @@
   "homepage": "https://disk.yandex.ru/",
   "url": "https://disk.yandex.ru/download/Yandex.Disk.dmg/?instant=1",
   "appcast": null,
-  "version": "3.2.15,2827",
+  "version": "3.2.23,2990",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "Yandex.Disk.2.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Yandex.Disk.2",
-        "~/Library/Preferences/ru.yandex.desktop.disk.screenshots.plist",
-        "~/Library/Preferences/ru.yandex.desktop.disk2.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Yandex.Disk.2.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Yandex.Disk.2",
+            "~/Library/Preferences/ru.yandex.desktop.disk.screenshots.plist",
+            "~/Library/Preferences/ru.yandex.desktop.disk2.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

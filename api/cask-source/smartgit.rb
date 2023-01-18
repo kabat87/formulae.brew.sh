@@ -1,23 +1,19 @@
 cask "smartgit" do
-  if MacOS.version <= :yosemite
-    arch = "macosx"
-    version "18.1.5"
-    sha256 "52de2c0f4e4d529063da4c4f9f9de4eed425109139d7ba026944535eb3f0e0b7"
-  elsif MacOS.version <= :sierra
-    arch = "macosx"
-    version "20.2.6"
-    sha256 "af5fbf8db26edde3d996d99c6e82287332598359fe63ff2cd97c712a1685a2ea"
-  elsif Hardware::CPU.intel?
-    arch = "x86_64"
-    version "21.2.1"
-    sha256 "5bf744e71c4be03e4428dc26fbe6ab5f10210b20b9e1cf972f25545cc71fec1c"
-  else
-    arch = "aarch64"
-    version "21.2.1"
-    sha256 "f07c995b7c259ffb47b0e6c03cd8590c3f3f4740ef5547ddde9637051fd29470"
-  end
+  arch arm: "aarch64", intel: "x86_64"
+
+  version "22.1.2"
+  sha256 arm:   "416c59f564ba127796f140132a40d73b7c2bfc6acaca83905917709fb4b291df",
+         intel: "ab147fcbae958e8f5562c2edeb4555010c72b47d9da39d9df1278d61772a1eda"
 
   url "https://www.syntevo.com/downloads/smartgit/smartgit-#{arch}-#{version.dots_to_underscores}.dmg"
+
+  on_sierra :or_older do
+    version "20.2.6"
+    sha256 "af5fbf8db26edde3d996d99c6e82287332598359fe63ff2cd97c712a1685a2ea"
+
+    url "https://www.syntevo.com/downloads/smartgit/smartgit-macosx-#{version.dots_to_underscores}.dmg"
+  end
+
   name "SmartGit"
   desc "Git client"
   homepage "https://www.syntevo.com/smartgit/"

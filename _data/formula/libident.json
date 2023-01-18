@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.remlab.net/files/libident/libident-0.32.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8cc8fb69f1c888be7cffde7f4caeb3dc6cd0abbc475337683a720aa7638a174b"
     }
   },
   "revision": 0,
@@ -31,6 +32,31 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:b3aacfbacdc98c637bc19401da959466566c13914d88be0a500a4ccd8c0e35fa",
+          "sha256": "b3aacfbacdc98c637bc19401da959466566c13914d88be0a500a4ccd8c0e35fa"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:005fdffe6633e849bc26051b739a0fc10d72ecb25335bb04aea9286b19dbd196",
+          "sha256": "005fdffe6633e849bc26051b739a0fc10d72ecb25335bb04aea9286b19dbd196"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:3e1eeb778ba25f9b32ca28ea6b4b9a83a625c6a9e91784ad0e846e5a143da513",
+          "sha256": "3e1eeb778ba25f9b32ca28ea6b4b9a83a625c6a9e91784ad0e846e5a143da513"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:6bbf7d591e74f0698dba58c353bb1d5d7029ef68192487f4f53d1a4be538f899",
+          "sha256": "6bbf7d591e74f0698dba58c353bb1d5d7029ef68192487f4f53d1a4be538f899"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:31ddce221ecaa52ab7d4cc10ccac2421043782f029a1a6643bcc886a7c1b922e",
+          "sha256": "31ddce221ecaa52ab7d4cc10ccac2421043782f029a1a6643bcc886a7c1b922e"
+        },
         "big_sur": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:50e093a609acac219853ba89a884408bebcddd23b7ae23faad9476618649cbe7",
@@ -61,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:6236d3b4ee424795859cc64da30997ff67f7ac5bd42702e8eabe10f99339ca48",
           "sha256": "6236d3b4ee424795859cc64da30997ff67f7ac5bd42702e8eabe10f99339ca48"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:53db8e889d8efa34b4a3b6a145bcec2bcb53595e7db0cfdd55c8d857dff3a442",
-          "sha256": "53db8e889d8efa34b4a3b6a145bcec2bcb53595e7db0cfdd55c8d857dff3a442"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libident/blobs/sha256:f80a93f7750a66e987f21af7db62ba4f72c2c277036049915d3c8e6a8b044cf2",
@@ -76,14 +97,18 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-
+    "autoconf",
+    "automake",
+    "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +138,12 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+
+      ]
+    }
+  }
 }

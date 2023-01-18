@@ -1,15 +1,18 @@
 cask "coscreen" do
-  version "3.8.44"
-  sha256 "e83020c18d2a6f4e365dd61f899bb98f91ca1dba0b1e1d0882fccfee7adcb288"
+  arch arm: "arm64", intel: "x64"
 
-  url "https://update.coscreen.org/CoScreen-#{version}-beta.dmg",
+  version "4.5.24"
+  sha256 arm:   "dcc2a63fa2128c3e446c5cb59f198989fea74e17886e8ac75434d716411af055",
+         intel: "1ff331122c3913ce52f707c4c2b957b5b6d1eb370dca434f199f17eaed03142e"
+
+  url "https://update.coscreen.org/CoScreen-#{version}-stable-#{arch}.dmg",
       verified: "https://update.coscreen.org/"
   name "CoScreen"
   desc "Collaboration tool with multi-user screen sharing"
-  homepage "https://coscreen.co/"
+  homepage "https://www.coscreen.co/"
 
   livecheck do
-    url "https://update.coscreen.org/beta-mac.yml"
+    url "https://update.coscreen.org/stable-mac.yml"
     strategy :electron_builder
   end
 

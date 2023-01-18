@@ -21,47 +21,62 @@
     "stable": {
       "url": "https://github.com/AlisterT/openjazz/archive/20190106.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "27da3ab32cb6b806502a213c435e1b3b6ecebb9f099592f71caf6574135b1662"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:112a6ec8803fa3672de7508518f1b055d7f0302c5e998e850fd3a10b008785ac",
+          "sha256": "112a6ec8803fa3672de7508518f1b055d7f0302c5e998e850fd3a10b008785ac"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:c6027acbe964bd7a83d604d812bf5a43078fcd34dd2ed43db595fea85b2e842a",
+          "sha256": "c6027acbe964bd7a83d604d812bf5a43078fcd34dd2ed43db595fea85b2e842a"
+        },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:0c93957029786455fa5dcaa7441408e0f1f5e4e5503019b056959638f54b082a",
-          "sha256": "0c93957029786455fa5dcaa7441408e0f1f5e4e5503019b056959638f54b082a"
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:7cddbce5a824cfe34e1fd75de8974522d3b011a53c9584052f0b27e79dfc79ca",
+          "sha256": "7cddbce5a824cfe34e1fd75de8974522d3b011a53c9584052f0b27e79dfc79ca"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:ac798949ec631497175402c544182e31d47884dcc00e43fb6b7bcfbf96bcf9b4",
+          "sha256": "ac798949ec631497175402c544182e31d47884dcc00e43fb6b7bcfbf96bcf9b4"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:5239dbf6629d348f81a7466b0bd8d92dbc222decdc304091bf71e545b49bb9bb",
+          "sha256": "5239dbf6629d348f81a7466b0bd8d92dbc222decdc304091bf71e545b49bb9bb"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:f38330100102887cadfe0929d42e4f61b743e3a9e8417a78d3da7c9bf620217b",
-          "sha256": "f38330100102887cadfe0929d42e4f61b743e3a9e8417a78d3da7c9bf620217b"
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:85d31ef9c357d5f3755fcbcb123e93a71f26b2549458ab97c9f3f22975372cfa",
+          "sha256": "85d31ef9c357d5f3755fcbcb123e93a71f26b2549458ab97c9f3f22975372cfa"
         },
         "catalina": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:9f6f4144256364824f4c16c430aaa738e6675f031f8bd7eaa76fa33d4d367430",
-          "sha256": "9f6f4144256364824f4c16c430aaa738e6675f031f8bd7eaa76fa33d4d367430"
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:b9948afd1fcc825a94787e97bbc964140268ac5c5ee1a76ac1113835869b4e96",
+          "sha256": "b9948afd1fcc825a94787e97bbc964140268ac5c5ee1a76ac1113835869b4e96"
         },
-        "mojave": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:06066b8e0bf792d894ceb24ed1ec5409ad896982db87ecab8c07278eabdc3f98",
-          "sha256": "06066b8e0bf792d894ceb24ed1ec5409ad896982db87ecab8c07278eabdc3f98"
-        },
-        "high_sierra": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:b5684fc3faa686f06f9600e8c4bb9c787c7cbf3eb100fc8a64a52502e84ce2ca",
-          "sha256": "b5684fc3faa686f06f9600e8c4bb9c787c7cbf3eb100fc8a64a52502e84ce2ca"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/openjazz/blobs/sha256:a50f5226a5b83bd7f316b4f1546124fcf1b84cb99a18909a6e9551662a5a17b1",
+          "sha256": "a50f5226a5b83bd7f316b4f1546124fcf1b84cb99a18909a6e9551662a5a17b1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -72,7 +87,10 @@
   ],
   "dependencies": [
     "libmodplug",
-    "sdl"
+    "sdl12-compat"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -81,7 +99,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
 
@@ -89,7 +107,7 @@
   "conflicts_with": [
 
   ],
-  "caveats": "The shareware version of Jazz Jackrabbit has been installed.\nYou can install the full version by copying the game files to:\n  $(brew --prefix)/Cellar/openjazz/20190106/share/openjazz\n",
+  "caveats": "The shareware version of Jazz Jackrabbit has been installed.\nYou can install the full version by copying the game files to:\n  $(brew --prefix)/Cellar/openjazz/20190106_1/share/openjazz\n",
   "installed": [
 
   ],
@@ -101,5 +119,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

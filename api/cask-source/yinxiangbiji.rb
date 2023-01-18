@@ -1,6 +1,6 @@
 cask "yinxiangbiji" do
-  version "9.5.16_465938"
-  sha256 "00ab3f5a0f0a5fd57a234c38c6f0d6cf3e2994e27dac7b2f0466fe8ab5d5ed76"
+  version "9.6.2_469630"
+  sha256 "0172ae95f075916b3c25437c43f5c2517a68eef7defa23ce85b89f6938a7e3a8"
 
   url "https://cdn.yinxiang.com/mac-smd/public/YinxiangBiji_RELEASE_#{version}.zip"
   name "Evernote"
@@ -11,7 +11,7 @@ cask "yinxiangbiji" do
   livecheck do
     url "https://www.yinxiang.com/download/get.php?file=EvernoteMac"
     strategy :header_match
-    regex(/YinxiangBiji_RELEASE_(\d+(?:.\d+)*).dmg/i)
+    regex(/YinxiangBiji_RELEASE_(\d+(?:[._]\d+)+)\.dmg/i)
   end
 
   auto_updates true

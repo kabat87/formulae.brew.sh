@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/jsha/minica/archive/v1.0.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c5b7e6c890ad472eb39f7e44d777da1b623930fd099b414213ced14bb599c6ec"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/minica/blobs/sha256:ecf3d68d4a4e348da0de9a156062d4c45cab04506899a74f11a84cf1af7f9402",
+          "sha256": "ecf3d68d4a4e348da0de9a156062d4c45cab04506899a74f11a84cf1af7f9402"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/minica/blobs/sha256:ae5f85025b2ad73a25fb69c777587a5660ab40f92e148c561df8f9aa54544356",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/minica/blobs/sha256:5e6f68245edcd602ca5fe8ab2b98c5aef62e826bc1e5f6660c710d886c308bc8",
           "sha256": "5e6f68245edcd602ca5fe8ab2b98c5aef62e826bc1e5f6660c710d886c308bc8"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/minica/blobs/sha256:f7a04897c252e04c3f5559cc0b7607e1b812aec6dd7548e778bf4c6b6196c46d",
+          "sha256": "f7a04897c252e04c3f5559cc0b7607e1b812aec6dd7548e778bf4c6b6196c46d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +126,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

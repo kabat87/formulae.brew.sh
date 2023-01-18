@@ -13,74 +13,77 @@
   "license": "MIT",
   "homepage": "https://www.msoos.org/cryptominisat5/",
   "versions": {
-    "stable": "5.8.0",
+    "stable": "5.11.4",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/msoos/cryptominisat/archive/5.8.0.tar.gz",
+      "url": "https://github.com/msoos/cryptominisat/archive/5.11.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "abeecb29a73e8566ae6e9afd229ec991d95b138985565b2378af95ef1ce1d317"
     }
   },
   "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 1,
+      "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:ebe5f3d813bd94d6366080733cd6a8b61ae2dc1bf243ee57dca8678b551d7bd6",
+          "sha256": "ebe5f3d813bd94d6366080733cd6a8b61ae2dc1bf243ee57dca8678b551d7bd6"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:cbfd9b642da561b05f4b73677892b9175b87af7c1bd43542f9326b164bfe330f",
-          "sha256": "cbfd9b642da561b05f4b73677892b9175b87af7c1bd43542f9326b164bfe330f"
+          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:caf7fa1899076b2d98333f253505d802ec14b834f9915fdfbea51a4d525444e3",
+          "sha256": "caf7fa1899076b2d98333f253505d802ec14b834f9915fdfbea51a4d525444e3"
         },
         "arm64_big_sur": {
-          "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:8b9940bdf5011a8f060de82576726b7138a60975f56fcd7113b692e026444021",
-          "sha256": "8b9940bdf5011a8f060de82576726b7138a60975f56fcd7113b692e026444021"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:31f3b36598745c142f428451dde74430228e23c737222de2b5e743ab8f163d44",
+          "sha256": "31f3b36598745c142f428451dde74430228e23c737222de2b5e743ab8f163d44"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:1f223253304a9c846df31077bce73ed3451c000f96acefcd3a51cf52840c9ed9",
+          "sha256": "1f223253304a9c846df31077bce73ed3451c000f96acefcd3a51cf52840c9ed9"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:0f9ea0f5cc7850fcba9c5f72a13dcd03bad10f1b200d57c70aebde2c9aa9b67e",
-          "sha256": "0f9ea0f5cc7850fcba9c5f72a13dcd03bad10f1b200d57c70aebde2c9aa9b67e"
+          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:a790c4ddfe4eeda555979d5a89e05ac976881287698613aa8b966a108503533e",
+          "sha256": "a790c4ddfe4eeda555979d5a89e05ac976881287698613aa8b966a108503533e"
         },
         "big_sur": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:ca952863f4a030cff0f60b3dc1b598c9a070460b5372577e63c8df577008e5eb",
-          "sha256": "ca952863f4a030cff0f60b3dc1b598c9a070460b5372577e63c8df577008e5eb"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:9314367f35d7d82790d4840b04d744fba37196f068fa38b899c7ac4c7e8f987b",
-          "sha256": "9314367f35d7d82790d4840b04d744fba37196f068fa38b899c7ac4c7e8f987b"
-        },
-        "mojave": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:2ad7c47169eae4780e42ddec65f1f6144fc59ee5585dd8d26ff5d270d25d9cc3",
-          "sha256": "2ad7c47169eae4780e42ddec65f1f6144fc59ee5585dd8d26ff5d270d25d9cc3"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:1ed4e6fef5258653335a460ef1d8aa9c6d4c8fd03b507ac7dc9ce8b985a9d53c",
+          "sha256": "1ed4e6fef5258653335a460ef1d8aa9c6d4c8fd03b507ac7dc9ce8b985a9d53c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:add4bd75d5ec2f5a1ce559282d81e207e99cd6da2b90234a2971808e3e8a222b",
-          "sha256": "add4bd75d5ec2f5a1ce559282d81e207e99cd6da2b90234a2971808e3e8a222b"
+          "url": "https://ghcr.io/v2/homebrew/core/cryptominisat/blobs/sha256:fbbfec94567e6c6a80f7670eae3b4838d8a90d955a92f58325fcece79212dac9",
+          "sha256": "fbbfec94567e6c6a80f7670eae3b4838d8a90d955a92f58325fcece79212dac9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "cmake"
+    "cmake",
+    "python@3.11"
   ],
   "dependencies": [
-    "boost",
-    "python@3.9"
+    "boost"
+  ],
+  "test_dependencies": [
+    "python@3.11"
   ],
   "recommended_dependencies": [
 
@@ -109,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

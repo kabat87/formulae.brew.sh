@@ -7,40 +7,48 @@
   ],
   "desc": "Client for VM agents and remote workstation cards",
   "homepage": "https://docs.teradici.com/find/product/software-and-mobile-clients/",
-  "url": "https://downloads.teradici.com/mac/stable/pcoip-client_21.03.0.dmg",
+  "url": "https://dl.teradici.com/DeAdBCiUYInHcSTy/pcoip-client/raw/names/pcoip-client-dmg/versions/23.01.0/pcoip-client_23.01.0.dmg",
   "appcast": null,
-  "version": "21.03.0",
+  "version": "23.01.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4dd5b21afccf49778b551c6b6cbf155d92b9905a0b951d86c7b4205c89cdb182",
+  "sha256": "1eb170c8dbd90d709eefe55c8a693c303664e46381548faa00ed67950219dc02",
   "artifacts": [
     {
-      "quit": [
-        "com.teradici.swiftclient",
-        "com.teradici.usb-mediator"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "com.teradici.swiftclient",
+            "com.teradici.usb-mediator"
+          ]
+        }
+      ]
     },
-    [
-      "PCoIPClient.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.teradici.swiftclient.plist",
-        "~/Library/Preferences/com.teradici.Teradici PCoIP Client.plist",
-        "~/Library/Preferences/com.teradici.PCoIP Client Connection Info.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "PCoIPClient.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.teradici.PCoIP Client Connection Info.plist",
+            "~/Library/Preferences/com.teradici.swiftclient.plist",
+            "~/Library/Preferences/com.teradici.Teradici PCoIP Client.plist"
+          ]
+        }
+      ]
     }
   ],
-  "caveats": null,
+  "caveats": "Installing pcoipclient means you have AGREED to the license at:\n  https://docs.teradici.com/reference/eula/teradici-end-user-license-agreement\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

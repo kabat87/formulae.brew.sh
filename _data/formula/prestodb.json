@@ -13,35 +13,35 @@
   "license": "Apache-2.0",
   "homepage": "https://prestodb.io",
   "versions": {
-    "stable": "0.268",
+    "stable": "0.278.1",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://search.maven.org/remotecontent?filepath=com/facebook/presto/presto-server/0.268/presto-server-0.268.tar.gz",
+      "url": "https://search.maven.org/remotecontent?filepath=com/facebook/presto/presto-server/0.278.1/presto-server-0.278.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "27340a48c5c88f630863134001894d7a43b6cf0641ae39f2f2f2cbfaf761a085"
     }
   },
   "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
-      "rebuild": 0,
+      "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/prestodb/blobs/sha256:b199e7c0c85d6dfdeaadfd5e41cd8a4a612b2a08d56bae5114feac3b6daf1d13",
-          "sha256": "b199e7c0c85d6dfdeaadfd5e41cd8a4a612b2a08d56bae5114feac3b6daf1d13"
+          "url": "https://ghcr.io/v2/homebrew/core/prestodb/blobs/sha256:4dbe1a80c79cb58dbb3cd389f227892010f8525b47770866b2cf8ec2150d2a95",
+          "sha256": "4dbe1a80c79cb58dbb3cd389f227892010f8525b47770866b2cf8ec2150d2a95"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -49,7 +49,11 @@
 
   ],
   "dependencies": [
-    "openjdk"
+    "openjdk@11",
+    "python@3.11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -62,10 +66,10 @@
   ],
   "requirements": [
     {
-      "name": "macos",
+      "name": "arch",
       "cask": null,
       "download": null,
-      "version": null,
+      "version": "x86_64",
       "contexts": [
 
       ]
@@ -86,5 +90,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

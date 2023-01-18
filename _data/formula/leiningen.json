@@ -13,15 +13,16 @@
   "license": "EPL-1.0",
   "homepage": "https://github.com/technomancy/leiningen",
   "versions": {
-    "stable": "2.9.8",
+    "stable": "2.10.0",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/technomancy/leiningen/archive/2.9.8.tar.gz",
+      "url": "https://github.com/technomancy/leiningen/archive/2.10.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5f4ae6ef2a9665176138730f00ce008b17de96af99a2ce5e4c3f017b2d4d5659"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/leiningen/blobs/sha256:b223d9b801258547b2c6990b84f64f64f11a3ac89d774b2a4ef52c8df47ef4da",
-          "sha256": "b223d9b801258547b2c6990b84f64f64f11a3ac89d774b2a4ef52c8df47ef4da"
+          "url": "https://ghcr.io/v2/homebrew/core/leiningen/blobs/sha256:48b5112c02e30233338b114ba4c6bfa70aaa7bac7e4429ef127ddc23703cb620",
+          "sha256": "48b5112c02e30233338b114ba4c6bfa70aaa7bac7e4429ef127ddc23703cb620"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,30 +7,33 @@
   ],
   "desc": "Browse and visualize data from OPC UA servers",
   "homepage": "https://www.prosysopc.com/products/opc-ua-browser/",
-  "url": "https://www.prosysopc.com/opcua/apps/UaBrowser/dist/4.1.0-354/prosys-opc-ua-browser-macos-4.1.0-354.dmg",
+  "url": "https://www.prosysopc.com/opcua/apps/UaBrowser/dist/4.4.0-126/prosys-opc-ua-browser-mac-x64-4.4.0-126.dmg",
   "appcast": null,
-  "version": "4.1.0,354",
+  "version": "4.4.0,126",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e289747b31d2603d579e0495cd559c60a1c558f054461bbfb8fa3aa373a0261a",
+  "sha256": "af512e83f87abe221a51ebdbb1835c2d1798585b1d6a2d4a133e4d1b635b608b",
   "artifacts": [
     {
-      "delete": "/Applications/Prosys OPC UA Browser.app",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "delete": "/Applications/Prosys OPC UA Browser.app"
+        }
+      ]
     },
     {
-      "path": "Prosys OPC UA Browser Installer.app/Contents/MacOS/JavaApplicationStub",
-      "args": {
-        "must_succeed": "true",
-        "sudo": "false",
-        "args": [
-          "-q"
-        ],
-        "print_stdout": "true"
-      }
+      "installer": [
+        {
+          "script": {
+            "executable": "Prosys OPC UA Browser Installer.app/Contents/MacOS/JavaApplicationStub",
+            "args": [
+              "-q"
+            ]
+          }
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -38,5 +41,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://www.prosysopc.com/opcua/apps/UaBrowser/dist/4.4.0-126/prosys-opc-ua-browser-mac-aarch64-4.4.0-126.dmg",
+      "sha256": "d358c32b87d9576492fd4112a967db96921da6a5d84321b0110082d2d1e1c579"
+    },
+    "arm64_monterey": {
+      "url": "https://www.prosysopc.com/opcua/apps/UaBrowser/dist/4.4.0-126/prosys-opc-ua-browser-mac-aarch64-4.4.0-126.dmg",
+      "sha256": "d358c32b87d9576492fd4112a967db96921da6a5d84321b0110082d2d1e1c579"
+    },
+    "arm64_big_sur": {
+      "url": "https://www.prosysopc.com/opcua/apps/UaBrowser/dist/4.4.0-126/prosys-opc-ua-browser-mac-aarch64-4.4.0-126.dmg",
+      "sha256": "d358c32b87d9576492fd4112a967db96921da6a5d84321b0110082d2d1e1c579"
+    }
+  }
 }

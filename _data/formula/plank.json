@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/pinterest/plank/archive/v1.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6a233120905ff371b5c06a23b3fc7dd67e96355dd4d992a58ac087db22c500ef"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/plank/blobs/sha256:8e8373c6eb34b0b7d1e82233fab34cec1a4bd1362daf8b85253367ab5e1373e9",
+          "sha256": "8e8373c6eb34b0b7d1e82233fab34cec1a4bd1362daf8b85253367ab5e1373e9"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/plank/blobs/sha256:6a91615ae4446513edd3ddb6fe91bcd8ae9768359da3af805ac7154e5a62487a",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/plank/blobs/sha256:ba560dc8f11ecdeef3e745cc00a0b7f6cae8074d4cfff100f43227e548c5db7a",
           "sha256": "ba560dc8f11ecdeef3e745cc00a0b7f6cae8074d4cfff100f43227e548c5db7a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/plank/blobs/sha256:14075f5bdbf249f033c85087b7e65acc1f9b984b3a4d79f72bbb34485bebb5b2",
+          "sha256": "14075f5bdbf249f033c85087b7e65acc1f9b984b3a4d79f72bbb34485bebb5b2"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -21,47 +21,27 @@
     "stable": {
       "url": "http://www.catb.org/~esr/ski/ski-6.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "cfbd251ce2052d24f06db3197d11fa0c0028fc4b5c9bc724653b3dfebed7d028"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
-        "arm64_big_sur": {
+        "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ski/blobs/sha256:80da0faf28f34d0440e89fa1761ad91e46be161925f42d6f3cfe6e2f74e718a3",
-          "sha256": "80da0faf28f34d0440e89fa1761ad91e46be161925f42d6f3cfe6e2f74e718a3"
-        },
-        "big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ski/blobs/sha256:6032ccdfd57a414c4c7336aee66c03416b549ffba4aa9de2e5f456e7666b27ae",
-          "sha256": "6032ccdfd57a414c4c7336aee66c03416b549ffba4aa9de2e5f456e7666b27ae"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ski/blobs/sha256:b647b2162475b1dccee3afe7d6d878108fc3ac97826756c355b0c8b748143253",
-          "sha256": "b647b2162475b1dccee3afe7d6d878108fc3ac97826756c355b0c8b748143253"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ski/blobs/sha256:b647b2162475b1dccee3afe7d6d878108fc3ac97826756c355b0c8b748143253",
-          "sha256": "b647b2162475b1dccee3afe7d6d878108fc3ac97826756c355b0c8b748143253"
-        },
-        "high_sierra": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/ski/blobs/sha256:b647b2162475b1dccee3afe7d6d878108fc3ac97826756c355b0c8b748143253",
-          "sha256": "b647b2162475b1dccee3afe7d6d878108fc3ac97826756c355b0c8b748143253"
+          "url": "https://ghcr.io/v2/homebrew/core/ski/blobs/sha256:cbda47eb2a97213dee88f63680f6301826874ffc66c6ad2b666125e1505f8585",
+          "sha256": "cbda47eb2a97213dee88f63680f6301826874ffc66c6ad2b666125e1505f8585"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -71,6 +51,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -78,7 +61,7 @@
 
   ],
   "uses_from_macos": [
-
+    "python"
   ],
   "requirements": [
 
@@ -98,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

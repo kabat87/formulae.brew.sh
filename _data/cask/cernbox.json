@@ -7,28 +7,39 @@
   ],
   "desc": "Cloud storage for CERN users",
   "homepage": "https://cernbox.web.cern.ch/cernbox/",
-  "url": "https://cernbox.cern.ch/cernbox/doc/MacOSX/cernbox-2.8.2.4410.pkg",
+  "url": "https://cernbox.cern.ch/cernbox/doc/MacOSX/cernbox-2.11.1.8905.pkg",
   "appcast": null,
-  "version": "2.8.2.4410",
+  "version": "2.11.1.8905",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "607b174daae8d7bd83cbeda2a66e06e8371f90c19f1cf3b5c6c941c95df2d0d7",
+  "sha256": "09a8134e800a42dcd2279218c2598bc7a8b01e19843fe4d3622cbbb9eb0b2d53",
   "artifacts": [
     {
-      "signal": {
-        "TERM": "ch.cern.cernbox"
-      },
-      "login_item": "cernbox",
-      "pkgutil": "ch.cern.cernbox"
+      "uninstall": [
+        {
+          "signal": [
+            "TERM",
+            "ch.cern.cernbox"
+          ],
+          "login_item": "cernbox",
+          "pkgutil": "ch.cern.cernbox"
+        }
+      ]
     },
-    "cernbox-2.8.2.4410.pkg (Pkg)"
+    {
+      "pkg": [
+        "cernbox-2.11.1.8905.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

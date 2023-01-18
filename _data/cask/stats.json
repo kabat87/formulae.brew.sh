@@ -7,33 +7,39 @@
   ],
   "desc": "System monitor for the menu bar",
   "homepage": "https://github.com/exelban/stats",
-  "url": "https://github.com/exelban/stats/releases/download/v2.7.0/Stats.dmg",
+  "url": "https://github.com/exelban/stats/releases/download/v2.8.4/Stats.dmg",
   "appcast": null,
-  "version": "2.7.0",
+  "version": "2.8.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "2c1c1a4eb76d81137ebd122fc9ce41bcae3d28c7660554a807ef12009ebee819",
+  "sha256": "5c99739ca7cbbf2560f6f37d2c67a6fbd6c27e18ba96b034fd981301d9a76d64",
   "artifacts": [
     {
-      "quit": "eu.exelban.Stats",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "eu.exelban.Stats"
+        }
+      ]
     },
-    [
-      "Stats.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Scripts/eu.exelban.Stats.LaunchAtLogin",
-        "~/Library/Caches/eu.exelban.Stats",
-        "~/Library/Containers/eu.exelban.Stats.LaunchAtLogin",
-        "~/Library/Cookies/eu.exelban.Stats.binarycookies",
-        "~/Library/Preferences/eu.exelban.Stats.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Stats.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Scripts/eu.exelban.Stats.LaunchAtLogin",
+            "~/Library/Caches/eu.exelban.Stats",
+            "~/Library/Containers/eu.exelban.Stats.LaunchAtLogin",
+            "~/Library/Cookies/eu.exelban.Stats.binarycookies",
+            "~/Library/Preferences/eu.exelban.Stats.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +52,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

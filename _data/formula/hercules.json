@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://downloads.hercules-390.eu/hercules-3.13.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "890c57c558d58708e55828ae299245bd2763318acf53e456a48aac883ecfe67d"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hercules/blobs/sha256:9fcd456bb4ae3b312765e3b0c2c3d10a3d24aab9d2d39745b7bb049b08d1dd35",
+          "sha256": "9fcd456bb4ae3b312765e3b0c2c3d10a3d24aab9d2d39745b7bb049b08d1dd35"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/hercules/blobs/sha256:989fec41881653b8d1f7372d4de8447703fba4b2b6880194e5974cdad50b58d9",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/hercules/blobs/sha256:ba4b3fa347d63601909127c94c0a2b1e42d81bbcc154970a18d7dd4ad8b15bba",
           "sha256": "ba4b3fa347d63601909127c94c0a2b1e42d81bbcc154970a18d7dd4ad8b15bba"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hercules/blobs/sha256:478ecb96c865328760fd636aee98d44e0b5f27e90be83d3fef3c0f437d41830e",
+          "sha256": "478ecb96c865328760fd636aee98d44e0b5f27e90be83d3fef3c0f437d41830e"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -60,13 +71,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/hercules/blobs/sha256:3c7535fa1d1e9385c9f2525e40445b931c3768ab611db4e6a2019c7910538c41",
           "sha256": "3c7535fa1d1e9385c9f2525e40445b931c3768ab611db4e6a2019c7910538c41"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hercules/blobs/sha256:253d9c36ec65a956796d413a957999b99bc22b10fc3baa436f2d3fb7ef7dcd25",
+          "sha256": "253d9c36ec65a956796d413a957999b99bc22b10fc3baa436f2d3fb7ef7dcd25"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -78,6 +93,9 @@
   "dependencies": [
 
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -85,7 +103,7 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
 
@@ -105,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

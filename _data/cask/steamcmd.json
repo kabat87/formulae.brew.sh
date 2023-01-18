@@ -16,18 +16,24 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    "preflight (Preflight Block)",
-    [
-      "$(brew --prefix)/Caskroom/steamcmd/latest/steamcmd.sh.wrapper.sh",
-      {
-        "target": "steamcmd"
-      }
-    ]
+    {
+      "preflight": "  preflight do\n    File.write shimscript, <<~EOS\n      #!/bin/sh\n      exec '#{staged_path}/steamcmd.sh' \"$@\"\n    EOS\n  end\n"
+    },
+    {
+      "binary": [
+        "$(brew --prefix)/Caskroom/steamcmd/latest/steamcmd.sh.wrapper.sh",
+        {
+          "target": "steamcmd"
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

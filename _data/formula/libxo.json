@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Juniper/libxo/releases/download/1.6.0/libxo-1.6.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9f2f276d7a5f25ff6fbfc0f38773d854c9356e7f985501627d0c0ee336c19006"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libxo/blobs/sha256:b9e3fdf6f9bf02d0a13c076f9460cc3ea55a78a1387d9b89d52e40375ea6d664",
+          "sha256": "b9e3fdf6f9bf02d0a13c076f9460cc3ea55a78a1387d9b89d52e40375ea6d664"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libxo/blobs/sha256:82180c9986e803236f8caba30c00b2dcdddaebaedfeb93a9c19a35fb959d6199",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libxo/blobs/sha256:56e3e01d82e65127da77eabfa5c109689c752aa039771ad9ec48b6de9910ddfd",
           "sha256": "56e3e01d82e65127da77eabfa5c109689c752aa039771ad9ec48b6de9910ddfd"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/libxo/blobs/sha256:73c60cd82012ce8ef4b2db4df25e3ba117c19731cdb844eb53e19df05410b54e",
+          "sha256": "73c60cd82012ce8ef4b2db4df25e3ba117c19731cdb844eb53e19df05410b54e"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -5,10 +5,10 @@
   "name": [
     "Timings"
   ],
-  "desc": null,
+  "desc": "Time tracking",
   "homepage": "https://www.mediaatelier.com/Timings3/",
   "url": "https://mediaatelier.com/Timings3/Timings_3.2.8.zip",
-  "appcast": "https://mediaatelier.com/Timings3/feed.php",
+  "appcast": null,
   "version": "3.2.8",
   "versions": {
   },
@@ -16,23 +16,29 @@
   "outdated": false,
   "sha256": "6990c248e0d680ab1fe9fab257d8ed07bc1f2c170b2fc882d78d13c7f14a5f77",
   "artifacts": [
-    [
-      "Timings.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.mediaatelier.Timings.plist",
-        "~/Library/Application Support/Timings",
-        "~/Library/Caches/com.mediaatelier.Timings"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Timings.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Timings",
+            "~/Library/Caches/com.mediaatelier.Timings",
+            "~/Library/Preferences/com.mediaatelier.Timings.plist"
+          ]
+        }
+      ]
     }
   ],
-  "caveats": null,
+  "caveats": "timings has been officially discontinued upstream.\nIt may stop working correctly (or at all) in recent versions of macOS.\n",
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

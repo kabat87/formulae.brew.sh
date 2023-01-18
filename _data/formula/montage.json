@@ -10,68 +10,63 @@
 
   ],
   "desc": "Toolkit for assembling FITS images into custom mosaics",
-  "license": null,
+  "license": "BSD-3-Clause",
   "homepage": "http://montage.ipac.caltech.edu",
   "versions": {
-    "stable": "4.0",
-    "head": null,
+    "stable": "6.0",
+    "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "http://montage.ipac.caltech.edu/download/Montage_v4.0.tar.gz",
+      "url": "http://montage.ipac.caltech.edu/download/Montage_v6.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1f540a7389d30fcf9f8cd9897617cc68b19350fbcde97c4d1cdc5634de1992c6"
     }
   },
-  "revision": 0,
+  "revision": 1,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:5fb0ba7f92da2f1640b5b167a534e25dbbd8bfca5985496dc3160b8c80f8e941",
+          "sha256": "5fb0ba7f92da2f1640b5b167a534e25dbbd8bfca5985496dc3160b8c80f8e941"
+        },
+        "arm64_monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:3351038e38cb15aea0c03e8085869f13d7a08e595b3ac175d7e516ebbb23930b",
+          "sha256": "3351038e38cb15aea0c03e8085869f13d7a08e595b3ac175d7e516ebbb23930b"
+        },
+        "arm64_big_sur": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:89c301642c9ecdbc1735d7c4f7a2d4682579df7c47bbc79b4a9ca458f8ac612a",
+          "sha256": "89c301642c9ecdbc1735d7c4f7a2d4682579df7c47bbc79b4a9ca458f8ac612a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:dd2019c0ad78b267ca235ad2d7a49a1554e94bba0e5366846ce79f6cf5d923c0",
+          "sha256": "dd2019c0ad78b267ca235ad2d7a49a1554e94bba0e5366846ce79f6cf5d923c0"
+        },
+        "monterey": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:31f5c80d33f8b8ab6c19931c2d9ee4ce8afbc5bf3521beb30852caf253144acb",
+          "sha256": "31f5c80d33f8b8ab6c19931c2d9ee4ce8afbc5bf3521beb30852caf253144acb"
+        },
         "big_sur": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:304f02cffd94ee9e118026fda40db0f27d4ae25c2d42c74e45b3426d11f1ed3d",
-          "sha256": "304f02cffd94ee9e118026fda40db0f27d4ae25c2d42c74e45b3426d11f1ed3d"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:0335521dd15d7debbfb5db21efbf5f751c571d406fd91aeaa9996226cca63d33",
-          "sha256": "0335521dd15d7debbfb5db21efbf5f751c571d406fd91aeaa9996226cca63d33"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:ee1b94e776a2ad68ea41b1edb6a3fb549c43bb373f3f7b9fb3709e4e4fbbb4e8",
-          "sha256": "ee1b94e776a2ad68ea41b1edb6a3fb549c43bb373f3f7b9fb3709e4e4fbbb4e8"
-        },
-        "high_sierra": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:3a8fab4097bd0dd0524a5a482065284d35ea0fdd946fb1f5d5ea1e103f5d4443",
-          "sha256": "3a8fab4097bd0dd0524a5a482065284d35ea0fdd946fb1f5d5ea1e103f5d4443"
-        },
-        "sierra": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:70b1769202095b84da05fe00a1934d8e8da3fd08b7ddb7135937f4cdc0107f07",
-          "sha256": "70b1769202095b84da05fe00a1934d8e8da3fd08b7ddb7135937f4cdc0107f07"
-        },
-        "el_capitan": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:503c3e946aa0d8f277b5e4a5aab75086d5c895551fa679a3129183b95f89b236",
-          "sha256": "503c3e946aa0d8f277b5e4a5aab75086d5c895551fa679a3129183b95f89b236"
-        },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:7f9bb66eff925f20099f11ee247e4ba4c8b4821b74c7f2a3efd93d474e9a1b3f",
-          "sha256": "7f9bb66eff925f20099f11ee247e4ba4c8b4821b74c7f2a3efd93d474e9a1b3f"
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/montage/blobs/sha256:185ebdfbbeacdfb4e2c5bf3b3e96e8a9bb21d74415612bab5417024465849ee9",
+          "sha256": "185ebdfbbeacdfb4e2c5bf3b3e96e8a9bb21d74415612bab5417024465849ee9"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +74,11 @@
 
   ],
   "dependencies": [
+    "cfitsio",
+    "freetype",
+    "jpeg-turbo"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -88,7 +88,7 @@
 
   ],
   "uses_from_macos": [
-
+    "bzip2"
   ],
   "requirements": [
 
@@ -108,5 +108,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

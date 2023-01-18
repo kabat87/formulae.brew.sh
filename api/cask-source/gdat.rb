@@ -1,15 +1,15 @@
 cask "gdat" do
-  version "2021r08"
+  version "2022r09"
   sha256 :no_check
 
-  url "https://drive.google.com/uc?export=download&id=1lnA5hFiCV9qzreQE7a5YzdeValaicTHD"
+  url "https://drive.google.com/uc?export=download&id=1lnA5hFiCV9qzreQE7a5YzdeValaicTHD",
+      verified: "drive.google.com/uc?export=download&id=1lnA5hFiCV9qzreQE7a5YzdeValaicTHD"
   name "Genealogical DNA Analysis Tool"
   desc "App that utilizes autosomal DNA to aid in the research of family trees"
-  homepage "https://sites.google.com/view/genealogical-dna-analysis-tool"
+  homepage "https://www.getgdat.com/"
 
   livecheck do
     url "https://sites.google.com/view/genealogical-dna-analysis-tool/home/download"
-    strategy :page_match
     regex(/Genealogical DNA Analysis Tool (\d+(?:.\d+)+)/i)
   end
 

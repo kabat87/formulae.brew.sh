@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/conjure-up/conjure-up/archive/2.6.14.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c9f115229a305ff40eae051f40db2ca18a3dc2bd377397e22786bba032feb79a"
     }
   },
   "revision": 4,
@@ -71,7 +72,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -87,6 +87,9 @@
     "pwgen",
     "python@3.10",
     "redis"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -110,10 +113,28 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-04-15",
-  "deprecation_reason": "repo_archived",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "repo_archived",
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "pkg-config"
+      ],
+      "dependencies": [
+        "awscli",
+        "jq",
+        "juju",
+        "juju-wait",
+        "libyaml",
+        "pwgen",
+        "python@3.10",
+        "redis",
+        "libffi"
+      ]
+    }
+  }
 }

@@ -1,12 +1,19 @@
 cask "rekordbox" do
-  version "6.6.1,20211125100827"
-  sha256 "7d9e0c0d2a9a71c50c9d01770718f878041b5badf3166c22ad85e148ea1fdc44"
+  version "6.6.8,20221125124421"
+  sha256 "d61bb3b7ccedbe17459ae417480b52c81659d3cc7f4f89d33cb42fe92442db86"
 
   url "https://cdn.rekordbox.com/files/#{version.csv.second}/Install_rekordbox_#{version.csv.first.dots_to_underscores}.pkg_.zip"
-  appcast "https://rekordbox.com/en/download/"
   name "rekordbox"
   desc "Free Dj app to prepare and manage your music files"
   homepage "https://rekordbox.com/en/"
+
+  livecheck do
+    url "https://rekordbox.com/en/download/"
+    regex(%r{data-url=.*?/(\d+)/Install[._-]rekordbox[._-]v?(\d+(?:[._]\d+)+)\.pkg_\.zip}i)
+    strategy :page_match do |page, regex|
+      page.scan(regex).map { |match| "#{match.second.tr("_", ".")},#{match.first}" }
+    end
+  end
 
   auto_updates true
   depends_on macos: ">= :high_sierra"

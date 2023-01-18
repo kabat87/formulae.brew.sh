@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://jak-linux.org/projects/hardlink/hardlink_0.3.0.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e8c93dfcb24aeb44a75281ed73757cb862cc63b225d565db1c270af9dbb7300f"
     }
   },
   "revision": 0,
@@ -76,11 +77,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/hardlink/blobs/sha256:d8b6e2d26d8f49a207c5082a97f1e5c31b35041bcfbc17a217a1c2ad4ff68551",
           "sha256": "d8b6e2d26d8f49a207c5082a97f1e5c31b35041bcfbc17a217a1c2ad4ff68551"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/hardlink/blobs/sha256:36c30ed90a3d2b9d2d4d07cb182c2838dfba276a05c22d022a42e16043e86f02",
-          "sha256": "36c30ed90a3d2b9d2d4d07cb182c2838dfba276a05c22d022a42e16043e86f02"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/hardlink/blobs/sha256:b849b6cdc2d96380221c9dddc48a4c6485db0f4257ea7c48ade59b50e29f7bfd",
@@ -91,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +96,9 @@
   "dependencies": [
     "gnu-getopt",
     "pcre"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -124,10 +122,19 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-02-17",
-  "deprecation_reason": "has been merged into `util-linux`",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-09-14",
+  "disable_reason": "has been merged into `util-linux`",
+  "variations": {
+    "x86_64_linux": {
+      "keg_only": true,
+      "keg_only_reason": {
+        "reason": "it conflicts with the maintained `hardlink` binary in `util-linux`",
+        "explanation": ""
+      }
+    }
+  }
 }

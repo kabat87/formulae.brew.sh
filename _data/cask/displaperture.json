@@ -9,7 +9,7 @@
   "homepage": "https://manytricks.com/displaperture/",
   "url": "https://manytricks.com/download/displaperture",
   "appcast": null,
-  "version": "2.1,1052",
+  "version": "2.2,1055",
   "versions": {
   },
   "installed": null,
@@ -17,21 +17,27 @@
   "sha256": "no_check",
   "artifacts": [
     {
-      "quit": "com.manytricks.Displaperture",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.manytricks.Displaperture"
+        }
+      ]
     },
-    [
-      "Displaperture.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.manytricks.Displaperture",
-        "~/Library/Containers/com.manytricks.Displaperture",
-        "~/Library/Preferences/com.manytricks.Displaperture.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Displaperture.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.manytricks.Displaperture",
+            "~/Library/Containers/com.manytricks.Displaperture",
+            "~/Library/Preferences/com.manytricks.Displaperture.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +45,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

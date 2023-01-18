@@ -1,13 +1,9 @@
 cask "android-studio" do
-  arch = Hardware::CPU.intel? ? "mac" : "mac_arm"
+  arch arm: "mac_arm", intel: "mac"
 
-  version "2020.3.1.26"
-
-  if Hardware::CPU.intel?
-    sha256 "7da10ce0c3e998393045f6de3c37df46bd95e3bacb3f803d63fd85bc67148d6e"
-  else
-    sha256 "19688e19df59f37ce1d4b2b339d0c81dbc8f443fb2c8cbe4d6e4178cc70f935a"
-  end
+  version "2022.1.1.19"
+  sha256 arm:   "78c450022fc1a85af90ae64fced4eafbc1ca4149e60bb14085f4f1503ff1cb36",
+         intel: "3e965f50d7312859b4ea11cf530ca1a6ba0bc476a285fe614a2b2f3cde1fc2d0"
 
   url "https://redirector.gvt1.com/edgedl/android/studio/install/#{version}/android-studio-#{version}-#{arch}.dmg",
       verified: "redirector.gvt1.com/edgedl/android/studio/"
@@ -17,24 +13,23 @@ cask "android-studio" do
 
   livecheck do
     url :homepage
-    regex(/android-studio-(\d+(?:\.\d+)+)-#{arch}\.dmg/i)
+    regex(/android[._-]studio[._-]v?(\d+(?:\.\d+)+)[._-]#{arch}\.dmg/i)
   end
 
   auto_updates true
-  conflicts_with cask: "homebrew/cask-versions/android-studio-preview-beta"
 
   app "Android Studio.app"
 
   zap trash: [
-    "~/.android",
-    "~/Library/Android/sdk",
-    "~/Library/Application Support/Google/AndroidStudio#{version.major_minor}",
-    "~/Library/Caches/Google/AndroidStudio#{version.major_minor}",
-    "~/Library/Logs/Google/AndroidStudio#{version.major_minor}",
-    "~/Library/Preferences/com.android.Emulator.plist",
-    "~/Library/Preferences/com.google.android.studio.plist",
-    "~/Library/Saved Application State/com.google.android.studio.savedState",
-  ],
+        "~/.android",
+        "~/Library/Android/sdk",
+        "~/Library/Application Support/Google/AndroidStudio#{version.major_minor}",
+        "~/Library/Caches/Google/AndroidStudio#{version.major_minor}",
+        "~/Library/Logs/Google/AndroidStudio#{version.major_minor}",
+        "~/Library/Preferences/com.android.Emulator.plist",
+        "~/Library/Preferences/com.google.android.studio.plist",
+        "~/Library/Saved Application State/com.google.android.studio.savedState",
+      ],
       rmdir: [
         "~/AndroidStudioProjects",
         "~/Library/Android",

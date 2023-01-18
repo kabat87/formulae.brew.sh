@@ -7,29 +7,33 @@
   ],
   "desc": "HTTP(S) debugging proxy, analyzer, and client",
   "homepage": "https://httptoolkit.tech/",
-  "url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.5.1/HttpToolkit-1.5.1.dmg",
+  "url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.12.2/HttpToolkit-1.12.2.dmg",
   "appcast": null,
-  "version": "1.5.1",
+  "version": "1.12.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "07b63fcf0cec9f2ca86b32de4a3452560e3508ff2dd298f6bdac4b3a47155a5f",
+  "sha256": "27e1f1c68471832869893b7fcdebfee7d867116be384726f9326606754f23588",
   "artifacts": [
-    [
-      "HTTP Toolkit.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/HTTP Toolkit",
-        "~/Library/Caches/httptoolkit-server",
-        "~/Library/Logs/HTTP Toolkit",
-        "~/Library/Preferences/httptoolkit",
-        "~/Library/Preferences/tech.httptoolkit.desktop.plist",
-        "~/Library/Saved Application State/tech.httptoolkit.desktop.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "HTTP Toolkit.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/HTTP Toolkit",
+            "~/Library/Caches/httptoolkit-server",
+            "~/Library/Logs/HTTP Toolkit",
+            "~/Library/Preferences/httptoolkit",
+            "~/Library/Preferences/tech.httptoolkit.desktop.plist",
+            "~/Library/Saved Application State/tech.httptoolkit.desktop.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -37,5 +41,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

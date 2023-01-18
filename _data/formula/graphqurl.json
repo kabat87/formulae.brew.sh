@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://registry.npmjs.org/graphqurl/-/graphqurl-1.0.1.tgz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c6dfb4106d5b8b0860c0df5dffd0cc75095d280ad4841bda25a6ef0b9a75e199"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/graphqurl/blobs/sha256:6720b6787af01d641813f3f8afd2c6f48bb0897c88c8a7a2dc1a3d25fa09749d",
+          "sha256": "6720b6787af01d641813f3f8afd2c6f48bb0897c88c8a7a2dc1a3d25fa09749d"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/graphqurl/blobs/sha256:d8f189f4e958a6f06e820be1734fcdacf427b7ae67d7230347ee05a067ac5035",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/graphqurl/blobs/sha256:138b68d4fffc64cd4ce86e07b618ccfa561aa15a700e8c08c66b20b65797ba70",
           "sha256": "138b68d4fffc64cd4ce86e07b618ccfa561aa15a700e8c08c66b20b65797ba70"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/graphqurl/blobs/sha256:a26640944c1ed16f99a09a4bb96bcb36b49fa3c56f36b22123e80e0d19aee6b0",
+          "sha256": "a26640944c1ed16f99a09a4bb96bcb36b49fa3c56f36b22123e80e0d19aee6b0"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "node"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

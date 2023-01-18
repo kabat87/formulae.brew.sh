@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/troydhanson/tpl/archive/v1.6.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0b3750bf62f56be4c42f83c89d8449b24f1c5f1605a104801d70f2f3c06fb2ff"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tpl/blobs/sha256:2bfb6b7bbdfecfa9aa8e25c3841dd9dbc6d333c746792a446ac729536c643475",
+          "sha256": "2bfb6b7bbdfecfa9aa8e25c3841dd9dbc6d333c746792a446ac729536c643475"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tpl/blobs/sha256:cd423b01e4be55cc76cfc5c780582519f9583073f8b4e42a823c007cc59805e6",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/tpl/blobs/sha256:28d206fb0a8b3d318bbb8281a2cf64cb371f6a78896bc6c4b0b4187a2c109e96",
           "sha256": "28d206fb0a8b3d318bbb8281a2cf64cb371f6a78896bc6c4b0b4187a2c109e96"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/tpl/blobs/sha256:b67d07d542d44a4fd9f2bb91e6f080796a264229eaffee4b19fad72295576db5",
+          "sha256": "b67d07d542d44a4fd9f2bb91e6f080796a264229eaffee4b19fad72295576db5"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/tpl/blobs/sha256:a887350815a2791312bdec2ecdf82795d6f54c67f9e76842236e8bb1f507108d",
           "sha256": "a887350815a2791312bdec2ecdf82795d6f54c67f9e76842236e8bb1f507108d"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/tpl/blobs/sha256:2587ed48c7a6ff2c309e688695c79d845b5fe2a06eae1189dc1c9de21f9bceaa",
-          "sha256": "2587ed48c7a6ff2c309e688695c79d845b5fe2a06eae1189dc1c9de21f9bceaa"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tpl/blobs/sha256:49c4f470d6782300dd24da0af8a3886cc977a9c24a0de37c606181b3db09e44d",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -101,6 +106,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -130,5 +138,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

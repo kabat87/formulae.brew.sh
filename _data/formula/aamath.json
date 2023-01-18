@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://fuse.superglue.se/aamath/aamath-0.3.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9843f4588695e2cd55ce5d8f58921d4f255e0e65ed9569e1dcddf3f68f77b631"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aamath/blobs/sha256:0fdc50f0e8165ff7de731e092ddfa57149185bd1c1e1cf463e819645364d25ee",
+          "sha256": "0fdc50f0e8165ff7de731e092ddfa57149185bd1c1e1cf463e819645364d25ee"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aamath/blobs/sha256:e823e4d89ae67660af61746c7472d80f0eb2ea70503471ac1190f9c0c691faf0",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aamath/blobs/sha256:eec6c9dd0ae3b32b3d2b22ac4cf926c6b3084a41623361762a4c0a297dc05286",
           "sha256": "eec6c9dd0ae3b32b3d2b22ac4cf926c6b3084a41623361762a4c0a297dc05286"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/aamath/blobs/sha256:1edd59508421089d629ab153c03d9db3c5e0e3cad0a75d3baea36b533a5b1d0a",
+          "sha256": "1edd59508421089d629ab153c03d9db3c5e0e3cad0a75d3baea36b533a5b1d0a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/aamath/blobs/sha256:8b805e37fd5f4536b4fbf7f3ae6251b645b4b132027d56ccd015a6036c304744",
           "sha256": "8b805e37fd5f4536b4fbf7f3ae6251b645b4b132027d56ccd015a6036c304744"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/aamath/blobs/sha256:1e22022e621e7d2337edf4a80ae2c1618a89089132656d85cc141774565e34d7",
-          "sha256": "1e22022e621e7d2337edf4a80ae2c1618a89089132656d85cc141774565e34d7"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/aamath/blobs/sha256:f803d33b088e251eba9820706307616a771dea7d2994818a8fc36aca85af0541",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -133,5 +141,16 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "bison",
+        "flex"
+      ],
+      "dependencies": [
+        "readline"
+      ]
+    }
+  }
 }

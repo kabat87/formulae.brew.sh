@@ -1,6 +1,6 @@
 cask "spyder" do
-  version "5.2.1"
-  sha256 "185bd15b11042e51c874562cb0f55e79ae0a02cc942a051d8b6545e5635035eb"
+  version "5.4.1"
+  sha256 "e99cb57a6b5147e0bb4645f8a5440349da81153c2257bffbe0056243422d5455"
 
   url "https://github.com/spyder-ide/spyder/releases/download/v#{version}/Spyder.dmg",
       verified: "github.com/spyder-ide/spyder/"

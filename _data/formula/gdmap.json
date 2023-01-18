@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/gdmap/gdmap/0.8.1/gdmap-0.8.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a200c98004b349443f853bf611e49941403fce46f2335850913f85c710a2285b"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdmap/blobs/sha256:6d1aa6f06a5fd8f4f5f2b44c7b59eaece7f72eefbba04532523f5c44afe2289d",
+          "sha256": "6d1aa6f06a5fd8f4f5f2b44c7b59eaece7f72eefbba04532523f5c44afe2289d"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gdmap/blobs/sha256:0434aca36b5815b56ed272593d2c932c9021f98096b69948345326c6d4385711",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gdmap/blobs/sha256:5a8b13614d00034566780fe17bfdffa2e3e9c08a10953de82b7f1e162f6846cb",
           "sha256": "5a8b13614d00034566780fe17bfdffa2e3e9c08a10953de82b7f1e162f6846cb"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdmap/blobs/sha256:1f0566a3d68692adda4311550ec1dcf2908dd0c89824c1d730f8f689feb39746",
+          "sha256": "1f0566a3d68692adda4311550ec1dcf2908dd0c89824c1d730f8f689feb39746"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -70,13 +81,17 @@
           "cellar": "/usr/local/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/gdmap/blobs/sha256:2a5da8dc2b00407271001ef511d61cad03f043cc98b45442ab1aff7d9263ae19",
           "sha256": "2a5da8dc2b00407271001ef511d61cad03f043cc98b45442ab1aff7d9263ae19"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/gdmap/blobs/sha256:89e1c3ad339cc74e03548a784171f218f5d8f7216749ee9c0a8bed3086c5aae1",
+          "sha256": "89e1c3ad339cc74e03548a784171f218f5d8f7216749ee9c0a8bed3086c5aae1"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -89,6 +104,9 @@
     "glib",
     "gtk+"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -96,7 +114,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "perl": "build"
+    }
   ],
   "requirements": [
 
@@ -111,10 +131,12 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": false,
-  "deprecation_date": null,
-  "deprecation_reason": null,
+  "deprecated": true,
+  "deprecation_date": "2022-09-18",
+  "deprecation_reason": "unmaintained",
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

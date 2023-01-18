@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://ftp.math.utah.edu/pub/bibclean/bibclean-3.06.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "6574f9b8042ba8fa05eae5416b3738a35c38d129f48e733e25878ecfbaaade43"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/bibclean/blobs/sha256:bd8445bd033da6d614dfcc572d290be67f65cbb2fc120446c5941c84f5bd1c0d",
+          "sha256": "bd8445bd033da6d614dfcc572d290be67f65cbb2fc120446c5941c84f5bd1c0d"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/bibclean/blobs/sha256:547fbf90902019ae07961d32c2a474e4d0b52901a7053ae23332e81a5d853676",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/bibclean/blobs/sha256:0323f9d9e011a7433a99c0fcc284b29163e3d864d55adf54063ac415fb718689",
           "sha256": "0323f9d9e011a7433a99c0fcc284b29163e3d864d55adf54063ac415fb718689"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/bibclean/blobs/sha256:3f1ad7ffd63675963e10d88183efaa45e9756c579034350480129d509d73fe94",
+          "sha256": "3f1ad7ffd63675963e10d88183efaa45e9756c579034350480129d509d73fe94"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

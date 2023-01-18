@@ -1,6 +1,6 @@
 cask "fabfilter-micro" do
-  version "1.23"
-  sha256 "914fbec32ef3c81bfa45fc6eaf73e04a5f66632098ab270ff74e4dadd004349c"
+  version "1.24"
+  sha256 "fe3df84dfd8ac5d27b43a0151c9b9b79d7f34073d459fc09c26d00a1b9e0d727"
 
   url "https://download.fabfilter.com/ffmicro#{version.no_dots}.dmg"
   name "FabFilter Micro"
@@ -17,7 +17,7 @@ cask "fabfilter-micro" do
     end
   end
 
-  depends_on macos: ">= :yosemite"
+  depends_on macos: ">= :sierra"
 
   pkg "FabFilter Micro #{version} Installer.pkg"
 

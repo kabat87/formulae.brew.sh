@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.corpit.ru/mjt/tinycdb/tinycdb-0.78.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "50678f432d8ada8d69f728ec11c3140e151813a7847cf30a62d86f3a720ed63c"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tinycdb/blobs/sha256:d4c19ef1e8ab85e6ea283d3ac801c941e302f8b89e72ed365427890fa7faaa4f",
+          "sha256": "d4c19ef1e8ab85e6ea283d3ac801c941e302f8b89e72ed365427890fa7faaa4f"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tinycdb/blobs/sha256:58527b40da5f34bf3a0bc6cc83422dcb3e4d9efe05a63473b6e0aa94afdeae73",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tinycdb/blobs/sha256:ce0db392cd0f531c5fdc9b3c463a9a26b8389dbb75be6f51bea2fcd0a57bed4e",
           "sha256": "ce0db392cd0f531c5fdc9b3c463a9a26b8389dbb75be6f51bea2fcd0a57bed4e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tinycdb/blobs/sha256:fe718e58e659ea15fd57b46e73ee5e859c364ec413e697e0324c7efd7d196e9a",
+          "sha256": "fe718e58e659ea15fd57b46e73ee5e859c364ec413e697e0324c7efd7d196e9a"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/tinycdb/blobs/sha256:4f4341c31d1ed6eddce4dfa57360e339f27f37a0db5b5b6df8df46f5ccda65c2",
           "sha256": "4f4341c31d1ed6eddce4dfa57360e339f27f37a0db5b5b6df8df46f5ccda65c2"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/tinycdb/blobs/sha256:d73abbd1439c1579c3ab925d2110fee60f287bb9b262850e030c74f7c356bcaa",
-          "sha256": "d73abbd1439c1579c3ab925d2110fee60f287bb9b262850e030c74f7c356bcaa"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tinycdb/blobs/sha256:c42225707daf30f28b9da534b084d065d93424c628a5df1ca64de5224221ca81",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

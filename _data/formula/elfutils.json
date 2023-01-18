@@ -13,15 +13,16 @@
   "license": "GPL-2.0-or-later and GPL-3.0-or-later and LGPL-2.0-only",
   "homepage": "https://fedorahosted.org/elfutils/",
   "versions": {
-    "stable": "0.186",
+    "stable": "0.188",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://sourceware.org/elfutils/ftp/0.186/elfutils-0.186.tar.bz2",
+      "url": "https://sourceware.org/elfutils/ftp/0.188/elfutils-0.188.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "fb8b0e8d0802005b9a309c60c1d8de32dd2951b56f0c3a3cb56d21ce01595dff"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/elfutils/blobs/sha256:222193ae92560a671e2a4fb9c3623d705948bacf414cc8fcf0d452bde936585f",
-          "sha256": "222193ae92560a671e2a4fb9c3623d705948bacf414cc8fcf0d452bde936585f"
+          "url": "https://ghcr.io/v2/homebrew/core/elfutils/blobs/sha256:983caa6f06b51634dc97b1cbe20ae78d2af6b6d6fbef80cb6f577aa3e063876c",
+          "sha256": "983caa6f06b51634dc97b1cbe20ae78d2af6b6d6fbef80cb6f577aa3e063876c"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -52,6 +52,9 @@
     "bzip2",
     "xz",
     "zlib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -88,5 +91,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

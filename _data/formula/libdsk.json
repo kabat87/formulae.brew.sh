@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.seasip.info/Unix/LibDsk/libdsk-1.4.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "71eda9d0e33ab580cea1bb507467877d33d887cea6ec042b8d969004db89901a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdsk/blobs/sha256:0d6d4b1f77fe027a7053571ac8b9f8bfa73cee2b52a7a570bb32946cd8aa9378",
+          "sha256": "0d6d4b1f77fe027a7053571ac8b9f8bfa73cee2b52a7a570bb32946cd8aa9378"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdsk/blobs/sha256:dfa9c65fe5cf50e095ed995a55c6145b3eb6702ce4a76a7e54369fff2da6ab97",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/libdsk/blobs/sha256:2804cbad27cb5d942cac8be6682bc7da39f7a4c122b6f79d1e3ee58aaaea0a0b",
           "sha256": "2804cbad27cb5d942cac8be6682bc7da39f7a4c122b6f79d1e3ee58aaaea0a0b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdsk/blobs/sha256:b78356c6b3bd08315fc58341697e69b71f2954c05155af065e39661be175482d",
+          "sha256": "b78356c6b3bd08315fc58341697e69b71f2954c05155af065e39661be175482d"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -94,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

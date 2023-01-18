@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/Oblomov/clinfo/archive/3.0.21.02.21.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e52f5c374a10364999d57a1be30219b47fb0b4f090e418f2ca19a0c037c1e694"
     }
   },
   "revision": 0,
@@ -40,6 +41,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clinfo/blobs/sha256:a4d0c2af62d60954d4046e4c8f7dd16e16d90957462b7f1e98277e3fb88ba018",
           "sha256": "a4d0c2af62d60954d4046e4c8f7dd16e16d90957462b7f1e98277e3fb88ba018"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clinfo/blobs/sha256:22dd33865487662965aeb057ae5f443ce40359b4555c5cc836d70b40de855d6d",
+          "sha256": "22dd33865487662965aeb057ae5f443ce40359b4555c5cc836d70b40de855d6d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -60,13 +66,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/clinfo/blobs/sha256:6165806150adf656308b999a1fac88effdf0fe5128b39d21c4faa0cda9b3c491",
           "sha256": "6165806150adf656308b999a1fac88effdf0fe5128b39d21c4faa0cda9b3c491"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/clinfo/blobs/sha256:99db424979264c6c3e4f8e3b1eeb9a9911fac5129558ba5c801eb302b0f9c91d",
+          "sha256": "99db424979264c6c3e4f8e3b1eeb9a9911fac5129558ba5c801eb302b0f9c91d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +116,16 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "opencl-headers"
+      ],
+      "dependencies": [
+        "ocl-icd",
+        "pocl"
+      ]
+    }
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://libslack.org/daemon/download/daemon-0.8.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "74f12e6d4b3c85632489bd08431d3d997bc17264bf57b7202384f2e809cff596"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/daemon/blobs/sha256:7e0e0fe331100a496c1d17a6565b5defdb8a75b67ae7c773fbc5c2fef51cb667",
+          "sha256": "7e0e0fe331100a496c1d17a6565b5defdb8a75b67ae7c773fbc5c2fef51cb667"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/daemon/blobs/sha256:900d4305256eb376e8e0211bda4d08984dd822bd60a7ee0a03758d3ed7e7287d",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/daemon/blobs/sha256:c41545411b2f4b31dc059df14eb622bfd30586c1f2bd3af7f4e0514bb5001277",
           "sha256": "c41545411b2f4b31dc059df14eb622bfd30586c1f2bd3af7f4e0514bb5001277"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/daemon/blobs/sha256:9c42ea135675342665a745d7b4ddb859904dc6a4bf248308d4f6416ea709643d",
+          "sha256": "9c42ea135675342665a745d7b4ddb859904dc6a4bf248308d4f6416ea709643d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

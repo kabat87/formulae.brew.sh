@@ -10,7 +10,7 @@
 
   ],
   "desc": "Fully-configurable hex grid generator",
-  "license": "GPL-2.0",
+  "license": "GPL-2.0-or-later",
   "homepage": "https://www.nomic.net/~uckelman/mkhexgrid/",
   "versions": {
     "stable": "0.1.1",
@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.nomic.net/~uckelman/mkhexgrid/releases/mkhexgrid-0.1.1.src.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "122609261cc91c2063ab5315d4316a27c9a0ab164f663a6cb781dd87310be3dc"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mkhexgrid/blobs/sha256:f506ce3ff66554b2586a73404a1af6d811024842b254218b67f7aa421f699d9b",
+          "sha256": "f506ce3ff66554b2586a73404a1af6d811024842b254218b67f7aa421f699d9b"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mkhexgrid/blobs/sha256:5b461772bb6b74ee5cc07db25a8baf6055941f93cba08946bb7174e024298e7d",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/mkhexgrid/blobs/sha256:488eb3b7fa3023c4326755bd7bd3546b926d3e03e353063d700c3f15c41e59f1",
           "sha256": "488eb3b7fa3023c4326755bd7bd3546b926d3e03e353063d700c3f15c41e59f1"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/mkhexgrid/blobs/sha256:213ee8b435eacf2f9bd1c50c8ba5a389ce3792c6a11626c0dbc3f8abca859469",
+          "sha256": "213ee8b435eacf2f9bd1c50c8ba5a389ce3792c6a11626c0dbc3f8abca859469"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,17 +87,16 @@
           "url": "https://ghcr.io/v2/homebrew/core/mkhexgrid/blobs/sha256:a87808f88a90308adfb14cf89b3bd89251580301f40ba18d08816de2df0be632",
           "sha256": "a87808f88a90308adfb14cf89b3bd89251580301f40ba18d08816de2df0be632"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/mkhexgrid/blobs/sha256:ec463b01aecec2cc76cd6f91761867fa0efbdeddf60f09bc134f45822006889b",
-          "sha256": "ec463b01aecec2cc76cd6f91761867fa0efbdeddf60f09bc134f45822006889b"
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/mkhexgrid/blobs/sha256:a52fcf963685daee9a1f8ab938b009639886dfb1f2a71cdf93969ff4a5d6bfc3",
+          "sha256": "a52fcf963685daee9a1f8ab938b009639886dfb1f2a71cdf93969ff4a5d6bfc3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -96,6 +106,9 @@
   "dependencies": [
     "boost",
     "gd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -124,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

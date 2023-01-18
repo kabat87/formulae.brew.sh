@@ -1,6 +1,6 @@
 cask "filemaker-pro" do
-  version "19.4.2.204"
-  sha256 "1adeedf6a555e1c83c88a546b7894c694b30f753a44f9616afb864ceeb5550b5"
+  version "19.6.1.45"
+  sha256 "6e55000b9901b1eba79dd30a605ed543e89a88e59ee06edfb0595b2df79fe0b7"
 
   url "https://downloads.claris.com/esd/fmp_#{version}.dmg"
   name "FileMaker Pro"
@@ -9,8 +9,7 @@ cask "filemaker-pro" do
 
   livecheck do
     url "https://www.filemaker.com/redirects/ss.txt"
-    strategy :page_match
-    regex(%r{/fmp_(\d+(?:\.\d+)*)\.dmg}i)
+    regex(%r{/fmp[._-]v?(\d+(?:\.\d+)+)\.dmg}i)
   end
 
   auto_updates true

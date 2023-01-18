@@ -1,6 +1,6 @@
 cask "tv-browser" do
-  version "4.2.4"
-  sha256 "56f0baf6ed1a690c1ced9d90e79e1cec7aecdfef9e38076c24a2bb63bf23b702"
+  version "4.2.7"
+  sha256 "b9f568db953da4e8cb93f77d8f90e8f0150fb9bda48b841bfa05d0d3117d580a"
 
   url "https://downloads.sourceforge.net/tvbrowser/tvbrowser_#{version}_macjava.dmg",
       verified: "sourceforge.net/tvbrowser/"
@@ -8,8 +8,11 @@ cask "tv-browser" do
   desc "Electronic TV guide"
   homepage "https://www.tvbrowser.org/"
 
+  # TV-Browser has used a single-digit version (4) for a major version release
+  # in the past, so this has to use the looser (*) version regex format.
   livecheck do
-    regex(%r{url=.*?/tvbrowser/files/.*?[-_/](\d+(?:[-.]\d+)+)[._-]macjava.dmg}i)
+    url :url
+    regex(%r{url=.*?/tvbrowser[._-]v?(\d+(?:\.\d+)*)(?:[._-]mac(?:java)?)?\.dmg}i)
   end
 
   app "TV-Browser.app"

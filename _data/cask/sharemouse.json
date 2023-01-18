@@ -9,24 +9,28 @@
   "homepage": "https://www.sharemouse.com/",
   "url": "https://www.sharemouse.com/ShareMouseSetup.dmg",
   "appcast": null,
-  "version": "5.0.50",
+  "version": "6.0.52",
   "versions": {
   },
   "installed": null,
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "ShareMouse.app"
-    ],
     {
-      "trash": [
-        "/Users/Shared/ShareMouse",
-        "~/Library/Caches/com.bartelsmedia.ShareMouse",
-        "~/Library/Preferences/com.bartelsmedia.ShareMouse.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "ShareMouse.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "/Users/Shared/ShareMouse",
+            "~/Library/Caches/com.bartelsmedia.ShareMouse",
+            "~/Library/Preferences/com.bartelsmedia.ShareMouse.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -39,5 +43,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

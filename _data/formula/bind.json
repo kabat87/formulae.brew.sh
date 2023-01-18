@@ -13,15 +13,16 @@
   "license": "MPL-2.0",
   "homepage": "https://www.isc.org/bind/",
   "versions": {
-    "stable": "9.16.24",
+    "stable": "9.18.10",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://downloads.isc.org/isc/bind9/9.16.24/bind-9.16.24.tar.xz",
+      "url": "https://downloads.isc.org/isc/bind9/9.18.10/bind-9.18.10.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "f415a92feb62568b50854a063cb231e257351f8672186d0ab031a49b3de2cac6"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:43eba3418b76653aa170858f63733d45c9930c1e4e72799086cc56b632e9413f",
+          "sha256": "43eba3418b76653aa170858f63733d45c9930c1e4e72799086cc56b632e9413f"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:d9dd87a93fff7bd8229b787d780be94358813134178db54936327ce9ac83c8d2",
-          "sha256": "d9dd87a93fff7bd8229b787d780be94358813134178db54936327ce9ac83c8d2"
+          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:25ea6590c38696b05bdd980280c9d5ed4e4d799779debc86a57d7676516b8028",
+          "sha256": "25ea6590c38696b05bdd980280c9d5ed4e4d799779debc86a57d7676516b8028"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:782ffdb50a3aaadc74878946e8f13ec34ae89952f3efde82b1975796a90d5a04",
-          "sha256": "782ffdb50a3aaadc74878946e8f13ec34ae89952f3efde82b1975796a90d5a04"
+          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:95c1ca6f56df52158bdfce7352aa9d9c2a900eaf5cacd688e8ce5246d95941fc",
+          "sha256": "95c1ca6f56df52158bdfce7352aa9d9c2a900eaf5cacd688e8ce5246d95941fc"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:c85ab574088ce132580471e8479002b36c6d0c654edd8566d67e27acb4677019",
+          "sha256": "c85ab574088ce132580471e8479002b36c6d0c654edd8566d67e27acb4677019"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:246747ece51e8ce3d28bd42de523fbd765564a61e0eca67888ff0a095676c363",
-          "sha256": "246747ece51e8ce3d28bd42de523fbd765564a61e0eca67888ff0a095676c363"
+          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:58e9b01cf604962e99d81cdab712e9b1d2075854f796ad2699043d711a32efc4",
+          "sha256": "58e9b01cf604962e99d81cdab712e9b1d2075854f796ad2699043d711a32efc4"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:1e29492477d188716613872d85b695ad70cda6faac50f4a57c07d085e1725cbd",
-          "sha256": "1e29492477d188716613872d85b695ad70cda6faac50f4a57c07d085e1725cbd"
-        },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:e3c75d8cfb95fad70596103cbf3a0a6aee686739e11fbcb91f3835ae03e1a3b2",
-          "sha256": "e3c75d8cfb95fad70596103cbf3a0a6aee686739e11fbcb91f3835ae03e1a3b2"
+          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:cccac27cd01b5c834ed6606d6b601ebf0f4a514c13aee74a3f9fc59581ae8437",
+          "sha256": "cccac27cd01b5c834ed6606d6b601ebf0f4a514c13aee74a3f9fc59581ae8437"
         },
         "x86_64_linux": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:a6a49ad2ba7466c0f2e454c437ae005a05bff67483e4e066799ab750a87ae1aa",
-          "sha256": "a6a49ad2ba7466c0f2e454c437ae005a05bff67483e4e066799ab750a87ae1aa"
+          "url": "https://ghcr.io/v2/homebrew/core/bind/blobs/sha256:3f9328beae0e3dfb1cbc4fecb3abef647da636c025990f8e2d0b44a34071a913",
+          "sha256": "3f9328beae0e3dfb1cbc4fecb3abef647da636c025990f8e2d0b44a34071a913"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,9 +81,12 @@
   "dependencies": [
     "json-c",
     "libidn2",
+    "libnghttp2",
     "libuv",
-    "openssl@1.1",
-    "python@3.10"
+    "openssl@3"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -87,7 +95,7 @@
 
   ],
   "uses_from_macos": [
-
+    "libxml2"
   ],
   "requirements": [
 
@@ -107,5 +115,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

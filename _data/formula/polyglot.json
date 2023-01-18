@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://hgm.nubati.net/releases/polyglot-2.0.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c11647d1e1cb4ad5aca3d80ef425b16b499aaa453458054c3aa6bec9cac65fc1"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/polyglot/blobs/sha256:0d7bed90c3c1774a9a1765d8305b2fc0c9c38734a478777d35033570777f6a20",
+          "sha256": "0d7bed90c3c1774a9a1765d8305b2fc0c9c38734a478777d35033570777f6a20"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/polyglot/blobs/sha256:dbcf961b5015dc2f909d421c6f1967a75110a44fa904718e599aa428341797d6",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/polyglot/blobs/sha256:74eb07a34cb1629966a192061f5ee507b8ff5db472b1fad9eeddba473b08570c",
           "sha256": "74eb07a34cb1629966a192061f5ee507b8ff5db472b1fad9eeddba473b08570c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/polyglot/blobs/sha256:719661c4cfbe1a0b809299d9285f4a715100783a6d2e7d8b89a5b3715ff4bb34",
+          "sha256": "719661c4cfbe1a0b809299d9285f4a715100783a6d2e7d8b89a5b3715ff4bb34"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/polyglot/blobs/sha256:36d5170db384175c1f6f097f6d179243d265c3a06dcf34a11266cbd370be5aad",
           "sha256": "36d5170db384175c1f6f097f6d179243d265c3a06dcf34a11266cbd370be5aad"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/polyglot/blobs/sha256:eff91a02101ab40e05f3479100120da2f54b1a9832cea957a054ed92872748a8",
-          "sha256": "eff91a02101ab40e05f3479100120da2f54b1a9832cea957a054ed92872748a8"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/polyglot/blobs/sha256:8d78f2053c59df94cc0389beaf43906198ebc01dcb86c8cb888fdc6c640a9bc2",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

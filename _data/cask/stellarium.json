@@ -7,33 +7,39 @@
   ],
   "desc": "Tool to render realistic skies in real time on the screen",
   "homepage": "https://stellarium.org/",
-  "url": "https://github.com/Stellarium/stellarium/releases/download/v0.21.3/Stellarium-0.21.3.zip",
+  "url": "https://github.com/Stellarium/stellarium/releases/download/v1.2/Stellarium-1.2-macOS.zip",
   "appcast": null,
-  "version": "0.21.3",
+  "version": "1.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "d6c7eb5770ec53366d73297742a18feda800e4efad664afe2600efc851b3589c",
+  "sha256": "4700f8da7b523b9fdc03222272f26dfbb3d9a94e1bab560868d70e90c601a309",
   "artifacts": [
-    [
-      "Stellarium.app"
-    ],
     {
-      "trash": "~/Library/Preferences/Stellarium",
-      "signal": {
-      }
+      "app": [
+        "Stellarium.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Preferences/Stellarium"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "11"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

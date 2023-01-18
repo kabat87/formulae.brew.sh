@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://x.org/",
   "versions": {
-    "stable": "1.0.6",
+    "stable": "1.0.8",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://xorg.freedesktop.org/releases/individual/util/makedepend-1.0.6.tar.bz2",
+      "url": "https://xorg.freedesktop.org/releases/individual/util/makedepend-1.0.8.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "bfb26f8025189b2a01286ce6daacc2af8fe647440b40bb741dd5c397572cba5b"
     }
   },
   "revision": 0,
@@ -31,52 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:e14418de0a98957bcce5796f8952e41e1409f4b13125a80cb133056b7d8a4acc",
+          "sha256": "e14418de0a98957bcce5796f8952e41e1409f4b13125a80cb133056b7d8a4acc"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:d3ba9a11afac0d23fff0d1e79cb26213a90fa4bc2d07cc1405ec7f1f514bf18a",
-          "sha256": "d3ba9a11afac0d23fff0d1e79cb26213a90fa4bc2d07cc1405ec7f1f514bf18a"
+          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:66b45de376ee39540d5c05b58e79b4027a5bc038eb6c42785eb6527220261f1e",
+          "sha256": "66b45de376ee39540d5c05b58e79b4027a5bc038eb6c42785eb6527220261f1e"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:be8d84dee070f1d7da53aa291443b056136e67906ff29368ba56366d00b5dfc2",
-          "sha256": "be8d84dee070f1d7da53aa291443b056136e67906ff29368ba56366d00b5dfc2"
+          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:8ea9ff3be2137147d46691a4a7d25411c73121f53d4dadd5041759899b17a389",
+          "sha256": "8ea9ff3be2137147d46691a4a7d25411c73121f53d4dadd5041759899b17a389"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:fe25334cf2b74dc002395e9cfd76e95445f4496b2870287dbac688f04389224d",
+          "sha256": "fe25334cf2b74dc002395e9cfd76e95445f4496b2870287dbac688f04389224d"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:dc6729e97faabd935de5a8356c00307a39a20c3f037cf67cf09cce9819b392fd",
-          "sha256": "dc6729e97faabd935de5a8356c00307a39a20c3f037cf67cf09cce9819b392fd"
+          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:d31ab18614d72efef3aab19db9e81a6b353064a389cd49404a72ee10f7949a45",
+          "sha256": "d31ab18614d72efef3aab19db9e81a6b353064a389cd49404a72ee10f7949a45"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:8be31010fad5fc4f86055643bfd592123dbd68ebb4780458dbc40004709504a8",
-          "sha256": "8be31010fad5fc4f86055643bfd592123dbd68ebb4780458dbc40004709504a8"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:afe76789b5f01ccfee8cc0d4ffa308015fb5d8791a1d7ce6b2dc1ee4bf2a020f",
-          "sha256": "afe76789b5f01ccfee8cc0d4ffa308015fb5d8791a1d7ce6b2dc1ee4bf2a020f"
-        },
-        "mojave": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:a25fb9fd3ce11f6b98da2c53fad8f046174697087f5f34664999afb9df5f41de",
-          "sha256": "a25fb9fd3ce11f6b98da2c53fad8f046174697087f5f34664999afb9df5f41de"
-        },
-        "high_sierra": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:0f463e197923867ff9387b2ccd1461d4b410e89205bd3896ae98c5d52679c4c8",
-          "sha256": "0f463e197923867ff9387b2ccd1461d4b410e89205bd3896ae98c5d52679c4c8"
+          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:88938e80fd01b90be05a3bfde77946d8392bc9a065a69d22e0723d7db18d329c",
+          "sha256": "88938e80fd01b90be05a3bfde77946d8392bc9a065a69d22e0723d7db18d329c"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:740fb92a5e60c325afab7552e81f4b738a833bddf75f11c0efc5f9cda2ca492f",
-          "sha256": "740fb92a5e60c325afab7552e81f4b738a833bddf75f11c0efc5f9cda2ca492f"
+          "url": "https://ghcr.io/v2/homebrew/core/makedepend/blobs/sha256:a9b80b1ecd86eb7852026c657475fb738407db7ced7c015ea74300685dbfbd98",
+          "sha256": "a9b80b1ecd86eb7852026c657475fb738407db7ced7c015ea74300685dbfbd98"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +79,10 @@
     "pkg-config"
   ],
   "dependencies": [
+    "util-macros",
+    "xorgproto"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -113,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

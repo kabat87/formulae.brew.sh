@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://downloads.sourceforge.net/project/flake-enc/flake/0.11/flake-0.11.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "8dd249888005c2949cb4564f02b6badb34b2a0f408a7ec7ab01e11ceca1b7f19"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/flake/blobs/sha256:03f0ff1a603cfd656ddb342b5295fcc85b7b1a83216911d0593a18c6bf6dbcfa",
+          "sha256": "03f0ff1a603cfd656ddb342b5295fcc85b7b1a83216911d0593a18c6bf6dbcfa"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/flake/blobs/sha256:b2a1ccd83576e3e6d8f84d314be37100def324e53d31fab0de4446d53bbfc7e4",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/flake/blobs/sha256:9a479261d3abb5f7cb8f4006cd025b7680d10148bdd66d817af0d040f4395de6",
           "sha256": "9a479261d3abb5f7cb8f4006cd025b7680d10148bdd66d817af0d040f4395de6"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/flake/blobs/sha256:3a9de6b4ef37f0237a1ee39ccda3e62ccd87d826d4fa27b347aa8ddc06d74f1c",
+          "sha256": "3a9de6b4ef37f0237a1ee39ccda3e62ccd87d826d4fa27b347aa8ddc06d74f1c"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/flake/blobs/sha256:e521dae57260b2a71f161f16609530c854ff8ebee4252b0addf3c16b5abc982c",
           "sha256": "e521dae57260b2a71f161f16609530c854ff8ebee4252b0addf3c16b5abc982c"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/flake/blobs/sha256:af8e2e83dd3c82e8cc26be91ca64e24571b34185d4f8f007725b54d37f38e2b1",
-          "sha256": "af8e2e83dd3c82e8cc26be91ca64e24571b34185d4f8f007725b54d37f38e2b1"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/flake/blobs/sha256:8fab554771a1e61cc3b14670fd0394fef5b60c4e545558ef6eb75b33edf5b258",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

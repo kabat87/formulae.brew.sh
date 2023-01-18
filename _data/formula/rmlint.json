@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sahib/rmlint/archive/v2.10.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "10e72ba4dd9672d1b6519c0c94eae647c5069c7d11f1409a46e7011dd0c6b883"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rmlint/blobs/sha256:a90c9737485418dfe6b54ba6173fbeefd5c10543352353a88bcc524ed7037be8",
+          "sha256": "a90c9737485418dfe6b54ba6173fbeefd5c10543352353a88bcc524ed7037be8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rmlint/blobs/sha256:506515b8e54f1f0023c245b9dd52fa419cedbe5e2f8fb434b7991d49ad6e6dce",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/rmlint/blobs/sha256:5eae37b1c416a95072b7475cffbbf5a8652c2f3f6c9e3d24b96c13b57ac06c24",
           "sha256": "5eae37b1c416a95072b7475cffbbf5a8652c2f3f6c9e3d24b96c13b57ac06c24"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/rmlint/blobs/sha256:dca6470a638a2bc0914f857b0c9e5f4c07140b81501ef2794b8f101ef67ba22d",
+          "sha256": "dca6470a638a2bc0914f857b0c9e5f4c07140b81501ef2794b8f101ef67ba22d"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
   "dependencies": [
     "glib",
     "json-glib"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -112,5 +125,15 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "glib",
+        "json-glib",
+        "elfutils",
+        "util-linux"
+      ]
+    }
+  }
 }

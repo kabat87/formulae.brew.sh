@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.videolan.org/pub/videolan/libdca/0.0.7/libdca-0.0.7.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3a0b13815f582c661d2388ffcabc2f1ea82f471783c400f765f2ec6c81065f6a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdca/blobs/sha256:d7c6080f57c3de053cb1e94bfc535b783389d9fde51c1cfe6e5c0e8b0c5245d8",
+          "sha256": "d7c6080f57c3de053cb1e94bfc535b783389d9fde51c1cfe6e5c0e8b0c5245d8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdca/blobs/sha256:505dbd9ed35b7bede454672385472ed725d6fd84f15a984d3d3e1025725d996b",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdca/blobs/sha256:d20b5e52384fcbb0da4501eb109e3aac6be3eb6f0e6a8f09de0c61b2f3c83361",
           "sha256": "d20b5e52384fcbb0da4501eb109e3aac6be3eb6f0e6a8f09de0c61b2f3c83361"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdca/blobs/sha256:09bb7d9235fe77b84f724ddeb66c7b2a54a6448a99741ad89368722b526ee972",
+          "sha256": "09bb7d9235fe77b84f724ddeb66c7b2a54a6448a99741ad89368722b526ee972"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -86,6 +96,9 @@
     "libtool"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -115,5 +128,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

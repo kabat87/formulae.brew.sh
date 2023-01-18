@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://libbsd.freedesktop.org/",
   "versions": {
-    "stable": "0.11.3",
+    "stable": "0.11.7",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://libbsd.freedesktop.org/releases/libbsd-0.11.3.tar.xz",
+      "url": "https://libbsd.freedesktop.org/releases/libbsd-0.11.7.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "9baa186059ebbf25c06308e9f991fda31f7183c0f24931826d83aa6abd8a0261"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/libbsd/blobs/sha256:47ff83f8f952f71030f61444df19635a5eb3d98edc346be4ee3955efc8f7d4fa",
-          "sha256": "47ff83f8f952f71030f61444df19635a5eb3d98edc346be4ee3955efc8f7d4fa"
+          "url": "https://ghcr.io/v2/homebrew/core/libbsd/blobs/sha256:0c3b62f8f0c7e04a245a75cbea9f8cdaca2c00edb812e13ebd9fd10767df8d2d",
+          "sha256": "0c3b62f8f0c7e04a245a75cbea9f8cdaca2c00edb812e13ebd9fd10767df8d2d"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "libmd"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -86,5 +89,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

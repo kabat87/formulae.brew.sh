@@ -8,29 +8,35 @@
   ],
   "desc": "IDE for Java development - community edition",
   "homepage": "https://www.jetbrains.com/idea/",
-  "url": "https://download.jetbrains.com/idea/ideaIC-2021.3.1.dmg",
+  "url": "https://download.jetbrains.com/idea/ideaIC-2022.3.1.dmg",
   "appcast": null,
-  "version": "2021.3.1,213.6461.79",
+  "version": "2022.3.1,223.8214.52",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4fa16f7af36a6e10baedb877228d286638bc5e018959988998ec0eae46704f3e",
+  "sha256": "8ea8b1ceebde397950592708b55f277ca43856b4013f597ccbf385bb75a42c72",
   "artifacts": [
-    [
-      "IntelliJ IDEA CE.app"
-    ],
-    "uninstall_postflight (Postflight Block)",
     {
-      "trash": [
-        "~/Library/Application Support/JetBrains/IdeaIC2021.3",
-        "~/Library/Caches/JetBrains/IdeaIC2021.3",
-        "~/Library/Logs/JetBrains/IdeaIC2021.3",
-        "~/Library/Preferences/com.jetbrains.intellij.ce.plist",
-        "~/Library/Saved Application State/com.jetbrains.intellij.ce.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "IntelliJ IDEA CE.app"
+      ]
+    },
+    {
+      "uninstall_postflight": "  uninstall_postflight do\n    ENV[\"PATH\"].split(File::PATH_SEPARATOR).map { |path| File.join(path, \"idea\") }.each do |path|\n      if File.readable?(path) &&\n         File.readlines(path).grep(/# see com.intellij.idea.SocketLock for the server side of this interface/).any?\n        File.delete(path)\n      end\n    end\n  end\n"
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/JetBrains/IdeaIC2022.3",
+            "~/Library/Caches/JetBrains/IdeaIC2022.3",
+            "~/Library/Logs/JetBrains/IdeaIC2022.3",
+            "~/Library/Preferences/com.jetbrains.intellij.ce.plist",
+            "~/Library/Saved Application State/com.jetbrains.intellij.ce.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -47,5 +53,19 @@
     ]
   },
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://download.jetbrains.com/idea/ideaIC-2022.3.1-aarch64.dmg",
+      "sha256": "394478e3f2a2ea1788a5c2ef9c5a9db72531462b4db921483d24a08f7c260a43"
+    },
+    "arm64_monterey": {
+      "url": "https://download.jetbrains.com/idea/ideaIC-2022.3.1-aarch64.dmg",
+      "sha256": "394478e3f2a2ea1788a5c2ef9c5a9db72531462b4db921483d24a08f7c260a43"
+    },
+    "arm64_big_sur": {
+      "url": "https://download.jetbrains.com/idea/ideaIC-2022.3.1-aarch64.dmg",
+      "sha256": "394478e3f2a2ea1788a5c2ef9c5a9db72531462b4db921483d24a08f7c260a43"
+    }
+  }
 }

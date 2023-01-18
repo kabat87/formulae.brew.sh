@@ -7,26 +7,30 @@
   ],
   "desc": "Fitting tool for EVE Online",
   "homepage": "https://github.com/pyfa-org/Pyfa",
-  "url": "https://github.com/pyfa-org/Pyfa/releases/download/v2.39.1/pyfa-v2.39.1-mac.zip",
+  "url": "https://github.com/pyfa-org/Pyfa/releases/download/v2.49.0/pyfa-v2.49.0-mac.zip",
   "appcast": null,
-  "version": "2.39.1",
+  "version": "2.49.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "634a08f745b812f3482d199890d1818c1ae06b7259a6a1b1b43764349f63d0fb",
+  "sha256": "8acbb7713fa35b334117285a4a734d4f153697ab8df4d68d07c7bcc385a7262a",
   "artifacts": [
-    [
-      "pyfa.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/org.pyfaorg.pyfa",
-        "~/Library/Preferences/org.pyfaorg.pyfa.plist",
-        "~/Library/Saved Application State/org.pyfaorg.pyfa.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "pyfa.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/org.pyfaorg.pyfa",
+            "~/Library/Preferences/org.pyfaorg.pyfa.plist",
+            "~/Library/Saved Application State/org.pyfaorg.pyfa.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -34,5 +38,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

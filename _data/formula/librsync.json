@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/librsync/librsync/archive/v2.3.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ef8ce23df38d5076d25510baa2cabedffbe0af460d887d86c2413a1c2b0c676f"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/librsync/blobs/sha256:cc61b71352f218c2097897616816c87438636d4087a15060412711a5614b2342",
+          "sha256": "cc61b71352f218c2097897616816c87438636d4087a15060412711a5614b2342"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/librsync/blobs/sha256:8f48bfa9495ff1e3f5dbb3c84a849205ee4307cfca4ca0d4c9fdc5dd04304617",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/librsync/blobs/sha256:e2672691faeaba727acde6252c3dba8a39b9a0703f942f8f830d6e5514e15bb3",
           "sha256": "e2672691faeaba727acde6252c3dba8a39b9a0703f942f8f830d6e5514e15bb3"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/librsync/blobs/sha256:8ac966da10799876d5b9e1065d2da6870cfd209c218977801e4d08ad5c7a7b2d",
+          "sha256": "8ac966da10799876d5b9e1065d2da6870cfd209c218977801e4d08ad5c7a7b2d"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
   ],
   "dependencies": [
     "popt"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

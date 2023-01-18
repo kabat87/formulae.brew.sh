@@ -7,6 +7,8 @@
 
   ],
   "versioned_formulae": [
+    "llvm@14",
+    "llvm@13",
     "llvm@12",
     "llvm@11",
     "llvm@9",
@@ -24,7 +26,8 @@
     "stable": {
       "url": "https://releases.llvm.org/7.1.0/llvm-7.1.0.src.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1bcc9b285074ded87b88faaedddb88e6b5d6c331dfcfb57d7f3393dd622b3764"
     }
   },
   "revision": 3,
@@ -57,7 +60,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -66,6 +68,9 @@
   ],
   "dependencies": [
     "libffi"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -100,7 +105,7 @@
       ]
     },
     {
-      "name": "maximum_macos",
+      "name": "maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_maximum_macos",
       "cask": null,
       "download": null,
       "version": "10.15",
@@ -122,7 +127,21 @@
   "deprecated": false,
   "deprecation_date": null,
   "deprecation_reason": null,
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "disabled": true,
+  "disable_date": "2022-09-30",
+  "disable_reason": "versioned_formula",
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "libffi",
+        "libedit",
+        "libxml2",
+        "ncurses",
+        "zlib",
+        "binutils",
+        "libelf",
+        "python@3.8"
+      ]
+    }
+  }
 }

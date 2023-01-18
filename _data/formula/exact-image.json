@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://dl.exactcode.de/oss/exact-image/exact-image-1.0.2.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "0694c66be5dec41377acead475de69b3d7ffb42c702402f8b713f8b44cdc2791"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/exact-image/blobs/sha256:20317cde1b2c2c9478ee7dd8b35a68f1d3b3360b36362af190a3323cb5429cd8",
+          "sha256": "20317cde1b2c2c9478ee7dd8b35a68f1d3b3360b36362af190a3323cb5429cd8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/exact-image/blobs/sha256:a11e0789738c798fc3cf6785353e023e4e27b0328aa7ccb5dd63c39b988a0691",
@@ -40,6 +46,11 @@
           "cellar": "/opt/homebrew/Cellar",
           "url": "https://ghcr.io/v2/homebrew/core/exact-image/blobs/sha256:47aa8c7861a759d66f553bc8960ba09c14a3b5acf86e2c0f22779379716cac5f",
           "sha256": "47aa8c7861a759d66f553bc8960ba09c14a3b5acf86e2c0f22779379716cac5f"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/exact-image/blobs/sha256:29bb418280be9364ad49399820156acbd0a17b2aa15d0aaa90ce0ecc1c76a6b1",
+          "sha256": "29bb418280be9364ad49399820156acbd0a17b2aa15d0aaa90ce0ecc1c76a6b1"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -90,6 +100,9 @@
   ],
   "dependencies": [
     "libagg"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -119,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

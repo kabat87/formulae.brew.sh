@@ -16,14 +16,30 @@
   "outdated": false,
   "sha256": "bc3c2383ca3be4fb64adc5c8d97af2e372c163272132527db0b4ee5ab6a43605",
   "artifacts": [
-    [
-      "Caption.app"
-    ]
+    {
+      "app": [
+        "Caption.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Caption",
+            "~/Library/Preferences/com.electron.caption.helper.plist",
+            "~/Library/Preferences/com.electron.caption.plist",
+            "~/Library/Saved Application State/com.electron.caption.savedState"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

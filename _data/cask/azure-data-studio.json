@@ -7,33 +7,39 @@
   ],
   "desc": "Data management tool that enables working with SQL Server",
   "homepage": "https://docs.microsoft.com/en-us/sql/azure-data-studio/",
-  "url": "https://azuredatastudio-update.azurewebsites.net/1.34.0/darwin/stable",
+  "url": "https://azuredatastudio-update.azurewebsites.net/1.40.2/darwin/stable",
   "appcast": null,
-  "version": "1.34.0",
+  "version": "1.40.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "65a8e9f0d12e1005eea22d6d6f77c2d1dada27c34583c95a397132ccc7b93aa0",
+  "sha256": "0bffe15810d0dd3ee07420142ea7dd670dece71696e129fa6e11fe2b2d789425",
   "artifacts": [
-    [
-      "Azure Data Studio.app"
-    ],
-    [
-      "/Applications/Azure Data Studio.app/Contents/Resources/app/bin/code",
-      {
-        "target": "azuredatastudio"
-      }
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/azuredatastudio",
-        "~/Library/Preferences/com.azuredatastudio.oss.helper.plist",
-        "~/Library/Preferences/com.azuredatastudio.oss.plist",
-        "~/Library/Saved Application State/com.azuredatastudio.oss.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Azure Data Studio.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/Azure Data Studio.app/Contents/Resources/app/bin/code",
+        {
+          "target": "azuredatastudio"
+        }
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/azuredatastudio",
+            "~/Library/Preferences/com.azuredatastudio.oss.helper.plist",
+            "~/Library/Preferences/com.azuredatastudio.oss.plist",
+            "~/Library/Saved Application State/com.azuredatastudio.oss.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +47,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://azuredatastudio-update.azurewebsites.net/1.40.2/darwin-arm64/stable",
+      "sha256": "695cd1a08aebdf4defc198a793b60a24dcda64d4b521e2ba4d0d7f85ead8e28e"
+    },
+    "arm64_monterey": {
+      "url": "https://azuredatastudio-update.azurewebsites.net/1.40.2/darwin-arm64/stable",
+      "sha256": "695cd1a08aebdf4defc198a793b60a24dcda64d4b521e2ba4d0d7f85ead8e28e"
+    },
+    "arm64_big_sur": {
+      "url": "https://azuredatastudio-update.azurewebsites.net/1.40.2/darwin-arm64/stable",
+      "sha256": "695cd1a08aebdf4defc198a793b60a24dcda64d4b521e2ba4d0d7f85ead8e28e"
+    }
+  }
 }

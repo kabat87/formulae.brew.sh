@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/tadfisher/pass-otp/releases/download/v1.2.0/pass-otp-1.2.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5720a649267a240a4f7ba5a6445193481070049c1d08ba38b00d20fc551c3a67"
     }
   },
   "revision": 0,
@@ -76,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,9 +84,11 @@
 
   ],
   "dependencies": [
-    "gnupg",
     "oath-toolkit",
     "pass"
+  ],
+  "test_dependencies": [
+    "gnupg"
   ],
   "recommended_dependencies": [
 
@@ -115,5 +117,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

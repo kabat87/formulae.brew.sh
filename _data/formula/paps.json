@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/dov/paps/archive/v0.7.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b8cbd16f8dd5832ecfa9907d31411b35a7f12d81a5ec472a1555d00a8a205e0e"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/paps/blobs/sha256:ed0aafc74080ba2ba2a3ec1dd3d1d112952626ccdc297db089fdd93bcd1c23c7",
+          "sha256": "ed0aafc74080ba2ba2a3ec1dd3d1d112952626ccdc297db089fdd93bcd1c23c7"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/paps/blobs/sha256:64750f6318462484efbf5d4656bf75896fae72f2abf0636182e27ad9ba77915c",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/paps/blobs/sha256:f8ab36ee220f8e2bfd5fb7db1c16812241ec8212cfc3ecd7c070517ac0a104b0",
           "sha256": "f8ab36ee220f8e2bfd5fb7db1c16812241ec8212cfc3ecd7c070517ac0a104b0"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/paps/blobs/sha256:3aeb06b242a3c93ea67e26620848037d481eb0d65da3adaad3b93b7a6815c295",
+          "sha256": "3aeb06b242a3c93ea67e26620848037d481eb0d65da3adaad3b93b7a6815c295"
         },
         "monterey": {
           "cellar": ":any",
@@ -65,13 +76,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/paps/blobs/sha256:bef1ee9210f3591f0768817f4f748e49ea708742f56ce47e744bc4a1507f3f36",
           "sha256": "bef1ee9210f3591f0768817f4f748e49ea708742f56ce47e744bc4a1507f3f36"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/paps/blobs/sha256:ee348bc7685c17d5453ca8f661b98020849d5c0265ec30cba5ab8321a6333bd3",
+          "sha256": "ee348bc7685c17d5453ca8f661b98020849d5c0265ec30cba5ab8321a6333bd3"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -88,6 +103,9 @@
     "glib",
     "pango"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -95,7 +113,9 @@
 
   ],
   "uses_from_macos": [
-
+    {
+      "perl": "build"
+    }
   ],
   "requirements": [
 
@@ -115,5 +135,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

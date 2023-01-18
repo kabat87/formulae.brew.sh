@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/josh/launchdns/archive/v1.0.4.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "60f6010659407e3d148c021c88e1c1ce0924de320e99a5c58b21c8aece3888aa"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/launchdns/blobs/sha256:480788e6d0135672b26a62c84111d1d6cc1e3f8407da7338cd1ea334767679bd",
+          "sha256": "480788e6d0135672b26a62c84111d1d6cc1e3f8407da7338cd1ea334767679bd"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/launchdns/blobs/sha256:76976e31629220e8697a50b0e52d080cef29a6b761a987175b07438d35225ff8",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/launchdns/blobs/sha256:1b7e3e37f394c83c8957c6c2253260805a3abcbb843890c90208d7d743da3328",
           "sha256": "1b7e3e37f394c83c8957c6c2253260805a3abcbb843890c90208d7d743da3328"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/launchdns/blobs/sha256:13f7711fc211beda24f6150ce03ded562696f8748c484e92608574308b9e2474",
+          "sha256": "13f7711fc211beda24f6150ce03ded562696f8748c484e92608574308b9e2474"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -66,7 +77,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +84,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -86,7 +99,15 @@
 
   ],
   "requirements": [
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": null,
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -103,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

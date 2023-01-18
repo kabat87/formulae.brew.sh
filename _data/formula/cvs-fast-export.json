@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://www.catb.org/~esr/cvs-fast-export/cvs-fast-export-1.59.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "2439cd83f54c98f248e85d3ba3becbe028580e89652c50756022fbe564a9e8da"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cvs-fast-export/blobs/sha256:a1e7ae92f528aa264eb42818989ef9fa67fdd8fa01b05441ac462b51b90d89f5",
+          "sha256": "a1e7ae92f528aa264eb42818989ef9fa67fdd8fa01b05441ac462b51b90d89f5"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cvs-fast-export/blobs/sha256:e5e761e7cd008d32d3635bbd954ce0319a125a278e89df39ba0283b163c2310e",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/cvs-fast-export/blobs/sha256:8f67f51244e6191a06fad37c03c8f0c19586c2f31a2b3142e547aa1520808ceb",
           "sha256": "8f67f51244e6191a06fad37c03c8f0c19586c2f31a2b3142e547aa1520808ceb"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/cvs-fast-export/blobs/sha256:028c23945b15743bdb681be1154c7859b151bd92cc21cd4b711a4c98138903f4",
+          "sha256": "028c23945b15743bdb681be1154c7859b151bd92cc21cd4b711a4c98138903f4"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -80,6 +90,9 @@
     "docbook-xsl"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
     "cvs"
   ],
   "recommended_dependencies": [
@@ -110,5 +123,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

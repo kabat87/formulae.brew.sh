@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://nekohako.xware.cx/id3tool/id3tool-1.2a.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7908d66c5aabe2a53ae8019e8234f4231485d80be4b2fe72c9d04013cff1caec"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/id3tool/blobs/sha256:bd6e6e24689e48d6ec5c67fef4ab113b40d92b91a02d85a8d67744ad454e820e",
+          "sha256": "bd6e6e24689e48d6ec5c67fef4ab113b40d92b91a02d85a8d67744ad454e820e"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/id3tool/blobs/sha256:eaab957f04597caeef0f4d080d4e936743d154c3c0c2e62e228678f5d5123b58",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/id3tool/blobs/sha256:eec5850fee5d290bad13de2cb4456b2e600560632be7b86309ac5c3f3f03697f",
           "sha256": "eec5850fee5d290bad13de2cb4456b2e600560632be7b86309ac5c3f3f03697f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/id3tool/blobs/sha256:cef8ba04668ad9e85b60642b34da3c81c2cb9bcd6a509ed28cf50a99bd822699",
+          "sha256": "cef8ba04668ad9e85b60642b34da3c81c2cb9bcd6a509ed28cf50a99bd822699"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/id3tool/blobs/sha256:b5b4d49b4710a67df5200149873dd8c17131ef4a4eaac722a2095b1445d053ff",
           "sha256": "b5b4d49b4710a67df5200149873dd8c17131ef4a4eaac722a2095b1445d053ff"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/id3tool/blobs/sha256:348a229d26dd699013d8e3372c5382da10b12d02d286304e61d9f2c71ed77101",
-          "sha256": "348a229d26dd699013d8e3372c5382da10b12d02d286304e61d9f2c71ed77101"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/id3tool/blobs/sha256:bbe4dde2f28fb22ebd981fa3faa4db03f327a43531c102a6a47a463e0f329d6b",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,21 +7,27 @@
   ],
   "desc": "Windows (Mono) target support for Unity",
   "homepage": "https://unity.com/products",
-  "url": "https://download.unity3d.com/download_unity/d0e5f0a7b06a/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2021.2.8f1.pkg",
+  "url": "https://download.unity3d.com/download_unity/9636b062134a/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-2022.1.23f1.pkg",
   "appcast": null,
-  "version": "2021.2.8f1,d0e5f0a7b06a",
+  "version": "2022.1.23f1,9636b062134a",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f3e3aeda81c088560e150122451bed28708421d79fbe420b95b07338ac2cfcb9",
+  "sha256": "a513342386561eb2a132fd3c7bcdf793b3a6696f1f88237d7cbc259b21ffe2c1",
   "artifacts": [
     {
-      "pkgutil": "com.unity3d.WindowsStandaloneSupport",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": "com.unity3d.WindowsStandaloneSupport"
+        }
+      ]
     },
-    "UnitySetup-Windows-Mono-Support-for-Editor-2021.2.8f1.pkg (Pkg)"
+    {
+      "pkg": [
+        "UnitySetup-Windows-Mono-Support-for-Editor-2022.1.23f1.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -31,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

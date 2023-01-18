@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/zeromq/czmq/releases/download/v4.2.1/czmq-4.2.1.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "5d720a204c2a58645d6f7643af15d563a712dad98c9d32c1ed913377daa6ac39"
     }
   },
   "revision": 0,
@@ -55,13 +56,17 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/czmq/blobs/sha256:b7641290a58b85221b10754a16819de04db2258f852e0debc2e5a3b6581e6f6d",
           "sha256": "b7641290a58b85221b10754a16819de04db2258f852e0debc2e5a3b6581e6f6d"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/czmq/blobs/sha256:6567f78da8a3aec0856b30c7892a69933062b96b16a26170915ebfa86ce60bc5",
+          "sha256": "6567f78da8a3aec0856b30c7892a69933062b96b16a26170915ebfa86ce60bc5"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -73,6 +78,9 @@
   "dependencies": [
     "zeromq"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -83,15 +91,7 @@
 
   ],
   "requirements": [
-    {
-      "name": "macos",
-      "cask": null,
-      "download": null,
-      "version": null,
-      "contexts": [
 
-      ]
-    }
   ],
   "conflicts_with": [
 
@@ -108,5 +108,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

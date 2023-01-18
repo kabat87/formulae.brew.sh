@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://www.intra2net.com/en/developer/libftdi/download/libftdi1-1.5.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "7c7091e9c86196148bd41177b4590dccb1510bfe6cea5bf7407ff194482eb049"
     }
   },
   "revision": 2,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libftdi/blobs/sha256:db8777d9eec5f36b23b191183c6d25c398484c09b2ca5833d5ef252ef5ce7bfd",
+          "sha256": "db8777d9eec5f36b23b191183c6d25c398484c09b2ca5833d5ef252ef5ce7bfd"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libftdi/blobs/sha256:00a1cf52f2dd6bc539fe5dc2cd2aa539722b285e37c0969e5e9b0e98e14f35c5",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libftdi/blobs/sha256:998ea9ac5c02fdad06ad304dc36ccd0b010267271e7d68ff3f3cfbf407339067",
           "sha256": "998ea9ac5c02fdad06ad304dc36ccd0b010267271e7d68ff3f3cfbf407339067"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libftdi/blobs/sha256:47d6bbb7af7b2e03dec5f2facae51a32650aac428628af0d5d8e393d48663fc8",
+          "sha256": "47d6bbb7af7b2e03dec5f2facae51a32650aac428628af0d5d8e393d48663fc8"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -84,6 +94,9 @@
     "boost",
     "confuse",
     "libusb"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -112,5 +125,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -13,15 +13,16 @@
   "license": "Artistic-2.0",
   "homepage": "https://sourceforge.net/projects/biblatex-biber/",
   "versions": {
-    "stable": "2.16",
+    "stable": "2.18",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/plk/biber/archive/refs/tags/v2.16.tar.gz",
+      "url": "https://github.com/plk/biber/archive/refs/tags/v2.18.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b966cf9b35a92ce9a705fec7930baab8dc2bfaf9a9f311cdb92393640222c844"
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:1eeec094249675ebb3fa0dcb030f4f344638169c7bb80f99b7ecbcac180d4375",
+          "sha256": "1eeec094249675ebb3fa0dcb030f4f344638169c7bb80f99b7ecbcac180d4375"
+        },
         "arm64_monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:a5a161e318753ebf4b21ecd228d82338e2fd6a21609da501be32c6dad6cf09e6",
-          "sha256": "a5a161e318753ebf4b21ecd228d82338e2fd6a21609da501be32c6dad6cf09e6"
+          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:60826dd9f0decdd55155fa7c5a096383a8406ffd70a8ea19f509193f25e574dd",
+          "sha256": "60826dd9f0decdd55155fa7c5a096383a8406ffd70a8ea19f509193f25e574dd"
         },
         "arm64_big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:7ed7fc1262568e0fd3184610538d8b8fa5670e779f9fe195b7e03274a047ab63",
-          "sha256": "7ed7fc1262568e0fd3184610538d8b8fa5670e779f9fe195b7e03274a047ab63"
+          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:d383c6698d8bf5e81d179b53faf7dbd2b912bd20ba9d5b49e09ca86e79a12e3b",
+          "sha256": "d383c6698d8bf5e81d179b53faf7dbd2b912bd20ba9d5b49e09ca86e79a12e3b"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:4770ee5e27886afae45ce2a0c75f953100f6d092ceee19bf8171b379be8987cb",
+          "sha256": "4770ee5e27886afae45ce2a0c75f953100f6d092ceee19bf8171b379be8987cb"
         },
         "monterey": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:f1b4fc11d16d5045fbe2f35d7542d221a9e4116003ce02b526be8beae0a038f3",
-          "sha256": "f1b4fc11d16d5045fbe2f35d7542d221a9e4116003ce02b526be8beae0a038f3"
+          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:079710c6d908de4f8792ce7961e106fa75d64f5bb0786fe5a1f8f55e021ffd43",
+          "sha256": "079710c6d908de4f8792ce7961e106fa75d64f5bb0786fe5a1f8f55e021ffd43"
         },
         "big_sur": {
           "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:3a33c580866d69c6650f76717818948cb4def0df4a6ab6e594b2dd49573ca93e",
-          "sha256": "3a33c580866d69c6650f76717818948cb4def0df4a6ab6e594b2dd49573ca93e"
-        },
-        "catalina": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:2e9fc7a7946103c51e151590d5350710e90f9fd88773a51c0c85bfdac9c15120",
-          "sha256": "2e9fc7a7946103c51e151590d5350710e90f9fd88773a51c0c85bfdac9c15120"
+          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:8016cd2c16ac47f547a5c78fb7b642b0e14902d39932db6953be3082f10af03f",
+          "sha256": "8016cd2c16ac47f547a5c78fb7b642b0e14902d39932db6953be3082f10af03f"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:d3952c6340ea72115a694eb5677a749fbf24c41cb9ff43fcfcae96234b927075",
-          "sha256": "d3952c6340ea72115a694eb5677a749fbf24c41cb9ff43fcfcae96234b927075"
+          "url": "https://ghcr.io/v2/homebrew/core/biber/blobs/sha256:5714d4606ab740360a3c4dffb0675c204f44a307c73069efd1a91806873eb679",
+          "sha256": "5714d4606ab740360a3c4dffb0675c204f44a307c73069efd1a91806873eb679"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -76,6 +81,9 @@
   "dependencies": [
     "openssl@1.1",
     "perl"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -105,5 +113,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -11,20 +11,21 @@
   ],
   "desc": "Launcher to analyze a project with SonarQube",
   "license": "LGPL-3.0-or-later",
-  "homepage": "https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner",
+  "homepage": "https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/",
   "versions": {
-    "stable": "4.6.2.2472",
+    "stable": "4.8.0.2856",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472.zip",
+      "url": "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.8.0.2856.zip",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "642d3e189bcca51055bc17d349fc575bf6259df1b54f4077a9a6c586afd65bff"
     }
   },
-  "revision": 1,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/sonar-scanner/blobs/sha256:4f39cced5ca59962499fcd43aae7cc4f6a23357dec24fb2ac629e748b317dec6",
-          "sha256": "4f39cced5ca59962499fcd43aae7cc4f6a23357dec24fb2ac629e748b317dec6"
+          "url": "https://ghcr.io/v2/homebrew/core/sonar-scanner/blobs/sha256:2afdbf58216d9c6e1dc8138fbaae51ac5945bc9e86f8520d70acf710df97e536",
+          "sha256": "2afdbf58216d9c6e1dc8138fbaae51ac5945bc9e86f8520d70acf710df97e536"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk@11"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

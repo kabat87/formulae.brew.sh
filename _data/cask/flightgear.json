@@ -7,22 +7,26 @@
   ],
   "desc": "Flight simulator",
   "homepage": "https://www.flightgear.org/",
-  "url": "https://downloads.sourceforge.net/flightgear/FlightGear-2020.3.11.dmg",
+  "url": "https://downloads.sourceforge.net/flightgear/FlightGear-2020.3.17.dmg",
   "appcast": null,
-  "version": "2020.3.11",
+  "version": "2020.3.17",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "f6a04a20c9d5e45ec9e97a2cf506db477f186bac2693e051ede4e924cb0c517d",
+  "sha256": "4a9b33c639c61c8dd31c011866c3da0a7ee13da8b7cf35e9f40401ff75eb9478",
   "artifacts": [
-    [
-      "FlightGear.app"
-    ],
     {
-      "trash": "~/Library/Application Support/FlightGear",
-      "signal": {
-      }
+      "app": [
+        "FlightGear.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/FlightGear"
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -30,5 +34,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

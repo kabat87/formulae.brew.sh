@@ -7,21 +7,25 @@
   ],
   "desc": "File and directory compare tool",
   "homepage": "https://www.syntevo.com/smartsynchronize/",
-  "url": "https://www.syntevo.com/downloads/smartsynchronize/smartsynchronize-macos-4_2_1.dmg",
+  "url": "https://www.syntevo.com/downloads/smartsynchronize/smartsynchronize-x86_64-4_3_2.dmg",
   "appcast": null,
-  "version": "4.2.1",
+  "version": "4.3.2",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "e4cf1c0b335f23b1dab9c7f8e1be802f6bac5a160ddbc7b57f4cf3605e44fabd",
+  "sha256": "83b91e8708674c4ed5dd2dce790c322aedf9df5ddc642ce47e7760a8de0b2c92",
   "artifacts": [
-    [
-      "SmartSynchronize.app"
-    ],
-    [
-      "/Applications/SmartSynchronize.app/Contents/MacOS/SmartSynchronize"
-    ]
+    {
+      "app": [
+        "SmartSynchronize.app"
+      ]
+    },
+    {
+      "binary": [
+        "/Applications/SmartSynchronize.app/Contents/MacOS/SmartSynchronize"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -33,5 +37,19 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+    "arm64_ventura": {
+      "url": "https://www.syntevo.com/downloads/smartsynchronize/smartsynchronize-aarch64-4_3_2.dmg",
+      "sha256": "7d8ba82910c3afedced60bb2bcb6f9b0a0727dcfe3b158c93b7c74739ef09d88"
+    },
+    "arm64_monterey": {
+      "url": "https://www.syntevo.com/downloads/smartsynchronize/smartsynchronize-aarch64-4_3_2.dmg",
+      "sha256": "7d8ba82910c3afedced60bb2bcb6f9b0a0727dcfe3b158c93b7c74739ef09d88"
+    },
+    "arm64_big_sur": {
+      "url": "https://www.syntevo.com/downloads/smartsynchronize/smartsynchronize-aarch64-4_3_2.dmg",
+      "sha256": "7d8ba82910c3afedced60bb2bcb6f9b0a0727dcfe3b158c93b7c74739ef09d88"
+    }
+  }
 }

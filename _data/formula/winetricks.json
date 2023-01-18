@@ -13,15 +13,16 @@
   "license": "LGPL-2.1-or-later",
   "homepage": "https://github.com/Winetricks/winetricks",
   "versions": {
-    "stable": "20210825",
+    "stable": "20220411",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/Winetricks/winetricks/archive/20210825.tar.gz",
+      "url": "https://github.com/Winetricks/winetricks/archive/20220411.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c16e09ee4e5fda48a49ae9515a9c6d175713792be1b85ea92624d93e37effbd0"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/winetricks/blobs/sha256:322c2e6e1dd72073bfb03a230820eb039592c016103d0c442739e9f6c9f3470b",
-          "sha256": "322c2e6e1dd72073bfb03a230820eb039592c016103d0c442739e9f6c9f3470b"
+          "url": "https://ghcr.io/v2/homebrew/core/winetricks/blobs/sha256:f33dcdbdaa19fb315454a79234f5b1edf2f3ddc8489c0f0c57670bd10fc2c990",
+          "sha256": "f33dcdbdaa19fb315454a79234f5b1edf2f3ddc8489c0f0c57670bd10fc2c990"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -52,6 +52,9 @@
     "cabextract",
     "p7zip",
     "unzip"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -80,5 +83,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

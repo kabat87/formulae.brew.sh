@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://shnutils.freeshell.org/shntool/dist/src/shntool-3.0.10.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "74302eac477ca08fb2b42b9f154cc870593aec8beab308676e4373a5e4ca2102"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 2,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/shntool/blobs/sha256:ec3c0feb069099563b7359c7e3f926ac1840aaf0364bf40be1a2cf1462865764",
+          "sha256": "ec3c0feb069099563b7359c7e3f926ac1840aaf0364bf40be1a2cf1462865764"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/shntool/blobs/sha256:02dd5226afa9d564374ab0e56a1edd08d7b61ac8c9c7fb09ec2dc011d47cb955",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/shntool/blobs/sha256:1dfa65178720559cebc5500eb9f32d4ca2606a4f1b6a94b9d175ceded8fae2f0",
           "sha256": "1dfa65178720559cebc5500eb9f32d4ca2606a4f1b6a94b9d175ceded8fae2f0"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/shntool/blobs/sha256:f8a5ea952382da86b8ebc29ccc1ab8c4d818a69a408c7e2adbd9cec2139fb5e6",
+          "sha256": "f8a5ea952382da86b8ebc29ccc1ab8c4d818a69a408c7e2adbd9cec2139fb5e6"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

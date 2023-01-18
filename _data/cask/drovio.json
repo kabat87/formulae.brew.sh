@@ -7,33 +7,39 @@
   ],
   "desc": "Remote pair programming and team collaboration tool",
   "homepage": "https://www.drovio.com/",
-  "url": "https://repository.drovio.com/stable/drovio/macos/3.x/3.1.7/drovio.dmg",
+  "url": "https://repository.drovio.com/stable/drovio/macos_universal/3.x/3.3.4/drovio.dmg",
   "appcast": null,
-  "version": "3.1.7",
+  "version": "3.3.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "78d1a64844256c6969179b7e623cb4d7adb5911773e87978267f13016b5a39f2",
+  "sha256": "1effe3f15d339a9bb97541888539076ee396dcccc57d73757ff814c88b5d0603",
   "artifacts": [
-    [
-      "Drovio.app"
-    ],
     {
-      "trash": "~/Library/Application Support/Drovio",
-      "signal": {
-      }
+      "app": [
+        "Drovio.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": "~/Library/Application Support/Drovio"
+        }
+      ]
     }
   ],
   "caveats": null,
   "depends_on": {
     "macos": {
       ">=": [
-        "10.12"
+        "10.14"
       ]
     }
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/sass/sassc.git",
       "tag": "3.6.2",
-      "revision": "66f0ef37e7f0ad3a65d2f481eff09d09408f42d0"
+      "revision": "66f0ef37e7f0ad3a65d2f481eff09d09408f42d0",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:9302f8cb296175ea2f685b1b688753f4a0e66243c53f2249586ede9576bf86b6",
+          "sha256": "9302f8cb296175ea2f685b1b688753f4a0e66243c53f2249586ede9576bf86b6"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:f1814e87c905c18e7a39512e02a10ed93b68c81493f5d23e61884d0b3262d529",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:ae86a3868be7edf32aadf47abd949d3806789f5edf319c4d86120a05fee9053d",
           "sha256": "ae86a3868be7edf32aadf47abd949d3806789f5edf319c4d86120a05fee9053d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/sassc/blobs/sha256:1bd79d455cd4dac5f3e335088f760b4971297834d7a5c733c77de5cf747dea5c",
+          "sha256": "1bd79d455cd4dac5f3e335088f760b4971297834d7a5c733c77de5cf747dea5c"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -83,6 +93,9 @@
   ],
   "dependencies": [
     "libsass"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -111,5 +124,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

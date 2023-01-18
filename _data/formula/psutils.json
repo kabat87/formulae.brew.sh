@@ -21,7 +21,8 @@
     "stable": {
       "url": "ftp://ftp.knackered.org/pub/psutils/psutils-p17.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3853eb79584ba8fbe27a815425b65a9f7f15b258e0d43a05a856bdb75d588ae4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 1,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/psutils/blobs/sha256:bb268fd6eb5dd600ae0c81387e8a88a074f68a1ffde072a3e2ac387e142449e4",
+          "sha256": "bb268fd6eb5dd600ae0c81387e8a88a074f68a1ffde072a3e2ac387e142449e4"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/psutils/blobs/sha256:8d31594cd841f9c3fab5b2d57b7562f27614e91b88c0021f2d6132d4100f3133",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/psutils/blobs/sha256:02cd6e56f1a40d01069ee8d59ceafdab15e0c9ec6c75873f845f2588df87d31c",
           "sha256": "02cd6e56f1a40d01069ee8d59ceafdab15e0c9ec6c75873f845f2588df87d31c"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/psutils/blobs/sha256:8046101881e3fb43865364afc706a0b75283f83fc312414d8f9b5a2cdaa8fbb1",
+          "sha256": "8046101881e3fb43865364afc706a0b75283f83fc312414d8f9b5a2cdaa8fbb1"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/psutils/blobs/sha256:def5b3fc8cef9b4c532cc26ae216d1c6b0dae54da5a39acbdb818d53a04bf697",
           "sha256": "def5b3fc8cef9b4c532cc26ae216d1c6b0dae54da5a39acbdb818d53a04bf697"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/psutils/blobs/sha256:8fedc8290fdcbd5cb5f8042cc83e4c10c6c2a29888c2a89f72280d3b5b53946d",
-          "sha256": "8fedc8290fdcbd5cb5f8042cc83e4c10c6c2a29888c2a89f72280d3b5b53946d"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/psutils/blobs/sha256:3596c25429993fbcfa470fae16bafaa3da785fb610cacf9063d2b8ee26300d42",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

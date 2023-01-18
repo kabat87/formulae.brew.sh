@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://swagger.io/swagger-codegen/",
   "versions": {
-    "stable": "2.4.25",
+    "stable": "2.4.29",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/swagger-api/swagger-codegen/archive/v2.4.25.tar.gz",
+      "url": "https://github.com/swagger-api/swagger-codegen/archive/v2.4.29.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b451d7d98a9c1477f0c39b3b1cb4eedab908eb3f148afba85675f725024552cc"
     }
   },
   "revision": 0,
@@ -31,20 +32,30 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:dcd188d7701dee7e9b09eabd3314a092bc7d88f187b3ad15e150cc733861e2f5",
+          "sha256": "dcd188d7701dee7e9b09eabd3314a092bc7d88f187b3ad15e150cc733861e2f5"
+        },
+        "monterey": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:f289c5baa1bdba5ec895aaf3473f3bf7b6c17341c63caee3cde92416a3a4dd6d",
+          "sha256": "f289c5baa1bdba5ec895aaf3473f3bf7b6c17341c63caee3cde92416a3a4dd6d"
+        },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:ba8af6666496ff2515d1a1a46c7ccb74d31e528662a1064ca6dfd638d1d0315d",
-          "sha256": "ba8af6666496ff2515d1a1a46c7ccb74d31e528662a1064ca6dfd638d1d0315d"
+          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:1000f89738c76cda32b7def0c273492cae6d63cac6beef817ffbcb867576a39e",
+          "sha256": "1000f89738c76cda32b7def0c273492cae6d63cac6beef817ffbcb867576a39e"
         },
         "catalina": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:0ad4cab793435a3d660eb368ee75166972198155ac5bd3cc42ee7a3cd8da4c84",
-          "sha256": "0ad4cab793435a3d660eb368ee75166972198155ac5bd3cc42ee7a3cd8da4c84"
+          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:1c7fd0cdbc0b1b972a40f680c888fbc28053f22c763c018891cc3dee3ddfd1f4",
+          "sha256": "1c7fd0cdbc0b1b972a40f680c888fbc28053f22c763c018891cc3dee3ddfd1f4"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:89b49d9c3f64b42d5a35d05fa388709fa55f7e55413d7f93184250496e350783",
-          "sha256": "89b49d9c3f64b42d5a35d05fa388709fa55f7e55413d7f93184250496e350783"
+          "url": "https://ghcr.io/v2/homebrew/core/swagger-codegen/2/blobs/sha256:111eb19c3cab7004867839c757951f6a0261d27dbf75b5e1b93b02fa6b918e60",
+          "sha256": "111eb19c3cab7004867839c757951f6a0261d27dbf75b5e1b93b02fa6b918e60"
         }
       }
     }
@@ -54,7 +65,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -63,6 +73,9 @@
   ],
   "dependencies": [
     "openjdk@8"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -99,5 +112,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

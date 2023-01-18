@@ -8,32 +8,38 @@
   ],
   "desc": "Combine, shape, and clean your data for analysis",
   "homepage": "https://www.tableau.com/support/releases/prep",
-  "url": "https://downloads.tableau.com/esdalt/tableau_prep/2021.4.3/TableauPrep-2021-4-3.dmg",
+  "url": "https://downloads.tableau.com/esdalt/tableau_prep/2022.4.0/TableauPrep-2022-4-0.dmg",
   "appcast": null,
-  "version": "2021.4.3",
+  "version": "2022.4.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4cd19f79f87a0621565c2067521484fc77b44a0c23fd80a19336d17926b4b3b4",
+  "sha256": "f9a75e40fbad490cf2c85b1c26297754ddec7f947e515610840973535215bee5",
   "artifacts": [
     {
-      "pkgutil": [
-        "com.amazon.redshiftodbc",
-        "com.simba.sparkodbc",
-        "com.simba.sqlserverodbc",
-        "com.tableausoftware.desktopShortcut",
-        "com.tableausoftware.FLEXNet.11.*",
-        "com.tableausoftware.Maestro.app",
-        "com.tableausoftware.oracle",
-        "com.tableausoftware.postgresql",
-        "com.tableausoftware.telemetry",
-        "simba.sparkodbc"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "pkgutil": [
+            "com.amazon.redshiftodbc",
+            "com.simba.sparkodbc",
+            "com.simba.sqlserverodbc",
+            "com.tableausoftware.desktopShortcut",
+            "com.tableausoftware.FLEXNet.11.*",
+            "com.tableausoftware.Maestro.app",
+            "com.tableausoftware.oracle",
+            "com.tableausoftware.postgresql",
+            "com.tableausoftware.telemetry",
+            "simba.sparkodbc"
+          ]
+        }
+      ]
     },
-    "Tableau Prep Builder.pkg (Pkg)"
+    {
+      "pkg": [
+        "Tableau Prep Builder.pkg"
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -45,5 +51,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

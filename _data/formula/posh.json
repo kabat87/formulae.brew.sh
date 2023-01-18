@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://salsa.debian.org/clint/posh/-/archive/debian/0.14.1/posh-debian-0.14.1.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "3c9ca430977d85ad95d439656269b878bd5bde16521b778c222708910d111c80"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/posh/blobs/sha256:f3c1625c3fcfbf58672e6870e8ab89869ca68dc90978d2bd518d21f5f9fcac86",
+          "sha256": "f3c1625c3fcfbf58672e6870e8ab89869ca68dc90978d2bd518d21f5f9fcac86"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/posh/blobs/sha256:6678d5df02415c5e8bb866a7c5e7819f10ef23dd7bb19ba61f8f2cdad612e01f",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/posh/blobs/sha256:1b66fa64e195d0429fb1f7c0d0bf7f93c147ffa8533934f694d4ac6da5c4b78f",
           "sha256": "1b66fa64e195d0429fb1f7c0d0bf7f93c147ffa8533934f694d4ac6da5c4b78f"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/posh/blobs/sha256:f7fe58efa692f3f29ed734868afc118cd0875a6bc82d912bf9d30444f9cd1058",
+          "sha256": "f7fe58efa692f3f29ed734868afc118cd0875a6bc82d912bf9d30444f9cd1058"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,7 +87,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -85,6 +95,9 @@
     "automake"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -114,5 +127,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

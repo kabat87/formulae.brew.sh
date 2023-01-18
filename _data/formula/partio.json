@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/wdas/partio/archive/v1.14.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "53a5754d6b2fc3e184953d985c233118ef0ab87169f34e3aec4a7e6d20cd9bd4"
     }
   },
   "revision": 0,
@@ -60,13 +61,17 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/partio/blobs/sha256:8450fd8658881dbf6b9459bfa272339c99ed0b54d7e165b8f0ee6b85a68b95eb",
           "sha256": "8450fd8658881dbf6b9459bfa272339c99ed0b54d7e165b8f0ee6b85a68b95eb"
+        },
+        "x86_64_linux": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/partio/blobs/sha256:cf85e64f726c22497d6129abf4030ed7b75b490f4e826103f87f085db51e1aac",
+          "sha256": "cf85e64f726c22497d6129abf4030ed7b75b490f4e826103f87f085db51e1aac"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -75,6 +80,9 @@
     "doxygen"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -104,5 +112,14 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "dependencies": [
+        "freeglut",
+        "mesa",
+        "mesa-glu"
+      ]
+    }
+  }
 }

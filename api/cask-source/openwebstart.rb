@@ -1,12 +1,20 @@
 cask "openwebstart" do
-  version "1.5.1"
-  sha256 "5836d95e3bc326ba985e5fa6ea63bdf8efe93973115b27ab6a530368e798a6c2"
+  arch arm: "aarch64", intel: "x64"
 
-  url "https://github.com/karakun/OpenWebStart/releases/download/v#{version}/OpenWebStart_macos_#{version.dots_to_underscores}.dmg",
+  version "1.7.0"
+  sha256 arm:   "96f115f95547dac46c2b807878fe7f8b7731f9af640a31ac379a8d363db9afbf",
+         intel: "63ab73db0ffe64453aecddc4c44a1039fa973342f5aa1b5f8c7b7330eddbb430"
+
+  url "https://github.com/karakun/OpenWebStart/releases/download/v#{version}/OpenWebStart_macos-#{arch}_#{version.dots_to_underscores}.dmg",
       verified: "github.com/karakun/OpenWebStart/"
   name "OpenWebStart"
   desc "Tool to run Java Web Start-based applications after the release of Java 11"
   homepage "https://openwebstart.com/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   installer script: {
     executable:   "#{staged_path}/OpenWebStart Installer.app/Contents/MacOS/JavaApplicationStub",
@@ -19,12 +27,14 @@ cask "openwebstart" do
     set_ownership "/Applications/OpenWebStart"
   end
 
-  uninstall script: {
-    executable: "/Applications/OpenWebStart/OpenWebStart Uninstaller.app/Contents/MacOS/JavaApplicationStub",
-    args:       ["-c"],
-    sudo:       true,
-  },
-            delete: "/Applications/OpenWebStart"
+  uninstall \
+    script: {
+      executable:   "/Applications/OpenWebStart/OpenWebStart Uninstaller.app/Contents/MacOS/JavaApplicationStub",
+      args:         ["-q"],
+      sudo:         true,
+      print_stderr: false,
+    },
+    delete: "/Applications/OpenWebStart"
 
   zap trash: [
     "~/.cache/icedtea-web",

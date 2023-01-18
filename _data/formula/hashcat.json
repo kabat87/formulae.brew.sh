@@ -13,15 +13,16 @@
   "license": "MIT",
   "homepage": "https://hashcat.net/hashcat/",
   "versions": {
-    "stable": "6.2.5",
+    "stable": "6.2.6",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://hashcat.net/files/hashcat-6.2.5.tar.gz",
+      "url": "https://hashcat.net/files/hashcat-6.2.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "b25e1077bcf34908cc8f18c1a69a2ec98b047b2cbcf0f51144dcf3ba1e0b7b2a"
     }
   },
   "revision": 0,
@@ -33,35 +34,44 @@
       "files": {
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:fa6cfd37e7dcc83390159e971d314cde0af53ab58e41c8f669919d8db1acd1f6",
-          "sha256": "fa6cfd37e7dcc83390159e971d314cde0af53ab58e41c8f669919d8db1acd1f6"
+          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:3537c38c984f8c0856e18a9c5ec7fd96790d121f71a0ebafd206abe8fc770043",
+          "sha256": "3537c38c984f8c0856e18a9c5ec7fd96790d121f71a0ebafd206abe8fc770043"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:9407d08fda25cba3b7500bb0d6b99823b325f6b1302b96203b44d46052b43df5",
-          "sha256": "9407d08fda25cba3b7500bb0d6b99823b325f6b1302b96203b44d46052b43df5"
+          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:d2eba35d2cf35657998adbe73dcda9ce607d9c8d30147736495ff40bba311e35",
+          "sha256": "d2eba35d2cf35657998adbe73dcda9ce607d9c8d30147736495ff40bba311e35"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:969126930995386dc28c4a040c6bf742b8331b4a31fb9eef2c15684e9ff74b26",
+          "sha256": "969126930995386dc28c4a040c6bf742b8331b4a31fb9eef2c15684e9ff74b26"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:2943213fd5cf7d331331d734c059efca5031ea913f434b9d3e420c9b89d32870",
-          "sha256": "2943213fd5cf7d331331d734c059efca5031ea913f434b9d3e420c9b89d32870"
+          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:c1f6dc856692c00d1b70e943a11f61e9e25bcaf2187628b2ad9b990d40be7417",
+          "sha256": "c1f6dc856692c00d1b70e943a11f61e9e25bcaf2187628b2ad9b990d40be7417"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:50bbfbedcbbefcc4d0bda34f828eca5061a993631a4bae85d78abfe0b119556f",
-          "sha256": "50bbfbedcbbefcc4d0bda34f828eca5061a993631a4bae85d78abfe0b119556f"
+          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:bda8f3382145b5e91dea67605398d55f89c85cf2253975cb918b27432e1b23aa",
+          "sha256": "bda8f3382145b5e91dea67605398d55f89c85cf2253975cb918b27432e1b23aa"
         },
         "catalina": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:455a0e164a50caf10908da5ef73322bf19de286601a44a9e6e75d1ebcb010ef5",
-          "sha256": "455a0e164a50caf10908da5ef73322bf19de286601a44a9e6e75d1ebcb010ef5"
+          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:543c7620bc617933bfc2f2dea6eff0d408b0a6e4c12bd71f213ff7af8b0b434a",
+          "sha256": "543c7620bc617933bfc2f2dea6eff0d408b0a6e4c12bd71f213ff7af8b0b434a"
+        },
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/hashcat/blobs/sha256:bc09b5c303b00ae131939b048ebd80f63c56213e85e662248205c55779cd286a",
+          "sha256": "bc09b5c303b00ae131939b048ebd80f63c56213e85e662248205c55779cd286a"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -69,6 +79,10 @@
     "gnu-sed"
   ],
   "dependencies": [
+    "minizip",
+    "xxhash"
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -78,10 +92,18 @@
 
   ],
   "uses_from_macos": [
-
+    "zlib"
   ],
   "requirements": [
+    {
+      "name": "macos",
+      "cask": null,
+      "download": null,
+      "version": "10.13",
+      "contexts": [
 
+      ]
+    }
   ],
   "conflicts_with": [
 
@@ -98,5 +120,20 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "gnu-sed",
+        "opencl-headers"
+      ],
+      "dependencies": [
+        "minizip",
+        "xxhash",
+        "zlib",
+        "ocl-icd",
+        "pocl"
+      ]
+    }
+  }
 }

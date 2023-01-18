@@ -1,6 +1,6 @@
 cask "app-tamer" do
-  version "2.6.4,10674"
-  sha256 "ee84b3dbc0474777c7e886fc86c95f4e392dec4fcdbb5a141ff2fb0f1e28ec48"
+  version "2.7.5,11617"
+  sha256 "0451d3912a157d6cbd43a1462d1fc6b9bcd0de102976fc5d5281656427093ac6"
 
   url "https://www.stclairsoft.com/download/AppTamer-#{version.csv.first}.dmg"
   name "AppTamer"
@@ -14,9 +14,12 @@ cask "app-tamer" do
 
   app "App Tamer.app"
 
-  zap trash: [
+  uninstall delete: [
     "/Library/LaunchDaemons/com.stclairsoft.AppTamerAgent.plist",
     "/Library/PrivilegedHelperTools/com.stclairsoft.AppTamerAgent",
+  ]
+
+  zap trash: [
     "~/Library/Caches/com.stclairsoft.AppTamer",
     "~/Library/Preferences/com.stclairsoft.AppTamer.plist",
   ]

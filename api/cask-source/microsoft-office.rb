@@ -1,8 +1,8 @@
 cask "microsoft-office" do
-  version "16.57.22011101"
-  sha256 "9f02db8b9a938de2f47dd35dff02f93d44a0abdaa54765106cdc1b5eb1750c58"
+  version "16.69.23010700"
+  sha256 "6c606142087c676b91b796508f14e948f87640bf3cab0bc73f203fa112222e79"
 
-  url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_#{version}_Installer.pkg",
+  url "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_#{version}_Installer.pkg",
       verified: "officecdnmac.microsoft.com/"
   name "Microsoft Office"
   desc "Office suite"
@@ -10,6 +10,7 @@ cask "microsoft-office" do
 
   livecheck do
     url "https://go.microsoft.com/fwlink/p/?linkid=525133"
+    regex(/(\d+(?:\.\d+)+)/i)
     strategy :header_match
   end
 
@@ -22,9 +23,9 @@ cask "microsoft-office" do
     onedrive
   ]
   depends_on cask: "microsoft-auto-update"
-  depends_on macos: ">= :sierra"
+  depends_on macos: ">= :catalina"
 
-  pkg "Microsoft_Office_#{version}_Installer.pkg",
+  pkg "Microsoft_365_and_Office_#{version}_Installer.pkg",
       choices: [
         {
           "choiceIdentifier" => "com.microsoft.autoupdate", # Office16_all_autoupdate.pkg
@@ -34,18 +35,18 @@ cask "microsoft-office" do
       ]
 
   uninstall pkgutil:   [
-    "com.microsoft.OneDrive",
-    "com.microsoft.package.DFonts",
-    "com.microsoft.package.Frameworks",
-    "com.microsoft.package.Microsoft_AutoUpdate.app",
-    "com.microsoft.package.Microsoft_Excel.app",
-    "com.microsoft.package.Microsoft_OneNote.app",
-    "com.microsoft.package.Microsoft_Outlook.app",
-    "com.microsoft.package.Microsoft_PowerPoint.app",
-    "com.microsoft.package.Microsoft_Word.app",
-    "com.microsoft.package.Proofing_Tools",
-    "com.microsoft.pkg.licensing",
-  ],
+              "com.microsoft.OneDrive",
+              "com.microsoft.package.DFonts",
+              "com.microsoft.package.Frameworks",
+              "com.microsoft.package.Microsoft_AutoUpdate.app",
+              "com.microsoft.package.Microsoft_Excel.app",
+              "com.microsoft.package.Microsoft_OneNote.app",
+              "com.microsoft.package.Microsoft_Outlook.app",
+              "com.microsoft.package.Microsoft_PowerPoint.app",
+              "com.microsoft.package.Microsoft_Word.app",
+              "com.microsoft.package.Proofing_Tools",
+              "com.microsoft.pkg.licensing",
+            ],
             # Frameworks, DFonts and ProofingTools remain in each application after pkg uninstall, delete them
             delete:    [
               "/Applications/Microsoft Excel.app",
@@ -61,7 +62,9 @@ cask "microsoft-office" do
               "com.microsoft.OneDriveStandaloneUpdater",
               "com.microsoft.OneDriveStandaloneUpdaterDaemon",
               "com.microsoft.OneDriveUpdaterDaemon",
-            ]
+              "com.microsoft.SyncReporter",
+            ],
+            quit:      "com.microsoft.autoupdate2"
 
   zap trash: [
     "~/Library/Application Scripts/com.microsoft.errorreporting",

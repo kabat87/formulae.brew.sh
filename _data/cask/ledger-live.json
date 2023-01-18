@@ -6,35 +6,41 @@
     "Ledger Live"
   ],
   "desc": "Wallet desktop application to maintain multiple cryptocurrencies",
-  "homepage": "https://www.ledgerwallet.com/live",
-  "url": "https://github.com/LedgerHQ/ledger-live-desktop/releases/download/v2.36.3/ledger-live-desktop-2.36.3-mac.dmg",
+  "homepage": "https://www.ledger.com/ledger-live",
+  "url": "https://download.live.ledger.com/ledger-live-desktop-2.51.0-mac.dmg",
   "appcast": null,
-  "version": "2.36.3",
+  "version": "2.51.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "b06a0c723b65d8f4f0da16546f01c1a972439ef34dca1622dc10a2111432bd03",
+  "sha256": "b6aa9f651768d44f9c38cff2f34fb29e578bee26abdb37ac5904e83a5e28ef30",
   "artifacts": [
     {
-      "quit": [
-        "com.ledger.live",
-        "com.ledger.live.helper"
-      ],
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": [
+            "com.ledger.live",
+            "com.ledger.live.helper"
+          ]
+        }
+      ]
     },
-    [
-      "Ledger Live.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Ledger Live",
-        "~/Library/Preferences/com.ledger.live.plist",
-        "~/Library/Saved Application State/com.ledger.live.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Ledger Live.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Ledger Live",
+            "~/Library/Preferences/com.ledger.live.plist",
+            "~/Library/Saved Application State/com.ledger.live.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -42,5 +48,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": true
+  "auto_updates": true,
+  "variations": {
+  }
 }

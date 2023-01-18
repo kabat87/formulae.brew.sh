@@ -7,31 +7,37 @@
   ],
   "desc": "iOS App Store alternative",
   "homepage": "https://altstore.io/",
-  "url": "https://cdn.altstore.io/file/altstore/altserver/1_4_8.zip",
+  "url": "https://cdn.altstore.io/file/altstore/altserver/1_5_1.zip",
   "appcast": null,
-  "version": "1.4.8,60",
+  "version": "1.5.1,70",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "4c6c6bc6c0d409aa6eef98cb157f1aa4375439fde6dc2a395af79fdd43530054",
+  "sha256": "af478c958e3bf9346b59a4a2af4b3120ef0d02fa653b14dab13b7a7ec56d80de",
   "artifacts": [
     {
-      "quit": "com.rileytestut.AltServer",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "com.rileytestut.AltServer"
+        }
+      ]
     },
-    [
-      "AltServer.app"
-    ],
     {
-      "trash": [
-        "~/Library/Caches/com.rileytestut.AltServer",
-        "~/Library/Cookies/com.rileytestut.AltServer.binarycookies",
-        "~/Library/Preferences/com.rileytestut.AltServer.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "AltServer.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Caches/com.rileytestut.AltServer",
+            "~/Library/Cookies/com.rileytestut.AltServer.binarycookies",
+            "~/Library/Preferences/com.rileytestut.AltServer.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -44,5 +50,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

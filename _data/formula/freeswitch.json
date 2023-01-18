@@ -13,55 +13,65 @@
   "license": "MPL-1.1",
   "homepage": "https://freeswitch.org",
   "versions": {
-    "stable": "1.10.7",
+    "stable": "1.10.8",
     "head": "HEAD",
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/signalwire/freeswitch.git",
-      "tag": "v1.10.7",
-      "revision": "883d2cb662bed0316e157bd3beb9853e96c60d02"
+      "tag": "v1.10.8",
+      "revision": "35108661409083be680d0e74e6abd563e0a4c384",
+      "checksum": null
     }
   },
-  "revision": 2,
+  "revision": 0,
   "version_scheme": 0,
   "bottle": {
     "stable": {
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": "/opt/homebrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:2bb979f0e691bf40412830016e85dd661f56fbaf2b5720bb31da32531f7c1e33",
+          "sha256": "2bb979f0e691bf40412830016e85dd661f56fbaf2b5720bb31da32531f7c1e33"
+        },
         "arm64_monterey": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:28e073c14a8c7e20c399bcdff23459a2acbe892e043d74603d468936f9961e17",
-          "sha256": "28e073c14a8c7e20c399bcdff23459a2acbe892e043d74603d468936f9961e17"
+          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:7b5f2f425115a319cbd21ef279e525dae40a8ac4d74ee68819e907e0b012ab2e",
+          "sha256": "7b5f2f425115a319cbd21ef279e525dae40a8ac4d74ee68819e907e0b012ab2e"
         },
         "arm64_big_sur": {
           "cellar": "/opt/homebrew/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:7f37b2f886d758327f7d2e3ccf747b782188a12b59d3ac4ebd4d092dfdf1caef",
-          "sha256": "7f37b2f886d758327f7d2e3ccf747b782188a12b59d3ac4ebd4d092dfdf1caef"
+          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:5198917bd65265839cc4bfd7afb7f8e60ba7eb74213b254f3ffa31b7168bf1f2",
+          "sha256": "5198917bd65265839cc4bfd7afb7f8e60ba7eb74213b254f3ffa31b7168bf1f2"
+        },
+        "ventura": {
+          "cellar": "/usr/local/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:fabe1f906acfdbb3b2844b7afd44b4dbbdbd81ee18a409e934b5d9676d27954a",
+          "sha256": "fabe1f906acfdbb3b2844b7afd44b4dbbdbd81ee18a409e934b5d9676d27954a"
         },
         "monterey": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:b706d95f42a4e12b1cd5b23972c839a958ffc138c17b7a8e8084cdd3200ba58b",
-          "sha256": "b706d95f42a4e12b1cd5b23972c839a958ffc138c17b7a8e8084cdd3200ba58b"
+          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:967fcad01bfa72c563b2b680d4c631c398568b9338f8e241c35cc4a28048b044",
+          "sha256": "967fcad01bfa72c563b2b680d4c631c398568b9338f8e241c35cc4a28048b044"
         },
         "big_sur": {
           "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:4458bcb427c00ce0a9af10ed22a69e9199018df763c71d20e27a49cf977c4fb3",
-          "sha256": "4458bcb427c00ce0a9af10ed22a69e9199018df763c71d20e27a49cf977c4fb3"
+          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:c85f6a73aab968eb2ed630f0c273153ce7ae16a94c2a27b4f740e34be1d6a426",
+          "sha256": "c85f6a73aab968eb2ed630f0c273153ce7ae16a94c2a27b4f740e34be1d6a426"
         },
-        "catalina": {
-          "cellar": "/usr/local/Cellar",
-          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:5245319b7f90e24df42fa1687af9aa931b2adc279d0c6196735e6ee61a14dfcf",
-          "sha256": "5245319b7f90e24df42fa1687af9aa931b2adc279d0c6196735e6ee61a14dfcf"
+        "x86_64_linux": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "url": "https://ghcr.io/v2/homebrew/core/freeswitch/blobs/sha256:c9d3b99cac170fa6eb067c9fe78988dc215c70c89208c6cdbeb6c278484f279b",
+          "sha256": "c9d3b99cac170fa6eb067c9fe78988dc215c70c89208c6cdbeb6c278484f279b"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,8 +84,8 @@
     "yasm"
   ],
   "dependencies": [
-    "ffmpeg",
-    "jpeg",
+    "ffmpeg@4",
+    "jpeg-turbo",
     "ldns",
     "libpq",
     "libsndfile",
@@ -90,6 +100,9 @@
     "sqlite",
     "util-linux"
   ],
+  "test_dependencies": [
+
+  ],
   "recommended_dependencies": [
 
   ],
@@ -97,7 +110,9 @@
 
   ],
   "uses_from_macos": [
+    "curl",
     "libedit",
+    "libxcrypt",
     "zlib"
   ],
   "requirements": [
@@ -118,5 +133,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

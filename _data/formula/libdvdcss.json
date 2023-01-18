@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.videolan.org/pub/videolan/libdvdcss/1.4.3/libdvdcss-1.4.3.tar.bz2",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "233cc92f5dc01c5d3a96f5b3582be7d5cee5a35a52d3a08158745d3d86070079"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdvdcss/blobs/sha256:d3a1da9ea4618f10137277bd109cc5d1c74ba3d82a2dc45f34370e1c389d8eea",
+          "sha256": "d3a1da9ea4618f10137277bd109cc5d1c74ba3d82a2dc45f34370e1c389d8eea"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdvdcss/blobs/sha256:c96a2adbc32a57e271a9a91d338571ab9b0a6524a95e3fe48270dd5c4a277b21",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libdvdcss/blobs/sha256:ef10943948da31c0015eb558758fea572963e381c13c203e79ee2169a826731a",
           "sha256": "ef10943948da31c0015eb558758fea572963e381c13c203e79ee2169a826731a"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libdvdcss/blobs/sha256:8ebe4191446d0808caee8a4cf8796e16dbbf075195f51683fc55aaeb1b5c9a6e",
+          "sha256": "8ebe4191446d0808caee8a4cf8796e16dbbf075195f51683fc55aaeb1b5c9a6e"
         },
         "monterey": {
           "cellar": ":any",
@@ -71,7 +82,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +89,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

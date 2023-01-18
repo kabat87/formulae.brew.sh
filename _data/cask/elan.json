@@ -7,18 +7,30 @@
   ],
   "desc": "Annotation tool for audio and video recordings",
   "homepage": "https://archive.mpi.nl/tla/elan",
-  "url": "https://www.mpi.nl/tools/elan/ELAN_6-2_mac.zip",
+  "url": "https://www.mpi.nl/tools/elan/ELAN_6-4_mac.zip",
   "appcast": null,
-  "version": "6.2",
+  "version": "6.4",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "bca954c66e6390e4bb2bdadea046eb165be231083c298558c1b29adaead587dc",
+  "sha256": "1bbcb6de6c6c763da8266ee411cec865efbbf2026c55492937fd80aa4abc78c7",
   "artifacts": [
-    [
-      "ELAN_6.2.app"
-    ]
+    {
+      "app": [
+        "ELAN_6.4.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/ELAN",
+            "~/Library/Preferences/nl.mpi.elan.plist"
+          ]
+        }
+      ]
+    }
   ],
   "caveats": null,
   "depends_on": {
@@ -30,5 +42,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/elboza/dwarf-ng/archive/dwarf-0.4.0.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "a64656f53ded5166041ae25cc4b1ad9ab5046a5c4d4c05b727447e73c0d83da0"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dwarf/blobs/sha256:d0244af1e2cc656fa2c4d040caef6910ffdc6a8cff2480d315db3bc9fbe0a9e3",
+          "sha256": "d0244af1e2cc656fa2c4d040caef6910ffdc6a8cff2480d315db3bc9fbe0a9e3"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dwarf/blobs/sha256:0bd56303a2a78e899a035597b779d5a3701f911ebfdf586d4a41d660f13253fe",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/dwarf/blobs/sha256:30b7f9852b68c70d6e8e07c0de3e9075a4e0edd0facc219970de6535e5931b4d",
           "sha256": "30b7f9852b68c70d6e8e07c0de3e9075a4e0edd0facc219970de6535e5931b4d"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/dwarf/blobs/sha256:bce795ff823288cbfe918b0b3f8ed08f9cd7aab506e25fe104ff15d9174c2079",
+          "sha256": "bce795ff823288cbfe918b0b3f8ed08f9cd7aab506e25fe104ff15d9174c2079"
         },
         "monterey": {
           "cellar": ":any",
@@ -81,7 +92,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -91,6 +101,9 @@
   "dependencies": [
     "flex",
     "readline"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -119,5 +132,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

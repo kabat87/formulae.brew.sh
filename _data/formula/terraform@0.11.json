@@ -22,7 +22,8 @@
     "stable": {
       "url": "https://github.com/hashicorp/terraform/archive/v0.11.15.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "e0f8c5549d45d133f86570c7e5083af3eb1ce64aa0eeeaa5b7c5fa5221cfdd4a"
     }
   },
   "revision": 0,
@@ -70,7 +71,6 @@
     "reason": ":versioned_formula",
     "explanation": ""
   },
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -79,6 +79,9 @@
     "gox"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -111,10 +114,19 @@
   "linked_keg": null,
   "pinned": false,
   "outdated": false,
-  "deprecated": true,
-  "deprecation_date": "2021-04-14",
-  "deprecation_reason": "unsupported",
-  "disabled": false,
-  "disable_date": null,
-  "disable_reason": null
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": true,
+  "disable_date": "2022-07-31",
+  "disable_reason": "unsupported",
+  "variations": {
+    "x86_64_linux": {
+      "build_dependencies": [
+        "go@1.16",
+        "gox",
+        "zip"
+      ]
+    }
+  }
 }

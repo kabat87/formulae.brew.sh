@@ -7,25 +7,29 @@
   ],
   "desc": "PlayStation 2 emulator",
   "homepage": "https://purei.org/",
-  "url": "https://s3.us-east-2.amazonaws.com/playbuilds/5e124ac9/Play.dmg",
+  "url": "https://s3.us-east-2.amazonaws.com/playbuilds/70a126e3/Play.dmg",
   "appcast": null,
-  "version": "2022-01-05,5e124ac9",
+  "version": "2023-01-10,70a126e3",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "cd02d0b57049e23b2d8ca745f00980bdaabff6cdbc9994337054053f823009fd",
+  "sha256": "8df5a83eb6d8e28c1cbf6e567f6d8622280cfae1503656a0c73ef4bb4dbf82c5",
   "artifacts": [
-    [
-      "Play.app"
-    ],
     {
-      "trash": [
-        "~/Library/Preferences/com.virtualapplications.Play.plist",
-        "~/Library/Saved Application State/com.virtualapplications.Play.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Play.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Preferences/com.virtualapplications.Play.plist",
+            "~/Library/Saved Application State/com.virtualapplications.Play.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

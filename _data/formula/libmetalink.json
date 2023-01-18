@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://launchpad.net/libmetalink/trunk/libmetalink-0.1.3/+download/libmetalink-0.1.3.tar.xz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "86312620c5b64c694b91f9cc355eabbd358fa92195b3e99517504076bf9fe33a"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmetalink/blobs/sha256:1684da3a02e39ed1a65dc154f06f309119cff3010a45efbbeb1d653081885bc8",
+          "sha256": "1684da3a02e39ed1a65dc154f06f309119cff3010a45efbbeb1d653081885bc8"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmetalink/blobs/sha256:4181f8a100f736a945001f57c2ad8f768ad99cdad6789a19d9f21e0cfdd4d3fb",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/libmetalink/blobs/sha256:a5eec14410ca7f2ea831d91c273d6372bc851f930944d207f07f35245b077a91",
           "sha256": "a5eec14410ca7f2ea831d91c273d6372bc851f930944d207f07f35245b077a91"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/libmetalink/blobs/sha256:458a2aed06056d0cc3dd1005f93210c9c686ba2515d8550ec0fd6f8348168da6",
+          "sha256": "458a2aed06056d0cc3dd1005f93210c9c686ba2515d8550ec0fd6f8348168da6"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/libmetalink/blobs/sha256:4ca3f82ac2e2520c677def661168c6ba14ee2b8f0139fbe33cf5be66745244d3",
           "sha256": "4ca3f82ac2e2520c677def661168c6ba14ee2b8f0139fbe33cf5be66745244d3"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/libmetalink/blobs/sha256:e627cde406e135a735fd2586622d2fa05cf6ef9fda8a0ea08d09ddfce20dca75",
-          "sha256": "e627cde406e135a735fd2586622d2fa05cf6ef9fda8a0ea08d09ddfce20dca75"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/libmetalink/blobs/sha256:583e662593473f7310e1c3e3bed77a89a4dc43aed5fd1ce6a12a7260ec69c5f5",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

@@ -7,27 +7,31 @@
   ],
   "desc": "Collaborative presentation software",
   "homepage": "https://pitch.com/",
-  "url": "https://desktop-app-builds.pitch.com/Pitch-1.57.3-ci2546277.dmg",
+  "url": "https://desktop-app-builds.pitch.com/Pitch-1.106.1-stable.1-ci5063132.dmg",
   "appcast": null,
-  "version": "1.57.3,2546277",
+  "version": "1.106.1,stable.1,5063132",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "89cae692935d3a8117d0e78bd421b91be4c3f1e36e53d692c6b51e94da029e2d",
+  "sha256": "b6e707d17520cef0e9b5b456afddeca887e9f7ca3177326075e6c9ef334233be",
   "artifacts": [
-    [
-      "Pitch.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Pitch",
-        "~/Library/Logs/Pitch",
-        "~/Library/Preferences/io.pitch.pitch-macos.plist",
-        "~/Library/Saved Application State/io.pitch.pitch-macos.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Pitch.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Pitch",
+            "~/Library/Logs/Pitch",
+            "~/Library/Preferences/io.pitch.pitch-macos.plist",
+            "~/Library/Saved Application State/io.pitch.pitch-macos.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -35,5 +39,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

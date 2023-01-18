@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://download.dajobe.org/flickcurl/flickcurl-1.26.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "ff42a36c7c1c7d368246f6bc9b7d792ed298348e5f0f5d432e49f6803562f5a3"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/flickcurl/blobs/sha256:3a7f75cacbb1175cfa2ee72dcda7f99f01ba138b7d488e008a9ece38fc8deaf1",
+          "sha256": "3a7f75cacbb1175cfa2ee72dcda7f99f01ba138b7d488e008a9ece38fc8deaf1"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/flickcurl/blobs/sha256:024bb774db8841eb554099408b89d25d810d37cb2876fbf73f7b5664ad55229a",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/flickcurl/blobs/sha256:49065801b7dfe7880206948a41c58ae5f190b50e3acbbe7d14ff24d29a30db0c",
           "sha256": "49065801b7dfe7880206948a41c58ae5f190b50e3acbbe7d14ff24d29a30db0c"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/flickcurl/blobs/sha256:416ebb0aa48eaefa4391bcfe0dc4e030ef657a9d9194de06c7a61b5d3ad3dd61",
+          "sha256": "416ebb0aa48eaefa4391bcfe0dc4e030ef657a9d9194de06c7a61b5d3ad3dd61"
         },
         "monterey": {
           "cellar": ":any",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/flickcurl/blobs/sha256:01886ddb800167eed18495d780baa81bac793243a54d452ad9a34a06e876e4d2",
           "sha256": "01886ddb800167eed18495d780baa81bac793243a54d452ad9a34a06e876e4d2"
         },
-        "yosemite": {
-          "cellar": ":any",
-          "url": "https://ghcr.io/v2/homebrew/core/flickcurl/blobs/sha256:64c7a8f7d2bcc90063f926724fd1bd9277f783f3aca3c83e53684222f3d1d1c3",
-          "sha256": "64c7a8f7d2bcc90063f926724fd1bd9277f783f3aca3c83e53684222f3d1d1c3"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/flickcurl/blobs/sha256:e3590c3c9a44504b1a7493018de9e009fc1ff929beb7cc890f8907eed5fc0e05",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
     "pkg-config"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -129,5 +137,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

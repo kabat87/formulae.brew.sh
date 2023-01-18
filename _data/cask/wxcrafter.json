@@ -16,16 +16,20 @@
   "outdated": false,
   "sha256": "no_check",
   "artifacts": [
-    [
-      "wxCrafter.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/wxcrafter",
-        "~/Library/Preferences/wxcrafter.plist"
-      ],
-      "signal": {
-      }
+      "app": [
+        "wxCrafter.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/wxcrafter",
+            "~/Library/Preferences/wxcrafter.plist"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -33,5 +37,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

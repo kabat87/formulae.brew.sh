@@ -13,15 +13,16 @@
   "license": "Apache-2.0",
   "homepage": "https://xmlgraphics.apache.org/fop/index.html",
   "versions": {
-    "stable": "2.6",
+    "stable": "2.8",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
-      "url": "https://www.apache.org/dyn/closer.lua?path=xmlgraphics/fop/binaries/fop-2.6-bin.tar.gz",
+      "url": "https://www.apache.org/dyn/closer.lua?path=xmlgraphics/fop/binaries/fop-2.8-bin.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "88bbc6037705bf5ca62604445d9922fe134bd527c502f02ead4a5aa713b4ee91"
     }
   },
   "revision": 0,
@@ -33,15 +34,14 @@
       "files": {
         "all": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/fop/blobs/sha256:bba733bb7b7516a722bcd1b5f272e9d87fcbdd740db0fcbf8c7ac5d8fd5821d7",
-          "sha256": "bba733bb7b7516a722bcd1b5f272e9d87fcbdd740db0fcbf8c7ac5d8fd5821d7"
+          "url": "https://ghcr.io/v2/homebrew/core/fop/blobs/sha256:106b70ddf0af25c564c147ce57368ca6d16d5a1f91b75361b5bcaf2bdd110d90",
+          "sha256": "106b70ddf0af25c564c147ce57368ca6d16d5a1f91b75361b5bcaf2bdd110d90"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -50,6 +50,9 @@
   ],
   "dependencies": [
     "openjdk"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -78,5 +81,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

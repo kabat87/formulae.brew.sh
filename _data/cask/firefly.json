@@ -7,33 +7,39 @@
   ],
   "desc": "Official wallet for IOTA",
   "homepage": "https://firefly.iota.org/",
-  "url": "https://github.com/iotaledger/firefly/releases/download/desktop-1.3.2/firefly-desktop-1.3.2.dmg",
+  "url": "https://github.com/iotaledger/firefly/releases/download/desktop-1.7.0/firefly-desktop-1.7.0.dmg",
   "appcast": null,
-  "version": "1.3.2",
+  "version": "1.7.0",
   "versions": {
   },
   "installed": null,
   "outdated": false,
-  "sha256": "0d1f766a2abbde3a5fc5b679abbb17d95233a7264f85c0232a0806885e9527cf",
+  "sha256": "7b8fa09b5dcd684a6a01fce430edfc52a65885e289782af6e9d1fc400b3bb3d3",
   "artifacts": [
     {
-      "quit": "org.iota.firefly",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "org.iota.firefly"
+        }
+      ]
     },
-    [
-      "Firefly.app"
-    ],
     {
-      "trash": [
-        "~/Library/Application Support/Firefly",
-        "~/Library/Logs/Firefly",
-        "~/Library/Preferences/org.iota.firefly.helper.plist",
-        "~/Library/Preferences/org.iota.firefly.plist",
-        "~/Library/Saved Application State/org.iota.firefly.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Firefly.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Library/Application Support/Firefly",
+            "~/Library/Logs/Firefly",
+            "~/Library/Preferences/org.iota.firefly.helper.plist",
+            "~/Library/Preferences/org.iota.firefly.plist",
+            "~/Library/Saved Application State/org.iota.firefly.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -41,5 +47,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": true,
+  "variations": {
+  }
 }

@@ -5,11 +5,11 @@
   "name": [
     "Cinebench"
   ],
-  "desc": null,
+  "desc": "Hardware benchmarking utility",
   "homepage": "https://www.maxon.net/products/cinebench/",
   "url": "https://http.maxon.net/pub/cinebench/CinebenchR23.dmg",
   "appcast": null,
-  "version": "R23,330542",
+  "version": "23",
   "versions": {
   },
   "installed": null,
@@ -17,23 +17,29 @@
   "sha256": "c8826647af0c7c8cc9bfa2533b254a37deb9852caeea1a47cbacec5e577cdda9",
   "artifacts": [
     {
-      "quit": "net.maxon.cinebench",
-      "signal": {
-      }
+      "uninstall": [
+        {
+          "quit": "net.maxon.cinebench"
+        }
+      ]
     },
-    [
-      "Cinebench.app"
-    ],
     {
-      "trash": [
-        "~/Documents/MAXON",
-        "~/Library/Caches/net.maxon.cinebench",
-        "~/Library/Caches/net.maxon.cinema4d",
-        "~/Library/Preferences/MAXON",
-        "~/Library/Saved Application State/net.maxon.cinebench.savedState"
-      ],
-      "signal": {
-      }
+      "app": [
+        "Cinebench.app"
+      ]
+    },
+    {
+      "zap": [
+        {
+          "trash": [
+            "~/Documents/MAXON",
+            "~/Library/Caches/net.maxon.cinebench",
+            "~/Library/Caches/net.maxon.cinema4d",
+            "~/Library/Preferences/MAXON",
+            "~/Library/Saved Application State/net.maxon.cinebench.savedState"
+          ]
+        }
+      ]
     }
   ],
   "caveats": null,
@@ -46,5 +52,7 @@
   },
   "conflicts_with": null,
   "container": null,
-  "auto_updates": null
+  "auto_updates": null,
+  "variations": {
+  }
 }

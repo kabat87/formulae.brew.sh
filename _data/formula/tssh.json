@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/luanruisong/tssh/archive/refs/tags/2.1.2.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "1c6b00750260d2c567d99f8bfd0c7fc87a96ac0faa3cfc8d54cb32400e95bb56"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tssh/blobs/sha256:87acf131626f3af8ebc78fe390c43b3950c3c491a90e2fdd4d4bf9b975053146",
+          "sha256": "87acf131626f3af8ebc78fe390c43b3950c3c491a90e2fdd4d4bf9b975053146"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tssh/blobs/sha256:5f45fc530482f76d31be04fc447ad9ddf1db45542f845346d035738fe12bca04",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/tssh/blobs/sha256:222ab84f9c686b2606c5424d5ba3183517ab606851d7d6f9131f8122b3f4047b",
           "sha256": "222ab84f9c686b2606c5424d5ba3183517ab606851d7d6f9131f8122b3f4047b"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/tssh/blobs/sha256:1e6f996043a33d66922f08034d2d23394cf01b16ca91fd2dd80b1ac3a4f63abc",
+          "sha256": "1e6f996043a33d66922f08034d2d23394cf01b16ca91fd2dd80b1ac3a4f63abc"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -71,14 +82,16 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
   "build_dependencies": [
-    "go"
+    "go@1.17"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -108,5 +121,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

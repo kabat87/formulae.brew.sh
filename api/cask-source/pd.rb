@@ -1,16 +1,15 @@
 cask "pd" do
-  version "0.51-4"
-  sha256 "2dd4c637d8637eefc928e7a06586cb911a21eae72f1abb3a0649a90f7eff20f7"
+  version "0.53-1"
+  sha256 "d31d23b8a6d5d726b988b850a7140d2942ef595fab5ac80d4eb76b89a20fcc65"
 
-  url "http://msp.ucsd.edu/Software/pd-#{version}.mac.tar.gz"
+  url "http://msp.ucsd.edu/Software/pd-#{version}.macos.zip"
   name "Pd"
   desc "Visual programming language for multimedia"
   homepage "http://msp.ucsd.edu/software.html"
 
   livecheck do
-    url "http://msp.ucsd.edu/software.html"
-    strategy :page_match
-    regex(%r{href=.*?/pd-(\d+(?:\.\d+)*-\d+)\.mac\.tar\.gz}i)
+    url :homepage
+    regex(/pd[._-]v?(\d+(?:\.\d+)+-\d+)\.macos\.zip/i)
   end
 
   app "Pd-#{version}.app"

@@ -21,7 +21,8 @@
     "stable": {
       "url": "http://gva.noekeon.org/blahtexml/blahtexml-0.9-src.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c5145b02bdf03cd95b7b136de63286819e696639824961d7408bec4591bc3737"
     }
   },
   "revision": 1,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/blahtexml/blobs/sha256:8649e81f949cbc530d00a446b56fee8ea6013a9bac9f8abc732c0ceda928b9d9",
+          "sha256": "8649e81f949cbc530d00a446b56fee8ea6013a9bac9f8abc732c0ceda928b9d9"
+        },
         "arm64_monterey": {
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/blahtexml/blobs/sha256:8783f6707647e97b97332dfae2ae2705823786ac65977d239e9d38dfb1f5b0c7",
@@ -40,6 +46,11 @@
           "cellar": ":any",
           "url": "https://ghcr.io/v2/homebrew/core/blahtexml/blobs/sha256:83b3c821686faba9f464198f22fc7432001e93d09c66192ff95c8d9ddbb69a80",
           "sha256": "83b3c821686faba9f464198f22fc7432001e93d09c66192ff95c8d9ddbb69a80"
+        },
+        "ventura": {
+          "cellar": ":any",
+          "url": "https://ghcr.io/v2/homebrew/core/blahtexml/blobs/sha256:33ed53295e49baaae6a268923b6ac906e6529faa52a5230090b73eda06131e68",
+          "sha256": "33ed53295e49baaae6a268923b6ac906e6529faa52a5230090b73eda06131e68"
         },
         "monterey": {
           "cellar": ":any",
@@ -86,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -95,6 +105,9 @@
   ],
   "dependencies": [
     "xerces-c"
+  ],
+  "test_dependencies": [
+
   ],
   "recommended_dependencies": [
 
@@ -123,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

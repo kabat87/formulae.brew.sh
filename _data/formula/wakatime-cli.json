@@ -13,15 +13,16 @@
   "license": "BSD-3-Clause",
   "homepage": "https://wakatime.com/",
   "versions": {
-    "stable": "1.35.0",
+    "stable": "1.61.0",
     "head": null,
     "bottle": true
   },
   "urls": {
     "stable": {
       "url": "https://github.com/wakatime/wakatime-cli.git",
-      "tag": "v1.35.0",
-      "revision": "15895a5d2229a0e72906fa897cab5bd6314a3d96"
+      "tag": "v1.61.0",
+      "revision": "2e6185a241b937a598307a357255aa4f59383985",
+      "checksum": null
     }
   },
   "revision": 0,
@@ -31,42 +32,46 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:625e4ec993bd69980b655a708ae6c37cf981465a2f7c19c44862070f7fd51543",
+          "sha256": "625e4ec993bd69980b655a708ae6c37cf981465a2f7c19c44862070f7fd51543"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:b5e54f6c2d127083b12cd7ac3b0141cf8f670379b2f45b7977fe70c0e4dcf10d",
-          "sha256": "b5e54f6c2d127083b12cd7ac3b0141cf8f670379b2f45b7977fe70c0e4dcf10d"
+          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:581f1f612514cc92f63792de937c9e8549594b512e951f0762e8f5894a776187",
+          "sha256": "581f1f612514cc92f63792de937c9e8549594b512e951f0762e8f5894a776187"
         },
         "arm64_big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:3f0f639520fa316cb1717a3ea018a12559ca6bee084a2ea5201580581c2e6498",
-          "sha256": "3f0f639520fa316cb1717a3ea018a12559ca6bee084a2ea5201580581c2e6498"
+          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:d566416d9a437631528f61e3a5f3a72f26b4a077dfd7bc1673802f4a137d592e",
+          "sha256": "d566416d9a437631528f61e3a5f3a72f26b4a077dfd7bc1673802f4a137d592e"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:c19d1cece1260026a85941888a80b2a44d75e29f4f7f00f5f4cf663e178b4d53",
+          "sha256": "c19d1cece1260026a85941888a80b2a44d75e29f4f7f00f5f4cf663e178b4d53"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:ff9111d43b4cab4f482c169007e896d6ff6756c741331d9f0f396899816a746f",
-          "sha256": "ff9111d43b4cab4f482c169007e896d6ff6756c741331d9f0f396899816a746f"
+          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:465a7599f268f1f544e144ebf2bcba8cc3be1a23ead89b0694abb61faffd20c4",
+          "sha256": "465a7599f268f1f544e144ebf2bcba8cc3be1a23ead89b0694abb61faffd20c4"
         },
         "big_sur": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:928a050e5717d2667e11989f21e3afa62a4de1bcd75c6aa8ba82fa08dc0f45e5",
-          "sha256": "928a050e5717d2667e11989f21e3afa62a4de1bcd75c6aa8ba82fa08dc0f45e5"
-        },
-        "catalina": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:6d42760681a1ab2b70fa066079327f9f135866caabdb970a0496cbcfe28f0b78",
-          "sha256": "6d42760681a1ab2b70fa066079327f9f135866caabdb970a0496cbcfe28f0b78"
+          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:c25db3634e4a3e941c366e44faea93374607707e3fae5c50abc04dfff0dd8bb1",
+          "sha256": "c25db3634e4a3e941c366e44faea93374607707e3fae5c50abc04dfff0dd8bb1"
         },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:7452eeeaf99fc2c30861febdc9318e15a26fff77112445df8de8955d48916105",
-          "sha256": "7452eeeaf99fc2c30861febdc9318e15a26fff77112445df8de8955d48916105"
+          "url": "https://ghcr.io/v2/homebrew/core/wakatime-cli/blobs/sha256:0d1acd79ab57c29bd6dca288e22f32a29cf906db0c8529428a0790c17936c23e",
+          "sha256": "0d1acd79ab57c29bd6dca288e22f32a29cf906db0c8529428a0790c17936c23e"
         }
       }
     }
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -74,6 +79,9 @@
     "go"
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -103,5 +111,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }

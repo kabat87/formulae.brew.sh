@@ -21,7 +21,8 @@
     "stable": {
       "url": "https://github.com/martanne/abduco/releases/download/v0.6/abduco-0.6.tar.gz",
       "tag": null,
-      "revision": null
+      "revision": null,
+      "checksum": "c90909e13fa95770b5afc3b59f311b3d3d2fdfae23f9569fa4f96a3e192a35f4"
     }
   },
   "revision": 0,
@@ -31,6 +32,11 @@
       "rebuild": 0,
       "root_url": "https://ghcr.io/v2/homebrew/core",
       "files": {
+        "arm64_ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/abduco/blobs/sha256:b07ab80b2d588ae9ed65d615b8e4f12bf04b8e86eec0ffd407a4955aef9a2dba",
+          "sha256": "b07ab80b2d588ae9ed65d615b8e4f12bf04b8e86eec0ffd407a4955aef9a2dba"
+        },
         "arm64_monterey": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/abduco/blobs/sha256:f3e01e687a45b2458311702b5b48b8d3bb8d681388cacc85e7fb26d0be6b7720",
@@ -40,6 +46,11 @@
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/abduco/blobs/sha256:e261303a69440aa46e09bfc3be3b7fb0c5cb6b2a3f6fbeb94338491a8538a90a",
           "sha256": "e261303a69440aa46e09bfc3be3b7fb0c5cb6b2a3f6fbeb94338491a8538a90a"
+        },
+        "ventura": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://ghcr.io/v2/homebrew/core/abduco/blobs/sha256:cec640c52bce7b9d63223b949ad4e30a96cb1acc58c8f95ab5017104cd41aac6",
+          "sha256": "cec640c52bce7b9d63223b949ad4e30a96cb1acc58c8f95ab5017104cd41aac6"
         },
         "monterey": {
           "cellar": ":any_skip_relocation",
@@ -76,11 +87,6 @@
           "url": "https://ghcr.io/v2/homebrew/core/abduco/blobs/sha256:62b4673f4fba1d3c5b201b972e220a2736ec053e0c83b1369bb4e5641a71f8e4",
           "sha256": "62b4673f4fba1d3c5b201b972e220a2736ec053e0c83b1369bb4e5641a71f8e4"
         },
-        "yosemite": {
-          "cellar": ":any_skip_relocation",
-          "url": "https://ghcr.io/v2/homebrew/core/abduco/blobs/sha256:17338a1f1f2cace2bfb40c79d746ad60c6604555e8fb34476ec4ef9a2f68234e",
-          "sha256": "17338a1f1f2cace2bfb40c79d746ad60c6604555e8fb34476ec4ef9a2f68234e"
-        },
         "x86_64_linux": {
           "cellar": ":any_skip_relocation",
           "url": "https://ghcr.io/v2/homebrew/core/abduco/blobs/sha256:2129c6039968a818f71997e800575b581128b56f8783eeb32c990f8a5e8b81ad",
@@ -91,7 +97,6 @@
   },
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": false,
   "options": [
 
   ],
@@ -99,6 +104,9 @@
 
   ],
   "dependencies": [
+
+  ],
+  "test_dependencies": [
 
   ],
   "recommended_dependencies": [
@@ -128,5 +136,7 @@
   "deprecation_reason": null,
   "disabled": false,
   "disable_date": null,
-  "disable_reason": null
+  "disable_reason": null,
+  "variations": {
+  }
 }
