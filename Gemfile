@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
 gem "rake"
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", ">= 224", group: :jekyll_plugins
 
 group :test do
   gem "jsonlint"
-  gem "html-proofer"
+  gem "html-proofer", ">= 3.19.4"
 end
